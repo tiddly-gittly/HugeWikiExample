@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→meteoric_talisman
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：meteoric_talisman|http://cdda.aloxaf.cn/search?q=meteoric_talisman]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "meteoric_talisman",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "meteoric talisman"
+  },
+  "category": "armor",
+  "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  Activating it will ward against electricity at the expense of slowing you down slightly, consuming dull essence while active.",
+  "weight": "60 g",
+  "volume": "250 ml",
+  "price_postapoc": "100 USD",
+  "material": [
+    "steel"
+  ],
+  "symbol": "[",
+  "looks_like": "jade_brooch",
+  "repairs_like": "mana_gem",
+  "color": "light_gray",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 300
+      }
+    }
+  ],
+  "ammo": "essence_dull_type",
+  "use_action": {
+    "target": "meteoric_talisman_on",
+    "msg": "As you activate the talisman, you feel insulated in a strange manner.",
+    "active": true,
+    "need_worn": true,
+    "need_charges": 1,
+    "need_charges_msg": "The talisman requires dull essence.",
+    "menu_text": "Activate lightning ward",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "ench_effects": [
+          {
+            "effect": "lightning_ward",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "FANCY",
+    "NO_SALVAGE",
+    "TRADER_KEEP_EQUIPPED"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "meteoric_talisman",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "流星护身符"
+  },
+  "category": "armor",
+  "description": "一种华丽的项链，有一个类似圆形盾牌的小饰物，由坚硬的彩虹色金属制成。激活它可以抵抗电流，但代价是稍微减慢你的速度，在活动时消耗沉闷的精华。",
+  "weight": "60 g",
+  "volume": "250 ml",
+  "price_postapoc": "100 USD",
+  "material": [
+    "steel"
+  ],
+  "symbol": "[",
+  "looks_like": "jade_brooch",
+  "repairs_like": "mana_gem",
+  "color": "light_gray",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 300
+      }
+    }
+  ],
+  "ammo": "essence_dull_type",
+  "use_action": {
+    "target": "meteoric_talisman_on",
+    "msg": "当你激活护身符时，你感到一股奇怪的能量致使你绝缘了。",
+    "active": true,
+    "need_worn": true,
+    "need_charges": 1,
+    "need_charges_msg": "护符需要阴黯源质。",
+    "menu_text": "激活闪电结界",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "ench_effects": [
+          {
+            "effect": "lightning_ward",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "FANCY",
+    "NO_SALVAGE",
+    "TRADER_KEEP_EQUIPPED"
+  ]
+}
+```
+

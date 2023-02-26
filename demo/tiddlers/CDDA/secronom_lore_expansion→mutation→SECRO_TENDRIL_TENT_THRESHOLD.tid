@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_TENDRIL_TENT_THRESHOLD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_TENDRIL_TENT_THRESHOLD|http://cdda.aloxaf.cn/search?q=SECRO_TENDRIL_TENT_THRESHOLD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_TENDRIL_TENT_THRESHOLD",
+  "name": {
+    "str": "Core - Tendril"
+  },
+  "points": 10,
+  "visibility": 2,
+  "ugliness": 0,
+  "valid": false,
+  "description": "One of your tendril limbs have swollen a bit, and faintly pulsates in velvety hue. If activated, this tendril hardens, extends and becomes a special whip-like weapon for a few turns.",
+  "prereqs": [
+    "SECRO_TENDRIL_TENT"
+  ],
+  "threshreq": [
+    "THRESH_SECRONOM_EX"
+  ],
+  "cancels": [
+    "SECRO_TENDRIL_THICK_THRESHOLD",
+    "SECRO_BLADE_SERRATED_THRESHOLD",
+    "SECRO_BLADE_SHARP_THRESHOLD"
+  ],
+  "spells_learned": [
+    [
+      "SECRO_TENDRIL_TENT_THRESHOLD_item",
+      1
+    ]
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_TENDRIL_TENT_THRESHOLD",
+  "name": {
+    "str": "<color_light_green>核心</color>-触手"
+  },
+  "points": 10,
+  "visibility": 2,
+  "ugliness": 0,
+  "valid": false,
+  "description": "你的一根卷须有点肿胀，微微颤动，呈天鹅绒般的色调。如果激活，这个卷须会变硬，伸展，并在几圈内变成一个特殊的鞭子状武器。",
+  "prereqs": [
+    "SECRO_TENDRIL_TENT"
+  ],
+  "threshreq": [
+    "THRESH_SECRONOM_EX"
+  ],
+  "cancels": [
+    "SECRO_TENDRIL_THICK_THRESHOLD",
+    "SECRO_BLADE_SERRATED_THRESHOLD",
+    "SECRO_BLADE_SHARP_THRESHOLD"
+  ],
+  "spells_learned": [
+    [
+      "SECRO_TENDRIL_TENT_THRESHOLD_item",
+      1
+    ]
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

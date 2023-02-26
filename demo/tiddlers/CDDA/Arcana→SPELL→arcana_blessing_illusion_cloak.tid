@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_illusion_cloak
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_illusion_cloak|http://cdda.aloxaf.cn/search?q=arcana_blessing_illusion_cloak]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_illusion_cloak",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Illusion Cloak"
+  },
+  "description": "Arcane Blessing\nUsing this spell will cloak one in illusions, hiding them from sight and protecting against certain optical effects.",
+  "message": "You channel a shimmering aura, that fades into swirling illusory shadows.",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "arcana_invis",
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "energy_source": "MANA",
+  "difficulty": 70,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 400,
+  "final_casting_time": 200,
+  "casting_time_increment": -10,
+  "base_energy_cost": 480,
+  "final_energy_cost": 240,
+  "energy_increment": -12,
+  "min_duration": 42000,
+  "max_duration": 210000,
+  "duration_increment": 8400
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_illusion_cloak",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：幻象斗篷"
+  },
+  "description": "奥术祝福\n使用该法术可以将幻象掩盖起来，使它们看不见并防止某些光学效果。",
+  "message": "你引导出一个闪烁的光环，它逐渐变成旋转的虚幻阴影。",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "arcana_invis",
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "energy_source": "MANA",
+  "difficulty": 70,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 400,
+  "final_casting_time": 200,
+  "casting_time_increment": -10,
+  "base_energy_cost": 480,
+  "final_energy_cost": 240,
+  "energy_increment": -12,
+  "min_duration": 42000,
+  "max_duration": 210000,
+  "duration_increment": 8400
+}
+```
+

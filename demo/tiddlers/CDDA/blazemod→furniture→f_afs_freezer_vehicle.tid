@@ -1,0 +1,215 @@
+creator: 林一二
+revision: 0
+tags: furniture blazemod
+title: blazemod→furniture→f_afs_freezer_vehicle
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_afs_freezer_vehicle|http://cdda.aloxaf.cn/search?q=f_afs_freezer_vehicle]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/blaze_furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_afs_freezer_vehicle",
+  "name": "vehicle freezer",
+  "symbol": "{",
+  "description": "This fridge has been further refurbished, and runs at a much lower temperature.  You'll need to take it down first.",
+  "color": "light_blue",
+  "move_cost_mod": -1,
+  "required_str": 10,
+  "flags": [
+    "CONTAINER",
+    "PLACE_ITEM",
+    "BLOCKSDOOR",
+    "MINEABLE",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "afs_freezer",
+        "count": 1
+      }
+    ]
+  },
+  "max_volume": "1000 L",
+  "deployed_item": "afs_freezer",
+  "examine_action": "deployed_furniture",
+  "bash": {
+    "str_min": 18,
+    "str_max": 50,
+    "sound": "metal screeching!",
+    "sound_fail": "clang!",
+    "items": [
+      {
+        "item": "sheet_metal",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "sheet_metal_small",
+        "count": [
+          8,
+          12
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          0,
+          3
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          2,
+          8
+        ]
+      },
+      {
+        "item": "cable",
+        "charges": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "hose",
+        "count": 1
+      },
+      {
+        "item": "cu_pipe",
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "scrap_copper",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "motor_tiny",
+        "prob": 25
+      }
+    ]
+  },
+  "looks_like": "f_fridge"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_afs_freezer_vehicle",
+  "name": "车载冰柜",
+  "symbol": "{",
+  "description": "这台冰箱经过了进一步的整修，可在更低的温度下运行。你得先把它取下来。",
+  "color": "light_blue",
+  "move_cost_mod": -1,
+  "required_str": 10,
+  "flags": [
+    "CONTAINER",
+    "PLACE_ITEM",
+    "BLOCKSDOOR",
+    "MINEABLE",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "afs_freezer",
+        "count": 1
+      }
+    ]
+  },
+  "max_volume": "1000 L",
+  "deployed_item": "afs_freezer",
+  "examine_action": "deployed_furniture",
+  "bash": {
+    "str_min": 18,
+    "str_max": 50,
+    "sound": "metal screeching!",
+    "sound_fail": "clang!",
+    "items": [
+      {
+        "item": "sheet_metal",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "sheet_metal_small",
+        "count": [
+          8,
+          12
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          0,
+          3
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          2,
+          8
+        ]
+      },
+      {
+        "item": "cable",
+        "charges": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "hose",
+        "count": 1
+      },
+      {
+        "item": "cu_pipe",
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "scrap_copper",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "motor_tiny",
+        "prob": 25
+      }
+    ]
+  },
+  "looks_like": "f_fridge"
+}
+```
+

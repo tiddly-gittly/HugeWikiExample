@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: enchantment secronom_lore_expansion
+title: secronom_lore_expansion→enchantment→ench_bio_secro_fv_morph_bonespikes
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ench_bio_secro_fv_morph_bonespikes|http://cdda.aloxaf.cn/search?q=ench_bio_secro_fv_morph_bonespikes]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_ench.json
+
+
+!! 原文
+
+```json
+{
+  "type": "enchantment",
+  "id": "ench_bio_secro_fv_morph_bonespikes",
+  "condition": "ACTIVE",
+  "values": [
+    {
+      "value": "SPEED",
+      "multiply": -0.25
+    },
+    {
+      "value": "ARMOR_BASH",
+      "add": -5
+    }
+  ],
+  "hit_me_effect": [
+    {
+      "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_lowstab",
+      "hit_self": false,
+      "once_in": 5,
+      "message": "Your bone spike reacts to %2$s!",
+      "npc_message": "%1$s's bone spike pricked %2$s!"
+    },
+    {
+      "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_highstab",
+      "hit_self": false,
+      "once_in": 50,
+      "message": "Your bone spike retaliates at %2$s!",
+      "npc_message": "%1$s's bone spike retaliates at %2$s!"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "enchantment",
+  "id": "ench_bio_secro_fv_morph_bonespikes",
+  "condition": "ACTIVE",
+  "values": [
+    {
+      "value": "SPEED",
+      "multiply": -0.25
+    },
+    {
+      "value": "ARMOR_BASH",
+      "add": -5
+    }
+  ],
+  "hit_me_effect": [
+    {
+      "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_lowstab",
+      "hit_self": false,
+      "once_in": 5,
+      "message": "Your bone spike reacts to %2$s!",
+      "npc_message": "%1$s's bone spike pricked %2$s!"
+    },
+    {
+      "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_highstab",
+      "hit_self": false,
+      "once_in": 50,
+      "message": "Your bone spike retaliates at %2$s!",
+      "npc_message": "%1$s's bone spike retaliates at %2$s!"
+    }
+  ]
+}
+```
+

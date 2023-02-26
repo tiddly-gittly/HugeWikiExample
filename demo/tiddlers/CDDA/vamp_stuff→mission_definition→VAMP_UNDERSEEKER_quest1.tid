@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_UNDERSEEKER_quest1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_UNDERSEEKER_quest1|http://cdda.aloxaf.cn/search?q=VAMP_UNDERSEEKER_quest1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_UNDERSEEKER_quest1",
+  "type": "mission_definition",
+  "name": {
+    "str": "Go to a forgotten burial site"
+  },
+  "description": " Travel to a <color_light_blue>burial site</color> then talk to the seeker.",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 1,
+  "value": 200000,
+  "destination": "gravesite1",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "start": {
+    "effect": [
+      "follow"
+    ],
+    "assign_mission_target": {
+      "om_terrain": "gravesite1",
+      "om_special": "Gravesite - Wild",
+      "reveal_radius": 1,
+      "search_range": 90,
+      "min_distance": 10,
+      "must_see": false,
+      "z": 0
+    },
+    "update_mapgen": {
+      "place_monsters": [
+        {
+          "monster": "GROUP_CRYPTIES",
+          "x": [
+            0,
+            23
+          ],
+          "y": [
+            0,
+            23
+          ],
+          "density": 0.25
+        }
+      ]
+    }
+  },
+  "followup": "VAMP_UNDERSEEKER_quest2",
+  "dialogue": {
+    "describe": "Before we go, the trader asked me a request on this journey.",
+    "offer": "The trader told me to observe the old graveyards we knew from the past. So before we go to the outskirts, we'll get pass through it first.",
+    "accepted": "Off we go, mortal.",
+    "rejected": "Well, that's your choice...",
+    "advice": "Its been a long time since I see those graves...",
+    "inquire": "What now?",
+    "success": "The magic took over the buried corpses? That's unfortunate and the trader would be disappointed about this...",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "*glaressharply*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_UNDERSEEKER_quest1",
+  "type": "mission_definition",
+  "name": {
+    "str": "前往被遗忘的墓地"
+  },
+  "description": "前往<color_light_blue>墓地</color>, 然后与探索者交谈。",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 1,
+  "value": 200000,
+  "destination": "gravesite1",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "start": {
+    "effect": [
+      "follow"
+    ],
+    "assign_mission_target": {
+      "om_terrain": "gravesite1",
+      "om_special": "Gravesite - Wild",
+      "reveal_radius": 1,
+      "search_range": 90,
+      "min_distance": 10,
+      "must_see": false,
+      "z": 0
+    },
+    "update_mapgen": {
+      "place_monsters": [
+        {
+          "monster": "GROUP_CRYPTIES",
+          "x": [
+            0,
+            23
+          ],
+          "y": [
+            0,
+            23
+          ],
+          "density": 0.25
+        }
+      ]
+    }
+  },
+  "followup": "VAMP_UNDERSEEKER_quest2",
+  "dialogue": {
+    "describe": "在我们走之前，交易者问了我一个关于这次旅行的请求。",
+    "offer": "商人让我观察我们过去知道的旧墓地。所以在我们去郊区之前，我们会先通过它。",
+    "accepted": "我们走吧，凡人。",
+    "rejected": "那是你的选择...",
+    "advice": "我很久没看到那些坟墓了...",
+    "inquire": "现在怎么办？",
+    "success": "魔法接管了掩埋的尸体？这很不幸，交易者会对此感到失望...",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "*刺刺地盯着你*"
+  }
+}
+```
+

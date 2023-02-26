@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→SPELL→c_infusion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_infusion|http://cdda.aloxaf.cn/search?q=c_infusion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_infusion",
+  "type": "SPELL",
+  "name": {
+    "str": "Hemocatalyzed Infusion"
+  },
+  "description": "Creates a bio-ampoule filled with mutagen, adds additional side effects.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "",
+  "flags": [
+    "SILENT",
+    "PERMANENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "mutagenic_ampoule",
+  "//": "Reuses the pain effect Biostim calls for.",
+  "extra_effects": [
+    {
+      "id": "c_biostim_pain",
+      "hit_self": true
+    },
+    {
+      "id": "c_hemo_damage",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_infusion",
+  "type": "SPELL",
+  "name": {
+    "str": "血液诱变剂"
+  },
+  "description": "生成一个装满了诱变剂的生物安瓿，但是有额外的副作用。",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "",
+  "flags": [
+    "SILENT",
+    "PERMANENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "mutagenic_ampoule",
+  "//": "Reuses the pain effect Biostim calls for.",
+  "extra_effects": [
+    {
+      "id": "c_biostim_pain",
+      "hit_self": true
+    },
+    {
+      "id": "c_hemo_damage",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+

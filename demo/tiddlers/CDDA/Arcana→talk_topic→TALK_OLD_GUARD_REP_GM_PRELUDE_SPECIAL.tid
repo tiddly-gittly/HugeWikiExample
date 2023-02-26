@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_OLD_GUARD_REP_GM_PRELUDE_SPECIAL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_OLD_GUARD_REP_GM_PRELUDE_SPECIAL|http://cdda.aloxaf.cn/search?q=TALK_OLD_GUARD_REP_GM_PRELUDE_SPECIAL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_OLD_GUARD_REP.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_OLD_GUARD_REP_GM_PRELUDE_SPECIAL",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_var": "old_guard_presence",
+    "type": "knowledge",
+    "context": "rural_church",
+    "value": "yes",
+    "yes": "We've received a lot of chatter indeed, Marshal.  I'm aware of a more localized series of bandit raids with unusual patterns, and evidence that you spearheaded an assault on their hideout, on behalf of the group you've vouched for previously.  And now this, dispersed over a wider area and inconsistent with any human or undead attackers.  I will relay all the information we've gathered to your allies, and trust you to care care of this.  Make haste, Marshal.",
+    "no": "We've received a lot of chatter about recent attacks, Marshal.  I'm aware of a more localized series of bandit raids with unusual patterns, and evidence that you spearheaded an assault on their hideout, on behalf of another group of survivors.  And now this, dispersed over a wider area and inconsistent with any human or undead attackers.  I will relay all the information we've gathered to the people you're working with, and trust you to care care of this.  Make haste, Marshal."
+  },
+  "responses": [
+    {
+      "text": "Okay.  I guess I'll report back to them, then.",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_5",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_OLD_GUARD_REP_GM_PRELUDE_SPECIAL",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_var": "old_guard_presence",
+    "type": "knowledge",
+    "context": "rural_church",
+    "value": "yes",
+    "yes": "我们确实收到了很多议论，元帅。我知道有一系列土匪袭击的地方性很强，而且有证据表明你代表你之前担保过的组织，带头袭击了他们的藏身处。而现在这个，分散在更广阔的区域，与任何人类或不死的攻击者不一致。我会把我们收集到的所有信息转达给你们的盟友，相信你们会处理好的。快点，元帅。",
+    "no": "我们收到了很多关于最近袭击的传言，警长。我知道有一系列土匪袭击的地方性很强，而且有证据表明你代表另一批幸存者带头袭击了他们的藏身处。而现在这个，分散在更广阔的区域，与任何人类或不死的攻击者不一致。我会把我们收集到的所有信息转达给你的同事，相信你会处理好的。快点，元帅。"
+  },
+  "responses": [
+    {
+      "text": "可以。我想我会向他们汇报的。",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_5",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

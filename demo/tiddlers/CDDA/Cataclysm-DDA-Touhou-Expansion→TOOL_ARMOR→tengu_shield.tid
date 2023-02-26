@@ -1,0 +1,195 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→TOOL_ARMOR→tengu_shield
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tengu_shield|http://cdda.aloxaf.cn/search?q=tengu_shield]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/thex_tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tengu_shield",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Tengu shield",
+    "str_pl": "Tengu shields"
+  },
+  "description": "A rhomboid iron shield, painted white with a red maple leaf design in the middle, with the rim reinforced with some kind of steel.  It's used by members of the Tengu patrol.",
+  "weight": "3500 g",
+  "volume": "3500 ml",
+  "longest_side": "70 cm",
+  "price": 24000,
+  "price_postapoc": 4800,
+  "to_hit": {
+    "balance": "good",
+    "grip": "weapon",
+    "length": "short",
+    "surface": "any"
+  },
+  "bashing": 16,
+  "material": [
+    "iron",
+    "steel"
+  ],
+  "//": "Add tengu_steel or something",
+  "material_thickness": 6,
+  "symbol": "[",
+  "color": "white",
+  "techniques": [
+    "BRUTAL",
+    "SHIELDBASH",
+    "WBLOCK_3"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "arm_l",
+        "hand_l"
+      ],
+      "coverage": 100,
+      "encumbrance": [
+        8,
+        12
+      ]
+    },
+    {
+      "covers": [
+        "arm_r",
+        "hand_r",
+        "leg_l",
+        "torso"
+      ],
+      "coverage": 50,
+      "encumbrance": [
+        0,
+        0
+      ]
+    },
+    {
+      "covers": [
+        "foot_l",
+        "foot_r",
+        "head",
+        "leg_r"
+      ],
+      "coverage": 25,
+      "encumbrance": [
+        0,
+        0
+      ]
+    }
+  ],
+  "//3": "I have no idea if this is enough to emulate a shield's coverage",
+  "weapon_category": [
+    "SHIELDS"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "OUTER",
+    "OVERSIZE"
+  ],
+  "//2": "Don't know if this should be TOOL_ARMOR, ARMOR or WEAPON. Ideally one should shield bash with it while using it, independently of any actual weapons on the 'main hand', because good shields are used to shield bash faces"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tengu_shield",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Tengu shield",
+    "str_pl": "Tengu shields"
+  },
+  "description": "A rhomboid iron shield, painted white with a red maple leaf design in the middle, with the rim reinforced with some kind of steel.  It's used by members of the Tengu patrol.",
+  "weight": "3500 g",
+  "volume": "3500 ml",
+  "longest_side": "70 cm",
+  "price": 24000,
+  "price_postapoc": 4800,
+  "to_hit": {
+    "balance": "good",
+    "grip": "weapon",
+    "length": "short",
+    "surface": "any"
+  },
+  "bashing": 16,
+  "material": [
+    "iron",
+    "steel"
+  ],
+  "//": "Add tengu_steel or something",
+  "material_thickness": 6,
+  "symbol": "[",
+  "color": "white",
+  "techniques": [
+    "BRUTAL",
+    "SHIELDBASH",
+    "WBLOCK_3"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "arm_l",
+        "hand_l"
+      ],
+      "coverage": 100,
+      "encumbrance": [
+        8,
+        12
+      ]
+    },
+    {
+      "covers": [
+        "arm_r",
+        "hand_r",
+        "leg_l",
+        "torso"
+      ],
+      "coverage": 50,
+      "encumbrance": [
+        0,
+        0
+      ]
+    },
+    {
+      "covers": [
+        "foot_l",
+        "foot_r",
+        "head",
+        "leg_r"
+      ],
+      "coverage": 25,
+      "encumbrance": [
+        0,
+        0
+      ]
+    }
+  ],
+  "//3": "I have no idea if this is enough to emulate a shield's coverage",
+  "weapon_category": [
+    "SHIELDS"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "OUTER",
+    "OVERSIZE"
+  ],
+  "//2": "Don't know if this should be TOOL_ARMOR, ARMOR or WEAPON. Ideally one should shield bash with it while using it, independently of any actual weapons on the 'main hand', because good shields are used to shield bash faces"
+}
+```
+

@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_kreck_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_kreck_summoned|http://cdda.aloxaf.cn/search?q=mon_kreck_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_kreck_summoned",
+  "copy-from": "mon_kreck",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned kreck"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "speed": 150,
+  "vision_day": 50,
+  "vision_night": 50,
+  "death_drops": {},
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 15
+    }
+  ],
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "CANPLAY",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_kreck_summoned",
+  "copy-from": "mon_kreck",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤克里克"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "speed": 150,
+  "vision_day": 50,
+  "vision_night": 50,
+  "death_drops": {},
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 15
+    }
+  ],
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "CANPLAY",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES"
+    ]
+  }
+}
+```
+

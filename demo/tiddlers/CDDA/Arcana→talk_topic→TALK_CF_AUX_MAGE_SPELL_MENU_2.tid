@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_AUX_MAGE_SPELL_MENU_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_AUX_MAGE_SPELL_MENU_2|http://cdda.aloxaf.cn/search?q=TALK_CF_AUX_MAGE_SPELL_MENU_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_AUX_MAGE.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_AUX_MAGE_SPELL_MENU_2",
+  "dynamic_line": "Whatever area you target with it goes up in flames.  Its damage is best when you center it on whatever you want dead, just be careful since it can blow out windows or otherwise wreck the place.  Not to mention accidentally blowing up your ally or burning your house down wouldn't be a good idea.  I'll teach it to you for 3 Golden Scales.",
+  "responses": [
+    {
+      "text": "[GS4] You have a deal, then.",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 3
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 3
+        },
+        {
+          "u_add_trait": "SPELL_FIRE"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need more Scales for that.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "CF_golden_scale",
+            "count": 3
+          }
+        }
+      },
+      "topic": "TALK_CF_AUX_MAGE"
+    },
+    {
+      "text": "Not right now.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_AUX_MAGE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_AUX_MAGE_SPELL_MENU_2",
+  "dynamic_line": "Whatever area you target with it goes up in flames.  Its damage is best when you center it on whatever you want dead, just be careful since it can blow out windows or otherwise wreck the place.  Not to mention accidentally blowing up your ally or burning your house down wouldn't be a good idea.  I'll teach it to you for 3 Golden Scales.",
+  "responses": [
+    {
+      "text": "[GS4] You have a deal，then.",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 3
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 3
+        },
+        {
+          "u_add_trait": "SPELL_FIRE"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need more Scales for that.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "CF_golden_scale",
+            "count": 3
+          }
+        }
+      },
+      "topic": "TALK_CF_AUX_MAGE"
+    },
+    {
+      "text": "Not right now.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_AUX_MAGE"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_argan_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_argan_1|http://cdda.aloxaf.cn/search?q=mon_BL9_argan_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens_dominators.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_argan_1",
+  "looks_like": "mon_mi_go_scout",
+  "type": "MONSTER",
+  "name": {
+    "str": "Arganoide Grunt"
+  },
+  "description": "A tall graceful slender humanoid-alien being, emitting bright purple crystalline light, it's head seems to resemble a water shaped droplet with hair-like long tentacles growing out of it, it's facial features are barely distinguishable except for malice filled elongated eyes",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 325,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 9,
+      "armor_penetration": 14
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 11,
+  "armor_cut": 11,
+  "armor_bullet": 11,
+  "death_drops": "BL9_Drops_Aliens_Dominators",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 16,
+          "armor_penetration": 16
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's hair-like tentacles at you!",
+      "hit_dmg_npc": "The %1$s swings it's hair-like tentacles at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's hair-like tentacles at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swings it's hair-like tentacles at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's hair-like tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's hair-like tentacles at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_argan_1",
+  "looks_like": "mon_mi_go_scout",
+  "type": "MONSTER",
+  "name": {
+    "str": "阿加诺德咕噜声"
+  },
+  "description": "它是一个高大、优雅、纤细的人形外星人，散发着明亮的紫色水晶光，它的头看起来像一个水样的水滴，上面长着像头发一样的长触须，除了充满恶意的细长眼睛外，几乎看不出它的面部特征",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 325,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 9,
+      "armor_penetration": 14
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 11,
+  "armor_cut": 11,
+  "armor_bullet": 11,
+  "death_drops": "BL9_Drops_Aliens_Dominators",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 16,
+          "armor_penetration": 16
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's hair-like tentacles at you!",
+      "hit_dmg_npc": "The %1$s swings it's hair-like tentacles at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's hair-like tentacles at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swings it's hair-like tentacles at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's hair-like tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's hair-like tentacles at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

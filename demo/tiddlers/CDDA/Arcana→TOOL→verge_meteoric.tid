@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→verge_meteoric
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：verge_meteoric|http://cdda.aloxaf.cn/search?q=verge_meteoric]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "verge_meteoric",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "meteoric verge"
+  },
+  "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.  It can also be used to place a rune that will blast an area with lightning if something steps on it.",
+  "weight": "1585 g",
+  "to_hit": 1,
+  "volume": "2500 ml",
+  "longest_side": "60 cm",
+  "//": "Meteoric verge and moonstone scourge require items that did not exist pre-cataclysm.",
+  "price_postapoc": "150 USD",
+  "bashing": 16,
+  "cutting": 4,
+  "material": [
+    "steel",
+    "gold"
+  ],
+  "symbol": "/",
+  "looks_like": "i_staff",
+  "color": "yellow",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 10
+      }
+    }
+  ],
+  "charges_per_use": 2,
+  "ammo": "essence_type",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_symbol_judgment_zap",
+            "once_in": 3,
+            "message": "Sparks leap from your weapon.",
+            "npc_message": "Sparks leap from %1$s's weapon."
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_lightning",
+      "moves": 90,
+      "practice": 0,
+      "done_message": "You focus a fragment of the verge's energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_meteoric_verge_bolt",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  ],
+  "flags": [
+    "STAB",
+    "NO_SALVAGE",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED",
+    "SHEATH_SPEAR"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "verge_meteoric",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "流星长棍"
+  },
+  "description": "一根短木棍，完全覆盖着装饰图案，作为判断的象征。这个符号超凡脱俗的存在在扭曲的、火焰般的尖头上仍然很明显，这些尖头现在缠绕在一个黑色、彩虹色金属的魅力周围。使用它可以让你用闪电击打敌人，保护你免受电伤害。它也可以用来放置一个符文，如果有什么东西踩到它，它会用闪电炸开一个区域。",
+  "weight": "1585 g",
+  "to_hit": 1,
+  "volume": "2500 ml",
+  "longest_side": "60 cm",
+  "//": "Meteoric verge and moonstone scourge require items that did not exist pre-cataclysm.",
+  "price_postapoc": "150 USD",
+  "bashing": 16,
+  "cutting": 4,
+  "material": [
+    "steel",
+    "gold"
+  ],
+  "symbol": "/",
+  "looks_like": "i_staff",
+  "color": "yellow",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 10
+      }
+    }
+  ],
+  "charges_per_use": 2,
+  "ammo": "essence_type",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_symbol_judgment_zap",
+            "once_in": 3,
+            "message": "火花从你的武器上跳了出来。",
+            "npc_message": "火花从%1$s的武器上跳了出来。"
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_lightning",
+      "moves": 90,
+      "practice": 0,
+      "done_message": "You focus a fragment of the verge's energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_meteoric_verge_bolt",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  ],
+  "flags": [
+    "STAB",
+    "NO_SALVAGE",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED",
+    "SHEATH_SPEAR"
+  ]
+}
+```
+

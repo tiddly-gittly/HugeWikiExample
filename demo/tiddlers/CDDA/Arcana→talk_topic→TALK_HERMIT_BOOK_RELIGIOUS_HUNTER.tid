@@ -1,0 +1,67 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_BOOK_RELIGIOUS_HUNTER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_BOOK_RELIGIOUS_HUNTER|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_BOOK_RELIGIOUS_HUNTER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS_HUNTER",
+  "dynamic_line": "Hmmph.  Still exterminating that which you do not understand.  I know of your kind, Hunter.  Though I have long-abandoned my study of the arcane, I still remember all the damage your order did.",
+  "responses": [
+    {
+      "text": "And this is not the time for more bloodshed.  You aren't some common arcanist, that much is clear.",
+      "topic": "TALK_HERMIT_BOOK_HUNTER_PEACE"
+    },
+    {
+      "text": "We were founded in defense against the Sanguine Order.  What damage we have caused, a bunch of murderous, cannibalistic madmen have done infinitely worse.",
+      "topic": "TALK_HERMIT_BOOK_HUNTER_EXCUSES"
+    },
+    {
+      "text": "[ATTACK] I understand perfectly well.  I can see through your deceptions, and see that your \"long-abandoned\" studies are still ongoing.  I won't allow you any further chance to deceive me.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS_HUNTER",
+  "dynamic_line": "嗯每小时。还在消灭你不明白的东西。我认识你这种人，亨特。虽然我早就放弃了对奥术的研究，但我仍然记得你的命令所造成的破坏。",
+  "responses": [
+    {
+      "text": "现在不是更多流血的时候。你不是普通的神秘主义者，这点很清楚。",
+      "topic": "TALK_HERMIT_BOOK_HUNTER_PEACE"
+    },
+    {
+      "text": "我们成立是为了抵抗猩红教派。我们造成了多大的伤害，一群凶残的食人狂做得更糟。",
+      "topic": "TALK_HERMIT_BOOK_HUNTER_EXCUSES"
+    },
+    {
+      "text": "[攻击]我完全理解。我能看穿你的骗局，看到你“长期被遗弃”的研究仍在进行中。我不会再让你有机会欺骗我了。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

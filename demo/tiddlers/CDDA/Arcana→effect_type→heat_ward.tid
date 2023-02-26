@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→heat_ward
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：heat_ward|http://cdda.aloxaf.cn/search?q=heat_ward]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "heat_ward",
+  "name": [
+    "Ward Against Heat"
+  ],
+  "desc": [
+    "Protection against most effects of heat."
+  ],
+  "remove_message": "You feel a strange tingling sensation, as the ward against heat fades.",
+  "removes_effects": [
+    "onfire",
+    "smoke",
+    "hot",
+    "blisters",
+    "hot_speed"
+  ],
+  "decay_messages": [
+    [
+      "The ward against heat is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "heat_ward",
+  "name": [
+    "避热结界"
+  ],
+  "desc": [
+    "防止大多数热影响。"
+  ],
+  "remove_message": "你会感到一种奇怪的刺痛感，因为避热结界的效力正在消退。",
+  "removes_effects": [
+    "onfire",
+    "smoke",
+    "hot",
+    "blisters",
+    "hot_speed"
+  ],
+  "decay_messages": [
+    [
+      "避热结界的效力正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+

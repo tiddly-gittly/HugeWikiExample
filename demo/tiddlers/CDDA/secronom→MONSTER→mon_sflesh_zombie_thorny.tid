@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_thorny
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_thorny|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_thorny]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_thorny",
+  "type": "MONSTER",
+  "name": {
+    "str": "thorny shambler"
+  },
+  "description": "A shambling undead humanoid, body overgrown with a tangled mass of otherworldly vegetation.  Hunched over and dragging its feet as it moves, the bramble utterly enveloping its upper half twitches and moves with a life of its own, tendrils tipped with a paralytic sting.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "PLANT",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 50,
+  "material": [
+    "veggy"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 5,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "vision_night": 5,
+  "harvest": "zombie_thorny",
+  "attack_effs": [
+    {
+      "id": "paralyzepoison",
+      "duration": 33
+    }
+  ],
+  "special_attacks": [
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ],
+    [
+      "PARA_STING",
+      30
+    ]
+  ],
+  "death_drops": "mon_zombie_thorny_death_drops",
+  "burn_into": "mon_zombie_thorny",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY",
+    "PARALYZEVENOM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_thorny",
+  "type": "MONSTER",
+  "name": {
+    "str": "荆棘蹒跚者"
+  },
+  "description": "一个蹒跚的人形不死生物，身上长满了纠缠成团的异界植物，只能驼着背拖着脚行动。随着它的行动，完全包裹了它上半身的荆棘似乎活着一般，不断抽搐蠕动，卷弄着致人麻痹的尖刺。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "PLANT",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 50,
+  "material": [
+    "veggy"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 5,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "vision_night": 5,
+  "harvest": "zombie_thorny",
+  "attack_effs": [
+    {
+      "id": "paralyzepoison",
+      "duration": 33
+    }
+  ],
+  "special_attacks": [
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ],
+    [
+      "PARA_STING",
+      30
+    ]
+  ],
+  "death_drops": "mon_zombie_thorny_death_drops",
+  "burn_into": "mon_zombie_thorny",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY",
+    "PARALYZEVENOM"
+  ]
+}
+```
+

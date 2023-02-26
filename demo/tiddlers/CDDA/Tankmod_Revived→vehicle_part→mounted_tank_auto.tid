@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part Tankmod_Revived
+title: Tankmod_Revived→vehicle_part→mounted_tank_auto
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mounted_tank_auto|http://cdda.aloxaf.cn/search?q=mounted_tank_auto]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/parts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "mounted_tank_auto",
+  "looks_like": "mounted_tank_manual",
+  "copy-from": "turret_tank",
+  "name": "120mm autoloading tank gun",
+  "item": "tank_gun_auto",
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        400,
+        800
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        2000,
+        4000
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ],
+        [
+          "launcher",
+          3
+        ],
+        [
+          "electronics",
+          3
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ],
+        [
+          "welding_standard",
+          10
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "mounted_tank_auto",
+  "looks_like": "mounted_tank_manual",
+  "copy-from": "turret_tank",
+  "name": "120mm 自动装填坦克炮",
+  "item": "tank_gun_auto",
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        400,
+        800
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        2000,
+        4000
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ],
+        [
+          "launcher",
+          3
+        ],
+        [
+          "electronics",
+          3
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ],
+        [
+          "welding_standard",
+          10
+        ]
+      ]
+    }
+  }
+}
+```
+

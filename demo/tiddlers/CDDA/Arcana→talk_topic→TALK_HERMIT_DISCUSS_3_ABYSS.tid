@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_ABYSS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_ABYSS|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_ABYSS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_ABYSS",
+  "dynamic_line": "That is what Oaths to The Chalice warns of, why He answered our plea all those years ago.  Not just for our sake, but that of other worlds affected by the wounds in The Veil.",
+  "responses": [
+    {
+      "text": "So you believe that He From Beyond The Veil wants the portals closed?",
+      "topic": "TALK_HERMIT_DISCUSS_3_MOTIVE"
+    },
+    {
+      "text": "Why should we care about whatever form of Hell these monsters come from?",
+      "topic": "TALK_HERMIT_DISCUSS_3_CARE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2",
+          "PROF_SANGUINE"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "I see.  That is all for now.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "I see.  I am ready.",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_ABYSS",
+  "dynamic_line": "这就是圣杯誓言所警告的，为什么这么多年前他回答了我们的请求。不仅仅是为了我们，也是为了其他世界的利益，那些被蒙上帷幕的伤口所影响的世界。",
+  "responses": [
+    {
+      "text": "所以你认为帷幕彼端古神想要关闭传送门？",
+      "topic": "TALK_HERMIT_DISCUSS_3_MOTIVE"
+    },
+    {
+      "text": "为什么我们要关心这些怪物来自什么地狱？",
+      "topic": "TALK_HERMIT_DISCUSS_3_CARE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2",
+          "PROF_SANGUINE"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "我懂了。现在到此为止。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "我懂了。我准备好了。",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

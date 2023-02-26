@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_shifter_spawn_illu_push
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_shifter_spawn_illu_push|http://cdda.aloxaf.cn/search?q=mon_shifter_spawn_illu_push]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_large.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_shifter_spawn_illu_push",
+  "type": "SPELL",
+  "name": {
+    "str": "Spread"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sends it out farther.'",
+  "effect": "area_push",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "ground"
+  ],
+  "targeted_monster_ids": [
+    "mon_shifter_illu"
+  ],
+  "min_aoe": 2,
+  "max_aoe": 2
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_shifter_spawn_illu_push",
+  "type": "SPELL",
+  "name": {
+    "str": "散布"
+  },
+  "description": "怪物施法的。如果你看到这个，那就读这个：\n‘施法者把它发射得更远。’",
+  "effect": "area_push",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "ground"
+  ],
+  "targeted_monster_ids": [
+    "mon_shifter_illu"
+  ],
+  "min_aoe": 2,
+  "max_aoe": 2
+}
+```
+

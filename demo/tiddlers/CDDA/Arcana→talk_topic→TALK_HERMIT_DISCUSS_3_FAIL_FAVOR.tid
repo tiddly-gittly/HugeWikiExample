@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_FAIL_FAVOR
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_FAIL_FAVOR|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_FAIL_FAVOR]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_FAIL_FAVOR",
+  "dynamic_line": {
+    "npc_has_item": "veilblade",
+    "yes": "Seek another, foster the survival of humanity wherever you see a chance to help others.  In time, another will come to take up the sword.  Fate has led one to me, I will await another chance to correct our mistakes until my final breath.  Gives me something to keep these old bones from giving out another moment longer, I suppose…",
+    "no": "You have still proven yourself trustworthy to come this far, and even to seek my advice even after being led astray.  The sword can still serve its purpose, and I suspect He will still reward you for it.  Every channeling will be a sin offering, penance for faltering.  You will still be fit to gain some benefit from it, but there are other options as well."
+  },
+  "responses": [
+    {
+      "text": "Other options?",
+      "condition": {
+        "not": {
+          "npc_has_item": "veilblade"
+        }
+      },
+      "topic": "TALK_HERMIT_DISCUSS_3_FAIL_OPTIONS"
+    },
+    {
+      "text": "I see.  I'll do what I can, then.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_FAIL_FAVOR",
+  "dynamic_line": {
+    "npc_has_item": "veilblade",
+    "yes": "寻找另一个，在你看到帮助他人的机会的地方培养人类的生存。到时候，另一个会来拿剑的。命运给了我一个机会，我将等待另一个改正错误的机会，直到我最后一口气。给了我一些东西来防止这些老骨头再长一分钟，我想…",
+    "no": "你虽然走了这一步，仍然证明自己是值得信赖的，甚至在被引入歧途之后，仍然寻求我的建议。这把剑还能起作用，我想他还是会奖励你的。每一次通灵都是赎罪祭，是悔改。你仍然可以从中获得一些好处，但也有其他选择。"
+  },
+  "responses": [
+    {
+      "text": "其他选择？",
+      "condition": {
+        "not": {
+          "npc_has_item": "veilblade"
+        }
+      },
+      "topic": "TALK_HERMIT_DISCUSS_3_FAIL_OPTIONS"
+    },
+    {
+      "text": "我懂了。我会尽我所能。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CHOSEN
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CHOSEN|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CHOSEN]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CHOSEN",
+  "type": "talk_topic",
+  "dynamic_line": "Perhaps you're right.  I don't know if we can all truly work together, but we'll see.  I'll send someone to check things out.  In the meantime, I'll have them open the safe that has a copy of our research, it's in the back room there.",
+  "speaker_effect": {
+    "effect": [
+      {
+        "npc_add_var": "elena_convinced",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes"
+      },
+      {
+        "mapgen_update": "arcana_shrikes_unlock_safe",
+        "om_terrain": "sanguine_holdout_2",
+        "om_special": "sanguine_holdout_shrikes"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "Thank you.  One more thing before I go…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "Thank you, and goodbye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CHOSEN",
+  "type": "talk_topic",
+  "dynamic_line": "也许你是对的。我不知道我们是否能真正合作，但我们拭目以待。我会派人去检查的。同时，我让他们打开保险箱，保险箱里有一份我们的研究报告，就在后面的房间里。",
+  "speaker_effect": {
+    "effect": [
+      {
+        "npc_add_var": "elena_convinced",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes"
+      },
+      {
+        "mapgen_update": "arcana_shrikes_unlock_safe",
+        "om_terrain": "sanguine_holdout_2",
+        "om_special": "sanguine_holdout_shrikes"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "非常感谢。在我走之前还有一件事…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "谢谢，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

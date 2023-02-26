@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_BACKDOOR_COMPLETE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_BACKDOOR_COMPLETE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_BACKDOOR_COMPLETE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_COMPLETE",
+  "dynamic_line": {
+    "u_has_effect": "hermit_earned_trust_2",
+    "yes": {
+      "npc_has_effect": "hermit_stage_failure",
+      "yes": "So you have succeeded while I, and others, have failed.  I continued to hold on to hope, and now at last I see it bear fruit.  No doubt you will have questions, speak with me when you're ready and I will answer them as best as I am able.",
+      "no": "I'm impressed, young one.  He From Beyond The Veil has sought to bring us hope in these dark times.  To see such a thing, after all that has come to pass, is a relief to my old heart.  Come, we will have much to discuss."
+    },
+    "no": {
+      "npc_has_effect": "hermit_stage_failure",
+      "yes": "So that is why you are here.  Another sought to finish His work, and I failed them.  But here you are, Chosen by He From Beyond The Veil, guided here to continue our work?  I am in your debt.  I will answer what questions you may have, best as I am able.",
+      "no": "What?  Such strange fate, that would guide you here.  I had feared that I was the last of my order, that there was no hope left for us.  Fate has seen me proven wrong, it seems.  Well then, if you have questions, speak to me when you're ready."
+    }
+  },
+  "responses": [
+    {
+      "text": "We shall see.",
+      "topic": "TALK_HERMIT",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        },
+        {
+          "npc_add_effect": "hermit_stage_4",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_COMPLETE",
+  "dynamic_line": {
+    "u_has_effect": "hermit_earned_trust_2",
+    "yes": {
+      "npc_has_effect": "hermit_stage_failure",
+      "yes": "所以你成功了，而我和其他人都失败了。我终于看到了它，希望它能结出果实。毫无疑问，你会有问题，当你准备好的时候和我谈谈，我会尽我所能回答他们。",
+      "no": "我印象深刻，年轻人。帷幕彼端古神寻求在这些黑暗的时代给我们带来希望。看到这样的事情，毕竟已经过去了，我的旧心松了一口气。来吧，我们有很多事情要讨论。"
+    },
+    "no": {
+      "npc_has_effect": "hermit_stage_failure",
+      "yes": "所以这就是你来这里的原因。另一个人想完成他的工作，但我没有成功。但你在这里，被帷幕彼端古神选中，引导我们继续工作吗？我欠你的债。我会尽我所能回答你的问题。",
+      "no": "什么？如此奇怪的命运，会指引你来到这里。我担心我是最后一个点菜的，我们没有希望了。看来命运已经证明我错了。好吧，如果你有问题，准备好了再跟我说。"
+    }
+  },
+  "responses": [
+    {
+      "text": "我们会看到的。",
+      "topic": "TALK_HERMIT",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        },
+        {
+          "npc_add_effect": "hermit_stage_4",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+

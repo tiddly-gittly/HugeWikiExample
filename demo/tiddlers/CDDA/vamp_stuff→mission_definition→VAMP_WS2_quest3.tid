@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_WS2_quest3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_WS2_quest3|http://cdda.aloxaf.cn/search?q=VAMP_WS2_quest3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_WS2_quest3",
+  "type": "mission_definition",
+  "name": {
+    "str": "Destroy the vampirus"
+  },
+  "description": "With the help of the <color_yellow>seeker</color>, locate and destroy the <color_light_blue>vampirus</color>, the place where <color_magenta>infected vampires</color> gather.\n<color_red>Going unprepared is a death trap!</color>",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_trait": "wsg2vampirusdone"
+  },
+  "difficulty": 10,
+  "value": 100000,
+  "start": {
+    "effect": {
+      "u_add_trait": "wsg2vampirushelp"
+    }
+  },
+  "end": {
+    "effect": {
+      "u_lose_trait": "wsg2vampirushelp"
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "It's easy, I think...",
+    "offer": "Unfortunately, that vampire is not alone.\n\nI have recently received a radio message that reveals the pinpoint location of the gathering place owned by those infected vampires. Your task is to find a way to stop and annihilate the entire army of them. I told the seeker about it and she'll help you infiltrate your objective.",
+    "accepted": "Good. Just remind her about it and she'll provide the essential information.",
+    "rejected": "Alright then, let's talk about it again later...",
+    "advice": "Be aware. If alone is dangerous, more so when they're dozen.",
+    "inquire": "Report?",
+    "success": "Unbelievable! You did it, mortal! Our master would be grateful of your doings!",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "*glares*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_WS2_quest3",
+  "type": "mission_definition",
+  "name": {
+    "str": "摧毁吸血鬼聚集地"
+  },
+  "description": "在<color_yellow>探索者</color>的帮助下，找到并摧毁<color_light_blue>吸血鬼聚集地<color_magenta>，这个被感染的吸血鬼聚集的地方。\n<color_red>毫无准备的前往将会是一个死亡陷阱！</color>",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_trait": "wsg2vampirusdone"
+  },
+  "difficulty": 10,
+  "value": 100000,
+  "start": {
+    "effect": {
+      "u_add_trait": "wsg2vampirushelp"
+    }
+  },
+  "end": {
+    "effect": {
+      "u_lose_trait": "wsg2vampirushelp"
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "我认为这很容易...",
+    "offer": "不幸的是，那个吸血鬼并不孤单。\n\n我最近收到一条无线电信息，显示了被感染的吸血鬼聚集的精确位置。你的任务是找到一种方法来阻止和消灭他们的整个军队。我告诉探索者了，她会帮你潜入你的目标。",
+    "accepted": "很好。只要提醒她这件事，她就会提供必要的信息。",
+    "rejected": "好吧，我们以后再谈...",
+    "advice": "请注意。如果独自一人是危险的，当他们被打的时候更是如此。",
+    "inquire": "举报？",
+    "success": "难以置信！你做到了，凡人！我们的主人会感激你的所作所为的！",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "*怒视*"
+  }
+}
+```
+

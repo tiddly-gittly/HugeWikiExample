@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_EVAC_MERCHANT_CF_MISSION
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_EVAC_MERCHANT_CF_MISSION|http://cdda.aloxaf.cn/search?q=TALK_EVAC_MERCHANT_CF_MISSION]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_EVAC_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_EVAC_MERCHANT_CF_MISSION",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_effect": "rural_church_aware",
+    "yes": "Interesting to see they hired you to help out.  Well then, hope they informed you of the details.  Payment's in advance, twenty of their scale coins.  Nowhere near as valuable these days, but it's not completely useless, and I trust what they bring to actually be twenty-four carat.",
+    "no": "Huh, usually Sofia's the one to deliver their invoice.  Alright, hopefully she told you how this works.  Payment's in advance, twenty of their scale coins.  Nowhere near as valuable these days, but it's not completely useless, and at least they can confirm it's not half brass or whatever."
+  },
+  "responses": [
+    {
+      "text": "Here you go!",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 20
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "cf_rep_trade_arrangement"
+        },
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "text": "The easier things are for them now, the more value you'll get out of them later on.  Think you could do 15 scales?",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 15
+        }
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 10
+      },
+      "success": {
+        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL_VALUE",
+        "effect": [
+          {
+            "u_consume_item": "cf_rep_trade_arrangement"
+          },
+          {
+            "u_consume_item": "CF_golden_scale",
+            "count": 15
+          }
+        ]
+      },
+      "failure": {
+        "opinion": {
+          "value": -1
+        },
+        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL"
+      }
+    },
+    {
+      "text": "What about other sources of gold and silver?",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_SCRAP"
+    },
+    {
+      "text": "What about cash?",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_CASH"
+    },
+    {
+      "text": "I don't have enough on hand on the moment.  I'll deal with this later.",
+      "topic": "TALK_EVAC_MERCHANT",
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "CF_golden_scale",
+            "count": 20
+          }
+        }
+      }
+    },
+    {
+      "text": "I'll deal with this later, bye for now.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_EVAC_MERCHANT_CF_MISSION",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_effect": "rural_church_aware",
+    "yes": "很高兴看到他们雇你帮忙。好吧，希望他们告诉你细节。提前付款，是他们的20个比例尺硬币。如今，它的价值远不及它的价值，但它并非完全没有用处，我相信它们带来的实际价值是24克拉。",
+    "no": "嗯，通常索菲亚是送发票的人。好吧，希望她告诉你这是怎么回事。提前付款，是他们的20个比例尺硬币。如今，它的价值远不及它的价值，但它并不是完全无用的，至少他们可以确认它不是半黄铜或其他东西。"
+  },
+  "responses": [
+    {
+      "text": "干得好！",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 20
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "cf_rep_trade_arrangement"
+        },
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "text": "现在对他们来说越容易，你以后从他们身上获得的价值就越大。你能做15个音阶吗？",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 15
+        }
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 10
+      },
+      "success": {
+        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL_VALUE",
+        "effect": [
+          {
+            "u_consume_item": "cf_rep_trade_arrangement"
+          },
+          {
+            "u_consume_item": "CF_golden_scale",
+            "count": 15
+          }
+        ]
+      },
+      "failure": {
+        "opinion": {
+          "value": -1
+        },
+        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL"
+      }
+    },
+    {
+      "text": "其他金银来源呢？",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_SCRAP"
+    },
+    {
+      "text": "现金呢？",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_CASH"
+    },
+    {
+      "text": "我手头上没有足够的钱。我稍后再处理。",
+      "topic": "TALK_EVAC_MERCHANT",
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "CF_golden_scale",
+            "count": 20
+          }
+        }
+      }
+    },
+    {
+      "text": "我稍后再处理，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

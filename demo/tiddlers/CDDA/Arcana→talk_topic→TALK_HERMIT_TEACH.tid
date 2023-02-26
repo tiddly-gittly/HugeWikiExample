@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_TEACH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_TEACH|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_TEACH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_TEACH",
+  "dynamic_line": "Perhaps that is correct.  What do you seek this knowledge for?",
+  "responses": [
+    {
+      "text": "To teach the next generation what is proper and safe.",
+      "topic": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_2",
+        "duration": "PERMANENT"
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "Knowledge is dangerous if in the wrong hands.",
+      "topic": "TALK_HERMIT_TEACH_REJECTION",
+      "opinion": {
+        "trust": -1
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "Knowledge is power, but it is wasted unless passed on.",
+      "topic": "TALK_HERMIT_TEACH_ACCEPT_SANGUINE",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_2",
+        "duration": "PERMANENT"
+      },
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "To hoard knowledge is foolish.  Your trivial learning is likely to die with you.",
+      "topic": "TALK_HERMIT_TEACH_REJECTION",
+      "opinion": {
+        "trust": -1
+      },
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "To gaze into the Beyond is to see the potential of a thousand worlds, and learn hidden truths…",
+      "topic": "TALK_HERMIT_TEACH_ACCEPT_OATH",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_2",
+        "duration": "PERMANENT"
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "text": "I am eager to learn, if you would have me as a student.",
+      "topic": "TALK_HERMIT_TEACH_ACCEPT",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_2",
+        "duration": "PERMANENT"
+      }
+    },
+    {
+      "text": "Well, you know.  Because?",
+      "topic": "TALK_HERMIT_TEACH_REJECTION",
+      "opinion": {
+        "trust": -1
+      }
+    },
+    {
+      "text": "Never mind.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_TEACH",
+  "dynamic_line": "也许这是对的。你寻求这些知识的目的是什么？",
+  "responses": [
+    {
+      "text": "教导下一代什么是正确和安全的。",
+      "topic": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_2",
+        "duration": "PERMANENT"
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "知识掌握在坏人手中是危险的。",
+      "topic": "TALK_HERMIT_TEACH_REJECTION",
+      "opinion": {
+        "trust": -1
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "知识就是力量，但如果不传下去就浪费了。",
+      "topic": "TALK_HERMIT_TEACH_ACCEPT_SANGUINE",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_2",
+        "duration": "PERMANENT"
+      },
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "囤积知识是愚蠢的。你的琐碎学问很可能会随着你而消亡。",
+      "topic": "TALK_HERMIT_TEACH_REJECTION",
+      "opinion": {
+        "trust": -1
+      },
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "凝视远方就是要看到一千个世界的潜力，学习隐藏的真理…",
+      "topic": "TALK_HERMIT_TEACH_ACCEPT_OATH",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_2",
+        "duration": "PERMANENT"
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "text": "我渴望学习，如果你愿意让我当学生。",
+      "topic": "TALK_HERMIT_TEACH_ACCEPT",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_2",
+        "duration": "PERMANENT"
+      }
+    },
+    {
+      "text": "嗯，你知道的。因为？",
+      "topic": "TALK_HERMIT_TEACH_REJECTION",
+      "opinion": {
+        "trust": -1
+      }
+    },
+    {
+      "text": "算了。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

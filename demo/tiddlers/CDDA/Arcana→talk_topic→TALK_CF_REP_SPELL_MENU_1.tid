@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_SPELL_MENU_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_SPELL_MENU_1|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_SPELL_MENU_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_SPELL_MENU_1",
+  "dynamic_line": "It's a spell some of our hunters learn to protect against overheating and smoke inhalation.  It's not enough to negate being immersed in flame, but you won't catch alight from it.  I'll need 4 Golden Scales to cover the cost of materials and for warding the ritual preparations.",
+  "responses": [
+    {
+      "text": "[GS4] You have a deal, then.",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 4
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 4
+        },
+        {
+          "u_add_trait": "SPELL_FLAMEARMOR"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need more Scales for that.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "CF_golden_scale",
+            "count": 4
+          }
+        }
+      },
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "Not right now.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_SPELL_MENU_1",
+  "dynamic_line": "It's a spell some of our hunters learn to protect against overheating and smoke inhalation.  It's not enough to negate being immersed in flame, but you won't catch alight from it.  I'll need 4 Golden Scales to cover the cost of materials and for warding the ritual preparations.",
+  "responses": [
+    {
+      "text": "[GS4] You have a deal，then.",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 4
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 4
+        },
+        {
+          "u_add_trait": "SPELL_FLAMEARMOR"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need more Scales for that.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "CF_golden_scale",
+            "count": 4
+          }
+        }
+      },
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "Not right now.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

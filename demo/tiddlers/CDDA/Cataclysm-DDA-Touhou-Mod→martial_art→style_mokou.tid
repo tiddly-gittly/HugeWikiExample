@@ -1,0 +1,651 @@
+creator: 林一二
+revision: 0
+tags: martial_art Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→martial_art→style_mokou
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：style_mokou|http://cdda.aloxaf.cn/search?q=style_mokou]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_martialarts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "style_mokou",
+  "type": "martial_art",
+  "name": {
+    "str": "Hourai fighting"
+  },
+  "description": "Mokou's fighting style, learned over centuries of fighting, killing and being killed by her rival.  It's brutal, dirty, effective, disregarding basic self-preservation in order to maximize the amount of damage done: the more you fight the more damage you do, but the more open to damage you become.",
+  "initiate": [
+    "You prepare yourself to fight once more.",
+    "%s prepares to fight once more."
+  ],
+  "learn_difficulty": 1,
+  "primary_skill": "melee",
+  "arm_block": 1,
+  "leg_block": 3,
+  "force_unarmed": true,
+  "static_buffs": [
+    {
+      "id": "buff_mokou_static",
+      "name": "Fighting experience",
+      "description": "You know where to attack, how to attack, to make it hurt.",
+      "unarmed_allowed": true,
+      "flat_bonuses": [
+        {
+          "stat": "arpen",
+          "type": "bash",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "stab",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "heat",
+          "scale": 8
+        },
+        {
+          "stat": "hit",
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "onhit_buffs": [
+    {
+      "id": "buff_mokou_onhit",
+      "name": "Hourai's high",
+      "description": "You could fight for days without end…",
+      "unarmed_allowed": true,
+      "buff_duration": 4,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "speed",
+          "scale": 12.5
+        },
+        {
+          "stat": "hit",
+          "scale": 0.5
+        },
+        {
+          "stat": "dodge",
+          "scale": -0.25
+        }
+      ]
+    },
+    {
+      "id": "buff_mokou_onhit2",
+      "name": "Hourai's high (debuff)",
+      "description": "…The only thing holding you back is pain.",
+      "unarmed_allowed": true,
+      "buff_duration": 4,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": -0.25
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": -0.25
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": -0.25
+        }
+      ]
+    },
+    {
+      "id": "buff_mokou_onhit3",
+      "name": "Hourai's cadence",
+      "description": "Sharing is caring, though.",
+      "unarmed_allowed": true,
+      "buff_duration": 4,
+      "max_stacks": 1,
+      "mult_bonuses": [
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scale": 1.5
+        },
+        {
+          "stat": "damage",
+          "type": "cut",
+          "scale": 1.2
+        },
+        {
+          "stat": "damage",
+          "type": "stab",
+          "scale": 1.2
+        },
+        {
+          "stat": "damage",
+          "type": "heat",
+          "scale": 1.1
+        }
+      ]
+    }
+  ],
+  "onblock_buffs": [
+    {
+      "id": "buff_mokou_onblock",
+      "name": "Defended (debuff)",
+      "description": "Blocking attacks puts you on a closer position to the enemy, for better and for worse.",
+      "unarmed_allowed": true,
+      "buff_duration": 2,
+      "max_stacks": 2,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": -0.5
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": -0.5
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": -0.5
+        }
+      ]
+    },
+    {
+      "id": "buff_mokou_onblock2",
+      "name": "Defended",
+      "description": "Blocking attacks puts you on a closer position to the enemy, for better and for worse.",
+      "unarmed_allowed": true,
+      "buff_duration": 1,
+      "max_stacks": 1,
+      "flat_bonuses": [
+        {
+          "stat": "movecost",
+          "scale": -15
+        },
+        {
+          "stat": "hit",
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "ondodge_buffs": [
+    {
+      "id": "buff_mokou_ondodge",
+      "name": "Dodged",
+      "description": "Dodging doesn't matter, you have nothing to lose.",
+      "unarmed_allowed": true,
+      "buff_duration": 3,
+      "max_stacks": 4,
+      "mult_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": -0.25
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": -0.25
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": -0.25
+        }
+      ]
+    }
+  ],
+  "onkill_buffs": [
+    {
+      "id": "buff_mokou_onkill",
+      "name": "That which is unattainable",
+      "description": "Life is something curious: you can easily take it from others, except for the actual targets of your grudge.  Once you get going it's easier for you to do it.",
+      "unarmed_allowed": true,
+      "buff_duration": 6,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": -0.5
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": -0.5
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": -0.5
+        },
+        {
+          "stat": "arpen",
+          "type": "bash",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "stab",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "heat",
+          "scale": 25
+        },
+        {
+          "stat": "crit_chance",
+          "scale": 8
+        }
+      ],
+      "mult_bonuses": [
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scale": 1.375
+        },
+        {
+          "stat": "damage",
+          "type": "cut",
+          "scale": 1.2
+        },
+        {
+          "stat": "damage",
+          "type": "stab",
+          "scale": 1.2
+        },
+        {
+          "stat": "damage",
+          "type": "heat",
+          "scale": 1.1
+        }
+      ]
+    }
+  ],
+  "onpause_buffs": [
+    {
+      "id": "buff_mokou_onpause",
+      "name": "One second against eternity",
+      "description": "Stopping for a second calms your intense inner fire from consuming everything.  Clearing your mind, you let it consume itself.",
+      "buff_duration": 1,
+      "max_stacks": 4,
+      "bonus_blocks": 1,
+      "mult_bonuses": [
+        {
+          "stat": "block",
+          "scaling-stat": "str",
+          "scale": 0.4
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "int",
+          "scale": 0.6
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_brawl_disarm_melee",
+    "tec_taekwondo_strong",
+    "tec_mokou_fire_burst",
+    "tec_mokou_front_kick",
+    "tec_mokou_front_kick2",
+    "tec_mokou_kick",
+    "tec_mokou_kick2",
+    "tec_mokou_punch_down",
+    "tec_mokou_sommersault_kick",
+    "tec_mokou_liver_punch",
+    "tec_mokou_tackle",
+    "tec_mokou_talons",
+    "tec_mokou_talons2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "style_mokou",
+  "type": "martial_art",
+  "name": {
+    "str": "Hourai fighting"
+  },
+  "description": "Mokou's fighting style, learned over centuries of fighting, killing and being killed by her rival.  It's brutal, dirty, effective, disregarding basic self-preservation in order to maximize the amount of damage done: the more you fight the more damage you do, but the more open to damage you become.",
+  "initiate": [
+    "You prepare yourself to fight once more.",
+    "%s 再次准备战斗。"
+  ],
+  "learn_difficulty": 1,
+  "primary_skill": "melee",
+  "arm_block": 1,
+  "leg_block": 3,
+  "force_unarmed": true,
+  "static_buffs": [
+    {
+      "id": "buff_mokou_static",
+      "name": "战斗经验",
+      "description": "You know where to attack, how to attack, to make it hurt.",
+      "unarmed_allowed": true,
+      "flat_bonuses": [
+        {
+          "stat": "arpen",
+          "type": "bash",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "stab",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "heat",
+          "scale": 8
+        },
+        {
+          "stat": "hit",
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "onhit_buffs": [
+    {
+      "id": "buff_mokou_onhit",
+      "name": "Hourai's high",
+      "description": "You could fight for days without end…",
+      "unarmed_allowed": true,
+      "buff_duration": 4,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "speed",
+          "scale": 12.5
+        },
+        {
+          "stat": "hit",
+          "scale": 0.5
+        },
+        {
+          "stat": "dodge",
+          "scale": -0.25
+        }
+      ]
+    },
+    {
+      "id": "buff_mokou_onhit2",
+      "name": "Hourai's high (debuff)",
+      "description": "…The only thing holding you back is pain.",
+      "unarmed_allowed": true,
+      "buff_duration": 4,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": -0.25
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": -0.25
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": -0.25
+        }
+      ]
+    },
+    {
+      "id": "buff_mokou_onhit3",
+      "name": "Hourai's cadence",
+      "description": "Sharing is caring, though.",
+      "unarmed_allowed": true,
+      "buff_duration": 4,
+      "max_stacks": 1,
+      "mult_bonuses": [
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scale": 1.5
+        },
+        {
+          "stat": "damage",
+          "type": "cut",
+          "scale": 1.2
+        },
+        {
+          "stat": "damage",
+          "type": "stab",
+          "scale": 1.2
+        },
+        {
+          "stat": "damage",
+          "type": "heat",
+          "scale": 1.1
+        }
+      ]
+    }
+  ],
+  "onblock_buffs": [
+    {
+      "id": "buff_mokou_onblock",
+      "name": "Defended (debuff)",
+      "description": "Blocking attacks puts you on a closer position to the enemy, for better and for worse.",
+      "unarmed_allowed": true,
+      "buff_duration": 2,
+      "max_stacks": 2,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": -0.5
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": -0.5
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": -0.5
+        }
+      ]
+    },
+    {
+      "id": "buff_mokou_onblock2",
+      "name": "Defended",
+      "description": "Blocking attacks puts you on a closer position to the enemy, for better and for worse.",
+      "unarmed_allowed": true,
+      "buff_duration": 1,
+      "max_stacks": 1,
+      "flat_bonuses": [
+        {
+          "stat": "movecost",
+          "scale": -15
+        },
+        {
+          "stat": "hit",
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "ondodge_buffs": [
+    {
+      "id": "buff_mokou_ondodge",
+      "name": "闪避",
+      "description": "Dodging doesn't matter, you have nothing to lose.",
+      "unarmed_allowed": true,
+      "buff_duration": 3,
+      "max_stacks": 4,
+      "mult_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": -0.25
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": -0.25
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": -0.25
+        }
+      ]
+    }
+  ],
+  "onkill_buffs": [
+    {
+      "id": "buff_mokou_onkill",
+      "name": "That which is unattainable",
+      "description": "Life is something curious: you can easily take it from others, except for the actual targets of your grudge.  Once you get going it's easier for you to do it.",
+      "unarmed_allowed": true,
+      "buff_duration": 6,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": -0.5
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": -0.5
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": -0.5
+        },
+        {
+          "stat": "arpen",
+          "type": "bash",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "stab",
+          "scale": 6
+        },
+        {
+          "stat": "arpen",
+          "type": "heat",
+          "scale": 25
+        },
+        {
+          "stat": "crit_chance",
+          "scale": 8
+        }
+      ],
+      "mult_bonuses": [
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scale": 1.375
+        },
+        {
+          "stat": "damage",
+          "type": "cut",
+          "scale": 1.2
+        },
+        {
+          "stat": "damage",
+          "type": "stab",
+          "scale": 1.2
+        },
+        {
+          "stat": "damage",
+          "type": "heat",
+          "scale": 1.1
+        }
+      ]
+    }
+  ],
+  "onpause_buffs": [
+    {
+      "id": "buff_mokou_onpause",
+      "name": "One second against eternity",
+      "description": "Stopping for a second calms your intense inner fire from consuming everything.  Clearing your mind, you let it consume itself.",
+      "buff_duration": 1,
+      "max_stacks": 4,
+      "bonus_blocks": 1,
+      "mult_bonuses": [
+        {
+          "stat": "block",
+          "scaling-stat": "str",
+          "scale": 0.4
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "int",
+          "scale": 0.6
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_brawl_disarm_melee",
+    "tec_taekwondo_strong",
+    "tec_mokou_fire_burst",
+    "tec_mokou_front_kick",
+    "tec_mokou_front_kick2",
+    "tec_mokou_kick",
+    "tec_mokou_kick2",
+    "tec_mokou_punch_down",
+    "tec_mokou_sommersault_kick",
+    "tec_mokou_liver_punch",
+    "tec_mokou_tackle",
+    "tec_mokou_talons",
+    "tec_mokou_talons2"
+  ]
+}
+```
+

@@ -1,0 +1,205 @@
+creator: 林一二
+revision: 0
+tags: GUN Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→GUN→lunatic_pistol2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lunatic_pistol2|http://cdda.aloxaf.cn/search?q=lunatic_pistol2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/items/gun/touhou_lunar_gun.json
+
+
+!! 原文
+
+```json
+{
+  "id": "lunatic_pistol2",
+  "type": "GUN",
+  "name": "lunatic pistol",
+  "description": "A standard issue LDC pistol with burst-fire capability.  This belongs to an intermediate tier between old human weapons adapted with Lunarian technology and Lunarian tech proper weaponized, as noted by the very wide trumpet-like muzzle and (artificial) bunny ears on top of it.  For that reason, it's mostly incompatible with human tools and modifications.  It's powered by the spiritual energy of the user.",
+  "volume": "1 L",
+  "weight": "750 g",
+  "price_postapoc": 5500,
+  "to_hit": {
+    "balance": "good",
+    "grip": "weapon",
+    "length": "hand",
+    "surface": "any"
+  },
+  "bashing": 12,
+  "material": [
+    "plastic",
+    "steel"
+  ],
+  "symbol": "(",
+  "looks_like": "glock_17",
+  "color": "white",
+  "ammo": [
+    "ammo_lunar_small"
+  ],
+  "ammo_effects": [
+    "LASER"
+  ],
+  "dispersion": 120,
+  "durability": 8,
+  "min_cycle_recoil": 500,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "BURST",
+      "3 shots",
+      3
+    ]
+  ],
+  "reload": 220,
+  "reload_noise_volume": 5,
+  "skill": "pistol",
+  "valid_mod_locations": [
+    [
+      "accessories",
+      1
+    ],
+    [
+      "rail",
+      1
+    ],
+    [
+      "underbarrel",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "ammo_lunar_small": 13
+      }
+    }
+  ],
+  "relic_data": {
+    "charge_info": {
+      "regenerate_ammo": true,
+      "recharge_type": "periodic",
+      "time": "18 s"
+    }
+  },
+  "weapon_category": [
+    "AUTOMATIC_PISTOLS"
+  ],
+  "flags": [
+    "NEEDS_NO_LUBE",
+    "NEVER_JAMS",
+    "NO_RELOAD",
+    "NO_UNLOAD",
+    "STURDY",
+    "TRADER_AVOID"
+  ],
+  "//2": "Recharge time should be full from empty every 30 s. However, recharge time is automatic and there's a bug making artifacts recharge at twice the speed, so total recharge time is set at 120 s ingame"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "lunatic_pistol2",
+  "type": "GUN",
+  "name": "月球手枪",
+  "description": "A standard issue LDC pistol with burst-fire capability.  This belongs to an intermediate tier between old human weapons adapted with Lunarian technology and Lunarian tech proper weaponized, as noted by the very wide trumpet-like muzzle and (artificial) bunny ears on top of it.  For that reason, it's mostly incompatible with human tools and modifications.  It's powered by the spiritual energy of the user.",
+  "volume": "1 L",
+  "weight": "750 g",
+  "price_postapoc": 5500,
+  "to_hit": {
+    "balance": "good",
+    "grip": "weapon",
+    "length": "hand",
+    "surface": "any"
+  },
+  "bashing": 12,
+  "material": [
+    "plastic",
+    "steel"
+  ],
+  "symbol": "(",
+  "looks_like": "glock_17",
+  "color": "white",
+  "ammo": [
+    "ammo_lunar_small"
+  ],
+  "ammo_effects": [
+    "LASER"
+  ],
+  "dispersion": 120,
+  "durability": 8,
+  "min_cycle_recoil": 500,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "BURST",
+      "3 shots",
+      3
+    ]
+  ],
+  "reload": 220,
+  "reload_noise_volume": 5,
+  "skill": "pistol",
+  "valid_mod_locations": [
+    [
+      "accessories",
+      1
+    ],
+    [
+      "rail",
+      1
+    ],
+    [
+      "underbarrel",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "ammo_lunar_small": 13
+      }
+    }
+  ],
+  "relic_data": {
+    "charge_info": {
+      "regenerate_ammo": true,
+      "recharge_type": "periodic",
+      "time": "18 s"
+    }
+  },
+  "weapon_category": [
+    "AUTOMATIC_PISTOLS"
+  ],
+  "flags": [
+    "NEEDS_NO_LUBE",
+    "NEVER_JAMS",
+    "NO_RELOAD",
+    "NO_UNLOAD",
+    "STURDY",
+    "TRADER_AVOID"
+  ],
+  "//2": "Recharge time should be full from empty every 30 s. However, recharge time is automatic and there's a bug making artifacts recharge at twice the speed, so total recharge time is set at 120 s ingame"
+}
+```
+

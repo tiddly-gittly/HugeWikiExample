@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→v_war_etherealenchant_ss_yes
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_war_etherealenchant_ss_yes|http://cdda.aloxaf.cn/search?q=v_war_etherealenchant_ss_yes]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_hit_time.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "v_war_etherealenchant_ss_yes",
+  "name": {
+    "str": "Summon Silhouette!"
+  },
+  "description": "Does the Summon Silhouette.",
+  "valid_targets": [
+    "none"
+  ],
+  "message": "An etherean silhouette emerges from your weapon!",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "extra_effects": [
+    {
+      "id": "v_war_etherealenchant_ss",
+      "hit_self": true
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "v_war_etherealenchant_ss_yes",
+  "name": {
+    "str": "召唤剪影！"
+  },
+  "description": "召唤的轮廓。",
+  "valid_targets": [
+    "none"
+  ],
+  "message": "一个以太之影从你的武器中释放出来！",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "extra_effects": [
+    {
+      "id": "v_war_etherealenchant_ss",
+      "hit_self": true
+    }
+  ]
+}
+```
+

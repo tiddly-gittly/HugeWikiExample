@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: GUN nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→GUN→ups_rifle_crank
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ups_rifle_crank|http://cdda.aloxaf.cn/search?q=ups_rifle_crank]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Weapons/c_ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "ups_rifle_crank",
+  "type": "GUN",
+  "color": "yellow",
+  "symbol": "(",
+  "looks_like": "ups_rifle",
+  "name": {
+    "str": "survivor's crank rifle"
+  },
+  "description": "Further building on the developments that went into the UPS rifle, this integrates a hand crank and capacitors to charge a custom-made power cell.  Infinite ammo at the cost of reliability.  Use it to ready the hand-crank charger, allowing you to recharge loaded capacitor banks.",
+  "price": "7490 USD",
+  "price_postapoc": "60 USD",
+  "material": [
+    "steel",
+    "wood"
+  ],
+  "weight": "4964 g",
+  "volume": "4250 ml",
+  "bashing": 8,
+  "to_hit": -1,
+  "ammo_effects": [
+    "LASER",
+    "SHOT",
+    "INCENDIARY"
+  ],
+  "flags": [
+    "NON_FOULING",
+    "NEEDS_NO_LUBE"
+  ],
+  "skill": "rifle",
+  "ammo": [
+    "battery"
+  ],
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 30,
+    "armor_penetration": 3
+  },
+  "range": 25,
+  "dispersion": 150,
+  "recoil": 15,
+  "durability": 6,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi",
+      1
+    ],
+    [
+      "BURST",
+      "burst",
+      5
+    ]
+  ],
+  "reload": 0,
+  "loudness": 16,
+  "use_action": {
+    "type": "transform",
+    "msg": "You ready the rifle for recharging.",
+    "menu_text": "Swap to recharge mode",
+    "target": "ups_rifle_crank_charge",
+    "ammo_scale": 0
+  },
+  "pocket_data": [
+    {
+      "magazine_well": "300 ml",
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "rifle_crank_battery_cell"
+      ]
+    }
+  ],
+  "//": "No gunmods as these will likely get deleted on transformation."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "ups_rifle_crank",
+  "type": "GUN",
+  "color": "yellow",
+  "symbol": "(",
+  "looks_like": "ups_rifle",
+  "name": {
+    "str": "幸存者曲柄步枪"
+  },
+  "description": "在幸存者 UPS步枪的基础上进一步改造，用集成的手摇柄和电容器为自制动力电池充电。无限弹药，以可靠性为代价。激活它以使用手摇柄，为电容器充电。",
+  "price": "7490 USD",
+  "price_postapoc": "60 USD",
+  "material": [
+    "steel",
+    "wood"
+  ],
+  "weight": "4964 g",
+  "volume": "4250 ml",
+  "bashing": 8,
+  "to_hit": -1,
+  "ammo_effects": [
+    "LASER",
+    "SHOT",
+    "INCENDIARY"
+  ],
+  "flags": [
+    "NON_FOULING",
+    "NEEDS_NO_LUBE"
+  ],
+  "skill": "rifle",
+  "ammo": [
+    "battery"
+  ],
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 30,
+    "armor_penetration": 3
+  },
+  "range": 25,
+  "dispersion": 150,
+  "recoil": 15,
+  "durability": 6,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi",
+      1
+    ],
+    [
+      "BURST",
+      "burst",
+      5
+    ]
+  ],
+  "reload": 0,
+  "loudness": 16,
+  "use_action": {
+    "type": "transform",
+    "msg": "你将枪转换为充能模式。",
+    "menu_text": "切换到充能模式",
+    "target": "ups_rifle_crank_charge",
+    "ammo_scale": 0
+  },
+  "pocket_data": [
+    {
+      "magazine_well": "300 ml",
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "rifle_crank_battery_cell"
+      ]
+    }
+  ],
+  "//": "No gunmods as these will likely get deleted on transformation."
+}
+```
+

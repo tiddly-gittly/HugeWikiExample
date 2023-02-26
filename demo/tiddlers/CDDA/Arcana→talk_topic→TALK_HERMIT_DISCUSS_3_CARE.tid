@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_CARE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_CARE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_CARE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_CARE",
+  "dynamic_line": "I can understand why it would be hard to care.  Most of the intruders from Beyond seem as mere animals at best, and most of the others seem to desire nothing but misery and extinction for us all.  But among them all, some spirits, some gods, demons, whatever they may be, would see us survive and endure the dark days ahead of us.  Whether they act in self-interest or not, it's better to have a powerful ally than to cower in the shadows of unnameable horrors.",
+  "responses": [
+    {
+      "switch": true,
+      "text": "If you say so.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "If you say so.  Guess I'm ready.",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_CARE",
+  "dynamic_line": "我能理解为什么这很难关心。大多数来自远方的入侵者充其量只是动物，而其他大多数人似乎只渴望我们所有人的苦难和灭绝。但是在他们当中，有些灵魂，一些神，恶魔，无论他们是什么，都会看到我们生存下来，忍受我们前面黑暗的日子。不管他们是否出于私利行事，与其在无法形容的恐怖阴影中畏缩，不如有一个强大的盟友。",
+  "responses": [
+    {
+      "switch": true,
+      "text": "如果你这样说。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "如果你这样说。我想我准备好了。",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: TOOL secronom
+title: secronom→TOOL→flesh_taken_death
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：flesh_taken_death|http://cdda.aloxaf.cn/search?q=flesh_taken_death]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_ammo_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "flesh_taken_death",
+  "type": "TOOL",
+  "name": {
+    "str": "hatched taken"
+  },
+  "description": "The taken giving birth to its content.",
+  "volume": "1 ml",
+  "weight": "1 g",
+  "to_hit": -2,
+  "bashing": 1,
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "O",
+  "color": "red",
+  "drop_action": {
+    "type": "explosion",
+    "sound_volume": 0,
+    "sound_msg": "*splat*",
+    "no_deactivate_msg": "*splat* *splat*",
+    "draw_explosion_color": "red",
+    "fields_type": "fd_sflesh_taken",
+    "fields_radius": 0,
+    "fields_min_intensity": 1,
+    "fields_max_intensity": 1
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "flesh_taken_death",
+  "type": "TOOL",
+  "name": {
+    "str": "孵化的荚"
+  },
+  "description": "肉荚中的东西从里面出生了。",
+  "volume": "1 ml",
+  "weight": "1 g",
+  "to_hit": -2,
+  "bashing": 1,
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "O",
+  "color": "red",
+  "drop_action": {
+    "type": "explosion",
+    "sound_volume": 0,
+    "sound_msg": "*splat*",
+    "no_deactivate_msg": "*splat* *splat*",
+    "draw_explosion_color": "red",
+    "fields_type": "fd_sflesh_taken",
+    "fields_radius": 0,
+    "fields_min_intensity": 1,
+    "fields_max_intensity": 1
+  }
+}
+```
+

@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_SPELL_MENU_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_SPELL_MENU_2|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_SPELL_MENU_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_PURIFIER_SPELL_MENU_2",
+  "dynamic_line": "Consecrate is designed to purify the terrain, either petrifying or disintegrating most anomalous or otherworldly alterations to the landscape.  Less well-known is what it does to most otherworldly monsters caught in its effect.  It's not intended as an offensive spell first and foremost, but it'll damage most such monsters and leave them reeling.  I'll need 4 Golden Scales to cover everything that a proper ritual will require.",
+  "responses": [
+    {
+      "text": "[GS4] You have a deal, then.",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 4
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 4
+        },
+        {
+          "u_add_trait": "SPELL_CONSECRATELESSER"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need more Scales for that.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "CF_golden_scale",
+            "count": 4
+          }
+        }
+      },
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "Not right now.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_PURIFIER_SPELL_MENU_2",
+  "dynamic_line": "Consecrate is designed to purify the terrain, either petrifying or disintegrating most anomalous or otherworldly alterations to the landscape.  Less well-known is what it does to most otherworldly monsters caught in its effect.  It's not intended as an offensive spell first and foremost, but it'll damage most such monsters and leave them reeling.  I'll need 4 Golden Scales to cover everything that a proper ritual will require.",
+  "responses": [
+    {
+      "text": "[GS4] You have a deal，then.",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 4
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 4
+        },
+        {
+          "u_add_trait": "SPELL_CONSECRATELESSER"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need more Scales for that.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "CF_golden_scale",
+            "count": 4
+          }
+        }
+      },
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "Not right now.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+

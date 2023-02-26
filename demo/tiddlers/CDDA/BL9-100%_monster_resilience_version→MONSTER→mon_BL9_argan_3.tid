@@ -1,0 +1,215 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_argan_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_argan_3|http://cdda.aloxaf.cn/search?q=mon_BL9_argan_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens_dominators.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_argan_3",
+  "looks_like": "mon_zombie_phase_skulker",
+  "type": "MONSTER",
+  "name": {
+    "str": "Arganoide Psionics Master"
+  },
+  "description": "A tall graceful slender humanoid-alien being, emitting bright purple crystalline light, it's head seems to resemble a water shaped droplet with hair-like long tentacles growing out of it, it's wearing a cape and wielding a glowing orb-like alien artifact",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 355,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 3,
+      "armor_penetration": 10
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 12,
+  "armor_cut": 12,
+  "armor_bullet": 12,
+  "death_drops": "BL9_Drops_Aliens_Dominators_Military",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 7,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 18,
+          "armor_penetration": 16
+        }
+      ],
+      "hit_dmg_u": "The %1$s conjures a glowing shortblade and strikes you with it!",
+      "hit_dmg_npc": "The %1$s conjures a glowing shortblade and strikes <npcname> with it!",
+      "no_dmg_msg_u": "The %1$s conjures a glowing shortblade and tries to strike you with it, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s conjures a glowing shortblade and tries to strike <npcname> with it, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s conjures a glowing shortblade and tries to strike you, but you dodge!",
+      "miss_msg_npc": "The %s conjures a glowing shortblade and tries to strike <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "argan_psi_orbs"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s conjures a rain of bright purple flaming orbs at %3$s!</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_argan_3",
+  "looks_like": "mon_zombie_phase_skulker",
+  "type": "MONSTER",
+  "name": {
+    "str": "阿甘诺德灵能大师"
+  },
+  "description": "一个高大优雅纤细的人形外星人，散发着明亮的紫色水晶光，它的头看起来像一个水状的水滴，长出毛发般的长触手，它披着斗篷，挥舞着发光的球状外星人神器",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 355,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 3,
+      "armor_penetration": 10
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 12,
+  "armor_cut": 12,
+  "armor_bullet": 12,
+  "death_drops": "BL9_Drops_Aliens_Dominators_Military",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 7,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 18,
+          "armor_penetration": 16
+        }
+      ],
+      "hit_dmg_u": "The %1$s conjures a glowing shortblade and strikes you with it!",
+      "hit_dmg_npc": "The %1$s conjures a glowing shortblade and strikes <npcname> with it!",
+      "no_dmg_msg_u": "The %1$s conjures a glowing shortblade and tries to strike you with it, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s conjures a glowing shortblade and tries to strike <npcname> with it, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s conjures a glowing shortblade and tries to strike you, but you dodge!",
+      "miss_msg_npc": "The %s conjures a glowing shortblade and tries to strike <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "argan_psi_orbs"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s在%3$s周围召唤了一场明亮的紫色火球雨！</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

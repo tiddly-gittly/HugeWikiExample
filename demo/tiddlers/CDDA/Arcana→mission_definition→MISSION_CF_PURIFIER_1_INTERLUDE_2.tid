@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_PURIFIER_1_INTERLUDE_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_PURIFIER_1_INTERLUDE_2|http://cdda.aloxaf.cn/search?q=MISSION_CF_PURIFIER_1_INTERLUDE_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_PURIFIER_1_INTERLUDE_2",
+  "type": "mission_definition",
+  "name": {
+    "str": "Investigate Lost Scavenger Team"
+  },
+  "description": "Investigate the last known location of a group of survivors, suspected to have found documents of the information Nicholas is looking for.  After bringing the information back to Nicholas, you may return to bring back news of what happened to the scavengers.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_var": "nicholas_info_sent",
+    "type": "mission",
+    "context": "rural_church",
+    "value": "yes"
+  },
+  "difficulty": 5,
+  "has_generic_rewards": false,
+  "value": 10000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "arcana_cave_caravan",
+      "om_special": "Cave_arcana_caravan",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    },
+    "effect": [
+      {
+        "npc_add_var": "nicholas_mission_2_mid",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
+    "offer": "Seeing this is probably a bug.",
+    "accepted": "Seeing this is probably a bug.",
+    "rejected": "Seeing this is probably a bug.",
+    "advice": "Seeing this is probably a bug.",
+    "inquire": "Did you find them?",
+    "success": "I'm guessing it was too late for them.  I did hear from Sofia's people however, we now have a much better understanding of what places might be valuable sources of supplies, and which are best avoided.  This will save lives in the long run.  I know it's not much given the risk you went through, but here.",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "FMCNote",
+        "count": 15
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_PURIFIER_1_INTERLUDE_2",
+  "type": "mission_definition",
+  "name": {
+    "str": "调查失踪的拾荒者队伍"
+  },
+  "description": "调查最后一批幸存者的已知位置，他们可能已经找到了尼古拉斯正在寻找的信息文件。把信息带给尼古拉斯后，你可以回来告诉我拾荒者们到底遭遇了什么。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_var": "nicholas_info_sent",
+    "type": "mission",
+    "context": "rural_church",
+    "value": "yes"
+  },
+  "difficulty": 5,
+  "has_generic_rewards": false,
+  "value": 10000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "arcana_cave_caravan",
+      "om_special": "Cave_arcana_caravan",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    },
+    "effect": [
+      {
+        "npc_add_var": "nicholas_mission_2_mid",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
+    "offer": "Seeing this is probably a bug.",
+    "accepted": "Seeing this is probably a bug.",
+    "rejected": "Seeing this is probably a bug.",
+    "advice": "Seeing this is probably a bug.",
+    "inquire": "你找到他们了吗？",
+    "success": "我猜对他们来说太晚了。不过，我确实收到了索非亚的来信，我们现在对哪些地方可能是有价值的物资来源以及哪些地方最好避免有了更好的了解。从长远来看，这将拯救许多生命。我知道这对你而言风险并不大，但它确实存在。",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "FMCNote",
+        "count": 15
+      }
+    ]
+  }
+}
+```
+

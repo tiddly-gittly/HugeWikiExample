@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: technique vamp_stuff
+title: vamp_stuff→technique→STRONG_HITCRIT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：STRONG_HITCRIT|http://cdda.aloxaf.cn/search?q=STRONG_HITCRIT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Others/v_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "STRONG_HITCRIT",
+  "name": "Weak Point Pierce",
+  "description": "Precise hit for 4x damage, down 2, crit only",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "weighting": -16,
+  "down_dur": 2,
+  "messages": [
+    "You delivered a deadly stab to %s's weak point",
+    "<npcname>'s deadly hit struck to %s."
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 4
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "STRONG_HITCRIT",
+  "name": "弱点穿透",
+  "description": "精确的命中造成4倍伤害，击倒2回合，仅暴击",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "weighting": -16,
+  "down_dur": 2,
+  "messages": [
+    "你向%s的弱点来了一记致命的刺击",
+    "<npcname>的致命一击击中了%s."
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 4
+    }
+  ]
+}
+```
+

@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→yamame_webdismiss
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：yamame_webdismiss|http://cdda.aloxaf.cn/search?q=yamame_webdismiss]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_wip_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "yamame_webdismiss",
+  "type": "SPELL",
+  "name": "Dismiss webs",
+  "description": "Dismiss all summoned webs.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "field",
+    "ground",
+    "item",
+    "self"
+  ],
+  "effect": "ter_transform",
+  "effect_str": "web_dismiss_fur",
+  "extra_effects": [
+    {
+      "id": "yamame_webdismiss2"
+    }
+  ],
+  "shape": "blast",
+  "min_range": 6,
+  "max_range": 6,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "max_level": 1,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 66,
+  "energy_source": "MANA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "SOMATIC"
+  ],
+  "//": "This can be replaced by EOCs automatically disabling the summoned terrain... eventually",
+  "//2": "Doesn't work: seems the remove_field subspell removes a single field intensity in the entire aoe, even chaining the x99 repeat subspell and using it 15 times or so isn't enough to clear the 3-radius aoe, and it also floods the P message window"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "yamame_webdismiss",
+  "type": "SPELL",
+  "name": "Dismiss webs",
+  "description": "Dismiss all summoned webs.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "field",
+    "ground",
+    "item",
+    "self"
+  ],
+  "effect": "ter_transform",
+  "effect_str": "web_dismiss_fur",
+  "extra_effects": [
+    {
+      "id": "yamame_webdismiss2"
+    }
+  ],
+  "shape": "blast",
+  "min_range": 6,
+  "max_range": 6,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "max_level": 1,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 66,
+  "energy_source": "MANA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "SOMATIC"
+  ],
+  "//": "This can be replaced by EOCs automatically disabling the summoned terrain... eventually",
+  "//2": "Doesn't work: seems the remove_field subspell removes a single field intensity in the entire aoe, even chaining the x99 repeat subspell and using it 15 times or so isn't enough to clear the 3-radius aoe, and it also floods the P message window"
+}
+```
+

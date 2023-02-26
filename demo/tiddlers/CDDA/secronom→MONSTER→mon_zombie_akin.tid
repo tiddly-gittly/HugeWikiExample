@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_akin
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_akin|http://cdda.aloxaf.cn/search?q=mon_zombie_akin]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Support-type zed who weakens the target by applying debuffs that intensifies for as long as it acquire LOS, while empowering nearby allies. Feeble, yet a great nuisance behind its meat wall. One of the true end-game monsters.",
+  "id": "mon_zombie_akin",
+  "type": "MONSTER",
+  "name": {
+    "str": "akin"
+  },
+  "description": "A grotesquely baneful corpse, resonating pure dread in the air as it eagerly sways along its path. Visceral tendrils slither freely in its vicinity, acting like guides in sensing the unfortunate host.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 130,
+  "speed": 60,
+  "diff": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚨",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "armor_bash": 3,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "vision_day": 25,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "path_settings": {
+    "max_dist": 9
+  },
+  "tracking_distance": 9,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_akin_sattach_check"
+      },
+      "cooldown": 21,
+      "monster_message": "<color_yellow>%1$s's visceral tendrils swarm towards %3$s!</color>"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "mon_zombie_akin_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "KEENNOSE",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "RANGED_ATTACKER",
+    "KEEP_DISTANCE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Support-type zed who weakens the target by applying debuffs that intensifies for as long as it acquire LOS, while empowering nearby allies. Feeble, yet a great nuisance behind its meat wall. One of the true end-game monsters.",
+  "id": "mon_zombie_akin",
+  "type": "MONSTER",
+  "name": {
+    "str": "同质丧尸"
+  },
+  "description": "一具怪诞邪恶的尸体，在空气中回荡着纯粹的恐惧，它急切地沿着自己的路径摇摆。内脏的卷须在其附近自由滑动，像向导一样感应不幸的宿主。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 130,
+  "speed": 60,
+  "diff": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚨",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "armor_bash": 3,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "vision_day": 25,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "path_settings": {
+    "max_dist": 9
+  },
+  "tracking_distance": 9,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_akin_sattach_check"
+      },
+      "cooldown": 21,
+      "monster_message": "<color_yellow>%1$s的内脏卷须群向%3$s！</color>"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "mon_zombie_akin_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "KEENNOSE",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "RANGED_ATTACKER",
+    "KEEP_DISTANCE"
+  ]
+}
+```
+

@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_DRAGONLEGS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_DRAGONLEGS|http://cdda.aloxaf.cn/search?q=ARCANA_DRAGONLEGS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONLEGS",
+  "name": {
+    "str": "Draconic Hind Limbs"
+  },
+  "points": 1,
+  "visibility": 4,
+  "ugliness": 2,
+  "mixed_effect": true,
+  "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons.  While you still can't wear footwear, your new legs have adapted to a bipedal structure, making them much less awkward.  Rough terrain is still a hindrance and they're better left uncovered, but you can move a bit faster on level ground.",
+  "valid": false,
+  "purifiable": false,
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "prereqs": [
+    "ARCANA_SCALYLEGS"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "types": [
+    "LEGS",
+    "FEET"
+  ],
+  "encumbrance_covered": [
+    [
+      "leg_l",
+      5
+    ],
+    [
+      "leg_r",
+      5
+    ]
+  ],
+  "restricts_gear": [
+    "foot_l",
+    "foot_r"
+  ],
+  "movecost_obstacle_modifier": 1.25,
+  "movecost_flatground_modifier": 0.75,
+  "noise_modifier": 1.5,
+  "attacks": [
+    {
+      "attack_text_u": "You rake %s with your toe claws",
+      "attack_text_npc": "%1$s rakes %2$s with their toe claws",
+      "chance": 20,
+      "strength_damage": {
+        "damage_type": "cut",
+        "amount": 4
+      }
+    }
+  ],
+  "allowed_items": [
+    "ALLOWS_TALONS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONLEGS",
+  "name": {
+    "str": "龙形后肢"
+  },
+  "points": 1,
+  "visibility": 4,
+  "ugliness": 2,
+  "mixed_effect": true,
+  "description": "你的腿已经被改造成一个数字结构，以邪恶锋利的爪子结尾。虽然你仍然不能穿鞋子，但你的新腿已经适应了两足动物的结构，使它们不再那么笨拙。崎岖的地形仍然是一个障碍，它们最好不被遮挡，但是在平地上你可以走得更快一些。",
+  "valid": false,
+  "purifiable": false,
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "prereqs": [
+    "ARCANA_SCALYLEGS"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "types": [
+    "LEGS",
+    "FEET"
+  ],
+  "encumbrance_covered": [
+    [
+      "leg_l",
+      5
+    ],
+    [
+      "leg_r",
+      5
+    ]
+  ],
+  "restricts_gear": [
+    "foot_l",
+    "foot_r"
+  ],
+  "movecost_obstacle_modifier": 1.25,
+  "movecost_flatground_modifier": 0.75,
+  "noise_modifier": 1.5,
+  "attacks": [
+    {
+      "attack_text_u": "You rake %s with your toe claws",
+      "attack_text_npc": "%1$s rakes %2$s with their toe claws",
+      "chance": 20,
+      "strength_damage": {
+        "damage_type": "cut",
+        "amount": 4
+      }
+    }
+  ],
+  "allowed_items": [
+    "ALLOWS_TALONS"
+  ]
+}
+```
+

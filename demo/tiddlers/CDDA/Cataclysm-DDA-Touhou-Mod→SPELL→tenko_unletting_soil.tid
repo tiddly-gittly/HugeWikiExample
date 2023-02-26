@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→tenko_unletting_soil
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tenko_unletting_soil|http://cdda.aloxaf.cn/search?q=tenko_unletting_soil]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_tenko.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tenko_unletting_soil",
+  "type": "SPELL",
+  "name": "Unletting soil",
+  "description": "Stab the Sword of Hisou into the ground, injecting some temperament and causing the earth to retaliate, dealing damage on the direction of the release, and knocking back enemies.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "components": "spell_components_tenkojian",
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "tenko_unletting_soil2"
+    }
+  ],
+  "shape": "cone",
+  "damage_type": "bash",
+  "min_damage": 30,
+  "max_damage": 160,
+  "damage_increment": 13,
+  "min_range": 5,
+  "max_range": 10,
+  "range_increment": 0.5,
+  "min_aoe": 50,
+  "max_aoe": 50,
+  "field_id": "fd_rubble2",
+  "field_chance": 2,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 150,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "Shouldn't hit flying targets or be activated without ground. Should also be a line centered on Tenko, instead of starting from her position"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tenko_unletting_soil",
+  "type": "SPELL",
+  "name": "Unletting soil",
+  "description": "Stab the Sword of Hisou into the ground, injecting some temperament and causing the earth to retaliate, dealing damage on the direction of the release, and knocking back enemies.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "components": "spell_components_tenkojian",
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "tenko_unletting_soil2"
+    }
+  ],
+  "shape": "cone",
+  "damage_type": "bash",
+  "min_damage": 30,
+  "max_damage": 160,
+  "damage_increment": 13,
+  "min_range": 5,
+  "max_range": 10,
+  "range_increment": 0.5,
+  "min_aoe": 50,
+  "max_aoe": 50,
+  "field_id": "fd_rubble2",
+  "field_chance": 2,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 150,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "Shouldn't hit flying targets or be activated without ground. Should also be a line centered on Tenko, instead of starting from her position"
+}
+```
+

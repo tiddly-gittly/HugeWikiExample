@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→HUMAN_RADIOSPEC_quest
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：HUMAN_RADIOSPEC_quest|http://cdda.aloxaf.cn/search?q=HUMAN_RADIOSPEC_quest]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "HUMAN_RADIOSPEC_quest",
+  "type": "mission_definition",
+  "name": {
+    "str": "Bring Radio Specialist to the outskirts"
+  },
+  "description": "Escort the specialist to the <color_light_blue>wasteland outskirts</color>.",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 1,
+  "value": 10000,
+  "destination": "wo5",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "wo5",
+      "om_special": "Wasteland Outskirts",
+      "reveal_radius": 2,
+      "search_range": 80
+    },
+    "effect": [
+      "follow_only",
+      {
+        "u_add_trait": "wrsgoing"
+      }
+    ],
+    "update_mapgen": {
+      "om_terrain": "wo5",
+      "place_nested": [
+        {
+          "chunks": [
+            "wasteland_radio_tower"
+          ],
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  },
+  "end": {
+    "effect": [
+      "stop_following",
+      {
+        "npc_change_faction": "wastelander"
+      },
+      {
+        "u_add_trait": "wrsdone"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "We're going, right?",
+    "offer": "We have to go to that place and I need you to lead the way.",
+    "accepted": "Just remember to keep everything fine as we go there.",
+    "rejected": "Well, your words are useless...",
+    "advice": "From what direction did you came from? I suppose that's the right way.",
+    "inquire": "What?",
+    "success": "This place looks neat! Now that I'm here, I'll do my job as you have said earlier.",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "Ummm...."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "HUMAN_RADIOSPEC_quest",
+  "type": "mission_definition",
+  "name": {
+    "str": "把无线电专家带到郊区"
+  },
+  "description": "护送专家到<color_light_blue>荒地郊外</color>。",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 1,
+  "value": 10000,
+  "destination": "wo5",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "wo5",
+      "om_special": "Wasteland Outskirts",
+      "reveal_radius": 2,
+      "search_range": 80
+    },
+    "effect": [
+      "follow_only",
+      {
+        "u_add_trait": "wrsgoing"
+      }
+    ],
+    "update_mapgen": {
+      "om_terrain": "wo5",
+      "place_nested": [
+        {
+          "chunks": [
+            "wasteland_radio_tower"
+          ],
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  },
+  "end": {
+    "effect": [
+      "stop_following",
+      {
+        "npc_change_faction": "wastelander"
+      },
+      {
+        "u_add_trait": "wrsdone"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "我们要走了，对吗？",
+    "offer": "我们必须去那个地方，我需要你带路。",
+    "accepted": "只要记得在我们去的时候保持一切正常。",
+    "rejected": "嗯，你的话没用...",
+    "advice": "你是从哪个方向来的？我想这是正确的方法。",
+    "inquire": "什么？",
+    "success": "这个地方看起来很整洁！既然我来了，我就按照你刚才说的做好我的工作。",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "嗯...."
+  }
+}
+```
+

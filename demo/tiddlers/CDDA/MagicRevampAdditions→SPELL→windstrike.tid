@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→windstrike
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：windstrike|http://cdda.aloxaf.cn/search?q=windstrike]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/stormshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "windstrike",
+  "type": "SPELL",
+  "name": {
+    "str": "Windstrike"
+  },
+  "description": "A powerful blast of wind slams into anything in front of your outstretched hand.",
+  "effect": "attack",
+  "effect_str": "downed",
+  "shape": "cone",
+  "affected_body_parts": [
+    "leg_l",
+    "leg_r"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "max_level": 30,
+  "min_damage": 24,
+  "max_damage": 136,
+  "damage_increment": 2.2,
+  "min_aoe": 30,
+  "max_aoe": 90,
+  "aoe_increment": 1.4,
+  "min_range": 6,
+  "max_range": 30,
+  "range_increment": 0.85,
+  "min_duration": 200,
+  "max_duration": 2500,
+  "duration_increment": 100,
+  "base_casting_time": 125,
+  "base_energy_cost": 285,
+  "spell_class": "STORMSHAPER",
+  "energy_source": "MANA",
+  "difficulty": 3,
+  "sound_description": "a whoosh",
+  "damage_type": "bash"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "windstrike",
+  "type": "SPELL",
+  "name": {
+    "str": "风击术"
+  },
+  "description": "伸出手掌，喷射强风，冲击你面前的一切。",
+  "effect": "attack",
+  "effect_str": "downed",
+  "shape": "cone",
+  "affected_body_parts": [
+    "leg_l",
+    "leg_r"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "max_level": 30,
+  "min_damage": 24,
+  "max_damage": 136,
+  "damage_increment": 2.2,
+  "min_aoe": 30,
+  "max_aoe": 90,
+  "aoe_increment": 1.4,
+  "min_range": 6,
+  "max_range": 30,
+  "range_increment": 0.85,
+  "min_duration": 200,
+  "max_duration": 2500,
+  "duration_increment": 100,
+  "base_casting_time": 125,
+  "base_energy_cost": 285,
+  "spell_class": "STORMSHAPER",
+  "energy_source": "MANA",
+  "difficulty": 3,
+  "sound_description": "a whoosh",
+  "damage_type": "bash"
+}
+```
+

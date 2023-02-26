@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_divine_seal_heal_aoe
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_divine_seal_heal_aoe|http://cdda.aloxaf.cn/search?q=arcana_item_divine_seal_heal_aoe]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_divine_seal_heal_aoe",
+  "name": {
+    "str": "Divine Seal Healing"
+  },
+  "description": "This adds the healing effect for allies, half the expected effectiveness.",
+  "valid_targets": [
+    "ally"
+  ],
+  "message": "",
+  "extra_effects": [
+    {
+      "id": "arcana_item_divine_seal_heal_spike",
+      "hit_self": true
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "arcana_divine_healing_effects",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT",
+    "IGNORE_WALLS"
+  ],
+  "min_damage": -50,
+  "max_damage": -100,
+  "min_aoe": 32,
+  "max_aoe": 32,
+  "min_duration": 18000,
+  "max_duration": 18000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_divine_seal_heal_aoe",
+  "name": {
+    "str": "神圣魔印治愈"
+  },
+  "description": "这为盟友增加了治疗效果，是预期效果的一半。",
+  "valid_targets": [
+    "ally"
+  ],
+  "message": "",
+  "extra_effects": [
+    {
+      "id": "arcana_item_divine_seal_heal_spike",
+      "hit_self": true
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "arcana_divine_healing_effects",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT",
+    "IGNORE_WALLS"
+  ],
+  "min_damage": -50,
+  "max_damage": -100,
+  "min_aoe": 32,
+  "max_aoe": 32,
+  "min_duration": 18000,
+  "max_duration": 18000
+}
+```
+

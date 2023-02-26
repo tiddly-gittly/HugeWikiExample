@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_revenant
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_revenant|http://cdda.aloxaf.cn/search?q=mon_zombie_revenant]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Revenant.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Support-type zed that manipulates the stats of targeted creatures.",
+  "id": "mon_zombie_revenant",
+  "type": "MONSTER",
+  "name": "revenant",
+  "description": "Enveloped in odd stench, this severely diluted corpse became an overseer for its fiendish undeads.",
+  "default_faction": "zombie_revenant",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 65,
+  "diff": 1,
+  "speed": 60,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "♀",
+  "color": "magenta",
+  "aggression": 50,
+  "morale": 50,
+  "emit_fields": [
+    "emit_revenant_trigger_immunity"
+  ],
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "tracking_distance": 8,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_revenant_target"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_magenta>%1$s shrieks!</color>"
+    }
+  ],
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_REVENANT_UPGRADE"
+  },
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "KEEP_DISTANCE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Support-type zed that manipulates the stats of targeted creatures.",
+  "id": "mon_zombie_revenant",
+  "type": "MONSTER",
+  "name": "复仇者丧尸",
+  "description": "笼罩在奇怪的恶臭中，这具被严重稀释的尸体成了其恶魔般的尸体的监督者。",
+  "default_faction": "zombie_revenant",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 65,
+  "diff": 1,
+  "speed": 60,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "♀",
+  "color": "magenta",
+  "aggression": 50,
+  "morale": 50,
+  "emit_fields": [
+    "emit_revenant_trigger_immunity"
+  ],
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "tracking_distance": 8,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_revenant_target"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_magenta>%1$s尖叫起来！</color>"
+    }
+  ],
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_REVENANT_UPGRADE"
+  },
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "KEEP_DISTANCE"
+  ]
+}
+```
+

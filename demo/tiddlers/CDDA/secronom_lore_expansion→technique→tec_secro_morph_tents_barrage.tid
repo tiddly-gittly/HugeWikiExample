@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: technique secronom_lore_expansion
+title: secronom_lore_expansion→technique→tec_secro_morph_tents_barrage
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_secro_morph_tents_barrage|http://cdda.aloxaf.cn/search?q=tec_secro_morph_tents_barrage]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_tents_barrage",
+  "name": "Barrage",
+  "messages": [
+    "Your tentacles strike %s all at once",
+    "All of <npcname>'s tentacles strike at %s"
+  ],
+  "melee_allowed": true,
+  "weighting": -20,
+  "crit_tec": true,
+  "stun_dur": 2,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 5
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.8
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 3
+    }
+  ],
+  "description": "+200% bash, +80% movecost, stun 2 turns, crit only",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_tents_barrage",
+  "name": "火力网",
+  "messages": [
+    "你的触手同时击打%s",
+    "<npcname>所有的触手击打%s"
+  ],
+  "melee_allowed": true,
+  "weighting": -20,
+  "crit_tec": true,
+  "stun_dur": 2,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 5
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.8
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 3
+    }
+  ],
+  "description": "+200%钝击，+80%移动消耗，击晕2回合，仅暴击",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+

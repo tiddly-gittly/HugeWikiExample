@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_CF_REP_MISSION_CLEANSINGFLAME
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_CF_REP_MISSION_CLEANSINGFLAME|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_CF_REP_MISSION_CLEANSINGFLAME]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_CF_REP_MISSION_CLEANSINGFLAME",
+  "dynamic_line": "So you are one of them as well?  Then tell me, for what purpose do they send you?",
+  "responses": [
+    {
+      "text": "We are here to gather allies, to defend what remains of humanity and make up for past mistakes.",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES"
+    },
+    {
+      "text": "We seek knowledge, further learning of the Beyond that you may have accumulated during your studies.",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_KNOWLEDGE"
+    },
+    {
+      "text": "Our motives are our own.  Hand over any research you are hoarding, now.",
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 25
+      },
+      "success": {
+        "topic": "TALK_HERMIT_CF_REP_MISSION_INTIMIDATE",
+        "opinion": {
+          "fear": 1,
+          "trust": -1
+        },
+        "effect": {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "anger": 1,
+          "value": -1
+        },
+        "effect": "insult_combat"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_CF_REP_MISSION_CLEANSINGFLAME",
+  "dynamic_line": "那么你也是他们中的一员？那么告诉我，他们派你来干什么？",
+  "responses": [
+    {
+      "text": "我们在这里聚集盟友，保卫人类的残余，弥补过去的错误。",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES"
+    },
+    {
+      "text": "我们寻求知识，进一步学习你在学习过程中积累的超越。",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_KNOWLEDGE"
+    },
+    {
+      "text": "我们的动机是我们自己的。现在把你囤积的研究交出来。",
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 25
+      },
+      "success": {
+        "topic": "TALK_HERMIT_CF_REP_MISSION_INTIMIDATE",
+        "opinion": {
+          "fear": 1,
+          "trust": -1
+        },
+        "effect": {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "anger": 1,
+          "value": -1
+        },
+        "effect": "insult_combat"
+      }
+    }
+  ]
+}
+```
+

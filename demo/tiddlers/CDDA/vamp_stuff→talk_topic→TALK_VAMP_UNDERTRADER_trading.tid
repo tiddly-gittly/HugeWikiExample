@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_UNDERTRADER_trading
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_UNDERTRADER_trading|http://cdda.aloxaf.cn/search?q=TALK_VAMP_UNDERTRADER_trading]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Underrefugee/v_ut_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_UNDERTRADER_trading",
+  "type": "talk_topic",
+  "dynamic_line": "I don't know. Our master said we have to accept any valuables you humans got in your trip.",
+  "responses": [
+    {
+      "text": "Master? Could you tell me anything about this HIM?",
+      "topic": "TALK_VAMP_UNDERTRADER_himdetail",
+      "condition": {
+        "u_is_wearing": "blood_necklace"
+      },
+      "effect": {
+        "npc_add_trait": "undertradertalkedhim"
+      }
+    },
+    {
+      "text": "Master? Could you tell me anything about this HIM?",
+      "topic": "TALK_VAMP_UNDERTRADER_him",
+      "condition": {
+        "not": {
+          "u_is_wearing": "blood_necklace"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "undertradertalkedhim"
+      }
+    },
+    {
+      "text": "Okay...",
+      "topic": "TALK_VAMP_UNDERTRADER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_UNDERTRADER_trading",
+  "type": "talk_topic",
+  "dynamic_line": "我不知道。但我们的大师说我们可以接受你们在旅途中得到的任何贵重物品。",
+  "responses": [
+    {
+      "text": "大师？ 能告诉我更多关于HIM的事情吗？",
+      "topic": "TALK_VAMP_UNDERTRADER_himdetail",
+      "condition": {
+        "u_is_wearing": "blood_necklace"
+      },
+      "effect": {
+        "npc_add_trait": "undertradertalkedhim"
+      }
+    },
+    {
+      "text": "大师？ 能告诉我更多关于HIM的事情吗？",
+      "topic": "TALK_VAMP_UNDERTRADER_him",
+      "condition": {
+        "not": {
+          "u_is_wearing": "blood_necklace"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "undertradertalkedhim"
+      }
+    },
+    {
+      "text": "好吧……",
+      "topic": "TALK_VAMP_UNDERTRADER"
+    }
+  ]
+}
+```
+

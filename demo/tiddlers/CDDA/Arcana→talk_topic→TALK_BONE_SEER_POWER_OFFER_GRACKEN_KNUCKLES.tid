@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BONE_SEER_POWER_OFFER_GRACKEN_KNUCKLES
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BONE_SEER_POWER_OFFER_GRACKEN_KNUCKLES|http://cdda.aloxaf.cn/search?q=TALK_BONE_SEER_POWER_OFFER_GRACKEN_KNUCKLES]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BONE_SEER.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BONE_SEER_POWER_OFFER_GRACKEN_KNUCKLES",
+  "dynamic_line": "Ah, this is a very traditional manner of hearing the songs, of grasping the power within.  But these hum with verses I have never heard before.  Is this true, that there is something more to learn from these bones?  I cannot repay you for this, but please.  If you would be willing to part with them…",
+  "responses": [
+    {
+      "text": "Go ahead.  It's yours.",
+      "effect": [
+        {
+          "u_consume_item": "gracken_knuckles"
+        },
+        {
+          "u_add_var": "gave_monsterpart",
+          "type": "dialogue",
+          "context": "beyond",
+          "value": "yes"
+        }
+      ],
+      "topic": "TALK_BONE_SEER_POWER_STUDY"
+    },
+    {
+      "text": "I can't part with it just yet.  I'm sorry.",
+      "topic": "TALK_BONE_SEER_POWER_REFUSAL"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BONE_SEER_POWER_OFFER_GRACKEN_KNUCKLES",
+  "dynamic_line": "啊，用这种非常传统的方式来聆听歌曲，掌握其中的力量。但我从未听过它们所呈现给我的诗词。这是真的吗，还有更多能从这些骨头中学到的知识？ 拜托，你必须把它给我。虽然我不知道我能如何报答你的慷慨...",
+  "responses": [
+    {
+      "text": "拿着吧，你的了。",
+      "effect": [
+        {
+          "u_consume_item": "gracken_knuckles"
+        },
+        {
+          "u_add_var": "gave_monsterpart",
+          "type": "dialogue",
+          "context": "beyond",
+          "value": "yes"
+        }
+      ],
+      "topic": "TALK_BONE_SEER_POWER_STUDY"
+    },
+    {
+      "text": "我现在还不能与它分开。对不起。",
+      "topic": "TALK_BONE_SEER_POWER_REFUSAL"
+    }
+  ]
+}
+```
+

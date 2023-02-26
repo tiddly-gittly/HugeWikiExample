@@ -1,0 +1,337 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[60]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "method": "json",
+  "om_terrain": "cabin_4",
+  "type": "mapgen",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "........................",
+      "........................",
+      "........................",
+      ".._________________.....",
+      ".._________________.....",
+      ".._###ww#+#w######_.....",
+      ".._#F&C   Y  # ]6#_.....",
+      ".._w5 Cl     X   #_.....",
+      ".._wS Cl ctc #d [#_.....",
+      ".._#1 Cl ctc #c [#_.....",
+      ".._#2        #####_.....",
+      ".._w3    RRR +_____.....",
+      ".._#4R y ### #_____.....",
+      ".._###+#     #z___......",
+      ".._#   #BB BB#____......",
+      "..0#T&s#BBDBB#____......",
+      ".._######w#w##___.......",
+      "..__%____________.......",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "cabin_palette"
+    ],
+    "terrain": {
+      "0": "t_grass",
+      "6": "t_floor",
+      "[": "t_floor",
+      "]": "t_floor",
+      ".": [
+        [
+          "t_grass",
+          6
+        ],
+        "t_dirt",
+        "t_tree_dead",
+        "t_tree_maple",
+        "t_tree_young",
+        "t_tree",
+        [
+          "t_tree_pine",
+          2
+        ],
+        [
+          "t_underbrush",
+          3
+        ]
+      ],
+      "X": "t_door_boarded",
+      "z": "t_grass",
+      "_": [
+        "t_dirt",
+        [
+          "t_grass",
+          6
+        ]
+      ]
+    },
+    "furniture": {
+      "6": "f_statue",
+      "[": "f_bookcase",
+      "]": "f_counter"
+    },
+    "items": {
+      "[": {
+        "item": "cleansing_flame_books_postapoc",
+        "chance": 60,
+        "repeat": 3
+      }
+    },
+    "place_loot": [
+      {
+        "item": "holy_symbol",
+        "x": 15,
+        "y": 6,
+        "chance": 75
+      },
+      {
+        "item": "water_talisman",
+        "x": 15,
+        "y": 6,
+        "chance": 75
+      },
+      {
+        "item": "book_magicfordummies",
+        "x": 15,
+        "y": 6
+      },
+      {
+        "item": "note_flame_hint",
+        "x": 15,
+        "y": 6
+      },
+      {
+        "item": "arcanemap",
+        "x": 15,
+        "y": 6
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_GM_1_c",
+  "object": {
+    "set": [
+      {
+        "line": "terrain",
+        "id": "t_fence_post",
+        "x": 0,
+        "x2": 0,
+        "y": 19,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_fence_post",
+        "x": 0,
+        "x2": 4,
+        "y": 23,
+        "y2": 23
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 1,
+        "x2": 1,
+        "y": 13,
+        "y2": 21
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 1,
+        "x2": 8,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 15,
+        "x2": 16,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 1,
+        "x2": 1,
+        "y": 8,
+        "y2": 12
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 17,
+        "x2": 21,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 1,
+        "x2": 1,
+        "y": 3,
+        "y2": 7
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 22,
+        "x2": 23,
+        "y": 22,
+        "y2": 22
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "om_terrain": "cabin_4",
+  "type": "mapgen",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "........................",
+      "........................",
+      "........................",
+      ".._________________.....",
+      ".._________________.....",
+      ".._###ww#+#w######_.....",
+      ".._#F&C   Y  # ]6#_.....",
+      ".._w5 Cl     X   #_.....",
+      ".._wS Cl ctc #d [#_.....",
+      ".._#1 Cl ctc #c [#_.....",
+      ".._#2        #####_.....",
+      ".._w3    RRR +_____.....",
+      ".._#4R y ### #_____.....",
+      ".._###+#     #z___......",
+      ".._#   #BB BB#____......",
+      "..0#T&s#BBDBB#____......",
+      ".._######w#w##___.......",
+      "..__%____________.......",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "cabin_palette"
+    ],
+    "terrain": {
+      "0": "t_grass",
+      "6": "t_floor",
+      "[": "t_floor",
+      "]": "t_floor",
+      ".": [
+        [
+          "t_grass",
+          6
+        ],
+        "t_dirt",
+        "t_tree_dead",
+        "t_tree_maple",
+        "t_tree_young",
+        "t_tree",
+        [
+          "t_tree_pine",
+          2
+        ],
+        [
+          "t_underbrush",
+          3
+        ]
+      ],
+      "X": "t_door_boarded",
+      "z": "t_grass",
+      "_": [
+        "t_dirt",
+        [
+          "t_grass",
+          6
+        ]
+      ]
+    },
+    "furniture": {
+      "6": "f_statue",
+      "[": "f_bookcase",
+      "]": "f_counter"
+    },
+    "items": {
+      "[": {
+        "item": "cleansing_flame_books_postapoc",
+        "chance": 60,
+        "repeat": 3
+      }
+    },
+    "place_loot": [
+      {
+        "item": "holy_symbol",
+        "x": 15,
+        "y": 6,
+        "chance": 75
+      },
+      {
+        "item": "water_talisman",
+        "x": 15,
+        "y": 6,
+        "chance": 75
+      },
+      {
+        "item": "book_magicfordummies",
+        "x": 15,
+        "y": 6
+      },
+      {
+        "item": "note_flame_hint",
+        "x": 15,
+        "y": 6
+      },
+      {
+        "item": "arcanemap",
+        "x": 15,
+        "y": 6
+      }
+    ]
+  }
+}
+```
+

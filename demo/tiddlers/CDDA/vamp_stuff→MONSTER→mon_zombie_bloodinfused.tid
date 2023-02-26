@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_zombie_bloodinfused
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_bloodinfused|http://cdda.aloxaf.cn/search?q=mon_zombie_bloodinfused]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Zombies/Graveyard.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_bloodinfused",
+  "type": "MONSTER",
+  "name": {
+    "str": "blood infused zombie"
+  },
+  "description": "Once a compact zombie, but its blood has soaked and caused to mutate into a dangerous oversized bone plates and spikes, leaving its fleshy skin saggy. The bone scythes on its hands are symmetrical as a pair while its sharpened teeth potrudes from its jaw, but despite fearsome looks, its weight causes it to stumble... often.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "ELDERZED"
+  ],
+  "bodytype": "human",
+  "hp": 265,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "B",
+  "color": "black",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "armor_bash": 5,
+  "armor_cut": 15,
+  "armor_bullet": 12,
+  "vision_day": 13,
+  "harvest": "zombie",
+  "vision_night": 3,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 9
+    },
+    [
+      "GRAB",
+      7
+    ]
+  ],
+  "death_drops": "elderzombie",
+  "upgrades": {
+    "half_life": 6,
+    "into_group": "GROUP_CRYPTIES_INFUSEDUPGRADE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_bloodinfused",
+  "type": "MONSTER",
+  "name": {
+    "str": "血液灌注丧尸"
+  },
+  "description": "这只丧尸的血液曾经很紧实，但现在它被浸泡并变异出了危险的超大骨板和骨刺，使其肉质皮肤下垂。它手上有一对对称的骨镰刀，锋利的牙齿从它的下巴凹陷，尽管它有着可怕的外观，但是它的重量导致它经常...绊倒。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "ELDERZED"
+  ],
+  "bodytype": "human",
+  "hp": 265,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "B",
+  "color": "black",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "armor_bash": 5,
+  "armor_cut": 15,
+  "armor_bullet": 12,
+  "vision_day": 13,
+  "harvest": "zombie",
+  "vision_night": 3,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 9
+    },
+    [
+      "GRAB",
+      7
+    ]
+  ],
+  "death_drops": "elderzombie",
+  "upgrades": {
+    "half_life": 6,
+    "into_group": "GROUP_CRYPTIES_INFUSEDUPGRADE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+

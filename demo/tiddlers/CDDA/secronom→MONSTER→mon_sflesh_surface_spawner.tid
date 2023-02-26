@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_surface_spawner
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_surface_spawner|http://cdda.aloxaf.cn/search?q=mon_sflesh_surface_spawner]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_biome.json
+
+
+!! 原文
+
+```json
+{
+  "//": "All crimson horrors are immune to stun and are resistant to impact damage, so beating them with blunt weapons aren't effective.",
+  "id": "mon_sflesh_surface_spawner",
+  "type": "MONSTER",
+  "name": {
+    "str": "eye sprout"
+  },
+  "description": "An eyeball reemerging back and forth from the ground, occasionally peeking at the vicinity. You might want to poke it.",
+  "default_faction": "secro_flesh",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "4000 ml",
+  "weight": "1000 g",
+  "hp": 10,
+  "speed": 80,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⭗",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_surface_spawner_target"
+      },
+      "//": "Since the player is walking on the flesh, this spell's cooldown should be VERY high.",
+      "cooldown": 225,
+      "monster_message": "<color_light_red>%1$s glares at %3$s!</color>"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "IMMOBILE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "All crimson horrors are immune to stun and are resistant to impact damage, so beating them with blunt weapons aren't effective.",
+  "id": "mon_sflesh_surface_spawner",
+  "type": "MONSTER",
+  "name": {
+    "str": "眼芽"
+  },
+  "description": "一只眼球从地上来来回回地出现，偶尔会窥视周围。你可能想戳它。",
+  "default_faction": "secro_flesh",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "4000 ml",
+  "weight": "1000 g",
+  "hp": 10,
+  "speed": 80,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⭗",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_surface_spawner_target"
+      },
+      "//": "Since the player is walking on the flesh, this spell's cooldown should be VERY high.",
+      "cooldown": 225,
+      "monster_message": "<color_light_red>%1$s瞪着%3$s！</color>"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "IMMOBILE"
+  ]
+}
+```
+

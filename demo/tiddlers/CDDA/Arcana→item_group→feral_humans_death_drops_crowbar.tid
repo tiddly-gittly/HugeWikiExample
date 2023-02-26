@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: item_group Arcana
+title: Arcana→item_group→feral_humans_death_drops_crowbar
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：feral_humans_death_drops_crowbar|http://cdda.aloxaf.cn/search?q=feral_humans_death_drops_crowbar]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monster_drops.json
+
+
+!! 原文
+
+```json
+{
+  "id": "feral_humans_death_drops_crowbar",
+  "copy-from": "feral_humans_death_drops_crowbar",
+  "type": "item_group",
+  "//": "Adds items since we're referencing an existing itemgroup.",
+  "subtype": "collection",
+  "extend": {
+    "entries": [
+      {
+        "item": "essence_blood",
+        "prob": 10,
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "group": "arcana_hunt_random",
+        "prob": 5
+      },
+      {
+        "group": "magic_books_postapoc",
+        "prob": 3
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "feral_humans_death_drops_crowbar",
+  "copy-from": "feral_humans_death_drops_crowbar",
+  "type": "item_group",
+  "//": "Adds items since we're referencing an existing itemgroup.",
+  "subtype": "collection",
+  "extend": {
+    "entries": [
+      {
+        "item": "essence_blood",
+        "prob": 10,
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "group": "arcana_hunt_random",
+        "prob": 5
+      },
+      {
+        "group": "magic_books_postapoc",
+        "prob": 3
+      }
+    ]
+  }
+}
+```
+

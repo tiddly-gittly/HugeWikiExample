@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_ward_flame
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_ward_flame|http://cdda.aloxaf.cn/search?q=arcana_blessing_ward_flame]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_ward_flame",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Ward (Flame)"
+  },
+  "description": "Arcane Blessing\nUsing this spell will completely protect against fire, as well as the side effects caused by heat and smoke.  It can be used on yourself or an ally.",
+  "message": "You channel a protective aura, the air seeming chilled by your actions.",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "heat_ward_true",
+  "energy_source": "MANA",
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "difficulty": 60,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 350,
+  "final_casting_time": 175,
+  "casting_time_increment": -8.75,
+  "base_energy_cost": 420,
+  "final_energy_cost": 210,
+  "energy_increment": -10.5,
+  "min_duration": 36000,
+  "max_duration": 180000,
+  "duration_increment": 7200
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_ward_flame",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：结界（火焰）"
+  },
+  "description": "奥术祝福\n使用该法术将完全防止火以及由热和烟引起的副作用。它可以在自己或盟友身上使用。",
+  "message": "你引导了一个保护性光环，空气似乎被你的动作冷落了。",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "heat_ward_true",
+  "energy_source": "MANA",
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "difficulty": 60,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 350,
+  "final_casting_time": 175,
+  "casting_time_increment": -8.75,
+  "base_energy_cost": 420,
+  "final_energy_cost": 210,
+  "energy_increment": -10.5,
+  "min_duration": 36000,
+  "max_duration": 180000,
+  "duration_increment": 7200
+}
+```
+

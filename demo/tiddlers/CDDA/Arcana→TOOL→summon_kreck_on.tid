@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_kreck_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_kreck_on|http://cdda.aloxaf.cn/search?q=summon_kreck_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/obsolete.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_kreck_on",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of trickery (active)",
+    "str_pl": "glyphs of trickery (active)"
+  },
+  "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.",
+  "price": "1500 USD",
+  "price_postapoc": "10 USD",
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "turns_per_charge": 1,
+  "revert_to": "silver_glyph",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_kreck_summoned_glyph",
+    "friendly_msg": "The kreck looks up at you expectantly, as if wondering what sort of shenanigans you're plotting.",
+    "hostile_msg": "The kreck mimics your movements erratically, cavorting about to mock you!",
+    "difficulty": 1,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_kreck_on",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：欺诈（激活）",
+    "str_pl": "雕文：欺诈（激活）"
+  },
+  "description": "一种奇怪的银徽章，上面刻有怪诞生物的描述。使用它会召唤出一个克雷克，并把它与你的意志捆绑在一起。如果成功的话。",
+  "price": "1500 USD",
+  "price_postapoc": "10 USD",
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "turns_per_charge": 1,
+  "revert_to": "silver_glyph",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_kreck_summoned_glyph",
+    "friendly_msg": "克雷克期待地看着你，好像想知道你在谋划怎样的恶作剧。",
+    "hostile_msg": "克雷克会不规则地模仿你的动作，到处蹦蹦跳跳地嘲笑你！",
+    "difficulty": 1,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  }
+}
+```
+

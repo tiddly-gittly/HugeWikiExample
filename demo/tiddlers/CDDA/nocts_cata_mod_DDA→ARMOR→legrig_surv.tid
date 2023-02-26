@@ -1,0 +1,247 @@
+creator: 林一二
+revision: 0
+tags: ARMOR nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→ARMOR→legrig_surv
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：legrig_surv|http://cdda.aloxaf.cn/search?q=legrig_surv]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_armor.json
+
+
+!! 原文
+
+```json
+{
+  "type": "ARMOR",
+  "id": "legrig_surv",
+  "name": {
+    "str": "survivor leg rig"
+  },
+  "description": "A custom set of low-slung adjustable straps and rings, designed to secure a variety of equipment strapped to the legs.  Its straps can handle a wide range of short blades, firearms, magazines, and most items that would fit on a tool belt.  Activate it to store up to 4 items.",
+  "weight": "250 g",
+  "volume": "1500 ml",
+  "price": "100 USD",
+  "price_postapoc": "5 USD",
+  "material": [
+    "cotton",
+    "leather"
+  ],
+  "symbol": "[",
+  "looks_like": "legrig",
+  "color": "dark_gray",
+  "material_thickness": 1,
+  "pocket_data": [
+    {
+      "moves": 75,
+      "min_volume": "50 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "762 mm",
+      "skills": [
+        "pistol",
+        "smg",
+        "shotgun",
+        "rifle"
+      ],
+      "holster": true
+    },
+    {
+      "moves": 75,
+      "min_volume": "50 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "762 mm",
+      "skills": [
+        "pistol",
+        "smg",
+        "shotgun",
+        "rifle"
+      ],
+      "holster": true
+    },
+    {
+      "moves": 75,
+      "min_volume": "50 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "762 mm",
+      "holster": true,
+      "flag_restriction": [
+        "SHEATH_KNIFE",
+        "BELT_CLIP",
+        "SHEATH_SWORD",
+        "MAG_COMPACT",
+        "MAG_BULKY",
+        "SPEEDLOADER"
+      ]
+    },
+    {
+      "moves": 75,
+      "min_volume": "50 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "762 mm",
+      "holster": true,
+      "flag_restriction": [
+        "SHEATH_KNIFE",
+        "BELT_CLIP",
+        "SHEATH_SWORD",
+        "MAG_COMPACT",
+        "MAG_BULKY",
+        "SPEEDLOADER"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Stash item",
+    "holster_msg": "You stash your %s"
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "BELTED",
+    "OVERSIZE",
+    "NO_QUICKDRAW"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        2,
+        6
+      ],
+      "coverage": 20,
+      "covers": [
+        "leg_l",
+        "leg_r"
+      ],
+      "specifically_covers": [
+        "leg_upper_r",
+        "leg_upper_l"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "ARMOR",
+  "id": "legrig_surv",
+  "name": {
+    "str": "幸存者腿环"
+  },
+  "description": "一套自制的可调节吊带腿环，用于将各种设备固定在腿上。它的皮带可以存放各种各样的短刀、枪支、弹匣和大多数可存放于工具皮带的物品。激活它以储存4件物品。",
+  "weight": "250 g",
+  "volume": "1500 ml",
+  "price": "100 USD",
+  "price_postapoc": "5 USD",
+  "material": [
+    "cotton",
+    "leather"
+  ],
+  "symbol": "[",
+  "looks_like": "legrig",
+  "color": "dark_gray",
+  "material_thickness": 1,
+  "pocket_data": [
+    {
+      "moves": 75,
+      "min_volume": "50 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "762 mm",
+      "skills": [
+        "pistol",
+        "smg",
+        "shotgun",
+        "rifle"
+      ],
+      "holster": true
+    },
+    {
+      "moves": 75,
+      "min_volume": "50 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "762 mm",
+      "skills": [
+        "pistol",
+        "smg",
+        "shotgun",
+        "rifle"
+      ],
+      "holster": true
+    },
+    {
+      "moves": 75,
+      "min_volume": "50 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "762 mm",
+      "holster": true,
+      "flag_restriction": [
+        "SHEATH_KNIFE",
+        "BELT_CLIP",
+        "SHEATH_SWORD",
+        "MAG_COMPACT",
+        "MAG_BULKY",
+        "SPEEDLOADER"
+      ]
+    },
+    {
+      "moves": 75,
+      "min_volume": "50 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "762 mm",
+      "holster": true,
+      "flag_restriction": [
+        "SHEATH_KNIFE",
+        "BELT_CLIP",
+        "SHEATH_SWORD",
+        "MAG_COMPACT",
+        "MAG_BULKY",
+        "SPEEDLOADER"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "存入物品",
+    "holster_msg": "你收好了%s。"
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "BELTED",
+    "OVERSIZE",
+    "NO_QUICKDRAW"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        2,
+        6
+      ],
+      "coverage": 20,
+      "covers": [
+        "leg_l",
+        "leg_r"
+      ],
+      "specifically_covers": [
+        "leg_upper_r",
+        "leg_upper_l"
+      ]
+    }
+  ]
+}
+```
+

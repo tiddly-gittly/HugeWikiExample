@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→remilia_consumeblood
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：remilia_consumeblood|http://cdda.aloxaf.cn/search?q=remilia_consumeblood]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_remi.json
+
+
+!! 原文
+
+```json
+{
+  "id": "remilia_consumeblood",
+  "type": "SPELL",
+  "name": "Consume blood",
+  "description": "Consume an unit of blood to regenerate health and spiritual power.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "self"
+  ],
+  "components": "spell_components_blood",
+  "effect": "recover_energy",
+  "effect_str": "HP",
+  "extra_effects": [
+    {
+      "id": "remilia_consumeblood2"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "pure",
+  "min_damage": 12,
+  "max_damage": 42,
+  "damage_increment": 3,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 150,
+  "base_energy_cost": 0,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "Would be nice to have a field effect for this"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "remilia_consumeblood",
+  "type": "SPELL",
+  "name": "Consume blood",
+  "description": "Consume an unit of blood to regenerate health and spiritual power.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "self"
+  ],
+  "components": "spell_components_blood",
+  "effect": "recover_energy",
+  "effect_str": "HP",
+  "extra_effects": [
+    {
+      "id": "remilia_consumeblood2"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "pure",
+  "min_damage": 12,
+  "max_damage": 42,
+  "damage_increment": 3,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 150,
+  "base_energy_cost": 0,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "Would be nice to have a field effect for this"
+}
+```
+

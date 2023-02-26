@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_MISSION_END_3_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_MISSION_END_3_2|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_MISSION_END_3_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_MISSION_END_3_2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_effect": "cf_purifier_making_item",
+    "yes": "Yes, all the information that was brought from Sofia.  The Keepers provided a valuable understanding of the principles their dimension-sealing relics operated on.  And the remnants of the Sanguine Order, despite all the evils they've done, have learned many lessons on manipulating energies of the Beyond, mostly the hard way.  Together with this component, we can hopefully manufacture a dimension-sealing device of our own.",
+    "no": "Yes, all the information that was brought from Sofia.  The Keepers provided a valuable understanding of the principles their dimension-sealing relics operated on.  And the remnants of the Sanguine Order, despite all the evils they've done, have learned many lessons on manipulating energies of the Beyond, mostly the hard way.  Now we have a dimension-sealing device of our own."
+  },
+  "responses": [
+    {
+      "text": "And what do you plan to do with it?",
+      "condition": {
+        "not": {
+          "npc_has_effect": "cf_purifier_making_item"
+        }
+      },
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_FINAL"
+    },
+    {
+      "text": "What can you tell me about that component?",
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3"
+    },
+    {
+      "text": "What what does it do?",
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_3"
+    },
+    {
+      "text": "I'll check back later.",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_MISSION_END_3_2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_effect": "cf_purifier_making_item",
+    "yes": "是的，所有的信息都是从索非亚带来的。守誓者提供了一个有价值的理解他们的尺寸密封文物操作的规律。猩红教派的残余，他们坏事做尽，已经在操纵超越能量方面掌握了许多技术，大部分都十分难以理解。有了这个组件，我们有望制造出自己的尺寸密封装置。",
+    "no": "是的，所有的信息都是从索非亚带来的。守门员们对他们的操作原理有了有价值的了解。而乐观秩序的残余，尽管他们做了所有的坏事，在操纵超越的能量方面已经学到了很多教训，大多是艰难的方式。现在我们有了自己的尺寸密封装置。"
+  },
+  "responses": [
+    {
+      "text": "你打算用它做什么？",
+      "condition": {
+        "not": {
+          "npc_has_effect": "cf_purifier_making_item"
+        }
+      },
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_FINAL"
+    },
+    {
+      "text": "关于那个部件你能告诉我什么？",
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3"
+    },
+    {
+      "text": "它做什么？",
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_3"
+    },
+    {
+      "text": "我过会儿再检查。",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+

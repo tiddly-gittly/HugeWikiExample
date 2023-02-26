@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_pattern_dark_lance
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_pattern_dark_lance|http://cdda.aloxaf.cn/search?q=arcana_pattern_dark_lance]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_pattern_scrolls.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_dark_lance",
+  "name": {
+    "str": "Pattern: Dark Lance"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_DARK_LANCE",
+  "description": "This grants a specific spell mutation.",
+  "sprite": "fd_veil_light",
+  "message": "You gaze deep into the strange patterns, the text seeming to frost over…",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_dark_lance",
+  "name": {
+    "str": "图案：暗影长矛"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_DARK_LANCE",
+  "description": "这赋予了特定的咒语突变。",
+  "sprite": "fd_veil_light",
+  "message": "你凝视着奇怪的图案，上面的字似乎结霜了……",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+

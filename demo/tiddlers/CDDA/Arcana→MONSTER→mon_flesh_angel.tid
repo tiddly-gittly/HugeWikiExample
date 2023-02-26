@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_flesh_angel
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_flesh_angel|http://cdda.aloxaf.cn/search?q=mon_flesh_angel]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monster_overrides.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_flesh_angel",
+  "//": "Formerly a vanilla monster that never actually spawned anywhere, they got the axe instead of ever actually getting a place to spawn in.",
+  "type": "MONSTER",
+  "name": {
+    "str": "flesh angel"
+  },
+  "description": "A tall and slender man lacking skin and any normalcy of countenance.  Wings of muscle curl forth from its back and a third eye dominates the forehead.",
+  "default_faction": "cult",
+  "bodytype": "angel",
+  "species": [
+    "ZOMBIE"
+  ],
+  "categories": [
+    "CLASSIC"
+  ],
+  "diff": 5,
+  "volume": "92500 ml",
+  "weight": "120 kg",
+  "hp": 200,
+  "speed": 120,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "H",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 9,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "dodge": 2,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "FEAR_PARALYZE",
+      0
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "death_drops": "mon_flesh_angel_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "HARDTOSHOOT",
+    "ATTACKMON",
+    "FLIES",
+    "HUMAN",
+    "POISON",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_flesh_angel",
+  "//": "Formerly a vanilla monster that never actually spawned anywhere, they got the axe instead of ever actually getting a place to spawn in.",
+  "type": "MONSTER",
+  "name": {
+    "str": "血肉天使"
+  },
+  "description": "一个高大修长的人，没有任何皮肤和表情，腥红的肌肉组织暴露在体表，肉翼从他的背部向前伸出，额头上第三只眼占据了大部分前额。",
+  "default_faction": "cult",
+  "bodytype": "angel",
+  "species": [
+    "ZOMBIE"
+  ],
+  "categories": [
+    "CLASSIC"
+  ],
+  "diff": 5,
+  "volume": "92500 ml",
+  "weight": "120 kg",
+  "hp": 200,
+  "speed": 120,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "H",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 9,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "dodge": 2,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "FEAR_PARALYZE",
+      0
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "death_drops": "mon_flesh_angel_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "HARDTOSHOOT",
+    "ATTACKMON",
+    "FLIES",
+    "HUMAN",
+    "POISON",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

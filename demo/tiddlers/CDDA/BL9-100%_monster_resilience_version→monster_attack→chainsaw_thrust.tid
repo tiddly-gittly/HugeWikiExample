@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: monster_attack BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→monster_attack→chainsaw_thrust
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：chainsaw_thrust|http://cdda.aloxaf.cn/search?q=chainsaw_thrust]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "chainsaw_thrust",
+  "cooldown": 9,
+  "move_cost": 210,
+  "accuracy": 5,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 10,
+      "armor_penetration": 10
+    }
+  ],
+  "hit_dmg_u": "The %1$s thrusts with it's chainsaw at you!",
+  "hit_dmg_npc": "The %1$s thrusts with it's chainsaw at <npcname>!",
+  "no_dmg_msg_u": "The %1$s tries to thrust with it's chainsaw at you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "The %1$s tries to thrust with it's chainsaw at <npcname>, but fails to penetrate their armor!",
+  "miss_msg_u": "The %s thrusts with it's chainsaw at you, but you step aside!",
+  "miss_msg_npc": "The %s thrusts with it's chainsaw at <npcname>, but they dodge!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "chainsaw_thrust",
+  "cooldown": 9,
+  "move_cost": 210,
+  "accuracy": 5,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 10,
+      "armor_penetration": 10
+    }
+  ],
+  "hit_dmg_u": "%1$s用它的电锯猛刺你！",
+  "hit_dmg_npc": "%1$s用电锯在<npcname>处猛刺！",
+  "no_dmg_msg_u": "%1$s试图用它的链锯向你刺去，但是没有穿透你的装甲！",
+  "no_dmg_msg_npc": "%1$s试图用它的链锯在<npcname>处推进，但未能穿透他们的装甲！",
+  "miss_msg_u": "%s用它的电锯猛刺你，但你让开！",
+  "miss_msg_npc": "%s用它的电锯在<npcname>处猛刺，但它们躲开了！"
+}
+```
+

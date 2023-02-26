@@ -1,0 +1,211 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_ivy_bulb
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_ivy_bulb|http://cdda.aloxaf.cn/search?q=mon_BL9_ivy_bulb]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/wild_flora_fauna.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_ivy_bulb",
+  "looks_like": "mon_vinebeast",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9 ivy bulb zombie"
+  },
+  "description": "A corpse severely infested by the plant of unknown variety. Although it's movement is very stiff, it's body burst into an armored bulb sort of a protrusion that occupies the upper part of it entirely, the inside of the bulb is horribly lined with razor-sharp teeth.",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 300,
+  "speed": 60,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 3,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 10
+    },
+    {
+      "damage_type": "stab",
+      "amount": 6
+    },
+    {
+      "damage_type": "bash",
+      "amount": 1
+    }
+  ],
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Clawer",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 250,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 9
+        },
+        {
+          "damage_type": "stab",
+          "amount": 22,
+          "armor_multiplier": 1.42
+        }
+      ],
+      "hit_dmg_u": "The %1$s's bulbous mouth crunches at you!",
+      "hit_dmg_npc": "The %1$s crunches at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to viciously bite you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s bulbous mouth crunches at you, but you step aside!",
+      "miss_msg_npc": "The %s crunches <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_ivy_bulb",
+  "looks_like": "mon_vinebeast",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9常春藤球茎丧尸"
+  },
+  "description": "被未知种类的植物严重感染的尸体。虽然它的运动非常僵硬，但它的身体突然变成了一个盔甲状的球状物，一个突出物占据了它的上部，灯泡的内部布满了可怕的锋利的牙齿。",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 300,
+  "speed": 60,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 3,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 10
+    },
+    {
+      "damage_type": "stab",
+      "amount": 6
+    },
+    {
+      "damage_type": "bash",
+      "amount": 1
+    }
+  ],
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Clawer",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 250,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 9
+        },
+        {
+          "damage_type": "stab",
+          "amount": 22,
+          "armor_multiplier": 1.42
+        }
+      ],
+      "hit_dmg_u": "The %1$s's bulbous mouth crunches at you!",
+      "hit_dmg_npc": "The %1$s crunches at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to viciously bite you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s bulbous mouth crunches at you, but you step aside!",
+      "miss_msg_npc": "The %s crunches <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

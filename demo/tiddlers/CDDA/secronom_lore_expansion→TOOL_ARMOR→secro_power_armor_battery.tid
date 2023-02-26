@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_battery
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_battery|http://cdda.aloxaf.cn/search?q=secro_power_armor_battery]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/secro_ammo_mags.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_battery",
+  "type": "TOOL_ARMOR",
+  "category": "spare_parts",
+  "name": {
+    "str": "Secronom module UPS",
+    "str_pl": "Secronom module UPS"
+  },
+  "description": "A UPS with an extremely high-capacity battery specially designed to be used for all Secronom module implant types.",
+  "weight": "1300 g",
+  "volume": "2425 ml",
+  "price": "300 USD",
+  "price_postapoc": "210 USD",
+  "material": [
+    "iron",
+    "plastic"
+  ],
+  "symbol": "=",
+  "color": "cyan",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "rigid": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "light_battery_cell",
+        "light_plus_battery_cell",
+        "light_minus_battery_cell",
+        "light_atomic_battery_cell",
+        "light_minus_atomic_battery_cell",
+        "light_minus_disposable_cell",
+        "light_disposable_cell"
+      ]
+    }
+  ],
+  "looks_like": "battery",
+  "flags": [
+    "USE_UPS",
+    "NO_SALVAGE",
+    "NO_UNLOAD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_battery",
+  "type": "TOOL_ARMOR",
+  "category": "spare_parts",
+  "name": {
+    "str": "Secronom模块 UPS",
+    "str_pl": "Secronom模块 UPS"
+  },
+  "description": "一种带有超大容量电池的UPS，特别为所有Secronom模块类型所设计。",
+  "weight": "1300 g",
+  "volume": "2425 ml",
+  "price": "300 USD",
+  "price_postapoc": "210 USD",
+  "material": [
+    "iron",
+    "plastic"
+  ],
+  "symbol": "=",
+  "color": "cyan",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "rigid": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "light_battery_cell",
+        "light_plus_battery_cell",
+        "light_minus_battery_cell",
+        "light_atomic_battery_cell",
+        "light_minus_atomic_battery_cell",
+        "light_minus_disposable_cell",
+        "light_disposable_cell"
+      ]
+    }
+  ],
+  "looks_like": "battery",
+  "flags": [
+    "USE_UPS",
+    "NO_SALVAGE",
+    "NO_UNLOAD"
+  ]
+}
+```
+

@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_flesh_city
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_flesh_city|http://cdda.aloxaf.cn/search?q=mon_sflesh_flesh_city]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh.json
+
+
+!! 原文
+
+```json
+{
+  "//": "A boss that resides in cities. It has weaker health and regenerates lesser, but it can attack directly with tentacles, which deals moderate to massive damage.",
+  "id": "mon_sflesh_flesh_city",
+  "looks_like": "mon_sflesh_flesh",
+  "type": "MONSTER",
+  "name": {
+    "str": "flesh"
+  },
+  "description": "A gargantuan lump of meat, throbbing in faint, velvety hue. Thick tentacles pierces through the walls that extends further into the ground, in each rhythmic beats causes all connected veins to pulse.",
+  "default_faction": "secro_flesh",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "75000 L",
+  "weight": "423525 kg",
+  "hp": 1100,
+  "speed": 85,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⨷",
+  "color": "red_magenta",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "melee_skill": 10,
+  "melee_dice": 10,
+  "melee_dice_sides": 8,
+  "armor_bash": 24,
+  "armor_cut": 12,
+  "armor_bullet": 10,
+  "armor_stab": 20,
+  "vision_day": 30,
+  "vision_night": 30,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_flesh_city_target"
+      },
+      "cooldown": 16,
+      "monster_message": "<color_light_red>%1$s trembles!</color>"
+    },
+    [
+      "sflesh_flesh_city_thrash",
+      27
+    ],
+    [
+      "sflesh_flesh_city_thrust",
+      41
+    ],
+    [
+      "sflesh_flesh_city_fturmoil",
+      100
+    ]
+  ],
+  "bleed_rate": 0,
+  "regenerates": 8,
+  "death_drops": "mon_sflesh_flesh_death_drop",
+  "harvest": "meatslug",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away!",
+    "effect": {
+      "id": "mon_sflesh_flesh_bio_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "NOHEAD",
+    "IMMOBILE",
+    "PACIFIST",
+    "QUEEN"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "A boss that resides in cities. It has weaker health and regenerates lesser, but it can attack directly with tentacles, which deals moderate to massive damage.",
+  "id": "mon_sflesh_flesh_city",
+  "looks_like": "mon_sflesh_flesh",
+  "type": "MONSTER",
+  "name": {
+    "str": "血肉"
+  },
+  "description": "一块巨大的肉，在微弱的天鹅绒般的色调中跳动。厚厚的触须穿过墙壁，延伸到地面更远，在每一个有节奏的节拍导致所有相连的静脉脉搏。",
+  "default_faction": "secro_flesh",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "75000 L",
+  "weight": "423525 kg",
+  "hp": 1100,
+  "speed": 85,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⨷",
+  "color": "red_magenta",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "melee_skill": 10,
+  "melee_dice": 10,
+  "melee_dice_sides": 8,
+  "armor_bash": 24,
+  "armor_cut": 12,
+  "armor_bullet": 10,
+  "armor_stab": 20,
+  "vision_day": 30,
+  "vision_night": 30,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_flesh_city_target"
+      },
+      "cooldown": 16,
+      "monster_message": "<color_light_red>%1$s抖动着...！</color>"
+    },
+    [
+      "sflesh_flesh_city_thrash",
+      27
+    ],
+    [
+      "sflesh_flesh_city_thrust",
+      41
+    ],
+    [
+      "sflesh_flesh_city_fturmoil",
+      100
+    ]
+  ],
+  "bleed_rate": 0,
+  "regenerates": 8,
+  "death_drops": "mon_sflesh_flesh_death_drop",
+  "harvest": "meatslug",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away!",
+    "effect": {
+      "id": "mon_sflesh_flesh_bio_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "NOHEAD",
+    "IMMOBILE",
+    "PACIFIST",
+    "QUEEN"
+  ]
+}
+```
+

@@ -1,0 +1,245 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_arachnia
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_arachnia|http://cdda.aloxaf.cn/search?q=mon_zombie_arachnia]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Spider.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_arachnia",
+  "type": "MONSTER",
+  "name": "arachnia",
+  "description": "Several protrusion of calcified materials cover this 8-legged abomination, as its visage have become more sinister, revealing a set of long, dagger-like mandibles along with several eyes poking around its necrotic skin. Apart from its terrifying features, its movements seem to have become more fluent.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 225,
+  "speed": 110,
+  "diff": 50,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩈",
+  "color": "red_white",
+  "aggression": 100,
+  "harvest": "zombie",
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "dodge": 4,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 2
+    },
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "armor_acid": 3,
+  "armor_fire": 1,
+  "vision_night": 12,
+  "vision_day": 32,
+  "weakpoints": [
+    {
+      "name": "one of its legs",
+      "coverage": 2,
+      "damage_mult": {
+        "all": 0.9
+      },
+      "effects": [
+        {
+          "effect": "secro_zombie_spider_cripple",
+          "intensity": 1,
+          "permanent": true,
+          "damage_required": [
+            20,
+            100
+          ],
+          "message": "A leg of the %s breaks!"
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "leap",
+      "cooldown": 15,
+      "min_range": 2,
+      "max_range": 5
+    },
+    {
+      "cooldown": 15,
+      "damage_max_instance": [
+        {
+          "amount": 6,
+          "armor_multiplier": 0.75,
+          "damage_type": "cut"
+        },
+        {
+          "amount": 12,
+          "armor_multiplier": 0.5,
+          "damage_type": "stab"
+        }
+      ],
+      "type": "bite"
+    },
+    [
+      "scratch",
+      4
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "CLIMBS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES",
+    "HARDTOSHOOT"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_arachnia",
+  "type": "MONSTER",
+  "name": "八脚丧尸",
+  "description": "这只8条腿的可憎动物有着一张更为不详的脸，这张脸上露出一副匕首般的长下颚，还有几只眼睛在它坏死的皮肤周围戳来戳去。除了可怕的特征，它的动作似乎变得更加流畅。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 225,
+  "speed": 110,
+  "diff": 50,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩈",
+  "color": "red_white",
+  "aggression": 100,
+  "harvest": "zombie",
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "dodge": 4,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 2
+    },
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "armor_acid": 3,
+  "armor_fire": 1,
+  "vision_night": 12,
+  "vision_day": 32,
+  "weakpoints": [
+    {
+      "name": "one of its legs",
+      "coverage": 2,
+      "damage_mult": {
+        "all": 0.9
+      },
+      "effects": [
+        {
+          "effect": "secro_zombie_spider_cripple",
+          "intensity": 1,
+          "permanent": true,
+          "damage_required": [
+            20,
+            100
+          ],
+          "message": "A leg of the %s breaks!"
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "leap",
+      "cooldown": 15,
+      "min_range": 2,
+      "max_range": 5
+    },
+    {
+      "cooldown": 15,
+      "damage_max_instance": [
+        {
+          "amount": 6,
+          "armor_multiplier": 0.75,
+          "damage_type": "cut"
+        },
+        {
+          "amount": 12,
+          "armor_multiplier": 0.5,
+          "damage_type": "stab"
+        }
+      ],
+      "type": "bite"
+    },
+    [
+      "scratch",
+      4
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "CLIMBS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES",
+    "HARDTOSHOOT"
+  ]
+}
+```
+

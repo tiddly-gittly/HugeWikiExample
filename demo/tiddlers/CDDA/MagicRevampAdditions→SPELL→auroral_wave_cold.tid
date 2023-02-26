@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→auroral_wave_cold
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：auroral_wave_cold|http://cdda.aloxaf.cn/search?q=auroral_wave_cold]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Boreal_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "auroral_wave_cold",
+  "name": {
+    "str": "Auroral Wave"
+  },
+  "description": "This is the cold damage portion of the Auroral Wave spell, it is a wider blast around the central high damage cone.",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "min_damage": 30,
+  "max_damage": 122,
+  "damage_increment": 2,
+  "min_range": 4,
+  "max_range": 14,
+  "range_increment": 0.25,
+  "min_aoe": 45,
+  "max_aoe": 145,
+  "aoe_increment": 3,
+  "energy_source": "MANA",
+  "damage_type": "cold",
+  "max_level": 43
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "auroral_wave_cold",
+  "name": {
+    "str": "极光浪潮"
+  },
+  "description": "这是极光浪潮法术造成寒冷伤害的部分，一个环绕在中心的高伤害锥形区外且范围更广的冲击波。",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "min_damage": 30,
+  "max_damage": 122,
+  "damage_increment": 2,
+  "min_range": 4,
+  "max_range": 14,
+  "range_increment": 0.25,
+  "min_aoe": 45,
+  "max_aoe": 145,
+  "aoe_increment": 3,
+  "energy_source": "MANA",
+  "damage_type": "cold",
+  "max_level": 43
+}
+```
+

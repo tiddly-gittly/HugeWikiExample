@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_CF_REP_MISSION_ALLIES_DEFERRED
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_CF_REP_MISSION_ALLIES_DEFERRED|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_CF_REP_MISSION_ALLIES_DEFERRED]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_CF_REP_MISSION_ALLIES_DEFERRED",
+  "dynamic_line": {
+    "npc_has_item": "offering_mission_notes",
+    "yes": "If you insist.  You need only ask at any time, and I will reach out as best as I can.  As for that, I have been writing down my own observations and research in clay.  More readily available out here than paper, and more permanent.  I hoped that, should my life's work find me lacking, another would find some use for it someday.  Now that day has come.  You may have it.",
+    "no": "If you insist.  You need only ask at any time, and I will reach out as best as I can.  As for that, I have been writing down my own observations and research in clay.  More readily available out here than paper, and more permanent.  I hoped that, should my life's work find me lacking, another would find some use for it someday.  Now that day has come.  It's in the safe, here."
+  },
+  "speaker_effect": [
+    {
+      "condition": {
+        "npc_has_item": "offering_mission_notes"
+      },
+      "effect": [
+        {
+          "npc_remove_item_with": "offering_mission_notes"
+        },
+        {
+          "u_spawn_item": "offering_mission_notes"
+        }
+      ]
+    },
+    {
+      "effect": [
+        {
+          "u_add_var": "sofia_mission_5_ready",
+          "type": "flag",
+          "context": "hermit",
+          "value": "yes"
+        },
+        {
+          "mapgen_update": "arcana_hermit_tablet_unlock",
+          "om_terrain": "arcana_hermitage_2",
+          "om_special": "Hermit Cabin"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "text": "Thank you.  I have other questions, before I go.",
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "Thank you.  I should go bring this to them.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_CF_REP_MISSION_ALLIES_DEFERRED",
+  "dynamic_line": {
+    "npc_has_item": "offering_mission_notes",
+    "yes": "如果你坚持的话。你只要在任何时候问我，我会尽我所能的。至于这一点，我一直在用粘土写下自己的观察和研究。这里比纸更容易得到，而且更持久。我希望，如果我一生的工作发现我缺乏，有一天另一个人会找到它的用处。现在这一天到了。你可以得到它。",
+    "no": "如果你坚持。你只需要在任何时候问，我会尽我所能伸出援助之手。至于这一点，我一直在用粘土写下自己的观察和研究。比纸更容易得到，也更持久。我希望，如果我一生的工作发现我有所欠缺，总有一天另一个人会发现它的用处。现在那一天已经到来。在保险箱里，这里。"
+  },
+  "speaker_effect": [
+    {
+      "condition": {
+        "npc_has_item": "offering_mission_notes"
+      },
+      "effect": [
+        {
+          "npc_remove_item_with": "offering_mission_notes"
+        },
+        {
+          "u_spawn_item": "offering_mission_notes"
+        }
+      ]
+    },
+    {
+      "effect": [
+        {
+          "u_add_var": "sofia_mission_5_ready",
+          "type": "flag",
+          "context": "hermit",
+          "value": "yes"
+        },
+        {
+          "mapgen_update": "arcana_hermit_tablet_unlock",
+          "om_terrain": "arcana_hermitage_2",
+          "om_special": "Hermit Cabin"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "text": "非常感谢。在我走之前，我还有其他问题。",
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "非常感谢。我应该把这个带给他们。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

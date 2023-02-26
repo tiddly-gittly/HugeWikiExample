@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→t6_blood_crimsoncoat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t6_blood_crimsoncoat|http://cdda.aloxaf.cn/search?q=t6_blood_crimsoncoat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/Hemomancer/v_blood_T6.json
+
+
+!! 原文
+
+```json
+{
+  "id": "t6_blood_crimsoncoat",
+  "type": "SPELL",
+  "name": {
+    "str": "Crimson Coat"
+  },
+  "//": "Timed countering tactic. Useful for preventing high damage attacks like SMASH or gunshots.",
+  "description": "You withdraw for a very short moment, covering your whole body with <color_brown>thick blood layer</color> that nullifies most physical damage. This thick layer does not burden you in any way.\n\nThis is a <color_magenta>tier 6</color> spell.",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "v_hemo_crimsoncoat_coat",
+  "base_energy_cost": 10,
+  "energy_source": "HP",
+  "spell_class": "VAMP_BLOOD_spellcaster",
+  "difficulty": 6,
+  "max_level": 5,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_duration": 500,
+  "max_duration": 1500,
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "t6_blood_crimsoncoat",
+  "type": "SPELL",
+  "name": {
+    "str": "深红色外套"
+  },
+  "//": "Timed countering tactic. Useful for preventing high damage attacks like SMASH or gunshots.",
+  "description": "You withdraw for a very short moment, covering your whole body with <color_brown>thick blood layer</color> that nullifies most physical damage. This thick layer does not burden you in any way.\n\nThis is a <color_magenta>tier 6</color> spell.",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "v_hemo_crimsoncoat_coat",
+  "base_energy_cost": 10,
+  "energy_source": "HP",
+  "spell_class": "VAMP_BLOOD_spellcaster",
+  "difficulty": 6,
+  "max_level": 5,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_duration": 500,
+  "max_duration": 1500,
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS"
+  ]
+}
+```
+

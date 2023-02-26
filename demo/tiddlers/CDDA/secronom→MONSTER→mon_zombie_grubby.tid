@@ -1,0 +1,227 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_grubby
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_grubby|http://cdda.aloxaf.cn/search?q=mon_zombie_grubby]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Grubby.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_grubby",
+  "type": "MONSTER",
+  "name": {
+    "str": "grubby zombie"
+  },
+  "description": "A bloated creature seeping pus covered larvae and emitting gut wrenching stenches wobbles around. \"Defiled\" would be a compliment to this grotesque almost-human monstrosity that fumbles with each step, almost falling to its own weight.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 70,
+  "speed": 55,
+  "diff": 1,
+  "material": [
+    "flesh"
+  ],
+  "emit_fields": [
+    "emit_grubbyzed_goo_smol"
+  ],
+  "symbol": "⚆",
+  "color": "yellow",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_bash": 4,
+  "armor_stab": 4,
+  "vision_day": 20,
+  "path_settings": {
+    "max_dist": 20
+  },
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 28,
+      "move_cost": 300,
+      "gun_type": "grubbyzed_spit",
+      "fake_skills": [
+        [
+          "gun",
+          4
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          3,
+          "N"
+        ],
+        [
+          4,
+          20,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "The grubby zombie spits globs of tainted goo!"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s dies!",
+    "effect": {
+      "id": "mon_zombie_grubby_death",
+      "hit_self": true
+    }
+  },
+  "upgrades": {
+    "half_life": 10,
+    "into": "mon_zombie_slimy"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "FILTHY",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "GROUP_MORALE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_grubby",
+  "type": "MONSTER",
+  "name": {
+    "str": "肮脏丧尸"
+  },
+  "description": "从这具被严重感染的尸体上看，臃肿的腐烂结构，恶臭难闻，周围布满虫子的巨大脓液，令人难以预料地令人不快",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 70,
+  "speed": 55,
+  "diff": 1,
+  "material": [
+    "flesh"
+  ],
+  "emit_fields": [
+    "emit_grubbyzed_goo_smol"
+  ],
+  "symbol": "⚆",
+  "color": "yellow",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_bash": 4,
+  "armor_stab": 4,
+  "vision_day": 20,
+  "path_settings": {
+    "max_dist": 20
+  },
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 28,
+      "move_cost": 300,
+      "gun_type": "grubbyzed_spit",
+      "fake_skills": [
+        [
+          "gun",
+          4
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          3,
+          "N"
+        ],
+        [
+          4,
+          20,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "肮脏丧尸吐出一团团的污浊的黏液！"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s dies!",
+    "effect": {
+      "id": "mon_zombie_grubby_death",
+      "hit_self": true
+    }
+  },
+  "upgrades": {
+    "half_life": 10,
+    "into": "mon_zombie_slimy"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "FILTHY",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "GROUP_MORALE"
+  ]
+}
+```
+

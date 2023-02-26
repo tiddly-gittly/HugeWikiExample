@@ -1,0 +1,245 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_spoderhug
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_spoderhug|http://cdda.aloxaf.cn/search?q=mon_zombie_spoderhug]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Spider.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_spoderhug",
+  "type": "MONSTER",
+  "name": "spider zombie",
+  "description": "A longer set of arms struggles this zombie to walk nor run, but now it is used to jump and taking down the unexpecting target from afar.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 85,
+  "speed": 60,
+  "diff": 5,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩈",
+  "harvest": "zombie",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "dodge": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 6
+    },
+    {
+      "damage_type": "stab",
+      "amount": 3
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 5,
+  "armor_bullet": 3,
+  "armor_acid": 1,
+  "armor_fire": 1,
+  "weakpoints": [
+    {
+      "name": "one of its legs",
+      "coverage": 4,
+      "damage_mult": {
+        "all": 0.9
+      },
+      "effects": [
+        {
+          "effect": "secro_zombie_spider_cripple",
+          "intensity": 1,
+          "permanent": true,
+          "damage_required": [
+            15,
+            100
+          ],
+          "message": "A leg of the %s breaks!"
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "leap",
+      "cooldown": 16,
+      "min_range": 5,
+      "max_range": 15,
+      "allow_no_target": false
+    },
+    [
+      "LUNGE",
+      16
+    ],
+    [
+      "spiderbodyhug",
+      35
+    ],
+    {
+      "type": "bite",
+      "cooldown": 7,
+      "min_mul": 0.3
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 16,
+    "into_group": "GROUP_ZSPIDER_UPGRADEX"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "CLIMBS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_spoderhug",
+  "type": "MONSTER",
+  "name": "蜘蛛丧尸",
+  "description": "一组较长的手臂会让这个丧尸的行走或奔跑有些吃力，但现在它被用来从远距离跳跃并击倒毫无察觉的目标。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 85,
+  "speed": 60,
+  "diff": 5,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩈",
+  "harvest": "zombie",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "dodge": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 6
+    },
+    {
+      "damage_type": "stab",
+      "amount": 3
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 5,
+  "armor_bullet": 3,
+  "armor_acid": 1,
+  "armor_fire": 1,
+  "weakpoints": [
+    {
+      "name": "one of its legs",
+      "coverage": 4,
+      "damage_mult": {
+        "all": 0.9
+      },
+      "effects": [
+        {
+          "effect": "secro_zombie_spider_cripple",
+          "intensity": 1,
+          "permanent": true,
+          "damage_required": [
+            15,
+            100
+          ],
+          "message": "A leg of the %s breaks!"
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "leap",
+      "cooldown": 16,
+      "min_range": 5,
+      "max_range": 15,
+      "allow_no_target": false
+    },
+    [
+      "LUNGE",
+      16
+    ],
+    [
+      "spiderbodyhug",
+      35
+    ],
+    {
+      "type": "bite",
+      "cooldown": 7,
+      "min_mul": 0.3
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 16,
+    "into_group": "GROUP_ZSPIDER_UPGRADEX"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "CLIMBS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES"
+  ]
+}
+```
+

@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_PERK_STR
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_PERK_STR|http://cdda.aloxaf.cn/search?q=SENTINEL_PERK_STR]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_STR",
+  "name": {
+    "str": "Sentinel Physicality I"
+  },
+  "points": 1,
+  "visibility": 1,
+  "bodytemp_modifiers": [
+    100,
+    100
+  ],
+  "description": "Targeted mutagenic treatment has improved your muscular development.  Your maximum stamina, stamina regeneration, and maximum weight carried is 25% greater, and you heal slightly faster.  In exchange, your metabolism and thirst is slightly increased, and your body runs a bit warm.",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "types": [
+    "METABOLISM",
+    "HEALING"
+  ],
+  "cancels": [
+    "NO_THIRST",
+    "THIRST",
+    "THIRST2",
+    "THIRST3",
+    "GOODCARDIO",
+    "GOODCARDIO2",
+    "BADCARDIO"
+  ],
+  "changes_to": [
+    "SENTINEL_PERK_STR_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "//": "Max stamina intrinsically affects stamina regen to the same extent.",
+  "cardio_multiplier": 1.25,
+  "weight_capacity_modifier": 1.25,
+  "healing_awake": 0.1,
+  "healing_resting": 0.25,
+  "vitamin_rates": [
+    [
+      "blood",
+      -1
+    ],
+    [
+      "redcells",
+      -1
+    ]
+  ],
+  "mending_modifier": 1,
+  "metabolism_modifier": 0.25,
+  "thirst_modifier": 0.25
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_STR",
+  "name": {
+    "str": "哨兵体质 I"
+  },
+  "points": 1,
+  "visibility": 1,
+  "bodytemp_modifiers": [
+    100,
+    100
+  ],
+  "description": "靶向诱变治疗改善了你的肌肉发育。你的耐力上限、耐力回复速度和最大负重增加25%，并且你的愈合速度稍微加快。但你的新陈代谢和口渴速度稍微增加，并且少量提升你的体温。",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "types": [
+    "METABOLISM",
+    "HEALING"
+  ],
+  "cancels": [
+    "NO_THIRST",
+    "THIRST",
+    "THIRST2",
+    "THIRST3",
+    "GOODCARDIO",
+    "GOODCARDIO2",
+    "BADCARDIO"
+  ],
+  "changes_to": [
+    "SENTINEL_PERK_STR_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "//": "Max stamina intrinsically affects stamina regen to the same extent.",
+  "cardio_multiplier": 1.25,
+  "weight_capacity_modifier": 1.25,
+  "healing_awake": 0.1,
+  "healing_resting": 0.25,
+  "vitamin_rates": [
+    [
+      "blood",
+      -1
+    ],
+    [
+      "redcells",
+      -1
+    ]
+  ],
+  "mending_modifier": 1,
+  "metabolism_modifier": 0.25,
+  "thirst_modifier": 0.25
+}
+```
+

@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→t1_mana_arcanebinding
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t1_mana_arcanebinding|http://cdda.aloxaf.cn/search?q=t1_mana_arcanebinding]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/Warlock/v_mana_T1.json
+
+
+!! 原文
+
+```json
+{
+  "id": "t1_mana_arcanebinding",
+  "type": "SPELL",
+  "name": {
+    "str": "Arcane Binding"
+  },
+  "description": "Hits your foe with your weapon imbued in etherean arcane binding, striking its inner self that deals <color_light_gray>pure damage</color> and <color_yellow>immobilizes</color> them.\n\nThis is a <color_light_gray>tier 1</color> spell.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "v_spell_arcanebinding",
+  "base_energy_cost": 150,
+  "final_energy_cost": 300,
+  "energy_source": "MANA",
+  "spell_class": "VAMP_MANA_spellcaster",
+  "difficulty": 3,
+  "min_damage": 30,
+  "max_damage": 60,
+  "damage_increment": 3,
+  "max_level": 10,
+  "min_range": 1,
+  "max_range": 1,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "base_casting_time": 100,
+  "min_duration": 500,
+  "max_duration": 1000,
+  "damage_type": "pure"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "t1_mana_arcanebinding",
+  "type": "SPELL",
+  "name": {
+    "str": "奥术束缚"
+  },
+  "description": "用你灌输了以太奥术能量的武器攻击你的敌人，从内在打击你的敌人，造成<color_light_gray>真实伤害</color>并且<color_yellow>定身</color>他们。\n\n这是一个<color_light_gray>一阶</color>法术。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "v_spell_arcanebinding",
+  "base_energy_cost": 150,
+  "final_energy_cost": 300,
+  "energy_source": "MANA",
+  "spell_class": "VAMP_MANA_spellcaster",
+  "difficulty": 3,
+  "min_damage": 30,
+  "max_damage": 60,
+  "damage_increment": 3,
+  "max_level": 10,
+  "min_range": 1,
+  "max_range": 1,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "base_casting_time": 100,
+  "min_duration": 500,
+  "max_duration": 1000,
+  "damage_type": "pure"
+}
+```
+

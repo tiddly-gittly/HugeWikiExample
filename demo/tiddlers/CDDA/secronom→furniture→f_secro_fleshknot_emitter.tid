@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: furniture secronom
+title: secronom→furniture→f_secro_fleshknot_emitter
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_secro_fleshknot_emitter|http://cdda.aloxaf.cn/search?q=f_secro_fleshknot_emitter]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Since terrains are not capable to act as emitters, we use an invincible, but flammable furniture for the solution.",
+  "type": "furniture",
+  "id": "f_secro_fleshknot_emitter",
+  "name": "flesh wart",
+  "description": "A tiny wart, but for its size, it can spread a vast amount of noxious gas into the air. Destroying it is a challenge, as it grows back on the spot.",
+  "symbol": ",",
+  "color": "light_red",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "emissions": [
+    "emit_fleshknot_gas_terrains"
+  ],
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE",
+    "NOCOLLIDE",
+    "S_FLESH",
+    "EMITTER"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Since terrains are not capable to act as emitters, we use an invincible, but flammable furniture for the solution.",
+  "type": "furniture",
+  "id": "f_secro_fleshknot_emitter",
+  "name": "血肉疣",
+  "description": "一个很小的疣，不过相对于它的小体积而言，它可以释放大量有害气体到空气中。摧毁它是一项艰巨的挑战，因为它会就地生长。",
+  "symbol": ",",
+  "color": "light_red",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "emissions": [
+    "emit_fleshknot_gas_terrains"
+  ],
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE",
+    "NOCOLLIDE",
+    "S_FLESH",
+    "EMITTER"
+  ]
+}
+```
+

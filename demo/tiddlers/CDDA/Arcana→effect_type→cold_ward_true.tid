@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→cold_ward_true
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cold_ward_true|http://cdda.aloxaf.cn/search?q=cold_ward_true]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "cold_ward_true",
+  "name": [
+    "Greater Ward Against Cold"
+  ],
+  "desc": [
+    "Protection against the effects of cold, and any sources of direct damage."
+  ],
+  "remove_message": "For a moment you feel a terrible chill in the air, as the greater ward against cold fades.",
+  "removes_effects": [
+    "cold",
+    "frostbite",
+    "frostbite_recovery",
+    "arcana_lingering_chill"
+  ],
+  "decay_messages": [
+    [
+      "Your greater ward against cold is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "flags": [
+    "COLD_IMMUNE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "cold_ward_true",
+  "name": [
+    "大御寒结界"
+  ],
+  "desc": [
+    "防止寒冷影响和任何直接损害来源。"
+  ],
+  "remove_message": "有那么一刻，你感到空气中有一股可怕的寒意，因为笼罩你的强效寒冷防护结界逐渐消失。",
+  "removes_effects": [
+    "cold",
+    "frostbite",
+    "frostbite_recovery",
+    "arcana_lingering_chill"
+  ],
+  "decay_messages": [
+    [
+      "你的御寒防护结界正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "flags": [
+    "COLD_IMMUNE"
+  ]
+}
+```
+

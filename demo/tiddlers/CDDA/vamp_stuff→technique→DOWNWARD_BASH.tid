@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: technique vamp_stuff
+title: vamp_stuff→technique→DOWNWARD_BASH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：DOWNWARD_BASH|http://cdda.aloxaf.cn/search?q=DOWNWARD_BASH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Others/v_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "DOWNWARD_BASH",
+  "name": "Downward Bash",
+  "description": "Slams enemy into the ground, down 2, stun 5, crit only",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "stun_dur": 5,
+  "down_dur": 2,
+  "weighting": -6,
+  "messages": [
+    "The heavy slam drove %s into the ground",
+    "<npcname>'s bash sent %s downwards, and kissed the floor"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 1.66
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 0.66
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 1.66
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "DOWNWARD_BASH",
+  "name": "深渊一击",
+  "description": "猛击敌人使其倒地，击倒2回合，击晕5回合，仅暴击",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "stun_dur": 5,
+  "down_dur": 2,
+  "weighting": -6,
+  "messages": [
+    "猛烈的一击将%s击倒在地",
+    "<npcname>的猛击将%s击落在地"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 1.66
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 0.66
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 1.66
+    }
+  ]
+}
+```
+

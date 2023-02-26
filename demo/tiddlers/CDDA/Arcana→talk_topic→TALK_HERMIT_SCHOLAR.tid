@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_SCHOLAR
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_SCHOLAR|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_SCHOLAR]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_SCHOLAR",
+  "dynamic_line": {
+    "u_has_effect": "hermit_earned_trust_1",
+    "yes": "A few old arcane texts certainly, but much of what I have is still nothing more than trivial texts, holy books and novels.",
+    "no": "Old religious texts, novels, other such trivial things.  Was a bit of collector, in my youth."
+  },
+  "responses": [
+    {
+      "text": "What sorts of religious books?",
+      "topic": "TALK_HERMIT_BOOK_RELIGIOUS",
+      "condition": {
+        "not": {
+          "u_has_effect": "hermit_earned_trust_1"
+        }
+      }
+    },
+    {
+      "text": "Still interesting, either way.",
+      "topic": "TALK_HERMIT_BOOK_INTERESTING",
+      "condition": {
+        "not": {
+          "u_has_effect": "hermit_earned_trust_1"
+        }
+      }
+    },
+    {
+      "text": "What about more exotic books?",
+      "topic": "TALK_HERMIT_BOOK_QUERY",
+      "condition": {
+        "not": {
+          "u_has_effect": "hermit_earned_trust_1"
+        }
+      }
+    },
+    {
+      "text": "Keeping the faith alive still holds merit in these dark times, if nothing else.",
+      "opinion": {
+        "trust": 1,
+        "value": 1
+      },
+      "condition": {
+        "u_has_trait": "SPIRITUAL"
+      },
+      "topic": "TALK_HERMIT_SPIRITUAL"
+    },
+    {
+      "text": "Hardly trivial, every book has some merit to it.",
+      "opinion": {
+        "value": 1
+      },
+      "condition": {
+        "u_has_trait": "LOVES_BOOKS"
+      },
+      "topic": "TALK_HERMIT_LOVES_BOOKS"
+    },
+    {
+      "text": "Trivial indeed, nothing worth learning that you can't learn from experience.  Suit yourself, old man.",
+      "condition": {
+        "u_has_trait": "HATES_BOOKS"
+      },
+      "opinion": {
+        "value": -1
+      },
+      "topic": "TALK_HERMIT_HATES_BOOKS"
+    },
+    {
+      "text": "Oh, okay.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_SCHOLAR",
+  "dynamic_line": {
+    "u_has_effect": "hermit_earned_trust_1",
+    "yes": "当然有一些古老的秘籍，但我所拥有的大部分仍然只是一些琐碎的文本、圣书和小说。",
+    "no": "古老的宗教经文、小说等琐碎的东西。我年轻时是个收藏家。"
+  },
+  "responses": [
+    {
+      "text": "什么样的宗教书籍？",
+      "topic": "TALK_HERMIT_BOOK_RELIGIOUS",
+      "condition": {
+        "not": {
+          "u_has_effect": "hermit_earned_trust_1"
+        }
+      }
+    },
+    {
+      "text": "不管怎样，都很有趣。",
+      "topic": "TALK_HERMIT_BOOK_INTERESTING",
+      "condition": {
+        "not": {
+          "u_has_effect": "hermit_earned_trust_1"
+        }
+      }
+    },
+    {
+      "text": "那更多的异国情调的书呢？",
+      "topic": "TALK_HERMIT_BOOK_QUERY",
+      "condition": {
+        "not": {
+          "u_has_effect": "hermit_earned_trust_1"
+        }
+      }
+    },
+    {
+      "text": "在这些黑暗的时代，保持信仰的生命力仍然是有价值的。",
+      "opinion": {
+        "trust": 1,
+        "value": 1
+      },
+      "condition": {
+        "u_has_trait": "SPIRITUAL"
+      },
+      "topic": "TALK_HERMIT_SPIRITUAL"
+    },
+    {
+      "text": "几乎不是小事，每本书都有它的优点。",
+      "opinion": {
+        "value": 1
+      },
+      "condition": {
+        "u_has_trait": "LOVES_BOOKS"
+      },
+      "topic": "TALK_HERMIT_LOVES_BOOKS"
+    },
+    {
+      "text": "事实上，没有什么值得学习的东西是不能从经验中学习的。随你便，老头子。",
+      "condition": {
+        "u_has_trait": "HATES_BOOKS"
+      },
+      "opinion": {
+        "value": -1
+      },
+      "topic": "TALK_HERMIT_HATES_BOOKS"
+    },
+    {
+      "text": "哦，好的。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

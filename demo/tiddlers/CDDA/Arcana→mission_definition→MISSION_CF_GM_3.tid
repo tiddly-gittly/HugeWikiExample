@@ -1,0 +1,207 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_GM_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_GM_3|http://cdda.aloxaf.cn/search?q=MISSION_CF_GM_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_GM_3",
+  "type": "mission_definition",
+  "name": {
+    "str": "Cleanse Sanguinist Sect"
+  },
+  "description": "Kill the blood mage in charge of a local Sanguine Order sect.  Optionally recruit one of the church's guards to assist.",
+  "goal": "MGOAL_ASSASSINATE",
+  "difficulty": 10,
+  "value": 25000,
+  "has_generic_rewards": false,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "sanguine_holdout_1",
+      "om_special": "sanguine_holdout",
+      "om_terrain_replace": "forest",
+      "reveal_radius": 3,
+      "random": true,
+      "search_range": 180,
+      "min_distance": 10
+    },
+    "update_mapgen": [
+      {
+        "om_terrain": "sanguine_holdout_b1",
+        "place_npcs": [
+          {
+            "class": "sanguine_order_magus",
+            "x": 14,
+            "y": 12,
+            "target": true,
+            "add_trait": "MUTE"
+          }
+        ]
+      }
+    ]
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_add_effect": "cf_mission_johnathan_3",
+        "duration": "PERMANENT"
+      },
+      {
+        "npc_add_effect": "cf_mission_3",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 10
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_GM_3_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_GM_3_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_GM_3_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_GM_3_d"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_GM_4",
+  "dialogue": {
+    "describe": "Grant us strength…",
+    "offer": "We have evidence not only of a still-practicing group of sanguinists, but confirmation of their most likely hideout.  You know what must be done.  Their sect will be centralized around a local magus, prioritizing them will reduce the threat even if their underlings escape justice.  Hunt them down, when you are prepared for the task.",
+    "accepted": "God and gods willing, may you return safe and victorious.  This will be a dangerous task, and while we may be stretched thin, I will allow you to request assistance at your discretion.  We can spare another hunter for a task this dangerous.",
+    "rejected": "I understand.  Come back when you are prepared.",
+    "advice": "They will have pursued any advantage they could get their hands on.  Any weapon at their disposal, any foul magic, any corruption of body and soul.  Bring as many allies as you can muster to your cause, any weapon to suit you.",
+    "inquire": "Have they been dealt with?",
+    "success": "Thank the gods that you've returned safely!  May this serve as a warning to any who would further endanger humanity.  I hope that you will use proper discretion in dealing with any dangerous items you retrieved from that place.  While you were gone, one of our scouting missions made contact with a small holdout of our brethren, which should ease some of the workload here.",
+    "success_lie": "What idiocy is this?",
+    "failure": "But how?"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_GM_3",
+  "type": "mission_definition",
+  "name": {
+    "str": "肃清血族"
+  },
+  "description": "杀死当地猩红教派的血法师。有选择地招募一个教堂的警卫来协助。",
+  "goal": "MGOAL_ASSASSINATE",
+  "difficulty": 10,
+  "value": 25000,
+  "has_generic_rewards": false,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "sanguine_holdout_1",
+      "om_special": "sanguine_holdout",
+      "om_terrain_replace": "forest",
+      "reveal_radius": 3,
+      "random": true,
+      "search_range": 180,
+      "min_distance": 10
+    },
+    "update_mapgen": [
+      {
+        "om_terrain": "sanguine_holdout_b1",
+        "place_npcs": [
+          {
+            "class": "sanguine_order_magus",
+            "x": 14,
+            "y": 12,
+            "target": true,
+            "add_trait": "MUTE"
+          }
+        ]
+      }
+    ]
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_add_effect": "cf_mission_johnathan_3",
+        "duration": "PERMANENT"
+      },
+      {
+        "npc_add_effect": "cf_mission_3",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 10
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_GM_3_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_GM_3_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_GM_3_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_GM_3_d"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_GM_4",
+  "dialogue": {
+    "describe": "赐予我们力量……",
+    "offer": "我们不仅有证据表明一群仍在实践的乐观主义者，而且证实了他们最可能的藏身之处。你知道该怎么做。他们的教派将集中在一个当地的法师周围，优先考虑他们将减少威胁，即使他们的部下逃脱法律制裁。当你准备好完成任务时，把他们找出来。",
+    "accepted": "上帝和众神愿意，愿你平安归来。这将是一项危险的任务，虽然我们可能捉襟见肘，但我允许你酌情请求援助。我们可以让另一个猎人来完成这么危险的任务。",
+    "rejected": "我理解。准备好了再回来。",
+    "advice": "他们会追求任何他们能得到的好处。任何武器，任何邪恶的魔法，任何身体和灵魂的堕落。尽可能多的为你的事业召集盟友，任何适合你的武器。",
+    "inquire": "他们被处理了吗？",
+    "success": "感谢上帝，你安全回来了！愿这对任何进一步危害人类的人发出警告。我希望你在处理从那个地方取回的任何危险物品时能有适当的判断力。当你离开的时候，我们的一个侦察任务与我们兄弟中的一个小顽固分子取得了联系，这应该可以减轻这里的一些工作量。",
+    "success_lie": "这是什么白痴的行为？",
+    "failure": "但是怎么做呢？"
+  }
+}
+```
+

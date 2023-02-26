@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_HERMIT_AWAKEN_POWER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_HERMIT_AWAKEN_POWER|http://cdda.aloxaf.cn/search?q=MISSION_HERMIT_AWAKEN_POWER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_HERMIT_AWAKEN_POWER",
+  "type": "mission_definition",
+  "name": {
+    "str": "Earn The Favor From Beyond"
+  },
+  "description": "Fuel the restored ritual blade by charging it from a portal, offer the power to He From Beyond The Veil, then return to the hermit after being awarded with any of His blessings.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_flag": "explorer_of_the_veil"
+  },
+  "difficulty": 5,
+  "value": 250000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "new_anomaly_1",
+      "om_terrain_replace": "field",
+      "random": true,
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_effect": "hermit_stage_3",
+        "duration": "PERMANENT"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_HERMIT_BECOME_PARAGON",
+  "dialogue": {
+    "describe": "Perhaps we shall at last atone…",
+    "offer": "This is a task I will leave for you to pursue on your own initiative, though I will advise you if needed.  To use the awakened blade requires certain energies to be returned to The Beyond.  The method that best fulfills the relic's purpose requires you to seek out the lingering wounds in The Veil, and my fading senses have revealed one such place that may be useful.  However you choose to serve Him, your actions will serve a greater purpose.  Will you accept my guidance in this endeavor?",
+    "accepted": "May He From Beyond The Veil guide us both.  I will do what I can to direct you towards letting the relic serve its purpose.  Failing that, there are methods to sustain this power, to be found within the pages of Oaths To The Chalice.  Some of what you will see are common, trifling things.  Others are wonders only He can bestow, and they may yet serve you well.  When the time comes and you have seen the fruit of your labor, speak to me again.",
+    "rejected": "Unfortunate.  I am hopeful that you will heed the call on your own, and come to me when you are ready.  In pursuing the path laid before you, your destiny is intertwined with those who seek to ensure this world does not fall into further decay.  One way or another, your path lies before you.",
+    "advice": "Drawing upon a rift will require you to linger beside the portal, until the blade draws upon its power.  You will know in time, when you have received the sign.  If you require what little guidance I can offer, you need only ask.",
+    "inquire": "Show me that spark within your eyes, if you have earned His favor…",
+    "success": "So it has come to pass.  I hope the task was not too troublesome for you, nor did His favor prove too difficult to grasp.  This proves it.  You are suitable to be His Chosen.  There is still much to discuss.",
+    "success_lie": "What folly is this?",
+    "failure": "I do believe I can sense the cause of this.  His Chosen cannot be tied too strongly to the Beyond, lest pursuing His goals endanger them as well.  It seems you've done exactly that.  Unfortunate, but there may still be hope.  Come, we still have things to discuss."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_HERMIT_AWAKEN_POWER",
+  "type": "mission_definition",
+  "name": {
+    "str": "赢得彼端的宠爱"
+  },
+  "description": "从传送门充电，为修复后的仪式之刃提供燃料，从面纱之外向他提供能量，然后在获得他的任何祝福后返回隐士。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_flag": "explorer_of_the_veil"
+  },
+  "difficulty": 5,
+  "value": 250000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "new_anomaly_1",
+      "om_terrain_replace": "field",
+      "random": true,
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_effect": "hermit_stage_3",
+        "duration": "PERMANENT"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_HERMIT_BECOME_PARAGON",
+  "dialogue": {
+    "describe": "也许我们终于可以赎罪了……",
+    "offer": "这是一项任务，我将留给你主动去做，但如果需要，我会给你建议。使用觉醒之刃需要一定的能量返回到超越。最能实现遗物目的的方法是让你找出帷幕上挥之不去的伤痕，而我日渐衰退的感官已经揭示了这样一个可能有用的地方。无论你选择怎样服侍他，你的行动都会有更大的目标。你愿意接受我的指导吗？",
+    "accepted": "愿帷幕彼端古神指引我们。我会尽我所能指导你让这件文物发挥作用。如果不能做到这一点，就有一些方法来维持这种力量，可以在圣杯誓言中找到。你会看到一些普通的，琐碎的东西。其他人是只有上帝才能赐予的奇迹，它们可能会很好地为你服务。到了时候，你们看见你们劳碌的果子，就再对我说话。",
+    "rejected": "很不幸。我希望你自己能听从召唤，准备好了就来找我。在追寻摆在你面前的道路时，你的命运与那些寻求确保这个世界不会进一步堕落的人交织在一起。不管怎样，你的路就在你面前。",
+    "advice": "在裂口上画画需要你在门前徘徊，直到刀锋吸取它的力量。当你收到信号时，你会及时知道的。如果你需要我能提供的一点指导，你只需要问。",
+    "inquire": "如果你赢得了他的青睐，让我看看你眼中的火花…",
+    "success": "因此，它已经成为现实。我希望这项任务对你来说不太麻烦，也不希望他的好意太难把握。这证明了这一点。你适合做他的选择。还有很多要讨论。",
+    "success_lie": "这是什么愚蠢的想法？",
+    "failure": "我相信我能感觉到原因。他所选择的人不能与外界有太大的联系，以免追求他的目标也会危及到他们。看来你已经做到了。不幸的是，也许还有希望。来吧，我们还有事情要讨论。"
+  }
+}
+```
+

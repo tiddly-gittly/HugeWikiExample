@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_BOOK_RELIGIOUS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_BOOK_RELIGIOUS|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_BOOK_RELIGIOUS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS",
+  "dynamic_line": "Various faiths of the old world.  I've always been more a scholar then a theologian, but some insights can be glimpsed in such writings.  Of both the old gods, and the new gods.",
+  "responses": [
+    {
+      "switch": true,
+      "text": "An understanding we both share.  I was brought up among a mix of diverse teachings, united in our goal.",
+      "topic": "TALK_HERMIT_BOOK_RELIGIOUS_CLEANSINGFLAME",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "I see.  I was taught not to trust any power beyond ones own means.",
+      "topic": "TALK_HERMIT_BOOK_RELIGIOUS_SANGUINE",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "switch": true,
+      "text": "Understandable.  I learned the ways of one of said new gods.",
+      "topic": "TALK_HERMIT_BOOK_RELIGIOUS_CHALICE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "New gods?",
+      "topic": "TALK_HERMIT_BOOK_RELIGIOUS_NEWGODS"
+    },
+    {
+      "text": "Huh.  I see.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS",
+  "dynamic_line": "旧世界的各种信仰。我一直是一个学者，而不是神学家，但在这样的著作中可以窥见一些见解。无论是旧神还是新神。",
+  "responses": [
+    {
+      "switch": true,
+      "text": "我们都有共同的理解。我是在各种各样的教义中长大的，在我们的目标上团结一致。",
+      "topic": "TALK_HERMIT_BOOK_RELIGIOUS_CLEANSINGFLAME",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "我懂了。我被教导不要相信任何超出自己能力的力量。",
+      "topic": "TALK_HERMIT_BOOK_RELIGIOUS_SANGUINE",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "switch": true,
+      "text": "可以理解。我学会了一个新神的方法。",
+      "topic": "TALK_HERMIT_BOOK_RELIGIOUS_CHALICE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "新神？",
+      "topic": "TALK_HERMIT_BOOK_RELIGIOUS_NEWGODS"
+    },
+    {
+      "text": "哈。我明白了。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

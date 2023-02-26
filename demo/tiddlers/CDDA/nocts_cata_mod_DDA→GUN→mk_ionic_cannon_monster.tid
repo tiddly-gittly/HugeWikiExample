@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: GUN nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→GUN→mk_ionic_cannon_monster
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mk_ionic_cannon_monster|http://cdda.aloxaf.cn/search?q=mk_ionic_cannon_monster]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_ranged_monster.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mk_ionic_cannon_monster",
+  "copy-from": "mx_laser_sniper",
+  "type": "GUN",
+  "name": "zombie super soldier sniper",
+  "description": "Version of the MK-2 for use by monsters, to account for increased accuracy of ranged attacks.  Copies from MX-84 instead because for some wacky reason the MK2 itself doesn't work right in the hands of monsters.  Unlike the others, overriding the damage type doesn't matter because it you take a direct heat, being lit on fire from heat damagetype is the least of your worries.  This is a bug if you find one of these!",
+  "skill": "launcher",
+  "dispersion": 6000,
+  "sight_dispersion": 500,
+  "ammo_effects": [
+    "PLASMA",
+    "EXPLOSIVE_HUGE",
+    "STREAM_BIG",
+    "WIDE",
+    "EMP",
+    "FLASHBANG"
+  ],
+  "ammo_to_fire": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mk_ionic_cannon_monster",
+  "copy-from": "mx_laser_sniper",
+  "type": "GUN",
+  "name": "超级战士丧尸 MX-84 激光狙击枪",
+  "description": "一把占位并供怪物使用的 MK-II 实验性等离子炮。如果被你找到了，那么这是一个bug！",
+  "skill": "launcher",
+  "dispersion": 6000,
+  "sight_dispersion": 500,
+  "ammo_effects": [
+    "PLASMA",
+    "EXPLOSIVE_HUGE",
+    "STREAM_BIG",
+    "WIDE",
+    "EMP",
+    "FLASHBANG"
+  ],
+  "ammo_to_fire": 1
+}
+```
+

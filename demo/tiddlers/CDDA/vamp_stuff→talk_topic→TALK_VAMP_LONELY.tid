@@ -1,0 +1,211 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_LONELY
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_LONELY|http://cdda.aloxaf.cn/search?q=TALK_VAMP_LONELY]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Isolated/v_lo_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_LONELY",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "blood_necklace",
+    "yes": "Greetings, human.",
+    "no": [
+      "What is it, mortal?",
+      "Speak up, mortal."
+    ]
+  },
+  "responses": [
+    {
+      "text": "Tell me about yourself.",
+      "topic": "TALK_VAMP_LONELY_introduce",
+      "effect": {
+        "u_add_trait": "isolatedintro"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "isolatedintro"
+        }
+      }
+    },
+    {
+      "text": "Why are you here?",
+      "topic": "TALK_VAMP_LONELY_here",
+      "effect": {
+        "u_add_trait": "isolatedhere"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "isolatedhere"
+        }
+      }
+    },
+    {
+      "text": "Greetings, my brethren.",
+      "topic": "TALK_VAMP_LONELY_fakevamp",
+      "//": "A hidden joke response.",
+      "effect": {
+        "u_add_trait": "isolatedurfake"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "THRESH_VAMP"
+          },
+          {
+            "not": {
+              "u_has_trait": "isolatedurfake"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "About that quest...",
+      "topic": "TALK_MISSION_INQUIRE",
+      "condition": "has_assigned_mission"
+    },
+    {
+      "text": "Ummm... You want to stick with me?",
+      "topic": "TALK_VAMP_LONELY_wego"
+    },
+    {
+      "text": "I'm vacant for your needs.",
+      "topic": "TALK_VAMP_LONELY_testsdone",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "isolatedtestsdone"
+          },
+          {
+            "not": {
+              "u_has_trait": "isolatedvampmark"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "I'm vacant for your needs.",
+      "topic": "TALK_MISSION_LIST",
+      "condition": "has_available_mission"
+    },
+    {
+      "text": "Sorry to bother.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_LONELY",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "blood_necklace",
+    "yes": "你好，人类。",
+    "no": [
+      "这是什么，人类？",
+      "说吧，凡人。"
+    ]
+  },
+  "responses": [
+    {
+      "text": "跟我说说你的情况吧。",
+      "topic": "TALK_VAMP_LONELY_introduce",
+      "effect": {
+        "u_add_trait": "isolatedintro"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "isolatedintro"
+        }
+      }
+    },
+    {
+      "text": "你为什么在这里？",
+      "topic": "TALK_VAMP_LONELY_here",
+      "effect": {
+        "u_add_trait": "isolatedhere"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "isolatedhere"
+        }
+      }
+    },
+    {
+      "text": "你好，我的朋友。",
+      "topic": "TALK_VAMP_LONELY_fakevamp",
+      "//": "A hidden joke response.",
+      "effect": {
+        "u_add_trait": "isolatedurfake"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "THRESH_VAMP"
+          },
+          {
+            "not": {
+              "u_has_trait": "isolatedurfake"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "关于那个任务...",
+      "topic": "TALK_MISSION_INQUIRE",
+      "condition": "has_assigned_mission"
+    },
+    {
+      "text": "嗯...你想和我一起走吗？",
+      "topic": "TALK_VAMP_LONELY_wego"
+    },
+    {
+      "text": "我正需要你的帮助。",
+      "topic": "TALK_VAMP_LONELY_testsdone",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "isolatedtestsdone"
+          },
+          {
+            "not": {
+              "u_has_trait": "isolatedvampmark"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "我正需要你的帮助。",
+      "topic": "TALK_MISSION_LIST",
+      "condition": "has_available_mission"
+    },
+    {
+      "text": "抱歉打扰",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

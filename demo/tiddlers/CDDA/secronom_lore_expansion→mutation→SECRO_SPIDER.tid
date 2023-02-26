@@ -1,0 +1,209 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_SPIDER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_SPIDER|http://cdda.aloxaf.cn/search?q=SECRO_SPIDER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_SPIDER",
+  "name": {
+    "str": "Arachnid Limbs"
+  },
+  "points": 4,
+  "visibility": 6,
+  "ugliness": 8,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "You grew 2 additional pairs of arms sticking out from the sides of your torso close to the abdominal part. They seem to function as duplicates of normal ones, gaining 1 permanent dex and making them beneficial for crafting, combat and vaulting through objects, but increases torsal encumberance by 10 which triples when you wear a tight clothing.",
+  "types": [
+    "HANDS"
+  ],
+  "changes_to": [
+    "SECRO_SPIDER_OK",
+    "SECRO_SPIDER_NOTOK"
+  ],
+  "cancels": [
+    "NAILS",
+    "CLAWS",
+    "TALONS",
+    "WEBBED",
+    "ARM_TENTACLES",
+    "SECRO_TENDRIL",
+    "SECRO_BLADE_L",
+    "SECRO_TENDRIL_THICK_THRESHOLD",
+    "SECRO_TENDRIL_TENT_THRESHOLD",
+    "SECRO_BLADE_SHARP_THRESHOLD",
+    "SECRO_BLADE_SERRATED_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "torso",
+      10
+    ]
+  ],
+  "encumbrance_covered": [
+    [
+      "torso",
+      30
+    ]
+  ],
+  "attackcost_modifier": 0.95,
+  "movecost_obstacle_modifier": 0.95,
+  "craft_skill_bonus": [
+    [
+      "electronics",
+      1
+    ],
+    [
+      "tailor",
+      1
+    ],
+    [
+      "mechanics",
+      1
+    ],
+    [
+      "firstaid",
+      1
+    ],
+    [
+      "computer",
+      1
+    ],
+    [
+      "traps",
+      1
+    ],
+    [
+      "fabrication",
+      1
+    ],
+    [
+      "cooking",
+      1
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "passive_mods": {
+    "dex_mod": 1
+  },
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_SPIDER",
+  "name": {
+    "str": "蜘蛛肢体"
+  },
+  "points": 4,
+  "visibility": 6,
+  "ugliness": 8,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "你又长了两对手臂，从靠近腹部的躯干两侧伸出。它们看起来能和正常的手臂有一样活动。永久性获得1点dex，使它们在制造、战斗或者越过障碍物时更有利，但是当你穿紧身衣时，则会增加10倍的躯体累赘。",
+  "types": [
+    "HANDS"
+  ],
+  "changes_to": [
+    "SECRO_SPIDER_OK",
+    "SECRO_SPIDER_NOTOK"
+  ],
+  "cancels": [
+    "NAILS",
+    "CLAWS",
+    "TALONS",
+    "WEBBED",
+    "ARM_TENTACLES",
+    "SECRO_TENDRIL",
+    "SECRO_BLADE_L",
+    "SECRO_TENDRIL_THICK_THRESHOLD",
+    "SECRO_TENDRIL_TENT_THRESHOLD",
+    "SECRO_BLADE_SHARP_THRESHOLD",
+    "SECRO_BLADE_SERRATED_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "torso",
+      10
+    ]
+  ],
+  "encumbrance_covered": [
+    [
+      "torso",
+      30
+    ]
+  ],
+  "attackcost_modifier": 0.95,
+  "movecost_obstacle_modifier": 0.95,
+  "craft_skill_bonus": [
+    [
+      "electronics",
+      1
+    ],
+    [
+      "tailor",
+      1
+    ],
+    [
+      "mechanics",
+      1
+    ],
+    [
+      "firstaid",
+      1
+    ],
+    [
+      "computer",
+      1
+    ],
+    [
+      "traps",
+      1
+    ],
+    [
+      "fabrication",
+      1
+    ],
+    [
+      "cooking",
+      1
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "passive_mods": {
+    "dex_mod": 1
+  },
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

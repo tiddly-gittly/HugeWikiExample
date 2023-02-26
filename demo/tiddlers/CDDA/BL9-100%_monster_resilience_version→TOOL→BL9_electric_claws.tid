@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: TOOL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→TOOL→BL9_electric_claws
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_electric_claws|http://cdda.aloxaf.cn/search?q=BL9_electric_claws]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Items/melee_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_electric_claws",
+  "looks_like": "bio_claws_weapon",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9 experimental electric claws"
+  },
+  "description": "Highly experimental futuristic claws with a unique design that use BL9 capable of changing it's physical and chemical structure to cause various offensive effects, in this case, electrified arcs of BL9",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "cutting": 23,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_electric_melee_effect",
+            "message": "As you cut with the claws they emit electrified arcs of BL9 at %2$s wildly!",
+            "npc_message": "As %1$s cuts with the claws they emit electrified arcs of BL9 at %2$s wildly!"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_1",
+    "RAPID",
+    "tec_precise",
+    "tec_krav_maga_rapid",
+    "tec_krav_maga_disarm"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_electric_claws",
+  "looks_like": "bio_claws_weapon",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9实验电爪"
+  },
+  "description": "高度实验性的未来派爪子具有独特的设计，使用BL9能够改变其物理和化学结构，以造成各种攻击性的效果，在这种情况下，BL9的电气化电弧",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "cutting": 23,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_electric_melee_effect",
+            "message": "当你用爪子切割时，它们会在%2$s点发出BL9的带电弧线！",
+            "npc_message": "当%1$s用爪子切割时，它们在%2$s处发出BL9的带电弧线！"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_1",
+    "RAPID",
+    "tec_precise",
+    "tec_krav_maga_rapid",
+    "tec_krav_maga_disarm"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE"
+  ]
+}
+```
+

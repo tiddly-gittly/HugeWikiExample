@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_ward_lightning
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_ward_lightning|http://cdda.aloxaf.cn/search?q=arcana_blessing_ward_lightning]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_ward_lightning",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Ward (Lightning)"
+  },
+  "description": "Arcane Blessing\nUsing this spell will grant a blessing that completely protects against lightning.  It can be used on yourself or on an ally.",
+  "message": "You channel a soothing, insulating aura.",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "lightning_ward_true",
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "energy_source": "MANA",
+  "difficulty": 40,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 250,
+  "final_casting_time": 125,
+  "casting_time_increment": -6.25,
+  "base_energy_cost": 300,
+  "final_energy_cost": 150,
+  "energy_increment": -7.5,
+  "min_duration": 24000,
+  "max_duration": 120000,
+  "duration_increment": 4800
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_ward_lightning",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：结界（闪电）"
+  },
+  "description": "奥术祝福\n使用该法术会给予祝福，完全可以抵御闪电。它可以在自己或盟友身上使用。",
+  "message": "你引导出一种舒缓，绝缘的光环。",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "lightning_ward_true",
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "energy_source": "MANA",
+  "difficulty": 40,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 250,
+  "final_casting_time": 125,
+  "casting_time_increment": -6.25,
+  "base_energy_cost": 300,
+  "final_energy_cost": 150,
+  "energy_increment": -7.5,
+  "min_duration": 24000,
+  "max_duration": 120000,
+  "duration_increment": 4800
+}
+```
+

@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_2|http://cdda.aloxaf.cn/search?q=TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_OLD_GUARD_NEC_COMMO.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_2",
+  "dynamic_line": "Let me check the database here.  There are some records of it showing up, more recently I've also heard it come up intermittently on civilian chatter.  Is that your doing?",
+  "responses": [
+    {
+      "text": "The people who sent me to find it might have been asking around.",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_3"
+    },
+    {
+      "text": "I'm not sure.  What were you able to find out?",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_4"
+    },
+    {
+      "text": "They gave me this list of information they gathered, is this any help?",
+      "condition": {
+        "u_has_item": "cf_purifier_project_data"
+      },
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_2",
+  "dynamic_line": "让我查一下数据库。有一些关于它记录被显示了出来，而且最近我也偶尔听到人们在闲聊中有提到这个问题。是你干的吗？",
+  "responses": [
+    {
+      "text": "派我去找它的人可能在四处打听。",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_3"
+    },
+    {
+      "text": "我不确定。你发现了什么？",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_4"
+    },
+    {
+      "text": "他们给了我他们收集的信息列表，这有帮助吗？",
+      "condition": {
+        "u_has_item": "cf_purifier_project_data"
+      },
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5"
+    }
+  ]
+}
+```
+

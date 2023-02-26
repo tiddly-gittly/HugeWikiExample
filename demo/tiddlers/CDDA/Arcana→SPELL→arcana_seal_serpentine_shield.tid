@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_seal_serpentine_shield
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_seal_serpentine_shield|http://cdda.aloxaf.cn/search?q=arcana_seal_serpentine_shield]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_seals.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_seal_serpentine_shield",
+  "//": "ID retained to avoid breaking saves.",
+  "type": "SPELL",
+  "name": {
+    "str": "Seal: Shadowy Shield"
+  },
+  "description": "Magic Seal\nUsing this spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike attackers blind with otherworldly darkness.",
+  "message": "\"Fear not the darkness, but those who lure you into it…\"  You cast %s!",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DURATION"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "halo_shadowsnakes",
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 140,
+  "final_casting_time": 140,
+  "min_duration": 108000,
+  "max_duration": 144000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_seal_serpentine_shield",
+  "//": "ID retained to avoid breaking saves.",
+  "type": "SPELL",
+  "name": {
+    "str": "魔印：暗影盾"
+  },
+  "description": "法术魔印\n使用此法术将为你笼罩一层黑曜石光环，给予暂时的防御效果，攻击者将被异界黑暗致盲。",
+  "message": "“不要害怕黑暗，而要害怕那些引诱你进入黑暗的人……”你施放了 %s！",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DURATION"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "halo_shadowsnakes",
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 140,
+  "final_casting_time": 140,
+  "min_duration": 108000,
+  "max_duration": 144000
+}
+```
+

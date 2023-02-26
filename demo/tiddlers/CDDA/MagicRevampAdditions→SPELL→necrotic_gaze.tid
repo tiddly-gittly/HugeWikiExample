@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→necrotic_gaze
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：necrotic_gaze|http://cdda.aloxaf.cn/search?q=necrotic_gaze]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/animist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "necrotic_gaze",
+  "type": "SPELL",
+  "name": {
+    "str": "Necrotic Gaze"
+  },
+  "description": "You use the power of your own blood to imbue necrotic energy into your gaze, damaging the target you look at.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "spell_class": "ANIMIST",
+  "energy_source": "HP",
+  "flags": [
+    "NO_LEGS",
+    "CONCENTRATE",
+    "SOMATIC"
+  ],
+  "min_damage": 10,
+  "max_damage": 300,
+  "damage_increment": 6,
+  "min_range": 3,
+  "max_range": 8,
+  "range_increment": 0.1,
+  "max_level": 37,
+  "difficulty": 3,
+  "base_casting_time": 100,
+  "base_energy_cost": 2,
+  "damage_type": "biological"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "necrotic_gaze",
+  "type": "SPELL",
+  "name": {
+    "str": "死灵凝视"
+  },
+  "description": "你使用自身血液的力量将死灵能量注入到你的凝视之中，对你的凝视目标照成伤害。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "spell_class": "ANIMIST",
+  "energy_source": "HP",
+  "flags": [
+    "NO_LEGS",
+    "CONCENTRATE",
+    "SOMATIC"
+  ],
+  "min_damage": 10,
+  "max_damage": 300,
+  "damage_increment": 6,
+  "min_range": 3,
+  "max_range": 8,
+  "range_increment": 0.1,
+  "max_level": 37,
+  "difficulty": 3,
+  "base_casting_time": 100,
+  "base_energy_cost": 2,
+  "damage_type": "biological"
+}
+```
+

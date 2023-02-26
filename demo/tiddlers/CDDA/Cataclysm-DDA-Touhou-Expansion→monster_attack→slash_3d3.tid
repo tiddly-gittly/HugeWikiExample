@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: monster_attack Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→monster_attack→slash_3d3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：slash_3d3|http://cdda.aloxaf.cn/search?q=slash_3d3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monster_special_attacks/thex_monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "slash_3d3",
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "cooldown": 1,
+  "move_cost": 100,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 20,
+      "armor_penetration": 3
+    }
+  ],
+  "min_mul": 0.15,
+  "max_mul": 0.45,
+  "body_parts": [
+    [
+      "arm_l",
+      15
+    ],
+    [
+      "arm_r",
+      15
+    ],
+    [
+      "foot_l",
+      25
+    ],
+    [
+      "foot_r",
+      25
+    ],
+    [
+      "hand_l",
+      20
+    ],
+    [
+      "hand_r",
+      20
+    ],
+    [
+      "leg_l",
+      25
+    ],
+    [
+      "leg_r",
+      25
+    ],
+    [
+      "torso",
+      10
+    ]
+  ],
+  "effects": [
+    {
+      "id": "bleed",
+      "duration": 400,
+      "affect_hit_bp": true
+    }
+  ],
+  "dodgeable": true,
+  "blockable": true,
+  "//": "Prioritizes lower limbs > hands > arms > torso, because the thing using this is more or less dog-sized. Should prioritize neck if you're down but how to do that"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "slash_3d3",
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "cooldown": 1,
+  "move_cost": 100,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 20,
+      "armor_penetration": 3
+    }
+  ],
+  "min_mul": 0.15,
+  "max_mul": 0.45,
+  "body_parts": [
+    [
+      "arm_l",
+      15
+    ],
+    [
+      "arm_r",
+      15
+    ],
+    [
+      "foot_l",
+      25
+    ],
+    [
+      "foot_r",
+      25
+    ],
+    [
+      "hand_l",
+      20
+    ],
+    [
+      "hand_r",
+      20
+    ],
+    [
+      "leg_l",
+      25
+    ],
+    [
+      "leg_r",
+      25
+    ],
+    [
+      "torso",
+      10
+    ]
+  ],
+  "effects": [
+    {
+      "id": "bleed",
+      "duration": 400,
+      "affect_hit_bp": true
+    }
+  ],
+  "dodgeable": true,
+  "blockable": true,
+  "//": "Prioritizes lower limbs > hands > arms > torso, because the thing using this is more or less dog-sized. Should prioritize neck if you're down but how to do that"
+}
+```
+

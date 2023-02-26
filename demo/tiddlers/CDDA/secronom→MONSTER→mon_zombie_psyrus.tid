@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_psyrus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_psyrus|http://cdda.aloxaf.cn/search?q=mon_zombie_psyrus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_psyrus",
+  "type": "MONSTER",
+  "name": {
+    "str": "psyrus"
+  },
+  "description": "A large, wickedly vile corpse, with writhing tendrils under its foul mouth. Veins glow brighter as its raging desire for flesh sets it ablazed.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 205,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚵",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "armor_stab": 4,
+  "dodge": 3,
+  "attack_cost": 180,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 4
+    },
+    [
+      "GRAB",
+      4
+    ],
+    [
+      "scratch",
+      4
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_VEH",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_psyrus",
+  "type": "MONSTER",
+  "name": {
+    "str": "伪装变异丧尸"
+  },
+  "description": "一个大而邪恶的尸体，在它肮脏的嘴下有触手。当它对肉体的强烈欲望点燃它时，它的血管会发光。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 205,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚵",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "armor_stab": 4,
+  "dodge": 3,
+  "attack_cost": 180,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 4
+    },
+    [
+      "GRAB",
+      4
+    ],
+    [
+      "scratch",
+      4
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_VEH",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

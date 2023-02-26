@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_LONELY_quest1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_LONELY_quest1|http://cdda.aloxaf.cn/search?q=VAMP_LONELY_quest1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_LONELY_quest1",
+  "type": "mission_definition",
+  "name": {
+    "str": "Collect 15 blood"
+  },
+  "description": "Gather <color_light_red>15 human blood</color> then bring it to the vampire.",
+  "goal": "MGOAL_NULL",
+  "difficulty": 0,
+  "value": 100000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_LONELY_quest2",
+  "dialogue": {
+    "describe": "I want you for this errand.",
+    "offer": "Did you know we have been using blood substitutes for decades? Well, that's a good thing for us. Now, I want you to collect a few human blood, either yours or not... 15, I suppose that will satisfy my pleasure for that taste once again.",
+    "accepted": "You better do this. Sinking my fangs onto your flimsy neck is indeed fatal.",
+    "rejected": "Talk to me again later if you want to help me.",
+    "advice": "Murder someone if you are desperate to collect them.",
+    "inquire": "Did you get my drinks?",
+    "success": "Fascinating work, mortal.",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "*smilesatyou*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_LONELY_quest1",
+  "type": "mission_definition",
+  "name": {
+    "str": "收集15份血液"
+  },
+  "description": "采集<color_light_red>15人的血液</color>然后把它带给吸血鬼。",
+  "goal": "MGOAL_NULL",
+  "difficulty": 0,
+  "value": 100000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_LONELY_quest2",
+  "dialogue": {
+    "describe": "我要你帮我办这件事。",
+    "offer": "你知道我们用血液替代品已经有几十年了吗？嗯，这对我们来说是件好事。现在，我要你收集一些人类的血液，不管是不是你的…我想这会再次满足我的口味。",
+    "accepted": "你最好这样做。我的尖牙和你那脆弱的脖子比起来, 可是相当致命的。",
+    "rejected": "如果你想帮我的话，以后再跟我说。",
+    "advice": "如果你不顾一切地想收买某人，就杀了他。",
+    "inquire": "你给我拿饮料了吗？",
+    "success": "很有趣的工作，凡人。",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "*对你微笑*"
+  }
+}
+```
+

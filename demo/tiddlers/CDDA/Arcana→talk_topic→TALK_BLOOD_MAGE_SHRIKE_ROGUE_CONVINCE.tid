@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_ROGUE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_VEIL",
+    "yes": "Still adhere to The Path at heart, huh?  Maybe that's true, but I have my duty.  To follow The Path for the sake of others, a hunter of hunters.  What do you expect me to do, puppet?",
+    "no": "Perhaps.  Thinking of the big picture like a shrike, not just about the next kill, hmm?  I still have a duty to these people, incompetent or not.  You expect me to ignore that?"
+  },
+  "responses": [
+    {
+      "text": "Join me.  There will be others, and we can set them on the right track.",
+      "topic": "TALK_AGREE_FOLLOW",
+      "effect": "follow"
+    },
+    {
+      "text": "[ATTACK] I expect you to die.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_VEIL",
+    "yes": "还是坚持走自己的路，对吧？也许是真的，但我有我的责任。为了别人的利益而走这条路，一个猎人的猎人。你希望我做什么，木偶？",
+    "no": "也许。像个屠猎者那样思考大局，而不仅仅是下一个被杀，嗯？我对这些人还是有责任的，不管是不是无能。你想让我忽略这个？"
+  },
+  "responses": [
+    {
+      "text": "加入我。还会有其他人，我们可以让他们走上正轨。",
+      "topic": "TALK_AGREE_FOLLOW",
+      "effect": "follow"
+    },
+    {
+      "text": "[攻击]我希望你死。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

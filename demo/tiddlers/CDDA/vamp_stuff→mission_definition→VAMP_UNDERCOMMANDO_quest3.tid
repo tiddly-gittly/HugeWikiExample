@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_UNDERCOMMANDO_quest3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_UNDERCOMMANDO_quest3|http://cdda.aloxaf.cn/search?q=VAMP_UNDERCOMMANDO_quest3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_UNDERCOMMANDO_quest3",
+  "type": "mission_definition",
+  "name": {
+    "str": "Take the blood sac from the giant \"Thing\""
+  },
+  "description": "Get the <color_light_red>blood sac</color> by slaying the <color_magenta>giant \"Thing\"</color>, then deliver it to the commando.\n<color_red>Going unprepared is a death trap!</color>.",
+  "goal": "MGOAL_NULL",
+  "difficulty": 10,
+  "value": 300000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "bloodhole",
+      "om_special": "bhole",
+      "reveal_radius": 1,
+      "search_range": 50,
+      "z": 0
+    },
+    "update_mapgen": {
+      "place_item": [
+        {
+          "item": "bigbloodrune",
+          "x": 13,
+          "y": 13
+        }
+      ],
+      "place_monster": [
+        {
+          "monster": "mon_insect_devourerleech",
+          "x": 13,
+          "y": 13,
+          "target": true
+        }
+      ]
+    }
+  },
+  "followup": "VAMP_UNDERCOMMANDO_quest4",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "This is pretty much risky to you... Going to do it?",
+    "offer": "There is a peculiar cave with vast blood residue in it and I think its their gathering place. This giant \"thing\" on the depths, you'll need to bring it down as my command.",
+    "accepted": "Bring its blood sac, that would be a nice prize taking it down and as a proof of succeeding this test.",
+    "rejected": "Gather your courage first.",
+    "advice": "It is blind and very slow, slower than a human snail, but it'll devour you and causes deadly injuries getting near it... Now get going!",
+    "inquire": "Killed it?",
+    "success": "Damn kid, that's the mess you wanted to get. And you are still alive after that!",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "Ummm... I want to shoot you."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_UNDERCOMMANDO_quest3",
+  "type": "mission_definition",
+  "name": {
+    "str": "从巨大的“东西”上取血囊"
+  },
+  "description": "通过杀死<color_magenta>巨型“东西”获得<color_light_red>血囊</color>，然后将其交给突击队。\n<color_red>毫无准备是一个死亡陷阱！</color>。",
+  "goal": "MGOAL_NULL",
+  "difficulty": 10,
+  "value": 300000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "bloodhole",
+      "om_special": "bhole",
+      "reveal_radius": 1,
+      "search_range": 50,
+      "z": 0
+    },
+    "update_mapgen": {
+      "place_item": [
+        {
+          "item": "bigbloodrune",
+          "x": 13,
+          "y": 13
+        }
+      ],
+      "place_monster": [
+        {
+          "monster": "mon_insect_devourerleech",
+          "x": 13,
+          "y": 13,
+          "target": true
+        }
+      ]
+    }
+  },
+  "followup": "VAMP_UNDERCOMMANDO_quest4",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "这对你来说风险很大…你打算怎么做？",
+    "offer": "这里有一个奇特的洞穴，里面有大量的血迹，我想这是他们聚集的地方。这个巨大的“东西”在深处，你需要按照我的命令把它打倒。",
+    "accepted": "带上它的血囊，这将是一个很好的奖品，把它取下来，作为成功的证明。",
+    "rejected": "先鼓起勇气。",
+    "advice": "它是盲目的，非常缓慢，比人类蜗牛慢，但它会吞噬你，并造成致命的伤害接近它…快走！",
+    "inquire": "杀了它？",
+    "success": "该死的孩子，这就是你想要的。在那之后你还活着！",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "嗯…我想杀了你。"
+  }
+}
+```
+

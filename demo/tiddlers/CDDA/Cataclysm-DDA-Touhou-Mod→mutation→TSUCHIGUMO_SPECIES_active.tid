@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→mutation→TSUCHIGUMO_SPECIES_active
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TSUCHIGUMO_SPECIES_active|http://cdda.aloxaf.cn/search?q=TSUCHIGUMO_SPECIES_active]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TSUCHIGUMO_SPECIES_active",
+  "type": "mutation",
+  "name": "Tsuchigumo (youkai form)",
+  "copy-from": "TSUCHIGUMO_SPECIES",
+  "description": "You're a spider youkai originating from caves and dark places in the Earth.  Currently, you're (partially) transformed into your youkai form, revealing your hidden legs.  Activate the mutation to switch forms.",
+  "active": true,
+  "movecost_obstacle_modifier": 0.5,
+  "movecost_swim_modifier": 1.5,
+  "social_modifiers": {
+    "intimidate": 4,
+    "persuade": -4
+  },
+  "ugliness": 4,
+  "visibility": 8,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "mutations": [
+        "WEB_WALKER"
+      ],
+      "values": [
+        {
+          "value": "METABOLISM",
+          "multiply": 0.2
+        }
+      ]
+    }
+  ],
+  "transform": {
+    "target": "TSUCHIGUMO_SPECIES",
+    "active": false,
+    "moves": 100
+  },
+  "extend": {
+    "flags": [
+      "CLIMB_NO_LADDER",
+      "LARGE",
+      "WEB_RAPPEL"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TSUCHIGUMO_SPECIES_active",
+  "type": "mutation",
+  "name": "Tsuchigumo (youkai form)",
+  "copy-from": "TSUCHIGUMO_SPECIES",
+  "description": "You're a spider youkai originating from caves and dark places in the Earth.  Currently, you're (partially) transformed into your youkai form, revealing your hidden legs.  Activate the mutation to switch forms.",
+  "active": true,
+  "movecost_obstacle_modifier": 0.5,
+  "movecost_swim_modifier": 1.5,
+  "social_modifiers": {
+    "intimidate": 4,
+    "persuade": -4
+  },
+  "ugliness": 4,
+  "visibility": 8,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "mutations": [
+        "WEB_WALKER"
+      ],
+      "values": [
+        {
+          "value": "METABOLISM",
+          "multiply": 0.2
+        }
+      ]
+    }
+  ],
+  "transform": {
+    "target": "TSUCHIGUMO_SPECIES",
+    "active": false,
+    "moves": 100
+  },
+  "extend": {
+    "flags": [
+      "CLIMB_NO_LADDER",
+      "LARGE",
+      "WEB_RAPPEL"
+    ]
+  }
+}
+```
+

@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→oozle_trunk
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：oozle_trunk|http://cdda.aloxaf.cn/search?q=oozle_trunk]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "oozle_trunk",
+  "type": "vehicle_part",
+  "name": {
+    "str": "ooze receptacle"
+  },
+  "item": "oozle",
+  "location": "center",
+  "symbol": "H",
+  "broken_symbol": "#",
+  "color": "green",
+  "broken_color": "green",
+  "durability": 500,
+  "size": 800,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "description": "A living blob, shaped into a cargo space.",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "CARGO",
+    "COVERED"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "oozle_trunk",
+  "type": "vehicle_part",
+  "name": {
+    "str": "软泥容器"
+  },
+  "item": "oozle",
+  "location": "center",
+  "symbol": "H",
+  "broken_symbol": "#",
+  "color": "green",
+  "broken_color": "green",
+  "durability": 500,
+  "size": 800,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "description": "一只活的变形怪变成的货舱。",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "CARGO",
+    "COVERED"
+  ]
+}
+```
+

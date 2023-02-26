@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_surge_adrenaline
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_surge_adrenaline|http://cdda.aloxaf.cn/search?q=arcana_magic_surge_adrenaline]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_surge_adrenaline",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Surge of Adrenaline"
+  },
+  "description": "Magic Sign\nUsing this spell will provoke a rush of adrenaline for urgent situations, albeit with the same drawbacks afterward.  It can be used on yourself or an ally.",
+  "message": "\"The battle is not over yet…\"  You cast %s!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_2",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect_str": "adrenaline",
+  "max_level": 10,
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 120,
+  "final_casting_time": 60,
+  "casting_time_increment": -6,
+  "base_energy_cost": 1500,
+  "final_energy_cost": 750,
+  "energy_increment": -75,
+  "difficulty": 20,
+  "skill": "magic",
+  "min_duration": 72000,
+  "max_duration": 144000,
+  "duration_increment": 7200,
+  "energy_source": "STAMINA",
+  "spell_class": "SPELL_DAYLIGHT"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_surge_adrenaline",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：肾上腺素激增"
+  },
+  "description": "魔法符号\n使用此法术会在紧急情况下激起肾上腺素激增，尽管此后也有同样的缺点。它可以在自己或盟友身上使用。",
+  "message": "“战斗还没有结束……”你施放了 %s！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_2",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect_str": "adrenaline",
+  "max_level": 10,
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 120,
+  "final_casting_time": 60,
+  "casting_time_increment": -6,
+  "base_energy_cost": 1500,
+  "final_energy_cost": 750,
+  "energy_increment": -75,
+  "difficulty": 20,
+  "skill": "magic",
+  "min_duration": 72000,
+  "max_duration": 144000,
+  "duration_increment": 7200,
+  "energy_source": "STAMINA",
+  "spell_class": "SPELL_DAYLIGHT"
+}
+```
+

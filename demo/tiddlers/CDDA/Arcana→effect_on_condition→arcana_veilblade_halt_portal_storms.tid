@@ -1,0 +1,231 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Arcana
+title: Arcana→effect_on_condition→arcana_veilblade_halt_portal_storms
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_veilblade_halt_portal_storms|http://cdda.aloxaf.cn/search?q=arcana_veilblade_halt_portal_storms]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/effect_on_condition.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "arcana_veilblade_halt_portal_storms",
+  "recurrence": [
+    "1 m",
+    "1 m"
+  ],
+  "condition": {
+    "and": [
+      {
+        "or": [
+          {
+            "u_has_trait": "THRESH_VEIL"
+          },
+          {
+            "u_has_trait": "PROF_CHALICE"
+          }
+        ]
+      },
+      {
+        "u_has_effect": "arcana_veilblade_halt_portal_storms"
+      },
+      {
+        "is_weather": "early_portal_storm"
+      }
+    ]
+  },
+  "effect": [
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "ps_min_length"
+        },
+        "=",
+        {
+          "time": "2 hours"
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "ps_max_length"
+        },
+        "=",
+        {
+          "time": "4 hours"
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "ps_base_str"
+        },
+        "=",
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "cause_portal_storm"
+        },
+        "=",
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "cause_early_portal_storm"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    "next_weather",
+    {
+      "u_message": "Your blade resonates with the decaying fabric of reality, the air growing still.  The eye of the storm has formed around you.",
+      "type": "good"
+    },
+    {
+      "queue_eocs": "arcana_veilblade_cancel_portal_storm",
+      "time_in_future": [
+        "21 minutes",
+        "25 minutes"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "arcana_veilblade_halt_portal_storms",
+  "recurrence": [
+    "1 m",
+    "1 m"
+  ],
+  "condition": {
+    "and": [
+      {
+        "or": [
+          {
+            "u_has_trait": "THRESH_VEIL"
+          },
+          {
+            "u_has_trait": "PROF_CHALICE"
+          }
+        ]
+      },
+      {
+        "u_has_effect": "arcana_veilblade_halt_portal_storms"
+      },
+      {
+        "is_weather": "early_portal_storm"
+      }
+    ]
+  },
+  "effect": [
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "ps_min_length"
+        },
+        "=",
+        {
+          "time": "2 hours"
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "ps_max_length"
+        },
+        "=",
+        {
+          "time": "4 hours"
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "ps_base_str"
+        },
+        "=",
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "cause_portal_storm"
+        },
+        "=",
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "cause_early_portal_storm"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    "next_weather",
+    {
+      "u_message": "Your blade resonates with the decaying fabric of reality, the air growing still.  The eye of the storm has formed around you.",
+      "type": "good"
+    },
+    {
+      "queue_eocs": "arcana_veilblade_cancel_portal_storm",
+      "time_in_future": [
+        "21 minutes",
+        "25 minutes"
+      ]
+    }
+  ]
+}
+```
+

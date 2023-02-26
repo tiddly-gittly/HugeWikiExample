@@ -1,0 +1,546 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[32]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_antique"
+  ],
+  "weight": 250,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "____,____,____,____,____",
+      "____,____,____,____,____",
+      "____,____,____,____,____",
+      "____,____,____,____,____",
+      "____,____,____,____,____",
+      "FFFFFFFFFFFFFFFFFFFFFFFF",
+      "FFFFFFFFFFFFFFFFFFFFFFFF",
+      "|--OOOOOO--++--OOOOOO--|",
+      "|l                    l|",
+      "|l                    l|",
+      "|l  llllll    llllll  l|",
+      "|l                    l|",
+      "|l                    l|",
+      "|l  llllll    llllll  l|",
+      "|--------|            l|",
+      "|htt TTTT|            l|",
+      "| tt     X  #TTTTTT##  |",
+      "|        |         L#  |",
+      "|----------M-----------|",
+      ".4........._________<...",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      " ": "t_floor",
+      "+": "t_door_glass_c",
+      ",": "t_pavement_y",
+      "-": "t_wall_w",
+      ".": [
+        [
+          "t_dirt",
+          5
+        ],
+        [
+          "t_grass",
+          16
+        ],
+        [
+          "t_grass_long",
+          5
+        ],
+        [
+          "t_underbrush",
+          10
+        ]
+      ],
+      "F": "t_sidewalk",
+      "O": "t_window",
+      "_": "t_pavement",
+      "X": "t_door_locked_interior",
+      "M": "t_door_metal_pickable",
+      "<": "t_ladder_up",
+      "|": "t_wall_w"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "T": "f_displaycase",
+      "L": "f_stool",
+      "h": "f_bookcase",
+      "l": "f_utility_shelf",
+      "t": "f_table"
+    },
+    "place_items": [
+      {
+        "item": "antique",
+        "x": [
+          4,
+          9
+        ],
+        "y": 10,
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique",
+        "x": [
+          14,
+          19
+        ],
+        "y": 10,
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique",
+        "x": [
+          4,
+          9
+        ],
+        "y": 13,
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique",
+        "x": [
+          14,
+          19
+        ],
+        "y": 13,
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique",
+        "x": 1,
+        "y": [
+          8,
+          15
+        ],
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique",
+        "x": 22,
+        "y": [
+          8,
+          15
+        ],
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique_rare",
+        "x": [
+          13,
+          18
+        ],
+        "y": 16,
+        "chance": 65
+      },
+      {
+        "item": "reading_lights",
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          15,
+          16
+        ],
+        "chance": 90
+      },
+      {
+        "item": "magic_crafting",
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          15,
+          16
+        ],
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "item": "magic_tools",
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          15,
+          16
+        ],
+        "chance": 25
+      },
+      {
+        "item": "magic_books",
+        "x": [
+          5,
+          8
+        ],
+        "y": 15,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "item": "arcana_hunt_random",
+        "x": [
+          5,
+          8
+        ],
+        "y": 15,
+        "chance": 25,
+        "repeat": 3
+      },
+      {
+        "item": "unaligned_arcanist_spells",
+        "x": [
+          5,
+          8
+        ],
+        "y": 15,
+        "chance": 10
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_shady",
+          "mon_dementia",
+          "mon_flesh_angel",
+          "mon_zombie_necro"
+        ],
+        "x": [
+          4,
+          5
+        ],
+        "y": [
+          16,
+          17
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "cf_church_upgrade_4_h",
+  "object": {
+    "mapgensize": [
+      10,
+      10
+    ],
+    "rows": [
+      "        BB",
+      "         D",
+      "         D",
+      "        BB",
+      "          ",
+      "BB      BB",
+      "D        D",
+      "          ",
+      "          ",
+      "          "
+    ],
+    "terrain": {
+      ".": "t_floor"
+    },
+    "furniture": {
+      "B": "f_bed",
+      "D": "f_dresser"
+    },
+    "mapping": {
+      "B": {
+        "items": [
+          {
+            "item": "bed",
+            "chance": 50
+          }
+        ]
+      },
+      "D": {
+        "items": [
+          {
+            "item": "clothing_outdoor_torso",
+            "chance": 50
+          },
+          {
+            "item": "clothing_outdoor_pants",
+            "chance": 50
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_antique"
+  ],
+  "weight": 250,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "____,____,____,____,____",
+      "____,____,____,____,____",
+      "____,____,____,____,____",
+      "____,____,____,____,____",
+      "____,____,____,____,____",
+      "FFFFFFFFFFFFFFFFFFFFFFFF",
+      "FFFFFFFFFFFFFFFFFFFFFFFF",
+      "|--OOOOOO--++--OOOOOO--|",
+      "|l                    l|",
+      "|l                    l|",
+      "|l  llllll    llllll  l|",
+      "|l                    l|",
+      "|l                    l|",
+      "|l  llllll    llllll  l|",
+      "|--------|            l|",
+      "|htt TTTT|            l|",
+      "| tt     X  #TTTTTT##  |",
+      "|        |         L#  |",
+      "|----------M-----------|",
+      ".4........._________<...",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      " ": "t_floor",
+      "+": "t_door_glass_c",
+      ",": "t_pavement_y",
+      "-": "t_wall_w",
+      ".": [
+        [
+          "t_dirt",
+          5
+        ],
+        [
+          "t_grass",
+          16
+        ],
+        [
+          "t_grass_long",
+          5
+        ],
+        [
+          "t_underbrush",
+          10
+        ]
+      ],
+      "F": "t_sidewalk",
+      "O": "t_window",
+      "_": "t_pavement",
+      "X": "t_door_locked_interior",
+      "M": "t_door_metal_pickable",
+      "<": "t_ladder_up",
+      "|": "t_wall_w"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "T": "f_displaycase",
+      "L": "f_stool",
+      "h": "f_bookcase",
+      "l": "f_utility_shelf",
+      "t": "f_table"
+    },
+    "place_items": [
+      {
+        "item": "antique",
+        "x": [
+          4,
+          9
+        ],
+        "y": 10,
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique",
+        "x": [
+          14,
+          19
+        ],
+        "y": 10,
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique",
+        "x": [
+          4,
+          9
+        ],
+        "y": 13,
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique",
+        "x": [
+          14,
+          19
+        ],
+        "y": 13,
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique",
+        "x": 1,
+        "y": [
+          8,
+          15
+        ],
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique",
+        "x": 22,
+        "y": [
+          8,
+          15
+        ],
+        "chance": 85,
+        "repeat": 3
+      },
+      {
+        "item": "antique_rare",
+        "x": [
+          13,
+          18
+        ],
+        "y": 16,
+        "chance": 65
+      },
+      {
+        "item": "reading_lights",
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          15,
+          16
+        ],
+        "chance": 90
+      },
+      {
+        "item": "magic_crafting",
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          15,
+          16
+        ],
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "item": "magic_tools",
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          15,
+          16
+        ],
+        "chance": 25
+      },
+      {
+        "item": "magic_books",
+        "x": [
+          5,
+          8
+        ],
+        "y": 15,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "item": "arcana_hunt_random",
+        "x": [
+          5,
+          8
+        ],
+        "y": 15,
+        "chance": 25,
+        "repeat": 3
+      },
+      {
+        "item": "unaligned_arcanist_spells",
+        "x": [
+          5,
+          8
+        ],
+        "y": 15,
+        "chance": 10
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_shady",
+          "mon_dementia",
+          "mon_flesh_angel",
+          "mon_zombie_necro"
+        ],
+        "x": [
+          4,
+          5
+        ],
+        "y": [
+          16,
+          17
+        ]
+      }
+    ]
+  }
+}
+```
+

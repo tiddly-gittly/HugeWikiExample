@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→blast_canister_arcana_earth_act
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：blast_canister_arcana_earth_act|http://cdda.aloxaf.cn/search?q=blast_canister_arcana_earth_act]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "blast_canister_arcana_earth_act",
+  "copy-from": "blast_canister_arcana_earth",
+  "type": "TOOL",
+  "name": {
+    "str": "active earthen blast canister"
+  },
+  "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area immediately around it with acid.",
+  "price_postapoc": "0 cent",
+  "initial_charges": 3,
+  "max_charges": 3,
+  "turns_per_charge": 1,
+  "use_action": {
+    "type": "explosion",
+    "draw_explosion_radius": 1,
+    "fields_type": "fd_acid",
+    "fields_radius": 1,
+    "fields_min_intensity": 1,
+    "fields_max_intensity": 2,
+    "no_deactivate_msg": "It would be much smarter to throw this instead.",
+    "explosion": {
+      "power": 600,
+      "distance_factor": 0.2
+    }
+  },
+  "flags": [
+    "BOMB",
+    "TRADER_AVOID",
+    "NO_REPAIR",
+    "LIGHT_50"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "blast_canister_arcana_earth_act",
+  "copy-from": "blast_canister_arcana_earth",
+  "type": "TOOL",
+  "name": {
+    "str": "激活酸土爆炸罐"
+  },
+  "description": "这是一个小罐子，上面绑着元素能量。它会在几秒钟内爆炸，立即用酸将周围区域炸开。",
+  "price_postapoc": "0 cent",
+  "initial_charges": 3,
+  "max_charges": 3,
+  "turns_per_charge": 1,
+  "use_action": {
+    "type": "explosion",
+    "draw_explosion_radius": 1,
+    "fields_type": "fd_acid",
+    "fields_radius": 1,
+    "fields_min_intensity": 1,
+    "fields_max_intensity": 2,
+    "no_deactivate_msg": "It would be much smarter to throw this instead.",
+    "explosion": {
+      "power": 600,
+      "distance_factor": 0.2
+    }
+  },
+  "flags": [
+    "BOMB",
+    "TRADER_AVOID",
+    "NO_REPAIR",
+    "LIGHT_50"
+  ]
+}
+```
+

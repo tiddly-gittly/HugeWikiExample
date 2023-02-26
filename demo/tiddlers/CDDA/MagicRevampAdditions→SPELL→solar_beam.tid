@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→solar_beam
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：solar_beam|http://cdda.aloxaf.cn/search?q=solar_beam]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Sun_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "id": "solar_beam",
+  "type": "SPELL",
+  "name": {
+    "str": "Solar Beam"
+  },
+  "description": "Fire a blast of sunlight in a wide beam, blinding everything in its path and leaving it bright enough for you to see for a few seconds.",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "effect_str": "blind",
+  "damage_type": "heat",
+  "min_damage": 20,
+  "damage_increment": 7.5,
+  "max_damage": 340,
+  "min_range": 12,
+  "max_range": 12,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "min_duration": 0,
+  "duration_increment": 100,
+  "max_duration": 4500,
+  "base_energy_cost": 750,
+  "field_id": "fd_clairvoyant",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "spell_class": "SUN_MAGE",
+  "difficulty": 5,
+  "max_level": 43,
+  "base_casting_time": 350,
+  "energy_source": "MANA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "solar_beam",
+  "type": "SPELL",
+  "name": {
+    "str": "日光束"
+  },
+  "description": "发射一束阳光，使其路径上的所有生物都失明，并在几秒钟内保持明亮状态。",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "effect_str": "blind",
+  "damage_type": "heat",
+  "min_damage": 20,
+  "damage_increment": 7.5,
+  "max_damage": 340,
+  "min_range": 12,
+  "max_range": 12,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "min_duration": 0,
+  "duration_increment": 100,
+  "max_duration": 4500,
+  "base_energy_cost": 750,
+  "field_id": "fd_clairvoyant",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "spell_class": "SUN_MAGE",
+  "difficulty": 5,
+  "max_level": 43,
+  "base_casting_time": 350,
+  "energy_source": "MANA"
+}
+```
+

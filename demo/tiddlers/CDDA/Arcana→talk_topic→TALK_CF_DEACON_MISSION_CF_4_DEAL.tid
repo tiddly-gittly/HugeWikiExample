@@ -1,0 +1,225 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_DEACON_MISSION_CF_4_DEAL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_DEACON_MISSION_CF_4_DEAL|http://cdda.aloxaf.cn/search?q=TALK_CF_DEACON_MISSION_CF_4_DEAL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_DEACON.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_DEACON_MISSION_CF_4_DEAL",
+  "dynamic_line": "I'll do what I can to speak with other scavengers that stop by.  I would suggest continuing to check with other people here, the more of us working to attract local traders, the more likely that this will succeed.  While I trust that Sofia's people can take care of any unwanted attention this may attract, the main concern is talking people into visiting a settlement that's relatively unknown.",
+  "responses": [
+    {
+      "text": "Thank you.  I've already convinced a couple others to help, I should go check with Sofia for now.",
+      "effect": [
+        {
+          "u_add_var": "sofia_allies_secured",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "mapgen_update": "arcana_cf_4_wasteland_scavengers_1",
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_wasteland_scavengers_2",
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_roof_1",
+          "om_terrain": "cf_church_1_roof",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_roof_2",
+          "om_terrain": "cf_church_3_roof",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        }
+      ],
+      "condition": {
+        "u_has_var": "sofia_ally_seeking_2",
+        "type": "mission",
+        "context": "flag",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "Thanks, I'll look around a bit more and see if anyone else can help with this.",
+      "effect": [
+        {
+          "u_add_var": "sofia_ally_seeking_2",
+          "type": "mission",
+          "context": "flag",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "sofia_refugee_convinced",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "condition": {
+        "u_has_var": "sofia_ally_seeking_1",
+        "type": "mission",
+        "context": "flag",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll keep asking around, then.  Thanks.",
+      "effect": [
+        {
+          "u_add_var": "sofia_ally_seeking_1",
+          "type": "mission",
+          "context": "flag",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "sofia_refugee_convinced",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "switch": true,
+      "default": true,
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_DEACON_MISSION_CF_4_DEAL",
+  "dynamic_line": "我会尽我所能和其他过来的拾荒者谈谈。我建议继续和这里的其他人商量一下，我们越是努力吸引当地商人，就越有可能成功。虽然我相信索菲亚的人可以处理任何不必要的注意，这可能会吸引，主要的担心是说服人们访问一个相对未知的定居点。",
+  "responses": [
+    {
+      "text": "非常感谢。我已经说服其他几个人帮忙了，我现在应该去找索菲亚问问。",
+      "effect": [
+        {
+          "u_add_var": "sofia_allies_secured",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "mapgen_update": "arcana_cf_4_wasteland_scavengers_1",
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_wasteland_scavengers_2",
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_roof_1",
+          "om_terrain": "cf_church_1_roof",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_roof_2",
+          "om_terrain": "cf_church_3_roof",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        }
+      ],
+      "condition": {
+        "u_has_var": "sofia_ally_seeking_2",
+        "type": "mission",
+        "context": "flag",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "谢谢，我再四处看看，看看有没有人能帮忙。",
+      "effect": [
+        {
+          "u_add_var": "sofia_ally_seeking_2",
+          "type": "mission",
+          "context": "flag",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "sofia_refugee_convinced",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "condition": {
+        "u_has_var": "sofia_ally_seeking_1",
+        "type": "mission",
+        "context": "flag",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "那我继续四处打听。谢谢。",
+      "effect": [
+        {
+          "u_add_var": "sofia_ally_seeking_1",
+          "type": "mission",
+          "context": "flag",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "sofia_refugee_convinced",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "switch": true,
+      "default": true,
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

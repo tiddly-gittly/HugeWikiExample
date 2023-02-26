@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_skittyweavy
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_skittyweavy|http://cdda.aloxaf.cn/search?q=mon_zombie_skittyweavy]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Weaver.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Support-type zed who assists allies by healing them.",
+  "id": "mon_zombie_skittyweavy",
+  "type": "MONSTER",
+  "name": {
+    "str": "skittering weaver"
+  },
+  "description": "A mutated creature, the size of a cat with hybrid appearance of a tick and a beetle. Its forelimbs form a pair of oddly curved needles, tipped with a vented gap and saliva-drooling mandibles.",
+  "default_faction": "zombie_weaver",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "INSECT"
+  ],
+  "volume": "4000 ml",
+  "weight": "4000 g",
+  "harvest": "arachnid_tainted",
+  "hp": 30,
+  "speed": 110,
+  "material": [
+    "iflesh"
+  ],
+  "symbol": "⚚",
+  "color": "light_green",
+  "attack_cost": 225,
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "dodge": 5,
+  "armor_bash": 1,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "armor_stab": 2,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_skittyweavy_target"
+      },
+      "cooldown": 5,
+      "monster_message": "<color_yellow>%1$s injects %3$s!</color>"
+    }
+  ],
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_SKITTYWEAVY_UPGRADE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "CLIMBS",
+    "POISON",
+    "PACIFIST",
+    "NO_BREATHE",
+    "ATTACKMON",
+    "HARDTOSHOOT",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Support-type zed who assists allies by healing them.",
+  "id": "mon_zombie_skittyweavy",
+  "type": "MONSTER",
+  "name": {
+    "str": "迅捷织工"
+  },
+  "description": "一种变异的生物，大小像猫，外表像虱子和甲虫的杂交体。它的前肢形成了一对奇怪的弯曲针头，针尖上有一个开口，下颚流着口水。",
+  "default_faction": "zombie_weaver",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "INSECT"
+  ],
+  "volume": "4000 ml",
+  "weight": "4000 g",
+  "harvest": "arachnid_tainted",
+  "hp": 30,
+  "speed": 110,
+  "material": [
+    "iflesh"
+  ],
+  "symbol": "⚚",
+  "color": "light_green",
+  "attack_cost": 225,
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "dodge": 5,
+  "armor_bash": 1,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "armor_stab": 2,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_skittyweavy_target"
+      },
+      "cooldown": 5,
+      "monster_message": "<color_yellow>%1$s注射了%3$s！</color>"
+    }
+  ],
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_SKITTYWEAVY_UPGRADE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "CLIMBS",
+    "POISON",
+    "PACIFIST",
+    "NO_BREATHE",
+    "ATTACKMON",
+    "HARDTOSHOOT",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+

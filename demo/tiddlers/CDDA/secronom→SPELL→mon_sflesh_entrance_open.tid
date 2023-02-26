@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_entrance_open
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_entrance_open|http://cdda.aloxaf.cn/search?q=mon_sflesh_entrance_open]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_ondeath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_entrance_open",
+  "type": "SPELL",
+  "name": {
+    "str": "Veinhole Death"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's death leaves a hole that serves as an entrance to the innards of the flesh.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "message": "<color_light_green>The veinhole leaves a gap upon its death.</color>",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "veinhole_open",
+  "min_aoe": 50,
+  "max_aoe": 50
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_entrance_open",
+  "type": "SPELL",
+  "name": {
+    "str": "脉孔死亡"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者的死亡留下了一个洞，作为进入肉体内部的入口。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "message": "<color_light_green>脉孔在死亡时留下了一个缺口。</color>",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "veinhole_open",
+  "min_aoe": 50,
+  "max_aoe": 50
+}
+```
+

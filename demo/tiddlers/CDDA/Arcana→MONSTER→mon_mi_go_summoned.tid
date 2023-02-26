@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_mi_go_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_mi_go_summoned|http://cdda.aloxaf.cn/search?q=mon_mi_go_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_mi_go_summoned",
+  "copy-from": "mon_mi_go",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned mi-go"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "special_attacks": [
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 23,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_mi_go_bound",
+  "extend": {
+    "flags": [
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_mi_go_summoned",
+  "copy-from": "mon_mi_go",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤米戈"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "special_attacks": [
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 23,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_mi_go_bound",
+  "extend": {
+    "flags": [
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES"
+    ]
+  }
+}
+```
+

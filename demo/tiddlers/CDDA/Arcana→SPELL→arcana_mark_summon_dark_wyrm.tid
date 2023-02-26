@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_mark_summon_dark_wyrm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mark_summon_dark_wyrm|http://cdda.aloxaf.cn/search?q=arcana_mark_summon_dark_wyrm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_sanguine_marks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_mark_summon_dark_wyrm",
+  "type": "SPELL",
+  "name": {
+    "str": "Mark: Summon Dark Wyrm"
+  },
+  "description": "Sanguine Mark\nUsing this spell will summon a dark wyrm.  Whether it will obey you is completely up to chance.",
+  "message": "Your gesture causes the ground to shift and flow, a pitch-black form slithering out of the earth itself.  %s!",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "HOSTILE_50",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_5",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_dark_wyrm_summoned",
+  "energy_source": "HP",
+  "difficulty": 50,
+  "skill": "magic",
+  "max_level": 5,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 4,
+  "max_range": 7,
+  "range_increment": 0.6,
+  "base_casting_time": 180,
+  "final_casting_time": 90,
+  "casting_time_increment": -18,
+  "base_energy_cost": 24,
+  "final_energy_cost": 12,
+  "energy_increment": -2.4,
+  "min_duration": 600000,
+  "max_duration": 1500000,
+  "duration_increment": 180000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_mark_summon_dark_wyrm",
+  "type": "SPELL",
+  "name": {
+    "str": "印记：召唤黑暗之龙"
+  },
+  "description": "猩红印记\n使用这个咒语将召唤一个黑暗的幽灵。它是否会服从你完全取决于机会。",
+  "message": "你的手势使地面移动流动，一个漆黑的形体从地球上滑出。%s ！",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "HOSTILE_50",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_5",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_dark_wyrm_summoned",
+  "energy_source": "HP",
+  "difficulty": 50,
+  "skill": "magic",
+  "max_level": 5,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 4,
+  "max_range": 7,
+  "range_increment": 0.6,
+  "base_casting_time": 180,
+  "final_casting_time": 90,
+  "casting_time_increment": -18,
+  "base_energy_cost": 24,
+  "final_energy_cost": 12,
+  "energy_increment": -2.4,
+  "min_duration": 600000,
+  "max_duration": 1500000,
+  "duration_increment": 180000
+}
+```
+

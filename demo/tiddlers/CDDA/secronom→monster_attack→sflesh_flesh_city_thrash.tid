@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→sflesh_flesh_city_thrash
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sflesh_flesh_city_thrash|http://cdda.aloxaf.cn/search?q=sflesh_flesh_city_thrash]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "sflesh_flesh_city_thrash",
+  "accuracy": 10,
+  "move_cost": 200,
+  "blockable": false,
+  "dodgeable": false,
+  "range": 4,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 20
+    }
+  ],
+  "min_mul": 0.6,
+  "effects": [
+    {
+      "id": "stunned",
+      "duration": 1
+    }
+  ],
+  "hit_dmg_u": "%1$s's tentacles thrash at you!",
+  "hit_dmg_npc": "%1$s thrashes <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to thrash at you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to thrash <npcname>, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "sflesh_flesh_city_thrash",
+  "accuracy": 10,
+  "move_cost": 200,
+  "blockable": false,
+  "dodgeable": false,
+  "range": 4,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 20
+    }
+  ],
+  "min_mul": 0.6,
+  "effects": [
+    {
+      "id": "stunned",
+      "duration": 1
+    }
+  ],
+  "hit_dmg_u": "%1$s's tentacles thrash at you!",
+  "hit_dmg_npc": "%1$s thrashes <npcname>！",
+  "no_dmg_msg_u": "%1$s tries to thrash at you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to thrash <npcname>, but fails to penetrate their armor!"
+}
+```
+

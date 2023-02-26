@@ -1,0 +1,419 @@
+creator: 林一二
+revision: 0
+tags: mapgen Tankmod_Revived
+title: Tankmod_Revived→mapgen→[3]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/mapgen.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_garage_2"
+  ],
+  "weight": 100,
+  "object": {
+    "fill_ter": "t_thconc_floor",
+    "rows": [
+      "   EEEEEEEE     XXX     ",
+      "   EEEEEEEE     XXX     ",
+      "   EEEEEEEE     XXX     ",
+      "   EEEEEEEE     XXX     ",
+      "  eEEEEEEEEXXXXXXXXXXXXX",
+      " --________----HHOHH---X",
+      " |e.M#MM#M..|y.......y|X",
+      " |..M#MM#M..|b........|X",
+      " :..M#MM#M..:b..|-ddd-|X",
+      " :..M#MM#M..:b..|f.h.y|X",
+      " A..M#MM#M..:b..|--.--|X",
+      " |..M#MM#M..+...+...hd|X",
+      " |..MMMMMM..|-+-|f6ddd|X",
+      " |..........|&.s|-----|X",
+      " |---....---|---|LLLLL|X",
+      " |..............|bbbbb|X",
+      " |WWWW..WWWW|...+.....|X",
+      " |c........c|-------+-|X",
+      " |c.xx..xx.p|xx.+T|<..OX",
+      " |l.xx..xx.c|x..-|----|X",
+      " |w.........O..xx|4UUXXX",
+      " |ScccccccwS|----|UXXXXX",
+      " |----------|WWWWWWWWWWW",
+      "                        "
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      " ": "t_region_groundcover_urban",
+      "_": "t_floor",
+      "E": "t_pavement",
+      "X": "t_sidewalk",
+      "U": "t_sidewalk",
+      "$": "t_door_glass_c",
+      "+": "t_door_c",
+      "O": "t_door_locked",
+      "-": "t_wall_b",
+      ".": "t_thconc_floor",
+      ":": "t_window",
+      "=": "t_door_metal_locked",
+      "A": "t_m_frame",
+      "H": "t_wall_glass",
+      "e": "t_gates_mech_control",
+      "|": "t_wall_b",
+      "W": "t_chainfence_h",
+      "^": "t_chaingate_c",
+      "M": "t_metal_floor",
+      "#": "t_grate",
+      "<": "t_stairs_up"
+    },
+    "toilets": {
+      "&": {}
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "A": "f_air_conditioner",
+      "L": "f_locker",
+      "T": "f_rack",
+      "b": "f_bench",
+      "d": "f_desk",
+      "c": "f_counter",
+      "p": "f_hydraulic_press",
+      "l": "f_heavy_lathe",
+      "S": "f_utility_shelf",
+      "s": "f_sink",
+      "t": "f_toilet",
+      "w": "f_utility_shelf",
+      "x": "f_crate_c",
+      "f": "f_filing_cabinet",
+      "h": "f_chair",
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ],
+      "y": [
+        "f_indoor_plant",
+        "f_indoor_plant_y"
+      ]
+    },
+    "items": {
+      "L": {
+        "item": "clothing_work_set",
+        "chance": 55
+      },
+      "c": {
+        "item": "mechanics",
+        "chance": 60
+      },
+      "S": {
+        "item": "mechanics",
+        "chance": 80,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "x": {
+        "item": "mechanics",
+        "chance": 80,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "w": {
+        "item": "SUS_welding_gear",
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "f": {
+        "item": "office",
+        "chance": 70,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "d": {
+        "item": "office",
+        "chance": 70,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "T": {
+        "item": "cleaning",
+        "chance": 70,
+        "repeat": [
+          1,
+          6
+        ]
+      }
+    },
+    "place_monster": [
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          0,
+          19
+        ],
+        "chance": 50
+      },
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          0,
+          19
+        ],
+        "chance": 50
+      },
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          0,
+          19
+        ],
+        "chance": 50
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "tankmod_garage_restoration",
+        "x": 5,
+        "y": [
+          4,
+          5
+        ],
+        "chance": 90,
+        "rotation": 270
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_garage_2"
+  ],
+  "weight": 100,
+  "object": {
+    "fill_ter": "t_thconc_floor",
+    "rows": [
+      "   EEEEEEEE     XXX     ",
+      "   EEEEEEEE     XXX     ",
+      "   EEEEEEEE     XXX     ",
+      "   EEEEEEEE     XXX     ",
+      "  eEEEEEEEEXXXXXXXXXXXXX",
+      " --________----HHOHH---X",
+      " |e.M#MM#M..|y.......y|X",
+      " |..M#MM#M..|b........|X",
+      " :..M#MM#M..:b..|-ddd-|X",
+      " :..M#MM#M..:b..|f.h.y|X",
+      " A..M#MM#M..:b..|--.--|X",
+      " |..M#MM#M..+...+...hd|X",
+      " |..MMMMMM..|-+-|f6ddd|X",
+      " |..........|&.s|-----|X",
+      " |---....---|---|LLLLL|X",
+      " |..............|bbbbb|X",
+      " |WWWW..WWWW|...+.....|X",
+      " |c........c|-------+-|X",
+      " |c.xx..xx.p|xx.+T|<..OX",
+      " |l.xx..xx.c|x..-|----|X",
+      " |w.........O..xx|4UUXXX",
+      " |ScccccccwS|----|UXXXXX",
+      " |----------|WWWWWWWWWWW",
+      "                        "
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      " ": "t_region_groundcover_urban",
+      "_": "t_floor",
+      "E": "t_pavement",
+      "X": "t_sidewalk",
+      "U": "t_sidewalk",
+      "$": "t_door_glass_c",
+      "+": "t_door_c",
+      "O": "t_door_locked",
+      "-": "t_wall_b",
+      ".": "t_thconc_floor",
+      ":": "t_window",
+      "=": "t_door_metal_locked",
+      "A": "t_m_frame",
+      "H": "t_wall_glass",
+      "e": "t_gates_mech_control",
+      "|": "t_wall_b",
+      "W": "t_chainfence_h",
+      "^": "t_chaingate_c",
+      "M": "t_metal_floor",
+      "#": "t_grate",
+      "<": "t_stairs_up"
+    },
+    "toilets": {
+      "&": {}
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "A": "f_air_conditioner",
+      "L": "f_locker",
+      "T": "f_rack",
+      "b": "f_bench",
+      "d": "f_desk",
+      "c": "f_counter",
+      "p": "f_hydraulic_press",
+      "l": "f_heavy_lathe",
+      "S": "f_utility_shelf",
+      "s": "f_sink",
+      "t": "f_toilet",
+      "w": "f_utility_shelf",
+      "x": "f_crate_c",
+      "f": "f_filing_cabinet",
+      "h": "f_chair",
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ],
+      "y": [
+        "f_indoor_plant",
+        "f_indoor_plant_y"
+      ]
+    },
+    "items": {
+      "L": {
+        "item": "clothing_work_set",
+        "chance": 55
+      },
+      "c": {
+        "item": "mechanics",
+        "chance": 60
+      },
+      "S": {
+        "item": "mechanics",
+        "chance": 80,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "x": {
+        "item": "mechanics",
+        "chance": 80,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "w": {
+        "item": "SUS_welding_gear",
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "f": {
+        "item": "office",
+        "chance": 70,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "d": {
+        "item": "office",
+        "chance": 70,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "T": {
+        "item": "cleaning",
+        "chance": 70,
+        "repeat": [
+          1,
+          6
+        ]
+      }
+    },
+    "place_monster": [
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          0,
+          19
+        ],
+        "chance": 50
+      },
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          0,
+          19
+        ],
+        "chance": 50
+      },
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          0,
+          19
+        ],
+        "chance": 50
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "tankmod_garage_restoration",
+        "x": 5,
+        "y": [
+          4,
+          5
+        ],
+        "chance": 90,
+        "rotation": 270
+      }
+    ]
+  }
+}
+```
+

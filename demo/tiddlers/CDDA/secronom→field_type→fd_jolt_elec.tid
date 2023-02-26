@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_jolt_elec
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_jolt_elec|http://cdda.aloxaf.cn/search?q=fd_jolt_elec]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_jolt_elec",
+  "//": "Hidden field for spawning purposes of jolt. Has to be its damaging electric discharges, but it doesn't work.",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "this is a bug",
+      "color": "black",
+      "monster_spawn_chance": 500,
+      "monster_spawn_count": 1,
+      "monster_spawn_radius": 1,
+      "monster_spawn_group": "GROUP_JOLT_BOLTS"
+    },
+    {
+      "monster_spawn_chance": 250
+    },
+    {
+      "monster_spawn_chance": 100
+    }
+  ],
+  "priority": -1,
+  "half_life": "1 turns",
+  "phase": "plasma",
+  "display_items": true,
+  "display_field": false
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_jolt_elec",
+  "//": "Hidden field for spawning purposes of jolt. Has to be its damaging electric discharges, but it doesn't work.",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "this is a bug",
+      "color": "black",
+      "monster_spawn_chance": 500,
+      "monster_spawn_count": 1,
+      "monster_spawn_radius": 1,
+      "monster_spawn_group": "GROUP_JOLT_BOLTS"
+    },
+    {
+      "monster_spawn_chance": 250
+    },
+    {
+      "monster_spawn_chance": 100
+    }
+  ],
+  "priority": -1,
+  "half_life": "1 turns",
+  "phase": "plasma",
+  "display_items": true,
+  "display_field": false
+}
+```
+

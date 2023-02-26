@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→hexenhammer
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：hexenhammer|http://cdda.aloxaf.cn/search?q=hexenhammer]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "hexenhammer",
+  "type": "TOOL",
+  "category": "weapons",
+  "copy-from": "warhammer",
+  "name": {
+    "str": "hammer of the hunter",
+    "str_pl": "hammers of the hunter"
+  },
+  "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  Many magical items can be purified with this item.  It can be used to channel consecrated essence into a stunning flash, or place a rune that will release its stunning effect if something steps into it.  Though using it is a double-edged sword, it will have further effects on creatures of darkness.",
+  "price": "800 USD",
+  "price_postapoc": "45 USD",
+  "material": [
+    {
+      "type": "steel",
+      "portion": 25
+    },
+    {
+      "type": "wood",
+      "portion": 25
+    },
+    {
+      "type": "silver",
+      "portion": 2
+    }
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 3
+      }
+    }
+  ],
+  "charges_per_use": 3,
+  "ammo": "essence_dull_type",
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_hexenhammer",
+      "moves": 90,
+      "practice": 2,
+      "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_hammerzeit",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  ],
+  "relative": {
+    "weight": "360 g",
+    "bashing": 2
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "hexenhammer",
+  "type": "TOOL",
+  "category": "weapons",
+  "copy-from": "warhammer",
+  "name": {
+    "str": "猎手战锤",
+    "str_pl": "猎手战锤"
+  },
+  "description": "镶银战锤，用古老的拉丁语刻有宗教祈祷。很多魔法物品都可以用这个物品净化。它可以用来引导神圣精华进入一个令人眩晕的闪光，或者放置一个符文，如果有东西进入它，它会释放出令人眩晕的效果。虽然使用它是一把双刃剑，但它会对黑暗生物产生进一步的影响。",
+  "price": "800 USD",
+  "price_postapoc": "45 USD",
+  "material": [
+    {
+      "type": "steel",
+      "portion": 25
+    },
+    {
+      "type": "wood",
+      "portion": 25
+    },
+    {
+      "type": "silver",
+      "portion": 2
+    }
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 3
+      }
+    }
+  ],
+  "charges_per_use": 3,
+  "ammo": "essence_dull_type",
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_hexenhammer",
+      "moves": 90,
+      "practice": 2,
+      "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_hammerzeit",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  ],
+  "relative": {
+    "weight": "360 g",
+    "bashing": 2
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  }
+}
+```
+

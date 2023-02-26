@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_QUEST_HELP_1_RITUAL_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_QUEST_HELP_1_RITUAL_4|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_QUEST_HELP_1_RITUAL_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_QUEST_HELP_1_RITUAL_4",
+  "dynamic_line": {
+    "npc_has_effect": "hermit_stage_2",
+    "yes": "Give me a moment to catch my breath.  It's been years since I last presided over a ritual this taxing…",
+    "no": "Veiled King, grant us insight.  Grant us your blessing, guard and guide us.  These wayward souls, and your wayward gift to us, let these be in service to you once more.  \"No matter the cost, no matter what we must do, for the strength and safety of this world.  And in turn, of worlds beyond.\"  It is finished."
+  },
+  "responses": [
+    {
+      "text": "Okay.",
+      "switch": true,
+      "condition": {
+        "npc_has_effect": "hermit_stage_2"
+      },
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "Alright.",
+      "switch": true,
+      "default": true,
+      "effect": [
+        "mission_success",
+        {
+          "npc_add_effect": "hermit_stage_2",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "veilblade"
+        }
+      ],
+      "topic": "TALK_MISSION_SUCCESS"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_QUEST_HELP_1_RITUAL_4",
+  "dynamic_line": {
+    "npc_has_effect": "hermit_stage_2",
+    "yes": "给我点时间喘口气。我已经好几年没主持过一个仪式了…",
+    "no": "蒙着帷幕的国王，赐予我们洞察力。求你赐福给我们，护卫引导我们。这些任性的灵魂，以及你给我们的任性礼物，让他们再次为你服务。”不管付出什么代价，不管我们必须做什么，为了这个世界的力量和安全。而另一方面，世界的另一面。"
+  },
+  "responses": [
+    {
+      "text": "好的。",
+      "switch": true,
+      "condition": {
+        "npc_has_effect": "hermit_stage_2"
+      },
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "好吧。",
+      "switch": true,
+      "default": true,
+      "effect": [
+        "mission_success",
+        {
+          "npc_add_effect": "hermit_stage_2",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "veilblade"
+        }
+      ],
+      "topic": "TALK_MISSION_SUCCESS"
+    }
+  ]
+}
+```
+

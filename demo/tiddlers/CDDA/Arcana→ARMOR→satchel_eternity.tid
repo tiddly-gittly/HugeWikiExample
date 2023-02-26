@@ -1,0 +1,269 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Arcana
+title: Arcana→ARMOR→satchel_eternity
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：satchel_eternity|http://cdda.aloxaf.cn/search?q=satchel_eternity]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "satchel_eternity",
+  "type": "ARMOR",
+  "name": {
+    "str": "satchel of eternity",
+    "str_pl": "satchels of eternity"
+  },
+  "description": "A small fabric pouch decorated with ornate textile imagery depicting an otherworldly abstract pattern, further adorned with copper rings and clasps.  It is said to represent the search for greater knowledge of the unknown, focused by a drive to find utility and purpose in new discoveries.  It uses the power of a vortex to store a great volume of items that can be easily accessed, but the portal's instability means being struck can potentially draw attention from Beyond or cause you to teleport.  You can also use it to set aside certain items for even faster access, if it serves as a magical focus.",
+  "weight": "610 g",
+  "volume": "500 ml",
+  "price": "1000 USD",
+  "price_postapoc": "100 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "cotton",
+    "copper"
+  ],
+  "symbol": "[",
+  "looks_like": "leather_pouch",
+  "color": "light_red",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_satchel_attention",
+            "hit_self": true,
+            "once_in": 50,
+            "message": "You feel like something is watching you…",
+            "npc_message": "A strange aura of malice seems to briefly surround %1$s."
+          },
+          {
+            "id": "arcana_react_satchel_teleport",
+            "hit_self": true,
+            "once_in": 50,
+            "message": "You feel yanked in a non-existent direction!",
+            "npc_message": "%1$s suddenly warps away!"
+          }
+        ]
+      }
+    ]
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "rigid": true,
+      "spoil_multiplier": 0.9,
+      "weight_multiplier": 0.25,
+      "max_contains_volume": "75 L",
+      "max_contains_weight": "150 kg",
+      "moves": 80
+    },
+    {
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "25 kg",
+      "moves": 1,
+      "rigid": true,
+      "holster": true,
+      "flag_restriction": [
+        "MAGIC_FOCUS"
+      ]
+    },
+    {
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "25 kg",
+      "moves": 1,
+      "rigid": true,
+      "holster": true,
+      "flag_restriction": [
+        "MAGIC_FOCUS"
+      ]
+    },
+    {
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "25 kg",
+      "moves": 1,
+      "rigid": true,
+      "holster": true,
+      "flag_restriction": [
+        "MAGIC_FOCUS"
+      ]
+    },
+    {
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "25 kg",
+      "moves": 1,
+      "rigid": true,
+      "holster": true,
+      "flag_restriction": [
+        "MAGIC_FOCUS"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Store what magical focus?",
+    "holster_msg": "You store your %s"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "TRADER_KEEP_EQUIPPED",
+    "TARDIS"
+  ],
+  "material_thickness": 1,
+  "armor": [
+    {
+      "encumbrance": 15,
+      "coverage": 15,
+      "covers": [
+        "torso"
+      ],
+      "specifically_covers": [
+        "torso_waist"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "satchel_eternity",
+  "type": "ARMOR",
+  "name": {
+    "str": "永恒背包",
+    "str_pl": "永恒背包"
+  },
+  "description": "一种小的织物袋，装饰有华丽的纺织图案，描绘了一种超凡脱俗的抽象图案，并用铜环和扣子进一步装饰。据说，它代表了对未知事物更深入的知识的探索，专注于在新发现中寻找效用和目的。它利用漩涡的力量储存大量易于访问的物品，但门户的不稳定性意味着被撞击可能会引起外界的注意或导致你远程传送。如果你把某些物品放在一边，甚至可以更快地使用它。",
+  "weight": "610 g",
+  "volume": "500 ml",
+  "price": "1000 USD",
+  "price_postapoc": "100 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "cotton",
+    "copper"
+  ],
+  "symbol": "[",
+  "looks_like": "leather_pouch",
+  "color": "light_red",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_satchel_attention",
+            "hit_self": true,
+            "once_in": 50,
+            "message": "你觉得有什么东西在看着你…",
+            "npc_message": "一种奇怪的恶意气氛似乎短暂地围绕着%1$s。"
+          },
+          {
+            "id": "arcana_react_satchel_teleport",
+            "hit_self": true,
+            "once_in": 50,
+            "message": "你觉得自己被拉向了一个不存在的方向！",
+            "npc_message": "%1$s突然扭曲了！"
+          }
+        ]
+      }
+    ]
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "rigid": true,
+      "spoil_multiplier": 0.9,
+      "weight_multiplier": 0.25,
+      "max_contains_volume": "75 L",
+      "max_contains_weight": "150 kg",
+      "moves": 80
+    },
+    {
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "25 kg",
+      "moves": 1,
+      "rigid": true,
+      "holster": true,
+      "flag_restriction": [
+        "MAGIC_FOCUS"
+      ]
+    },
+    {
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "25 kg",
+      "moves": 1,
+      "rigid": true,
+      "holster": true,
+      "flag_restriction": [
+        "MAGIC_FOCUS"
+      ]
+    },
+    {
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "25 kg",
+      "moves": 1,
+      "rigid": true,
+      "holster": true,
+      "flag_restriction": [
+        "MAGIC_FOCUS"
+      ]
+    },
+    {
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "25 kg",
+      "moves": 1,
+      "rigid": true,
+      "holster": true,
+      "flag_restriction": [
+        "MAGIC_FOCUS"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "存储何种亲和魔力的物品？",
+    "holster_msg": "你把你的%s"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "TRADER_KEEP_EQUIPPED",
+    "TARDIS"
+  ],
+  "material_thickness": 1,
+  "armor": [
+    {
+      "encumbrance": 15,
+      "coverage": 15,
+      "covers": [
+        "torso"
+      ],
+      "specifically_covers": [
+        "torso_waist"
+      ]
+    }
+  ]
+}
+```
+

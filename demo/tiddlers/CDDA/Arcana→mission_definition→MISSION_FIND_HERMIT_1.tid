@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_FIND_HERMIT_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_FIND_HERMIT_1|http://cdda.aloxaf.cn/search?q=MISSION_FIND_HERMIT_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_FIND_HERMIT_1",
+  "type": "mission_definition",
+  "name": {
+    "str": "Reach Standing Stones"
+  },
+  "description": "Lead your companion to an area in the forest, suspected of being host to supernatural activity.",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 2,
+  "value": 20000,
+  "origins": [
+    "ORIGIN_OPENER_NPC",
+    "ORIGIN_ANY_NPC"
+  ],
+  "followup": "MISSION_FIND_HERMIT_2",
+  "destination": "standing_stones",
+  "start": {
+    "effect": "follow",
+    "assign_mission_target": {
+      "om_terrain": "standing_stones",
+      "om_special": "Standing stones",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "dialogue": {
+    "describe": "If you see this, it's a bug!",
+    "offer": "As unreal as things have gotten, I've been trying to find some sort of answer to it all.  Or if not that, at least closure.  Not long before things boiled over, I've been having strange dreams of otherworldly scenery, and now that everything's gone to hell I'm wondering if there's any meaning to it.  I know it sounds crazy, but there might be something in what I recall that we could investigate.",
+    "accepted": "Thank you.  Thing is, some of the scenery from these dreams looked familiar, and after zero day I started poring over some local maps to try and make sense of what little looked real.  One of the places I recall was hidden away in a part of the local woods I used to go camping in.  I doubt we'll find anything, but maybe it'll give me peace of mind knowing these weird dreams don't have anything to do with what happened.",
+    "rejected": "I understand.  We've got more important things to worry about than chasing half-remembered dreams that might not mean anything.  Maybe another time…",
+    "advice": "Never know what we might run into along the way, maybe the journey will be more useful than what we find there.  The dream had a vision of strange stones and dark rituals.  If any of it turns out to be real, it might be good to visit during the daytime to be safe.",
+    "inquire": "Any luck so far?",
+    "success": "I don't believe it.  The stones, that cairn in the center?  It looks just just like how it appeared in the dreams.  Maybe my mind's playing tricks on me, but I could've sworn I never ran into anything like this before.  I don't know what to make of this.  I'll continue to follow you for now, maybe we can look into this further.",
+    "success_lie": "What madness is this?",
+    "failure": "How …?"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_FIND_HERMIT_1",
+  "type": "mission_definition",
+  "name": {
+    "str": "到达立石"
+  },
+  "description": "把你的同伴带到森林里一个被怀疑有超自然活动的地方。",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 2,
+  "value": 20000,
+  "origins": [
+    "ORIGIN_OPENER_NPC",
+    "ORIGIN_ANY_NPC"
+  ],
+  "followup": "MISSION_FIND_HERMIT_2",
+  "destination": "standing_stones",
+  "start": {
+    "effect": "follow",
+    "assign_mission_target": {
+      "om_terrain": "standing_stones",
+      "om_special": "Standing stones",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "dialogue": {
+    "describe": "If you see this, it's a bug!",
+    "offer": "尽管事情已经变得不真实，但我一直在努力寻找答案。如果不是这样的话，至少要结束。就在一切都结束前不久，我一直在做一个奇怪的梦，梦到了另一个世界的风景，现在一切都变成了地狱，我想知道它是否有任何意义。我知道这听起来很疯狂，但我记得我们可以调查一下。",
+    "accepted": "非常感谢。从零零开始，我就试着把这些熟悉的景色和一些梦境看完以后，再去看看那些真实的东西。我记得有一个地方藏在我以前露营的地方。我怀疑我们会找到什么，但也许这会让我安心，因为这些奇怪的梦与发生的事无关。",
+    "rejected": "我理解。我们要担心的事情比追逐那些记不清的梦更重要，这些梦可能毫无意义。也许下次吧…",
+    "advice": "永远不知道我们在路上会遇到什么，也许这段旅程会比我们在那里找到的更有用。梦里有奇怪的石头和黑暗的仪式。如果其中任何一个是真的，为了安全起见，最好在白天去看看。",
+    "inquire": "到目前为止有什么进展吗？",
+    "success": "我不相信。石头，中间的那个山洞？它看起来就像梦中的样子。也许我的脑子在捉弄我，但我可以发誓我从来没有遇到过这样的事情。我不知道该怎么解释。我现在会继续跟踪你，也许我们可以进一步调查。",
+    "success_lie": "这是什么疯狂？",
+    "failure": "如何…？"
+  }
+}
+```
+

@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→ice_clave
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ice_clave|http://cdda.aloxaf.cn/search?q=ice_clave]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Glacier_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "ice_clave",
+  "name": {
+    "str": "Ice Clave"
+  },
+  "description": "Use the unstoppable force from a glacier to cause severe damage.",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "ice_clave_blunt"
+    }
+  ],
+  "flags": [
+    "LOUD",
+    "NO_HANDS"
+  ],
+  "min_damage": 30,
+  "max_damage": 116,
+  "damage_increment": 2,
+  "min_range": 3,
+  "max_range": 8,
+  "range_increment": 0.12,
+  "min_aoe": 30,
+  "max_aoe": 120,
+  "aoe_increment": 2.6,
+  "base_energy_cost": 400,
+  "spell_class": "GLACIER_MAGE",
+  "energy_source": "MANA",
+  "damage_type": "cold",
+  "difficulty": 3,
+  "max_level": 43,
+  "base_casting_time": 350
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "ice_clave",
+  "name": {
+    "str": "寒冰之钥"
+  },
+  "description": "驭使源于冰川的万夫莫当之力造成严重的破坏。",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "ice_clave_blunt"
+    }
+  ],
+  "flags": [
+    "LOUD",
+    "NO_HANDS"
+  ],
+  "min_damage": 30,
+  "max_damage": 116,
+  "damage_increment": 2,
+  "min_range": 3,
+  "max_range": 8,
+  "range_increment": 0.12,
+  "min_aoe": 30,
+  "max_aoe": 120,
+  "aoe_increment": 2.6,
+  "base_energy_cost": 400,
+  "spell_class": "GLACIER_MAGE",
+  "energy_source": "MANA",
+  "damage_type": "cold",
+  "difficulty": 3,
+  "max_level": 43,
+  "base_casting_time": 350
+}
+```
+

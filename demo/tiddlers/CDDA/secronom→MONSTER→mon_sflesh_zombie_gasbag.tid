@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_gasbag
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_gasbag|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_gasbag]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_gasbag",
+  "type": "MONSTER",
+  "name": {
+    "str": "bloated zombie"
+  },
+  "description": "With its gray skin swollen to near rupture with putrid gas, this cyst covered zombie looks like it could violently burst under the slightest of disturbances.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 5,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 19,
+  "speed": 80,
+  "emit_fields": [
+    {
+      "emit_id": "emit_toxic_leak",
+      "delay": "1 s"
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "magenta_yellow",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_night": 3,
+  "harvest": "exempt",
+  "special_attacks": [
+    [
+      "SUICIDE",
+      20
+    ],
+    [
+      "scratch",
+      15
+    ]
+  ],
+  "death_drops": "default_zombie_items",
+  "death_function": {
+    "message": "A %s explodes!",
+    "effect": {
+      "id": "death_gas",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE"
+  },
+  "burn_into": "mon_zombie_gasbag",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_gasbag",
+  "type": "MONSTER",
+  "name": {
+    "str": "爆浆丧尸"
+  },
+  "description": "一具灰白的皮肤下充满了臌胀的腐败气体的尸体，隆起的皮肤遍布着黑色的血管，随时都可能爆出大量浆液。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 5,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 19,
+  "speed": 80,
+  "emit_fields": [
+    {
+      "emit_id": "emit_toxic_leak",
+      "delay": "1 s"
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "magenta_yellow",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_night": 3,
+  "harvest": "exempt",
+  "special_attacks": [
+    [
+      "SUICIDE",
+      20
+    ],
+    [
+      "scratch",
+      15
+    ]
+  ],
+  "death_drops": "default_zombie_items",
+  "death_function": {
+    "message": "A %s explodes!",
+    "effect": {
+      "id": "death_gas",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE"
+  },
+  "burn_into": "mon_zombie_gasbag",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

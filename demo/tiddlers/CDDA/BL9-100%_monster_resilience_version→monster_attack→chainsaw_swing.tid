@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: monster_attack BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→monster_attack→chainsaw_swing
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：chainsaw_swing|http://cdda.aloxaf.cn/search?q=chainsaw_swing]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "chainsaw_swing",
+  "cooldown": 12,
+  "move_cost": 120,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 13,
+      "armor_penetration": 11
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "effects": [
+    {
+      "id": "downed",
+      "duration": 2
+    }
+  ],
+  "hit_dmg_u": "The %1$s swings at your torso!",
+  "hit_dmg_npc": "The %1$s swings at <npcname>'s torso!",
+  "no_dmg_msg_u": "The %1$s tries to swing at your torso, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "The %1$s tries to swing at <npcname>'s torso, but fails to penetrate their armor!",
+  "miss_msg_u": "The %s swings at you, but you step aside!",
+  "miss_msg_npc": "The %s swings at <npcname>, but they dodge!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "chainsaw_swing",
+  "cooldown": 12,
+  "move_cost": 120,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 13,
+      "armor_penetration": 11
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "effects": [
+    {
+      "id": "downed",
+      "duration": 2
+    }
+  ],
+  "hit_dmg_u": "%1$s在你的躯干摆动！",
+  "hit_dmg_npc": "%1$s在<npcname>的躯干摆动！",
+  "no_dmg_msg_u": "%1$s试图挥向你的躯干，但未能穿透你的盔甲！",
+  "no_dmg_msg_npc": "%1$s试图在<npcname>的躯干摆动，但未能穿透他们的装甲！",
+  "miss_msg_u": "%s向你挥来，你却闪开了！",
+  "miss_msg_npc": "%s摆<npcname>，却躲闪！"
+}
+```
+

@@ -1,0 +1,811 @@
+creator: 林一二
+revision: 0
+tags: martial_art Arcana
+title: Arcana→martial_art→style_cleansingflame
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：style_cleansingflame|http://cdda.aloxaf.cn/search?q=style_cleansingflame]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/martialarts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "martial_art",
+  "id": "style_cleansingflame",
+  "name": {
+    "str": "Via Gladium et Malleo"
+  },
+  "description": "The style of combatives developed by an arcane order, dedicated to fighting in defense of humanity.  Focuses on preserving momentum and fighting multiple opponents, using their fury in different ways depending on their weapon of choice.  Bladed weapons favor parries and armor penetration, while bludgeons favor evasion and protection.  The full extent of the style requires proper armament and arcane experience.",
+  "initiate": [
+    "You whisper a prayer to the gods, and ready yourself in a fluid stance.  Dii vult!",
+    "%s whispers something, entering a fluid stance."
+  ],
+  "learn_difficulty": 6,
+  "primary_skill": "magic",
+  "onmove_buffs": [
+    {
+      "id": "buff_cleansingflame_onmove1",
+      "name": "Hunter's Advance (Hammer)",
+      "description": "Every step brings confidence.\n+1.0 Dodge skill, +2 Dodge attempts.\nLasts 3 turns.",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "bashing",
+          "level": 2
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "bash",
+          "min": 20
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 1,
+      "bonus_dodges": 2,
+      "flat_bonuses": [
+        {
+          "stat": "dodge",
+          "scale": 1
+        }
+      ]
+    },
+    {
+      "id": "buff_cleansingflame_onmove2",
+      "name": "Hunter's Advance (Sword)",
+      "description": "Every step brings confidence.\n+5 damage blocked, +2 Block attempts.\nLasts 3 turns.",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "cutting",
+          "level": 2
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "cut",
+          "min": 20
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 1,
+      "bonus_blocks": 2,
+      "flat_bonuses": [
+        {
+          "stat": "block",
+          "scale": 5
+        }
+      ]
+    },
+    {
+      "id": "buff_cleansingflame_onmove3",
+      "name": "Hunter's Advance (Unarmed)",
+      "description": "Every step brings confidence.\n+1.0 Dodge skill, +2 Dodge attempts.\nLasts 3 turns.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": false,
+      "skill_requirements": [
+        {
+          "name": "unarmed",
+          "level": 2
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 1,
+      "bonus_dodges": 2,
+      "flat_bonuses": [
+        {
+          "stat": "dodge",
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "onattack_buffs": [
+    {
+      "id": "buff_cleansingflame_onattack",
+      "name": "Righteous Momentum",
+      "description": "Your own fury hastens that of your weapon.\n+1 Accuracy, -10 move cost.\nLasts 2 turns.  Stacks 4 times.",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 3
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": 1
+        },
+        {
+          "stat": "movecost",
+          "scale": -10
+        }
+      ]
+    },
+    {
+      "id": "buff_cleansingflame_onattack2",
+      "name": "Battle Ward",
+      "description": "Against the inhuman, the only defense is vigilance.\n+1 heat/cold/electric armor.\nLasts 2 turns.  Stacks 3 times.",
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 2
+        },
+        {
+          "name": "magic",
+          "level": 5
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 3,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "heat",
+          "scale": 1
+        },
+        {
+          "stat": "armor",
+          "type": "cold",
+          "scale": 1
+        },
+        {
+          "stat": "armor",
+          "type": "electric",
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "onhit_buffs": [
+    {
+      "id": "buff_cleansingflame_onhit1",
+      "name": "Prudence (Hammer)",
+      "description": "With cautious ferocity, no blade may mark you.\n+1 bash/cut/stab armor.\nLasts 2 turns.  Stacks 4 times.",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "bashing",
+          "level": 3
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "bash",
+          "min": 20
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": 1
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": 1
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": 1
+        }
+      ]
+    },
+    {
+      "id": "buff_cleansingflame_onhit2",
+      "name": "Pursuit (Sword)",
+      "description": "Every strike only further illuminates their weakness.\n+3 armor penetration.\nLasts 2 turns.  Stacks 4 times.",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "cutting",
+          "level": 3
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "cut",
+          "min": 20
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scale": 3
+        }
+      ]
+    }
+  ],
+  "onkill_buffs": [
+    {
+      "id": "buff_cleansingflame_onkill1",
+      "name": "Regain Composure (Hammer)",
+      "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, +10 move cost, +1.0 Dodge skill.\nLasts 3 turns.  Stacks 4 times.",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 3
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "bash",
+          "min": 20
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "dodge",
+          "scale": 1
+        },
+        {
+          "stat": "hit",
+          "scale": -1
+        },
+        {
+          "stat": "movecost",
+          "scale": 10
+        }
+      ]
+    },
+    {
+      "id": "buff_cleansingflame_onkill2",
+      "name": "Regain Composure (Sword)",
+      "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, +10 move cost, +5 damage blocked.\nLasts 2 turns.  Stacks 4 times.",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 3
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "cut",
+          "min": 20
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "block",
+          "scale": 5
+        },
+        {
+          "stat": "hit",
+          "scale": -1
+        },
+        {
+          "stat": "movecost",
+          "scale": 10
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_cleansingflame_interial_sweep",
+    "tec_cleansingflame_sundering_strike",
+    "tec_cleansingflame_blade_flare",
+    "tec_cleansingflame_illusory_counter",
+    "tec_cleansingflame_lightning_riposte",
+    "tec_cleansingflame_shifting_takedown",
+    "tec_cleansingflame_break"
+  ],
+  "//": "To be valid for this style, it must be either a bashing or cutting weapon, one-handed, without the RAPID technique.  Bludgeons must have at least 20 bashing damage and less than 20 cutting damage.  Blades must have at least 20 cutting damage and less than 20 bashing damage.  Inferior versions of weapons are permitted even if they would have less than the required damage.  The lucern hammer variant is only allowed due to being custom made with the martial art's techniques in mind, and could reasonably be used with the same one-handed technique by mutant/cyborg characters.",
+  "weapons": [
+    "lucern_hexenhammer",
+    "hexenhammer",
+    "warhammer",
+    "mace",
+    "mace_inferior",
+    "mace_bronze",
+    "mace_pipe",
+    "mace_simple",
+    "mace_trench",
+    "morningstar",
+    "morningstar_inferior",
+    "shillelagh",
+    "shillelagh_weighted",
+    "shillelagh_fake",
+    "bat",
+    "bat_metal",
+    "bwirebat",
+    "nailbat",
+    "hammer_sledge_short",
+    "hammer_sledge_engineer",
+    "sun_sword",
+    "sun_sword_on",
+    "broadsword",
+    "broadsword_inferior",
+    "lc_broadsword",
+    "mc_broadsword",
+    "hc_broadsword",
+    "ch_broadsword",
+    "qt_broadsword",
+    "arming_sword",
+    "arming_sword_inferior",
+    "lc_arming_sword",
+    "mc_arming_sword",
+    "hc_arming_sword",
+    "ch_arming_sword",
+    "qt_arming_sword",
+    "jian",
+    "jian_inferior",
+    "lc_jian",
+    "mc_jian",
+    "hc_jian",
+    "ch_jian",
+    "qt_jian",
+    "scimitar",
+    "scimitar_inferior",
+    "lc_scimitar",
+    "mc_scimitar",
+    "hc_scimitar",
+    "ch_scimitar",
+    "qt_scimitar",
+    "cavalry_sabre",
+    "lc_cavalry_sabre",
+    "mc_cavalry_sabre",
+    "hc_cavalry_sabre",
+    "hc_cavalry_sabre",
+    "qt_cavalry_sabre",
+    "cutlass",
+    "lc_cutlass",
+    "mc_cutlass",
+    "hc_cutlass",
+    "ch_cutlass",
+    "qt_cutlass",
+    "sword_xiphos",
+    "dao",
+    "sword_bronze",
+    "machete",
+    "survivor_machete",
+    "survivor_machete_qt",
+    "sword_metal",
+    "bio_blade_weapon"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "martial_art",
+  "id": "style_cleansingflame",
+  "name": {
+    "str": "剑锤之道"
+  },
+  "description": "一种由神秘骑士团发展起来的战斗方式，致力于保卫人类的战斗。专注于保持势头和打击多个对手，根据他们选择的武器以不同的方式使用他们的愤怒。刀锋武器有利于招架和穿甲，而棍棒则有利于躲避和防护。完整的风格需要适当的武器装备和神秘的经验。",
+  "initiate": [
+    "你在向众神低声祈祷，并以流畅的姿态准备好自己。在神的旨意！",
+    "%s窃窃私语，进入一种流畅的姿态。"
+  ],
+  "learn_difficulty": 6,
+  "primary_skill": "magic",
+  "onmove_buffs": [
+    {
+      "id": "buff_cleansingflame_onmove1",
+      "name": "猎人的前进（锤）",
+      "description": "每一步都带来自信。\n闪避技能+1，闪避次数+2。\n持续 3 回合。",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "bashing",
+          "level": 2
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "bash",
+          "min": 20
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 1,
+      "bonus_dodges": 2,
+      "flat_bonuses": [
+        {
+          "stat": "dodge",
+          "scale": 1
+        }
+      ]
+    },
+    {
+      "id": "buff_cleansingflame_onmove2",
+      "name": "猎人的前进（剑）",
+      "description": "每一步都带来自信。\n格挡效率+5，格挡次数+2。\n持续 3 回合。",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "cutting",
+          "level": 2
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "cut",
+          "min": 20
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 1,
+      "bonus_blocks": 2,
+      "flat_bonuses": [
+        {
+          "stat": "block",
+          "scale": 5
+        }
+      ]
+    },
+    {
+      "id": "buff_cleansingflame_onmove3",
+      "name": "猎人的前进（手无寸铁）",
+      "description": "每一步都带来自信。\n闪避技能+1，闪避次数+2。\n持续 3 回合。",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": false,
+      "skill_requirements": [
+        {
+          "name": "unarmed",
+          "level": 2
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 1,
+      "bonus_dodges": 2,
+      "flat_bonuses": [
+        {
+          "stat": "dodge",
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "onattack_buffs": [
+    {
+      "id": "buff_cleansingflame_onattack",
+      "name": "正义动力",
+      "description": "你的愤怒加速了你的武器。\n命中+1,移动耗时-10。\n持续2回合。可叠加4次。",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 3
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": 1
+        },
+        {
+          "stat": "movecost",
+          "scale": -10
+        }
+      ]
+    },
+    {
+      "id": "buff_cleansingflame_onattack2",
+      "name": "战斗结界",
+      "description": "对抗非人，保持警惕是唯一的防御。\n+1 热/冷/电 防御。\n持续2回合。可叠加3次。",
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 2
+        },
+        {
+          "name": "magic",
+          "level": 5
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 3,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "heat",
+          "scale": 1
+        },
+        {
+          "stat": "armor",
+          "type": "cold",
+          "scale": 1
+        },
+        {
+          "stat": "armor",
+          "type": "electric",
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "onhit_buffs": [
+    {
+      "id": "buff_cleansingflame_onhit1",
+      "name": "谨慎（锤）",
+      "description": "小心谨慎，没有刀刃可以伤害你。\n钝击/斩击/刺击防护 +1。\n持续 2 回合。可叠加 4 次。",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "bashing",
+          "level": 3
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "bash",
+          "min": 20
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": 1
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": 1
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": 1
+        }
+      ]
+    },
+    {
+      "id": "buff_cleansingflame_onhit2",
+      "name": "追求（剑）",
+      "description": "每次打击只会进一步说明他们的弱点。\n护甲穿透+3。\n持续2回合。可叠加4次。",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "cutting",
+          "level": 3
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "cut",
+          "min": 20
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scale": 3
+        }
+      ]
+    }
+  ],
+  "onkill_buffs": [
+    {
+      "id": "buff_cleansingflame_onkill1",
+      "name": "重镇静（锤子）",
+      "description": "致命的打击会耗尽你建立起来的动力。\n命中-1，移动耗时+10，闪避技能+1。\n持续 3 回合。可叠加 4 次。",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 3
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "bash",
+          "min": 20
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "dodge",
+          "scale": 1
+        },
+        {
+          "stat": "hit",
+          "scale": -1
+        },
+        {
+          "stat": "movecost",
+          "scale": 10
+        }
+      ]
+    },
+    {
+      "id": "buff_cleansingflame_onkill2",
+      "name": "重镇静（剑）",
+      "description": "致命的打击会耗尽你建立起来的动力。\n命中-1，移动耗时+10，格挡效率+5。\n持续2回合。可叠加4次。",
+      "melee_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 3
+        }
+      ],
+      "weapon_damage_requirements": [
+        {
+          "type": "cut",
+          "min": 20
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 4,
+      "flat_bonuses": [
+        {
+          "stat": "block",
+          "scale": 5
+        },
+        {
+          "stat": "hit",
+          "scale": -1
+        },
+        {
+          "stat": "movecost",
+          "scale": 10
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_cleansingflame_interial_sweep",
+    "tec_cleansingflame_sundering_strike",
+    "tec_cleansingflame_blade_flare",
+    "tec_cleansingflame_illusory_counter",
+    "tec_cleansingflame_lightning_riposte",
+    "tec_cleansingflame_shifting_takedown",
+    "tec_cleansingflame_break"
+  ],
+  "//": "To be valid for this style, it must be either a bashing or cutting weapon, one-handed, without the RAPID technique.  Bludgeons must have at least 20 bashing damage and less than 20 cutting damage.  Blades must have at least 20 cutting damage and less than 20 bashing damage.  Inferior versions of weapons are permitted even if they would have less than the required damage.  The lucern hammer variant is only allowed due to being custom made with the martial art's techniques in mind, and could reasonably be used with the same one-handed technique by mutant/cyborg characters.",
+  "weapons": [
+    "lucern_hexenhammer",
+    "hexenhammer",
+    "warhammer",
+    "mace",
+    "mace_inferior",
+    "mace_bronze",
+    "mace_pipe",
+    "mace_simple",
+    "mace_trench",
+    "morningstar",
+    "morningstar_inferior",
+    "shillelagh",
+    "shillelagh_weighted",
+    "shillelagh_fake",
+    "bat",
+    "bat_metal",
+    "bwirebat",
+    "nailbat",
+    "hammer_sledge_short",
+    "hammer_sledge_engineer",
+    "sun_sword",
+    "sun_sword_on",
+    "broadsword",
+    "broadsword_inferior",
+    "lc_broadsword",
+    "mc_broadsword",
+    "hc_broadsword",
+    "ch_broadsword",
+    "qt_broadsword",
+    "arming_sword",
+    "arming_sword_inferior",
+    "lc_arming_sword",
+    "mc_arming_sword",
+    "hc_arming_sword",
+    "ch_arming_sword",
+    "qt_arming_sword",
+    "jian",
+    "jian_inferior",
+    "lc_jian",
+    "mc_jian",
+    "hc_jian",
+    "ch_jian",
+    "qt_jian",
+    "scimitar",
+    "scimitar_inferior",
+    "lc_scimitar",
+    "mc_scimitar",
+    "hc_scimitar",
+    "ch_scimitar",
+    "qt_scimitar",
+    "cavalry_sabre",
+    "lc_cavalry_sabre",
+    "mc_cavalry_sabre",
+    "hc_cavalry_sabre",
+    "hc_cavalry_sabre",
+    "qt_cavalry_sabre",
+    "cutlass",
+    "lc_cutlass",
+    "mc_cutlass",
+    "hc_cutlass",
+    "ch_cutlass",
+    "qt_cutlass",
+    "sword_xiphos",
+    "dao",
+    "sword_bronze",
+    "machete",
+    "survivor_machete",
+    "survivor_machete_qt",
+    "sword_metal",
+    "bio_blade_weapon"
+  ]
+}
+```
+

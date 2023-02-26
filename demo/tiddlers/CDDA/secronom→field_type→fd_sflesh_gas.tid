@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_sflesh_gas
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_sflesh_gas|http://cdda.aloxaf.cn/search?q=fd_sflesh_gas]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_sflesh_gas",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "fumes",
+      "sym": "8",
+      "dangerous": true,
+      "translucency": 1,
+      "color": "light_red"
+    },
+    {
+      "translucency": 11,
+      "transparent": false,
+      "color": "red"
+    },
+    {
+      "name": "thick fumes",
+      "translucency": 0
+    }
+  ],
+  "decay_amount_factor": 5,
+  "gas_absorption_factor": 12,
+  "dirty_transparency_cache": true,
+  "percent_spread": 10,
+  "outdoor_age_speedup": "0 turns",
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        10
+      ]
+    ]
+  },
+  "priority": 8,
+  "half_life": "2 minutes",
+  "phase": "gas",
+  "accelerated_decay": true,
+  "display_items": false,
+  "display_field": true,
+  "looks_like": "fd_fog"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_sflesh_gas",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "fumes",
+      "sym": "8",
+      "dangerous": true,
+      "translucency": 1,
+      "color": "light_red"
+    },
+    {
+      "translucency": 11,
+      "transparent": false,
+      "color": "red"
+    },
+    {
+      "name": "thick fumes",
+      "translucency": 0
+    }
+  ],
+  "decay_amount_factor": 5,
+  "gas_absorption_factor": 12,
+  "dirty_transparency_cache": true,
+  "percent_spread": 10,
+  "outdoor_age_speedup": "0 turns",
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        10
+      ]
+    ]
+  },
+  "priority": 8,
+  "half_life": "2 minutes",
+  "phase": "gas",
+  "accelerated_decay": true,
+  "display_items": false,
+  "display_field": true,
+  "looks_like": "fd_fog"
+}
+```
+

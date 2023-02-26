@@ -1,0 +1,307 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_QUEST_HELP_1_BACKDOOR
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_QUEST_HELP_1_BACKDOOR|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_QUEST_HELP_1_BACKDOOR]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
+  "dynamic_line": {
+    "npc_has_effect": "hermit_has_sanguine_codex",
+    "yes": "When you are ready, hand me the blade and we can begin.",
+    "no": {
+      "npc_has_effect": "hermit_has_blood_essence",
+      "yes": "Lastly, I require a copy of Sanguine Codex.  As I said before, without it we can't reference the rites the blood mages used to subvert this weapon.  You will not need to know and recite their wretched rituals to break the seal, only have the patterns they transcribed on hand.",
+      "no": {
+        "npc_has_effect": "hermit_has_salt",
+        "yes": "Now then, with the circle prepared and the foundation laid for the ritual, we will need essence to fuel it.  It must, specifically, be blood essence.  The sanguinists designed their corruptive ritual to rely on that drawn from the life of others, and only power of similar nature can break this curse.  Twelve motes of blood shall fuel the ritual.",
+        "no": "Very well then.  Some of what we require are already available to me.  His holy word, an adequate sacred symbol, and the means to spark a fire.  I want you to remember, and understand, the importance of each part of the ritual.  Fire to anoint the blade, a focus to draw out the evil.  And the wisdom of He From Beyond The Veil, the words of power that elude your grasp. We will go in order, step by step.  The first thing I need of you is salt, enough to create a circle of it.  This binds the blade and safeguards us against any backlash from the ritual."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "I have the artifact.  I'm ready.",
+      "switch": true,
+      "topic": "TALK_HERMIT_QUEST_HELP_1_RITUAL",
+      "condition": {
+        "and": [
+          {
+            "npc_has_effect": "hermit_has_sanguine_codex"
+          },
+          {
+            "u_has_item": "stormbringer"
+          }
+        ]
+      },
+      "effect": {
+        "u_consume_item": "stormbringer"
+      }
+    },
+    {
+      "text": "I'll be back later.",
+      "switch": true,
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "npc_has_effect": "hermit_has_sanguine_codex"
+      }
+    },
+    {
+      "text": "Here's the book you asked for.  What's next?",
+      "switch": true,
+      "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
+      "condition": {
+        "and": [
+          {
+            "npc_has_effect": "hermit_has_blood_essence"
+          },
+          {
+            "u_has_item": "book_bloodmagic"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "npc_add_effect": "hermit_has_sanguine_codex",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_consume_item": "book_bloodmagic"
+        }
+      ]
+    },
+    {
+      "text": "I don't have the book you need.  I'll be back later.",
+      "switch": true,
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "npc_has_effect": "hermit_has_blood_essence"
+      }
+    },
+    {
+      "text": "Here's the twelve blood essence you asked for.",
+      "switch": true,
+      "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
+      "condition": {
+        "and": [
+          {
+            "npc_has_effect": "hermit_has_salt"
+          },
+          {
+            "u_has_items": {
+              "item": "essence_blood",
+              "count": 12
+            }
+          }
+        ]
+      },
+      "effect": [
+        {
+          "npc_add_effect": "hermit_has_blood_essence",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_consume_item": "essence_blood",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "text": "I don't have what is needed.  I'll be back later.",
+      "switch": true,
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "npc_has_effect": "hermit_has_salt"
+      }
+    },
+    {
+      "text": "I have the salt, hopefully this should be enough…",
+      "switch": true,
+      "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
+      "condition": {
+        "u_has_items": {
+          "item": "salt",
+          "count": 100
+        }
+      },
+      "effect": [
+        {
+          "npc_add_effect": "hermit_has_salt",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_consume_item": "salt",
+          "count": 100
+        }
+      ]
+    },
+    {
+      "text": "I don't have enough salt to make a circle.  I'll be back later.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
+  "dynamic_line": {
+    "npc_has_effect": "hermit_has_sanguine_codex",
+    "yes": "当你准备好了，把刀片递给我，我们就可以开始了。",
+    "no": {
+      "npc_has_effect": "hermit_has_blood_essence",
+      "yes": "最后，我要一份血法典。正如我之前所说，没有它，我们就不能引用血法师用来颠覆这件武器的仪式。你不需要知道和背诵他们的悲惨仪式来打破封印，只需要掌握他们抄写的图案。",
+      "no": {
+        "npc_has_effect": "hermit_has_salt",
+        "yes": "现在，随着准备好的圆形和奠基仪式，我们将需要源质来为它加油。一定是血之源质。乐观主义者设计他们的腐化仪式是依赖于从他人生活中汲取的，只有类似性质的力量才能打破这种诅咒。十二粒血迹将成为仪式的燃料。",
+        "no": "那好吧。我们需要的一些东西我已经准备好了。祂的圣言，一个足够的神圣象征，以及点燃火焰的方法。我要你记住并理解仪式中每一部分的重要性。用火抹刀锋，聚焦引出邪恶。帷幕彼端古神的智慧，你所不能掌握的权势话语。我们将按顺序，一步一步地走。我需要你做的第一件事就是盐，足够制造一圈盐。这会束缚刀锋，保护我们免受仪式的任何反弹。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "我有神器。我准备好了。",
+      "switch": true,
+      "topic": "TALK_HERMIT_QUEST_HELP_1_RITUAL",
+      "condition": {
+        "and": [
+          {
+            "npc_has_effect": "hermit_has_sanguine_codex"
+          },
+          {
+            "u_has_item": "stormbringer"
+          }
+        ]
+      },
+      "effect": {
+        "u_consume_item": "stormbringer"
+      }
+    },
+    {
+      "text": "我稍后再来。",
+      "switch": true,
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "npc_has_effect": "hermit_has_sanguine_codex"
+      }
+    },
+    {
+      "text": "这是你要的书。下一步是什么？",
+      "switch": true,
+      "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
+      "condition": {
+        "and": [
+          {
+            "npc_has_effect": "hermit_has_blood_essence"
+          },
+          {
+            "u_has_item": "book_bloodmagic"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "npc_add_effect": "hermit_has_sanguine_codex",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_consume_item": "book_bloodmagic"
+        }
+      ]
+    },
+    {
+      "text": "我没有你需要的书。我一会儿回来。",
+      "switch": true,
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "npc_has_effect": "hermit_has_blood_essence"
+      }
+    },
+    {
+      "text": "这是你要的十二个猩血源质。",
+      "switch": true,
+      "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
+      "condition": {
+        "and": [
+          {
+            "npc_has_effect": "hermit_has_salt"
+          },
+          {
+            "u_has_items": {
+              "item": "essence_blood",
+              "count": 12
+            }
+          }
+        ]
+      },
+      "effect": [
+        {
+          "npc_add_effect": "hermit_has_blood_essence",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_consume_item": "essence_blood",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "text": "我没有需要的东西。我一会儿回来。",
+      "switch": true,
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "npc_has_effect": "hermit_has_salt"
+      }
+    },
+    {
+      "text": "我有盐，希望这足够了…",
+      "switch": true,
+      "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
+      "condition": {
+        "u_has_items": {
+          "item": "salt",
+          "count": 100
+        }
+      },
+      "effect": [
+        {
+          "npc_add_effect": "hermit_has_salt",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_consume_item": "salt",
+          "count": 100
+        }
+      ]
+    },
+    {
+      "text": "我没有足够的盐做一个圆圈。我一会儿回来。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

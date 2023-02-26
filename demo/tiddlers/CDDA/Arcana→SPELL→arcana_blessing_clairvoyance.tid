@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_clairvoyance
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_clairvoyance|http://cdda.aloxaf.cn/search?q=arcana_blessing_clairvoyance]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_clairvoyance",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Clairvoyance"
+  },
+  "description": "Arcane Blessing\nUsing this spell will anoint you with an ivory halo, granting you sight beyond sight.",
+  "message": "A shimmering aura permeates you, opening your eyes to hidden truths.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "halo_clairvoyance",
+  "energy_source": "MANA",
+  "difficulty": 60,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 350,
+  "final_casting_time": 175,
+  "casting_time_increment": -8.75,
+  "base_energy_cost": 420,
+  "final_energy_cost": 210,
+  "energy_increment": -10.5,
+  "min_duration": 108000,
+  "max_duration": 540000,
+  "duration_increment": 21600
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_clairvoyance",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：透视"
+  },
+  "description": "奥术祝福\n使用这个法术会用象牙的光晕来赐予你，使你的视力超乎寻常。",
+  "message": "闪耀的光环笼罩着你，让你的眼睛看到隐藏的真相。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "halo_clairvoyance",
+  "energy_source": "MANA",
+  "difficulty": 60,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 350,
+  "final_casting_time": 175,
+  "casting_time_increment": -8.75,
+  "base_energy_cost": 420,
+  "final_energy_cost": 210,
+  "energy_increment": -10.5,
+  "min_duration": 108000,
+  "max_duration": 540000,
+  "duration_increment": 21600
+}
+```
+

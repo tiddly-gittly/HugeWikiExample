@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→plating_diamond
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：plating_diamond|http://cdda.aloxaf.cn/search?q=plating_diamond]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/diamond_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "plating_diamond",
+  "type": "vehicle_part",
+  "name": {
+    "str": "diamond plating"
+  },
+  "item": "diamondplate",
+  "location": "armor",
+  "symbol": ")",
+  "broken_symbol": ")",
+  "color": "white",
+  "broken_color": "white",
+  "description": "Transparent crystal armor plate.  Will partially protect other components on the same frame from damage.",
+  "durability": 5000,
+  "breaks_into": [
+    {
+      "item": "spiral_matrix"
+    },
+    {
+      "item": "dshards",
+      "count": [
+        50,
+        100
+      ]
+    },
+    {
+      "item": "dcluster",
+      "count": [
+        2,
+        6
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_weld_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "ARMOR",
+    "WINDOW"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "plating_diamond",
+  "type": "vehicle_part",
+  "name": {
+    "str": "钻石装甲板"
+  },
+  "item": "diamondplate",
+  "location": "armor",
+  "symbol": ")",
+  "broken_symbol": ")",
+  "color": "white",
+  "broken_color": "white",
+  "description": "一块透明的钻石结晶装甲板。能够部分保护安装在此处车架的其他部件免受伤害。",
+  "durability": 5000,
+  "breaks_into": [
+    {
+      "item": "spiral_matrix"
+    },
+    {
+      "item": "dshards",
+      "count": [
+        50,
+        100
+      ]
+    },
+    {
+      "item": "dcluster",
+      "count": [
+        2,
+        6
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_weld_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "ARMOR",
+    "WINDOW"
+  ]
+}
+```
+

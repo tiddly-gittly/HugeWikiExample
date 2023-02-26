@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_titan_charging_pull
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_titan_charging_pull|http://cdda.aloxaf.cn/search?q=mon_zombie_titan_charging_pull]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_titan_charging_pull",
+  "type": "SPELL",
+  "name": {
+    "str": "Charge"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster charges at the target.'",
+  "effect": "area_pull",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "mon_zombie_charger_charge_pushy",
+      "hit_self": true
+    }
+  ],
+  "min_aoe": 20,
+  "max_aoe": 20
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_titan_charging_pull",
+  "type": "SPELL",
+  "name": {
+    "str": "冲锋"
+  },
+  "description": "怪物施放的咒语。如果你看到了这个，那就读读这个:\n“施法者向目标冲锋”",
+  "effect": "area_pull",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "mon_zombie_charger_charge_pushy",
+      "hit_self": true
+    }
+  ],
+  "min_aoe": 20,
+  "max_aoe": 20
+}
+```
+

@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: TOOL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL→c_mi_go_extruder_salvaged_alt
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_mi_go_extruder_salvaged_alt|http://cdda.aloxaf.cn/search?q=c_mi_go_extruder_salvaged_alt]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_mi_go_extruder_salvaged_alt",
+  "copy-from": "c_mi_go_extruder_salvaged",
+  "type": "TOOL",
+  "color": "green",
+  "name": {
+    "str": "salvaged resin extruder (alternate mode)",
+    "str_pl": "salvaged resin extruders (alternate mode)"
+  },
+  "description": "A strange device made of alien flesh blended with technology.  Three thin spines of synthetic ivory surround some sort of nozzle, its contents steadily regenerating.  It's currently set to apply resin more slowly, letting it be used for repairing salvaged mi-go biotechnlogy.  Activate it to switch back to its normal mode, for creating larger shards of resin for other purposes.",
+  "charges_per_use": 1,
+  "use_action": [
+    {
+      "type": "repair_item",
+      "item_action_type": "repair_metal",
+      "materials": [
+        "alien_resin"
+      ],
+      "skill": "fabrication",
+      "tool_quality": 10,
+      "cost_scaling": 0.1,
+      "move_cost": 500
+    },
+    {
+      "type": "transform",
+      "msg": "You switch the %s to its normal mode",
+      "target": "c_mi_go_extruder_salvaged",
+      "menu_text": "switch mode",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_mi_go_extruder_salvaged_alt",
+  "copy-from": "c_mi_go_extruder_salvaged",
+  "type": "TOOL",
+  "color": "green",
+  "name": {
+    "str": "改装树脂挤出机（备用模式）",
+    "str_pl": "改装树脂挤出机（备用模式）"
+  },
+  "description": "一种由异界血肉和科技制成的奇怪装置。三根合成象牙的细刺围绕着某种喷嘴，喷嘴内的物质不断再生。目前，它将以更慢的速度使用树脂，让其用于修复改装的米·戈生物技术。激活它以切换回正常模式，为其他项目产生更大的树脂碎片。",
+  "charges_per_use": 1,
+  "use_action": [
+    {
+      "type": "repair_item",
+      "item_action_type": "repair_metal",
+      "materials": [
+        "alien_resin"
+      ],
+      "skill": "fabrication",
+      "tool_quality": 10,
+      "cost_scaling": 0.1,
+      "move_cost": 500
+    },
+    {
+      "type": "transform",
+      "msg": "你将%s切换到其正常模式",
+      "target": "c_mi_go_extruder_salvaged",
+      "menu_text": "切换模式",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+

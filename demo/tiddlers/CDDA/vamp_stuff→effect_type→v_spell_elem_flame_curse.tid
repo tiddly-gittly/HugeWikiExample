@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: effect_type vamp_stuff
+title: vamp_stuff→effect_type→v_spell_elem_flame_curse
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_spell_elem_flame_curse|http://cdda.aloxaf.cn/search?q=v_spell_elem_flame_curse]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "v_spell_elem_flame_curse",
+  "name": [
+    "On Fire - Cursed Flames"
+  ],
+  "desc": [
+    "The baneful flames melt you internally! OMFG!"
+  ],
+  "main_parts_only": true,
+  "show_in_info": true,
+  "max_duration": "40 s",
+  "base_mods": {
+    "hurt_min": [
+      1
+    ],
+    "hurt_max": [
+      4
+    ],
+    "hurt_chance": [
+      2
+    ]
+  },
+  "removes_effects": [
+    "v_spell_elem_freeze",
+    "v_spell_elem_flashfreeze",
+    "onfire",
+    "v_spell_elem_flame_frost"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "v_spell_elem_flame_curse",
+  "name": [
+    "着火-咒焰"
+  ],
+  "desc": [
+    "邪恶的火焰将你内在融化！天哪！"
+  ],
+  "main_parts_only": true,
+  "show_in_info": true,
+  "max_duration": "40 s",
+  "base_mods": {
+    "hurt_min": [
+      1
+    ],
+    "hurt_max": [
+      4
+    ],
+    "hurt_chance": [
+      2
+    ]
+  },
+  "removes_effects": [
+    "v_spell_elem_freeze",
+    "v_spell_elem_flashfreeze",
+    "onfire",
+    "v_spell_elem_flame_frost"
+  ]
+}
+```
+

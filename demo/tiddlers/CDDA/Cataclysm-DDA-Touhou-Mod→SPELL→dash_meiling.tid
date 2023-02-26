@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→dash_meiling
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dash_meiling|http://cdda.aloxaf.cn/search?q=dash_meiling]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_dashes.json
+
+
+!! 原文
+
+```json
+{
+  "id": "dash_meiling",
+  "type": "SPELL",
+  "name": "Rising Dragon kick",
+  "description": "Fill your legs with qi, kicking into an enemy from a distance.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "dash",
+  "extra_effects": [
+    {
+      "id": "dash_basic_levitate"
+    }
+  ],
+  "shape": "line",
+  "damage_type": "bash",
+  "min_damage": 30,
+  "max_damage": 200,
+  "damage_increment": 17,
+  "min_pierce": 16,
+  "max_pierce": 125,
+  "pierce_increment": 11,
+  "min_range": 5,
+  "max_range": 5,
+  "max_level": 1,
+  "difficulty": -20,
+  "base_casting_time": 100,
+  "base_energy_cost": 2500,
+  "energy_source": "STAMINA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_PROJECTILE"
+  ],
+  "//": "This should move her + the target along the way, should be a spell and not a martial arts technique in order to cast it at will"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "dash_meiling",
+  "type": "SPELL",
+  "name": "Rising Dragon kick",
+  "description": "Fill your legs with qi, kicking into an enemy from a distance.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "dash",
+  "extra_effects": [
+    {
+      "id": "dash_basic_levitate"
+    }
+  ],
+  "shape": "line",
+  "damage_type": "bash",
+  "min_damage": 30,
+  "max_damage": 200,
+  "damage_increment": 17,
+  "min_pierce": 16,
+  "max_pierce": 125,
+  "pierce_increment": 11,
+  "min_range": 5,
+  "max_range": 5,
+  "max_level": 1,
+  "difficulty": -20,
+  "base_casting_time": 100,
+  "base_energy_cost": 2500,
+  "energy_source": "STAMINA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_PROJECTILE"
+  ],
+  "//": "This should move her + the target along the way, should be a spell and not a martial arts technique in order to cast it at will"
+}
+```
+

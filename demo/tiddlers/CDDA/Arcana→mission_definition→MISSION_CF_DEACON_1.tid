@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_DEACON_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_DEACON_1|http://cdda.aloxaf.cn/search?q=MISSION_CF_DEACON_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_DEACON_1",
+  "type": "mission_definition",
+  "name": {
+    "str": "Check On Rural Church"
+  },
+  "description": "Visit the rural church and speak with Sofia McKinnon.  Return to Dorian with the news.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_effect": "sofia_deacon_message"
+  },
+  "difficulty": 2,
+  "value": 10000,
+  "has_generic_rewards": false,
+  "start": {
+    "effect": [
+      {
+        "u_add_effect": "already_asked_deacon",
+        "duration": "PERMANENT"
+      }
+    ],
+    "assign_mission_target": {
+      "om_terrain": "cf_church_4",
+      "om_special": "cf_rural_church",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "random": true,
+      "search_range": 180,
+      "min_distance": 10
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "Here's hoping it goes well…",
+    "offer": "As much as I'd like to return to check on the people sheltering at the church, I've been caught up in helping out here.  If you could pay them a visit, ask to speak with Sofia McKinnon.  Could you send her my regards, and my apologies for having been delayed in returning?",
+    "accepted": "Thank you.  No doubt she will have work for you as well, if you ask her about it.  If your travels take you back here, please keep me informed.  I don't have much I can offer as a reward, but I'll do what I can.  Godspeed.",
+    "rejected": "I understand.  There is much to be done even here.  Still, I suspect I'll be busy here for much longer than I expected, so if you get the chance please see me about it.  I don't have much to offer in return, but I'll scrounge up what I can.",
+    "advice": "It's a rural church along the side of the road.  The survivors there should be able to help you if needed.  I'm afraid I don't know much else about the group, as Father Alexander was the one that knew them personally.",
+    "inquire": "Have you any news?",
+    "success": "Thank you.  It's a relief to hear back from them.  I may be here a while longer, these people need all the help they can get, and Sofia's group can take care of themselves well enough.  I know this isn't much, but please have this.",
+    "success_lie": "What are you trying to pull?",
+    "failure": "How in God's name did you fail at this?"
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_effect": "rural_church_aware",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "FMCNote",
+        "count": 5
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_DEACON_1",
+  "type": "mission_definition",
+  "name": {
+    "str": "乡村教堂检查"
+  },
+  "description": "参观乡村教堂，与索菲亚·麦金农交谈。把消息告诉道林。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_effect": "sofia_deacon_message"
+  },
+  "difficulty": 2,
+  "value": 10000,
+  "has_generic_rewards": false,
+  "start": {
+    "effect": [
+      {
+        "u_add_effect": "already_asked_deacon",
+        "duration": "PERMANENT"
+      }
+    ],
+    "assign_mission_target": {
+      "om_terrain": "cf_church_4",
+      "om_special": "cf_rural_church",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "random": true,
+      "search_range": 180,
+      "min_distance": 10
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "希望一切顺利…",
+    "offer": "虽然我很想回去看看在教堂避难的人，但我一直在忙着帮助这里的人。如果你能去拜访他们，请找索菲亚·麦金农谈谈。你能代我向她问好，并为我耽误了回来向她道歉吗？",
+    "accepted": "非常感谢。毫无疑问，如果你问她，她也会为你工作的。如果你的旅行带你回到这里，请随时通知我。我没有什么可以作为奖励，但我会尽我所能。祝你好运。",
+    "rejected": "我理解。即使在这里也有很多事情要做。不过，我想我在这里要忙的时间比我预期的要长得多，所以如果你有机会，请找我谈谈。我没有什么可供回报的，但我会尽我所能去争取。",
+    "advice": "这是路边的一个乡村教堂。如果需要的话，那里的幸存者应该能够帮助你。恐怕我对这群人不太了解，因为亚历山大神父是认识他们的人。",
+    "inquire": "你有消息吗？",
+    "success": "非常感谢。听到他们的回音让我松了一口气。我可能会在这里呆一段时间，这些人需要他们能得到的所有帮助，索菲亚的团队可以很好地照顾自己。我知道这不多，但请拿着这个。",
+    "success_lie": "你想拉什么？",
+    "failure": "你怎么会在这件事上失败的？"
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_effect": "rural_church_aware",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "FMCNote",
+        "count": 5
+      }
+    ]
+  }
+}
+```
+

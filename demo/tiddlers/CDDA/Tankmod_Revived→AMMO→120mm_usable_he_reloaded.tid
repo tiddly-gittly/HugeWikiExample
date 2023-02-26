@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: AMMO Tankmod_Revived
+title: Tankmod_Revived→AMMO→120mm_usable_he_reloaded
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：120mm_usable_he_reloaded|http://cdda.aloxaf.cn/search?q=120mm_usable_he_reloaded]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "120mm_usable_he_reloaded",
+  "copy-from": "120mm_usable_slug",
+  "type": "AMMO",
+  "name": {
+    "str_sp": "reloaded 120mm HE"
+  },
+  "description": "A makeshift, rebuilt 120mm shell with a new electric primer installed, loaded with a homemade explosive round.  Packs an explosive punch that could ruin anyone's whole day.",
+  "proportional": {
+    "price_postapoc": 1.25,
+    "weight": 0.9,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 0.75,
+      "armor_penetration": 0.75
+    },
+    "recoil": 0.75,
+    "dispersion": 0.75
+  },
+  "extend": {
+    "effects": [
+      "CUSTOM_EXPLOSION"
+    ]
+  },
+  "explode_in_fire": true,
+  "explosion": {
+    "power": 1250
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "120mm_usable_he_reloaded",
+  "copy-from": "120mm_usable_slug",
+  "type": "AMMO",
+  "name": {
+    "str_sp": "120mm 高爆弹(复装)"
+  },
+  "description": "一个自制的120毫米炮弹，安装了新的电起爆器和自制炸药。威力巨大，足以毁掉任何人的一整天",
+  "proportional": {
+    "price_postapoc": 1.25,
+    "weight": 0.9,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 0.75,
+      "armor_penetration": 0.75
+    },
+    "recoil": 0.75,
+    "dispersion": 0.75
+  },
+  "extend": {
+    "effects": [
+      "CUSTOM_EXPLOSION"
+    ]
+  },
+  "explode_in_fire": true,
+  "explosion": {
+    "power": 1250
+  }
+}
+```
+

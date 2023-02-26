@@ -1,0 +1,273 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BONE_SEER_POWER_OFFER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BONE_SEER_POWER_OFFER|http://cdda.aloxaf.cn/search?q=TALK_BONE_SEER_POWER_OFFER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BONE_SEER.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BONE_SEER_POWER_OFFER",
+  "dynamic_line": "Is that so?  I'm listening, then.",
+  "responses": [
+    {
+      "text": "What do you make of this?  It's a fang from a monster that doesn't belong in this world, made of otherworldly crystal.",
+      "condition": {
+        "u_has_item": "graboid_fang"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_GRABOID_FANG"
+    },
+    {
+      "text": "What about this?  A fang torn from an otherworldly monster.",
+      "condition": {
+        "u_has_item": "monster_fang"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_MONSTER_FANG"
+    },
+    {
+      "text": "These bones are a twisted knot of otherworldly presence.  Would this prove my point?",
+      "condition": {
+        "u_has_item": "bone_twisted"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_BONE_TWISTED"
+    },
+    {
+      "text": "These are the finger bones of a creature touched by The Beyond.  Would that suffice?",
+      "condition": {
+        "u_has_item": "gracken_knuckles"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_GRACKEN_KNUCKLES"
+    },
+    {
+      "text": "What do you make of this?  It's a root with the otherworldly woven into its every fiber.",
+      "condition": {
+        "u_has_item": "inflorescent_root"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "This is a bloom touched by the Beyond.  Would this be adequate?",
+      "condition": {
+        "u_has_item": "triffid_queen_flower"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "This is a spike of otherworldly living metal, would this show you something new?",
+      "condition": {
+        "u_has_item": "iron_thorn"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "This twisted barb was taken from something that does not belong in this world.",
+      "condition": {
+        "u_has_item": "dermatik_sting"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "This crystal fragment has an otherworldly presence to it.  What do you make of it?",
+      "condition": {
+        "u_has_item": "vortex_shard"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_INORGANIC"
+    },
+    {
+      "text": "This piece of crystal is some sort of unnatural amber.  Would this work?",
+      "condition": {
+        "u_has_item": "blob_gem"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_INORGANIC"
+    },
+    {
+      "text": "This piece of crystal was shed from an otherworldly creature, would it be sufficient?",
+      "condition": {
+        "u_has_item": "monster_tear"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_INORGANIC"
+    },
+    {
+      "text": "This dark gem holds the unliving presence of the creature it was taken from.  Show me what you see.",
+      "condition": {
+        "u_has_item": "shadow_gem"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_INORGANIC"
+    },
+    {
+      "text": "This fragment of hide is tainted with otherworldly presence.  What do you make of it?",
+      "condition": {
+        "u_has_item": "wyrmskin_piece"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "This piece of an otherworldly creature's hide still reflects the influence of the Beyond.",
+      "condition": {
+        "u_has_item": "iridescent_plate"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "This stone is etched with a living record of the supernatural influence that shaped it.",
+      "condition": {
+        "u_has_item": "engraved_stone"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_INORGANIC"
+    },
+    {
+      "text": "Here.  A stony heart ripped from a creature that was pulled from another world.  Many people died for this, what does it sing to you?",
+      "condition": {
+        "u_has_item": "draconic_heart"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_DRAGON"
+    },
+    {
+      "text": "I'm not sure what would be fitting.  Another time perhaps.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BONE_SEER_POWER_OFFER",
+  "dynamic_line": "是吗？那么我在听。",
+  "responses": [
+    {
+      "text": "这个你怎么看？这是一个奇异怪物的毒牙，它是由超自然的水晶制成的。",
+      "condition": {
+        "u_has_item": "graboid_fang"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_GRABOID_FANG"
+    },
+    {
+      "text": "这个如何？一个从超自然的怪物身上撕下来的毒牙。",
+      "condition": {
+        "u_has_item": "monster_fang"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_MONSTER_FANG"
+    },
+    {
+      "text": "这些扭曲在一起的骨头是超自然的存在。这能证明我的观点吗？",
+      "condition": {
+        "u_has_item": "bone_twisted"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_BONE_TWISTED"
+    },
+    {
+      "text": "这就是一个来自彼岸的生物的指骨，足够了吗？",
+      "condition": {
+        "u_has_item": "gracken_knuckles"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_GRACKEN_KNUCKLES"
+    },
+    {
+      "text": "What do you make of this?  It's a root with the otherworldly woven into its every fiber.",
+      "condition": {
+        "u_has_item": "inflorescent_root"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "这是一朵花，曾在遥远的彼岸微微摇曳。这样够了吗？",
+      "condition": {
+        "u_has_item": "triffid_queen_flower"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "这是一种超自然的活性金属，这会会让你大开眼界吗？",
+      "condition": {
+        "u_has_item": "iron_thorn"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "这个扭曲的倒钩来自不属于这个世界的东西。",
+      "condition": {
+        "u_has_item": "dermatik_sting"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "这片水晶碎片中存在着超自然的性质。你对此如何理解？",
+      "condition": {
+        "u_has_item": "vortex_shard"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_INORGANIC"
+    },
+    {
+      "text": "这块晶体是某种非天然形成的琥珀。这行得通吗？",
+      "condition": {
+        "u_has_item": "blob_gem"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_INORGANIC"
+    },
+    {
+      "text": "这块晶体是从一个超自然生物身上脱落下来的，这足够了吗？",
+      "condition": {
+        "u_has_item": "monster_tear"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_INORGANIC"
+    },
+    {
+      "text": "这块黑暗宝石中保存着被它所夺取的不属于生命的存在。给我说说你看到了什么。",
+      "condition": {
+        "u_has_item": "shadow_gem"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_INORGANIC"
+    },
+    {
+      "text": "这块兽皮被超自然的气息所污染了。你对此有何看法？",
+      "condition": {
+        "u_has_item": "wyrmskin_piece"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "这张超自然的兽皮反映了，它仍然被远方的气息所影响着。",
+      "condition": {
+        "u_has_item": "iridescent_plate"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_ORGANIC"
+    },
+    {
+      "text": "这块石头的刻痕活生生记录着曾塑造它的超自然力量。",
+      "condition": {
+        "u_has_item": "engraved_stone"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_INORGANIC"
+    },
+    {
+      "text": "给你。一颗从一个异界生物身上被扯下来的石之心。许多人为此而死，它对你唱了什么？",
+      "condition": {
+        "u_has_item": "draconic_heart"
+      },
+      "topic": "TALK_BONE_SEER_POWER_OFFER_INVALID_DRAGON"
+    },
+    {
+      "text": "我不确定什么才合适，或许下次吧。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

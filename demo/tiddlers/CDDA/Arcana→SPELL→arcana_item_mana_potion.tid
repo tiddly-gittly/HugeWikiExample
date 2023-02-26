@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_mana_potion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_mana_potion|http://cdda.aloxaf.cn/search?q=arcana_item_mana_potion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_mana_potion",
+  "type": "SPELL",
+  "name": {
+    "str": "Mana Boost"
+  },
+  "description": "Restores 600 mana.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "You drink the potion and feel magical energy flowing through you.",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_damage": 600,
+  "max_damage": 600,
+  "effect": "recover_energy",
+  "shape": "blast",
+  "effect_str": "MANA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_mana_potion",
+  "type": "SPELL",
+  "name": {
+    "str": "法力提升"
+  },
+  "description": "恢复600法力。",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "你喝了药水，感到神奇的能量在你身上流动。",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_damage": 600,
+  "max_damage": 600,
+  "effect": "recover_energy",
+  "shape": "blast",
+  "effect_str": "MANA"
+}
+```
+

@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→grayboard_horizontal
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：grayboard_horizontal|http://cdda.aloxaf.cn/search?q=grayboard_horizontal]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_boards.json
+
+
+!! 原文
+
+```json
+{
+  "id": "grayboard_horizontal",
+  "type": "vehicle_part",
+  "name": {
+    "str": "gray wall"
+  },
+  "item": "gray",
+  "location": "center",
+  "standard_symbols": true,
+  "color": "light_gray",
+  "broken_color": "light_gray",
+  "durability": 1000,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "graygrow"
+    }
+  ],
+  "description": "A living blob, formed into a vehicle wall.  Keeps zombies outside the vehicle and prevents people from seeing through it.",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "OPAQUE",
+    "OBSTACLE",
+    "FULL_BOARD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "grayboard_horizontal",
+  "type": "vehicle_part",
+  "name": {
+    "str": "灰色墙壁"
+  },
+  "item": "gray",
+  "location": "center",
+  "standard_symbols": true,
+  "color": "light_gray",
+  "broken_color": "light_gray",
+  "durability": 1000,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "graygrow"
+    }
+  ],
+  "description": "一只活的变形怪变成的隔板。能够阻挡丧尸和其他人的视线。",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "OPAQUE",
+    "OBSTACLE",
+    "FULL_BOARD"
+  ]
+}
+```
+

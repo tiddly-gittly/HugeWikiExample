@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: furniture MST_Extra
+title: MST_Extra→furniture→f_barricade_windbreak
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_barricade_windbreak|http://cdda.aloxaf.cn/search?q=f_barricade_windbreak]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_barricade_windbreak",
+  "name": "wooden windbreak",
+  "symbol": "#",
+  "bgcolor": "brown",
+  "looks_like": "t_wall_log_half",
+  "description": "A waist-high barricade made of stout saplings, held in place by poles hammered into the ground.  Primarily used to keep the wind out, but also works to fence in  a campsite.",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "flags": [
+    "CLIMB_SIMPLE",
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "ORGANIC",
+    "MOUNTABLE",
+    "THIN_OBSTACLE",
+    "CLIMBABLE",
+    "PERMEABLE",
+    "EASY_DECONSTRUCT",
+    "BLOCK_WIND"
+  ],
+  "examine_action": "chainfence",
+  "deconstruct": {
+    "items": [
+      {
+        "item": "stick",
+        "count": 8
+      },
+      {
+        "item": "pointy_stick",
+        "count": 4
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 3,
+    "str_max": 40,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "stick",
+        "count": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          2,
+          6
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_barricade_windbreak",
+  "name": "木质挡风篱",
+  "symbol": "#",
+  "bgcolor": "brown",
+  "looks_like": "t_wall_log_half",
+  "description": "用树枝与长木棍制成的齐腰的木制防风篱,用锤子使其牢牢地扎在地面下,主要用于防风,也可以作为营地围栏.",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "flags": [
+    "CLIMB_SIMPLE",
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "ORGANIC",
+    "MOUNTABLE",
+    "THIN_OBSTACLE",
+    "CLIMBABLE",
+    "PERMEABLE",
+    "EASY_DECONSTRUCT",
+    "BLOCK_WIND"
+  ],
+  "examine_action": "chainfence",
+  "deconstruct": {
+    "items": [
+      {
+        "item": "stick",
+        "count": 8
+      },
+      {
+        "item": "pointy_stick",
+        "count": 4
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 3,
+    "str_max": 40,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "stick",
+        "count": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          2,
+          6
+        ]
+      }
+    ]
+  }
+}
+```
+

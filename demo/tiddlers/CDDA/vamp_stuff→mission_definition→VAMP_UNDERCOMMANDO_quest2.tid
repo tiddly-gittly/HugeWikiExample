@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_UNDERCOMMANDO_quest2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_UNDERCOMMANDO_quest2|http://cdda.aloxaf.cn/search?q=VAMP_UNDERCOMMANDO_quest2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_UNDERCOMMANDO_quest2",
+  "type": "mission_definition",
+  "name": {
+    "str": "Collect 15 small leech teeth"
+  },
+  "description": "Gather <color_light_red>15 small leech teeth</color> and give them to the commando. They are rarely dropped by <color_magenta>leeches</color> that lives in the <color_light_blue>swamp</color>.",
+  "goal": "MGOAL_NULL",
+  "difficulty": 2,
+  "value": 200000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "VAMP_UNDERCOMMANDO_quest3",
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "I want you to slay something...",
+    "offer": "Ofcourse you know about the bloodsucking pests on the swamp, we hate those parasites squirming for blood to live. Hand over 15 of their teeth as a proof to succeed this trial.",
+    "accepted": "Slay them in any way you want.",
+    "rejected": "It's just okay.",
+    "advice": "They are blind, and depends on what they hear or smell.",
+    "inquire": "Got 'em?",
+    "success": "Nice work, I guess they won't bother us for a long time.",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "*slurping*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_UNDERCOMMANDO_quest2",
+  "type": "mission_definition",
+  "name": {
+    "str": "收集15颗小水蛭的牙齿"
+  },
+  "description": "收集<color_light_red>15颗小水蛭的牙齿</color>，交给突击队。它们很少被生活在<color_light_blue>沼泽的<color_magenta>只水蛭丢弃。",
+  "goal": "MGOAL_NULL",
+  "difficulty": 2,
+  "value": 200000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "VAMP_UNDERCOMMANDO_quest3",
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "我要你杀些东西…",
+    "offer": "当然，你知道沼泽地上吸血的害虫，我们讨厌那些寄生虫为了生存而蠕动。交出他们的15颗牙齿作为这次试验成功的证据。",
+    "accepted": "你想怎么杀就怎么杀。",
+    "rejected": "没事的。",
+    "advice": "他们是瞎子，取决于他们听到什么或闻到什么。",
+    "inquire": "找到了吗？",
+    "success": "干得好，我想他们不会打扰我们很久的。",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "*啧啧*"
+  }
+}
+```
+

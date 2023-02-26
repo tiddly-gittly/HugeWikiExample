@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: mapgen Dorf_Life
+title: Dorf_Life→mapgen→[41]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/mapgen_overlays.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_sewage",
+  "object": {
+    "mapgensize": [
+      12,
+      12
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "   ______   ",
+      "  _~~~~~~_  ",
+      " _~------~_ ",
+      "_~--------~_",
+      "_~--------~_",
+      "_~--------~_",
+      "_~--------~_",
+      "_~--------~_",
+      "_~--------~_",
+      " _~------~_ ",
+      "  _~~~~~~_  ",
+      "   ______   "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "-": "t_sewage",
+      "~": [
+        "t_rock_floor",
+        "t_sewage"
+      ]
+    },
+    "set": [
+      {
+        "square": "radiation",
+        "amount": [
+          10,
+          20
+        ],
+        "x": 1,
+        "y": 1,
+        "x2": 11,
+        "y2": 11
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_sewage",
+  "object": {
+    "mapgensize": [
+      12,
+      12
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "   ______   ",
+      "  _~~~~~~_  ",
+      " _~------~_ ",
+      "_~--------~_",
+      "_~--------~_",
+      "_~--------~_",
+      "_~--------~_",
+      "_~--------~_",
+      "_~--------~_",
+      " _~------~_ ",
+      "  _~~~~~~_  ",
+      "   ______   "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "-": "t_sewage",
+      "~": [
+        "t_rock_floor",
+        "t_sewage"
+      ]
+    },
+    "set": [
+      {
+        "square": "radiation",
+        "amount": [
+          10,
+          20
+        ],
+        "x": 1,
+        "y": 1,
+        "x2": 11,
+        "y2": 11
+      }
+    ]
+  }
+}
+```
+

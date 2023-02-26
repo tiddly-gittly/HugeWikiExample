@@ -1,0 +1,183 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_fleshknot_gas
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_fleshknot_gas|http://cdda.aloxaf.cn/search?q=fd_fleshknot_gas]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "//": "This gas should disappear immediately when it is outside the structure.",
+  "id": "fd_fleshknot_gas",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "errant stench",
+      "color": "dark_gray",
+      "translucency": 1,
+      "effects": [
+        {
+          "effect_id": "secro_fleshknot_poison",
+          "body_part": "torso",
+          "min_duration": "1 seconds",
+          "max_duration": "3 seconds"
+        }
+      ]
+    },
+    {
+      "name": "toxic stench",
+      "color": "light_green",
+      "translucency": 3,
+      "effects": [
+        {
+          "effect_id": "secro_fleshknot_poison",
+          "body_part": "torso",
+          "min_duration": "5 seconds",
+          "max_duration": "10 seconds"
+        }
+      ]
+    },
+    {
+      "name": "dense toxic stench",
+      "color": "light_green",
+      "translucency": 10,
+      "effects": [
+        {
+          "effect_id": "secro_fleshknot_poison",
+          "body_part": "torso",
+          "min_duration": "15 seconds",
+          "max_duration": "30 seconds"
+        }
+      ]
+    },
+    {
+      "name": "noxious stench",
+      "color": "green",
+      "translucency": 0,
+      "effects": [
+        {
+          "effect_id": "secro_fleshknot_poison",
+          "body_part": "torso",
+          "min_duration": "60 seconds",
+          "max_duration": "90 seconds"
+        }
+      ]
+    }
+  ],
+  "decay_amount_factor": 80,
+  "gas_absorption_factor": 5,
+  "percent_spread": 50,
+  "outdoor_age_speedup": "30 minutes",
+  "dirty_transparency_cache": true,
+  "has_fume": true,
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        15
+      ]
+    ]
+  },
+  "priority": -1,
+  "half_life": "10 minutes",
+  "phase": "gas",
+  "display_items": true,
+  "display_field": false
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "This gas should disappear immediately when it is outside the structure.",
+  "id": "fd_fleshknot_gas",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "errant stench",
+      "color": "dark_gray",
+      "translucency": 1,
+      "effects": [
+        {
+          "effect_id": "secro_fleshknot_poison",
+          "body_part": "torso",
+          "min_duration": "1 seconds",
+          "max_duration": "3 seconds"
+        }
+      ]
+    },
+    {
+      "name": "toxic stench",
+      "color": "light_green",
+      "translucency": 3,
+      "effects": [
+        {
+          "effect_id": "secro_fleshknot_poison",
+          "body_part": "torso",
+          "min_duration": "5 seconds",
+          "max_duration": "10 seconds"
+        }
+      ]
+    },
+    {
+      "name": "dense toxic stench",
+      "color": "light_green",
+      "translucency": 10,
+      "effects": [
+        {
+          "effect_id": "secro_fleshknot_poison",
+          "body_part": "torso",
+          "min_duration": "15 seconds",
+          "max_duration": "30 seconds"
+        }
+      ]
+    },
+    {
+      "name": "noxious stench",
+      "color": "green",
+      "translucency": 0,
+      "effects": [
+        {
+          "effect_id": "secro_fleshknot_poison",
+          "body_part": "torso",
+          "min_duration": "60 seconds",
+          "max_duration": "90 seconds"
+        }
+      ]
+    }
+  ],
+  "decay_amount_factor": 80,
+  "gas_absorption_factor": 5,
+  "percent_spread": 50,
+  "outdoor_age_speedup": "30 minutes",
+  "dirty_transparency_cache": true,
+  "has_fume": true,
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        15
+      ]
+    ]
+  },
+  "priority": -1,
+  "half_life": "10 minutes",
+  "phase": "gas",
+  "display_items": true,
+  "display_field": false
+}
+```
+

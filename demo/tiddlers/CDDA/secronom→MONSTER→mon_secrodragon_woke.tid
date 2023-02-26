@@ -1,0 +1,321 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_secrodragon_woke
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_secrodragon_woke|http://cdda.aloxaf.cn/search?q=mon_secrodragon_woke]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Bots/SecronomDragon.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_secrodragon_woke",
+  "type": "MONSTER",
+  "name": {
+    "str": "secronom dragon"
+  },
+  "description": "This massively armored reptilian has its own purpose: ERADICATION.\nIt's the product of technological advancements using mere bionics, altogether with vast weaponry installations to form the \"SAVIOR\".",
+  "default_faction": "bot",
+  "species": [
+    "SECRODRAG"
+  ],
+  "harvest": "secrodragon_harvest",
+  "volume": "1000 L",
+  "weight": "603000 g",
+  "hp": 2325,
+  "speed": 60,
+  "material": [
+    "steel",
+    "flesh"
+  ],
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "symbol": "☬",
+  "color": "white_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 6,
+  "melee_dice_sides": 10,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_cut": 44,
+  "armor_bullet": 35,
+  "armor_bash": 38,
+  "armor_stab": 40,
+  "armor_acid": 100,
+  "armor_fire": 100,
+  "vision_day": 50,
+  "starting_ammo": {
+    "308": 400
+  },
+  "path_settings": {
+    "max_dist": 20
+  },
+  "weakpoints": [
+    {
+      "name": "the energy crest",
+      "difficulty": {
+        "ranged": 3
+      },
+      "coverage": 3,
+      "damage_mult": {
+        "all": 1.33
+      },
+      "crit_mult": {
+        "all": 1.33
+      },
+      "effects": [
+        {
+          "effect": "controlled",
+          "duration": [
+            3,
+            3
+          ],
+          "damage_required": [
+            5,
+            100
+          ],
+          "message": "The %s took a shock from the blow!"
+        }
+      ]
+    },
+    {
+      "name": "the unarmored part",
+      "armor_mult": {
+        "bash": 0.8,
+        "cut": 0.8,
+        "stab": 0.8,
+        "bullet": 0.8
+      },
+      "coverage": 5
+    }
+  ],
+  "special_attacks": [
+    [
+      "SMASH",
+      42
+    ],
+    [
+      "secrodragon_SSLRatk",
+      2
+    ],
+    [
+      "secrodragon_M240atk",
+      5
+    ],
+    [
+      "secrodragon_SSGLatk",
+      15
+    ],
+    [
+      "secrodragon_pershieldatk",
+      10
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_secrodragon_woke_check"
+      },
+      "cooldown": 22,
+      "monster_message": "<color_yellow>%1$s growls!</color>"
+    }
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        100
+      ],
+      [
+        "secrodrag_drops",
+        80
+      ]
+    ]
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUN_IMMUNE",
+    "FLIES",
+    "WARM",
+    "DESTROYS",
+    "POISON",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "PRIORITIZE_TARGETS",
+    "ELECTRIC",
+    "DROPS_AMMO"
+  ],
+  "//": "IT IS NOT YOUR FAMILY-FRIENDLY ROBOT. HACKING UNAVAILABLE."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_secrodragon_woke",
+  "type": "MONSTER",
+  "name": {
+    "str": "生物武器-龙"
+  },
+  "description": "这种身披铠甲的爬行动物有自己的目的：消灭它。\n它是技术进步的产物，仅仅使用仿生学，再加上庞大的武器装备，形成了“救世主”。",
+  "default_faction": "bot",
+  "species": [
+    "SECRODRAG"
+  ],
+  "harvest": "secrodragon_harvest",
+  "volume": "1000 L",
+  "weight": "603000 g",
+  "hp": 2325,
+  "speed": 60,
+  "material": [
+    "steel",
+    "flesh"
+  ],
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "symbol": "☬",
+  "color": "white_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 6,
+  "melee_dice_sides": 10,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_cut": 44,
+  "armor_bullet": 35,
+  "armor_bash": 38,
+  "armor_stab": 40,
+  "armor_acid": 100,
+  "armor_fire": 100,
+  "vision_day": 50,
+  "starting_ammo": {
+    "308": 400
+  },
+  "path_settings": {
+    "max_dist": 20
+  },
+  "weakpoints": [
+    {
+      "name": "the energy crest",
+      "difficulty": {
+        "ranged": 3
+      },
+      "coverage": 3,
+      "damage_mult": {
+        "all": 1.33
+      },
+      "crit_mult": {
+        "all": 1.33
+      },
+      "effects": [
+        {
+          "effect": "controlled",
+          "duration": [
+            3,
+            3
+          ],
+          "damage_required": [
+            5,
+            100
+          ],
+          "message": "The %s took a shock from the blow!"
+        }
+      ]
+    },
+    {
+      "name": "the unarmored part",
+      "armor_mult": {
+        "bash": 0.8,
+        "cut": 0.8,
+        "stab": 0.8,
+        "bullet": 0.8
+      },
+      "coverage": 5
+    }
+  ],
+  "special_attacks": [
+    [
+      "SMASH",
+      42
+    ],
+    [
+      "secrodragon_SSLRatk",
+      2
+    ],
+    [
+      "secrodragon_M240atk",
+      5
+    ],
+    [
+      "secrodragon_SSGLatk",
+      15
+    ],
+    [
+      "secrodragon_pershieldatk",
+      10
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_secrodragon_woke_check"
+      },
+      "cooldown": 22,
+      "monster_message": "<color_yellow>%1$s咆哮着！</color>"
+    }
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        100
+      ],
+      [
+        "secrodrag_drops",
+        80
+      ]
+    ]
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUN_IMMUNE",
+    "FLIES",
+    "WARM",
+    "DESTROYS",
+    "POISON",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "PRIORITIZE_TARGETS",
+    "ELECTRIC",
+    "DROPS_AMMO"
+  ],
+  "//": "IT IS NOT YOUR FAMILY-FRIENDLY ROBOT. HACKING UNAVAILABLE."
+}
+```
+

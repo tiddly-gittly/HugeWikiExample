@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_ant_fire_queen
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_ant_fire_queen|http://cdda.aloxaf.cn/search?q=mon_ant_fire_queen]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_ant_fire_queen",
+  "type": "MONSTER",
+  "name": {
+    "str": "fire queen ant"
+  },
+  "description": "An enormous firey-orange ant with an elongated, pulsating abdomen.  Its orifice seems developed only for egg-laying rather than spraying flammable napalm like the rest of the colony, but it doesn't seem affected by fire either.",
+  "default_faction": "ant",
+  "bodytype": "insect",
+  "species": [
+    "INSECT"
+  ],
+  "diff": 2,
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 110,
+  "speed": 60,
+  "material": [
+    "iflesh"
+  ],
+  "symbol": "a",
+  "color": "light_red",
+  "aggression": 20,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 8,
+  "armor_cut": 16,
+  "armor_bullet": 12,
+  "special_attacks": [
+    [
+      "ANTQUEEN",
+      1
+    ]
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT",
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "harvest": "fire_queen",
+  "flags": [
+    "FIREPROOF",
+    "CLIMBS",
+    "DRIPS_NAPALM",
+    "HEARS",
+    "QUEEN",
+    "SEES",
+    "SMELLS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_ant_fire_queen",
+  "type": "MONSTER",
+  "name": {
+    "str": "火焰蚁后"
+  },
+  "description": "一只巨大的火橙色蚂蚁，细长的腹部跳动着。它的孔口似乎只为产卵而生，而不是像其他群体一样喷洒易燃的凝固汽油弹，但它似乎也不受火焰的影响。",
+  "default_faction": "ant",
+  "bodytype": "insect",
+  "species": [
+    "INSECT"
+  ],
+  "diff": 2,
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 110,
+  "speed": 60,
+  "material": [
+    "iflesh"
+  ],
+  "symbol": "a",
+  "color": "light_red",
+  "aggression": 20,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 8,
+  "armor_cut": 16,
+  "armor_bullet": 12,
+  "special_attacks": [
+    [
+      "ANTQUEEN",
+      1
+    ]
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT",
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "harvest": "fire_queen",
+  "flags": [
+    "FIREPROOF",
+    "CLIMBS",
+    "DRIPS_NAPALM",
+    "HEARS",
+    "QUEEN",
+    "SEES",
+    "SMELLS"
+  ]
+}
+```
+

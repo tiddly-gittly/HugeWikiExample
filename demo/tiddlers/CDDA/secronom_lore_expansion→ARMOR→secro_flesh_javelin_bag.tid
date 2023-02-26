@@ -1,0 +1,225 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_javelin_bag
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_javelin_bag|http://cdda.aloxaf.cn/search?q=secro_flesh_javelin_bag]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_ammo_pouch.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_javelin_bag",
+  "type": "ARMOR",
+  "name": {
+    "str": "javelin bag"
+  },
+  "description": "An open medieval-looking bag, designed to store javelins within easy reach.",
+  "weight": "750 g",
+  "volume": "1250 ml",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "quiver",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 30,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 30,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 30,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 30,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 30,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Stash javelins",
+    "holster_msg": "You stash your %s."
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "OVERSIZE",
+    "BELTED"
+  ],
+  "armor": [
+    {
+      "encumbrance": 10,
+      "coverage": 30,
+      "covers": [
+        "torso"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_javelin_bag",
+  "type": "ARMOR",
+  "name": {
+    "str": "标枪包"
+  },
+  "description": "一个开口的中世纪款式标枪包，易于存取标枪。",
+  "weight": "750 g",
+  "volume": "1250 ml",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "quiver",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 30,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 30,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 30,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 30,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 30,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "存储标枪",
+    "holster_msg": "你收好了%s。"
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "OVERSIZE",
+    "BELTED"
+  ],
+  "armor": [
+    {
+      "encumbrance": 10,
+      "coverage": 30,
+      "covers": [
+        "torso"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

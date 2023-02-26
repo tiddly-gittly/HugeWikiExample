@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→bless
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bless|http://cdda.aloxaf.cn/search?q=bless]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/technomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bless",
+  "type": "SPELL",
+  "name": {
+    "str": "Bless"
+  },
+  "description": "A spell of blessing that gives you energy and boosts your abilities.",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "effect": "attack",
+  "effect_str": "bless",
+  "shape": "blast",
+  "affected_body_parts": [
+    "torso"
+  ],
+  "base_casting_time": 100,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "spell_class": "TECHNOMANCER",
+  "difficulty": 1,
+  "max_level": 30,
+  "min_aoe": 0,
+  "max_aoe": 7,
+  "aoe_increment": 0.25,
+  "min_range": 1,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "//": "duration is in moves",
+  "min_duration": 6000,
+  "max_duration": 30000,
+  "duration_increment": 400
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bless",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福"
+  },
+  "description": "给予你能量和提升你能力的祝福法术。",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "effect": "attack",
+  "effect_str": "bless",
+  "shape": "blast",
+  "affected_body_parts": [
+    "torso"
+  ],
+  "base_casting_time": 100,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "spell_class": "TECHNOMANCER",
+  "difficulty": 1,
+  "max_level": 30,
+  "min_aoe": 0,
+  "max_aoe": 7,
+  "aoe_increment": 0.25,
+  "min_range": 1,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "//": "duration is in moves",
+  "min_duration": 6000,
+  "max_duration": 30000,
+  "duration_increment": 400
+}
+```
+

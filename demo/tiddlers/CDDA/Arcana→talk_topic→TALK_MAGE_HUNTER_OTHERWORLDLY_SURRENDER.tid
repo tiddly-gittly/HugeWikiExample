@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MAGE_HUNTER_OTHERWORLDLY_SURRENDER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MAGE_HUNTER_OTHERWORLDLY_SURRENDER|http://cdda.aloxaf.cn/search?q=TALK_MAGE_HUNTER_OTHERWORLDLY_SURRENDER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MAGE_HUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_SURRENDER",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "Thank you.  These coins are used by Sofia and others of our order for trade with outsiders that work with us.  If there is anything she can provide then speak to her.  I'm afraid this is all I can spare, but it should help.",
+    "I'm afraid I only have enough to compensate for one of these books, so I pray that you'll trust Sofia with any others you find.",
+    "Here you are.  I will deal with this per Thane McKinnon's advice, forgive me if she orders it destroyed.  This should be fair pay for what it would've been worth, before all this started."
+  ],
+  "responses": [
+    {
+      "text": "Okay.",
+      "effect": [
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 20
+        },
+        {
+          "u_add_effect": "cf_hunter_motive",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_MAGE_HUNTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_SURRENDER",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "非常感谢。索菲亚和我们订单中的其他人使用这些硬币与与我们合作的外人进行贸易。如果她能提供什么，那就告诉她。恐怕这是我能腾出的全部，但它应该会有所帮助。",
+    "恐怕我只有足够的钱来补偿这些书中的一本，所以我祈祷你能将索菲亚和你找到的任何其他书交给你。",
+    "给你我会按照Thane McKinnon的建议处理，如果她命令销毁，请原谅我。在这一切开始之前，这应该是合理的报酬。"
+  ],
+  "responses": [
+    {
+      "text": "好的。",
+      "effect": [
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 20
+        },
+        {
+          "u_add_effect": "cf_hunter_motive",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_MAGE_HUNTER"
+    }
+  ]
+}
+```
+

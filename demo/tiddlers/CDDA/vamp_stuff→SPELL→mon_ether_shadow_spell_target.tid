@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→mon_ether_shadow_spell_target
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_ether_shadow_spell_target|http://cdda.aloxaf.cn/search?q=mon_ether_shadow_spell_target]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_monspell.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Spells that are casted by monsters. Seperated from monster_magic.json, for as it is casted by allied minions.",
+  "type": "SPELL",
+  "id": "mon_ether_shadow_spell_target",
+  "name": {
+    "str": "a spell"
+  },
+  "description": "Casted upon monster's LOS and within the predefined range. ALSO WHEN IT IS NOT ON COOLDOWN.",
+  "extra_effects": [
+    {
+      "id": "mon_ether_shadow_spell"
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "v_magic_target",
+  "min_range": 10,
+  "max_range": 10,
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Spells that are casted by monsters. Seperated from monster_magic.json, for as it is casted by allied minions.",
+  "type": "SPELL",
+  "id": "mon_ether_shadow_spell_target",
+  "name": {
+    "str": "一个法术"
+  },
+  "description": "在怪物的视距和预定范围内施法。当它没有冷却的时候。",
+  "extra_effects": [
+    {
+      "id": "mon_ether_shadow_spell"
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "v_magic_target",
+  "min_range": 10,
+  "max_range": 10,
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+

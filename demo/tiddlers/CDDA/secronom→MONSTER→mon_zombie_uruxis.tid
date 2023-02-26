@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_uruxis
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_uruxis|http://cdda.aloxaf.cn/search?q=mon_zombie_uruxis]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Specialized summoner. Slim chance to call a zed of random type using its aura, but becomes frequent when a target is in sight.",
+  "id": "mon_zombie_uruxis",
+  "type": "MONSTER",
+  "name": {
+    "str": "uruxis"
+  },
+  "description": "Shrouded in ominous black mist, this corpse's horrid visage strikes fear to the minds of the conscious ones.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "diff": 20,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 205,
+  "speed": 70,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☥",
+  "color": "dark_gray_white",
+  "aggression": 5,
+  "morale": 100,
+  "emit_fields": [
+    "emit_urixis_aura"
+  ],
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "dodge": 3,
+  "armor_bash": 6,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 24,
+  "vision_night": 12,
+  "harvest": "zombie",
+  "path_settings": {
+    "max_dist": 10
+  },
+  "special_attacks": [
+    [
+      "UPGRADE",
+      48
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_uruxis_spawn_target"
+      },
+      "cooldown": 24,
+      "monster_message": "<color_yellow>%1$s curses the surrounding area as it enshrouds itself in shadows!</color>"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PATH_AVOID_DANGER_2",
+    "PRIORITIZE_TARGETS",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Specialized summoner. Slim chance to call a zed of random type using its aura, but becomes frequent when a target is in sight.",
+  "id": "mon_zombie_uruxis",
+  "type": "MONSTER",
+  "name": {
+    "str": "漆黑丧尸"
+  },
+  "description": "笼罩在不祥的黑色薄雾中，这具尸体可怕的面容使有意识的人感到恐惧。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "diff": 20,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 205,
+  "speed": 70,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☥",
+  "color": "dark_gray_white",
+  "aggression": 5,
+  "morale": 100,
+  "emit_fields": [
+    "emit_urixis_aura"
+  ],
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "dodge": 3,
+  "armor_bash": 6,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 24,
+  "vision_night": 12,
+  "harvest": "zombie",
+  "path_settings": {
+    "max_dist": 10
+  },
+  "special_attacks": [
+    [
+      "UPGRADE",
+      48
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_uruxis_spawn_target"
+      },
+      "cooldown": 24,
+      "monster_message": "<color_yellow>%1$s诅咒周围的区域，并将它自己笼罩在阴影中！</color>"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PATH_AVOID_DANGER_2",
+    "PRIORITIZE_TARGETS",
+    "FILTHY"
+  ]
+}
+```
+

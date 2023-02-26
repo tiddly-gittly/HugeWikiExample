@@ -1,0 +1,1509 @@
+creator: 林一二
+revision: 0
+tags: mapgen nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mapgen→[0]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Terrain/Unknown_Lab.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Unknown_Lab_1"
+  ],
+  "weight": 1000,
+  "object": {
+    "rows": [
+      "--------xxxxxxxx--------",
+      "f   #   ........   #    ",
+      "f #   7 ........  #     ",
+      "f 7     ........    7 # ",
+      "f   #   ........|II|    ",
+      "f#    7 ........Id_+.   ",
+      "f  7    ........I6c|. 7 ",
+      "f7# #   ........|Iw|.#  ",
+      "f  7#   ................",
+      "f#     #................",
+      "f7# #   ................",
+      "f  7    ................",
+      "f     # ................",
+      "f 7#    ................",
+      "f #  #  ................",
+      "f7      ................",
+      "f 7#   7  ....     7    ",
+      "f         .... #       7",
+      "f# # 7   #....7  #   #  ",
+      "f      7  ....      #  #",
+      "f# 7#     ....   ## 7   ",
+      "f     # 7 .... 7     7  ",
+      "f   7 7#  ....  #   7 7 ",
+      "f  #      ....    7  #  "
+    ],
+    "terrain": {
+      "6": "t_floor",
+      "7": [
+        "t_tree",
+        "t_tree_dead",
+        "t_tree_deadpine",
+        "t_tree_hickory_dead",
+        "t_tree_cottonwood",
+        "t_tree_young",
+        "t_grass"
+      ],
+      " ": [
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_dirt"
+      ],
+      "#": [
+        "t_shrub",
+        "t_underbrush",
+        "t_grass"
+      ],
+      "|": "t_concrete_wall",
+      "+": "t_door_c",
+      "-": "t_chainfence_h",
+      ".": "t_dirt",
+      "I": "t_reinforced_glass",
+      "_": "t_floor",
+      "c": "t_floor",
+      "d": "t_floor",
+      "f": "t_chainfence_v",
+      "w": "t_floor",
+      "x": "t_chaingate_l"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "c": "f_chair",
+      "d": "f_desk"
+    },
+    "place_loot": [
+      {
+        "item": "note_apophis",
+        "x": 17,
+        "y": 5
+      },
+      {
+        "item": "glass_shard",
+        "x": 18,
+        "y": 7,
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "item": "wire",
+        "x": 18,
+        "y": 7,
+        "chance": 20
+      },
+      {
+        "group": "map_extra_science",
+        "x": 18,
+        "y": 6,
+        "chance": 75
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": 18,
+        "y": 6
+      },
+      {
+        "field": "fd_blood",
+        "x": 18,
+        "y": 5
+      },
+      {
+        "field": "fd_blood",
+        "x": 18,
+        "y": 4
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_crows_m240",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "monster": "mon_crows_m240",
+        "x": 7,
+        "y": 3
+      },
+      {
+        "monster": "mon_crows_m240",
+        "x": 16,
+        "y": 3
+      },
+      {
+        "monster": "mon_turret_rifle",
+        "x": 2,
+        "y": 22
+      },
+      {
+        "monster": "mon_turret_rifle",
+        "x": 22,
+        "y": 2
+      },
+      {
+        "monster": "mon_zombie_bio_infantry_shotgun",
+        "x": 18,
+        "y": 5
+      },
+      {
+        "monster": "mon_zombie_bio_knight_lmg",
+        "x": 12,
+        "y": 18
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Plain_Slaughter"
+  ],
+  "weight": 1000,
+  "object": {
+    "rows": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "terrain": {
+      ".": [
+        [
+          "t_grass",
+          4
+        ],
+        [
+          "t_grass_long",
+          2
+        ],
+        [
+          "t_dirt",
+          1
+        ],
+        [
+          "t_shrub",
+          1
+        ]
+      ]
+    },
+    "place_loot": [
+      {
+        "group": "wild_bio_weapom_item",
+        "x": [
+          1,
+          22
+        ],
+        "y": [
+          9,
+          12
+        ],
+        "repeat": [
+          2,
+          5
+        ]
+      },
+      {
+        "group": "dead_slave_fighters",
+        "x": [
+          3,
+          19
+        ],
+        "y": [
+          8,
+          12
+        ],
+        "repeat": [
+          2,
+          5
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_failed_weapon",
+        "x": 13,
+        "y": 22
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 4,
+        "y": 8
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 10,
+        "y": 15
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 11,
+        "y": 17
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 19,
+        "y": 13
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "slave_fight",
+        "x": 2,
+        "y": 7
+      },
+      {
+        "class": "slave_fight",
+        "x": 7,
+        "y": 12
+      },
+      {
+        "class": "slave_fight",
+        "x": 9,
+        "y": 22
+      },
+      {
+        "class": "slave_fight",
+        "x": 13,
+        "y": 20
+      },
+      {
+        "class": "slave_fight",
+        "x": 17,
+        "y": 5
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "sketchy_cabin_1"
+  ],
+  "weight": 1000,
+  "object": {
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      " I-------I____I-------I ",
+      " -____________________- ",
+      " -____________________- ",
+      " ||w|||w|||==|||w|||w|| ",
+      " |n.rrr..|Y...+.heeh.C| ",
+      " |n......+...]|..ee..ow ",
+      " |n.CCC..|...]|..h...sw ",
+      " |||||||||...]|t.....F| ",
+      " |___.h......]||||+|||| ",
+      " |_v_.e..............]| ",
+      " |___................]| ",
+      " |.h.................]| ",
+      " |||||+||||.....|||+||| ",
+      " |D.......||||++|s....| ",
+      "&|BB...ddd|>>=..|.....= ",
+      " |BB....hd|>>=..|T..uu| ",
+      " ||ww||ww|||||||||||||| ",
+      "                        "
+    ],
+    "terrain": {
+      " ": [
+        [
+          "t_grass",
+          4
+        ],
+        [
+          "t_grass_long",
+          1
+        ],
+        [
+          "t_dirt",
+          2
+        ]
+      ],
+      "&": "t_gutter_downspout",
+      ".": "t_floor",
+      "_": "t_rock_floor",
+      "|": "t_wall_log",
+      "=": "t_rdoor_boarded",
+      "+": "t_rdoor_c",
+      "-": "t_fence",
+      "]": "t_floor",
+      ">": "t_stairs_down",
+      "B": "t_floor",
+      "C": "t_floor",
+      "D": "t_floor",
+      "F": "t_floor",
+      "I": "t_column",
+      "T": "t_floor",
+      "Y": "t_floor",
+      "d": "t_floor",
+      "e": "t_floor",
+      "h": "t_floor",
+      "n": "t_floor",
+      "o": "t_floor",
+      "r": "t_floor",
+      "s": "t_floor",
+      "t": "t_floor",
+      "u": "t_floor",
+      "v": "t_rock_floor",
+      "w": "t_window_enhanced"
+    },
+    "furniture": {
+      "]": "f_bookcase",
+      "B": "f_bed",
+      "C": "f_counter",
+      "D": "f_dresser",
+      "F": "f_fridge",
+      "T": "f_toilet",
+      "Y": "f_rack_coat",
+      "d": "f_desk",
+      "e": "f_table",
+      "h": "f_chair",
+      "n": "f_cupboard",
+      "o": "f_oven",
+      "r": "f_rack",
+      "s": "f_sink",
+      "t": "f_trashcan",
+      "u": "f_bathtub",
+      "v": "f_woodstove"
+    },
+    "place_toilets": [
+      {
+        "x": 17,
+        "y": 21
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "office",
+        "x": [
+          7,
+          9
+        ],
+        "y": 20,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "group": "sketchy_cabin_guard_weapons",
+        "x": 9,
+        "y": 21,
+        "chance": 90
+      },
+      {
+        "group": "trash",
+        "x": 15,
+        "y": 13,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "bed",
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          20,
+          21
+        ],
+        "chance": 80,
+        "repeat": 5
+      },
+      {
+        "group": "dresser",
+        "x": 2,
+        "y": 19,
+        "chance": 90,
+        "repeat": 4
+      },
+      {
+        "group": "cannedfood",
+        "x": 2,
+        "y": [
+          10,
+          12
+        ],
+        "chance": 75,
+        "repeat": 8
+      },
+      {
+        "group": "pasta",
+        "x": [
+          4,
+          6
+        ],
+        "y": 10,
+        "chance": 75,
+        "repeat": 4
+      },
+      {
+        "group": "oven",
+        "x": 21,
+        "y": 10,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "fridge",
+        "x": 21,
+        "y": 13,
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "homebooks",
+        "x": 13,
+        "y": [
+          11,
+          14
+        ],
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "dojo_manuals",
+        "x": 13,
+        "y": [
+          11,
+          14
+        ],
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "group": "homebooks",
+        "x": 21,
+        "y": [
+          15,
+          17
+        ],
+        "chance": 50,
+        "repeat": 4
+      },
+      {
+        "group": "dojo_manuals",
+        "x": 21,
+        "y": [
+          15,
+          17
+        ],
+        "chance": 50,
+        "repeat": 2
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "surv_camp"
+  ],
+  "weight": 1000,
+  "//": "Hight mapgen to make sure it spawns.",
+  "object": {
+    "//": "Can make all the meat jerky you want!",
+    "rows": [
+      "........................",
+      "..5.............6.....1.",
+      "....s...#...5.....s.....",
+      "..#....b..6..s...4...1..",
+      ".............#....1.....",
+      "....4.S..b............#.",
+      ".1..........S..7.S..6...",
+      "...b..5...#.............",
+      "....1...........#.b.....",
+      "..3......00.00.......71.",
+      ".....#..00p.p00..2......",
+      "..1.7.1.0p...p0....s....",
+      "4.......0p.i.p0.........",
+      ".....3..0p...p0..7..8.1.",
+      "..#.....00ppp00.........",
+      "....2....00000....3.....",
+      ".s.....b.......1.s#.....",
+      "....ss...7.S.....ss...#.",
+      "..7.7s......S.#.....77..",
+      ".7........8.....721.....",
+      "......7.17...s.......b..",
+      "....8......S.......#....",
+      "..#..s.1.S..7.7..1....7.",
+      "........................"
+    ],
+    "terrain": {
+      "0": "t_pit_spiked",
+      "1": "t_tree_young",
+      "2": "t_tree_apple",
+      "3": "t_tree_pear",
+      "4": "t_tree_cherry",
+      "5": "t_tree_peach",
+      "6": "t_tree_apricot",
+      "7": "t_tree",
+      "8": "t_tree_plum",
+      " ": "t_dirt",
+      "#": "t_underbrush",
+      ".": "t_dirt",
+      "S": "t_shrub_strawberry",
+      "b": "t_shrub_blueberry",
+      "i": "t_improvised_shelter",
+      "p": "t_pit",
+      "s": "t_swater_sh"
+    },
+    "place_items": [
+      {
+        "item": "forest",
+        "x": 21,
+        "y": 21,
+        "chance": 75,
+        "//": "Drops to make it blend with the forest."
+      },
+      {
+        "item": "forest",
+        "x": 15,
+        "y": 20,
+        "chance": 75
+      },
+      {
+        "item": "forest",
+        "x": 3,
+        "y": 20,
+        "chance": 75
+      },
+      {
+        "item": "forest",
+        "x": 11,
+        "y": 19,
+        "chance": 75
+      },
+      {
+        "item": "forest",
+        "x": 20,
+        "y": 15,
+        "chance": 75
+      },
+      {
+        "item": "forest",
+        "x": 0,
+        "y": 14,
+        "chance": 75
+      },
+      {
+        "item": "forest",
+        "x": 3,
+        "y": 11,
+        "chance": 75
+      },
+      {
+        "item": "forest",
+        "x": 17,
+        "y": 10,
+        "chance": 75
+      },
+      {
+        "item": "forest",
+        "x": 20,
+        "y": 5,
+        "chance": 75
+      },
+      {
+        "item": "forest",
+        "x": 9,
+        "y": 4,
+        "chance": 75
+      },
+      {
+        "item": "forest",
+        "x": 14,
+        "y": 1,
+        "chance": 75
+      },
+      {
+        "item": "forest",
+        "x": 1,
+        "y": 10,
+        "chance": 75
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "survn_special",
+        "x": 4,
+        "y": 4
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Survivor_Encampment"
+  ],
+  "//": "Variant one, literally left to the wolves.  Rural appearance, chance of a horse-drawn vehicle left behind.",
+  "weight": 1000,
+  "object": {
+    "rows": [
+      "........................",
+      ".######==========######.",
+      "##....................##",
+      "#......................#",
+      "#.|||||................#",
+      "#.|___x................#",
+      "#.|}}}|...........{{{..#",
+      "#.||||||.........|||||.#",
+      "#.|BBD_|.........$,,,|.#",
+      "#.|v___x.........-,,,|.#",
+      "#.|BBD_|.........-,HH|.#",
+      "#.||||||.......&.|||||.#",
+      "#......................#",
+      "#.||www||||xx||||www||.#",
+      "#.|BD_DB|______lFsonn|.#",
+      "#.|B___B|______lllllC|.#",
+      "#.|_____|__tth_lllllC|.#",
+      "#.|||+|||__tth_|||+|||.#",
+      "#.|________hh__|slllV|.#",
+      "#.|bbbb________|sllTV|.#",
+      "#.||||||||wwww||||||||.#",
+      "#......................#",
+      "##mmmmmmmmmmmmmmmmmmmm##",
+      ".######################."
+    ],
+    "terrain": {
+      ".": [
+        [
+          "t_grass",
+          4
+        ],
+        [
+          "t_grass_long",
+          2
+        ],
+        [
+          "t_dirt",
+          1
+        ]
+      ],
+      "#": "t_privacy_fence",
+      "=": "t_privacy_fencegate_c",
+      "|": "t_wall_wood",
+      "-": "t_splitrail_fence",
+      "$": "t_splitrail_fencegate_c",
+      ",": "t_dirtfloor",
+      "_": "t_floor",
+      "+": "t_door_c",
+      "}": "t_floor",
+      "{": "t_dirt",
+      "&": "t_water_pump",
+      "B": "t_floor",
+      "C": "t_linoleum_gray",
+      "D": "t_floor",
+      "F": "t_linoleum_gray",
+      "H": "t_dirtfloor",
+      "T": "t_linoleum_gray",
+      "V": "t_linoleum_gray",
+      "b": "t_floor",
+      "h": "t_floor",
+      "l": "t_linoleum_gray",
+      "m": "t_dirtmound",
+      "n": "t_linoleum_gray",
+      "o": "t_linoleum_gray",
+      "s": "t_linoleum_gray",
+      "t": "t_floor",
+      "v": "t_floor",
+      "w": "t_curtains",
+      "x": "t_door_locked"
+    },
+    "furniture": {
+      "}": "f_locker",
+      "{": "f_rack",
+      "B": "f_bed",
+      "C": "f_counter",
+      "D": "f_dresser",
+      "F": "f_fridge",
+      "H": "f_hay",
+      "T": "f_toilet",
+      "V": "f_bathtub",
+      "b": "f_bookcase",
+      "h": "f_chair",
+      "n": "f_cupboard",
+      "o": "f_oven",
+      "s": "f_sink",
+      "t": "f_table",
+      "v": "f_woodstove"
+    },
+    "place_toilets": [
+      {
+        "x": 19,
+        "y": 19
+      }
+    ],
+    "mapping": {
+      "B": {
+        "items": {
+          "item": "bed",
+          "chance": 75
+        }
+      },
+      "F": {
+        "items": [
+          {
+            "item": "fridge",
+            "chance": 75
+          },
+          {
+            "item": "fridgesnacks",
+            "chance": 75
+          }
+        ]
+      },
+      "b": {
+        "items": {
+          "item": "mansion_bookcase",
+          "chance": 100
+        }
+      },
+      "o": {
+        "items": {
+          "item": "oven",
+          "chance": 50
+        }
+      },
+      "t": {
+        "items": {
+          "item": "kitchen",
+          "chance": 25
+        }
+      },
+      "d": {
+        "items": {
+          "item": "dresser",
+          "chance": 90
+        }
+      },
+      "n": {
+        "items": [
+          {
+            "item": "cannedfood",
+            "chance": 50
+          },
+          {
+            "item": "cannedfood",
+            "chance": 50
+          },
+          {
+            "item": "cannedfood",
+            "chance": 50
+          }
+        ]
+      },
+      "{": {
+        "items": [
+          {
+            "item": "tools_earthworking",
+            "chance": 90
+          },
+          {
+            "item": "tools_carpentry",
+            "chance": 90
+          }
+        ]
+      },
+      "}": {
+        "items": [
+          {
+            "item": "tools_gunsmith",
+            "chance": 90
+          },
+          {
+            "item": "gunmod_common",
+            "chance": 75
+          },
+          {
+            "item": "survivor_weapons",
+            "chance": 50
+          }
+        ]
+      }
+    },
+    "place_loot": [
+      {
+        "item": "bucket",
+        "x": 18,
+        "y": [
+          9,
+          10
+        ],
+        "chance": 90
+      },
+      {
+        "item": "bone_human",
+        "x": [
+          8,
+          16
+        ],
+        "y": [
+          2,
+          12
+        ],
+        "repeat": [
+          10,
+          20
+        ]
+      },
+      {
+        "item": "recipe_surv",
+        "x": 11,
+        "y": 16
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "surv_tachanka",
+        "x": 12,
+        "y": 9,
+        "chance": 90,
+        "status": -1,
+        "rotation": 270
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_wolf",
+        "x": [
+          9,
+          15
+        ],
+        "y": [
+          3,
+          11
+        ],
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "monster": "mon_horse",
+        "x": 18,
+        "y": 8
+      },
+      {
+        "monster": "mon_horse",
+        "x": 20,
+        "y": 10,
+        "chance": 50
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Survivor_Holdout_1"
+  ],
+  "weight": 1000,
+  "object": {
+    "rows": [
+      ".................o......",
+      "..$$$$$++++++++++$$$$$..",
+      ".$$.ss...........o...$$.",
+      ".$...................s$.",
+      ".$..............7|w||.$.",
+      ".$.7.............r_e|.$.",
+      ".$.......SSSSSS..|w||.$.",
+      ".$...............s....$.",
+      ".$.s.............|w||.$.",
+      ".$..C............|_{|.$.",
+      ".$...............r_{|.$.",
+      ".$O.^............|_{|.$.",
+      ".$O..7...........|w||.$.",
+      ".$................ss..$.",
+      ".$=..s...........|_U|.$.",
+      ".$=.s............__F|.$.",
+      ".$....7..........__a|.$.",
+      ".$.7............s|cc|.$.",
+      ".$.s................s.$.",
+      ".$..#####.s.s..#####s.$.",
+      ".$s.#####..s7s.#####..$.",
+      ".$$.s.....s.s....ss..$$.",
+      "..$$$$$$$$$$$$$$$$$$$$..",
+      "........................"
+    ],
+    "terrain": {
+      "7": [
+        "t_tree_hazelnut_harvested",
+        "t_tree_apple_harvested",
+        "t_tree_cherry_harvested"
+      ],
+      "#": "t_dirtmound",
+      "$": "t_palisade",
+      "+": "t_palisade_gate_o",
+      ".": [
+        "t_dirt",
+        "t_grass"
+      ],
+      "=": "t_dirt",
+      "B": "t_dirt",
+      "C": "t_water_pump",
+      "F": "t_floor_primitive",
+      "O": "t_dirt",
+      "S": "t_dirt",
+      "U": "t_floor_primitive",
+      "^": "t_dirt",
+      "a": "t_floor_primitive",
+      "b": "t_dirt",
+      "c": "t_floor_primitive",
+      "e": "t_floor_primitive",
+      "f": "t_dirt",
+      "o": "t_palisade_pulley",
+      "r": "t_door_c_peep",
+      "s": [
+        "t_underbrush",
+        "t_shrub_strawberry_harvested",
+        "t_shrub_blueberry_harvested"
+      ],
+      "w": "t_window_enhanced",
+      "{": "t_floor_primitive",
+      "|": "t_wall_log",
+      "_": "t_floor_primitive"
+    },
+    "furniture": {
+      "=": "f_smoking_rack",
+      "B": "f_bed",
+      "F": "f_forge",
+      "O": "f_standing_tank",
+      "S": "f_sandbag_half",
+      "U": "f_kiln_empty",
+      "^": "f_still",
+      "a": "f_anvil",
+      "c": "f_counter",
+      "e": "f_toilet",
+      "{": "f_locker"
+    },
+    "place_toilets": [
+      {
+        "x": 19,
+        "y": 5
+      }
+    ],
+    "place_items": [
+      {
+        "item": "map_extra_college_camping",
+        "x": [
+          6,
+          16
+        ],
+        "y": [
+          2,
+          5
+        ],
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "map_extra_drugdeal",
+        "x": [
+          6,
+          16
+        ],
+        "y": [
+          2,
+          5
+        ],
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "map_extra_police",
+        "x": [
+          6,
+          16
+        ],
+        "y": [
+          2,
+          5
+        ],
+        "chance": 50
+      },
+      {
+        "item": "remains_soldier",
+        "x": [
+          6,
+          16
+        ],
+        "y": [
+          2,
+          5
+        ],
+        "chance": 50
+      },
+      {
+        "item": "remains_human_generic",
+        "x": [
+          6,
+          16
+        ],
+        "y": [
+          2,
+          5
+        ],
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "remains_pilot",
+        "x": [
+          6,
+          16
+        ],
+        "y": [
+          2,
+          5
+        ],
+        "chance": 50
+      },
+      {
+        "item": "weapons",
+        "x": 19,
+        "y": 9,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "item": "gear_survival",
+        "x": 19,
+        "y": 10,
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "item": "tools_common",
+        "x": 19,
+        "y": 10,
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "item": "cannedfood",
+        "x": 19,
+        "y": 11,
+        "chance": 75,
+        "repeat": 15
+      },
+      {
+        "item": "hardware_bulk",
+        "x": [
+          18,
+          19
+        ],
+        "y": 17,
+        "chance": 75,
+        "repeat": 15
+      }
+    ],
+    "add": [
+      {
+        "item": "recipe_surv",
+        "x": 19,
+        "y": 9
+      },
+      {
+        "item": "wire_barbed",
+        "x": 4,
+        "y": 0,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 0,
+        "y": 2,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 23,
+        "y": 2,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 23,
+        "y": 4,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 0,
+        "y": 6,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 23,
+        "y": 12,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 0,
+        "y": 13,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 0,
+        "y": 18,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 23,
+        "y": 18,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 2,
+        "y": 23,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 6,
+        "y": 23,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 13,
+        "y": 23,
+        "repeat": 2
+      },
+      {
+        "item": "wire_barbed",
+        "x": 21,
+        "y": 23,
+        "repeat": 2
+      },
+      {
+        "item": "semap",
+        "x": 19,
+        "y": 9
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "bff",
+        "x": 11,
+        "y": 13
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_zombie_necro",
+        "x": 9,
+        "y": 3
+      },
+      {
+        "monster": "mon_zombie_necro",
+        "x": 14,
+        "y": 0
+      },
+      {
+        "monster": "mon_zombie_necro",
+        "x": 7,
+        "y": 2
+      },
+      {
+        "monster": "mon_zombie_brute_shocker",
+        "x": 16,
+        "y": 0
+      },
+      {
+        "monster": "mon_zombie_brute_shocker",
+        "x": 7,
+        "y": 4
+      },
+      {
+        "monster": "mon_zombie_brute_shocker",
+        "x": 12,
+        "y": 1
+      },
+      {
+        "monster": "mon_zombie_corrosive",
+        "x": 10,
+        "y": 4
+      },
+      {
+        "monster": "mon_zombie_corrosive",
+        "x": 13,
+        "y": 2
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "bicycle_dirt",
+        "x": 5,
+        "y": 5,
+        "chance": 99,
+        "status": -1,
+        "rotation": 270
+      },
+      {
+        "vehicle": "c_surv_rv_military",
+        "x": 10,
+        "y": 8,
+        "chance": 99,
+        "fuel": 1,
+        "status": -3,
+        "rotation": 270
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Unknown_Lab_1"
+  ],
+  "weight": 1000,
+  "object": {
+    "rows": [
+      "--------xxxxxxxx--------",
+      "f   #   ........   #    ",
+      "f #   7 ........  #     ",
+      "f 7     ........    7 # ",
+      "f   #   ........|II|    ",
+      "f#    7 ........Id_+.   ",
+      "f  7    ........I6c|. 7 ",
+      "f7# #   ........|Iw|.#  ",
+      "f  7#   ................",
+      "f#     #................",
+      "f7# #   ................",
+      "f  7    ................",
+      "f     # ................",
+      "f 7#    ................",
+      "f #  #  ................",
+      "f7      ................",
+      "f 7#   7  ....     7    ",
+      "f         .... #       7",
+      "f# # 7   #....7  #   #  ",
+      "f      7  ....      #  #",
+      "f# 7#     ....   ## 7   ",
+      "f     # 7 .... 7     7  ",
+      "f   7 7#  ....  #   7 7 ",
+      "f  #      ....    7  #  "
+    ],
+    "terrain": {
+      "6": "t_floor",
+      "7": [
+        "t_tree",
+        "t_tree_dead",
+        "t_tree_deadpine",
+        "t_tree_hickory_dead",
+        "t_tree_cottonwood",
+        "t_tree_young",
+        "t_grass"
+      ],
+      " ": [
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_dirt"
+      ],
+      "#": [
+        "t_shrub",
+        "t_underbrush",
+        "t_grass"
+      ],
+      "|": "t_concrete_wall",
+      "+": "t_door_c",
+      "-": "t_chainfence_h",
+      ".": "t_dirt",
+      "I": "t_reinforced_glass",
+      "_": "t_floor",
+      "c": "t_floor",
+      "d": "t_floor",
+      "f": "t_chainfence_v",
+      "w": "t_floor",
+      "x": "t_chaingate_l"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "c": "f_chair",
+      "d": "f_desk"
+    },
+    "place_loot": [
+      {
+        "item": "note_apophis",
+        "x": 17,
+        "y": 5
+      },
+      {
+        "item": "glass_shard",
+        "x": 18,
+        "y": 7,
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "item": "wire",
+        "x": 18,
+        "y": 7,
+        "chance": 20
+      },
+      {
+        "group": "map_extra_science",
+        "x": 18,
+        "y": 6,
+        "chance": 75
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": 18,
+        "y": 6
+      },
+      {
+        "field": "fd_blood",
+        "x": 18,
+        "y": 5
+      },
+      {
+        "field": "fd_blood",
+        "x": 18,
+        "y": 4
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_crows_m240",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "monster": "mon_crows_m240",
+        "x": 7,
+        "y": 3
+      },
+      {
+        "monster": "mon_crows_m240",
+        "x": 16,
+        "y": 3
+      },
+      {
+        "monster": "mon_turret_rifle",
+        "x": 2,
+        "y": 22
+      },
+      {
+        "monster": "mon_turret_rifle",
+        "x": 22,
+        "y": 2
+      },
+      {
+        "monster": "mon_zombie_bio_infantry_shotgun",
+        "x": 18,
+        "y": 5
+      },
+      {
+        "monster": "mon_zombie_bio_knight_lmg",
+        "x": 12,
+        "y": 18
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_feral_keeper
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_feral_keeper|http://cdda.aloxaf.cn/search?q=mon_feral_keeper]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_feral_keeper",
+  "copy-from": "mon_feral_summoner",
+  "type": "MONSTER",
+  "name": {
+    "str": "maddened keeper"
+  },
+  "description": "Dark robes and a heavy fur mantle conceal a human figure, still breathing despite looking to be on the edge of death.  Gripped by raving madness, it desperately clutches a golden talisman that crackles with electricity.",
+  "aggression": -5,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 4,
+  "armor_cut": 4,
+  "armor_stab": 4,
+  "armor_bullet": 3,
+  "dodge": 3,
+  "diff": 3,
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 100,
+      "gun_type": "monster_lightning_fake",
+      "fake_str": 6,
+      "fake_dex": 7,
+      "fake_per": 8,
+      "ranges": [
+        [
+          2,
+          25,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "laser_lock": true,
+      "targeting_cost": 100,
+      "targeting_sound": "\"May He forge your chains!\"  The maddened keeper raises its symbol of judgment!",
+      "targeting_volume": 30,
+      "description": "Lightning arcs from the maddened keeper's symbol of judgment!",
+      "no_ammo_sound": "a cry of anger!"
+    }
+  ],
+  "death_drops": "mon_feral_keeper_death_drops",
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "PLAYER_CLOSE",
+    "STALK"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_feral_keeper",
+  "copy-from": "mon_feral_summoner",
+  "type": "MONSTER",
+  "name": {
+    "str": "发狂守卫"
+  },
+  "description": "深色的长袍和厚重的毛皮披风隐藏着一个人影，尽管看起来濒临死亡，但仍然在呼吸。它被疯狂的狂言紧紧抓住，绝望地抓住一个用电发出噼啪声的金色护身符。",
+  "aggression": -5,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 4,
+  "armor_cut": 4,
+  "armor_stab": 4,
+  "armor_bullet": 3,
+  "dodge": 3,
+  "diff": 3,
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 100,
+      "gun_type": "monster_lightning_fake",
+      "fake_str": 6,
+      "fake_dex": 7,
+      "fake_per": 8,
+      "ranges": [
+        [
+          2,
+          25,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "laser_lock": true,
+      "targeting_cost": 100,
+      "targeting_sound": "\"May He forge your chains!\"  The maddened keeper raises its symbol of judgment!",
+      "targeting_volume": 30,
+      "description": "电弧从疯狂守卫的审判符文中射出！",
+      "no_ammo_sound": "一声怒吼！"
+    }
+  ],
+  "death_drops": "mon_feral_keeper_death_drops",
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "PLAYER_CLOSE",
+    "STALK"
+  ]
+}
+```
+

@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: TOOL secronom_lore_expansion
+title: secronom_lore_expansion→TOOL→secro_flesh_splicer
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_splicer|http://cdda.aloxaf.cn/search?q=secro_flesh_splicer]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/secro_dna_cc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_splicer",
+  "type": "TOOL",
+  "name": {
+    "str": "bio-organic splicer"
+  },
+  "description": "A disk-shaped bio-organic device used in DNA extraction suitable on living (or undead) subjects.",
+  "weight": "1330 g",
+  "volume": "640 ml",
+  "price": 100,
+  "to_hit": -3,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": ":",
+  "color": "light_red",
+  "charges_per_use": 1,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "secro_flesh_splicer_target",
+    "no_fail": true,
+    "level": 0
+  },
+  "flags": [
+    "NONCONDUCTIVE"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 10
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_splicer",
+  "type": "TOOL",
+  "name": {
+    "str": "生物有机剪接器"
+  },
+  "description": "一种碟状的生物有机装置，适用于提取活人（或不死者）的DNA。",
+  "weight": "1330 g",
+  "volume": "640 ml",
+  "price": 100,
+  "to_hit": -3,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": ":",
+  "color": "light_red",
+  "charges_per_use": 1,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "secro_flesh_splicer_target",
+    "no_fail": true,
+    "level": 0
+  },
+  "flags": [
+    "NONCONDUCTIVE"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 10
+      }
+    }
+  ]
+}
+```
+

@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_LONELY_quest2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_LONELY_quest2|http://cdda.aloxaf.cn/search?q=VAMP_LONELY_quest2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_LONELY_quest2",
+  "type": "mission_definition",
+  "name": {
+    "str": "Take down 10 elder zombies"
+  },
+  "description": "Slay <color_magenta>10 elder zombies</color> then talk to the vampire after completion.  <color_magenta>Elder zombies</color> are depicted to their stone-like, compact blood and are rarely seen in the <color_light_blue>graveyards</color>.",
+  "goal": "MGOAL_KILL_MONSTER_SPEC",
+  "difficulty": 3,
+  "value": 300000,
+  "monster_species": "ELDERZED",
+  "monster_kill_goal": 10,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_LONELY_quest3",
+  "dialogue": {
+    "describe": "This is a little harder...",
+    "offer": "The gravestone in this crypt were built long ago, and the dead bodies has been buried here since before I reside here. Surprisingly, they were resurrected with this odd \"magic\". I want you to take 10 of them down and let their hollow vessel for an eternal rest.",
+    "accepted": "Good. Now go outside and look for them.",
+    "rejected": "Come back later.",
+    "advice": "Their blood has calcified into a shell, and it is distinctive to their appearance.",
+    "inquire": "Now?",
+    "success": "I know you can do it...",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "*glares*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_LONELY_quest2",
+  "type": "mission_definition",
+  "name": {
+    "str": "干掉10个老丧尸"
+  },
+  "description": "杀死<color_magenta> 10老丧尸</color>然后谈话吸血鬼完成后。年长的丧尸被描绘成像石头一样紧实的血液，在<color_light_blue>个墓地中很少见到。",
+  "goal": "MGOAL_KILL_MONSTER_SPEC",
+  "difficulty": 3,
+  "value": 300000,
+  "monster_species": "ELDERZED",
+  "monster_kill_goal": 10,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_LONELY_quest3",
+  "dialogue": {
+    "describe": "这有点难…",
+    "offer": "这个墓穴里的墓碑是很久以前建的，尸体在我住这里之前就埋在这里了。令人惊讶的是，他们用这种奇怪的“魔法”复活了。我要你把他们中的10个拿下来，让他们的空容器永远安息。",
+    "accepted": "很好。现在出去找他们。",
+    "rejected": "晚点再来。",
+    "advice": "它们的血液已经钙化成一个贝壳，这与它们的外表不同。",
+    "inquire": "现在？",
+    "success": "我知道你能做到…",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "*怒视*"
+  }
+}
+```
+

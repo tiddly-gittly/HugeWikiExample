@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→heat_ward_true
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：heat_ward_true|http://cdda.aloxaf.cn/search?q=heat_ward_true]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "heat_ward_true",
+  "name": [
+    "Ward Against Flame"
+  ],
+  "desc": [
+    "Complete immunity to fire, and to related side effects."
+  ],
+  "remove_message": "You feel a strange tingling sensation, as the ward against flame fades.",
+  "removes_effects": [
+    "onfire",
+    "smoke",
+    "hot",
+    "blisters",
+    "hot_speed"
+  ],
+  "decay_messages": [
+    [
+      "The ward against flame is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "flags": [
+    "HEAT_IMMUNE",
+    "HEATPROOF"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "heat_ward_true",
+  "name": [
+    "防火结界"
+  ],
+  "desc": [
+    "对火和相关副作用完全免疫。"
+  ],
+  "remove_message": "你感觉到一种奇怪的刺痛感，因为火焰防护结界的效力正在消退。",
+  "removes_effects": [
+    "onfire",
+    "smoke",
+    "hot",
+    "blisters",
+    "hot_speed"
+  ],
+  "decay_messages": [
+    [
+      "火焰防护结界正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "flags": [
+    "HEAT_IMMUNE",
+    "HEATPROOF"
+  ]
+}
+```
+

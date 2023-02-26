@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_seal_might
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_seal_might|http://cdda.aloxaf.cn/search?q=arcana_seal_might]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_seals.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_seal_might",
+  "type": "SPELL",
+  "name": {
+    "str": "Seal: Might"
+  },
+  "description": "Magic Seal\nUsing this spell will grant a temporary boost to strength.  It can be used on yourself or an ally.",
+  "message": "\"Let it be a glorious battle…\"  You cast %s!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DURATION"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "spell_might",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 120,
+  "final_casting_time": 120,
+  "min_duration": 270000,
+  "max_duration": 360000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_seal_might",
+  "type": "SPELL",
+  "name": {
+    "str": "魔印：强力"
+  },
+  "description": "法术魔印\n使用此魔法会暂时增强力量。它可以用于自己或友军。",
+  "message": "“让这是一场光荣的战斗……”你施放了 %s！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DURATION"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "spell_might",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 120,
+  "final_casting_time": 120,
+  "min_duration": 270000,
+  "max_duration": 360000
+}
+```
+

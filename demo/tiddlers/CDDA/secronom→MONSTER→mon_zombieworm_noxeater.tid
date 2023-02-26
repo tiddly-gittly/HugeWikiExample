@@ -1,0 +1,165 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombieworm_noxeater
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombieworm_noxeater|http://cdda.aloxaf.cn/search?q=mon_zombieworm_noxeater]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Worms.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombieworm_noxeater",
+  "type": "MONSTER",
+  "name": {
+    "str": "noxious eater"
+  },
+  "description": "A large, flabby worm with hundreds of dreadful teeth aligned inside its little mouth. It has grown fond of eating necrotic flesh.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "WORM",
+    "SECROZED_1"
+  ],
+  "bodytype": "snake",
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "harvest": "zombie",
+  "hp": 40,
+  "speed": 60,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⟆",
+  "color": "pink",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 1,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 12,
+      "accuracy": 4,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.3
+        },
+        {
+          "damage_type": "bash",
+          "amount": 8,
+          "armor_multiplier": 0.3
+        }
+      ]
+    }
+  ],
+  "anger_triggers": [
+    "HURT"
+  ],
+  "upgrades": {
+    "half_life": 30,
+    "into_group": "GROUP_NOX_UPGRADE"
+  },
+  "flags": [
+    "CAN_DIG",
+    "HEARS",
+    "GOODHEARING",
+    "WARM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombieworm_noxeater",
+  "type": "MONSTER",
+  "name": {
+    "str": "食腐蛆"
+  },
+  "description": "一种大而松弛的蠕虫，在它的小嘴里有成百上千颗可怕的牙齿。它开始喜欢吃坏死的肉。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "WORM",
+    "SECROZED_1"
+  ],
+  "bodytype": "snake",
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "harvest": "zombie",
+  "hp": 40,
+  "speed": 60,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⟆",
+  "color": "pink",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 1,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 12,
+      "accuracy": 4,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.3
+        },
+        {
+          "damage_type": "bash",
+          "amount": 8,
+          "armor_multiplier": 0.3
+        }
+      ]
+    }
+  ],
+  "anger_triggers": [
+    "HURT"
+  ],
+  "upgrades": {
+    "half_life": 30,
+    "into_group": "GROUP_NOX_UPGRADE"
+  },
+  "flags": [
+    "CAN_DIG",
+    "HEARS",
+    "GOODHEARING",
+    "WARM"
+  ]
+}
+```
+

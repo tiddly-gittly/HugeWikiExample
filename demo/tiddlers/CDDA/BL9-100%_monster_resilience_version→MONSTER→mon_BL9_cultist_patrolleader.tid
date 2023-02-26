@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_cultist_patrolleader
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_cultist_patrolleader|http://cdda.aloxaf.cn/search?q=mon_BL9_cultist_patrolleader]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/Infantry.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_cultist_patrolleader",
+  "looks_like": "mon_zombie_necro",
+  "type": "MONSTER",
+  "name": {
+    "str": "Armed BL9-Cultist - Patrol Leader"
+  },
+  "description": "A zealot in long red robes wearing a strange skull mask infected by the BL9. It appears to be sentient, having all characteristics of a normal person except for strangely solemn gaze, deathly pale skin and bloodshot eyes indicating the BL9 presence, their motive is to kill those that didn't accept the blessing of their \"dios\", this one is armed with a sword and it seems to know how to use it well.",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 165,
+  "speed": 75,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4,
+      "armor_penetration": 6
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "special_attacks": [
+    [
+      "PARROT",
+      11
+    ]
+  ],
+  "death_drops": "BL9_Drops_Cultistpatrollead",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_cultist_patrolleader",
+  "looks_like": "mon_zombie_necro",
+  "type": "MONSTER",
+  "name": {
+    "str": "武装BL9邪教-巡逻队长"
+  },
+  "description": "一个身穿红色长袍的狂热者，戴着一个被BL9感染的奇怪的头盖骨面具。它似乎有知觉，拥有正常人的所有特征，除了奇怪的庄严凝视、死灰的苍白皮肤和充血的眼睛表明BL9的存在，他们的动机是杀死那些不接受他们的“迪奥”祝福的人，它手里拿着一把剑，似乎知道如何很好地使用它。",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 165,
+  "speed": 75,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4,
+      "armor_penetration": 6
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "special_attacks": [
+    [
+      "PARROT",
+      11
+    ]
+  ],
+  "death_drops": "BL9_Drops_Cultistpatrollead",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

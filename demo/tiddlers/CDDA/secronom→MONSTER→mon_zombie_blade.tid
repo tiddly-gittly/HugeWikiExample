@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_blade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_blade|http://cdda.aloxaf.cn/search?q=mon_zombie_blade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Bladed.json
+
+
+!! 原文
+
+```json
+{
+  "//": "This zombie type has slow attack speed.",
+  "aggression": 100,
+  "armor_acid": 1,
+  "armor_bash": 2,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "armor_fire": 1,
+  "attack_cost": 150,
+  "color": "light_green",
+  "death_drops": "default_zombie_death_drops",
+  "default_faction": "zombie",
+  "description": "A normal corpse, with one of its arms mutated into a bone blade. Its not that sharp to slice a skin, but enough to leave a bruise.",
+  "diff": 1,
+  "dodge": 1,
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "STUMBLES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ],
+  "harvest": "zombie",
+  "hp": 85,
+  "id": "mon_zombie_blade",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "amount": 4,
+      "damage_type": "bash"
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_skill": 4,
+  "morale": 100,
+  "name": {
+    "str": "blade zombie"
+  },
+  "special_attacks": [
+    [
+      "swordbash",
+      25
+    ],
+    [
+      "swordbashtrip",
+      50
+    ]
+  ],
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "speed": 95,
+  "symbol": "⫰",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_BLADED_UPGRADE"
+  },
+  "volume": "62500 ml",
+  "weight": "81500 g"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "This zombie type has slow attack speed.",
+  "aggression": 100,
+  "armor_acid": 1,
+  "armor_bash": 2,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "armor_fire": 1,
+  "attack_cost": 150,
+  "color": "light_green",
+  "death_drops": "default_zombie_death_drops",
+  "default_faction": "zombie",
+  "description": "它的一只手臂变异成了一具正常的骨头。划破一块皮肤不那么锋利，但足以留下瘀伤。",
+  "diff": 1,
+  "dodge": 1,
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "STUMBLES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ],
+  "harvest": "zombie",
+  "hp": 85,
+  "id": "mon_zombie_blade",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "amount": 4,
+      "damage_type": "bash"
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_skill": 4,
+  "morale": 100,
+  "name": {
+    "str": "刀锋丧尸"
+  },
+  "special_attacks": [
+    [
+      "swordbash",
+      25
+    ],
+    [
+      "swordbashtrip",
+      50
+    ]
+  ],
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "speed": 95,
+  "symbol": "⫰",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_BLADED_UPGRADE"
+  },
+  "volume": "62500 ml",
+  "weight": "81500 g"
+}
+```
+

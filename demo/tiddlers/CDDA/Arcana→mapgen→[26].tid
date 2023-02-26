@@ -1,0 +1,520 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[26]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "method": "json",
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      ".......|//////5|........",
+      ".......|-=====-|........",
+      ".......|//////5|........",
+      ".......|///////|........",
+      ".......||/////||........",
+      "........|/////|.........",
+      "........|/////|.........",
+      "......|-|/////||........",
+      "------|////////|........",
+      "///////////////|........",
+      "///////////////|........",
+      "///////////G///|........",
+      "///////////////|........",
+      "///////////////|........",
+      "------|////////|........",
+      "......|-uuu-==-|........",
+      ".......|r     ||------|.",
+      "-------|r    L|G ]]]N_|.",
+      "000__0N|r    L|     h6|.",
+      "   __ c|r     |       |.",
+      "$      |      +     nn|.",
+      "$ c6c  +    h | zzz nn|.",
+      "   h   |Gccckk|-------|.",
+      "uuuu-=-||-----|........."
+    ],
+    "palettes": [
+      "necropolis_b2"
+    ],
+    "terrain": {
+      "]": "t_metal_floor"
+    },
+    "furniture": {
+      "]": "f_displaycase"
+    },
+    "place_loot": [
+      {
+        "item": "recipe_lab_arcana",
+        "x": [
+          12,
+          12
+        ],
+        "y": 22,
+        "chance": 90
+      },
+      {
+        "group": "tools_science",
+        "x": 8,
+        "y": [
+          16,
+          19
+        ],
+        "chance": 40,
+        "repeat": 10
+      },
+      {
+        "group": "tools_gunsmith",
+        "x": 13,
+        "y": [
+          17,
+          18
+        ],
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "guns_energy",
+        "x": [
+          9,
+          11
+        ],
+        "y": 22,
+        "chance": 50
+      },
+      {
+        "group": "magic_crafting",
+        "x": [
+          9,
+          11
+        ],
+        "y": 22,
+        "chance": 40,
+        "repeat": 5
+      },
+      {
+        "group": "arcana_hunt_random",
+        "x": [
+          9,
+          11
+        ],
+        "y": 22,
+        "chance": 35,
+        "repeat": 3
+      },
+      {
+        "group": "cult_sacrifice",
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          20,
+          21
+        ]
+      },
+      {
+        "group": "dissection",
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          20,
+          21
+        ],
+        "repeat": 4
+      },
+      {
+        "group": "supplies_electronics",
+        "x": [
+          16,
+          18
+        ],
+        "y": 21,
+        "chance": 30,
+        "repeat": 10
+      },
+      {
+        "group": "supplies_mechanics",
+        "x": [
+          16,
+          18
+        ],
+        "y": 21,
+        "chance": 30,
+        "repeat": 10
+      },
+      {
+        "item": "recipe_mil_augs",
+        "x": [
+          17,
+          19
+        ],
+        "y": 17,
+        "chance": 25
+      },
+      {
+        "group": "bionics_mil",
+        "x": [
+          17,
+          19
+        ],
+        "y": 17,
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "lab_magitech_bionics",
+        "x": [
+          17,
+          19
+        ],
+        "y": 17,
+        "chance": 50
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_NECROPOLIS_VAULT2",
+        "x": [
+          1,
+          22
+        ],
+        "y": [
+          1,
+          16
+        ],
+        "density": 0.05
+      },
+      {
+        "monster": "GROUP_NECROPOLIS_VAULT2",
+        "x": [
+          1,
+          22
+        ],
+        "y": [
+          1,
+          16
+        ],
+        "density": 0.25
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_secubot",
+        "x": 9,
+        "y": 16
+      },
+      {
+        "monster": "mon_secubot",
+        "x": 12,
+        "y": 21
+      },
+      {
+        "monster": "mon_zombie_bio_op",
+        "x": 18,
+        "y": 19
+      },
+      {
+        "monster": "mon_charred_nightmare",
+        "x": 16,
+        "y": 18
+      },
+      {
+        "monster": "mon_charred_nightmare",
+        "x": 15,
+        "y": 20
+      },
+      {
+        "monster": "mon_charred_nightmare",
+        "x": 19,
+        "y": 21
+      }
+    ]
+  },
+  "om_terrain": [
+    [
+      "necropolis_c_63"
+    ]
+  ],
+  "type": "mapgen",
+  "weight": 500
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_cf_4_roof_1",
+  "object": {
+    "place_nested": [
+      {
+        "chunks": [
+          "cf_church_upgrade_4_f"
+        ],
+        "x": 3,
+        "y": 16
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      ".......|//////5|........",
+      ".......|-=====-|........",
+      ".......|//////5|........",
+      ".......|///////|........",
+      ".......||/////||........",
+      "........|/////|.........",
+      "........|/////|.........",
+      "......|-|/////||........",
+      "------|////////|........",
+      "///////////////|........",
+      "///////////////|........",
+      "///////////G///|........",
+      "///////////////|........",
+      "///////////////|........",
+      "------|////////|........",
+      "......|-uuu-==-|........",
+      ".......|r     ||------|.",
+      "-------|r    L|G ]]]N_|.",
+      "000__0N|r    L|     h6|.",
+      "   __ c|r     |       |.",
+      "$      |      +     nn|.",
+      "$ c6c  +    h | zzz nn|.",
+      "   h   |Gccckk|-------|.",
+      "uuuu-=-||-----|........."
+    ],
+    "palettes": [
+      "necropolis_b2"
+    ],
+    "terrain": {
+      "]": "t_metal_floor"
+    },
+    "furniture": {
+      "]": "f_displaycase"
+    },
+    "place_loot": [
+      {
+        "item": "recipe_lab_arcana",
+        "x": [
+          12,
+          12
+        ],
+        "y": 22,
+        "chance": 90
+      },
+      {
+        "group": "tools_science",
+        "x": 8,
+        "y": [
+          16,
+          19
+        ],
+        "chance": 40,
+        "repeat": 10
+      },
+      {
+        "group": "tools_gunsmith",
+        "x": 13,
+        "y": [
+          17,
+          18
+        ],
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "guns_energy",
+        "x": [
+          9,
+          11
+        ],
+        "y": 22,
+        "chance": 50
+      },
+      {
+        "group": "magic_crafting",
+        "x": [
+          9,
+          11
+        ],
+        "y": 22,
+        "chance": 40,
+        "repeat": 5
+      },
+      {
+        "group": "arcana_hunt_random",
+        "x": [
+          9,
+          11
+        ],
+        "y": 22,
+        "chance": 35,
+        "repeat": 3
+      },
+      {
+        "group": "cult_sacrifice",
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          20,
+          21
+        ]
+      },
+      {
+        "group": "dissection",
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          20,
+          21
+        ],
+        "repeat": 4
+      },
+      {
+        "group": "supplies_electronics",
+        "x": [
+          16,
+          18
+        ],
+        "y": 21,
+        "chance": 30,
+        "repeat": 10
+      },
+      {
+        "group": "supplies_mechanics",
+        "x": [
+          16,
+          18
+        ],
+        "y": 21,
+        "chance": 30,
+        "repeat": 10
+      },
+      {
+        "item": "recipe_mil_augs",
+        "x": [
+          17,
+          19
+        ],
+        "y": 17,
+        "chance": 25
+      },
+      {
+        "group": "bionics_mil",
+        "x": [
+          17,
+          19
+        ],
+        "y": 17,
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "lab_magitech_bionics",
+        "x": [
+          17,
+          19
+        ],
+        "y": 17,
+        "chance": 50
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_NECROPOLIS_VAULT2",
+        "x": [
+          1,
+          22
+        ],
+        "y": [
+          1,
+          16
+        ],
+        "density": 0.05
+      },
+      {
+        "monster": "GROUP_NECROPOLIS_VAULT2",
+        "x": [
+          1,
+          22
+        ],
+        "y": [
+          1,
+          16
+        ],
+        "density": 0.25
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_secubot",
+        "x": 9,
+        "y": 16
+      },
+      {
+        "monster": "mon_secubot",
+        "x": 12,
+        "y": 21
+      },
+      {
+        "monster": "mon_zombie_bio_op",
+        "x": 18,
+        "y": 19
+      },
+      {
+        "monster": "mon_charred_nightmare",
+        "x": 16,
+        "y": 18
+      },
+      {
+        "monster": "mon_charred_nightmare",
+        "x": 15,
+        "y": 20
+      },
+      {
+        "monster": "mon_charred_nightmare",
+        "x": 19,
+        "y": 21
+      }
+    ]
+  },
+  "om_terrain": [
+    [
+      "necropolis_c_63"
+    ]
+  ],
+  "type": "mapgen",
+  "weight": 500
+}
+```
+

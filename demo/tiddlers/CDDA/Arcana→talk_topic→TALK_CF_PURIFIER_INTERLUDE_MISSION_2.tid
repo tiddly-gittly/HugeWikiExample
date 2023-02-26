@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_INTERLUDE_MISSION_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_INTERLUDE_MISSION_2|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_INTERLUDE_MISSION_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_INTERLUDE_MISSION_2",
+  "type": "talk_topic",
+  "dynamic_line": "I suppose it wouldn't hurt, though I'd prefer to advise them to give most of the old labs a wide berth, just to be safe.  I'll get in touch and work out what they need to know.  You should probably check on them later.",
+  "speaker_effect": {
+    "effect": [
+      {
+        "u_add_var": "nicholas_info_sent",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "Thanks!  Before I go…",
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "Thanks, I'll be back later!",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_INTERLUDE_MISSION_2",
+  "type": "talk_topic",
+  "dynamic_line": "我想这不会有什么坏处，不过为了安全起见，我更愿意建议他们对大多数旧实验室敬而远之。我会和他们联系，了解他们需要知道什么。你稍后也许应该检查一下。",
+  "speaker_effect": {
+    "effect": [
+      {
+        "u_add_var": "nicholas_info_sent",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "谢谢！在我走之前…",
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "谢谢，我晚点回来！",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

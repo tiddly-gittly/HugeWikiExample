@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→SPELL→mon_giant_charge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_giant_charge|http://cdda.aloxaf.cn/search?q=mon_giant_charge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_spell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_giant_charge",
+  "type": "SPELL",
+  "name": {
+    "str": "Charge!"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains momentum, increasing movement speed, hit chance and impact damage as it takes effect.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "charge_giant_momentum",
+  "min_aoe": 20,
+  "max_aoe": 20,
+  "min_duration": 100,
+  "max_duration": 100,
+  "field_id": "fd_charger_stun",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_giant_charge",
+  "type": "SPELL",
+  "name": {
+    "str": "冲啊！"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者获得冲力，提高移动速度，命中几率和冲击伤害。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "charge_giant_momentum",
+  "min_aoe": 20,
+  "max_aoe": 20,
+  "min_duration": 100,
+  "max_duration": 100,
+  "field_id": "fd_charger_stun",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+

@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→technomancer_knifeshot
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：technomancer_knifeshot|http://cdda.aloxaf.cn/search?q=technomancer_knifeshot]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/technomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "technomancer_knifeshot",
+  "type": "SPELL",
+  "name": {
+    "str": "Knifeshot"
+  },
+  "description": "This spell generates a magnetic field around a knife, before launching it at high speed.",
+  "valid_targets": [
+    "hostile",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "SILENT",
+    "SOMATIC"
+  ],
+  "components": "spell_components_knifeshot",
+  "effect": "attack",
+  "shape": "blast",
+  "spell_class": "TECHNOMANCER",
+  "energy_source": "BIONIC",
+  "difficulty": 5,
+  "max_level": 30,
+  "base_casting_time": 600,
+  "casting_time_increment": -15,
+  "final_casting_time": 150,
+  "base_energy_cost": 50,
+  "min_damage": 30,
+  "max_damage": 105,
+  "damage_increment": 2,
+  "damage_type": "stab",
+  "min_range": 10,
+  "max_range": 30,
+  "range_increment": 0.5,
+  "min_pierce": 3,
+  "max_pierce": 15,
+  "pierce_increment": 0.35,
+  "learn_spells": {
+    "technomancer_knifeshot_superior": 20
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "technomancer_knifeshot",
+  "type": "SPELL",
+  "name": {
+    "str": "飞刀术"
+  },
+  "description": "这个法术能在一把刀子周围产生磁场，并将其高速发射出去。",
+  "valid_targets": [
+    "hostile",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "SILENT",
+    "SOMATIC"
+  ],
+  "components": "spell_components_knifeshot",
+  "effect": "attack",
+  "shape": "blast",
+  "spell_class": "TECHNOMANCER",
+  "energy_source": "BIONIC",
+  "difficulty": 5,
+  "max_level": 30,
+  "base_casting_time": 600,
+  "casting_time_increment": -15,
+  "final_casting_time": 150,
+  "base_energy_cost": 50,
+  "min_damage": 30,
+  "max_damage": 105,
+  "damage_increment": 2,
+  "damage_type": "stab",
+  "min_range": 10,
+  "max_range": 30,
+  "range_increment": 0.5,
+  "min_pierce": 3,
+  "max_pierce": 15,
+  "pierce_increment": 0.35,
+  "learn_spells": {
+    "technomancer_knifeshot_superior": 20
+  }
+}
+```
+

@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_pattern_earthweaving
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_pattern_earthweaving|http://cdda.aloxaf.cn/search?q=arcana_pattern_earthweaving]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_pattern_scrolls.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_earthweaving",
+  "name": {
+    "str": "Pattern: Earthweaving"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_EARTHWEAVING",
+  "description": "This grants a specific spell mutation.",
+  "sprite": "fd_veil_light",
+  "message": "You gaze deep into the strange patterns, shifting intertwinned thorns and stony motifs…",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_earthweaving",
+  "name": {
+    "str": "图案：土石编织"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_EARTHWEAVING",
+  "description": "这赋予了特定的咒语突变。",
+  "sprite": "fd_veil_light",
+  "message": "你凝视着奇怪的图案，移动交织的荆棘和石头图案……",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+

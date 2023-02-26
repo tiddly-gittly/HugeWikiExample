@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_FAIL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_FAIL|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_FAIL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_FAIL",
+  "dynamic_line": "I would ask you to pursue this task further, but there is a complication.  You are aware that certain influences, certain powers, can leave their mark on the body, correct?",
+  "responses": [
+    {
+      "text": "While we seek an understanding of the Beyond, do not forget our humanity…",
+      "topic": "TALK_HERMIT_DISCUSS_3_FAIL_TENET",
+      "opinion": {
+        "anger": 1,
+        "value": -1
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "text": "I think I understand…",
+      "opinion": {
+        "anger": -1
+      },
+      "topic": "TALK_HERMIT_DISCUSS_3_FAIL_UNDERSTAND"
+    },
+    {
+      "text": "What do you mean?",
+      "topic": "TALK_HERMIT_DISCUSS_3_FAIL_EXPLAIN"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_FAIL",
+  "dynamic_line": "我想请你进一步完成这项任务，但有一个复杂的问题。你知道某些影响，某些力量，会在身体上留下印记，对吗？",
+  "responses": [
+    {
+      "text": "当我们寻求对超越的理解时，不要忘记我们的人性…",
+      "topic": "TALK_HERMIT_DISCUSS_3_FAIL_TENET",
+      "opinion": {
+        "anger": 1,
+        "value": -1
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "text": "我想我明白…",
+      "opinion": {
+        "anger": -1
+      },
+      "topic": "TALK_HERMIT_DISCUSS_3_FAIL_UNDERSTAND"
+    },
+    {
+      "text": "什么意思？",
+      "topic": "TALK_HERMIT_DISCUSS_3_FAIL_EXPLAIN"
+    }
+  ]
+}
+```
+

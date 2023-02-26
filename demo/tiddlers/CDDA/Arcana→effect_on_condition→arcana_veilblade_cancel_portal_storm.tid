@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Arcana
+title: Arcana→effect_on_condition→arcana_veilblade_cancel_portal_storm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_veilblade_cancel_portal_storm|http://cdda.aloxaf.cn/search?q=arcana_veilblade_cancel_portal_storm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/effect_on_condition.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "arcana_veilblade_cancel_portal_storm",
+  "condition": {
+    "or": [
+      {
+        "is_weather": "portal_storm"
+      },
+      {
+        "compare_int": [
+          {
+            "global_val": "var",
+            "var_name": "cause_portal_storm"
+          },
+          "=",
+          {
+            "const": 1
+          }
+        ]
+      }
+    ]
+  },
+  "effect": [
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "cause_portal_storm"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "cause_early_portal_storm"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    "next_weather",
+    {
+      "u_message": "Reality re-asserts itself as the storm fades.  The worst has passed, as is the will of He From Beyond The Veil…",
+      "type": "good"
+    },
+    {
+      "u_add_var": "u_witnessed_portal_storm",
+      "type": "global",
+      "context": "portal_storms",
+      "value": "yes"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "arcana_veilblade_cancel_portal_storm",
+  "condition": {
+    "or": [
+      {
+        "is_weather": "portal_storm"
+      },
+      {
+        "compare_int": [
+          {
+            "global_val": "var",
+            "var_name": "cause_portal_storm"
+          },
+          "=",
+          {
+            "const": 1
+          }
+        ]
+      }
+    ]
+  },
+  "effect": [
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "cause_portal_storm"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "global_val": "var",
+          "var_name": "cause_early_portal_storm"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    "next_weather",
+    {
+      "u_message": "Reality re-asserts itself as the storm fades.  The worst has passed, as is the will of He From Beyond The Veil…",
+      "type": "good"
+    },
+    {
+      "u_add_var": "u_witnessed_portal_storm",
+      "type": "global",
+      "context": "portal_storms",
+      "value": "yes"
+    }
+  ]
+}
+```
+

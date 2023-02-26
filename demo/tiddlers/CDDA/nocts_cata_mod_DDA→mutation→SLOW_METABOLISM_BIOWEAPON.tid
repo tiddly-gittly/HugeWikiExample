@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SLOW_METABOLISM_BIOWEAPON
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SLOW_METABOLISM_BIOWEAPON|http://cdda.aloxaf.cn/search?q=SLOW_METABOLISM_BIOWEAPON]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SLOW_METABOLISM_BIOWEAPON",
+  "name": {
+    "str": "Metabolic Stasis"
+  },
+  "points": 0,
+  "mixed_effect": true,
+  "description": "Your body is tuned to operate at a much slower pace to conserve energy.  You need less food, water, and sleep than normal people, but your stamina regenerates much more slowly, and you heal slower too.",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "types": [
+    "METABOLISM",
+    "HEALING"
+  ],
+  "cancels": [
+    "THIRST"
+  ],
+  "metabolism_modifier": -0.25,
+  "thirst_modifier": -0.25,
+  "fatigue_modifier": -0.25,
+  "stamina_regen_modifier": -0.5,
+  "healing_resting": -0.5,
+  "mending_modifier": 0.25
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SLOW_METABOLISM_BIOWEAPON",
+  "name": {
+    "str": "代谢迟缓"
+  },
+  "points": 0,
+  "mixed_effect": true,
+  "description": "你的身体会以更慢的速度运行以保存能量。与正常人相比，你需要更少的食物、水和睡眠，但你的耐力恢复得更慢，愈合速度也更慢。",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "types": [
+    "METABOLISM",
+    "HEALING"
+  ],
+  "cancels": [
+    "THIRST"
+  ],
+  "metabolism_modifier": -0.25,
+  "thirst_modifier": -0.25,
+  "fatigue_modifier": -0.25,
+  "stamina_regen_modifier": -0.5,
+  "healing_resting": -0.5,
+  "mending_modifier": 0.25
+}
+```
+

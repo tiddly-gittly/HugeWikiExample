@@ -1,0 +1,361 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom
+title: secronom→effect_on_condition→eoc_secro_fleshforest_ch_spawns
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_fleshforest_ch_spawns|http://cdda.aloxaf.cn/search?q=eoc_secro_fleshforest_ch_spawns]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Others/secro_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_fleshforest_ch_spawns",
+  "recurrence": [
+    "5 minutes",
+    "10 minutes"
+  ],
+  "global": true,
+  "condition": {
+    "or": [
+      {
+        "u_at_om_location": "flesh_forest_bot1_1"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_2"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_3"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_4"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_5"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_6"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_7"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_8"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_9"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_1"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_2"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_3"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_4"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_5"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_6"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_7"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_8"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_9"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_1"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_2"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_3"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_4"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_5"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_6"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_7"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_8"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_9"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_1"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_2"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_3"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_4"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_5"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_6"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_7"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_8"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_9"
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "<color_dark_gray>Something emerged out from the walls...</color>"
+    },
+    {
+      "u_spawn_monster": "GROUP_FLESH_TENTCLUS",
+      "group": true,
+      "real_count": 1,
+      "min_radius": 6,
+      "max_radius": 12
+    },
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_fleshforest_ch_spawns_more",
+          "condition": {
+            "one_in_chance": 2
+          },
+          "effect": [
+            {
+              "u_spawn_monster": "GROUP_FLESH_TENTCLUS",
+              "group": true,
+              "real_count": 1,
+              "min_radius": 6,
+              "max_radius": 12
+            }
+          ]
+        },
+        {
+          "id": "eoc_secro_fleshforest_ch_spawns_morer",
+          "condition": {
+            "one_in_chance": 3
+          },
+          "effect": [
+            {
+              "u_spawn_monster": "GROUP_FLESH_TENTCLUS",
+              "group": true,
+              "real_count": 1,
+              "min_radius": 6,
+              "max_radius": 12
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_fleshforest_ch_spawns",
+  "recurrence": [
+    "5 minutes",
+    "10 minutes"
+  ],
+  "global": true,
+  "condition": {
+    "or": [
+      {
+        "u_at_om_location": "flesh_forest_bot1_1"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_2"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_3"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_4"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_5"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_6"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_7"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_8"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot1_9"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_1"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_2"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_3"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_4"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_5"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_6"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_7"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_8"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot2_9"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_1"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_2"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_3"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_4"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_5"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_6"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_7"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_8"
+      },
+      {
+        "u_at_om_location": "flesh_forest_bot3_9"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_1"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_2"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_3"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_4"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_5"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_6"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_7"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_8"
+      },
+      {
+        "u_at_om_location": "flesh_forest_boss_9"
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "<color_dark_gray>Something emerged out from the walls...</color>"
+    },
+    {
+      "u_spawn_monster": "GROUP_FLESH_TENTCLUS",
+      "group": true,
+      "real_count": 1,
+      "min_radius": 6,
+      "max_radius": 12
+    },
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_fleshforest_ch_spawns_more",
+          "condition": {
+            "one_in_chance": 2
+          },
+          "effect": [
+            {
+              "u_spawn_monster": "GROUP_FLESH_TENTCLUS",
+              "group": true,
+              "real_count": 1,
+              "min_radius": 6,
+              "max_radius": 12
+            }
+          ]
+        },
+        {
+          "id": "eoc_secro_fleshforest_ch_spawns_morer",
+          "condition": {
+            "one_in_chance": 3
+          },
+          "effect": [
+            {
+              "u_spawn_monster": "GROUP_FLESH_TENTCLUS",
+              "group": true,
+              "real_count": 1,
+              "min_radius": 6,
+              "max_radius": 12
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+

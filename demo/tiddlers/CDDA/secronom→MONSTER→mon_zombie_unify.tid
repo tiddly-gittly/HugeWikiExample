@@ -1,0 +1,221 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_unify
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_unify|http://cdda.aloxaf.cn/search?q=mon_zombie_unify]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Unifier.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_unify",
+  "type": "MONSTER",
+  "name": {
+    "str": "unifier zombie"
+  },
+  "description": "A severely mutated rugged corpse managed to multiply its filthy blood into a thick substance, visually seen on its bloated, dark red veins. An amalgous, fleshy material beats from both hands.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 155,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "attack_effs": [
+    {
+      "id": "unify_bloodslow",
+      "duration": 120,
+      "chance": 25
+    }
+  ],
+  "diff": 1,
+  "symbol": "☾",
+  "color": "magenta",
+  "aggression": 10,
+  "morale": 50,
+  "melee_skill": 2,
+  "melee_dice": 4,
+  "melee_dice_sides": 2,
+  "armor_bash": 2,
+  "armor_cut": 3,
+  "armor_bullet": 2,
+  "armor_stab": 2,
+  "weakpoints": [
+    {
+      "name": "one of its hands",
+      "armor_mult": {
+        "cut": 0.5,
+        "stab": 0.5,
+        "bullet": 0.5
+      },
+      "armor_penalty": {
+        "cut": 30,
+        "stab": 30,
+        "bullet": 30
+      },
+      "difficulty": {
+        "melee": 3
+      },
+      "coverage": 10,
+      "coverage_mult": {
+        "point": 0.5
+      },
+      "damage_mult": {
+        "all": 1.25
+      }
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_unify_bv_check"
+      },
+      "cooldown": 40,
+      "monster_message": "<color_yellow>A blood vessel were formed under %1$s's hands!</color>"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED"
+  ],
+  "upgrades": {
+    "half_life": 14,
+    "into": "mon_zombie_unity"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "GROUP_MORALE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_unify",
+  "type": "MONSTER",
+  "name": {
+    "str": "整合体丧尸"
+  },
+  "description": "一具严重变异的粗糙的尸体，设法将其肮脏的血液转变成一种粘稠的物质，从其膨胀的深红色静脉上可以看到。一种肉质的物质从双手拍打而成。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 155,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "attack_effs": [
+    {
+      "id": "unify_bloodslow",
+      "duration": 120,
+      "chance": 25
+    }
+  ],
+  "diff": 1,
+  "symbol": "☾",
+  "color": "magenta",
+  "aggression": 10,
+  "morale": 50,
+  "melee_skill": 2,
+  "melee_dice": 4,
+  "melee_dice_sides": 2,
+  "armor_bash": 2,
+  "armor_cut": 3,
+  "armor_bullet": 2,
+  "armor_stab": 2,
+  "weakpoints": [
+    {
+      "name": "one of its hands",
+      "armor_mult": {
+        "cut": 0.5,
+        "stab": 0.5,
+        "bullet": 0.5
+      },
+      "armor_penalty": {
+        "cut": 30,
+        "stab": 30,
+        "bullet": 30
+      },
+      "difficulty": {
+        "melee": 3
+      },
+      "coverage": 10,
+      "coverage_mult": {
+        "point": 0.5
+      },
+      "damage_mult": {
+        "all": 1.25
+      }
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_unify_bv_check"
+      },
+      "cooldown": 40,
+      "monster_message": "<color_yellow>在%1$s的手下形成了一条血管！</color>"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED"
+  ],
+  "upgrades": {
+    "half_life": 14,
+    "into": "mon_zombie_unity"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "GROUP_MORALE"
+  ]
+}
+```
+

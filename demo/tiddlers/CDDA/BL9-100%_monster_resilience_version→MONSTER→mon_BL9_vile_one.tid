@@ -1,0 +1,289 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_vile_one
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_vile_one|http://cdda.aloxaf.cn/search?q=mon_BL9_vile_one]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/pecurial_bastards.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_vile_one",
+  "looks_like": "mon_zombie_scissorlimbs",
+  "type": "MONSTER",
+  "name": {
+    "str": "The Vile One"
+  },
+  "description": "Severely mutated astoundingly large, multi-legged beast. The crustacean-styled legs are all still connected to what seems to be a humanoid body, which hangs from his mutant form like a vestigial limb. His head is now attached to a long serpentine neck and is surrounded by hard, blade-like mandibles. A series of eyes are also dotted around the body, one on each joint of the legs and another large eye in it's mouth",
+  "default_faction": "BL9_military",
+  "species": [
+    "MUTANT",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 1115,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☦",
+  "color": "yellow_white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 11,
+      "armor_penetration": 8
+    },
+    {
+      "damage_type": "stab",
+      "amount": 10,
+      "armor_penetration": 8
+    },
+    {
+      "damage_type": "bash",
+      "amount": 10,
+      "armor_penetration": 8
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Vileone",
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 15,
+          "armor_multiplier": 1.15
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 75,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 60,
+          "armor_penetration": 34
+        }
+      ],
+      "hit_dmg_u": "The %1$s thrusts it's leg at you!",
+      "hit_dmg_npc": "The %1$s pierces <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to pierce you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to pierce <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s thrusts it's leg at you, but you dodge!",
+      "miss_msg_npc": "The %s pierces <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 200,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 68,
+          "armor_penetration": 34
+        }
+      ],
+      "hit_dmg_u": "The %1$s bites you!",
+      "hit_dmg_npc": "The %1$s bites <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to bite you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s bites you, but you dodge!",
+      "miss_msg_npc": "The %s bites <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "vile_one_mandiblecrunch"
+      },
+      "cooldown": 15,
+      "monster_message": "<color_light_red>%1$s's head stretches then crunches at %3$s!</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_vile_one",
+  "looks_like": "mon_zombie_scissorlimbs",
+  "type": "MONSTER",
+  "name": {
+    "str": "卑鄙的人"
+  },
+  "description": "大得惊人的变异，多腿的野兽。这些甲壳类动物的腿仍然和一个看起来像人形的身体相连，这个身体像一条残存的肢体一样悬挂在他变异的身体上。他的头现在连在一个长长的蛇形脖子上，周围是坚硬的刀片状下颌骨。身体周围还分布着一系列眼睛，腿的每个关节上都有一只眼睛，嘴里还有一只大眼睛",
+  "default_faction": "BL9_military",
+  "species": [
+    "MUTANT",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 1115,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☦",
+  "color": "yellow_white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 11,
+      "armor_penetration": 8
+    },
+    {
+      "damage_type": "stab",
+      "amount": 10,
+      "armor_penetration": 8
+    },
+    {
+      "damage_type": "bash",
+      "amount": 10,
+      "armor_penetration": 8
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Vileone",
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 15,
+          "armor_multiplier": 1.15
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 75,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 60,
+          "armor_penetration": 34
+        }
+      ],
+      "hit_dmg_u": "The %1$s thrusts it's leg at you!",
+      "hit_dmg_npc": "The %1$s pierces <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to pierce you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to pierce <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s thrusts it's leg at you, but you dodge!",
+      "miss_msg_npc": "The %s pierces <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 200,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 68,
+          "armor_penetration": 34
+        }
+      ],
+      "hit_dmg_u": "The %1$s bites you!",
+      "hit_dmg_npc": "The %1$s bites <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to bite you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s bites you, but you dodge!",
+      "miss_msg_npc": "The %s bites <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "vile_one_mandiblecrunch"
+      },
+      "cooldown": 15,
+      "monster_message": "<color_light_red>%1$s的脖子诡异的伸长开来，并且用它的头砸向了%3$s！</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON"
+  ]
+}
+```
+

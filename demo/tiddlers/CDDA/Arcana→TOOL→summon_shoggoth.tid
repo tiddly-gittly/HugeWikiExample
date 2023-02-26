@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_shoggoth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_shoggoth|http://cdda.aloxaf.cn/search?q=summon_shoggoth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_shoggoth",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of the Elder Things",
+    "str_pl": "glyphs of the Elder Things"
+  },
+  "//": "Explanation: The Elder Things in Lovecraft's work were the creators of shoggoths.",
+  "description": "A strange silver emblem, engraved with many strange eye symbols.  Using it will call forth a shoggoth, and bind it to your will.  Hopefully.  It is very difficult to control.",
+  "price": "1500 USD",
+  "price_postapoc": "100 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_shoggoth_summoned",
+    "friendly_msg": "You hear a voice in your mind.  \"Tekili …l-li?\"  Your mind exerts a strange influence upon the shoggoth.",
+    "hostile_msg": "You hear a voice in your mind.  \"Tekeli-li!\"  The shoggoth resists your efforts to control it!",
+    "difficulty": 10,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_shoggoth",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：古老者",
+    "str_pl": "雕文：古老者"
+  },
+  "//": "Explanation: The Elder Things in Lovecraft's work were the creators of shoggoths.",
+  "description": "一个奇怪的银徽章，上面刻着许多奇怪的眼睛符号。使用它会把一个修格斯束缚在你的意志上。如果成功的话。这很难控制。",
+  "price": "1500 USD",
+  "price_postapoc": "100 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_shoggoth_summoned",
+    "friendly_msg": "你在脑海里听到一个声音。“特基利……李？”你的思想对shoggoth产生了一种奇怪的影响。",
+    "hostile_msg": "你听到脑海里有个声音。“Tekeli-li!”修格斯抗拒你控制它的努力！",
+    "difficulty": 10,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+

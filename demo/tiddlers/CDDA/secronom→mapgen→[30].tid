@@ -1,0 +1,537 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[30]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/Flesh/flesh_city.json
+
+
+!! 原文
+
+```json
+{
+  "method": "json",
+  "object": {
+    "furniture": {
+      "B": "f_bigmirror",
+      "C": "f_chair",
+      "H": "f_armchair",
+      "S": "f_sofa",
+      "T": "f_toilet",
+      "^": "f_indoor_plant",
+      "b": "f_counter",
+      "g": "f_glass_fridge",
+      "t": "f_table",
+      "{": "f_locker",
+      "Q": "f_bench",
+      "&": "f_sink"
+    },
+    "place_items": [
+      {
+        "chance": 25,
+        "item": "office_breakroom",
+        "x": 3,
+        "y": 4
+      },
+      {
+        "chance": 10,
+        "item": "trash",
+        "x": 14,
+        "y": 22
+      },
+      {
+        "chance": 45,
+        "item": "female_underwear_bottom",
+        "x": 7,
+        "y": 16
+      },
+      {
+        "chance": 45,
+        "item": "female_underwear_bottom",
+        "x": [
+          4,
+          5
+        ],
+        "y": 16
+      },
+      {
+        "chance": 35,
+        "item": "female_underwear_bottom",
+        "x": 5,
+        "y": 13
+      },
+      {
+        "chance": 35,
+        "item": "female_underwear_bottom",
+        "x": 6,
+        "y": 12
+      },
+      {
+        "chance": 35,
+        "item": "female_underwear_bottom",
+        "x": 3,
+        "y": 12
+      },
+      {
+        "chance": 35,
+        "item": "female_underwear_bottom",
+        "x": 8,
+        "y": 11
+      },
+      {
+        "chance": 15,
+        "item": "textbooks",
+        "x": 5,
+        "y": 11
+      },
+      {
+        "chance": 55,
+        "item": "female_underwear_top",
+        "x": 3,
+        "y": 13
+      },
+      {
+        "chance": 45,
+        "item": "female_underwear_top",
+        "x": 8,
+        "y": 12
+      },
+      {
+        "chance": 45,
+        "item": "female_underwear_top",
+        "x": 5,
+        "y": 12
+      },
+      {
+        "chance": 10,
+        "item": "vending_drink_items",
+        "repeat": [
+          1,
+          5
+        ],
+        "x": 19,
+        "y": 5
+      },
+      {
+        "chance": 20,
+        "item": "softdrugs",
+        "x": 3,
+        "y": 15
+      },
+      {
+        "chance": 10,
+        "item": "softdrugs",
+        "x": 6,
+        "y": 11
+      },
+      {
+        "chance": 10,
+        "item": "harddrugs",
+        "x": 7,
+        "y": 20
+      },
+      {
+        "chance": 10,
+        "item": "harddrugs",
+        "x": 3,
+        "y": 14
+      },
+      {
+        "chance": 65,
+        "item": "alcohol",
+        "x": 21,
+        "y": 3
+      }
+    ],
+    "place_monsters": [
+      {
+        "chance": 3,
+        "density": 1,
+        "monster": "GROUP_FLESH_CITY",
+        "x": 19,
+        "y": 10
+      }
+    ],
+    "place_toilets": [
+      {
+        "x": 4,
+        "y": 20
+      }
+    ],
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "__________sss___________",
+      "___#a##___sss_____#a#___",
+      "__||||||||sss||||||||||_",
+      "__|H.....|sss|^..+...g|_",
+      "__|t.....|d|d|...|.C..|_",
+      "_#|H..|..|...|...|bbbb|_",
+      "_a|...|.C'...D........|_",
+      "_#|...||||||||........|_",
+      "__|...SSS|CtC...CtC..C|_",
+      "__|B.....|...........t|_",
+      "__|t.....|...........C|_",
+      "__|{.QQ.{|..HHHHH.....|_",
+      "__|{.QQ.{|-------H....|_",
+      "__|{.QQ..|ccccccrH....|_",
+      "__|{.....eccccccrH....|_",
+      "__|{.....|ccccccrH....|_",
+      "__|{{{{{{|-------H...S|_",
+      "__||||||||..HHHHH....S|_",
+      "__|......+...........S|_",
+      "__|+||...|...........t|4",
+      "__|.T|&b&|^.HtH..SSSt^|_",
+      "__|||||||||||||||||||||_",
+      "________#______#aa#_#___",
+      "________________##______"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "#": "t_secro_shrub_flesh",
+      "'": "t_secro_window_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_railing_flesh",
+      ".": "t_secro_floor_flesh",
+      "D": "t_secro_door_metal_flesh",
+      "_": "t_secro_grass_flesh",
+      "a": "t_secro_shrub_flesh",
+      "c": "t_secro_carpet_red_flesh",
+      "d": "t_secro_door_glass_flesh",
+      "e": "t_secro_door_flesh",
+      "r": "t_secro_railing_flesh",
+      "s": "t_secro_sidewalk_flesh",
+      "|": "t_secro_brick_wall_flesh"
+    }
+  },
+  "om_terrain": "s_shop_flesh",
+  "type": "mapgen",
+  "weight": 100
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Church",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_park_flesh"
+  ],
+  "weight": 500,
+  "object": {
+    "fill_ter": "t_secro_dirt_flesh",
+    "rows": [
+      " $$    W        W    $$ ",
+      " $$  WWWWGVBBVGWWWW  $$ ",
+      "     W..h.cccc.h..W     ",
+      " WWVWWR..........RWWBWW ",
+      "WW#.#.R.b..cc..b.R.#.#WW",
+      " G#.#.R..........R.#.#V ",
+      " V#.#.Rrrrr..rrrrR.#.#B ",
+      "WW#..................#WW",
+      " WW+WW#####..#####WW+WW ",
+      "ssss V............B ssss",
+      "s   WW#####..#####WW   s",
+      "s $ WW............WW $ s",
+      "s $  G#####..#####V  $ s",
+      "s $  B............G  $ s",
+      "s $ WW#####..#####WW $ s",
+      "s $ WW............WW $ s",
+      "s    V####....####B    s",
+      "s WWWW-----gg-----WWWW s",
+      "s WSyWlll,y,,y,lllW,<W s",
+      "s W,,+,,,,,,,,,,,,+,,W s",
+      "s W,,WWWWWW++WWWWWW,tW s",
+      "s WT,WW$$WWssWW$$WW6tW s",
+      "s WWWWW    ss    WWWWW s",
+      "ssssssssssssssssssssssss"
+    ],
+    "palettes": [
+      "secro_church_flesh"
+    ],
+    "mapping": {
+      "b": {
+        "furniture": "f_brazier"
+      }
+    },
+    "terrain": {
+      "#": "t_secro_rock_floor_flesh",
+      "$": "t_secro_shrub_flesh",
+      ".": "t_secro_rock_floor_flesh",
+      "B": "t_secro_window_stained_blue_flesh",
+      "C": "t_secro_rock_floor_flesh",
+      "G": "t_secro_window_stained_green_flesh",
+      "R": "t_secro_railing_flesh",
+      "S": "t_secro_floor_flesh",
+      "T": "t_secro_floor_flesh",
+      "V": "t_secro_window_stained_red_flesh",
+      "-": "t_secro_wall_w_flesh",
+      "W": "t_secro_rock_wall_flesh",
+      "b": "t_secro_rock_floor_flesh",
+      "c": "t_secro_rock_floor_flesh",
+      "g": "t_secro_door_glass_flesh",
+      "h": "t_secro_rock_floor_flesh",
+      "l": "t_secro_floor_flesh",
+      "r": "t_secro_railing_flesh",
+      "<": "t_secro_stairs_up_flesh",
+      ",": "t_secro_floor_flesh",
+      "t": "t_secro_floor_flesh",
+      "y": "t_secro_floor_flesh"
+    },
+    "items": {
+      "#": {
+        "item": "church",
+        "chance": 40
+      },
+      ".": {
+        "item": "church",
+        "chance": 5
+      },
+      "L": {
+        "item": "cleaning",
+        "chance": 30
+      },
+      "c": {
+        "item": "church",
+        "chance": 40
+      },
+      "l": {
+        "item": "jackets",
+        "chance": 60
+      }
+    },
+    "computers": {
+      "6": {
+        "name": "Church Bells 1.2",
+        "options": [
+          {
+            "name": "Gathering Toll",
+            "action": "toll"
+          },
+          {
+            "name": "Wedding Toll",
+            "action": "toll"
+          },
+          {
+            "name": "Funeral Toll",
+            "action": "toll"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "object": {
+    "furniture": {
+      "B": "f_bigmirror",
+      "C": "f_chair",
+      "H": "f_armchair",
+      "S": "f_sofa",
+      "T": "f_toilet",
+      "^": "f_indoor_plant",
+      "b": "f_counter",
+      "g": "f_glass_fridge",
+      "t": "f_table",
+      "{": "f_locker",
+      "Q": "f_bench",
+      "&": "f_sink"
+    },
+    "place_items": [
+      {
+        "chance": 25,
+        "item": "office_breakroom",
+        "x": 3,
+        "y": 4
+      },
+      {
+        "chance": 10,
+        "item": "trash",
+        "x": 14,
+        "y": 22
+      },
+      {
+        "chance": 45,
+        "item": "female_underwear_bottom",
+        "x": 7,
+        "y": 16
+      },
+      {
+        "chance": 45,
+        "item": "female_underwear_bottom",
+        "x": [
+          4,
+          5
+        ],
+        "y": 16
+      },
+      {
+        "chance": 35,
+        "item": "female_underwear_bottom",
+        "x": 5,
+        "y": 13
+      },
+      {
+        "chance": 35,
+        "item": "female_underwear_bottom",
+        "x": 6,
+        "y": 12
+      },
+      {
+        "chance": 35,
+        "item": "female_underwear_bottom",
+        "x": 3,
+        "y": 12
+      },
+      {
+        "chance": 35,
+        "item": "female_underwear_bottom",
+        "x": 8,
+        "y": 11
+      },
+      {
+        "chance": 15,
+        "item": "textbooks",
+        "x": 5,
+        "y": 11
+      },
+      {
+        "chance": 55,
+        "item": "female_underwear_top",
+        "x": 3,
+        "y": 13
+      },
+      {
+        "chance": 45,
+        "item": "female_underwear_top",
+        "x": 8,
+        "y": 12
+      },
+      {
+        "chance": 45,
+        "item": "female_underwear_top",
+        "x": 5,
+        "y": 12
+      },
+      {
+        "chance": 10,
+        "item": "vending_drink_items",
+        "repeat": [
+          1,
+          5
+        ],
+        "x": 19,
+        "y": 5
+      },
+      {
+        "chance": 20,
+        "item": "softdrugs",
+        "x": 3,
+        "y": 15
+      },
+      {
+        "chance": 10,
+        "item": "softdrugs",
+        "x": 6,
+        "y": 11
+      },
+      {
+        "chance": 10,
+        "item": "harddrugs",
+        "x": 7,
+        "y": 20
+      },
+      {
+        "chance": 10,
+        "item": "harddrugs",
+        "x": 3,
+        "y": 14
+      },
+      {
+        "chance": 65,
+        "item": "alcohol",
+        "x": 21,
+        "y": 3
+      }
+    ],
+    "place_monsters": [
+      {
+        "chance": 3,
+        "density": 1,
+        "monster": "GROUP_FLESH_CITY",
+        "x": 19,
+        "y": 10
+      }
+    ],
+    "place_toilets": [
+      {
+        "x": 4,
+        "y": 20
+      }
+    ],
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "__________sss___________",
+      "___#a##___sss_____#a#___",
+      "__||||||||sss||||||||||_",
+      "__|H.....|sss|^..+...g|_",
+      "__|t.....|d|d|...|.C..|_",
+      "_#|H..|..|...|...|bbbb|_",
+      "_a|...|.C'...D........|_",
+      "_#|...||||||||........|_",
+      "__|...SSS|CtC...CtC..C|_",
+      "__|B.....|...........t|_",
+      "__|t.....|...........C|_",
+      "__|{.QQ.{|..HHHHH.....|_",
+      "__|{.QQ.{|-------H....|_",
+      "__|{.QQ..|ccccccrH....|_",
+      "__|{.....eccccccrH....|_",
+      "__|{.....|ccccccrH....|_",
+      "__|{{{{{{|-------H...S|_",
+      "__||||||||..HHHHH....S|_",
+      "__|......+...........S|_",
+      "__|+||...|...........t|4",
+      "__|.T|&b&|^.HtH..SSSt^|_",
+      "__|||||||||||||||||||||_",
+      "________#______#aa#_#___",
+      "________________##______"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "#": "t_secro_shrub_flesh",
+      "'": "t_secro_window_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_railing_flesh",
+      ".": "t_secro_floor_flesh",
+      "D": "t_secro_door_metal_flesh",
+      "_": "t_secro_grass_flesh",
+      "a": "t_secro_shrub_flesh",
+      "c": "t_secro_carpet_red_flesh",
+      "d": "t_secro_door_glass_flesh",
+      "e": "t_secro_door_flesh",
+      "r": "t_secro_railing_flesh",
+      "s": "t_secro_sidewalk_flesh",
+      "|": "t_secro_brick_wall_flesh"
+    }
+  },
+  "om_terrain": "s_shop_flesh",
+  "type": "mapgen",
+  "weight": 100
+}
+```
+

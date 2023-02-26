@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→somen_clairvoyance_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：somen_clairvoyance_on|http://cdda.aloxaf.cn/search?q=somen_clairvoyance_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "somen_clairvoyance_on",
+  "type": "TOOL_ARMOR",
+  "copy-from": "somen_clairvoyance",
+  "repairs_like": "somen_clairvoyance",
+  "name": {
+    "str": "mask of insight (on)",
+    "str_pl": "masks of insight (on)"
+  },
+  "description": "A mask faced with iron and decorated with other metal, depicting the face of some unknown divine figure.  The face depicted on the mask seems more menacing than it did previously.",
+  "turns_per_charge": 100,
+  "revert_to": "somen_clairvoyance",
+  "qualities": [
+    [
+      "GLARE",
+      1
+    ]
+  ],
+  "use_action": {
+    "target": "somen_clairvoyance",
+    "msg": "The mask's features return to its original impassive expression.",
+    "menu_text": "Turn off",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "SUN_GLASSES",
+      "BLIND",
+      "IR_EFFECT",
+      "PARTIAL_DEAF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "somen_clairvoyance_on",
+  "type": "TOOL_ARMOR",
+  "copy-from": "somen_clairvoyance",
+  "repairs_like": "somen_clairvoyance",
+  "name": {
+    "str": "洞察面具（开）",
+    "str_pl": "洞察面具（开）"
+  },
+  "description": "一种用铁面和其他金属装饰的面具，描绘某个不知名的神圣人物的脸。面具上描绘的脸看起来比以前更具威胁性。",
+  "turns_per_charge": 100,
+  "revert_to": "somen_clairvoyance",
+  "qualities": [
+    [
+      "GLARE",
+      1
+    ]
+  ],
+  "use_action": {
+    "target": "somen_clairvoyance",
+    "msg": "面具的眉目还原成最初的冷漠表情。",
+    "menu_text": "关闭",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "SUN_GLASSES",
+      "BLIND",
+      "IR_EFFECT",
+      "PARTIAL_DEAF"
+    ]
+  }
+}
+```
+

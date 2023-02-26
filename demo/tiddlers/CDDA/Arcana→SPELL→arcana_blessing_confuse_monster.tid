@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_confuse_monster
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_confuse_monster|http://cdda.aloxaf.cn/search?q=arcana_blessing_confuse_monster]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_confuse_monster",
+  "//": "ID retained for save compatibility reasons.",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Confusion Wave"
+  },
+  "description": "Arcane Blessing\nUsing this spell will blast a cone-shaped area with psychic force, damaging and stunning hostiles caught in it.  Enemies in the center line will take double damage.",
+  "message": "A faint distortion in the air ripples out before you, and you sense an unearthly force exerting its will.",
+  "effect": "attack",
+  "shape": "cone",
+  "extra_effects": [
+    {
+      "id": "arcana_blessing_confuse_monster_line",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "stunned",
+  "min_damage": 20,
+  "max_damage": 100,
+  "damage_increment": 4,
+  "damage_type": "cold",
+  "min_range": 3,
+  "max_range": 12,
+  "range_increment": 0.45,
+  "min_aoe": 25,
+  "max_aoe": 75,
+  "aoe_increment": 2.5,
+  "max_level": 20,
+  "difficulty": 40,
+  "skill": "magic",
+  "energy_source": "MANA",
+  "base_casting_time": 250,
+  "final_casting_time": 125,
+  "casting_time_increment": -6.25,
+  "base_energy_cost": 300,
+  "final_energy_cost": 150,
+  "energy_increment": -7.5,
+  "min_duration": 1200,
+  "max_duration": 6000,
+  "duration_increment": 240
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_confuse_monster",
+  "//": "ID retained for save compatibility reasons.",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：混乱脑波"
+  },
+  "description": "奥术祝福\n使用该法术会用心灵力量炸开一个锥形区域，伤害并击昏被困在其中的敌人。中线的敌人将受到双倍伤害。",
+  "message": "一股微弱的扭曲在你面前荡漾而出，你感觉到一股无形的力量在发挥它的意志。",
+  "effect": "attack",
+  "shape": "cone",
+  "extra_effects": [
+    {
+      "id": "arcana_blessing_confuse_monster_line",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "stunned",
+  "min_damage": 20,
+  "max_damage": 100,
+  "damage_increment": 4,
+  "damage_type": "cold",
+  "min_range": 3,
+  "max_range": 12,
+  "range_increment": 0.45,
+  "min_aoe": 25,
+  "max_aoe": 75,
+  "aoe_increment": 2.5,
+  "max_level": 20,
+  "difficulty": 40,
+  "skill": "magic",
+  "energy_source": "MANA",
+  "base_casting_time": 250,
+  "final_casting_time": 125,
+  "casting_time_increment": -6.25,
+  "base_energy_cost": 300,
+  "final_energy_cost": 150,
+  "energy_increment": -7.5,
+  "min_duration": 1200,
+  "max_duration": 6000,
+  "duration_increment": 240
+}
+```
+

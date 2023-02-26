@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_AUX_MAGE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_AUX_MAGE|http://cdda.aloxaf.cn/search?q=TALK_CF_AUX_MAGE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_AUX_MAGE.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_AUX_MAGE",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "Greetings, Hunter.  How may I be of service?",
+    "no": "Greetings, how can I help you?"
+  },
+  "responses": [
+    {
+      "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_AUX_MAGE_GM_PRELUDE"
+    },
+    {
+      "text": "Who are you?",
+      "topic": "TALK_CF_AUX_MAGE_WHO"
+    },
+    {
+      "text": "What can you tell me about this place?",
+      "topic": "TALK_CF_AUX_MAGE_WHERE"
+    },
+    {
+      "text": "What do you do here?",
+      "topic": "TALK_CF_AUX_MAGE_DO"
+    },
+    {
+      "text": "Can you teach me any spells?",
+      "topic": "TALK_CF_AUX_MAGE_SPELL_MENU",
+      "condition": {
+        "not": {
+          "u_has_var": "celine_all_spells_known",
+          "type": "flag",
+          "context": "knowledge",
+          "value": "yes"
+        }
+      }
+    },
+    {
+      "text": "Do you have anything to trade?",
+      "effect": "start_trade",
+      "condition": {
+        "u_has_var": "cf_celine_traded",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_CF_AUX_MAGE"
+    },
+    {
+      "text": "Well, bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_AUX_MAGE",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "你好，亨特。我能为您效劳吗？",
+    "no": "你好，有什么可以帮你的吗？"
+  },
+  "responses": [
+    {
+      "text": "我被派去询问最近有什么异常生物袭击幸存者。知道吗？",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_AUX_MAGE_GM_PRELUDE"
+    },
+    {
+      "text": "你是谁？",
+      "topic": "TALK_CF_AUX_MAGE_WHO"
+    },
+    {
+      "text": "你能告诉我这是个什么地方？",
+      "topic": "TALK_CF_AUX_MAGE_WHERE"
+    },
+    {
+      "text": "你在这里做什么？",
+      "topic": "TALK_CF_AUX_MAGE_DO"
+    },
+    {
+      "text": "Can you teach me any spells？",
+      "topic": "TALK_CF_AUX_MAGE_SPELL_MENU",
+      "condition": {
+        "not": {
+          "u_has_var": "celine_all_spells_known",
+          "type": "flag",
+          "context": "knowledge",
+          "value": "yes"
+        }
+      }
+    },
+    {
+      "text": "你有什么要交易的？",
+      "effect": "start_trade",
+      "condition": {
+        "u_has_var": "cf_celine_traded",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_CF_AUX_MAGE"
+    },
+    {
+      "text": "好的，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

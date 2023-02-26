@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: effect_type secronom
+title: secronom→effect_type→secro_akin_constrict
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_akin_constrict|http://cdda.aloxaf.cn/search?q=secro_akin_constrict]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "secro_akin_constrict",
+  "name": [
+    "Constricted"
+  ],
+  "desc": [
+    "The visceral tendrils are holding you down!"
+  ],
+  "remove_message": "You shrug off the visceral tendrils.",
+  "rating": "bad",
+  "max_duration": "180 s",
+  "max_intensity": 3,
+  "int_add_val": 1,
+  "int_dur_factor": "20 seconds",
+  "int_decay_step": -3,
+  "int_decay_tick": 25,
+  "base_mods": {
+    "dex_mod": [
+      -0.2
+    ]
+  },
+  "scaling_mods": {
+    "speed_mod": [
+      -5
+    ],
+    "dex_mod": [
+      -0.2
+    ]
+  },
+  "show_in_info": true
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "secro_akin_constrict",
+  "name": [
+    "收缩的"
+  ],
+  "desc": [
+    "内脏的卷须把你往下压！"
+  ],
+  "remove_message": "你摆脱了内脏的卷须。",
+  "rating": "bad",
+  "max_duration": "180 s",
+  "max_intensity": 3,
+  "int_add_val": 1,
+  "int_dur_factor": "20 seconds",
+  "int_decay_step": -3,
+  "int_decay_tick": 25,
+  "base_mods": {
+    "dex_mod": [
+      -0.2
+    ]
+  },
+  "scaling_mods": {
+    "speed_mod": [
+      -5
+    ],
+    "dex_mod": [
+      -0.2
+    ]
+  },
+  "show_in_info": true
+}
+```
+

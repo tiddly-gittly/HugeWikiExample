@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: terrain MST_Extra
+title: MST_Extra→terrain→t_hive_young
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_hive_young|http://cdda.aloxaf.cn/search?q=t_hive_young]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_hive_young",
+  "name": "empty beehive",
+  "description": "A traditional beehive, dug in slightly and baited to attract bees.  It will take a while before any bees decide to make use of it.",
+  "symbol": "^",
+  "color": "light_gray",
+  "move_cost": 0,
+  "transforms_into": "t_hive_growing",
+  "deconstruct": {
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "beehive_empty",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    "FLAMMABLE_ASH",
+    "TRANSPARENT",
+    "PERMEABLE",
+    "NOITEM",
+    "EASY_DECONSTRUCT",
+    "HARVESTED"
+  ],
+  "bash": {
+    "str_min": 12,
+    "str_max": 40,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "nail",
+        "charges": [
+          4,
+          8
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          2,
+          6
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_hive_young",
+  "name": "蜂箱（空）",
+  "description": "一种传统的蜂箱,轻轻地挖进去,用诱饵吸引蜜蜂.在蜜蜂决定在这里安家前需要等一段时间.",
+  "symbol": "^",
+  "color": "light_gray",
+  "move_cost": 0,
+  "transforms_into": "t_hive_growing",
+  "deconstruct": {
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "beehive_empty",
+        "count": 1
+      }
+    ]
+  },
+  "flags": [
+    "FLAMMABLE_ASH",
+    "TRANSPARENT",
+    "PERMEABLE",
+    "NOITEM",
+    "EASY_DECONSTRUCT",
+    "HARVESTED"
+  ],
+  "bash": {
+    "str_min": 12,
+    "str_max": 40,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "nail",
+        "charges": [
+          4,
+          8
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          2,
+          6
+        ]
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→overaccelerate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：overaccelerate|http://cdda.aloxaf.cn/search?q=overaccelerate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Overclocker.json
+
+
+!! 原文
+
+```json
+{
+  "id": "overaccelerate",
+  "type": "SPELL",
+  "name": {
+    "str": "Overaccelerate"
+  },
+  "description": "This drastically increases one target's metabolism to dangerous levels, causing its body to tear itself apart",
+  "effect": "attack",
+  "effect_str": "neuro_boost",
+  "shape": "blast",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "self"
+  ],
+  "flags": [
+    "SOMATIC",
+    "CONCENTRATE",
+    "NO_PROJECTILE"
+  ],
+  "max_level": 43,
+  "min_damage": 0,
+  "max_damage": 43,
+  "damage_increment": 1,
+  "min_dot": 15,
+  "max_dot": 58,
+  "dot_increment": 1,
+  "min_duration": 300,
+  "max_duration": 1160,
+  "duration_increment": 20,
+  "min_range": 5,
+  "max_range": 14,
+  "range_increment": 0.2,
+  "spell_class": "OVERCLOCKER",
+  "base_casting_time": 150,
+  "base_energy_cost": 400,
+  "energy_source": "MANA",
+  "difficulty": 8,
+  "damage_type": "heat"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "overaccelerate",
+  "type": "SPELL",
+  "name": {
+    "str": "超速术"
+  },
+  "description": "让目标体内的新陈代谢速度急剧增加至极度危险的水平，使其从内部撕裂躯体。",
+  "effect": "attack",
+  "effect_str": "neuro_boost",
+  "shape": "blast",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "self"
+  ],
+  "flags": [
+    "SOMATIC",
+    "CONCENTRATE",
+    "NO_PROJECTILE"
+  ],
+  "max_level": 43,
+  "min_damage": 0,
+  "max_damage": 43,
+  "damage_increment": 1,
+  "min_dot": 15,
+  "max_dot": 58,
+  "dot_increment": 1,
+  "min_duration": 300,
+  "max_duration": 1160,
+  "duration_increment": 20,
+  "min_range": 5,
+  "max_range": 14,
+  "range_increment": 0.2,
+  "spell_class": "OVERCLOCKER",
+  "base_casting_time": 150,
+  "base_energy_cost": 400,
+  "energy_source": "MANA",
+  "difficulty": 8,
+  "damage_type": "heat"
+}
+```
+

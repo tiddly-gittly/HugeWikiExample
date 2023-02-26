@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_incense
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_incense|http://cdda.aloxaf.cn/search?q=arcana_item_incense]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_incense",
+  "name": {
+    "str": "Citrine Incense"
+  },
+  "description": "Restores a large chunk of stamina and fatigue.",
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_incense_fatigue",
+      "hit_self": true
+    }
+  ],
+  "message": "Wisps of smoke rapidly fade away as the incense suddenly evaporates, filling you with energy.",
+  "effect": "recover_energy",
+  "shape": "blast",
+  "effect_str": "STAMINA",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_damage": 6000,
+  "max_damage": 6000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_incense",
+  "name": {
+    "str": "柠檬熏香"
+  },
+  "description": "恢复大量耐力和疲劳。",
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_incense_fatigue",
+      "hit_self": true
+    }
+  ],
+  "message": "当熏香突然蒸发时，一缕缕烟雾迅速消失，让你充满能量。",
+  "effect": "recover_energy",
+  "shape": "blast",
+  "effect_str": "STAMINA",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_damage": 6000,
+  "max_damage": 6000
+}
+```
+

@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→vehicle_part→ups_rifle_t
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ups_rifle_t|http://cdda.aloxaf.cn/search?q=ups_rifle_t]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Vehicles/c_vehicle_parts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "copy-from": "turret",
+  "id": "ups_rifle_t",
+  "name": "mounted UPS rifle",
+  "looks_like": "laser_rifle",
+  "color": "yellow",
+  "broken_symbol": "#",
+  "broken_color": "yellow",
+  "item": "ups_rifle",
+  "folded_volume": 8,
+  "//": "Haven't figured out the breaks_into...",
+  "breaks_into": [
+    {
+      "item": "ups_rifle",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ],
+        [
+          "electronics",
+          6
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "copy-from": "turret",
+  "id": "ups_rifle_t",
+  "name": "车载 幸存者UPS步枪",
+  "looks_like": "laser_rifle",
+  "color": "yellow",
+  "broken_symbol": "#",
+  "broken_color": "yellow",
+  "item": "ups_rifle",
+  "folded_volume": 8,
+  "//": "Haven't figured out the breaks_into...",
+  "breaks_into": [
+    {
+      "item": "ups_rifle",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ],
+        [
+          "electronics",
+          6
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ]
+    }
+  }
+}
+```
+

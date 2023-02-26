@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→secro_pafv_morphed_gun_spit_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_pafv_morphed_gun_spit_check|http://cdda.aloxaf.cn/search?q=secro_pafv_morphed_gun_spit_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_pafv_morphed_gun_spit_check",
+  "type": "SPELL",
+  "name": {
+    "str": "Blood Acid Spit"
+  },
+  "description": "Your spitter armament launches a glob of blood acid.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "message": "",
+  "extra_effects": [
+    {
+      "id": "secro_pafv_morphed_cost",
+      "hit_self": true
+    }
+  ],
+  "shape": "blast",
+  "effect": "effect_on_condition",
+  "effect_str": "eoc_secro_pafv_morphed_gun_spit_check"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_pafv_morphed_gun_spit_check",
+  "type": "SPELL",
+  "name": {
+    "str": "血酸"
+  },
+  "description": "你的喷吐器发射出一团血酸。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "message": "",
+  "extra_effects": [
+    {
+      "id": "secro_pafv_morphed_cost",
+      "hit_self": true
+    }
+  ],
+  "shape": "blast",
+  "effect": "effect_on_condition",
+  "effect_str": "eoc_secro_pafv_morphed_gun_spit_check"
+}
+```
+

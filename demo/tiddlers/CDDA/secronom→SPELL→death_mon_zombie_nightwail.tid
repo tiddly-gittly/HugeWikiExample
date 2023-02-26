@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→death_mon_zombie_nightwail
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：death_mon_zombie_nightwail|http://cdda.aloxaf.cn/search?q=death_mon_zombie_nightwail]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_ondeath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "death_mon_zombie_nightwail",
+  "type": "SPELL",
+  "name": {
+    "str": "Disperse"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's death removes all remaining shadows.'",
+  "valid_targets": [
+    "hostile",
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "targeted_monster_ids": [
+    "mon_zombie_nightwail_shadow"
+  ],
+  "effect_str": "secro_sacrifice_effect",
+  "min_aoe": 30,
+  "max_aoe": 30,
+  "flags": [
+    "SILENT"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "death_mon_zombie_nightwail",
+  "type": "SPELL",
+  "name": {
+    "str": "分散的"
+  },
+  "description": "怪物施法的咒语。如果你看到了这一点，那么请阅读这一条：\n“施法者之死移除了所有剩余的阴影。”",
+  "valid_targets": [
+    "hostile",
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "targeted_monster_ids": [
+    "mon_zombie_nightwail_shadow"
+  ],
+  "effect_str": "secro_sacrifice_effect",
+  "min_aoe": 30,
+  "max_aoe": 30,
+  "flags": [
+    "SILENT"
+  ]
+}
+```
+

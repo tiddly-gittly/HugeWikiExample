@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: AMMO secronom
+title: secronom→AMMO→SSygrenade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SSygrenade|http://cdda.aloxaf.cn/search?q=SSygrenade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_ammo_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "SSygrenade",
+  "type": "AMMO",
+  "name": {
+    "str": "SSy grenade"
+  },
+  "description": "A round, metallic Y type grenade with digital 10 seconds timer.",
+  "weight": "300 g",
+  "volume": "500 ml",
+  "price": "500 USD",
+  "material": [
+    "plastic",
+    "powder"
+  ],
+  "symbol": "*",
+  "color": "white",
+  "count": 1,
+  "ammo_type": "SSgrenade",
+  "range": 18,
+  "damage": {
+    "damage_type": "stab",
+    "amount": 4,
+    "armor_penetration": 8
+  },
+  "effects": [
+    "NEVER_MISFIRES",
+    "COOKOFF",
+    "ACT_ON_RANGED_HIT",
+    "RECOVER_9",
+    "CUSTOM_EXPLOSION"
+  ],
+  "explode_in_fire": true,
+  "countdown_interval": 1,
+  "countdown_destroy": true,
+  "countdown_action": {
+    "target": "SSygrenadeact",
+    "target_charges": 10,
+    "active": true,
+    "type": "transform"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "SSygrenade",
+  "type": "AMMO",
+  "name": {
+    "str": "SSy手榴弹"
+  },
+  "description": "带数字10秒计时器的圆形金属Y型手榴弹。",
+  "weight": "300 g",
+  "volume": "500 ml",
+  "price": "500 USD",
+  "material": [
+    "plastic",
+    "powder"
+  ],
+  "symbol": "*",
+  "color": "white",
+  "count": 1,
+  "ammo_type": "SSgrenade",
+  "range": 18,
+  "damage": {
+    "damage_type": "stab",
+    "amount": 4,
+    "armor_penetration": 8
+  },
+  "effects": [
+    "NEVER_MISFIRES",
+    "COOKOFF",
+    "ACT_ON_RANGED_HIT",
+    "RECOVER_9",
+    "CUSTOM_EXPLOSION"
+  ],
+  "explode_in_fire": true,
+  "countdown_interval": 1,
+  "countdown_destroy": true,
+  "countdown_action": {
+    "target": "SSygrenadeact",
+    "target_charges": 10,
+    "active": true,
+    "type": "transform"
+  }
+}
+```
+

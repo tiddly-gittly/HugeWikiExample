@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→meiling_redrelease
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：meiling_redrelease|http://cdda.aloxaf.cn/search?q=meiling_redrelease]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_meiling.json
+
+
+!! 原文
+
+```json
+{
+  "id": "meiling_redrelease",
+  "type": "SPELL",
+  "name": "Red energy release",
+  "description": "Gather nearby earth qi to empower yourself, dealing minor damage to a targeted creature, but greatly damaging terrain.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "meiling_redrelease2"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "bash",
+  "min_damage": 20,
+  "max_damage": 20,
+  "min_range": 1,
+  "max_range": 1,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 150,
+  "base_energy_cost": 133,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "The original spell mentions that this destroys walls, but I'm not sure how to limit it to that, plus maybe it's more interactive this way",
+  "//2": " meiling_redrelease2 should have a red aoe field effect"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "meiling_redrelease",
+  "type": "SPELL",
+  "name": "Red energy release",
+  "description": "Gather nearby earth qi to empower yourself, dealing minor damage to a targeted creature, but greatly damaging terrain.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "meiling_redrelease2"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "bash",
+  "min_damage": 20,
+  "max_damage": 20,
+  "min_range": 1,
+  "max_range": 1,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 150,
+  "base_energy_cost": 133,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "The original spell mentions that this destroys walls, but I'm not sure how to limit it to that, plus maybe it's more interactive this way",
+  "//2": " meiling_redrelease2 should have a red aoe field effect"
+}
+```
+

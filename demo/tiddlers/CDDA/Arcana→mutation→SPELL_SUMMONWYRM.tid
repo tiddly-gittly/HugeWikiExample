@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→SPELL_SUMMONWYRM
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SPELL_SUMMONWYRM|http://cdda.aloxaf.cn/search?q=SPELL_SUMMONWYRM]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "//": "ID retained to reduce redundancy and avoid load errors.",
+  "id": "SPELL_SUMMONWYRM",
+  "name": {
+    "str": "Mark of Abominations"
+  },
+  "points": 3,
+  "description": "Inhuman power has granted you unnatural abilities, allowing you to summon strange creatures woven from the Beyond.  (( Remember to bind the \"spellcasting\" key! ))",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_DRAGONCLAWS"
+  ],
+  "prereqs2": [
+    "ARCANA_INSTINCT"
+  ],
+  "changes_to": [
+    "SPELL_BEYOND_DRAGONBLOOD"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "spells_learned": [
+    [
+      "arcana_mark_summon_dark_wyrm",
+      1
+    ],
+    [
+      "arcana_mark_summon_jabberwock",
+      1
+    ]
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "//": "ID retained to reduce redundancy and avoid load errors.",
+  "id": "SPELL_SUMMONWYRM",
+  "name": {
+    "str": "憎恶之印记"
+  },
+  "points": 3,
+  "description": "非人的力量赋予了你非自然的能力，允许你召唤来自远方的奇异生物。（记住绑定“施法”键！）",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_DRAGONCLAWS"
+  ],
+  "prereqs2": [
+    "ARCANA_INSTINCT"
+  ],
+  "changes_to": [
+    "SPELL_BEYOND_DRAGONBLOOD"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "spells_learned": [
+    [
+      "arcana_mark_summon_dark_wyrm",
+      1
+    ],
+    [
+      "arcana_mark_summon_jabberwock",
+      1
+    ]
+  ]
+}
+```
+

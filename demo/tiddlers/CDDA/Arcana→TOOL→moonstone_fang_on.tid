@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→moonstone_fang_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：moonstone_fang_on|http://cdda.aloxaf.cn/search?q=moonstone_fang_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "moonstone_fang_on",
+  "type": "TOOL",
+  "copy-from": "moonstone_fang",
+  "repairs_like": "moonstone_fang",
+  "name": {
+    "str": "moonstone fang (on)",
+    "str_pl": "moonstone fangs (on)"
+  },
+  "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  In addition to its life-draining strikes and blinding attackers, it is currently protecting you against the cold.  It can't be released until deactivated, however.",
+  "turns_per_charge": 450,
+  "revert_to": "moonstone_fang",
+  "use_action": {
+    "target": "moonstone_fang",
+    "msg": "The fang's unnatural glow fades, its protective magic with it.",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "TRADER_AVOID",
+      "NO_UNWIELD"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "moonstone_fang_on",
+  "type": "TOOL",
+  "copy-from": "moonstone_fang",
+  "repairs_like": "moonstone_fang",
+  "name": {
+    "str": "月光石尖牙（开）",
+    "str_pl": "月光石尖牙（开）"
+  },
+  "description": "一种由白色乳白色宝石制成的短而弯曲的尖刺，上面雕刻着丰富的旋转蛇形图案。除了消耗生命的攻击和致盲的攻击者外，它目前还可以保护你抵御寒冷。但是，在停用之前，它无法释放。",
+  "turns_per_charge": 450,
+  "revert_to": "moonstone_fang",
+  "use_action": {
+    "target": "moonstone_fang",
+    "msg": "尖牙不自然的光芒消失了，它的保护魔法也随之消失。",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "TRADER_AVOID",
+      "NO_UNWIELD"
+    ]
+  }
+}
+```
+

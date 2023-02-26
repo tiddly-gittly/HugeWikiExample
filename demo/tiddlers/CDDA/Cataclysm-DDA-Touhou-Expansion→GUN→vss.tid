@@ -1,0 +1,215 @@
+creator: 林一二
+revision: 0
+tags: GUN Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUN→vss
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：vss|http://cdda.aloxaf.cn/search?q=vss]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gun/thex_generic_gun.json
+
+
+!! 原文
+
+```json
+{
+  "id": "vss",
+  "type": "GUN",
+  "name": {
+    "str": "VSS Vintorez",
+    "str_pl": "VSS Vintorez"
+  },
+  "copy-from": "rifle_auto",
+  "description": "The VSS is a compact, subsonic Soviet DMR featuring an integrated supressor and PSO-1 scope.  Designed alongside other \"spetsialnaya\" group Soviet era weapons such as the AS Val and the OTs-14 \"Groza\", in order to replace general use weapons, such as the AK-74.  Ironically enough, the Vintorez also lacks a niche: it can be used in stealth operations, as marksman rifle, as a pseudo-SMG, and as general use \"assault weapon\".  The only downsides are the relative low effective range and the pronunciated bullet drop, both due the properties of the 9x39mm.",
+  "volume": "2000 ml",
+  "weight": "2040 g",
+  "longest_side": "694 mm",
+  "price": 19000,
+  "price_postapoc": 3000,
+  "to_hit": {
+    "balance": "good",
+    "grip": "solid",
+    "length": "long",
+    "surface": "point"
+  },
+  "bashing": 9,
+  "material": [
+    "plastic",
+    "steel",
+    "wood"
+  ],
+  "looks_like": "ak47",
+  "color": "brown",
+  "ammo": [
+    "9x39"
+  ],
+  "built_in_mods": [
+    "pso1_scope2",
+    "suppressor_vss2"
+  ],
+  "dispersion": 60,
+  "//": "We did not have the facilities at this time to measure group size, although we understand that the accuracy is excellent out to 150 meters and our observation indicated 1-2 MOA.",
+  "//2": "Assuming *total* 1.5 moa with 9x39mm SP-5",
+  "durability": 8,
+  "loudness": 22,
+  "min_cycle_recoil": 1350,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "AUTO",
+      "auto",
+      4
+    ]
+  ],
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": 2
+  },
+  "//3": "9x39 damage is too low, so I'm increasing it a bit here and with the ammo",
+  "//4": "Ideally, the VSS should instead have increased crit chance and higher crit dmg modifier, to emulate the late-game scaling with proficiency",
+  "reload": 330,
+  "reload_noise_volume": 4,
+  "valid_mod_locations": [
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock accessory",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "item_restriction": [
+        "9x39mag10",
+        "9x39mag20",
+        "9x39mag30"
+      ]
+    }
+  ],
+  "weapon_category": [
+    "AUTOMATIC_RIFLES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "vss",
+  "type": "GUN",
+  "name": {
+    "str": "VSS Vintorez",
+    "str_pl": "VSS Vintorez"
+  },
+  "copy-from": "rifle_auto",
+  "description": "The VSS is a compact, subsonic Soviet DMR featuring an integrated supressor and PSO-1 scope.  Designed alongside other \"spetsialnaya\" group Soviet era weapons such as the AS Val and the OTs-14 \"Groza\", in order to replace general use weapons, such as the AK-74.  Ironically enough, the Vintorez also lacks a niche: it can be used in stealth operations, as marksman rifle, as a pseudo-SMG, and as general use \"assault weapon\".  The only downsides are the relative low effective range and the pronunciated bullet drop, both due the properties of the 9x39mm.",
+  "volume": "2000 ml",
+  "weight": "2040 g",
+  "longest_side": "694 mm",
+  "price": 19000,
+  "price_postapoc": 3000,
+  "to_hit": {
+    "balance": "good",
+    "grip": "solid",
+    "length": "long",
+    "surface": "point"
+  },
+  "bashing": 9,
+  "material": [
+    "plastic",
+    "steel",
+    "wood"
+  ],
+  "looks_like": "ak47",
+  "color": "brown",
+  "ammo": [
+    "9x39"
+  ],
+  "built_in_mods": [
+    "pso1_scope2",
+    "suppressor_vss2"
+  ],
+  "dispersion": 60,
+  "//": "We did not have the facilities at this time to measure group size, although we understand that the accuracy is excellent out to 150 meters and our observation indicated 1-2 MOA.",
+  "//2": "Assuming *total* 1.5 moa with 9x39mm SP-5",
+  "durability": 8,
+  "loudness": 22,
+  "min_cycle_recoil": 1350,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "AUTO",
+      "auto",
+      4
+    ]
+  ],
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": 2
+  },
+  "//3": "9x39 damage is too low, so I'm increasing it a bit here and with the ammo",
+  "//4": "Ideally, the VSS should instead have increased crit chance and higher crit dmg modifier, to emulate the late-game scaling with proficiency",
+  "reload": 330,
+  "reload_noise_volume": 4,
+  "valid_mod_locations": [
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock accessory",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "item_restriction": [
+        "9x39mag10",
+        "9x39mag20",
+        "9x39mag30"
+      ]
+    }
+  ],
+  "weapon_category": [
+    "AUTOMATIC_RIFLES"
+  ]
+}
+```
+

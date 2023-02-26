@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_2|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_2",
+  "dynamic_line": "Seeing it now, you have done a lot to restore the relic.  But I fear the damage may be permanent.  Regardless, it can still serve its purpose.",
+  "responses": [
+    {
+      "text": "What damage remains?",
+      "topic": "TALK_HERMIT_DISCUSS_2_DAMAGE"
+    },
+    {
+      "text": "What is the sword's purpose?",
+      "topic": "TALK_HERMIT_DISCUSS_2_PURPOSE"
+    },
+    {
+      "switch": true,
+      "text": "That's enough information for now.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "Tell me what I must do.",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_2",
+  "dynamic_line": "现在看到了，你已经做了很多工作来修复这个遗迹。但我担心这种损害可能是永久性的。不管怎样，它仍然可以达到它的目的。",
+  "responses": [
+    {
+      "text": "还有什么损失？",
+      "topic": "TALK_HERMIT_DISCUSS_2_DAMAGE"
+    },
+    {
+      "text": "剑的用途是什么？",
+      "topic": "TALK_HERMIT_DISCUSS_2_PURPOSE"
+    },
+    {
+      "switch": true,
+      "text": "这已经足够了。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "告诉我该怎么做。",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

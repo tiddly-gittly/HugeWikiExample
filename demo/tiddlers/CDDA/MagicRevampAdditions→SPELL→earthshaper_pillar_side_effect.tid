@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→earthshaper_pillar_side_effect
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：earthshaper_pillar_side_effect|http://cdda.aloxaf.cn/search?q=earthshaper_pillar_side_effect]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/earthshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "earthshaper_pillar_side_effect",
+  "type": "SPELL",
+  "name": {
+    "str": "Pillar Side Effect"
+  },
+  "description": "Bash effect that follows, levels reduce damage and AoE.",
+  "valid_targets": [
+    "ground"
+  ],
+  "effect": "bash",
+  "shape": "blast",
+  "flags": [
+    "IGNORE_WALLS",
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "max_level": 10,
+  "min_damage": 80,
+  "max_damage": 20,
+  "damage_increment": -6,
+  "min_aoe": 6,
+  "max_aoe": 1,
+  "aoe_increment": -0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "earthshaper_pillar_side_effect",
+  "type": "SPELL",
+  "name": {
+    "str": "石柱冲击"
+  },
+  "description": "带来的钝击效果，等级降低伤害和AOE范围。",
+  "valid_targets": [
+    "ground"
+  ],
+  "effect": "bash",
+  "shape": "blast",
+  "flags": [
+    "IGNORE_WALLS",
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "max_level": 10,
+  "min_damage": 80,
+  "max_damage": 20,
+  "damage_increment": -6,
+  "min_aoe": 6,
+  "max_aoe": 1,
+  "aoe_increment": -0.5
+}
+```
+

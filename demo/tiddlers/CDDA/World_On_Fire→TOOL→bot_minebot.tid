@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: TOOL World_On_Fire
+title: World_On_Fire→TOOL→bot_minebot
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bot_minebot|http://cdda.aloxaf.cn/search?q=bot_minebot]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bot_minebot",
+  "looks_like": "mon_minebot",
+  "type": "TOOL",
+  "name": {
+    "str": "inactive explosive skitterbot"
+  },
+  "description": "This is an inactive explosive skitterbot. It resembles a dog size insect packed with explosives. Using this item involves placing it on the ground and turning it on.  If reprogrammed and rewired successfully the robot will race towards enemies and explode.",
+  "weight": "100000 g",
+  "volume": "65000 ml",
+  "price": "800 USD",
+  "to_hit": -3,
+  "bashing": 8,
+  "material": [
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_red",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_minebot",
+    "friendly_msg": "The explosive skitterbot shudders briefly and rolls away.",
+    "hostile_msg": "The explosive skitterbot gives off a loud sharp beep, and shines a multitude of colored lights in your face!",
+    "//": "Not as lethal as a secubot but far more fiddly and complex with its implied assembly and sub-deployment systems",
+    "difficulty": 6,
+    "moves": 100,
+    "skills": [
+      "electronics",
+      "computer"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bot_minebot",
+  "looks_like": "mon_minebot",
+  "type": "TOOL",
+  "name": {
+    "str": "掠行爆炸机器人（关）"
+  },
+  "description": "这是一个未激活的掠行爆炸机器人。它有着狗一般的大小，而且里面装满了炸药。使用该物品以将它放置在地上并打开它，如果重新编程和布线成功，机器人将飞奔向敌人并爆炸。",
+  "weight": "100000 g",
+  "volume": "65000 ml",
+  "price": "800 USD",
+  "to_hit": -3,
+  "bashing": 8,
+  "material": [
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_red",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_minebot",
+    "friendly_msg": "掠行爆炸机器人颤抖了一下，然后滚走了。",
+    "hostile_msg": "掠行爆炸机器人发出一声响亮尖锐的哔哔声，并把大量的彩色光照在你的脸上!",
+    "//": "Not as lethal as a secubot but far more fiddly and complex with its implied assembly and sub-deployment systems",
+    "difficulty": 6,
+    "moves": 100,
+    "skills": [
+      "electronics",
+      "computer"
+    ]
+  }
+}
+```
+

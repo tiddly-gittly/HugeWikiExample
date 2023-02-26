@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: effect_type nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→effect_type→adrenaline_bioweapon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：adrenaline_bioweapon|http://cdda.aloxaf.cn/search?q=adrenaline_bioweapon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "adrenaline_bioweapon",
+  "name": [
+    "Exertion",
+    "Bloodlust"
+  ],
+  "desc": [
+    "You feel worn out and empty inside.",
+    "You thirst for blood!"
+  ],
+  "apply_message": "You feel an unnatural surge of adrenaline!",
+  "rating": "good",
+  "decay_messages": [
+    [
+      "Your bloodlust wears off.  You feel AWFUL!",
+      "bad"
+    ]
+  ],
+  "miss_messages": [
+    [
+      "Your weariness throws you off.",
+      1
+    ]
+  ],
+  "max_duration": "200 s",
+  "max_intensity": 2,
+  "int_dur_factor": "180 s",
+  "removes_effects": [
+    "winded",
+    "bleed"
+  ],
+  "base_mods": {
+    "speed_mod": [
+      -15
+    ],
+    "str_mod": [
+      -2
+    ],
+    "dex_mod": [
+      -2
+    ],
+    "int_mod": [
+      -2
+    ],
+    "per_mod": [
+      -1
+    ],
+    "stamina_min": [
+      -2
+    ]
+  },
+  "scaling_mods": {
+    "speed_mod": [
+      30
+    ],
+    "str_mod": [
+      4
+    ],
+    "dex_mod": [
+      4
+    ],
+    "int_mod": [
+      -1
+    ],
+    "per_mod": [
+      1
+    ],
+    "stamina_min": [
+      4
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "adrenaline_bioweapon",
+  "name": [
+    "竭力",
+    "嗜血"
+  ],
+  "desc": [
+    "你感觉筋疲力尽，体内空虚。",
+    "你渴望鲜血！"
+  ],
+  "apply_message": "你感觉到一股不自然的肾上腺素激增！",
+  "rating": "good",
+  "decay_messages": [
+    [
+      "你的嗜血欲望消退了，你觉得很糟糕！",
+      "bad"
+    ]
+  ],
+  "miss_messages": [
+    [
+      "你的疲倦让你直接虚脱了。",
+      1
+    ]
+  ],
+  "max_duration": "200 s",
+  "max_intensity": 2,
+  "int_dur_factor": "180 s",
+  "removes_effects": [
+    "winded",
+    "bleed"
+  ],
+  "base_mods": {
+    "speed_mod": [
+      -15
+    ],
+    "str_mod": [
+      -2
+    ],
+    "dex_mod": [
+      -2
+    ],
+    "int_mod": [
+      -2
+    ],
+    "per_mod": [
+      -1
+    ],
+    "stamina_min": [
+      -2
+    ]
+  },
+  "scaling_mods": {
+    "speed_mod": [
+      30
+    ],
+    "str_mod": [
+      4
+    ],
+    "dex_mod": [
+      4
+    ],
+    "int_mod": [
+      -1
+    ],
+    "per_mod": [
+      1
+    ],
+    "stamina_min": [
+      4
+    ]
+  }
+}
+```
+

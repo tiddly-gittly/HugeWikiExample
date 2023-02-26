@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: GUN secronom
+title: secronom→GUN→fleshknot_tent_cluster
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fleshknot_tent_cluster|http://cdda.aloxaf.cn/search?q=fleshknot_tent_cluster]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_gun_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fleshknot_tent_cluster",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "fleshknot tentacle cluster"
+  },
+  "description": "A cluster of tentacles sent by fleshknot to snare targets.",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "NO_PENETRATE_OBSTACLES",
+    "SECRO_FLESHKNOT_TENT_BIG"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 20,
+  "modes": [
+    [
+      "N",
+      "near",
+      2
+    ],
+    [
+      "M",
+      "mid",
+      1
+    ]
+  ],
+  "dispersion": 2500,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 16,
+    "armor_multiplier": 0.5
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fleshknot_tent_cluster",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "血肉疣触手簇"
+  },
+  "description": "一簇血肉疣伸出用来诱捕目标的触手",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "NO_PENETRATE_OBSTACLES",
+    "SECRO_FLESHKNOT_TENT_BIG"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 20,
+  "modes": [
+    [
+      "N",
+      "near",
+      2
+    ],
+    [
+      "M",
+      "mid",
+      1
+    ]
+  ],
+  "dispersion": 2500,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 16,
+    "armor_multiplier": 0.5
+  }
+}
+```
+

@@ -1,0 +1,609 @@
+creator: 林一二
+revision: 0
+tags: martial_art Arcana
+title: Arcana→martial_art→style_shrike
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：style_shrike|http://cdda.aloxaf.cn/search?q=style_shrike]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/martialarts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "martial_art",
+  "id": "style_shrike",
+  "name": {
+    "str": "Shrike's Talons"
+  },
+  "description": "A form of combatives used by the hunters of hunters, high-ranking assassins of an arcane order devoted to blood magic.  Designed with various bladed weapons in mind but also usable unarmed, especially by mutants with claws or with a limited selection of unarmed weapons.  Strength and dexterity improve your abilities but the weak will struggle with it, and arcane knowledge is needed to use the style to the fullest.",
+  "initiate": [
+    "You ready yourself for the trials that await.",
+    "%s appears to brace for bloodshed."
+  ],
+  "arm_block": 3,
+  "learn_difficulty": 7,
+  "primary_skill": "magic",
+  "onattack_buffs": [
+    {
+      "id": "buff_shrike_onattack1",
+      "name": "Bloodlust",
+      "description": "You commit to the offensive.\n\n+1 Accuracy, -1.0 Dodge skill, -1 Dodge attempt.\nLasts 3 turns.  Stacks 3 times.",
+      "melee_allowed": true,
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": false,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 3
+        },
+        {
+          "name": "magic",
+          "level": 3
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 3,
+      "bonus_dodges": -1,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": 1
+        },
+        {
+          "stat": "dodge",
+          "scale": -1
+        }
+      ]
+    },
+    {
+      "id": "buff_shrike_onattack2",
+      "name": "Honed Claws (Unarmed)",
+      "description": "Empty-handed does not always mean unarmed.\n\nCut/stab armor penetration increased by 50% of dexterity.\nLasts 2 turns.  Stacks 3 times.",
+      "//": "All unarmed weapons are permitted, but using the tiger claws, bionic claws, or demon claw is recommended since the other buffs and techniques are off-limits to other unarmed weapons.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "unarmed",
+          "level": 3
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 3,
+      "flat_bonuses": [
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scaling-stat": "dex",
+          "scale": 0.5
+        },
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scaling-stat": "dex",
+          "scale": 0.5
+        }
+      ]
+    },
+    {
+      "id": "buff_shrike_onattack3",
+      "name": "Honed Claws (Claws)",
+      "description": "Empty-handed does not always mean unarmed.\n\nCut/stab armor penetration increased by 50% of dexterity.\nLasts 2 turns.  Stacks 3 times.",
+      "//": "All unarmed weapons are permitted, but using the tiger claws, bionic claws, or demon claw is recommended since the other buffs and techniques are off-limits to other unarmed weapons.",
+      "melee_allowed": true,
+      "weapon_categories_allowed": [
+        "CLAWS"
+      ],
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 3
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 3,
+      "flat_bonuses": [
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scaling-stat": "dex",
+          "scale": 0.5
+        }
+      ]
+    }
+  ],
+  "oncrit_buffs": [
+    {
+      "id": "buff_shrike_oncrit",
+      "name": "Scavenger",
+      "description": "A mortal wound opens an opportunity.  Enables \"Sundering Talons\" technique.\nCutting and stabbing damage increased by 25% of strength, speed increased by 75% of dexterity, damage blocked reduced by 2, -1 Block attempt.\nLasts 6 turns.  Stacks 2 times.",
+      "melee_allowed": true,
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": false,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 4
+        },
+        {
+          "name": "magic",
+          "level": 3
+        }
+      ],
+      "buff_duration": 6,
+      "max_stacks": 2,
+      "bonus_blocks": -1,
+      "flat_bonuses": [
+        {
+          "stat": "damage",
+          "type": "cut",
+          "scaling-stat": "str",
+          "scale": 0.25
+        },
+        {
+          "stat": "damage",
+          "type": "stab",
+          "scaling-stat": "str",
+          "scale": 0.25
+        },
+        {
+          "stat": "speed",
+          "scaling-stat": "dex",
+          "scale": 0.75
+        },
+        {
+          "stat": "block",
+          "scale": -2
+        }
+      ]
+    }
+  ],
+  "onkill_buffs": [
+    {
+      "id": "buff_shrike_onkill",
+      "name": "Exsanguination",
+      "description": "Each enemy slain lends power to the next strike.\n+1 cold damage per 50% of strength, damage blocked increased by 25% of strength, Dodge Skill increased by 25% of Dexterity, +3 Block and Dodge attempts.\nLasts 6 turns.  Stacks 2 times.",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 4
+        },
+        {
+          "name": "magic",
+          "level": 5
+        }
+      ],
+      "melee_allowed": true,
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": false,
+      "buff_duration": 6,
+      "max_stacks": 2,
+      "bonus_dodges": 3,
+      "bonus_blocks": 3,
+      "flat_bonuses": [
+        {
+          "stat": "damage",
+          "type": "cold",
+          "scaling-stat": "str",
+          "scale": 0.5
+        },
+        {
+          "stat": "dodge",
+          "scaling-stat": "dex",
+          "scale": 0.25
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "str",
+          "scale": 0.25
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_shrike_crit",
+    "tec_shrike_counter",
+    "tec_shrike_finisher",
+    "tec_shrike_break"
+  ],
+  "weapons": [
+    "hand_of_armok",
+    "bagh_nakha",
+    "bio_claws_weapon",
+    "blood_athame",
+    "moonstone_fang",
+    "moonstone_fang_on",
+    "kirpan",
+    "kirpan_cheap",
+    "knife_baselard",
+    "knife_combat",
+    "knife_hunting",
+    "knife_rambo",
+    "knife_rm42",
+    "knife_trench",
+    "bronze_knife",
+    "kris",
+    "switchblade",
+    "tanto",
+    "tanto_inferior",
+    "bloodaxe",
+    "bloodaxe_act",
+    "battleaxe",
+    "battleaxe_inferior",
+    "bronze_axe",
+    "ax",
+    "fire_ax",
+    "crash_axe",
+    "hatchet",
+    "lichhook",
+    "shrike_misericorde",
+    "shrike_misericorde_folded",
+    "sword_bayonet",
+    "sword_bayonet_mod",
+    "makeshift_machete",
+    "machete",
+    "survivor_machete",
+    "survivor_machete_qt",
+    "kukri",
+    "khopesh",
+    "dao",
+    "wakizashi",
+    "wakizashi_inferior",
+    "lc_wakizashi",
+    "mc_wakizashi",
+    "hc_wakizashi",
+    "ch_wakizashi",
+    "qt_wakizashi",
+    "cavalry_sabre",
+    "lc_cavalry_sabre",
+    "mc_cavalry_sabre",
+    "hc_cavalry_sabre",
+    "ch_cavalry_sabre",
+    "qt_cavalry_sabre",
+    "scimitar",
+    "scimitar_inferior",
+    "lc_scimitar",
+    "mc_scimitar",
+    "hc_scimitar",
+    "ch_scimitar",
+    "qt_scimitar",
+    "cutlass",
+    "lc_cutlass",
+    "mc_cutlass",
+    "hc_cutlass",
+    "ch_cutlass",
+    "qt_cutlass",
+    "katana",
+    "katana_inferior",
+    "lc_katana",
+    "mc_katana",
+    "hc_katana",
+    "ch_katana",
+    "qt_katana",
+    "falx",
+    "lc_falx",
+    "mc_falx",
+    "hc_falx",
+    "ch_falx",
+    "qt_falx",
+    "scourge_moonstone",
+    "scourge_moonstone_on",
+    "bullwhip",
+    "bullwhip_razor"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "martial_art",
+  "id": "style_shrike",
+  "name": {
+    "str": "屠掠爪击术"
+  },
+  "description": "一种战斗方式，用于猎人的猎人，一种致力于血魔法的神秘等级的高级刺客。设计时考虑到了各种刀锋武器，但也可以在手无寸铁的情况下使用，特别是有爪子的变种人，或者选择有限的手无寸铁的武器。力量和灵巧可以提高你的能力，但弱者会与之抗争，而最充分地运用这种风格需要奥术知识。",
+  "initiate": [
+    "你已经为等待的考验做好了准备。",
+    "%s似乎准备流血。"
+  ],
+  "arm_block": 3,
+  "learn_difficulty": 7,
+  "primary_skill": "magic",
+  "onattack_buffs": [
+    {
+      "id": "buff_shrike_onattack1",
+      "name": "嗜血",
+      "description": "你专注于进攻。\n\n命中+1，闪避技能-1，闪避次数-1。\n持续 3 回合。可叠加 3 次。",
+      "melee_allowed": true,
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": false,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 3
+        },
+        {
+          "name": "magic",
+          "level": 3
+        }
+      ],
+      "buff_duration": 3,
+      "max_stacks": 3,
+      "bonus_dodges": -1,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": 1
+        },
+        {
+          "stat": "dodge",
+          "scale": -1
+        }
+      ]
+    },
+    {
+      "id": "buff_shrike_onattack2",
+      "name": "磨尖利爪（徒手）",
+      "description": "空手并不总是意味着手无寸铁。\n\n斩击/刺击护甲穿透按敏捷的 50% 提升。\n持续2回合。可叠加3次。",
+      "//": "All unarmed weapons are permitted, but using the tiger claws, bionic claws, or demon claw is recommended since the other buffs and techniques are off-limits to other unarmed weapons.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": true,
+      "skill_requirements": [
+        {
+          "name": "unarmed",
+          "level": 3
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 3,
+      "flat_bonuses": [
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scaling-stat": "dex",
+          "scale": 0.5
+        },
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scaling-stat": "dex",
+          "scale": 0.5
+        }
+      ]
+    },
+    {
+      "id": "buff_shrike_onattack3",
+      "name": "磨尖利爪（爪）",
+      "description": "空手并不总是意味着手无寸铁。\n\n斩击/刺击护甲穿透按敏捷的 50% 提升。\n持续2回合。可叠加3次。",
+      "//": "All unarmed weapons are permitted, but using the tiger claws, bionic claws, or demon claw is recommended since the other buffs and techniques are off-limits to other unarmed weapons.",
+      "melee_allowed": true,
+      "weapon_categories_allowed": [
+        "CLAWS"
+      ],
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 3
+        },
+        {
+          "name": "magic",
+          "level": 4
+        }
+      ],
+      "buff_duration": 2,
+      "max_stacks": 3,
+      "flat_bonuses": [
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scaling-stat": "dex",
+          "scale": 0.5
+        }
+      ]
+    }
+  ],
+  "oncrit_buffs": [
+    {
+      "id": "buff_shrike_oncrit",
+      "name": "拾荒者",
+      "description": "致命的伤口带来了机会。解锁“撕裂爪击”战技。\n斩击和刺击伤害按力量的 25% 提升，速度按敏捷的 75% 提升，格挡效率 -2，格挡次数 -1。\n持续 6 回合。可叠加 2 次。",
+      "melee_allowed": true,
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": false,
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 4
+        },
+        {
+          "name": "magic",
+          "level": 3
+        }
+      ],
+      "buff_duration": 6,
+      "max_stacks": 2,
+      "bonus_blocks": -1,
+      "flat_bonuses": [
+        {
+          "stat": "damage",
+          "type": "cut",
+          "scaling-stat": "str",
+          "scale": 0.25
+        },
+        {
+          "stat": "damage",
+          "type": "stab",
+          "scaling-stat": "str",
+          "scale": 0.25
+        },
+        {
+          "stat": "speed",
+          "scaling-stat": "dex",
+          "scale": 0.75
+        },
+        {
+          "stat": "block",
+          "scale": -2
+        }
+      ]
+    }
+  ],
+  "onkill_buffs": [
+    {
+      "id": "buff_shrike_onkill",
+      "name": "放血",
+      "description": "每一个被杀的敌人都为下一次攻击提供力量。\n寒冷伤害按力量的 50% 提升，格挡值按力量的 25% 提升，闪避技能按敏捷的 25% 提升，格挡次数 +3，闪避次数 +3。\n持续 6 回合。可叠加 2 次。",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 4
+        },
+        {
+          "name": "magic",
+          "level": 5
+        }
+      ],
+      "melee_allowed": true,
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": false,
+      "buff_duration": 6,
+      "max_stacks": 2,
+      "bonus_dodges": 3,
+      "bonus_blocks": 3,
+      "flat_bonuses": [
+        {
+          "stat": "damage",
+          "type": "cold",
+          "scaling-stat": "str",
+          "scale": 0.5
+        },
+        {
+          "stat": "dodge",
+          "scaling-stat": "dex",
+          "scale": 0.25
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "str",
+          "scale": 0.25
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_shrike_crit",
+    "tec_shrike_counter",
+    "tec_shrike_finisher",
+    "tec_shrike_break"
+  ],
+  "weapons": [
+    "hand_of_armok",
+    "bagh_nakha",
+    "bio_claws_weapon",
+    "blood_athame",
+    "moonstone_fang",
+    "moonstone_fang_on",
+    "kirpan",
+    "kirpan_cheap",
+    "knife_baselard",
+    "knife_combat",
+    "knife_hunting",
+    "knife_rambo",
+    "knife_rm42",
+    "knife_trench",
+    "bronze_knife",
+    "kris",
+    "switchblade",
+    "tanto",
+    "tanto_inferior",
+    "bloodaxe",
+    "bloodaxe_act",
+    "battleaxe",
+    "battleaxe_inferior",
+    "bronze_axe",
+    "ax",
+    "fire_ax",
+    "crash_axe",
+    "hatchet",
+    "lichhook",
+    "shrike_misericorde",
+    "shrike_misericorde_folded",
+    "sword_bayonet",
+    "sword_bayonet_mod",
+    "makeshift_machete",
+    "machete",
+    "survivor_machete",
+    "survivor_machete_qt",
+    "kukri",
+    "khopesh",
+    "dao",
+    "wakizashi",
+    "wakizashi_inferior",
+    "lc_wakizashi",
+    "mc_wakizashi",
+    "hc_wakizashi",
+    "ch_wakizashi",
+    "qt_wakizashi",
+    "cavalry_sabre",
+    "lc_cavalry_sabre",
+    "mc_cavalry_sabre",
+    "hc_cavalry_sabre",
+    "ch_cavalry_sabre",
+    "qt_cavalry_sabre",
+    "scimitar",
+    "scimitar_inferior",
+    "lc_scimitar",
+    "mc_scimitar",
+    "hc_scimitar",
+    "ch_scimitar",
+    "qt_scimitar",
+    "cutlass",
+    "lc_cutlass",
+    "mc_cutlass",
+    "hc_cutlass",
+    "ch_cutlass",
+    "qt_cutlass",
+    "katana",
+    "katana_inferior",
+    "lc_katana",
+    "mc_katana",
+    "hc_katana",
+    "ch_katana",
+    "qt_katana",
+    "falx",
+    "lc_falx",
+    "mc_falx",
+    "hc_falx",
+    "ch_falx",
+    "qt_falx",
+    "scourge_moonstone",
+    "scourge_moonstone_on",
+    "bullwhip",
+    "bullwhip_razor"
+  ]
+}
+```
+

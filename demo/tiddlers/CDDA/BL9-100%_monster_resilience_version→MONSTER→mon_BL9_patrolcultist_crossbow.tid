@@ -1,0 +1,201 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_patrolcultist_crossbow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_patrolcultist_crossbow|http://cdda.aloxaf.cn/search?q=mon_BL9_patrolcultist_crossbow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/Infantry.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_patrolcultist_crossbow",
+  "looks_like": "mon_dementia",
+  "type": "MONSTER",
+  "name": {
+    "str": "Armed Patrolling BL9-Cultist - Crossbow"
+  },
+  "description": "A zealot infected by the BL9. It appears to be sentient, having all characteristics of a normal person except for strangely solemn gaze, deathly pale skin and bloodshot eyes indicating the BL9 presence, their motive is to kill those that didn't accept the blessing of their \"dios\", this one is armed with a crossbow and it seems to know how to use it well.",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "speed": 75,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "special_attacks": [
+    [
+      "PARROT",
+      11
+    ],
+    {
+      "type": "gun",
+      "cooldown": 8,
+      "move_cost": 1100,
+      "gun_type": "mongun_BL9_crossbow",
+      "fake_skills": [
+        [
+          "gun",
+          8
+        ],
+        [
+          "rifle",
+          8
+        ]
+      ],
+      "fake_dex": 8,
+      "fake_per": 8,
+      "require_targeting_player": false,
+      "description": "The ganados fires it's crossbow!",
+      "ranges": [
+        [
+          3,
+          14,
+          "DEFAULT"
+        ]
+      ]
+    }
+  ],
+  "death_drops": "BL9_Drops_Cultistpatrolgrunt",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_patrolcultist_crossbow",
+  "looks_like": "mon_dementia",
+  "type": "MONSTER",
+  "name": {
+    "str": "武装巡逻BL9邪教-弩"
+  },
+  "description": "一个被BL9感染的狂热者。它似乎有知觉，拥有正常人的所有特征，除了奇怪的庄严凝视，死灰的皮肤和充血的眼睛表明BL9的存在，他们的动机是杀死那些不接受他们的“迪奥”祝福的人，这个人带着一把弩，似乎知道如何很好地使用它。",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "speed": 75,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "special_attacks": [
+    [
+      "PARROT",
+      11
+    ],
+    {
+      "type": "gun",
+      "cooldown": 8,
+      "move_cost": 1100,
+      "gun_type": "mongun_BL9_crossbow",
+      "fake_skills": [
+        [
+          "gun",
+          8
+        ],
+        [
+          "rifle",
+          8
+        ]
+      ],
+      "fake_dex": 8,
+      "fake_per": 8,
+      "require_targeting_player": false,
+      "description": "BL9雇佣兵-弩发射了弩！",
+      "ranges": [
+        [
+          3,
+          14,
+          "DEFAULT"
+        ]
+      ]
+    }
+  ],
+  "death_drops": "BL9_Drops_Cultistpatrolgrunt",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

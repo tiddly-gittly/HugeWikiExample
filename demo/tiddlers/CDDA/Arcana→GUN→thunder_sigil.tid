@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: GUN Arcana
+title: Arcana→GUN→thunder_sigil
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：thunder_sigil|http://cdda.aloxaf.cn/search?q=thunder_sigil]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "thunder_sigil",
+  "type": "GUN",
+  "category": "weapons",
+  "name": {
+    "str": "symbol of judgment",
+    "str_pl": "symbols of judgment"
+  },
+  "description": "A golden band decorated with a trident motif, and inlaid with silver.  Just small enough to grasp the band in your palm, prongs between the fingers.  Holding it gives you the vague sense that this is a holy symbol, dedicated to something not of this world.  Firing it calls forth lightning.",
+  "weight": "1100 g",
+  "volume": "750 ml",
+  "longest_side": "21 cm",
+  "price": "1500 USD",
+  "price_postapoc": "100 USD",
+  "bashing": 8,
+  "cutting": 10,
+  "material": [
+    "gold",
+    "silver"
+  ],
+  "symbol": ",",
+  "looks_like": "gold_bracelet",
+  "color": "yellow",
+  "ammo": "essence_type",
+  "skill": "magic",
+  "range": 50,
+  "ranged_damage": {
+    "damage_type": "electric",
+    "amount": 60,
+    "armor_penetration": 15
+  },
+  "dispersion": 200,
+  "durability": 10,
+  "loudness": 150,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 5
+      }
+    }
+  ],
+  "clip_size": 5,
+  "reload": 400,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_symbol_judgment_zap",
+            "once_in": 5,
+            "message": "Sparks leap from your weapon.",
+            "npc_message": "Sparks leap from %1$s's weapon."
+          }
+        ]
+      }
+    ]
+  },
+  "ammo_effects": [
+    "LIGHTNING_JUDGMENT"
+  ],
+  "flags": [
+    "STAB",
+    "UNARMED_WEAPON",
+    "BELT_CLIP",
+    "NEVER_JAMS",
+    "PRIMITIVE_RANGED_WEAPON",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED"
+  ],
+  "use_action": "MEDITATE"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "thunder_sigil",
+  "type": "GUN",
+  "category": "weapons",
+  "name": {
+    "str": "审判符文",
+    "str_pl": "审判符文"
+  },
+  "description": "一枚镶银的金色符文，绘有三叉戟图案。小到刚好可以握在手里，手指可以夹着它的突出处。握着它时你隐约感觉到它的神圣，被用来向不属于这个世界的存在献祭。发射它来召唤闪电。",
+  "weight": "1100 g",
+  "volume": "750 ml",
+  "longest_side": "21 cm",
+  "price": "1500 USD",
+  "price_postapoc": "100 USD",
+  "bashing": 8,
+  "cutting": 10,
+  "material": [
+    "gold",
+    "silver"
+  ],
+  "symbol": ",",
+  "looks_like": "gold_bracelet",
+  "color": "yellow",
+  "ammo": "essence_type",
+  "skill": "magic",
+  "range": 50,
+  "ranged_damage": {
+    "damage_type": "electric",
+    "amount": 60,
+    "armor_penetration": 15
+  },
+  "dispersion": 200,
+  "durability": 10,
+  "loudness": 150,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 5
+      }
+    }
+  ],
+  "clip_size": 5,
+  "reload": 400,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_symbol_judgment_zap",
+            "once_in": 5,
+            "message": "火花从你的武器上跳了出来。",
+            "npc_message": "火花从%1$s的武器上跳了出来。"
+          }
+        ]
+      }
+    ]
+  },
+  "ammo_effects": [
+    "LIGHTNING_JUDGMENT"
+  ],
+  "flags": [
+    "STAB",
+    "UNARMED_WEAPON",
+    "BELT_CLIP",
+    "NEVER_JAMS",
+    "PRIMITIVE_RANGED_WEAPON",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED"
+  ],
+  "use_action": "MEDITATE"
+}
+```
+

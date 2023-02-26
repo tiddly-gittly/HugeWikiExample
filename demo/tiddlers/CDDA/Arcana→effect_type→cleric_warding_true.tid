@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→cleric_warding_true
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cleric_warding_true|http://cdda.aloxaf.cn/search?q=cleric_warding_true]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "cleric_warding_true",
+  "name": [
+    "Holy Ward"
+  ],
+  "desc": [
+    "Immunity to blade and bullet, protection from anomalous effects and cold-type damage."
+  ],
+  "remove_message": "The magical protection enveloping your body flickers and fades.",
+  "removes_effects": [
+    "darkness",
+    "rat",
+    "evil",
+    "arcana_evil_mimic",
+    "attention",
+    "teleglow",
+    "amigara",
+    "taint",
+    "tindrift",
+    "archon_gaze_effect",
+    "chalice_offering_side_effects",
+    "blood_athame_side_effects"
+  ],
+  "decay_messages": [
+    [
+      "Your holy ward is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "//": "Replace with resistances when implemented, physical immunities are way more OP than elemental immunities.",
+  "flags": [
+    "CUT_IMMUNE",
+    "STAB_IMMUNE",
+    "BULLET_IMMUNE",
+    "COLD_IMMUNE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "cleric_warding_true",
+  "name": [
+    "神圣结界"
+  ],
+  "desc": [
+    "对刀锋和子弹免疫，防止异常效应和冷损伤。"
+  ],
+  "remove_message": "包裹你身体的魔法保护会忽明忽暗。",
+  "removes_effects": [
+    "darkness",
+    "rat",
+    "evil",
+    "arcana_evil_mimic",
+    "attention",
+    "teleglow",
+    "amigara",
+    "taint",
+    "tindrift",
+    "archon_gaze_effect",
+    "chalice_offering_side_effects",
+    "blood_athame_side_effects"
+  ],
+  "decay_messages": [
+    [
+      "你的神圣防护结界正在衰弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "//": "Replace with resistances when implemented, physical immunities are way more OP than elemental immunities.",
+  "flags": [
+    "CUT_IMMUNE",
+    "STAB_IMMUNE",
+    "BULLET_IMMUNE",
+    "COLD_IMMUNE"
+  ]
+}
+```
+

@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_mark_summon_fiend
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mark_summon_fiend|http://cdda.aloxaf.cn/search?q=arcana_mark_summon_fiend]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_sanguine_marks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_mark_summon_fiend",
+  "type": "SPELL",
+  "name": {
+    "str": "Mark: Summon Fiend"
+  },
+  "description": "Sanguine Mark\nUsing this spell will summon an ashen revenant.  Whether it will obey you is completely up to chance.",
+  "message": "With a hand sign, a plume of living flame erupts from the ground, solidifying into a scorched humanoid form.  %s!",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "HOSTILE_50",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_4",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_zombie_fiend_summoned",
+  "energy_source": "HP",
+  "difficulty": 40,
+  "skill": "magic",
+  "max_level": 5,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 4,
+  "max_range": 7,
+  "range_increment": 0.6,
+  "base_casting_time": 175,
+  "final_casting_time": 160,
+  "casting_time_increment": -3,
+  "base_energy_cost": 20,
+  "final_energy_cost": 10,
+  "energy_increment": -2,
+  "min_duration": 480000,
+  "max_duration": 1200000,
+  "duration_increment": 144000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_mark_summon_fiend",
+  "type": "SPELL",
+  "name": {
+    "str": "印记：召唤恶魔"
+  },
+  "description": "使用此咒语的猩红印记\n将召唤一个灰白的复仇者。它是否会服从你完全取决于机会。",
+  "message": "随着手语，一股鲜活的火焰从地面喷发出来，凝固成一个烧焦的人形。%s ！",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "HOSTILE_50",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_4",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_zombie_fiend_summoned",
+  "energy_source": "HP",
+  "difficulty": 40,
+  "skill": "magic",
+  "max_level": 5,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 4,
+  "max_range": 7,
+  "range_increment": 0.6,
+  "base_casting_time": 175,
+  "final_casting_time": 160,
+  "casting_time_increment": -3,
+  "base_energy_cost": 20,
+  "final_energy_cost": 10,
+  "energy_increment": -2,
+  "min_duration": 480000,
+  "max_duration": 1200000,
+  "duration_increment": 144000
+}
+```
+

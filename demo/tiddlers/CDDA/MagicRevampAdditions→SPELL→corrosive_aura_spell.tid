@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→corrosive_aura_spell
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：corrosive_aura_spell|http://cdda.aloxaf.cn/search?q=corrosive_aura_spell]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/biomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "corrosive_aura_spell",
+  "type": "SPELL",
+  "name": {
+    "str": "Caustic Feedback"
+  },
+  "description": "This is a sub-spell of the Caustic Aura spell.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "acid",
+  "min_damage": 3,
+  "max_damage": 3,
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "sound_type": "combat",
+  "sound_description": "acidic sizzle!",
+  "min_range": 2,
+  "max_range": 2,
+  "min_dot": 2,
+  "max_dot": 2,
+  "min_duration": 300,
+  "max_duration": 300
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "corrosive_aura_spell",
+  "type": "SPELL",
+  "name": {
+    "str": "腐蚀反击"
+  },
+  "description": "这只是腐蚀光环附属的法术。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "acid",
+  "min_damage": 3,
+  "max_damage": 3,
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "sound_type": "combat",
+  "sound_description": "acidic sizzle!",
+  "min_range": 2,
+  "max_range": 2,
+  "min_dot": 2,
+  "max_dot": 2,
+  "min_duration": 300,
+  "max_duration": 300
+}
+```
+

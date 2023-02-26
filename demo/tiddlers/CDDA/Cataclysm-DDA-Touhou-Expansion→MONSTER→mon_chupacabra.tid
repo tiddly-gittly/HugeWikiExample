@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_chupacabra
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_chupacabra|http://cdda.aloxaf.cn/search?q=mon_chupacabra]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_youkai.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_chupacabra",
+  "type": "MONSTER",
+  "name": {
+    "str": "Chupacabra",
+    "str_pl": "Chupacabras"
+  },
+  "description": "A creature, having the appearance and gait of a gangly, bowed dog or canid.  The animal looks sickly, with the gray skin looking smooth, being almost completely hairless except for patches of skin over the shoulders in some individuals.  The fangs look bigger than they should, and while the overall appearance of the beast is fragile, the illusion is quickly broken once you see it moving to hunt prey.",
+  "volume": "40000 ml",
+  "weight": "30000 g",
+  "default_faction": "touhou_youkai_neutral",
+  "bodytype": "dog",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_NEUTRAL_TOUHOU"
+  ],
+  "harvest": "mammal_leather",
+  "hp": 65,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "δ",
+  "color": "light_gray",
+  "aggression": -5,
+  "morale": 35,
+  "melee_skill": 5,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "dodge": 5,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "vision_night": 15,
+  "reproduction": {
+    "baby_monster": "mon_chupacabra_young",
+    "baby_count": 3,
+    "baby_timer": 60
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT",
+    "PLAYER_CLOSE"
+  ],
+  "armor_bash": 4,
+  "armor_cut": 2,
+  "armor_bullet": 8,
+  "armor_stab": 6,
+  "armor_acid": 2,
+  "armor_fire": 6,
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      100
+    ],
+    [
+      "slash_3d3",
+      2
+    ]
+  ],
+  "flags": [
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ],
+  "//": "These are what show up when you google 'chupacabra mange'. Former dogs/dog-sized canids, now at the boundary of being diseased animals and newborn youkai",
+  "//2": "Physical armor values should be removed IF the not yet implemented YOUKAI flag gives passive resistances."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_chupacabra",
+  "type": "MONSTER",
+  "name": {
+    "str": "Chupacabra",
+    "str_pl": "Chupacabras"
+  },
+  "description": "A creature, having the appearance and gait of a gangly, bowed dog or canid.  The animal looks sickly, with the gray skin looking smooth, being almost completely hairless except for patches of skin over the shoulders in some individuals.  The fangs look bigger than they should, and while the overall appearance of the beast is fragile, the illusion is quickly broken once you see it moving to hunt prey.",
+  "volume": "40000 ml",
+  "weight": "30000 g",
+  "default_faction": "touhou_youkai_neutral",
+  "bodytype": "dog",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_NEUTRAL_TOUHOU"
+  ],
+  "harvest": "mammal_leather",
+  "hp": 65,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "δ",
+  "color": "light_gray",
+  "aggression": -5,
+  "morale": 35,
+  "melee_skill": 5,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "dodge": 5,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "vision_night": 15,
+  "reproduction": {
+    "baby_monster": "mon_chupacabra_young",
+    "baby_count": 3,
+    "baby_timer": 60
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT",
+    "PLAYER_CLOSE"
+  ],
+  "armor_bash": 4,
+  "armor_cut": 2,
+  "armor_bullet": 8,
+  "armor_stab": 6,
+  "armor_acid": 2,
+  "armor_fire": 6,
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      100
+    ],
+    [
+      "slash_3d3",
+      2
+    ]
+  ],
+  "flags": [
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ],
+  "//": "These are what show up when you google 'chupacabra mange'. Former dogs/dog-sized canids, now at the boundary of being diseased animals and newborn youkai",
+  "//2": "Physical armor values should be removed IF the not yet implemented YOUKAI flag gives passive resistances."
+}
+```
+

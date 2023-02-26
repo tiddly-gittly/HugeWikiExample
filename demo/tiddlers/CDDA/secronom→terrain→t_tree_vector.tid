@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_tree_vector
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_tree_vector|http://cdda.aloxaf.cn/search?q=t_tree_vector]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_tree_vector",
+  "looks_like": "t_tree_fungal",
+  "name": "vector tree",
+  "description": "Infested by vector dust, this tree luminates the surroundings with its leaves, bark stripes and falling starlights.",
+  "symbol": "7",
+  "color": "light_blue",
+  "light_emitted": 10,
+  "move_cost": 0,
+  "coverage": 80,
+  "emissions": [
+    "secro_vector_smol_seeding"
+  ],
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "VECTOR",
+    "EMITTER",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "bash": {
+    "str_min": 40,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "oof!",
+    "ter_set": "t_vector"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_tree_vector",
+  "looks_like": "t_tree_fungal",
+  "name": "载体树",
+  "description": "这棵树已经被病毒载体尘所感染。它正用它的叶子，树皮以及从树上散落下来的星光照亮着周围的一切。",
+  "symbol": "7",
+  "color": "light_blue",
+  "light_emitted": 10,
+  "move_cost": 0,
+  "coverage": 80,
+  "emissions": [
+    "secro_vector_smol_seeding"
+  ],
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "VECTOR",
+    "EMITTER",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "bash": {
+    "str_min": 40,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "oof!",
+    "ter_set": "t_vector"
+  }
+}
+```
+

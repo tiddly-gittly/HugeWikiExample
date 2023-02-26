@@ -1,0 +1,249 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_atk
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_atk|http://cdda.aloxaf.cn/search?q=secro_power_armor_atk]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armors.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_atk",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom exoskeleton \"O\""
+  },
+  "description": "A fully modified military power armor suitable for human... and the likes. Made especially for Secronom project's BOW specimens, but later on redesigned to fit the wearer's anatomy. Augmented by internal nerve stimulators, the Secronom exoskeleton type \"O\" is a lightweight and highly resistant suit that can deflects most projectile and impacts.\n\nSecronom exoskeleton type \"O\" provides:\n<color_white>Dexterity: <color_light_green>+2</color>\nDodge: <color_light_green>+2</color>\nAttack speed: <color_light_green>+5%</color></color>",
+  "weight": "12670 g",
+  "volume": "15 L",
+  "price": "115000 USD",
+  "price_postapoc": "400 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy",
+    "plastic"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_light",
+  "color": "light_red",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 500
+      }
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "2 L",
+      "max_contains_weight": "4 kg",
+      "moves": 75
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "2 L",
+      "max_contains_weight": "4 kg",
+      "moves": 75
+    }
+  ],
+  "warmth": 60,
+  "power_armor": true,
+  "use_action": {
+    "target": "secro_power_armor_atk_on",
+    "msg": "\"Vessel\" module - <color_light_green>online",
+    "type": "transform",
+    "active": true,
+    "menu_text": "Activate \"Vessel\" module"
+  },
+  "ammo": "battery",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "DEXTERITY",
+            "add": 2
+          },
+          {
+            "value": "BONUS_DODGE",
+            "add": 2
+          },
+          {
+            "value": "ATTACK_SPEED",
+            "multiply": 0.05
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "WATERPROOF",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "WATCH",
+    "THERMOMETER",
+    "SUN_GLASSES",
+    "OVERSIZE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 40,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r",
+        "head",
+        "eyes",
+        "mouth"
+      ],
+      "material": [
+        "superalloy",
+        "plastic"
+      ],
+      "material_thickness": 10,
+      "environmental_protection": 16
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_atk",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom外骨骼“O”"
+  },
+  "description": "一种完全改装的适合人类的军用动力装甲...诸如此类。专为Secronom项目的BOW标本制作，但后来进行了重新设计，以适应佩戴者的解剖结构。由内部神经刺激器增强的Secronom”型外骨骼是一种重量轻、高度抵抗的服装，可以偏转大多数投射物和撞击。\n\n Secronom外骨骼“O”型提供：\n <color_white>灵巧度：<color_light_green> +2 </color> \n躲闪：<color_light_green> +2 </color> \n攻击速度：<color_light_green> +5% </color> </color>",
+  "weight": "12670 g",
+  "volume": "15 L",
+  "price": "115000 USD",
+  "price_postapoc": "400 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy",
+    "plastic"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_light",
+  "color": "light_red",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 500
+      }
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "2 L",
+      "max_contains_weight": "4 kg",
+      "moves": 75
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "2 L",
+      "max_contains_weight": "4 kg",
+      "moves": 75
+    }
+  ],
+  "warmth": 60,
+  "power_armor": true,
+  "use_action": {
+    "target": "secro_power_armor_atk_on",
+    "msg": "“船舶”模块-<color_light_green>在线",
+    "type": "transform",
+    "active": true,
+    "menu_text": "激活“容器”模块"
+  },
+  "ammo": "battery",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "DEXTERITY",
+            "add": 2
+          },
+          {
+            "value": "BONUS_DODGE",
+            "add": 2
+          },
+          {
+            "value": "ATTACK_SPEED",
+            "multiply": 0.05
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "WATERPROOF",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "WATCH",
+    "THERMOMETER",
+    "SUN_GLASSES",
+    "OVERSIZE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 40,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r",
+        "head",
+        "eyes",
+        "mouth"
+      ],
+      "material": [
+        "superalloy",
+        "plastic"
+      ],
+      "material_thickness": 10,
+      "environmental_protection": 16
+    }
+  ]
+}
+```
+

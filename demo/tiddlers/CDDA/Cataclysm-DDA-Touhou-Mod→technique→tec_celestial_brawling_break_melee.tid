@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_celestial_brawling_break_melee
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_celestial_brawling_break_melee|http://cdda.aloxaf.cn/search?q=tec_celestial_brawling_break_melee]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_celestial_brawling_break_melee",
+  "type": "technique",
+  "name": "Grab Break",
+  "messages": [
+    "The %s tries to grab you, but you break through!",
+    "The %s tries to grab <npcname>, but <npcname> breaks through!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 2
+    }
+  ],
+  "melee_allowed": true,
+  "crit_ok": false,
+  "defensive": true,
+  "grab_break": true,
+  "knockback_dist": 1,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 1.334
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_celestial_brawling_break_melee",
+  "type": "technique",
+  "name": "反擒拿",
+  "messages": [
+    "The %s tries to grab you，but you break through！",
+    "The %s tries to grab <npcname>，but <npcname> breaks through！"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 2
+    }
+  ],
+  "melee_allowed": true,
+  "crit_ok": false,
+  "defensive": true,
+  "grab_break": true,
+  "knockback_dist": 1,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 1.334
+    }
+  ]
+}
+```
+

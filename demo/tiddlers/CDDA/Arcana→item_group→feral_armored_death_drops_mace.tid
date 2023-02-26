@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: item_group Arcana
+title: Arcana→item_group→feral_armored_death_drops_mace
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：feral_armored_death_drops_mace|http://cdda.aloxaf.cn/search?q=feral_armored_death_drops_mace]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monster_drops.json
+
+
+!! 原文
+
+```json
+{
+  "id": "feral_armored_death_drops_mace",
+  "copy-from": "feral_armored_death_drops_mace",
+  "type": "item_group",
+  "//": "Adds items since we're referencing an existing itemgroup.",
+  "subtype": "collection",
+  "extend": {
+    "entries": [
+      {
+        "item": "essence_blood",
+        "prob": 25,
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "group": "arcana_hunt_random",
+        "prob": 5
+      },
+      {
+        "group": "magic_books_postapoc",
+        "prob": 10
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "feral_armored_death_drops_mace",
+  "copy-from": "feral_armored_death_drops_mace",
+  "type": "item_group",
+  "//": "Adds items since we're referencing an existing itemgroup.",
+  "subtype": "collection",
+  "extend": {
+    "entries": [
+      {
+        "item": "essence_blood",
+        "prob": 25,
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "group": "arcana_hunt_random",
+        "prob": 5
+      },
+      {
+        "group": "magic_books_postapoc",
+        "prob": 10
+      }
+    ]
+  }
+}
+```
+

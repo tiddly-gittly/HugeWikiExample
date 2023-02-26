@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_WHO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_WHO|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_WHO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_WHO",
+  "dynamic_line": {
+    "u_has_effect": "hermit_earned_trust_2",
+    "yes": "I used to be a follower of He From Beyond The Veil.  Well, no, I still am.  The oath is eternal.  But one old man can only do so much.  So many of us have fallen…",
+    "no": "I've been a lot of things in the past, but now I am nothing more than a survivor as any other.  A scholar I suppose, as I've little to do but read what the old world has left behind."
+  },
+  "responses": [
+    {
+      "text": "Yet humanity perseveres, and there are still those of us out there to serve His will.",
+      "topic": "TALK_HERMIT_VEIL_SOLIDARITY",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "hermit_earned_trust_2"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "What can you tell me of He From Beyond The Veil?",
+      "topic": "TALK_HERMIT_QUERY_VEIL",
+      "condition": {
+        "u_has_effect": "hermit_earned_trust_2"
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "A scholar?  What kinds of books do you have?",
+      "topic": "TALK_HERMIT_SCHOLAR"
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_WHO",
+  "dynamic_line": {
+    "u_has_effect": "hermit_earned_trust_2",
+    "yes": "我曾经是帷幕彼端古神追随者。嗯，不，我仍然是。誓言是永恒的。但是一个老人只能做这么多。我们很多人都堕落了…",
+    "no": "我只是过去的幸存者。我想我是个学者，因为我除了读旧世界留下的东西外，几乎没什么可做的。"
+  },
+  "responses": [
+    {
+      "text": "然而人类仍在坚持，我们当中仍有人为他的意志服务。",
+      "topic": "TALK_HERMIT_VEIL_SOLIDARITY",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "hermit_earned_trust_2"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "你能告诉我关于帷幕彼端古神的什么？",
+      "topic": "TALK_HERMIT_QUERY_VEIL",
+      "condition": {
+        "u_has_effect": "hermit_earned_trust_2"
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "学者？你有什么书？",
+      "topic": "TALK_HERMIT_SCHOLAR"
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

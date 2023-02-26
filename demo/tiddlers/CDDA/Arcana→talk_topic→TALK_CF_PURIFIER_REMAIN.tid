@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_REMAIN
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_REMAIN|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_REMAIN]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_REMAIN",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "FIX_CF_GM",
+    "yes": {
+      "u_has_trait": "PROF_CLEANSINGFLAME2",
+      "yes": "There are a few other isolated contacts that I'm aware of, but getting in touch with them will prove difficult.  Thane McKinnon and I will do our best, but for all I know you might be the last of our network of contacts remaining out there.",
+      "no": "Sofia and I are working to track down and get in touch with others, but I'm not certain how many more hunting parties, nor any external contacts, are still alive out there.  Only time will tell."
+    },
+    "no": {
+      "u_has_trait": "PROF_CLEANSINGFLAME2",
+      "yes": "Well there's you, obviously!  You're one of the urban contacts as well, I can tell that practically by instinct, that's gotta count for something right?  And then there's the actual hunters all over here, and… well, I dunno other than that.  Nick might know more, I hope.",
+      "no": "There's everyone here, possibly a few other contacts Nicholas might know more about.  But, we're here, Sofia and her pals are here, and we're surviving.  That's better than nothing, better than a lot of people can say, right?  Well, except those aforementioned people wouldn't be able to say anything because they're dead, but you know what I mean…"
+    }
+  },
+  "responses": [
+    {
+      "text": "…",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_REMAIN",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "FIX_CF_GM",
+    "yes": {
+      "u_has_trait": "PROF_CLEANSINGFLAME2",
+      "yes": "我知道还有其他一些孤立的联系方式，但与他们取得联系将是困难的。我知道我们的关系网没有了。",
+      "no": "索菲亚和我正在努力寻找并与其他人取得联系，但我不确定还有多少狩猎聚会，也不知道还有多少外部联系人还活着。只有时间会证明一切。"
+    },
+    "no": {
+      "u_has_trait": "PROF_CLEANSINGFLAME2",
+      "yes": "好吧，很明显就是你！你也是城市里的一个联系人，我凭直觉就知道，这是有意义的，对吧？然后这里到处都是真正的猎人，而且……嗯，我不知道别的。我希望尼克能知道更多。",
+      "no": "所有人都在这里，可能还有其他一些联系人尼古拉斯可能知道更多。但是，我们在这里，索菲亚和她的朋友们在这里，我们还活着。总比什么都没有好，比很多人都能说的好，对吧？好吧，除了前面提到的那些人因为他们死了而什么都不能说，但是你知道我的意思…"
+    }
+  },
+  "responses": [
+    {
+      "text": "…",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+

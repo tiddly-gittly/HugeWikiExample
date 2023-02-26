@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→cold_ward
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cold_ward|http://cdda.aloxaf.cn/search?q=cold_ward]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "cold_ward",
+  "name": [
+    "Ward Against Cold"
+  ],
+  "desc": [
+    "Protection against the effects of cold."
+  ],
+  "remove_message": "For a moment you feel a terrible chill in the air, as the ward against cold fades.",
+  "removes_effects": [
+    "cold",
+    "frostbite",
+    "frostbite_recovery",
+    "arcana_lingering_chill"
+  ],
+  "decay_messages": [
+    [
+      "Your ward against cold is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "cold_ward",
+  "name": [
+    "御寒结界"
+  ],
+  "desc": [
+    "抵御寒冷的影响。"
+  ],
+  "remove_message": "有那么一刻，你感到空气中有一股可怕的寒意，因为寒冷防护结界渐渐褪去。",
+  "removes_effects": [
+    "cold",
+    "frostbite",
+    "frostbite_recovery",
+    "arcana_lingering_chill"
+  ],
+  "decay_messages": [
+    [
+      "增强你的御寒防护结界正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+

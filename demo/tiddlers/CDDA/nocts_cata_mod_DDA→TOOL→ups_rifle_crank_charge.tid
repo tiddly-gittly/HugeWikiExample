@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: TOOL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL→ups_rifle_crank_charge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ups_rifle_crank_charge|http://cdda.aloxaf.cn/search?q=ups_rifle_crank_charge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "ups_rifle_crank_charge",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str": "survivor's crank rifle (charge mode)",
+    "str_pl": "survivor's crank rifle (charge mode)"
+  },
+  "description": "Further building on the developments that went into the UPS rifle, this integrates a hand crank and capacitors to charge a custom-made power cell.  Activate it to recharge a loaded capacitor bank, or to ready it for firing.",
+  "color": "yellow",
+  "symbol": "(",
+  "looks_like": "ups_rifle_crank",
+  "price": "7490 USD",
+  "price_postapoc": "60 USD",
+  "material": [
+    "steel",
+    "wood"
+  ],
+  "weight": "4964 g",
+  "volume": "4250 ml",
+  "bashing": 8,
+  "to_hit": -1,
+  "ammo": [
+    "battery"
+  ],
+  "use_action": [
+    "HAND_CRANK",
+    {
+      "type": "transform",
+      "msg": "You ready the rifle for firing.",
+      "menu_text": "Swap to fire mode",
+      "target": "ups_rifle_crank",
+      "ammo_scale": 0
+    }
+  ],
+  "pocket_data": [
+    {
+      "magazine_well": "300 ml",
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "rifle_crank_battery_cell"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "ups_rifle_crank_charge",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str": "幸存者曲柄步枪（充能模式）",
+    "str_pl": "幸存者曲柄步枪（充能模式）"
+  },
+  "description": "在幸存者 UPS步枪的基础上进一步改造，用集成的手摇柄和电容器为自制动力电池充电。无限弹药，以可靠性为代价。激活它以充能电容器，或准备发射。",
+  "color": "yellow",
+  "symbol": "(",
+  "looks_like": "ups_rifle_crank",
+  "price": "7490 USD",
+  "price_postapoc": "60 USD",
+  "material": [
+    "steel",
+    "wood"
+  ],
+  "weight": "4964 g",
+  "volume": "4250 ml",
+  "bashing": 8,
+  "to_hit": -1,
+  "ammo": [
+    "battery"
+  ],
+  "use_action": [
+    "HAND_CRANK",
+    {
+      "type": "transform",
+      "msg": "你将枪转换为射击模式。",
+      "menu_text": "切换到射击模式",
+      "target": "ups_rifle_crank",
+      "ammo_scale": 0
+    }
+  ],
+  "pocket_data": [
+    {
+      "magazine_well": "300 ml",
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "rifle_crank_battery_cell"
+      ]
+    }
+  ]
+}
+```
+

@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_CF_REP_MISSION_CHOSEN
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_CF_REP_MISSION_CHOSEN|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_CF_REP_MISSION_CHOSEN]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_CF_REP_MISSION_CHOSEN",
+  "dynamic_line": {
+    "npc_has_effect": "hermit_stage_4",
+    "yes": "If their pursuit of our knowledge is under your supervision Chosen, then I will trust your judgment.  You need only ask, what do they pursue?",
+    "no": "I see.  I did not quite recognize that fire in your eyes, the presence which guides you.  If this is true, and you are indeed acting on their behalf, then I will trust you.  What do they pursue?"
+  },
+  "responses": [
+    {
+      "text": "Can you tell me if any other Keepers still live?  They seek knowledge and allies.",
+      "effect": {
+        "npc_add_effect": "hermit_stage_4",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES"
+    },
+    {
+      "text": "Do you have any research of your own they may benefit from, concerning the Beyond?",
+      "effect": {
+        "npc_add_effect": "hermit_stage_4",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_HERMIT_CF_REP_MISSION_KNOWLEDGE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_CF_REP_MISSION_CHOSEN",
+  "dynamic_line": {
+    "npc_has_effect": "hermit_stage_4",
+    "yes": "如果他们追求我们的知识是在你的监督下选择的，那么我相信你的判断。你只需要问，他们追求什么？",
+    "no": "我懂了。我不太认识你眼中的火焰，那指引你的存在。如果这是真的，而且你确实代表他们行事，那么我就相信你。他们追求什么？"
+  },
+  "responses": [
+    {
+      "text": "你能告诉我还有没有其他饲养员还活着吗？他们寻求知识和盟友。",
+      "effect": {
+        "npc_add_effect": "hermit_stage_4",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES"
+    },
+    {
+      "text": "你有没有自己的研究可以让他们受益，关于超越？",
+      "effect": {
+        "npc_add_effect": "hermit_stage_4",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_HERMIT_CF_REP_MISSION_KNOWLEDGE"
+    }
+  ]
+}
+```
+

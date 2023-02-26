@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_GM_PRELUDE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_GM_PRELUDE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_GM_PRELUDE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_HERMIT_GM_PRELUDE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_effect": "hermit_stage_1",
+    "yes": "So this is why you have sought me out.  These are dark times, and strange events loom upon the horizon.  I am aware of one source that matches what you likely seek, but that one has seen conquered.  I have sensed, faintly, the presence of another.  The same force which intruded once before has begun to secure a second foothold upon this realm, one of many intruders from Beyond.  Relay this to whoever sent you, and beware the threat that awaits at the heart of this infestation.",
+    "no": "So this is why you have sought me out.  These are dark times, and strange events loom upon the horizon.  I am aware of one source that matches what you likely seek, but there is another.  It is faint, a presence that grows and takes root in this world, a firmer grip with each passing day.  The same force that established a trifling foothold among many other interlopers, has taken root anew.  Relay this to whoever sent you, but pursue this threat with caution."
+  },
+  "responses": [
+    {
+      "text": "Thank you.  I'll report back to them, then.",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_5",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_HERMIT_GM_PRELUDE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_effect": "hermit_stage_1",
+    "yes": "所以这就是你找我的原因。现在是黑暗的时代，奇怪的事件隐约出现在地平线上。我知道有一个源头与你可能寻求的相匹配，但那一个已经被征服了。我隐约感觉到另一个人的存在。以前入侵过一次的同一支部队已经开始在这片土地上获得第二个立足点，这是来自远方的众多入侵者之一。把这件事转告给任何派你来的人，并小心在这场灾难的中心等待着的威胁。",
+    "no": "所以这就是你找我的原因。现在是黑暗的时代，奇怪的事件隐约出现在地平线上。我知道有一个来源与你可能寻找的相匹配，但还有另一个来源。它是微弱的，一种在这个世界上生长和扎根的存在，一种与日复一日更牢固的握在一起的存在。在许多其他闯入者中站稳脚跟的那股力量，又重新扎根了。把这件事转告给派你的人，但要谨慎行事。"
+  },
+  "responses": [
+    {
+      "text": "非常感谢。那么我会向他们汇报的。",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_5",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

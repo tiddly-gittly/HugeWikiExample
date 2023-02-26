@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_fleshknot_tent
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_fleshknot_tent|http://cdda.aloxaf.cn/search?q=fd_fleshknot_tent]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_fleshknot_tent",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "writhing tentacles",
+      "sym": "y",
+      "color": "pink",
+      "effects": [
+        {
+          "effect_id": "eff_fleshknot_tent",
+          "body_part": "leg_l",
+          "intensity": 1,
+          "min_duration": "2 seconds",
+          "max_duration": "2 seconds",
+          "immune_inside_vehicle": true
+        },
+        {
+          "effect_id": "eff_fleshknot_tent",
+          "body_part": "leg_r",
+          "intensity": 1,
+          "min_duration": "2 seconds",
+          "max_duration": "2 seconds",
+          "immune_inside_vehicle": true
+        }
+      ]
+    },
+    {
+      "color": "light_red"
+    },
+    {
+      "name": "cluster of writhing tentacles",
+      "color": "red"
+    }
+  ],
+  "immune_mtypes": [
+    "mon_zombie_fleshknot_weak",
+    "mon_zombie_fleshknot_mode",
+    "mon_zombie_fleshknot_stro",
+    "mon_zombie_fleshknot_vstro"
+  ],
+  "half_life": "5 seconds",
+  "priority": 3,
+  "phase": "solid",
+  "display_items": true,
+  "display_field": true,
+  "bash": {
+    "str_min": 10,
+    "str_max": 20,
+    "sound_vol": 2,
+    "sound_fail_vol": 2,
+    "sound": "splash!",
+    "msg_success": "You bat away some tentacles."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_fleshknot_tent",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "writhing tentacles",
+      "sym": "y",
+      "color": "pink",
+      "effects": [
+        {
+          "effect_id": "eff_fleshknot_tent",
+          "body_part": "leg_l",
+          "intensity": 1,
+          "min_duration": "2 seconds",
+          "max_duration": "2 seconds",
+          "immune_inside_vehicle": true
+        },
+        {
+          "effect_id": "eff_fleshknot_tent",
+          "body_part": "leg_r",
+          "intensity": 1,
+          "min_duration": "2 seconds",
+          "max_duration": "2 seconds",
+          "immune_inside_vehicle": true
+        }
+      ]
+    },
+    {
+      "color": "light_red"
+    },
+    {
+      "name": "cluster of writhing tentacles",
+      "color": "red"
+    }
+  ],
+  "immune_mtypes": [
+    "mon_zombie_fleshknot_weak",
+    "mon_zombie_fleshknot_mode",
+    "mon_zombie_fleshknot_stro",
+    "mon_zombie_fleshknot_vstro"
+  ],
+  "half_life": "5 seconds",
+  "priority": 3,
+  "phase": "solid",
+  "display_items": true,
+  "display_field": true,
+  "bash": {
+    "str_min": 10,
+    "str_max": 20,
+    "sound_vol": 2,
+    "sound_fail_vol": 2,
+    "sound": "splash!",
+    "msg_success": "You bat away some tentacles."
+  }
+}
+```
+

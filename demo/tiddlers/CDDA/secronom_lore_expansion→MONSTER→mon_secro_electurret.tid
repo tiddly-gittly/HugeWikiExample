@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom_lore_expansion
+title: secronom_lore_expansion→MONSTER→mon_secro_electurret
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_secro_electurret|http://cdda.aloxaf.cn/search?q=mon_secro_electurret]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Monsters/Bots/SecronomTurrets.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_secro_electurret",
+  "type": "MONSTER",
+  "name": {
+    "str": "electroshock turret"
+  },
+  "description": "SDP-E3, a highly modified turret developed for immobilizing nearby creatures with the use of its electrifying tesla-coil. Its 360 degree AI sensor cam allows it to identify foes and discharge the turret automatically. Firmly embedded to the terrain, it requires a huge amount of power from its source to operate.",
+  "default_faction": "secro_defense_bot",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 20,
+  "volume": "60000 ml",
+  "weight": "172 kg",
+  "hp": 50,
+  "speed": 100,
+  "material": [
+    "steel"
+  ],
+  "symbol": "2",
+  "color": "cyan",
+  "aggression": 100,
+  "morale": 100,
+  "armor_bash": 12,
+  "armor_cut": 12,
+  "armor_bullet": 12,
+  "armor_stab": 12,
+  "luminance": 5,
+  "vision_day": 5,
+  "vision_night": 5,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_secro_electurret_target"
+      },
+      "cooldown": 3,
+      "monster_message": "<color_yellow>%1$s sends an electric current!</color>"
+    }
+  ],
+  "death_drops": {},
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "NOHEAD",
+    "ELECTRIC",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "IMMOBILE",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_secro_electurret",
+  "type": "MONSTER",
+  "name": {
+    "str": "电击炮塔"
+  },
+  "description": "SDP-E3，一种经过高度改装的炮塔，利用其通电的特斯拉线圈来击晕附近的生物。它的360度人工智能传感器凸轮允许它自动识别附近敌人和发射炮塔。它牢牢地嵌入地形，需要从其能源获取巨大的能量来运作。",
+  "default_faction": "secro_defense_bot",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 20,
+  "volume": "60000 ml",
+  "weight": "172 kg",
+  "hp": 50,
+  "speed": 100,
+  "material": [
+    "steel"
+  ],
+  "symbol": "2",
+  "color": "cyan",
+  "aggression": 100,
+  "morale": 100,
+  "armor_bash": 12,
+  "armor_cut": 12,
+  "armor_bullet": 12,
+  "armor_stab": 12,
+  "luminance": 5,
+  "vision_day": 5,
+  "vision_night": 5,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_secro_electurret_target"
+      },
+      "cooldown": 3,
+      "monster_message": "<color_yellow>%1$s发送出一串电流！</color>"
+    }
+  ],
+  "death_drops": {},
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "NOHEAD",
+    "ELECTRIC",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "IMMOBILE",
+    "NO_BREATHE"
+  ]
+}
+```
+

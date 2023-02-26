@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→arcane_pulse_side_effects
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcane_pulse_side_effects|http://cdda.aloxaf.cn/search?q=arcane_pulse_side_effects]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "arcane_pulse_side_effects",
+  "//": "Proper Chosen are more acclimated to channeling He From Beyond The Veil's blessings.",
+  "resist_traits": [
+    "PROF_CHALICE",
+    "PROF_CHALICE2"
+  ],
+  "name": [
+    "Arcane Burnout"
+  ],
+  "desc": [
+    "Human minds and bodies were not made to be a conduit for such destructive energy.  Overuse won't kill you, but will make it harder to focus on spellcasting."
+  ],
+  "max_intensity": 6,
+  "max_duration": "24 h",
+  "int_dur_factor": "2 h",
+  "base_mods": {
+    "int_mod": [
+      -1
+    ],
+    "stamina_min": [
+      -5
+    ],
+    "pain_chance": [
+      1500,
+      2000
+    ],
+    "vomit_chance": [
+      2000,
+      2500
+    ],
+    "vomit_tick": [
+      60,
+      120
+    ]
+  },
+  "scaling_mods": {
+    "int_mod": [
+      -1.25,
+      -1
+    ],
+    "stamina_min": [
+      -2,
+      -1
+    ],
+    "pain_min": [
+      1,
+      0.5
+    ],
+    "pain_chance": [
+      -200,
+      100
+    ],
+    "vomit_chance": [
+      -200,
+      -100
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "arcane_pulse_side_effects",
+  "//": "Proper Chosen are more acclimated to channeling He From Beyond The Veil's blessings.",
+  "resist_traits": [
+    "PROF_CHALICE",
+    "PROF_CHALICE2"
+  ],
+  "name": [
+    "Arcane Burnout"
+  ],
+  "desc": [
+    "人类的思想和身体并不是用来输送这种破坏性能量的管道。过度使用不会杀死你，但会让你更难集中精力施法。"
+  ],
+  "max_intensity": 6,
+  "max_duration": "24 h",
+  "int_dur_factor": "2 h",
+  "base_mods": {
+    "int_mod": [
+      -1
+    ],
+    "stamina_min": [
+      -5
+    ],
+    "pain_chance": [
+      1500,
+      2000
+    ],
+    "vomit_chance": [
+      2000,
+      2500
+    ],
+    "vomit_tick": [
+      60,
+      120
+    ]
+  },
+  "scaling_mods": {
+    "int_mod": [
+      -1.25,
+      -1
+    ],
+    "stamina_min": [
+      -2,
+      -1
+    ],
+    "pain_min": [
+      1,
+      0.5
+    ],
+    "pain_chance": [
+      -200,
+      100
+    ],
+    "vomit_chance": [
+      -200,
+      -100
+    ]
+  }
+}
+```
+

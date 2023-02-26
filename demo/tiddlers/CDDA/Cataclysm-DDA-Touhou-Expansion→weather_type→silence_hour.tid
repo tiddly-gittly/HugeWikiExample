@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: weather_type Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→weather_type→silence_hour
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：silence_hour|http://cdda.aloxaf.cn/search?q=silence_hour]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/thex_weather_type.json
+
+
+!! 原文
+
+```json
+{
+  "id": "silence_hour",
+  "type": "weather_type",
+  "name": "Silence hour",
+  "color": "white",
+  "map_color": "white",
+  "sym": "x",
+  "ranged_penalty": 0,
+  "sight_penalty": 1,
+  "light_modifier": 0,
+  "sound_attn": 7,
+  "dangerous": true,
+  "precip": "none",
+  "rains": false,
+  "acidic": false,
+  "duration_min": "1 h",
+  "duration_max": "1 h",
+  "condition": {
+    "and": [
+      {
+        "compare_int": [
+          {
+            "u_val": "var",
+            "var_name": "silence_hour_proc"
+          },
+          "<",
+          {
+            "const": 4
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "global_val": "var",
+            "var_name": "hour"
+          },
+          "=",
+          {
+            "u_val": "var",
+            "var_name": "silence_hour_hour"
+          }
+        ]
+      }
+    ]
+  },
+  "//": "Super WIP: this should temporarily block enemy spawn and replace them for hostile special, fast ghost-like enemies, that don't attack but heavily debuff the PC"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "silence_hour",
+  "type": "weather_type",
+  "name": "寂静时刻",
+  "color": "white",
+  "map_color": "white",
+  "sym": "x",
+  "ranged_penalty": 0,
+  "sight_penalty": 1,
+  "light_modifier": 0,
+  "sound_attn": 7,
+  "dangerous": true,
+  "precip": "none",
+  "rains": false,
+  "acidic": false,
+  "duration_min": "1 h",
+  "duration_max": "1 h",
+  "condition": {
+    "and": [
+      {
+        "compare_int": [
+          {
+            "u_val": "var",
+            "var_name": "silence_hour_proc"
+          },
+          "<",
+          {
+            "const": 4
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "global_val": "var",
+            "var_name": "hour"
+          },
+          "=",
+          {
+            "u_val": "var",
+            "var_name": "silence_hour_hour"
+          }
+        ]
+      }
+    ]
+  },
+  "//": "Super WIP: this should temporarily block enemy spawn and replace them for hostile special, fast ghost-like enemies, that don't attack but heavily debuff the PC"
+}
+```
+

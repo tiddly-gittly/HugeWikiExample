@@ -1,0 +1,205 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombieworm_gravedigger
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombieworm_gravedigger|http://cdda.aloxaf.cn/search?q=mon_zombieworm_gravedigger]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Worms.json
+
+
+!! 原文
+
+```json
+{
+  "//": "More on dealing bite damage.",
+  "id": "mon_zombieworm_gravedigger",
+  "type": "MONSTER",
+  "name": {
+    "str": "grave digger"
+  },
+  "description": "A huge, crimson worm with its thick skin formed like a tough rubber. Under its quad-interloping fangs hinder thousands of ravenous teeth.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROWORM"
+  ],
+  "bodytype": "snake",
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "harvest": "zombie",
+  "hp": 525,
+  "speed": 30,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚕",
+  "color": "red",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 8,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 18,
+  "armor_cut": 4,
+  "armor_bullet": 1,
+  "armor_stab": 1,
+  "vision_day": 10,
+  "vision_night": 2,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombieworm_destroy_check"
+      },
+      "cooldown": 35,
+      "monster_message": "<color_yellow>%1$s ravages its surroundings!</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 27,
+      "accuracy": 8,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 30,
+          "armor_multiplier": 0.4
+        },
+        {
+          "damage_type": "bash",
+          "amount": 30,
+          "armor_multiplier": 0.4
+        }
+      ]
+    }
+  ],
+  "anger_triggers": [
+    "HURT"
+  ],
+  "upgrades": {
+    "half_life": 20,
+    "into_group": "GROUP_GRAVEDIGGER_UPGRADEX"
+  },
+  "flags": [
+    "DIGS",
+    "CAN_DIG",
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "WARM",
+    "PLASTIC",
+    "BASHES",
+    "DESTROYS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "More on dealing bite damage.",
+  "id": "mon_zombieworm_gravedigger",
+  "type": "MONSTER",
+  "name": {
+    "str": "变异食腐蛆"
+  },
+  "description": "一种巨大的，深红色的蠕虫，它的厚皮像一块坚硬的橡胶。它的尖牙下有成千上万的尖牙。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROWORM"
+  ],
+  "bodytype": "snake",
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "harvest": "zombie",
+  "hp": 525,
+  "speed": 30,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚕",
+  "color": "red",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 8,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 18,
+  "armor_cut": 4,
+  "armor_bullet": 1,
+  "armor_stab": 1,
+  "vision_day": 10,
+  "vision_night": 2,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombieworm_destroy_check"
+      },
+      "cooldown": 35,
+      "monster_message": "<color_yellow>%1$s破坏了它的周围环境！</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 27,
+      "accuracy": 8,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 30,
+          "armor_multiplier": 0.4
+        },
+        {
+          "damage_type": "bash",
+          "amount": 30,
+          "armor_multiplier": 0.4
+        }
+      ]
+    }
+  ],
+  "anger_triggers": [
+    "HURT"
+  ],
+  "upgrades": {
+    "half_life": 20,
+    "into_group": "GROUP_GRAVEDIGGER_UPGRADEX"
+  },
+  "flags": [
+    "DIGS",
+    "CAN_DIG",
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "WARM",
+    "PLASTIC",
+    "BASHES",
+    "DESTROYS"
+  ]
+}
+```
+

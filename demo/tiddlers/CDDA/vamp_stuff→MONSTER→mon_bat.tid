@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_bat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_bat|http://cdda.aloxaf.cn/search?q=mon_bat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Critters/Bats.json
+
+
+!! 原文
+
+```json
+{
+  "aggression": -25,
+  "bodytype": "bird",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "color": "brown",
+  "default_faction": "small_animal",
+  "description": "One of the vesper bats, a family of winged insect-eating mammals.  It roosts in caves and other hollows, and uses a form of echolocation to aerially navigate through tricky terrain at rapid speeds.",
+  "dodge": 8,
+  "fear_triggers": [
+    "SOUND",
+    "PLAYER_CLOSE"
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "GOODHEARING",
+    "WARM",
+    "FLIES",
+    "ANIMAL",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "mammal_tiny",
+  "hp": 10,
+  "id": "mon_bat",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_skill": 4,
+  "morale": 5,
+  "name": {
+    "str": "bat"
+  },
+  "special_attacks": [
+    {
+      "cooldown": 15,
+      "type": "bite"
+    }
+  ],
+  "upgrades": {
+    "half_life": 12,
+    "into": "mon_vampbat"
+  },
+  "species": [
+    "MAMMAL",
+    "VAMPBAT"
+  ],
+  "speed": 230,
+  "symbol": "w",
+  "type": "MONSTER",
+  "vision_day": 20,
+  "vision_night": 20,
+  "volume": "750 ml",
+  "weight": "1000 g"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "aggression": -25,
+  "bodytype": "bird",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "color": "brown",
+  "default_faction": "small_animal",
+  "description": "昼伏夜出的蝙蝠，可以飞行的哺乳动物，以昆虫为食，一般群居在山洞或者其他凹陷处，使用超声波定位和导航，移动非常迅速。",
+  "dodge": 8,
+  "fear_triggers": [
+    "SOUND",
+    "PLAYER_CLOSE"
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "GOODHEARING",
+    "WARM",
+    "FLIES",
+    "ANIMAL",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "mammal_tiny",
+  "hp": 10,
+  "id": "mon_bat",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_skill": 4,
+  "morale": 5,
+  "name": {
+    "str": "蝙蝠"
+  },
+  "special_attacks": [
+    {
+      "cooldown": 15,
+      "type": "bite"
+    }
+  ],
+  "upgrades": {
+    "half_life": 12,
+    "into": "mon_vampbat"
+  },
+  "species": [
+    "MAMMAL",
+    "VAMPBAT"
+  ],
+  "speed": 230,
+  "symbol": "w",
+  "type": "MONSTER",
+  "vision_day": 20,
+  "vision_night": 20,
+  "volume": "750 ml",
+  "weight": "1000 g"
+}
+```
+

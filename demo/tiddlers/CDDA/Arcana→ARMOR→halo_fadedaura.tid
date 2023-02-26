@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Arcana
+title: Arcana→ARMOR→halo_fadedaura
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：halo_fadedaura|http://cdda.aloxaf.cn/search?q=halo_fadedaura]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "halo_fadedaura",
+  "copy-from": "spell_base",
+  "type": "ARMOR",
+  "name": {
+    "str": "faded halo"
+  },
+  "description": "A strange radiance permeating your body, hiding your aura from otherworldly creatures in exchange for being more visible to wildlife and the undead.",
+  "color": "white",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "mutations": [
+          "ARCANA_TRANSCENDANT_AURA"
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "ONLY_ONE",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "halo_fadedaura",
+  "copy-from": "spell_base",
+  "type": "ARMOR",
+  "name": {
+    "str": "光环：褪色"
+  },
+  "description": "A strange radiance permeating your body, hiding your aura from otherworldly creatures in exchange for being more visible to wildlife and the undead.",
+  "color": "white",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "mutations": [
+          "ARCANA_TRANSCENDANT_AURA"
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "ONLY_ONE",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+

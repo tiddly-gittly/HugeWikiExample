@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_mark_surge_adrenaline
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mark_surge_adrenaline|http://cdda.aloxaf.cn/search?q=arcana_mark_surge_adrenaline]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_sanguine_marks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_mark_surge_adrenaline",
+  "type": "SPELL",
+  "name": {
+    "str": "Mark: Surge of Fury"
+  },
+  "description": "Sanguine Mark\nUsing this spell will provoke a rush of adrenaline for urgent situations, with none of the normal drawbacks.  It can only be used on yourself.",
+  "message": "Your gesture provokes a rush of instinct, urging you to kill.  %s!",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_2",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect_str": "adrenaline_arcana",
+  "max_level": 5,
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 90,
+  "final_casting_time": 45,
+  "casting_time_increment": -9,
+  "base_energy_cost": 12,
+  "final_energy_cost": 6,
+  "energy_increment": -1.2,
+  "difficulty": 20,
+  "skill": "magic",
+  "min_duration": 36000,
+  "max_duration": 180000,
+  "duration_increment": 28800,
+  "energy_source": "HP"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_mark_surge_adrenaline",
+  "type": "SPELL",
+  "name": {
+    "str": "印记：愤怒涌动"
+  },
+  "description": "猩红印记\n使用这个法术会在紧急情况下激发肾上腺素，没有任何正常的缺点。只能用在自己身上。",
+  "message": "你的手势激起了本能的冲动，促使你去杀戮。%s ！",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_2",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect_str": "adrenaline_arcana",
+  "max_level": 5,
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 90,
+  "final_casting_time": 45,
+  "casting_time_increment": -9,
+  "base_energy_cost": 12,
+  "final_energy_cost": 6,
+  "energy_increment": -1.2,
+  "difficulty": 20,
+  "skill": "magic",
+  "min_duration": 36000,
+  "max_duration": 180000,
+  "duration_increment": 28800,
+  "energy_source": "HP"
+}
+```
+

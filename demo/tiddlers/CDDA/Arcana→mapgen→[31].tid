@@ -1,0 +1,280 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[31]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "method": "json",
+  "om_terrain": "urban_18_8",
+  "type": "mapgen",
+  "weight": 500,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~#o#o#~~~~~~~~~~~~",
+      "~~~~~~~oHHHo~~~~~~~~~~~~",
+      "~~~~~###   ###~~~~~~~~~~",
+      "###o##Db   yd#~~~~~~~~~~",
+      "8|   |       #o#~~~~~~~~",
+      ",|   +        Io~~~~~~~~",
+      "t| |>|  @@   hIo~~~~~~~~",
+      "B| |||Ts@@s  #o#~~~~~~~~",
+      "||   ||||||||#~~~~~~~~~~",
+      "     + Er|  k#~~~~~~~~~~",
+      " ||+||   |   #~~~~~~~~~~",
+      "Y|S,t|RRR|  R#~~~~~~~~~~",
+      "###o##|+||  R#~~~~~~~~~~",
+      "^~~~~#      R#~~~~~~~~~~",
+      "~~~~~#########~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~"
+    ],
+    "palettes": [
+      "standard_domestic_palette",
+      "standard_domestic_lino_kitchen",
+      "standard_domestic_lino_bathroom"
+    ],
+    "terrain": {
+      "~": "t_open_air",
+      ",": "t_linoleum_gray",
+      "'": "t_thconc_floor",
+      "#": "t_rock_wall"
+    },
+    "mapping": {
+      "R": {
+        "items": [
+          {
+            "item": "mansion_bookcase",
+            "chance": 100
+          }
+        ]
+      },
+      "r": {
+        "items": [
+          {
+            "item": "reading_lights",
+            "chance": 100
+          }
+        ]
+      },
+      "k": {
+        "items": [
+          {
+            "item": "cult_sacrifice",
+            "chance": 100
+          }
+        ]
+      }
+    },
+    "place_loot": [
+      {
+        "group": "summoner_casualties_fresh",
+        "x": [
+          10,
+          11
+        ],
+        "y": [
+          14,
+          15
+        ]
+      },
+      {
+        "group": "unaligned_arcanist_books_postapoc",
+        "x": 12,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 50,
+        "repeat": 5
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_darkman",
+        "x": [
+          10,
+          11
+        ],
+        "y": [
+          15,
+          16
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "cf_church_upgrade_4_g",
+  "object": {
+    "mapgensize": [
+      17,
+      17
+    ],
+    "rows": [
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "|__________|     ",
+      "||||||||||||     "
+    ],
+    "terrain": {
+      "|": "t_wall_log_half",
+      "_": "t_thatch_roof"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "om_terrain": "urban_18_8",
+  "type": "mapgen",
+  "weight": 500,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~#o#o#~~~~~~~~~~~~",
+      "~~~~~~~oHHHo~~~~~~~~~~~~",
+      "~~~~~###   ###~~~~~~~~~~",
+      "###o##Db   yd#~~~~~~~~~~",
+      "8|   |       #o#~~~~~~~~",
+      ",|   +        Io~~~~~~~~",
+      "t| |>|  @@   hIo~~~~~~~~",
+      "B| |||Ts@@s  #o#~~~~~~~~",
+      "||   ||||||||#~~~~~~~~~~",
+      "     + Er|  k#~~~~~~~~~~",
+      " ||+||   |   #~~~~~~~~~~",
+      "Y|S,t|RRR|  R#~~~~~~~~~~",
+      "###o##|+||  R#~~~~~~~~~~",
+      "^~~~~#      R#~~~~~~~~~~",
+      "~~~~~#########~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~"
+    ],
+    "palettes": [
+      "standard_domestic_palette",
+      "standard_domestic_lino_kitchen",
+      "standard_domestic_lino_bathroom"
+    ],
+    "terrain": {
+      "~": "t_open_air",
+      ",": "t_linoleum_gray",
+      "'": "t_thconc_floor",
+      "#": "t_rock_wall"
+    },
+    "mapping": {
+      "R": {
+        "items": [
+          {
+            "item": "mansion_bookcase",
+            "chance": 100
+          }
+        ]
+      },
+      "r": {
+        "items": [
+          {
+            "item": "reading_lights",
+            "chance": 100
+          }
+        ]
+      },
+      "k": {
+        "items": [
+          {
+            "item": "cult_sacrifice",
+            "chance": 100
+          }
+        ]
+      }
+    },
+    "place_loot": [
+      {
+        "group": "summoner_casualties_fresh",
+        "x": [
+          10,
+          11
+        ],
+        "y": [
+          14,
+          15
+        ]
+      },
+      {
+        "group": "unaligned_arcanist_books_postapoc",
+        "x": 12,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 50,
+        "repeat": 5
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_darkman",
+        "x": [
+          10,
+          11
+        ],
+        "y": [
+          15,
+          16
+        ]
+      }
+    ]
+  }
+}
+```
+

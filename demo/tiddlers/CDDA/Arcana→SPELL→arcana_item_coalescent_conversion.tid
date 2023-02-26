@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_coalescent_conversion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_coalescent_conversion|http://cdda.aloxaf.cn/search?q=arcana_item_coalescent_conversion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_coalescent_conversion",
+  "type": "SPELL",
+  "name": {
+    "str": "Coalescent Conversion"
+  },
+  "description": "This exists to make magic scrolls leave a blank scroll when used up, obsoleting the previous hack of making the item transform to exploit revert_to.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "The air wavers as sparks leap from the device, a thunderclap resounding as energy is pulled from the fabric of reality, solidifying into a crystalline sliver.\nGlowing white-hot for the first split-second of its existence, the thin shard of condensed essence rapidly cools down to something safe to handle.",
+  "flags": [
+    "PERMANENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_coalescent_conversion_sound",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_coalescent_conversion_flash",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_coalescent_conversion_side_effects",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_coalescent_conversion_wonder",
+      "hit_self": false
+    }
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "essence_pure",
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_coalescent_conversion",
+  "type": "SPELL",
+  "name": {
+    "str": "聚结转换"
+  },
+  "description": "This exists to make magic scrolls leave a blank scroll when used up, obsoleting the previous hack of making the item transform to exploit revert_to.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "当火花从装置中跃出时，空气在颤动，当能量从现实之壁中被拉出来，凝固成水晶般的银时，空气中回荡着。\n在它存在的第一刹那间发出白热的光芒，稀薄的浓缩源质碎片迅速冷却成可以安全处理的东西。",
+  "flags": [
+    "PERMANENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_coalescent_conversion_sound",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_coalescent_conversion_flash",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_coalescent_conversion_side_effects",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_coalescent_conversion_wonder",
+      "hit_self": false
+    }
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "essence_pure",
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+

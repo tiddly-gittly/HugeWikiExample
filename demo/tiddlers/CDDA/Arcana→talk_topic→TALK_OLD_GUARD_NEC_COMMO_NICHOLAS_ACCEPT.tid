@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_ACCEPT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_ACCEPT|http://cdda.aloxaf.cn/search?q=TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_ACCEPT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_OLD_GUARD_NEC_COMMO.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_ACCEPT",
+  "dynamic_line": "Alright, here you go.  Be careful with this, though.  This is a lot of sensitive information, not to mention dangerous.  These Priority Sites will only get more hazardous as time goes on and more things break down.  I'll trust you to use your discretion.",
+  "speaker_effect": {
+    "effect": [
+      {
+        "u_add_var": "nicholas_mission_2_mid",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "u_spawn_item": "arcane_purifier_intel_2"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "Thanks!  Before I go…",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO"
+    },
+    {
+      "text": "Thanks, I'll be back later!",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_ACCEPT",
+  "dynamic_line": "好了，给你。不过，要小心。这是一大堆敏感信息，更别说危险了。随着时间的推移和更多的设备发生故障，这些优先站点只会变得更加危险。我相信你会运用你的判断力。",
+  "speaker_effect": {
+    "effect": [
+      {
+        "u_add_var": "nicholas_mission_2_mid",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "u_spawn_item": "arcane_purifier_intel_2"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "谢谢！在我走之前…",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO"
+    },
+    {
+      "text": "谢谢，我晚点回来！",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

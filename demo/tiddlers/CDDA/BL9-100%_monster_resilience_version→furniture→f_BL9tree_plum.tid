@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9tree_plum
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9tree_plum|http://cdda.aloxaf.cn/search?q=f_BL9tree_plum]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_plum",
+  "name": "plum tree",
+  "looks_like": "t_tree_plum",
+  "description": "One of the several species of 'Prunus' trees found in New England, it produces plums in the summer.  If you examined the spurs more closely, you could probably find some ripe plums.  You could also cut it down with the right tools.",
+  "symbol": "7",
+  "color": [
+    "light_green",
+    "magenta_green",
+    "light_green",
+    "brown"
+  ],
+  "//": "barren in winter, fruits in summer",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn_nectar",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "summer"
+      ],
+      "id": "plum_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_plum",
+  "name": "李子树",
+  "looks_like": "t_tree_plum",
+  "description": "一棵在夏天能够结出李子果实的树，分类学上属于樱桃属，在新英格兰地区土生土长。如果你顺着枝干仔细观察的话，就可以找到一些成熟的李子。你可以用合适的工具砍倒它。",
+  "symbol": "7",
+  "color": [
+    "light_green",
+    "magenta_green",
+    "light_green",
+    "brown"
+  ],
+  "//": "barren in winter, fruits in summer",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn_nectar",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "summer"
+      ],
+      "id": "plum_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+

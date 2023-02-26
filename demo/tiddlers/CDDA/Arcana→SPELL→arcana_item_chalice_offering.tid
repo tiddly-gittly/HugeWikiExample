@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_chalice_offering
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_chalice_offering|http://cdda.aloxaf.cn/search?q=arcana_item_chalice_offering]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_chalice_offering",
+  "type": "SPELL",
+  "name": {
+    "str": "Offering"
+  },
+  "description": "Prepares a ritual to turn part of your life force into a usable form of essence.  Doing so will take 15 minutes, inflicting harm upon your body at the end, as well as dire consequences if overused…",
+  "message": "You work a ritual to draw power from your own breath, drawn by instinct to whisper words in an unfamiliar language.  The verses complete, you raise the chalice as if to drink from it, only for your breath to be drawn from your lungs!",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_chalice_offering_fatigue",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_chalice_offering_winding",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_chalice_offering_corruption",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_generate_blood_essence",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_generate_blood_essence",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_generate_blood_essence",
+      "hit_self": true
+    }
+  ],
+  "affected_body_parts": [
+    "torso"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 8,
+  "max_damage": 10,
+  "damage_type": "pure",
+  "base_casting_time": 90000,
+  "final_casting_time": 90000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_chalice_offering",
+  "type": "SPELL",
+  "name": {
+    "str": "献祭"
+  },
+  "description": "准备一个仪式，将你的生命力的一部分转化为可用的本质形式。这样做需要15分钟，最终会对你的身体造成伤害，如果过度使用也会造成可怕的后果…",
+  "message": "你逐渐熟悉从自己的呼吸中汲取力量，跟随本能用一种陌生的语言低语。祈祷结束后，你举起圣杯，好像要从中喝水，但这是为了将你的气息从你的肺中抽离！",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_chalice_offering_fatigue",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_chalice_offering_winding",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_chalice_offering_corruption",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_generate_blood_essence",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_generate_blood_essence",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_generate_blood_essence",
+      "hit_self": true
+    }
+  ],
+  "affected_body_parts": [
+    "torso"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 8,
+  "max_damage": 10,
+  "damage_type": "pure",
+  "base_casting_time": 90000,
+  "final_casting_time": 90000
+}
+```
+

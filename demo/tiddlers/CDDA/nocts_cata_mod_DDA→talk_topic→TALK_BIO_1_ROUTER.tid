@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BIO_1_ROUTER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BIO_1_ROUTER|http://cdda.aloxaf.cn/search?q=TALK_BIO_1_ROUTER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BIO_1.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_1_ROUTER",
+  "dynamic_line": "Router gets worried about stuff too easily.  He's like an overprotective parent.  Though I guess he sorta IS that, since he was the project lead for our batch.  Aside from dying of boredom, I think I'll be alright.",
+  "responses": [
+    {
+      "text": "Could be out there doing what we do best.  What do you say?  It's what we were made for.",
+      "topic": "TALK_BIO_1_RECRUIT_BIO",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA"
+        ]
+      }
+    },
+    {
+      "text": "If a bionic reject like me can find a purpose out there, so can you.  How about it?",
+      "topic": "TALK_BIO_1_RECRUIT_FAILED",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED"
+        ]
+      }
+    },
+    {
+      "text": "I wouldn't mind having one of the original models fighting alongside me.",
+      "topic": "TALK_BIO_1_RECRUIT_SOLDIER",
+      "condition": {
+        "u_has_any_trait": [
+          "SUPER_SOLDIER_MARKER"
+        ]
+      }
+    },
+    {
+      "text": "Why not join me?",
+      "condition": {
+        "not": {
+          "u_has_effect": "sigma_asked_recently"
+        }
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 2
+      },
+      "success": {
+        "topic": "TALK_BIO_1_RECRUIT_SUCCESS"
+      },
+      "failure": {
+        "topic": "TALK_BIO_1_RECRUIT_FAILURE",
+        "effect": {
+          "u_add_effect": "sigma_asked_recently",
+          "duration": 1800
+        }
+      }
+    },
+    {
+      "text": "Why not join me?",
+      "condition": {
+        "u_has_effect": "sigma_asked_recently"
+      },
+      "topic": "TALK_BIO_1_RECRUIT_DELAY"
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_BIO_1"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_1_ROUTER",
+  "dynamic_line": "露特尔太容易担心事情。他就像个过度保护的家长。虽然我猜他是这样的，因为他是我们这批人的项目负责人。除了无聊得要死，我想我会没事的。",
+  "responses": [
+    {
+      "text": "可以去做我们最擅长的事。你说呢?这是我们被造出来的目的。",
+      "topic": "TALK_BIO_1_RECRUIT_BIO",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA"
+        ]
+      }
+    },
+    {
+      "text": "如果像我这样的改造人能找到目标，你也能。怎么样？",
+      "topic": "TALK_BIO_1_RECRUIT_FAILED",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED"
+        ]
+      }
+    },
+    {
+      "text": "我不介意有个原型和我并肩作战。",
+      "topic": "TALK_BIO_1_RECRUIT_SOLDIER",
+      "condition": {
+        "u_has_any_trait": [
+          "SUPER_SOLDIER_MARKER"
+        ]
+      }
+    },
+    {
+      "text": "你为什么不加入我？",
+      "condition": {
+        "not": {
+          "u_has_effect": "sigma_asked_recently"
+        }
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 2
+      },
+      "success": {
+        "topic": "TALK_BIO_1_RECRUIT_SUCCESS"
+      },
+      "failure": {
+        "topic": "TALK_BIO_1_RECRUIT_FAILURE",
+        "effect": {
+          "u_add_effect": "sigma_asked_recently",
+          "duration": 1800
+        }
+      }
+    },
+    {
+      "text": "你为什么不加入我？",
+      "condition": {
+        "u_has_effect": "sigma_asked_recently"
+      },
+      "topic": "TALK_BIO_1_RECRUIT_DELAY"
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_BIO_1"
+    }
+  ]
+}
+```
+

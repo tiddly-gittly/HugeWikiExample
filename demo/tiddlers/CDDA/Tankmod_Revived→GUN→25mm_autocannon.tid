@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: GUN Tankmod_Revived
+title: Tankmod_Revived→GUN→25mm_autocannon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：25mm_autocannon|http://cdda.aloxaf.cn/search?q=25mm_autocannon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "25mm_autocannon",
+  "type": "GUN",
+  "reload_noise_volume": 10,
+  "symbol": "(",
+  "color": "dark_gray",
+  "name": {
+    "str_sp": "M242 Bushmaster autocannon"
+  },
+  "description": "A chain-driven autocannon chambered in 25x137mm, designed for the Bradley IFV and other ground vehicles, with some naval use as well.  Electric-driven, it needs to be mounted on a vehicle to fire.",
+  "price": 2800000,
+  "price_postapoc": 7500,
+  "material": [
+    "steel"
+  ],
+  "flags": [
+    "NO_RELOAD",
+    "MOUNTED_GUN",
+    "STR_RELOAD"
+  ],
+  "skill": "launcher",
+  "ammo": "25mm",
+  "weight": "120 kg",
+  "volume": "10 L",
+  "longest_side": "265 cm",
+  "bashing": 12,
+  "to_hit": -1,
+  "dispersion": 15,
+  "durability": 8,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "BURST",
+      "low auto",
+      2
+    ],
+    [
+      "AUTO",
+      "high auto",
+      4
+    ]
+  ],
+  "reload": 500,
+  "ups_charges": 10,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "100 L",
+      "max_contains_weight": "100 kg",
+      "item_restriction": [
+        "belt25mm"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "25mm_autocannon",
+  "type": "GUN",
+  "reload_noise_volume": 10,
+  "symbol": "(",
+  "color": "dark_gray",
+  "name": {
+    "str_sp": "M242 巨蝮机炮"
+  },
+  "description": "一门内径25x137mm的链式机炮，设计用于布兰德利步兵战车和其他陆行车辆，也有一些海军用途。电力驱动，它需要安装在车辆上才能开火。",
+  "price": 2800000,
+  "price_postapoc": 7500,
+  "material": [
+    "steel"
+  ],
+  "flags": [
+    "NO_RELOAD",
+    "MOUNTED_GUN",
+    "STR_RELOAD"
+  ],
+  "skill": "launcher",
+  "ammo": "25mm",
+  "weight": "120 kg",
+  "volume": "10 L",
+  "longest_side": "265 cm",
+  "bashing": 12,
+  "to_hit": -1,
+  "dispersion": 15,
+  "durability": 8,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "BURST",
+      "low auto",
+      2
+    ],
+    [
+      "AUTO",
+      "high auto",
+      4
+    ]
+  ],
+  "reload": 500,
+  "ups_charges": 10,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "100 L",
+      "max_contains_weight": "100 kg",
+      "item_restriction": [
+        "belt25mm"
+      ]
+    }
+  ]
+}
+```
+

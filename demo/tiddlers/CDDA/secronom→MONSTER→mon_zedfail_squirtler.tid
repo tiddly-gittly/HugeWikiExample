@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zedfail_squirtler
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zedfail_squirtler|http://cdda.aloxaf.cn/search?q=mon_zedfail_squirtler]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Failed.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zedfail_squirtler",
+  "type": "MONSTER",
+  "name": {
+    "str": "squirtler"
+  },
+  "description": "Attached to the terrain, this irregular patch of large, pale skin features a swollen, bulbous mouth, oozing in greenish liquid.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 50,
+  "diff": 20,
+  "harvest": "exempt",
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩅",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "armor_bash": 4,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "vision_day": 20,
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 4,
+      "move_cost": 50,
+      "gun_type": "squirtler_bulb",
+      "require_targeting_player": false,
+      "description": "The squirtler spew a stream of acid!",
+      "ranges": [
+        [
+          1,
+          2,
+          "N"
+        ],
+        [
+          3,
+          5,
+          "M"
+        ],
+        [
+          6,
+          10,
+          "L"
+        ]
+      ]
+    }
+  ],
+  "//": "The acid is very strong (cuz of headshot).",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "IMMOBILE",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES",
+    "NOHEAD",
+    "ACIDPROOF",
+    "ACID_BLOOD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zedfail_squirtler",
+  "type": "MONSTER",
+  "name": {
+    "str": "喷吐者"
+  },
+  "description": "依附于地形，这种不规则的巨大，拥有苍白皮肤的生物的特点是肿胀的肉体，球状的嘴，以及它不断渗出的绿色液体。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 50,
+  "diff": 20,
+  "harvest": "exempt",
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩅",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "armor_bash": 4,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "vision_day": 20,
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 4,
+      "move_cost": 50,
+      "gun_type": "squirtler_bulb",
+      "require_targeting_player": false,
+      "description": "喷吐者喷出一股酸液！",
+      "ranges": [
+        [
+          1,
+          2,
+          "N"
+        ],
+        [
+          3,
+          5,
+          "M"
+        ],
+        [
+          6,
+          10,
+          "L"
+        ]
+      ]
+    }
+  ],
+  "//": "The acid is very strong (cuz of headshot).",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "IMMOBILE",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES",
+    "NOHEAD",
+    "ACIDPROOF",
+    "ACID_BLOOD"
+  ]
+}
+```
+

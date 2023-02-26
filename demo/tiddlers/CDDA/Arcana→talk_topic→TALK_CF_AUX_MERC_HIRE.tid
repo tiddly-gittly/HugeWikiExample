@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_AUX_MERC_HIRE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_AUX_MERC_HIRE|http://cdda.aloxaf.cn/search?q=TALK_CF_AUX_MERC_HIRE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_AUX_MERC.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_AUX_MERC_HIRE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_marshal",
+    "yes": "Well now marshal, I'd be willing to serve as a deputy for half my going rate. 15 Golden Scales, the stuff they use here, should cover my expenses.  After that, lead and I'll follow.",
+    "no": "30 of the Golden Scales they use here will cover my expenses.  So long as there's places to explore and loot to find, should be fine by me."
+  },
+  "responses": [
+    {
+      "text": "[GS15] You have a deal.",
+      "topic": "TALK_CF_AUX_MERC_HIRE_SUCCESS",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "u_is_wearing": "badge_marshal"
+          },
+          {
+            "u_has_items": {
+              "item": "CF_golden_scale",
+              "count": 15
+            }
+          }
+        ]
+      },
+      "effect": {
+        "u_consume_item": "CF_golden_scale",
+        "count": 15
+      }
+    },
+    {
+      "text": "[GS30] You have a deal.",
+      "topic": "TALK_CF_AUX_MERC_HIRE_SUCCESS",
+      "switch": true,
+      "default": true,
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 30
+        }
+      },
+      "effect": {
+        "u_consume_item": "CF_golden_scale",
+        "count": 30
+      }
+    },
+    {
+      "text": "What can you tell me about Golden Scales?",
+      "topic": "TALK_CF_AUX_MERC_SCALES"
+    },
+    {
+      "text": "I might be back.",
+      "topic": "TALK_CF_AUX_MERC"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_AUX_MERC_HIRE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_marshal",
+    "yes": "好吧，现在，元帅，我愿意以我现行工资的一半做副手。15个金鳞片，他们在这里用的东西，应该可以支付我的费用。在那之后，领导我跟着。",
+    "no": "30个黄金鳞片就可以雇佣我。对我而言，只要有地方可以去探险和打劫就可以了。"
+  },
+  "responses": [
+    {
+      "text": "[GS15]你说好了。",
+      "topic": "TALK_CF_AUX_MERC_HIRE_SUCCESS",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "u_is_wearing": "badge_marshal"
+          },
+          {
+            "u_has_items": {
+              "item": "CF_golden_scale",
+              "count": 15
+            }
+          }
+        ]
+      },
+      "effect": {
+        "u_consume_item": "CF_golden_scale",
+        "count": 15
+      }
+    },
+    {
+      "text": "[GS30]你说好了。",
+      "topic": "TALK_CF_AUX_MERC_HIRE_SUCCESS",
+      "switch": true,
+      "default": true,
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 30
+        }
+      },
+      "effect": {
+        "u_consume_item": "CF_golden_scale",
+        "count": 30
+      }
+    },
+    {
+      "text": "关于金鳞片你能告诉我些什么？",
+      "topic": "TALK_CF_AUX_MERC_SCALES"
+    },
+    {
+      "text": "好吧，我会再回来找你的。",
+      "topic": "TALK_CF_AUX_MERC"
+    }
+  ]
+}
+```
+

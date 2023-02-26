@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_pestilence
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_pestilence|http://cdda.aloxaf.cn/search?q=arcana_item_pestilence]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_pestilence",
+  "type": "SPELL",
+  "name": {
+    "str": "Pestilence Summons"
+  },
+  "description": "Mutated vermin come to your aid.",
+  "message": "Vermin slither out from the earth at your feet, heeding your call as a thunderous blast emanates from the spear!",
+  "extra_effects": [
+    {
+      "id": "arcana_item_pestilence_stun",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_pestilence_aftereffect",
+      "hit_self": false
+    }
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "RANDOM_DAMAGE",
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_centipede_giant_summoned",
+  "min_damage": 1,
+  "max_damage": 3,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "min_duration": 240000,
+  "max_duration": 240000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_pestilence",
+  "type": "SPELL",
+  "name": {
+    "str": "瘟疫召唤"
+  },
+  "description": "Mutated vermin come to your aid.",
+  "message": "虫子从你脚下的地上滑出来，听到你的召唤，矛上发出雷鸣般的爆炸声！",
+  "extra_effects": [
+    {
+      "id": "arcana_item_pestilence_stun",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_pestilence_aftereffect",
+      "hit_self": false
+    }
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "RANDOM_DAMAGE",
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_centipede_giant_summoned",
+  "min_damage": 1,
+  "max_damage": 3,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "min_duration": 240000,
+  "max_duration": 240000
+}
+```
+

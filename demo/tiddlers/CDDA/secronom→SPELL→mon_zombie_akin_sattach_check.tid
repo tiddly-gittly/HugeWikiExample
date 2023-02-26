@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_akin_sattach_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_akin_sattach_check|http://cdda.aloxaf.cn/search?q=mon_zombie_akin_sattach_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_akin_sattach_check",
+  "type": "SPELL",
+  "name": {
+    "str": "Akin - Siphon"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster attaches its visceral tendrils to the target. If condition fails, the target is afflicted with debuffs and its nearby allies gain buffs.'",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT"
+  ],
+  "min_range": 9,
+  "max_range": 9,
+  "shape": "line",
+  "effect": "effect_on_condition",
+  "effect_str": "eoc_secro_mon_zombie_akin_sattach_check"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_akin_sattach_check",
+  "type": "SPELL",
+  "name": {
+    "str": "近似-虹吸"
+  },
+  "description": "怪物施法。如果你看到了这个，那么请阅读这一条：\n'施法者将其内脏卷须连接到目标。如果条件失败，目标将受到减益的影响，其附近的盟友将获得增益。”",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT"
+  ],
+  "min_range": 9,
+  "max_range": 9,
+  "shape": "line",
+  "effect": "effect_on_condition",
+  "effect_str": "eoc_secro_mon_zombie_akin_sattach_check"
+}
+```
+

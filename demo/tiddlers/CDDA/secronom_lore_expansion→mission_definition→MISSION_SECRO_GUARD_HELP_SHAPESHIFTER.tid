@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: mission_definition secronom_lore_expansion
+title: secronom_lore_expansion→mission_definition→MISSION_SECRO_GUARD_HELP_SHAPESHIFTER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_SECRO_GUARD_HELP_SHAPESHIFTER|http://cdda.aloxaf.cn/search?q=MISSION_SECRO_GUARD_HELP_SHAPESHIFTER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/secro_missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_SECRO_GUARD_HELP_SHAPESHIFTER",
+  "type": "mission_definition",
+  "name": {
+    "str": "Slay the shapeshifter?"
+  },
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 5,
+  "value": 200000,
+  "start": {
+    "effect": [
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_guard_mission2_progress"
+      },
+      "follow_only"
+    ],
+    "assign_mission_target": {
+      "om_terrain": "forest",
+      "reveal_radius": 1,
+      "search_range": 15,
+      "z": 0
+    },
+    "update_mapgen": {
+      "place_monster": [
+        {
+          "monster": "mon_shifter_zombie",
+          "x": 11,
+          "y": 11,
+          "target": true
+        }
+      ]
+    }
+  },
+  "end": {
+    "effect": {
+      "duration": "PERMANENT",
+      "u_add_effect": "secro_guard_partake_mission2"
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "…",
+    "offer": "She gave me the coordinates as soon as the drone reported her. I'll help you out collecting the sample, and fend off this creature from you. So, are you ready?",
+    "accepted": "Good. The target is not far from here.",
+    "rejected": "Just ask me again once you're ready to take on.",
+    "advice": "I never encountered this creature...",
+    "inquire": "Did you killed them?",
+    "success": "Wait. It's not the right one... I guess we lost it.",
+    "success_lie": "Really? I've come alongside you and yet you lied to something you obviously didn't do?",
+    "failure": "..."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_SECRO_GUARD_HELP_SHAPESHIFTER",
+  "type": "mission_definition",
+  "name": {
+    "str": "杀死变形者？"
+  },
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 5,
+  "value": 200000,
+  "start": {
+    "effect": [
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_guard_mission2_progress"
+      },
+      "follow_only"
+    ],
+    "assign_mission_target": {
+      "om_terrain": "forest",
+      "reveal_radius": 1,
+      "search_range": 15,
+      "z": 0
+    },
+    "update_mapgen": {
+      "place_monster": [
+        {
+          "monster": "mon_shifter_zombie",
+          "x": 11,
+          "y": 11,
+          "target": true
+        }
+      ]
+    }
+  },
+  "end": {
+    "effect": {
+      "duration": "PERMANENT",
+      "u_add_effect": "secro_guard_partake_mission2"
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "…",
+    "offer": "无人机一报告她就给了我坐标。我会帮你采集样本，把这个生物从你身边赶走。你准备好了吗？",
+    "accepted": "很好。目标离这里不远。",
+    "rejected": "等你准备好了再问我一次。",
+    "advice": "我从没见过这种生物…",
+    "inquire": "你杀了他们吗？",
+    "success": "等待。不是那个合适的…我想我们输了。",
+    "success_lie": "真正地？我和你并肩作战，但你却对你明明没做的事撒谎？",
+    "failure": "…"
+  }
+}
+```
+

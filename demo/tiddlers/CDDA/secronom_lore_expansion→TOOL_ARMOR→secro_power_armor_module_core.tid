@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_module_core
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_module_core|http://cdda.aloxaf.cn/search?q=secro_power_armor_module_core]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armor_modules.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_module_core",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom module implant \"Core\""
+  },
+  "description": "A set of power armor modules that installs a power core. It is linked to the suit for energy distribution, but can be detached anytime. Module implant type \"Core\" enables the user to activate/deactivate the power armor and take full control of it, only if the suit has no feature otherwise it is useless.",
+  "weight": "500 g",
+  "volume": "125 ml",
+  "price": "6200 USD",
+  "price_postapoc": "620 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_frame",
+  "color": "red",
+  "power_armor": true,
+  "charges_per_use": 1,
+  "use_action": {
+    "target": "secro_power_armor_module_core_act",
+    "msg": "\"Vessel\" module - <color_light_green>ONLINE",
+    "type": "transform",
+    "active": true,
+    "menu_text": "Activate \"Core\" module",
+    "need_charges": 1,
+    "need_charges_msg": "\"Core\" module - <color_yellow>LOW POWER"
+  },
+  "ammo": [
+    "battery"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "secro_power_armor_battery_cell"
+      ]
+    }
+  ],
+  "flags": [
+    "WATERPROOF",
+    "OUTER",
+    "STURDY",
+    "POWERARMOR_COMPATIBLE",
+    "NO_UNLOAD"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 10,
+      "coverage": 10,
+      "material": [
+        "superalloy"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_module_core",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom模块植入“核心”"
+  },
+  "description": "安装电源核心的一组电源装甲模块。它与能量分配服相连，但可以随时拆卸。模块植入类型“核心”使用户能够激活/停用动力装甲并完全控制它，只有当套装没有功能时，否则它是无用的。",
+  "weight": "500 g",
+  "volume": "125 ml",
+  "price": "6200 USD",
+  "price_postapoc": "620 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_frame",
+  "color": "red",
+  "power_armor": true,
+  "charges_per_use": 1,
+  "use_action": {
+    "target": "secro_power_armor_module_core_act",
+    "msg": "“脉管”模块 - <color_light_green>在线",
+    "type": "transform",
+    "active": true,
+    "menu_text": "启动“核心”模块",
+    "need_charges": 1,
+    "need_charges_msg": "“核心”模块 - <color_yellow>低功耗"
+  },
+  "ammo": [
+    "battery"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "secro_power_armor_battery_cell"
+      ]
+    }
+  ],
+  "flags": [
+    "WATERPROOF",
+    "OUTER",
+    "STURDY",
+    "POWERARMOR_COMPATIBLE",
+    "NO_UNLOAD"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 10,
+      "coverage": 10,
+      "material": [
+        "superalloy"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

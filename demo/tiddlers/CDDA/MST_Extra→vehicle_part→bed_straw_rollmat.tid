@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part MST_Extra
+title: MST_Extra→vehicle_part→bed_straw_rollmat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bed_straw_rollmat|http://cdda.aloxaf.cn/search?q=bed_straw_rollmat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/vehicles/vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "bed_straw_rollmat",
+  "name": {
+    "str": "straw bedding"
+  },
+  "symbol": "#",
+  "looks_like": "f_straw_bed",
+  "color": "magenta",
+  "broken_symbol": "*",
+  "broken_color": "magenta",
+  "damage_modifier": 60,
+  "durability": 60,
+  "description": "A small but comfortable bed made from a mat of tightly-woven straw.",
+  "size": 100,
+  "item": "straw_bed_rollmat",
+  "comfort": 3,
+  "floor_bedding_warmth": 200,
+  "location": "center",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "40 m",
+      "using": [
+        [
+          "cordage_short",
+          4
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "20 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "survival",
+          2
+        ]
+      ],
+      "time": "40 m",
+      "using": [
+        [
+          "cordage_short",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "BED",
+    "BOARDABLE",
+    "CARGO",
+    "MOUNTABLE"
+  ],
+  "breaks_into": [
+    {
+      "item": "straw_pile",
+      "count": [
+        7,
+        8
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 2
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "bed_straw_rollmat",
+  "name": {
+    "str": "草垫"
+  },
+  "symbol": "#",
+  "looks_like": "f_straw_bed",
+  "color": "magenta",
+  "broken_symbol": "*",
+  "broken_color": "magenta",
+  "damage_modifier": 60,
+  "durability": 60,
+  "description": "用厚厚的稻草铺成的窄小但舒适的床.",
+  "size": 100,
+  "item": "straw_bed_rollmat",
+  "comfort": 3,
+  "floor_bedding_warmth": 200,
+  "location": "center",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "40 m",
+      "using": [
+        [
+          "cordage_short",
+          4
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "20 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "survival",
+          2
+        ]
+      ],
+      "time": "40 m",
+      "using": [
+        [
+          "cordage_short",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "BED",
+    "BOARDABLE",
+    "CARGO",
+    "MOUNTABLE"
+  ],
+  "breaks_into": [
+    {
+      "item": "straw_pile",
+      "count": [
+        7,
+        8
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 2
+  }
+}
+```
+

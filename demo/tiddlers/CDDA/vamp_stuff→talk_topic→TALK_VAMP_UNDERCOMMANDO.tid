@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_UNDERCOMMANDO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_UNDERCOMMANDO|http://cdda.aloxaf.cn/search?q=TALK_VAMP_UNDERCOMMANDO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Underrefugee/v_uc_responses.json
+
+
+!! 原文
+
+```json
+{
+  "dynamic_line": {
+    "no": "Mortal descendant... What do I expect from you?",
+    "u_is_wearing": "blood_necklace",
+    "yes": "You got something to say, descendant?."
+  },
+  "id": "TALK_VAMP_UNDERCOMMANDO",
+  "responses": [
+    {
+      "text": "I want to talk with you.",
+      "topic": "TALK_VAMP_UNDERCOMMANDO_maintalk"
+    },
+    {
+      "condition": {
+        "or": [
+          {
+            "not": {
+              "u_has_trait": "commandovampmark"
+            }
+          },
+          {
+            "not": "has_no_available_mission"
+          }
+        ]
+      },
+      "text": "Any work can I do?.",
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "commandovampmark"
+            }
+          },
+          {
+            "npc_has_trait": "commandotestdone"
+          }
+        ]
+      },
+      "text": "I've done the final test... So, what now?",
+      "topic": "TALK_VAMP_UNDERCOMMANDO_testsdone"
+    },
+    {
+      "condition": "has_assigned_mission",
+      "text": "About your command...",
+      "topic": "TALK_MISSION_INQUIRE"
+    },
+    {
+      "text": "I should go now.",
+      "topic": "TALK_DONE"
+    }
+  ],
+  "type": "talk_topic"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "dynamic_line": {
+    "no": "人类的后裔，我对你有什么期望？",
+    "u_is_wearing": "blood_necklace",
+    "yes": "你有话要说吗，后裔？"
+  },
+  "id": "TALK_VAMP_UNDERCOMMANDO",
+  "responses": [
+    {
+      "text": "我想和你谈谈。",
+      "topic": "TALK_VAMP_UNDERCOMMANDO_maintalk"
+    },
+    {
+      "condition": {
+        "or": [
+          {
+            "not": {
+              "u_has_trait": "commandovampmark"
+            }
+          },
+          {
+            "not": "has_no_available_mission"
+          }
+        ]
+      },
+      "text": "有什么我能做的吗？",
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "commandovampmark"
+            }
+          },
+          {
+            "npc_has_trait": "commandotestdone"
+          }
+        ]
+      },
+      "text": "我已经通过了最终测试，那么接下来呢？",
+      "topic": "TALK_VAMP_UNDERCOMMANDO_testsdone"
+    },
+    {
+      "condition": "has_assigned_mission",
+      "text": "关于你的命令...",
+      "topic": "TALK_MISSION_INQUIRE"
+    },
+    {
+      "text": "我现在得走了。",
+      "topic": "TALK_DONE"
+    }
+  ],
+  "type": "talk_topic"
+}
+```
+

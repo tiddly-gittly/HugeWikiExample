@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_TENDRIL_THICK_THRESHOLD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_TENDRIL_THICK_THRESHOLD|http://cdda.aloxaf.cn/search?q=SECRO_TENDRIL_THICK_THRESHOLD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_TENDRIL_THICK_THRESHOLD",
+  "name": {
+    "str": "Core - Tendril"
+  },
+  "points": 10,
+  "visibility": 2,
+  "ugliness": 0,
+  "valid": false,
+  "description": "Your tendrils limbs have become tougher, stronger and darker in hue due to prolonged mutations. Permanently increases your strength by 2, bash damage by 4 and their physical resistance by 4.",
+  "prereqs": [
+    "SECRO_TENDRIL_THICK"
+  ],
+  "threshreq": [
+    "THRESH_SECRONOM_EX"
+  ],
+  "cancels": [
+    "SECRO_BLADE_SHARP_THRESHOLD",
+    "SECRO_BLADE_SERRATED_THRESHOLD",
+    "SECRO_TENDRIL_TENT_THRESHOLD"
+  ],
+  "armor": [
+    {
+      "parts": [
+        "arm_l",
+        "arm_r"
+      ],
+      "bash": 4
+    }
+  ],
+  "bash_dmg_bonus": 4,
+  "passive_mods": {
+    "str_mod": 2
+  },
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_TENDRIL_THICK_THRESHOLD",
+  "name": {
+    "str": "<color_light_green>核心</color>-触手"
+  },
+  "points": 10,
+  "visibility": 2,
+  "ugliness": 0,
+  "valid": false,
+  "description": "由于长时间的变异，你的触手四肢变得更加坚韧、更强强壮，颜色也更深。永久增加2力量，4钝击伤害，以及4物理抗性。",
+  "prereqs": [
+    "SECRO_TENDRIL_THICK"
+  ],
+  "threshreq": [
+    "THRESH_SECRONOM_EX"
+  ],
+  "cancels": [
+    "SECRO_BLADE_SHARP_THRESHOLD",
+    "SECRO_BLADE_SERRATED_THRESHOLD",
+    "SECRO_TENDRIL_TENT_THRESHOLD"
+  ],
+  "armor": [
+    {
+      "parts": [
+        "arm_l",
+        "arm_r"
+      ],
+      "bash": 4
+    }
+  ],
+  "bash_dmg_bonus": 4,
+  "passive_mods": {
+    "str_mod": 2
+  },
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_AUX_D
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_AUX_D|http://cdda.aloxaf.cn/search?q=MISSION_CF_AUX_D]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_AUX_D",
+  "type": "mission_definition",
+  "name": {
+    "str": "Find a scarlet flower"
+  },
+  "description": "Obtain a red flower associated with otherworldly plant monsters, and return it to the farmhand.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 1,
+  "value": 15000,
+  "has_generic_rewards": false,
+  "item": "triffid_queen_flower",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "new_anomaly_t",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "random": true,
+      "search_range": 90,
+      "min_distance": 10
+    }
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "Not long after I got here I took an interest in the sorts of things the locals collected.  Truth is, early on when shit hit the fan I picked up a few books and some other experience with all this strangeness.  Not much, but enough to keep me another day away from dying.  I used to help tend to crops, these new experiences and some of the weird creatures I've seen gave me an idea for something that might improve crop yields.  Interested?",
+    "accepted": "Alright.  Truth is, it's a bit dangerous hunting those monsters out there.  The big walking plants, making nests burrowed underground.  When I went to Ms. McKinnon with the idea she said she'd keep an eye out for any leads.  I'll give you directions to a local hotspot she got wind of from her scouts.  If you visit it, keep an eye out for the ones with bright red flowers, that can raise hell growing plants like wildfire.  I need the flower itself.",
+    "rejected": "Well alright, come back anytime if you change your mind.  I doubt it'll be a massive improvement to the logistics of things here or at the commune, but it's worth looking into.",
+    "advice": "Most of those things are venomous and right nasty to get tangled up in.  Just be mindful about burning them out, I don't want to risk harming what you're there for.",
+    "inquire": "Any luck?",
+    "success": "Alright.  Sofia's skeptical that I can make a large-scale breakthrough with this.  I can use what I've learned, and a little help from her, to liven up the compound here and grow a few things, but it seems it'll take a lot of energy plus burn out whatever force is still present in these petals.  They have a way to weave its effects into someone's very being so they don't need to hunt monsters, but that just makes it drain energy out of whoever uses it instead.  Still, thank you for the help, should have the finishing touches ready right quick.",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 8
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_aux_d_1"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_aux_d_2"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_AUX_D",
+  "type": "mission_definition",
+  "name": {
+    "str": "寻找猩红之花"
+  },
+  "description": "获得一朵与超自然植物怪物相关联的红花，并将其归还给农夫。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 1,
+  "value": 15000,
+  "has_generic_rewards": false,
+  "item": "triffid_queen_flower",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "new_anomaly_t",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "random": true,
+      "search_range": 90,
+      "min_distance": 10
+    }
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "我到这儿不久就对当地人收集的东西产生了兴趣。事实是，在大便砸到电扇的时候，我就买了几本书和一些其他的经历。不多，但足以让我再过一天就死了。我曾经帮助照料庄稼，这些新的经验和我见过的一些奇怪的生物给了我一个想法，可以提高作物产量。有兴趣吗？",
+    "accepted": "好吧。事实上，捕杀那些怪物有点危险。大型步行植物，在地下筑巢。当我带着这个想法去找麦金农女士时，她说她会留意任何线索。我会告诉你去当地的一个热点，她从她的侦察员那里得到消息。如果你去参观的话，请留意那些开着鲜艳红色花朵的植物，因为它们能培育出像野火一样的地狱植物。我需要花本身。",
+    "rejected": "好吧，如果你改变主意随时回来。我怀疑这对这里或公社的后勤工作是否会有很大的改善，但值得一看。",
+    "advice": "这些东西大部分都是有毒的，很难纠结在一起。小心点把它们烧掉，我不想冒着伤害你的风险。",
+    "inquire": "成功了没？",
+    "success": "好吧。索菲亚的人怀疑我能否在这方面取得大规模突破。我可以利用我所学到的东西，并从她那里得到一点帮助，使这里的化合物变得活跃起来，并长出一些东西，但这似乎需要大量的能量，并消耗掉这些花瓣中仍然存在的任何力量。他们有一种方法可以把它的效果附加到某个人的身体里，这样他们就不需要去猎杀怪物，并且这只会让使用它的人消耗能量。不过，谢谢你的帮助，接下来应该很快就能完成收尾工作。",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 8
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_aux_d_1"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_aux_d_2"
+      }
+    ]
+  }
+}
+```
+

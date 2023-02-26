@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_mark_displacing_slash
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mark_displacing_slash|http://cdda.aloxaf.cn/search?q=arcana_mark_displacing_slash]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_sanguine_marks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_mark_displacing_slash",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Displacing Slash"
+  },
+  "description": "Magic Sign\nUsing this spell will swap your position with a hostile target of your choosing.  While it won't directly damage your chosen target, anything caught in the bloody swath around where you emerge will be severely injured.",
+  "message": "You lunge forward, arm outstretched toward your target.  %s!",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT",
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL",
+    "SWAP_POS"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_displacing_slash_aoe",
+      "hit_self": false,
+      "max_level": 5
+    },
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_4",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "downed",
+  "energy_source": "HP",
+  "difficulty": 40,
+  "skill": "magic",
+  "max_level": 5,
+  "min_range": 24,
+  "max_range": 32,
+  "range_increment": 1.6,
+  "base_casting_time": 150,
+  "final_casting_time": 75,
+  "casting_time_increment": -15,
+  "base_energy_cost": 20,
+  "final_energy_cost": 10,
+  "energy_increment": -2,
+  "min_duration": 2400,
+  "max_duration": 6000,
+  "duration_increment": 720,
+  "field_id": "fd_blood",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_mark_displacing_slash",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Displacing Slash"
+  },
+  "description": "魔符\n将与你选择的敌对目标交换位置。虽然它不会直接伤害你选择的目标，但任何被你发现的血腥地带中的东西都会受到严重伤害。",
+  "message": "你向前冲，手臂伸向目标。%s ！",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT",
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL",
+    "SWAP_POS"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_displacing_slash_aoe",
+      "hit_self": false,
+      "max_level": 5
+    },
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_4",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "downed",
+  "energy_source": "HP",
+  "difficulty": 40,
+  "skill": "magic",
+  "max_level": 5,
+  "min_range": 24,
+  "max_range": 32,
+  "range_increment": 1.6,
+  "base_casting_time": 150,
+  "final_casting_time": 75,
+  "casting_time_increment": -15,
+  "base_energy_cost": 20,
+  "final_energy_cost": 10,
+  "energy_increment": -2,
+  "min_duration": 2400,
+  "max_duration": 6000,
+  "duration_increment": 720,
+  "field_id": "fd_blood",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+

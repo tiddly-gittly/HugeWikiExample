@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_saddler_infected
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_saddler_infected|http://cdda.aloxaf.cn/search?q=mon_saddler_infected]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Saddler.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Saddlers are stronger when they manipulate a creature. Living, sentient creatures (humans, which are rare for saddlers to seek for) possesses more raw strength than undeads (zeds are common due to cataclysm).",
+  "id": "mon_saddler_infected",
+  "type": "MONSTER",
+  "name": {
+    "str": "infected saddler"
+  },
+  "description": "Once human, now a stout vessel succumbed to the parasitic fiend. Its entire head has been 'eaten' under the slit of the saddler, while its hands has turned into viscious sharp claws. It moans in agony, and somewhat deep, inaudible mumbling voice is heard while near it.",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 180,
+  "harvest": "human",
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 8,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 4,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      40
+    ],
+    [
+      "scratch",
+      32
+    ],
+    [
+      "PARROT",
+      22
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s dies!\n<color_light_red>The saddler pops off from its host!</color>",
+    "effect": {
+      "id": "mon_saddler_infected_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "GRABS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Saddlers are stronger when they manipulate a creature. Living, sentient creatures (humans, which are rare for saddlers to seek for) possesses more raw strength than undeads (zeds are common due to cataclysm).",
+  "id": "mon_saddler_infected",
+  "type": "MONSTER",
+  "name": {
+    "str": "寄生萨德勒"
+  },
+  "description": "曾经是人类，现在一条粗壮的血管屈服于寄生恶魔。它的整个头部都被寄生虫的裂口“吃掉”，而它的手则变成了粘乎乎乎的利爪。它痛苦地呻吟着，当你靠近它时，可以听到一些低沉、听不见的咕哝声。",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 180,
+  "harvest": "human",
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 8,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 4,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      40
+    ],
+    [
+      "scratch",
+      32
+    ],
+    [
+      "PARROT",
+      22
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s dies!\n<color_light_red>The saddler pops off from its host!</color>",
+    "effect": {
+      "id": "mon_saddler_infected_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "GRABS"
+  ]
+}
+```
+

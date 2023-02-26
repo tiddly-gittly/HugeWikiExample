@@ -1,0 +1,287 @@
+creator: 林一二
+revision: 0
+tags: MONSTER nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→MONSTER→mon_zombie_bio_infantry_shotgun
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_bio_infantry_shotgun|http://cdda.aloxaf.cn/search?q=mon_zombie_bio_infantry_shotgun]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_bio_infantry_shotgun",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie_bio_infantry",
+  "name": {
+    "str": "zombie augmented shotgunner"
+  },
+  "description": "An advanced, well-equipped member of the military that still succumbed to the cataclysm.  This one is wielding some kind of shotgun, and appears to recall how to use it.",
+  "default_faction": "super_soldat",
+  "species": [
+    "ZOMBIE"
+  ],
+  "diff": 10,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_cyan",
+  "aggression": 0,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 10,
+  "armor_cut": 20,
+  "armor_stab": 20,
+  "armor_bullet": 30,
+  "armor_acid": 5,
+  "armor_fire": 20,
+  "vision_day": 40,
+  "vision_night": 15,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "luminance": 2,
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -1
+    ],
+    [
+      "corroding",
+      -1
+    ]
+  ],
+  "regen_morale": true,
+  "starting_ammo": {
+    "battery": 100
+  },
+  "harvest": "CBM_SOLDAT_ZOMBIE",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 3,
+      "move_cost": 300,
+      "gun_type": "xarm_laser_shotgun_monster",
+      "ammo_type": "battery",
+      "fake_str": 4,
+      "fake_dex": 5,
+      "fake_per": 3,
+      "fake_int": 1,
+      "max_ammo": 100,
+      "ranges": [
+        [
+          2,
+          10,
+          "DEFAULT"
+        ],
+        [
+          2,
+          10,
+          "BURST"
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "targeting_cost": 100,
+      "targeting_sound": "argh!",
+      "targeting_volume": 5,
+      "description": "The super soldier fires its XARM scattergun!",
+      "no_ammo_sound": "beep-beep-beep!"
+    },
+    [
+      "GRAB",
+      10
+    ],
+    [
+      "BIO_OP_TAKEDOWN",
+      30
+    ]
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    60
+  ],
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED",
+    "HURT",
+    "STALK",
+    "PLAYER_CLOSE"
+  ],
+  "placate_triggers": [
+    "PLAYER_WEAK"
+  ],
+  "death_drops": "wild_bio_infantry_shotgun",
+  "zombify_into": "mon_zombie_bio_reanimated",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "PATH_AVOID_DANGER_1"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_bio_infantry_shotgun",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie_bio_infantry",
+  "name": {
+    "str": "超级CBQ丧尸"
+  },
+  "description": "一个装备精良的特种军人，但仍在大灾变中加入了无尽的丧尸大军。它手中仍出于本能的紧握住生前的特殊实验性脉冲散射枪，更恐怖的是看上去他还知道如何使用它......",
+  "default_faction": "super_soldat",
+  "species": [
+    "ZOMBIE"
+  ],
+  "diff": 10,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_cyan",
+  "aggression": 0,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 10,
+  "armor_cut": 20,
+  "armor_stab": 20,
+  "armor_bullet": 30,
+  "armor_acid": 5,
+  "armor_fire": 20,
+  "vision_day": 40,
+  "vision_night": 15,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "luminance": 2,
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -1
+    ],
+    [
+      "corroding",
+      -1
+    ]
+  ],
+  "regen_morale": true,
+  "starting_ammo": {
+    "battery": 100
+  },
+  "harvest": "CBM_SOLDAT_ZOMBIE",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 3,
+      "move_cost": 300,
+      "gun_type": "xarm_laser_shotgun_monster",
+      "ammo_type": "battery",
+      "fake_str": 4,
+      "fake_dex": 5,
+      "fake_per": 3,
+      "fake_int": 1,
+      "max_ammo": 100,
+      "ranges": [
+        [
+          2,
+          10,
+          "DEFAULT"
+        ],
+        [
+          2,
+          10,
+          "BURST"
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "targeting_cost": 100,
+      "targeting_sound": "argh!",
+      "targeting_volume": 5,
+      "description": "超级战士丧尸的脉冲散射枪开火了！",
+      "no_ammo_sound": "哔-哔-哔！"
+    },
+    [
+      "GRAB",
+      10
+    ],
+    [
+      "BIO_OP_TAKEDOWN",
+      30
+    ]
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    60
+  ],
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED",
+    "HURT",
+    "STALK",
+    "PLAYER_CLOSE"
+  ],
+  "placate_triggers": [
+    "PLAYER_WEAK"
+  ],
+  "death_drops": "wild_bio_infantry_shotgun",
+  "zombify_into": "mon_zombie_bio_reanimated",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "PATH_AVOID_DANGER_1"
+  ]
+}
+```
+

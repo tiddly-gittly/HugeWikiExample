@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL_ARMOR→c_mi_go_wings_salvaged_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_mi_go_wings_salvaged_on|http://cdda.aloxaf.cn/search?q=c_mi_go_wings_salvaged_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_mi_go_wings_salvaged_on",
+  "copy-from": "c_mi_go_wings_salvaged",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "set of salvaged exo-wings (on)",
+    "str_pl": "sets of salvaged exo-wings (on)"
+  },
+  "description": "A set of thin, green iridescent wings, steel wires and joints meshed with thick alien nervous cords.  They are currently buzzing with life, greatly speeding up movement and enhancing dodge as well as granting immunity to falling damage, in exchange for increased fatigue gain.",
+  "turns_per_charge": 75,
+  "revert_to": "c_mi_go_wings_salvaged",
+  "use_action": {
+    "target": "c_mi_go_wings_salvaged",
+    "msg": "The exo-wings go limp as they shut down.",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "NO_TAKEOFF"
+    ]
+  },
+  "armor": [
+    {
+      "encumbrance": 0,
+      "coverage": 40,
+      "covers": [
+        "torso"
+      ],
+      "specifically_covers": [
+        "torso_waist"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_mi_go_wings_salvaged_on",
+  "copy-from": "c_mi_go_wings_salvaged",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "改装动力翼（开）",
+    "str_pl": "改装动力翼（开）"
+  },
+  "description": "一对薄薄的绿色彩虹翅膀，钢丝和关节上缠绕着厚厚的外星神经索。它们现在充满活力，大大加快了移动速度，提高了闪避能力并免疫坠落伤害，但会更容易感到疲劳。",
+  "turns_per_charge": 75,
+  "revert_to": "c_mi_go_wings_salvaged",
+  "use_action": {
+    "target": "c_mi_go_wings_salvaged",
+    "msg": "动力翼在关闭后变得松软。",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "NO_TAKEOFF"
+    ]
+  },
+  "armor": [
+    {
+      "encumbrance": 0,
+      "coverage": 40,
+      "covers": [
+        "torso"
+      ],
+      "specifically_covers": [
+        "torso_waist"
+      ]
+    }
+  ]
+}
+```
+

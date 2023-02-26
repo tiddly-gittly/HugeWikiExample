@@ -1,0 +1,461 @@
+creator: 林一二
+revision: 0
+tags: ter_furn_transform Arcana
+title: Arcana→ter_furn_transform→arcana_open_lock
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_open_lock|http://cdda.aloxaf.cn/search?q=arcana_open_lock]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/furniture_and_terrain/ter_furn_transform.json
+
+
+!! 原文
+
+```json
+{
+  "type": "ter_furn_transform",
+  "id": "arcana_open_lock",
+  "terrain": [
+    {
+      "result": "t_door_o",
+      "valid_terrain": [
+        "t_door_locked_interior",
+        "t_door_locked",
+        "t_door_locked_alarm"
+      ],
+      "message": "The door swings open silently."
+    },
+    {
+      "result": "t_door_o_peep",
+      "valid_terrain": [
+        "t_door_locked_peep",
+        "t_door_boarded_peep"
+      ],
+      "message": "The door swings open silently."
+    },
+    {
+      "result": "t_door_c",
+      "valid_terrain": [
+        "t_door_boarded"
+      ],
+      "message": "The boards keeping the door sealed decay and crumble away."
+    },
+    {
+      "result": "t_rdoor_c",
+      "valid_terrain": [
+        "t_rdoor_boarded"
+      ],
+      "message": "The boards keeping the door sealed decay and crumble away."
+    },
+    {
+      "result": "t_door_b",
+      "valid_terrain": [
+        "t_door_boarded_damaged"
+      ],
+      "message": "The boards keeping the door sealed decay and crumble away."
+    },
+    {
+      "result": "t_door_c_peep",
+      "valid_terrain": [
+        "t_door_boarded_peep"
+      ],
+      "message": "The boards keeping the door sealed decay and crumble away."
+    },
+    {
+      "result": "t_rdoor_boarded_damaged",
+      "valid_terrain": [
+        "t_rdoor_b"
+      ],
+      "message": "The boards keeping the door sealed decay and crumble away."
+    },
+    {
+      "result": "t_door_boarded_damaged_peep",
+      "valid_terrain": [
+        "t_door_b_peep"
+      ],
+      "message": "The boards keeping the door sealed decay and crumble away."
+    },
+    {
+      "result": "t_secretdoor_metal_o",
+      "valid_terrain": [
+        "t_secretdoor_metal_c"
+      ],
+      "message": "A secret passage is revealed in the wall."
+    },
+    {
+      "result": "t_rock_floor_no_roof",
+      "valid_terrain": [
+        "t_portcullis"
+      ],
+      "message": "The steel barrier crumbles into nothingness."
+    },
+    {
+      "result": "t_door_metal_o",
+      "valid_terrain": [
+        "t_door_metal_locked",
+        "t_door_metal_pickable"
+      ],
+      "message": "The door swings open silently."
+    },
+    {
+      "result": "t_door_bar_o",
+      "valid_terrain": [
+        "t_door_bar_locked"
+      ],
+      "message": "The bars swing open."
+    },
+    {
+      "result": "t_palisade_gate_o",
+      "valid_terrain": [
+        "t_palisade_gate"
+      ],
+      "message": "The gate moves of its own accord, opening the way forward."
+    },
+    {
+      "result": "t_chaingate_o",
+      "valid_terrain": [
+        "t_chaingate_l"
+      ],
+      "message": "The gate swings open silently."
+    },
+    {
+      "result": "t_window_open",
+      "valid_terrain": [
+        "t_curtains",
+        "t_window_domestic",
+        "t_window_domestic_taped"
+      ],
+      "message": "The window is forced open."
+    },
+    {
+      "result": "t_window_open",
+      "valid_terrain": [
+        "t_window_bars_curtains",
+        "t_window_bars_domestic"
+      ],
+      "message": "The window's reinforcements rust away, the window is silently forced open."
+    },
+    {
+      "result": "t_window_no_curtains_open",
+      "valid_terrain": [
+        "t_window_no_curtains",
+        "t_window_no_curtains_taped"
+      ],
+      "message": "The window is forced open."
+    },
+    {
+      "result": "t_window_empty",
+      "valid_terrain": [
+        "t_window_boarded",
+        "t_window_boarded_noglass",
+        "t_window_boarded_noglass",
+        "t_window_reinforced",
+        "t_window_reinforced_noglass",
+        "t_window_enhanced",
+        "t_window_enhanced_noglass",
+        "t_window_bars",
+        "t_window_bars_alarm"
+      ],
+      "message": "The obstructions across the window decay and crumble away, the glass disintegrating soon afterward."
+    },
+    {
+      "result": "t_manhole",
+      "valid_terrain": [
+        "t_manhole_cover"
+      ],
+      "message": "The manhole cover rusts and decays away, falling into the hole."
+    },
+    {
+      "result": "t_floor_resin",
+      "valid_terrain": [
+        "t_wall_resin_cage"
+      ],
+      "message": "The resin cage crumbles away."
+    },
+    {
+      "result": "t_dirt",
+      "valid_flags": [
+        "LOCKED"
+      ],
+      "message": "The obstacle crumbles to dust."
+    }
+  ],
+  "furniture": [
+    {
+      "result": "f_coffin_o",
+      "valid_furniture": [
+        "f_coffin_c"
+      ],
+      "message": "Nails and wood decay until the crate is left unsealed."
+    },
+    {
+      "result": "f_crate_o",
+      "valid_furniture": [
+        "f_crate_c"
+      ],
+      "message": "Nails and wood decay until the coffin is left unsealed."
+    },
+    {
+      "result": "f_safe_o",
+      "valid_furniture": [
+        "f_gunsafe_ml",
+        "f_gunsafe_mj",
+        "f_gun_safe_el",
+        "f_safe_l"
+      ],
+      "message": "Mechanisms rust away until the safe silently swings open."
+    },
+    {
+      "result": "f_vending_o",
+      "valid_furniture": [
+        "f_vending_reinforced",
+        "f_vending_c"
+      ],
+      "message": "The vending machine's facade erodes and decays to reveal its contents."
+    },
+    {
+      "result": "f_null",
+      "valid_flags": [
+        "RUBBLE"
+      ],
+      "message": "Rubble wavers and evaporates to clear a path."
+    },
+    {
+      "result": "f_null",
+      "valid_flags": [
+        "LOCKED"
+      ],
+      "message": "The obstacle crumbles to dust."
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "ter_furn_transform",
+  "id": "arcana_open_lock",
+  "terrain": [
+    {
+      "result": "t_door_o",
+      "valid_terrain": [
+        "t_door_locked_interior",
+        "t_door_locked",
+        "t_door_locked_alarm"
+      ],
+      "message": "门静静地开着。"
+    },
+    {
+      "result": "t_door_o_peep",
+      "valid_terrain": [
+        "t_door_locked_peep",
+        "t_door_boarded_peep"
+      ],
+      "message": "门静静地开着。"
+    },
+    {
+      "result": "t_door_c",
+      "valid_terrain": [
+        "t_door_boarded"
+      ],
+      "message": "把门封起来的木板腐烂了，碎裂了。"
+    },
+    {
+      "result": "t_rdoor_c",
+      "valid_terrain": [
+        "t_rdoor_boarded"
+      ],
+      "message": "把门封起来的木板腐烂了，碎裂了。"
+    },
+    {
+      "result": "t_door_b",
+      "valid_terrain": [
+        "t_door_boarded_damaged"
+      ],
+      "message": "把门封起来的木板腐烂了，碎裂了。"
+    },
+    {
+      "result": "t_door_c_peep",
+      "valid_terrain": [
+        "t_door_boarded_peep"
+      ],
+      "message": "把门封起来的木板腐烂了，碎裂了。"
+    },
+    {
+      "result": "t_rdoor_boarded_damaged",
+      "valid_terrain": [
+        "t_rdoor_b"
+      ],
+      "message": "把门封起来的木板腐烂了，碎裂了。"
+    },
+    {
+      "result": "t_door_boarded_damaged_peep",
+      "valid_terrain": [
+        "t_door_b_peep"
+      ],
+      "message": "把门封起来的木板腐烂了，碎裂了。"
+    },
+    {
+      "result": "t_secretdoor_metal_o",
+      "valid_terrain": [
+        "t_secretdoor_metal_c"
+      ],
+      "message": "墙上露出一条秘密通道。"
+    },
+    {
+      "result": "t_rock_floor_no_roof",
+      "valid_terrain": [
+        "t_portcullis"
+      ],
+      "message": "钢制的屏障破碎成虚无。"
+    },
+    {
+      "result": "t_door_metal_o",
+      "valid_terrain": [
+        "t_door_metal_locked",
+        "t_door_metal_pickable"
+      ],
+      "message": "门静静地开着。"
+    },
+    {
+      "result": "t_door_bar_o",
+      "valid_terrain": [
+        "t_door_bar_locked"
+      ],
+      "message": "栅栏打开了。"
+    },
+    {
+      "result": "t_palisade_gate_o",
+      "valid_terrain": [
+        "t_palisade_gate"
+      ],
+      "message": "大门自动移动，打开了前进的道路。"
+    },
+    {
+      "result": "t_chaingate_o",
+      "valid_terrain": [
+        "t_chaingate_l"
+      ],
+      "message": "大门静静地打开。"
+    },
+    {
+      "result": "t_window_open",
+      "valid_terrain": [
+        "t_curtains",
+        "t_window_domestic",
+        "t_window_domestic_taped"
+      ],
+      "message": "窗户被强行打开了。"
+    },
+    {
+      "result": "t_window_open",
+      "valid_terrain": [
+        "t_window_bars_curtains",
+        "t_window_bars_domestic"
+      ],
+      "message": "窗户的钢筋锈掉了，窗户被悄悄地推开了。"
+    },
+    {
+      "result": "t_window_no_curtains_open",
+      "valid_terrain": [
+        "t_window_no_curtains",
+        "t_window_no_curtains_taped"
+      ],
+      "message": "窗户被强行打开了。"
+    },
+    {
+      "result": "t_window_empty",
+      "valid_terrain": [
+        "t_window_boarded",
+        "t_window_boarded_noglass",
+        "t_window_boarded_noglass",
+        "t_window_reinforced",
+        "t_window_reinforced_noglass",
+        "t_window_enhanced",
+        "t_window_enhanced_noglass",
+        "t_window_bars",
+        "t_window_bars_alarm"
+      ],
+      "message": "窗户上的障碍物腐烂并碎裂，玻璃很快就碎了。"
+    },
+    {
+      "result": "t_manhole",
+      "valid_terrain": [
+        "t_manhole_cover"
+      ],
+      "message": "井盖生锈腐烂，掉到洞里去了。"
+    },
+    {
+      "result": "t_floor_resin",
+      "valid_terrain": [
+        "t_wall_resin_cage"
+      ],
+      "message": "树脂笼碎裂了。"
+    },
+    {
+      "result": "t_dirt",
+      "valid_flags": [
+        "LOCKED"
+      ],
+      "message": "障碍物化为尘土。"
+    }
+  ],
+  "furniture": [
+    {
+      "result": "f_coffin_o",
+      "valid_furniture": [
+        "f_coffin_c"
+      ],
+      "message": "Nails and wood decay until the crate is left unsealed."
+    },
+    {
+      "result": "f_crate_o",
+      "valid_furniture": [
+        "f_crate_c"
+      ],
+      "message": "Nails and wood decay until the coffin is left unsealed."
+    },
+    {
+      "result": "f_safe_o",
+      "valid_furniture": [
+        "f_gunsafe_ml",
+        "f_gunsafe_mj",
+        "f_gun_safe_el",
+        "f_safe_l"
+      ],
+      "message": "Mechanisms rust away until the safe silently swings open."
+    },
+    {
+      "result": "f_vending_o",
+      "valid_furniture": [
+        "f_vending_reinforced",
+        "f_vending_c"
+      ],
+      "message": "The vending machine's facade erodes and decays to reveal its contents."
+    },
+    {
+      "result": "f_null",
+      "valid_flags": [
+        "RUBBLE"
+      ],
+      "message": "Rubble wavers and evaporates to clear a path."
+    },
+    {
+      "result": "f_null",
+      "valid_flags": [
+        "LOCKED"
+      ],
+      "message": "The obstacle crumbles to dust."
+    }
+  ]
+}
+```
+

@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: talk_topic secronom_lore_expansion
+title: secronom_lore_expansion→talk_topic→TALK_SECRO_SCIENTIST_whereisme
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SECRO_SCIENTIST_whereisme|http://cdda.aloxaf.cn/search?q=TALK_SECRO_SCIENTIST_whereisme]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/Dialogues/secro_scientist.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_SCIENTIST_whereisme",
+  "dynamic_line": "This is the secronom bunker, built solely as our last option for survival.",
+  "responses": [
+    {
+      "text": "So why won't you escape this place?",
+      "topic": "TALK_SECRO_SCIENTIST_whereisme_escape",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_scientist_asked_escape"
+        }
+      },
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_scientist_asked_escape"
+      }
+    },
+    {
+      "text": "Why is it connected to the lab?",
+      "topic": "TALK_SECRO_SCIENTIST_whereisme_lab",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_scientist_asked_lab"
+        }
+      },
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_scientist_asked_lab"
+      }
+    },
+    {
+      "text": "Well? What have you earned for doing those?",
+      "topic": "TALK_SECRO_SCIENTIST_whereisme_lab",
+      "condition": {
+        "u_has_effect": "secro_scientist_asked_lab"
+      }
+    },
+    {
+      "text": "Okay.",
+      "topic": "TALK_SECRO_SCIENTIST_main"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_SCIENTIST_whereisme",
+  "dynamic_line": "这是secronom掩体，完全是我们生存的最后选择。",
+  "responses": [
+    {
+      "text": "那你为什么不逃出这个地方？",
+      "topic": "TALK_SECRO_SCIENTIST_whereisme_escape",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_scientist_asked_escape"
+        }
+      },
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_scientist_asked_escape"
+      }
+    },
+    {
+      "text": "为什么连接到实验室？",
+      "topic": "TALK_SECRO_SCIENTIST_whereisme_lab",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_scientist_asked_lab"
+        }
+      },
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_scientist_asked_lab"
+      }
+    },
+    {
+      "text": "好？你做这些赚了多少钱？",
+      "topic": "TALK_SECRO_SCIENTIST_whereisme_lab",
+      "condition": {
+        "u_has_effect": "secro_scientist_asked_lab"
+      }
+    },
+    {
+      "text": "好的。",
+      "topic": "TALK_SECRO_SCIENTIST_main"
+    }
+  ]
+}
+```
+

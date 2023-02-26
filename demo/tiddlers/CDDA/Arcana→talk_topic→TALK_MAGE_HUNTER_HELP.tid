@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MAGE_HUNTER_HELP
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MAGE_HUNTER_HELP|http://cdda.aloxaf.cn/search?q=TALK_MAGE_HUNTER_HELP]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MAGE_HUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_HELP",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "I have no jobs for you.",
+    "I'm afraid I have nothing you can help with.",
+    "Talk to Thane McKinnon or one of the others in charge here, they should have something you can help with.",
+    "The others here should have work if you need it.",
+    "We'll manage, but thank you.  Speak with Sofia, she might have something for you to do.",
+    {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": {
+        "u_has_effect": "cf_mission_1",
+        "yes": [
+          "A pleasant surprise surprise to hear.  I have nothing for you however, speak to the others in charge here.",
+          "You know the drill.  Speak with Thane McKinnon.",
+          "I sure hope Sofia knows what she's doing …right.  Talk to her if you're looking for work."
+        ],
+        "no": [
+          "You?  A blood mage? Is this a trick of some kind?  If you're honest about it, speak with those in charge here.",
+          "Never thought I'd hear that from a blood mage.  Speak with Thane McKinnon.  If this is a trick of some kind, remember.  We.  Are.  Watching you.",
+          "I have nothing for you, sanguinist."
+        ]
+      },
+      "no": "I have nothing for you, sadly."
+    }
+  ],
+  "responses": [
+    {
+      "text": "Oh, okay.",
+      "topic": "TALK_MAGE_HUNTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_HELP",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "我没有工作给你。",
+    "恐怕你帮不了我什么忙。",
+    "和塔恩·麦金农或其他负责人谈谈，他们应该有你可以帮忙的东西。",
+    "如果你需要，这里的其他人应该有工作。",
+    "我们会设法的，但谢谢你。跟索菲亚谈谈，她可能有事要你做。",
+    {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": {
+        "u_has_effect": "cf_mission_1",
+        "yes": [
+          "A pleasant surprise surprise to hear.  I have nothing for you however, speak to the others in charge here.",
+          "You know the drill.  Speak with Thane McKinnon.",
+          "I sure hope Sofia knows what she's doing …right.  Talk to her if you're looking for work."
+        ],
+        "no": [
+          "You?  A blood mage? Is this a trick of some kind?  If you're honest about it, speak with those in charge here.",
+          "Never thought I'd hear that from a blood mage.  Speak with Thane McKinnon.  If this is a trick of some kind, remember.  We.  Are.  Watching you.",
+          "I have nothing for you, sanguinist."
+        ]
+      },
+      "no": "I have nothing for you, sadly."
+    }
+  ],
+  "responses": [
+    {
+      "text": "哦，好的。",
+      "topic": "TALK_MAGE_HUNTER"
+    }
+  ]
+}
+```
+

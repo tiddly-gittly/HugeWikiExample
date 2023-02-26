@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_fleshling_scavengy_tent_tentsurprise
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_scavengy_tent_tentsurprise|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_scavengy_tent_tentsurprise]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_fleshling_scavengy_tent_tentsurprise",
+  "type": "SPELL",
+  "name": {
+    "str": "Tentacle Surprise"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster bursts into a small heap of membranous veins tipped with sharpened bone blades, then quickly slashes its target, dealing cutting damage.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "sacrifice_spell",
+      "hit_self": true
+    }
+  ],
+  "min_damage": 5,
+  "max_damage": 10,
+  "min_range": 1,
+  "max_range": 1,
+  "damage_type": "cut"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_fleshling_scavengy_tent_tentsurprise",
+  "type": "SPELL",
+  "name": {
+    "str": "触角惊喜"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就读一读这篇：\n“施法者冲进一小堆膜状血管，顶端有锋利的骨刃，然后快速地砍向目标，造成切割伤害。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "sacrifice_spell",
+      "hit_self": true
+    }
+  ],
+  "min_damage": 5,
+  "max_damage": 10,
+  "min_range": 1,
+  "max_range": 1,
+  "damage_type": "cut"
+}
+```
+

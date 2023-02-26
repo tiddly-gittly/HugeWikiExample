@@ -1,0 +1,201 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_patrolmilitary_behemoth_minigun
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_patrolmilitary_behemoth_minigun|http://cdda.aloxaf.cn/search?q=mon_BL9_patrolmilitary_behemoth_minigun]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/Infantry.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_patrolmilitary_behemoth_minigun",
+  "looks_like": "mon_zombie_kevlar_1",
+  "type": "MONSTER",
+  "name": {
+    "str": "Armed Patrolling BL9-Behemoth - Minigun"
+  },
+  "description": "A well-armored mercenary infected by the BL9. It seems to have grown in size being over 7 feet tall.It appears to be sentient, having all characteristics of a normal person except for strangely very aggressive look on it's face, greater strength and endurance, bloodshot eyes indicating the BL9 presence, they will do their best to stop any intruder that managed to infiltrate their compound, this one is armed with a massive minigun and it obviously knows how to use it well.",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 260,
+  "speed": 75,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 4,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "special_attacks": [
+    [
+      "PARROT",
+      11
+    ],
+    {
+      "type": "gun",
+      "cooldown": 12,
+      "move_cost": 300,
+      "gun_type": "mongun_BL9_minigun",
+      "fake_skills": [
+        [
+          "gun",
+          8
+        ],
+        [
+          "rifle",
+          8
+        ]
+      ],
+      "fake_dex": 8,
+      "fake_per": 8,
+      "require_targeting_player": false,
+      "description": "The ganados fires it's minigun!",
+      "ranges": [
+        [
+          2,
+          11,
+          "DEFAULT"
+        ]
+      ]
+    }
+  ],
+  "death_drops": "BL9_Drops_Militarypatrolgrunt",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_patrolmilitary_behemoth_minigun",
+  "looks_like": "mon_zombie_kevlar_1",
+  "type": "MONSTER",
+  "name": {
+    "str": "武装巡逻BL9庞然大物-微型枪"
+  },
+  "description": "一个被BL9感染的全副武装的雇佣兵。它看起来已经长到7英尺多高了。它似乎是有知觉的，具有正常人的所有特征，除了脸上奇怪的非常咄咄逼人的表情，更大的力量和耐力，充血的眼睛表明BL9的存在，他们将尽全力阻止任何试图渗透其营地的入侵者，它配备了巨大的转轮机枪并且显然知道如何很好地使用它。",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 260,
+  "speed": 75,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 4,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "special_attacks": [
+    [
+      "PARROT",
+      11
+    ],
+    {
+      "type": "gun",
+      "cooldown": 12,
+      "move_cost": 300,
+      "gun_type": "mongun_BL9_minigun",
+      "fake_skills": [
+        [
+          "gun",
+          8
+        ],
+        [
+          "rifle",
+          8
+        ]
+      ],
+      "fake_dex": 8,
+      "fake_per": 8,
+      "require_targeting_player": false,
+      "description": "加纳多斯开火了，是机关枪！",
+      "ranges": [
+        [
+          2,
+          11,
+          "DEFAULT"
+        ]
+      ]
+    }
+  ],
+  "death_drops": "BL9_Drops_Militarypatrolgrunt",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

@@ -1,0 +1,369 @@
+creator: 林一二
+revision: 0
+tags: martial_art Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→martial_art→style_celestial_brawling_tenko
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：style_celestial_brawling_tenko|http://cdda.aloxaf.cn/search?q=style_celestial_brawling_tenko]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_martialarts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "style_celestial_brawling_tenko",
+  "type": "martial_art",
+  "name": {
+    "str": "Celestial brawling (Fallen)"
+  },
+  "description": "Fighting in Heaven is a bit different than normal: one can go all in since there's no damage to recover from.  This variation of that style is simplifying that by focusing on excessive force with very, if any, proper defensive maneuvers.  Not that you needed them before anyways.",
+  "initiate": [
+    "You enter a combat stance and hope for an interesting fight.",
+    "%s gets ready to fight."
+  ],
+  "arm_block": 2,
+  "nonstandard_block": 2,
+  "allow_all_weapons": true,
+  "static_buffs": [
+    {
+      "id": "buff_celestial_brawling_tenko_static",
+      "name": "Celestial stance (Fallen)",
+      "description": "You're used to do as much damage as possible without care for your safety.  Solid as a keystone, your chance to land hits is increased, you're immune to throws and evasive actions are reduced.",
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "bonus_dodges": -1,
+      "throw_immune": true,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "onhit_buffs": [
+    {
+      "id": "buff_celestial_brawling_tenko_onattack",
+      "name": "Celestial devastation",
+      "description": "Sucessive attacks enable you to perceive the flow of the fight better, allowing you to break through, quite literally.",
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "buff_duration": 2,
+      "max_stacks": 8,
+      "mult_bonuses": [
+        {
+          "stat": "crit_chance",
+          "scaling-stat": "str",
+          "scale": 0.2
+        },
+        {
+          "stat": "crit_chance",
+          "scaling-stat": "dex",
+          "scale": 0.2
+        },
+        {
+          "stat": "crit_chance",
+          "scaling-stat": "per",
+          "scale": 0.2
+        },
+        {
+          "stat": "crit_chance",
+          "scaling-stat": "int",
+          "scale": 0.2
+        }
+      ],
+      "//": "Should tag a debuff on enemies"
+    }
+  ],
+  "oncrit_buffs": [
+    {
+      "id": "buff_celestial_brawling_tenko_oncrit",
+      "name": "Sphere of perception",
+      "description": "Certain attacks allow you to read the spirit of the target.  You're more aware of their actions…",
+      "unarmed_allowed": true,
+      "buff_duration": 6,
+      "max_stacks": 1,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": 1
+        },
+        {
+          "stat": "arpen",
+          "type": "bash",
+          "scale": 8
+        },
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scale": 8
+        },
+        {
+          "stat": "arpen",
+          "type": "stab",
+          "scale": 8
+        }
+      ],
+      "//": "Arpen component should be a debuff on enemies"
+    },
+    {
+      "id": "buff_celestial_brawling_tenko_oncrit2",
+      "name": "Sphere of non-perception",
+      "description": "…Which interfers with your own focus, blocking you from repeating effective attacks immediately after landing then.",
+      "unarmed_allowed": true,
+      "buff_duration": 1,
+      "max_stacks": 1,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": -1
+        },
+        {
+          "stat": "crit_chance",
+          "scale": -100
+        }
+      ],
+      "//": "Ideally, the onattack crit component should instead be completely removed when critting"
+    }
+  ],
+  "onpause_buffs": [
+    {
+      "id": "buff_celestial_brawling_tenko_onpause",
+      "name": "Temperament manipulation",
+      "description": "Enter a power stance, as if taunting the enemy.  In reality, that's how you (like to) tamper with temperaments around you.  Defensive actions are hampered, physical attacks are greatly increased for the following immediate strike.",
+      "buff_duration": 1,
+      "max_stacks": 1,
+      "flat_bonuses": [
+        {
+          "stat": "dodge",
+          "scale": -1
+        },
+        {
+          "stat": "block",
+          "scale": -1
+        },
+        {
+          "stat": "hit",
+          "scale": 1
+        }
+      ],
+      "mult_bonuses": [
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scale": 2
+        },
+        {
+          "stat": "damage",
+          "type": "cut",
+          "scale": 2
+        },
+        {
+          "stat": "damage",
+          "type": "stab",
+          "scale": 2
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_celestial_brawling_break_melee",
+    "tec_celestial_brawling_break_melee2",
+    "tec_celestial_brawling_break_unarmed",
+    "tec_celestial_brawling_break_unarmed2",
+    "tec_celestial_brawling_disarm_melee",
+    "tec_celestial_brawling_disarm_unarmed",
+    "tec_celestial_brawling_earthen_crescent",
+    "tec_tenko_backflip",
+    "tec_tenko_heaven_crescent",
+    "tec_tenko_kick",
+    "tec_tenko_kick2",
+    "tec_tenko_stomp"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "style_celestial_brawling_tenko",
+  "type": "martial_art",
+  "name": {
+    "str": "Celestial brawling (Fallen)"
+  },
+  "description": "Fighting in Heaven is a bit different than normal: one can go all in since there's no damage to recover from.  This variation of that style is simplifying that by focusing on excessive force with very, if any, proper defensive maneuvers.  Not that you needed them before anyways.",
+  "initiate": [
+    "You enter a combat stance and hope for an interesting fight.",
+    "%s 准备战斗。"
+  ],
+  "arm_block": 2,
+  "nonstandard_block": 2,
+  "allow_all_weapons": true,
+  "static_buffs": [
+    {
+      "id": "buff_celestial_brawling_tenko_static",
+      "name": "Celestial stance (Fallen)",
+      "description": "You're used to do as much damage as possible without care for your safety.  Solid as a keystone, your chance to land hits is increased, you're immune to throws and evasive actions are reduced.",
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "bonus_dodges": -1,
+      "throw_immune": true,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "onhit_buffs": [
+    {
+      "id": "buff_celestial_brawling_tenko_onattack",
+      "name": "Celestial devastation",
+      "description": "Sucessive attacks enable you to perceive the flow of the fight better, allowing you to break through, quite literally.",
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "buff_duration": 2,
+      "max_stacks": 8,
+      "mult_bonuses": [
+        {
+          "stat": "crit_chance",
+          "scaling-stat": "str",
+          "scale": 0.2
+        },
+        {
+          "stat": "crit_chance",
+          "scaling-stat": "dex",
+          "scale": 0.2
+        },
+        {
+          "stat": "crit_chance",
+          "scaling-stat": "per",
+          "scale": 0.2
+        },
+        {
+          "stat": "crit_chance",
+          "scaling-stat": "int",
+          "scale": 0.2
+        }
+      ],
+      "//": "Should tag a debuff on enemies"
+    }
+  ],
+  "oncrit_buffs": [
+    {
+      "id": "buff_celestial_brawling_tenko_oncrit",
+      "name": "Sphere of perception",
+      "description": "Certain attacks allow you to read the spirit of the target.  You're more aware of their actions…",
+      "unarmed_allowed": true,
+      "buff_duration": 6,
+      "max_stacks": 1,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": 1
+        },
+        {
+          "stat": "arpen",
+          "type": "bash",
+          "scale": 8
+        },
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scale": 8
+        },
+        {
+          "stat": "arpen",
+          "type": "stab",
+          "scale": 8
+        }
+      ],
+      "//": "Arpen component should be a debuff on enemies"
+    },
+    {
+      "id": "buff_celestial_brawling_tenko_oncrit2",
+      "name": "Sphere of non-perception",
+      "description": "…Which interfers with your own focus, blocking you from repeating effective attacks immediately after landing then.",
+      "unarmed_allowed": true,
+      "buff_duration": 1,
+      "max_stacks": 1,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": -1
+        },
+        {
+          "stat": "crit_chance",
+          "scale": -100
+        }
+      ],
+      "//": "Ideally, the onattack crit component should instead be completely removed when critting"
+    }
+  ],
+  "onpause_buffs": [
+    {
+      "id": "buff_celestial_brawling_tenko_onpause",
+      "name": "Temperament manipulation",
+      "description": "Enter a power stance, as if taunting the enemy.  In reality, that's how you (like to) tamper with temperaments around you.  Defensive actions are hampered, physical attacks are greatly increased for the following immediate strike.",
+      "buff_duration": 1,
+      "max_stacks": 1,
+      "flat_bonuses": [
+        {
+          "stat": "dodge",
+          "scale": -1
+        },
+        {
+          "stat": "block",
+          "scale": -1
+        },
+        {
+          "stat": "hit",
+          "scale": 1
+        }
+      ],
+      "mult_bonuses": [
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scale": 2
+        },
+        {
+          "stat": "damage",
+          "type": "cut",
+          "scale": 2
+        },
+        {
+          "stat": "damage",
+          "type": "stab",
+          "scale": 2
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_celestial_brawling_break_melee",
+    "tec_celestial_brawling_break_melee2",
+    "tec_celestial_brawling_break_unarmed",
+    "tec_celestial_brawling_break_unarmed2",
+    "tec_celestial_brawling_disarm_melee",
+    "tec_celestial_brawling_disarm_unarmed",
+    "tec_celestial_brawling_earthen_crescent",
+    "tec_tenko_backflip",
+    "tec_tenko_heaven_crescent",
+    "tec_tenko_kick",
+    "tec_tenko_kick2",
+    "tec_tenko_stomp"
+  ]
+}
+```
+

@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_seal_healing
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_seal_healing|http://cdda.aloxaf.cn/search?q=arcana_seal_healing]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_seals.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_seal_healing",
+  "type": "SPELL",
+  "name": {
+    "str": "Seal: Healing"
+  },
+  "description": "Magic Seal\nUsing this spell will staunch bleeding and mend wounds.  It can be used on yourself or an ally.",
+  "message": "\"We shall not yet fall into extinction…\"  You cast %s!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DAMAGE"
+  ],
+  "effect_str": "arcane_healing_staunch",
+  "min_damage": -30,
+  "max_damage": -40,
+  "max_level": 10,
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 140,
+  "final_casting_time": 140,
+  "skill": "magic",
+  "min_duration": 100,
+  "max_duration": 100
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_seal_healing",
+  "type": "SPELL",
+  "name": {
+    "str": "魔印：治愈"
+  },
+  "description": "法术魔印\n使用此魔法将坚定流血和修复伤口。它可以在自己或盟友身上使用。",
+  "message": "“我们还不会灭绝……”你施放了 %s！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DAMAGE"
+  ],
+  "effect_str": "arcane_healing_staunch",
+  "min_damage": -30,
+  "max_damage": -40,
+  "max_level": 10,
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 140,
+  "final_casting_time": 140,
+  "skill": "magic",
+  "min_duration": 100,
+  "max_duration": 100
+}
+```
+

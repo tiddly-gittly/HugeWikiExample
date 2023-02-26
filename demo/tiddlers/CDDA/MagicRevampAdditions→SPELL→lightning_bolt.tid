@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→lightning_bolt
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lightning_bolt|http://cdda.aloxaf.cn/search?q=lightning_bolt]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/stormshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "lightning_bolt",
+  "type": "SPELL",
+  "name": {
+    "str": "Lightning Bolt"
+  },
+  "description": "The goto spell for many Stormshapers, this iconic spell does just what you expect: you shoot lightning from your fingertips.  However, this lightning is more directed than most lightning, and travels in a line through most non-solid targets.",
+  "effect": "attack",
+  "shape": "line",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "LOUD",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "max_level": 50,
+  "min_damage": 8,
+  "max_damage": 300,
+  "damage_increment": 6,
+  "min_range": 4,
+  "max_range": 12,
+  "range_increment": 0.25,
+  "difficulty": 6,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "spell_class": "STORMSHAPER",
+  "base_casting_time": 200,
+  "final_casting_time": 50,
+  "casting_time_increment": -5,
+  "base_energy_cost": 140,
+  "field_id": "fd_electricity",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "field_chance": 1,
+  "damage_type": "electric",
+  "sound_description": "a crackle",
+  "energy_source": "MANA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "lightning_bolt",
+  "type": "SPELL",
+  "name": {
+    "str": "闪电束"
+  },
+  "description": "对于许多风暴塑造者来说，这个标志性法术正如你所期待的那样：你可以从指尖射出闪电。不过这种闪电比其他闪电更有方向性，并以直线穿过大多数非固体目标。",
+  "effect": "attack",
+  "shape": "line",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "LOUD",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "max_level": 50,
+  "min_damage": 8,
+  "max_damage": 300,
+  "damage_increment": 6,
+  "min_range": 4,
+  "max_range": 12,
+  "range_increment": 0.25,
+  "difficulty": 6,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "spell_class": "STORMSHAPER",
+  "base_casting_time": 200,
+  "final_casting_time": 50,
+  "casting_time_increment": -5,
+  "base_energy_cost": 140,
+  "field_id": "fd_electricity",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "field_chance": 1,
+  "damage_type": "electric",
+  "sound_description": "a crackle",
+  "energy_source": "MANA"
+}
+```
+

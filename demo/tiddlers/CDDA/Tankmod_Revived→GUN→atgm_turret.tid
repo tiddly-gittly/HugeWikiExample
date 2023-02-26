@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: GUN Tankmod_Revived
+title: Tankmod_Revived→GUN→atgm_turret
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：atgm_turret|http://cdda.aloxaf.cn/search?q=atgm_turret]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "atgm_turret",
+  "copy-from": "gun_base",
+  "looks_like": "atgm_launcher",
+  "type": "GUN",
+  "name": {
+    "str_sp": "BGM-71F TOW Under Armor"
+  },
+  "description": "A twin-tube launcher for anti-tank guided missiles, specifically designed for vehicle use.  While fairly accurate, it isn't fire-and-forget.  Obviously it needs to be mounted on a vehicle to fire.",
+  "weight": "200 kg",
+  "volume": "50 L",
+  "longest_side": "150 cm",
+  "price": 9100000,
+  "price_postapoc": 5000,
+  "to_hit": -6,
+  "bashing": 12,
+  "material": "steel",
+  "ammo": [
+    "atgm"
+  ],
+  "skill": "launcher",
+  "range": 15,
+  "sight_dispersion": 10,
+  "durability": 9,
+  "clip_size": 2,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "atgm": 2
+      }
+    }
+  ],
+  "reload": 1200,
+  "ups_charges": 75,
+  "flags": [
+    "MOUNTED_GUN",
+    "NEVER_JAMS",
+    "NO_RELOAD",
+    "RELOAD_EJECT",
+    "RELOAD_ONE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "atgm_turret",
+  "copy-from": "gun_base",
+  "looks_like": "atgm_launcher",
+  "type": "GUN",
+  "name": {
+    "str_sp": "BGM-71F 陶式（覆甲）"
+  },
+  "description": "一个双管发射装置用于发射反坦克导弹，专门设计给载具使用。虽然相当准确，但它并不是自动追踪。显然，它需要安装在车辆上才能开火。",
+  "weight": "200 kg",
+  "volume": "50 L",
+  "longest_side": "150 cm",
+  "price": 9100000,
+  "price_postapoc": 5000,
+  "to_hit": -6,
+  "bashing": 12,
+  "material": "steel",
+  "ammo": [
+    "atgm"
+  ],
+  "skill": "launcher",
+  "range": 15,
+  "sight_dispersion": 10,
+  "durability": 9,
+  "clip_size": 2,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "atgm": 2
+      }
+    }
+  ],
+  "reload": 1200,
+  "ups_charges": 75,
+  "flags": [
+    "MOUNTED_GUN",
+    "NEVER_JAMS",
+    "NO_RELOAD",
+    "RELOAD_EJECT",
+    "RELOAD_ONE"
+  ]
+}
+```
+

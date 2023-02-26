@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_gorepit_tent
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_gorepit_tent|http://cdda.aloxaf.cn/search?q=mon_zombie_gorepit_tent]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Gorepit's main damage dealer.",
+  "id": "mon_zombie_gorepit_tent",
+  "type": "MONSTER",
+  "name": {
+    "str": "giant tendril"
+  },
+  "description": "A stout, meandering tendril, consisting of flesh and bones. Its vein glows in sync with the orb.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "420 L",
+  "weight": "690000 g",
+  "hp": 210,
+  "speed": 50,
+  "diff": 100,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "?",
+  "color": "red",
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 425,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "armor_bash": 1,
+  "armor_stab": 1,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "bleed_rate": 0,
+  "vision_day": 13,
+  "vision_night": 13,
+  "harvest": "exempt",
+  "special_attacks": [
+    [
+      "gorepit_tent_hswing",
+      30
+    ],
+    [
+      "gorepit_tent_stab",
+      22
+    ],
+    [
+      "gorepit_tent_slam",
+      40
+    ],
+    [
+      "DISAPPEAR",
+      250
+    ]
+  ],
+  "death_function": {
+    "message": "The %s disappears into the ground.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "IMMOBILE",
+    "POISON",
+    "NO_BREATHE",
+    "NOHEAD",
+    "STUN_IMMUNE",
+    "PRIORITIZE_TARGETS",
+    "NOHEAD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Gorepit's main damage dealer.",
+  "id": "mon_zombie_gorepit_tent",
+  "type": "MONSTER",
+  "name": {
+    "str": "巨型触手"
+  },
+  "description": "卷须一种粗壮的、蜿蜒的卷须，由肉和骨头组成。它的血管与球体同步发光。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "420 L",
+  "weight": "690000 g",
+  "hp": 210,
+  "speed": 50,
+  "diff": 100,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "?",
+  "color": "red",
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 425,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "armor_bash": 1,
+  "armor_stab": 1,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "bleed_rate": 0,
+  "vision_day": 13,
+  "vision_night": 13,
+  "harvest": "exempt",
+  "special_attacks": [
+    [
+      "gorepit_tent_hswing",
+      30
+    ],
+    [
+      "gorepit_tent_stab",
+      22
+    ],
+    [
+      "gorepit_tent_slam",
+      40
+    ],
+    [
+      "DISAPPEAR",
+      250
+    ]
+  ],
+  "death_function": {
+    "message": "The %s disappears into the ground.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "IMMOBILE",
+    "POISON",
+    "NO_BREATHE",
+    "NOHEAD",
+    "STUN_IMMUNE",
+    "PRIORITIZE_TARGETS",
+    "NOHEAD"
+  ]
+}
+```
+

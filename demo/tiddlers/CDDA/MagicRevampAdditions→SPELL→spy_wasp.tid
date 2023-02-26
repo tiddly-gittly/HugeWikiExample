@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→spy_wasp
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：spy_wasp|http://cdda.aloxaf.cn/search?q=spy_wasp]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Artificer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "spy_wasp",
+  "type": "SPELL",
+  "name": {
+    "str": "Spy Wasp"
+  },
+  "description": "Sends out a partly magical, partly electronic spy drone shaped like a wasp that reveals terrain in a line in front of you.  The wasp can travel through walls.",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "IGNORE_WALLS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "min_range": 24,
+  "max_range": 24,
+  "min_aoe": 7,
+  "max_aoe": 7,
+  "min_duration": 1500,
+  "duration_increment": 125,
+  "max_duration": 6500,
+  "base_energy_cost": 140,
+  "components": "spy_wasp",
+  "field_id": "fd_clairvoyant",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "spell_class": "ARTIFICER",
+  "difficulty": 3,
+  "max_level": 43,
+  "base_casting_time": 700,
+  "energy_source": "MANA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "spy_wasp",
+  "type": "SPELL",
+  "name": {
+    "str": "侦察蜂"
+  },
+  "description": "派出一只部分魔法、部分电子、外形像黄蜂的侦察无人机，揭示你正前方一条线上的地形。侦察蜂可以穿过墙壁。",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "IGNORE_WALLS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "min_range": 24,
+  "max_range": 24,
+  "min_aoe": 7,
+  "max_aoe": 7,
+  "min_duration": 1500,
+  "duration_increment": 125,
+  "max_duration": 6500,
+  "base_energy_cost": 140,
+  "components": "spy_wasp",
+  "field_id": "fd_clairvoyant",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "spell_class": "ARTIFICER",
+  "difficulty": 3,
+  "max_level": 43,
+  "base_casting_time": 700,
+  "energy_source": "MANA"
+}
+```
+

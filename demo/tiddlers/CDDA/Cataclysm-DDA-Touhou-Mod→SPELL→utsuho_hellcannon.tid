@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→utsuho_hellcannon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：utsuho_hellcannon|http://cdda.aloxaf.cn/search?q=utsuho_hellcannon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_utsuho.json
+
+
+!! 原文
+
+```json
+{
+  "id": "utsuho_hellcannon",
+  "type": "SPELL",
+  "name": "Hell wave cannon",
+  "description": "Shoot a beam of solar energy, dealing damage to any affected enemy in the path.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "damage_type": "heat",
+  "min_damage": 15,
+  "max_damage": 375,
+  "damage_increment": 18,
+  "min_range": 10,
+  "max_range": 24,
+  "range_increment": 1.4,
+  "field_id": "fd_laser",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "max_level": 20,
+  "difficulty": -10,
+  "base_casting_time": 200,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "LOUD"
+  ],
+  "//": "This spell should have its range set to maximum, stopping only with walls or obstacles, going past any enemy targeted closer than its max range",
+  "//2": "Ideally, each utsuho_blacksun (up to 4) would automatically have a 33% chance of being consumed to shoot one of these towards the same target. Casting the spell without the rod would consume all of them"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "utsuho_hellcannon",
+  "type": "SPELL",
+  "name": "Hell wave cannon",
+  "description": "Shoot a beam of solar energy, dealing damage to any affected enemy in the path.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "damage_type": "heat",
+  "min_damage": 15,
+  "max_damage": 375,
+  "damage_increment": 18,
+  "min_range": 10,
+  "max_range": 24,
+  "range_increment": 1.4,
+  "field_id": "fd_laser",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "max_level": 20,
+  "difficulty": -10,
+  "base_casting_time": 200,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "LOUD"
+  ],
+  "//": "This spell should have its range set to maximum, stopping only with walls or obstacles, going past any enemy targeted closer than its max range",
+  "//2": "Ideally, each utsuho_blacksun (up to 4) would automatically have a 33% chance of being consumed to shoot one of these towards the same target. Casting the spell without the rod would consume all of them"
+}
+```
+

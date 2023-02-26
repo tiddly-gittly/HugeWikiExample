@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→sakuya_jackknife
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sakuya_jackknife|http://cdda.aloxaf.cn/search?q=sakuya_jackknife]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_sakuya.json
+
+
+!! 原文
+
+```json
+{
+  "id": "sakuya_jackknife",
+  "type": "SPELL",
+  "name": "Jack the Knife",
+  "description": "Borrow a silver knife from parallel records for a short time.  As the knife goes away on its own after a while, it is somewhat like recycling.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "spawn_item",
+  "effect_str": "silver_knife",
+  "shape": "blast",
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_duration": 650,
+  "max_duration": 650,
+  "max_level": 1,
+  "difficulty": -10,
+  "base_casting_time": 65,
+  "base_energy_cost": 65,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "//": "Changing the silver_knife type to AMMO and setting a count of 3 doesn't enable spawning more than one knife, not even by casting the spell twice + using the NO_HANDS flag: the second knife automatically spawns on the ground"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "sakuya_jackknife",
+  "type": "SPELL",
+  "name": "Jack the Knife",
+  "description": "Borrow a silver knife from parallel records for a short time.  As the knife goes away on its own after a while, it is somewhat like recycling.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "spawn_item",
+  "effect_str": "silver_knife",
+  "shape": "blast",
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_duration": 650,
+  "max_duration": 650,
+  "max_level": 1,
+  "difficulty": -10,
+  "base_casting_time": 65,
+  "base_energy_cost": 65,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "//": "Changing the silver_knife type to AMMO and setting a count of 3 doesn't enable spawning more than one knife, not even by casting the spell twice + using the NO_HANDS flag: the second knife automatically spawns on the ground"
+}
+```
+

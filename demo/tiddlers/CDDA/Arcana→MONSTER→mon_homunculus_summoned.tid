@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_homunculus_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_homunculus_summoned|http://cdda.aloxaf.cn/search?q=mon_homunculus_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_homunculus_summoned",
+  "copy-from": "mon_homunculus",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned homunculus",
+    "str_pl": "summoned homunculi"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "vision_night": 10,
+  "mountable_weight_ratio": 0.9,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "special_attacks": [
+    [
+      "SMASH",
+      25
+    ]
+  ],
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": {},
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES",
+      "GROUP_BASH"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_homunculus_summoned",
+  "copy-from": "mon_homunculus",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤人造人",
+    "str_pl": "召唤人造人"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "vision_night": 10,
+  "mountable_weight_ratio": 0.9,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "special_attacks": [
+    [
+      "SMASH",
+      25
+    ]
+  ],
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": {},
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES",
+      "GROUP_BASH"
+    ]
+  }
+}
+```
+

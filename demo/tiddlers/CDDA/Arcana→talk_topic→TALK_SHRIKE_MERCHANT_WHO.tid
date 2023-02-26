@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_SHRIKE_MERCHANT_WHO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SHRIKE_MERCHANT_WHO|http://cdda.aloxaf.cn/search?q=TALK_SHRIKE_MERCHANT_WHO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_SHRIKE_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_SHRIKE_MERCHANT_WHO",
+  "type": "talk_topic",
+  "dynamic_line": "A shrike, hunter of hunters.  Now I hunt whatever else causes trouble.  Something constructive to do, I suppose.",
+  "responses": [
+    {
+      "text": "What kind of trouble?",
+      "topic": "TALK_SHRIKE_MERCHANT_TROUBLE"
+    },
+    {
+      "text": "Can I do anything for you?",
+      "condition": {
+        "not": {
+          "u_has_var": "cf_horace_mission",
+          "type": "flag",
+          "context": "knowledge",
+          "value": "yes"
+        }
+      },
+      "topic": "TALK_SHRIKE_MERCHANT_HELP"
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_SHRIKE_MERCHANT_WHO",
+  "type": "talk_topic",
+  "dynamic_line": "屠猎者，猎人中的猎人。现在我会去寻找任何造成麻烦的东西。我想应该做些建设性的事情。",
+  "responses": [
+    {
+      "text": "什么样的麻烦？",
+      "topic": "TALK_SHRIKE_MERCHANT_TROUBLE"
+    },
+    {
+      "text": "[任务]我能为你做些什么？",
+      "condition": {
+        "not": {
+          "u_has_var": "cf_horace_mission",
+          "type": "flag",
+          "context": "knowledge",
+          "value": "yes"
+        }
+      },
+      "topic": "TALK_SHRIKE_MERCHANT_HELP"
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    }
+  ]
+}
+```
+

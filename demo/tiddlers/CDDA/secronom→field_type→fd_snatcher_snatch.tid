@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_snatcher_snatch
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_snatcher_snatch|http://cdda.aloxaf.cn/search?q=fd_snatcher_snatch]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_snatcher_snatch",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "snatcher tongue",
+      "sym": "l",
+      "color": "light_red",
+      "effects": [
+        {
+          "effect_id": "eff_snatcher_snatch",
+          "body_part": "torso",
+          "intensity": 2,
+          "min_duration": "10 seconds",
+          "max_duration": "10 seconds",
+          "immune_inside_vehicle": true,
+          "is_environmental": false,
+          "message": "You've been entangled by a tongue!",
+          "message_npc": "<npcname> have been entangled by a tongue!",
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "stunned",
+          "body_part": "torso",
+          "intensity": 1,
+          "min_duration": "5 seconds",
+          "max_duration": "5 seconds",
+          "immune_inside_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    }
+  ],
+  "decrease_intensity_on_contact": true,
+  "immune_mtypes": [
+    "mon_zombie_bootlegsmoker",
+    "mon_zombie_bootlegsmoker_mode"
+  ],
+  "half_life": "3 turns",
+  "priority": 10,
+  "phase": "solid",
+  "display_items": false,
+  "display_field": true,
+  "bash": {
+    "str_min": 4,
+    "str_max": 8,
+    "sound_vol": 1,
+    "sound_fail_vol": 1,
+    "sound": "splat!",
+    "msg_success": "You shove off the tongue."
+  },
+  "looks_like": "fd_fleshknot_tent"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_snatcher_snatch",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "snatcher tongue",
+      "sym": "l",
+      "color": "light_red",
+      "effects": [
+        {
+          "effect_id": "eff_snatcher_snatch",
+          "body_part": "torso",
+          "intensity": 2,
+          "min_duration": "10 seconds",
+          "max_duration": "10 seconds",
+          "immune_inside_vehicle": true,
+          "is_environmental": false,
+          "message": "You've been entangled by a tongue!",
+          "message_npc": "<npcname> have been entangled by a tongue!",
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "stunned",
+          "body_part": "torso",
+          "intensity": 1,
+          "min_duration": "5 seconds",
+          "max_duration": "5 seconds",
+          "immune_inside_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    }
+  ],
+  "decrease_intensity_on_contact": true,
+  "immune_mtypes": [
+    "mon_zombie_bootlegsmoker",
+    "mon_zombie_bootlegsmoker_mode"
+  ],
+  "half_life": "3 turns",
+  "priority": 10,
+  "phase": "solid",
+  "display_items": false,
+  "display_field": true,
+  "bash": {
+    "str_min": 4,
+    "str_max": 8,
+    "sound_vol": 1,
+    "sound_fail_vol": 1,
+    "sound": "splat!",
+    "msg_success": "You shove off the tongue."
+  },
+  "looks_like": "fd_fleshknot_tent"
+}
+```
+

@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_bot_secroinforcer
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_bot_secroinforcer|http://cdda.aloxaf.cn/search?q=mon_bot_secroinforcer]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Bots/SecronomDragon_spawns.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_bot_secroinforcer",
+  "type": "MONSTER",
+  "name": {
+    "str": "reinforcer"
+  },
+  "description": "A large, disk shaped hovering bot deployed by the cyber-dragon. Carries and deploys various combat drones and robots into the field.",
+  "default_faction": "defense_bot",
+  "species": [
+    "ROBOT"
+  ],
+  "volume": "190 L",
+  "weight": "290 kg",
+  "hp": 300,
+  "speed": 20,
+  "material": [
+    "steel"
+  ],
+  "symbol": "0",
+  "color": "white",
+  "aggression": 99,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "dodge": 2,
+  "armor_cut": 24,
+  "armor_bullet": 24,
+  "armor_bash": 18,
+  "armor_stab": 24,
+  "armor_acid": 20,
+  "armor_fire": 20,
+  "luminance": 10,
+  "vision_day": 50,
+  "vision_night": 10,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_bot_secroinforcer_target"
+      },
+      "cooldown": 16,
+      "monster_message": "<color_yellow>%1$s beeps as a robot is deployed!</color>"
+    }
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        1
+      ]
+    ]
+  },
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "FLIES",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_2",
+    "LOUDMOVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_bot_secroinforcer",
+  "type": "MONSTER",
+  "name": {
+    "str": "强化机器人"
+  },
+  "description": "盘旋机器人一种大型盘旋机器人。它的内部空间有各种各样的战斗机器人，周期性地激活并部署到战场上。",
+  "default_faction": "defense_bot",
+  "species": [
+    "ROBOT"
+  ],
+  "volume": "190 L",
+  "weight": "290 kg",
+  "hp": 300,
+  "speed": 20,
+  "material": [
+    "steel"
+  ],
+  "symbol": "0",
+  "color": "white",
+  "aggression": 99,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "dodge": 2,
+  "armor_cut": 24,
+  "armor_bullet": 24,
+  "armor_bash": 18,
+  "armor_stab": 24,
+  "armor_acid": 20,
+  "armor_fire": 20,
+  "luminance": 10,
+  "vision_day": 50,
+  "vision_night": 10,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_bot_secroinforcer_target"
+      },
+      "cooldown": 16,
+      "monster_message": "<color_yellow>%1$s发出哔哔声表示机器人已部署完成！</color>"
+    }
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        1
+      ]
+    ]
+  },
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "FLIES",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_2",
+    "LOUDMOVES"
+  ]
+}
+```
+

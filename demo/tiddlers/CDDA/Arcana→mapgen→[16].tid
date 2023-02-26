@@ -1,0 +1,492 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[16]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "house_arcana"
+  ],
+  "weight": 300,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      ".,,_____$......P.__.....",
+      ".||&&&&&||.......__.....",
+      ".|EEEEEE$|.......__.....",
+      ".|EEEEEEE;_________.....",
+      "%|EEEEEEE|%%%%...__.....",
+      "%wEEEEEEE||ww|||.__.....",
+      "%wEEEEEEE-b  T-||;;||||.",
+      "%|EEEEEEE-b   -n     t|%",
+      ".|{EEEEEg-   t-O      w%",
+      ".|ccEEEEg-   S-F      w%",
+      ".|ccEEEEE--+---S      |%",
+      ".|---+----    -C  hh  |.",
+      "%|            -  heeh |%",
+      "%w            +  heeh w%",
+      "%w            -   hh  w%",
+      "%|       CCCCC-       |%",
+      ".|----+----------+----|.",
+      ".|DD      +W-         |.",
+      ".|h       ---         |.",
+      ".|        [-[        ]|.",
+      ".|v       ---        ]|.",
+      ".|BB   ]]]->x        ]|.",
+      ".||||ww|||||||||ww|||||.",
+      "..4.%%%%.......%%%%....."
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      "{": "t_concrete",
+      "&": "t_door_metal_locked",
+      "$": "t_gates_control_brick",
+      ">": "t_stairs_down",
+      "+": "t_door_c",
+      "-": "t_wall",
+      "_": "t_concrete",
+      ".": "t_grass",
+      ",": "t_dirt",
+      "%": "t_shrub",
+      ";": "t_door_locked",
+      "P": "t_grass",
+      "E": "t_thconc_floor",
+      "c": "t_thconc_floor",
+      "g": "t_thconc_floor",
+      "w": "t_window_no_curtains_taped",
+      "x": "t_door_locked_interior",
+      "|": "t_brick_wall"
+    },
+    "furniture": {
+      "{": "f_locker",
+      "[": "f_locker",
+      "]": "f_bookcase",
+      ",": "f_trashcan",
+      "B": "f_bed",
+      "C": "f_counter",
+      "D": "f_desk",
+      "F": "f_fridge",
+      "O": "f_oven",
+      "P": "f_mailbox",
+      "S": "f_sink",
+      "T": "f_toilet",
+      "W": "f_wardrobe",
+      "b": "f_bathtub",
+      "c": "f_crate_o",
+      "g": "f_workbench",
+      "e": "f_table",
+      "h": "f_chair",
+      "n": "f_cupboard",
+      "t": "f_trashcan",
+      "v": "f_woodstove"
+    },
+    "toilets": {
+      "T": {}
+    },
+    "place_nested": [
+      {
+        "chunks": [
+          [
+            "house_arcana_encounter_1",
+            50
+          ],
+          [
+            "house_arcana_encounter_2",
+            25
+          ],
+          [
+            "house_arcana_encounter_3",
+            25
+          ]
+        ],
+        "x": [
+          0,
+          0
+        ],
+        "y": [
+          0,
+          0
+        ]
+      }
+    ],
+    "place_loot": [
+      {
+        "item": "matches",
+        "x": 2,
+        "y": 17,
+        "chance": 50
+      },
+      {
+        "group": "reading_lights",
+        "x": 3,
+        "y": 17,
+        "chance": 90
+      }
+    ],
+    "items": {
+      "[": {
+        "item": "magic_crafting",
+        "chance": 100,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      "]": {
+        "item": "mansion_bookcase",
+        "chance": 100
+      },
+      "B": {
+        "item": "bed",
+        "chance": 90
+      },
+      "C": {
+        "item": "survivorzed_extra",
+        "chance": 25
+      },
+      "F": {
+        "item": "fridge",
+        "chance": 50,
+        "repeat": 5
+      },
+      "O": {
+        "item": "oven",
+        "chance": 50,
+        "repeat": 3
+      },
+      "P": {
+        "item": "mail",
+        "chance": 10,
+        "repeat": 3
+      },
+      "T": {
+        "item": "stash_drugs",
+        "chance": 10
+      },
+      "W": {
+        "item": "allclothes",
+        "chance": 75,
+        "repeat": 5
+      },
+      "c": {
+        "item": "supplies_hardware",
+        "chance": 50,
+        "repeat": 10
+      },
+      "n": {
+        "item": "cannedfood",
+        "chance": 50,
+        "repeat": 5
+      },
+      "t": {
+        "item": "trash",
+        "chance": 50,
+        "repeat": 3
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_1b",
+  "object": {
+    "set": [
+      {
+        "line": "furniture",
+        "id": "f_rack",
+        "x": 4,
+        "x2": 6,
+        "y": 17,
+        "y2": 17
+      },
+      {
+        "line": "furniture",
+        "id": "f_workbench",
+        "x": 4,
+        "x2": 4,
+        "y": 19,
+        "y2": 20
+      }
+    ],
+    "place_nested": [
+      {
+        "chunks": [
+          "cf_church_upgrade_4_d"
+        ],
+        "x": 4,
+        "y": 17
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "ammo_reloaded",
+        "x": [
+          4,
+          6
+        ],
+        "y": 17,
+        "chance": 75,
+        "repeat": 7
+      },
+      {
+        "group": "arcana_purifying_shot_group",
+        "x": [
+          4,
+          6
+        ],
+        "y": 17,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "guns_milspec",
+        "x": 4,
+        "y": [
+          19,
+          20
+        ],
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "group": "rural_church_start_scales",
+        "x": 4,
+        "y": 19
+      }
+    ],
+    "faction_owner": [
+      {
+        "id": "cleansing_flame",
+        "x": [
+          4,
+          6
+        ],
+        "y": [
+          17,
+          20
+        ]
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "cf_auxillery_merchant_4",
+        "x": 5,
+        "y": 19,
+        "add_trait": "CF_AUX_MARKER_2"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "house_arcana"
+  ],
+  "weight": 300,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      ".,,_____$......P.__.....",
+      ".||&&&&&||.......__.....",
+      ".|EEEEEE$|.......__.....",
+      ".|EEEEEEE;_________.....",
+      "%|EEEEEEE|%%%%...__.....",
+      "%wEEEEEEE||ww|||.__.....",
+      "%wEEEEEEE-b  T-||;;||||.",
+      "%|EEEEEEE-b   -n     t|%",
+      ".|{EEEEEg-   t-O      w%",
+      ".|ccEEEEg-   S-F      w%",
+      ".|ccEEEEE--+---S      |%",
+      ".|---+----    -C  hh  |.",
+      "%|            -  heeh |%",
+      "%w            +  heeh w%",
+      "%w            -   hh  w%",
+      "%|       CCCCC-       |%",
+      ".|----+----------+----|.",
+      ".|DD      +W-         |.",
+      ".|h       ---         |.",
+      ".|        [-[        ]|.",
+      ".|v       ---        ]|.",
+      ".|BB   ]]]->x        ]|.",
+      ".||||ww|||||||||ww|||||.",
+      "..4.%%%%.......%%%%....."
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      "{": "t_concrete",
+      "&": "t_door_metal_locked",
+      "$": "t_gates_control_brick",
+      ">": "t_stairs_down",
+      "+": "t_door_c",
+      "-": "t_wall",
+      "_": "t_concrete",
+      ".": "t_grass",
+      ",": "t_dirt",
+      "%": "t_shrub",
+      ";": "t_door_locked",
+      "P": "t_grass",
+      "E": "t_thconc_floor",
+      "c": "t_thconc_floor",
+      "g": "t_thconc_floor",
+      "w": "t_window_no_curtains_taped",
+      "x": "t_door_locked_interior",
+      "|": "t_brick_wall"
+    },
+    "furniture": {
+      "{": "f_locker",
+      "[": "f_locker",
+      "]": "f_bookcase",
+      ",": "f_trashcan",
+      "B": "f_bed",
+      "C": "f_counter",
+      "D": "f_desk",
+      "F": "f_fridge",
+      "O": "f_oven",
+      "P": "f_mailbox",
+      "S": "f_sink",
+      "T": "f_toilet",
+      "W": "f_wardrobe",
+      "b": "f_bathtub",
+      "c": "f_crate_o",
+      "g": "f_workbench",
+      "e": "f_table",
+      "h": "f_chair",
+      "n": "f_cupboard",
+      "t": "f_trashcan",
+      "v": "f_woodstove"
+    },
+    "toilets": {
+      "T": {}
+    },
+    "place_nested": [
+      {
+        "chunks": [
+          [
+            "house_arcana_encounter_1",
+            50
+          ],
+          [
+            "house_arcana_encounter_2",
+            25
+          ],
+          [
+            "house_arcana_encounter_3",
+            25
+          ]
+        ],
+        "x": [
+          0,
+          0
+        ],
+        "y": [
+          0,
+          0
+        ]
+      }
+    ],
+    "place_loot": [
+      {
+        "item": "matches",
+        "x": 2,
+        "y": 17,
+        "chance": 50
+      },
+      {
+        "group": "reading_lights",
+        "x": 3,
+        "y": 17,
+        "chance": 90
+      }
+    ],
+    "items": {
+      "[": {
+        "item": "magic_crafting",
+        "chance": 100,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      "]": {
+        "item": "mansion_bookcase",
+        "chance": 100
+      },
+      "B": {
+        "item": "bed",
+        "chance": 90
+      },
+      "C": {
+        "item": "survivorzed_extra",
+        "chance": 25
+      },
+      "F": {
+        "item": "fridge",
+        "chance": 50,
+        "repeat": 5
+      },
+      "O": {
+        "item": "oven",
+        "chance": 50,
+        "repeat": 3
+      },
+      "P": {
+        "item": "mail",
+        "chance": 10,
+        "repeat": 3
+      },
+      "T": {
+        "item": "stash_drugs",
+        "chance": 10
+      },
+      "W": {
+        "item": "allclothes",
+        "chance": 75,
+        "repeat": 5
+      },
+      "c": {
+        "item": "supplies_hardware",
+        "chance": 50,
+        "repeat": 10
+      },
+      "n": {
+        "item": "cannedfood",
+        "chance": 50,
+        "repeat": 5
+      },
+      "t": {
+        "item": "trash",
+        "chance": 50,
+        "repeat": 3
+      }
+    }
+  }
+}
+```
+

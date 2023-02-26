@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: GUN Make_Bows_Great_Again
+title: Make_Bows_Great_Again→GUN→compgreatbow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：compgreatbow|http://cdda.aloxaf.cn/search?q=compgreatbow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Make_Bows_Great_Again/Items/Archery_override.json
+
+
+!! 原文
+
+```json
+{
+  "id": "compgreatbow",
+  "copy-from": "compgreatbow",
+  "type": "GUN",
+  "name": {
+    "str": "compound greatbow"
+  },
+  "min_strength": 15,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 35
+  },
+  "use_action": [
+    {
+      "menu_text": "Tighten Limbs",
+      "type": "transform",
+      "target": "compgreatbow_high",
+      "qualities_needed": {
+        "SCREW_FINE": 1
+      },
+      "msg": "You tighten the limbs, increasing the strength of the bow."
+    },
+    {
+      "menu_text": "Loosen Limbs",
+      "type": "transform",
+      "target": "compgreatbow_low",
+      "qualities_needed": {
+        "SCREW_FINE": 1
+      },
+      "msg": "You loosen the limbs, decreasing the strength of the bow."
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "compgreatbow",
+  "copy-from": "compgreatbow",
+  "type": "GUN",
+  "name": {
+    "str": "复合巨弓"
+  },
+  "min_strength": 15,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 35
+  },
+  "use_action": [
+    {
+      "menu_text": "系紧弓臂",
+      "type": "transform",
+      "target": "compgreatbow_high",
+      "qualities_needed": {
+        "SCREW_FINE": 1
+      },
+      "msg": "你收紧弓臂，增加弓的拉力。"
+    },
+    {
+      "menu_text": "松开弓臂",
+      "type": "transform",
+      "target": "compgreatbow_low",
+      "qualities_needed": {
+        "SCREW_FINE": 1
+      },
+      "msg": "你松开弓臂，减少弓的拉力。"
+    }
+  ]
+}
+```
+

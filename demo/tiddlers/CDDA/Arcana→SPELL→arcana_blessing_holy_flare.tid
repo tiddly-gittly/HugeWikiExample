@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_holy_flare
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_holy_flare|http://cdda.aloxaf.cn/search?q=arcana_blessing_holy_flare]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_holy_flare",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Holy Flare"
+  },
+  "description": "Arcane Blessing\nUsing this spell will conjure an eruption of otherworldly flames at the location targeted, that will leave the terrain unharmed.  Anything in the center will take double damage and be knocked down.",
+  "message": "A spark of radiant golden flame erupts from out of thin air, by your command.",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_holy_flare_spike",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_holy_flare_noise",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "dazed",
+  "sound_description": "the roar of flames",
+  "min_damage": 30,
+  "max_damage": 150,
+  "damage_increment": 6,
+  "min_range": 8,
+  "max_range": 30,
+  "range_increment": 1.1,
+  "min_aoe": 1,
+  "max_aoe": 5,
+  "aoe_increment": 0.2,
+  "max_level": 20,
+  "difficulty": 60,
+  "skill": "magic",
+  "base_casting_time": 350,
+  "final_casting_time": 175,
+  "casting_time_increment": -8.75,
+  "energy_source": "MANA",
+  "base_energy_cost": 420,
+  "final_energy_cost": 210,
+  "energy_increment": -10.5,
+  "damage_type": "heat",
+  "field_id": "fd_plasma",
+  "field_chance": 2,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5,
+  "min_duration": 1800,
+  "max_duration": 9000,
+  "duration_increment": 360
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_holy_flare",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：圣火"
+  },
+  "description": "奥术祝福\n使用该法术会在目标位置召唤出超凡脱俗的火焰，使地形不受伤害。",
+  "message": "按照你的命令，从稀薄的空气中喷出了金色的火焰。",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_holy_flare_spike",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_holy_flare_noise",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "dazed",
+  "sound_description": "the roar of flames",
+  "min_damage": 30,
+  "max_damage": 150,
+  "damage_increment": 6,
+  "min_range": 8,
+  "max_range": 30,
+  "range_increment": 1.1,
+  "min_aoe": 1,
+  "max_aoe": 5,
+  "aoe_increment": 0.2,
+  "max_level": 20,
+  "difficulty": 60,
+  "skill": "magic",
+  "base_casting_time": 350,
+  "final_casting_time": 175,
+  "casting_time_increment": -8.75,
+  "energy_source": "MANA",
+  "base_energy_cost": 420,
+  "final_energy_cost": 210,
+  "energy_increment": -10.5,
+  "damage_type": "heat",
+  "field_id": "fd_plasma",
+  "field_chance": 2,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5,
+  "min_duration": 1800,
+  "max_duration": 9000,
+  "duration_increment": 360
+}
+```
+

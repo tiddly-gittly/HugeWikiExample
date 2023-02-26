@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_WASTEGUARD2_actshimlol
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_WASTEGUARD2_actshimlol|http://cdda.aloxaf.cn/search?q=TALK_VAMP_WASTEGUARD2_actshimlol]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/v_wg2_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_WASTEGUARD2_actshimlol",
+  "type": "talk_topic",
+  "dynamic_line": "Trust me, human, HIS movements are for the good cause.",
+  "responses": [
+    {
+      "text": "I'd like to meet HIM.",
+      "topic": "TALK_VAMP_WASTEGUARD2_seehimlol",
+      "effect": {
+        "u_add_trait": "wsg2himmeet"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg2himmeet"
+        }
+      }
+    },
+    {
+      "text": "HE looks questionable.",
+      "topic": "TALK_VAMP_WASTEGUARD2_lookhimlol",
+      "effect": {
+        "u_add_trait": "wsg2himlook"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg2himlook"
+        }
+      }
+    },
+    {
+      "text": "I guess I've talked about everything...",
+      "topic": "TALK_VAMP_WASTEGUARD2_secrethim",
+      "effect": {
+        "u_add_trait": "wsg2himsecret"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg2himmeet"
+          },
+          {
+            "u_has_trait": "wsg2himlook"
+          },
+          {
+            "u_has_trait": "wsg2himact"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg2himsecret"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Oh, okay then...",
+      "topic": "TALK_VAMP_WASTEGUARD2_ohrelly"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_WASTEGUARD2_actshimlol",
+  "type": "talk_topic",
+  "dynamic_line": "相信我，人类，他的行动只会有好的结果。",
+  "responses": [
+    {
+      "text": "我想见见他。",
+      "topic": "TALK_VAMP_WASTEGUARD2_seehimlol",
+      "effect": {
+        "u_add_trait": "wsg2himmeet"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg2himmeet"
+        }
+      }
+    },
+    {
+      "text": "他看起来很可疑。",
+      "topic": "TALK_VAMP_WASTEGUARD2_lookhimlol",
+      "effect": {
+        "u_add_trait": "wsg2himlook"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg2himlook"
+        }
+      }
+    },
+    {
+      "text": "我想我该谈的都谈过了...",
+      "topic": "TALK_VAMP_WASTEGUARD2_secrethim",
+      "effect": {
+        "u_add_trait": "wsg2himsecret"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg2himmeet"
+          },
+          {
+            "u_has_trait": "wsg2himlook"
+          },
+          {
+            "u_has_trait": "wsg2himact"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg2himsecret"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "哦，好吧...",
+      "topic": "TALK_VAMP_WASTEGUARD2_ohrelly"
+    }
+  ]
+}
+```
+

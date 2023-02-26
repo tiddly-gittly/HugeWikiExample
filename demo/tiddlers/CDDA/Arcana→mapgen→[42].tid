@@ -1,0 +1,306 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[42]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    "microlab_arcana_surface_connector"
+  ],
+  "method": "json",
+  "object": {
+    "fill_ter": "t_strconc_floor",
+    "rows": [
+      "     |    |  |cccc|     ",
+      "     |=[==|  ||||||     ",
+      "  ((2|    |  2    2  i  ",
+      "  (  | cci|  2    2  c  ",
+      "  (@@|    |  ||||||  c  ",
+      "|||||| cci|  |rrrr|     ",
+      " F|F (    |  |    2  c  ",
+      " F|F ( cci|  ||||||  c  ",
+      " F|F 2    |  |rrrr|  i  ",
+      "  |F |rrrr|  |    2     ",
+      "|5|||||||||22|||||||||||",
+      "    2      YY      5TYY ",
+      "    2      YY      5 YY ",
+      "|2||||^???    yyyyy|(((|",
+      "    r|t       y    5 dd|",
+      "cc  r|V tt    yyyyy| hl|",
+      "cc hc|t       y    |||||",
+      "    c|^???    yyyyy|###|",
+      "|||||||||||  ^|((22|||#|",
+      " rrcc| hd^=  ^|     <|#|",
+      "    c| dd =  ^|     <|#|",
+      " c6 6|B   =  ^|c     |#|",
+      " cc r|B   [  ^|c  rrr|#|",
+      "     |    |22|||||||||||"
+    ],
+    "place_nested": [
+      {
+        "else_chunks": [
+          "concrete_corner"
+        ],
+        "x": 0,
+        "y": 0,
+        "neighbors": {
+          "north_west": "microlab"
+        }
+      },
+      {
+        "else_chunks": [
+          "concrete_corner"
+        ],
+        "x": 23,
+        "y": 0,
+        "neighbors": {
+          "north_east": "microlab"
+        }
+      },
+      {
+        "else_chunks": [
+          "concrete_corner"
+        ],
+        "x": 23,
+        "y": 23,
+        "neighbors": {
+          "south_east": "microlab"
+        }
+      },
+      {
+        "else_chunks": [
+          "concrete_corner"
+        ],
+        "x": 0,
+        "y": 23,
+        "neighbors": {
+          "south_west": "microlab"
+        }
+      }
+    ],
+    "palettes": [
+      "microlab"
+    ],
+    "items": {
+      "l": [
+        {
+          "item": "guns_milspec",
+          "chance": 10
+        },
+        {
+          "item": "ammo_milspec",
+          "chance": 70
+        }
+      ],
+      "t": {
+        "item": "magazines",
+        "chance": 90
+      }
+    },
+    "monster": {
+      "T": {
+        "monster": "mon_turret_rifle",
+        "spawn_data": {
+          "ammo": [
+            {
+              "ammo_id": "556",
+              "qty": [
+                30,
+                90
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_aux_e_2",
+  "object": {
+    "set": [
+      {
+        "line": "furniture",
+        "id": "f_fvat_empty",
+        "x": 5,
+        "x2": 6,
+        "y": 17,
+        "y2": 17
+      },
+      {
+        "point": "furniture",
+        "id": "f_still",
+        "x": 6,
+        "y": 3
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "supplies_reagents_lab",
+        "x": 13,
+        "y": [
+          13,
+          15
+        ],
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "group": "rural_church_start_scales",
+        "x": 13,
+        "y": 15
+      }
+    ],
+    "faction_owner": [
+      {
+        "id": "cleansing_flame",
+        "x": 13,
+        "y": [
+          13,
+          15
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    "microlab_arcana_surface_connector"
+  ],
+  "method": "json",
+  "object": {
+    "fill_ter": "t_strconc_floor",
+    "rows": [
+      "     |    |  |cccc|     ",
+      "     |=[==|  ||||||     ",
+      "  ((2|    |  2    2  i  ",
+      "  (  | cci|  2    2  c  ",
+      "  (@@|    |  ||||||  c  ",
+      "|||||| cci|  |rrrr|     ",
+      " F|F (    |  |    2  c  ",
+      " F|F ( cci|  ||||||  c  ",
+      " F|F 2    |  |rrrr|  i  ",
+      "  |F |rrrr|  |    2     ",
+      "|5|||||||||22|||||||||||",
+      "    2      YY      5TYY ",
+      "    2      YY      5 YY ",
+      "|2||||^???    yyyyy|(((|",
+      "    r|t       y    5 dd|",
+      "cc  r|V tt    yyyyy| hl|",
+      "cc hc|t       y    |||||",
+      "    c|^???    yyyyy|###|",
+      "|||||||||||  ^|((22|||#|",
+      " rrcc| hd^=  ^|     <|#|",
+      "    c| dd =  ^|     <|#|",
+      " c6 6|B   =  ^|c     |#|",
+      " cc r|B   [  ^|c  rrr|#|",
+      "     |    |22|||||||||||"
+    ],
+    "place_nested": [
+      {
+        "else_chunks": [
+          "concrete_corner"
+        ],
+        "x": 0,
+        "y": 0,
+        "neighbors": {
+          "north_west": "microlab"
+        }
+      },
+      {
+        "else_chunks": [
+          "concrete_corner"
+        ],
+        "x": 23,
+        "y": 0,
+        "neighbors": {
+          "north_east": "microlab"
+        }
+      },
+      {
+        "else_chunks": [
+          "concrete_corner"
+        ],
+        "x": 23,
+        "y": 23,
+        "neighbors": {
+          "south_east": "microlab"
+        }
+      },
+      {
+        "else_chunks": [
+          "concrete_corner"
+        ],
+        "x": 0,
+        "y": 23,
+        "neighbors": {
+          "south_west": "microlab"
+        }
+      }
+    ],
+    "palettes": [
+      "microlab"
+    ],
+    "items": {
+      "l": [
+        {
+          "item": "guns_milspec",
+          "chance": 10
+        },
+        {
+          "item": "ammo_milspec",
+          "chance": 70
+        }
+      ],
+      "t": {
+        "item": "magazines",
+        "chance": 90
+      }
+    },
+    "monster": {
+      "T": {
+        "monster": "mon_turret_rifle",
+        "spawn_data": {
+          "ammo": [
+            {
+              "ammo_id": "556",
+              "qty": [
+                30,
+                90
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+```
+

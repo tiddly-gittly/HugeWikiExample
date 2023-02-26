@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_dirt_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_dirt_flesh|http://cdda.aloxaf.cn/search?q=t_secro_dirt_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Starting here are the furnitures and terrains seen in flesh forest.",
+  "type": "terrain",
+  "id": "t_secro_dirt_flesh",
+  "name": "fleshed dirt",
+  "description": "It's dirt, but covered in bloody veins.",
+  "symbol": ".",
+  "color": "light_red",
+  "move_cost": 5,
+  "flags": [
+    "FLAMMABLE",
+    "TRANSPARENT",
+    "FLAT",
+    "S_FLESH"
+  ],
+  "bash": {
+    "sound": "splash",
+    "ter_set": "t_dirt",
+    "str_min": 8,
+    "str_max": 16,
+    "bash_below": true
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Starting here are the furnitures and terrains seen in flesh forest.",
+  "type": "terrain",
+  "id": "t_secro_dirt_flesh",
+  "name": "血肉污垢",
+  "description": "这是一层覆盖了血脉的泥土",
+  "symbol": ".",
+  "color": "light_red",
+  "move_cost": 5,
+  "flags": [
+    "FLAMMABLE",
+    "TRANSPARENT",
+    "FLAT",
+    "S_FLESH"
+  ],
+  "bash": {
+    "sound": "splash",
+    "ter_set": "t_dirt",
+    "str_min": 8,
+    "str_max": 16,
+    "bash_below": true
+  }
+}
+```
+

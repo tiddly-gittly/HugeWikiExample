@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: technique Arcana
+title: Arcana→technique→tec_weapon_kinetic_knockback
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_weapon_kinetic_knockback|http://cdda.aloxaf.cn/search?q=tec_weapon_kinetic_knockback]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_weapon_kinetic_knockback",
+  "name": "Kinetic Knockback",
+  "unarmed_allowed": true,
+  "melee_allowed": true,
+  "flat_bonuses": [
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 0.5
+    },
+    {
+      "stat": "arpen",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 0.5
+    }
+  ],
+  "knockback_dist": 3,
+  "powerful_knockback": true,
+  "down_dur": 1,
+  "crit_tec": true,
+  "weighting": 2,
+  "messages": [
+    "Your impact blasts %s back",
+    "<npcname> blasts %s back"
+  ],
+  "description": "+0.5 bash damage and armor penetration per point of strength, down 1 turn, knockback 3 tiles, crit only",
+  "attack_vectors": [
+    "WEAPON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_weapon_kinetic_knockback",
+  "name": "动能击退",
+  "unarmed_allowed": true,
+  "melee_allowed": true,
+  "flat_bonuses": [
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 0.5
+    },
+    {
+      "stat": "arpen",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 0.5
+    }
+  ],
+  "knockback_dist": 3,
+  "powerful_knockback": true,
+  "down_dur": 1,
+  "crit_tec": true,
+  "weighting": 2,
+  "messages": [
+    "Your impact blasts %s back",
+    "<npcname> blasts %s back"
+  ],
+  "description": "每点力量值增加0.5钝击伤害和护甲穿透，击倒1回合，击退3格，仅暴击",
+  "attack_vectors": [
+    "WEAPON"
+  ]
+}
+```
+

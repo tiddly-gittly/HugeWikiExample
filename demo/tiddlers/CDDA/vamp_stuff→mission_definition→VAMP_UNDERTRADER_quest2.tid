@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_UNDERTRADER_quest2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_UNDERTRADER_quest2|http://cdda.aloxaf.cn/search?q=VAMP_UNDERTRADER_quest2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_UNDERTRADER_quest2",
+  "type": "mission_definition",
+  "name": {
+    "str": "Slay 10 bats"
+  },
+  "description": "Kill <color_magenta>10 bats</color> then talk to the trader after completion. <color_magenta>Bats</color> are commonly seen at <color_gray>nighttime</color> or inside a <color_light_blue>cave</color>.",
+  "goal": "MGOAL_KILL_MONSTER_SPEC",
+  "difficulty": 2,
+  "value": 200000,
+  "monster_species": "VAMPBAT",
+  "monster_kill_goal": 10,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "end": {
+    "effect": {
+      "npc_add_trait": "undertradertestsdone"
+    }
+  },
+  "dialogue": {
+    "describe": "We do appreciate your assistance with our needs.",
+    "offer": "Vampire bats became literal bloodsuckers these passing days and I want you to hunt down 10 of these vermins. We've been swarmed by these creatures lately but gladly we managed to shove them away.",
+    "accepted": "Good. Come back anytime you want.",
+    "rejected": "I guess you're afraid of bats...",
+    "advice": "Bats are nocturnal, and tends to live in dark places like caves.",
+    "inquire": "How is the hunt going?",
+    "success": "Thank you for your help in eradicating some bloodsuckers.",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "*glaressharply*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_UNDERTRADER_quest2",
+  "type": "mission_definition",
+  "name": {
+    "str": "杀死10只蝙蝠"
+  },
+  "description": "杀死<color_magenta> 10只蝙蝠</color>，完成后与交易者交谈。蝙蝠通常出现在晚上<color_gray>点或<color_light_blue>个洞穴里。",
+  "goal": "MGOAL_KILL_MONSTER_SPEC",
+  "difficulty": 2,
+  "value": 200000,
+  "monster_species": "VAMPBAT",
+  "monster_kill_goal": 10,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "end": {
+    "effect": {
+      "npc_add_trait": "undertradertestsdone"
+    }
+  },
+  "dialogue": {
+    "describe": "我们非常感谢您对我们需求的帮助。",
+    "offer": "吸血蝙蝠在过去的几天里变成了真正的吸血鬼，我要你猎杀10只这种蠕虫。最近我们被这些生物包围了，但我们很高兴能设法把它们赶走。",
+    "accepted": "很好。你想什么时候回来都行。",
+    "rejected": "我猜你害怕蝙蝠...",
+    "advice": "蝙蝠是夜间活动的，往往生活在洞穴等黑暗的地方。",
+    "inquire": "狩猎进行的怎么样了？",
+    "success": "谢谢你帮忙铲除了一些吸血鬼。",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "*刺刺地盯着你*"
+  }
+}
+```
+

@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part MST_Extra
+title: MST_Extra→vehicle_part→boat_board_birchbark
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：boat_board_birchbark|http://cdda.aloxaf.cn/search?q=boat_board_birchbark]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/vehicles/vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "boat_board_birchbark",
+  "name": {
+    "str": "wbirchbark boat hull"
+  },
+  "description": "A waterproofed board that keeps the water out of your boat.",
+  "symbol": "o",
+  "looks_like": "f_fiber_mat",
+  "color": "brown",
+  "broken_symbol": "x",
+  "broken_color": "light_gray",
+  "damage_modifier": 50,
+  "durability": 20,
+  "item": "birchbark_panel",
+  "location": "under",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "survival",
+          2
+        ]
+      ],
+      "time": "20 m",
+      "using": [
+        [
+          "vehicle_birchbark_boat",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "survival",
+          2
+        ]
+      ],
+      "time": "10 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "survival",
+          3
+        ]
+      ],
+      "time": "20 m",
+      "using": [
+        [
+          "adhesive",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "FLOATS"
+  ],
+  "breaks_into": [
+    {
+      "item": "birchbark",
+      "count": [
+        0,
+        6
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 5
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "boat_board_birchbark",
+  "name": {
+    "str": "桦皮船壳"
+  },
+  "description": "一块防水船壳,防止你的船进水.",
+  "symbol": "o",
+  "looks_like": "f_fiber_mat",
+  "color": "brown",
+  "broken_symbol": "x",
+  "broken_color": "light_gray",
+  "damage_modifier": 50,
+  "durability": 20,
+  "item": "birchbark_panel",
+  "location": "under",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "survival",
+          2
+        ]
+      ],
+      "time": "20 m",
+      "using": [
+        [
+          "vehicle_birchbark_boat",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "survival",
+          2
+        ]
+      ],
+      "time": "10 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "survival",
+          3
+        ]
+      ],
+      "time": "20 m",
+      "using": [
+        [
+          "adhesive",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "FLOATS"
+  ],
+  "breaks_into": [
+    {
+      "item": "birchbark",
+      "count": [
+        0,
+        6
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 5
+  }
+}
+```
+

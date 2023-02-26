@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_BACKDOOR_BUSINESS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_BACKDOOR_BUSINESS|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_BACKDOOR_BUSINESS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_BUSINESS",
+  "dynamic_line": "We have struggled so long, through so much death and pain, hoping first to stave off this apocalypse, then to ensure the survival of this world despite countless tears in the fabric of reality.  Let others ensure that humanity carries on, we had our own way to secure this world's future.  But now, it's slipped out of my grasp once more.  It was only through seeing one of my order's holy relics, restored to its former glory, that I had been able to find the strength to carry on.  We shall see if we get another chance…",
+  "responses": [
+    {
+      "text": "\"No matter the cost, no matter what we must do, for the strength and safety of this world.  And in turn, of worlds beyond.\"  We will persevere.",
+      "switch": true,
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "text": "I don't know what will come of this, Keeper, but it is admirable that you still hold on.  We are not extinct just yet, relic or no relic.",
+      "switch": true,
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "I'll see what I can do.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_BUSINESS",
+  "dynamic_line": "我们挣扎了这么长时间，经历了这么多的死亡和痛苦，希望首先能阻止这一天启，然后确保这个世界的生存，尽管现实之壁上有无数的眼泪。让别人确保人类继续生存，我们有自己的方式来确保这个世界的未来。但现在，它又一次从我的掌控中溜走了。只有通过看到我的圣物之一，恢复了它以前的荣耀，我才能够找到继续下去的力量。我们再看看有没有机会…",
+  "responses": [
+    {
+      "text": "“为了维护此世界的稳固与安全，不计代价、不问辛劳，同时，也是为了彼端的世界。”我们将坚持不懈。",
+      "switch": true,
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "text": "我不知道这会有什么结果，守门员，但你能坚持住，真是令人钦佩。我们还没有灭绝，不管是遗迹还是没有遗迹。",
+      "switch": true,
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "我看看能做些什么。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→mokou_fujiyamakazan
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mokou_fujiyamakazan|http://cdda.aloxaf.cn/search?q=mokou_fujiyamakazan]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_mokou.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mokou_fujiyamakazan",
+  "type": "SPELL",
+  "name": "Mt. Fuji's caldera",
+  "description": "Create a pillar of fire at the location, to burn your enemies and igniting the terrain.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile",
+    "item"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 13,
+  "max_damage": 133,
+  "damage_increment": 12,
+  "min_dot": 0,
+  "max_dot": 5,
+  "dot_increment": 0.5,
+  "min_range": 6,
+  "max_range": 6,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "min_duration": 4000,
+  "max_duration": 4000,
+  "field_id": "fd_incendiary2",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "flags": [
+    "IGNITE_FLAMMABLE",
+    "NO_LEGS"
+  ],
+  "//": "Inspired on Hourai 'South Wind, Clear Sky -Fujiyama Volcano'. Ideally the flaming field should last for ~6-9 turns and deal damage",
+  "//2": "Using fd_fire instead of the modified harmless field basically instakills normal zombies that walk into it, which is not good, so I'm leaving it like that plus the dot for the meantime"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mokou_fujiyamakazan",
+  "type": "SPELL",
+  "name": "Mt. Fuji's caldera",
+  "description": "Create a pillar of fire at the location, to burn your enemies and igniting the terrain.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile",
+    "item"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 13,
+  "max_damage": 133,
+  "damage_increment": 12,
+  "min_dot": 0,
+  "max_dot": 5,
+  "dot_increment": 0.5,
+  "min_range": 6,
+  "max_range": 6,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "min_duration": 4000,
+  "max_duration": 4000,
+  "field_id": "fd_incendiary2",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "flags": [
+    "IGNITE_FLAMMABLE",
+    "NO_LEGS"
+  ],
+  "//": "Inspired on Hourai 'South Wind, Clear Sky -Fujiyama Volcano'. Ideally the flaming field should last for ~6-9 turns and deal damage",
+  "//2": "Using fd_fire instead of the modified harmless field basically instakills normal zombies that walk into it, which is not good, so I'm leaving it like that plus the dot for the meantime"
+}
+```
+

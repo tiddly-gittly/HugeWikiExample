@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: TOOL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→TOOL→tenshi_jian
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tenshi_jian|http://cdda.aloxaf.cn/search?q=tenshi_jian]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/items/touhou_melee.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tenshi_jian",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "sword of hisou (dismissed)",
+    "str_pl": "swords of hisou (dismissed)"
+  },
+  "description": "A golden, shape-shifting jian that is spiritually summoned into battle, allowing it to be stored without taking up a significant amount of space or weighing the user down. Activate to summon it.",
+  "//": "Touhou Wiki states that it's a golden Chinese jian, the sword is shape shifting, and that the sword is probably spiritually summoned into battle.",
+  "volume": "80 ml",
+  "weight": "300 g",
+  "longest_side": "15 cm",
+  "//2": "These numbers come from a 15 cm, 2.5 cm diameter hilt",
+  "price_postapoc": 8000,
+  "to_hit": {
+    "balance": "good",
+    "grip": "weapon",
+    "length": "hand",
+    "surface": "any"
+  },
+  "bashing": 5,
+  "cutting": 0,
+  "material": [
+    "steel"
+  ],
+  "symbol": "/",
+  "color": "yellow",
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "use_action": {
+    "type": "transform",
+    "menu_text": "Summon Sword",
+    "msg": "You summon your sword.",
+    "target": "tenshi_jian_extended"
+  },
+  "flags": [
+    "DURABLE_MELEE",
+    "TRADER_AVOID",
+    "UNARMED_WEAPON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tenshi_jian",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "绯想之剑（召回）",
+    "str_pl": "绯想之剑（召回）"
+  },
+  "description": "一把不定形的金色的剑，可以用精神力召唤到战斗中，能在不占用大量空间和感到重量的情况下存储它。激活以召唤它。",
+  "//": "Touhou Wiki states that it's a golden Chinese jian, the sword is shape shifting, and that the sword is probably spiritually summoned into battle.",
+  "volume": "80 ml",
+  "weight": "300 g",
+  "longest_side": "15 cm",
+  "//2": "These numbers come from a 15 cm, 2.5 cm diameter hilt",
+  "price_postapoc": 8000,
+  "to_hit": {
+    "balance": "good",
+    "grip": "weapon",
+    "length": "hand",
+    "surface": "any"
+  },
+  "bashing": 5,
+  "cutting": 0,
+  "material": [
+    "steel"
+  ],
+  "symbol": "/",
+  "color": "yellow",
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "use_action": {
+    "type": "transform",
+    "menu_text": "召唤剑",
+    "msg": "你召唤了你的剑。",
+    "target": "tenshi_jian_extended"
+  },
+  "flags": [
+    "DURABLE_MELEE",
+    "TRADER_AVOID",
+    "UNARMED_WEAPON"
+  ]
+}
+```
+

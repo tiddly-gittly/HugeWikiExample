@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→frost_armor
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：frost_armor|http://cdda.aloxaf.cn/search?q=frost_armor]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/kelvinist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "frost_armor",
+  "type": "SPELL",
+  "name": {
+    "str": "Frost Armor"
+  },
+  "description": "Covers you in a thin layer of magical ice to protect you from harm.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_LEGS",
+    "CONCENTRATE",
+    "VERBAL",
+    "SOMATIC"
+  ],
+  "effect": "spawn_item",
+  "effect_str": "armor_frost",
+  "shape": "blast",
+  "affected_body_parts": [
+    "head",
+    "torso",
+    "leg_l",
+    "leg_r",
+    "arm_r",
+    "arm_l"
+  ],
+  "energy_source": "MANA",
+  "spell_class": "KELVINIST",
+  "difficulty": 3,
+  "max_level": 30,
+  "base_casting_time": 200,
+  "base_energy_cost": 550,
+  "min_duration": 10000,
+  "max_duration": 75000,
+  "duration_increment": 3000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "frost_armor",
+  "type": "SPELL",
+  "name": {
+    "str": "霜甲"
+  },
+  "description": "用一层薄薄的魔法冰来保护你不受伤害。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_LEGS",
+    "CONCENTRATE",
+    "VERBAL",
+    "SOMATIC"
+  ],
+  "effect": "spawn_item",
+  "effect_str": "armor_frost",
+  "shape": "blast",
+  "affected_body_parts": [
+    "head",
+    "torso",
+    "leg_l",
+    "leg_r",
+    "arm_r",
+    "arm_l"
+  ],
+  "energy_source": "MANA",
+  "spell_class": "KELVINIST",
+  "difficulty": 3,
+  "max_level": 30,
+  "base_casting_time": 200,
+  "base_energy_cost": 550,
+  "min_duration": 10000,
+  "max_duration": 75000,
+  "duration_increment": 3000
+}
+```
+

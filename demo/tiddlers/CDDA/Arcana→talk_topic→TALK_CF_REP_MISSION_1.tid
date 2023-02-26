@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_MISSION_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_MISSION_1|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_MISSION_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_MISSION_1",
+  "dynamic_line": "What do you wish to know?  As I said, I can explain why we need one if you wish.  I can also try to help advise you on what creatures might be useful to hunt for the materials needed to make one.",
+  "responses": [
+    {
+      "text": "It's a protective spell, I'm guessing?",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2",
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_CF_REP_MISSION_1_HOW_KNOWN"
+    },
+    {
+      "text": "What sort of ritual does this entail?",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2",
+          "PROF_SANGUINE",
+          "THRESH_DRAGONBLOOD"
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_CF_REP_MISSION_1_HOW_ARCANIST"
+    },
+    {
+      "text": "I'm not sure how it'd help protect this place.",
+      "condition": {
+        "or": [
+          {
+            "u_has_effect": "cf_sofia_notes_given"
+          },
+          {
+            "u_has_skill": {
+              "skill": "magic",
+              "level": 1
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_CF_REP_MISSION_1_HOW"
+    },
+    {
+      "text": "This just seems like a very strange request.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP_MISSION_1_WHY"
+    },
+    {
+      "text": "Where would I find the materials needed to make one of these things?",
+      "topic": "TALK_CF_REP_MISSION_1_WHERE"
+    },
+    {
+      "text": "Never mind, I'll figure it out.",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_MISSION_1",
+  "dynamic_line": "你想知道什么？正如我所说，如果你愿意，我可以解释为什么我们需要一个。我也可以试着给你一些建议，告诉你什么样的生物可能对寻找制造生物所需的材料有用。",
+  "responses": [
+    {
+      "text": "我猜这是一个保护咒？",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2",
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_CF_REP_MISSION_1_HOW_KNOWN"
+    },
+    {
+      "text": "这需要什么样的仪式？",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2",
+          "PROF_SANGUINE",
+          "THRESH_DRAGONBLOOD"
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_CF_REP_MISSION_1_HOW_ARCANIST"
+    },
+    {
+      "text": "我不知道这对保护这个地方有什么帮助。",
+      "condition": {
+        "or": [
+          {
+            "u_has_effect": "cf_sofia_notes_given"
+          },
+          {
+            "u_has_skill": {
+              "skill": "magic",
+              "level": 1
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_CF_REP_MISSION_1_HOW"
+    },
+    {
+      "text": "这似乎是一个非常奇怪的要求。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP_MISSION_1_WHY"
+    },
+    {
+      "text": "我在哪里可以找到制作这些东西所需的材料？",
+      "topic": "TALK_CF_REP_MISSION_1_WHERE"
+    },
+    {
+      "text": "没关系，我来想办法。",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

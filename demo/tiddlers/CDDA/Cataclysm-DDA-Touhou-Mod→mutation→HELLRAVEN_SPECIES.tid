@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→mutation→HELLRAVEN_SPECIES
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：HELLRAVEN_SPECIES|http://cdda.aloxaf.cn/search?q=HELLRAVEN_SPECIES]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "HELLRAVEN_SPECIES",
+  "type": "mutation",
+  "name": "Hell raven",
+  "description": "You're a raven youkai originating from (Former) Hell.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "armor": [
+    {
+      "parts": "ALL",
+      "heat": 6
+    }
+  ],
+  "//": "Can't find how to use percentage dmg reduction, this value should be 66% of all received fire damage + base say, 4, so it blocks minor fire attacks instead of being completely immune",
+  "movecost_modifier": 0.8,
+  "weakness_to_water": 1,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "values": [
+        {
+          "value": "INTELLIGENCE",
+          "add": -2
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "HELLRAVEN_SPECIES",
+  "type": "mutation",
+  "name": "Hell raven",
+  "description": "You're a raven youkai originating from (Former) Hell.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "armor": [
+    {
+      "parts": "ALL",
+      "heat": 6
+    }
+  ],
+  "//": "Can't find how to use percentage dmg reduction, this value should be 66% of all received fire damage + base say, 4, so it blocks minor fire attacks instead of being completely immune",
+  "movecost_modifier": 0.8,
+  "weakness_to_water": 1,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "values": [
+        {
+          "value": "INTELLIGENCE",
+          "add": -2
+        }
+      ]
+    }
+  ]
+}
+```
+

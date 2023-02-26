@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_sundering_quake
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_sundering_quake|http://cdda.aloxaf.cn/search?q=arcana_magic_sundering_quake]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_sundering_quake",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Sundering Quake"
+  },
+  "description": "Magic Sign\nUsing this spell will bring down structures and leave broken stones in your wake, damaging any foes (or allies) caught in the blast.  Enemies in the epicenter will take double damage.",
+  "message": "\"I am that which lies beneath, splitting continents with but a word…\"  You cast %s!",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sundering_quake_spike",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_sundering_quake_noise",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_sundering_quake_pulse",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_sundering_quake_boulders",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_8",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "min_damage": 80,
+  "max_damage": 160,
+  "damage_increment": 8,
+  "damage_type": "bash",
+  "min_range": 10,
+  "max_range": 20,
+  "range_increment": 1,
+  "min_aoe": 3,
+  "max_aoe": 8,
+  "aoe_increment": 0.5,
+  "max_level": 10,
+  "difficulty": 80,
+  "skill": "magic",
+  "energy_source": "STAMINA",
+  "base_casting_time": 360,
+  "final_casting_time": 180,
+  "casting_time_increment": -18,
+  "base_energy_cost": 4500,
+  "final_energy_cost": 2250,
+  "energy_increment": -225
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_sundering_quake",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：地震"
+  },
+  "description": "魔法符号\n将摧毁建筑物，并在你身后留下碎石头，伤害在爆炸中捕获的任何敌人（或盟友）。震中的敌人将受到双倍伤害。",
+  "message": "“我就是那个躺在下面的人，只用一个字就把大陆分裂开来……”你施放了 %s！",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sundering_quake_spike",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_sundering_quake_noise",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_sundering_quake_pulse",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_sundering_quake_boulders",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_8",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "min_damage": 80,
+  "max_damage": 160,
+  "damage_increment": 8,
+  "damage_type": "bash",
+  "min_range": 10,
+  "max_range": 20,
+  "range_increment": 1,
+  "min_aoe": 3,
+  "max_aoe": 8,
+  "aoe_increment": 0.5,
+  "max_level": 10,
+  "difficulty": 80,
+  "skill": "magic",
+  "energy_source": "STAMINA",
+  "base_casting_time": 360,
+  "final_casting_time": 180,
+  "casting_time_increment": -18,
+  "base_energy_cost": 4500,
+  "final_energy_cost": 2250,
+  "energy_increment": -225
+}
+```
+

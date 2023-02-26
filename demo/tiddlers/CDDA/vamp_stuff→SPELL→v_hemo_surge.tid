@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→v_hemo_surge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_hemo_surge|http://cdda.aloxaf.cn/search?q=v_hemo_surge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "v_hemo_surge",
+  "type": "SPELL",
+  "name": {
+    "str": "Blood Surge"
+  },
+  "description": "A wave of blood is drawn out from the caster, dealing bio damage to the main target and bash to the surrounding targets.",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "v_hemo_bloodrip",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "base_casting_time": 500,
+  "min_damage": 12,
+  "max_damage": 12,
+  "min_aoe": 4,
+  "max_aoe": 4,
+  "damage_type": "bash"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "v_hemo_surge",
+  "type": "SPELL",
+  "name": {
+    "str": "血涌"
+  },
+  "description": "一股血波从施法者身上抽出，对主要目标造成生物伤害，并对周围目标造成重击。",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "v_hemo_bloodrip",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "base_casting_time": 500,
+  "min_damage": 12,
+  "max_damage": 12,
+  "min_aoe": 4,
+  "max_aoe": 4,
+  "damage_type": "bash"
+}
+```
+

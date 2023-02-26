@@ -1,0 +1,211 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_REP_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_REP_3|http://cdda.aloxaf.cn/search?q=MISSION_CF_REP_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_REP_3",
+  "type": "mission_definition",
+  "name": {
+    "str": "Kill Unknown Monster"
+  },
+  "description": "Hunt down a monster of unknown nature nearby.  Optionally recruit one of the church's guards to assist.",
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 4,
+  "value": 15000,
+  "has_generic_rewards": false,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "forest_thick",
+      "reveal_radius": 1,
+      "random": true,
+      "search_range": 20,
+      "min_distance": 5
+    },
+    "update_mapgen": {
+      "place_monster": [
+        {
+          "monster": "mon_flesh_angel",
+          "x": 11,
+          "y": 11,
+          "target": true
+        }
+      ]
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_REP_4",
+  "dialogue": {
+    "describe": "Odin, guide my hand…",
+    "offer": "I have good news and bad news.  The good news is that we've made contact with a group of our brethren, and they are expected to arrive soon.  The bad news is they've reported something else has been attracted to this area by our wards, stalking the surrounding woods due to the magic itself deterring it.  It may be a threat to travelers, in addition to potentially endangering our comrades while they're en route.  I would like to request you scout the area and, if need be, slay the creature.",
+    "accepted": "May Odin grant you victory in battle, should it come to that.  Any creature attracted by our defensive magic is likely to be not only otherworldly, but tied to other mystic forces.  Expect trouble.  I will permit you the assistance of one of our brethren if you deem it necessary, but we cannot spare the forces needed for a proper hunt.",
+    "rejected": "This thing may endanger the lives of others.  I do not yet know the full extent of the threat, but we can't afford to endanger our position here.  Please, as soon as you are able, speak with me again.",
+    "advice": "It's likely to have unnatural senses of some sort, and many such creatures are able to use such abilities to enthrall or otherwise overwhelm the weak-minded.  Avoid being in its line of sight if possible, as most such threats are most potent when the user can lay eyes upon its victim.",
+    "inquire": "Has the beast been slain?",
+    "success": "I'm thankful that you returned victorious.  Hearing of it now, and the scouting reports from the others, the creature was a rare sight indeed.  A human form woven into a mockery of the divine.  I'm sorry to have endangered you facing an unknown threat.  However, thanks to you assistance the others arrived safely, a fellow founder of our order among them.  He'll be in the building we recently finished, he might have work for you too.",
+    "success_lie": "What do you think you're trying to pull?",
+    "failure": "But how…"
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_sofia_3",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "npc_add_effect": "cf_mission_3",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 6
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_3_a"
+            ],
+            "x": 1,
+            "y": 1
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_3_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_3_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_3_d"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_REP_3",
+  "type": "mission_definition",
+  "name": {
+    "str": "杀死未知怪物"
+  },
+  "description": "在附近猎杀一个性质不明的怪物。有选择地招募一个教堂的警卫来协助。",
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 4,
+  "value": 15000,
+  "has_generic_rewards": false,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "forest_thick",
+      "reveal_radius": 1,
+      "random": true,
+      "search_range": 20,
+      "min_distance": 5
+    },
+    "update_mapgen": {
+      "place_monster": [
+        {
+          "monster": "mon_flesh_angel",
+          "x": 11,
+          "y": 11,
+          "target": true
+        }
+      ]
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_REP_4",
+  "dialogue": {
+    "describe": "奥丁，牵着我的手…",
+    "offer": "我有好消息和坏消息。好消息是，我们已经与我们的一群兄弟取得了联系，他们预计很快就会到达。坏消息是，他们报道说，我们的病房还吸引了其他一些人来到这一地区，由于魔法本身阻止了它，他们在周围的树林里潜行。这可能是对旅行者的威胁，此外，在旅途中可能危及我们的同志。我想请求你侦察该地区，如果需要的话，杀死该生物。",
+    "accepted": "愿奥丁在战斗中给你胜利，如果真是这样的话。任何被我们的防御魔法所吸引的生物可能不仅是超凡脱俗的，而且与其他神秘力量有联系。期待麻烦。如果你认为有必要的话，我会允许你帮助我们的一个兄弟，但我们不能为一个适当的狩猎腾出必要的力量。",
+    "rejected": "这件事可能会危及其他人的生命。我还不知道威胁的全面程度，但我们不能危及我们在这里的地位。请你一有空，再跟我说话。",
+    "advice": "它很可能有某种非自然的感觉，许多这样的生物能够利用这些能力来吸引或以其他方式压倒弱者。如果可能的话，避免出现在它的视线内，因为当用户可以看到受害者时，大多数这样的威胁是最有力的。",
+    "inquire": "野兽已经被杀死了吗？",
+    "success": "我很感激你胜利归来。现在听到它，以及其他人的侦察报告，这种生物确实是罕见的。编织成对神圣的嘲弄的人形。很抱歉让你面临未知的威胁。然而，多亏了你的帮助，其他人安全抵达，我们订单的创始人之一。他会在我们最近完工的大楼里，他可能也会为你工作。",
+    "success_lie": "你觉得你想拉什么？",
+    "failure": "但是如何…"
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_sofia_3",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "npc_add_effect": "cf_mission_3",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 6
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_3_a"
+            ],
+            "x": 1,
+            "y": 1
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_3_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_3_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_3_d"
+      }
+    ]
+  }
+}
+```
+

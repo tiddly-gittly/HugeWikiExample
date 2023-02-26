@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: monster_attack vamp_stuff
+title: vamp_stuff→monster_attack→leechvenomousinject
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：leechvenomousinject|http://cdda.aloxaf.cn/search?q=leechvenomousinject]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "leechvenomousinject",
+  "cooldown": 15,
+  "move_cost": 200,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 4,
+      "armor_multiplier": 0.7
+    },
+    {
+      "damage_type": "stab",
+      "amount": 3,
+      "armor_multiplier": 0.6
+    }
+  ],
+  "effects": [
+    {
+      "id": "leechvenom",
+      "duration": 2650
+    }
+  ],
+  "hit_dmg_u": "The %1$s badly weakens you!",
+  "hit_dmg_npc": "The %1$s weakens <npcname> badly!",
+  "no_dmg_msg_u": "The %1$s tries to inject you, but fails to pierce your armor.",
+  "no_dmg_msg_npc": "The %1$s tries to inject <npcname>, but fails."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "leechvenomousinject",
+  "cooldown": 15,
+  "move_cost": 200,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 4,
+      "armor_multiplier": 0.7
+    },
+    {
+      "damage_type": "stab",
+      "amount": 3,
+      "armor_multiplier": 0.6
+    }
+  ],
+  "effects": [
+    {
+      "id": "leechvenom",
+      "duration": 2650
+    }
+  ],
+  "hit_dmg_u": "%1$s大幅度削弱了你！",
+  "hit_dmg_npc": "%1$s大幅度削弱了<npcname>！",
+  "no_dmg_msg_u": "%1$s尝试去伤害你，但是没有穿透你的护甲。",
+  "no_dmg_msg_npc": "%1$s尝试去伤害<npcname>，但是却失败了。"
+}
+```
+

@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: GUNMOD nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→GUNMOD→aux_flamer_diesel
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：aux_flamer_diesel|http://cdda.aloxaf.cn/search?q=aux_flamer_diesel]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Weapons/c_mods.json
+
+
+!! 原文
+
+```json
+{
+  "id": "aux_flamer_diesel",
+  "type": "GUNMOD",
+  "name": {
+    "str": "survivor's auxiliary flamethrower"
+  },
+  "description": "A miniature, custom-built flamethrower that can be attached to all sorts of weapons.  It can use a wide range of fuels and is relatively fuel-efficient.  It is less effective than a proper flamethrower however, and pressurizing the integral tank takes time.",
+  "weight": "1820 g",
+  "volume": "1 L",
+  "price": "850 USD",
+  "price_postapoc": "850 cent",
+  "material": [
+    "steel"
+  ],
+  "dispersion_modifier": 10,
+  "symbol": ":",
+  "color": "light_red",
+  "location": "underbarrel",
+  "mod_targets": [
+    "rifle",
+    "shotgun",
+    "smg",
+    "crossbow",
+    "launcher"
+  ],
+  "gun_data": {
+    "ammo": [
+      "diesel",
+      "gasoline",
+      "flammable",
+      "lamp_oil",
+      "crude_lamp_oil",
+      "motor_oil",
+      "jp8",
+      "avgas"
+    ],
+    "skill": "launcher",
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": -1
+    },
+    "dispersion": 600,
+    "range": 2,
+    "durability": 7,
+    "reload": 4,
+    "clip_size": 250,
+    "ammo_to_fire": 50
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "watertight": true,
+      "ammo_restriction": {
+        "diesel": 250,
+        "gasoline": 250,
+        "flammable": 250,
+        "lamp_oil": 250,
+        "crude_lamp_oil": 250,
+        "motor_oil": 250,
+        "jp8": 250,
+        "avgas": 250
+      }
+    }
+  ],
+  "min_skills": [
+    [
+      "weapon",
+      2
+    ],
+    [
+      "launcher",
+      1
+    ]
+  ],
+  "install_time": "30 m",
+  "flags": [
+    "STR_RELOAD",
+    "PUMP_RAIL_COMPATIBLE",
+    "NON_FOULING"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "aux_flamer_diesel",
+  "type": "GUNMOD",
+  "name": {
+    "str": "幸存者下挂式火焰喷射器"
+  },
+  "description": "一个微型的自制喷火器，可以连接到各种武器上。它可以使用多种燃料，而且相对节油。但没有普通的火焰喷射器那么有效，而且给内置油箱加压需要时间。",
+  "weight": "1820 g",
+  "volume": "1 L",
+  "price": "850 USD",
+  "price_postapoc": "850 cent",
+  "material": [
+    "steel"
+  ],
+  "dispersion_modifier": 10,
+  "symbol": ":",
+  "color": "light_red",
+  "location": "underbarrel",
+  "mod_targets": [
+    "rifle",
+    "shotgun",
+    "smg",
+    "crossbow",
+    "launcher"
+  ],
+  "gun_data": {
+    "ammo": [
+      "diesel",
+      "gasoline",
+      "flammable",
+      "lamp_oil",
+      "crude_lamp_oil",
+      "motor_oil",
+      "jp8",
+      "avgas"
+    ],
+    "skill": "launcher",
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": -1
+    },
+    "dispersion": 600,
+    "range": 2,
+    "durability": 7,
+    "reload": 4,
+    "clip_size": 250,
+    "ammo_to_fire": 50
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "watertight": true,
+      "ammo_restriction": {
+        "diesel": 250,
+        "gasoline": 250,
+        "flammable": 250,
+        "lamp_oil": 250,
+        "crude_lamp_oil": 250,
+        "motor_oil": 250,
+        "jp8": 250,
+        "avgas": 250
+      }
+    }
+  ],
+  "min_skills": [
+    [
+      "weapon",
+      2
+    ],
+    [
+      "launcher",
+      1
+    ]
+  ],
+  "install_time": "30 m",
+  "flags": [
+    "STR_RELOAD",
+    "PUMP_RAIL_COMPATIBLE",
+    "NON_FOULING"
+  ]
+}
+```
+

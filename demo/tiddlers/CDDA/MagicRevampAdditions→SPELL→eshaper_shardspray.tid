@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→eshaper_shardspray
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eshaper_shardspray|http://cdda.aloxaf.cn/search?q=eshaper_shardspray]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/earthshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "eshaper_shardspray",
+  "type": "SPELL",
+  "name": {
+    "str": "Shardspray"
+  },
+  "description": "This spell projects a wide spray of sharp metal shards, cutting into your foes and friends alike.",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "ally"
+  ],
+  "flags": [
+    "SOMATIC",
+    "LOUD"
+  ],
+  "components": "spell_components_shardspray",
+  "effect": "attack",
+  "shape": "cone",
+  "spell_class": "EARTHSHAPER",
+  "energy_source": "MANA",
+  "difficulty": 3,
+  "base_casting_time": 100,
+  "base_energy_cost": 100,
+  "max_level": 30,
+  "min_damage": 30,
+  "max_damage": 120,
+  "damage_increment": 2.5,
+  "damage_type": "cut",
+  "min_aoe": 25,
+  "max_aoe": 90,
+  "aoe_increment": 5,
+  "min_range": 3,
+  "max_range": 15,
+  "range_increment": 0.5,
+  "min_pierce": 0,
+  "max_pierce": 8,
+  "pierce_increment": 0.4
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "eshaper_shardspray",
+  "type": "SPELL",
+  "name": {
+    "str": "碎片喷射"
+  },
+  "description": "这法术扇形喷射出大量锋利的金属碎片，敌友不分的切碎它们路上的所有目标。",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "ally"
+  ],
+  "flags": [
+    "SOMATIC",
+    "LOUD"
+  ],
+  "components": "spell_components_shardspray",
+  "effect": "attack",
+  "shape": "cone",
+  "spell_class": "EARTHSHAPER",
+  "energy_source": "MANA",
+  "difficulty": 3,
+  "base_casting_time": 100,
+  "base_energy_cost": 100,
+  "max_level": 30,
+  "min_damage": 30,
+  "max_damage": 120,
+  "damage_increment": 2.5,
+  "damage_type": "cut",
+  "min_aoe": 25,
+  "max_aoe": 90,
+  "aoe_increment": 5,
+  "min_range": 3,
+  "max_range": 15,
+  "range_increment": 0.5,
+  "min_pierce": 0,
+  "max_pierce": 8,
+  "pierce_increment": 0.4
+}
+```
+

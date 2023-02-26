@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_shriekling
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_shriekling|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_shriekling]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_shriekling",
+  "type": "MONSTER",
+  "name": {
+    "str": "shriekling"
+  },
+  "description": "This heavily mutated child zombie twitches and flails its limbs in painful looking spasms as it runs about.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "diff": 2,
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 25,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "z",
+  "color": "magenta",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "dodge": 1,
+  "vision_day": 30,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "SHRIEK",
+      5
+    ],
+    [
+      "scratch",
+      15
+    ]
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "default_zombie_clothes",
+        100
+      ],
+      [
+        "child_items",
+        65
+      ]
+    ]
+  },
+  "burn_into": "mon_zombie_shriekling",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_shriekling",
+  "type": "MONSTER",
+  "name": {
+    "str": "小尖叫丧尸"
+  },
+  "description": "这个严重变异的儿童丧尸移动时四肢四处抽搐，看着如同痉挛疼痛一般。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "diff": 2,
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 25,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "z",
+  "color": "magenta",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "dodge": 1,
+  "vision_day": 30,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "SHRIEK",
+      5
+    ],
+    [
+      "scratch",
+      15
+    ]
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "default_zombie_clothes",
+        100
+      ],
+      [
+        "child_items",
+        65
+      ]
+    ]
+  },
+  "burn_into": "mon_zombie_shriekling",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

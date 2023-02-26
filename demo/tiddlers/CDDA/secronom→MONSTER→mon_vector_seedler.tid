@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_vector_seedler
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_vector_seedler|http://cdda.aloxaf.cn/search?q=mon_vector_seedler]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Unknown/Vector.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_vector_seedler",
+  "type": "MONSTER",
+  "name": {
+    "str": "vector bloom"
+  },
+  "looks_like": "mon_fungal_blossom",
+  "description": "A vector with unique floral blooms by the end of its branches. Undulates occasionally, it sends a finer dust into the surroundings.",
+  "default_faction": "vector",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 110,
+  "speed": 50,
+  "material": [
+    "veggy"
+  ],
+  "emit_fields": [
+    "secro_vector_stream",
+    "secro_vector_seeding"
+  ],
+  "symbol": "V",
+  "color": "cyan",
+  "aggression": -25,
+  "morale": 20,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "attack_effs": [
+    {
+      "id": "vector_infect",
+      "duration": 120,
+      "chance": 5
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 3,
+  "armor_cut": 13,
+  "armor_bullet": 10,
+  "armor_stab": 13,
+  "armor_acid": 3,
+  "vision_day": 30,
+  "vision_night": 12,
+  "harvest": "exempt",
+  "path_settings": {
+    "max_dist": 1
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "monster_message": "<color_yellow>%1$s blooms a vector haze!</color>",
+      "spell_data": {
+        "id": "mon_vector_rize_big_check"
+      },
+      "cooldown": 25
+    }
+  ],
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "BASHES",
+    "GROUP_BASH",
+    "NOHEAD",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_vector_seedler",
+  "type": "MONSTER",
+  "name": {
+    "str": "载体花朵"
+  },
+  "looks_like": "mon_fungal_blossom",
+  "description": "一种在其分支末端有独特弗洛拉花朵盛开的载体。偶尔会波动着，把更细的灰尘送到周围。",
+  "default_faction": "vector",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 110,
+  "speed": 50,
+  "material": [
+    "veggy"
+  ],
+  "emit_fields": [
+    "secro_vector_stream",
+    "secro_vector_seeding"
+  ],
+  "symbol": "V",
+  "color": "cyan",
+  "aggression": -25,
+  "morale": 20,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "attack_effs": [
+    {
+      "id": "vector_infect",
+      "duration": 120,
+      "chance": 5
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 3,
+  "armor_cut": 13,
+  "armor_bullet": 10,
+  "armor_stab": 13,
+  "armor_acid": 3,
+  "vision_day": 30,
+  "vision_night": 12,
+  "harvest": "exempt",
+  "path_settings": {
+    "max_dist": 1
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "monster_message": "<color_yellow>%1$s绽放出一股病毒迷雾！</color>",
+      "spell_data": {
+        "id": "mon_vector_rize_big_check"
+      },
+      "cooldown": 25
+    }
+  ],
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "BASHES",
+    "GROUP_BASH",
+    "NOHEAD",
+    "NO_BREATHE"
+  ]
+}
+```
+

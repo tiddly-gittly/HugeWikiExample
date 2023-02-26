@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→recover_stamina
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：recover_stamina|http://cdda.aloxaf.cn/search?q=recover_stamina]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/earthshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "recover_stamina",
+  "type": "SPELL",
+  "name": {
+    "str": "Stone's Endurance"
+  },
+  "description": "You focus on the stones beneath you and draw from their agelessness.  Your mana is converted to stamina.",
+  "effect": "recover_energy",
+  "effect_str": "STAMINA",
+  "shape": "blast",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "CONCENTRATE",
+    "SILENT"
+  ],
+  "min_damage": 1500,
+  "max_damage": 15000,
+  "damage_increment": 750,
+  "max_level": 18,
+  "spell_class": "EARTHSHAPER",
+  "base_casting_time": 500,
+  "final_casting_time": 198,
+  "casting_time_increment": -17,
+  "energy_source": "MANA",
+  "base_energy_cost": 150,
+  "energy_increment": 75,
+  "final_energy_cost": 1500,
+  "difficulty": 5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "recover_stamina",
+  "type": "SPELL",
+  "name": {
+    "str": "坚如磐石"
+  },
+  "description": "你专注于你下方的坚岩，从它们的经受时间考验的坚韧中获取力量。你将魔力转换成耐力。",
+  "effect": "recover_energy",
+  "effect_str": "STAMINA",
+  "shape": "blast",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "CONCENTRATE",
+    "SILENT"
+  ],
+  "min_damage": 1500,
+  "max_damage": 15000,
+  "damage_increment": 750,
+  "max_level": 18,
+  "spell_class": "EARTHSHAPER",
+  "base_casting_time": 500,
+  "final_casting_time": 198,
+  "casting_time_increment": -17,
+  "energy_source": "MANA",
+  "base_energy_cost": 150,
+  "energy_increment": 75,
+  "final_energy_cost": 1500,
+  "difficulty": 5
+}
+```
+

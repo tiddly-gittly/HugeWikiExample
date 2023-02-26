@@ -1,0 +1,261 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombieworm_mawy
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombieworm_mawy|http://cdda.aloxaf.cn/search?q=mon_zombieworm_mawy]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Worms.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Both deals damage and inflicts debuff.",
+  "id": "mon_zombieworm_mawy",
+  "type": "MONSTER",
+  "name": {
+    "str": "sinister maw"
+  },
+  "description": "A colossal worm, mysterious to its origin. Its mouth drips of gooey red substance",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROWORM"
+  ],
+  "bodytype": "snake",
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "harvest": "zombie",
+  "hp": 410,
+  "speed": 35,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨛",
+  "color": "white",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 10,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "vision_day": 16,
+  "vision_night": 4,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombieworm_destroy_check"
+      },
+      "cooldown": 40,
+      "monster_message": "<color_yellow>%1$s ravages its surroundings!</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 16,
+      "accuracy": 5,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 20,
+          "armor_multiplier": 0.75,
+          "damage_multiplier": 0.75
+        },
+        {
+          "damage_type": "bash",
+          "amount": 20,
+          "armor_multiplier": 0.5
+        }
+      ]
+    },
+    {
+      "type": "gun",
+      "cooldown": 43,
+      "move_cost": 333,
+      "gun_type": "mawy_mouth",
+      "fake_skills": [
+        [
+          "gun",
+          4
+        ],
+        [
+          "rifle",
+          1
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          4,
+          "N"
+        ],
+        [
+          5,
+          13,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "The sinister maw spews out strands of fleshy webbings!"
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 2,
+  "dodge": 2,
+  "anger_triggers": [
+    "HURT"
+  ],
+  "flags": [
+    "DIGS",
+    "CAN_DIG",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WEBWALK",
+    "WARM",
+    "BASHES",
+    "DESTROYS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Both deals damage and inflicts debuff.",
+  "id": "mon_zombieworm_mawy",
+  "type": "MONSTER",
+  "name": {
+    "str": "远古食腐蛆"
+  },
+  "description": "一种巨大的蠕虫，其起源神秘莫测。它的嘴里滴着粘红色的物质",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROWORM"
+  ],
+  "bodytype": "snake",
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "harvest": "zombie",
+  "hp": 410,
+  "speed": 35,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨛",
+  "color": "white",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 10,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "vision_day": 16,
+  "vision_night": 4,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombieworm_destroy_check"
+      },
+      "cooldown": 40,
+      "monster_message": "<color_yellow>%1$s破坏了它的周围环境！</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 16,
+      "accuracy": 5,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 20,
+          "armor_multiplier": 0.75,
+          "damage_multiplier": 0.75
+        },
+        {
+          "damage_type": "bash",
+          "amount": 20,
+          "armor_multiplier": 0.5
+        }
+      ]
+    },
+    {
+      "type": "gun",
+      "cooldown": 43,
+      "move_cost": 333,
+      "gun_type": "mawy_mouth",
+      "fake_skills": [
+        [
+          "gun",
+          4
+        ],
+        [
+          "rifle",
+          1
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          4,
+          "N"
+        ],
+        [
+          5,
+          13,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "邪恶的胃吐出一串串肉质的蹼！"
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 2,
+  "dodge": 2,
+  "anger_triggers": [
+    "HURT"
+  ],
+  "flags": [
+    "DIGS",
+    "CAN_DIG",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WEBWALK",
+    "WARM",
+    "BASHES",
+    "DESTROYS"
+  ]
+}
+```
+

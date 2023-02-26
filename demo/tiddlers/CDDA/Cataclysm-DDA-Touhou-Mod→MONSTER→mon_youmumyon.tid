@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→MONSTER→mon_youmumyon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_youmumyon|http://cdda.aloxaf.cn/search?q=mon_youmumyon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/monsters/touhou_summoned.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_youmumyon",
+  "type": "MONSTER",
+  "name": {
+    "str": "Phantom Gardener"
+  },
+  "description": "Your half-phantom half, in full-human shape.",
+  "volume": "6250 ml",
+  "weight": "8150 g",
+  "default_faction": "touhou_summon",
+  "bodytype": "human",
+  "species": [
+    "UNKNOWN"
+  ],
+  "harvest": "exempt",
+  "hp": 50,
+  "speed": 150,
+  "symbol": "@",
+  "color": "green",
+  "aggression": 66,
+  "morale": 99,
+  "luminance": 1,
+  "dodge": 8,
+  "path_settings": {
+    "max_dist": 6
+  },
+  "special_attacks": [
+    [
+      "youmumyon_slash",
+      2
+    ]
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT"
+  ],
+  "fear_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "CLIMBS",
+    "FLIES",
+    "NO_BREATHE",
+    "PATH_AVOID_DANGER_2",
+    "PET_WONT_FOLLOW",
+    "SEES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_youmumyon",
+  "type": "MONSTER",
+  "name": {
+    "str": "Phantom Gardener"
+  },
+  "description": "Your half-phantom half, in full-human shape.",
+  "volume": "6250 ml",
+  "weight": "8150 g",
+  "default_faction": "touhou_summon",
+  "bodytype": "human",
+  "species": [
+    "UNKNOWN"
+  ],
+  "harvest": "exempt",
+  "hp": 50,
+  "speed": 150,
+  "symbol": "@",
+  "color": "green",
+  "aggression": 66,
+  "morale": 99,
+  "luminance": 1,
+  "dodge": 8,
+  "path_settings": {
+    "max_dist": 6
+  },
+  "special_attacks": [
+    [
+      "youmumyon_slash",
+      2
+    ]
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT"
+  ],
+  "fear_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "CLIMBS",
+    "FLIES",
+    "NO_BREATHE",
+    "PATH_AVOID_DANGER_2",
+    "PET_WONT_FOLLOW",
+    "SEES"
+  ]
+}
+```
+

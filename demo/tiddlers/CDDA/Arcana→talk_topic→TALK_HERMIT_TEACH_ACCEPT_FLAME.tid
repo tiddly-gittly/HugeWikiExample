@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_TEACH_ACCEPT_FLAME
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_TEACH_ACCEPT_FLAME|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_TEACH_ACCEPT_FLAME]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
+  "dynamic_line": "That is a wise method of practicing caution.  For the benefit of those who will succeed us.  If you wish it then, I have more than trivial things to teach you.  We were allies on occasion, enemies on others.  Forgive the deception of this aging follower of He From Beyond The Veil, and allow us the chance to work together to correct the mistakes of old.",
+  "responses": [
+    {
+      "text": "Very well then.  What I can do to help?",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "So be it.  We need not be enemies.",
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[ATTACK] So that is your true nature.  I won't stoop to working with a profligate like you.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
+  "dynamic_line": "这是一个谨慎行事的明智方法。为了那些将要继承我们的人的利益。如果你愿意的话，我有很多琐碎的事情要教你。我们有时是盟友，有时是敌人。原谅这位年迈的帷幕彼端古神跟随者的欺骗，让我们有机会一起努力改正过去的错误。",
+  "responses": [
+    {
+      "text": "那好吧。我能帮什么忙？",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "就这样吧。我们不必成为敌人。",
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[攻击]这就是你的本性。我不会屈尊为你这样的挥霍无度的人工作。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: furniture secronom
+title: secronom→furniture→f_secro_flesh_gas_emitter
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_secro_flesh_gas_emitter|http://cdda.aloxaf.cn/search?q=f_secro_flesh_gas_emitter]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_secro_flesh_gas_emitter",
+  "name": "gangrenous tumor",
+  "description": "A large tumor sprouting from the flesh, reeking horrible stench that spreads through a wide area.",
+  "symbol": "i",
+  "color": "pink",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "bash": {
+    "str_min": 11,
+    "str_max": 21,
+    "sound": "splook!",
+    "sound_fail": "splat!"
+  },
+  "emissions": [
+    "emit_sflesh_gas_spread_low",
+    "emit_sflesh_gas_spread_med",
+    "emit_sflesh_gas_spread_high"
+  ],
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE",
+    "NOCOLLIDE",
+    "S_FLESH",
+    "EMITTER"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_secro_flesh_gas_emitter",
+  "name": "坏疽瘤",
+  "description": "一个从血肉中长出来的大肿瘤，在很大范围内散发着恐怖臭气",
+  "symbol": "i",
+  "color": "pink",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "bash": {
+    "str_min": 11,
+    "str_max": 21,
+    "sound": "splook!",
+    "sound_fail": "splat!"
+  },
+  "emissions": [
+    "emit_sflesh_gas_spread_low",
+    "emit_sflesh_gas_spread_med",
+    "emit_sflesh_gas_spread_high"
+  ],
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE",
+    "NOCOLLIDE",
+    "S_FLESH",
+    "EMITTER"
+  ]
+}
+```
+

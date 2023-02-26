@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_5
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_5|http://cdda.aloxaf.cn/search?q=TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_5]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_OLD_GUARD_NEC_COMMO.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_5",
+  "dynamic_line": "An arcane what?  I need to look this up.  Religious shit, scattered police chatter over the years, small-scale vigilante stuff.  Old records that suggest something federal authorities were keeping an eye on but didn't see as much of a threat.  I don't even remotely know what to make of this.  I guess the world was going crazy for longer than I thought it was.",
+  "responses": [
+    {
+      "text": "I can vouch for their intentions.  We were aware of anomalous threats developing for some time, but we never came close to figuring out what was causing it.  Now we have a chance to correct that.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_1"
+    },
+    {
+      "text": "You wouldn't be the first to underestimate them.  Their numbers were small and their reach slight, but they knew something was going wrong well before the world ended.  They just didn't know where to look.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_SANGUINE",
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_2"
+    },
+    {
+      "text": "They had their reasons for acting as they do.  They do not know the truth of what has ruined this world, but they did what they could.  This is an opportunity to gain valuable insight into how things could be set right.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_2"
+    },
+    {
+      "text": "All I know for certain is that they're trying to find possible countermeasures for what's caused all this, or at least something that might help make things better.  They believe this research project might hold the key to that.",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_4"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_5",
+  "dynamic_line": "神秘的什么？我要查一下。宗教垃圾，多年来警察的闲聊，小规模的义务警员。旧的记录表明联邦当局正在关注一些事情，但没有看到太多的威胁。我一点也不知道该怎么办。我想世界疯狂的时间比我想象的要长。",
+  "responses": [
+    {
+      "text": "我可以保证他们的意图。一段时间以来，我们一直意识到异常威胁的发展，但我们始终没有弄清楚是什么导致了这种情况。现在我们有机会纠正这一点。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_1"
+    },
+    {
+      "text": "你不是第一个低估他们的。他们的数量很少，影响也很小，但他们在世界末日之前就知道将要发生一些事情。他们只是不知道如何找到这一切的源头。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_SANGUINE",
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_2"
+    },
+    {
+      "text": "他们这样做是有原因的。他们不知道是什么毁灭了这个世界，但他们做了力所能及的事。这是一个机会，可以获得如何将事情摆正的宝贵的见解。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_2"
+    },
+    {
+      "text": "我能确定的是，他们正试图找到可能的对策来解决造成这一切的原因，或者至少找到一些可能有助于事情变得更好的方法。他们认为这个研究项目可能是关键。",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_4"
+    }
+  ]
+}
+```
+

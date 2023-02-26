@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: field_type Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→field_type→fd_web2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_web2|http://cdda.aloxaf.cn/search?q=fd_web2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_field_type.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_web2",
+  "type": "field_type",
+  "legacy_enum_id": 5,
+  "intensity_levels": [
+    {
+      "name": "cobwebs",
+      "sym": "}",
+      "effects": [
+        {
+          "effect_id": "webbed",
+          "intensity": 1,
+          "min_duration": "1 s",
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    },
+    {
+      "name": "webs",
+      "effects": [
+        {
+          "effect_id": "webbed",
+          "intensity": 2,
+          "min_duration": "1 s",
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    }
+  ],
+  "description_affix": "covered_in",
+  "immunity_data": {
+    "flags": [
+      "WEBWALK"
+    ]
+  },
+  "decrease_intensity_on_contact": false,
+  "priority": 2,
+  "half_life": "1 seconds",
+  "phase": "gas",
+  "display_items": false,
+  "bash": {
+    "str_min": 10,
+    "str_max": 20,
+    "sound_vol": 2,
+    "sound_fail_vol": 2,
+    "sound": " !",
+    "msg_success": "You brush aside some webs."
+  },
+  "display_field": true,
+  "looks_like": "fd_web"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_web2",
+  "type": "field_type",
+  "legacy_enum_id": 5,
+  "intensity_levels": [
+    {
+      "name": "cobwebs",
+      "sym": "}",
+      "effects": [
+        {
+          "effect_id": "webbed",
+          "intensity": 1,
+          "min_duration": "1 s",
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    },
+    {
+      "name": "webs",
+      "effects": [
+        {
+          "effect_id": "webbed",
+          "intensity": 2,
+          "min_duration": "1 s",
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    }
+  ],
+  "description_affix": "covered_in",
+  "immunity_data": {
+    "flags": [
+      "WEBWALK"
+    ]
+  },
+  "decrease_intensity_on_contact": false,
+  "priority": 2,
+  "half_life": "1 seconds",
+  "phase": "gas",
+  "display_items": false,
+  "bash": {
+    "str_min": 10,
+    "str_max": 20,
+    "sound_vol": 2,
+    "sound_fail_vol": 2,
+    "sound": " !",
+    "msg_success": "You brush aside some webs."
+  },
+  "display_field": true,
+  "looks_like": "fd_web"
+}
+```
+

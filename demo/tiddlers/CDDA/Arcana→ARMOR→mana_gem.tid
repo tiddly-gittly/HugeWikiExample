@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Arcana
+title: Arcana→ARMOR→mana_gem
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mana_gem|http://cdda.aloxaf.cn/search?q=mana_gem]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mana_gem",
+  "type": "ARMOR",
+  "name": {
+    "str": "essence gem"
+  },
+  "description": "A strange reddish stone set in a golden talisman, worn around the neck.  It is specialized for storing a considerable reserve of magical essence, and can be used to reload magical weapons more quickly if worn.",
+  "weight": "250 g",
+  "volume": "50 ml",
+  "price_postapoc": "90 USD",
+  "price": "30 USD",
+  "material": [
+    "gold",
+    "essencemat"
+  ],
+  "symbol": "[",
+  "looks_like": "gold_locket",
+  "color": "yellow",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "REGEN_MANA",
+            "multiply": 0.025
+          },
+          {
+            "value": "MAX_MANA",
+            "multiply": 0.025
+          }
+        ]
+      }
+    ]
+  },
+  "pocket_data": [
+    {
+      "ammo_restriction": {
+        "essence_type": 200
+      },
+      "moves": 10
+    }
+  ],
+  "flags": [
+    "TARDIS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mana_gem",
+  "type": "ARMOR",
+  "name": {
+    "str": "源质宝石护符"
+  },
+  "description": "一种奇怪的红色石头，镶嵌在金色护身符中，戴在脖子上。它专门用来储存大量的魔法精华，如果戴上它，可以更快地重新装填魔法武器。",
+  "weight": "250 g",
+  "volume": "50 ml",
+  "price_postapoc": "90 USD",
+  "price": "30 USD",
+  "material": [
+    "gold",
+    "essencemat"
+  ],
+  "symbol": "[",
+  "looks_like": "gold_locket",
+  "color": "yellow",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "REGEN_MANA",
+            "multiply": 0.025
+          },
+          {
+            "value": "MAX_MANA",
+            "multiply": 0.025
+          }
+        ]
+      }
+    ]
+  },
+  "pocket_data": [
+    {
+      "ammo_restriction": {
+        "essence_type": 200
+      },
+      "moves": 10
+    }
+  ],
+  "flags": [
+    "TARDIS"
+  ]
+}
+```
+

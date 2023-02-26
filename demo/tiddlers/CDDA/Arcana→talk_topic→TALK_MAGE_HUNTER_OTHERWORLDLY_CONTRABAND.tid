@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MAGE_HUNTER_OTHERWORLDLY_CONTRABAND
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MAGE_HUNTER_OTHERWORLDLY_CONTRABAND|http://cdda.aloxaf.cn/search?q=TALK_MAGE_HUNTER_OTHERWORLDLY_CONTRABAND]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MAGE_HUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_CONTRABAND",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "I would appreciate such a gesture.  The common tools of the trade are dangerous, but I would recommend seeing Sofia about exchanging such items.  What I will accept, if you'll allow it, would be copies of the common summoner's tome.  To Master The Unknown.  If you have a copy of it to surrender, I will compensate you as best as I can.",
+    "If you are willing to part with a summoner's tome, so be it.  The summoning glyphs themselves are better handled by someone more experienced like Sofia, but I will repay you for a copy of To Master The Unknown.",
+    "Speak to Sofia if you seek to trust any conjurers' relics to someone else's care, but I can accept the book itself if you have one on hand.  Since this is a voluntary surrender, I will compensate you as best as I can."
+  ],
+  "responses": [
+    {
+      "text": "Okay, here you go.",
+      "condition": {
+        "u_has_item": "book_summoning"
+      },
+      "effect": {
+        "u_consume_item": "book_summoning"
+      },
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_SURRENDER"
+    },
+    {
+      "text": "It's fine.  I should speak to Sofia about it.",
+      "effect": {
+        "u_add_effect": "cf_hunter_motive",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_MAGE_HUNTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_CONTRABAND",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "我希望你能做出这样的姿态。贸易中常用的工具是危险的，但我建议你去索菲亚那里交换这些东西。如果你允许的话，我会接受《普通召唤师》的副本。掌握未知。如果你有一份要交出的话，我会尽可能地赔偿你。",
+    "如果你愿意放弃召唤师的书，那就这样吧。召唤铭文本身由索菲亚这样更有经验的人更好地处理，但我会报答你一份《掌握未知》的副本。",
+    "如果你想把魔术师的遗物托付给其他人保管，请告诉索菲亚，但如果你手头有一本，我可以接受这本书。既然这是自愿投降，我将尽我所能赔偿你。"
+  ],
+  "responses": [
+    {
+      "text": "好的，给你。",
+      "condition": {
+        "u_has_item": "book_summoning"
+      },
+      "effect": {
+        "u_consume_item": "book_summoning"
+      },
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_SURRENDER"
+    },
+    {
+      "text": "很好。我应该和索菲亚谈谈。",
+      "effect": {
+        "u_add_effect": "cf_hunter_motive",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_MAGE_HUNTER"
+    }
+  ]
+}
+```
+

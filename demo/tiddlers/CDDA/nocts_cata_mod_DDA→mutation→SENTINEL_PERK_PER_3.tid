@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_PERK_PER_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_PERK_PER_3|http://cdda.aloxaf.cn/search?q=SENTINEL_PERK_PER_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_PER_3",
+  "name": {
+    "str": "Sentinel Readiness III"
+  },
+  "points": 4,
+  "description": "Targeted mutagenic treatment has honed your senses.  Your sight radius on the overmap is massively extended, you hear much better, and instinctively move silently.  In exchange, your reflexive reaction to potential threats agitates wildlife and unsettles people.",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "cancels": [
+    "EAGLEEYED",
+    "UNOBSERVANT",
+    "GOODHEARING",
+    "BADHEARING",
+    "DEAF",
+    "LIGHTSTEP",
+    "CLUMSY"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_PER_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "overmap_sight": 15,
+  "hearing_modifier": 2,
+  "noise_modifier": 0,
+  "anger_relations": [
+    [
+      "MAMMAL",
+      20
+    ],
+    [
+      "BIRD",
+      20
+    ]
+  ],
+  "social_modifiers": {
+    "persuade": -20
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_PER_3",
+  "name": {
+    "str": "哨兵姿态 III"
+  },
+  "points": 4,
+  "description": "靶向诱变治疗磨练了你的感知意识。你大地图视野半径大幅扩大，听力大幅增强，移动声音大幅降低。但你对潜在威胁的反射性反应会大幅激怒野生动物并且让人不安。",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "cancels": [
+    "EAGLEEYED",
+    "UNOBSERVANT",
+    "GOODHEARING",
+    "BADHEARING",
+    "DEAF",
+    "LIGHTSTEP",
+    "CLUMSY"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_PER_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "overmap_sight": 15,
+  "hearing_modifier": 2,
+  "noise_modifier": 0,
+  "anger_relations": [
+    [
+      "MAMMAL",
+      20
+    ],
+    [
+      "BIRD",
+      20
+    ]
+  ],
+  "social_modifiers": {
+    "persuade": -20
+  }
+}
+```
+

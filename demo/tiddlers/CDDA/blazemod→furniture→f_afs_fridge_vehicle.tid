@@ -1,0 +1,215 @@
+creator: 林一二
+revision: 0
+tags: furniture blazemod
+title: blazemod→furniture→f_afs_fridge_vehicle
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_afs_fridge_vehicle|http://cdda.aloxaf.cn/search?q=f_afs_fridge_vehicle]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/blaze_furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_afs_fridge_vehicle",
+  "name": "vehicle refrigerator",
+  "symbol": "{",
+  "description": "This fridge has been converted to run off of a vehicle's power supply.  You'll need to take it down first.",
+  "color": "white",
+  "move_cost_mod": -1,
+  "required_str": 10,
+  "flags": [
+    "CONTAINER",
+    "PLACE_ITEM",
+    "BLOCKSDOOR",
+    "MINEABLE",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "afs_fridge",
+        "count": 1
+      }
+    ]
+  },
+  "max_volume": "1000 L",
+  "deployed_item": "afs_fridge",
+  "examine_action": "deployed_furniture",
+  "bash": {
+    "str_min": 18,
+    "str_max": 50,
+    "sound": "metal screeching!",
+    "sound_fail": "clang!",
+    "items": [
+      {
+        "item": "sheet_metal",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "sheet_metal_small",
+        "count": [
+          8,
+          12
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          0,
+          3
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          2,
+          8
+        ]
+      },
+      {
+        "item": "cable",
+        "charges": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "hose",
+        "count": 1
+      },
+      {
+        "item": "cu_pipe",
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "scrap_copper",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "motor_tiny",
+        "prob": 25
+      }
+    ]
+  },
+  "looks_like": "f_fridge"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_afs_fridge_vehicle",
+  "name": "车载冰箱",
+  "symbol": "{",
+  "description": "这台冰箱已被改装成车载电源供电。你得先把它取下来。",
+  "color": "white",
+  "move_cost_mod": -1,
+  "required_str": 10,
+  "flags": [
+    "CONTAINER",
+    "PLACE_ITEM",
+    "BLOCKSDOOR",
+    "MINEABLE",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "afs_fridge",
+        "count": 1
+      }
+    ]
+  },
+  "max_volume": "1000 L",
+  "deployed_item": "afs_fridge",
+  "examine_action": "deployed_furniture",
+  "bash": {
+    "str_min": 18,
+    "str_max": 50,
+    "sound": "metal screeching!",
+    "sound_fail": "clang!",
+    "items": [
+      {
+        "item": "sheet_metal",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "sheet_metal_small",
+        "count": [
+          8,
+          12
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          0,
+          3
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          2,
+          8
+        ]
+      },
+      {
+        "item": "cable",
+        "charges": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "hose",
+        "count": 1
+      },
+      {
+        "item": "cu_pipe",
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "scrap_copper",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "motor_tiny",
+        "prob": 25
+      }
+    ]
+  },
+  "looks_like": "f_fridge"
+}
+```
+

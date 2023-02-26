@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_feral_summoner
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_feral_summoner|http://cdda.aloxaf.cn/search?q=mon_feral_summoner]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_feral_summoner",
+  "type": "MONSTER",
+  "name": {
+    "str": "maddened wanderer"
+  },
+  "description": "Torn robes cover a shuffling human form, still breathing despite its zombie-like unsteadiness.  Gripped by raving madness, a strange aura gathers around it as it clutches a tarnished silver talisman.",
+  "default_faction": "cult",
+  "looks_like": "mon_dementia",
+  "bodytype": "human",
+  "species": [
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "color": "magenta",
+  "aggression": -10,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 2,
+  "dodge": 1,
+  "harvest": "human",
+  "vision_day": 40,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 30,
+    "allow_open_doors": true,
+    "avoid_traps": true,
+    "avoid_sharp": true
+  },
+  "diff": 1,
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_summoner"
+      },
+      "cooldown": 15,
+      "monster_message": "The air chills as the maddened wanderer raises its talisman!"
+    }
+  ],
+  "death_drops": "mon_feral_summoner_death_drops",
+  "zombify_into": "mon_zombie_shady",
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "PLAYER_CLOSE"
+  ],
+  "fear_triggers": [
+    "HURT"
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "HUMAN",
+    "CAN_OPEN_DOORS",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_feral_summoner",
+  "type": "MONSTER",
+  "name": {
+    "str": "发狂流浪者"
+  },
+  "description": "撕破的长袍覆盖着一个拖着脚步的人形，尽管它像僵尸一样不稳定，但仍在呼吸。被疯狂的狂言所控制，一种奇怪的光环聚集在它周围，它紧握着一个失去光泽的银色护身符。",
+  "default_faction": "cult",
+  "looks_like": "mon_dementia",
+  "bodytype": "human",
+  "species": [
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "color": "magenta",
+  "aggression": -10,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 2,
+  "dodge": 1,
+  "harvest": "human",
+  "vision_day": 40,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 30,
+    "allow_open_doors": true,
+    "avoid_traps": true,
+    "avoid_sharp": true
+  },
+  "diff": 1,
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_summoner"
+      },
+      "cooldown": 15,
+      "monster_message": "发狂流浪者举起他的护身符，空气变冷了！"
+    }
+  ],
+  "death_drops": "mon_feral_summoner_death_drops",
+  "zombify_into": "mon_zombie_shady",
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "PLAYER_CLOSE"
+  ],
+  "fear_triggers": [
+    "HURT"
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "HUMAN",
+    "CAN_OPEN_DOORS",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+

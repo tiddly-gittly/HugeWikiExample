@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_UNDERTRADER_quest
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_UNDERTRADER_quest|http://cdda.aloxaf.cn/search?q=VAMP_UNDERTRADER_quest]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_UNDERTRADER_quest",
+  "type": "mission_definition",
+  "name": {
+    "str": "Get 2 Corrupt Bloodrune Stone"
+  },
+  "description": "Get the <color_light_red>2 corrupted bloodrune stones</color> that are dropped by killing the <color_magenta>infected vampires</color> then deliver them to the trader.",
+  "goal": "MGOAL_NULL",
+  "difficulty": 3,
+  "value": 100000,
+  "item": "corruptbloodrune",
+  "count": 2,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "vampcave_corridor2",
+      "om_special": "Vampire Cove",
+      "reveal_radius": 1,
+      "search_range": 180,
+      "z": -1
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_UNDERTRADER_quest2",
+  "dialogue": {
+    "describe": "Well, actually we have a problem...",
+    "offer": "Our kin isn't a target of diseases, but those 2 vampires at the back, they really look bad and start raging on its own, so we cage them at early state... Never knew the magic was that strong enough to kill EVEN us. I want you to end the sick vampires as your task and get their corrupted bloodrune. We know we can dispose them easily, but our beliefs prevent us from killing our own kind.",
+    "accepted": "Thank you, now go.",
+    "rejected": "You need to do that later.",
+    "advice": "Serious pain you'll get from breaking into their cage.",
+    "inquire": "What happened there?",
+    "success": "Great, mortal. This oozing bloodrune will now meet its place... Or not at all.",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "*glaressharply*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_UNDERTRADER_quest",
+  "type": "mission_definition",
+  "name": {
+    "str": "获得2块腐败的血符石"
+  },
+  "description": "获得通过杀死<color_magenta>个被感染的吸血鬼而掉落的<color_light_red>2块被腐蚀的血符石</color>，然后把它们交给交易者。",
+  "goal": "MGOAL_NULL",
+  "difficulty": 3,
+  "value": 100000,
+  "item": "corruptbloodrune",
+  "count": 2,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "vampcave_corridor2",
+      "om_special": "Vampire Cove",
+      "reveal_radius": 1,
+      "search_range": 180,
+      "z": -1
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_UNDERTRADER_quest2",
+  "dialogue": {
+    "describe": "事实上，我们有个问题...",
+    "offer": "我们的亲属不是疾病的目标，但是后面的那两个吸血鬼，他们看起来真的很糟糕，开始自己肆虐，所以我们把他们关在早期状态...从来不知道魔法如此强大，甚至可以杀死我们。我要你结束那些生病的吸血鬼作为你的任务，得到他们腐败的血液。我们知道我们可以轻松处理它们，但我们的信仰阻止我们杀死自己的同类。",
+    "accepted": "谢谢，现在走吧。",
+    "rejected": "你需要以后再做。",
+    "advice": "闯入他们的笼子会让你很痛苦。",
+    "inquire": "那里发生了什么？",
+    "success": "太好了，凡人。这个渗出鲜血的符文现在将会找到它的位置...或者根本没有。",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "*刺刺地盯着你*"
+  }
+}
+```
+

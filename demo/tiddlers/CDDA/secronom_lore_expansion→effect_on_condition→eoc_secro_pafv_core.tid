@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom_lore_expansion
+title: secronom_lore_expansion→effect_on_condition→eoc_secro_pafv_core
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_pafv_core|http://cdda.aloxaf.cn/search?q=eoc_secro_pafv_core]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_pafv_core",
+  "recurrence": [
+    "24 hours",
+    "48 hours"
+  ],
+  "condition": {
+    "and": [
+      {
+        "not": {
+          "u_has_flag": "SECRO_WEARING_FLESH_VESSEL"
+        }
+      },
+      {
+        "u_has_item": "secro_flesh_core"
+      }
+    ]
+  },
+  "deactivate_condition": {
+    "u_has_flag": "SECRO_WEARING_FLESH_VESSEL"
+  },
+  "effect": [
+    {
+      "u_message": "You feel the flesh core beat.",
+      "type": "info"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_pafv_core",
+  "recurrence": [
+    "24 hours",
+    "48 hours"
+  ],
+  "condition": {
+    "and": [
+      {
+        "not": {
+          "u_has_flag": "SECRO_WEARING_FLESH_VESSEL"
+        }
+      },
+      {
+        "u_has_item": "secro_flesh_core"
+      }
+    ]
+  },
+  "deactivate_condition": {
+    "u_has_flag": "SECRO_WEARING_FLESH_VESSEL"
+  },
+  "effect": [
+    {
+      "u_message": "You feel the flesh core beat.",
+      "type": "info"
+    }
+  ]
+}
+```
+

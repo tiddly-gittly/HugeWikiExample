@@ -1,0 +1,163 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_taken_zombie
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_taken_zombie|http://cdda.aloxaf.cn/search?q=mon_sflesh_taken_zombie]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "//": "The taken (or flesh variants) - flesh version of vanilla creatures. This file contains undead variants. Flesh variants has +25% health, +3 bash resistance and +2 adaptive damage (higher melee dice provides 2 bashing damage to its melee attack. If equal, then half for both). Everything else are the same, except the living's conversion into undead. Also, stunts the flesh variant's evolution and can be rid of manipulation if burnt down (but not for living creatures).",
+  "id": "mon_sflesh_taken_zombie",
+  "type": "MONSTER",
+  "name": {
+    "str": "flesh zombie"
+  },
+  "description": "A corpse devoured by the flesh, with complete manipulation over its mindless thoughts.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 70,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "vision_night": 3,
+  "armor_bash": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "The taken (or flesh variants) - flesh version of vanilla creatures. This file contains undead variants. Flesh variants has +25% health, +3 bash resistance and +2 adaptive damage (higher melee dice provides 2 bashing damage to its melee attack. If equal, then half for both). Everything else are the same, except the living's conversion into undead. Also, stunts the flesh variant's evolution and can be rid of manipulation if burnt down (but not for living creatures).",
+  "id": "mon_sflesh_taken_zombie",
+  "type": "MONSTER",
+  "name": {
+    "str": "血肉丧尸"
+  },
+  "description": "一具被血肉吞噬的尸体，它脆弱的思想已经被完全控制了。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 70,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "vision_night": 3,
+  "armor_bash": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

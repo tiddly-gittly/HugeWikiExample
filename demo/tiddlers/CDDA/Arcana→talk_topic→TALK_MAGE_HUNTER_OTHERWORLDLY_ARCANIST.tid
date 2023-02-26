@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MAGE_HUNTER_OTHERWORLDLY_ARCANIST
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MAGE_HUNTER_OTHERWORLDLY_ARCANIST|http://cdda.aloxaf.cn/search?q=TALK_MAGE_HUNTER_OTHERWORLDLY_ARCANIST]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MAGE_HUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_ARCANIST",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "That explains it.  Normally I would ask that you turn in any items related to your profession, as they are very dangerous in the wrong hands.  Sofia has requested that we hold off on searches without her approval.",
+    "Such magic can be very dangerous if misused, and it has a lingering impact on its practitioners.  It would be wise not to hoard the tools of such a trade, but I cannot force you to turn in such contraband.  Not without Sofia's, at least."
+  ],
+  "responses": [
+    {
+      "text": "If I have anything of that sort, would you accept it?",
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_CONTRABAND"
+    },
+    {
+      "text": "I see.  I'll speak with her then.",
+      "effect": {
+        "u_add_effect": "cf_hunter_motive",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_MAGE_HUNTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_ARCANIST",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "这就是原因。通常情况下，我会要求你交出任何与你的职业相关的物品，因为它们在坏人手中非常危险。索菲亚要求我们在未经她同意的情况下推迟搜索。",
+    "这种魔法如果被滥用，可能会非常危险，并且会对其实践者产生持久的影响。不囤积这种贸易工具是明智的，但我不能强迫你交出这种违禁品。至少没有索菲亚的。"
+  ],
+  "responses": [
+    {
+      "text": "如果我有这种东西，你能接受吗？",
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_CONTRABAND"
+    },
+    {
+      "text": "我懂了。那我就和她谈谈。",
+      "effect": {
+        "u_add_effect": "cf_hunter_motive",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_MAGE_HUNTER"
+    }
+  ]
+}
+```
+

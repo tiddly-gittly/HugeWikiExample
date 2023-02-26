@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→acid_ward_true
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：acid_ward_true|http://cdda.aloxaf.cn/search?q=acid_ward_true]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "acid_ward_true",
+  "name": [
+    "Ward Against Acid"
+  ],
+  "desc": [
+    "Complete immunity to acid damage, in addition to its aftereffects."
+  ],
+  "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
+  "removes_effects": [
+    "corroding"
+  ],
+  "decay_messages": [
+    [
+      "Your ward against acid is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "flags": [
+    "ACID_IMMUNE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "acid_ward_true",
+  "name": [
+    "防酸结界"
+  ],
+  "desc": [
+    "除了完全的抗酸性损伤外。"
+  ],
+  "remove_message": "当保护魔法消退时，你会感觉到皮肤上有刺痛感。",
+  "removes_effects": [
+    "corroding"
+  ],
+  "decay_messages": [
+    [
+      "增强你的防酸防护结界的魔力正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "flags": [
+    "ACID_IMMUNE"
+  ]
+}
+```
+

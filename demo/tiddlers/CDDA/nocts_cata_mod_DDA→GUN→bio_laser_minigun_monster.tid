@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: GUN nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→GUN→bio_laser_minigun_monster
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bio_laser_minigun_monster|http://cdda.aloxaf.cn/search?q=bio_laser_minigun_monster]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_ranged_monster.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bio_laser_minigun_monster",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "monster laser gatling"
+  },
+  "description": "Used to give Bio-Weapon Apophis a mockup of the laser gatling, minus setting targets on fire and a shorter burst size.  This is a bug if you find one of these!",
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "LASER"
+  ],
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 30,
+  "dispersion": 5000,
+  "sight_dispersion": 1000,
+  "modes": [
+    [
+      "DEFAULT",
+      "auto",
+      3
+    ]
+  ],
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 25,
+    "armor_penetration": 15
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bio_laser_minigun_monster",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "怪物激光加特林"
+  },
+  "description": "Used to give Bio-Weapon Apophis a mockup of the laser gatling, minus setting targets on fire and a shorter burst size.  This is a bug if you find one of these!",
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "LASER"
+  ],
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 30,
+  "dispersion": 5000,
+  "sight_dispersion": 1000,
+  "modes": [
+    [
+      "DEFAULT",
+      "auto",
+      3
+    ]
+  ],
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 25,
+    "armor_penetration": 15
+  }
+}
+```
+

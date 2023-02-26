@@ -1,0 +1,149 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_feral_sanguinist
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_feral_sanguinist|http://cdda.aloxaf.cn/search?q=mon_feral_sanguinist]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_feral_sanguinist",
+  "copy-from": "mon_feral_summoner",
+  "type": "MONSTER",
+  "name": {
+    "str": "maddened sanguinist"
+  },
+  "description": "Clad in well-worn leather armor, this wretch is still alive and breathing despite its unsteady gait and bloodshot gaze.  Gripped by raving madness, flames dance around the gem-adorned staff it uses as a walking stick.",
+  "aggression": 10,
+  "melee_skill": 6,
+  "melee_dice_sides": 8,
+  "armor_bash": 10,
+  "armor_cut": 10,
+  "armor_stab": 10,
+  "armor_bullet": 7,
+  "dodge": 2,
+  "diff": 3,
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 100,
+      "gun_type": "monster_fire_fake",
+      "fake_str": 9,
+      "fake_dex": 10,
+      "fake_per": 7,
+      "ranges": [
+        [
+          2,
+          7,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "laser_lock": true,
+      "targeting_cost": 100,
+      "targeting_sound": "\"Burn!\"  The maddened sanguinist levels its hellfire staff!",
+      "targeting_volume": 30,
+      "description": "Flames erupt from the maddened sanguinist's hellfire staff!",
+      "no_ammo_sound": "a cry of anger!"
+    }
+  ],
+  "death_drops": "mon_feral_sanguinist_death_drops",
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "extend": {
+    "flags": [
+      "ACIDPROOF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_feral_sanguinist",
+  "copy-from": "mon_feral_summoner",
+  "type": "MONSTER",
+  "name": {
+    "str": "发狂猩红教徒"
+  },
+  "description": "穿着破旧的皮革盔甲，尽管步履不稳，目光布满血丝，这个可怜虫仍然活着，还有呼吸。在疯狂的狂言中，火焰围绕着它用作拐杖的宝石装饰的棍子跳舞。",
+  "aggression": 10,
+  "melee_skill": 6,
+  "melee_dice_sides": 8,
+  "armor_bash": 10,
+  "armor_cut": 10,
+  "armor_stab": 10,
+  "armor_bullet": 7,
+  "dodge": 2,
+  "diff": 3,
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 100,
+      "gun_type": "monster_fire_fake",
+      "fake_str": 9,
+      "fake_dex": 10,
+      "fake_per": 7,
+      "ranges": [
+        [
+          2,
+          7,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "laser_lock": true,
+      "targeting_cost": 100,
+      "targeting_sound": "\"Burn!\"  The maddened sanguinist levels its hellfire staff!",
+      "targeting_volume": 30,
+      "description": "火焰从疯狂的嗜血者的地狱之火杖中爆发！",
+      "no_ammo_sound": "一声怒吼！"
+    }
+  ],
+  "death_drops": "mon_feral_sanguinist_death_drops",
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "extend": {
+    "flags": [
+      "ACIDPROOF"
+    ]
+  }
+}
+```
+

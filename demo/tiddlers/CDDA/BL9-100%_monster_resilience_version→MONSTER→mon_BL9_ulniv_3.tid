@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_ulniv_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_ulniv_3|http://cdda.aloxaf.cn/search?q=mon_BL9_ulniv_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_ulniv_3",
+  "looks_like": "mon_zombie_biter",
+  "type": "MONSTER",
+  "name": {
+    "str": "Ulniviunite Evolved Mutant"
+  },
+  "description": "A barely recognizable human that has turned into a strange sand-brown alien pangolin creature - it's body is entirely covered with mucousy thick and durable scales, it's head is shrinked - it's mouth has turned into a lamprey-type one with a long anteater-like tongue hanging from it, grotesquely fleshy pangolin-like tail emerges from the lower part of it's back, it's hands have turned into incredibly sharp and sturdy claws, it is filled with ferocity and animal rage",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 198,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_penetration": 11
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 7,
+  "armor_cut": 7,
+  "armor_bullet": 7,
+  "death_drops": "BL9_Drops_Evolved_Aliens",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 14
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously claws you!",
+      "hit_dmg_npc": "The %1$s ferociously claws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to claw you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to claw <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's knifelike claw at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's knifelike claw at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_ulniv_3",
+  "looks_like": "mon_zombie_biter",
+  "type": "MONSTER",
+  "name": {
+    "str": "乌尔尼维进化突变体"
+  },
+  "description": "一只勉强认得出人形的怪物，变成了一种类似于沙褐色外星穿山甲般的诡异生物——它的身体已经完全被粘液般的厚且坚固的鳞片覆盖，它的头部前半部分萎缩了——嘴变成了一种七鳃鳗的形状，上面挂着一条食蚁兽一样的长舌头，奇怪的肉质穿山甲般的尾巴从它的背部下部伸出，它的手变成了大的令人难以置信的锋利且坚固的爪子，现在它看起来充满了凶狠的气息和动物般愤怒",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 198,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_penetration": 11
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 7,
+  "armor_cut": 7,
+  "armor_bullet": 7,
+  "death_drops": "BL9_Drops_Evolved_Aliens",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 14
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously claws you!",
+      "hit_dmg_npc": "The %1$s ferociously claws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to claw you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to claw <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's knifelike claw at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's knifelike claw at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

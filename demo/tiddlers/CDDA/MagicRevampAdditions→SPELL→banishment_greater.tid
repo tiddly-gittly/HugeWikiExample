@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→banishment_greater
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：banishment_greater|http://cdda.aloxaf.cn/search?q=banishment_greater]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Blood_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "id": "banishment_greater",
+  "type": "SPELL",
+  "name": {
+    "str": "Greater Banishment"
+  },
+  "description": "A more advanced version of Banishment, which is a ritual spell that attempts to banish a monster.  Being closely related to blood magic, the Blood Mage is much more specialized to use a spell like this.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL"
+  ],
+  "effect": "banishment",
+  "shape": "blast",
+  "min_damage": 120,
+  "damage_increment": 15,
+  "max_damage": 760,
+  "min_range": 6,
+  "max_range": 6,
+  "min_aoe": 0,
+  "max_aoe": 2,
+  "aoe_increment": 0.04,
+  "base_energy_cost": 400,
+  "spell_class": "BLOOD_MAGE",
+  "difficulty": 6,
+  "max_level": 43,
+  "base_casting_time": 100,
+  "energy_source": "MANA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "banishment_greater",
+  "type": "SPELL",
+  "name": {
+    "str": "高等放逐术"
+  },
+  "description": "放逐术的更高级版本，它是一种试图驱逐怪物的仪式法术。由于与血魔法联系紧密，所以血法师更擅长使用这样的法术。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL"
+  ],
+  "effect": "banishment",
+  "shape": "blast",
+  "min_damage": 120,
+  "damage_increment": 15,
+  "max_damage": 760,
+  "min_range": 6,
+  "max_range": 6,
+  "min_aoe": 0,
+  "max_aoe": 2,
+  "aoe_increment": 0.04,
+  "base_energy_cost": 400,
+  "spell_class": "BLOOD_MAGE",
+  "difficulty": 6,
+  "max_level": 43,
+  "base_casting_time": 100,
+  "energy_source": "MANA"
+}
+```
+

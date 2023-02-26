@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→potion_numbness
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：potion_numbness|http://cdda.aloxaf.cn/search?q=potion_numbness]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "potion_numbness",
+  "name": [
+    "Intense Numbness"
+  ],
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "desc": [
+    "Your body feels incredibly numb and sluggish."
+  ],
+  "remove_message": "The numbness fades.",
+  "//": "Only Mycus Adrenaline in this case can really shake off the sluggishness.",
+  "removes_effects": [
+    "shakes",
+    "formication",
+    "jetinjector",
+    "stimpack",
+    "adrenaline",
+    "meth"
+  ],
+  "decay_messages": [
+    [
+      "The numbing effect of your potion is starting to fade.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "30 m",
+  "max_intensity": 30,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "pain_tick": [
+      25
+    ],
+    "pain_min": [
+      -15
+    ],
+    "speed_mod": [
+      -25,
+      -15
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "potion_numbness",
+  "name": [
+    "极度麻木"
+  ],
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "desc": [
+    "你的身体感觉到难以置信的麻木和迟缓。"
+  ],
+  "remove_message": "麻木会消失。",
+  "//": "Only Mycus Adrenaline in this case can really shake off the sluggishness.",
+  "removes_effects": [
+    "shakes",
+    "formication",
+    "jetinjector",
+    "stimpack",
+    "adrenaline",
+    "meth"
+  ],
+  "decay_messages": [
+    [
+      "你的药剂的麻木效果开始消退。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "30 m",
+  "max_intensity": 30,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "pain_tick": [
+      25
+    ],
+    "pain_min": [
+      -15
+    ],
+    "speed_mod": [
+      -25,
+      -15
+    ]
+  }
+}
+```
+

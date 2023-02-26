@@ -1,0 +1,277 @@
+creator: 林一二
+revision: 0
+tags: profession nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→profession→bio_tool
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bio_tool|http://cdda.aloxaf.cn/search?q=bio_tool]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Char_creation/c_classes_bw.json
+
+
+!! 原文
+
+```json
+{
+  "type": "profession",
+  "id": "bio_tool",
+  "name": "Super Bio-engineer",
+  "description": "Biological and mechanical repair unit, the combat engineer of the Super Soldier project.  You are one of many augmented military mechanics to be used as a repair module.  With repair, medical and general electronic capabilities, you can maybe fix the world.",
+  "points": 16,
+  "CBMs": [
+    "bio_torsionratchet",
+    "bio_emp_armgun",
+    "bio_flashlight",
+    "bio_memory",
+    "bio_nanobots",
+    "bio_painkiller",
+    "bio_sunglasses",
+    "bio_tools",
+    "bio_ups",
+    "bio_watch",
+    "bio_power_storage_sentinel",
+    "bio_eye_enhancer",
+    "bio_int_enhancer"
+  ],
+  "traits": [
+    "SUPER_SOLDIER_MARKER",
+    "THRESH_SUPER_SOLDIER",
+    "SENTINEL_PERK_PER_2",
+    "SENTINEL_PERK_INT_2"
+  ],
+  "skills": [
+    {
+      "level": 5,
+      "name": "electronics"
+    },
+    {
+      "level": 5,
+      "name": "cooking"
+    },
+    {
+      "level": 4,
+      "name": "mechanics"
+    },
+    {
+      "level": 4,
+      "name": "firstaid"
+    },
+    {
+      "level": 4,
+      "name": "fabrication"
+    },
+    {
+      "level": 3,
+      "name": "gun"
+    },
+    {
+      "level": 2,
+      "name": "pistol"
+    },
+    {
+      "level": 2,
+      "name": "smg"
+    },
+    {
+      "level": 2,
+      "name": "melee"
+    },
+    {
+      "level": 2,
+      "name": "stabbing"
+    }
+  ],
+  "proficiencies": [
+    "prof_gunsmithing_basic",
+    "prof_traps",
+    "prof_disarming",
+    "prof_spotting"
+  ],
+  "items": {
+    "both": {
+      "items": [
+        "helmet_liner",
+        "thermal_shirt",
+        "gloves_liner",
+        "under_armor_shorts",
+        "socks",
+        "lmil_helm",
+        "molle_pack",
+        "id_science"
+      ],
+      "entries": [
+        {
+          "item": "lmil_armor",
+          "contents-group": "c_plut_light"
+        },
+        {
+          "item": "chemistry_set",
+          "contents-item": [
+            "battery_ups"
+          ]
+        },
+        {
+          "item": "two_way_radio",
+          "contents-item": [
+            "battery_ups"
+          ]
+        },
+        {
+          "item": "akro_laser_smg",
+          "ammo-item": "battery",
+          "charges": 1000,
+          "contents-item": "shoulder_strap"
+        },
+        {
+          "item": "knife_combat",
+          "container-item": "sheath"
+        },
+        {
+          "item": "neo_laser_pistol_ups",
+          "container-item": "XL_holster"
+        }
+      ]
+    }
+  },
+  "flags": [
+    "SCEN_ONLY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "profession",
+  "id": "bio_tool",
+  "name": "超级B.A.M.R.U",
+  "description": "生物科技和机械学的维修单位，超级士兵项目中所诞的实验性维修员。你犹如一个维修模块，是众多军修工中的一员。具有机械、急救、电子等方面的技能可以让你'维修'绝大部分物体，或许可以靠你被赐予的能力修复这个世界。",
+  "points": 16,
+  "CBMs": [
+    "bio_torsionratchet",
+    "bio_emp_armgun",
+    "bio_flashlight",
+    "bio_memory",
+    "bio_nanobots",
+    "bio_painkiller",
+    "bio_sunglasses",
+    "bio_tools",
+    "bio_ups",
+    "bio_watch",
+    "bio_power_storage_sentinel",
+    "bio_eye_enhancer",
+    "bio_int_enhancer"
+  ],
+  "traits": [
+    "SUPER_SOLDIER_MARKER",
+    "THRESH_SUPER_SOLDIER",
+    "SENTINEL_PERK_PER_2",
+    "SENTINEL_PERK_INT_2"
+  ],
+  "skills": [
+    {
+      "level": 5,
+      "name": "electronics"
+    },
+    {
+      "level": 5,
+      "name": "cooking"
+    },
+    {
+      "level": 4,
+      "name": "mechanics"
+    },
+    {
+      "level": 4,
+      "name": "firstaid"
+    },
+    {
+      "level": 4,
+      "name": "fabrication"
+    },
+    {
+      "level": 3,
+      "name": "gun"
+    },
+    {
+      "level": 2,
+      "name": "pistol"
+    },
+    {
+      "level": 2,
+      "name": "smg"
+    },
+    {
+      "level": 2,
+      "name": "melee"
+    },
+    {
+      "level": 2,
+      "name": "stabbing"
+    }
+  ],
+  "proficiencies": [
+    "prof_gunsmithing_basic",
+    "prof_traps",
+    "prof_disarming",
+    "prof_spotting"
+  ],
+  "items": {
+    "both": {
+      "items": [
+        "helmet_liner",
+        "thermal_shirt",
+        "gloves_liner",
+        "under_armor_shorts",
+        "socks",
+        "lmil_helm",
+        "molle_pack",
+        "id_science"
+      ],
+      "entries": [
+        {
+          "item": "lmil_armor",
+          "contents-group": "c_plut_light"
+        },
+        {
+          "item": "chemistry_set",
+          "contents-item": [
+            "battery_ups"
+          ]
+        },
+        {
+          "item": "two_way_radio",
+          "contents-item": [
+            "battery_ups"
+          ]
+        },
+        {
+          "item": "akro_laser_smg",
+          "ammo-item": "battery",
+          "charges": 1000,
+          "contents-item": "shoulder_strap"
+        },
+        {
+          "item": "knife_combat",
+          "container-item": "sheath"
+        },
+        {
+          "item": "neo_laser_pistol_ups",
+          "container-item": "XL_holster"
+        }
+      ]
+    }
+  },
+  "flags": [
+    "SCEN_ONLY"
+  ]
+}
+```
+

@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→charger_tackle
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：charger_tackle|http://cdda.aloxaf.cn/search?q=charger_tackle]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "charger_tackle",
+  "accuracy": 12,
+  "move_cost": 300,
+  "blockable": false,
+  "dodgeable": true,
+  "attack_upper": true,
+  "throw_strength": 30,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 10
+    }
+  ],
+  "hit_dmg_u": "%1$s charged at you!",
+  "hit_dmg_npc": "%1$s charges at <npcname>!",
+  "no_dmg_msg_u": "%1$s charged into you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s charged at <npcname>, but fails to penetrate their armor!",
+  "miss_msg_u": "The %s charges into you, but you dodge!",
+  "miss_msg_npc": "The %s charges at <npcname>, but they dodge!",
+  "required_effects_all": [
+    "charge_momentum"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "charger_tackle",
+  "accuracy": 12,
+  "move_cost": 300,
+  "blockable": false,
+  "dodgeable": true,
+  "attack_upper": true,
+  "throw_strength": 30,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 10
+    }
+  ],
+  "hit_dmg_u": "%1$s charged at you！",
+  "hit_dmg_npc": "%1$s charges at <npcname>！",
+  "no_dmg_msg_u": "%1$s charged into you，but fails to penetrate your armor！",
+  "no_dmg_msg_npc": "%1$s charged at <npcname>，but fails to penetrate their armor！",
+  "miss_msg_u": "The %s charges into you，but you dodge！",
+  "miss_msg_npc": "%s冲向了<npcname>，但他们躲开了！",
+  "required_effects_all": [
+    "charge_momentum"
+  ]
+}
+```
+

@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→spell_eclipse
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：spell_eclipse|http://cdda.aloxaf.cn/search?q=spell_eclipse]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "spell_eclipse",
+  "name": [
+    "Eclipse"
+  ],
+  "desc": [
+    "Unholy power fuels you, strengthening your body with an unnatural adrenaline surge."
+  ],
+  "remove_message": "You feel numb, hit with the sheer weight of the unnatural magic fading.",
+  "decay_messages": [
+    [
+      "The blessing of the eclipse is waning.",
+      "bad"
+    ]
+  ],
+  "blocks_effects": [
+    "bleed",
+    "winded",
+    "lack_sleep",
+    "sleep",
+    "redcells_anemia",
+    "hypovolemia"
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "pain_tick": [
+      10
+    ],
+    "pain_min": [
+      -5
+    ],
+    "int_mod": [
+      -4
+    ],
+    "per_mod": [
+      4
+    ],
+    "speed_mod": [
+      30
+    ],
+    "stamina_min": [
+      20
+    ],
+    "fatigue_min": [
+      1
+    ],
+    "fatigue_tick": [
+      300
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "spell_eclipse",
+  "name": [
+    "月蚀"
+  ],
+  "desc": [
+    "邪恶的力量为你提供燃料，以一种非自然的肾上腺素激增来强化你的身体。"
+  ],
+  "remove_message": "你感觉麻木了，被非自然魔法的重量所击退。",
+  "decay_messages": [
+    [
+      "日食的祝福正在减弱。",
+      "bad"
+    ]
+  ],
+  "blocks_effects": [
+    "bleed",
+    "winded",
+    "lack_sleep",
+    "sleep",
+    "redcells_anemia",
+    "hypovolemia"
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "pain_tick": [
+      10
+    ],
+    "pain_min": [
+      -5
+    ],
+    "int_mod": [
+      -4
+    ],
+    "per_mod": [
+      4
+    ],
+    "speed_mod": [
+      30
+    ],
+    "stamina_min": [
+      20
+    ],
+    "fatigue_min": [
+      1
+    ],
+    "fatigue_tick": [
+      300
+    ]
+  }
+}
+```
+

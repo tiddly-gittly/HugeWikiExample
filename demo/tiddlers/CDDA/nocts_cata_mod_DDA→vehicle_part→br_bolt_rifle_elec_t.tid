@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→vehicle_part→br_bolt_rifle_elec_t
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：br_bolt_rifle_elec_t|http://cdda.aloxaf.cn/search?q=br_bolt_rifle_elec_t]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Vehicles/c_vehicle_parts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "copy-from": "turret",
+  "id": "br_bolt_rifle_elec_t",
+  "looks_like": "mounted_coilgun",
+  "name": "mounted BR-96 bolt rifle",
+  "color": "yellow",
+  "broken_symbol": "#",
+  "broken_color": "yellow",
+  "item": "br_bolt_rifle_elec",
+  "breaks_into": [
+    {
+      "item": "br_bolt_rifle_elec",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ],
+        [
+          "electronics",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "copy-from": "turret",
+  "id": "br_bolt_rifle_elec_t",
+  "looks_like": "mounted_coilgun",
+  "name": "车载 BR-96 弩矢步枪",
+  "color": "yellow",
+  "broken_symbol": "#",
+  "broken_color": "yellow",
+  "item": "br_bolt_rifle_elec",
+  "breaks_into": [
+    {
+      "item": "br_bolt_rifle_elec",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ],
+        [
+          "electronics",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ]
+    }
+  }
+}
+```
+

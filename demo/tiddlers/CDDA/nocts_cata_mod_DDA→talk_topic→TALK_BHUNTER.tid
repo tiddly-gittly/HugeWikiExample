@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BHUNTER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BHUNTER|http://cdda.aloxaf.cn/search?q=TALK_BHUNTER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BHUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BHUNTER",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "That thing you are wearing… a Bio-Weapon Badge…",
+    "no": "Hey you, are you also after the Bio-Weapons?"
+  },
+  "responses": [
+    {
+      "text": "[MISSION] Are you the one who triggered the security here?",
+      "topic": "TALK_BHUNTER_MISSION",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "searching_for_msci",
+              "type": "dialogue",
+              "context": "evelynn",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_LOOT_BIO_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Yeah, I am one of them.",
+      "topic": "TALK_BHUNTER_IAM_BIO",
+      "condition": {
+        "u_has_flag": "BIO_WEAPON_ANY"
+      }
+    },
+    {
+      "text": "Part of the Super Soldier project, actually.",
+      "topic": "TALK_BHUNTER_IAM_SOLDAT",
+      "condition": {
+        "u_has_trait": "SUPER_SOLDIER_MARKER"
+      }
+    },
+    {
+      "text": "Bio-Weapon?",
+      "topic": "TALK_BHUNTER_ASK_BIO"
+    },
+    {
+      "text": "What's going on out here?",
+      "topic": "TALK_BHUNTER_ASK_SITUATION"
+    },
+    {
+      "text": "What are you doing here?",
+      "topic": "TALK_BHUNTER_ASK_DOING",
+      "condition": {
+        "not": {
+          "u_has_var": "searching_for_msci",
+          "type": "dialogue",
+          "context": "evelynn",
+          "value": "yes"
+        }
+      }
+    },
+    {
+      "text": "What should we do?",
+      "topic": "TALK_BHUNTER_ASK_DO"
+    },
+    {
+      "text": "Anything I can do for you?",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "Well, bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BHUNTER",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "你戴的那个……一个生物武器徽章……",
+    "no": "嘿，你也在追查生物武器吗？"
+  },
+  "responses": [
+    {
+      "text": "[任务]是你触发了这里的警报吗？",
+      "topic": "TALK_BHUNTER_MISSION",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "searching_for_msci",
+              "type": "dialogue",
+              "context": "evelynn",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_LOOT_BIO_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "是的，我是其中一员。",
+      "topic": "TALK_BHUNTER_IAM_BIO",
+      "condition": {
+        "u_has_flag": "BIO_WEAPON_ANY"
+      }
+    },
+    {
+      "text": "准确来说是超级战士计划的一部分。",
+      "topic": "TALK_BHUNTER_IAM_SOLDAT",
+      "condition": {
+        "u_has_trait": "SUPER_SOLDIER_MARKER"
+      }
+    },
+    {
+      "text": "生物武器？",
+      "topic": "TALK_BHUNTER_ASK_BIO"
+    },
+    {
+      "text": "外面发生了什么事？",
+      "topic": "TALK_BHUNTER_ASK_SITUATION"
+    },
+    {
+      "text": "你在这里干什么？",
+      "topic": "TALK_BHUNTER_ASK_DOING",
+      "condition": {
+        "not": {
+          "u_has_var": "searching_for_msci",
+          "type": "dialogue",
+          "context": "evelynn",
+          "value": "yes"
+        }
+      }
+    },
+    {
+      "text": "[询问]我们现在该做什么？",
+      "topic": "TALK_BHUNTER_ASK_DO"
+    },
+    {
+      "text": "[任务]我能为你做什么？",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "好的，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

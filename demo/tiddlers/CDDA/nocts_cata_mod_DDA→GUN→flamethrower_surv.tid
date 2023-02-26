@@ -1,0 +1,219 @@
+creator: 林一二
+revision: 0
+tags: GUN nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→GUN→flamethrower_surv
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：flamethrower_surv|http://cdda.aloxaf.cn/search?q=flamethrower_surv]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Weapons/c_ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "flamethrower_surv",
+  "copy-from": "flamethrower_base",
+  "looks_like": "flamethrower",
+  "type": "GUN",
+  "name": {
+    "str": "survivor's flamethrower"
+  },
+  "//": "Most stats are in between regular flamethrower and obsoleted simple flamethrower.  Integral mag because multiple ammo types.  No burst fire, less range and a damage penalty, but it uses half as much fuel as normal.",
+  "description": "A makeshift flamethrower, charged from a integral fuel tank using a hand-cranked pump.  While homemade, it is higher-quality than most makeshift weapons, and can run on just about any fuel of suitable viscosity.  It uses considerably less fuel per gout of flame, at the expense of power and range.",
+  "ammo": [
+    "diesel",
+    "gasoline",
+    "flammable",
+    "lamp_oil",
+    "crude_lamp_oil",
+    "motor_oil",
+    "jp8",
+    "avgas"
+  ],
+  "weight": "1587 g",
+  "volume": "5 L",
+  "price": "200 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": -1,
+  "bashing": 10,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": -1,
+    "armor_penetration": -1
+  },
+  "range": 3,
+  "dispersion": 450,
+  "durability": 7,
+  "clip_size": 1500,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "watertight": true,
+      "ammo_restriction": {
+        "diesel": 1500,
+        "gasoline": 1500,
+        "flammable": 1500,
+        "lamp_oil": 1500,
+        "crude_lamp_oil": 1500,
+        "motor_oil": 1500,
+        "jp8": 1500,
+        "avgas": 1500
+      }
+    }
+  ],
+  "reload": 4,
+  "valid_mod_locations": [
+    [
+      "accessories",
+      1
+    ],
+    [
+      "grip",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "stock mount",
+      1
+    ],
+    [
+      "sights mount",
+      1
+    ],
+    [
+      "underbarrel mount",
+      1
+    ]
+  ],
+  "extend": {
+    "flags": [
+      "FIRE_TWOHAND",
+      "STR_RELOAD",
+      "NON_FOULING"
+    ]
+  },
+  "ammo_to_fire": 50
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "flamethrower_surv",
+  "copy-from": "flamethrower_base",
+  "looks_like": "flamethrower",
+  "type": "GUN",
+  "name": {
+    "str": "幸存者火焰喷射器"
+  },
+  "//": "Most stats are in between regular flamethrower and obsoleted simple flamethrower.  Integral mag because multiple ammo types.  No burst fire, less range and a damage penalty, but it uses half as much fuel as normal.",
+  "description": "一个自制的火焰喷射器，使用手摇泵从内置油箱中抽取燃料。虽然是自制的，但它仍优于许多其他自制武器。并且可以使用任何粘度合适的燃料。它消耗较少的燃料来产生火焰，但威力和范围都减少了。",
+  "ammo": [
+    "diesel",
+    "gasoline",
+    "flammable",
+    "lamp_oil",
+    "crude_lamp_oil",
+    "motor_oil",
+    "jp8",
+    "avgas"
+  ],
+  "weight": "1587 g",
+  "volume": "5 L",
+  "price": "200 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": -1,
+  "bashing": 10,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": -1,
+    "armor_penetration": -1
+  },
+  "range": 3,
+  "dispersion": 450,
+  "durability": 7,
+  "clip_size": 1500,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "watertight": true,
+      "ammo_restriction": {
+        "diesel": 1500,
+        "gasoline": 1500,
+        "flammable": 1500,
+        "lamp_oil": 1500,
+        "crude_lamp_oil": 1500,
+        "motor_oil": 1500,
+        "jp8": 1500,
+        "avgas": 1500
+      }
+    }
+  ],
+  "reload": 4,
+  "valid_mod_locations": [
+    [
+      "accessories",
+      1
+    ],
+    [
+      "grip",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "stock mount",
+      1
+    ],
+    [
+      "sights mount",
+      1
+    ],
+    [
+      "underbarrel mount",
+      1
+    ]
+  ],
+  "extend": {
+    "flags": [
+      "FIRE_TWOHAND",
+      "STR_RELOAD",
+      "NON_FOULING"
+    ]
+  },
+  "ammo_to_fire": 50
+}
+```
+

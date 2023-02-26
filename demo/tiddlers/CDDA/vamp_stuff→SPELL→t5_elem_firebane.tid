@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→t5_elem_firebane
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t5_elem_firebane|http://cdda.aloxaf.cn/search?q=t5_elem_firebane]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/Profane_Conjurer/v_elem_T5.json
+
+
+!! 原文
+
+```json
+{
+  "id": "t5_elem_firebane",
+  "type": "SPELL",
+  "name": {
+    "str": "Firebane"
+  },
+  "description": "Conjures a profane fireball to strike the foe. Upon impact, it explodes, dealing <color_red>fire damage</color> and spreads cursed flames on that area.\n\nThis is a <color_red>tier 5</color> spell.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "base_energy_cost": 600,
+  "final_energy_cost": 1000,
+  "energy_source": "MANA",
+  "spell_class": "VAMP_ELEM_spellcaster",
+  "difficulty": 5,
+  "min_damage": 10,
+  "max_damage": 30,
+  "max_level": 10,
+  "min_range": 10,
+  "max_range": 20,
+  "min_aoe": 2,
+  "max_aoe": 6,
+  "field_id": "fd_fire_curse",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS"
+  ],
+  "base_casting_time": 175,
+  "damage_type": "heat"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "t5_elem_firebane",
+  "type": "SPELL",
+  "name": {
+    "str": "火炭"
+  },
+  "description": "召唤一个邪恶的火球来打击敌人。撞击后，它爆炸，造成<color_red>点火焰伤害</color>，并在该区域传播诅咒火焰。\n\n这是一个<color_red>第5层<color>咒语。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "base_energy_cost": 600,
+  "final_energy_cost": 1000,
+  "energy_source": "MANA",
+  "spell_class": "VAMP_ELEM_spellcaster",
+  "difficulty": 5,
+  "min_damage": 10,
+  "max_damage": 30,
+  "max_level": 10,
+  "min_range": 10,
+  "max_range": 20,
+  "min_aoe": 2,
+  "max_aoe": 6,
+  "field_id": "fd_fire_curse",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS"
+  ],
+  "base_casting_time": 175,
+  "damage_type": "heat"
+}
+```
+

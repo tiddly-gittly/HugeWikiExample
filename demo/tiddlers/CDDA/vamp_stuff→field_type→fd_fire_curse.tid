@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: field_type vamp_stuff
+title: vamp_stuff→field_type→fd_fire_curse
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_fire_curse|http://cdda.aloxaf.cn/search?q=fd_fire_curse]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_fire_curse",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "ardent blaze",
+      "sym": "4",
+      "color": "red",
+      "dangerous": true,
+      "light_emitted": 10,
+      "translucency": 0.7,
+      "convection_temperature_mod": 20,
+      "effects": [
+        {
+          "effect_id": "v_spell_elem_flame_curse",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds"
+        }
+      ]
+    },
+    {
+      "name": "blaze",
+      "color": "magenta",
+      "light_emitted": 30,
+      "translucency": 0.4,
+      "effects": [
+        {
+          "effect_id": "v_spell_elem_flame_curse",
+          "min_duration": "1 seconds",
+          "max_duration": "3 seconds"
+        }
+      ]
+    },
+    {
+      "name": "profane blaze",
+      "color": "pink",
+      "light_emitted": 80,
+      "translucency": 0.1,
+      "effects": [
+        {
+          "effect_id": "v_spell_elem_flame_curse",
+          "min_duration": "1 seconds",
+          "max_duration": "5 seconds"
+        }
+      ]
+    }
+  ],
+  "decay_amount_factor": 3,
+  "has_fire": true,
+  "priority": 4,
+  "half_life": "15 minutes",
+  "phase": "plasma",
+  "display_items": false,
+  "display_field": true,
+  "percent_spread": 5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_fire_curse",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "ardent blaze",
+      "sym": "4",
+      "color": "red",
+      "dangerous": true,
+      "light_emitted": 10,
+      "translucency": 0.7,
+      "convection_temperature_mod": 20,
+      "effects": [
+        {
+          "effect_id": "v_spell_elem_flame_curse",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds"
+        }
+      ]
+    },
+    {
+      "name": "blaze",
+      "color": "magenta",
+      "light_emitted": 30,
+      "translucency": 0.4,
+      "effects": [
+        {
+          "effect_id": "v_spell_elem_flame_curse",
+          "min_duration": "1 seconds",
+          "max_duration": "3 seconds"
+        }
+      ]
+    },
+    {
+      "name": "profane blaze",
+      "color": "pink",
+      "light_emitted": 80,
+      "translucency": 0.1,
+      "effects": [
+        {
+          "effect_id": "v_spell_elem_flame_curse",
+          "min_duration": "1 seconds",
+          "max_duration": "5 seconds"
+        }
+      ]
+    }
+  ],
+  "decay_amount_factor": 3,
+  "has_fire": true,
+  "priority": 4,
+  "half_life": "15 minutes",
+  "phase": "plasma",
+  "display_items": false,
+  "display_field": true,
+  "percent_spread": 5
+}
+```
+

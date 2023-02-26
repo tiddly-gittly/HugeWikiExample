@@ -1,0 +1,153 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_relinquish
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_relinquish|http://cdda.aloxaf.cn/search?q=mon_zombie_relinquish]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Aggro-type zed who's revival can be a great nuisance to the target. An end-game prize.",
+  "id": "mon_zombie_relinquish",
+  "type": "MONSTER",
+  "name": {
+    "str": "relinquished zombie"
+  },
+  "description": "A diluted zombie, staggering as its wicked eyes only show a vigorious expression to whom it looks at. One can easily take its life, but something inhumane lingers around this rotting vessel...",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 40,
+  "speed": 40,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "armor_stab": 1,
+  "vision_day": 15,
+  "vision_night": 5,
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      "default_zombie_death_drops",
+      "mon_zombie_relinquish_death_drop"
+    ]
+  },
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Aggro-type zed who's revival can be a great nuisance to the target. An end-game prize.",
+  "id": "mon_zombie_relinquish",
+  "type": "MONSTER",
+  "name": {
+    "str": "被弃丧尸"
+  },
+  "description": "一个被稀释的丧尸，令人震惊，因为它邪恶的眼睛只显示出它所看的人的活力的表情。一个人可以轻易地夺走他的生命，但是一些不人道的东西在这个腐烂的容器周围徘徊…",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 40,
+  "speed": 40,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "armor_stab": 1,
+  "vision_day": 15,
+  "vision_night": 5,
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      "default_zombie_death_drops",
+      "mon_zombie_relinquish_death_drop"
+    ]
+  },
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE"
+  ]
+}
+```
+

@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: technique vamp_stuff
+title: vamp_stuff→technique→WEAK_HITCRIT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：WEAK_HITCRIT|http://cdda.aloxaf.cn/search?q=WEAK_HITCRIT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Others/v_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "WEAK_HITCRIT",
+  "name": "Weak Point Stab",
+  "description": "Precise hit for 2x damage, down 1, crit only",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "weighting": -8,
+  "down_dur": 1,
+  "messages": [
+    "%s's weak point were stabbed",
+    "<npcname> located %s's weak point and stab it"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 2
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "WEAK_HITCRIT",
+  "name": "弱点突刺",
+  "description": "精确的命中造成2倍伤害，击倒1回合，仅暴击",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "weighting": -8,
+  "down_dur": 1,
+  "messages": [
+    "%s的弱点被穿刺了",
+    "<npcname>瞄准了%s的弱点并刺过去"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 2
+    }
+  ]
+}
+```
+

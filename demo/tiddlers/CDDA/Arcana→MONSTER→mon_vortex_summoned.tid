@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_vortex_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_vortex_summoned|http://cdda.aloxaf.cn/search?q=mon_vortex_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_vortex_summoned",
+  "copy-from": "mon_vortex",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned vortex"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "path_settings": {
+    "max_dist": 10
+  },
+  "death_drops": {},
+  "speed": 90,
+  "vision_day": 25,
+  "luminance": 60,
+  "armor_stab": 8,
+  "armor_bullet": 8,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 10
+    }
+  ],
+  "regenerates": 10,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -10
+    ]
+  ],
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "CANPLAY"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "STUMBLES"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_vortex_summoned",
+  "copy-from": "mon_vortex",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤漩涡"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "path_settings": {
+    "max_dist": 10
+  },
+  "death_drops": {},
+  "speed": 90,
+  "vision_day": 25,
+  "luminance": 60,
+  "armor_stab": 8,
+  "armor_bullet": 8,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 10
+    }
+  ],
+  "regenerates": 10,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -10
+    ]
+  ],
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "CANPLAY"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "STUMBLES"
+    ]
+  }
+}
+```
+

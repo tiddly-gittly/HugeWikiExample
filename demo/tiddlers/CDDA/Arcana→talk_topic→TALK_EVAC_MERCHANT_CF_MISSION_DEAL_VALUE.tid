@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_EVAC_MERCHANT_CF_MISSION_DEAL_VALUE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_EVAC_MERCHANT_CF_MISSION_DEAL_VALUE|http://cdda.aloxaf.cn/search?q=TALK_EVAC_MERCHANT_CF_MISSION_DEAL_VALUE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_EVAC_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL_VALUE",
+  "type": "talk_topic",
+  "dynamic_line": "You've got a point, if she couldn't make the trip herself then they could use the help.  Just this once, that's the best I can do.  That's 50 Merch worth of difference there, lot of literal blood, sweat, and tears to get enough supplies to spare for trade.",
+  "responses": [
+    {
+      "text": "Thank you.  I'll bring this back to her.",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "npc_add_effect": "cf_mission_receipt",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "cf_mission_receipt",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "cf_rep_trade_receipt"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL_VALUE",
+  "type": "talk_topic",
+  "dynamic_line": "你说得有道理，如果她自己不能去旅行，那么他们可能需要帮助。就这一次，这是我能做的最好的了。这相当于50默克的差额，需要大量的血汗和眼泪才能获得足够的贸易物资。",
+  "responses": [
+    {
+      "text": "非常感谢。我会把这个还给她。",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "npc_add_effect": "cf_mission_receipt",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "cf_mission_receipt",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "cf_rep_trade_receipt"
+        }
+      ]
+    }
+  ]
+}
+```
+

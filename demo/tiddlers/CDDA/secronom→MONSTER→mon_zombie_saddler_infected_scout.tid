@@ -1,0 +1,171 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_saddler_infected_scout
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_saddler_infected_scout|http://cdda.aloxaf.cn/search?q=mon_zombie_saddler_infected_scout]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Saddler.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_saddler_infected_scout",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie scout"
+  },
+  "description": "A slim corpse with a slender saddler as its head and arms twice the average length, tipped with viciously sharp claws. Despite its thin, feeble body, it's nimble motion outpaces most of its target.",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 55,
+  "harvest": "zombie",
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 2,
+  "armor_stab": 1,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      40
+    ],
+    [
+      "scratch",
+      32
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s dies!\n<color_light_red>The saddler scout pops off from its host!</color>",
+    "effect": {
+      "id": "mon_saddler_scout_infected_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "GRABS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_saddler_infected_scout",
+  "type": "MONSTER",
+  "name": {
+    "str": "迅捷寄生萨德勒"
+  },
+  "description": "一种瘦削的尸体，头部和手臂的长度是平均长度的两倍，顶端有凶猛的利爪。尽管它瘦弱的身体，它的敏捷动作超过了大多数目标。",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 55,
+  "harvest": "zombie",
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 2,
+  "armor_stab": 1,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      40
+    ],
+    [
+      "scratch",
+      32
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s dies!\n<color_light_red>The saddler scout pops off from its host!</color>",
+    "effect": {
+      "id": "mon_saddler_scout_infected_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "GRABS"
+  ]
+}
+```
+

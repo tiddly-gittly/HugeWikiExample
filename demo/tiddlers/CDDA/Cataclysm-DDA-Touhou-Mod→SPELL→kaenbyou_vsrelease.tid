@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→kaenbyou_vsrelease
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kaenbyou_vsrelease|http://cdda.aloxaf.cn/search?q=kaenbyou_vsrelease]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_kaenbyou.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kaenbyou_vsrelease",
+  "type": "SPELL",
+  "name": {
+    "str": "Release: Vengeful spirit"
+  },
+  "description": "Release all gathered Vengeful spirits.  It's much less peaceful than it sounds though, as they explode dealing damage.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ally",
+    "ground",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_vengeful_spirit_kaenbyou"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "kaenbyou_vsrelease2"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "pure",
+  "min_damage": 100,
+  "max_damage": 100,
+  "min_range": 8,
+  "max_range": 16,
+  "range_increment": 0.8,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 67,
+  "casting_time_increment": -1.7,
+  "base_energy_cost": 75,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_PROJECTILE"
+  ],
+  "//": "The simplest way to make real use of the onryou. This kills all onryou, and triggers kaenbyou_vsrelease2 which is the actual damage component"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kaenbyou_vsrelease",
+  "type": "SPELL",
+  "name": {
+    "str": "Release: Vengeful spirit"
+  },
+  "description": "Release all gathered Vengeful spirits.  It's much less peaceful than it sounds though, as they explode dealing damage.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ally",
+    "ground",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_vengeful_spirit_kaenbyou"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "kaenbyou_vsrelease2"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "pure",
+  "min_damage": 100,
+  "max_damage": 100,
+  "min_range": 8,
+  "max_range": 16,
+  "range_increment": 0.8,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 67,
+  "casting_time_increment": -1.7,
+  "base_energy_cost": 75,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_PROJECTILE"
+  ],
+  "//": "The simplest way to make real use of the onryou. This kills all onryou, and triggers kaenbyou_vsrelease2 which is the actual damage component"
+}
+```
+

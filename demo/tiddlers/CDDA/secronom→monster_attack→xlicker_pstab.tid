@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→xlicker_pstab
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：xlicker_pstab|http://cdda.aloxaf.cn/search?q=xlicker_pstab]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "xlicker_pstab",
+  "accuracy": 8,
+  "move_cost": 225,
+  "blockable": false,
+  "dodgeable": true,
+  "range": 6,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 12,
+      "armor_multiplier": 0.8
+    }
+  ],
+  "hit_dmg_u": "%1$s pierces at your %2$s with its tongue!",
+  "hit_dmg_npc": "%1$s pierces <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to stab you afar, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to stab <npcname>, but fails to penetrate their armor!",
+  "miss_msg_u": "The %s's tongue reaches at you, but you dodge!",
+  "miss_msg_npc": "The %s pierces <npcname>, but they dodge!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "xlicker_pstab",
+  "accuracy": 8,
+  "move_cost": 225,
+  "blockable": false,
+  "dodgeable": true,
+  "range": 6,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 12,
+      "armor_multiplier": 0.8
+    }
+  ],
+  "hit_dmg_u": "%1$s pierces at your %2$s with its tongue!",
+  "hit_dmg_npc": "%1$s pierces <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to stab you afar, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to stab <npcname>, but fails to penetrate their armor!",
+  "miss_msg_u": "%s的舌头伸到你身上，你却躲开了！",
+  "miss_msg_npc": "%s刺穿<npcname>，但他们躲闪！"
+}
+```
+

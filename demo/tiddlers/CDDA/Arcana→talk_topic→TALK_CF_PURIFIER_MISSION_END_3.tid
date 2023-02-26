@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_MISSION_END_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_MISSION_END_3|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_MISSION_END_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_MISSION_END_3",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_effect": "cf_purifier_making_item",
+    "yes": "That device was a very rare assembly of one-of-a-kind components, and it's been heavily used.  It's marked, in a sense, by its repeated use in breaching the Veil.  Together with the research obtained for Sofia, we can put it to good use.  It's not ready yet, but we're making good progress.",
+    "no": "We've made a lot of breakthroughs in salvaging the device, getting it both functional and stable again.  Thanks to all the research you helped gather and those vital components, we have something we can put to good use."
+  },
+  "responses": [
+    {
+      "text": "Anything else to be done then?",
+      "condition": {
+        "not": {
+          "npc_has_effect": "cf_purifier_making_item"
+        }
+      },
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_FINAL"
+    },
+    {
+      "text": "Research from the hermit, and the shrikes?",
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_2"
+    },
+    {
+      "text": "What use would that be?",
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_3"
+    },
+    {
+      "text": "I'll check back later.",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_MISSION_END_3",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_effect": "cf_purifier_making_item",
+    "yes": "该设备是一种非常罕见的由同类组件组装而成的设备，并且被大量使用。从某种意义上说，它的标志是它在揭开面纱时的反复使用。结合对索非亚的研究，我们可以很好地利用它。它还没有准备好，但我们正在取得良好的进展。",
+    "no": "我们在抢救该设备方面取得了很多突破，使其再次功能和稳定。多亏了你帮助收集的所有研究和那些重要的组成部分，我们有了一些可以很好利用的东西。"
+  },
+  "responses": [
+    {
+      "text": "那还有什么要做的吗？",
+      "condition": {
+        "not": {
+          "npc_has_effect": "cf_purifier_making_item"
+        }
+      },
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_FINAL"
+    },
+    {
+      "text": "隐士和伯劳的研究？",
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_2"
+    },
+    {
+      "text": "那有什么用？",
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_3"
+    },
+    {
+      "text": "我过会儿再检查。",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+

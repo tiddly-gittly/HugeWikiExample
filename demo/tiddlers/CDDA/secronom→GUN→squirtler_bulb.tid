@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: GUN secronom
+title: secronom→GUN→squirtler_bulb
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：squirtler_bulb|http://cdda.aloxaf.cn/search?q=squirtler_bulb]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_gun_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "squirtler_bulb",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "squirting bulb"
+  },
+  "description": "Bulb of the squirtler.",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NO_DAMAGE_SCALING",
+    "DRAW_AS_LINE"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 10,
+  "modes": [
+    [
+      "N",
+      "near",
+      5
+    ],
+    [
+      "M",
+      "mid",
+      2
+    ],
+    [
+      "L",
+      "far",
+      1
+    ]
+  ],
+  "dispersion": 1000,
+  "ranged_damage": {
+    "damage_type": "acid",
+    "amount": 2
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "squirtler_bulb",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "喷射灯泡"
+  },
+  "description": "喷射器的灯泡。",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NO_DAMAGE_SCALING",
+    "DRAW_AS_LINE"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 10,
+  "modes": [
+    [
+      "N",
+      "near",
+      5
+    ],
+    [
+      "M",
+      "mid",
+      2
+    ],
+    [
+      "L",
+      "far",
+      1
+    ]
+  ],
+  "dispersion": 1000,
+  "ranged_damage": {
+    "damage_type": "acid",
+    "amount": 2
+  }
+}
+```
+

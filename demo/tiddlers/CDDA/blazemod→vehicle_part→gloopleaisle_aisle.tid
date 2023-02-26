@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→gloopleaisle_aisle
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gloopleaisle_aisle|http://cdda.aloxaf.cn/search?q=gloopleaisle_aisle]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gloopleaisle_aisle",
+  "type": "vehicle_part",
+  "name": {
+    "str": "gel walkway"
+  },
+  "item": "gloople",
+  "location": "center",
+  "standard_symbols": true,
+  "color": "light_green",
+  "broken_color": "light_green",
+  "durability": 250,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "description": "A living blob, formed into a walkway.",
+  "breaks_into": [
+    {
+      "item": "glooplegrow"
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "AISLE",
+    "BOARDABLE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gloopleaisle_aisle",
+  "type": "vehicle_part",
+  "name": {
+    "str": "凝胶过道"
+  },
+  "item": "gloople",
+  "location": "center",
+  "standard_symbols": true,
+  "color": "light_green",
+  "broken_color": "light_green",
+  "durability": 250,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "description": "一只活的变形怪变成的过道。",
+  "breaks_into": [
+    {
+      "item": "glooplegrow"
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "AISLE",
+    "BOARDABLE"
+  ]
+}
+```
+

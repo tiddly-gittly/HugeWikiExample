@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_REFUGEE_Pablo_CF_REP_MISSION_4_ADVICE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_REFUGEE_Pablo_CF_REP_MISSION_4_ADVICE|http://cdda.aloxaf.cn/search?q=TALK_REFUGEE_Pablo_CF_REP_MISSION_4_ADVICE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_REFUGEE_Pablo_1.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4_ADVICE",
+  "dynamic_line": {
+    "u_has_var": "tacoma_started",
+    "type": "knowledge",
+    "context": "flag",
+    "value": "yes",
+    "yes": "If you haven't already checked with the merchant up front, I know some of the regular visitors here might know who to talk to.  There's some military guy, a local scavenger, few others here and there.  The broker over in that room over there also gets a fair bit of unfamiliar visitors.",
+    "no": "If you haven't already checked with the merchant up front, I know some of the regular visitors here might know who to talk to.  There's some military guy, a local scavenger, few others here and there.  Other than that, dunno."
+  },
+  "responses": [
+    {
+      "text": "Could you help keep an eye out for any other visitors who might be looking for work?",
+      "topic": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4_OFFER"
+    },
+    {
+      "text": "I'll see what I can find out, thanks.",
+      "topic": "TALK_REFUGEE_Pablo_1"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4_ADVICE",
+  "dynamic_line": {
+    "u_has_var": "tacoma_started",
+    "type": "knowledge",
+    "context": "flag",
+    "value": "yes",
+    "yes": "如果你尚未事先与商人核实，我知道这里的一些常客可能会与谁交谈。那里有一些军人，当地的拾荒者，在这里和那里的其他人很少。那个房间的经纪人在那儿那里也有不少陌生的游客。",
+    "no": "如果你还没有事先与商人核实过，我知道这里的一些常客可能会与谁交谈。那里有一些军人，当地的拾荒者，在这里和那里的其他人很少。除此之外，邓诺。"
+  },
+  "responses": [
+    {
+      "text": "你能帮忙注意其他可能正在寻找工作的访客吗？",
+      "topic": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4_OFFER"
+    },
+    {
+      "text": "我会找出我能找到的，谢谢。",
+      "topic": "TALK_REFUGEE_Pablo_1"
+    }
+  ]
+}
+```
+

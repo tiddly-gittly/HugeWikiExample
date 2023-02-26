@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_conjure_lightburst
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_conjure_lightburst|http://cdda.aloxaf.cn/search?q=arcana_blessing_conjure_lightburst]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_conjure_lightburst",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Conjure Lightburst"
+  },
+  "description": "Arcane Blessing\nUsing this spell will conjure a flood of magical illumination at the targeted area, and scorch that which shuns the light.",
+  "message": "Flickering candle-flames of light scatter across the ground at your guidance, before a lingering glow permeates that area.",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_conjure_lightburst_searing",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "min_range": 6,
+  "max_range": 24,
+  "range_increment": 0.9,
+  "min_aoe": 2,
+  "max_aoe": 8,
+  "aoe_increment": 0.3,
+  "max_level": 20,
+  "difficulty": 20,
+  "skill": "magic",
+  "energy_source": "MANA",
+  "base_casting_time": 150,
+  "final_casting_time": 75,
+  "casting_time_increment": -3.75,
+  "base_energy_cost": 180,
+  "final_energy_cost": 90,
+  "energy_increment": -4.5,
+  "min_duration": 120000,
+  "max_duration": 600000,
+  "duration_increment": 24000,
+  "field_id": "fd_veil_light",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_conjure_lightburst",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：召唤光爆"
+  },
+  "description": "奥术祝福\n使用该法术会在目标区域造成大量魔法照明。",
+  "message": "在你的指引下，闪烁的烛光在地面上散布开来，直到余辉不散。",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_conjure_lightburst_searing",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "min_range": 6,
+  "max_range": 24,
+  "range_increment": 0.9,
+  "min_aoe": 2,
+  "max_aoe": 8,
+  "aoe_increment": 0.3,
+  "max_level": 20,
+  "difficulty": 20,
+  "skill": "magic",
+  "energy_source": "MANA",
+  "base_casting_time": 150,
+  "final_casting_time": 75,
+  "casting_time_increment": -3.75,
+  "base_energy_cost": 180,
+  "final_energy_cost": 90,
+  "energy_increment": -4.5,
+  "min_duration": 120000,
+  "max_duration": 600000,
+  "duration_increment": 24000,
+  "field_id": "fd_veil_light",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+

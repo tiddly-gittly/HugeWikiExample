@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_seal_overgrowth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_seal_overgrowth|http://cdda.aloxaf.cn/search?q=arcana_seal_overgrowth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_seals.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_seal_overgrowth",
+  "type": "SPELL",
+  "name": {
+    "str": "Seal: Overgrowth"
+  },
+  "description": "Magic Seal\nUsing this spell will conjure an eruption of the living forest, at the location you target.  It will destroy most furniture in the affected area and disrupt terrain.",
+  "message": "\"We shall prosper, no matter how barren the ground…\"  You cast %s!",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DAMAGE"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_plants",
+  "skill": "magic",
+  "max_level": 10,
+  "min_damage": 3,
+  "max_damage": 2,
+  "min_aoe": 2,
+  "max_aoe": 10,
+  "aoe_increment": 0.8,
+  "min_range": 5,
+  "max_range": 10,
+  "range_increment": 0.5,
+  "base_casting_time": 80,
+  "final_casting_time": 80
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_seal_overgrowth",
+  "type": "SPELL",
+  "name": {
+    "str": "魔印：过度生长"
+  },
+  "description": "法术魔印\n使用该法术会在目标位置召唤出超凡脱俗的活森林。它将摧毁受影响地区的大多数家具并破坏地形。",
+  "message": "“无论土地多么贫瘠，我们都会繁荣昌盛……”你施放了 %s！",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DAMAGE"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_plants",
+  "skill": "magic",
+  "max_level": 10,
+  "min_damage": 3,
+  "max_damage": 2,
+  "min_aoe": 2,
+  "max_aoe": 10,
+  "aoe_increment": 0.8,
+  "min_range": 5,
+  "max_range": 10,
+  "range_increment": 0.5,
+  "base_casting_time": 80,
+  "final_casting_time": 80
+}
+```
+

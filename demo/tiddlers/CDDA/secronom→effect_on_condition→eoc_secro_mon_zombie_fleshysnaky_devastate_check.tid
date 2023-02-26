@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom
+title: secronom→effect_on_condition→eoc_secro_mon_zombie_fleshysnaky_devastate_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_mon_zombie_fleshysnaky_devastate_check|http://cdda.aloxaf.cn/search?q=eoc_secro_mon_zombie_fleshysnaky_devastate_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_fleshysnaky_devastate_check",
+  "effect": [
+    {
+      "u_message": "You were caught at its impact!",
+      "type": "bad"
+    },
+    {
+      "u_cast_spell": {
+        "id": "mon_zombie_fleshysnaky_devastate",
+        "hit_self": true
+      }
+    },
+    {
+      "u_make_sound": "an intense rumbling of the ground.",
+      "volume": 150,
+      "type": "combat"
+    },
+    {
+      "u_transform_radius": 2,
+      "ter_furn_transform": "flesilisk_destroy"
+    },
+    {
+      "u_location_variable": {
+        "global_val": "secro_fleshysnaky_devcent"
+      }
+    },
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_mon_zombie_fleshysnaky_devastate_checked",
+          "effect": [
+            {
+              "u_transform_radius": 2,
+              "ter_furn_transform": "flesilisk_revert",
+              "target_var": {
+                "global_val": "secro_fleshysnaky_devcent"
+              }
+            }
+          ]
+        }
+      ],
+      "time_in_future": [
+        "2 seconds",
+        "2 seconds"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_fleshysnaky_devastate_check",
+  "effect": [
+    {
+      "u_message": "You were caught at its impact!",
+      "type": "bad"
+    },
+    {
+      "u_cast_spell": {
+        "id": "mon_zombie_fleshysnaky_devastate",
+        "hit_self": true
+      }
+    },
+    {
+      "u_make_sound": "an intense rumbling of the ground.",
+      "volume": 150,
+      "type": "combat"
+    },
+    {
+      "u_transform_radius": 2,
+      "ter_furn_transform": "flesilisk_destroy"
+    },
+    {
+      "u_location_variable": {
+        "global_val": "secro_fleshysnaky_devcent"
+      }
+    },
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_mon_zombie_fleshysnaky_devastate_checked",
+          "effect": [
+            {
+              "u_transform_radius": 2,
+              "ter_furn_transform": "flesilisk_revert",
+              "target_var": {
+                "global_val": "secro_fleshysnaky_devcent"
+              }
+            }
+          ]
+        }
+      ],
+      "time_in_future": [
+        "2 seconds",
+        "2 seconds"
+      ]
+    }
+  ]
+}
+```
+

@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_UNDERTRADER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_UNDERTRADER|http://cdda.aloxaf.cn/search?q=TALK_VAMP_UNDERTRADER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Underrefugee/v_ut_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_UNDERTRADER",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "blood_necklace",
+    "yes": "Do you need something, mortal?.",
+    "no": "Want something?"
+  },
+  "responses": [
+    {
+      "condition": {
+        "not": {
+          "npc_has_trait": "undertradertalkedhim"
+        }
+      },
+      "text": "Who are you?",
+      "topic": "TALK_VAMP_UNDERTRADER_introduce"
+    },
+    {
+      "condition": {
+        "not": {
+          "npc_has_trait": "undertradertalkedhappened"
+        }
+      },
+      "text": "Tell me what happened outside.",
+      "topic": "TALK_VAMP_UNDERTRADER_happened"
+    },
+    {
+      "text": "I'll trade with ya...",
+      "effect": "start_trade",
+      "topic": "TALK_VAMP_UNDERTRADER"
+    },
+    {
+      "text": "You need help? I'm here to do it.",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "and": [
+          "has_available_mission",
+          {
+            "not": {
+              "u_has_trait": "undertradervampmark"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "You need help? I'm here to do it.",
+      "topic": "TALK_VAMP_UNDERTRADER_testsdone",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "undertradertestsdone"
+          },
+          {
+            "not": {
+              "u_has_trait": "undertradervampmark"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "About your quest...",
+      "topic": "TALK_MISSION_INQUIRE",
+      "condition": "has_assigned_mission"
+    },
+    {
+      "text": "Bye, see you later.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_UNDERTRADER",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "blood_necklace",
+    "yes": "你需要什么？。",
+    "no": "想要什么？"
+  },
+  "responses": [
+    {
+      "condition": {
+        "not": {
+          "npc_has_trait": "undertradertalkedhim"
+        }
+      },
+      "text": "你是谁？",
+      "topic": "TALK_VAMP_UNDERTRADER_introduce"
+    },
+    {
+      "condition": {
+        "not": {
+          "npc_has_trait": "undertradertalkedhappened"
+        }
+      },
+      "text": "告诉我外面发生了什么。",
+      "topic": "TALK_VAMP_UNDERTRADER_happened"
+    },
+    {
+      "text": "来做交易吧...",
+      "effect": "start_trade",
+      "topic": "TALK_VAMP_UNDERTRADER"
+    },
+    {
+      "text": "你需要帮忙？ 我来帮你吧。",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "and": [
+          "has_available_mission",
+          {
+            "not": {
+              "u_has_trait": "undertradervampmark"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "你需要帮忙？ 我来帮你吧。",
+      "topic": "TALK_VAMP_UNDERTRADER_testsdone",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "undertradertestsdone"
+          },
+          {
+            "not": {
+              "u_has_trait": "undertradervampmark"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "关于你的任务...",
+      "topic": "TALK_MISSION_INQUIRE",
+      "condition": "has_assigned_mission"
+    },
+    {
+      "text": "再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

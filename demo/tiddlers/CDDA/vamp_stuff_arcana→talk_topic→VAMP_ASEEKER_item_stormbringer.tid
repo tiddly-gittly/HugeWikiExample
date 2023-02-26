@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_item_stormbringer
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_item_stormbringer|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_item_stormbringer]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_itemvalidation.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_stormbringer",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "I will give you 20 tokens for each cursed blade you bring to me.",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "I will give you 815$ for each cursed blade you bring to me.",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "I will give you 110$ for each cursed blade you bring to me.",
+        "no": "I will give you 75$ and 20 tokens for each cursed blade you bring to me."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Okay...",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeristormbringerval"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_stormbringer",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "你每给我带来一把被诅咒的剑，我就给你20个代币。",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "你带给我的每一把诅咒之刃，我都会给你815美元。",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "你带给我的每一把诅咒之刃，我都会给你110美元。",
+        "no": "你带给我的每一把诅咒之刃，我都会给你75美元和20个代币。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "好吧……",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeristormbringerval"
+      }
+    }
+  ]
+}
+```
+

@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Arcana
+title: Arcana→ARMOR→halo_draconic_might
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：halo_draconic_might|http://cdda.aloxaf.cn/search?q=halo_draconic_might]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "halo_draconic_might",
+  "copy-from": "spell_base",
+  "type": "ARMOR",
+  "name": {
+    "str": "aura of dragon's blood",
+    "str_pl": "auras of dragon's blood"
+  },
+  "description": "A strange radiance permeating your body, increasing your strength and reducing physical damage.",
+  "color": "dark_gray",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 5
+          },
+          {
+            "value": "ARMOR_BASH",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": -20
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": -15
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "add": -15
+          }
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "ONLY_ONE",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "halo_draconic_might",
+  "copy-from": "spell_base",
+  "type": "ARMOR",
+  "name": {
+    "str": "龙血光环",
+    "str_pl": "龙血光环"
+  },
+  "description": "一种奇异的光芒渗透你的身体，增加你的力量并减少身体伤害。",
+  "color": "dark_gray",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 5
+          },
+          {
+            "value": "ARMOR_BASH",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": -20
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": -15
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "add": -15
+          }
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "ONLY_ONE",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+

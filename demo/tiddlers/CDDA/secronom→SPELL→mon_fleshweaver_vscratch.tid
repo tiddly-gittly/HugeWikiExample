@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_fleshweaver_vscratch
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_fleshweaver_vscratch|http://cdda.aloxaf.cn/search?q=mon_fleshweaver_vscratch]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_fleshweaver_vscratch",
+  "type": "SPELL",
+  "name": {
+    "str": "Volatile Scratch"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster scratches the target with a claw imbued in volatile bodily fluid, dealing moderate cutting damage that lingers for few turns.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "mon_fleshweaver_vexpl"
+    }
+  ],
+  "min_damage": 10,
+  "max_damage": 5,
+  "min_range": 1,
+  "max_range": 1,
+  "min_dot": 2,
+  "max_dot": 2,
+  "min_duration": 200,
+  "max_duration": 800,
+  "damage_type": "cut"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_fleshweaver_vscratch",
+  "type": "SPELL",
+  "name": {
+    "str": "无常抓击"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者用充满挥发性体液的爪子抓伤目标，造成中度斩击伤害，几回合。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "mon_fleshweaver_vexpl"
+    }
+  ],
+  "min_damage": 10,
+  "max_damage": 5,
+  "min_range": 1,
+  "max_range": 1,
+  "min_dot": 2,
+  "max_dot": 2,
+  "min_duration": 200,
+  "max_duration": 800,
+  "damage_type": "cut"
+}
+```
+

@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Project_Kawaii
+title: Project_Kawaii→TOOL_ARMOR→kawaii_maid_hat_lss1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kawaii_maid_hat_lss1|http://cdda.aloxaf.cn/search?q=kawaii_maid_hat_lss1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Project_Kawaii/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kawaii_maid_hat_lss1",
+  "copy-from": "kawaii_maid_hat_lss",
+  "repairs_like": "kawaii_maid_hat_lss",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "Cute Maid headdress LSS-PRO (warming)"
+  },
+  "warmth": 65,
+  "power_draw": "75 W",
+  "revert_to": "kawaii_maid_hat_lss",
+  "flags": [
+    "VARSIZE",
+    "FANCY",
+    "WATERPROOF",
+    "RAINPROOF",
+    "STURDY",
+    "TRADER_AVOID"
+  ],
+  "use_action": {
+    "type": "transform",
+    "msg": "You activate the headdress' cooling mode.",
+    "target": "kawaii_maid_hat_lss2",
+    "active": true,
+    "menu_text": "Change climate control settings",
+    "need_charges": 1,
+    "need_charges_msg": "%s does not have enough power left."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kawaii_maid_hat_lss1",
+  "copy-from": "kawaii_maid_hat_lss",
+  "repairs_like": "kawaii_maid_hat_lss",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "女仆头饰 LSS-PRO （保暖）"
+  },
+  "warmth": 65,
+  "power_draw": "75 W",
+  "revert_to": "kawaii_maid_hat_lss",
+  "flags": [
+    "VARSIZE",
+    "FANCY",
+    "WATERPROOF",
+    "RAINPROOF",
+    "STURDY",
+    "TRADER_AVOID"
+  ],
+  "use_action": {
+    "type": "transform",
+    "msg": "你激活了头饰的降温模式。",
+    "target": "kawaii_maid_hat_lss2",
+    "active": true,
+    "menu_text": "改变气候控制设置",
+    "need_charges": 1,
+    "need_charges_msg": "%s没有足够的电源。"
+  }
+}
+```
+

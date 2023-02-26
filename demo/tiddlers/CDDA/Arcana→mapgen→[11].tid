@@ -1,0 +1,725 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[11]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_bookstore_1"
+  ],
+  "weight": 250,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "**|========::-OO--OO-|**",
+      "**|hTh.hTh...#.......|**",
+      "**|.h...h....#%##%##.|**",
+      "*qO..................Oq*",
+      "**|###%#.h...........|**",
+      "**|e...#.T...[[[[[..]|**",
+      "**|s..c#....>|-|....]|**",
+      "**|c..c#....||s|....]|**",
+      "**|...a#.h..|t.|TT..]|**",
+      "**|.##%#.T..|-+|TT..]|**",
+      "*qO.................]|**",
+      "**|hTh.hTh..........]|**",
+      "*qO.................]|**",
+      "**|[[[[[[[..[[[[[[..]|**",
+      "**|------|..[[[[[[..]|**",
+      "**|].....|...........|**",
+      "*q|].TT..x...........|q*",
+      "**|]hTTh.|..]]]]]]]]]|**",
+      "**|------------------|**",
+      "************************",
+      "************************"
+    ],
+    "terrain": {
+      "#": "t_floor",
+      "%": "t_floor",
+      "*": [
+        [
+          "t_grass",
+          5
+        ],
+        [
+          "t_dirt",
+          2
+        ],
+        [
+          "t_grass_long",
+          4
+        ]
+      ],
+      "+": "t_door_c",
+      "-": "t_wall_w",
+      ".": "t_floor",
+      ":": "t_door_glass_c",
+      "=": "t_wall_glass",
+      ">": "t_stairs_up",
+      "O": "t_window",
+      "q": "t_grass",
+      "x": "t_door_locked_interior",
+      "|": "t_wall_w",
+      "~": "t_sidewalk"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "%": "f_console_broken",
+      "[": "f_rack",
+      "]": "f_bookcase",
+      "D": "f_desk",
+      "T": "f_table",
+      "a": "f_stool",
+      "c": "f_cupboard",
+      "e": "f_fridge",
+      "h": "f_chair",
+      "q": "f_bluebell",
+      "s": "f_sink"
+    },
+    "toilets": {
+      "t": {}
+    },
+    "place_items": [
+      {
+        "item": "magazines",
+        "x": [
+          12,
+          20
+        ],
+        "y": 20,
+        "chance": 80,
+        "repeat": [
+          6,
+          20
+        ]
+      },
+      {
+        "item": "novels",
+        "x": [
+          3,
+          9
+        ],
+        "y": 16,
+        "chance": 90,
+        "repeat": [
+          6,
+          12
+        ]
+      },
+      {
+        "item": "novels",
+        "x": [
+          12,
+          17
+        ],
+        "y": [
+          16,
+          17
+        ],
+        "chance": 90,
+        "repeat": [
+          8,
+          16
+        ]
+      },
+      {
+        "item": "bookstore_misc",
+        "x": [
+          13,
+          17
+        ],
+        "y": 8,
+        "chance": 50,
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "item": "homebooks",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          11,
+          12
+        ],
+        "chance": 90,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "manuals",
+        "x": 20,
+        "y": [
+          8,
+          17
+        ],
+        "chance": 60,
+        "repeat": [
+          2,
+          5
+        ]
+      },
+      {
+        "item": "textbooks",
+        "x": 20,
+        "y": [
+          8,
+          17
+        ],
+        "chance": 60,
+        "repeat": [
+          2,
+          5
+        ]
+      },
+      {
+        "item": "coffee_display",
+        "x": 7,
+        "y": [
+          7,
+          12
+        ],
+        "chance": 50,
+        "repeat": [
+          3,
+          4
+        ]
+      },
+      {
+        "item": "coffee_fridge",
+        "x": 3,
+        "y": 8,
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "coffee_display",
+        "x": 6,
+        "y": [
+          9,
+          10
+        ],
+        "chance": 50,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "coffee_table",
+        "x": 4,
+        "y": 4,
+        "chance": 20
+      },
+      {
+        "item": "coffee_table",
+        "x": 8,
+        "y": 4,
+        "chance": 20
+      },
+      {
+        "item": "coffee_table",
+        "x": 9,
+        "y": 8,
+        "chance": 20
+      },
+      {
+        "item": "coffee_table",
+        "x": 9,
+        "y": 12,
+        "chance": 20
+      },
+      {
+        "item": "coffee_table",
+        "x": 4,
+        "y": 13,
+        "chance": 20
+      },
+      {
+        "item": "coffee_table",
+        "x": 8,
+        "y": 13,
+        "chance": 20
+      },
+      {
+        "item": "magic_books",
+        "x": 3,
+        "y": [
+          18,
+          20
+        ],
+        "chance": 75,
+        "repeat": [
+          2,
+          5
+        ]
+      }
+    ],
+    "place_item": [
+      {
+        "item": "coffeemaker",
+        "x": 4,
+        "y": 7,
+        "chance": 30
+      },
+      {
+        "item": "coffeemaker",
+        "x": 4,
+        "y": 12,
+        "chance": 30
+      },
+      {
+        "item": "money_bundle_twenty",
+        "x": [
+          5,
+          6
+        ],
+        "y": [
+          19,
+          20
+        ],
+        "chance": 30,
+        "repeat": 4
+      },
+      {
+        "item": "CF_golden_scale",
+        "x": [
+          5,
+          6
+        ],
+        "y": [
+          19,
+          20
+        ],
+        "chance": 30
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_crawler",
+        "x": 5,
+        "y": 18
+      },
+      {
+        "monster": "mon_zombie_shady",
+        "x": 15,
+        "y": 14,
+        "repeat": [
+          1,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_3_d",
+  "object": {
+    "set": [
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 22,
+        "x2": 22,
+        "y": 18,
+        "y2": 21
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 18,
+        "x2": 22,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 22,
+        "x2": 22,
+        "y": 13,
+        "y2": 17
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 13,
+        "x2": 17,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 22,
+        "x2": 22,
+        "y": 8,
+        "y2": 12
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 8,
+        "x2": 12,
+        "y": 22,
+        "y2": 22
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_bookstore_1"
+  ],
+  "weight": 250,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "**|========::-OO--OO-|**",
+      "**|hTh.hTh...#.......|**",
+      "**|.h...h....#%##%##.|**",
+      "*qO..................Oq*",
+      "**|###%#.h...........|**",
+      "**|e...#.T...[[[[[..]|**",
+      "**|s..c#....>|-|....]|**",
+      "**|c..c#....||s|....]|**",
+      "**|...a#.h..|t.|TT..]|**",
+      "**|.##%#.T..|-+|TT..]|**",
+      "*qO.................]|**",
+      "**|hTh.hTh..........]|**",
+      "*qO.................]|**",
+      "**|[[[[[[[..[[[[[[..]|**",
+      "**|------|..[[[[[[..]|**",
+      "**|].....|...........|**",
+      "*q|].TT..x...........|q*",
+      "**|]hTTh.|..]]]]]]]]]|**",
+      "**|------------------|**",
+      "************************",
+      "************************"
+    ],
+    "terrain": {
+      "#": "t_floor",
+      "%": "t_floor",
+      "*": [
+        [
+          "t_grass",
+          5
+        ],
+        [
+          "t_dirt",
+          2
+        ],
+        [
+          "t_grass_long",
+          4
+        ]
+      ],
+      "+": "t_door_c",
+      "-": "t_wall_w",
+      ".": "t_floor",
+      ":": "t_door_glass_c",
+      "=": "t_wall_glass",
+      ">": "t_stairs_up",
+      "O": "t_window",
+      "q": "t_grass",
+      "x": "t_door_locked_interior",
+      "|": "t_wall_w",
+      "~": "t_sidewalk"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "%": "f_console_broken",
+      "[": "f_rack",
+      "]": "f_bookcase",
+      "D": "f_desk",
+      "T": "f_table",
+      "a": "f_stool",
+      "c": "f_cupboard",
+      "e": "f_fridge",
+      "h": "f_chair",
+      "q": "f_bluebell",
+      "s": "f_sink"
+    },
+    "toilets": {
+      "t": {}
+    },
+    "place_items": [
+      {
+        "item": "magazines",
+        "x": [
+          12,
+          20
+        ],
+        "y": 20,
+        "chance": 80,
+        "repeat": [
+          6,
+          20
+        ]
+      },
+      {
+        "item": "novels",
+        "x": [
+          3,
+          9
+        ],
+        "y": 16,
+        "chance": 90,
+        "repeat": [
+          6,
+          12
+        ]
+      },
+      {
+        "item": "novels",
+        "x": [
+          12,
+          17
+        ],
+        "y": [
+          16,
+          17
+        ],
+        "chance": 90,
+        "repeat": [
+          8,
+          16
+        ]
+      },
+      {
+        "item": "bookstore_misc",
+        "x": [
+          13,
+          17
+        ],
+        "y": 8,
+        "chance": 50,
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "item": "homebooks",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          11,
+          12
+        ],
+        "chance": 90,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "manuals",
+        "x": 20,
+        "y": [
+          8,
+          17
+        ],
+        "chance": 60,
+        "repeat": [
+          2,
+          5
+        ]
+      },
+      {
+        "item": "textbooks",
+        "x": 20,
+        "y": [
+          8,
+          17
+        ],
+        "chance": 60,
+        "repeat": [
+          2,
+          5
+        ]
+      },
+      {
+        "item": "coffee_display",
+        "x": 7,
+        "y": [
+          7,
+          12
+        ],
+        "chance": 50,
+        "repeat": [
+          3,
+          4
+        ]
+      },
+      {
+        "item": "coffee_fridge",
+        "x": 3,
+        "y": 8,
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "coffee_display",
+        "x": 6,
+        "y": [
+          9,
+          10
+        ],
+        "chance": 50,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "coffee_table",
+        "x": 4,
+        "y": 4,
+        "chance": 20
+      },
+      {
+        "item": "coffee_table",
+        "x": 8,
+        "y": 4,
+        "chance": 20
+      },
+      {
+        "item": "coffee_table",
+        "x": 9,
+        "y": 8,
+        "chance": 20
+      },
+      {
+        "item": "coffee_table",
+        "x": 9,
+        "y": 12,
+        "chance": 20
+      },
+      {
+        "item": "coffee_table",
+        "x": 4,
+        "y": 13,
+        "chance": 20
+      },
+      {
+        "item": "coffee_table",
+        "x": 8,
+        "y": 13,
+        "chance": 20
+      },
+      {
+        "item": "magic_books",
+        "x": 3,
+        "y": [
+          18,
+          20
+        ],
+        "chance": 75,
+        "repeat": [
+          2,
+          5
+        ]
+      }
+    ],
+    "place_item": [
+      {
+        "item": "coffeemaker",
+        "x": 4,
+        "y": 7,
+        "chance": 30
+      },
+      {
+        "item": "coffeemaker",
+        "x": 4,
+        "y": 12,
+        "chance": 30
+      },
+      {
+        "item": "money_bundle_twenty",
+        "x": [
+          5,
+          6
+        ],
+        "y": [
+          19,
+          20
+        ],
+        "chance": 30,
+        "repeat": 4
+      },
+      {
+        "item": "CF_golden_scale",
+        "x": [
+          5,
+          6
+        ],
+        "y": [
+          19,
+          20
+        ],
+        "chance": 30
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_crawler",
+        "x": 5,
+        "y": 18
+      },
+      {
+        "monster": "mon_zombie_shady",
+        "x": 15,
+        "y": 14,
+        "repeat": [
+          1,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+

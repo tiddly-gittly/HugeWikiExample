@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: bionic blazemod
+title: blazemod→bionic→bio_blaster
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bio_blaster|http://cdda.aloxaf.cn/search?q=bio_blaster]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/guns/blaze_weapons.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bio_blaster",
+  "type": "bionic",
+  "name": {
+    "str": "Fusion Blaster Arm"
+  },
+  "description": "Your left arm has been surgically replaced by a heavy-duty fusion blaster!  You may use your energy banks to fire a damaging heat ray.  However, you are unable to use or carry two-handed items, and your strength limits what you can use with your one hand.",
+  "occupied_bodyparts": [
+    [
+      "arm_l",
+      20
+    ],
+    [
+      "hand_l",
+      5
+    ]
+  ],
+  "act_cost": 50,
+  "fake_weapon": "bio_blaster_gun",
+  "flags": [
+    "BIONIC_GUN",
+    "USES_BIONIC_POWER"
+  ],
+  "cant_remove_reason": "Removing %1$s Fusion Blaster Arm would leave %2$s with a useless stump."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bio_blaster",
+  "type": "bionic",
+  "name": {
+    "str": "核聚变臂炮"
+  },
+  "description": "你的左臂经过手术被改造成了一只重型核聚变炮！你可以消耗部分能量，释放高温毁灭射线来攻击敌人！\n* 装备该CBM将切除你的左臂，从此将无法再使用或搬运需要使用双手的物品，并且只能使用单手枪械，请慎重考虑。\n“爆符「千兆耀斑」”",
+  "occupied_bodyparts": [
+    [
+      "arm_l",
+      20
+    ],
+    [
+      "hand_l",
+      5
+    ]
+  ],
+  "act_cost": 50,
+  "fake_weapon": "bio_blaster_gun",
+  "flags": [
+    "BIONIC_GUN",
+    "USES_BIONIC_POWER"
+  ],
+  "cant_remove_reason": "Removing %1$s Fusion Blaster Arm would leave %2$s with a useless stump."
+}
+```
+

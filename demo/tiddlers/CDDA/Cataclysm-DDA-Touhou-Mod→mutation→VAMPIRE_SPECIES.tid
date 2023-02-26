@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→mutation→VAMPIRE_SPECIES
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMPIRE_SPECIES|http://cdda.aloxaf.cn/search?q=VAMPIRE_SPECIES]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMPIRE_SPECIES",
+  "type": "mutation",
+  "name": "Vampire",
+  "description": "A very famous Western youkai, you must feed upon humans to survive.  You're powerful, but at the same time have lots of weaknesses.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "healing_awake": 4,
+  "healing_resting": 4,
+  "mending_modifier": 2,
+  "//": "Should be (1, 1, 0.5), then and double or triple that by 'digesting' human blood, with an active ability",
+  "movecost_modifier": 0.8,
+  "ugliness": -4,
+  "visibility": 1,
+  "vitamins_absorb_multi": [
+    [
+      "veggy",
+      [
+        [
+          "vitA",
+          0.33
+        ],
+        [
+          "vitB",
+          0.33
+        ],
+        [
+          "vitC",
+          0.33
+        ],
+        [
+          "calcium",
+          0.33
+        ],
+        [
+          "iron",
+          0.33
+        ]
+      ]
+    ]
+  ],
+  "weakness_to_water": 2,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "values": [
+        {
+          "value": "DEXTERITY",
+          "add": 2
+        },
+        {
+          "value": "INTELLIGENCE",
+          "add": 2
+        },
+        {
+          "value": "PERCEPTION",
+          "add": 2
+        },
+        {
+          "value": "STRENGTH",
+          "add": 2
+        }
+      ],
+      "mutations": [
+        "CANNIBAL",
+        "SUNBURN"
+      ]
+    }
+  ],
+  "cancels": [
+    "ANIMALEMPATH",
+    "ANIMALEMPATH2",
+    "LIAR",
+    "PACIFIST",
+    "PRETTY",
+    "PSYCHOPATH",
+    "UGLY",
+    "DEFORMED",
+    "DEFORMED2",
+    "DEFORMED3",
+    "VEGETARIAN",
+    "HERBIVORE"
+  ],
+  "//2": "I need to set the penalty (and bonus) of eating human flesh to 0"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMPIRE_SPECIES",
+  "type": "mutation",
+  "name": "吸血鬼",
+  "description": "A very famous Western youkai, you must feed upon humans to survive.  You're powerful, but at the same time have lots of weaknesses.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "healing_awake": 4,
+  "healing_resting": 4,
+  "mending_modifier": 2,
+  "//": "Should be (1, 1, 0.5), then and double or triple that by 'digesting' human blood, with an active ability",
+  "movecost_modifier": 0.8,
+  "ugliness": -4,
+  "visibility": 1,
+  "vitamins_absorb_multi": [
+    [
+      "veggy",
+      [
+        [
+          "vitA",
+          0.33
+        ],
+        [
+          "vitB",
+          0.33
+        ],
+        [
+          "vitC",
+          0.33
+        ],
+        [
+          "calcium",
+          0.33
+        ],
+        [
+          "iron",
+          0.33
+        ]
+      ]
+    ]
+  ],
+  "weakness_to_water": 2,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "values": [
+        {
+          "value": "DEXTERITY",
+          "add": 2
+        },
+        {
+          "value": "INTELLIGENCE",
+          "add": 2
+        },
+        {
+          "value": "PERCEPTION",
+          "add": 2
+        },
+        {
+          "value": "STRENGTH",
+          "add": 2
+        }
+      ],
+      "mutations": [
+        "CANNIBAL",
+        "SUNBURN"
+      ]
+    }
+  ],
+  "cancels": [
+    "ANIMALEMPATH",
+    "ANIMALEMPATH2",
+    "LIAR",
+    "PACIFIST",
+    "PRETTY",
+    "PSYCHOPATH",
+    "UGLY",
+    "DEFORMED",
+    "DEFORMED2",
+    "DEFORMED3",
+    "VEGETARIAN",
+    "HERBIVORE"
+  ],
+  "//2": "I need to set the penalty (and bonus) of eating human flesh to 0"
+}
+```
+

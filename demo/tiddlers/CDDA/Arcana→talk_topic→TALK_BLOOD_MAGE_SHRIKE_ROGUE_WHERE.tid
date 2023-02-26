@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHERE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHERE|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHERE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_ROGUE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHERE",
+  "type": "talk_topic",
+  "dynamic_line": "I can tell you this much: you shouldn't be down here.  Any more questions?",
+  "responses": [
+    {
+      "text": "Who are you?",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHO"
+    },
+    {
+      "text": "Never mind…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE"
+    },
+    {
+      "text": "[ATTACK] Fuck off.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    },
+    {
+      "text": "I'll just be going…",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 5
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LEAVE",
+        "opinion": {
+          "value": -2,
+          "fear": -1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_NICE_TRY",
+        "opinion": {
+          "value": -4,
+          "fear": -2
+        }
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHERE",
+  "type": "talk_topic",
+  "dynamic_line": "我可以告诉你这么多：你不应该在下面。还有问题吗？",
+  "responses": [
+    {
+      "text": "你是谁？",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHO"
+    },
+    {
+      "text": "算了……",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE"
+    },
+    {
+      "text": "[攻击]滚开。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    },
+    {
+      "text": "我要走了…",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 5
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LEAVE",
+        "opinion": {
+          "value": -2,
+          "fear": -1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_NICE_TRY",
+        "opinion": {
+          "value": -4,
+          "fear": -2
+        }
+      }
+    }
+  ]
+}
+```
+

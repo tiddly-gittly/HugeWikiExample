@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_vector
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_vector|http://cdda.aloxaf.cn/search?q=t_vector]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_vector",
+  "looks_like": "t_fungus",
+  "name": "vector bed",
+  "description": "Thick, light blue foliage lay low on the ground, writhing in harmony with the wind.",
+  "symbol": ".",
+  "light_emitted": 1,
+  "color": "light_blue",
+  "move_cost": 3,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "DIGGABLE",
+    "NOCOLLIDE",
+    "VECTOR",
+    "EMITTER"
+  ],
+  "emissions": [
+    "secro_vector_small"
+  ],
+  "bash": {
+    "sound": "smash",
+    "ter_set": "t_null",
+    "str_min": 20,
+    "str_max": 400,
+    "str_min_supported": 50
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_vector",
+  "looks_like": "t_fungus",
+  "name": "载体床",
+  "description": "一颗有着奇怪颜色的树，浓密的淡蓝色树叶垂落在地面上，随风摇摆着。",
+  "symbol": ".",
+  "light_emitted": 1,
+  "color": "light_blue",
+  "move_cost": 3,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "DIGGABLE",
+    "NOCOLLIDE",
+    "VECTOR",
+    "EMITTER"
+  ],
+  "emissions": [
+    "secro_vector_small"
+  ],
+  "bash": {
+    "sound": "smash",
+    "ter_set": "t_null",
+    "str_min": 20,
+    "str_max": 400,
+    "str_min_supported": 50
+  }
+}
+```
+

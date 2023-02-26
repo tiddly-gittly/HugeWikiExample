@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_davran_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_davran_2|http://cdda.aloxaf.cn/search?q=mon_BL9_davran_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens_dominators.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_davran_2",
+  "looks_like": "mon_zombie_nullfield",
+  "type": "MONSTER",
+  "name": {
+    "str": "Davranide Mutant"
+  },
+  "description": "An average height smooth-skinned stiffly moving amphibian-like humanoid, emitting a bright azure-blue crystalline light, with elongated burst cranium from which 2 small tentacles emerge along with eyes that protrude from each side of it's head on long tentacle stalks",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 425,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 12,
+      "armor_penetration": 19
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 15,
+  "armor_cut": 15,
+  "armor_bullet": 15,
+  "death_drops": "BL9_Drops_Aliens_Dominators",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 20,
+          "armor_penetration": 22
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's bursting tentacles at you!",
+      "hit_dmg_npc": "The %1$s swings it's bursting tentacles at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's bursting tentacles at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swing it's bursting tentacles at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's bursting tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's bursting tentacles at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_davran_2",
+  "looks_like": "mon_zombie_nullfield",
+  "type": "MONSTER",
+  "name": {
+    "str": "达夫兰尼德突变体"
+  },
+  "description": "一种平均身高、皮肤光滑、动作僵硬的两栖类人形动物，散发出明亮的蓝蓝色水晶光，细长的爆裂头盖骨从中伸出2个小触须，眼睛从头部两侧伸出，长触须柄上突出",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 425,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 12,
+      "armor_penetration": 19
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 15,
+  "armor_cut": 15,
+  "armor_bullet": 15,
+  "death_drops": "BL9_Drops_Aliens_Dominators",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 20,
+          "armor_penetration": 22
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's bursting tentacles at you!",
+      "hit_dmg_npc": "The %1$s swings it's bursting tentacles at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's bursting tentacles at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swing it's bursting tentacles at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's bursting tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's bursting tentacles at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

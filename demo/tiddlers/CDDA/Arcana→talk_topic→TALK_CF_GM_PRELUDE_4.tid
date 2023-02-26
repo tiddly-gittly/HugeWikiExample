@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_PRELUDE_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_PRELUDE_4|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_PRELUDE_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_var": "johnathan_prelude_started",
+    "type": "mission",
+    "context": "rural_church",
+    "value": "yes",
+    "no": "There is a new problem I've been made aware of recently, but I'm afraid it's more complicated than normal.  We've been tracking reports of attacks on scavengers and anomalous activity over a wide area, without any leads on the source.  I can tell you what I know and see if we can find anything out.",
+    "yes": "Afraid I haven't acquired any new intel.  Still, I'll answer any questions and hopefully that will help narrow things down.  What do you have for me?"
+  },
+  "speaker_effect": [
+    {
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_started",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "text": "What sort of attacks happened?",
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS"
+    },
+    {
+      "text": "Can you describe the anomalies?",
+      "topic": "TALK_CF_GM_PRELUDE_4_ANOMALIES"
+    },
+    {
+      "text": "Who do you suggest asking about this?",
+      "topic": "TALK_CF_GM_PRELUDE_4_PROGRESSION"
+    },
+    {
+      "text": "What else can you tell me?",
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2"
+    },
+    {
+      "text": "I'll go ask around…",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_var": "johnathan_prelude_started",
+    "type": "mission",
+    "context": "rural_church",
+    "value": "yes",
+    "no": "最近我注意到了一个新问题，但恐怕比平常更复杂。我们一直在追踪有关食腐动物受到攻击的报告，以及大范围的异常活动，但没有任何来源的线索。我可以告诉你我所知道的，看看能不能找到什么线索。",
+    "yes": "恐怕我还没有得到新的情报。不过，我会回答任何问题，希望这能帮助缩小范围。你有什么给我的？"
+  },
+  "speaker_effect": [
+    {
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_started",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "text": "发生了什么样的袭击？",
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS"
+    },
+    {
+      "text": "你能描述一下异常情况吗？",
+      "topic": "TALK_CF_GM_PRELUDE_4_ANOMALIES"
+    },
+    {
+      "text": "你建议谁来问这个问题？",
+      "topic": "TALK_CF_GM_PRELUDE_4_PROGRESSION"
+    },
+    {
+      "text": "你还能告诉我什么？",
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2"
+    },
+    {
+      "text": "我去问问…",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+

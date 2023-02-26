@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→BGSS_LONEVAMP_S1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BGSS_LONEVAMP_S1|http://cdda.aloxaf.cn/search?q=BGSS_LONEVAMP_S1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/Backgrounds/lonevamp_s1.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BGSS_LONEVAMP_S1",
+  "type": "talk_topic",
+  "dynamic_line": "It was my time to hunt down a prey. Moon's in its peak, everything's peaceful... But all crumbles so quickly that night, after sighting this woman at the forest trail, weeping, tending to her grievous wound.",
+  "responses": [
+    {
+      "text": "What about her?.",
+      "topic": "BGSS_LONEVAMP_S1_CURIOUS",
+      "effect": {
+        "npc_add_trait": "lonevamp_s1_her"
+      },
+      "condition": {
+        "not": {
+          "npc_has_trait": "lonevamp_s1_her"
+        }
+      }
+    },
+    {
+      "text": "Her wound?",
+      "topic": "BGSS_LONEVAMP_S1_WOUND",
+      "effect": {
+        "npc_add_trait": "lonevamp_s1_wound"
+      },
+      "condition": {
+        "not": {
+          "npc_has_trait": "lonevamp_s1_wound"
+        }
+      }
+    },
+    {
+      "text": "<done_conversation_section>",
+      "topic": "TALK_FRIEND"
+    },
+    {
+      "text": "<end_talking>",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BGSS_LONEVAMP_S1",
+  "type": "talk_topic",
+  "dynamic_line": "当时是我正在追捕猎物。月亮在上，一切都很平静…但是在那天晚上，当看到那个女人在林间小路上哭泣，照看着她那严重的伤口时，一切都崩溃了。",
+  "responses": [
+    {
+      "text": "她怎么了？。",
+      "topic": "BGSS_LONEVAMP_S1_CURIOUS",
+      "effect": {
+        "npc_add_trait": "lonevamp_s1_her"
+      },
+      "condition": {
+        "not": {
+          "npc_has_trait": "lonevamp_s1_her"
+        }
+      }
+    },
+    {
+      "text": "她的伤口？",
+      "topic": "BGSS_LONEVAMP_S1_WOUND",
+      "effect": {
+        "npc_add_trait": "lonevamp_s1_wound"
+      },
+      "condition": {
+        "not": {
+          "npc_has_trait": "lonevamp_s1_wound"
+        }
+      }
+    },
+    {
+      "text": "<done_conversation_section>",
+      "topic": "TALK_FRIEND"
+    },
+    {
+      "text": "<end_talking>",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

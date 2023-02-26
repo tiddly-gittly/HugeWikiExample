@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→kelvinist_flamebreath
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kelvinist_flamebreath|http://cdda.aloxaf.cn/search?q=kelvinist_flamebreath]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/kelvinist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kelvinist_flamebreath",
+  "type": "SPELL",
+  "name": {
+    "str": "Flamebreath"
+  },
+  "description": "This spell ignites dust scattered in the air, creating a cone of flame.  The hot ashes can cling to targets, causing additional burns over time.",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "CONCENTRATE",
+    "IGNITE_FLAMMABLE"
+  ],
+  "components": "spell_components_flamebreath",
+  "max_level": 15,
+  "min_damage": 25,
+  "max_damage": 67,
+  "damage_increment": 2,
+  "min_dot": 2,
+  "max_dot": 7,
+  "dot_increment": 0.3,
+  "min_duration": 400,
+  "max_duration": 1500,
+  "duration_increment": 60,
+  "min_range": 5,
+  "max_range": 18,
+  "range_increment": 0.7,
+  "min_aoe": 15,
+  "max_aoe": 45,
+  "aoe_increment": 1.5,
+  "spell_class": "KELVINIST",
+  "base_casting_time": 150,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "difficulty": 5,
+  "damage_type": "heat"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kelvinist_flamebreath",
+  "type": "SPELL",
+  "name": {
+    "str": "火焰吐息"
+  },
+  "description": "这个法术点燃散布在空气中的尘埃，释放出一个火焰锥。炽热的灰烬会附着在目标身上，并随着时间的推移造成更多灼伤。",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "CONCENTRATE",
+    "IGNITE_FLAMMABLE"
+  ],
+  "components": "spell_components_flamebreath",
+  "max_level": 15,
+  "min_damage": 25,
+  "max_damage": 67,
+  "damage_increment": 2,
+  "min_dot": 2,
+  "max_dot": 7,
+  "dot_increment": 0.3,
+  "min_duration": 400,
+  "max_duration": 1500,
+  "duration_increment": 60,
+  "min_range": 5,
+  "max_range": 18,
+  "range_increment": 0.7,
+  "min_aoe": 15,
+  "max_aoe": 45,
+  "aoe_increment": 1.5,
+  "spell_class": "KELVINIST",
+  "base_casting_time": 150,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "difficulty": 5,
+  "damage_type": "heat"
+}
+```
+

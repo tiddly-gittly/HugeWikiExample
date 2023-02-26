@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_SPIDER_NOTOK
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_SPIDER_NOTOK|http://cdda.aloxaf.cn/search?q=SECRO_SPIDER_NOTOK]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_SPIDER_NOTOK",
+  "name": {
+    "str": "Deformed Arachnid Limbs"
+  },
+  "points": -7,
+  "visibility": 6,
+  "ugliness": 8,
+  "valid": false,
+  "description": "Your extra limbs became twisted and malformed, which slightly affects the movements of your arms. They removed your permanent dex, increased your torsal encumberance by 15 and a drastic reduction to its basic modifiers.",
+  "types": [
+    "HANDS"
+  ],
+  "prereqs": [
+    "SECRO_SPIDER_OK"
+  ],
+  "encumbrance_always": [
+    [
+      "torso",
+      15
+    ]
+  ],
+  "encumbrance_covered": [
+    [
+      "torso",
+      45
+    ]
+  ],
+  "attackcost_modifier": 0.975,
+  "movecost_obstacle_modifier": 0.975,
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_SPIDER_NOTOK",
+  "name": {
+    "str": "畸形的蛛网膜肢体"
+  },
+  "points": -7,
+  "visibility": 6,
+  "ugliness": 8,
+  "valid": false,
+  "description": "你多余的四肢扭曲变形，这会轻微影响你手臂的运动。他们移除了你的永久性dex，增加了你的躯体累赘15，并大幅减少了它的基本修正值。",
+  "types": [
+    "HANDS"
+  ],
+  "prereqs": [
+    "SECRO_SPIDER_OK"
+  ],
+  "encumbrance_always": [
+    [
+      "torso",
+      15
+    ]
+  ],
+  "encumbrance_covered": [
+    [
+      "torso",
+      45
+    ]
+  ],
+  "attackcost_modifier": 0.975,
+  "movecost_obstacle_modifier": 0.975,
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

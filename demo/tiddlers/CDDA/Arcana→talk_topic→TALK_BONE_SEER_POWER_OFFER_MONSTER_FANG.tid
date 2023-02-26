@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BONE_SEER_POWER_OFFER_MONSTER_FANG
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BONE_SEER_POWER_OFFER_MONSTER_FANG|http://cdda.aloxaf.cn/search?q=TALK_BONE_SEER_POWER_OFFER_MONSTER_FANG]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BONE_SEER.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BONE_SEER_POWER_OFFER_MONSTER_FANG",
+  "dynamic_line": "Ivory, more transient and fleeting than bones, but aligned all the same.  I can hear the whispered verses though, this thing sings with a resonance I've never heard before.  If there is any truth to the strange things you've said, I must find out for myself.  Please, I don't think I can repay you properly for this, but would you be willing to part with that?",
+  "responses": [
+    {
+      "text": "Go ahead.  It's yours.",
+      "effect": [
+        {
+          "u_consume_item": "monster_fang"
+        },
+        {
+          "u_add_var": "gave_monsterpart",
+          "type": "dialogue",
+          "context": "beyond",
+          "value": "yes"
+        }
+      ],
+      "topic": "TALK_BONE_SEER_POWER_STUDY"
+    },
+    {
+      "text": "I can't part with it just yet.  I'm sorry.",
+      "topic": "TALK_BONE_SEER_POWER_REFUSAL"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BONE_SEER_POWER_OFFER_MONSTER_FANG",
+  "dynamic_line": "象牙，比骨头更短也更短暂，却排列的整整齐齐。我能听到其中低吟的诗句，这首歌的共鸣是我从未听过的。如果你所说的那些怪话有道理的话，我必须亲自去查证。我想我没办法报答这份恩情，但能请你割爱与我吗？",
+  "responses": [
+    {
+      "text": "拿着吧，你的了。",
+      "effect": [
+        {
+          "u_consume_item": "monster_fang"
+        },
+        {
+          "u_add_var": "gave_monsterpart",
+          "type": "dialogue",
+          "context": "beyond",
+          "value": "yes"
+        }
+      ],
+      "topic": "TALK_BONE_SEER_POWER_STUDY"
+    },
+    {
+      "text": "我现在还不能与它分开。对不起。",
+      "topic": "TALK_BONE_SEER_POWER_REFUSAL"
+    }
+  ]
+}
+```
+

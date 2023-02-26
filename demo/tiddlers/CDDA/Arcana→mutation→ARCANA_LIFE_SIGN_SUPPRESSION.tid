@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_LIFE_SIGN_SUPPRESSION
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_LIFE_SIGN_SUPPRESSION|http://cdda.aloxaf.cn/search?q=ARCANA_LIFE_SIGN_SUPPRESSION]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_other.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_LIFE_SIGN_SUPPRESSION",
+  "name": {
+    "str": "Life Sign Suppression"
+  },
+  "points": 99,
+  "valid": false,
+  "player_display": false,
+  "description": "Undead are currently unable to detect you, increased aggression from natural wildlife.",
+  "ignored_by": [
+    "ZOMBIE"
+  ],
+  "anger_relations": [
+    [
+      "ZOMBIE",
+      -95
+    ],
+    [
+      "MAMMAL",
+      25
+    ],
+    [
+      "BIRD",
+      25
+    ]
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_LIFE_SIGN_SUPPRESSION",
+  "name": {
+    "str": "生命体征抑制"
+  },
+  "points": 99,
+  "valid": false,
+  "player_display": false,
+  "description": "不死生物目前无法侦测到你，来自自然野生动物的攻击性增加。",
+  "ignored_by": [
+    "ZOMBIE"
+  ],
+  "anger_relations": [
+    [
+      "ZOMBIE",
+      -95
+    ],
+    [
+      "MAMMAL",
+      25
+    ],
+    [
+      "BIRD",
+      25
+    ]
+  ]
+}
+```
+

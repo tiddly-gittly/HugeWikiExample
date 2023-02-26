@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_item_bloodessence
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_item_bloodessence|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_item_bloodessence]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_itemvalidation.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_bloodessence",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "I will give you 1 token for every 8 blood essences you bring to me.",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "I will give you 265$ for every 8 blood essences you bring to me.",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "I will give you 90$ for every 8 blood essences you bring to me.",
+        "no": "I will give you 55$ and 1 token for every 8 blood essences you bring to me."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Okay...",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeribloodessenceval"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_bloodessence",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "你每给我带来8种血精，我就给你1个代币。",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "你每带8个猩血源质给我，我会付你265美元作为报酬。",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "你每带8个猩血源质给我，我会付你90美元作为报酬。",
+        "no": "你每带8个猩血源质给我，我会付你55美元和一个代币作为报酬。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "好吧……",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeribloodessenceval"
+      }
+    }
+  ]
+}
+```
+

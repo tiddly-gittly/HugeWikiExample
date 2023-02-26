@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: technique secronom_lore_expansion
+title: secronom_lore_expansion→technique→tec_secro_morph_tents_strike
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_secro_morph_tents_strike|http://cdda.aloxaf.cn/search?q=tec_secro_morph_tents_strike]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_tents_strike",
+  "name": "Strike",
+  "messages": [
+    "Your tentacles strike %s",
+    "<npcname>'s tentacles strike %s",
+    "Your tentacles slap at %s",
+    "<npcname>'s tentacles slap at %s",
+    "Your tentacles hit %s",
+    "<npcname>'s tentacles hit %s"
+  ],
+  "weighting": 2,
+  "melee_allowed": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.9
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 0.9
+    }
+  ],
+  "description": "-10% bash, -10% movecost",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_tents_strike",
+  "name": "罢工",
+  "messages": [
+    "你的触手击打%s",
+    "<npcname>的触须打击了%s",
+    "你的触手拍打%s",
+    "<npcname>的触须拍击了%s",
+    "你的触角击中了%s",
+    "<npcname>的触须击中了%s"
+  ],
+  "weighting": 2,
+  "melee_allowed": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.9
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 0.9
+    }
+  ],
+  "description": "-10% 钝击，-30% 移动耗时",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+

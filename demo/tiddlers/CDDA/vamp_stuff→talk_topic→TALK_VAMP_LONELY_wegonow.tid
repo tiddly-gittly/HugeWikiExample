@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_LONELY_wegonow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_LONELY_wegonow|http://cdda.aloxaf.cn/search?q=TALK_VAMP_LONELY_wegonow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Isolated/v_lo_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_LONELY_wegonow",
+  "type": "talk_topic",
+  "dynamic_line": "Do not bring me to my death. I will leave MY territory and expect benefits believing in you.",
+  "responses": [
+    {
+      "text": "I promise...",
+      "trial": {
+        "type": "NONE"
+      },
+      "success": {
+        "effect": "follow",
+        "opinion": {
+          "trust": 3,
+          "fear": -10,
+          "value": 2,
+          "anger": -5
+        },
+        "topic": "TALK_DONE"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_LONELY_wegonow",
+  "type": "talk_topic",
+  "dynamic_line": "别把我带向死亡。我将离开我的领土，希望跟着你能有好处。",
+  "responses": [
+    {
+      "text": "我承诺我会的。。",
+      "trial": {
+        "type": "NONE"
+      },
+      "success": {
+        "effect": "follow",
+        "opinion": {
+          "trust": 3,
+          "fear": -10,
+          "value": 2,
+          "anger": -5
+        },
+        "topic": "TALK_DONE"
+      }
+    }
+  ]
+}
+```
+

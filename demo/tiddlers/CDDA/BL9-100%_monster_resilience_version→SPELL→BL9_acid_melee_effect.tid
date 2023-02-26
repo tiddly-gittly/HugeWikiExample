@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→SPELL→BL9_acid_melee_effect
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_acid_melee_effect|http://cdda.aloxaf.cn/search?q=BL9_acid_melee_effect]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_spell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_acid_melee_effect",
+  "type": "SPELL",
+  "name": {
+    "str": "BL9 Acid Targeted Emission"
+  },
+  "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'Item emits extremely corrosive stream of BL9 wildly at their target'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "affected_body_parts": [
+    "head",
+    "arm_l",
+    "arm_r",
+    "torso",
+    "leg_l",
+    "leg_r"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 24,
+  "max_damage": 25,
+  "min_range": 3,
+  "max_range": 5,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "damage_type": "acid"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_acid_melee_effect",
+  "type": "SPELL",
+  "name": {
+    "str": "BL9酸靶向排放"
+  },
+  "description": "由物品施法。如果你看到了这个，那就改读这篇：\n'物品在目标处释放出极具腐蚀性的BL9流'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "affected_body_parts": [
+    "head",
+    "arm_l",
+    "arm_r",
+    "torso",
+    "leg_l",
+    "leg_r"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 24,
+  "max_damage": 25,
+  "min_range": 3,
+  "max_range": 5,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "damage_type": "acid"
+}
+```
+

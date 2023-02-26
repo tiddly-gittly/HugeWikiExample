@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→COMESTIBLE→bird_smoked
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bird_smoked|http://cdda.aloxaf.cn/search?q=bird_smoked]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/comestibles/thex_carnivore.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bird_smoked",
+  "type": "COMESTIBLE",
+  "name": {
+    "str_sp": "smoked bird meat"
+  },
+  "copy-from": "bird_cooked",
+  "description": "Bird meat that has been heavily smoked for long term preservation.  It could be further smoked to dehydrate it completely.",
+  "price_postapoc": 200,
+  "color": "brown",
+  "delete": {
+    "use_action": [
+      "POISON"
+    ]
+  },
+  "fun": 6,
+  "smoking_result": "bird_dry",
+  "spoils_in": "24 days",
+  "flags": [
+    "EATEN_HOT",
+    "SMOKED",
+    "SMOKABLE"
+  ],
+  "//": "I don't know if chicken can be smoked and be safe for consumption, I've never heard of it, but it can be done according to USDA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bird_smoked",
+  "type": "COMESTIBLE",
+  "name": {
+    "str_sp": "smoked bird meat"
+  },
+  "copy-from": "bird_cooked",
+  "description": "Bird meat that has been heavily smoked for long term preservation.  It could be further smoked to dehydrate it completely.",
+  "price_postapoc": 200,
+  "color": "brown",
+  "delete": {
+    "use_action": [
+      "POISON"
+    ]
+  },
+  "fun": 6,
+  "smoking_result": "bird_dry",
+  "spoils_in": "24 days",
+  "flags": [
+    "EATEN_HOT",
+    "SMOKED",
+    "SMOKABLE"
+  ],
+  "//": "I don't know if chicken can be smoked and be safe for consumption, I've never heard of it, but it can be done according to USDA"
+}
+```
+

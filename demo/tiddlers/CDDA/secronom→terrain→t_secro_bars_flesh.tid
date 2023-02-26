@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_bars_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_bars_flesh|http://cdda.aloxaf.cn/search?q=t_secro_bars_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_bars_flesh",
+  "name": "fleshed metal bars",
+  "description": "Heavy bars overrun by the flesh. Nearly impenetrable due to the thick veins covering it.",
+  "symbol": "\"",
+  "color": "red",
+  "move_cost": 0,
+  "flags": [
+    "TRANSPARENT",
+    "NOITEM",
+    "PERMEABLE",
+    "CONNECT_TO_WALL",
+    "THIN_OBSTACLE",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_bars"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_bars_flesh",
+  "name": "血肉金属杆",
+  "description": "被血肉堆压得满满当当的粗铁条。由于其覆盖着厚厚的肉质血管，几乎无法穿透",
+  "symbol": "\"",
+  "color": "red",
+  "move_cost": 0,
+  "flags": [
+    "TRANSPARENT",
+    "NOITEM",
+    "PERMEABLE",
+    "CONNECT_TO_WALL",
+    "THIN_OBSTACLE",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_bars"
+  }
+}
+```
+

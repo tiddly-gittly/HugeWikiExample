@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: GENERIC vamp_stuff
+title: vamp_stuff→GENERIC→crypt_map
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：crypt_map|http://cdda.aloxaf.cn/search?q=crypt_map]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Locations/-Essentials/v_locationmap.json
+
+
+!! 原文
+
+```json
+{
+  "id": "crypt_map",
+  "type": "GENERIC",
+  "category": "maps",
+  "name": {
+    "str": "crypt map"
+  },
+  "description": "This odd, hand drawn map points the crypts in its range. There's no actual road going there, but it's an enough information for you.",
+  "weight": "30 g",
+  "volume": "250 ml",
+  "price": "0 cent",
+  "to_hit": -1,
+  "material": [
+    "paper"
+  ],
+  "symbol": "#",
+  "color": "red",
+  "use_action": {
+    "type": "reveal_map",
+    "radius": 180,
+    "terrain": [
+      "crypt1",
+      "crypt2"
+    ],
+    "message": "You add the Crypt(s) to your map."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "crypt_map",
+  "type": "GENERIC",
+  "category": "maps",
+  "name": {
+    "str": "教堂地图"
+  },
+  "description": "这张奇怪的手绘地图指出了其范围内的地穴。那里没有真正的道路，但这对你来说已经足够了。",
+  "weight": "30 g",
+  "volume": "250 ml",
+  "price": "0 cent",
+  "to_hit": -1,
+  "material": [
+    "paper"
+  ],
+  "symbol": "#",
+  "color": "red",
+  "use_action": {
+    "type": "reveal_map",
+    "radius": 180,
+    "terrain": [
+      "crypt1",
+      "crypt2"
+    ],
+    "message": "你将教堂的地址添加到地图中。"
+  }
+}
+```
+

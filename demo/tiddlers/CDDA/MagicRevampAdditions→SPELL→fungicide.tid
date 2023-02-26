@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→fungicide
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fungicide|http://cdda.aloxaf.cn/search?q=fungicide]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/druid.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fungicide",
+  "type": "SPELL",
+  "name": {
+    "str": "Kill Fungus"
+  },
+  "description": "Kills fungus affected areas",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "ter_transform",
+  "effect_str": "fungicide",
+  "shape": "blast",
+  "min_aoe": 5,
+  "max_aoe": 35,
+  "aoe_increment": 1,
+  "max_level": 30,
+  "difficulty": 4,
+  "energy_source": "MANA",
+  "base_energy_cost": 175,
+  "base_casting_time": 550,
+  "flags": [
+    "CONCENTRATE",
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS",
+    "NO_HANDS",
+    "NO_PROJECTILE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fungicide",
+  "type": "SPELL",
+  "name": {
+    "str": "真菌杀手"
+  },
+  "description": "消灭一片区域中的真菌感染。",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "ter_transform",
+  "effect_str": "fungicide",
+  "shape": "blast",
+  "min_aoe": 5,
+  "max_aoe": 35,
+  "aoe_increment": 1,
+  "max_level": 30,
+  "difficulty": 4,
+  "energy_source": "MANA",
+  "base_energy_cost": 175,
+  "base_casting_time": 550,
+  "flags": [
+    "CONCENTRATE",
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS",
+    "NO_HANDS",
+    "NO_PROJECTILE"
+  ]
+}
+```
+

@@ -1,0 +1,231 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→moonstone_fang
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：moonstone_fang|http://cdda.aloxaf.cn/search?q=moonstone_fang]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "moonstone_fang",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "moonstone fang"
+  },
+  "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  Wielding it grant a minor life-draining touch and potentially blind attackers with magic, but it can sicken body and mind.  Activating it will additionally harden the body against cold, draining essence over time.",
+  "weight": "160 g",
+  "volume": "1500 ml",
+  "longest_side": "30 cm",
+  "//": "And the third shrine item, also post-cata only.",
+  "price_postapoc": "100 USD",
+  "to_hit": 2,
+  "bashing": 3,
+  "cutting": 18,
+  "material": [
+    "stone"
+  ],
+  "symbol": "/",
+  "looks_like": "small_relic",
+  "repairs_like": "blood_athame",
+  "color": "dark_gray",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 10
+      }
+    }
+  ],
+  "ammo": "essence_type",
+  "techniques": [
+    "RAPID",
+    "DEF_DISARM"
+  ],
+  "qualities": [
+    [
+      "BUTCHER",
+      6
+    ]
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life",
+            "once_in": 5
+          },
+          {
+            "id": "arcana_react_moonstone_touch",
+            "once_in": 10
+          }
+        ],
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_shadowy_shield",
+            "once_in": 5,
+            "message": "Wisps of shadow lash out at %2$s",
+            "npc_message": "Wisps of shadow jump from %1$s to %2$s."
+          }
+        ]
+      },
+      {
+        "has": "WIELD",
+        "condition": "ACTIVE",
+        "values": [
+          {
+            "value": "ARMOR_COLD",
+            "multiply": -0.5
+          }
+        ],
+        "ench_effects": [
+          {
+            "effect": "cold_ward",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": {
+    "target": "moonstone_fang_on",
+    "msg": "The carvings in the stone glow blue for a brief moment, and an uncomfortable warmth spreads through your body.",
+    "active": true,
+    "need_worn": true,
+    "need_charges": 1,
+    "need_charges_msg": "Essence shall draw out the fang's protective magic.",
+    "menu_text": "Activate ward against cold",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "flags": [
+    "STAB",
+    "SHEATH_KNIFE",
+    "TRADER_KEEP_EQUIPPED"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "moonstone_fang",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "月光石尖牙"
+  },
+  "description": "一种由白色乳白色宝石制成的短而弯曲的尖刺，上面雕刻着丰富的旋转蛇形图案。使用它可以获得轻微的消耗生命的接触和潜在的致盲魔法，但它可以使身体和精神生病。激活它会使身体更加坚硬，抵御寒冷，随着时间的推移，精华会逐渐流失。",
+  "weight": "160 g",
+  "volume": "1500 ml",
+  "longest_side": "30 cm",
+  "//": "And the third shrine item, also post-cata only.",
+  "price_postapoc": "100 USD",
+  "to_hit": 2,
+  "bashing": 3,
+  "cutting": 18,
+  "material": [
+    "stone"
+  ],
+  "symbol": "/",
+  "looks_like": "small_relic",
+  "repairs_like": "blood_athame",
+  "color": "dark_gray",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 10
+      }
+    }
+  ],
+  "ammo": "essence_type",
+  "techniques": [
+    "RAPID",
+    "DEF_DISARM"
+  ],
+  "qualities": [
+    [
+      "BUTCHER",
+      6
+    ]
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life",
+            "once_in": 5
+          },
+          {
+            "id": "arcana_react_moonstone_touch",
+            "once_in": 10
+          }
+        ],
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_shadowy_shield",
+            "once_in": 5,
+            "message": "在 %2$s 有一缕阴影突然出现",
+            "npc_message": "一缕影子从 %1$s 跳到 %2$s。"
+          }
+        ]
+      },
+      {
+        "has": "WIELD",
+        "condition": "ACTIVE",
+        "values": [
+          {
+            "value": "ARMOR_COLD",
+            "multiply": -0.5
+          }
+        ],
+        "ench_effects": [
+          {
+            "effect": "cold_ward",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": {
+    "target": "moonstone_fang_on",
+    "msg": "石头上的雕刻瞬间发出蓝色的光芒，一种令人不适的暖意在你身上蔓延。",
+    "active": true,
+    "need_worn": true,
+    "need_charges": 1,
+    "need_charges_msg": "精髓会引出毒牙的保护魔法。",
+    "menu_text": "激活御寒结界",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "flags": [
+    "STAB",
+    "SHEATH_KNIFE",
+    "TRADER_KEEP_EQUIPPED"
+  ]
+}
+```
+

@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_ichthyosaurus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_ichthyosaurus|http://cdda.aloxaf.cn/search?q=mon_ichthyosaurus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_reptile.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_ichthyosaurus",
+  "type": "MONSTER",
+  "name": {
+    "str": "ichthyosaurus",
+    "str_pl": "ichthyosaurus"
+  },
+  "description": "An animal you could mistake for a dolphin if it wasn't for some key differences.  The first one are the eyes, huge, piercing eyes coverered by sclerotic rings you feel are tracking several things at once, you included.  The second are the serrated jaws, reminding you of crocodiles and the stereotypical dinosaur.  The third are the fins, with the caudal fin being vertical, and the dorsal fin being somewhat small.",
+  "volume": "165 L",
+  "weight": "165 kg",
+  "default_faction": "touhou_reptile_marine_large",
+  "bodytype": "fish",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "REPTILE"
+  ],
+  "harvest": "reptile_marine_harvest",
+  "hp": 175,
+  "speed": 200,
+  "material": [
+    "flesh"
+  ],
+  "color": "light_blue",
+  "symbol": "I",
+  "aggression": 10,
+  "morale": 25,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 3,
+  "armor_stab": 4,
+  "reproduction": {
+    "baby_monster": "mon_ichthyosaurus_baby",
+    "baby_count": 1,
+    "baby_timer": 20
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT",
+    "PLAYER_NEAR_BABY"
+  ],
+  "fear_triggers": [
+    "FRIEND_DIED"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      100
+    ],
+    [
+      "PARROT",
+      12
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "AQUATIC",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WARM",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Ichthyosaurus communis used as reference. Don't know if they had vocalizations but that's how I imagine them to be",
+  "//2": "Coprolites include fish and squid, and the big characteristic eyes indicate it could hunt in low light conditions, with great depths included"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_ichthyosaurus",
+  "type": "MONSTER",
+  "name": {
+    "str": "ichthyosaurus",
+    "str_pl": "ichthyosaurus"
+  },
+  "description": "An animal you could mistake for a dolphin if it wasn't for some key differences.  The first one are the eyes, huge, piercing eyes coverered by sclerotic rings you feel are tracking several things at once, you included.  The second are the serrated jaws, reminding you of crocodiles and the stereotypical dinosaur.  The third are the fins, with the caudal fin being vertical, and the dorsal fin being somewhat small.",
+  "volume": "165 L",
+  "weight": "165 kg",
+  "default_faction": "touhou_reptile_marine_large",
+  "bodytype": "fish",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "REPTILE"
+  ],
+  "harvest": "reptile_marine_harvest",
+  "hp": 175,
+  "speed": 200,
+  "material": [
+    "flesh"
+  ],
+  "color": "light_blue",
+  "symbol": "I",
+  "aggression": 10,
+  "morale": 25,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 3,
+  "armor_stab": 4,
+  "reproduction": {
+    "baby_monster": "mon_ichthyosaurus_baby",
+    "baby_count": 1,
+    "baby_timer": 20
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT",
+    "PLAYER_NEAR_BABY"
+  ],
+  "fear_triggers": [
+    "FRIEND_DIED"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      100
+    ],
+    [
+      "PARROT",
+      12
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "AQUATIC",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WARM",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Ichthyosaurus communis used as reference. Don't know if they had vocalizations but that's how I imagine them to be",
+  "//2": "Coprolites include fish and squid, and the big characteristic eyes indicate it could hunt in low light conditions, with great depths included"
+}
+```
+

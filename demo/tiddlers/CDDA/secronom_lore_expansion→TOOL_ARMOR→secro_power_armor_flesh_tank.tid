@@ -1,0 +1,273 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_flesh_tank
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_flesh_tank|http://cdda.aloxaf.cn/search?q=secro_power_armor_flesh_tank]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armors.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_flesh_tank",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "flesh vessel \"Juggernaut\""
+  },
+  "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel (Juggernaut)\" is a conglomeration of bones and flesh, and an outcome of prolonged mutations. With bone plates covering the entirety of its surface, it is suited for frontline assaults. Like any other vessel types, it requires the wearer to feed it with flesh.\n\nSecronom exoskeleton type \"Vessel (Juggernaut)\" provides:\n<color_white>Strength: <color_light_green>+4</color>\nMaximum health: <color_light_green>+12.5%</color>\nSpeed: <color_red>-5%</color>\nMovecost: <color_red>+7.5%</color>\nMetabolism: <color_light_green>-7.5%</color></color>",
+  "weight": "26400 g",
+  "volume": "30 L",
+  "price": "323000 USD",
+  "price_postapoc": "3000 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_light",
+  "color": "light_red_yellow",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 100
+      }
+    }
+  ],
+  "warmth": 30,
+  "power_armor": true,
+  "charges_per_use": 10,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 4
+          },
+          {
+            "value": "MOVE_COST",
+            "multiply": 0.075
+          },
+          {
+            "value": "SPEED",
+            "multiply": -0.05
+          },
+          {
+            "value": "MAX_HP",
+            "multiply": 0.125
+          },
+          {
+            "value": "METABOLISM",
+            "multiply": -0.075
+          }
+        ]
+      }
+    ]
+  },
+  "qualities": [
+    [
+      "GLARE",
+      1
+    ],
+    [
+      "SECRO_FLESH_MORPHING",
+      1
+    ],
+    [
+      "SECRO_FLESH_REFORMING",
+      1
+    ]
+  ],
+  "flags": [
+    "NO_TAKEOFF",
+    "WATERPROOF",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "SUN_GLASSES",
+    "OVERSIZE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 60,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r",
+        "head",
+        "eyes",
+        "mouth"
+      ],
+      "material": [
+        "secro_flesh_reinforced"
+      ],
+      "material_thickness": 13,
+      "environmental_protection": 8
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_flesh_tank",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "脉管装甲-“巨像型”"
+  },
+  "description": "一种利用最新研究成果制造出来的合成战斗服。Secronom外骨骼型号“脉管（巨像型）”是一个血肉与骨骼的集合体，是一种长期变异的结果。骨板覆盖了它整个表面，也因而非常适用于前线冲锋。像所有其他脉管装甲一样，它需要佩戴者用血肉来喂养它。\n\n Secronom外骨骼类型“脉管 （巨像型）”提供：\n <color_white>力量：<color_light_green> +4 </color>\n最大生命值：<color_light_green>+12.5% </color>\n速度：<color_red> -5%</color>\n移动消耗：<color_red>+7.5%</color>\n新陈代谢：<color_light_green>-7.5% </color> </color>",
+  "weight": "26400 g",
+  "volume": "30 L",
+  "price": "323000 USD",
+  "price_postapoc": "3000 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_light",
+  "color": "light_red_yellow",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 100
+      }
+    }
+  ],
+  "warmth": 30,
+  "power_armor": true,
+  "charges_per_use": 10,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 4
+          },
+          {
+            "value": "MOVE_COST",
+            "multiply": 0.075
+          },
+          {
+            "value": "SPEED",
+            "multiply": -0.05
+          },
+          {
+            "value": "MAX_HP",
+            "multiply": 0.125
+          },
+          {
+            "value": "METABOLISM",
+            "multiply": -0.075
+          }
+        ]
+      }
+    ]
+  },
+  "qualities": [
+    [
+      "GLARE",
+      1
+    ],
+    [
+      "SECRO_FLESH_MORPHING",
+      1
+    ],
+    [
+      "SECRO_FLESH_REFORMING",
+      1
+    ]
+  ],
+  "flags": [
+    "NO_TAKEOFF",
+    "WATERPROOF",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "SUN_GLASSES",
+    "OVERSIZE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 60,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r",
+        "head",
+        "eyes",
+        "mouth"
+      ],
+      "material": [
+        "secro_flesh_reinforced"
+      ],
+      "material_thickness": 13,
+      "environmental_protection": 8
+    }
+  ]
+}
+```
+

@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_elemental_burst_wonder
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_elemental_burst_wonder|http://cdda.aloxaf.cn/search?q=arcana_magic_elemental_burst_wonder]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_aftermath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_elemental_burst_wonder",
+  "type": "SPELL",
+  "name": {
+    "str": "Elemental Burst Wonder"
+  },
+  "description": "This chooses which set of side effects to use.",
+  "message": "",
+  "effect": "attack",
+  "shape": "cone",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_elemental_burst_water",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_elemental_burst_fire",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_elemental_burst_wind",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_elemental_burst_earth",
+      "hit_self": false,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SILENT",
+    "WONDER"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 8,
+  "max_range": 16,
+  "range_increment": 0.8,
+  "min_aoe": 10,
+  "max_aoe": 20,
+  "aoe_increment": 1,
+  "max_level": 10
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_elemental_burst_wonder",
+  "type": "SPELL",
+  "name": {
+    "str": "Elemental Burst Wonder"
+  },
+  "description": "This chooses which set of side effects to use.",
+  "message": "",
+  "effect": "attack",
+  "shape": "cone",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_elemental_burst_water",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_elemental_burst_fire",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_elemental_burst_wind",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_elemental_burst_earth",
+      "hit_self": false,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SILENT",
+    "WONDER"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 8,
+  "max_range": 16,
+  "range_increment": 0.8,
+  "min_aoe": 10,
+  "max_aoe": 20,
+  "aoe_increment": 1,
+  "max_level": 10
+}
+```
+

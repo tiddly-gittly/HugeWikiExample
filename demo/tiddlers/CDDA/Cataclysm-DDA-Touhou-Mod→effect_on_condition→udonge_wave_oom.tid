@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→effect_on_condition→udonge_wave_oom
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：udonge_wave_oom|http://cdda.aloxaf.cn/search?q=udonge_wave_oom]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spell_eocs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "udonge_wave_oom",
+  "type": "effect_on_condition",
+  "condition": {
+    "compare_int": [
+      {
+        "u_val": "mana"
+      },
+      "<=",
+      {
+        "const": 49
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "You are too mentally exhausted!  You lose focus of the wavelengths.",
+      "type": "mixed"
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_waveinsight"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "u_lose_effect": "udonge_insight"
+    },
+    {
+      "u_lose_effect": "udonge_mfortitude"
+    },
+    {
+      "u_lose_effect": "udonge_perception"
+    },
+    {
+      "u_lose_effect": "udonge_stealth"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "udonge_wave_oom",
+  "type": "effect_on_condition",
+  "condition": {
+    "compare_int": [
+      {
+        "u_val": "mana"
+      },
+      "<=",
+      {
+        "const": 49
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "You are too mentally exhausted!  You lose focus of the wavelengths.",
+      "type": "mixed"
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_waveinsight"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "u_lose_effect": "udonge_insight"
+    },
+    {
+      "u_lose_effect": "udonge_mfortitude"
+    },
+    {
+      "u_lose_effect": "udonge_perception"
+    },
+    {
+      "u_lose_effect": "udonge_stealth"
+    }
+  ]
+}
+```
+

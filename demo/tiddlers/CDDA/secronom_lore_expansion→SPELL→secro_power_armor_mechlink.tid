@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→secro_power_armor_mechlink
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_mechlink|http://cdda.aloxaf.cn/search?q=secro_power_armor_mechlink]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_magic_bionics.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "secro_power_armor_mechlink",
+  "name": {
+    "str": "Mechsuit Link"
+  },
+  "description": "Your flesh vessel links itself with the Experimental Mech \"Flesh\". This doesn't bypasses military identification check.",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE",
+    "NO_FAIL"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_secro_fleshmech_unlink"
+  ],
+  "min_damage": 1000,
+  "max_damage": 1000,
+  "min_range": 1,
+  "max_range": 1,
+  "effect": "targeted_polymorph",
+  "shape": "blast",
+  "spell_class": "NONE",
+  "effect_str": "mon_secro_fleshmech"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "secro_power_armor_mechlink",
+  "name": {
+    "str": "机械套装链接"
+  },
+  "description": "你的肉体容器将自己与实验机械“肉体”连接起来。这不会绕过军事身份检查。",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE",
+    "NO_FAIL"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_secro_fleshmech_unlink"
+  ],
+  "min_damage": 1000,
+  "max_damage": 1000,
+  "min_range": 1,
+  "max_range": 1,
+  "effect": "targeted_polymorph",
+  "shape": "blast",
+  "spell_class": "NONE",
+  "effect_str": "mon_secro_fleshmech"
+}
+```
+

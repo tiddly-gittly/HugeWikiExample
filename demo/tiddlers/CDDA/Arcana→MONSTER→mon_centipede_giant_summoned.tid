@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_centipede_giant_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_centipede_giant_summoned|http://cdda.aloxaf.cn/search?q=mon_centipede_giant_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_centipede_giant_summoned",
+  "copy-from": "mon_centipede_giant",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned giant centipede"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "vision_day": 30,
+  "vision_night": 10,
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "upgrades": {},
+  "death_drops": {},
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_centipede_giant_summoned",
+  "copy-from": "mon_centipede_giant",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤巨型蜈蚣"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "vision_day": 30,
+  "vision_night": 10,
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "upgrades": {},
+  "death_drops": {},
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  }
+}
+```
+

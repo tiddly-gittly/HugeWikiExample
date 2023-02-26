@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_trap_lichhook
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_trap_lichhook|http://cdda.aloxaf.cn/search?q=arcana_trap_lichhook]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_trap.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_trap_lichhook",
+  "type": "SPELL",
+  "name": {
+    "str": "Trap: Sundering Flesh"
+  },
+  "description": "Ensnares and poisons a single target, half the effect of item version.",
+  "message": "Venomous tendrils erupt from the ground!",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_trap_lichhook_freeze",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_trap_lichhook_slow",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_trap_lichhook_poison",
+      "hit_self": false
+    }
+  ],
+  "effect_str": "badpoison",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_duration": 18000,
+  "max_duration": 24000,
+  "min_damage": 15,
+  "max_damage": 25,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "damage_type": "biological",
+  "field_id": "fd_gibs_flesh",
+  "field_chance": 2,
+  "min_field_intensity": 2,
+  "max_field_intensity": 2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_trap_lichhook",
+  "type": "SPELL",
+  "name": {
+    "str": "Trap: Sundering Flesh"
+  },
+  "description": "诱捕并毒害一个目标，物品版本效果的一半。",
+  "message": "剧毒的触手从地里冒了出来！",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_trap_lichhook_freeze",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_trap_lichhook_slow",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_trap_lichhook_poison",
+      "hit_self": false
+    }
+  ],
+  "effect_str": "badpoison",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_duration": 18000,
+  "max_duration": 24000,
+  "min_damage": 15,
+  "max_damage": 25,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "damage_type": "biological",
+  "field_id": "fd_gibs_flesh",
+  "field_chance": 2,
+  "min_field_intensity": 2,
+  "max_field_intensity": 2,
+  "field_intensity_variance": 0.5
+}
+```
+

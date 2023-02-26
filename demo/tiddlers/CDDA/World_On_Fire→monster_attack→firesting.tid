@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: monster_attack World_On_Fire
+title: World_On_Fire→monster_attack→firesting
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：firesting|http://cdda.aloxaf.cn/search?q=firesting]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "firesting",
+  "cooldown": 25,
+  "move_cost": 150,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 5,
+      "armor_penetration": 20,
+      "armor_multiplier": 0.5
+    }
+  ],
+  "body_parts": [
+    [
+      "head",
+      3
+    ],
+    [
+      "eyes",
+      2
+    ],
+    [
+      "mouth",
+      1
+    ],
+    [
+      "torso",
+      1
+    ],
+    [
+      "arm_l",
+      3
+    ],
+    [
+      "arm_r",
+      3
+    ],
+    [
+      "hand_l",
+      2
+    ],
+    [
+      "hand_r",
+      2
+    ],
+    [
+      "leg_l",
+      3
+    ],
+    [
+      "leg_r",
+      3
+    ],
+    [
+      "foot_l",
+      2
+    ],
+    [
+      "foot_r",
+      2
+    ]
+  ],
+  "effects": [
+    {
+      "id": "fstung",
+      "duration": 100
+    }
+  ],
+  "hit_dmg_u": "The %1$s stings you!",
+  "hit_dmg_npc": "The %1$s stings <npcname>!",
+  "no_dmg_msg_u": "The %1$s tries to sting you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "The %1$s tries to sting <npcname>, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "firesting",
+  "cooldown": 25,
+  "move_cost": 150,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 5,
+      "armor_penetration": 20,
+      "armor_multiplier": 0.5
+    }
+  ],
+  "body_parts": [
+    [
+      "head",
+      3
+    ],
+    [
+      "eyes",
+      2
+    ],
+    [
+      "mouth",
+      1
+    ],
+    [
+      "torso",
+      1
+    ],
+    [
+      "arm_l",
+      3
+    ],
+    [
+      "arm_r",
+      3
+    ],
+    [
+      "hand_l",
+      2
+    ],
+    [
+      "hand_r",
+      2
+    ],
+    [
+      "leg_l",
+      3
+    ],
+    [
+      "leg_r",
+      3
+    ],
+    [
+      "foot_l",
+      2
+    ],
+    [
+      "foot_r",
+      2
+    ]
+  ],
+  "effects": [
+    {
+      "id": "fstung",
+      "duration": 100
+    }
+  ],
+  "hit_dmg_u": "%1$s刺向你！",
+  "hit_dmg_npc": "%1$s刺向<npcname>！",
+  "no_dmg_msg_u": "%1$s试图刺向你，但未能穿透你的盔甲！",
+  "no_dmg_msg_npc": "%1$s试图刺向<npcname>，但未能穿透他们的装甲！"
+}
+```
+

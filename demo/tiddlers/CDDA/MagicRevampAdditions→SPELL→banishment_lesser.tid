@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→banishment_lesser
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：banishment_lesser|http://cdda.aloxaf.cn/search?q=banishment_lesser]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/animist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "banishment_lesser",
+  "type": "SPELL",
+  "name": {
+    "str": "Lesser Banishment"
+  },
+  "description": "Banish a monster to the lesser-known nether dimension.  If a monster is more powerful than you can handle, the spell drains your life force to make up the difference.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL"
+  ],
+  "effect": "banishment",
+  "shape": "blast",
+  "min_damage": 40,
+  "damage_increment": 10,
+  "max_damage": 435,
+  "min_range": 6,
+  "max_range": 6,
+  "base_energy_cost": 600,
+  "spell_class": "ANIMIST",
+  "difficulty": 9,
+  "max_level": 37,
+  "base_casting_time": 100,
+  "energy_source": "MANA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "banishment_lesser",
+  "type": "SPELL",
+  "name": {
+    "str": "次等放逐术"
+  },
+  "description": "把怪物放逐到鲜为人知的异界之中。如果怪物比你更强大，这个法术会消耗你的生命来弥补其中的差异。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL"
+  ],
+  "effect": "banishment",
+  "shape": "blast",
+  "min_damage": 40,
+  "damage_increment": 10,
+  "max_damage": 435,
+  "min_range": 6,
+  "max_range": 6,
+  "base_energy_cost": 600,
+  "spell_class": "ANIMIST",
+  "difficulty": 9,
+  "max_level": 37,
+  "base_casting_time": 100,
+  "energy_source": "MANA"
+}
+```
+

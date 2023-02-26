@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_gorepit_death
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_gorepit_death|http://cdda.aloxaf.cn/search?q=mon_zombie_gorepit_death]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_ondeath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_gorepit_death",
+  "type": "SPELL",
+  "name": {
+    "str": "Collapse"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's death removes all of its minions on the fields, and stops further spawning.'",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "eff_zombie_gorepit_spawnmore_stop",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_gorepit_deathmore",
+      "hit_self": true
+    }
+  ],
+  "min_aoe": 40,
+  "max_aoe": 40,
+  "min_duration": 1500,
+  "max_duration": 1500
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_gorepit_death",
+  "type": "SPELL",
+  "name": {
+    "str": "折叠"
+  },
+  "description": "怪物施法的咒语。如果你看到了这一点，那么请阅读这一条：\n“施法者之死将移除其在战场上的所有仆从，并停止进一步繁殖。”",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "eff_zombie_gorepit_spawnmore_stop",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_gorepit_deathmore",
+      "hit_self": true
+    }
+  ],
+  "min_aoe": 40,
+  "max_aoe": 40,
+  "min_duration": 1500,
+  "max_duration": 1500
+}
+```
+

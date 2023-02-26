@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: terrain nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→terrain→t_thconc_glass_port
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_thconc_glass_port|http://cdda.aloxaf.cn/search?q=t_thconc_glass_port]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Terrain/c_terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_thconc_glass_port",
+  "name": "concrete wall with glass port",
+  "description": "A plain, utilitarian concrete wall, with windows made of incredibly thick glass set in to allow viewing through.  Easily two or more inches thick and only a couple feet tall, breaking your way through this would not be easy.",
+  "symbol": "LINE_OXOX",
+  "looks_like": "t_reinforced_glass",
+  "color": "light_gray",
+  "move_cost": 0,
+  "coverage": 100,
+  "roof": "t_flat_roof",
+  "flags": [
+    "TRANSPARENT",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "WALL",
+    "AUTO_WALL_SYMBOL",
+    "MINEABLE",
+    "BLOCK_WIND"
+  ],
+  "bash": {
+    "str_min": 100,
+    "str_max": 250,
+    "sound": "crash!",
+    "sound_fail": "whump!",
+    "ter_set": "t_reb_cage",
+    "items": [
+      {
+        "item": "rock",
+        "count": [
+          8,
+          16
+        ]
+      },
+      {
+        "item": "glass_shard",
+        "count": [
+          4,
+          8
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_thconc_glass_port",
+  "name": "带玻璃孔的混凝土墙",
+  "description": "一面朴素而实用的混凝土墙，上面安装有带极其厚的玻璃窗户，可以透过窗户观看窗外。目测有两英寸或更厚，只有几英尺高，要突破这个阻碍可并不容易。",
+  "symbol": "LINE_OXOX",
+  "looks_like": "t_reinforced_glass",
+  "color": "light_gray",
+  "move_cost": 0,
+  "coverage": 100,
+  "roof": "t_flat_roof",
+  "flags": [
+    "TRANSPARENT",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "WALL",
+    "AUTO_WALL_SYMBOL",
+    "MINEABLE",
+    "BLOCK_WIND"
+  ],
+  "bash": {
+    "str_min": 100,
+    "str_max": 250,
+    "sound": "crash!",
+    "sound_fail": "whump!",
+    "ter_set": "t_reb_cage",
+    "items": [
+      {
+        "item": "rock",
+        "count": [
+          8,
+          16
+        ]
+      },
+      {
+        "item": "glass_shard",
+        "count": [
+          4,
+          8
+        ]
+      }
+    ]
+  }
+}
+```
+

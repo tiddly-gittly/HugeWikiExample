@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_castoroides
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_castoroides|http://cdda.aloxaf.cn/search?q=mon_castoroides]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_mammal.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_castoroides",
+  "type": "MONSTER",
+  "name": {
+    "str": "castoroides"
+  },
+  "copy-from": "mon_beaver",
+  "description": "A giant beaver.  The lack of a webbed tail makes it look more rodent than not.  The incisors are also bigger relative to their size, giving the animal an uncanny smile.",
+  "volume": "100 L",
+  "weight": "100 kg",
+  "harvest": "mammal_large_fur",
+  "hp": 105,
+  "speed": 105,
+  "symbol": "ř",
+  "looks_like": "mon_beaver",
+  "aggression": -10,
+  "morale": 30,
+  "melee_skill": 3,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 2,
+  "armor_cut": 3,
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_NEAR_BABY"
+  ],
+  "fear_triggers": [
+    "SOUND"
+  ],
+  "reproduction": {
+    "baby_monster": "mon_castoroides_cub",
+    "baby_count": 4,
+    "baby_timer": 150
+  },
+  "baby_flags": [
+    "WINTER"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      35
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "BASHES",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WARM",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Castoroides sp. taken as reference. No reproductive data",
+  "//2": "Would be cool for this to make mini-dungeons on their hypothetical giant dams. Btw there's no evidence these built dams like modern beavers"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_castoroides",
+  "type": "MONSTER",
+  "name": {
+    "str": "castoroides"
+  },
+  "copy-from": "mon_beaver",
+  "description": "A giant beaver.  The lack of a webbed tail makes it look more rodent than not.  The incisors are also bigger relative to their size, giving the animal an uncanny smile.",
+  "volume": "100 L",
+  "weight": "100 kg",
+  "harvest": "mammal_large_fur",
+  "hp": 105,
+  "speed": 105,
+  "symbol": "ř",
+  "looks_like": "mon_beaver",
+  "aggression": -10,
+  "morale": 30,
+  "melee_skill": 3,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 2,
+  "armor_cut": 3,
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_NEAR_BABY"
+  ],
+  "fear_triggers": [
+    "SOUND"
+  ],
+  "reproduction": {
+    "baby_monster": "mon_castoroides_cub",
+    "baby_count": 4,
+    "baby_timer": 150
+  },
+  "baby_flags": [
+    "WINTER"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      35
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "BASHES",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WARM",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Castoroides sp. taken as reference. No reproductive data",
+  "//2": "Would be cool for this to make mini-dungeons on their hypothetical giant dams. Btw there's no evidence these built dams like modern beavers"
+}
+```
+

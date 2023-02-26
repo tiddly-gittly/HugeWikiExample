@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: TOOL blazemod
+title: blazemod→TOOL→gray
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gray|http://cdda.aloxaf.cn/search?q=gray]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/tools/blob_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gray",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "gray mass"
+  },
+  "description": "This internal structures of this creature have developed significantly.  While retaining the resilience and malleability of its once simpler form, it has gained the considerable abilities of perception and stimulus response.  When directly threatened, it is able to shift and alter its microfibers, hardening its membrane to an almost steel-hard shell.  You can still pull it apart with enough force.  It's also really gray.",
+  "weight": "19120 g",
+  "volume": "15 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "ammo": [
+    "bfeed"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "bfeed": 250
+      }
+    }
+  ],
+  "charges_per_use": 250,
+  "qualities": [
+    [
+      "JACK",
+      8
+    ]
+  ],
+  "use_action": {
+    "target": "gray_act",
+    "msg": "You fumble as the blob starts to multiply rapidly!",
+    "target_charges": 3,
+    "active": true,
+    "moves": 250,
+    "type": "transform"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gray",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "灰色变形怪"
+  },
+  "description": "这个生物的内部结构相比原始形态产生了明显的进步。既保留了它原始形态的弹性和延展性，又进一步获得了可观的感知能力和刺激反应。当被直接威胁时，它能转变形态并改变体内的超细纤维、硬化外膜成为几乎如同钢铁一般坚硬的甲壳。你仍然可以用足够的力量把它拉开。而且颜色也变得特别灰。",
+  "weight": "19120 g",
+  "volume": "15 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "ammo": [
+    "bfeed"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "bfeed": 250
+      }
+    }
+  ],
+  "charges_per_use": 250,
+  "qualities": [
+    [
+      "JACK",
+      8
+    ]
+  ],
+  "use_action": {
+    "target": "gray_act",
+    "msg": "变形怪抱住你的手，开始快速繁殖起来，让你变得笨手笨脚。",
+    "target_charges": 3,
+    "active": true,
+    "moves": 250,
+    "type": "transform"
+  }
+}
+```
+

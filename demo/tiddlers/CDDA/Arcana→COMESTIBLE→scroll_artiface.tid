@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→scroll_artiface
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：scroll_artiface|http://cdda.aloxaf.cn/search?q=scroll_artiface]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "scroll_artiface",
+  "copy-from": "scroll_magic_base",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "divine scroll of command",
+    "str_pl": "divine scrolls of command"
+  },
+  "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind creatures to your will temporarily.  The sudden impact of projecting your mind outwards will painfully stun you, however.",
+  "price": "140 USD",
+  "price_postapoc": "50 USD",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_scroll_artifice",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "scroll_artiface",
+  "copy-from": "scroll_magic_base",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "神圣的指令卷轴",
+    "str_pl": "神圣的指令卷轴"
+  },
+  "description": "这是一个卷轴，上面有奇怪的文字和士兵的形象，代表着一个超自然的秩序神。使用它会尝试将生物暂时束缚在你的意志上。然而，将你的思想向外投射的突如其来的冲击会让你痛苦地眩晕。",
+  "price": "140 USD",
+  "price_postapoc": "50 USD",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_scroll_artifice",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+

@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→magic_sign_exertion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：magic_sign_exertion|http://cdda.aloxaf.cn/search?q=magic_sign_exertion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "magic_sign_exertion",
+  "name": [
+    "Magic Sign Exertion"
+  ],
+  "desc": [
+    "Overuse of Magic Signs increases fatigue gain."
+  ],
+  "apply_message": "You feel a slight sense of exertion from casting the spell.",
+  "remove_message": "The exertion of spellcasting fades from your mind.",
+  "rating": "bad",
+  "max_duration": "200 m",
+  "max_intensity": 200,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "fatigue_min": [
+      1
+    ],
+    "fatigue_tick": [
+      25
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "magic_sign_exertion",
+  "name": [
+    "Magic Sign Exertion"
+  ],
+  "desc": [
+    "过度使用魔法符号会增加疲劳增益。"
+  ],
+  "apply_message": "你感到施法引起的轻微劳累。",
+  "remove_message": "施法的耗能从你的脑海中消失。",
+  "rating": "bad",
+  "max_duration": "200 m",
+  "max_intensity": 200,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "fatigue_min": [
+      1
+    ],
+    "fatigue_tick": [
+      25
+    ]
+  }
+}
+```
+

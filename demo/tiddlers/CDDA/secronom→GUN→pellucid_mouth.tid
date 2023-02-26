@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: GUN secronom
+title: secronom→GUN→pellucid_mouth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：pellucid_mouth|http://cdda.aloxaf.cn/search?q=pellucid_mouth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_gun_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "pellucid_mouth",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "pellucid zombie's mouth"
+  },
+  "description": "An acid-dribbing mouth of a pellucid zombie. Spits concentrated acid.",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "NO_PENETRATE_OBSTACLES",
+    "SECRO_PELLUCID_SPIT"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 13,
+  "dispersion": 1000,
+  "ranged_damage": {
+    "damage_type": "acid",
+    "amount": 4
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "pellucid_mouth",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "透明丧尸的嘴"
+  },
+  "description": "一个透明丧尸滴酸的嘴，喷吐高浓度的酸液。",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "NO_PENETRATE_OBSTACLES",
+    "SECRO_PELLUCID_SPIT"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 13,
+  "dispersion": 1000,
+  "ranged_damage": {
+    "damage_type": "acid",
+    "amount": 4
+  }
+}
+```
+

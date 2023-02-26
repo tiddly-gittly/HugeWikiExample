@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_glossotherium
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_glossotherium|http://cdda.aloxaf.cn/search?q=mon_glossotherium]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_mammal.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_glossotherium",
+  "type": "MONSTER",
+  "name": {
+    "str": "glossotherium"
+  },
+  "description": "A huge, fat looking, bear-like sloth.  You can tell it's a sloth because the sloth-like claws and sloth-like tail, not to mention the snout that doesn't look like a bear's.",
+  "volume": "900 L",
+  "weight": "1000 kg",
+  "default_faction": "bear",
+  "bodytype": "bear",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_fur",
+  "hp": 400,
+  "speed": 115,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ṁ",
+  "looks_like": "mon_bear",
+  "color": "brown",
+  "aggression": -10,
+  "morale": 35,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 7,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 10
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 3,
+  "armor_cut": 2,
+  "armor_stab": 1,
+  "vision_day": 30,
+  "vision_night": 10,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_NEAR_BABY"
+  ],
+  "reproduction": {
+    "baby_monster": "mon_glossotherium_cub",
+    "baby_count": 3,
+    "baby_timer": 240
+  },
+  "baby_flags": [
+    "SPRING"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      80
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "BASHES",
+    "KEENNOSE",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON",
+    "SEES",
+    "WARM"
+  ],
+  "//2": "Glossotherium sp. used as reference. No reproductive data",
+  "//3": "Would be cool for these to dig and live around mini-dungeon paleoburrows"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_glossotherium",
+  "type": "MONSTER",
+  "name": {
+    "str": "glossotherium"
+  },
+  "description": "A huge, fat looking, bear-like sloth.  You can tell it's a sloth because the sloth-like claws and sloth-like tail, not to mention the snout that doesn't look like a bear's.",
+  "volume": "900 L",
+  "weight": "1000 kg",
+  "default_faction": "bear",
+  "bodytype": "bear",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_fur",
+  "hp": 400,
+  "speed": 115,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ṁ",
+  "looks_like": "mon_bear",
+  "color": "brown",
+  "aggression": -10,
+  "morale": 35,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 7,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 10
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 3,
+  "armor_cut": 2,
+  "armor_stab": 1,
+  "vision_day": 30,
+  "vision_night": 10,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_NEAR_BABY"
+  ],
+  "reproduction": {
+    "baby_monster": "mon_glossotherium_cub",
+    "baby_count": 3,
+    "baby_timer": 240
+  },
+  "baby_flags": [
+    "SPRING"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      80
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "BASHES",
+    "KEENNOSE",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON",
+    "SEES",
+    "WARM"
+  ],
+  "//2": "Glossotherium sp. used as reference. No reproductive data",
+  "//3": "Would be cool for these to dig and live around mini-dungeon paleoburrows"
+}
+```
+

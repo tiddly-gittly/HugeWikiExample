@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: TOOL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL→solar_torch
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：solar_torch|http://cdda.aloxaf.cn/search?q=solar_torch]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "solar_torch",
+  "type": "TOOL",
+  "sub": "torch",
+  "symbol": "/",
+  "color": "brown",
+  "looks_like": "torch",
+  "name": {
+    "str": "solar torch",
+    "str_pl": "solar torches"
+  },
+  "description": "A mysterious torch that uses the power of the sun (and blob goo) to light itself.  Somehow, the gasoline synthesized goo produces gasoline when in the sun continuously soaking the rag making it \"rechargeable\" in a sense.  You need a lighter to turn it on.  Once lit, it can't be turned off until all fuel is used.",
+  "flags": [
+    "NO_UNLOAD",
+    "NO_RELOAD"
+  ],
+  "material": [
+    "wood"
+  ],
+  "weight": "956 g",
+  "volume": "1 L",
+  "bashing": 8,
+  "to_hit": 1,
+  "ammo": [
+    "gasoline"
+  ],
+  "charges_per_use": 1,
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "solar_sunny",
+      "time": "10 m",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "watertight": true,
+      "ammo_restriction": {
+        "gasoline": 25
+      }
+    }
+  ],
+  "use_action": {
+    "type": "transform",
+    "target": "solar_torch_lit",
+    "need_fire": 1,
+    "need_fire_msg": "You need a source of fire to light this.",
+    "menu_text": "Light torch",
+    "active": true,
+    "msg": "You light the torch."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "solar_torch",
+  "type": "TOOL",
+  "sub": "torch",
+  "symbol": "/",
+  "color": "brown",
+  "looks_like": "torch",
+  "name": {
+    "str": "太阳能火把",
+    "str_pl": "太阳能火把"
+  },
+  "description": "一种利用太阳的能量（和变形怪糊）来点燃的神秘的火把。不知何故，汽油变形怪糊会在阳光下不断产生汽油并浸泡抹布，从某种意义上说，抹布是“可充电的”。你需要一个打火机来点着它。一旦点燃就无法熄灭直到燃料耗尽。",
+  "flags": [
+    "NO_UNLOAD",
+    "NO_RELOAD"
+  ],
+  "material": [
+    "wood"
+  ],
+  "weight": "956 g",
+  "volume": "1 L",
+  "bashing": 8,
+  "to_hit": 1,
+  "ammo": [
+    "gasoline"
+  ],
+  "charges_per_use": 1,
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "solar_sunny",
+      "time": "10 m",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "watertight": true,
+      "ammo_restriction": {
+        "gasoline": 25
+      }
+    }
+  ],
+  "use_action": {
+    "type": "transform",
+    "target": "solar_torch_lit",
+    "need_fire": 1,
+    "need_fire_msg": "You need a source of fire to light this.",
+    "menu_text": "点燃火把",
+    "active": true,
+    "msg": "你点燃了火把。"
+  }
+}
+```
+

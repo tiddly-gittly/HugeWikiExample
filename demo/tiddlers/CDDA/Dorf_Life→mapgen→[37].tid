@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: mapgen Dorf_Life
+title: Dorf_Life→mapgen→[37]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/mapgen_overlays.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_forge",
+  "object": {
+    "mapgensize": [
+      20,
+      20
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "           _______  ",
+      "          __~~~~~__ ",
+      "         __~-----~__",
+      "       ||_~-------~_",
+      "     ___|_~-------~_",
+      "     sbf|_~-------~_",
+      "     _a_|_~-------~_",
+      "       ||_~-------~_",
+      "         __~-----~__",
+      "          __~~~~~__ ",
+      "           _______  ",
+      "                    "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "-": "t_lava",
+      "~": [
+        "t_rock_floor",
+        "t_lava"
+      ],
+      "|": "t_rock_wall",
+      "a": "t_rock_floor",
+      "b": "t_rock_floor",
+      "f": "t_rock_floor",
+      "s": "t_rock_floor"
+    },
+    "furniture": {
+      "a": "f_anvil",
+      "b": "f_bench",
+      "f": "f_forge_rock",
+      "s": "f_slab"
+    },
+    "place_items": [
+      {
+        "item": "cavern_shrine",
+        "x": 6,
+        "y": 13,
+        "chance": 100
+      },
+      {
+        "item": "caveyot_forge_tools",
+        "x": 5,
+        "y": 13,
+        "chance": 100
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_forge",
+  "object": {
+    "mapgensize": [
+      20,
+      20
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "           _______  ",
+      "          __~~~~~__ ",
+      "         __~-----~__",
+      "       ||_~-------~_",
+      "     ___|_~-------~_",
+      "     sbf|_~-------~_",
+      "     _a_|_~-------~_",
+      "       ||_~-------~_",
+      "         __~-----~__",
+      "          __~~~~~__ ",
+      "           _______  ",
+      "                    "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "-": "t_lava",
+      "~": [
+        "t_rock_floor",
+        "t_lava"
+      ],
+      "|": "t_rock_wall",
+      "a": "t_rock_floor",
+      "b": "t_rock_floor",
+      "f": "t_rock_floor",
+      "s": "t_rock_floor"
+    },
+    "furniture": {
+      "a": "f_anvil",
+      "b": "f_bench",
+      "f": "f_forge_rock",
+      "s": "f_slab"
+    },
+    "place_items": [
+      {
+        "item": "cavern_shrine",
+        "x": 6,
+        "y": 13,
+        "chance": 100
+      },
+      {
+        "item": "caveyot_forge_tools",
+        "x": 5,
+        "y": 13,
+        "chance": 100
+      }
+    ]
+  }
+}
+```
+

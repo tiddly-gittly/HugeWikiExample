@@ -1,0 +1,207 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_wanzel_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_wanzel_4|http://cdda.aloxaf.cn/search?q=mon_BL9_wanzel_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens_dominators.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_wanzel_4",
+  "looks_like": "mon_zombie_soldier_acid_1",
+  "type": "MONSTER",
+  "name": {
+    "str": "Wanzeltium Warrior"
+  },
+  "description": "Over 5'8 feet tall reptile-like humanoid, emitting a bright green crystalline light, with a reptilian-humanoid head having a greatly widened forehead covered with multiple thick skin lines, multiple hair-like spiky protrusions coming out of the back and sides of it's head, it's wearing a light armor suit and wielding a glowing cutlass-like blade",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 400,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 11,
+      "armor_penetration": 18
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 14,
+  "armor_cut": 14,
+  "armor_bullet": 14,
+  "death_drops": "BL9_Drops_Aliens_Dominators_Military",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 20,
+          "armor_penetration": 22
+        }
+      ],
+      "hit_dmg_u": "The %1$s slashes you with it's glowing cutlass-like blade!",
+      "hit_dmg_npc": "The %1$s slashes <npcname> with it's glowing cutlass-like blade!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's glowing cutlass-like blade at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swing it's glowing cutlass-like blade at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's glowing cutlass-like blade at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's glowing cutlass-like blade at <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "wanzel_warr_strike"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s finds the weak spot of %3$s and hacks it violently!</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_wanzel_4",
+  "looks_like": "mon_zombie_soldier_acid_1",
+  "type": "MONSTER",
+  "name": {
+    "str": "万泽尔提姆勇士"
+  },
+  "description": "身高超过5英尺8英尺的爬行动物类人形动物，散发出明亮的绿色水晶光，一个爬行动物类人形头部有一个大大加宽的前额，覆盖着多条厚厚的皮肤线条，头部背部和两侧多处毛发状的尖刺状突起，它穿着一套轻型装甲服，挥舞着发光的弯刀状刀片",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 400,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 11,
+      "armor_penetration": 18
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 14,
+  "armor_cut": 14,
+  "armor_bullet": 14,
+  "death_drops": "BL9_Drops_Aliens_Dominators_Military",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 20,
+          "armor_penetration": 22
+        }
+      ],
+      "hit_dmg_u": "The %1$s slashes you with it's glowing cutlass-like blade!",
+      "hit_dmg_npc": "The %1$s slashes <npcname> with it's glowing cutlass-like blade!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's glowing cutlass-like blade at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swing it's glowing cutlass-like blade at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's glowing cutlass-like blade at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's glowing cutlass-like blade at <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "wanzel_warr_strike"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s察觉到了%3$s的弱点，并且暴力“破解”了它！</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

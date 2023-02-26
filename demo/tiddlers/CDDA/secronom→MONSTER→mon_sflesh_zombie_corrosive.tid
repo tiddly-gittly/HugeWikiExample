@@ -1,0 +1,239 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_corrosive
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_corrosive|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_corrosive]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_corrosive",
+  "type": "MONSTER",
+  "name": {
+    "str": "corrosive zombie"
+  },
+  "description": "This body has swollen to immense proportions, but still manages to hold itself together with semi-congealed acid all over its bloated body.  It clumsily moves around, but attacks with a large reserve of acid.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 15,
+  "volume": "92500 ml",
+  "weight": "120 kg",
+  "hp": 175,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "yellow_white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 13,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 12,
+  "vision_night": 3,
+  "luminance": 0,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 50,
+      "gun_type": "acid_spit",
+      "fake_skills": [
+        [
+          "gun",
+          8
+        ],
+        [
+          "rifle",
+          8
+        ]
+      ],
+      "fake_dex": 8,
+      "fake_per": 8,
+      "require_targeting_player": false,
+      "description": "The corrosive zombie spits a glob of blood acid!",
+      "ranges": [
+        [
+          2,
+          10,
+          "DEFAULT"
+        ]
+      ]
+    },
+    [
+      "ACID_BARF",
+      5
+    ]
+  ],
+  "special_when_hit": [
+    "ACIDSPLASH",
+    100
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "burn_into": "mon_zombie_corrosive",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "ACIDPROOF",
+    "ACID_BLOOD",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_corrosive",
+  "type": "MONSTER",
+  "name": {
+    "str": "腐蚀丧尸"
+  },
+  "description": "一只全身大部分都浮肿的丧尸，但是在他臃肿的身体里由于一些半凝固的胶体酸液，仍然能够保持着大概的轮廓。它很笨拙地走动，但是会喷出一大滩的酸液来攻击。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 15,
+  "volume": "92500 ml",
+  "weight": "120 kg",
+  "hp": 175,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "yellow_white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 13,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 12,
+  "vision_night": 3,
+  "luminance": 0,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 50,
+      "gun_type": "acid_spit",
+      "fake_skills": [
+        [
+          "gun",
+          8
+        ],
+        [
+          "rifle",
+          8
+        ]
+      ],
+      "fake_dex": 8,
+      "fake_per": 8,
+      "require_targeting_player": false,
+      "description": "腐蚀丧尸吐出一团血酸！",
+      "ranges": [
+        [
+          2,
+          10,
+          "DEFAULT"
+        ]
+      ]
+    },
+    [
+      "ACID_BARF",
+      5
+    ]
+  ],
+  "special_when_hit": [
+    "ACIDSPLASH",
+    100
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "burn_into": "mon_zombie_corrosive",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "ACIDPROOF",
+    "ACID_BLOOD",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

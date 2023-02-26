@@ -1,0 +1,265 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→armor_wyrm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：armor_wyrm|http://cdda.aloxaf.cn/search?q=armor_wyrm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "armor_wyrm",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "wyrmskin armor",
+    "str_pl": "sets of wyrmskin armor"
+  },
+  "description": "A set of well-decorated leather armor, with serpentine patterns sewn into it and various adjustable straps added.  It can be used to conjure a long-lasting spray of acid, or it can place a rune that will explode with acid if something steps into it.",
+  "weight": "4400 g",
+  "volume": "9 L",
+  "material": [
+    "wyrmskin",
+    "leather"
+  ],
+  "price": "450 USD",
+  "price_postapoc": "30 USD",
+  "to_hit": -5,
+  "bashing": 2,
+  "symbol": "[",
+  "looks_like": "armor_larmor",
+  "color": "green",
+  "material_thickness": 4,
+  "environmental_protection": 10,
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "coverage": 95,
+      "encumbrance": 8,
+      "material": [
+        {
+          "type": "leather",
+          "covered_by_mat": 100,
+          "thickness": 2.5
+        },
+        {
+          "type": "wyrmskin",
+          "covered_by_mat": 100,
+          "thickness": 2.5
+        }
+      ]
+    },
+    {
+      "covers": [
+        "arm_l",
+        "arm_r"
+      ],
+      "coverage": 90,
+      "encumbrance": 7
+    },
+    {
+      "covers": [
+        "leg_l",
+        "leg_r"
+      ],
+      "coverage": 85,
+      "encumbrance": 7
+    },
+    {
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ],
+      "coverage": 100,
+      "encumbrance": 9,
+      "material": [
+        {
+          "type": "leather",
+          "covered_by_mat": 100,
+          "thickness": 2.5
+        },
+        {
+          "type": "wyrmskin",
+          "covered_by_mat": 100,
+          "thickness": 2.5
+        }
+      ]
+    }
+  ],
+  "warmth": 20,
+  "charges_per_use": 2,
+  "ammo": "essence_blood_type",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 16
+      }
+    }
+  ],
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_armor_wyrm",
+      "moves": 90,
+      "practice": 0,
+      "done_message": "You focus a fragment of the armor's energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_wyrmskin_acid",
+      "no_fail": true,
+      "level": 0,
+      "need_worn": true
+    }
+  ],
+  "flags": [
+    "OVERSIZE",
+    "NO_SALVAGE",
+    "ALLOWS_NATURAL_ATTACKS",
+    "FANCY",
+    "TRADER_KEEP_EQUIPPED",
+    "POCKETS",
+    "STURDY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "armor_wyrm",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "龙皮甲",
+    "str_pl": "龙皮甲套装"
+  },
+  "description": "一套装饰精美的皮革盔甲，上面缝有双翼龙形图案，并增加了各种可调节的肩带。使用它会产生持久的酸雾。使用它也可以向地上刻印一个符文，如果有什么东西踩上它，会发生一次酸液爆炸。",
+  "weight": "4400 g",
+  "volume": "9 L",
+  "material": [
+    "wyrmskin",
+    "leather"
+  ],
+  "price": "450 USD",
+  "price_postapoc": "30 USD",
+  "to_hit": -5,
+  "bashing": 2,
+  "symbol": "[",
+  "looks_like": "armor_larmor",
+  "color": "green",
+  "material_thickness": 4,
+  "environmental_protection": 10,
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "coverage": 95,
+      "encumbrance": 8,
+      "material": [
+        {
+          "type": "leather",
+          "covered_by_mat": 100,
+          "thickness": 2.5
+        },
+        {
+          "type": "wyrmskin",
+          "covered_by_mat": 100,
+          "thickness": 2.5
+        }
+      ]
+    },
+    {
+      "covers": [
+        "arm_l",
+        "arm_r"
+      ],
+      "coverage": 90,
+      "encumbrance": 7
+    },
+    {
+      "covers": [
+        "leg_l",
+        "leg_r"
+      ],
+      "coverage": 85,
+      "encumbrance": 7
+    },
+    {
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ],
+      "coverage": 100,
+      "encumbrance": 9,
+      "material": [
+        {
+          "type": "leather",
+          "covered_by_mat": 100,
+          "thickness": 2.5
+        },
+        {
+          "type": "wyrmskin",
+          "covered_by_mat": 100,
+          "thickness": 2.5
+        }
+      ]
+    }
+  ],
+  "warmth": 20,
+  "charges_per_use": 2,
+  "ammo": "essence_blood_type",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 16
+      }
+    }
+  ],
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_armor_wyrm",
+      "moves": 90,
+      "practice": 0,
+      "done_message": "You focus a fragment of the armor's energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_wyrmskin_acid",
+      "no_fail": true,
+      "level": 0,
+      "need_worn": true
+    }
+  ],
+  "flags": [
+    "OVERSIZE",
+    "NO_SALVAGE",
+    "ALLOWS_NATURAL_ATTACKS",
+    "FANCY",
+    "TRADER_KEEP_EQUIPPED",
+    "POCKETS",
+    "STURDY"
+  ]
+}
+```
+

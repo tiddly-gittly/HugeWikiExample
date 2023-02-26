@@ -1,0 +1,165 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_turret
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_turret|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_turret]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Killing this monster will split flesh zombie(s), up to 9 of them! (3x3 tile from the location)",
+  "id": "mon_sflesh_zombie_turret",
+  "type": "MONSTER",
+  "name": {
+    "str": "flesh heap"
+  },
+  "description": "An enormous outgrowth of flesh with numerous putrid corpses unified in its edges. Dribbling blood seeps from the mouth of the zombies.",
+  "default_faction": "secro_flesh",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "diff": 2,
+  "volume": "300 L",
+  "weight": "3125 kg",
+  "hp": 300,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⧻",
+  "color": "red",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "grab_strength": 2,
+  "armor_bash": 14,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "GRAB",
+      1
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_zombie_turret_target"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s pulsates...</color>"
+    }
+  ],
+  "death_drops": "mon_sflesh_zombie_turret_death_drop",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "IMMOBILE",
+    "PACIFIST",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Killing this monster will split flesh zombie(s), up to 9 of them! (3x3 tile from the location)",
+  "id": "mon_sflesh_zombie_turret",
+  "type": "MONSTER",
+  "name": {
+    "str": "肉堆"
+  },
+  "description": "一个边缘附着着大量腐臭尸体的血肉增生物，滴沥的血液从这个丧尸的嘴中渗透出来。",
+  "default_faction": "secro_flesh",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "diff": 2,
+  "volume": "300 L",
+  "weight": "3125 kg",
+  "hp": 300,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⧻",
+  "color": "red",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "grab_strength": 2,
+  "armor_bash": 14,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "GRAB",
+      1
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_zombie_turret_target"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s脉动着...</color>"
+    }
+  ],
+  "death_drops": "mon_sflesh_zombie_turret_death_drop",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "IMMOBILE",
+    "PACIFIST",
+    "FILTHY"
+  ]
+}
+```
+

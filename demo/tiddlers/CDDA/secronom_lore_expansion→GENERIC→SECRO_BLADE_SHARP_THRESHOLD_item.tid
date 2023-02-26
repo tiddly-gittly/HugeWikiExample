@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: GENERIC secronom_lore_expansion
+title: secronom_lore_expansion→GENERIC→SECRO_BLADE_SHARP_THRESHOLD_item
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_BLADE_SHARP_THRESHOLD_item|http://cdda.aloxaf.cn/search?q=SECRO_BLADE_SHARP_THRESHOLD_item]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation_items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "SECRO_BLADE_SHARP_THRESHOLD_item",
+  "type": "GENERIC",
+  "category": "secro_cores",
+  "name": {
+    "str": "<color_light_green>blade core</color>"
+  },
+  "description": "This core provides temporary passive effects. Stacks with other cores.\n<color_white>Attack speed: <color_light_green>+3%</color>\nDamage: <color_light_green>+2%</color></color>",
+  "weight": "3 g",
+  "volume": "3 ml",
+  "price": "0 cent",
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Q",
+  "color": "red",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "ATTACK_SPEED",
+            "multiply": 0.015
+          },
+          {
+            "value": "BONUS_DAMAGE",
+            "multiply": 0.01
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "NO_DROP"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "SECRO_BLADE_SHARP_THRESHOLD_item",
+  "type": "GENERIC",
+  "category": "secro_cores",
+  "name": {
+    "str": "<color_light_green> 刀锋核心</color>"
+  },
+  "description": "这个核心提供暂时的被动效果。可与其他内核堆叠。\n <color_white>攻击速度：<color_light_green> +3% </color>\n伤害：<color_light_green>+2% </color>",
+  "weight": "3 g",
+  "volume": "3 ml",
+  "price": "0 cent",
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Q",
+  "color": "red",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "ATTACK_SPEED",
+            "multiply": 0.015
+          },
+          {
+            "value": "BONUS_DAMAGE",
+            "multiply": 0.01
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "NO_DROP"
+  ]
+}
+```
+

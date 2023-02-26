@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: GUNMOD Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUNMOD→stock_ceamm1_folded
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：stock_ceamm1_folded|http://cdda.aloxaf.cn/search?q=stock_ceamm1_folded]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gunmod/thex_stock.json
+
+
+!! 原文
+
+```json
+{
+  "id": "stock_ceamm1_folded",
+  "type": "GUNMOD",
+  "name": {
+    "str": "CEAM Mòdele 1 stock (folded)",
+    "str_pl": "CEAM Mòdele 1 stocks (folded)"
+  },
+  "copy-from": "stock_ceamm1_unfolded",
+  "description": "A folded wooden stock.  Currently folded, reducing the size, at the cost of also reducing handling.",
+  "use_action": {
+    "target": "stock_ceamm1_unfolded",
+    "type": "transform",
+    "msg": "You unfold the stock.",
+    "menu_text": "Unfold",
+    "moves": 135
+  },
+  "handling_modifier": -10,
+  "flags": [
+    "FOLDED_STOCK",
+    "IRREMOVABLE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "stock_ceamm1_folded",
+  "type": "GUNMOD",
+  "name": {
+    "str": "CEAM Mòdele 1 stock (folded)",
+    "str_pl": "CEAM Mòdele 1 stocks (folded)"
+  },
+  "copy-from": "stock_ceamm1_unfolded",
+  "description": "A folded wooden stock.  Currently folded, reducing the size, at the cost of also reducing handling.",
+  "use_action": {
+    "target": "stock_ceamm1_unfolded",
+    "type": "transform",
+    "msg": "You unfold the stock.",
+    "menu_text": "摊开",
+    "moves": 135
+  },
+  "handling_modifier": -10,
+  "flags": [
+    "FOLDED_STOCK",
+    "IRREMOVABLE"
+  ]
+}
+```
+

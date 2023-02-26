@@ -1,0 +1,351 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→effect_on_condition→impurity_eoc
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：impurity_eoc|http://cdda.aloxaf.cn/search?q=impurity_eoc]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/thex_eocs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "impurity_eoc",
+  "type": "effect_on_condition",
+  "recurrence": "20 m",
+  "effect": [
+    {
+      "run_eocs": [
+        {
+          "id": "impurity_none",
+          "condition": {
+            "compare_int": [
+              {
+                "u_val": "vitamin",
+                "name": "impurity"
+              },
+              "<",
+              {
+                "const": 0
+              }
+            ]
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "var",
+                  "var_name": "var_impurity"
+                },
+                "=",
+                {
+                  "const": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "impurity_verylow",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "impurity"
+                  },
+                  ">=",
+                  {
+                    "const": 1
+                  }
+                ]
+              },
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "impurity"
+                  },
+                  "<=",
+                  {
+                    "const": 72
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "var",
+                  "var_name": "var_impurity"
+                },
+                "=",
+                {
+                  "const": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "impurity_low",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "impurity"
+                  },
+                  ">=",
+                  {
+                    "const": 73
+                  }
+                ]
+              },
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "impurity"
+                  },
+                  "<=",
+                  {
+                    "const": 504
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "var",
+                  "var_name": "var_impurity"
+                },
+                "=",
+                {
+                  "const": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "impurity_high",
+          "condition": {
+            "compare_int": [
+              {
+                "u_val": "vitamin",
+                "name": "impurity"
+              },
+              ">=",
+              {
+                "const": 505
+              }
+            ]
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "var",
+                  "var_name": "var_impurity"
+                },
+                "=",
+                {
+                  "const": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not even considering consuming Earthly stuff",
+  "//2": "Boundaries for each impure tier: 0 - 24 h (verylow), 1 - 7 days (low), >7 days (high)",
+  "//3": "Impurity tiers are named: Pure, Slight impurity, Impure, Impure (2) "
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "impurity_eoc",
+  "type": "effect_on_condition",
+  "recurrence": "20 m",
+  "effect": [
+    {
+      "run_eocs": [
+        {
+          "id": "impurity_none",
+          "condition": {
+            "compare_int": [
+              {
+                "u_val": "vitamin",
+                "name": "impurity"
+              },
+              "<",
+              {
+                "const": 0
+              }
+            ]
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "var",
+                  "var_name": "var_impurity"
+                },
+                "=",
+                {
+                  "const": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "impurity_verylow",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "impurity"
+                  },
+                  ">=",
+                  {
+                    "const": 1
+                  }
+                ]
+              },
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "impurity"
+                  },
+                  "<=",
+                  {
+                    "const": 72
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "var",
+                  "var_name": "var_impurity"
+                },
+                "=",
+                {
+                  "const": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "impurity_low",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "impurity"
+                  },
+                  ">=",
+                  {
+                    "const": 73
+                  }
+                ]
+              },
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "impurity"
+                  },
+                  "<=",
+                  {
+                    "const": 504
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "var",
+                  "var_name": "var_impurity"
+                },
+                "=",
+                {
+                  "const": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "impurity_high",
+          "condition": {
+            "compare_int": [
+              {
+                "u_val": "vitamin",
+                "name": "impurity"
+              },
+              ">=",
+              {
+                "const": 505
+              }
+            ]
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "var",
+                  "var_name": "var_impurity"
+                },
+                "=",
+                {
+                  "const": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not even considering consuming Earthly stuff",
+  "//2": "Boundaries for each impure tier: 0 - 24 h (verylow), 1 - 7 days (low), >7 days (high)",
+  "//3": "Impurity tiers are named: Pure, Slight impurity, Impure, Impure (2) "
+}
+```
+

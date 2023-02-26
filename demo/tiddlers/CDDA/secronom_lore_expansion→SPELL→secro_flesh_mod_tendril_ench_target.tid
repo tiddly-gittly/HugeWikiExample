@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→secro_flesh_mod_tendril_ench_target
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_mod_tendril_ench_target|http://cdda.aloxaf.cn/search?q=secro_flesh_mod_tendril_ench_target]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_mod_tendril_ench_target",
+  "type": "SPELL",
+  "name": {
+    "str": "a spell"
+  },
+  "description": "Target spell casted by an item. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+  "message": "",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "WONDER"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "extra_effects": [
+    {
+      "id": "secro_flesh_mod_tendril_ench_sweep"
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 2,
+  "max_damage": 3,
+  "min_range": 2,
+  "max_range": 2
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_mod_tendril_ench_target",
+  "type": "SPELL",
+  "name": {
+    "str": "咒语"
+  },
+  "description": "由物品施放的目标法术。如果你看到了这个，那就读读这个：\n“施法者将视线锁定目标，然后随机施放其中一个法术。”",
+  "message": "",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "WONDER"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "extra_effects": [
+    {
+      "id": "secro_flesh_mod_tendril_ench_sweep"
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 2,
+  "max_damage": 3,
+  "min_range": 2,
+  "max_range": 2
+}
+```
+

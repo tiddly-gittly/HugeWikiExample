@@ -1,0 +1,225 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_main_intro
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_main_intro|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_main_intro]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/npc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_main_intro",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerarcanemys",
+    "yes": {
+      "npc_has_trait": "vaseekerartifactwhat",
+      "yes": "So, What do you think... are you 'in' for this quest? I do not assure your life in this journey you're about to come up just to collect rare stuff for me.",
+      "no": "I seek arcane mysteries and anomalies in this damned world as well as collecting artifacts, utilizing their power for a greater use."
+    },
+    "no": "Who am I you asked?\nI am the seeker of arcane mysteries and anomalies in this damned world as well as collecting artifacts, utilizing their power for a greater use."
+  },
+  "responses": [
+    {
+      "text": "I also have grown fond to magic, so maybe we could collaborate with this.",
+      "topic": "VAMP_ASEEKER_main_collaborate",
+      "condition": {
+        "or": [
+          {
+            "u_has_trait": "PROF_SANGUINE"
+          },
+          {
+            "u_has_trait": "PROF_ARCANIST"
+          },
+          {
+            "u_has_trait": "PROF_CLEANSINGFLAME"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Arcane mysteries?",
+      "topic": "VAMP_ASEEKER_main_arcanemys",
+      "effect": {
+        "npc_add_trait": "vaseekerarcanemys"
+      },
+      "condition": {
+        "not": {
+          "npc_has_trait": "vaseekerarcanemys"
+        }
+      }
+    },
+    {
+      "text": "What kind of artifacts are you collecting?",
+      "topic": "VAMP_ASEEKER_main_artifactwhat",
+      "effect": {
+        "npc_add_trait": "vaseekerartifactwhat"
+      },
+      "condition": {
+        "not": {
+          "npc_has_trait": "vaseekerartifactwhat"
+        }
+      }
+    },
+    {
+      "text": "Yes! I'm in!",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "npc_add_trait": "metvaseeker"
+        },
+        {
+          "npc_add_trait": "vaseekeruaccepttherisk"
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "vaseekerartifactwhat"
+          },
+          {
+            "npc_has_trait": "vaseekerarcanemys"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Wait, I need some time for this.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "vaseekerartifactwhat"
+          },
+          {
+            "npc_has_trait": "vaseekerarcanemys"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Well, your job looks risky...",
+      "topic": "TALK_DONE",
+      "effect": {
+        "npc_add_trait": "metvaseeker"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_main_intro",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerarcanemys",
+    "yes": {
+      "npc_has_trait": "vaseekerartifactwhat",
+      "yes": "那么，你觉得…你要参加这个任务吗？我不能保证你的生命在这旅程中你会上来只是为了收集稀有的东西给我。",
+      "no": "我在这个该死的世界里寻找神秘和不寻常的事物，同时收集文物，利用它们的力量得到更大的利用。"
+    },
+    "no": "你问我是谁？\n我是这个该死的世界中神秘事物和异常现象的探索者，同时也在收集神器，利用它们的力量得到更大的利用。"
+  },
+  "responses": [
+    {
+      "text": "我也越来越喜欢魔术了，也许我们可以合作。",
+      "topic": "VAMP_ASEEKER_main_collaborate",
+      "condition": {
+        "or": [
+          {
+            "u_has_trait": "PROF_SANGUINE"
+          },
+          {
+            "u_has_trait": "PROF_ARCANIST"
+          },
+          {
+            "u_has_trait": "PROF_CLEANSINGFLAME"
+          }
+        ]
+      }
+    },
+    {
+      "text": "神秘事物？",
+      "topic": "VAMP_ASEEKER_main_arcanemys",
+      "effect": {
+        "npc_add_trait": "vaseekerarcanemys"
+      },
+      "condition": {
+        "not": {
+          "npc_has_trait": "vaseekerarcanemys"
+        }
+      }
+    },
+    {
+      "text": "你在收集什么神器？",
+      "topic": "VAMP_ASEEKER_main_artifactwhat",
+      "effect": {
+        "npc_add_trait": "vaseekerartifactwhat"
+      },
+      "condition": {
+        "not": {
+          "npc_has_trait": "vaseekerartifactwhat"
+        }
+      }
+    },
+    {
+      "text": "好！我加入！",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "npc_add_trait": "metvaseeker"
+        },
+        {
+          "npc_add_trait": "vaseekeruaccepttherisk"
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "vaseekerartifactwhat"
+          },
+          {
+            "npc_has_trait": "vaseekerarcanemys"
+          }
+        ]
+      }
+    },
+    {
+      "text": "等等，我需要一些时间。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "vaseekerartifactwhat"
+          },
+          {
+            "npc_has_trait": "vaseekerarcanemys"
+          }
+        ]
+      }
+    },
+    {
+      "text": "你的工作看起来很冒险…",
+      "topic": "TALK_DONE",
+      "effect": {
+        "npc_add_trait": "metvaseeker"
+      }
+    }
+  ]
+}
+```
+

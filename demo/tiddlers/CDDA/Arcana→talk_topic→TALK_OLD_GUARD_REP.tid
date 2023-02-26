@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_OLD_GUARD_REP
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_OLD_GUARD_REP|http://cdda.aloxaf.cn/search?q=TALK_OLD_GUARD_REP]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_OLD_GUARD_REP.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_OLD_GUARD_REP",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_trait": "PROF_FED"
+          }
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_REP_GM_PRELUDE_SPECIAL"
+    },
+    {
+      "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "PROF_FED"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_REP_GM_PRELUDE"
+    },
+    {
+      "text": "[MISSION] Would the Old Guard be willing to establish a presence in another community?",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_OLD_GUARD_REP",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "我被派去询问最近有什么异常生物袭击幸存者。知道吗？",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_trait": "PROF_FED"
+          }
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_REP_GM_PRELUDE_SPECIAL"
+    },
+    {
+      "text": "我被派去询问最近有什么异常生物袭击幸存者。知道吗？",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "PROF_FED"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_REP_GM_PRELUDE"
+    },
+    {
+      "text": "[任务]旧世守护者会愿意在另一个社区建立一个存在吗？",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4"
+    }
+  ]
+}
+```
+

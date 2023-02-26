@@ -1,0 +1,1192 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[3]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/Misc.json
+
+
+!! 原文
+
+```json
+{
+  "method": "json",
+  "type": "mapgen",
+  "update_mapgen_id": "mx_secro_carrion_massacre_smol",
+  "object": {
+    "place_monster": [
+      {
+        "monster": "mon_carrion",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "monster": "mon_carrion_dismantler",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ]
+      },
+      {
+        "monster": "mon_carrion_orifice",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ],
+        "repeat": [
+          0,
+          1
+        ]
+      },
+      {
+        "monster": "mon_carrion_alpha",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ]
+      },
+      {
+        "monster": "mon_zombie",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ],
+        "repeat": [
+          1,
+          3
+        ]
+      }
+    ],
+    "place_item": [
+      {
+        "item": "corpse_generic_human",
+        "x": [
+          10,
+          13
+        ],
+        "y": [
+          10,
+          13
+        ],
+        "repeat": [
+          2,
+          4
+        ]
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": [
+          10,
+          13
+        ],
+        "y": [
+          10,
+          13
+        ],
+        "repeat": [
+          14,
+          30
+        ]
+      },
+      {
+        "field": "fd_gibs_flesh",
+        "x": [
+          0,
+          13
+        ],
+        "y": [
+          10,
+          13
+        ],
+        "repeat": [
+          8,
+          16
+        ]
+      },
+      {
+        "field": "fd_blood",
+        "x": [
+          8,
+          15
+        ],
+        "y": [
+          8,
+          15
+        ],
+        "repeat": [
+          10,
+          20
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Mil surplus",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "...........~~...........",
+      "...........~~...........",
+      "..-''''''--++--''''''--.",
+      "..|             QrQd  |.",
+      "..| #         b     b |.",
+      "..| #           *]*   |.",
+      "..| #        d  *8*   |.",
+      "..| #           ***   |.",
+      "..|                   |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..|                   |.",
+      "..|-+-----+--------+- |.",
+      "..|& %|4YYYUUYUU<|LL|d|.",
+      "..|----YYYYYYYYYY-----|."
+    ],
+    "palettes": [
+      "secro_mil_surplus_flesh"
+    ],
+    "place_loot": [
+      {
+        "group": "mil_armor",
+        "x": 4,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "mil_armor",
+        "x": 6,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "mil_armor",
+        "x": 8,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "mil_surplus",
+        "x": 10,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "group": "mil_surplus",
+        "x": 12,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "group": "mil_surplus",
+        "x": 14,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "group": "mil_food_nodrugs",
+        "x": 16,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "group": "mil_food_nodrugs",
+        "x": 18,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "group": "mil_food_nodrugs",
+        "x": 20,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      }
+    ],
+    "items": {
+      "%": {
+        "item": "softdrugs",
+        "chance": 30,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      "L": {
+        "item": "cleaning",
+        "chance": 30,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      "U": {
+        "item": "trash",
+        "chance": 20,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      "d": [
+        {
+          "item": "mil_armor",
+          "chance": 80,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "mil_armor_pants",
+          "chance": 80,
+          "repeat": [
+            1,
+            4
+          ]
+        },
+        {
+          "item": "mil_armor_torso",
+          "chance": 80,
+          "repeat": [
+            1,
+            4
+          ]
+        },
+        {
+          "item": "mil_armor_helmet",
+          "chance": 80,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "shoestore_shoes",
+          "chance": 90,
+          "repeat": [
+            1,
+            8
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "object": {
+    "fill_ter": "t_secro_flesh",
+    "rows": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "...p....................",
+      "..pop.....kkkkk.........",
+      ".pllp....kkjjjkk........",
+      ".pllp...kkujajjkk.......",
+      ".plllp..kjjaOajjk.......",
+      "..plllp.kjjaaajkk.......",
+      "...pllp.kkjjaajjk.......",
+      "...pllp..kkjjajuk.......",
+      "...plllp..kkjjjkk.......",
+      "....plllp..kkmmk........",
+      ".....plllkkkmmmk........",
+      "......pllmmmmmkk........",
+      ".......pllmmkkk.........",
+      "........pkkkk...........",
+      "........................",
+      "........................"
+    ],
+    "terrain": {
+      "l": [
+        [
+          "t_secro_rock_floor_flesh",
+          4
+        ],
+        "t_rock_floor"
+      ],
+      "p": [
+        [
+          "t_secro_rock_floor_flesh",
+          4
+        ],
+        "t_rock_floor",
+        "t_rock"
+      ],
+      "o": "t_secro_flesh_cave_entrance_up",
+      ".": [
+        "t_rock",
+        [
+          "t_secro_rock_wall_flesh",
+          4
+        ]
+      ],
+      "m": [
+        "t_secro_flesh",
+        "t_secro_rock_floor_flesh"
+      ],
+      "j": [
+        [
+          "t_secro_flesh",
+          2
+        ],
+        "t_secro_rock_floor_flesh"
+      ],
+      "k": [
+        [
+          "t_secro_flesh_wall",
+          2
+        ],
+        "t_rock"
+      ],
+      "a": "t_secro_flesh"
+    },
+    "furniture": {
+      "u": [
+        [
+          "f_null",
+          3
+        ],
+        "f_secro_flesh_core"
+      ]
+    },
+    "monster": {
+      "O": {
+        "monster": "mon_sflesh_flesh_weak"
+      }
+    }
+  },
+  "om_terrain": [
+    "flesh_cavern_boss"
+  ],
+  "type": "mapgen",
+  "weight": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Mil surplus",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "...........~~...........",
+      "...........~~...........",
+      "..-''''''--++--''''''--.",
+      "..|             QrQd  |.",
+      "..| #         b     b |.",
+      "..| #           *]*   |.",
+      "..| #        d  *8*   |.",
+      "..| #           ***   |.",
+      "..|                   |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..| R R R R R R R R R |.",
+      "..|                   |.",
+      "..|-+-----+--------+- |.",
+      "..|& %|4YYYUUYUU<|LL|d|.",
+      "..|----YYYYYYYYYY-----|."
+    ],
+    "palettes": [
+      "secro_mil_surplus_flesh"
+    ],
+    "place_loot": [
+      {
+        "group": "mil_armor",
+        "x": 4,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "mil_armor",
+        "x": 6,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "mil_armor",
+        "x": 8,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "mil_surplus",
+        "x": 10,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "group": "mil_surplus",
+        "x": 12,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "group": "mil_surplus",
+        "x": 14,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "group": "mil_food_nodrugs",
+        "x": 16,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "group": "mil_food_nodrugs",
+        "x": 18,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "group": "mil_food_nodrugs",
+        "x": 20,
+        "y": [
+          9,
+          19
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          4
+        ]
+      }
+    ],
+    "items": {
+      "%": {
+        "item": "softdrugs",
+        "chance": 30,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      "L": {
+        "item": "cleaning",
+        "chance": 30,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      "U": {
+        "item": "trash",
+        "chance": 20,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      "d": [
+        {
+          "item": "mil_armor",
+          "chance": 80,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "mil_armor_pants",
+          "chance": 80,
+          "repeat": [
+            1,
+            4
+          ]
+        },
+        {
+          "item": "mil_armor_torso",
+          "chance": 80,
+          "repeat": [
+            1,
+            4
+          ]
+        },
+        {
+          "item": "mil_armor_helmet",
+          "chance": 80,
+          "repeat": [
+            1,
+            2
+          ]
+        },
+        {
+          "item": "shoestore_shoes",
+          "chance": 90,
+          "repeat": [
+            1,
+            8
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "object": {
+    "fill_ter": "t_dirt",
+    "rows": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "terrain": {
+      ".": [
+        [
+          "t_secro_dirt_flesh",
+          250
+        ],
+        [
+          "t_dirt",
+          250
+        ],
+        [
+          "t_secro_grass_flesh",
+          150
+        ],
+        [
+          "t_grass",
+          150
+        ],
+        [
+          "t_secro_grass_long_flesh",
+          75
+        ],
+        [
+          "t_grass_long",
+          75
+        ],
+        [
+          "t_secro_grass_tall_flesh",
+          25
+        ],
+        [
+          "t_grass_tall",
+          25
+        ],
+        [
+          "t_secro_shrub_flesh",
+          10
+        ],
+        [
+          "t_shrub",
+          10
+        ],
+        [
+          "t_secro_tree_young_flesh",
+          5
+        ],
+        [
+          "t_tree_young",
+          5
+        ],
+        [
+          "t_secro_tree_flesh",
+          2
+        ],
+        [
+          "t_tree",
+          2
+        ],
+        [
+          "t_tree_walnut",
+          2
+        ],
+        [
+          "t_tree_blackjack",
+          2
+        ],
+        [
+          "t_tree_chestnut",
+          2
+        ],
+        [
+          "t_tree_beech",
+          2
+        ],
+        [
+          "t_tree_hazelnut",
+          2
+        ],
+        [
+          "t_tree_cottonwood",
+          2
+        ],
+        [
+          "t_tree_elm",
+          2
+        ],
+        [
+          "t_tree_apple",
+          2
+        ],
+        [
+          "t_tree_pear",
+          2
+        ],
+        [
+          "t_tree_coffee",
+          2
+        ],
+        [
+          "t_tree_cherry",
+          2
+        ],
+        [
+          "t_tree_juniper",
+          2
+        ],
+        [
+          "t_tree_peach",
+          2
+        ],
+        [
+          "t_tree_apricot",
+          2
+        ],
+        [
+          "t_tree_plum",
+          2
+        ],
+        [
+          "t_tree_mulberry",
+          2
+        ],
+        [
+          "t_tree_elderberry",
+          2
+        ],
+        [
+          "t_tree_pine",
+          2
+        ],
+        [
+          "t_tree_birch",
+          2
+        ],
+        [
+          "t_tree_willow",
+          2
+        ],
+        [
+          "t_tree_maple",
+          2
+        ],
+        [
+          "t_tree_hickory",
+          2
+        ]
+      ]
+    },
+    "furniture": {
+      ".": [
+        [
+          "f_null",
+          3000
+        ],
+        [
+          "f_secro_flower_flesh",
+          50
+        ],
+        [
+          "f_secro_veinstalk",
+          25
+        ],
+        [
+          "f_dandelion",
+          50
+        ],
+        [
+          "f_chamomile",
+          50
+        ],
+        [
+          "f_flower_tulip",
+          50
+        ],
+        [
+          "f_flower_spurge",
+          50
+        ],
+        [
+          "f_black_eyed_susan",
+          50
+        ],
+        [
+          "f_lily",
+          50
+        ],
+        [
+          "f_bluebell",
+          50
+        ],
+        [
+          "f_dahlia",
+          50
+        ],
+        [
+          "f_datura",
+          50
+        ],
+        [
+          "f_secro_flesh_gas_emitter",
+          8
+        ],
+        [
+          "f_secro_boulder_small_flesh",
+          5
+        ],
+        [
+          "f_boulder_small",
+          5
+        ],
+        [
+          "f_secro_boulder_medium_flesh",
+          2
+        ],
+        [
+          "f_boulder_medium",
+          2
+        ],
+        [
+          "f_secro_tree_flesh_atk",
+          25
+        ],
+        "f_secro_boulder_large_flesh",
+        "f_boulder_large"
+      ]
+    }
+  },
+  "om_terrain": [
+    "flesh_forest_mid"
+  ],
+  "type": "mapgen",
+  "weight": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "object": {
+    "fill_ter": "t_dirt",
+    "rows": [
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~__~~",
+      "_____~~~~~~~~~~~~~~_____",
+      "___________~~~~~~~______",
+      "______________~~________",
+      "____________________..__",
+      ".....______________.....",
+      "..........._______......",
+      "..............__........",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "flesh_island_edge"
+    ]
+  },
+  "om_terrain": [
+    "flesh_island_vfaraway_straight"
+  ],
+  "type": "mapgen",
+  "weight": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "type": "mapgen",
+  "update_mapgen_id": "mx_secro_carrion_massacre_smol",
+  "object": {
+    "place_monster": [
+      {
+        "monster": "mon_carrion",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "monster": "mon_carrion_dismantler",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ]
+      },
+      {
+        "monster": "mon_carrion_orifice",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ],
+        "repeat": [
+          0,
+          1
+        ]
+      },
+      {
+        "monster": "mon_carrion_alpha",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ]
+      },
+      {
+        "monster": "mon_zombie",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ],
+        "repeat": [
+          1,
+          3
+        ]
+      }
+    ],
+    "place_item": [
+      {
+        "item": "corpse_generic_human",
+        "x": [
+          10,
+          13
+        ],
+        "y": [
+          10,
+          13
+        ],
+        "repeat": [
+          2,
+          4
+        ]
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": [
+          10,
+          13
+        ],
+        "y": [
+          10,
+          13
+        ],
+        "repeat": [
+          14,
+          30
+        ]
+      },
+      {
+        "field": "fd_gibs_flesh",
+        "x": [
+          0,
+          13
+        ],
+        "y": [
+          10,
+          13
+        ],
+        "repeat": [
+          8,
+          16
+        ]
+      },
+      {
+        "field": "fd_blood",
+        "x": [
+          8,
+          15
+        ],
+        "y": [
+          8,
+          15
+        ],
+        "repeat": [
+          10,
+          20
+        ]
+      }
+    ]
+  }
+}
+```
+

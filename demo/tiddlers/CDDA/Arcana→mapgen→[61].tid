@@ -1,0 +1,305 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[61]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "method": "json",
+  "om_terrain": "cabin_5",
+  "type": "mapgen",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "........................",
+      "........................",
+      ".......__________.......",
+      ".....______________.....",
+      "....________________....",
+      "...._##w###+##ww###_....",
+      "...._#BBD#Y    c  #_....",
+      "...._wBB =     ttcw_....",
+      "...._#   # O  ctt #_....",
+      "...._##X## O    c #_....",
+      "...._#] z# O  CCC1#_....",
+      "...._#  [#       2w_....",
+      "...._#cd[#A  &sSF3#_....",
+      "...._######+##ww###_....",
+      "....__%_____________....",
+      ".....______________.....",
+      "..........__............",
+      ".._____..___............",
+      ".._###_____.............",
+      ".._#T+____..............",
+      ".._###_.................",
+      ".._____.................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "cabin_palette"
+    ],
+    "terrain": {
+      "[": "t_floor",
+      "]": "t_floor",
+      ".": [
+        [
+          "t_grass",
+          6
+        ],
+        "t_dirt",
+        "t_tree_dead",
+        "t_tree_maple",
+        "t_tree_young",
+        "t_tree",
+        [
+          "t_tree_pine",
+          2
+        ],
+        [
+          "t_underbrush",
+          3
+        ]
+      ],
+      "_": [
+        "t_dirt",
+        [
+          "t_grass",
+          6
+        ]
+      ],
+      "X": "t_door_boarded"
+    },
+    "furniture": {
+      "[": "f_bookcase",
+      "]": "f_counter"
+    },
+    "items": {
+      "[": {
+        "item": "sanguine_cult_books_postapoc",
+        "chance": 60,
+        "repeat": 3
+      },
+      "z": {
+        "item": "cult_sacrifice",
+        "chance": 100
+      }
+    },
+    "place_loot": [
+      {
+        "item": "book_magicfordummies",
+        "x": 6,
+        "y": 10
+      },
+      {
+        "item": "note_sanguine_hint",
+        "x": 6,
+        "y": 10
+      },
+      {
+        "item": "arcanemap",
+        "x": 6,
+        "y": 10
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_GM_1_d",
+  "object": {
+    "set": [
+      {
+        "line": "terrain",
+        "id": "t_fence_post",
+        "x": 23,
+        "x2": 23,
+        "y": 19,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_fence_post",
+        "x": 19,
+        "x2": 23,
+        "y": 23,
+        "y2": 23
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 22,
+        "x2": 22,
+        "y": 13,
+        "y2": 21
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 13,
+        "x2": 22,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 22,
+        "x2": 22,
+        "y": 8,
+        "y2": 12
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 8,
+        "x2": 12,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 22,
+        "x2": 22,
+        "y": 3,
+        "y2": 7
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 3,
+        "x2": 7,
+        "y": 22,
+        "y2": 22
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "om_terrain": "cabin_5",
+  "type": "mapgen",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "........................",
+      "........................",
+      ".......__________.......",
+      ".....______________.....",
+      "....________________....",
+      "...._##w###+##ww###_....",
+      "...._#BBD#Y    c  #_....",
+      "...._wBB =     ttcw_....",
+      "...._#   # O  ctt #_....",
+      "...._##X## O    c #_....",
+      "...._#] z# O  CCC1#_....",
+      "...._#  [#       2w_....",
+      "...._#cd[#A  &sSF3#_....",
+      "...._######+##ww###_....",
+      "....__%_____________....",
+      ".....______________.....",
+      "..........__............",
+      ".._____..___............",
+      ".._###_____.............",
+      ".._#T+____..............",
+      ".._###_.................",
+      ".._____.................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "cabin_palette"
+    ],
+    "terrain": {
+      "[": "t_floor",
+      "]": "t_floor",
+      ".": [
+        [
+          "t_grass",
+          6
+        ],
+        "t_dirt",
+        "t_tree_dead",
+        "t_tree_maple",
+        "t_tree_young",
+        "t_tree",
+        [
+          "t_tree_pine",
+          2
+        ],
+        [
+          "t_underbrush",
+          3
+        ]
+      ],
+      "_": [
+        "t_dirt",
+        [
+          "t_grass",
+          6
+        ]
+      ],
+      "X": "t_door_boarded"
+    },
+    "furniture": {
+      "[": "f_bookcase",
+      "]": "f_counter"
+    },
+    "items": {
+      "[": {
+        "item": "sanguine_cult_books_postapoc",
+        "chance": 60,
+        "repeat": 3
+      },
+      "z": {
+        "item": "cult_sacrifice",
+        "chance": 100
+      }
+    },
+    "place_loot": [
+      {
+        "item": "book_magicfordummies",
+        "x": 6,
+        "y": 10
+      },
+      {
+        "item": "note_sanguine_hint",
+        "x": 6,
+        "y": 10
+      },
+      {
+        "item": "arcanemap",
+        "x": 6,
+        "y": 10
+      }
+    ]
+  }
+}
+```
+

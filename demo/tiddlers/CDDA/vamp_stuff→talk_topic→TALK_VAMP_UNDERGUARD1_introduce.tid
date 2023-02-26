@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_UNDERGUARD1_introduce
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_UNDERGUARD1_introduce|http://cdda.aloxaf.cn/search?q=TALK_VAMP_UNDERGUARD1_introduce]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Underrefugee/v_ug_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_UNDERGUARD1_introduce",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "blood_necklace",
+    "yes": "Just an assigned guard here, nothing happened 'till you came in.",
+    "no": "Why should I? If you want answers, go ask my partner."
+  },
+  "responses": [
+    {
+      "text": "I like you.",
+      "topic": "TALK_VAMP_UNDERGUARD1_flirt"
+    },
+    {
+      "text": "Okay then...",
+      "topic": "TALK_VAMP_UNDERGUARD1"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_UNDERGUARD1_introduce",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "blood_necklace",
+    "yes": "这里只有一个被派来的探索者而已，在你来之前没什么别的事情发生。",
+    "no": "为什么问我？如果你有问题就去问我旁边那位。"
+  },
+  "responses": [
+    {
+      "text": "因为我喜欢你...",
+      "topic": "TALK_VAMP_UNDERGUARD1_flirt"
+    },
+    {
+      "text": "好吧...继续",
+      "topic": "TALK_VAMP_UNDERGUARD1"
+    }
+  ]
+}
+```
+

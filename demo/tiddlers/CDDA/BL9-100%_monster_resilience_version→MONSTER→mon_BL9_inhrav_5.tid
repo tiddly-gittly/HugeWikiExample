@@ -1,0 +1,237 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_inhrav_5
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_inhrav_5|http://cdda.aloxaf.cn/search?q=mon_BL9_inhrav_5]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_inhrav_5",
+  "looks_like": "mon_mi_go_surgeon",
+  "type": "MONSTER",
+  "name": {
+    "str": "Inhravtidius Mutant Amalgamation"
+  },
+  "description": "A humanoid alien crustacean - it's covered with a thick corral colored armor-like carapace that's fully covering it's entire torso, it has 2 spiked antennas on it's strangely shaped head with multiple rapidly blinking eyes on it, 2 spiked curved tentacles emerge from the sides of this creature, it 2 has pincers in the place of the arms, it's moving on 4 medium-sized crustacean legs quite fast",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 191,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "stab",
+      "amount": 6,
+      "armor_penetration": 11
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 8,
+  "armor_cut": 8,
+  "armor_bullet": 8,
+  "death_drops": "BL9_Drops_Aliens_Amalgamations",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 14
+        }
+      ],
+      "hit_dmg_u": "The %1$s pinches you with it's pincer!",
+      "hit_dmg_npc": "The %1$s pinches <npcname> with it's pincer!",
+      "no_dmg_msg_u": "The %1$s tries to pinch you with it's pincer, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to pinch <npcname> with it's pincer, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s attempts to pinch you with it's pincer, but you dodge!",
+      "miss_msg_npc": "The %s attempts to pinch <npcname> with it's pincer, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 14,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's spiked tentacles at you!",
+      "hit_dmg_npc": "The %1$s swings it's spiked tentacles at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's spiked tentacles at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swing it's spiked tentacles at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's spiked tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's spiked tentacles at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_inhrav_5",
+  "looks_like": "mon_mi_go_surgeon",
+  "type": "MONSTER",
+  "name": {
+    "str": "因赫拉夫蒂迪乌斯突变融合"
+  },
+  "description": "一种人形外星甲壳类动物——它全身覆盖着厚厚的兽栏色盔甲，完全覆盖了它的整个躯干，它的奇怪形状的头上有两个尖尖的天线，上面有多个快速眨眼的眼睛，2个尖尖的弯曲触须从这个生物的侧面出现，它的手臂上有钳子，它用4条中等大小的甲壳类动物的腿移动得相当快",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 191,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "stab",
+      "amount": 6,
+      "armor_penetration": 11
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 8,
+  "armor_cut": 8,
+  "armor_bullet": 8,
+  "death_drops": "BL9_Drops_Aliens_Amalgamations",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 14
+        }
+      ],
+      "hit_dmg_u": "The %1$s pinches you with it's pincer!",
+      "hit_dmg_npc": "The %1$s pinches <npcname> with it's pincer!",
+      "no_dmg_msg_u": "The %1$s tries to pinch you with it's pincer, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to pinch <npcname> with it's pincer, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s attempts to pinch you with it's pincer, but you dodge!",
+      "miss_msg_npc": "The %s attempts to pinch <npcname> with it's pincer, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 14,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's spiked tentacles at you!",
+      "hit_dmg_npc": "The %1$s swings it's spiked tentacles at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's spiked tentacles at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swing it's spiked tentacles at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's spiked tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's spiked tentacles at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

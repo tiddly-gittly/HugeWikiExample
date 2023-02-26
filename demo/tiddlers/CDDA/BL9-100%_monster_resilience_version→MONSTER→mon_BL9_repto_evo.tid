@@ -1,0 +1,237 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_repto_evo
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_repto_evo|http://cdda.aloxaf.cn/search?q=mon_BL9_repto_evo]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/wild_flora_fauna.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_repto_evo",
+  "looks_like": "mon_mutant_evolved",
+  "type": "MONSTER",
+  "name": {
+    "str": "Evolved Repto"
+  },
+  "description": "A modified version of the horrible reptilian mutant, they have a resilient shell-like epidermis that grants them additional protection from small arms. The creatures' left arms are still slightly longer than their right, though the claws on both are wickedly sharp. Both sides of it's mouth are flanked by mandibles, giving them a more unsettling appearance",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 480,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "b",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 10,
+      "armor_penetration": 12
+    },
+    {
+      "damage_type": "stab",
+      "amount": 5,
+      "armor_penetration": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 7,
+  "armor_cut": 10,
+  "armor_bullet": 10,
+  "death_drops": "BL9_Drops_Reptoevo",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 100,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 28,
+          "armor_penetration": 19
+        }
+      ],
+      "hit_dmg_u": "The %1$s slashes you!",
+      "hit_dmg_npc": "The %1$s slashes <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slash you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slash <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s slashes you, but you dodge!",
+      "miss_msg_npc": "The %s slashes <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 100,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 33,
+          "armor_penetration": 22
+        }
+      ],
+      "hit_dmg_u": "The %1$s slices you!",
+      "hit_dmg_npc": "The %1$s slices <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slice you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slice <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s slices you, but you dodge!",
+      "miss_msg_npc": "The %s slices <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_repto_evo",
+  "looks_like": "mon_mutant_evolved",
+  "type": "MONSTER",
+  "name": {
+    "str": "进化的Repto"
+  },
+  "description": "它们是可怕的爬行动物变种的改良版，它有一个弹性的外壳状表皮，使它们免受小型武器的伤害。这些生物的左臂仍然比右臂略长，尽管它们的爪子锋利得可怕。它的嘴两侧都有下颚，让它们看起来更加不安",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 480,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "b",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 10,
+      "armor_penetration": 12
+    },
+    {
+      "damage_type": "stab",
+      "amount": 5,
+      "armor_penetration": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 7,
+  "armor_cut": 10,
+  "armor_bullet": 10,
+  "death_drops": "BL9_Drops_Reptoevo",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 100,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 28,
+          "armor_penetration": 19
+        }
+      ],
+      "hit_dmg_u": "The %1$s slashes you!",
+      "hit_dmg_npc": "The %1$s slashes <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slash you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slash <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s slashes you, but you dodge!",
+      "miss_msg_npc": "The %s slashes <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 100,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 33,
+          "armor_penetration": 22
+        }
+      ],
+      "hit_dmg_u": "The %1$s slices you!",
+      "hit_dmg_npc": "The %1$s slices <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slice you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slice <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s slices you, but you dodge!",
+      "miss_msg_npc": "The %s slices <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

@@ -1,0 +1,309 @@
+creator: 林一二
+revision: 0
+tags: mapgen MagicRevampAdditions
+title: MagicRevampAdditions→mapgen→[1]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/worldgen/magic_shop.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "magic_shop_2ndfloor",
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "           |o|##########",
+      "           |>|4********#",
+      "           |+||********#",
+      "      ||oo||.y|********#",
+      "     ||y.N.Y..|********#",
+      "    ||B..N.t.R|********#",
+      "   ||B...N.t.B|*******##",
+      "  ||Y........xo*******# ",
+      "  |y...hh.....+*******# ",
+      "  oC..tttt....o*******# ",
+      "  oC...hh....y|######## ",
+      "  oC.........I|         ",
+      "  |CFCOCC...hI|         ",
+      "  ||%%%%%%+%%%|         ",
+      "   ||Q.S%....K|         ",
+      "    ||..+.@@..o         ",
+      "     ||&%.@@t.|         ",
+      "      |||ooo|||         ",
+      "      4                 ",
+      "                        ",
+      "                        "
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      ".": "t_floor",
+      " ": "t_open_air",
+      "*": "t_tile_flat_roof",
+      "o": "t_window_domestic",
+      "|": "t_rock_wall",
+      "%": "t_wall_b",
+      "+": "t_door_c",
+      ">": "t_stairs_down",
+      "#": "t_glass_railing"
+    },
+    "toilets": {
+      "&": {}
+    },
+    "furniture": {
+      "@": "f_bed",
+      "t": "f_table",
+      "Q": "f_shower",
+      "S": "f_sink",
+      "B": "f_bookcase",
+      "Y": "f_armchair",
+      "R": "f_fireplace",
+      "C": "f_counter",
+      "N": "f_sofa",
+      "K": "f_wardrobe",
+      "x": "f_floor_lamp",
+      "I": "f_desk",
+      "h": "f_chair",
+      "O": "f_oven",
+      "F": "f_fridge",
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ]
+    },
+    "items": {
+      "I": {
+        "item": "office",
+        "chance": 30
+      },
+      "Q": {
+        "item": "shower",
+        "chance": 30
+      },
+      "S": {
+        "item": "softdrugs",
+        "chance": 30
+      },
+      "@": {
+        "item": "bed",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "C": {
+        "item": "kitchen_counters",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "t": {
+        "item": "dishes_dining",
+        "chance": 30
+      },
+      "F": {
+        "item": "fridge",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "O": {
+        "item": "oven",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "K": {
+        "item": "allclothes",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "B": {
+        "item": "magic_shop_books",
+        "chance": 60,
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    },
+    "place_npcs": [
+      {
+        "class": "healer_priest",
+        "x": 10,
+        "y": 10
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "magic_shop_2ndfloor",
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "           |o|##########",
+      "           |>|4********#",
+      "           |+||********#",
+      "      ||oo||.y|********#",
+      "     ||y.N.Y..|********#",
+      "    ||B..N.t.R|********#",
+      "   ||B...N.t.B|*******##",
+      "  ||Y........xo*******# ",
+      "  |y...hh.....+*******# ",
+      "  oC..tttt....o*******# ",
+      "  oC...hh....y|######## ",
+      "  oC.........I|         ",
+      "  |CFCOCC...hI|         ",
+      "  ||%%%%%%+%%%|         ",
+      "   ||Q.S%....K|         ",
+      "    ||..+.@@..o         ",
+      "     ||&%.@@t.|         ",
+      "      |||ooo|||         ",
+      "      4                 ",
+      "                        ",
+      "                        "
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      ".": "t_floor",
+      " ": "t_open_air",
+      "*": "t_tile_flat_roof",
+      "o": "t_window_domestic",
+      "|": "t_rock_wall",
+      "%": "t_wall_b",
+      "+": "t_door_c",
+      ">": "t_stairs_down",
+      "#": "t_glass_railing"
+    },
+    "toilets": {
+      "&": {}
+    },
+    "furniture": {
+      "@": "f_bed",
+      "t": "f_table",
+      "Q": "f_shower",
+      "S": "f_sink",
+      "B": "f_bookcase",
+      "Y": "f_armchair",
+      "R": "f_fireplace",
+      "C": "f_counter",
+      "N": "f_sofa",
+      "K": "f_wardrobe",
+      "x": "f_floor_lamp",
+      "I": "f_desk",
+      "h": "f_chair",
+      "O": "f_oven",
+      "F": "f_fridge",
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ]
+    },
+    "items": {
+      "I": {
+        "item": "office",
+        "chance": 30
+      },
+      "Q": {
+        "item": "shower",
+        "chance": 30
+      },
+      "S": {
+        "item": "softdrugs",
+        "chance": 30
+      },
+      "@": {
+        "item": "bed",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "C": {
+        "item": "kitchen_counters",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "t": {
+        "item": "dishes_dining",
+        "chance": 30
+      },
+      "F": {
+        "item": "fridge",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "O": {
+        "item": "oven",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "K": {
+        "item": "allclothes",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "B": {
+        "item": "magic_shop_books",
+        "chance": 60,
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    },
+    "place_npcs": [
+      {
+        "class": "healer_priest",
+        "x": 10,
+        "y": 10
+      }
+    ]
+  }
+}
+```
+

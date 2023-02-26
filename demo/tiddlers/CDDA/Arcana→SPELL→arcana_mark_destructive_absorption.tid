@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_mark_destructive_absorption
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mark_destructive_absorption|http://cdda.aloxaf.cn/search?q=arcana_mark_destructive_absorption]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_sanguine_marks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_mark_destructive_absorption",
+  "type": "SPELL",
+  "name": {
+    "str": "Mark: Destructive Absorption"
+  },
+  "description": "Sanguine Mark\nUsing this spell will drain energy from your surroundings, creating a void in reality that will heavily damage a single target, rapidly restoring your stamina afterward.  Beware the risk of tearing the fabric of reality.",
+  "message": "With a strange gesture, the fabric of the Veil warps and decays.  %s!",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "flags": [
+    "SILENT",
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_destructive_absorption_side_effects",
+      "hit_self": true,
+      "max_level": 5
+    },
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_10",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "//": "Full damage with no spike effect, for single-target and line spells.",
+  "min_damage": 200,
+  "max_damage": 500,
+  "damage_increment": 60,
+  "min_range": 3,
+  "max_range": 6,
+  "range_increment": 0.6,
+  "skill": "magic",
+  "max_level": 5,
+  "difficulty": 100,
+  "base_casting_time": 330,
+  "final_casting_time": 165,
+  "casting_time_increment": -33,
+  "energy_source": "HP",
+  "base_energy_cost": 44,
+  "final_energy_cost": 22,
+  "energy_increment": -4.4,
+  "damage_type": "pure",
+  "field_id": "fd_fatigue",
+  "field_chance": 100,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_mark_destructive_absorption",
+  "type": "SPELL",
+  "name": {
+    "str": "印记：破坏性吸收"
+  },
+  "description": "猩红印记\n使用这个法术会消耗你周围的能量，在现实中创造一个虚空，会严重伤害一个目标，然后迅速恢复你的耐力。当心撕裂现实结构的风险。",
+  "message": "以一种奇怪的姿态，帷幕的织物扭曲和腐烂。%s ！",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "flags": [
+    "SILENT",
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_destructive_absorption_side_effects",
+      "hit_self": true,
+      "max_level": 5
+    },
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_10",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "//": "Full damage with no spike effect, for single-target and line spells.",
+  "min_damage": 200,
+  "max_damage": 500,
+  "damage_increment": 60,
+  "min_range": 3,
+  "max_range": 6,
+  "range_increment": 0.6,
+  "skill": "magic",
+  "max_level": 5,
+  "difficulty": 100,
+  "base_casting_time": 330,
+  "final_casting_time": 165,
+  "casting_time_increment": -33,
+  "energy_source": "HP",
+  "base_energy_cost": 44,
+  "final_energy_cost": 22,
+  "energy_increment": -4.4,
+  "damage_type": "pure",
+  "field_id": "fd_fatigue",
+  "field_chance": 100,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+

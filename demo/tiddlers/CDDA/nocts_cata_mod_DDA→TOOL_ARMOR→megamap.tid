@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL_ARMOR→megamap
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：megamap|http://cdda.aloxaf.cn/search?q=megamap]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "megamap",
+  "type": "TOOL_ARMOR",
+  "symbol": ";",
+  "color": "green",
+  "name": {
+    "str": "scout's tool"
+  },
+  "description": "This is a bulky electronic wrist mounted tool, designed to provide an accurate topographical map of your surroundings when used.  It also comes with digital clock and alarm features.  The battery is integral to the device, and requires sunlight or a recharging station to charge.",
+  "price": "5000 USD",
+  "price_postapoc": "50 USD",
+  "material": [
+    "steel"
+  ],
+  "weight": "230 g",
+  "volume": "500 ml",
+  "bashing": 1,
+  "to_hit": -1,
+  "ammo": "battery",
+  "charges_per_use": 250,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "c_topographical_scan",
+    "no_fail": true,
+    "level": 0
+  },
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "solar_sunny",
+      "time": "10 m",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 250
+      }
+    }
+  ],
+  "flags": [
+    "BELTED",
+    "WATCH",
+    "ALARMCLOCK",
+    "RECHARGE",
+    "NO_UNLOAD",
+    "NO_RELOAD"
+  ],
+  "phase": "solid",
+  "sided": true,
+  "armor": [
+    {
+      "encumbrance": 5,
+      "coverage": 10,
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "material": [
+        "steel"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "megamap",
+  "type": "TOOL_ARMOR",
+  "symbol": ";",
+  "color": "green",
+  "name": {
+    "str": "侦查者平板"
+  },
+  "description": "这是一个笨重的电子腕装工具，使用时可提供周围环境的精确地形图。 它还带有电子时钟和闹钟功能。 内置电池需要阳光或充电站来充电。",
+  "price": "5000 USD",
+  "price_postapoc": "50 USD",
+  "material": [
+    "steel"
+  ],
+  "weight": "230 g",
+  "volume": "500 ml",
+  "bashing": 1,
+  "to_hit": -1,
+  "ammo": "battery",
+  "charges_per_use": 250,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "c_topographical_scan",
+    "no_fail": true,
+    "level": 0
+  },
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "solar_sunny",
+      "time": "10 m",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 250
+      }
+    }
+  ],
+  "flags": [
+    "BELTED",
+    "WATCH",
+    "ALARMCLOCK",
+    "RECHARGE",
+    "NO_UNLOAD",
+    "NO_RELOAD"
+  ],
+  "phase": "solid",
+  "sided": true,
+  "armor": [
+    {
+      "encumbrance": 5,
+      "coverage": 10,
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "material": [
+        "steel"
+      ]
+    }
+  ]
+}
+```
+

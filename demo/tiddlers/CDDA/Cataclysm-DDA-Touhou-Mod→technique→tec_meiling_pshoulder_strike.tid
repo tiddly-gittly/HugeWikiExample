@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_meiling_pshoulder_strike
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_meiling_pshoulder_strike|http://cdda.aloxaf.cn/search?q=tec_meiling_pshoulder_strike]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_meiling_pshoulder_strike",
+  "type": "technique",
+  "name": "Shoulder strike: Stay out",
+  "messages": [
+    "You powerfully hit %s with a shoulder strike, sending them flying back!",
+    "<npcname> powerfully hits %s with a shoulder strike, sending them flying back!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 4
+    }
+  ],
+  "required_buffs_all": [
+    "buff_meiling_onblock2"
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "crit_tec": true,
+  "knockback_dist": 2,
+  "stun_dur": 1,
+  "weighting": 6,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 3.334
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 3.334
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 3.334
+    }
+  ],
+  "//": "Original tec_taichi_precise , buffed"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_meiling_pshoulder_strike",
+  "type": "technique",
+  "name": "Shoulder strike: Stay out",
+  "messages": [
+    "You powerfully hit %s with a shoulder strike, sending them flying back!",
+    "<npcname> powerfully hits %s with a shoulder strike, sending them flying back!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 4
+    }
+  ],
+  "required_buffs_all": [
+    "buff_meiling_onblock2"
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "crit_tec": true,
+  "knockback_dist": 2,
+  "stun_dur": 1,
+  "weighting": 6,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 3.334
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 3.334
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 3.334
+    }
+  ],
+  "//": "Original tec_taichi_precise , buffed"
+}
+```
+

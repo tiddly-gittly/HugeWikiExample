@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_GM_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_GM_1|http://cdda.aloxaf.cn/search?q=MISSION_CF_GM_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_GM_1",
+  "type": "mission_definition",
+  "name": {
+    "str": "Retrieve Bane Staff"
+  },
+  "description": "Retrieve the bane staff from the strange grove, and bring it to Johnathan.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 5,
+  "item": "scourge_staff",
+  "value": 15000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_GM_2",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "strange_grove",
+      "om_special": "Strange Grove",
+      "reveal_radius": 3,
+      "search_range": 360,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 6
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_GM_1_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_GM_1_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_GM_1_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_GM_1_d"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Grant us strength…",
+    "offer": "During our journey we've seen scattered evidence of some hazards still afflicting certain areas, former hotspots of anomalous activity now made even more dangerous, ever since holes in reality began opening up.  With the rest of us focused on rebuilding and securing the area, I would like to ask your assistance with investigating one such location, and retrieving an artifact of historical importance believed to be lost there.",
+    "accepted": "Thank you.  I will direct you to the location, if you've not seen it for yourself.  Decades ago the place was inhabited, but now the place seems to be overgrown and infested with monsters.  Do what you must to cleanse the place, and retrieve what the texts called a bane staff.  Dii vult.",
+    "rejected": "When you believe you are ready, talk to me again.  The longer these old places linger without being dealt with, the more of a threat they may become.",
+    "advice": "The extent to which the place has overgrown is unnatural.  I would expect monsters comfortable among greenery to be the most common threat, and we have reason to believe something large has taken root there.  Beyond that, I can tell you little of the history behind that place, Sofia might know more.",
+    "inquire": "How goes the hunt?",
+    "success": "Thank you.  That staff was associated with those who once inhabited that place, but it seems whatever anomalies caused all this corrupted it to some extent.  I will care for it, anything else you found down there you may deal with as you see fit.  The rest of us will try to discern just what to make of these anomalies.",
+    "success_lie": "What idiocy is this?",
+    "failure": "But how?"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_GM_1",
+  "type": "mission_definition",
+  "name": {
+    "str": "找回贝恩杖"
+  },
+  "description": "从奇怪的小树林里取回毒蛇杖，把它带给约翰纳森。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 5,
+  "item": "scourge_staff",
+  "value": 15000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_GM_2",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "strange_grove",
+      "om_special": "Strange Grove",
+      "reveal_radius": 3,
+      "search_range": 360,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 6
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_GM_1_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_GM_1_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_GM_1_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_GM_1_d"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "赐予我们力量……",
+    "offer": "在我们的旅程中，我们看到了一些仍在困扰某些地区的危险的零星证据，从前的异常活动热点现在变得更加危险，自从现实中的漏洞开始出现以来。我想请你调查一下失传文物的位置，我希望能帮助我们找回失物。",
+    "accepted": "非常感谢。如果你还没亲眼看到的话，我会带你去那个地方。几十年前这里有人居住，但现在这里似乎杂草丛生，到处都是怪物。做你必须做的事情来清理这个地方，找回那些被称为“祸根杖”的文字。迪瓦特。",
+    "rejected": "当你相信你准备好了，再跟我谈谈。这些老地方越久得不到处理，就越可能成为威胁。",
+    "advice": "这个地方过度生长的程度是不自然的。我认为在绿树丛中的怪物是最常见的威胁，我们有理由相信一些大的东西已经在那里生根发芽了。除此之外，我可以告诉你一点关于那个地方的历史，索菲亚可能知道得更多。",
+    "inquire": "打猎怎么样？",
+    "success": "非常感谢。该员工与那些曾经居住在那个地方的人有关联，但似乎无论是什么异常导致了这一切，都在一定程度上腐蚀了它。我会照顾它，你在那里找到的任何其他东西，你可以根据自己的意愿处理。我们其余的人将试图辨别这些异常现象的成因。",
+    "success_lie": "这是什么白痴的行为？",
+    "failure": "但是怎么做呢？"
+  }
+}
+```
+

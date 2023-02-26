@@ -1,0 +1,1013 @@
+creator: 林一二
+revision: 0
+tags: mapgen nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mapgen→[4]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Terrain/Unknown_Lab.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Unknown_Lab_b1"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_soil",
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                    ||||",
+      "                    |{{{",
+      "                    |...",
+      "            |||||||||...",
+      "   |||||||| |{{{_.%%|r..",
+      "  ||PP66PP|||.....%%|r..",
+      " ||....c...||.A^...r||R+",
+      " |..........|.Uh...r||..",
+      " |v.........+......$||..",
+      " |v.........|.....&$||..",
+      " |v.........||||+|||||R+",
+      " |v.....................",
+      " |v..212................",
+      " |v..._.................",
+      " |v..343................",
+      " |v.........||IIIII||..|"
+    ],
+    "terrain": {
+      "1": "t_switchgear_l",
+      "2": "t_current_trans",
+      "3": "t_switchgear_s",
+      "4": "t_station_disc",
+      "6": "t_metal_floor",
+      "|": "t_wall_metal",
+      "+": "t_door_metal_c",
+      ".": "t_metal_floor",
+      "_": "t_utility_light",
+      "{": "t_metal_floor",
+      "^": "t_metal_floor",
+      "%": "t_metal_floor",
+      "$": "t_metal_floor",
+      "&": "t_metal_floor",
+      "A": "t_metal_floor",
+      "I": "t_reinforced_glass",
+      "P": "t_metal_floor",
+      "R": "t_card_reader_broken",
+      "U": "t_metal_floor",
+      "c": "t_metal_floor",
+      "h": "t_metal_floor",
+      "r": "t_metal_floor",
+      "v": "t_vat"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "%": "f_machinery_heavy",
+      "$": "f_machinery_electronic",
+      "{": "f_locker",
+      "^": "f_forge",
+      "&": "f_robotic_arm",
+      "A": "f_anvil",
+      "P": "f_compact_ASRG_containment",
+      "U": "f_kiln_metal_empty",
+      "c": "f_chair",
+      "h": "f_clay_kiln",
+      "r": "f_rack"
+    },
+    "place_loot": [
+      {
+        "item": "UPS_off",
+        "x": 13,
+        "y": 12,
+        "chance": 90
+      },
+      {
+        "item": "br_bolt_rifle_elec",
+        "x": 13,
+        "y": 12
+      },
+      {
+        "item": "large_repairkit",
+        "x": 21,
+        "y": 12
+      },
+      {
+        "item": "flesh_weapon_kit",
+        "x": 21,
+        "y": 13
+      },
+      {
+        "group": "electronics",
+        "x": [
+          14,
+          15
+        ],
+        "y": 12,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "tools_mechanic",
+        "x": 19,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "ammo_milspec",
+        "x": [
+          21,
+          22
+        ],
+        "y": 9,
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "mags_milspec",
+        "x": 23,
+        "y": 9,
+        "chance": 25,
+        "repeat": 3
+      },
+      {
+        "group": "map_extra_science",
+        "x": 8,
+        "y": 22,
+        "chance": 75
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 22
+      },
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 21
+      },
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 20
+      },
+      {
+        "field": "fd_blood",
+        "x": 14,
+        "y": 23
+      },
+      {
+        "field": "fd_blood",
+        "x": 15,
+        "y": 23
+      },
+      {
+        "field": "fd_blood",
+        "x": 16,
+        "y": 23
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_failed_weapon",
+        "x": 16,
+        "y": 13
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 23,
+        "y": 16
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 6,
+        "y": 15
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 12,
+        "y": 21
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 22,
+        "y": 23
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "autoclave_cart",
+        "x": 13,
+        "y": 17,
+        "chance": 99,
+        "fuel": 25,
+        "status": 25,
+        "rotation": 0
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "sketchy_cabin_1_roof"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_shingle_flat_roof",
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      " |22222222222222222222| ",
+      " |....................| ",
+      " |....................| ",
+      " |....................| ",
+      " |....................| ",
+      " |....................| ",
+      " |....................| ",
+      " |....................| ",
+      " |....................| ",
+      " |.~..................| ",
+      " |....................| ",
+      " |....................| ",
+      " |....................| ",
+      " |....................| ",
+      " 5....................| ",
+      " |....................| ",
+      " |--------------------| ",
+      "                        "
+    ],
+    "palettes": [
+      "roof_palette"
+    ],
+    "terrain": {
+      ".": "t_shingle_flat_roof"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Survivor_Encampment_2"
+  ],
+  "//": "Prepper NPCs variant.  This version will remain rooted in a separate overmap special, to keep their spawns unique.",
+  "weight": 1000,
+  "object": {
+    "faction_owner": [
+      {
+        "id": "preppers",
+        "x": [
+          2,
+          22
+        ],
+        "y": [
+          3,
+          22
+        ]
+      }
+    ],
+    "rows": [
+      ".........&..............",
+      "##########====##########",
+      "#........&,,,,.........#",
+      "#.|||||||.,,,,.||w|w||.#",
+      "#.|H~~~~-.,,,,.|F_vCC|.#",
+      "#.|H~~~~x.,,,,.+__u_hw.#",
+      "#.|~~~~~-.,,,,.|nn_}}|.#",
+      "#.|||||||.,,,,.||w|w||.#",
+      "#.........,,,,.........#",
+      "#.||w|w||.,,,,.||w|w||.#",
+      "#.|bbbbb|.,,,,.|}}}_a|.#",
+      "#.w__u__+.,,,,.+__u_fw.#",
+      "#.|ht_ht|.,,,,.|{{__k|.#",
+      "#.|||+|||.,,,,.|||+|||.#",
+      "#.|BB_BB|.,,,,.|{{__{|.#",
+      "#.wD_u__+.,,,,.+__u_{w.#",
+      "#.|BBDBB|.,,,,.|}}}_{|.#",
+      "#.||w|w||.,,,,.||w|w||.#",
+      "#..OSPrr..,,,,.........#",
+      "#.........,,,,.|+|+|+|.#",
+      "#.mmmmmmm.!RR!.|T|T|T|.#",
+      "#.mmmmmmm.^^^^.|||||||.#",
+      "#......................#",
+      "########################"
+    ],
+    "terrain": {
+      ".": [
+        [
+          "t_grass",
+          4
+        ],
+        [
+          "t_grass_long",
+          2
+        ],
+        [
+          "t_dirt",
+          1
+        ]
+      ],
+      ",": "t_dirt",
+      "#": "t_palisade",
+      "|": "t_wall_log",
+      "+": "t_rdoor_c",
+      "_": "t_rock_floor",
+      "=": "t_palisade_gate",
+      "&": "t_palisade_pulley",
+      "{": "t_dirt",
+      "}": "t_rock_floor",
+      "^": "t_concrete",
+      "-": "t_splitrail_fence",
+      "!": "t_current_trans",
+      "~": "t_dirtfloor",
+      "B": "t_rock_floor",
+      "C": "t_rock_floor",
+      "D": "t_rock_floor",
+      "F": "t_rock_floor",
+      "H": "t_dirtfloor",
+      "O": "t_dirt",
+      "P": "t_water_pump",
+      "R": "t_concrete",
+      "S": "t_dirt",
+      "T": "t_rock_floor",
+      "a": "t_rock_floor",
+      "b": "t_rock_floor",
+      "f": "t_rock_floor",
+      "h": "t_rock_floor",
+      "k": "t_rock_floor",
+      "m": "t_dirtmound",
+      "n": "t_rock_floor",
+      "r": "t_dirt",
+      "t": "t_rock_floor",
+      "u": "t_utility_light",
+      "v": "t_rock_floor",
+      "w": "t_window_enhanced",
+      "x": "t_splitrail_fencegate_c"
+    },
+    "furniture": {
+      "{": "f_rack",
+      "}": "f_locker",
+      "^": "f_solar_unit",
+      "B": "f_makeshift_bed",
+      "C": "f_crate_o",
+      "D": "f_dresser",
+      "H": "f_hay",
+      "O": "f_standing_tank",
+      "R": "f_rack",
+      "S": "f_smoking_rack",
+      "T": "f_toilet",
+      "a": "f_anvil",
+      "b": "f_bookcase",
+      "f": "f_forge_rock",
+      "h": "f_chair",
+      "k": "f_kiln_empty",
+      "n": "f_cupboard",
+      "r": "f_rack",
+      "t": "f_table",
+      "v": "f_woodstove"
+    },
+    "place_toilets": [
+      {
+        "x": 16,
+        "y": 20
+      },
+      {
+        "x": 18,
+        "y": 20
+      },
+      {
+        "x": 20,
+        "y": 20
+      }
+    ],
+    "mapping": {
+      "B": {
+        "items": {
+          "item": "bed",
+          "chance": 75
+        }
+      },
+      "C": {
+        "items": [
+          {
+            "item": "oven",
+            "chance": 90
+          }
+        ]
+      },
+      "D": {
+        "items": [
+          {
+            "item": "dresser",
+            "chance": 90
+          },
+          {
+            "item": "survival_armor",
+            "chance": 75
+          },
+          {
+            "item": "survival_armor",
+            "chance": 50
+          }
+        ]
+      },
+      "R": {
+        "items": {
+          "item": "gas_charging_rack",
+          "chance": 75
+        }
+      },
+      "b": {
+        "items": {
+          "item": "mansion_bookcase",
+          "chance": 100
+        }
+      },
+      "n": {
+        "items": [
+          {
+            "item": "cannedfood",
+            "chance": 50
+          },
+          {
+            "item": "cannedfood",
+            "chance": 50
+          },
+          {
+            "item": "cannedfood",
+            "chance": 50
+          },
+          {
+            "item": "cannedfood",
+            "chance": 50
+          }
+        ]
+      },
+      "r": {
+        "items": [
+          {
+            "item": "tools_earthworking",
+            "chance": 90
+          },
+          {
+            "item": "farming_seeds",
+            "chance": 60
+          }
+        ]
+      }
+    },
+    "place_loot": [
+      {
+        "group": "power_tools",
+        "x": [
+          19,
+          20
+        ],
+        "y": 6,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "supplies_reagents_lab",
+        "x": [
+          19,
+          20
+        ],
+        "y": 6,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "group": "bionics_failed_bio",
+        "x": [
+          17,
+          19
+        ],
+        "y": 6,
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "group": "bionic_power_storage_mil",
+        "x": [
+          17,
+          19
+        ],
+        "y": 6,
+        "chance": 50
+      },
+      {
+        "group": "tools_gunsmith",
+        "x": [
+          16,
+          18
+        ],
+        "y": 10,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "gunmod_common",
+        "x": [
+          16,
+          18
+        ],
+        "y": 10,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "group": "gunmod_rare",
+        "x": [
+          16,
+          18
+        ],
+        "y": 10,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "group": "tools_blacksmith",
+        "x": [
+          16,
+          17
+        ],
+        "y": 12,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "supplies_metal",
+        "x": [
+          16,
+          17
+        ],
+        "y": 12,
+        "chance": 25,
+        "repeat": 5
+      },
+      {
+        "group": "supplies_mechanics",
+        "x": [
+          16,
+          17
+        ],
+        "y": 12,
+        "chance": 25,
+        "repeat": 5
+      },
+      {
+        "group": "gear_medical",
+        "x": [
+          16,
+          17
+        ],
+        "y": 14,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "surgery",
+        "x": [
+          16,
+          17
+        ],
+        "y": 14,
+        "chance": 25,
+        "repeat": 5
+      },
+      {
+        "group": "drugs_heal_simple",
+        "x": [
+          16,
+          17
+        ],
+        "y": 14,
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "survivor_weapons",
+        "x": [
+          16,
+          18
+        ],
+        "y": 16,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "ammo_reloaded",
+        "x": [
+          16,
+          18
+        ],
+        "y": 16,
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "mags_makeshift",
+        "x": [
+          16,
+          18
+        ],
+        "y": 16,
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "tools_electronics",
+        "x": 20,
+        "y": [
+          14,
+          16
+        ],
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "supplies_electronics",
+        "x": 20,
+        "y": [
+          14,
+          16
+        ],
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "bionics_failed_bio",
+        "x": 20,
+        "y": [
+          14,
+          16
+        ],
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "group": "bionic_power_storage_mil",
+        "x": 20,
+        "y": [
+          14,
+          16
+        ],
+        "chance": 50
+      },
+      {
+        "item": "bucket",
+        "x": [
+          6,
+          7
+        ],
+        "y": 4
+      },
+      {
+        "item": "recipe_surv",
+        "x": 4,
+        "y": 11
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "bicycle_electric",
+        "x": 10,
+        "y": 15,
+        "chance": 90,
+        "fuel": 25,
+        "status": -1,
+        "rotation": 270
+      },
+      {
+        "vehicle": "bicycle_electric",
+        "x": 13,
+        "y": 15,
+        "chance": 90,
+        "fuel": 25,
+        "status": -1,
+        "rotation": 270
+      },
+      {
+        "vehicle": "surv_tachanka",
+        "x": 12,
+        "y": 8,
+        "chance": 75,
+        "status": -1,
+        "rotation": 270
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_horse",
+        "x": 4,
+        "y": 4
+      },
+      {
+        "monster": "mon_horse",
+        "x": 6,
+        "y": 6
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "survn",
+        "x": 9,
+        "y": 4
+      },
+      {
+        "class": "survn",
+        "x": 18,
+        "y": 6
+      },
+      {
+        "class": "survn",
+        "x": 6,
+        "y": 12
+      },
+      {
+        "class": "survn",
+        "x": 18,
+        "y": 11
+      },
+      {
+        "class": "survn",
+        "x": 4,
+        "y": 15
+      },
+      {
+        "class": "survn",
+        "x": 18,
+        "y": 15
+      },
+      {
+        "class": "survn",
+        "x": 6,
+        "y": 19
+      },
+      {
+        "class": "survn",
+        "x": 14,
+        "y": 17
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Unknown_Lab_b1"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_soil",
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                    ||||",
+      "                    |{{{",
+      "                    |...",
+      "            |||||||||...",
+      "   |||||||| |{{{_.%%|r..",
+      "  ||PP66PP|||.....%%|r..",
+      " ||....c...||.A^...r||R+",
+      " |..........|.Uh...r||..",
+      " |v.........+......$||..",
+      " |v.........|.....&$||..",
+      " |v.........||||+|||||R+",
+      " |v.....................",
+      " |v..212................",
+      " |v..._.................",
+      " |v..343................",
+      " |v.........||IIIII||..|"
+    ],
+    "terrain": {
+      "1": "t_switchgear_l",
+      "2": "t_current_trans",
+      "3": "t_switchgear_s",
+      "4": "t_station_disc",
+      "6": "t_metal_floor",
+      "|": "t_wall_metal",
+      "+": "t_door_metal_c",
+      ".": "t_metal_floor",
+      "_": "t_utility_light",
+      "{": "t_metal_floor",
+      "^": "t_metal_floor",
+      "%": "t_metal_floor",
+      "$": "t_metal_floor",
+      "&": "t_metal_floor",
+      "A": "t_metal_floor",
+      "I": "t_reinforced_glass",
+      "P": "t_metal_floor",
+      "R": "t_card_reader_broken",
+      "U": "t_metal_floor",
+      "c": "t_metal_floor",
+      "h": "t_metal_floor",
+      "r": "t_metal_floor",
+      "v": "t_vat"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "%": "f_machinery_heavy",
+      "$": "f_machinery_electronic",
+      "{": "f_locker",
+      "^": "f_forge",
+      "&": "f_robotic_arm",
+      "A": "f_anvil",
+      "P": "f_compact_ASRG_containment",
+      "U": "f_kiln_metal_empty",
+      "c": "f_chair",
+      "h": "f_clay_kiln",
+      "r": "f_rack"
+    },
+    "place_loot": [
+      {
+        "item": "UPS_off",
+        "x": 13,
+        "y": 12,
+        "chance": 90
+      },
+      {
+        "item": "br_bolt_rifle_elec",
+        "x": 13,
+        "y": 12
+      },
+      {
+        "item": "large_repairkit",
+        "x": 21,
+        "y": 12
+      },
+      {
+        "item": "flesh_weapon_kit",
+        "x": 21,
+        "y": 13
+      },
+      {
+        "group": "electronics",
+        "x": [
+          14,
+          15
+        ],
+        "y": 12,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "tools_mechanic",
+        "x": 19,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "ammo_milspec",
+        "x": [
+          21,
+          22
+        ],
+        "y": 9,
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "mags_milspec",
+        "x": 23,
+        "y": 9,
+        "chance": 25,
+        "repeat": 3
+      },
+      {
+        "group": "map_extra_science",
+        "x": 8,
+        "y": 22,
+        "chance": 75
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 22
+      },
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 21
+      },
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 20
+      },
+      {
+        "field": "fd_blood",
+        "x": 14,
+        "y": 23
+      },
+      {
+        "field": "fd_blood",
+        "x": 15,
+        "y": 23
+      },
+      {
+        "field": "fd_blood",
+        "x": 16,
+        "y": 23
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_failed_weapon",
+        "x": 16,
+        "y": 13
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 23,
+        "y": 16
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 6,
+        "y": 15
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 12,
+        "y": 21
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 22,
+        "y": 23
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "autoclave_cart",
+        "x": 13,
+        "y": 17,
+        "chance": 99,
+        "fuel": 25,
+        "status": 25,
+        "rotation": 0
+      }
+    ]
+  }
+}
+```
+

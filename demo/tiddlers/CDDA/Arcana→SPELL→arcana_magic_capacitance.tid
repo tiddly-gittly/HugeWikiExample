@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_capacitance
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_capacitance|http://cdda.aloxaf.cn/search?q=arcana_magic_capacitance]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_capacitance",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Capacitance"
+  },
+  "description": "Magic Sign\nUsing this spell will channel your energy into artifice within the body, restoring bionic energy at the cost of stamina.  Doing so will stun yourself briefly, however.",
+  "message": "\"Dōnēs nobis virtus…\"  You cast %s!",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_capacitance_zap",
+      "hit_self": true,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_capacitance_stun",
+      "hit_self": true,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_5",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "min_damage": 100,
+  "max_damage": 200,
+  "damage_increment": 10,
+  "base_energy_cost": 3000,
+  "final_energy_cost": 1500,
+  "energy_increment": -150,
+  "max_level": 10,
+  "effect": "recover_energy",
+  "shape": "blast",
+  "effect_str": "BIONIC",
+  "energy_source": "STAMINA",
+  "difficulty": 50,
+  "skill": "magic",
+  "base_casting_time": 240,
+  "final_casting_time": 120,
+  "casting_time_increment": -12
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_capacitance",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：电容"
+  },
+  "description": "使用此法术的魔法符号\n将把你的能量导入体内的技巧，以耐力为代价恢复仿生能量。然而，这样做会让你自己暂时晕眩。",
+  "message": "“赐我勇气……”你施放了 %s！",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_capacitance_zap",
+      "hit_self": true,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_capacitance_stun",
+      "hit_self": true,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_5",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "min_damage": 100,
+  "max_damage": 200,
+  "damage_increment": 10,
+  "base_energy_cost": 3000,
+  "final_energy_cost": 1500,
+  "energy_increment": -150,
+  "max_level": 10,
+  "effect": "recover_energy",
+  "shape": "blast",
+  "effect_str": "BIONIC",
+  "energy_source": "STAMINA",
+  "difficulty": 50,
+  "skill": "magic",
+  "base_casting_time": 240,
+  "final_casting_time": 120,
+  "casting_time_increment": -12
+}
+```
+

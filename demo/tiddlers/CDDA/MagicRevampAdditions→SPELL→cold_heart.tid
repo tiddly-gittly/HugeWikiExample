@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→cold_heart
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cold_heart|http://cdda.aloxaf.cn/search?q=cold_heart]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Ice_Elemental.json
+
+
+!! 原文
+
+```json
+{
+  "id": "cold_heart",
+  "type": "SPELL",
+  "name": {
+    "str": "Cold Heart"
+  },
+  "description": "Harshly drop the temperature of your enemies from the inside, slowing down their bloodstreams or even shattering organs.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_PROJECTILE",
+    "SILENT"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "cold",
+  "min_damage": 20,
+  "max_damage": 96,
+  "damage_increment": 1.8,
+  "min_range": 6,
+  "max_range": 24,
+  "range_increment": 0.4,
+  "max_level": 43,
+  "difficulty": 10,
+  "spell_class": "ICE_ELEMENTAL",
+  "base_casting_time": 150,
+  "final_casting_time": 60,
+  "casting_time_increment": -2.2,
+  "energy_source": "MANA",
+  "base_energy_cost": 160,
+  "energy_increment": -2.3,
+  "final_energy_cost": 64,
+  "extra_effects": [
+    {
+      "id": "cold_heart_slow"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "cold_heart",
+  "type": "SPELL",
+  "name": {
+    "str": "冰寒之心"
+  },
+  "description": "将严寒注入敌人体内，降低体温，减缓血流，甚至粉碎器官。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_PROJECTILE",
+    "SILENT"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "cold",
+  "min_damage": 20,
+  "max_damage": 96,
+  "damage_increment": 1.8,
+  "min_range": 6,
+  "max_range": 24,
+  "range_increment": 0.4,
+  "max_level": 43,
+  "difficulty": 10,
+  "spell_class": "ICE_ELEMENTAL",
+  "base_casting_time": 150,
+  "final_casting_time": 60,
+  "casting_time_increment": -2.2,
+  "energy_source": "MANA",
+  "base_energy_cost": 160,
+  "energy_increment": -2.3,
+  "final_energy_cost": 64,
+  "extra_effects": [
+    {
+      "id": "cold_heart_slow"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→blob_turret_mount
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：blob_turret_mount|http://cdda.aloxaf.cn/search?q=blob_turret_mount]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_turret.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "blob_turret_mount",
+  "name": {
+    "str": "inert core"
+  },
+  "symbol": "X",
+  "color": "red",
+  "broken_symbol": "X",
+  "broken_color": "red",
+  "damage_modifier": 80,
+  "durability": 400,
+  "description": "A sleeping amorphous core, acting as a rotating, universal mount for a weapon.  If your hands are empty, you can stand next to a tentacle and 'f'ire the weapon by selecting the tile.",
+  "folded_volume": "2500 ml",
+  "item": "queen",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "20 m"
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "10 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "TURRET_MOUNT"
+  ],
+  "breaks_into": [
+    {
+      "item": "queengrow"
+    }
+  ],
+  "damage_reduction": {
+    "all": 54
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "blob_turret_mount",
+  "name": {
+    "str": "无活性核心"
+  },
+  "symbol": "X",
+  "color": "red",
+  "broken_symbol": "X",
+  "broken_color": "red",
+  "damage_modifier": 80,
+  "durability": 400,
+  "description": "一个休眠中的变形怪无定形核心，能够作为自由旋转的通用武器炮塔底座使用。你空着双手紧挨着核心时，按射击键操作它上面所安装的武器开火。",
+  "folded_volume": "2500 ml",
+  "item": "queen",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "20 m"
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "10 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "TURRET_MOUNT"
+  ],
+  "breaks_into": [
+    {
+      "item": "queengrow"
+    }
+  ],
+  "damage_reduction": {
+    "all": 54
+  }
+}
+```
+

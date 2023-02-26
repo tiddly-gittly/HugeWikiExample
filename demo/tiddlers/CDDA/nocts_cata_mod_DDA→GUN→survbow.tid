@@ -1,0 +1,165 @@
+creator: 林一二
+revision: 0
+tags: GUN nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→GUN→survbow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：survbow|http://cdda.aloxaf.cn/search?q=survbow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Weapons/c_ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "survbow",
+  "type": "GUN",
+  "symbol": "(",
+  "color": "brown",
+  "looks_like": "compositebow",
+  "name": {
+    "str": "survivor's fighting bow"
+  },
+  "description": "A custom-made bow, arms reinforced to compensate for its takedown design.  The tips of the bow have makeshift blades to make this bow an efficient melee weapon when things get close and personal.  Use it to compact the weapon for easier storage.",
+  "price": "880 USD",
+  "price_postapoc": "88 USD",
+  "material": [
+    "wood",
+    "steel"
+  ],
+  "flags": [
+    "WATERPROOF_GUN",
+    "NEVER_JAMS",
+    "FIRE_TWOHAND",
+    "STR_DRAW",
+    "RELOAD_AND_SHOOT",
+    "PRIMITIVE_RANGED_WEAPON",
+    "DURABLE_MELEE"
+  ],
+  "techniques": [
+    "RAPID",
+    "WBLOCK_2",
+    "PRECISE"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES"
+  ],
+  "skill": "archery",
+  "min_strength": 6,
+  "ammo": [
+    "arrow"
+  ],
+  "weight": "1144 g",
+  "volume": "2250 ml",
+  "longest_side": "150 cm",
+  "bashing": 10,
+  "cutting": 18,
+  "reload_noise_volume": 4,
+  "loudness": 10,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 6,
+    "armor_penetration": 1
+  },
+  "range": 10,
+  "dispersion": 1250,
+  "durability": 6,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "arrow": 1
+      }
+    }
+  ],
+  "use_action": {
+    "type": "transform",
+    "msg": "You collapse the fighting bow into its takedown form.",
+    "target": "survbowstored",
+    "ammo_scale": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "survbow",
+  "type": "GUN",
+  "symbol": "(",
+  "color": "brown",
+  "looks_like": "compositebow",
+  "name": {
+    "str": "幸存者战斗弓"
+  },
+  "description": "定制的弓，弓臂加固以弥补它的可拆卸设计。弓的尖端有自制刀片使这把弓在近距离接触敌人时成为有效的近战武器。激活它来折叠武器，更容易储存。",
+  "price": "880 USD",
+  "price_postapoc": "88 USD",
+  "material": [
+    "wood",
+    "steel"
+  ],
+  "flags": [
+    "WATERPROOF_GUN",
+    "NEVER_JAMS",
+    "FIRE_TWOHAND",
+    "STR_DRAW",
+    "RELOAD_AND_SHOOT",
+    "PRIMITIVE_RANGED_WEAPON",
+    "DURABLE_MELEE"
+  ],
+  "techniques": [
+    "RAPID",
+    "WBLOCK_2",
+    "PRECISE"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES"
+  ],
+  "skill": "archery",
+  "min_strength": 6,
+  "ammo": [
+    "arrow"
+  ],
+  "weight": "1144 g",
+  "volume": "2250 ml",
+  "longest_side": "150 cm",
+  "bashing": 10,
+  "cutting": 18,
+  "reload_noise_volume": 4,
+  "loudness": 10,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 6,
+    "armor_penetration": 1
+  },
+  "range": 10,
+  "dispersion": 1250,
+  "durability": 6,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "arrow": 1
+      }
+    }
+  ],
+  "use_action": {
+    "type": "transform",
+    "msg": "你把战斗弓折叠成它的拆卸形态。",
+    "target": "survbowstored",
+    "ammo_scale": 0
+  }
+}
+```
+

@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→SPELL_POISONARMOR2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SPELL_POISONARMOR2|http://cdda.aloxaf.cn/search?q=SPELL_POISONARMOR2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_paragon.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_POISONARMOR2",
+  "name": {
+    "str": "Sign of Protection II"
+  },
+  "points": 2,
+  "description": "\"You will bear my mark of protection, for your body is a frail and transient thing.\"\nUnknowable forces have given you a second gift, that can grant temporary protection from toxic gas and other poisons.  (( Remember to bind the \"spellcasting\" key! ))",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_ACIDARMOR"
+  ],
+  "changes_to": [
+    "SPELL_ELECRESIST2"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 200,
+  "spells_learned": [
+    [
+      "arcana_blessing_ward_acid",
+      1
+    ],
+    [
+      "arcana_blessing_ward_poison",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil",
+    "ARCANA_VEIL_MARKER_PROTECTION"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_POISONARMOR2",
+  "name": {
+    "str": "保护标志II"
+  },
+  "points": 2,
+  "description": "“您会得到我的庇佑，因为您的身体不可及永恒，无以媲磐石。”\n不可知的力量赠予你第二个礼物，可以暂时保护你免受有毒气体和其他有毒物质的伤害。（（记住绑定“施法”键！））",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_ACIDARMOR"
+  ],
+  "changes_to": [
+    "SPELL_ELECRESIST2"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 200,
+  "spells_learned": [
+    [
+      "arcana_blessing_ward_acid",
+      1
+    ],
+    [
+      "arcana_blessing_ward_poison",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil",
+    "ARCANA_VEIL_MARKER_PROTECTION"
+  ]
+}
+```
+

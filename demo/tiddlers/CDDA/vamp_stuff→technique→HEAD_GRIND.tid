@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: technique vamp_stuff
+title: vamp_stuff→technique→HEAD_GRIND
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：HEAD_GRIND|http://cdda.aloxaf.cn/search?q=HEAD_GRIND]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Others/v_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "HEAD_GRIND",
+  "name": "Head Grind",
+  "description": "Insta-kill, crit only",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "weighting": -100,
+  "messages": [
+    "%s's head were snapped out of from its neck",
+    "%s's head fell into the floor after strucked by <npcname>"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 99.99
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "HEAD_GRIND",
+  "name": "处决",
+  "description": "秒杀，仅暴击",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "weighting": -100,
+  "messages": [
+    "%s的头从它的脖子撕下来了。",
+    "%s的头被<npcname>撕裂，滚落到地上。"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 99.99
+    }
+  ]
+}
+```
+

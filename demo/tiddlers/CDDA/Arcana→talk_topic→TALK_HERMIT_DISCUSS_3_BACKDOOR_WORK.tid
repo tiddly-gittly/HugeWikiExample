@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK",
+  "dynamic_line": "We sought to do what little we could to salve the wounds in The Veil that still fester.  The Cleansing Flame, another group experienced with the Beyond, had their own methods.  Flawed ones, but not without merit.  In time, if you accept this blade and seek out the portals left behind, you will find the answers you seek.  It may not be enough to save humanity.  But it's one way to help, among many.",
+  "responses": [
+    {
+      "text": "Okay.  I accept.",
+      "effect": [
+        {
+          "u_add_effect": "hermit_stage_3_backdoor",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "veilblade"
+        },
+        {
+          "npc_remove_item_with": "veilblade"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "I need time to think about this.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK",
+  "dynamic_line": "我们想尽一切办法来抚平帷幕上仍在溃烂的伤口。另一个经历过超越的团体，有他们自己的方法。有缺陷的，但不是没有价值的。最终，如果你接受了这把剑，找到了遗留下来的门户，你就会找到你所寻求的答案。这可能不足以拯救人类。其中一种是帮助。",
+  "responses": [
+    {
+      "text": "可以。我接受。",
+      "effect": [
+        {
+          "u_add_effect": "hermit_stage_3_backdoor",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "veilblade"
+        },
+        {
+          "npc_remove_item_with": "veilblade"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "我需要时间考虑一下。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

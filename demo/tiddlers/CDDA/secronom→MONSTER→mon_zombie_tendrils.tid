@@ -1,0 +1,219 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_tendrils
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_tendrils|http://cdda.aloxaf.cn/search?q=mon_zombie_tendrils]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Tendrils.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_tendrils",
+  "type": "MONSTER",
+  "name": "tendril zombie",
+  "description": "A human body with two twitching tentacles and stem-like outgrowths slit through its worn and tattered clothing.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "diff": 1,
+  "speed": 115,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨍",
+  "color": "light_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "harvest": "zombie",
+  "melee_dice_sides": 4,
+  "grab_strength": 2,
+  "dodge": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 2
+    }
+  ],
+  "vision_night": 5,
+  "armor_bash": 3,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "armor_acid": 1,
+  "armor_fire": 1,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_tendrils_sprint_check"
+      },
+      "cooldown": 555,
+      "monster_message": "<color_yellow>%1$s twitches.</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 7,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "armor_penetration": 10
+        }
+      ]
+    },
+    [
+      "tendrilgrip",
+      30
+    ],
+    [
+      "tendrilslam",
+      30
+    ],
+    [
+      "tendrilswing",
+      5
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_TENDRILS_UPGRADE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_tendrils",
+  "type": "MONSTER",
+  "name": "触手丧尸",
+  "description": "有两条抽搐的触须和茎状突起物的人体，穿过它破旧的衣服。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "diff": 1,
+  "speed": 115,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨍",
+  "color": "light_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "harvest": "zombie",
+  "melee_dice_sides": 4,
+  "grab_strength": 2,
+  "dodge": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 2
+    }
+  ],
+  "vision_night": 5,
+  "armor_bash": 3,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "armor_acid": 1,
+  "armor_fire": 1,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_tendrils_sprint_check"
+      },
+      "cooldown": 555,
+      "monster_message": "<color_yellow>%1$s次抽搐。</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 7,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "armor_penetration": 10
+        }
+      ]
+    },
+    [
+      "tendrilgrip",
+      30
+    ],
+    [
+      "tendrilslam",
+      30
+    ],
+    [
+      "tendrilswing",
+      5
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_TENDRILS_UPGRADE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES",
+    "PUSH_MON"
+  ]
+}
+```
+

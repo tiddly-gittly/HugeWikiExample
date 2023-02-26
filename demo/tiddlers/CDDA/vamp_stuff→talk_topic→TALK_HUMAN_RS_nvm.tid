@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_HUMAN_RS_nvm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HUMAN_RS_nvm|http://cdda.aloxaf.cn/search?q=TALK_HUMAN_RS_nvm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/h_wrs_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_HUMAN_RS_nvm",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "wrsgo",
+    "yes": "We better get going.",
+    "no": "Forget it, I will come for as long as I gain benefits from doing this crap! Besides, I am grateful that you've came to pick me up."
+  },
+  "responses": [
+    {
+      "text": "Lets go!",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_trait": "wrsgo"
+      }
+    },
+    {
+      "text": "Okay.",
+      "topic": "TALK_MISSION_OFFER",
+      "effect": {
+        "u_add_trait": "wrsgo"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wrsgo"
+        }
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_HUMAN_RS_nvm",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "wrsgo",
+    "yes": "我们得走了。",
+    "no": "算了，只要我能从这堆废话中得到好处，我就会来的！另外，我很感激你来接我。"
+  },
+  "responses": [
+    {
+      "text": "我们走吧！",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_trait": "wrsgo"
+      }
+    },
+    {
+      "text": "好的。",
+      "topic": "TALK_MISSION_OFFER",
+      "effect": {
+        "u_add_trait": "wrsgo"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wrsgo"
+        }
+      }
+    }
+  ]
+}
+```
+

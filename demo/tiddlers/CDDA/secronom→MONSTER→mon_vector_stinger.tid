@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_vector_stinger
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_vector_stinger|http://cdda.aloxaf.cn/search?q=mon_vector_stinger]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Unknown/Vector.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_vector_stinger",
+  "type": "MONSTER",
+  "looks_like": "mon_fungaloid",
+  "name": {
+    "str": "vector stinger"
+  },
+  "description": "Long thorns cover this vector's bark. A thinner with lesser foliage, like a dead bush, but much quicker and seeps in blue-ish thick saps.",
+  "default_faction": "vector",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 90,
+  "speed": 80,
+  "material": [
+    "veggy"
+  ],
+  "symbol": "V",
+  "color": "blue",
+  "aggression": -10,
+  "morale": 20,
+  "attack_effs": [
+    {
+      "id": "sap",
+      "duration": 10,
+      "chance": 15
+    },
+    {
+      "id": "vector_infect",
+      "duration": 120,
+      "chance": 15
+    }
+  ],
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 1,
+  "armor_cut": 8,
+  "armor_bullet": 8,
+  "armor_stab": 8,
+  "armor_acid": 2,
+  "vision_day": 30,
+  "vision_night": 12,
+  "harvest": "exempt",
+  "path_settings": {
+    "max_dist": 1
+  },
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "BASHES",
+    "GROUP_BASH",
+    "NOHEAD",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_vector_stinger",
+  "type": "MONSTER",
+  "looks_like": "mon_fungaloid",
+  "name": {
+    "str": "载体毒刺"
+  },
+  "description": "长刺覆盖着这个病媒的树皮。一种较薄的植物，叶子较少，像枯树，但速度快得多，会渗出蓝色的厚树液。",
+  "default_faction": "vector",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 90,
+  "speed": 80,
+  "material": [
+    "veggy"
+  ],
+  "symbol": "V",
+  "color": "blue",
+  "aggression": -10,
+  "morale": 20,
+  "attack_effs": [
+    {
+      "id": "sap",
+      "duration": 10,
+      "chance": 15
+    },
+    {
+      "id": "vector_infect",
+      "duration": 120,
+      "chance": 15
+    }
+  ],
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 1,
+  "armor_cut": 8,
+  "armor_bullet": 8,
+  "armor_stab": 8,
+  "armor_acid": 2,
+  "vision_day": 30,
+  "vision_night": 12,
+  "harvest": "exempt",
+  "path_settings": {
+    "max_dist": 1
+  },
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "BASHES",
+    "GROUP_BASH",
+    "NOHEAD",
+    "NO_BREATHE"
+  ]
+}
+```
+

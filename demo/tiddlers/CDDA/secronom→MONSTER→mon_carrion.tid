@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_carrion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_carrion|http://cdda.aloxaf.cn/search?q=mon_carrion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Unknown/Carrion.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Undead creatures that I've made with subtle inspiration to Scorn.",
+  "id": "mon_carrion",
+  "looks_like": "mon_twisted_body",
+  "type": "MONSTER",
+  "name": {
+    "str": "carrion"
+  },
+  "description": "Erratic and frightful, a bane from an otherworldly ruined dimension. It has no distinct appearance and is heavily malformed, but noted as a lump of necrotic skin.",
+  "default_faction": "carrion",
+  "bodytype": "migo",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 140,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "C",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 4,
+  "armor_cut": 1,
+  "armor_stab": 1,
+  "armor_bullet": 1,
+  "armor_acid": 1,
+  "vision_day": 15,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "path_settings": {
+    "max_dist": 5
+  },
+  "special_attacks": [
+    [
+      "SHRIEK",
+      32
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 1
+    },
+    [
+      "GRAB",
+      20
+    ]
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "SWARMS",
+    "REVIVES",
+    "GRABS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Undead creatures that I've made with subtle inspiration to Scorn.",
+  "id": "mon_carrion",
+  "looks_like": "mon_twisted_body",
+  "type": "MONSTER",
+  "name": {
+    "str": "腐肉爬行者"
+  },
+  "description": "反复无常的可怕的怪物，一个来自另一个世界末日位面的祸害。它没有固定的外观，严重畸形，看起来像一个坏死的皮肤肿块。",
+  "default_faction": "carrion",
+  "bodytype": "migo",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 140,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "C",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 4,
+  "armor_cut": 1,
+  "armor_stab": 1,
+  "armor_bullet": 1,
+  "armor_acid": 1,
+  "vision_day": 15,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "path_settings": {
+    "max_dist": 5
+  },
+  "special_attacks": [
+    [
+      "SHRIEK",
+      32
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 1
+    },
+    [
+      "GRAB",
+      20
+    ]
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "SWARMS",
+    "REVIVES",
+    "GRABS"
+  ]
+}
+```
+

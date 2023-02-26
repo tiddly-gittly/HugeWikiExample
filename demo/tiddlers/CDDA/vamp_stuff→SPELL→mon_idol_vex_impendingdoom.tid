@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→mon_idol_vex_impendingdoom
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_idol_vex_impendingdoom|http://cdda.aloxaf.cn/search?q=mon_idol_vex_impendingdoom]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_monspell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_idol_vex_impendingdoom",
+  "type": "SPELL",
+  "name": {
+    "str": "Impending Doom"
+  },
+  "description": "Marks all surrounding foes with impending doom. 1/101 chance for their mark to implode, dealing 60-125 damage over the duration.",
+  "flags": [
+    "SILENT",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "v_monspell_doom",
+  "min_aoe": 13,
+  "max_aoe": 13,
+  "min_duration": 800,
+  "max_duration": 2400
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_idol_vex_impendingdoom",
+  "type": "SPELL",
+  "name": {
+    "str": "末日"
+  },
+  "description": "用即将到来的厄运标记周围的所有敌人。他们的印记有1/101的几率内爆，在持续时间内造成60-125点伤害。",
+  "flags": [
+    "SILENT",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "v_monspell_doom",
+  "min_aoe": 13,
+  "max_aoe": 13,
+  "min_duration": 800,
+  "max_duration": 2400
+}
+```
+

@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: GUN blazemod
+title: blazemod→GUN→spouterqueen
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：spouterqueen|http://cdda.aloxaf.cn/search?q=spouterqueen]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/guns/blob_turret.json
+
+
+!! 原文
+
+```json
+{
+  "id": "spouterqueen",
+  "type": "GUN",
+  "name": {
+    "str": "gel spouter"
+  },
+  "description": "A living blob turned into an autonomous weapon.  It can suck in water from a vehicle tank, and forcibly expel it in a wide cone.  The amorphous mass can be shaped and attached at your touch, but the weapon itself is inert without something to control it.",
+  "weight": "21331 g",
+  "volume": "20 L",
+  "to_hit": -5,
+  "bashing": 10,
+  "material": [
+    "flesh"
+  ],
+  "looks_like": "razorqueen",
+  "symbol": ")",
+  "color": "red",
+  "ammo": [
+    "water"
+  ],
+  "skill": "launcher",
+  "range": 60,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 10
+  },
+  "sight_dispersion": 150,
+  "durability": 10,
+  "clip_size": 1000,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "watertight": true,
+      "ammo_restriction": {
+        "water": 1000
+      }
+    }
+  ],
+  "ammo_effects": [
+    "WIDE",
+    "ACT_ON_RANGED_HIT",
+    "RECOVER_100",
+    "NO_EMBED",
+    "CUSTOM_EXPLOSION"
+  ],
+  "qualities": [
+    [
+      "JACK",
+      12
+    ]
+  ],
+  "flags": [
+    "NEVER_JAMS",
+    "MOUNTED_GUN"
+  ],
+  "ammo_to_fire": 100
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "spouterqueen",
+  "type": "GUN",
+  "name": {
+    "str": "变形怪喷水炮"
+  },
+  "description": "一只活的变形怪变成的自主武器。它能够从车辆水箱内吸取水源，然后以一个大扇面强行喷出。变形怪无定形的形体可以在你手中被重塑和连接，但武器本身由于没有控制而呈现惰性。",
+  "weight": "21331 g",
+  "volume": "20 L",
+  "to_hit": -5,
+  "bashing": 10,
+  "material": [
+    "flesh"
+  ],
+  "looks_like": "razorqueen",
+  "symbol": ")",
+  "color": "red",
+  "ammo": [
+    "water"
+  ],
+  "skill": "launcher",
+  "range": 60,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 10
+  },
+  "sight_dispersion": 150,
+  "durability": 10,
+  "clip_size": 1000,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "watertight": true,
+      "ammo_restriction": {
+        "water": 1000
+      }
+    }
+  ],
+  "ammo_effects": [
+    "WIDE",
+    "ACT_ON_RANGED_HIT",
+    "RECOVER_100",
+    "NO_EMBED",
+    "CUSTOM_EXPLOSION"
+  ],
+  "qualities": [
+    [
+      "JACK",
+      12
+    ]
+  ],
+  "flags": [
+    "NEVER_JAMS",
+    "MOUNTED_GUN"
+  ],
+  "ammo_to_fire": 100
+}
+```
+

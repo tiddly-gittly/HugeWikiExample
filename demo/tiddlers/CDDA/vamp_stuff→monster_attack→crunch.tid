@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: monster_attack vamp_stuff
+title: vamp_stuff→monster_attack→crunch
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：crunch|http://cdda.aloxaf.cn/search?q=crunch]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "crunch",
+  "cooldown": 20,
+  "move_cost": 160,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_multiplier": 0.9
+    },
+    {
+      "damage_type": "stab",
+      "amount": 5,
+      "armor_multiplier": 0.7
+    }
+  ],
+  "body_parts": [
+    [
+      "head",
+      3
+    ],
+    [
+      "eyes",
+      2
+    ],
+    [
+      "mouth",
+      1
+    ],
+    [
+      "torso",
+      4
+    ],
+    [
+      "arm_l",
+      3
+    ],
+    [
+      "arm_r",
+      3
+    ],
+    [
+      "hand_l",
+      2
+    ],
+    [
+      "hand_r",
+      2
+    ],
+    [
+      "leg_l",
+      3
+    ],
+    [
+      "leg_r",
+      3
+    ],
+    [
+      "foot_l",
+      2
+    ],
+    [
+      "foot_r",
+      2
+    ]
+  ],
+  "hit_dmg_u": "The %1$s latches its mouth and crunches at you!",
+  "hit_dmg_npc": "The %1$s latches its mouth and crunches <npcname>!",
+  "no_dmg_msg_u": "The %1$s crunches at you, but fails to penetrate your armor.",
+  "no_dmg_msg_npc": "The %1$s crunches <npcname>, but fails to penetrate their armor."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "crunch",
+  "cooldown": 20,
+  "move_cost": 160,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_multiplier": 0.9
+    },
+    {
+      "damage_type": "stab",
+      "amount": 5,
+      "armor_multiplier": 0.7
+    }
+  ],
+  "body_parts": [
+    [
+      "head",
+      3
+    ],
+    [
+      "eyes",
+      2
+    ],
+    [
+      "mouth",
+      1
+    ],
+    [
+      "torso",
+      4
+    ],
+    [
+      "arm_l",
+      3
+    ],
+    [
+      "arm_r",
+      3
+    ],
+    [
+      "hand_l",
+      2
+    ],
+    [
+      "hand_r",
+      2
+    ],
+    [
+      "leg_l",
+      3
+    ],
+    [
+      "leg_r",
+      3
+    ],
+    [
+      "foot_l",
+      2
+    ],
+    [
+      "foot_r",
+      2
+    ]
+  ],
+  "hit_dmg_u": "%1$s紧闭嘴巴，嘎吱嘎吱地咬着你！",
+  "hit_dmg_npc": "%1$s紧闭嘴巴，嘎吱嘎吱地咬着<npcname>！",
+  "no_dmg_msg_u": "%1$s嘎吱嘎吱地咬着你，但是没有穿透你的护甲。",
+  "no_dmg_msg_npc": "%1$s嘎吱嘎吱地咬着<npcname>，但是没有穿透护甲。"
+}
+```
+

@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: furniture Arcana
+title: Arcana→furniture→f_altar_arcana
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_altar_arcana|http://cdda.aloxaf.cn/search?q=f_altar_arcana]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_altar_arcana",
+  "name": "stone hearth",
+  "symbol": "n",
+  "looks_like": "f_fireplace",
+  "description": "A structure of flowing, living stone molded into an open fireplace, the surface cracking and reforming periodically.  It offers modest space to burn offerings safely, or a flat surface sufficient for more morbid rituals.",
+  "color": "dark_gray",
+  "move_cost_mod": 2,
+  "required_str": -1,
+  "crafting_pseudo_item": "boulder_anvil",
+  "flags": [
+    "INDOORS",
+    "SUN_ROOF_ABOVE",
+    "PLACE_ITEM",
+    "FIRE_CONTAINER",
+    "SUPPRESS_SMOKE",
+    "TRANSPARENT",
+    "MOUNTABLE",
+    "SHORT",
+    "MINEABLE",
+    "FLAT_SURF"
+  ],
+  "bash": {
+    "str_min": 10,
+    "str_max": 20,
+    "sound": "smash!",
+    "sound_fail": "thump."
+  },
+  "examine_action": "fireplace"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_altar_arcana",
+  "name": "石炉",
+  "symbol": "n",
+  "looks_like": "f_fireplace",
+  "description": "一种流动的活石结构，被塑造成一个开放的壁炉，表面会周期性地开裂和变形。它提供了适度的空间来安全地焚烧供品，或者提供了一个足够用于更病态仪式的平坦表面。",
+  "color": "dark_gray",
+  "move_cost_mod": 2,
+  "required_str": -1,
+  "crafting_pseudo_item": "boulder_anvil",
+  "flags": [
+    "INDOORS",
+    "SUN_ROOF_ABOVE",
+    "PLACE_ITEM",
+    "FIRE_CONTAINER",
+    "SUPPRESS_SMOKE",
+    "TRANSPARENT",
+    "MOUNTABLE",
+    "SHORT",
+    "MINEABLE",
+    "FLAT_SURF"
+  ],
+  "bash": {
+    "str_min": 10,
+    "str_max": 20,
+    "sound": "smash!",
+    "sound_fail": "thump."
+  },
+  "examine_action": "fireplace"
+}
+```
+

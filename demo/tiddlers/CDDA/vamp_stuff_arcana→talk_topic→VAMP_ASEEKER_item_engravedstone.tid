@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_item_engravedstone
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_item_engravedstone|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_item_engravedstone]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_itemvalidation.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_engravedstone",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "I will give you 15 tokens for each engraved stone you bring to me.",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "I will give you 785$ for each engraved stone you bring to me.",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "I will give you 120$ for each engraved stone you bring to me.",
+        "no": "I will give you 90$ and 15 tokens for each engraved stone you bring to me."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Okay...",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeriengravedstoneval"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_engravedstone",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "你带给我的每一块刻石，我都会给你15个代币。",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "你带给我的每一块雕刻的石头我给你785美元。",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "你带给我的每一块雕刻的石头我给你120美元。",
+        "no": "我会给你90美元和15代币，每刻石头你带来给我。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "好吧……",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeriengravedstoneval"
+      }
+    }
+  ]
+}
+```
+

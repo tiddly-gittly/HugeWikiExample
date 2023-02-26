@@ -1,0 +1,149 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_vector_seed
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_vector_seed|http://cdda.aloxaf.cn/search?q=fd_vector_seed]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_vector_seed",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "thick vector haze",
+      "sym": "~",
+      "color": "light_blue",
+      "dangerous": true,
+      "transparent": false,
+      "translucency": 5,
+      "effects": [
+        {
+          "effect_id": "vector_infect",
+          "body_part": "torso",
+          "min_duration": "15 seconds",
+          "max_duration": "30 seconds"
+        }
+      ]
+    },
+    {
+      "translucency": 7
+    },
+    {
+      "name": "vector seeds",
+      "color": "blue",
+      "light_emitted": 3,
+      "monster_spawn_chance": 100,
+      "monster_spawn_count": 1,
+      "monster_spawn_radius": 2,
+      "monster_spawn_group": "GROUP_VECTOR_SEEDLING",
+      "translucency": 10,
+      "effects": [
+        {
+          "effect_id": "vector_infect",
+          "body_part": "torso",
+          "min_duration": "30 seconds",
+          "max_duration": "45 seconds"
+        }
+      ]
+    }
+  ],
+  "priority": 8,
+  "half_life": "10 seconds",
+  "wandering_field": "fd_vector_haze",
+  "accelerated_decay": true,
+  "gas_absorption_factor": 15,
+  "has_fume": true,
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        15
+      ]
+    ]
+  },
+  "dirty_transparency_cache": true,
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_vector_seed",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "thick vector haze",
+      "sym": "~",
+      "color": "light_blue",
+      "dangerous": true,
+      "transparent": false,
+      "translucency": 5,
+      "effects": [
+        {
+          "effect_id": "vector_infect",
+          "body_part": "torso",
+          "min_duration": "15 seconds",
+          "max_duration": "30 seconds"
+        }
+      ]
+    },
+    {
+      "translucency": 7
+    },
+    {
+      "name": "vector seeds",
+      "color": "blue",
+      "light_emitted": 3,
+      "monster_spawn_chance": 100,
+      "monster_spawn_count": 1,
+      "monster_spawn_radius": 2,
+      "monster_spawn_group": "GROUP_VECTOR_SEEDLING",
+      "translucency": 10,
+      "effects": [
+        {
+          "effect_id": "vector_infect",
+          "body_part": "torso",
+          "min_duration": "30 seconds",
+          "max_duration": "45 seconds"
+        }
+      ]
+    }
+  ],
+  "priority": 8,
+  "half_life": "10 seconds",
+  "wandering_field": "fd_vector_haze",
+  "accelerated_decay": true,
+  "gas_absorption_factor": 15,
+  "has_fume": true,
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        15
+      ]
+    ]
+  },
+  "dirty_transparency_cache": true,
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true
+}
+```
+

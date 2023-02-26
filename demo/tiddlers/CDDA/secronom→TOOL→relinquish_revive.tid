@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: TOOL secronom
+title: secronom→TOOL→relinquish_revive
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：relinquish_revive|http://cdda.aloxaf.cn/search?q=relinquish_revive]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_ammo_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "relinquish_revive",
+  "type": "TOOL",
+  "name": {
+    "str": "relinquished zombie's body"
+  },
+  "description": "A dead body, about to rise again...",
+  "volume": "1 ml",
+  "weight": "1 g",
+  "to_hit": -2,
+  "bashing": 1,
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "drop_action": {
+    "type": "explosion",
+    "sound_volume": 0,
+    "sound_msg": "*splat*",
+    "no_deactivate_msg": "*splat* *splat*",
+    "draw_explosion_color": "green",
+    "fields_type": "fd_relinquished_revive",
+    "fields_radius": 0,
+    "fields_min_intensity": 1,
+    "fields_max_intensity": 1
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "relinquish_revive",
+  "type": "TOOL",
+  "name": {
+    "str": "被弃丧尸的身体"
+  },
+  "description": "一具尸体，即将再次复活…",
+  "volume": "1 ml",
+  "weight": "1 g",
+  "to_hit": -2,
+  "bashing": 1,
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "drop_action": {
+    "type": "explosion",
+    "sound_volume": 0,
+    "sound_msg": "*splat*",
+    "no_deactivate_msg": "*splat* *splat*",
+    "draw_explosion_color": "green",
+    "fields_type": "fd_relinquished_revive",
+    "fields_radius": 0,
+    "fields_min_intensity": 1,
+    "fields_max_intensity": 1
+  }
+}
+```
+

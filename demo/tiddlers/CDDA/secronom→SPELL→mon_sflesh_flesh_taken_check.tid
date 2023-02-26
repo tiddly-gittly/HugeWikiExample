@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_flesh_taken_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_flesh_taken_check|http://cdda.aloxaf.cn/search?q=mon_sflesh_flesh_taken_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_large.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_flesh_taken_check",
+  "type": "SPELL",
+  "name": {
+    "str": "Flesh - Taken"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'1/2 chance to spawn a potent taken near the target.'",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT"
+  ],
+  "message": "",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "min_range": 30,
+  "max_range": 30,
+  "shape": "line",
+  "effect": "effect_on_condition",
+  "effect_str": "eoc_secro_mon_sflesh_flesh_taken_check"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_flesh_taken_check",
+  "type": "SPELL",
+  "name": {
+    "str": "肉身"
+  },
+  "description": "怪物施法的咒语。如果你看到了这一点，那么请阅读这一条：\n“有1/2的几率在目标附近产生一个强效。”",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT"
+  ],
+  "message": "",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "min_range": 30,
+  "max_range": 30,
+  "shape": "line",
+  "effect": "effect_on_condition",
+  "effect_str": "eoc_secro_mon_sflesh_flesh_taken_check"
+}
+```
+

@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→magus_mana_blast
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：magus_mana_blast|http://cdda.aloxaf.cn/search?q=magus_mana_blast]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/magus.json
+
+
+!! 原文
+
+```json
+{
+  "id": "magus_mana_blast",
+  "type": "SPELL",
+  "name": {
+    "str": "Mana Blast"
+  },
+  "description": "A blast of concentrated magical power that obliterates a large area.",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "spell_class": "MAGUS",
+  "energy_source": "MANA",
+  "base_casting_time": 150,
+  "base_energy_cost": 200,
+  "difficulty": 5,
+  "max_level": 30,
+  "min_damage": 20,
+  "max_damage": 120,
+  "damage_increment": 3,
+  "damage_type": "pure",
+  "min_aoe": 1,
+  "max_aoe": 5,
+  "aoe_increment": 0.25,
+  "min_range": 5,
+  "max_range": 30,
+  "range_increment": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "magus_mana_blast",
+  "type": "SPELL",
+  "name": {
+    "str": "奥术冲击"
+  },
+  "description": "聚焦过的魔法轰击，可以夷平一大片区域。\n“不需要法力之虹辅助聚焦”",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "spell_class": "MAGUS",
+  "energy_source": "MANA",
+  "base_casting_time": 150,
+  "base_energy_cost": 200,
+  "difficulty": 5,
+  "max_level": 30,
+  "min_damage": 20,
+  "max_damage": 120,
+  "damage_increment": 3,
+  "damage_type": "pure",
+  "min_aoe": 1,
+  "max_aoe": 5,
+  "aoe_increment": 0.25,
+  "min_range": 5,
+  "max_range": 30,
+  "range_increment": 1
+}
+```
+

@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_TOXINIMMUNE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_TOXINIMMUNE|http://cdda.aloxaf.cn/search?q=ARCANA_TOXINIMMUNE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_TOXINIMMUNE",
+  "name": {
+    "str": "Metabolic Resilience"
+  },
+  "points": 1,
+  "description": "Your body has adapted to prey upon the new life that infests this world.  It's not powerful enough to deal with undead flesh, but mutated meat is more tolerable to your system.  Albeit, not to your palate.",
+  "valid": false,
+  "purifiable": false,
+  "changes_to": [
+    "ARCANA_TOXINIMMUNE_2"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "prereqs": [
+    "ARCANA_INNERFIRE",
+    "ARCANA_DRAGONFIRE"
+  ],
+  "vitamin_rates": [
+    [
+      "mutant_toxin",
+      2
+    ]
+  ],
+  "vitamins_absorb_multi": [
+    [
+      "all",
+      [
+        [
+          "mutant_toxin",
+          0.75
+        ]
+      ]
+    ]
+  ],
+  "flags": [
+    "ARCANA_DRAGONBLOOD_MARKER_FIRE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_TOXINIMMUNE",
+  "name": {
+    "str": "代谢适应"
+  },
+  "points": 1,
+  "description": "你的身体已经适应了捕食侵扰这个世界的新生命。它的威力不足以对付亡灵肉，但变异肉对你的系统来说更容易忍受。尽管如此，这并不符合你的口味。",
+  "valid": false,
+  "purifiable": false,
+  "changes_to": [
+    "ARCANA_TOXINIMMUNE_2"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "prereqs": [
+    "ARCANA_INNERFIRE",
+    "ARCANA_DRAGONFIRE"
+  ],
+  "vitamin_rates": [
+    [
+      "mutant_toxin",
+      2
+    ]
+  ],
+  "vitamins_absorb_multi": [
+    [
+      "all",
+      [
+        [
+          "mutant_toxin",
+          0.75
+        ]
+      ]
+    ]
+  ],
+  "flags": [
+    "ARCANA_DRAGONBLOOD_MARKER_FIRE"
+  ]
+}
+```
+

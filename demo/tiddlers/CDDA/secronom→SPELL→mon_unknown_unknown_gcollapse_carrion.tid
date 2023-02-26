@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_unknown_unknown_gcollapse_carrion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_unknown_unknown_gcollapse_carrion|http://cdda.aloxaf.cn/search?q=mon_unknown_unknown_gcollapse_carrion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_unknown_unknown_gcollapse_carrion",
+  "type": "SPELL",
+  "name": {
+    "str": "Gravitational Collapse"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures. Sparkling objects are scattered, which enlightens the area.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 25,
+  "max_damage": 35,
+  "//": "Basically, an enemy target has to be the center of explosion, so that Spells get casted successfully.",
+  "min_range": 3,
+  "max_range": 3,
+  "min_aoe": 30,
+  "max_aoe": 60,
+  "field_id": "fd_ministars",
+  "field_chance": 75,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "bash"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_unknown_unknown_gcollapse_carrion",
+  "type": "SPELL",
+  "name": {
+    "str": "引力坍缩"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'在通灵了大量时间后，施法者的引力场崩溃，产生了一颗超新星，对所有生物造成巨大的重击伤害。闪闪发光的物体分散开来，照亮了整个地区",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 25,
+  "max_damage": 35,
+  "//": "Basically, an enemy target has to be the center of explosion, so that Spells get casted successfully.",
+  "min_range": 3,
+  "max_range": 3,
+  "min_aoe": 30,
+  "max_aoe": 60,
+  "field_id": "fd_ministars",
+  "field_chance": 75,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "bash"
+}
+```
+

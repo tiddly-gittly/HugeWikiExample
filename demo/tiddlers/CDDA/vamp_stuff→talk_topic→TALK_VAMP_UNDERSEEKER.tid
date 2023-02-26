@@ -1,0 +1,393 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_UNDERSEEKER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_UNDERSEEKER|http://cdda.aloxaf.cn/search?q=TALK_VAMP_UNDERSEEKER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Underrefugee/v_us_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_UNDERSEEKER",
+  "type": "talk_topic",
+  "dynamic_line": "...",
+  "responses": [
+    {
+      "text": "Who are you?",
+      "topic": "TALK_VAMP_UNDERSEEKER_none",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "undertradervampmark"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "commandovampmark"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekermeet"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Who are you?",
+      "topic": "TALK_VAMP_UNDERSEEKER_notice",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "undertradervampmark"
+          },
+          {
+            "not": {
+              "u_has_trait": "commandovampmark"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekermeet"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Who are you?",
+      "topic": "TALK_VAMP_UNDERSEEKER_attention",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "undertradervampmark"
+          },
+          {
+            "u_has_trait": "commandovampmark"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekermeet"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Can you tell me who you are?",
+      "topic": "TALK_VAMP_UNDERSEEKER_introduce",
+      "effect": {
+        "u_add_trait": "underseekerwhou"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "underseekermeet"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerwhou"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "About our journey...",
+      "topic": "TALK_MISSION_INQUIRE",
+      "condition": "has_assigned_mission"
+    },
+    {
+      "text": "Jobs to work?",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "underseekermeet"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerdone"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "They've let me help in their troubles.",
+      "topic": "TALK_VAMP_UNDERSEEKER_umehelp",
+      "effect": {
+        "u_add_trait": "underseekerwehelp"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg2hired"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerwehelp"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerhelpvampirus"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "We need to go to the vampirus.",
+      "topic": "TALK_VAMP_UNDERSEEKER_vampirus",
+      "effect": [
+        {
+          "u_add_trait": "underseekerhelpvampirus"
+        },
+        {
+          "add_mission": "VAMP_UNDERSEEKER_quest_vampirus1"
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg2vampirushelp"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerhelpvampirus"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "About our job...",
+      "topic": "TALK_VAMP_UNDERSEEKER_vampirus_hints",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "underseekerhelpvampirus"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerhelpvampirusdone"
+            }
+          },
+          {
+            "not": {
+              "npc_has_effect": "underseeker_unsealing"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "I'd be going now...",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_UNDERSEEKER",
+  "type": "talk_topic",
+  "dynamic_line": "…",
+  "responses": [
+    {
+      "text": "你是谁？",
+      "topic": "TALK_VAMP_UNDERSEEKER_none",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "undertradervampmark"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "commandovampmark"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekermeet"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "你是谁？",
+      "topic": "TALK_VAMP_UNDERSEEKER_notice",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "undertradervampmark"
+          },
+          {
+            "not": {
+              "u_has_trait": "commandovampmark"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekermeet"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "你是谁？",
+      "topic": "TALK_VAMP_UNDERSEEKER_attention",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "undertradervampmark"
+          },
+          {
+            "u_has_trait": "commandovampmark"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekermeet"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "你能告诉我你是谁吗？",
+      "topic": "TALK_VAMP_UNDERSEEKER_introduce",
+      "effect": {
+        "u_add_trait": "underseekerwhou"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "underseekermeet"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerwhou"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "关于我们的旅程...",
+      "topic": "TALK_MISSION_INQUIRE",
+      "condition": "has_assigned_mission"
+    },
+    {
+      "text": "有什么工作吗？",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "underseekermeet"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerdone"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "他们让我帮他们解决麻烦。",
+      "topic": "TALK_VAMP_UNDERSEEKER_umehelp",
+      "effect": {
+        "u_add_trait": "underseekerwehelp"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg2hired"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerwehelp"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerhelpvampirus"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "我们得去吸血鬼聚集地。",
+      "topic": "TALK_VAMP_UNDERSEEKER_vampirus",
+      "effect": [
+        {
+          "u_add_trait": "underseekerhelpvampirus"
+        },
+        {
+          "add_mission": "VAMP_UNDERSEEKER_quest_vampirus1"
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg2vampirushelp"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerhelpvampirus"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "关于我的任务...",
+      "topic": "TALK_VAMP_UNDERSEEKER_vampirus_hints",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "underseekerhelpvampirus"
+          },
+          {
+            "not": {
+              "u_has_trait": "underseekerhelpvampirusdone"
+            }
+          },
+          {
+            "not": {
+              "npc_has_effect": "underseeker_unsealing"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "我现在要走了...",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

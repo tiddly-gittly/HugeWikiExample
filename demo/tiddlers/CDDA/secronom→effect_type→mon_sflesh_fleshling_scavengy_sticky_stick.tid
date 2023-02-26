@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: effect_type secronom
+title: secronom→effect_type→mon_sflesh_fleshling_scavengy_sticky_stick
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_scavengy_sticky_stick|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_scavengy_sticky_stick]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "mon_sflesh_fleshling_scavengy_sticky_stick",
+  "name": [
+    "Fleshed"
+  ],
+  "apply_message": "A fleshling sticks to you!",
+  "desc": [
+    "Fleshling(s) hamper your movement!"
+  ],
+  "miss_messages": [
+    [
+      "You feel your limbs sticky.",
+      3
+    ]
+  ],
+  "decay_messages": [
+    [
+      "You're feeling free again!",
+      "good"
+    ]
+  ],
+  "remove_message": "Fleshlings have melted!",
+  "int_add_val": 1,
+  "max_intensity": 15,
+  "int_decay_step": -5,
+  "int_decay_tick": 30,
+  "max_duration": 150,
+  "rating": "bad",
+  "show_in_info": true,
+  "scaling_mods": {
+    "dex_mod": [
+      -0.075
+    ],
+    "speed_mod": [
+      -0.75
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "mon_sflesh_fleshling_scavengy_sticky_stick",
+  "name": [
+    "血肉纠缠"
+  ],
+  "apply_message": "一个血肉生物粘在了你的身上！",
+  "desc": [
+    "肉身阻碍你的行动！"
+  ],
+  "miss_messages": [
+    [
+      "你觉得四肢黏糊糊的。",
+      3
+    ]
+  ],
+  "decay_messages": [
+    [
+      "你感觉重获自由了！",
+      "good"
+    ]
+  ],
+  "remove_message": "肉都融化了！",
+  "int_add_val": 1,
+  "max_intensity": 15,
+  "int_decay_step": -5,
+  "int_decay_tick": 30,
+  "max_duration": 150,
+  "rating": "bad",
+  "show_in_info": true,
+  "scaling_mods": {
+    "dex_mod": [
+      -0.075
+    ],
+    "speed_mod": [
+      -0.75
+    ]
+  }
+}
+```
+

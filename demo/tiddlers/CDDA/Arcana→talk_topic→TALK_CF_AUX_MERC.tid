@@ -1,0 +1,149 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_AUX_MERC
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_AUX_MERC|http://cdda.aloxaf.cn/search?q=TALK_CF_AUX_MERC]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_AUX_MERC.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_AUX_MERC",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_marshal",
+    "yes": "Howdy, marshal.",
+    "no": {
+      "u_male": true,
+      "yes": "Howdy, sir.",
+      "no": "Howdy, ma'am."
+    }
+  },
+  "responses": [
+    {
+      "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_AUX_MERC_GM_PRELUDE"
+    },
+    {
+      "text": "Who are you?",
+      "topic": "TALK_CF_AUX_MERC_WHO"
+    },
+    {
+      "text": "Any tips for surviving?",
+      "topic": "TALK_CF_AUX_MERC_TIPS"
+    },
+    {
+      "text": "Are you… dressed up like a cowboy?",
+      "topic": "TALK_CF_AUX_MERC_YEEHAW"
+    },
+    {
+      "text": "Well, bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_AUX_MERC",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_marshal",
+    "yes": "你好，元帅。",
+    "no": {
+      "u_male": true,
+      "yes": "你好，先生。",
+      "no": "你好，女士。"
+    }
+  },
+  "responses": [
+    {
+      "text": "我被派去询问最近有什么异常生物袭击幸存者。知道吗？",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_AUX_MERC_GM_PRELUDE"
+    },
+    {
+      "text": "你是谁？",
+      "topic": "TALK_CF_AUX_MERC_WHO"
+    },
+    {
+      "text": "有什么生存诀窍吗？",
+      "topic": "TALK_CF_AUX_MERC_TIPS"
+    },
+    {
+      "text": "你…打扮得像个牛仔吗？",
+      "topic": "TALK_CF_AUX_MERC_YEEHAW"
+    },
+    {
+      "text": "好的，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

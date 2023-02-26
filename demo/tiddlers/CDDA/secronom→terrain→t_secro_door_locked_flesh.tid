@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_door_locked_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_door_locked_flesh|http://cdda.aloxaf.cn/search?q=t_secro_door_locked_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_door_locked_flesh",
+  "name": "fleshed wood door",
+  "description": "A standard door that is covered in thick, fleshy veins. You can barely see a deadbolt keyhole, though you can't do anything without removing all the gore sticking into it.",
+  "symbol": "+",
+  "color": "red",
+  "move_cost": 0,
+  "coverage": 95,
+  "roof": "t_secro_flat_roof_flesh",
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "OPENCLOSE_INSIDE",
+    "REDUCE_SCENT",
+    "CONNECT_TO_WALL",
+    "BARRICADABLE_DOOR",
+    "BLOCK_WIND",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_door_locked"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_door_locked_flesh",
+  "name": "血肉木门",
+  "description": "覆盖着厚厚的肉质血管的标准门。你甚至看不到这个门的锁孔，除非你把上面沾着的所有粘血清理干净。",
+  "symbol": "+",
+  "color": "red",
+  "move_cost": 0,
+  "coverage": 95,
+  "roof": "t_secro_flat_roof_flesh",
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "OPENCLOSE_INSIDE",
+    "REDUCE_SCENT",
+    "CONNECT_TO_WALL",
+    "BARRICADABLE_DOOR",
+    "BLOCK_WIND",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_door_locked"
+  }
+}
+```
+

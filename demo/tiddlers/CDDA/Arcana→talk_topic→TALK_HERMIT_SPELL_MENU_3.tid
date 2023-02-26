@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_SPELL_MENU_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_SPELL_MENU_3|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_SPELL_MENU_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_SPELL_MENU_3",
+  "dynamic_line": "This secret has been passed down among a few of the more learned ascetics of my order.  It shrouds your aura against monsters from Beyond, blinding them to your presence.  It doesn't hide you from the undead I've found, earthly life in general seems to spot you more easily under its effect, but it has its uses.  If you bring me 1 crystallized essence, I can imprint this knowledge upon you.",
+  "responses": [
+    {
+      "text": "Sure, here you go.",
+      "condition": {
+        "u_has_item": "essence_pure"
+      },
+      "effect": [
+        {
+          "u_consume_item": "essence_pure"
+        },
+        {
+          "u_add_trait": "SPELL_TRANSCENDENTAURA"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need to obtain one.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_item": "essence_pure"
+        }
+      },
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "Let me think about it.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_SPELL_MENU_3",
+  "dynamic_line": "This secret has been passed down among a few of the more learned ascetics of my order.  It shrouds your aura against monsters from Beyond, blinding them to your presence.  It doesn't hide you from the undead I've found, earthly life in general seems to spot you more easily under its effect, but it has its uses.  If you bring me 1 crystallized essence, I can imprint this knowledge upon you.",
+  "responses": [
+    {
+      "text": "Sure，here you go.",
+      "condition": {
+        "u_has_item": "essence_pure"
+      },
+      "effect": [
+        {
+          "u_consume_item": "essence_pure"
+        },
+        {
+          "u_add_trait": "SPELL_TRANSCENDENTAURA"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need to obtain one.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_item": "essence_pure"
+        }
+      },
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "让我想想。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

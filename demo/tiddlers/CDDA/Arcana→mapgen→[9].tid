@@ -1,0 +1,385 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[9]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "church_3rdfloor_1",
+  "weight": 300,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "                        ",
+      "  wBGBw          wBGBw  ",
+      "  wjttwwwwwGGwwwwwFe1w  ",
+      "  Bj...ywtsssstwth..SB  ",
+      "  w.....+......+....6w  ",
+      "  wK.mHHw.mttm.w.y.>7w  ",
+      "  wwwDwwwwwDDwwwwwDwww  ",
+      "         x____x         ",
+      "         x____x         ",
+      "         x____x         ",
+      "         xxxxxx         ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        "
+    ],
+    "palettes": [
+      "roof_palette"
+    ],
+    "terrain": {
+      ".": "t_floor",
+      "x": "t_rock_wall_half",
+      "w": "t_rock_wall",
+      "+": "t_door_locked",
+      "D": "t_window_domestic",
+      "B": "t_window_stained_blue",
+      "_": "t_flat_roof",
+      ">": "t_stairs_down",
+      "G": "t_window_stained_green"
+    },
+    "furniture": {
+      "1": "f_cupboard",
+      "6": "f_cupboard",
+      "7": "f_cupboard",
+      "d": "f_desk",
+      "H": "f_bookcase",
+      "K": "f_wardrobe",
+      "m": "f_armchair",
+      "j": "f_bed",
+      "h": "f_chair",
+      "f": "f_filing_cabinet"
+    },
+    "items": {
+      "1": [
+        {
+          "item": "SUS_dishes",
+          "chance": 100
+        },
+        {
+          "item": "SUS_silverware",
+          "chance": 100
+        }
+      ],
+      "6": {
+        "item": "SUS_cookware",
+        "chance": 100
+      },
+      "7": [
+        {
+          "item": "SUS_utensils",
+          "chance": 50
+        },
+        {
+          "item": "SUS_knife_drawer",
+          "chance": 50
+        }
+      ],
+      "d": {
+        "item": "SUS_office_desk",
+        "chance": 50
+      },
+      "H": {
+        "item": "cleansing_flame_books",
+        "chance": 50,
+        "repeat": 3
+      },
+      "K": [
+        {
+          "item": "clothing_outdoor_torso",
+          "chance": 50,
+          "repeat": 2
+        },
+        {
+          "item": "clothing_outdoor_pants",
+          "chance": 50,
+          "repeat": 2
+        }
+      ],
+      "e": {
+        "item": "SUS_oven",
+        "chance": 100
+      },
+      "j": {
+        "item": "bed",
+        "chance": 70,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      "f": {
+        "item": "office_paper",
+        "chance": 70,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      "F": {
+        "item": "SUS_fridge",
+        "chance": 60,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      "t": {
+        "item": "arcana_hunt_random",
+        "chance": 50,
+        "repeat": 2
+      },
+      "m": {
+        "item": "cleansing_flame_casualties",
+        "chance": 100
+      },
+      "S": {
+        "item": "SUS_kitchen_sink",
+        "chance": 100
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_3_b",
+  "object": {
+    "set": [
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 22,
+        "x2": 22,
+        "y": 1,
+        "y2": 5
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 18,
+        "x2": 21,
+        "y": 1,
+        "y2": 1
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 22,
+        "x2": 22,
+        "y": 6,
+        "y2": 10
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 13,
+        "x2": 17,
+        "y": 1,
+        "y2": 1
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 22,
+        "x2": 22,
+        "y": 11,
+        "y2": 15
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 8,
+        "x2": 12,
+        "y": 1,
+        "y2": 1
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "church_3rdfloor_1",
+  "weight": 300,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "                        ",
+      "  wBGBw          wBGBw  ",
+      "  wjttwwwwwGGwwwwwFe1w  ",
+      "  Bj...ywtsssstwth..SB  ",
+      "  w.....+......+....6w  ",
+      "  wK.mHHw.mttm.w.y.>7w  ",
+      "  wwwDwwwwwDDwwwwwDwww  ",
+      "         x____x         ",
+      "         x____x         ",
+      "         x____x         ",
+      "         xxxxxx         ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        "
+    ],
+    "palettes": [
+      "roof_palette"
+    ],
+    "terrain": {
+      ".": "t_floor",
+      "x": "t_rock_wall_half",
+      "w": "t_rock_wall",
+      "+": "t_door_locked",
+      "D": "t_window_domestic",
+      "B": "t_window_stained_blue",
+      "_": "t_flat_roof",
+      ">": "t_stairs_down",
+      "G": "t_window_stained_green"
+    },
+    "furniture": {
+      "1": "f_cupboard",
+      "6": "f_cupboard",
+      "7": "f_cupboard",
+      "d": "f_desk",
+      "H": "f_bookcase",
+      "K": "f_wardrobe",
+      "m": "f_armchair",
+      "j": "f_bed",
+      "h": "f_chair",
+      "f": "f_filing_cabinet"
+    },
+    "items": {
+      "1": [
+        {
+          "item": "SUS_dishes",
+          "chance": 100
+        },
+        {
+          "item": "SUS_silverware",
+          "chance": 100
+        }
+      ],
+      "6": {
+        "item": "SUS_cookware",
+        "chance": 100
+      },
+      "7": [
+        {
+          "item": "SUS_utensils",
+          "chance": 50
+        },
+        {
+          "item": "SUS_knife_drawer",
+          "chance": 50
+        }
+      ],
+      "d": {
+        "item": "SUS_office_desk",
+        "chance": 50
+      },
+      "H": {
+        "item": "cleansing_flame_books",
+        "chance": 50,
+        "repeat": 3
+      },
+      "K": [
+        {
+          "item": "clothing_outdoor_torso",
+          "chance": 50,
+          "repeat": 2
+        },
+        {
+          "item": "clothing_outdoor_pants",
+          "chance": 50,
+          "repeat": 2
+        }
+      ],
+      "e": {
+        "item": "SUS_oven",
+        "chance": 100
+      },
+      "j": {
+        "item": "bed",
+        "chance": 70,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      "f": {
+        "item": "office_paper",
+        "chance": 70,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      "F": {
+        "item": "SUS_fridge",
+        "chance": 60,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      "t": {
+        "item": "arcana_hunt_random",
+        "chance": 50,
+        "repeat": 2
+      },
+      "m": {
+        "item": "cleansing_flame_casualties",
+        "chance": 100
+      },
+      "S": {
+        "item": "SUS_kitchen_sink",
+        "chance": 100
+      }
+    }
+  }
+}
+```
+

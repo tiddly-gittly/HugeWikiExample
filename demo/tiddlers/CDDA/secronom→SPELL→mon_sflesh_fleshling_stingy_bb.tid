@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_fleshling_stingy_bb
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_stingy_bb|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_stingy_bb]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_fleshling_stingy_bb",
+  "type": "SPELL",
+  "name": {
+    "str": "Blood Bile"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pops a bulbous wart that spreads blood acid fields around the target and deals a small acid damage.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_AOE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 2,
+  "max_damage": 4,
+  "max_range": 3,
+  "min_range": 3,
+  "min_aoe": 1,
+  "max_aoe": 3,
+  "field_chance": 5,
+  "field_id": "fd_blood_acid",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "acid"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_fleshling_stingy_bb",
+  "type": "SPELL",
+  "name": {
+    "str": "血胆汁"
+  },
+  "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者弹出一个球茎状疣，在目标周围散布血酸场，造成一点酸伤害。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_AOE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 2,
+  "max_damage": 4,
+  "max_range": 3,
+  "min_range": 3,
+  "min_aoe": 1,
+  "max_aoe": 3,
+  "field_chance": 5,
+  "field_id": "fd_blood_acid",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "acid"
+}
+```
+

@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_tentawraith_death
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_tentawraith_death|http://cdda.aloxaf.cn/search?q=mon_zombie_tentawraith_death]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_ondeath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_tentawraith_death",
+  "type": "SPELL",
+  "name": {
+    "str": "Wraith Death"
+  },
+  "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'Caster's death removes their minions in the field.'",
+  "message": "",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_zombie_tentawraith_tent"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_sacrifice_effect",
+  "min_aoe": 42,
+  "max_aoe": 42,
+  "min_duration": 200,
+  "max_duration": 200
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_tentawraith_death",
+  "type": "SPELL",
+  "name": {
+    "str": "幽灵之死"
+  },
+  "description": "由物品施放的法术。如果你看到了这个，那么读读这个:\n“施法者的死亡移除了他们在战场上的爪牙。”",
+  "message": "",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_zombie_tentawraith_tent"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_sacrifice_effect",
+  "min_aoe": 42,
+  "max_aoe": 42,
+  "min_duration": 200,
+  "max_duration": 200
+}
+```
+

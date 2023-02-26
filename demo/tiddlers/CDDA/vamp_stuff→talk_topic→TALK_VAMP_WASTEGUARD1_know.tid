@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_WASTEGUARD1_know
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_WASTEGUARD1_know|http://cdda.aloxaf.cn/search?q=TALK_VAMP_WASTEGUARD1_know]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/v_wg1_responses.json
+
+
+!! 原文
+
+```json
+{
+  "dynamic_line": {
+    "no": "Yes.",
+    "u_has_trait": "commandovampmark",
+    "yes": "Hmm, so they have sent you here... For what reason? Everything's fine as it is."
+  },
+  "id": "TALK_VAMP_WASTEGUARD1_know",
+  "responses": [
+    {
+      "text": "So... Will you tell me where it is?",
+      "topic": "TALK_VAMP_WASTEGUARD1_where",
+      "condition": {
+        "not": {
+          "u_has_trait": "commandovampmark"
+        }
+      }
+    },
+    {
+      "text": "Oh, okay... Is there something I could help you with?",
+      "topic": "TALK_VAMP_WASTEGUARD1_begjob",
+      "condition": {
+        "u_has_trait": "commandovampmark"
+      }
+    }
+  ],
+  "type": "talk_topic"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "dynamic_line": {
+    "no": "是。",
+    "u_has_trait": "commandovampmark",
+    "yes": "嗯，所以他们派你来了…为什么？一切都很好。"
+  },
+  "id": "TALK_VAMP_WASTEGUARD1_know",
+  "responses": [
+    {
+      "text": "所以…你能告诉我在哪儿吗？",
+      "topic": "TALK_VAMP_WASTEGUARD1_where",
+      "condition": {
+        "not": {
+          "u_has_trait": "commandovampmark"
+        }
+      }
+    },
+    {
+      "text": "哦，好吧…有什么我能帮你的吗？",
+      "topic": "TALK_VAMP_WASTEGUARD1_begjob",
+      "condition": {
+        "u_has_trait": "commandovampmark"
+      }
+    }
+  ],
+  "type": "talk_topic"
+}
+```
+

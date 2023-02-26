@@ -1,0 +1,253 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→chalice_offering_side_effects
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：chalice_offering_side_effects|http://cdda.aloxaf.cn/search?q=chalice_offering_side_effects]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "chalice_offering_side_effects",
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "resist_traits": [
+    "PROF_CHALICE",
+    "PROF_CHALICE2",
+    "THRESH_VEIL"
+  ],
+  "name": [
+    "",
+    "Otherworldly Weakness",
+    "Otherworldly Weakness",
+    "Otherworldly Weakness",
+    "Otherworldly Sickness",
+    "Otherworldly Sickness",
+    "Otherworldly Sickness",
+    "Otherworldly Offering",
+    "Otherworldly Offering",
+    "Otherworldly Offering",
+    "Otherworldly Offering",
+    "Otherworldly Offering",
+    "Otherworldly Offering",
+    "Severe Otherworldly Offering"
+  ],
+  "desc": [
+    "",
+    "You've been feeling more weary lately, and it's getting hard to think straight.  Overuse of the chalice seems to have an effect on you.",
+    "It's starting to get harder to focus on your surroundings.  Maybe using your own life force to fuel the chalice is a bad idea….",
+    "Even when you aren't exhausted, you find it hard to stay awake.  This is going to be the death of you if you keep overusing that damn chalice!",
+    "You feel an odd sensation in the back of your head, an ethereal ache you can't quite explain.  It's like your very existence is crumbling away.",
+    "You feel an odd sensation in the back of your head, an ethereal ache you can't quite explain.  It's like your very existence is crumbling away.",
+    "You feel an odd sensation in the back of your head, an ethereal ache you can't quite explain.  It's like your very existence is crumbling away.",
+    "Your very essence is nothing more than fuel for the pyre…"
+  ],
+  "rating": "bad",
+  "max_duration": "49 d",
+  "max_intensity": 7,
+  "int_dur_factor": "7 d",
+  "//": "This will EVENTUALLY kill you if you max out the effects, unless you're abusing magical healing.",
+  "base_mods": {
+    "fatigue_min": [
+      1
+    ],
+    "fatigue_chance": [
+      30
+    ],
+    "fatigue_chance_bot": [
+      100
+    ],
+    "fatigue_tick": [
+      1000
+    ],
+    "int_mod": [
+      -0.25
+    ],
+    "sleep_min": [
+      10
+    ],
+    "sleep_max": [
+      30
+    ],
+    "sleep_chance": [
+      -10
+    ],
+    "sleep_chance_bot": [
+      100
+    ],
+    "sleep_tick": [
+      1800
+    ],
+    "hurt_min": [
+      1
+    ],
+    "hurt_chance": [
+      -45
+    ],
+    "hurt_chance_bot": [
+      100
+    ],
+    "hurt_tick": [
+      3600
+    ]
+  },
+  "scaling_mods": {
+    "fatigue_chance": [
+      10,
+      8
+    ],
+    "fatigue_tick": [
+      -100,
+      -80
+    ],
+    "int_mod": [
+      -0.75,
+      -0.6
+    ],
+    "per_mod": [
+      -0.75,
+      -0.6
+    ],
+    "sleep_chance": [
+      5,
+      4
+    ],
+    "hurt_chance": [
+      15,
+      10
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "chalice_offering_side_effects",
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "resist_traits": [
+    "PROF_CHALICE",
+    "PROF_CHALICE2",
+    "THRESH_VEIL"
+  ],
+  "name": [
+    "",
+    "超自然的弱点",
+    "超自然的弱点",
+    "超自然的弱点",
+    "超自然疾病",
+    "超自然疾病",
+    "超自然疾病",
+    "超凡脱俗",
+    "超凡脱俗",
+    "超凡脱俗",
+    "超凡脱俗",
+    "超凡脱俗",
+    "超凡脱俗",
+    "严厉的超凡脱俗的奉献"
+  ],
+  "desc": [
+    "",
+    "你最近越来越累了，很难想清楚。过度使用圣杯似乎对你有影响。",
+    "开始越来越难集中注意力在你的周围。也许用你自己的生命力量为圣杯加油是个坏主意…。",
+    "即使你没有精疲力尽，你也很难保持清醒。如果你继续过度使用那该死的圣杯，你会死的！",
+    "你感到后脑有一种奇怪的感觉，一种无法解释的虚幻疼痛。就好像你的存在正在崩溃。",
+    "你感到后脑有一种奇怪的感觉，一种无法解释的虚幻疼痛。就好像你的存在正在崩溃。",
+    "你感到后脑有一种奇怪的感觉，一种无法解释的虚幻疼痛。就好像你的存在正在崩溃。",
+    "你的源质不过是柴薪…"
+  ],
+  "rating": "bad",
+  "max_duration": "49 d",
+  "max_intensity": 7,
+  "int_dur_factor": "7 d",
+  "//": "This will EVENTUALLY kill you if you max out the effects, unless you're abusing magical healing.",
+  "base_mods": {
+    "fatigue_min": [
+      1
+    ],
+    "fatigue_chance": [
+      30
+    ],
+    "fatigue_chance_bot": [
+      100
+    ],
+    "fatigue_tick": [
+      1000
+    ],
+    "int_mod": [
+      -0.25
+    ],
+    "sleep_min": [
+      10
+    ],
+    "sleep_max": [
+      30
+    ],
+    "sleep_chance": [
+      -10
+    ],
+    "sleep_chance_bot": [
+      100
+    ],
+    "sleep_tick": [
+      1800
+    ],
+    "hurt_min": [
+      1
+    ],
+    "hurt_chance": [
+      -45
+    ],
+    "hurt_chance_bot": [
+      100
+    ],
+    "hurt_tick": [
+      3600
+    ]
+  },
+  "scaling_mods": {
+    "fatigue_chance": [
+      10,
+      8
+    ],
+    "fatigue_tick": [
+      -100,
+      -80
+    ],
+    "int_mod": [
+      -0.75,
+      -0.6
+    ],
+    "per_mod": [
+      -0.75,
+      -0.6
+    ],
+    "sleep_chance": [
+      5,
+      4
+    ],
+    "hurt_chance": [
+      15,
+      10
+    ]
+  }
+}
+```
+

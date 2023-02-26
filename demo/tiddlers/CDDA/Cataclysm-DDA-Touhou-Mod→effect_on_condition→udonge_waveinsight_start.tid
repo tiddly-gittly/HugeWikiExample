@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→effect_on_condition→udonge_waveinsight_start
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：udonge_waveinsight_start|http://cdda.aloxaf.cn/search?q=udonge_waveinsight_start]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spell_eocs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "udonge_waveinsight_start",
+  "type": "effect_on_condition",
+  "effect": [
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_waveinsight"
+        },
+        "++"
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_wavemfortitude"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_waveperception"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_wavestealth"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "u_lose_effect": "udonge_mfortitude"
+    },
+    {
+      "u_lose_effect": "udonge_perception"
+    },
+    {
+      "u_lose_effect": "udonge_stealth"
+    },
+    {
+      "run_eocs": [
+        "udonge_waveinsight_cycle1"
+      ]
+    }
+  ],
+  "//": "Always activates every time the spell is cast. It sets var_waveinsight > 0 to signal that aura is ON. It also sets the other auras OFF"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "udonge_waveinsight_start",
+  "type": "effect_on_condition",
+  "effect": [
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_waveinsight"
+        },
+        "++"
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_wavemfortitude"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_waveperception"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_wavestealth"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "u_lose_effect": "udonge_mfortitude"
+    },
+    {
+      "u_lose_effect": "udonge_perception"
+    },
+    {
+      "u_lose_effect": "udonge_stealth"
+    },
+    {
+      "run_eocs": [
+        "udonge_waveinsight_cycle1"
+      ]
+    }
+  ],
+  "//": "Always activates every time the spell is cast. It sets var_waveinsight > 0 to signal that aura is ON. It also sets the other auras OFF"
+}
+```
+

@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_skinwalker_witch
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_skinwalker_witch|http://cdda.aloxaf.cn/search?q=mon_skinwalker_witch]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_youkai_skinwalker.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_skinwalker_witch",
+  "type": "MONSTER",
+  "name": {
+    "str": "human",
+    "str_pl": "humans"
+  },
+  "description": "A living human.  Looking somewhat unkept, they're wearing aboriginal clothes, alongside tribal accesories on the upper body, and are covered by an animal's pelt.",
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "default_faction": "touhou_youkai_skinwalker",
+  "bodytype": "human",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_SKINWALKER_TOUHOU"
+  ],
+  "harvest": "human",
+  "hp": 84,
+  "speed": 150,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": -11,
+  "morale": 50,
+  "melee_skill": 5,
+  "melee_dice": 4,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 2
+    }
+  ],
+  "dodge": 4,
+  "path_settings": {
+    "max_dist": 30
+  },
+  "tracking_distance": 25,
+  "vision_night": 35,
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK"
+  ],
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "armor_bullet": 6,
+  "armor_stab": 1,
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      35
+    ],
+    {
+      "spell_data": {
+        "id": "scream_6d4"
+      },
+      "type": "spell",
+      "cooldown": 19
+    },
+    {
+      "spell_data": {
+        "id": "skinwalker_transform"
+      },
+      "type": "spell",
+      "cooldown": 3
+    }
+  ],
+  "death_drops": "skinwalker_witch_drops",
+  "flags": [
+    "CAN_OPEN_DOORS",
+    "CLIMBS",
+    "FILTHY",
+    "GOODHEARING",
+    "KEENNOSE",
+    "KEEP_DISTANCE",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "WARM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_skinwalker_witch",
+  "type": "MONSTER",
+  "name": {
+    "str": "人类",
+    "str_pl": "humans"
+  },
+  "description": "A living human.  Looking somewhat unkept, they're wearing aboriginal clothes, alongside tribal accesories on the upper body, and are covered by an animal's pelt.",
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "default_faction": "touhou_youkai_skinwalker",
+  "bodytype": "human",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_SKINWALKER_TOUHOU"
+  ],
+  "harvest": "human",
+  "hp": 84,
+  "speed": 150,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": -11,
+  "morale": 50,
+  "melee_skill": 5,
+  "melee_dice": 4,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 2
+    }
+  ],
+  "dodge": 4,
+  "path_settings": {
+    "max_dist": 30
+  },
+  "tracking_distance": 25,
+  "vision_night": 35,
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK"
+  ],
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "armor_bullet": 6,
+  "armor_stab": 1,
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      35
+    ],
+    {
+      "spell_data": {
+        "id": "scream_6d4"
+      },
+      "type": "spell",
+      "cooldown": 19
+    },
+    {
+      "spell_data": {
+        "id": "skinwalker_transform"
+      },
+      "type": "spell",
+      "cooldown": 3
+    }
+  ],
+  "death_drops": "skinwalker_witch_drops",
+  "flags": [
+    "CAN_OPEN_DOORS",
+    "CLIMBS",
+    "FILTHY",
+    "GOODHEARING",
+    "KEENNOSE",
+    "KEEP_DISTANCE",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "WARM"
+  ]
+}
+```
+

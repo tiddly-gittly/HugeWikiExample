@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→light_healing
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：light_healing|http://cdda.aloxaf.cn/search?q=light_healing]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/biomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "light_healing",
+  "type": "SPELL",
+  "name": {
+    "str": "Cure Light Wounds"
+  },
+  "description": "Heals a little bit of damage on the target.",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "min_damage": -5,
+  "max_damage": -30,
+  "damage_increment": -1,
+  "max_level": 22,
+  "min_range": 0,
+  "max_range": 6,
+  "range_increment": 0.75,
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 300,
+  "base_energy_cost": 800,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_PROJECTILE"
+  ],
+  "spell_class": "BIOMANCER",
+  "difficulty": 2,
+  "energy_source": "MANA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "light_healing",
+  "type": "SPELL",
+  "name": {
+    "str": "治疗轻伤"
+  },
+  "description": "治疗一点点目标所受的伤害。",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "min_damage": -5,
+  "max_damage": -30,
+  "damage_increment": -1,
+  "max_level": 22,
+  "min_range": 0,
+  "max_range": 6,
+  "range_increment": 0.75,
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 300,
+  "base_energy_cost": 800,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_PROJECTILE"
+  ],
+  "spell_class": "BIOMANCER",
+  "difficulty": 2,
+  "energy_source": "MANA"
+}
+```
+

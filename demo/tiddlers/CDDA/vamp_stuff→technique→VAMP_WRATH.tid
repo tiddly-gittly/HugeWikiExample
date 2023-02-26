@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: technique vamp_stuff
+title: vamp_stuff→technique→VAMP_WRATH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_WRATH|http://cdda.aloxaf.cn/search?q=VAMP_WRATH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Others/v_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "VAMP_WRATH",
+  "name": "Vampire's Wrath",
+  "description": "Swift attacks, 33% movecost, 66% damage.",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": false,
+  "weighting": 1,
+  "messages": [
+    "Quick strike",
+    "%s was immediately struck",
+    "<npcname> attacked %s quickly"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.33
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 0.66
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 0.66
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 0.66
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "VAMP_WRATH",
+  "name": "吸血鬼之怒",
+  "description": "快速攻击，33%行动点消耗，66%伤害。",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": false,
+  "weighting": 1,
+  "messages": [
+    "快速打击",
+    "%s在瞬间被打击了",
+    "<npcname>快速攻击了%s"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.33
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 0.66
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 0.66
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 0.66
+    }
+  ]
+}
+```
+

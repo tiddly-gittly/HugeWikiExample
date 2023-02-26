@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_REFUGEE_Pablo_CF_REP_MISSION_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_REFUGEE_Pablo_CF_REP_MISSION_4|http://cdda.aloxaf.cn/search?q=TALK_REFUGEE_Pablo_CF_REP_MISSION_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_REFUGEE_Pablo_1.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4",
+  "dynamic_line": {
+    "u_has_var": "tacoma_started",
+    "type": "knowledge",
+    "context": "flag",
+    "value": "yes",
+    "yes": "I'm guessing you don't mean the commune.  As much as I want out of this place, I don't think my wife and I can afford to gamble on a complete unknown, even if they are looking for work.  There are probably others that can handle the dangers out there that might be interested, I guess.",
+    "no": "I'm glad we aren't all that's left, but I don't really know much about any other places out there.  Too much risk in it, much as I'd love to get out of this hellhole.  I know there are other people who come along that can handle the risk, though."
+  },
+  "responses": [
+    {
+      "text": "Do you know of anyone who might be able to help with that?",
+      "topic": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4_ADVICE"
+    },
+    {
+      "text": "Would you be able to help keep an eye out for someone who might be interested?",
+      "topic": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4_OFFER"
+    },
+    {
+      "text": "Alright.  Thanks anyway.",
+      "topic": "TALK_REFUGEE_Pablo_1"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4",
+  "dynamic_line": {
+    "u_has_var": "tacoma_started",
+    "type": "knowledge",
+    "context": "flag",
+    "value": "yes",
+    "yes": "我猜你不是这个公社。就我想离开这个地方而言，我认为我和我的妻子即使在找工作的情况下也无法赌博一个完全未知的地方。那里我想，也许其他人可以应对可能引起关注的危险。",
+    "no": "我很高兴我们没有剩下的一切，但我对那里的其他地方一无所知。其中太多的风险，就像我很想摆脱这个困境一样。我知道那里还有其他可以承担风险的人。"
+  },
+  "responses": [
+    {
+      "text": "你知道有人可能对此提供帮助吗？",
+      "topic": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4_ADVICE"
+    },
+    {
+      "text": "你能帮忙留意可能感兴趣的人吗？",
+      "topic": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4_OFFER"
+    },
+    {
+      "text": "好的。不管怎么说，还是要谢谢你。",
+      "topic": "TALK_REFUGEE_Pablo_1"
+    }
+  ]
+}
+```
+

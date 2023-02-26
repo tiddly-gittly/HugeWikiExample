@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_MSCI_NOWWHAT_NEW
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MSCI_NOWWHAT_NEW|http://cdda.aloxaf.cn/search?q=TALK_MSCI_NOWWHAT_NEW]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_MSCI.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MSCI_NOWWHAT_NEW",
+  "type": "talk_topic",
+  "//": "This should reasonably check for new players who stumble upon the location after a previous player killed Apophis.",
+  "dynamic_line": "I don't have any jobs for you, I'm afraid.  If you see Sigma or Lambda, maybe speak with them.  I've been busy working on repairs almost constantly, and they're both likely to go stir-crazy if they have nothing to do but sit around all day.  Might help them figure out for themselves what to do.",
+  "responses": [
+    {
+      "text": "Oh, okay.",
+      "topic": "TALK_MSCI",
+      "effect": [
+        {
+          "u_add_effect": "router_suggestion",
+          "duration": "PERMANENT"
+        },
+        {
+          "npc_add_effect": "router_suggestion",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MSCI_NOWWHAT_NEW",
+  "type": "talk_topic",
+  "//": "This should reasonably check for new players who stumble upon the location after a previous player killed Apophis.",
+  "dynamic_line": "恐怕我没有工作给你。你或许可以与西格玛和兰姆达谈谈？我几乎一直在忙着修理东西，如果他们整天无所事事，就很可能会发疯。也许你能帮助他们自己想出该怎么做。",
+  "responses": [
+    {
+      "text": "哦，好的。",
+      "topic": "TALK_MSCI",
+      "effect": [
+        {
+          "u_add_effect": "router_suggestion",
+          "duration": "PERMANENT"
+        },
+        {
+          "npc_add_effect": "router_suggestion",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+

@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_tentawraith_stun
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_tentawraith_stun|http://cdda.aloxaf.cn/search?q=mon_zombie_tentawraith_stun]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_large.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_tentawraith_stun",
+  "type": "SPELL",
+  "name": {
+    "str": "Tentacle Pull"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Pulled hostile targets are stunned for 1 turn.'",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect_str": "stunned",
+  "min_aoe": 6,
+  "max_aoe": 6,
+  "min_duration": 100,
+  "max_duration": 100
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_tentawraith_stun",
+  "type": "SPELL",
+  "name": {
+    "str": "触手牵引"
+  },
+  "description": "怪物施放的咒语。如果你看到了这个，那就读读这个:\n“被拉的敌对目标被晕眩1圈。”",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect_str": "stunned",
+  "min_aoe": 6,
+  "max_aoe": 6,
+  "min_duration": 100,
+  "max_duration": 100
+}
+```
+

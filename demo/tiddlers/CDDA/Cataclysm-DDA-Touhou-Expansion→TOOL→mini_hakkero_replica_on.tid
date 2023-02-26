@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: TOOL Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→TOOL→mini_hakkero_replica_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mini_hakkero_replica_on|http://cdda.aloxaf.cn/search?q=mini_hakkero_replica_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/magic/mini_hakkero_replica.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mini_hakkero_replica_on",
+  "type": "TOOL",
+  "name": {
+    "str": "mini hakkero (replica) (ON)"
+  },
+  "copy-from": "mini_hakkero_replica",
+  "description": "A small wooden magical furnace.  It's currently working as a light source.",
+  "power_draw": 0,
+  "revert_to": "mini_hakkero_replica",
+  "use_action": [
+    {
+      "target": "mini_hakkero_replica",
+      "type": "transform",
+      "msg": "You turn off the mini hakkero.",
+      "menu_text": "Turn off",
+      "ammo_scale": 0
+    }
+  ],
+  "flags": [
+    "BELT_CLIP",
+    "LIGHT_200",
+    "TRADER_AVOID",
+    "USE_PLAYER_ENERGY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mini_hakkero_replica_on",
+  "type": "TOOL",
+  "name": {
+    "str": "mini hakkero (replica) (ON)"
+  },
+  "copy-from": "mini_hakkero_replica",
+  "description": "A small wooden magical furnace.  It's currently working as a light source.",
+  "power_draw": 0,
+  "revert_to": "mini_hakkero_replica",
+  "use_action": [
+    {
+      "target": "mini_hakkero_replica",
+      "type": "transform",
+      "msg": "You turn off the mini hakkero.",
+      "menu_text": "关闭",
+      "ammo_scale": 0
+    }
+  ],
+  "flags": [
+    "BELT_CLIP",
+    "LIGHT_200",
+    "TRADER_AVOID",
+    "USE_PLAYER_ENERGY"
+  ]
+}
+```
+

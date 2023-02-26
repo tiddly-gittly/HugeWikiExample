@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_BOOK_RELIGIOUS_PROTECTOR
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_BOOK_RELIGIOUS_PROTECTOR|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_BOOK_RELIGIOUS_PROTECTOR]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS_PROTECTOR",
+  "dynamic_line": "So I see, Hunter.  I am familiar with your tenets, even as a follower of He From Beyond The Veil.  You knew all along, I bet.  We need not be enemies.  In fact, if you so choose, I would be willing to ask your assistance in a task of great import.",
+  "responses": [
+    {
+      "text": "We'll see what comes of this, then.",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[ATTACK] I cannot accept this.  We may have been allies on occasion, but we were enemies as well.  This time, I will not allow you to bring any further disruption to this world.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS_PROTECTOR",
+  "dynamic_line": "我明白了，猎人。我对你的信条很熟悉，即使我是帷幕彼端古神的追随者。我敢说你早就知道了。我们不必成为敌人。事实上，如果你愿意的话，我愿意请你协助完成一项非常重要的任务。",
+  "responses": [
+    {
+      "text": "那我们就看看会有什么结果。",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[攻击]我不能接受。我们有时可能是盟友，但我们也是敌人。这一次，我不会允许你给这个世界带来任何进一步的破坏。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

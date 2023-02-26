@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→sonic_demolition
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sonic_demolition|http://cdda.aloxaf.cn/search?q=sonic_demolition]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/new_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "sonic_demolition",
+  "type": "SPELL",
+  "name": {
+    "str": "Sonic Demolition"
+  },
+  "description": "Sonic Demolition\nUsing this spell will unleash a devastating, destructive blast of sonic force, causing a massive earthquake and shattering everything in it's distance.  Anything close enough will take double damage.",
+  "message": "You tremble in terror as you cast this spell but manage to fully control it and unleash the full force of sonic energy",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "sonic_spike",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "sonic_demolition_pulse",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "spell_class": "NONE",
+  "flags": [
+    "CONCENTRATE",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "effect_str": "stunned",
+  "min_damage": 95,
+  "max_damage": 275,
+  "damage_increment": 7.5,
+  "min_aoe": 1,
+  "max_aoe": 12,
+  "aoe_increment": 1.2,
+  "max_level": 20,
+  "difficulty": 5,
+  "skill": "magic",
+  "base_casting_time": 550,
+  "final_casting_time": 275,
+  "casting_time_increment": -13.75,
+  "energy_source": "MANA",
+  "base_energy_cost": 630,
+  "final_energy_cost": 300,
+  "energy_increment": -16.5,
+  "min_duration": 2000,
+  "max_duration": 20000,
+  "duration_increment": 900
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "sonic_demolition",
+  "type": "SPELL",
+  "name": {
+    "str": "音波爆破"
+  },
+  "description": "音波爆破\n使用这个法术将释放一个毁灭性、破坏性的音波爆炸，造成大地震并粉碎距离内的一切。靠的足够近的东西将会受到双倍伤害。",
+  "message": "施放这个法术时，你在恐惧中颤抖，但你设法完全掌控了它，并释放出音波能量的全部力量",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "sonic_spike",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "sonic_demolition_pulse",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "spell_class": "NONE",
+  "flags": [
+    "CONCENTRATE",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "effect_str": "stunned",
+  "min_damage": 95,
+  "max_damage": 275,
+  "damage_increment": 7.5,
+  "min_aoe": 1,
+  "max_aoe": 12,
+  "aoe_increment": 1.2,
+  "max_level": 20,
+  "difficulty": 5,
+  "skill": "magic",
+  "base_casting_time": 550,
+  "final_casting_time": 275,
+  "casting_time_increment": -13.75,
+  "energy_source": "MANA",
+  "base_energy_cost": 630,
+  "final_energy_cost": 300,
+  "energy_increment": -16.5,
+  "min_duration": 2000,
+  "max_duration": 20000,
+  "duration_increment": 900
+}
+```
+

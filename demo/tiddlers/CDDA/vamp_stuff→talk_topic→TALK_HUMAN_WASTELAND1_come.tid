@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_HUMAN_WASTELAND1_come
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HUMAN_WASTELAND1_come|http://cdda.aloxaf.cn/search?q=TALK_HUMAN_WASTELAND1_come]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/h_wr1_responses.json
+
+
+!! 原文
+
+```json
+{
+  "dynamic_line": {
+    "no": "I don't say I don't trust you, but no.",
+    "u_has_trait": "wastehumanassociatemark",
+    "yes": "Are you sure about this? I could be a burden in your travels?"
+  },
+  "id": "TALK_HUMAN_WASTELAND1_come",
+  "responses": [
+    {
+      "condition": {
+        "u_has_trait": "wastehumanassociatemark"
+      },
+      "effect": "follow",
+      "text": "Just follow me and we'll be fine.",
+      "topic": "TALK_DONE"
+    },
+    {
+      "condition": {
+        "u_has_trait": "wastehumanassociatemark"
+      },
+      "text": "Just kiddin'.",
+      "topic": "TALK_HUMAN_WASTELAND1_maintalk"
+    },
+    {
+      "condition": {
+        "not": {
+          "u_has_trait": "wastehumanassociatemark"
+        }
+      },
+      "text": "Okay...",
+      "topic": "TALK_HUMAN_WASTELAND1_maintalk"
+    },
+    {
+      "condition": {
+        "not": {
+          "u_has_trait": "wastehumanassociatemark"
+        }
+      },
+      "text": "Bye then...",
+      "topic": "TALK_DONE"
+    }
+  ],
+  "type": "talk_topic"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "dynamic_line": {
+    "no": "并不是说我不信任你，但是我拒绝",
+    "u_has_trait": "wastehumanassociatemark",
+    "yes": "你确定吗？你觉得我会成为你旅行的负担？"
+  },
+  "id": "TALK_HUMAN_WASTELAND1_come",
+  "responses": [
+    {
+      "condition": {
+        "u_has_trait": "wastehumanassociatemark"
+      },
+      "effect": "follow",
+      "text": "跟我来就好了。",
+      "topic": "TALK_DONE"
+    },
+    {
+      "condition": {
+        "u_has_trait": "wastehumanassociatemark"
+      },
+      "text": "开个玩笑而已",
+      "topic": "TALK_HUMAN_WASTELAND1_maintalk"
+    },
+    {
+      "condition": {
+        "not": {
+          "u_has_trait": "wastehumanassociatemark"
+        }
+      },
+      "text": "好吧……",
+      "topic": "TALK_HUMAN_WASTELAND1_maintalk"
+    },
+    {
+      "condition": {
+        "not": {
+          "u_has_trait": "wastehumanassociatemark"
+        }
+      },
+      "text": "再见...",
+      "topic": "TALK_DONE"
+    }
+  ],
+  "type": "talk_topic"
+}
+```
+

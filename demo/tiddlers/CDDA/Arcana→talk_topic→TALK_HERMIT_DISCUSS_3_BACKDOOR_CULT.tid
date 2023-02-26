@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_BACKDOOR_CULT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_BACKDOOR_CULT|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_BACKDOOR_CULT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_CULT",
+  "dynamic_line": "I am asking you to do the right thing.  What is it your order says?  \"No holy symbol or icon shall hold sway over those who follow The Path.\"  This is your choice to make, and yours alone.  If you accept this, you will have the means to survive that you seek, and you'll be able to do some good with this old relic.",
+  "responses": [
+    {
+      "text": "These powers are but another tool at our disposal, we also say.  Fine, I'll play along.",
+      "effect": [
+        {
+          "u_add_effect": "hermit_stage_3_backdoor",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "veilblade"
+        },
+        {
+          "npc_remove_item_with": "veilblade"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[ATTACK] You are a slave to this thing.  Better you join the rest of your cult in death.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    },
+    {
+      "text": "I'll consider it.  Not right now.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_CULT",
+  "dynamic_line": "我要求你做正确的事。你点的是什么？”任何神圣的象征或圣像都不能左右那些走在道路上的人。如果你接受这一点，你就有了生存的手段，你就可以用这件古老的遗物做些好事。",
+  "responses": [
+    {
+      "text": "我们还说，这些权力只是我们可以利用的另一种工具。好吧，我一起玩。",
+      "effect": [
+        {
+          "u_add_effect": "hermit_stage_3_backdoor",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "veilblade"
+        },
+        {
+          "npc_remove_item_with": "veilblade"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[攻击]你是这东西的奴隶。你最好死后加入你的邪教。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    },
+    {
+      "text": "我会考虑的。现在不行。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

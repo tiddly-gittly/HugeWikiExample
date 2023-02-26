@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_fleshling_ravagy_outb
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_ravagy_outb|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_ravagy_outb]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_fleshling_ravagy_outb",
+  "type": "SPELL",
+  "name": {
+    "str": "Outburst"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its body to send its fused limbs to wildly fling themselves in every direction. Targets hit are dealt with high bashing damage.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_TARGET"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "min_damage": 10,
+  "max_damage": 20,
+  "max_range": 5,
+  "min_range": 5,
+  "field_chance": 5,
+  "field_id": "fd_gibs_flesh",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "bash"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_fleshling_ravagy_outb",
+  "type": "SPELL",
+  "name": {
+    "str": "突出"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'的施法者引导它的身体，让它融合的肢体向各个方向疯狂地投掷自己。被击中的目标受到高打击伤害",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_TARGET"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "min_damage": 10,
+  "max_damage": 20,
+  "max_range": 5,
+  "min_range": 5,
+  "field_chance": 5,
+  "field_id": "fd_gibs_flesh",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "bash"
+}
+```
+

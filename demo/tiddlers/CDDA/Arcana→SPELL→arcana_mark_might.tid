@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_mark_might
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mark_might|http://cdda.aloxaf.cn/search?q=arcana_mark_might]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_sanguine_marks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_mark_might",
+  "//": "ID retained for save compatibility reasons.",
+  "type": "SPELL",
+  "name": {
+    "str": "Mark: Manifestation of Strength"
+  },
+  "description": "Sanguine Mark\nUsing this spell will imbue your body with an unnatural aura, greatly increasing your strength and damage resistance.  It can only be used on yourself.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_5",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "halo_draconic_might",
+  "energy_source": "HP",
+  "difficulty": 50,
+  "skill": "magic",
+  "max_level": 5,
+  "base_casting_time": 180,
+  "final_casting_time": 90,
+  "casting_time_increment": -18,
+  "base_energy_cost": 24,
+  "final_energy_cost": 12,
+  "energy_increment": -2.4,
+  "min_duration": 60000,
+  "max_duration": 150000,
+  "duration_increment": 18000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_mark_might",
+  "//": "ID retained for save compatibility reasons.",
+  "type": "SPELL",
+  "name": {
+    "str": "印记：力量表现"
+  },
+  "description": "猩红印记\n使用这个法术会让你的身体充满不自然的光环，大大增加你的力量和抗伤害能力。只能用在自己身上。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_5",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "halo_draconic_might",
+  "energy_source": "HP",
+  "difficulty": 50,
+  "skill": "magic",
+  "max_level": 5,
+  "base_casting_time": 180,
+  "final_casting_time": 90,
+  "casting_time_increment": -18,
+  "base_energy_cost": 24,
+  "final_energy_cost": 12,
+  "energy_increment": -2.4,
+  "min_duration": 60000,
+  "max_duration": 150000,
+  "duration_increment": 18000
+}
+```
+

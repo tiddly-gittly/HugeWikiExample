@@ -1,0 +1,165 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_flesh_wall
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_flesh_wall|http://cdda.aloxaf.cn/search?q=mon_sflesh_flesh_wall]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_spawns.json
+
+
+!! 原文
+
+```json
+{
+  "//": "These walls will make obstacles as long as they live. They remain for 10-20 turns!",
+  "id": "mon_sflesh_flesh_wall",
+  "type": "MONSTER",
+  "name": {
+    "str": "wall of flesh"
+  },
+  "description": "Thick, lumps of meat taken control by the flesh. It slowly protrudes from the wall, creating fleshed barriers on its way.",
+  "default_faction": "secro_flesh",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "10000 L",
+  "weight": "23750 kg",
+  "hp": 200,
+  "speed": 10,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☒",
+  "emit_fields": [
+    "emit_flesh_wall_limitation",
+    "emit_down_immunity"
+  ],
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 30,
+  "armor_cut": 10,
+  "armor_bullet": 8,
+  "armor_stab": 25,
+  "vision_day": 30,
+  "vision_night": 30,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_wall_ing_target"
+      },
+      "cooldown": 5,
+      "monster_message": "<color_light_red>%1$s trembles!</color>"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "NOHEAD",
+    "STUN_IMMUNE",
+    "PACIFIST"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "These walls will make obstacles as long as they live. They remain for 10-20 turns!",
+  "id": "mon_sflesh_flesh_wall",
+  "type": "MONSTER",
+  "name": {
+    "str": "血肉墙"
+  },
+  "description": "被血肉控制的厚重肉块。它慢慢地从墙上伸出，在路上形成了一道道血肉屏障。",
+  "default_faction": "secro_flesh",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "10000 L",
+  "weight": "23750 kg",
+  "hp": 200,
+  "speed": 10,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☒",
+  "emit_fields": [
+    "emit_flesh_wall_limitation",
+    "emit_down_immunity"
+  ],
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 30,
+  "armor_cut": 10,
+  "armor_bullet": 8,
+  "armor_stab": 25,
+  "vision_day": 30,
+  "vision_night": 30,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_wall_ing_target"
+      },
+      "cooldown": 5,
+      "monster_message": "<color_light_red>%1$s抖动着...！</color>"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "NOHEAD",
+    "STUN_IMMUNE",
+    "PACIFIST"
+  ]
+}
+```
+

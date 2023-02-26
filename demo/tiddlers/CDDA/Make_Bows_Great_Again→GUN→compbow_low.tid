@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: GUN Make_Bows_Great_Again
+title: Make_Bows_Great_Again→GUN→compbow_low
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：compbow_low|http://cdda.aloxaf.cn/search?q=compbow_low]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Make_Bows_Great_Again/Items/Archery_override.json
+
+
+!! 原文
+
+```json
+{
+  "id": "compbow_low",
+  "copy-from": "compbow_low",
+  "type": "GUN",
+  "name": {
+    "str": "compound bow (low)",
+    "str_pl": "compound bows (low)"
+  },
+  "description": "A high-power bow with shaped cams and extra cables for high velocity shots that can be used effectively by average archers.  Currently set to a low weight, making it much easier to draw.",
+  "min_strength": 7,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 18
+  },
+  "use_action": {
+    "menu_text": "Tighten Limbs",
+    "type": "transform",
+    "target": "compbow",
+    "qualities_needed": {
+      "SCREW_FINE": 1
+    },
+    "msg": "You tighten the limbs, increasing the strength of the bow."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "compbow_low",
+  "copy-from": "compbow_low",
+  "type": "GUN",
+  "name": {
+    "str": "现代复合弓（低）",
+    "str_pl": "复合弓（低）"
+  },
+  "description": "一把威力大的弓，带有偏心滑轮组和额外的弓弦，能够射出高速弓箭，力量普通的人就能够有效的使用它。当前滑轮组设置在低力度水平，很容易拉开。",
+  "min_strength": 7,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 18
+  },
+  "use_action": {
+    "menu_text": "系紧弓臂",
+    "type": "transform",
+    "target": "compbow",
+    "qualities_needed": {
+      "SCREW_FINE": 1
+    },
+    "msg": "你收紧弓臂，增加弓的拉力。"
+  }
+}
+```
+

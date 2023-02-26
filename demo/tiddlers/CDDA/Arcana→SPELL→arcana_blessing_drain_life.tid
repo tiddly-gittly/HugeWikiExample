@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_drain_life
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_drain_life|http://cdda.aloxaf.cn/search?q=arcana_blessing_drain_life]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_drain_life",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Drain Life"
+  },
+  "description": "Arcane Blessing\nUsing this spell will anoint you with a horned halo, granting you a life-draining effect.",
+  "message": "A shimmering aura permeates you, sparking a yearning for battle and the death of your enemies.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "halo_drainlife",
+  "energy_source": "MANA",
+  "difficulty": 60,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 350,
+  "final_casting_time": 175,
+  "casting_time_increment": -8.75,
+  "base_energy_cost": 420,
+  "final_energy_cost": 210,
+  "energy_increment": -10.5,
+  "min_duration": 108000,
+  "max_duration": 540000,
+  "duration_increment": 21600
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_drain_life",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：生命汲取"
+  },
+  "description": "奥术祝福\n使用这个法术会用角状的光晕赐予你，使你有抽筋的作用。",
+  "message": "闪烁的光环弥漫在你的身上，激起了人们对战斗和敌人死亡的向往。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "halo_drainlife",
+  "energy_source": "MANA",
+  "difficulty": 60,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 350,
+  "final_casting_time": 175,
+  "casting_time_increment": -8.75,
+  "base_energy_cost": 420,
+  "final_energy_cost": 210,
+  "energy_increment": -10.5,
+  "min_duration": 108000,
+  "max_duration": 540000,
+  "duration_increment": 21600
+}
+```
+

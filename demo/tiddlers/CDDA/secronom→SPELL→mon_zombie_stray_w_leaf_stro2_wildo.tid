@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_stray_w_leaf_stro2_wildo
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_leaf_stro2_wildo|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_leaf_stro2_wildo]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_stro2_wildo",
+  "type": "SPELL",
+  "name": {
+    "str": "Wild Outgrowth"
+  },
+  "description": "(Combo) spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its body to create an outburst of twisted roots and vines under the target, dealing moderate stabbing damage and ensnares all affected creatures.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "rooty_grasp",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_stray_w_leaf_stro1_razorl"
+    },
+    {
+      "id": "mon_zombie_stray_w_leaf_stro2_sscent"
+    }
+  ],
+  "min_damage": 12,
+  "max_damage": 16,
+  "min_range": 14,
+  "max_range": 14,
+  "min_aoe": 6,
+  "max_aoe": 8,
+  "base_casting_time": 550,
+  "min_duration": 400,
+  "max_duration": 800,
+  "damage_type": "stab"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_stro2_wildo",
+  "type": "SPELL",
+  "name": {
+    "str": "野生生长"
+  },
+  "description": "（combo）怪物释放的法术。如果你看到了这个，那么请阅读下面的文字：\n“施法者引导其身体制造出扭曲的根和藤蔓在目标下方爆开，造成中等程度的刺击伤害并捕获所有受影响的生物。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "rooty_grasp",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_stray_w_leaf_stro1_razorl"
+    },
+    {
+      "id": "mon_zombie_stray_w_leaf_stro2_sscent"
+    }
+  ],
+  "min_damage": 12,
+  "max_damage": 16,
+  "min_range": 14,
+  "max_range": 14,
+  "min_aoe": 6,
+  "max_aoe": 8,
+  "base_casting_time": 550,
+  "min_duration": 400,
+  "max_duration": 800,
+  "damage_type": "stab"
+}
+```
+

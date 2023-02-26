@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→acid_resistance
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：acid_resistance|http://cdda.aloxaf.cn/search?q=acid_resistance]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/classless.json
+
+
+!! 原文
+
+```json
+{
+  "id": "acid_resistance",
+  "type": "SPELL",
+  "name": {
+    "str": "Acid Resistance"
+  },
+  "description": "Protects the user from acid.",
+  "valid_targets": [
+    "none"
+  ],
+  "min_range": 0,
+  "max_range": 0,
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "spawn_item",
+  "effect_str": "acid_res_aura",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "spell_class": "NONE",
+  "flags": [
+    "CONCENTRATE",
+    "NO_LEGS"
+  ],
+  "difficulty": 4,
+  "max_level": 22,
+  "base_casting_time": 200,
+  "base_energy_cost": 150,
+  "min_duration": 84000,
+  "max_duration": 540000,
+  "duration_increment": 18400,
+  "learn_spells": {
+    "acid_resistance_greater": 15
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "acid_resistance",
+  "type": "SPELL",
+  "name": {
+    "str": "防酸术"
+  },
+  "description": "让施法者不受酸液侵蚀。",
+  "valid_targets": [
+    "none"
+  ],
+  "min_range": 0,
+  "max_range": 0,
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "spawn_item",
+  "effect_str": "acid_res_aura",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "spell_class": "NONE",
+  "flags": [
+    "CONCENTRATE",
+    "NO_LEGS"
+  ],
+  "difficulty": 4,
+  "max_level": 22,
+  "base_casting_time": 200,
+  "base_energy_cost": 150,
+  "min_duration": 84000,
+  "max_duration": 540000,
+  "duration_increment": 18400,
+  "learn_spells": {
+    "acid_resistance_greater": 15
+  }
+}
+```
+

@@ -1,0 +1,59 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_APPRENTICE_QUERY_DRAGONBLOOD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_APPRENTICE_QUERY_DRAGONBLOOD|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_APPRENTICE_QUERY_DRAGONBLOOD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_APPRENTICE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_QUERY_DRAGONBLOOD",
+  "type": "talk_topic",
+  "dynamic_line": "Indeed, I wish the magus would permit us to work together instead.  My master would greatly value what you've learned.  But you'd be considered a threat.",
+  "responses": [
+    {
+      "text": "Can you trust that your master will share the fruit of these studies with you?",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_PROMISE"
+    },
+    {
+      "text": "[ATTACK] I'll show you and the others just how much of a threat I am.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_QUERY_DRAGONBLOOD",
+  "type": "talk_topic",
+  "dynamic_line": "事实上，我希望法师允许我们一起工作。我的主人会非常重视你所学的。但你会被认为是个威胁。",
+  "responses": [
+    {
+      "text": "你能相信你的主人会和你分享这些研究的成果吗？",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_PROMISE"
+    },
+    {
+      "text": "[攻击]我会让你和其他人知道我有多大的威胁。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

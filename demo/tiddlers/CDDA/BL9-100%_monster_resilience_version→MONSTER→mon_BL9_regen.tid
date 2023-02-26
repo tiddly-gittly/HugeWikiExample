@@ -1,0 +1,221 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_regen
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_regen|http://cdda.aloxaf.cn/search?q=mon_BL9_regen]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/pecurial_bastards.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_regen",
+  "looks_like": "mon_zombie_hollow",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9 Regenerator"
+  },
+  "description": " An experimental pale mutant with skinny limbs and dreadful visage. it's strong regenerative prowess is an offset to it's fragile body.",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE",
+    "MUTANT"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 185,
+  "speed": 70,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 6,
+      "armor_penetration": 7
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☣",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 2,
+  "regenerates": 15,
+  "death_drops": "BL9_Drops_Regen",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 75,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s gnaws at you!",
+      "hit_dmg_npc": "The %1$s gnaws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to bite you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 100,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 14,
+          "armor_penetration": 11
+        }
+      ],
+      "hit_dmg_u": "The %1$s slams you!",
+      "hit_dmg_npc": "The %1$s slams <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slam you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slam <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's limb at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's limb at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_regen",
+  "looks_like": "mon_zombie_hollow",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9再生器"
+  },
+  "description": "一个苍白的实验性变种人，四肢瘦弱，面目狰狞。它强大的再生能力在某种程度上抵消了其身体上的脆弱。",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE",
+    "MUTANT"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 185,
+  "speed": 70,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 6,
+      "armor_penetration": 7
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☣",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 2,
+  "regenerates": 15,
+  "death_drops": "BL9_Drops_Regen",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 75,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s gnaws at you!",
+      "hit_dmg_npc": "The %1$s gnaws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to bite you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 100,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 14,
+          "armor_penetration": 11
+        }
+      ],
+      "hit_dmg_u": "The %1$s slams you!",
+      "hit_dmg_npc": "The %1$s slams <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slam you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slam <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's limb at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's limb at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

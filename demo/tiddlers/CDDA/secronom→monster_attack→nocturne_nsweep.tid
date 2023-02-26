@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→nocturne_nsweep
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：nocturne_nsweep|http://cdda.aloxaf.cn/search?q=nocturne_nsweep]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "nocturne_nsweep",
+  "accuracy": 8,
+  "move_cost": 100,
+  "blockable": false,
+  "dodgeable": true,
+  "no_adjacent": true,
+  "range": 3,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 13,
+      "armor_multiplier": 0.66
+    }
+  ],
+  "hit_dmg_u": "%1$s's claw reaches at your %2$s!",
+  "hit_dmg_npc": "%1$s claws <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to scratch you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to scratch <npcname>, but fails to penetrate their armor!",
+  "miss_msg_u": "The %s's claw reaches at you, but you dodge!",
+  "miss_msg_npc": "The %s claws at <npcname>, but they dodge!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "nocturne_nsweep",
+  "accuracy": 8,
+  "move_cost": 100,
+  "blockable": false,
+  "dodgeable": true,
+  "no_adjacent": true,
+  "range": 3,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 13,
+      "armor_multiplier": 0.66
+    }
+  ],
+  "hit_dmg_u": "%1$s's claw reaches at your %2$s!",
+  "hit_dmg_npc": "%1$s claws <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to scratch you，but fails to penetrate your armor！",
+  "no_dmg_msg_npc": "%1$s tries to scratch <npcname>，but fails to penetrate their armor！",
+  "miss_msg_u": "%s的爪子伸向你，但你躲闪了！",
+  "miss_msg_npc": "%s只爪子在<npcname>，但它们躲闪！"
+}
+```
+

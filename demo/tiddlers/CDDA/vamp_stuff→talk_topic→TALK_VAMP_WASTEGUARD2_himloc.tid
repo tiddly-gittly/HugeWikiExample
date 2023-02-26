@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_WASTEGUARD2_himloc
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_WASTEGUARD2_himloc|http://cdda.aloxaf.cn/search?q=TALK_VAMP_WASTEGUARD2_himloc]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/v_wg2_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_WASTEGUARD2_himloc",
+  "type": "talk_topic",
+  "dynamic_line": "I know you've been told its a deep secret, but why do you mind about our master?",
+  "responses": [
+    {
+      "text": "I'd like to meet HIM.",
+      "topic": "TALK_VAMP_WASTEGUARD2_seehimlol",
+      "effect": {
+        "u_add_trait": "wsg2himmeet"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg2himmeet"
+        }
+      }
+    },
+    {
+      "text": "HE looks questionable.",
+      "topic": "TALK_VAMP_WASTEGUARD2_lookhimlol",
+      "effect": {
+        "u_add_trait": "wsg2himlook"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg2himlook"
+        }
+      }
+    },
+    {
+      "text": "I want to know HIS upcoming actions.",
+      "topic": "TALK_VAMP_WASTEGUARD2_actshimlol",
+      "effect": {
+        "u_add_trait": "wsg2himact"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg2himact"
+        }
+      }
+    },
+    {
+      "text": "Forget it...",
+      "topic": "TALK_VAMP_WASTEGUARD2_ohrelly"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_WASTEGUARD2_himloc",
+  "type": "talk_topic",
+  "dynamic_line": "我猜有人已经告诉你了这是一个很深的秘密，你为什么这么关注我们的大师呢？",
+  "responses": [
+    {
+      "text": "我想见见他。",
+      "topic": "TALK_VAMP_WASTEGUARD2_seehimlol",
+      "effect": {
+        "u_add_trait": "wsg2himmeet"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg2himmeet"
+        }
+      }
+    },
+    {
+      "text": "他看起来很可疑。",
+      "topic": "TALK_VAMP_WASTEGUARD2_lookhimlol",
+      "effect": {
+        "u_add_trait": "wsg2himlook"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg2himlook"
+        }
+      }
+    },
+    {
+      "text": "我想知道他接下来要做什么。",
+      "topic": "TALK_VAMP_WASTEGUARD2_actshimlol",
+      "effect": {
+        "u_add_trait": "wsg2himact"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg2himact"
+        }
+      }
+    },
+    {
+      "text": "当我没问...",
+      "topic": "TALK_VAMP_WASTEGUARD2_ohrelly"
+    }
+  ]
+}
+```
+

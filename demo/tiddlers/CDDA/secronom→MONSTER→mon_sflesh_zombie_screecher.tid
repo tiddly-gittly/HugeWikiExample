@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_screecher
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_screecher|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_screecher]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_screecher",
+  "type": "MONSTER",
+  "name": {
+    "str": "screecher zombie"
+  },
+  "description": "A thin corpse, its chest is swollen in what appears to be preparation.  A thick black ooze drips from its open mouth.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 106,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "magenta_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 3,
+  "vision_day": 50,
+  "vision_night": 8,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "SHRIEK_ALERT",
+      20
+    ],
+    [
+      "SHRIEK_STUN",
+      1
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_screecher",
+  "flags": [
+    "SEES",
+    "KEENNOSE",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_screecher",
+  "type": "MONSTER",
+  "name": {
+    "str": "尖啸丧尸"
+  },
+  "description": "一具瘦弱的尸体，它的胸口已经肿胀，浸透了类似某种试剂的液体。一种浓稠漆黑的粘液正从它张大的口中滴落下来。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 106,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "magenta_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 3,
+  "vision_day": 50,
+  "vision_night": 8,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "SHRIEK_ALERT",
+      20
+    ],
+    [
+      "SHRIEK_STUN",
+      1
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_screecher",
+  "flags": [
+    "SEES",
+    "KEENNOSE",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→lucern_hexenhammer
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lucern_hexenhammer|http://cdda.aloxaf.cn/search?q=lucern_hexenhammer]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "lucern_hexenhammer",
+  "sub": "hexenhammer",
+  "type": "TOOL",
+  "category": "weapons",
+  "copy-from": "lucern_hammer",
+  "name": {
+    "str": "luminous hammer"
+  },
+  "description": "A mighty lucerne hammer, decorated with archaic Latin engravings and silver counterbalancing to make it more usable at close range.  Many magical items can be purified with this item.  Activating it can be used to create a powerful flash, capable of searing anyone in range.  Though the user will not take damage from it, they will still be blinded if lacking protection.  It could also be used to deploy a rune with a weaker stunning effect on whatever steps on it.",
+  "price": "1200 USD",
+  "price_postapoc": "120 USD",
+  "material": [
+    {
+      "type": "steel",
+      "portion": 25
+    },
+    {
+      "type": "wood",
+      "portion": 25
+    },
+    {
+      "type": "silver",
+      "portion": 2
+    }
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 10
+      }
+    }
+  ],
+  "charges_per_use": 10,
+  "ammo": "essence_dull_type",
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_hexenhammer",
+      "moves": 90,
+      "practice": 0,
+      "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_hammerzeit_greater",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  ],
+  "//": "Designed to be compatible with Via Gladium et Malleo, so the silver decoration is on the other end to shift the center of balance.  No damage bonus from the extra weight, but also no 0.7x melee damage from POLEARM flag.",
+  "relative": {
+    "weight": "450 g",
+    "to_hit": 1
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "ALWAYS_TWOHAND",
+      "POLEARM"
+    ],
+    "weapon_category": [
+      "POLEARMS"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "lucern_hexenhammer",
+  "sub": "hexenhammer",
+  "type": "TOOL",
+  "category": "weapons",
+  "copy-from": "lucern_hammer",
+  "name": {
+    "str": "闪光战锤"
+  },
+  "description": "一把强大的卢塞恩锤子，饰有古老的拉丁雕刻和银制平衡锤，使其在近距离内更易使用。许多魔法物品可以用这个物品净化。激活它可以创建一个强大的闪光，能够灼伤范围内的任何人。虽然使用者不会受到伤害，但如果缺乏保护，他们仍然会失明。它也可以用来部署一个符文，在任何步骤上都有较弱的眩晕效果。",
+  "price": "1200 USD",
+  "price_postapoc": "120 USD",
+  "material": [
+    {
+      "type": "steel",
+      "portion": 25
+    },
+    {
+      "type": "wood",
+      "portion": 25
+    },
+    {
+      "type": "silver",
+      "portion": 2
+    }
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 10
+      }
+    }
+  ],
+  "charges_per_use": 10,
+  "ammo": "essence_dull_type",
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_hexenhammer",
+      "moves": 90,
+      "practice": 0,
+      "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_hammerzeit_greater",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  ],
+  "//": "Designed to be compatible with Via Gladium et Malleo, so the silver decoration is on the other end to shift the center of balance.  No damage bonus from the extra weight, but also no 0.7x melee damage from POLEARM flag.",
+  "relative": {
+    "weight": "450 g",
+    "to_hit": 1
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "ALWAYS_TWOHAND",
+      "POLEARM"
+    ],
+    "weapon_category": [
+      "POLEARMS"
+    ]
+  }
+}
+```
+

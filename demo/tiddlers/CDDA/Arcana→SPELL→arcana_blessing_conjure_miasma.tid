@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_conjure_miasma
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_conjure_miasma|http://cdda.aloxaf.cn/search?q=arcana_blessing_conjure_miasma]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_conjure_miasma",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Conjure Miasma"
+  },
+  "description": "Arcane Blessing\nUsing this spell will engulf the targeted area in a swirling miasma of various poisonous vapors, afflicting many forms of harm.  Enemies in the epicenter will take double damage.",
+  "message": "A rush of unnatural wind swirls at your command, bringing forth myriad poisonous gales with it.",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_poison_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_conjure_miasma_spike",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_conjure_miasma_tear",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_conjure_miasma_nuke",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_conjure_miasma_fungicide",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_conjure_miasma_noise",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "poison",
+  "min_damage": 25,
+  "max_damage": 125,
+  "damage_increment": 5,
+  "min_range": 6,
+  "max_range": 24,
+  "range_increment": 0.9,
+  "min_aoe": 2,
+  "max_aoe": 8,
+  "aoe_increment": 0.3,
+  "max_level": 20,
+  "difficulty": 30,
+  "skill": "magic",
+  "base_casting_time": 300,
+  "final_casting_time": 150,
+  "casting_time_increment": -7.5,
+  "energy_source": "MANA",
+  "base_energy_cost": 360,
+  "final_energy_cost": 180,
+  "energy_increment": -9,
+  "damage_type": "biological",
+  "min_duration": 900,
+  "max_duration": 4500,
+  "duration_increment": 180,
+  "field_id": "fd_toxic_gas",
+  "field_chance": 4,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_conjure_miasma",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：召唤瘴气"
+  },
+  "description": "奥术祝福\n使用该法术会将目标区域吞没在各种有毒气体的漩涡中，造成多种形式的伤害。中间的敌人将受到双倍伤害。",
+  "message": "一股不自然的风在你的指挥下旋转，并带来无数的有毒气体。",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_poison_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_conjure_miasma_spike",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_conjure_miasma_tear",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_conjure_miasma_nuke",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_conjure_miasma_fungicide",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_conjure_miasma_noise",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "poison",
+  "min_damage": 25,
+  "max_damage": 125,
+  "damage_increment": 5,
+  "min_range": 6,
+  "max_range": 24,
+  "range_increment": 0.9,
+  "min_aoe": 2,
+  "max_aoe": 8,
+  "aoe_increment": 0.3,
+  "max_level": 20,
+  "difficulty": 30,
+  "skill": "magic",
+  "base_casting_time": 300,
+  "final_casting_time": 150,
+  "casting_time_increment": -7.5,
+  "energy_source": "MANA",
+  "base_energy_cost": 360,
+  "final_energy_cost": 180,
+  "energy_increment": -9,
+  "damage_type": "biological",
+  "min_duration": 900,
+  "max_duration": 4500,
+  "duration_increment": 180,
+  "field_id": "fd_toxic_gas",
+  "field_chance": 4,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+

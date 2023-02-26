@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BIO_2_U_BIO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BIO_2_U_BIO|http://cdda.aloxaf.cn/search?q=TALK_BIO_2_U_BIO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BIO_2.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_2_U_BIO",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "Military augmentation project, same people handing out the badge you're wearing.  Guessing you know enough about it if you have one yourself.  Don't remember much up until Router found me and took me in, same deal as Sigma.",
+    "no": "A military augmentation project.  Not that sort of bio-weapon if that's what you're thinking, it's not contagious.  More like we're living weapons basically.  Guess you already know a bit for you to have made it here.  Not much else I can tell you, just stuck here waiting."
+  },
+  "responses": [
+    {
+      "text": "I'm in the same boat, it seems.",
+      "topic": "TALK_BIO_2_IAM_BIO",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      }
+    },
+    {
+      "text": "I'm one of the super soldiers, in fact.",
+      "topic": "TALK_BIO_2_IAM_SOLDAT",
+      "condition": {
+        "u_has_trait": "SUPER_SOLDIER_MARKER"
+      }
+    },
+    {
+      "text": "I see…",
+      "topic": "TALK_BIO_2"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_2_U_BIO",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "军事增强计划，和你戴的徽章相同。我猜你知道它象征什么。我只记得露特尔找到并把我带走之后的事，和西格玛一样。",
+    "no": "军事增强计划。不是你想的那种生物武器，它不会传染。更像是活的武器。既然你能来到这里，我猜你已经知道了一点。我没什么可说的，只是站在这里等着。"
+  },
+  "responses": [
+    {
+      "text": "看起来我们处境相同。",
+      "topic": "TALK_BIO_2_IAM_BIO",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      }
+    },
+    {
+      "text": "事实上，我是超级战士之一。",
+      "topic": "TALK_BIO_2_IAM_SOLDAT",
+      "condition": {
+        "u_has_trait": "SUPER_SOLDIER_MARKER"
+      }
+    },
+    {
+      "text": "我明白了……",
+      "topic": "TALK_BIO_2"
+    }
+  ]
+}
+```
+

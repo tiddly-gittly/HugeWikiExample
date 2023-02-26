@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_CHALICE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_CHALICE|http://cdda.aloxaf.cn/search?q=TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_CHALICE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MERCHANT_CF_AUX.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_CHALICE",
+  "type": "talk_topic",
+  "dynamic_line": "Hell if I know.  Some kind cult book, that Ms. McKinnon lady was making sure I'd turn them in to someone working for her instead of the Grandmaster.  Guessin' she doesn't trust him not to go burning them.",
+  "responses": [
+    {
+      "text": "Very well then.  I'll trust you to handle this with care.",
+      "condition": {
+        "u_has_item": "book_sacrifice"
+      },
+      "effect": [
+        {
+          "u_consume_item": "book_sacrifice"
+        },
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 16
+        }
+      ],
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+    },
+    {
+      "text": "We'll see, maybe another time.",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "No thanks, that's all for now I guess.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_CHALICE",
+  "type": "talk_topic",
+  "dynamic_line": "如果我知道的话。一些邪教书籍，麦金农女士想让我把它们交给为她工作的人，而不是大师。我猜她不相信他不会去烧它们。",
+  "responses": [
+    {
+      "text": "那好吧。我相信你会小心处理的。",
+      "condition": {
+        "u_has_item": "book_sacrifice"
+      },
+      "effect": [
+        {
+          "u_consume_item": "book_sacrifice"
+        },
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 16
+        }
+      ],
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+    },
+    {
+      "text": "我们拭目以待，也许下次吧。",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "不用了，谢谢，我想就这些了。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

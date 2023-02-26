@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_hunting_horror_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_hunting_horror_summoned|http://cdda.aloxaf.cn/search?q=mon_hunting_horror_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_hunting_horror_summoned",
+  "copy-from": "mon_hunting_horror",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned hunting horror"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    },
+    {
+      "damage_type": "cold",
+      "amount": 9
+    }
+  ],
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "vision_day": 50,
+  "vision_night": 50,
+  "armor_stab": 10,
+  "armor_bullet": 10,
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_hunting_horror_bound",
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "ELECTRIC",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "SUNDEATH",
+      "HIT_AND_RUN"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_hunting_horror_summoned",
+  "copy-from": "mon_hunting_horror",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤恐怖猎手"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    },
+    {
+      "damage_type": "cold",
+      "amount": 9
+    }
+  ],
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "vision_day": 50,
+  "vision_night": 50,
+  "armor_stab": 10,
+  "armor_bullet": 10,
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_hunting_horror_bound",
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "ELECTRIC",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "SUNDEATH",
+      "HIT_AND_RUN"
+    ]
+  }
+}
+```
+

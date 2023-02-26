@@ -1,0 +1,257 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom_lore_expansion
+title: secronom_lore_expansion→effect_on_condition→eoc_secro_pafv_morphed_gun_bonelance_shoot_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_pafv_morphed_gun_bonelance_shoot_check|http://cdda.aloxaf.cn/search?q=eoc_secro_pafv_morphed_gun_bonelance_shoot_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_magic.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_pafv_morphed_gun_bonelance_shoot_check",
+  "condition": {
+    "and": [
+      {
+        "not": {
+          "u_has_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepare"
+        }
+      },
+      {
+        "or": [
+          {
+            "u_has_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_1"
+          },
+          {
+            "u_has_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_2"
+          }
+        ]
+      }
+    ]
+  },
+  "effect": [
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_pafv_morphed_gun_bonelance_shoot_power_check",
+          "condition": {
+            "compare_int": [
+              {
+                "u_val": "power"
+              },
+              ">=",
+              {
+                "const": 100000
+              }
+            ]
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "power"
+                },
+                "-=",
+                {
+                  "const": 100000
+                }
+              ]
+            },
+            {
+              "queue_eocs": [
+                {
+                  "id": "eoc_secro_pafv_morphed_gun_bonelance_shoot",
+                  "condition": {
+                    "u_has_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_1"
+                  },
+                  "effect": [
+                    {
+                      "u_lose_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_1"
+                    },
+                    {
+                      "u_cast_spell": {
+                        "id": "secro_pafv_morphed_gun_bonelance_shot_1",
+                        "message": "Your bone lancer armament bursts out bone spikes!"
+                      },
+                      "targeted": true
+                    },
+                    {
+                      "u_cast_spell": {
+                        "id": "secro_pafv_morphed_cost",
+                        "message": ""
+                      }
+                    }
+                  ],
+                  "false_effect": [
+                    {
+                      "u_lose_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_2"
+                    },
+                    {
+                      "u_cast_spell": {
+                        "id": "secro_pafv_morphed_gun_bonelance_shot_2",
+                        "message": "Your bone lancer armament bursts out bone spikes!"
+                      },
+                      "targeted": true
+                    },
+                    {
+                      "u_cast_spell": {
+                        "id": "secro_pafv_morphed_cost",
+                        "message": ""
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "false_effect": [
+            {
+              "u_message": "You don't have enough energy to fire your bone lancer armament.",
+              "type": "bad"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "false_effect": [
+    {
+      "queue_eocs": [
+        "eoc_secro_pafv_morphed_gun_bonelance_shot_check"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_pafv_morphed_gun_bonelance_shoot_check",
+  "condition": {
+    "and": [
+      {
+        "not": {
+          "u_has_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepare"
+        }
+      },
+      {
+        "or": [
+          {
+            "u_has_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_1"
+          },
+          {
+            "u_has_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_2"
+          }
+        ]
+      }
+    ]
+  },
+  "effect": [
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_pafv_morphed_gun_bonelance_shoot_power_check",
+          "condition": {
+            "compare_int": [
+              {
+                "u_val": "power"
+              },
+              ">=",
+              {
+                "const": 100000
+              }
+            ]
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "power"
+                },
+                "-=",
+                {
+                  "const": 100000
+                }
+              ]
+            },
+            {
+              "queue_eocs": [
+                {
+                  "id": "eoc_secro_pafv_morphed_gun_bonelance_shoot",
+                  "condition": {
+                    "u_has_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_1"
+                  },
+                  "effect": [
+                    {
+                      "u_lose_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_1"
+                    },
+                    {
+                      "u_cast_spell": {
+                        "id": "secro_pafv_morphed_gun_bonelance_shot_1",
+                        "message": "Your bone lancer armament bursts out bone spikes!"
+                      },
+                      "targeted": true
+                    },
+                    {
+                      "u_cast_spell": {
+                        "id": "secro_pafv_morphed_cost",
+                        "message": ""
+                      }
+                    }
+                  ],
+                  "false_effect": [
+                    {
+                      "u_lose_effect": "eff_secro_pafv_morphed_gun_bonelance_shot_prepared_2"
+                    },
+                    {
+                      "u_cast_spell": {
+                        "id": "secro_pafv_morphed_gun_bonelance_shot_2",
+                        "message": "Your bone lancer armament bursts out bone spikes!"
+                      },
+                      "targeted": true
+                    },
+                    {
+                      "u_cast_spell": {
+                        "id": "secro_pafv_morphed_cost",
+                        "message": ""
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "false_effect": [
+            {
+              "u_message": "You don't have enough energy to fire your bone lancer armament.",
+              "type": "bad"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "false_effect": [
+    {
+      "queue_eocs": [
+        "eoc_secro_pafv_morphed_gun_bonelance_shot_check"
+      ]
+    }
+  ]
+}
+```
+

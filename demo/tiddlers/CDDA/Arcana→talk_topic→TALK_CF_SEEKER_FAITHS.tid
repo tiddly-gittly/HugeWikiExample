@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_SEEKER_FAITHS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_SEEKER_FAITHS|http://cdda.aloxaf.cn/search?q=TALK_CF_SEEKER_FAITHS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_SEEKER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_SEEKER_FAITHS",
+  "type": "talk_topic",
+  "dynamic_line": "The Grandmaster's kin came from a self-styled knightly order, Catholic in origin.  Sofia's, a fellowship of neo-pagans.  My own, predominantly Muslim.  And the fourth was pagan of another sort, if any of them remain and find this place, perhaps they'll be able to tell you more.",
+  "responses": [
+    {
+      "text": "That seems remarkably …syncretic.",
+      "condition": {
+        "u_has_trait": "SPIRITUAL"
+      },
+      "topic": "TALK_CF_SEEKER_SPIRITUAL"
+    },
+    {
+      "text": "I see, thank you.",
+      "topic": "TALK_CF_SEEKER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_SEEKER_FAITHS",
+  "type": "talk_topic",
+  "dynamic_line": "这位大师的亲属来自一个自封的骑士团，出身天主教徒。索非亚，新异教徒的联谊会。我自己的，主要是穆斯林。第四个是另一种异教徒，如果他们中有人留下来找到这个地方，也许他们能告诉你更多。",
+  "responses": [
+    {
+      "text": "这似乎非常...和谐。",
+      "condition": {
+        "u_has_trait": "SPIRITUAL"
+      },
+      "topic": "TALK_CF_SEEKER_SPIRITUAL"
+    },
+    {
+      "text": "我明白了，谢谢。",
+      "topic": "TALK_CF_SEEKER"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_main_collaborate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_main_collaborate|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_main_collaborate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/npc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Collaborate with the seeker for some rewards, BUT! Expect lesser missions from her. It's all up to your decision.",
+  "id": "VAMP_ASEEKER_main_collaborate",
+  "type": "talk_topic",
+  "dynamic_line": "What will be the cost of your partnership with me?",
+  "responses": [
+    {
+      "text": "Exchange all your requested items with something else as rewards.",
+      "topic": "VAMP_ASEEKER_main_collaborateforitem",
+      "effect": [
+        {
+          "npc_add_trait": "vaseekerarcanemys"
+        },
+        {
+          "npc_add_trait": "vaseekerartifactwhat"
+        },
+        {
+          "npc_add_trait": "vaseekerrewardingcollabitems"
+        }
+      ]
+    },
+    {
+      "text": "Money as payment from your life-risking quests.",
+      "topic": "VAMP_ASEEKER_main_collaborateformoney",
+      "effect": [
+        {
+          "npc_add_trait": "vaseekerarcanemys"
+        },
+        {
+          "npc_add_trait": "vaseekerartifactwhat"
+        },
+        {
+          "npc_add_trait": "vaseekerrewardingcollabmoney"
+        }
+      ]
+    },
+    {
+      "text": "You don't need to pay me that much for this and I am glad to serve you.",
+      "topic": "VAMP_ASEEKER_main_collaboratefornothing",
+      "effect": [
+        {
+          "npc_add_trait": "vaseekerarcanemys"
+        },
+        {
+          "npc_add_trait": "vaseekerartifactwhat"
+        },
+        {
+          "npc_add_trait": "vaseekernorewardcollab"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Collaborate with the seeker for some rewards, BUT! Expect lesser missions from her. It's all up to your decision.",
+  "id": "VAMP_ASEEKER_main_collaborate",
+  "type": "talk_topic",
+  "dynamic_line": "你和我合作的成本是多少？",
+  "responses": [
+    {
+      "text": "把你要的东西换成其他东西作为奖励。",
+      "topic": "VAMP_ASEEKER_main_collaborateforitem",
+      "effect": [
+        {
+          "npc_add_trait": "vaseekerarcanemys"
+        },
+        {
+          "npc_add_trait": "vaseekerartifactwhat"
+        },
+        {
+          "npc_add_trait": "vaseekerrewardingcollabitems"
+        }
+      ]
+    },
+    {
+      "text": "金钱作为你冒着生命危险的任务的报酬。",
+      "topic": "VAMP_ASEEKER_main_collaborateformoney",
+      "effect": [
+        {
+          "npc_add_trait": "vaseekerarcanemys"
+        },
+        {
+          "npc_add_trait": "vaseekerartifactwhat"
+        },
+        {
+          "npc_add_trait": "vaseekerrewardingcollabmoney"
+        }
+      ]
+    },
+    {
+      "text": "你不需要为此付我那么多钱，我很高兴为你服务。",
+      "topic": "VAMP_ASEEKER_main_collaboratefornothing",
+      "effect": [
+        {
+          "npc_add_trait": "vaseekerarcanemys"
+        },
+        {
+          "npc_add_trait": "vaseekerartifactwhat"
+        },
+        {
+          "npc_add_trait": "vaseekernorewardcollab"
+        }
+      ]
+    }
+  ]
+}
+```
+

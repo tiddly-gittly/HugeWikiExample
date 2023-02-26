@@ -1,0 +1,183 @@
+creator: 林一二
+revision: 0
+tags: terrain MST_Extra
+title: MST_Extra→terrain→t_hive_regrowing
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_hive_regrowing|http://cdda.aloxaf.cn/search?q=t_hive_regrowing]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_hive_regrowing",
+  "name": "regrowing beehive",
+  "description": "A traditional beehive, dug in slightly and buzzing with activity.  The colony is rebuilding honeycombs and producing more honey, but it still isn't ready.",
+  "symbol": "^",
+  "color": "brown",
+  "move_cost": 0,
+  "transforms_into": "t_hive_ready",
+  "deconstruct": {
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "beehive_empty",
+        "count": 1
+      },
+      {
+        "item": "honeycomb",
+        "count": [
+          1,
+          3
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "FLAMMABLE_ASH",
+    "TRANSPARENT",
+    "PERMEABLE",
+    "NOITEM",
+    "EASY_DECONSTRUCT",
+    "HARVESTED"
+  ],
+  "bash": {
+    "str_min": 12,
+    "str_max": 40,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "wax",
+        "count": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "honeycomb",
+        "count": [
+          0,
+          1
+        ]
+      },
+      {
+        "item": "2x4",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "nail",
+        "charges": [
+          4,
+          8
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          2,
+          6
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_hive_regrowing",
+  "name": "蜂箱（再生中）",
+  "description": "一个传统的蜂箱,轻轻地挖进去,嗡嗡作响.这个蜂群正在重建蜂巢,生产更多的蜂蜜,但还没有准备好.",
+  "symbol": "^",
+  "color": "brown",
+  "move_cost": 0,
+  "transforms_into": "t_hive_ready",
+  "deconstruct": {
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "beehive_empty",
+        "count": 1
+      },
+      {
+        "item": "honeycomb",
+        "count": [
+          1,
+          3
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "FLAMMABLE_ASH",
+    "TRANSPARENT",
+    "PERMEABLE",
+    "NOITEM",
+    "EASY_DECONSTRUCT",
+    "HARVESTED"
+  ],
+  "bash": {
+    "str_min": 12,
+    "str_max": 40,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "wax",
+        "count": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "honeycomb",
+        "count": [
+          0,
+          1
+        ]
+      },
+      {
+        "item": "2x4",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "nail",
+        "charges": [
+          4,
+          8
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          2,
+          6
+        ]
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_maneater_bsuck
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_maneater_bsuck|http://cdda.aloxaf.cn/search?q=mon_maneater_bsuck]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_maneater_bsuck",
+  "type": "SPELL",
+  "name": {
+    "str": "Blood Suck"
+  },
+  "//": "Even if there's no blood field nearby, it still heals...",
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'More vine strands from the caster sweeps around the vicinity, collecting and sucking the blood fields in which heals the caster.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "mon_maneater_pullb"
+    },
+    {
+      "id": "mon_maneater_pullb"
+    },
+    {
+      "id": "mon_maneater_pullb"
+    }
+  ],
+  "min_damage": -30,
+  "max_damage": -45,
+  "damage_type": "pure"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_maneater_bsuck",
+  "type": "SPELL",
+  "name": {
+    "str": "吸血"
+  },
+  "//": "Even if there's no blood field nearby, it still heals...",
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'来自施法者的更多藤蔓在附近扫来扫去，收集并吸吮施法者疗愈的血田。'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "mon_maneater_pullb"
+    },
+    {
+      "id": "mon_maneater_pullb"
+    },
+    {
+      "id": "mon_maneater_pullb"
+    }
+  ],
+  "min_damage": -30,
+  "max_damage": -45,
+  "damage_type": "pure"
+}
+```
+

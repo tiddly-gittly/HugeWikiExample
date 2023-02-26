@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_necro
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_necro|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_necro]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_necro",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie necromancer"
+  },
+  "description": "A twisted mockery of the human form, emaciated, with jet black skin and glowing red eyes.  It is somehow painful to look at, awakening fears deep within your psyche, and even the air around it seems more sinister, somehow darker and more dangerous\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 20,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "dark_gray",
+  "aggression": 5,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 3,
+  "vision_day": 50,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "path_settings": {
+    "max_dist": 10
+  },
+  "special_attacks": [
+    [
+      "RESURRECT",
+      0
+    ]
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_WEAK"
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_necro",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PATH_AVOID_DANGER_1",
+    "PRIORITIZE_TARGETS",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_necro",
+  "type": "MONSTER",
+  "name": {
+    "str": "死灵法尸"
+  },
+  "description": "一具被扭曲得变形的人形丧尸，十分瘦弱，有着乌黑的皮肤和发光的红色瞳孔，看着它让你感到莫名的痛苦，仿佛唤醒你内心深处的恐惧，甚至连周围的空气都似乎变得更恶毒，更黑暗，更危险了。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 20,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "dark_gray",
+  "aggression": 5,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 3,
+  "vision_day": 50,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "path_settings": {
+    "max_dist": 10
+  },
+  "special_attacks": [
+    [
+      "RESURRECT",
+      0
+    ]
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_WEAK"
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_necro",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PATH_AVOID_DANGER_1",
+    "PRIORITIZE_TARGETS",
+    "FILTHY"
+  ]
+}
+```
+

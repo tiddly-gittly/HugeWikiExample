@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→magus_mana_beam
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：magus_mana_beam|http://cdda.aloxaf.cn/search?q=magus_mana_beam]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/magus.json
+
+
+!! 原文
+
+```json
+{
+  "id": "magus_mana_beam",
+  "type": "SPELL",
+  "name": {
+    "str": "Mana Beam"
+  },
+  "description": "A beam of focused magical power that damages any foes in its path.",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS",
+    "LOUD"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "spell_class": "MAGUS",
+  "energy_source": "MANA",
+  "base_casting_time": 150,
+  "base_energy_cost": 200,
+  "difficulty": 4,
+  "max_level": 30,
+  "min_damage": 15,
+  "max_damage": 90,
+  "damage_increment": 3,
+  "damage_type": "pure",
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "min_range": 5,
+  "max_range": 30,
+  "range_increment": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "magus_mana_beam",
+  "type": "SPELL",
+  "name": {
+    "str": "奥术光束"
+  },
+  "description": "一束聚焦过的破坏性魔法光束，会伤害到它路径上的所有敌人。",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS",
+    "LOUD"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "spell_class": "MAGUS",
+  "energy_source": "MANA",
+  "base_casting_time": 150,
+  "base_energy_cost": 200,
+  "difficulty": 4,
+  "max_level": 30,
+  "min_damage": 15,
+  "max_damage": 90,
+  "damage_increment": 3,
+  "damage_type": "pure",
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "min_range": 5,
+  "max_range": 30,
+  "range_increment": 1
+}
+```
+

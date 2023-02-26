@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_scroll_artifice
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_scroll_artifice|http://cdda.aloxaf.cn/search?q=arcana_item_scroll_artifice]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_scroll_artifice",
+  "name": {
+    "str": "Call to Order"
+  },
+  "description": "Attempts to pacify monsters for a moderate duration, paralyzes user and inflicts pain.",
+  "effect": "charm_monster",
+  "shape": "blast",
+  "message": "\"By order, we ascend beyond that of animals.\"  A wave of energy radiates outwards, fragments of otherworldly perspectives flooding your mind in the process!",
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_artifice_pain",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_scroll_artifice_paralyze",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ],
+  "min_damage": 80,
+  "max_damage": 160,
+  "min_duration": 480000,
+  "max_duration": 960000,
+  "min_aoe": 24,
+  "max_aoe": 24,
+  "valid_targets": [
+    "self",
+    "hostile"
+  ],
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_scroll_artifice",
+  "name": {
+    "str": "呼唤秩序"
+  },
+  "description": "Attempts to pacify monsters for a moderate duration, paralyzes user and inflicts pain.",
+  "effect": "charm_monster",
+  "shape": "blast",
+  "message": "“因为秩序，我们拥有了超越生物的能力。”能量如浪潮般向外辐射，在这个过程中，超自然的思维充斥着你的脑海！",
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_artifice_pain",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_scroll_artifice_paralyze",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ],
+  "min_damage": 80,
+  "max_damage": 160,
+  "min_duration": 480000,
+  "max_duration": 960000,
+  "min_aoe": 24,
+  "max_aoe": 24,
+  "valid_targets": [
+    "self",
+    "hostile"
+  ],
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS"
+  ]
+}
+```
+

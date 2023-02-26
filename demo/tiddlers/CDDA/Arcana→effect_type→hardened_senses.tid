@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→hardened_senses
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：hardened_senses|http://cdda.aloxaf.cn/search?q=hardened_senses]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "hardened_senses",
+  "name": [
+    "Hardened Senses"
+  ],
+  "desc": [
+    "Protection against blindness, deafness, stuns, and dazing."
+  ],
+  "remove_message": "You feel the wards guarding your vision and hearing fade.",
+  "removes_effects": [
+    "blind",
+    "deaf",
+    "stunned",
+    "dazed"
+  ],
+  "decay_messages": [
+    [
+      "Your sensory ward is fading.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "hardened_senses",
+  "name": [
+    "知觉硬化"
+  ],
+  "desc": [
+    "防止失明、耳聋、眩晕和眩晕。"
+  ],
+  "remove_message": "你会感觉到守卫你的视力和听力的病房逐渐消失。",
+  "removes_effects": [
+    "blind",
+    "deaf",
+    "stunned",
+    "dazed"
+  ],
+  "decay_messages": [
+    [
+      "你的感觉病房正在消失。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+

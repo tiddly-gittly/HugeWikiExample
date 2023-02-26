@@ -1,0 +1,269 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_regen_spiky
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_regen_spiky|http://cdda.aloxaf.cn/search?q=mon_BL9_regen_spiky]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/pecurial_bastards.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_regen_spiky",
+  "looks_like": "mon_charred_nightmare",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9 Iron Maiden"
+  },
+  "description": "An experimental mutant with several spikes emerging from it's body. Shares similarities to regenerador, but it seems to take full control of it's protrusions.",
+  "default_faction": "BL9_military",
+  "species": [
+    "MUTANT",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 215,
+  "speed": 70,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 6,
+      "armor_penetration": 7
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☣",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 2,
+  "regenerates": 23,
+  "death_drops": "BL9_Drops_Regen",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 75,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s gnaws at you!",
+      "hit_dmg_npc": "The %1$s gnaws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to bite you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 100,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 12,
+          "armor_penetration": 15
+        },
+        {
+          "damage_type": "bash",
+          "amount": 2,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s slams you!",
+      "hit_dmg_npc": "The %1$s slams <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slam you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slam <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's limb at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's limb at <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 11,
+      "move_cost": 150,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 14,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s impales you with it's spiky protrusions!",
+      "hit_dmg_npc": "The %1$s impales <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to impale you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to impale <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s impales you, but you dodge!",
+      "miss_msg_npc": "The %s impales <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_regen_spiky",
+  "looks_like": "mon_charred_nightmare",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9铁娘子"
+  },
+  "description": "一种实验性的突变体，它的身体里有几个尖刺。与regenerador有相似之处，但它似乎完全控制了它的突起。",
+  "default_faction": "BL9_military",
+  "species": [
+    "MUTANT",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 215,
+  "speed": 70,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 6,
+      "armor_penetration": 7
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☣",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 2,
+  "regenerates": 23,
+  "death_drops": "BL9_Drops_Regen",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 75,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s gnaws at you!",
+      "hit_dmg_npc": "The %1$s gnaws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to bite you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 100,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 12,
+          "armor_penetration": 15
+        },
+        {
+          "damage_type": "bash",
+          "amount": 2,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s slams you!",
+      "hit_dmg_npc": "The %1$s slams <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slam you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slam <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's limb at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's limb at <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 11,
+      "move_cost": 150,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 14,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s impales you with it's spiky protrusions!",
+      "hit_dmg_npc": "The %1$s impales <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to impale you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to impale <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s impales you, but you dodge!",
+      "miss_msg_npc": "The %s impales <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

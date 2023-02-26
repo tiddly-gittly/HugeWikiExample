@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→acid_claw
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：acid_claw|http://cdda.aloxaf.cn/search?q=acid_claw]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/black_dragon.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "acid_claw",
+  "name": {
+    "str": "Acid Claw"
+  },
+  "description": "Your claws glow with yellow acid energy, and as you swipe your claw a wave of acid sweeps forth from it.",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "LOUD"
+  ],
+  "spell_class": "NONE",
+  "effect": "attack",
+  "effect_str": "dragon_acidburn",
+  "shape": "cone",
+  "affected_body_parts": [
+    "torso"
+  ],
+  "damage_type": "acid",
+  "max_level": 7,
+  "min_damage": 5,
+  "max_damage": 97,
+  "damage_increment": 15,
+  "min_range": 3,
+  "max_range": 7,
+  "range_increment": 0.5,
+  "min_aoe": 30,
+  "max_aoe": 70,
+  "aoe_increment": 10,
+  "difficulty": 0,
+  "field_id": "fd_acid",
+  "min_field_intensity": 0,
+  "max_field_intensity": 4,
+  "field_intensity_increment": 1,
+  "base_casting_time": 200,
+  "final_casting_time": 140,
+  "casting_time_increment": -10,
+  "energy_source": "MANA",
+  "base_energy_cost": 350
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "acid_claw",
+  "name": {
+    "str": "酸液之爪"
+  },
+  "description": "你的爪子散发出黄色的酸液魔法光芒，当你挥动爪子时，一股酸液从中飞溅出来。",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "LOUD"
+  ],
+  "spell_class": "NONE",
+  "effect": "attack",
+  "effect_str": "dragon_acidburn",
+  "shape": "cone",
+  "affected_body_parts": [
+    "torso"
+  ],
+  "damage_type": "acid",
+  "max_level": 7,
+  "min_damage": 5,
+  "max_damage": 97,
+  "damage_increment": 15,
+  "min_range": 3,
+  "max_range": 7,
+  "range_increment": 0.5,
+  "min_aoe": 30,
+  "max_aoe": 70,
+  "aoe_increment": 10,
+  "difficulty": 0,
+  "field_id": "fd_acid",
+  "min_field_intensity": 0,
+  "max_field_intensity": 4,
+  "field_intensity_increment": 1,
+  "base_casting_time": 200,
+  "final_casting_time": 140,
+  "casting_time_increment": -10,
+  "energy_source": "MANA",
+  "base_energy_cost": 350
+}
+```
+

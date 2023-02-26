@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→SPELL→c_cbm_rtg_induction
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_cbm_rtg_induction|http://cdda.aloxaf.cn/search?q=c_cbm_rtg_induction]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_cbm_rtg_induction",
+  "type": "SPELL",
+  "name": {
+    "str": "CBM Induction"
+  },
+  "description": "Charges the user's bionic reserves via induction.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_damage": 50,
+  "max_damage": 50,
+  "base_casting_time": 200,
+  "effect": "recover_energy",
+  "shape": "blast",
+  "effect_str": "BIONIC",
+  "extra_effects": [
+    {
+      "id": "c_cbm_rtg_induction_2",
+      "hit_self": true
+    },
+    {
+      "id": "c_cbm_rtg_induction_3",
+      "hit_self": true
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_cbm_rtg_induction",
+  "type": "SPELL",
+  "name": {
+    "str": "CBM感应"
+  },
+  "description": "通过感应给使用者的储能插件充电。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_damage": 50,
+  "max_damage": 50,
+  "base_casting_time": 200,
+  "effect": "recover_energy",
+  "shape": "blast",
+  "effect_str": "BIONIC",
+  "extra_effects": [
+    {
+      "id": "c_cbm_rtg_induction_2",
+      "hit_self": true
+    },
+    {
+      "id": "c_cbm_rtg_induction_3",
+      "hit_self": true
+    }
+  ]
+}
+```
+

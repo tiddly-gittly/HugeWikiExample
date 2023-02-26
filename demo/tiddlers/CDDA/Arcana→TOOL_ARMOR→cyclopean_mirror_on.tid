@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→cyclopean_mirror_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cyclopean_mirror_on|http://cdda.aloxaf.cn/search?q=cyclopean_mirror_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "cyclopean_mirror_on",
+  "copy-from": "cyclopean_mirror",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "cyclopean mirror (on)"
+  },
+  "category": "armor",
+  "description": "An ornate round mirror in an archaic style.  It casts a brightly-glowing barrier that protects the user from electricity and radiation, along with partial protection from psychic influence, some resistance to extreme temperatures, increased physical resistance, and halved damage from other elemental damage.",
+  "turns_per_charge": 600,
+  "revert_to": "cyclopean_mirror",
+  "use_action": {
+    "target": "cyclopean_mirror",
+    "menu_text": "Turn off protective aura",
+    "msg": "The protective glow vanishes as the mirror deactivates.",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "LIGHT_60",
+      "NO_TAKEOFF",
+      "PSYSHIELD_PARTIAL",
+      "RAD_PROOF",
+      "RAINPROOF",
+      "SUN_GLASSES",
+      "SWIM_GOGGLES",
+      "TRADER_AVOID",
+      "WATERPROOF",
+      "ZERO_WEIGHT",
+      "ELECTRIC_IMMUNE",
+      "DIMENSIONAL_ANCHOR"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "cyclopean_mirror_on",
+  "copy-from": "cyclopean_mirror",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "巨镜（开）"
+  },
+  "category": "armor",
+  "description": "古色古香的华丽圆镜。它投射出明亮发光的屏障，保护用户免受电和辐射的影响，同时部分保护用户免受心理影响，部分抵抗极端温度，增加物理抵抗力，并将其他元素伤害的伤害减半。",
+  "turns_per_charge": 600,
+  "revert_to": "cyclopean_mirror",
+  "use_action": {
+    "target": "cyclopean_mirror",
+    "menu_text": "关闭保护性光环",
+    "msg": "当后视镜停用时，保护性辉光消失。",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "LIGHT_60",
+      "NO_TAKEOFF",
+      "PSYSHIELD_PARTIAL",
+      "RAD_PROOF",
+      "RAINPROOF",
+      "SUN_GLASSES",
+      "SWIM_GOGGLES",
+      "TRADER_AVOID",
+      "WATERPROOF",
+      "ZERO_WEIGHT",
+      "ELECTRIC_IMMUNE",
+      "DIMENSIONAL_ANCHOR"
+    ]
+  }
+}
+```
+

@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_UNDERGUARD1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_UNDERGUARD1|http://cdda.aloxaf.cn/search?q=TALK_VAMP_UNDERGUARD1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Underrefugee/v_ug_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_UNDERGUARD1",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "blood_necklace",
+    "yes": "You look important.",
+    "no": "Mortal... You're up to nothing?"
+  },
+  "responses": [
+    {
+      "text": "Tell me about yourself.",
+      "topic": "TALK_VAMP_UNDERGUARD1_introduce",
+      "condition": {
+        "not": {
+          "npc_has_trait": "underguard1talkedintroduce"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "underguard1talkedintroduce"
+      }
+    },
+    {
+      "text": "Tell me about yourself.",
+      "topic": "TALK_VAMP_UNDERGUARD1_introduceagain",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "underguard1talkedintroduce"
+          },
+          {
+            "not": {
+              "npc_has_trait": "underguard1talkedintroduceagain"
+            }
+          }
+        ]
+      },
+      "effect": {
+        "npc_add_trait": "underguard1talkedintroduceagain"
+      }
+    },
+    {
+      "text": "Where am I?",
+      "topic": "TALK_VAMP_UNDERGUARD1_direction",
+      "condition": {
+        "not": {
+          "npc_has_trait": "underguard1talkeddirection"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "underguard1talkeddirection"
+      }
+    },
+    {
+      "text": "I'd be going now...",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_UNDERGUARD1",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "blood_necklace",
+    "yes": "你看起来很重要。",
+    "no": "人类...你在无所事事？"
+  },
+  "responses": [
+    {
+      "text": "跟我说说你的情况吧。",
+      "topic": "TALK_VAMP_UNDERGUARD1_introduce",
+      "condition": {
+        "not": {
+          "npc_has_trait": "underguard1talkedintroduce"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "underguard1talkedintroduce"
+      }
+    },
+    {
+      "text": "跟我说说你的情况吧。",
+      "topic": "TALK_VAMP_UNDERGUARD1_introduceagain",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "underguard1talkedintroduce"
+          },
+          {
+            "not": {
+              "npc_has_trait": "underguard1talkedintroduceagain"
+            }
+          }
+        ]
+      },
+      "effect": {
+        "npc_add_trait": "underguard1talkedintroduceagain"
+      }
+    },
+    {
+      "text": "我现在在哪里？",
+      "topic": "TALK_VAMP_UNDERGUARD1_direction",
+      "condition": {
+        "not": {
+          "npc_has_trait": "underguard1talkeddirection"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "underguard1talkeddirection"
+      }
+    },
+    {
+      "text": "我现在要走了...",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

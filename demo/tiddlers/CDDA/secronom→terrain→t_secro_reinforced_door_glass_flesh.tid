@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_reinforced_door_glass_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_reinforced_door_glass_flesh|http://cdda.aloxaf.cn/search?q=t_secro_reinforced_door_glass_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_reinforced_door_glass_flesh",
+  "name": "fleshed reinforced glass door",
+  "description": "A reinforced glass door infested by flesh. Opening it might be a minor problem...",
+  "symbol": "+",
+  "color": "red",
+  "move_cost": 0,
+  "roof": "t_secro_flat_roof_flesh",
+  "flags": [
+    "NOITEM",
+    "CONNECT_TO_WALL",
+    "MINEABLE",
+    "BLOCK_WIND",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_reinforced_door_glass_c"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_reinforced_door_glass_flesh",
+  "name": "血肉强化玻璃门",
+  "description": "布满肉的强化玻璃门。如何打开它可能是个小问题…",
+  "symbol": "+",
+  "color": "red",
+  "move_cost": 0,
+  "roof": "t_secro_flat_roof_flesh",
+  "flags": [
+    "NOITEM",
+    "CONNECT_TO_WALL",
+    "MINEABLE",
+    "BLOCK_WIND",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_reinforced_door_glass_c"
+  }
+}
+```
+

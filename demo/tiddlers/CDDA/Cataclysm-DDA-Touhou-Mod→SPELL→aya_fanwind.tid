@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→aya_fanwind
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：aya_fanwind|http://cdda.aloxaf.cn/search?q=aya_fanwind]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_aya.json
+
+
+!! 原文
+
+```json
+{
+  "id": "aya_fanwind",
+  "type": "SPELL",
+  "name": "Maple fan wind",
+  "description": "Create a small tornado at the location, which deals some damage and caughts the targeted enemies for a short time.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "components": "spell_components_tengufan",
+  "effect": "attack",
+  "effect_str": "dazed",
+  "extra_effects": [
+    {
+      "id": "aya_fanwind2"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "bash",
+  "min_damage": 16,
+  "max_damage": 16,
+  "min_range": 8,
+  "max_range": 8,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "min_duration": 600,
+  "max_duration": 1600,
+  "duration_increment": 100,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 80,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "learn_spells": {
+    "aya_fantornado": 6
+  },
+  "flags": [
+    "NO_LEGS",
+    "SOMATIC"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "aya_fanwind",
+  "type": "SPELL",
+  "name": "Maple fan wind",
+  "description": "Create a small tornado at the location, which deals some damage and caughts the targeted enemies for a short time.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "components": "spell_components_tengufan",
+  "effect": "attack",
+  "effect_str": "dazed",
+  "extra_effects": [
+    {
+      "id": "aya_fanwind2"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "bash",
+  "min_damage": 16,
+  "max_damage": 16,
+  "min_range": 8,
+  "max_range": 8,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "min_duration": 600,
+  "max_duration": 1600,
+  "duration_increment": 100,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 80,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "learn_spells": {
+    "aya_fantornado": 6
+  },
+  "flags": [
+    "NO_LEGS",
+    "SOMATIC"
+  ]
+}
+```
+

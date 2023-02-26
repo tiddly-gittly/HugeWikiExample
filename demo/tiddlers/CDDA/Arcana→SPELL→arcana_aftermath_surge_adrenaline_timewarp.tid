@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_aftermath_surge_adrenaline_timewarp
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_aftermath_surge_adrenaline_timewarp|http://cdda.aloxaf.cn/search?q=arcana_aftermath_surge_adrenaline_timewarp]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_aftermath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_aftermath_surge_adrenaline_timewarp",
+  "type": "SPELL",
+  "name": {
+    "str": "Surging Force Timewarp"
+  },
+  "description": "Za warudo!  This exists to make Surging Force give you free moves.",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "message": "",
+  "flags": [
+    "SILENT"
+  ],
+  "effect": "mod_moves",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_timestop_indicator",
+      "hit_self": true
+    }
+  ],
+  "max_level": 20,
+  "//": "Balanced as DoT/paralysis despite being a buff, since it's effectively paralysis for everything else.",
+  "min_damage": 400,
+  "max_damage": 2000,
+  "damage_increment": 80,
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_aftermath_surge_adrenaline_timewarp",
+  "type": "SPELL",
+  "name": {
+    "str": "Surging Force Timewarp"
+  },
+  "description": "",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "message": "",
+  "flags": [
+    "SILENT"
+  ],
+  "effect": "mod_moves",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_timestop_indicator",
+      "hit_self": true
+    }
+  ],
+  "max_level": 20,
+  "//": "Balanced as DoT/paralysis despite being a buff, since it's effectively paralysis for everything else.",
+  "min_damage": 400,
+  "max_damage": 2000,
+  "damage_increment": 80,
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75
+}
+```
+

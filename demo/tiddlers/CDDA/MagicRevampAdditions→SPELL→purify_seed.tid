@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→purify_seed
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：purify_seed|http://cdda.aloxaf.cn/search?q=purify_seed]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/druid.json
+
+
+!! 原文
+
+```json
+{
+  "id": "purify_seed",
+  "type": "SPELL",
+  "name": {
+    "str": "Purification Seed"
+  },
+  "description": "You summon a gift of the earth which will purify water.  Rapidly degrades if not utilized.",
+  "valid_targets": [
+    "self"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "spawn_item",
+  "effect_str": "druid_seed",
+  "shape": "blast",
+  "base_casting_time": 30000,
+  "final_casting_time": 6000,
+  "casting_time_increment": -1200,
+  "base_energy_cost": 1000,
+  "final_energy_cost": 1000,
+  "min_duration": 6000,
+  "max_duration": 6000,
+  "difficulty": 6,
+  "max_level": 20,
+  "spell_class": "DRUID",
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "CONCENTRATE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "purify_seed",
+  "type": "SPELL",
+  "name": {
+    "str": "净化之种"
+  },
+  "description": "你召唤了大地的馈赠，可用于净水。若不及时使用很快就会变质。",
+  "valid_targets": [
+    "self"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "spawn_item",
+  "effect_str": "druid_seed",
+  "shape": "blast",
+  "base_casting_time": 30000,
+  "final_casting_time": 6000,
+  "casting_time_increment": -1200,
+  "base_energy_cost": 1000,
+  "final_energy_cost": 1000,
+  "min_duration": 6000,
+  "max_duration": 6000,
+  "difficulty": 6,
+  "max_level": 20,
+  "spell_class": "DRUID",
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "CONCENTRATE"
+  ]
+}
+```
+

@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: GUN blazemod
+title: blazemod→GUN→nailrifle
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：nailrifle|http://cdda.aloxaf.cn/search?q=nailrifle]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/guns/blaze_weapons.json
+
+
+!! 原文
+
+```json
+{
+  "id": "nailrifle",
+  "copy-from": "nailgun",
+  "looks_like": "ar15",
+  "type": "GUN",
+  "name": {
+    "str": "nail rifle"
+  },
+  "description": "This is a nailgun that has been extensively modified with the addition of a short barrel, stock and hand guard.  It can be reloaded using detachable magazines and is an overall much more effective weapon.",
+  "to_hit": -1,
+  "bashing": 12,
+  "price_postapoc": 750,
+  "skill": "rifle",
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "AUTO",
+      "auto",
+      3
+    ]
+  ],
+  "clip_size": 0,
+  "valid_mod_locations": [
+    [
+      "accessories",
+      4
+    ],
+    [
+      "barrel",
+      1
+    ],
+    [
+      "grip",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock",
+      1
+    ],
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "underbarrel mount",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "nailmag"
+      ]
+    }
+  ],
+  "relative": {
+    "weight": 1000,
+    "volume": 6,
+    "range": 3,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 4
+    }
+  },
+  "proportional": {
+    "price": 3,
+    "dispersion": 0.5
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "nailrifle",
+  "copy-from": "nailgun",
+  "looks_like": "ar15",
+  "type": "GUN",
+  "name": {
+    "str": "射钉步枪"
+  },
+  "description": "这是一把射钉枪，被改造的面目全非，增加了一个短枪管，枪托和护木。它可以使用可拆卸弹匣装填，总体上说是更为有效的武器。",
+  "to_hit": -1,
+  "bashing": 12,
+  "price_postapoc": 750,
+  "skill": "rifle",
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "AUTO",
+      "auto",
+      3
+    ]
+  ],
+  "clip_size": 0,
+  "valid_mod_locations": [
+    [
+      "accessories",
+      4
+    ],
+    [
+      "barrel",
+      1
+    ],
+    [
+      "grip",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock",
+      1
+    ],
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "underbarrel mount",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "nailmag"
+      ]
+    }
+  ],
+  "relative": {
+    "weight": 1000,
+    "volume": 6,
+    "range": 3,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 4
+    }
+  },
+  "proportional": {
+    "price": 3,
+    "dispersion": 0.5
+  }
+}
+```
+

@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→scourge_moonstone
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：scourge_moonstone|http://cdda.aloxaf.cn/search?q=scourge_moonstone]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "scourge_moonstone",
+  "type": "TOOL",
+  "category": "weapons",
+  "symbol": "/",
+  "looks_like": "bullwhip_razor",
+  "color": "dark_gray",
+  "name": {
+    "str": "moonstone scourge"
+  },
+  "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  While relatively effective as a weapon, fueling it with blood essence will restore its life-draining properties, and make it a much more deadly weapon.",
+  "weight": "3500 g",
+  "volume": "2 L",
+  "price_postapoc": "150 USD",
+  "material": [
+    "leather",
+    "stone",
+    "silver"
+  ],
+  "flags": [
+    "REACH_ATTACK",
+    "REACH3",
+    "NO_SALVAGE",
+    "TRADER_KEEP_EQUIPPED"
+  ],
+  "techniques": [
+    "WHIP_DISARM"
+  ],
+  "bashing": 3,
+  "cutting": 21,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 24
+      }
+    }
+  ],
+  "ammo": "essence_blood_type",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ACTIVE",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life",
+            "once_in": 5
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    {
+      "target": "scourge_moonstone_on",
+      "msg": "A wicked resonance flows through the whip, and the spikes of moonstone gain a blood-red luster.",
+      "active": true,
+      "need_wielding": true,
+      "need_charges": 1,
+      "need_charges_msg": "The lash hungers for blood.",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "scourge_moonstone",
+  "type": "TOOL",
+  "category": "weapons",
+  "symbol": "/",
+  "looks_like": "bullwhip_razor",
+  "color": "dark_gray",
+  "name": {
+    "str": "月光石长鞭"
+  },
+  "description": "用锋利的乳白色石片和沿着手柄的银色装饰修饰的鞭子。虽然作为一种武器相对有效，但用血之源质为燃料可以恢复它消耗生命的属性，使它成为一种更致命的武器。",
+  "weight": "3500 g",
+  "volume": "2 L",
+  "price_postapoc": "150 USD",
+  "material": [
+    "leather",
+    "stone",
+    "silver"
+  ],
+  "flags": [
+    "REACH_ATTACK",
+    "REACH3",
+    "NO_SALVAGE",
+    "TRADER_KEEP_EQUIPPED"
+  ],
+  "techniques": [
+    "WHIP_DISARM"
+  ],
+  "bashing": 3,
+  "cutting": 21,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 24
+      }
+    }
+  ],
+  "ammo": "essence_blood_type",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ACTIVE",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life",
+            "once_in": 5
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    {
+      "target": "scourge_moonstone_on",
+      "msg": "邪恶的共鸣像鞭子一样摆动着，月光石的尖刺闪烁着血红色的光泽。",
+      "active": true,
+      "need_wielding": true,
+      "need_charges": 1,
+      "need_charges_msg": "鞭子渴望鲜血。",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+

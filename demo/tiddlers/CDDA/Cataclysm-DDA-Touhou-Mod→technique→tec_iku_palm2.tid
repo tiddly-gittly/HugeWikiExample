@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_iku_palm2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_iku_palm2|http://cdda.aloxaf.cn/search?q=tec_iku_palm2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_iku_palm2",
+  "type": "technique",
+  "name": "Double palm discharge (Crit)",
+  "messages": [
+    "You cross your hands and discharge energy through %s!",
+    "<npcname> crosses their hands, sending a bolt of electricity through %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    }
+  ],
+  "required_buffs_all": [
+    "buff_celestial_brawling_iku_onmove"
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": true,
+  "crit_tec": true,
+  "aoe": "impale",
+  "weighting": -1,
+  "attack_override": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.1
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "str",
+      "scale": 1.5
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "dex",
+      "scale": 1.667
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "int",
+      "scale": 1.667
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "per",
+      "scale": 1.5
+    }
+  ],
+  "//": "Should require having used a previous technique, to emulate a combo"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_iku_palm2",
+  "type": "technique",
+  "name": "Double palm discharge (Crit)",
+  "messages": [
+    "You cross your hands and discharge energy through %s!",
+    "<npcname> crosses their hands, sending a bolt of electricity through %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    }
+  ],
+  "required_buffs_all": [
+    "buff_celestial_brawling_iku_onmove"
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": true,
+  "crit_tec": true,
+  "aoe": "impale",
+  "weighting": -1,
+  "attack_override": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.1
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "str",
+      "scale": 1.5
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "dex",
+      "scale": 1.667
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "int",
+      "scale": 1.667
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "per",
+      "scale": 1.5
+    }
+  ],
+  "//": "Should require having used a previous technique, to emulate a combo"
+}
+```
+

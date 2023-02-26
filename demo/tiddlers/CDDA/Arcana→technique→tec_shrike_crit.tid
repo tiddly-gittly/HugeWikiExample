@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: technique Arcana
+title: Arcana→technique→tec_shrike_crit
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_shrike_crit|http://cdda.aloxaf.cn/search?q=tec_shrike_crit]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_shrike_crit",
+  "name": "Harrying Blow",
+  "messages": [
+    "You stagger %s with your strike",
+    "<npcname> staggers %s with their strike"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "melee_allowed": true,
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "required_buffs_all": [
+    "buff_shrike_onattack1"
+  ],
+  "crit_tec": true,
+  "stun_dur": 2,
+  "attack_vectors": [
+    "WEAPON",
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_shrike_crit",
+  "name": "连环猛击",
+  "messages": [
+    "你的罢工使%s人错开了",
+    "<npcname>人的罢工使%s人步履蹒跚"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "melee_allowed": true,
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "required_buffs_all": [
+    "buff_shrike_onattack1"
+  ],
+  "crit_tec": true,
+  "stun_dur": 2,
+  "attack_vectors": [
+    "WEAPON",
+    "HAND"
+  ]
+}
+```
+

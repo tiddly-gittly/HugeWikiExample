@@ -1,0 +1,223 @@
+creator: 林一二
+revision: 0
+tags: GUN nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→GUN→flesh_pistol
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：flesh_pistol|http://cdda.aloxaf.cn/search?q=flesh_pistol]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Weapons/c_ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "flesh_pistol",
+  "type": "GUN",
+  "symbol": "(",
+  "looks_like": "flesh_rifle",
+  "color": "red",
+  "name": {
+    "str": "biological pistol"
+  },
+  "description": "A pistol made out of fleshy material enclosed by metal.  Whatever it fires seems to be solid enough to do damage along with immolating victims.  Wielding it gives you a strange sense of focus, though the occasional twitch and unnerving sound from this thing leaves you uneasy.  Hopefully it's not sentient.",
+  "price": "5800 USD",
+  "price_postapoc": "60 USD",
+  "material": [
+    "flesh",
+    "superalloy"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "INCENDIARY",
+    "MUZZLE_SMOKE",
+    "PLASMA",
+    "BLINDS_EYES"
+  ],
+  "flags": [
+    "NEVER_JAMS",
+    "NON_FOULING",
+    "NEEDS_NO_LUBE"
+  ],
+  "skill": "pistol",
+  "weight": "850 g",
+  "volume": "500 ml",
+  "bashing": 8,
+  "to_hit": -1,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 20,
+    "armor_penetration": 2
+  },
+  "range": 15,
+  "dispersion": 250,
+  "recoil": 25,
+  "durability": 8,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi",
+      1
+    ],
+    [
+      "BURST",
+      "2-rd. burst",
+      2
+    ]
+  ],
+  "valid_mod_locations": [
+    [
+      "accessories",
+      1
+    ],
+    [
+      "sling",
+      1
+    ]
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": -2
+          },
+          {
+            "value": "DEXTERITY",
+            "add": -2
+          },
+          {
+            "value": "PERCEPTION",
+            "add": 4
+          }
+        ],
+        "ench_effects": [
+          {
+            "effect": "c_flesh_pistol_side_effect",
+            "intensity": 1
+          }
+        ],
+        "mutations": [
+          "SCHIZOPHRENIC",
+          "ROT1",
+          "PRED1"
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "flesh_pistol",
+  "type": "GUN",
+  "symbol": "(",
+  "looks_like": "flesh_rifle",
+  "color": "red",
+  "name": {
+    "str": "生物手枪"
+  },
+  "description": "被金属包裹的血肉材料制成的手枪。无论它射击什么似乎都足够坚固以对目标造成伤害。使用它让你产生一种奇怪的专注感，尽管偶尔它会抽动或发出令人不安的声音。但愿它不具有自主意识……",
+  "price": "5800 USD",
+  "price_postapoc": "60 USD",
+  "material": [
+    "flesh",
+    "superalloy"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "INCENDIARY",
+    "MUZZLE_SMOKE",
+    "PLASMA",
+    "BLINDS_EYES"
+  ],
+  "flags": [
+    "NEVER_JAMS",
+    "NON_FOULING",
+    "NEEDS_NO_LUBE"
+  ],
+  "skill": "pistol",
+  "weight": "850 g",
+  "volume": "500 ml",
+  "bashing": 8,
+  "to_hit": -1,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 20,
+    "armor_penetration": 2
+  },
+  "range": 15,
+  "dispersion": 250,
+  "recoil": 25,
+  "durability": 8,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi",
+      1
+    ],
+    [
+      "BURST",
+      "2-rd. burst",
+      2
+    ]
+  ],
+  "valid_mod_locations": [
+    [
+      "accessories",
+      1
+    ],
+    [
+      "sling",
+      1
+    ]
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": -2
+          },
+          {
+            "value": "DEXTERITY",
+            "add": -2
+          },
+          {
+            "value": "PERCEPTION",
+            "add": 4
+          }
+        ],
+        "ench_effects": [
+          {
+            "effect": "c_flesh_pistol_side_effect",
+            "intensity": 1
+          }
+        ],
+        "mutations": [
+          "SCHIZOPHRENIC",
+          "ROT1",
+          "PRED1"
+        ]
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: material nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→material→c_hydrogen_gas
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_hydrogen_gas|http://cdda.aloxaf.cn/search?q=c_hydrogen_gas]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_materials.json
+
+
+!! 原文
+
+```json
+{
+  "type": "material",
+  "id": "c_hydrogen_gas",
+  "name": "Pressurized hydrogen",
+  "density": 1,
+  "bash_resist": 0,
+  "specific_heat_liquid": 0.82,
+  "specific_heat_solid": 0.45,
+  "cut_resist": 0,
+  "bullet_resist": 0,
+  "acid_resist": 0,
+  "fire_resist": 0,
+  "elec_resist": 0,
+  "chip_resist": 0,
+  "dmg_adj": [
+    "scratched",
+    "cut",
+    "cracked",
+    "shattered"
+  ],
+  "bash_dmg_verb": "dented",
+  "cut_dmg_verb": "gouged",
+  "fuel_data": {
+    "//": "Compressed gaseous hydrogen has 9.2 MJ/L.  The solid hydrogen canisters have roughly 4 times the density, energy figure here reduced a bit to make for easier calculations.",
+    "energy": "1000000 kJ",
+    "explosion_data": {
+      "chance_hot": 2,
+      "chance_cold": 2,
+      "factor": 0.5,
+      "fiery": true,
+      "size_factor": 0.1
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "material",
+  "id": "c_hydrogen_gas",
+  "name": "固态氢",
+  "density": 1,
+  "bash_resist": 0,
+  "specific_heat_liquid": 0.82,
+  "specific_heat_solid": 0.45,
+  "cut_resist": 0,
+  "bullet_resist": 0,
+  "acid_resist": 0,
+  "fire_resist": 0,
+  "elec_resist": 0,
+  "chip_resist": 0,
+  "dmg_adj": [
+    "刮花",
+    "斩击",
+    "裂纹",
+    "破碎"
+  ],
+  "bash_dmg_verb": "凹损",
+  "cut_dmg_verb": "穿孔",
+  "fuel_data": {
+    "//": "Compressed gaseous hydrogen has 9.2 MJ/L.  The solid hydrogen canisters have roughly 4 times the density, energy figure here reduced a bit to make for easier calculations.",
+    "energy": "1000000 kJ",
+    "explosion_data": {
+      "chance_hot": 2,
+      "chance_cold": 2,
+      "factor": 0.5,
+      "fiery": true,
+      "size_factor": 0.1
+    }
+  }
+}
+```
+

@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_UNKNOWN_WING_BONY
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_UNKNOWN_WING_BONY|http://cdda.aloxaf.cn/search?q=SECRO_UNKNOWN_WING_BONY]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_UNKNOWN_WING_BONY",
+  "name": {
+    "str": "Skeletal Wings"
+  },
+  "points": 6,
+  "visibility": 8,
+  "ugliness": 5,
+  "valid": false,
+  "description": "Protruding from your shoulder is a thin, flexible pair of endoskeletal wings. Though bulky and encumbering, they can be used to balance your movements, handling heavy stuff and shredding anyone you dislike.",
+  "types": [
+    "WINGS"
+  ],
+  "prereqs": [
+    "SECRO_UNKNOWN_WING_START"
+  ],
+  "encumbrance_always": [
+    [
+      "torso",
+      10
+    ]
+  ],
+  "weight_capacity_modifier": 1.075,
+  "dodge_modifier": 0.75,
+  "movecost_modifier": 0.925,
+  "movecost_obstacle_modifier": 0.95,
+  "craft_skill_bonus": [
+    [
+      "mechanics",
+      1
+    ],
+    [
+      "traps",
+      1
+    ],
+    [
+      "fabrication",
+      1
+    ]
+  ],
+  "attacks": [
+    {
+      "attack_text_u": "You thrust you wings towards %s",
+      "attack_text_npc": "%1$s thrusts their wings %2$s",
+      "chance": 25,
+      "strength_damage": {
+        "damage_type": "stab",
+        "amount": 0.7
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_UNKNOWN_WING_BONY",
+  "name": {
+    "str": "骨骼翼"
+  },
+  "points": 6,
+  "visibility": 8,
+  "ugliness": 5,
+  "valid": false,
+  "description": "从你的肩膀伸出的是一对纤细柔韧的内骨骼翅膀。虽然笨重和累赘，他们可以用来平衡你的行动，处理沉重的东西和粉碎任何你不喜欢的人。",
+  "types": [
+    "WINGS"
+  ],
+  "prereqs": [
+    "SECRO_UNKNOWN_WING_START"
+  ],
+  "encumbrance_always": [
+    [
+      "torso",
+      10
+    ]
+  ],
+  "weight_capacity_modifier": 1.075,
+  "dodge_modifier": 0.75,
+  "movecost_modifier": 0.925,
+  "movecost_obstacle_modifier": 0.95,
+  "craft_skill_bonus": [
+    [
+      "mechanics",
+      1
+    ],
+    [
+      "traps",
+      1
+    ],
+    [
+      "fabrication",
+      1
+    ]
+  ],
+  "attacks": [
+    {
+      "attack_text_u": "You thrust you wings towards %s",
+      "attack_text_npc": "%1$s thrusts their wings %2$s",
+      "chance": 25,
+      "strength_damage": {
+        "damage_type": "stab",
+        "amount": 0.7
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

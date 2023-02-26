@@ -1,0 +1,153 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_ether_shadow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_ether_shadow|http://cdda.aloxaf.cn/search?q=mon_ether_shadow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/+Misc/v_spell_mon.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_ether_shadow",
+  "type": "MONSTER",
+  "name": {
+    "str": "etherean silhouette"
+  },
+  "description": "A deceitful humanoid shadow, glimmering in faint, ghastly light.",
+  "default_faction": "player",
+  "species": [
+    "HORROR"
+  ],
+  "bodytype": "human",
+  "diff": 10,
+  "//": "ethereal creatures has no physical density.",
+  "volume": "3 ml",
+  "weight": "3 g",
+  "hp": 20,
+  "speed": 130,
+  "symbol": "@",
+  "color": "light_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "dodge": 8,
+  "armor_cut": 999,
+  "armor_stab": 999,
+  "armor_bash": 999,
+  "vision_day": 18,
+  "vision_night": 18,
+  "luminance": 5,
+  "path_settings": {
+    "max_dist": 5,
+    "max_length": 20
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_ether_shadow_spell_target"
+      },
+      "cooldown": 14,
+      "monster_message": "%1$s stares at %3$s as it gesture its arms!"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "HARDTOSHOOT",
+    "WEBWALK",
+    "FLIES",
+    "NO_BREATHE",
+    "NOGIB"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_ether_shadow",
+  "type": "MONSTER",
+  "name": {
+    "str": "以太之影"
+  },
+  "description": "一个诡异的人形影子，在微弱阴森的光照下若隐若现。",
+  "default_faction": "player",
+  "species": [
+    "HORROR"
+  ],
+  "bodytype": "human",
+  "diff": 10,
+  "//": "ethereal creatures has no physical density.",
+  "volume": "3 ml",
+  "weight": "3 g",
+  "hp": 20,
+  "speed": 130,
+  "symbol": "@",
+  "color": "light_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "dodge": 8,
+  "armor_cut": 999,
+  "armor_stab": 999,
+  "armor_bash": 999,
+  "vision_day": 18,
+  "vision_night": 18,
+  "luminance": 5,
+  "path_settings": {
+    "max_dist": 5,
+    "max_length": 20
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_ether_shadow_spell_target"
+      },
+      "cooldown": 14,
+      "monster_message": "%1$s盯着%3$s，挥动着手臂！"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "HARDTOSHOOT",
+    "WEBWALK",
+    "FLIES",
+    "NO_BREATHE",
+    "NOGIB"
+  ]
+}
+```
+

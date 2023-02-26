@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→mutation→TENGUCROW_SPECIES
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TENGUCROW_SPECIES|http://cdda.aloxaf.cn/search?q=TENGUCROW_SPECIES]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TENGUCROW_SPECIES",
+  "type": "mutation",
+  "name": "Crow Tengu",
+  "description": "A member of the ancient and strictly hierarchical Tengu, you're agile and nimble, and your job is to gather information.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "stamina_regen_modifier": 0.25,
+  "movecost_modifier": 0.8,
+  "ugliness": -2,
+  "weight_capacity_modifier": 0.8,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "values": [
+        {
+          "value": "DEXTERITY",
+          "add": 2
+        },
+        {
+          "value": "INTELLIGENCE",
+          "add": 1
+        }
+      ],
+      "mutations": [
+        "TOLERANCE"
+      ]
+    }
+  ],
+  "cancels": [
+    "PRETTY",
+    "UGLY",
+    "DEFORMED",
+    "DEFORMED2",
+    "DEFORMED3",
+    "CLUMSY",
+    "SLOWRUNNER",
+    "LIGHT_BONES"
+  ],
+  "//": "TOLERANCE because I can't find a way to set alcohol resistance only to something like 95%"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TENGUCROW_SPECIES",
+  "type": "mutation",
+  "name": "Crow Tengu",
+  "description": "A member of the ancient and strictly hierarchical Tengu, you're agile and nimble, and your job is to gather information.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "stamina_regen_modifier": 0.25,
+  "movecost_modifier": 0.8,
+  "ugliness": -2,
+  "weight_capacity_modifier": 0.8,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "values": [
+        {
+          "value": "DEXTERITY",
+          "add": 2
+        },
+        {
+          "value": "INTELLIGENCE",
+          "add": 1
+        }
+      ],
+      "mutations": [
+        "TOLERANCE"
+      ]
+    }
+  ],
+  "cancels": [
+    "PRETTY",
+    "UGLY",
+    "DEFORMED",
+    "DEFORMED2",
+    "DEFORMED3",
+    "CLUMSY",
+    "SLOWRUNNER",
+    "LIGHT_BONES"
+  ],
+  "//": "TOLERANCE because I can't find a way to set alcohol resistance only to something like 95%"
+}
+```
+

@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_UNDERCOMMANDO_quest1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_UNDERCOMMANDO_quest1|http://cdda.aloxaf.cn/search?q=VAMP_UNDERCOMMANDO_quest1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Subgoals that you may want to complete or to keep you in the bay for moments.",
+  "id": "VAMP_UNDERCOMMANDO_quest1",
+  "type": "mission_definition",
+  "name": {
+    "str": "Collect 30 blood"
+  },
+  "description": "Collect <color_light_red>30 human blood</color> then bring it to the commando.",
+  "goal": "MGOAL_NULL",
+  "difficulty": 0,
+  "value": 100000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "VAMP_UNDERCOMMANDO_quest2",
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "This errand needs you.",
+    "offer": "Blood... Our main food for darkest centuries. Even I almost forgot its taste, I'd like to drink it again. Bring me 30, too much but it is essential in many ways.",
+    "accepted": "Okay, descendant. This won't be hard and take your time.",
+    "rejected": "If only you let me shoot your chest, this will be done easily.",
+    "advice": ".",
+    "inquire": "Drinks? You have the drinks ready?",
+    "success": "These blood certainly are useful. Thanks for this treats, descendant.",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "*grins*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Subgoals that you may want to complete or to keep you in the bay for moments.",
+  "id": "VAMP_UNDERCOMMANDO_quest1",
+  "type": "mission_definition",
+  "name": {
+    "str": "收集30份血液"
+  },
+  "description": "采集<color_light_red>30人的血液</color>然后带到突击队。",
+  "goal": "MGOAL_NULL",
+  "difficulty": 0,
+  "value": 100000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "VAMP_UNDERCOMMANDO_quest2",
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "这件差事需要你。",
+    "offer": "血液…我们在最黑暗的世纪的主要食物。即便我几乎忘了它的味道，我还是想再喝一次。带30份给我，数量挺多但在很多方面都很重要。",
+    "accepted": "好的，后代。这不难，慢慢来。",
+    "rejected": "只要你让我射你的胸膛，这件事就容易做了。",
+    "advice": "。",
+    "inquire": "喝点什么？饮料准备好了吗？",
+    "success": "这些血当然有用。谢谢你的款待，后代。",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "*咧嘴笑*"
+  }
+}
+```
+

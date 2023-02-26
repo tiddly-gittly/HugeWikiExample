@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic secronom_lore_expansion
+title: secronom_lore_expansion→talk_topic→TALK_SECRO_RESEARCHER_guard_mission1_gonnastart
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SECRO_RESEARCHER_guard_mission1_gonnastart|http://cdda.aloxaf.cn/search?q=TALK_SECRO_RESEARCHER_guard_mission1_gonnastart]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/Dialogues/secro_researcher.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_RESEARCHER_guard_mission1_gonnastart",
+  "dynamic_line": {
+    "u_has_effect": "secro_guard_mission1_gonnastart",
+    "no": "Since you've proven yourself worthy for our future plans, I'll be glad if you help me with this rather odd request.",
+    "yes": "Yes, since you've proven yourself worthy for our plans, I'll be glad if you help me with this rather odd request."
+  },
+  "responses": [
+    {
+      "text": "Tell me.",
+      "topic": "TALK_SECRO_RESEARCHER_guard_mission1_start",
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_guard_mission1_start"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_RESEARCHER_guard_mission1_gonnastart",
+  "dynamic_line": {
+    "u_has_effect": "secro_guard_mission1_gonnastart",
+    "no": "既然你证明了你对我们未来的计划是有价值的，我很高兴你能帮我处理这个奇怪的请求。",
+    "yes": "是的，既然你证明了你对我们的计划是有价值的，我很高兴你能帮我处理这个奇怪的请求。"
+  },
+  "responses": [
+    {
+      "text": "告诉我。",
+      "topic": "TALK_SECRO_RESEARCHER_guard_mission1_start",
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_guard_mission1_start"
+      }
+    }
+  ]
+}
+```
+

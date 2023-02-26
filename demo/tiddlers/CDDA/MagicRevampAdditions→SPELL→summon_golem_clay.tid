@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→summon_golem_clay
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_golem_clay|http://cdda.aloxaf.cn/search?q=summon_golem_clay]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Golemancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_golem_clay",
+  "type": "SPELL",
+  "spell_class": "GOLEMANCER",
+  "name": {
+    "str": "Summon Claygolem"
+  },
+  "description": "Use a golem core as a focus to shape clay into a roughly humanoid shape and animate it for some time.",
+  "valid_targets": [
+    "ground"
+  ],
+  "effect": "summon",
+  "effect_str": "mon_claygolem",
+  "shape": "blast",
+  "base_casting_time": 3500,
+  "casting_time_increment": -100,
+  "final_casting_time": 1600,
+  "base_energy_cost": 500,
+  "energy_source": "MANA",
+  "difficulty": 6,
+  "max_level": 43,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_duration": 30000,
+  "max_duration": 110000,
+  "duration_increment": 1715,
+  "min_range": 3,
+  "max_range": 3,
+  "components": "summon_golem",
+  "extra_effects": [
+    {
+      "id": "summon_golem_focus"
+    }
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "CONCENTRATE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_golem_clay",
+  "type": "SPELL",
+  "spell_class": "GOLEMANCER",
+  "name": {
+    "str": "召唤粘土傀儡"
+  },
+  "description": "以一个傀儡核心作为核心，将黏土塑造成一个人形傀儡，并使其运作一段时间。",
+  "valid_targets": [
+    "ground"
+  ],
+  "effect": "summon",
+  "effect_str": "mon_claygolem",
+  "shape": "blast",
+  "base_casting_time": 3500,
+  "casting_time_increment": -100,
+  "final_casting_time": 1600,
+  "base_energy_cost": 500,
+  "energy_source": "MANA",
+  "difficulty": 6,
+  "max_level": 43,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_duration": 30000,
+  "max_duration": 110000,
+  "duration_increment": 1715,
+  "min_range": 3,
+  "max_range": 3,
+  "components": "summon_golem",
+  "extra_effects": [
+    {
+      "id": "summon_golem_focus"
+    }
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "CONCENTRATE"
+  ]
+}
+```
+

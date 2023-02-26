@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→scourge_moonstone_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：scourge_moonstone_on|http://cdda.aloxaf.cn/search?q=scourge_moonstone_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "scourge_moonstone_on",
+  "copy-from": "scourge_moonstone",
+  "repairs_like": "scourge_moonstone",
+  "type": "TOOL",
+  "name": {
+    "str": "moonstone scourge (on)",
+    "str_pl": "moonstone scourges (on)"
+  },
+  "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  The stone blades reflect with an eerie red luster, and it seems far more nimble in the hand.",
+  "//": "Turns out that modifying attack speed via relic data doesn't work right for transforming items, so weight-based hacks it is!",
+  "weight": "35 g",
+  "to_hit": 2,
+  "turns_per_charge": 25,
+  "revert_to": "scourge_moonstone",
+  "techniques": [
+    "RAPID",
+    "SWEEP",
+    "WHIP_DISARM",
+    "SPIN",
+    "WIDE"
+  ],
+  "use_action": [
+    {
+      "target": "scourge_moonstone",
+      "msg": "The wicked energy flowing through the whip fades.",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "scourge_moonstone_on",
+  "copy-from": "scourge_moonstone",
+  "repairs_like": "scourge_moonstone",
+  "type": "TOOL",
+  "name": {
+    "str": "月光石长鞭（开）",
+    "str_pl": "月光石长鞭（开）"
+  },
+  "description": "用锋利的乳白色石片和沿着手柄的银色装饰修饰的鞭子。石刃反射出一种诡异的红色光泽，拿在手中似乎要灵活得多。",
+  "//": "Turns out that modifying attack speed via relic data doesn't work right for transforming items, so weight-based hacks it is!",
+  "weight": "35 g",
+  "to_hit": 2,
+  "turns_per_charge": 25,
+  "revert_to": "scourge_moonstone",
+  "techniques": [
+    "RAPID",
+    "SWEEP",
+    "WHIP_DISARM",
+    "SPIN",
+    "WIDE"
+  ],
+  "use_action": [
+    {
+      "target": "scourge_moonstone",
+      "msg": "流过鞭子的邪恶能量消失了。",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+

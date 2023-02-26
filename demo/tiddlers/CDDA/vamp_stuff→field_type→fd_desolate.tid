@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: field_type vamp_stuff
+title: vamp_stuff→field_type→fd_desolate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_desolate|http://cdda.aloxaf.cn/search?q=fd_desolate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_desolate",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "withering gloom",
+      "sym": "8",
+      "color": "light_gray",
+      "effects": [
+        {
+          "effect_id": "v_spell_desolation",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds"
+        }
+      ]
+    }
+  ],
+  "priority": 1,
+  "decay_amount_factor": 25,
+  "immunity_data": {
+    "flags": [
+      "VAMP_BLOOD_spellcaster",
+      "VAMP"
+    ]
+  },
+  "half_life": "2 seconds",
+  "phase": "gas",
+  "accelerated_decay": true,
+  "display_field": false
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_desolate",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "withering gloom",
+      "sym": "8",
+      "color": "light_gray",
+      "effects": [
+        {
+          "effect_id": "v_spell_desolation",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds"
+        }
+      ]
+    }
+  ],
+  "priority": 1,
+  "decay_amount_factor": 25,
+  "immunity_data": {
+    "flags": [
+      "VAMP_BLOOD_spellcaster",
+      "VAMP"
+    ]
+  },
+  "half_life": "2 seconds",
+  "phase": "gas",
+  "accelerated_decay": true,
+  "display_field": false
+}
+```
+

@@ -1,0 +1,374 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[0]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "mansion_+2d"
+  ],
+  "weight": 900,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "X...........]..XCC.....X",
+      "X......]....]..XCC.....X",
+      "Xkk....].p]]]..X......KX",
+      "Xkk....]]]].]..XK....KKX",
+      "X...........p..X...KKsKX",
+      "XKK...??.......+...K1s.X",
+      "XKK...??..*....X...//sZX",
+      "X............R.X....vKZX",
+      "XXXX+XXXXXXXXXXX....11@X",
+      "Xhu...wqXllll-CXCC...g1X",
+      "X.K....gX----2CXCC.....X",
+      "+.......XF----CX.......+",
+      "+.....KKXF----$XK......+",
+      "X.....KKX-iiii-XKK.....X",
+      "Xv......X-i--i-XKK...r.X",
+      "Xnv....aXXX%%XXXXXX+XXXX",
+      "Xn.....@X*mmmm.........X",
+      "X......(X..............X",
+      "X.KK....X.........tt..*X",
+      "X.KK....+.....tt..tt..cX",
+      "Xee.ss..X.....tt......cX",
+      "Xee..KK.Xkk...tt......cX",
+      "Xee11KK.Xkk.......cccccX",
+      "XXXXXXXXXXX++XXXXXXXXXXX"
+    ],
+    "palettes": [
+      "mansion_palette_common",
+      "mansion_palette_basement"
+    ],
+    "terrain": {
+      "$": "t_carpet_red",
+      "C": "t_carpet_red",
+      "i": "t_carpet_red"
+    },
+    "furniture": {
+      "$": "f_safe_l",
+      "F": "f_fireplace",
+      "i": "f_candle_barrier"
+    },
+    "items": {
+      "(": {
+        "item": "trash_cart",
+        "chance": 30
+      },
+      ".": {
+        "item": "clutter_basement"
+      },
+      "D": {
+        "item": "office",
+        "chance": 35
+      },
+      "F": {
+        "item": "cult_sacrifice",
+        "chance": 100
+      },
+      "K": {
+        "item": "crate_stack",
+        "chance": 100
+      },
+      "c": {
+        "item": "home_hw",
+        "chance": 25
+      },
+      "k": {
+        "item": "hardware_bulk",
+        "chance": 30
+      },
+      "m": {
+        "item": "hardware_plumbing",
+        "chance": 40
+      },
+      "n": {
+        "item": "softdrugs",
+        "chance": 5
+      },
+      "q": {
+        "item": "oven",
+        "chance": 10
+      },
+      "r": {
+        "item": "tool_common_stack",
+        "chance": 100
+      },
+      "t": {
+        "item": "home_hw",
+        "chance": 20
+      },
+      "v": {
+        "item": "a_television",
+        "chance": 100
+      },
+      "z": {
+        "item": "dresser_shabby",
+        "chance": 100
+      }
+    },
+    "place_loot": [
+      {
+        "group": "sanguine_cult_books",
+        "x": [
+          9,
+          12
+        ],
+        "y": 9,
+        "chance": 50,
+        "repeat": 8
+      },
+      {
+        "item": "note_sanguine_tenet",
+        "x": 12,
+        "y": 9
+      },
+      {
+        "group": "creepy",
+        "x": 14,
+        "y": [
+          9,
+          11
+        ],
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "mansion_gunsafe",
+        "x": 14,
+        "y": 12,
+        "chance": 100
+      },
+      {
+        "group": "sanguine_cult_consumables",
+        "x": 14,
+        "y": 12,
+        "chance": 50,
+        "repeat": 3
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_MANSION",
+        "x": [
+          2,
+          21
+        ],
+        "y": [
+          2,
+          21
+        ],
+        "density": 0.1
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_gozu",
+        "x": 11,
+        "y": 11
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "update_mapgen_id": "arcana_dummy",
+  "method": "json",
+  "object": {}
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "mansion_+2d"
+  ],
+  "weight": 900,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "X...........]..XCC.....X",
+      "X......]....]..XCC.....X",
+      "Xkk....].p]]]..X......KX",
+      "Xkk....]]]].]..XK....KKX",
+      "X...........p..X...KKsKX",
+      "XKK...??.......+...K1s.X",
+      "XKK...??..*....X...//sZX",
+      "X............R.X....vKZX",
+      "XXXX+XXXXXXXXXXX....11@X",
+      "Xhu...wqXllll-CXCC...g1X",
+      "X.K....gX----2CXCC.....X",
+      "+.......XF----CX.......+",
+      "+.....KKXF----$XK......+",
+      "X.....KKX-iiii-XKK.....X",
+      "Xv......X-i--i-XKK...r.X",
+      "Xnv....aXXX%%XXXXXX+XXXX",
+      "Xn.....@X*mmmm.........X",
+      "X......(X..............X",
+      "X.KK....X.........tt..*X",
+      "X.KK....+.....tt..tt..cX",
+      "Xee.ss..X.....tt......cX",
+      "Xee..KK.Xkk...tt......cX",
+      "Xee11KK.Xkk.......cccccX",
+      "XXXXXXXXXXX++XXXXXXXXXXX"
+    ],
+    "palettes": [
+      "mansion_palette_common",
+      "mansion_palette_basement"
+    ],
+    "terrain": {
+      "$": "t_carpet_red",
+      "C": "t_carpet_red",
+      "i": "t_carpet_red"
+    },
+    "furniture": {
+      "$": "f_safe_l",
+      "F": "f_fireplace",
+      "i": "f_candle_barrier"
+    },
+    "items": {
+      "(": {
+        "item": "trash_cart",
+        "chance": 30
+      },
+      ".": {
+        "item": "clutter_basement"
+      },
+      "D": {
+        "item": "office",
+        "chance": 35
+      },
+      "F": {
+        "item": "cult_sacrifice",
+        "chance": 100
+      },
+      "K": {
+        "item": "crate_stack",
+        "chance": 100
+      },
+      "c": {
+        "item": "home_hw",
+        "chance": 25
+      },
+      "k": {
+        "item": "hardware_bulk",
+        "chance": 30
+      },
+      "m": {
+        "item": "hardware_plumbing",
+        "chance": 40
+      },
+      "n": {
+        "item": "softdrugs",
+        "chance": 5
+      },
+      "q": {
+        "item": "oven",
+        "chance": 10
+      },
+      "r": {
+        "item": "tool_common_stack",
+        "chance": 100
+      },
+      "t": {
+        "item": "home_hw",
+        "chance": 20
+      },
+      "v": {
+        "item": "a_television",
+        "chance": 100
+      },
+      "z": {
+        "item": "dresser_shabby",
+        "chance": 100
+      }
+    },
+    "place_loot": [
+      {
+        "group": "sanguine_cult_books",
+        "x": [
+          9,
+          12
+        ],
+        "y": 9,
+        "chance": 50,
+        "repeat": 8
+      },
+      {
+        "item": "note_sanguine_tenet",
+        "x": 12,
+        "y": 9
+      },
+      {
+        "group": "creepy",
+        "x": 14,
+        "y": [
+          9,
+          11
+        ],
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "mansion_gunsafe",
+        "x": 14,
+        "y": 12,
+        "chance": 100
+      },
+      {
+        "group": "sanguine_cult_consumables",
+        "x": 14,
+        "y": 12,
+        "chance": 50,
+        "repeat": 3
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_MANSION",
+        "x": [
+          2,
+          21
+        ],
+        "y": [
+          2,
+          21
+        ],
+        "density": 0.1
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_gozu",
+        "x": 11,
+        "y": 11
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: GENERIC secronom_lore_expansion
+title: secronom_lore_expansion→GENERIC→secro_power_armor_flesh_morphed_jugg_shield
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_flesh_morphed_jugg_shield|http://cdda.aloxaf.cn/search?q=secro_power_armor_flesh_morphed_jugg_shield]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Weapons/secro_BOW_armaments_melee.json
+
+
+!! 原文
+
+```json
+{
+  "type": "GENERIC",
+  "id": "secro_power_armor_flesh_morphed_jugg_shield",
+  "name": {
+    "str": "<color_yellow>juggernaut armament</color> - meat shield",
+    "str_pl": "<color_yellow>juggernaut armament</color> - meat shield"
+  },
+  "description": "Your hands have fused together to form a meaty shield. It significantly hampers your movement, but has great blocking ability.",
+  "weight": "3000 g",
+  "color": "red",
+  "symbol": "U",
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "techniques": [
+    "WBLOCK_3"
+  ],
+  "volume": "2000 ml",
+  "longest_side": "70 cm",
+  "bashing": 14,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "SPEED",
+            "multiply": -0.5
+          },
+          {
+            "value": "ARMOR_BASH",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "add": -10
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "NO_UNWIELD",
+    "NO_DROP",
+    "UNBREAKABLE_MELEE",
+    "TRADER_AVOID"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "GENERIC",
+  "id": "secro_power_armor_flesh_morphed_jugg_shield",
+  "name": {
+    "str": "<color_yellow>巨像武装</color> - 肉盾",
+    "str_pl": "<color_yellow>巨像武装</color> - 肉盾"
+  },
+  "description": "你的双手融合在一起形成了一个肉盾。显著阻碍你的运动，但有强大的格挡能力。",
+  "weight": "3000 g",
+  "color": "red",
+  "symbol": "U",
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "techniques": [
+    "WBLOCK_3"
+  ],
+  "volume": "2000 ml",
+  "longest_side": "70 cm",
+  "bashing": 14,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "SPEED",
+            "multiply": -0.5
+          },
+          {
+            "value": "ARMOR_BASH",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "add": -10
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "NO_UNWIELD",
+    "NO_DROP",
+    "UNBREAKABLE_MELEE",
+    "TRADER_AVOID"
+  ]
+}
+```
+

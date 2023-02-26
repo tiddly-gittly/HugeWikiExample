@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_yugg
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_yugg|http://cdda.aloxaf.cn/search?q=summon_yugg]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_yugg",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of Plouton",
+    "str_pl": "glyphs of Plouton"
+  },
+  "//": "Plouton, Latinized as Pluto, is another name for Hades, and reflects the association with wealth the god had by the time the name was in common use.",
+  "description": "A strange silver emblem, engraved with depictions of ancient, cthonian wealth.  Using it will call forth a yugg, and bind it to your will.  Hopefully.  It is very difficult to control.",
+  "price": "1500 USD",
+  "price_postapoc": "90 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_yugg_summoned",
+    "friendly_msg": "With the riches of a dead world as an offering, you bind the yugg to serve you.  You feel like this is the opposite of how it normally works.",
+    "hostile_msg": "An offering of wealth is not enough to placate a servant of Ubb.  The creature turns hostile!",
+    "difficulty": 9,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_yugg",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：哈迪斯",
+    "str_pl": "雕文：哈迪斯"
+  },
+  "//": "Plouton, Latinized as Pluto, is another name for Hades, and reflects the association with wealth the god had by the time the name was in common use.",
+  "description": "一个奇怪的银质徽章，上面刻有古代克托尼亚人的财富。使用它会召唤出一个尤格，并把它束缚在你的意志上。如果成功的话。这很难控制。",
+  "price": "1500 USD",
+  "price_postapoc": "90 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_yugg_summoned",
+    "friendly_msg": "用死亡世界的财富作为祭品，你束缚育格巨噬虫为你服务。你觉得这和它通常的行动方式是相反的。",
+    "hostile_msg": "献上的财富不足以安抚Ubb的仆人。这个生物变得充满敌意！",
+    "difficulty": 9,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+

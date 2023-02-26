@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→druidic_regrowth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：druidic_regrowth|http://cdda.aloxaf.cn/search?q=druidic_regrowth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/druid.json
+
+
+!! 原文
+
+```json
+{
+  "id": "druidic_regrowth",
+  "type": "SPELL",
+  "name": {
+    "str": "Sacrificial Regrowth"
+  },
+  "description": "Through giving of one's own life force, you restore withered and barren plant life nearby.  What remains will need time to regrow its full strength.",
+  "valid_targets": [
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "effect_str": "druidic_renewal",
+  "shape": "blast",
+  "flags": [
+    "CONCENTRATE",
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS",
+    "NO_HANDS",
+    "NO_PROJECTILE"
+  ],
+  "spell_class": "DRUID",
+  "energy_source": "HP",
+  "difficulty": 6,
+  "base_casting_time": 600,
+  "base_energy_cost": 25,
+  "max_level": 30,
+  "min_aoe": 1,
+  "max_aoe": 8,
+  "aoe_increment": 0.2,
+  "min_range": 3,
+  "max_range": 9,
+  "range_increment": 0.3
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "druidic_regrowth",
+  "type": "SPELL",
+  "name": {
+    "str": "沃血重萌"
+  },
+  "description": "通过献祭自身生命力，你可以让附近枯萎贫瘠的植被重获新生。剩下的就得靠时间来尽复生机了。",
+  "valid_targets": [
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "effect_str": "druidic_renewal",
+  "shape": "blast",
+  "flags": [
+    "CONCENTRATE",
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS",
+    "NO_HANDS",
+    "NO_PROJECTILE"
+  ],
+  "spell_class": "DRUID",
+  "energy_source": "HP",
+  "difficulty": 6,
+  "base_casting_time": 600,
+  "base_energy_cost": 25,
+  "max_level": 30,
+  "min_aoe": 1,
+  "max_aoe": 8,
+  "aoe_increment": 0.2,
+  "min_range": 3,
+  "max_range": 9,
+  "range_increment": 0.3
+}
+```
+

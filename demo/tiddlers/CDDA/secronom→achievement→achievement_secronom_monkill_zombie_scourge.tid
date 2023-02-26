@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: achievement secronom
+title: secronom→achievement→achievement_secronom_monkill_zombie_scourge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：achievement_secronom_monkill_zombie_scourge|http://cdda.aloxaf.cn/search?q=achievement_secronom_monkill_zombie_scourge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Others/secro_achievements.json
+
+
+!! 原文
+
+```json
+{
+  "id": "achievement_secronom_monkill_zombie_scourge",
+  "type": "achievement",
+  "name": "<color_light_red>(Secronom)</color> Infection",
+  "hidden_by": [
+    "achievement_secronom_monkill_zombie_scourge"
+  ],
+  "description": "Slay scourge zombies along with its evolution.\n",
+  "requirements": [
+    {
+      "event_statistic": "num_avatar_secronom_zombie_scourge_kills",
+      "is": ">=",
+      "target": 50
+    },
+    {
+      "event_statistic": "num_avatar_secronom_zombie_defile_kills",
+      "is": ">=",
+      "target": 20
+    },
+    {
+      "event_statistic": "num_avatar_secronom_zombie_leptiosa_kills",
+      "is": ">=",
+      "target": 5
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "achievement_secronom_monkill_zombie_scourge",
+  "type": "achievement",
+  "name": "<color_light_red>（Secronom）</color>感染",
+  "hidden_by": [
+    "achievement_secronom_monkill_zombie_scourge"
+  ],
+  "description": "杀死天灾丧尸以及它的进化体。\n",
+  "requirements": [
+    {
+      "event_statistic": "num_avatar_secronom_zombie_scourge_kills",
+      "is": ">=",
+      "target": 50
+    },
+    {
+      "event_statistic": "num_avatar_secronom_zombie_defile_kills",
+      "is": ">=",
+      "target": 20
+    },
+    {
+      "event_statistic": "num_avatar_secronom_zombie_leptiosa_kills",
+      "is": ">=",
+      "target": 5
+    }
+  ]
+}
+```
+

@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_questinquire_tokenexct4VS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_questinquire_tokenexct4VS|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_questinquire_tokenexct4VS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_tokenexchange.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_questinquire_tokenexct4VS",
+  "type": "talk_topic",
+  "dynamic_line": "Just look at this list:\nfull infused bloodset for 65 tokens",
+  "responses": [
+    {
+      "text": "I'll exchange 65 tokens for the full set of infused blood armor",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct4VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 65
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "bloodinfused_survivorhood"
+        },
+        {
+          "u_spawn_item": "bloodinfused_survivorpants"
+        },
+        {
+          "u_spawn_item": "bloodinfused_survivorduster"
+        },
+        {
+          "u_spawn_item": "bloodinfused_survivorgloves"
+        },
+        {
+          "u_spawn_item": "bloodinfused_survivorboots"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 65
+        }
+      ]
+    },
+    {
+      "text": "Okay...",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexc"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_questinquire_tokenexct4VS",
+  "type": "talk_topic",
+  "dynamic_line": "看看这张单子：\n满注血迹换65个代币",
+  "responses": [
+    {
+      "text": "我要用65个代币换全套注入的血甲",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct4VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 65
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "bloodinfused_survivorhood"
+        },
+        {
+          "u_spawn_item": "bloodinfused_survivorpants"
+        },
+        {
+          "u_spawn_item": "bloodinfused_survivorduster"
+        },
+        {
+          "u_spawn_item": "bloodinfused_survivorgloves"
+        },
+        {
+          "u_spawn_item": "bloodinfused_survivorboots"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 65
+        }
+      ]
+    },
+    {
+      "text": "好吧……",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexc"
+    }
+  ]
+}
+```
+

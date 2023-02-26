@@ -1,0 +1,1029 @@
+creator: 林一二
+revision: 0
+tags: talk_topic BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→talk_topic→TALK_BL9_TRADER_BUY2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BL9_TRADER_BUY2|http://cdda.aloxaf.cn/search?q=TALK_BL9_TRADER_BUY2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/NPC/BL9_trader.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BL9_TRADER_BUY2",
+  "type": "talk_topic",
+  "dynamic_line": "Got a selection of GOOD things on sale, stranger...",
+  "responses": [
+    {
+      "text": "[51Gcomb] *BL9-infused survivor helmet*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorhelmet"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 25
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 25
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 25
+          },
+          {
+            "u_spawn_item": "BL9_survivorhelmet",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[70Pcomb] *BL9-infused survivor helmet MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorhelmet"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorhelmet_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 70
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 70
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 70
+          },
+          {
+            "u_spawn_item": "BL9_survivorhelmet_mk2",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[34Gcomb] *BL9-infused survivor cargo pants*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorpants"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 34
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 34
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 34
+          },
+          {
+            "u_spawn_item": "BL9_survivorpants",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[61Pcomb] *BL9-infused survivor cargo pants MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorpants"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorpants_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 61
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_survivorpants_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 61
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 61
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[41Gcomb] *BL9-infused survivor suit*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorsuit"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 41
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 41
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 41
+          },
+          {
+            "u_spawn_item": "BL9_survivorsuit",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[73Pcomb] *BL9-infused survivor suit MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorsuit"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorsuit_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 73
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_survivorsuit_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 73
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 73
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[18Gcomb] *Pair of BL9-infused survivor gloves*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorgloves"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 18
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 18
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 18
+          },
+          {
+            "u_spawn_item": "BL9_survivorgloves",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[32Pcomb] *Pair of BL9-infused survivor gloves MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorgloves"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorgloves_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 32
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_survivorgloves_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 32
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 32
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[26Gcomb] *Pair of BL9-infused survivor boots*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorboots"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 26
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 26
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 26
+          },
+          {
+            "u_spawn_item": "BL9_survivorboots",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[48Pcomb] *Pair of BL9-infused survivor boots MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorboots"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorboots_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 48
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_survivorboots_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 48
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 48
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[46Gcomb] *BL9-infused body armor*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorbodyarmor"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 46
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 46
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 46
+          },
+          {
+            "u_spawn_item": "BL9_survivorbodyarmor",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[83Pcomb] *BL9-infused body armor MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorbodyarmor"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorbodyarmor_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 83
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_survivorbodyarmor_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 83
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 83
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[BUY MODIFIERS]",
+      "topic": "TALK_BL9_TRADER_BUY3"
+    },
+    {
+      "text": "[GOODBYE]",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BL9_TRADER_BUY2",
+  "type": "talk_topic",
+  "dynamic_line": "有很多好东西在打折，陌生人…",
+  "responses": [
+    {
+      "text": "[51Gcomb] *BL9灌注幸存者头盔*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorhelmet"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 25
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 25
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 25
+          },
+          {
+            "u_spawn_item": "BL9_survivorhelmet",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[70Pcomb] *BL9灌注幸存者头盔MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorhelmet"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorhelmet_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 70
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 70
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 70
+          },
+          {
+            "u_spawn_item": "BL9_survivorhelmet_mk2",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[34Gcomb] *BL9注入幸存者货物裤*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorpants"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 34
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 34
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 34
+          },
+          {
+            "u_spawn_item": "BL9_survivorpants",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[61Pcomb]*BL9注入幸存者货裤MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorpants"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorpants_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 61
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_survivorpants_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 61
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 61
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[41Gcomb] *BL9注入幸存者套装*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorsuit"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 41
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 41
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 41
+          },
+          {
+            "u_spawn_item": "BL9_survivorsuit",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[73梳]*注入BL9的幸存者套装MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorsuit"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorsuit_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 73
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_survivorsuit_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 73
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 73
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[18梳]*一副注入BL9的幸存者手套*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorgloves"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 18
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 18
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 18
+          },
+          {
+            "u_spawn_item": "BL9_survivorgloves",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[32Pcomb]*一副BL9注入幸存者手套MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorgloves"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorgloves_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 32
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_survivorgloves_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 32
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 32
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[26g comb]*一双注入BL9的幸存者靴*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorboots"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 26
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 26
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 26
+          },
+          {
+            "u_spawn_item": "BL9_survivorboots",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[48Pcomb]*一双BL9注入幸存者靴子MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorboots"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorboots_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 48
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_survivorboots_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 48
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 48
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[46Gcomb] *BL9注入防弹衣*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_survivorbodyarmor"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 46
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 46
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 46
+          },
+          {
+            "u_spawn_item": "BL9_survivorbodyarmor",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[83 comb]* BL9灌注防弹衣MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_survivorbodyarmor"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_survivorbodyarmor_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 83
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_survivorbodyarmor_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 83
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 83
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[购买调节剂]",
+      "topic": "TALK_BL9_TRADER_BUY3"
+    },
+    {
+      "text": "[再见]",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_shifter_zombie_rot
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_shifter_zombie_rot|http://cdda.aloxaf.cn/search?q=mon_shifter_zombie_rot]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Abberations/Shapeshifter.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_shifter_zombie_rot",
+  "type": "MONSTER",
+  "name": {
+    "str": "decayed zombie"
+  },
+  "description": "A once-dead human corpse. Its discolored swollen flesh is riddled with festering wounds and open sores. Within a closer look, its visage blurs occasionally.",
+  "copy-from": "mon_zombie_rot",
+  "looks_like": "mon_zombie_rot",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s's body distorts!",
+    "effect": {
+      "id": "mon_shifter_zombie_death",
+      "hit_self": true
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_shifter_zombie_rot",
+  "type": "MONSTER",
+  "name": {
+    "str": "腐朽丧尸"
+  },
+  "description": "一具曾经死去的人类尸体。它的变色肿胀的肉布满了溃烂的伤口和开放性溃疡。仔细一看，它的面容偶尔会模糊",
+  "copy-from": "mon_zombie_rot",
+  "looks_like": "mon_zombie_rot",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s's body distorts!",
+    "effect": {
+      "id": "mon_shifter_zombie_death",
+      "hit_self": true
+    }
+  }
+}
+```
+

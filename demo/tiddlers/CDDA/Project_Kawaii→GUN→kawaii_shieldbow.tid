@@ -1,0 +1,201 @@
+creator: 林一二
+revision: 0
+tags: GUN Project_Kawaii
+title: Project_Kawaii→GUN→kawaii_shieldbow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kawaii_shieldbow|http://cdda.aloxaf.cn/search?q=kawaii_shieldbow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Project_Kawaii/weapon.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kawaii_shieldbow",
+  "type": "GUN",
+  "symbol": "(",
+  "color": "yellow",
+  "name": {
+    "str": "Cute Shieldbow"
+  },
+  "description": "This is a very heavy bow with a sharp steel spike protruding from the front. It's much harder to shoot accurately, but can endure close combat much better than regular bows.",
+  "price": "250 USD",
+  "material": [
+    "wood",
+    "steel"
+  ],
+  "flags": [
+    "FIRE_TWOHAND",
+    "RELOAD_AND_SHOOT",
+    "PRIMITIVE_RANGED_WEAPON",
+    "BELTED",
+    "SHEATH_BOW",
+    "WATER_FRIENDLY",
+    "WATERPROOF_GUN",
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES"
+  ],
+  "reload_noise_volume": 3,
+  "loudness": 8,
+  "skill": "archery",
+  "techniques": [
+    "WBLOCK_2",
+    "DEF_DISARM"
+  ],
+  "min_strength": 6,
+  "ammo": [
+    "arrow"
+  ],
+  "weight": "1500 g",
+  "volume": "3 L",
+  "longest_side": "150 cm",
+  "bashing": 35,
+  "cutting": 15,
+  "armor_data": {
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "wood",
+            "covered_by_mat": 100,
+            "thickness": 1
+          },
+          {
+            "type": "steel",
+            "covered_by_mat": 100,
+            "thickness": 1
+          }
+        ],
+        "encumbrance": 20,
+        "coverage": 5,
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_hanging_back"
+        ]
+      }
+    ]
+  },
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 9
+  },
+  "range": 6,
+  "dispersion": 200,
+  "durability": 10,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "arrow": 1
+      }
+    }
+  ],
+  "reload": 600
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kawaii_shieldbow",
+  "type": "GUN",
+  "symbol": "(",
+  "color": "yellow",
+  "name": {
+    "str": "盾弓"
+  },
+  "description": "这是一个非常沉重的弓，有一个尖锐的钢钉从前方突起。用这把弓来进行精确射击会很困难，但是比普通弓箭更能够接受近距离的战斗。",
+  "price": "250 USD",
+  "material": [
+    "wood",
+    "steel"
+  ],
+  "flags": [
+    "FIRE_TWOHAND",
+    "RELOAD_AND_SHOOT",
+    "PRIMITIVE_RANGED_WEAPON",
+    "BELTED",
+    "SHEATH_BOW",
+    "WATER_FRIENDLY",
+    "WATERPROOF_GUN",
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES"
+  ],
+  "reload_noise_volume": 3,
+  "loudness": 8,
+  "skill": "archery",
+  "techniques": [
+    "WBLOCK_2",
+    "DEF_DISARM"
+  ],
+  "min_strength": 6,
+  "ammo": [
+    "arrow"
+  ],
+  "weight": "1500 g",
+  "volume": "3 L",
+  "longest_side": "150 cm",
+  "bashing": 35,
+  "cutting": 15,
+  "armor_data": {
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "wood",
+            "covered_by_mat": 100,
+            "thickness": 1
+          },
+          {
+            "type": "steel",
+            "covered_by_mat": 100,
+            "thickness": 1
+          }
+        ],
+        "encumbrance": 20,
+        "coverage": 5,
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_hanging_back"
+        ]
+      }
+    ]
+  },
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 9
+  },
+  "range": 6,
+  "dispersion": 200,
+  "durability": 10,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "arrow": 1
+      }
+    }
+  ],
+  "reload": 600
+}
+```
+

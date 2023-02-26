@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: technique vamp_stuff
+title: vamp_stuff→technique→TRENCH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TRENCH|http://cdda.aloxaf.cn/search?q=TRENCH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Others/v_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "TRENCH",
+  "name": "Trench",
+  "description": "Crushes opponent, insta-kill, crit only",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "weighting": -100,
+  "messages": [
+    "%s was crushed",
+    "<npcname> smashed %s"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 99.99
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "TRENCH",
+  "name": "断痕",
+  "description": "碾碎敌人，一击必杀，仅暴击",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "weighting": -100,
+  "messages": [
+    "%s被压碎了",
+    "<npcname>砸碎了%s"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 99.99
+    }
+  ]
+}
+```
+

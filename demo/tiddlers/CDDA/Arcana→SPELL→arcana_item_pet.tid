@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_pet
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_pet|http://cdda.aloxaf.cn/search?q=arcana_item_pet]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_pet",
+  "type": "SPELL",
+  "name": {
+    "str": "Defender's Ward"
+  },
+  "description": "Buffs any nearby allies and heals them.",
+  "message": "Faint wisps of mist fly from the talisman, to reinforce those who fight by your side.",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_item_pet_heal",
+      "hit_self": false
+    }
+  ],
+  "valid_targets": [
+    "ally"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION"
+  ],
+  "effect_str": "talisman_pet_buff",
+  "min_aoe": 5,
+  "max_aoe": 5,
+  "base_casting_time": 5,
+  "final_casting_time": 5,
+  "min_duration": 270000,
+  "max_duration": 300000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_pet",
+  "type": "SPELL",
+  "name": {
+    "str": "Defender's Ward"
+  },
+  "description": "Buffs any nearby allies and heals them.",
+  "message": "Faint wisps of mist fly from the talisman, to reinforce those who fight by your side.",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_item_pet_heal",
+      "hit_self": false
+    }
+  ],
+  "valid_targets": [
+    "ally"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION"
+  ],
+  "effect_str": "talisman_pet_buff",
+  "min_aoe": 5,
+  "max_aoe": 5,
+  "base_casting_time": 5,
+  "final_casting_time": 5,
+  "min_duration": 270000,
+  "max_duration": 300000
+}
+```
+

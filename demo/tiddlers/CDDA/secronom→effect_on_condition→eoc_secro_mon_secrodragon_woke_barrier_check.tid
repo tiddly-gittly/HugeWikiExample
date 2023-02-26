@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom
+title: secronom→effect_on_condition→eoc_secro_mon_secrodragon_woke_barrier_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_mon_secrodragon_woke_barrier_check|http://cdda.aloxaf.cn/search?q=eoc_secro_mon_secrodragon_woke_barrier_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_secrodragon_woke_barrier_check",
+  "effect": [
+    {
+      "u_message": "The secronom dragon generates a forcefield, pushing you!",
+      "type": "mixed"
+    },
+    {
+      "npc_cast_spell": {
+        "id": "mon_secrodragon_barrier_target_random",
+        "hit_self": true
+      }
+    },
+    {
+      "npc_make_sound": "Bzzt.",
+      "volume": 90,
+      "type": "combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_secrodragon_woke_barrier_check",
+  "effect": [
+    {
+      "u_message": "The secronom dragon generates a forcefield, pushing you!",
+      "type": "mixed"
+    },
+    {
+      "npc_cast_spell": {
+        "id": "mon_secrodragon_barrier_target_random",
+        "hit_self": true
+      }
+    },
+    {
+      "npc_make_sound": "Bzzt.",
+      "volume": 90,
+      "type": "combat"
+    }
+  ]
+}
+```
+

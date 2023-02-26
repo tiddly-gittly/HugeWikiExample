@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: effect_type secronom
+title: secronom→effect_type→pedo_restraint
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：pedo_restraint|http://cdda.aloxaf.cn/search?q=pedo_restraint]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "pedo_restraint",
+  "name": [
+    "Nautilus Restraint"
+  ],
+  "apply_message": "A nautilus torpedo latches onto you!",
+  "desc": [
+    "You are being held in place by nautilus torpedo(s)"
+  ],
+  "miss_messages": [
+    [
+      "You feel your limbs stiffen.",
+      2
+    ]
+  ],
+  "decay_messages": [
+    [
+      "You're feeling free again!",
+      "good"
+    ]
+  ],
+  "remove_message": "You are free from nautilus restraint!",
+  "int_add_val": 1,
+  "max_intensity": 10,
+  "int_decay_step": -2,
+  "int_decay_tick": 30,
+  "max_duration": 300,
+  "rating": "bad",
+  "show_in_info": true,
+  "scaling_mods": {
+    "dex_mod": [
+      -0.25
+    ],
+    "speed_mod": [
+      -2.5
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "pedo_restraint",
+  "name": [
+    "螺母抑制"
+  ],
+  "apply_message": "一枚鹦鹉螺鱼雷缠住了你！",
+  "desc": [
+    "你被鹦鹉螺鱼雷固定在原地"
+  ],
+  "miss_messages": [
+    [
+      "你感到四肢僵硬。",
+      2
+    ]
+  ],
+  "decay_messages": [
+    [
+      "你感觉重获自由了！",
+      "good"
+    ]
+  ],
+  "remove_message": "你摆脱了螺母束缚 ！",
+  "int_add_val": 1,
+  "max_intensity": 10,
+  "int_decay_step": -2,
+  "int_decay_tick": 30,
+  "max_duration": 300,
+  "rating": "bad",
+  "show_in_info": true,
+  "scaling_mods": {
+    "dex_mod": [
+      -0.25
+    ],
+    "speed_mod": [
+      -2.5
+    ]
+  }
+}
+```
+

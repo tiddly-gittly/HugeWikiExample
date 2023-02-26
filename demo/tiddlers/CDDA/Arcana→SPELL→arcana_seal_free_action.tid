@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_seal_free_action
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_seal_free_action|http://cdda.aloxaf.cn/search?q=arcana_seal_free_action]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_seals.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_seal_free_action",
+  "type": "SPELL",
+  "name": {
+    "str": "Seal: Free Action"
+  },
+  "description": "Magic Seal\nUsing this spell will grant protection against paralytic effects, grabs, and other hindrances, along with freezing time briefly to allow an escape.  It can be used on yourself or an ally.",
+  "message": "\"Let there be no fetter that can bind me…\"  You cast %s!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DURATION"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_free_action_timestop",
+      "hit_self": false,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "free_action",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 80,
+  "final_casting_time": 80,
+  "min_duration": 54000,
+  "max_duration": 72000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_seal_free_action",
+  "type": "SPELL",
+  "name": {
+    "str": "魔印：挣脱束缚"
+  },
+  "description": "法术魔印\n将获得对瘫痪效果、抓取和其他障碍的保护，同时短暂冻结时间以允许逃跑。它可以在自己或盟友身上使用。",
+  "message": "“让没有束缚我的枷锁……”你施放了 %s！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DURATION"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_free_action_timestop",
+      "hit_self": false,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "free_action",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 80,
+  "final_casting_time": 80,
+  "min_duration": 54000,
+  "max_duration": 72000
+}
+```
+

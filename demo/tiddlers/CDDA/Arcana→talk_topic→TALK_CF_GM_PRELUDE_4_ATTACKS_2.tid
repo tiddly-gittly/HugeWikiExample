@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_PRELUDE_4_ATTACKS_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_PRELUDE_4_ATTACKS_2|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_PRELUDE_4_ATTACKS_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS_2",
+  "type": "talk_topic",
+  "dynamic_line": "The attackers are evidently nocturnal, probably why the attacks are most common at night.  What few reports we have suggest they aren't natural wildlife or undead.  If there was an incursion of otherworldly abominations, you'd think we'd have an easier time pinpointing the cause.  The attacks are scattered over a wide area however, so it might just be that we have such a broad area to search.",
+  "responses": [
+    {
+      "text": "It could be provoked by a more subtle incident, like what broke the back of the Keepers.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1"
+    },
+    {
+      "text": "They might not be physical interlopers, they could be like summoned monsters.",
+      "condition": {
+        "or": [
+          {
+            "u_has_trait": "PROF_ARCANIST2"
+          },
+          {
+            "u_has_skill": {
+              "skill": "magic",
+              "level": 6
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_2"
+    },
+    {
+      "text": "Any way we could narrow down the location?",
+      "topic": "TALK_CF_GM_PRELUDE_4_PROGRESSION"
+    },
+    {
+      "text": "I need time to think about this.",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS_2",
+  "type": "talk_topic",
+  "dynamic_line": "袭击者显然是夜间活动的，这可能是为什么袭击在夜间最常见的原因。很少有报告表明它们不是自然野生动物或不死生物。如果有一个超自然的可恶的入侵，你会认为我们会更容易找到原因。然而，这些攻击分散在一个很宽的区域，所以我们可能有这么大的搜索区域。",
+  "responses": [
+    {
+      "text": "这可能是一个更微妙的事件，比如什么打破了守门员的背部。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1"
+    },
+    {
+      "text": "他们可能不是物理闯入者，他们可能像被召唤的怪物。",
+      "condition": {
+        "or": [
+          {
+            "u_has_trait": "PROF_ARCANIST2"
+          },
+          {
+            "u_has_skill": {
+              "skill": "magic",
+              "level": 6
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_2"
+    },
+    {
+      "text": "我们能缩小范围吗？",
+      "topic": "TALK_CF_GM_PRELUDE_4_PROGRESSION"
+    },
+    {
+      "text": "我需要时间考虑一下。",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+

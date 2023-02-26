@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_pattern_confuse_monster
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_pattern_confuse_monster|http://cdda.aloxaf.cn/search?q=arcana_pattern_confuse_monster]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_pattern_scrolls.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_confuse_monster",
+  "name": {
+    "str": "Pattern: Confuse Monsters"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_CONFUSE",
+  "description": "This grants a specific spell mutation.",
+  "message": "You gaze deep into the strange patterns, a ring of unearthly calligraphy giving way to inhuman imagery…",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_confuse_monster",
+  "name": {
+    "str": "图案：迷惑怪物"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_CONFUSE",
+  "description": "这赋予了特定的咒语突变。",
+  "message": "你凝视着奇怪的图案，一圈神秘的书法让位于不人道的意象……",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+

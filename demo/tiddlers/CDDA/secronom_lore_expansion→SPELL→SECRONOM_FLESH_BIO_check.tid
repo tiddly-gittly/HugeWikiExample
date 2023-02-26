@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→SECRONOM_FLESH_BIO_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRONOM_FLESH_BIO_check|http://cdda.aloxaf.cn/search?q=SECRONOM_FLESH_BIO_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "SECRONOM_FLESH_BIO_check",
+  "type": "SPELL",
+  "name": {
+    "str": "Check Player"
+  },
+  "description": "Spell casted by a mutation or trait, either passive or active. If you're seeing this, then read this one instead:\n'You check the player if they're adjacent to you.'",
+  "flags": [
+    "SILENT",
+    "RANDOM_TARGET"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ally",
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_flesh_isadjacent",
+  "min_duration": 100,
+  "max_duration": 100,
+  "min_range": 1,
+  "max_range": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "SECRONOM_FLESH_BIO_check",
+  "type": "SPELL",
+  "name": {
+    "str": "检查玩家"
+  },
+  "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这个，那就改读这个：\n“你检查播放器是否与你相邻。”",
+  "flags": [
+    "SILENT",
+    "RANDOM_TARGET"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ally",
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_flesh_isadjacent",
+  "min_duration": 100,
+  "max_duration": 100,
+  "min_range": 1,
+  "max_range": 1
+}
+```
+

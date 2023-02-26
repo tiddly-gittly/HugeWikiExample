@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_BLADE_L
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_BLADE_L|http://cdda.aloxaf.cn/search?q=SECRO_BLADE_L]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_BLADE_L",
+  "name": {
+    "str": "Bone Blade"
+  },
+  "points": -3,
+  "visibility": 8,
+  "ugliness": 5,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "Your left hand has lost its flesh, revealing only a stout bone blade. It prevents you from wearing gloves nor handling anything with, but has great resistance against physical damage plus it packs a wallop.",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l"
+  ],
+  "changes_to": [
+    "SECRO_BLADE_L_SHARP",
+    "SECRO_BLADE_L_SERRATED"
+  ],
+  "cancels": [
+    "NAILS",
+    "CLAWS",
+    "TALONS",
+    "WEBBED",
+    "ARM_TENTACLES",
+    "SECRO_TENDRIL",
+    "SECRO_SPIDER",
+    "SECRO_TENDRIL_THICK_THRESHOLD",
+    "SECRO_TENDRIL_TENT_THRESHOLD",
+    "SECRO_BLADE_SHARP_THRESHOLD",
+    "SECRO_BLADE_SERRATED_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      100
+    ]
+  ],
+  "rand_bash_bonus": {
+    "min": 4,
+    "max": 8
+  },
+  "armor": [
+    {
+      "parts": "arm_l",
+      "bash": 10,
+      "cut": 10,
+      "stab": 10
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_BLADE_L",
+  "name": {
+    "str": "骨刀"
+  },
+  "points": -3,
+  "visibility": 8,
+  "ugliness": 5,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "你的左手失去了肉，只露出粗壮的骨刃。它可以防止你戴手套或处理任何东西，但有很大的抵抗力对物理伤害加上它包一个冲击力。",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l"
+  ],
+  "changes_to": [
+    "SECRO_BLADE_L_SHARP",
+    "SECRO_BLADE_L_SERRATED"
+  ],
+  "cancels": [
+    "NAILS",
+    "CLAWS",
+    "TALONS",
+    "WEBBED",
+    "ARM_TENTACLES",
+    "SECRO_TENDRIL",
+    "SECRO_SPIDER",
+    "SECRO_TENDRIL_THICK_THRESHOLD",
+    "SECRO_TENDRIL_TENT_THRESHOLD",
+    "SECRO_BLADE_SHARP_THRESHOLD",
+    "SECRO_BLADE_SERRATED_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      100
+    ]
+  ],
+  "rand_bash_bonus": {
+    "min": 4,
+    "max": 8
+  },
+  "armor": [
+    {
+      "parts": "arm_l",
+      "bash": 10,
+      "cut": 10,
+      "stab": 10
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

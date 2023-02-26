@@ -1,0 +1,253 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE secronom
+title: secronom→COMESTIBLE→sflesh_bio
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sflesh_bio|http://cdda.aloxaf.cn/search?q=sflesh_bio]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_monitem.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Eating this vile meat mends your body, even broken limbs! (not head and torso, ofc).",
+  "id": "sflesh_bio",
+  "copy-from": "flesh",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "flesh chunk"
+  },
+  "description": "Fresh chunk of meat from the melting flesh you can tell as its precious innard. Both gross and odd looking, but possesses regenerative properties which mends deep wounds when eaten.",
+  "weight": "436 g",
+  "volume": "500 ml",
+  "price": "500 USD",
+  "symbol": "%",
+  "color": "red",
+  "spoils_in": "1 day",
+  "calories": 558,
+  "healthy": -3,
+  "fun": -30,
+  "cooks_like": "meat_cooked",
+  "vitamins": [
+    [
+      "vitC",
+      13
+    ],
+    [
+      "calcium",
+      2
+    ],
+    [
+      "iron",
+      61
+    ],
+    [
+      "vitB",
+      950
+    ]
+  ],
+  "flags": [
+    "SMOKABLE",
+    "RAW"
+  ],
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "<color_light_green>As you chomp down the flesh, your body feels refreshed.</color>",
+    "effects": [
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "leg_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_r"
+      },
+      {
+        "id": "cureall",
+        "duration": 1
+      }
+    ]
+  },
+  "smoking_result": "sflesh_bio_smoked"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Eating this vile meat mends your body, even broken limbs! (not head and torso, ofc).",
+  "id": "sflesh_bio",
+  "copy-from": "flesh",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "血肉块"
+  },
+  "description": "从融化的血肉中取出的新鲜肉块，可以说它们算是血肉里面珍贵的部分了。有着令人发毛的怪异外观，但又具有再生的特性，吃掉它可以修复你的伤口。",
+  "weight": "436 g",
+  "volume": "500 ml",
+  "price": "500 USD",
+  "symbol": "%",
+  "color": "red",
+  "spoils_in": "1 day",
+  "calories": 558,
+  "healthy": -3,
+  "fun": -30,
+  "cooks_like": "meat_cooked",
+  "vitamins": [
+    [
+      "vitC",
+      13
+    ],
+    [
+      "calcium",
+      2
+    ],
+    [
+      "iron",
+      61
+    ],
+    [
+      "vitB",
+      950
+    ]
+  ],
+  "flags": [
+    "SMOKABLE",
+    "RAW"
+  ],
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "<color_light_green>当你咬下肉的时候，你的身体会感到精神振奋。</color>",
+    "effects": [
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 120,
+        "bp": "leg_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_r"
+      },
+      {
+        "id": "cureall",
+        "duration": 1
+      }
+    ]
+  },
+  "smoking_result": "sflesh_bio_smoked"
+}
+```
+

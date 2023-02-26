@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: GUN secronom
+title: secronom→GUN→grubbyzed_spit
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：grubbyzed_spit|http://cdda.aloxaf.cn/search?q=grubbyzed_spit]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_gun_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "grubbyzed_spit",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "grubby zombie's mouth"
+  },
+  "description": "Spits globs of tainted goo infested with parasites.",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "NO_PENETRATE_OBSTACLES",
+    "SECRO_GRUBBYZED_SPIT"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 11,
+  "dispersion": 2000,
+  "modes": [
+    [
+      "N",
+      "near",
+      3
+    ],
+    [
+      "M",
+      "mid",
+      2
+    ]
+  ],
+  "ranged_damage": {
+    "damage_type": "bash",
+    "amount": 4
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "grubbyzed_spit",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "肮脏丧尸的嘴"
+  },
+  "description": "吐出一团团沾满寄生虫的污浊粘液。",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "NO_PENETRATE_OBSTACLES",
+    "SECRO_GRUBBYZED_SPIT"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 11,
+  "dispersion": 2000,
+  "modes": [
+    [
+      "N",
+      "near",
+      3
+    ],
+    [
+      "M",
+      "mid",
+      2
+    ]
+  ],
+  "ranged_damage": {
+    "damage_type": "bash",
+    "amount": 4
+  }
+}
+```
+

@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_RITUAL_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_RITUAL_3|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_RITUAL_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_RITUAL_3",
+  "type": "talk_topic",
+  "dynamic_line": "There.  I can see it through the mask, how the artifact and the gem react when used in this manner.  Give me a moment to consult with the others and speak to me when you're ready.  I hope this actually leads us the right way.",
+  "responses": [
+    {
+      "text": "…",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_ended",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_ended",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "u_add_effect": "cf_mission_1",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_RITUAL_3",
+  "type": "talk_topic",
+  "dynamic_line": "在那里。我可以透过面具看到它，当以这种方式使用时，神器和宝石是如何反应的。给我一点时间和其他人商量一下，等你准备好了再跟我说话。我希望这确实能引导我们走上正确的道路。",
+  "responses": [
+    {
+      "text": "…",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_ended",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_ended",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "u_add_effect": "cf_mission_1",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

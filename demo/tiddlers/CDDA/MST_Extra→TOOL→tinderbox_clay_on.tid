@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: TOOL MST_Extra
+title: MST_Extra→TOOL→tinderbox_clay_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tinderbox_clay_on|http://cdda.aloxaf.cn/search?q=tinderbox_clay_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tinderbox_clay_on",
+  "copy-from": "tinderbox_on",
+  "sub": "tinderbox_on",
+  "type": "TOOL",
+  "name": {
+    "str": "clay ember carrier (lit)",
+    "str_pl": "clay ember carriers (lit)"
+  },
+  "description": "This is a small ceramic fire pot, with a lid and small holes for controlled airflow.  An ember is smoldering inside it, and can be used to start a campfire.",
+  "material": "clay",
+  "color": "brown",
+  "revert_to": "tinderbox_clay",
+  "use_action": [
+    {
+      "type": "firestarter",
+      "moves": 200,
+      "moves_slow": 2000
+    },
+    {
+      "target": "tinderbox_clay",
+      "msg": "The ember is extinguished.",
+      "active": false,
+      "menu_text": "Extinguish",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tinderbox_clay_on",
+  "copy-from": "tinderbox_on",
+  "sub": "tinderbox_on",
+  "type": "TOOL",
+  "name": {
+    "str": "陶制火种罐（点燃）",
+    "str_pl": "陶制火种罐（点燃）"
+  },
+  "description": "一个用来保存火种的小陶土罐,带有盖子和通气口,一小团余烬正在里面闷烧,可以用来生起篝火.",
+  "material": "clay",
+  "color": "brown",
+  "revert_to": "tinderbox_clay",
+  "use_action": [
+    {
+      "type": "firestarter",
+      "moves": 200,
+      "moves_slow": 2000
+    },
+    {
+      "target": "tinderbox_clay",
+      "msg": "余烬熄灭了。",
+      "active": false,
+      "menu_text": "熄灭",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+

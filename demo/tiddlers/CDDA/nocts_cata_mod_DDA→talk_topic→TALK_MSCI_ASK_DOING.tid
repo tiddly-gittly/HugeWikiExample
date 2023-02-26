@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_MSCI_ASK_DOING
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MSCI_ASK_DOING|http://cdda.aloxaf.cn/search?q=TALK_MSCI_ASK_DOING]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_MSCI.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MSCI_ASK_DOING",
+  "type": "talk_topic",
+  "//": "Infinitely more idiotproof than the last way I had it rigged, but still has its flaws.",
+  "dynamic_line": {
+    "npc_has_effect": "router_suggest",
+    "yes": "Well, the main reason we were hiding here was Apophis…  It was a Bio-Weapon specifically designed to eliminate every other Bio-Weapon and Bio-Weapon scientist.  Now we can try to get things fixed up eventually, and work on research that might benefit others out there.",
+    "no": "Well, the main reason we are hiding here is Apophis…  It is a Bio-Weapon specifically designed to eliminate every other Bio-Weapon and Bio-Weapon scientist.  Currently we don't have anything that could stand a decent chance against it, so we're trying to create our own Bio-Weapon to counter Apophis. Sigma and Lambda have expressed interest in going after it, but they won't be able to take it out on their own."
+  },
+  "responses": [
+    {
+      "text": "Oh, good luck, I suppose.",
+      "topic": "TALK_MSCI"
+    },
+    {
+      "text": "What exactly is Apophis and is it really that dangerous?",
+      "condition": {
+        "not": {
+          "npc_has_effect": "router_suggestion"
+        }
+      },
+      "topic": "TALK_MSCI_APOPHIS"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MSCI_ASK_DOING",
+  "type": "talk_topic",
+  "//": "Infinitely more idiotproof than the last way I had it rigged, but still has its flaws.",
+  "dynamic_line": {
+    "npc_has_effect": "router_suggest",
+    "yes": "好吧，我们藏在这里的主要原因是阿波菲斯……它是一种专门用于消灭其他生物武器和生物武器科学家的生物武器。现在我们可以尝试最终解决问题，并致力于那些可能使其他人受益的研究。",
+    "no": "好吧，我们藏在这里的主要原因是阿波菲斯……它是一种专门用于消灭其他生物武器和生物武器科学家的生物武器。目前我们没有任何可以打败它的好办法，所以我们正试图创造我们自己的生物武器来对抗阿波菲斯。西格玛和兰姆达表示有兴趣去追杀它，但他们无法自己击败它。"
+  },
+  "responses": [
+    {
+      "text": "哦，祝你好运，我猜。",
+      "topic": "TALK_MSCI"
+    },
+    {
+      "text": "阿波菲斯到底是什么，真的那么危险吗？",
+      "condition": {
+        "not": {
+          "npc_has_effect": "router_suggestion"
+        }
+      },
+      "topic": "TALK_MSCI_APOPHIS"
+    }
+  ]
+}
+```
+

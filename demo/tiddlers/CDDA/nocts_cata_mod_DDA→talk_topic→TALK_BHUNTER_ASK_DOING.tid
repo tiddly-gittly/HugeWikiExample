@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BHUNTER_ASK_DOING
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BHUNTER_ASK_DOING|http://cdda.aloxaf.cn/search?q=TALK_BHUNTER_ASK_DOING]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BHUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BHUNTER_ASK_DOING",
+  "type": "talk_topic",
+  "dynamic_line": "I came here to see if I could find anything on the research they were doing here.  How about yourself?",
+  "responses": [
+    {
+      "text": "I was asked to investigate a security breach by a scientist involved in this.",
+      "topic": "TALK_BHUNTER_MISSION_2",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "searching_for_msci",
+              "type": "dialogue",
+              "context": "evelynn",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_LOOT_BIO_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "I don't have any orders, and don't remember much from before I woke up.  Had anything in mind?",
+      "topic": "TALK_MISSION_LIST",
+      "switch": true,
+      "condition": {
+        "u_has_flag": "BIO_WEAPON_SERIES_1"
+      }
+    },
+    {
+      "text": "Sounds like a good start, don't have any other standing orders to follow.  What have you got for me?",
+      "topic": "TALK_MISSION_LIST",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "SUPER_SOLDIER_MARKER"
+        ]
+      }
+    },
+    {
+      "text": "I don't know what to do with myself.  What do you need done?",
+      "topic": "TALK_MISSION_LIST",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED",
+          "BIO_WEAPON_FAILED_SCEN"
+        ]
+      }
+    },
+    {
+      "text": "I have no idea.",
+      "topic": "TALK_BHUNTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BHUNTER_ASK_DOING",
+  "type": "talk_topic",
+  "dynamic_line": "我来这里看看能否对他们的研究有什么发现。你呢？",
+  "responses": [
+    {
+      "text": "我被要求调查一个由涉事科学家所引发的安全漏洞。",
+      "topic": "TALK_BHUNTER_MISSION_2",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "searching_for_msci",
+              "type": "dialogue",
+              "context": "evelynn",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_LOOT_BIO_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "我没有接到任何命令，醒来前的事也不太记得了。有什么想法吗？",
+      "topic": "TALK_MISSION_LIST",
+      "switch": true,
+      "condition": {
+        "u_has_flag": "BIO_WEAPON_SERIES_1"
+      }
+    },
+    {
+      "text": "听起来是个不错的开始，无需遵守其他的常规命令了。你什么活要给我吗?",
+      "topic": "TALK_MISSION_LIST",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "SUPER_SOLDIER_MARKER"
+        ]
+      }
+    },
+    {
+      "text": "我不知道自己该怎么办。你需要我干什么？",
+      "topic": "TALK_MISSION_LIST",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED",
+          "BIO_WEAPON_FAILED_SCEN"
+        ]
+      }
+    },
+    {
+      "text": "我不知道。",
+      "topic": "TALK_BHUNTER"
+    }
+  ]
+}
+```
+

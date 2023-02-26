@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_poison_armor
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_poison_armor|http://cdda.aloxaf.cn/search?q=arcana_magic_poison_armor]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_poison_armor",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Poison Armor"
+  },
+  "description": "Magic Sign\nUsing this spell will grant a blessing that protects against toxic gas and other forms of poison.  It can be used on yourself or an ally.",
+  "message": "\"I fear no venom, whether it be by word or blade…\"  You cast %s!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_3",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "poison_ward",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "energy_source": "STAMINA",
+  "difficulty": 30,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 160,
+  "final_casting_time": 80,
+  "casting_time_increment": -8,
+  "base_energy_cost": 2000,
+  "final_energy_cost": 1000,
+  "energy_increment": -100,
+  "min_duration": 36000,
+  "max_duration": 72000,
+  "duration_increment": 3600,
+  "spell_class": "SPELL_POISONARMOR"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_poison_armor",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：防毒装甲"
+  },
+  "description": "魔法符号\n使用该法术会给予祝福，以防止有毒气体和其他形式的毒药。它可以在自己或盟友身上使用。",
+  "message": "“我不怕毒液，无论是文字还是刀锋……”你施放了 %s！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_3",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "poison_ward",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "energy_source": "STAMINA",
+  "difficulty": 30,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 160,
+  "final_casting_time": 80,
+  "casting_time_increment": -8,
+  "base_energy_cost": 2000,
+  "final_energy_cost": 1000,
+  "energy_increment": -100,
+  "min_duration": 36000,
+  "max_duration": 72000,
+  "duration_increment": 3600,
+  "spell_class": "SPELL_POISONARMOR"
+}
+```
+

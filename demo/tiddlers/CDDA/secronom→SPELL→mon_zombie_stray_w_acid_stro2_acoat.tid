@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_stray_w_acid_stro2_acoat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_acid_stro2_acoat|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_acid_stro2_acoat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_stray_w_acid_stro2_acoat",
+  "type": "SPELL",
+  "name": {
+    "str": "Acid Coat"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its hands to extract a large amount of acidic fluid from its body, then sends it to the target in a short but wide line, dealing moderate acid damage that lingers overtime.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_stray_w_acid_stro2_atouch"
+    }
+  ],
+  "min_damage": 7,
+  "max_damage": 14,
+  "min_aoe": 2,
+  "max_aoe": 4,
+  "min_range": 3,
+  "max_range": 3,
+  "min_dot": 1,
+  "max_dot": 1,
+  "min_duration": 400,
+  "max_duration": 1200,
+  "field_id": "fd_acid",
+  "field_chance": 5,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "acid"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_stray_w_acid_stro2_acoat",
+  "type": "SPELL",
+  "name": {
+    "str": "酸性涂层"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者通过它的手从身体中提取大量的酸性液体，然后以短而宽的线条将其发送到目标，造成持续时间较长的中度酸性伤害。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_stray_w_acid_stro2_atouch"
+    }
+  ],
+  "min_damage": 7,
+  "max_damage": 14,
+  "min_aoe": 2,
+  "max_aoe": 4,
+  "min_range": 3,
+  "max_range": 3,
+  "min_dot": 1,
+  "max_dot": 1,
+  "min_duration": 400,
+  "max_duration": 1200,
+  "field_id": "fd_acid",
+  "field_chance": 5,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "acid"
+}
+```
+

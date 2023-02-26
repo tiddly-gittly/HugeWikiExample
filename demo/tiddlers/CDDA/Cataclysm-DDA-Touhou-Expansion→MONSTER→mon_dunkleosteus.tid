@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_dunkleosteus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_dunkleosteus|http://cdda.aloxaf.cn/search?q=mon_dunkleosteus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_fish.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_dunkleosteus",
+  "type": "MONSTER",
+  "name": {
+    "str": "dunkleosteus ",
+    "str_pl": "dunkleosteus"
+  },
+  "description": "A gigantic, monstrous placoderm, this looks as if someone \"improved\" the design of a Great white shark by making it twice as big, adding armor beneath the head's skin and giving it a car crushing beak, not to mention the terrific pseudo-tiger print.  You absolutely do not want this thing to graze your legs while swimming.",
+  "volume": "3750 L",
+  "weight": "4000 kg",
+  "default_faction": "touhou_dunkleosteus",
+  "bodytype": "fish",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "FISH"
+  ],
+  "harvest": "fish_large",
+  "hp": 400,
+  "speed": 155,
+  "material": [
+    "flesh"
+  ],
+  "color": "brown",
+  "symbol": "Ð",
+  "aggression": 25,
+  "morale": 65,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 11,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 22
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 4,
+  "armor_cut": 4,
+  "armor_stab": 12,
+  "reproduction": {
+    "baby_monster": "mon_dunkleosteus_baby",
+    "baby_count": 1,
+    "baby_timer": 30
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK"
+  ],
+  "fear_triggers": [
+    "FRIEND_DIED"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      55
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "AQUATIC",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Dunkleosteus terrelli used as reference, calculated volume is an absurd 10 m3 so I'm staying with density of ~1"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_dunkleosteus",
+  "type": "MONSTER",
+  "name": {
+    "str": "dunkleosteus ",
+    "str_pl": "dunkleosteus"
+  },
+  "description": "A gigantic, monstrous placoderm, this looks as if someone \"improved\" the design of a Great white shark by making it twice as big, adding armor beneath the head's skin and giving it a car crushing beak, not to mention the terrific pseudo-tiger print.  You absolutely do not want this thing to graze your legs while swimming.",
+  "volume": "3750 L",
+  "weight": "4000 kg",
+  "default_faction": "touhou_dunkleosteus",
+  "bodytype": "fish",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "FISH"
+  ],
+  "harvest": "fish_large",
+  "hp": 400,
+  "speed": 155,
+  "material": [
+    "flesh"
+  ],
+  "color": "brown",
+  "symbol": "Ð",
+  "aggression": 25,
+  "morale": 65,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 11,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 22
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 4,
+  "armor_cut": 4,
+  "armor_stab": 12,
+  "reproduction": {
+    "baby_monster": "mon_dunkleosteus_baby",
+    "baby_count": 1,
+    "baby_timer": 30
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK"
+  ],
+  "fear_triggers": [
+    "FRIEND_DIED"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      55
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "AQUATIC",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Dunkleosteus terrelli used as reference, calculated volume is an absurd 10 m3 so I'm staying with density of ~1"
+}
+```
+

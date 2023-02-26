@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: ARMOR vamp_stuff
+title: vamp_stuff→ARMOR→v_war_etherealenchant
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_war_etherealenchant|http://cdda.aloxaf.cn/search?q=v_war_etherealenchant]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/+Misc/v_spell_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "v_war_etherealenchant",
+  "type": "ARMOR",
+  "name": {
+    "str": "ethereal enchantment"
+  },
+  "description": "Enshrouds your wielded weapon (or even bare fists) in ghastly mists.\n* 5% to summon an <color_light_blue>etherean silhouette</color> for 15-25 turns while attacking.",
+  "weight": "3 g",
+  "volume": "3 ml",
+  "price": "0 cent",
+  "material": [
+    "ethereal"
+  ],
+  "symbol": "0",
+  "color": "red",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "v_war_etherealenchant_ss_maybe"
+          }
+        ],
+        "values": [
+          {
+            "value": "ITEM_DAMAGE_AP",
+            "add": 20
+          },
+          {
+            "value": "ATTACK_COST",
+            "add": -15
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "AURA",
+    "ONLY_ONE",
+    "SEMITANGIBLE",
+    "NO_DROP"
+  ],
+  "armor": [
+    {
+      "coverage": 0,
+      "covers": [
+        "arm_r",
+        "arm_l"
+      ],
+      "material": [
+        "ethereal"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "v_war_etherealenchant",
+  "type": "ARMOR",
+  "name": {
+    "str": "以太附魔"
+  },
+  "description": "把你挥舞的武器（甚至是赤裸的拳头）藏在可怕的雾中。\n*5%召唤一个<color_light_blue>以太轮廓</color>，在攻击时转15-25圈。",
+  "weight": "3 g",
+  "volume": "3 ml",
+  "price": "0 cent",
+  "material": [
+    "ethereal"
+  ],
+  "symbol": "0",
+  "color": "red",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "v_war_etherealenchant_ss_maybe"
+          }
+        ],
+        "values": [
+          {
+            "value": "ITEM_DAMAGE_AP",
+            "add": 20
+          },
+          {
+            "value": "ATTACK_COST",
+            "add": -15
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "AURA",
+    "ONLY_ONE",
+    "SEMITANGIBLE",
+    "NO_DROP"
+  ],
+  "armor": [
+    {
+      "coverage": 0,
+      "covers": [
+        "arm_r",
+        "arm_l"
+      ],
+      "material": [
+        "ethereal"
+      ]
+    }
+  ]
+}
+```
+

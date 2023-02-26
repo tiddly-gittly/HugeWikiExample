@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_2_FLAME
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_2_FLAME|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_2_FLAME]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_2_FLAME",
+  "dynamic_line": "Our duties have some overlap and offer us the means to work together, but they are not the same in all respects.  As I said, to reverse what has happened may never truly be possible.  You are free to seek that if you desire, but fulfilling the sword's purpose will serve either goal.",
+  "responses": [
+    {
+      "text": "If you insist.  What am I to do?",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "We shall see.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_2_FLAME",
+  "dynamic_line": "我们的职责有些重叠，为我们提供了共同工作的手段，但它们在各方面并不相同。正如我所说，扭转已经发生的一切可能永远不可能。如果你愿意的话，你可以自由地去追求，但是实现剑的目的将有助于任何一个目标。",
+  "responses": [
+    {
+      "text": "如果你坚持的话。我该怎么办？",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "我们会看到的。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

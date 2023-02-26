@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→potion_healing
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：potion_healing|http://cdda.aloxaf.cn/search?q=potion_healing]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "potion_healing",
+  "name": [
+    "Elixir"
+  ],
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "desc": [
+    "Not immortality, but it still feels nice."
+  ],
+  "remove_message": "The healing effect fades.",
+  "removes_effects": [
+    "poison",
+    "badpoison",
+    "infected",
+    "fungus",
+    "bleed",
+    "common_cold",
+    "flu",
+    "tetanus",
+    "redcells_anemia",
+    "hypovolemia"
+  ],
+  "decay_messages": [
+    [
+      "The soothing effect of your potion is starting to fade.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "30 m",
+  "max_intensity": 30,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "health_min": [
+      1
+    ],
+    "health_chance": [
+      5
+    ],
+    "h_mod_min": [
+      1
+    ],
+    "h_mod_chance": [
+      5
+    ],
+    "pain_tick": [
+      25
+    ],
+    "pain_min": [
+      -5
+    ],
+    "speed_mod": [
+      -10,
+      -5
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "potion_healing",
+  "name": [
+    "灵药"
+  ],
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "desc": [
+    "不是永生，但感觉还是不错的。"
+  ],
+  "remove_message": "治疗效果消失。",
+  "removes_effects": [
+    "poison",
+    "badpoison",
+    "infected",
+    "fungus",
+    "bleed",
+    "common_cold",
+    "flu",
+    "tetanus",
+    "redcells_anemia",
+    "hypovolemia"
+  ],
+  "decay_messages": [
+    [
+      "你的药剂的舒缓作用开始消退了。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "30 m",
+  "max_intensity": 30,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "health_min": [
+      1
+    ],
+    "health_chance": [
+      5
+    ],
+    "h_mod_min": [
+      1
+    ],
+    "h_mod_chance": [
+      5
+    ],
+    "pain_tick": [
+      25
+    ],
+    "pain_min": [
+      -5
+    ],
+    "speed_mod": [
+      -10,
+      -5
+    ]
+  }
+}
+```
+

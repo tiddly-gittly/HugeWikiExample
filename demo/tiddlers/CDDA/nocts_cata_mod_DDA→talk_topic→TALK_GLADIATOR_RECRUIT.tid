@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_GLADIATOR_RECRUIT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_GLADIATOR_RECRUIT|http://cdda.aloxaf.cn/search?q=TALK_GLADIATOR_RECRUIT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_GLADIATOR.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_GLADIATOR_RECRUIT",
+  "dynamic_line": {
+    "u_has_trait": "PROF_GLADIATOR",
+    "yes": [
+      "Alright.  Let's give Red Team their final rest and see if we can escape…",
+      "To glory and death.",
+      "There has to be a way out of here.  Lead the way.",
+      "Fine by me.  Let's go."
+    ],
+    "no": [
+      "Thank you!  I'll follow your lead.",
+      "Alright.  Watch out for the others from Red Team.",
+      "Any place has to be better than this.  Lead on!",
+      "You're really getting me out of here?  Thank you…"
+    ]
+  },
+  "responses": [
+    {
+      "text": "Let's go!",
+      "topic": "TALK_DONE",
+      "effect": "follow"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_GLADIATOR_RECRUIT",
+  "dynamic_line": {
+    "u_has_trait": "PROF_GLADIATOR",
+    "yes": [
+      "好吧。让我们给红队最后休息一次，看看我们能不能逃脱……",
+      "荣耀与死亡。",
+      "一定有办法离开这里。你来带路吧。",
+      "我没问题。一起走吧。"
+    ],
+    "no": [
+      "谢谢！我会听从你的指挥。",
+      "好吧。小心红队的人。",
+      "任何地方都要比这好。带路吧！",
+      "你真的要带我离开这里吗？谢谢你……"
+    ]
+  },
+  "responses": [
+    {
+      "text": "我们走吧！",
+      "topic": "TALK_DONE",
+      "effect": "follow"
+    }
+  ]
+}
+```
+

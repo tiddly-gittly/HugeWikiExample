@@ -1,0 +1,1680 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[16]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/Flesh/flesh_city.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Grocery Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 750,
+  "object": {
+    "rows": [
+      "ssssssssssssssssssssssss",
+      "ssWWWWWWWWssssssssssssss",
+      "sswsssssssssssssssssssss",
+      "sswsssssssssssssssssssss",
+      "__|====-====-=[[=-====|_",
+      "__|tttt^ttttt^RR^# b  |_",
+      "__|t             #%## |_",
+      "__|t  rrr  rrr        |_",
+      "__|r  r|r  r|r  f|rrr |_",
+      "__|r  r|r  r|r  f|777 |_",
+      "__|r  r|r  r|r  f|7   |_",
+      "__|r  r|r  r|r  f|7   |_",
+      "__|r  r|r  r|r  f|t   |_",
+      "|---                  |_",
+      "|ll+   |r  r|t  t|r  r|_",
+      "|TS|^  |r  r|t  t|r  r|_",
+      "|---   |r  r|t  t|r  r|_",
+      "|TS|^ A|r  r|t  t|r  r|_",
+      "|ll+  A|r  r|t  t|r  r|_",
+      "|--|-I--              |_",
+      "__4|**C|[[[[-[[[[-[[[[|_",
+      "___|**C|]]]]]]]]]]]]]]|_",
+      "___L***+**************|_",
+      "___|------------------|_"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "7": "t_secro_linoleum_white_flesh",
+      " ": "t_secro_linoleum_white_flesh",
+      "#": "t_secro_linoleum_white_flesh",
+      "%": "t_secro_console_broken_flesh",
+      "*": "t_secro_floor_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_wall_w_flesh",
+      "=": "t_secro_wall_g_flesh",
+      "A": "t_secro_atm_flesh",
+      "C": "t_secro_floor_flesh",
+      "I": "t_secro_door_metal_locked_flesh",
+      "L": "t_secro_door_locked_flesh",
+      "R": "t_secro_carpet_red_flesh",
+      "S": "t_secro_linoleum_gray_flesh",
+      "T": "t_secro_linoleum_gray_flesh",
+      "W": "t_secro_chainfence_flesh",
+      "[": "t_secro_door_glass_flesh",
+      "]": "t_secro_floor_flesh",
+      "^": "t_secro_linoleum_white_flesh",
+      "_": "t_secro_pavement_flesh",
+      "b": "t_secro_linoleum_white_flesh",
+      "f": "t_secro_linoleum_white_flesh",
+      "l": "t_secro_linoleum_gray_flesh",
+      "r": "t_secro_linoleum_white_flesh",
+      "s": "t_secro_sidewalk_flesh",
+      "t": "t_secro_linoleum_white_flesh",
+      "w": "t_secro_chainfence_flesh",
+      "|": "t_secro_wall_w_flesh"
+    },
+    "furniture": {
+      "7": "f_bookcase",
+      "#": "f_counter",
+      "C": "f_crate_c",
+      "S": "f_sink",
+      "]": "f_rack",
+      "^": "f_indoor_plant",
+      "b": "f_stool",
+      "f": "f_glass_fridge",
+      "r": "f_rack",
+      "t": "f_table"
+    },
+    "toilets": {
+      "T": {}
+    },
+    "place_items": [
+      {
+        "item": "produce",
+        "x": [
+          3,
+          6
+        ],
+        "y": 5,
+        "chance": 85,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "produce",
+        "x": [
+          8,
+          12
+        ],
+        "y": 5,
+        "chance": 85,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "produce",
+        "x": 3,
+        "y": [
+          6,
+          7
+        ],
+        "chance": 85,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": [
+          6,
+          8
+        ],
+        "y": 7,
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": [
+          11,
+          13
+        ],
+        "y": 7,
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "cannedfood",
+        "x": 3,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "cannedfood",
+        "x": 6,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": 8,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": 11,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": 13,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "groce_premade",
+        "x": 16,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "behindcounter",
+        "x": [
+          18,
+          20
+        ],
+        "y": 8,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "magazines",
+        "x": [
+          18,
+          20
+        ],
+        "y": 9,
+        "chance": 80,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "novels",
+        "x": 18,
+        "y": [
+          10,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          2,
+          8
+        ]
+      },
+      {
+        "item": "groce_cereal",
+        "x": 8,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_bread",
+        "x": 8,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_pasta",
+        "x": 11,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_ingredient",
+        "x": 11,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "alcohol",
+        "x": 13,
+        "y": [
+          14,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "groce_softdrink",
+        "x": 16,
+        "y": [
+          14,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_condiment",
+        "x": 18,
+        "y": [
+          14,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "softdrugs",
+        "x": 21,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "cleaning",
+        "x": 21,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "groce_frozen",
+        "x": [
+          8,
+          12
+        ],
+        "y": 21,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_meat",
+        "x": [
+          13,
+          17
+        ],
+        "y": 21,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_dairyegg",
+        "x": [
+          18,
+          21
+        ],
+        "y": 21,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "shopping_cart",
+        "x": 3,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 4,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 5,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 6,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 7,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 8,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 9,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 3,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 4,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 5,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 6,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 7,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 8,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 9,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          4,
+          21
+        ],
+        "y": 13,
+        "chance": 15
+      },
+      {
+        "vehicle": "grocery_cart",
+        "x": [
+          19,
+          22
+        ],
+        "y": 3,
+        "chance": 10,
+        "repeat": [
+          1,
+          3
+        ],
+        "rotation": 90
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_grocerybot",
+          "mon_grocerybot_busted"
+        ],
+        "x": [
+          19,
+          22
+        ],
+        "y": 2,
+        "chance": 15,
+        "repeat": [
+          1,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Grocery Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 750,
+  "object": {
+    "rows": [
+      "ssssssssssssssssssssssss",
+      "ssWWWWWWWWssssssssssssss",
+      "sswsssssssssssssssssssss",
+      "sswsssssssssssssssssssss",
+      "__|====-====-=[[=-====|_",
+      "__|tttt^ttttt^RR^# b  |_",
+      "__|t             #%## |_",
+      "__|t  rrr  rrr        |_",
+      "__|r  r|r  r|r  f|rrr |_",
+      "__|r  r|r  r|r  f|777 |_",
+      "__|r  r|r  r|r  f|7   |_",
+      "__|r  r|r  r|r  f|7   |_",
+      "__|r  r|r  r|r  f|t   |_",
+      "|---                  |_",
+      "|ll+   |r  r|t  t|r  r|_",
+      "|TS|^  |r  r|t  t|r  r|_",
+      "|---   |r  r|t  t|r  r|_",
+      "|TS|^ A|r  r|t  t|r  r|_",
+      "|ll+  A|r  r|t  t|r  r|_",
+      "|--|-I--              |_",
+      "__4|**C|[[[[-[[[[-[[[[|_",
+      "___|**C|]]]]]]]]]]]]]]|_",
+      "___L***+**************|_",
+      "___|------------------|_"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "7": "t_secro_linoleum_white_flesh",
+      " ": "t_secro_linoleum_white_flesh",
+      "#": "t_secro_linoleum_white_flesh",
+      "%": "t_secro_console_broken_flesh",
+      "*": "t_secro_floor_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_wall_w_flesh",
+      "=": "t_secro_wall_g_flesh",
+      "A": "t_secro_atm_flesh",
+      "C": "t_secro_floor_flesh",
+      "I": "t_secro_door_metal_locked_flesh",
+      "L": "t_secro_door_locked_flesh",
+      "R": "t_secro_carpet_red_flesh",
+      "S": "t_secro_linoleum_gray_flesh",
+      "T": "t_secro_linoleum_gray_flesh",
+      "W": "t_secro_chainfence_flesh",
+      "[": "t_secro_door_glass_flesh",
+      "]": "t_secro_floor_flesh",
+      "^": "t_secro_linoleum_white_flesh",
+      "_": "t_secro_pavement_flesh",
+      "b": "t_secro_linoleum_white_flesh",
+      "f": "t_secro_linoleum_white_flesh",
+      "l": "t_secro_linoleum_gray_flesh",
+      "r": "t_secro_linoleum_white_flesh",
+      "s": "t_secro_sidewalk_flesh",
+      "t": "t_secro_linoleum_white_flesh",
+      "w": "t_secro_chainfence_flesh",
+      "|": "t_secro_wall_w_flesh"
+    },
+    "furniture": {
+      "7": "f_bookcase",
+      "#": "f_counter",
+      "C": "f_crate_c",
+      "S": "f_sink",
+      "]": "f_rack",
+      "^": "f_indoor_plant",
+      "b": "f_stool",
+      "f": "f_glass_fridge",
+      "r": "f_rack",
+      "t": "f_table"
+    },
+    "toilets": {
+      "T": {}
+    },
+    "place_items": [
+      {
+        "item": "produce",
+        "x": [
+          3,
+          6
+        ],
+        "y": 5,
+        "chance": 85,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "produce",
+        "x": [
+          8,
+          12
+        ],
+        "y": 5,
+        "chance": 85,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "produce",
+        "x": 3,
+        "y": [
+          6,
+          7
+        ],
+        "chance": 85,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": [
+          6,
+          8
+        ],
+        "y": 7,
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": [
+          11,
+          13
+        ],
+        "y": 7,
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "cannedfood",
+        "x": 3,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "cannedfood",
+        "x": 6,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": 8,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": 11,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": 13,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "groce_premade",
+        "x": 16,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "behindcounter",
+        "x": [
+          18,
+          20
+        ],
+        "y": 8,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "magazines",
+        "x": [
+          18,
+          20
+        ],
+        "y": 9,
+        "chance": 80,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "novels",
+        "x": 18,
+        "y": [
+          10,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          2,
+          8
+        ]
+      },
+      {
+        "item": "groce_cereal",
+        "x": 8,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_bread",
+        "x": 8,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_pasta",
+        "x": 11,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_ingredient",
+        "x": 11,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "alcohol",
+        "x": 13,
+        "y": [
+          14,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "groce_softdrink",
+        "x": 16,
+        "y": [
+          14,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_condiment",
+        "x": 18,
+        "y": [
+          14,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "softdrugs",
+        "x": 21,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "cleaning",
+        "x": 21,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "groce_frozen",
+        "x": [
+          8,
+          12
+        ],
+        "y": 21,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_meat",
+        "x": [
+          13,
+          17
+        ],
+        "y": 21,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_dairyegg",
+        "x": [
+          18,
+          21
+        ],
+        "y": 21,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "shopping_cart",
+        "x": 3,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 4,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 5,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 6,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 7,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 8,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 9,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 3,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 4,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 5,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 6,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 7,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 8,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 9,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          4,
+          21
+        ],
+        "y": 13,
+        "chance": 15
+      },
+      {
+        "vehicle": "grocery_cart",
+        "x": [
+          19,
+          22
+        ],
+        "y": 3,
+        "chance": 10,
+        "repeat": [
+          1,
+          3
+        ],
+        "rotation": 90
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_grocerybot",
+          "mon_grocerybot_busted"
+        ],
+        "x": [
+          19,
+          22
+        ],
+        "y": 2,
+        "chance": 15,
+        "repeat": [
+          1,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Grocery Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 750,
+  "object": {
+    "rows": [
+      "ssssssssssssssssssssssss",
+      "ssWWWWWWWWssssssssssssss",
+      "sswsssssssssssssssssssss",
+      "sswsssssssssssssssssssss",
+      "__|====-====-=[[=-====|_",
+      "__|tttt^ttttt^RR^# b  |_",
+      "__|t             #%## |_",
+      "__|t  rrr  rrr        |_",
+      "__|r  r|r  r|r  f|rrr |_",
+      "__|r  r|r  r|r  f|777 |_",
+      "__|r  r|r  r|r  f|7   |_",
+      "__|r  r|r  r|r  f|7   |_",
+      "__|r  r|r  r|r  f|t   |_",
+      "|---                  |_",
+      "|ll+   |r  r|t  t|r  r|_",
+      "|TS|^  |r  r|t  t|r  r|_",
+      "|---   |r  r|t  t|r  r|_",
+      "|TS|^ A|r  r|t  t|r  r|_",
+      "|ll+  A|r  r|t  t|r  r|_",
+      "|--|-I--              |_",
+      "__4|**C|[[[[-[[[[-[[[[|_",
+      "___|**C|]]]]]]]]]]]]]]|_",
+      "___L***+**************|_",
+      "___|------------------|_"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "7": "t_secro_linoleum_white_flesh",
+      " ": "t_secro_linoleum_white_flesh",
+      "#": "t_secro_linoleum_white_flesh",
+      "%": "t_secro_console_broken_flesh",
+      "*": "t_secro_floor_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_wall_w_flesh",
+      "=": "t_secro_wall_g_flesh",
+      "A": "t_secro_atm_flesh",
+      "C": "t_secro_floor_flesh",
+      "I": "t_secro_door_metal_locked_flesh",
+      "L": "t_secro_door_locked_flesh",
+      "R": "t_secro_carpet_red_flesh",
+      "S": "t_secro_linoleum_gray_flesh",
+      "T": "t_secro_linoleum_gray_flesh",
+      "W": "t_secro_chainfence_flesh",
+      "[": "t_secro_door_glass_flesh",
+      "]": "t_secro_floor_flesh",
+      "^": "t_secro_linoleum_white_flesh",
+      "_": "t_secro_pavement_flesh",
+      "b": "t_secro_linoleum_white_flesh",
+      "f": "t_secro_linoleum_white_flesh",
+      "l": "t_secro_linoleum_gray_flesh",
+      "r": "t_secro_linoleum_white_flesh",
+      "s": "t_secro_sidewalk_flesh",
+      "t": "t_secro_linoleum_white_flesh",
+      "w": "t_secro_chainfence_flesh",
+      "|": "t_secro_wall_w_flesh"
+    },
+    "furniture": {
+      "7": "f_bookcase",
+      "#": "f_counter",
+      "C": "f_crate_c",
+      "S": "f_sink",
+      "]": "f_rack",
+      "^": "f_indoor_plant",
+      "b": "f_stool",
+      "f": "f_glass_fridge",
+      "r": "f_rack",
+      "t": "f_table"
+    },
+    "toilets": {
+      "T": {}
+    },
+    "place_items": [
+      {
+        "item": "produce",
+        "x": [
+          3,
+          6
+        ],
+        "y": 5,
+        "chance": 85,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "produce",
+        "x": [
+          8,
+          12
+        ],
+        "y": 5,
+        "chance": 85,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "produce",
+        "x": 3,
+        "y": [
+          6,
+          7
+        ],
+        "chance": 85,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": [
+          6,
+          8
+        ],
+        "y": 7,
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": [
+          11,
+          13
+        ],
+        "y": 7,
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "cannedfood",
+        "x": 3,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "cannedfood",
+        "x": 6,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": 8,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": 11,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": 13,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          16
+        ]
+      },
+      {
+        "item": "groce_premade",
+        "x": 16,
+        "y": [
+          8,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "behindcounter",
+        "x": [
+          18,
+          20
+        ],
+        "y": 8,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "magazines",
+        "x": [
+          18,
+          20
+        ],
+        "y": 9,
+        "chance": 80,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "novels",
+        "x": 18,
+        "y": [
+          10,
+          12
+        ],
+        "chance": 80,
+        "repeat": [
+          2,
+          8
+        ]
+      },
+      {
+        "item": "groce_cereal",
+        "x": 8,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_bread",
+        "x": 8,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_pasta",
+        "x": 11,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_ingredient",
+        "x": 11,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "alcohol",
+        "x": 13,
+        "y": [
+          14,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      {
+        "item": "groce_softdrink",
+        "x": 16,
+        "y": [
+          14,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_condiment",
+        "x": 18,
+        "y": [
+          14,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "softdrugs",
+        "x": 21,
+        "y": [
+          14,
+          15
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "cleaning",
+        "x": 21,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "groce_frozen",
+        "x": [
+          8,
+          12
+        ],
+        "y": 21,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_meat",
+        "x": [
+          13,
+          17
+        ],
+        "y": 21,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "groce_dairyegg",
+        "x": [
+          18,
+          21
+        ],
+        "y": 21,
+        "chance": 80,
+        "repeat": [
+          1,
+          12
+        ]
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "shopping_cart",
+        "x": 3,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 4,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 5,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 6,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 7,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 8,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 9,
+        "y": 2,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 3,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 4,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 5,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 6,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 7,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 8,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": 9,
+        "y": 3,
+        "chance": 10
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          4,
+          21
+        ],
+        "y": 13,
+        "chance": 15
+      },
+      {
+        "vehicle": "grocery_cart",
+        "x": [
+          19,
+          22
+        ],
+        "y": 3,
+        "chance": 10,
+        "repeat": [
+          1,
+          3
+        ],
+        "rotation": 90
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_grocerybot",
+          "mon_grocerybot_busted"
+        ],
+        "x": [
+          19,
+          22
+        ],
+        "y": 2,
+        "chance": 15,
+        "repeat": [
+          1,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+

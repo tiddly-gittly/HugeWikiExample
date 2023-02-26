@@ -1,0 +1,201 @@
+creator: 林一二
+revision: 0
+tags: GUN nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→GUN→surv_battery_pistol
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：surv_battery_pistol|http://cdda.aloxaf.cn/search?q=surv_battery_pistol]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Weapons/c_ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "surv_battery_pistol",
+  "type": "GUN",
+  "color": "light_red",
+  "symbol": "{",
+  "looks_like": "v29",
+  "name": {
+    "str": "survivor's battery pistol"
+  },
+  "description": "A simple electronic pistol, using batteries from common household electronics to power a low-yield electrolaser.  Not very powerful, but can shock targets.",
+  "price": "424 USD",
+  "price_postapoc": "20 USD",
+  "material": [
+    "steel",
+    "wood"
+  ],
+  "weight": "2940 g",
+  "volume": "1 L",
+  "bashing": 3,
+  "to_hit": -1,
+  "ammo_effects": [
+    "LIGHTNING"
+  ],
+  "flags": [
+    "NON_FOULING",
+    "NEEDS_NO_LUBE"
+  ],
+  "ammo_to_fire": 20,
+  "ammo": [
+    "battery"
+  ],
+  "pocket_data": [
+    {
+      "magazine_well": "50 ml",
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "light_plus_battery_cell",
+        "light_minus_battery_cell",
+        "light_battery_cell",
+        "light_atomic_battery_cell",
+        "light_minus_atomic_battery_cell",
+        "light_minus_disposable_cell",
+        "light_disposable_cell"
+      ]
+    }
+  ],
+  "skill": "pistol",
+  "ranged_damage": {
+    "damage_type": "electric",
+    "amount": 8
+  },
+  "range": 10,
+  "dispersion": 120,
+  "recoil": 10,
+  "durability": 5,
+  "reload": 300,
+  "loudness": 12,
+  "valid_mod_locations": [
+    [
+      "accessories",
+      2
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "barrel",
+      1
+    ],
+    [
+      "rail",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "stock",
+      1
+    ]
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "surv_battery_pistol",
+  "type": "GUN",
+  "color": "light_red",
+  "symbol": "{",
+  "looks_like": "v29",
+  "name": {
+    "str": "幸存者电弧手枪"
+  },
+  "description": "一把自制的电弧手枪，从电池中吸取能量并发射，虽然它很弱，但它还是可以适当的对目标造成伤害。",
+  "price": "424 USD",
+  "price_postapoc": "20 USD",
+  "material": [
+    "steel",
+    "wood"
+  ],
+  "weight": "2940 g",
+  "volume": "1 L",
+  "bashing": 3,
+  "to_hit": -1,
+  "ammo_effects": [
+    "LIGHTNING"
+  ],
+  "flags": [
+    "NON_FOULING",
+    "NEEDS_NO_LUBE"
+  ],
+  "ammo_to_fire": 20,
+  "ammo": [
+    "battery"
+  ],
+  "pocket_data": [
+    {
+      "magazine_well": "50 ml",
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "light_plus_battery_cell",
+        "light_minus_battery_cell",
+        "light_battery_cell",
+        "light_atomic_battery_cell",
+        "light_minus_atomic_battery_cell",
+        "light_minus_disposable_cell",
+        "light_disposable_cell"
+      ]
+    }
+  ],
+  "skill": "pistol",
+  "ranged_damage": {
+    "damage_type": "electric",
+    "amount": 8
+  },
+  "range": 10,
+  "dispersion": 120,
+  "recoil": 10,
+  "durability": 5,
+  "reload": 300,
+  "loudness": 12,
+  "valid_mod_locations": [
+    [
+      "accessories",
+      2
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "barrel",
+      1
+    ],
+    [
+      "rail",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "stock",
+      1
+    ]
+  ]
+}
+```
+

@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_camp_turret_tendril_swing
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_camp_turret_tendril_swing|http://cdda.aloxaf.cn/search?q=mon_sflesh_camp_turret_tendril_swing]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_camp_turret_tendril_swing",
+  "type": "SPELL",
+  "name": {
+    "str": "Tendril Swing"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster swings its tendril at the target, dealing bashing damage and applying unstable footing to all affected creatures in a cone.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE",
+    "RANDOM_TARGET"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "effect_str": "downed",
+  "min_damage": 6,
+  "max_damage": 12,
+  "min_aoe": 45,
+  "max_aoe": 90,
+  "min_range": 4,
+  "max_range": 4,
+  "damage_type": "bash",
+  "min_duration": 125,
+  "max_duration": 125
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_camp_turret_tendril_swing",
+  "type": "SPELL",
+  "name": {
+    "str": "触手甩动"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者向目标摆动卷须，造成重击伤害，并对锥中所有受影响的生物施加不稳定的立足点。'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE",
+    "RANDOM_TARGET"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "effect_str": "downed",
+  "min_damage": 6,
+  "max_damage": 12,
+  "min_aoe": 45,
+  "max_aoe": 90,
+  "min_range": 4,
+  "max_range": 4,
+  "damage_type": "bash",
+  "min_duration": 125,
+  "max_duration": 125
+}
+```
+

@@ -1,0 +1,256 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[40]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    [
+      "microlab_arcana_surface"
+    ]
+  ],
+  "method": "json",
+  "object": {
+    "fill_ter": "t_concrete",
+    "rows": [
+      " _______________________",
+      " _______________________",
+      " _______________________",
+      " _______________________",
+      " _______________________",
+      " SSSSSSSSSS_y________y__",
+      " $$$$$$**$$_y________y__",
+      " $     SS $_y________y__",
+      " $     SS $_y________y__",
+      " $     SS $_y________y__",
+      " |((((|22||||55555555|||",
+      " |........|C.yyyyyyyy.C|",
+      " |..dddd..|...........C|",
+      " |^.d.hd..5...........C|",
+      " |||||||..5............|",
+      " (V.??....G............|",
+      " (t.......|CC........CC|",
+      " (^???....|C.........CC|",
+      " |||||||.^|((((|22|((((|",
+      " |.hd^=..^|c..........c|",
+      " |.dd.=..^|c...........|",
+      " |B...=..^|....yyyy...c|",
+      " |B...[..^|cc..y>>y..cc|",
+      " |||||||||||||||||||||||"
+    ],
+    "palettes": [
+      "microlab"
+    ],
+    "terrain": {
+      "$": "t_chainfence",
+      "*": "t_chaingate_l",
+      "e": "t_elevator",
+      "E": "t_elevator_control",
+      " ": "t_grass",
+      "_": "t_pavement",
+      "S": "t_sidewalk",
+      ".": "t_thconc_floor",
+      "C": "t_thconc_floor",
+      "G": "t_card_science"
+    },
+    "furniture": {
+      "C": "f_crate_c",
+      "c": "f_crate_c"
+    },
+    "items": {
+      "C": [
+        {
+          "item": "science",
+          "chance": 25,
+          "repeat": 2
+        },
+        {
+          "item": "tools_science",
+          "chance": 25,
+          "repeat": 3
+        }
+      ],
+      "c": [
+        {
+          "item": "lab_misc_anomalous_items",
+          "chance": 25,
+          "repeat": 2
+        },
+        {
+          "item": "lab_magitech_general",
+          "chance": 25
+        }
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_aux_d_2",
+  "object": {
+    "set": [
+      {
+        "point": "terrain",
+        "id": "t_tree_hickory_harvested",
+        "x": 16,
+        "y": 3
+      },
+      {
+        "point": "terrain",
+        "id": "t_tree_hickory_harvested",
+        "x": 16,
+        "y": 16
+      },
+      {
+        "point": "terrain",
+        "id": "t_tree_hickory_harvested",
+        "x": 20,
+        "y": 16
+      },
+      {
+        "square": "terrain",
+        "id": "t_grass",
+        "x": 17,
+        "x2": 19,
+        "y": 3,
+        "y2": 16
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "rural_church_farmhand_research",
+        "x": 13,
+        "y": [
+          13,
+          15
+        ],
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "group": "rural_church_start_scales",
+        "x": 13,
+        "y": 16
+      }
+    ],
+    "faction_owner": [
+      {
+        "id": "cleansing_flame",
+        "x": 13,
+        "y": [
+          13,
+          15
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    [
+      "microlab_arcana_surface"
+    ]
+  ],
+  "method": "json",
+  "object": {
+    "fill_ter": "t_concrete",
+    "rows": [
+      " _______________________",
+      " _______________________",
+      " _______________________",
+      " _______________________",
+      " _______________________",
+      " SSSSSSSSSS_y________y__",
+      " $$$$$$**$$_y________y__",
+      " $     SS $_y________y__",
+      " $     SS $_y________y__",
+      " $     SS $_y________y__",
+      " |((((|22||||55555555|||",
+      " |........|C.yyyyyyyy.C|",
+      " |..dddd..|...........C|",
+      " |^.d.hd..5...........C|",
+      " |||||||..5............|",
+      " (V.??....G............|",
+      " (t.......|CC........CC|",
+      " (^???....|C.........CC|",
+      " |||||||.^|((((|22|((((|",
+      " |.hd^=..^|c..........c|",
+      " |.dd.=..^|c...........|",
+      " |B...=..^|....yyyy...c|",
+      " |B...[..^|cc..y>>y..cc|",
+      " |||||||||||||||||||||||"
+    ],
+    "palettes": [
+      "microlab"
+    ],
+    "terrain": {
+      "$": "t_chainfence",
+      "*": "t_chaingate_l",
+      "e": "t_elevator",
+      "E": "t_elevator_control",
+      " ": "t_grass",
+      "_": "t_pavement",
+      "S": "t_sidewalk",
+      ".": "t_thconc_floor",
+      "C": "t_thconc_floor",
+      "G": "t_card_science"
+    },
+    "furniture": {
+      "C": "f_crate_c",
+      "c": "f_crate_c"
+    },
+    "items": {
+      "C": [
+        {
+          "item": "science",
+          "chance": 25,
+          "repeat": 2
+        },
+        {
+          "item": "tools_science",
+          "chance": 25,
+          "repeat": 3
+        }
+      ],
+      "c": [
+        {
+          "item": "lab_misc_anomalous_items",
+          "chance": 25,
+          "repeat": 2
+        },
+        {
+          "item": "lab_magitech_general",
+          "chance": 25
+        }
+      ]
+    }
+  }
+}
+```
+

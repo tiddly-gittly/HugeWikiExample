@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: effect_type Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→effect_type→smoke
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：smoke|http://cdda.aloxaf.cn/search?q=smoke]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/effects/touhou_effects.json
+
+
+!! 原文
+
+```json
+{
+  "id": "smoke",
+  "type": "effect_type",
+  "name": [
+    {
+      "ctxt": "inhaled",
+      "str": "Smoke"
+    }
+  ],
+  "desc": [
+    "You've inhaled a lungful of thick smoke."
+  ],
+  "apply_message": "You inhale a lungful of thick smoke.",
+  "rating": "bad",
+  "miss_messages": [
+    [
+      "Your lungs burn from the smoke.",
+      1
+    ]
+  ],
+  "harmful_cough": true,
+  "max_duration": "10 m",
+  "base_mods": {
+    "str_mod": [
+      -1
+    ],
+    "dex_mod": [
+      -1
+    ],
+    "cough_chance": [
+      10
+    ]
+  },
+  "show_in_info": true,
+  "immunity_flags": [
+    "PROF_MOKOU"
+  ],
+  "//": "Exactly the same flag, only adds immunity for Mokou"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "smoke",
+  "type": "effect_type",
+  "name": [
+    {
+      "ctxt": "inhaled",
+      "str": "Smoke"
+    }
+  ],
+  "desc": [
+    "你吸进入了大量浓烟。"
+  ],
+  "apply_message": "你吸入了大量浓烟。",
+  "rating": "bad",
+  "miss_messages": [
+    [
+      "你的肺被浓烟呛得很难受。",
+      1
+    ]
+  ],
+  "harmful_cough": true,
+  "max_duration": "10 m",
+  "base_mods": {
+    "str_mod": [
+      -1
+    ],
+    "dex_mod": [
+      -1
+    ],
+    "cough_chance": [
+      10
+    ]
+  },
+  "show_in_info": true,
+  "immunity_flags": [
+    "PROF_MOKOU"
+  ],
+  "//": "Exactly the same flag, only adds immunity for Mokou"
+}
+```
+

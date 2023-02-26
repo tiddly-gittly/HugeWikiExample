@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: technique Arcana
+title: Arcana→technique→tec_cleansingflame_blade_flare
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_cleansingflame_blade_flare|http://cdda.aloxaf.cn/search?q=tec_cleansingflame_blade_flare]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_cleansingflame_blade_flare",
+  "name": "Blade Flare",
+  "messages": [
+    "You drive your momentum into %s and send a pulse of energy through them",
+    "<npcname> drives their weapon hard into %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "cutting",
+      "level": 4
+    },
+    {
+      "name": "magic",
+      "level": 5
+    }
+  ],
+  "weapon_damage_requirements": [
+    {
+      "type": "cut",
+      "min": 20
+    }
+  ],
+  "melee_allowed": true,
+  "required_buffs_all": [
+    "buff_cleansingflame_onattack"
+  ],
+  "aoe": "impale",
+  "crit_tec": true,
+  "weighting": 3,
+  "stun_dur": 2,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.8
+    }
+  ],
+  "attack_vectors": [
+    "WEAPON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_cleansingflame_blade_flare",
+  "name": "叶片光斑",
+  "messages": [
+    "你将你的动量推进%s，并通过它们发出能量脉冲",
+    "<npcname>把他们的武器硬塞进%s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "cutting",
+      "level": 4
+    },
+    {
+      "name": "magic",
+      "level": 5
+    }
+  ],
+  "weapon_damage_requirements": [
+    {
+      "type": "cut",
+      "min": 20
+    }
+  ],
+  "melee_allowed": true,
+  "required_buffs_all": [
+    "buff_cleansingflame_onattack"
+  ],
+  "aoe": "impale",
+  "crit_tec": true,
+  "weighting": 3,
+  "stun_dur": 2,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.8
+    }
+  ],
+  "attack_vectors": [
+    "WEAPON"
+  ]
+}
+```
+

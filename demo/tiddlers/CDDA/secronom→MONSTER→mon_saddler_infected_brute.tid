@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_saddler_infected_brute
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_saddler_infected_brute|http://cdda.aloxaf.cn/search?q=mon_saddler_infected_brute]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Saddler.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_saddler_infected_brute",
+  "type": "MONSTER",
+  "name": {
+    "str": "infected brute"
+  },
+  "description": "A humped human fallen under control to the brutal saddler. Its defiled claws reek with blood, hinting its sudden alteration caused minor drawbacks visible to its thickened skin layers.",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 220,
+  "harvest": "human",
+  "speed": 60,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "armor_bash": 16,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "armor_stab": 8,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      40
+    ],
+    [
+      "scratch",
+      32
+    ],
+    [
+      "PARROT",
+      22
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s dies!\n<color_light_red>The saddler brute pops off from its host!</color>",
+    "effect": {
+      "id": "mon_saddler_brute_infected_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "GRABS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_saddler_infected_brute",
+  "type": "MONSTER",
+  "name": {
+    "str": "狂暴寄生萨德勒"
+  },
+  "description": "一个驼背的人被残忍的寄生虫控制住了。它脏兮兮的爪子上散发着鲜血的臭味，这暗示着它的突然变化导致了它增厚的皮肤层可见的小缺陷。",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 220,
+  "harvest": "human",
+  "speed": 60,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "armor_bash": 16,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "armor_stab": 8,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      40
+    ],
+    [
+      "scratch",
+      32
+    ],
+    [
+      "PARROT",
+      22
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s dies!\n<color_light_red>The saddler brute pops off from its host!</color>",
+    "effect": {
+      "id": "mon_saddler_brute_infected_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "GRABS"
+  ]
+}
+```
+

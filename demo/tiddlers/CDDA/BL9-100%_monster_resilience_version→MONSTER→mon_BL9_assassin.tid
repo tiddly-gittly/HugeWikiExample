@@ -1,0 +1,299 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_assassin
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_assassin|http://cdda.aloxaf.cn/search?q=mon_BL9_assassin]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/pecurial_bastards.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_assassin",
+  "looks_like": "mon_alpha_razorclaw",
+  "type": "MONSTER",
+  "name": {
+    "str": "The Assassin"
+  },
+  "description": "A reptile-like mutant with highly resistant scales and a long, double-edged tail. Aside from it's nimble and deadly assaults, it can also blend with the surroundings, if conditions are met.",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "MUTANT",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 280,
+  "speed": 115,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 5,
+      "armor_penetration": 5
+    },
+    {
+      "damage_type": "cut",
+      "amount": 5,
+      "armor_penetration": 5
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☦",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 7,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 4,
+  "armor_bash": 6,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Assassin",
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 11,
+          "armor_penetration": 11
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 120,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 18,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s thrusts it's tail at you!",
+      "hit_dmg_npc": "The %1$s thrusts it's tail at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to impale you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to impale <npcname>, but fails to penetrate their armor!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 80,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 16,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s slashes with it's tail at you!",
+      "hit_dmg_npc": "The %1$s slashes <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slash you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slash <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's tail at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's tail at <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 150,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 18,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s slams you!",
+      "hit_dmg_npc": "The %1$s slams <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slam you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slam <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s slams you, but you dodge!",
+      "miss_msg_npc": "The %s slams <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "NIGHT_INVISIBILITY",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_assassin",
+  "looks_like": "mon_alpha_razorclaw",
+  "type": "MONSTER",
+  "name": {
+    "str": "刺客"
+  },
+  "description": "一种类似爬行动物的变种，有高度抗药性的鳞片和长而双刃的尾巴。除了它的灵活和致命的攻击，它也可以与周围的环境，如果条件满足。",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "MUTANT",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 280,
+  "speed": 115,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 5,
+      "armor_penetration": 5
+    },
+    {
+      "damage_type": "cut",
+      "amount": 5,
+      "armor_penetration": 5
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☦",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 7,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 4,
+  "armor_bash": 6,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Assassin",
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 11,
+          "armor_penetration": 11
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 120,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 18,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s thrusts it's tail at you!",
+      "hit_dmg_npc": "The %1$s thrusts it's tail at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to impale you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to impale <npcname>, but fails to penetrate their armor!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 80,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 16,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s slashes with it's tail at you!",
+      "hit_dmg_npc": "The %1$s slashes <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slash you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slash <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's tail at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's tail at <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 150,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 18,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s slams you!",
+      "hit_dmg_npc": "The %1$s slams <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slam you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slam <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s slams you, but you dodge!",
+      "miss_msg_npc": "The %s slams <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "NIGHT_INVISIBILITY",
+    "PUSH_MON"
+  ]
+}
+```
+

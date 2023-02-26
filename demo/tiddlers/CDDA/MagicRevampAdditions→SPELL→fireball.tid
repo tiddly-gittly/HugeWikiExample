@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→fireball
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fireball|http://cdda.aloxaf.cn/search?q=fireball]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/kelvinist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fireball",
+  "type": "SPELL",
+  "name": {
+    "str": "Fireball"
+  },
+  "description": "You hurl a pea-sized glowing orb that when reaches its target or an obstacle produces a pressure-less blast of searing heat.",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS",
+    "IGNITE_FLAMMABLE"
+  ],
+  "max_level": 30,
+  "min_damage": 24,
+  "max_damage": 102,
+  "damage_increment": 2,
+  "min_aoe": 3,
+  "max_aoe": 7,
+  "aoe_increment": 0.1,
+  "min_range": 6,
+  "max_range": 30,
+  "range_increment": 1,
+  "spell_class": "KELVINIST",
+  "base_casting_time": 200,
+  "base_energy_cost": 350,
+  "energy_source": "MANA",
+  "difficulty": 4,
+  "damage_type": "heat"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fireball",
+  "type": "SPELL",
+  "name": {
+    "str": "火球术"
+  },
+  "description": "投掷一颗豌豆大小的炽热球体，到达目标或遇到障碍物时发生剧烈烧灼。",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS",
+    "IGNITE_FLAMMABLE"
+  ],
+  "max_level": 30,
+  "min_damage": 24,
+  "max_damage": 102,
+  "damage_increment": 2,
+  "min_aoe": 3,
+  "max_aoe": 7,
+  "aoe_increment": 0.1,
+  "min_range": 6,
+  "max_range": 30,
+  "range_increment": 1,
+  "spell_class": "KELVINIST",
+  "base_casting_time": 200,
+  "base_energy_cost": 350,
+  "energy_source": "MANA",
+  "difficulty": 4,
+  "damage_type": "heat"
+}
+```
+

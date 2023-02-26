@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: TOOL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL→can_forge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：can_forge|http://cdda.aloxaf.cn/search?q=can_forge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "can_forge",
+  "type": "TOOL",
+  "symbol": ";",
+  "color": "light_gray",
+  "looks_like": "hobo_stove",
+  "name": {
+    "str": "can forge"
+  },
+  "sub": "forge",
+  "description": "This is a portable forge with improvised air intake and insulating lining.  It can be used for light metalworking, repairing items, and reheating food, but its utility is limited by its small size and capacity.",
+  "price": "100 USD",
+  "price_postapoc": "15 USD",
+  "material": [
+    "steel"
+  ],
+  "weight": "1800 g",
+  "volume": "2 L",
+  "bashing": 1,
+  "to_hit": -2,
+  "charges_per_use": 1,
+  "ammo": [
+    "charcoal"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "charcoal": 60
+      }
+    }
+  ],
+  "use_action": [
+    "HOTPLATE",
+    {
+      "type": "repair_item",
+      "item_action_type": "repair_metal",
+      "materials": [
+        "iron",
+        "steel",
+        "lc_steel",
+        "mc_steel",
+        "hc_steel",
+        "ch_steel",
+        "qt_steel",
+        "aluminum",
+        "copper",
+        "bronze",
+        "silver",
+        "gold",
+        "platinum",
+        "superalloy"
+      ],
+      "skill": "fabrication",
+      "tool_quality": 4,
+      "cost_scaling": 0.1,
+      "move_cost": 1000
+    }
+  ],
+  "flags": [
+    "ALLOWS_REMOTE_USE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "can_forge",
+  "type": "TOOL",
+  "symbol": ";",
+  "color": "light_gray",
+  "looks_like": "hobo_stove",
+  "name": {
+    "str": "罐式锻炉"
+  },
+  "sub": "forge",
+  "description": "这是一个配有自制进气口和隔热衬里的便携式锻造炉。它可以用于轻金属加工，修理物品和加热食品，但它的实用性受到它的尺寸和容量的限制。",
+  "price": "100 USD",
+  "price_postapoc": "15 USD",
+  "material": [
+    "steel"
+  ],
+  "weight": "1800 g",
+  "volume": "2 L",
+  "bashing": 1,
+  "to_hit": -2,
+  "charges_per_use": 1,
+  "ammo": [
+    "charcoal"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "charcoal": 60
+      }
+    }
+  ],
+  "use_action": [
+    "HOTPLATE",
+    {
+      "type": "repair_item",
+      "item_action_type": "repair_metal",
+      "materials": [
+        "iron",
+        "steel",
+        "lc_steel",
+        "mc_steel",
+        "hc_steel",
+        "ch_steel",
+        "qt_steel",
+        "aluminum",
+        "copper",
+        "bronze",
+        "silver",
+        "gold",
+        "platinum",
+        "superalloy"
+      ],
+      "skill": "fabrication",
+      "tool_quality": 4,
+      "cost_scaling": 0.1,
+      "move_cost": 1000
+    }
+  ],
+  "flags": [
+    "ALLOWS_REMOTE_USE"
+  ]
+}
+```
+

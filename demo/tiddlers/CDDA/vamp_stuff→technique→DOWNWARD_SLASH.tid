@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: technique vamp_stuff
+title: vamp_stuff→technique→DOWNWARD_SLASH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：DOWNWARD_SLASH|http://cdda.aloxaf.cn/search?q=DOWNWARD_SLASH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Others/v_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "DOWNWARD_SLASH",
+  "name": "Downward Slash",
+  "description": "Slams enemy into the ground, down 6, stun 2, crit only",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "weighting": -3,
+  "down_dur": 6,
+  "stun_dur": 2,
+  "messages": [
+    "%s faced the floor",
+    "The downward slash sent %s into the ground",
+    "<npcname> slammed %s beneath the floor."
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 1.66
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 0.66
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "DOWNWARD_SLASH",
+  "name": "下劈斩",
+  "description": "把敌人打在地上，down 6，stun 2，crit only",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "weighting": -3,
+  "down_dur": 6,
+  "stun_dur": 2,
+  "messages": [
+    "%s面朝地面",
+    "下劈斩将%s打到地面",
+    "<npcname>将%s摔到地面。"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 1.66
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 0.66
+    }
+  ]
+}
+```
+

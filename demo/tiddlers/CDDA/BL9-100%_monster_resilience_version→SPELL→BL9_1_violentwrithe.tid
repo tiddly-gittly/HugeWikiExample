@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→SPELL→BL9_1_violentwrithe
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_1_violentwrithe|http://cdda.aloxaf.cn/search?q=BL9_1_violentwrithe]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_spell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_1_violentwrithe",
+  "type": "SPELL",
+  "name": {
+    "str": "Violent Writhe"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After an accurate slash, caster's bladed tendril becomes wilder in motion, randomly slicing through the air that deals cutting damage to all affected targets.'",
+  "affected_body_parts": [
+    "head",
+    "torso"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_TARGET",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "min_damage": 8,
+  "max_damage": 10,
+  "min_range": 2,
+  "max_range": 2,
+  "min_aoe": 90,
+  "max_aoe": 90,
+  "damage_type": "cut"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_1_violentwrithe",
+  "type": "SPELL",
+  "name": {
+    "str": "剧烈的扭动"
+  },
+  "description": "怪物施法的。如果你看到的是这个，那么读这个吧：\n'在一次准确的斜切之后，施法者的刃状卷须在运动中变得更加狂野，随机划过空中，对所有受影响的目标造成切割伤害",
+  "affected_body_parts": [
+    "head",
+    "torso"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_TARGET",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "min_damage": 8,
+  "max_damage": 10,
+  "min_range": 2,
+  "max_range": 2,
+  "min_aoe": 90,
+  "max_aoe": 90,
+  "damage_type": "cut"
+}
+```
+

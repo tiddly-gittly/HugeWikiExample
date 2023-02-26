@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→t5_blood_outrage_drain
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t5_blood_outrage_drain|http://cdda.aloxaf.cn/search?q=t5_blood_outrage_drain]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_combo.json
+
+
+!! 原文
+
+```json
+{
+  "id": "t5_blood_outrage_drain",
+  "type": "SPELL",
+  "name": {
+    "str": "Outrage Drain"
+  },
+  "message": "You suddenly feel refreshed!",
+  "description": "It will cast Drain Damage and Drain Heal.",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "t5_blood_outrage_drain_heal",
+      "hit_self": true
+    },
+    {
+      "id": "t5_blood_outrage_drain_dmg"
+    }
+  ],
+  "min_range": 12,
+  "max_range": 12
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "t5_blood_outrage_drain",
+  "type": "SPELL",
+  "name": {
+    "str": "泄洪渠"
+  },
+  "message": "你突然觉得神清气爽！",
+  "description": "它会造成吸取伤害和吸取治疗。",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "t5_blood_outrage_drain_heal",
+      "hit_self": true
+    },
+    {
+      "id": "t5_blood_outrage_drain_dmg"
+    }
+  ],
+  "min_range": 12,
+  "max_range": 12
+}
+```
+

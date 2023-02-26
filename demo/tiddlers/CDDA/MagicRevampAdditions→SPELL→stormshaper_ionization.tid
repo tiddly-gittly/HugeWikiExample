@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→stormshaper_ionization
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：stormshaper_ionization|http://cdda.aloxaf.cn/search?q=stormshaper_ionization]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/stormshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "stormshaper_ionization",
+  "type": "SPELL",
+  "name": {
+    "str": "Ionization"
+  },
+  "description": "By manipulating the charge in the air, you can conjure a sharp snap of lightning over a wide area.  While its destructive potential is a far cry from natural lightning, the light and thunderclap produced will leave your foes reeling.",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "self",
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "stormshaper_ionization_thunderclap"
+    }
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "energy_source": "MANA",
+  "spell_class": "STORMSHAPER",
+  "difficulty": 8,
+  "base_casting_time": 350,
+  "final_casting_time": 140,
+  "casting_time_increment": -5,
+  "base_energy_cost": 300,
+  "max_level": 45,
+  "min_damage": 15,
+  "max_damage": 90,
+  "damage_increment": 1.5,
+  "damage_type": "electric",
+  "min_aoe": 7,
+  "max_aoe": 7,
+  "min_range": 12,
+  "max_range": 36,
+  "range_increment": 0.4,
+  "field_id": "fd_electricity",
+  "field_chance": 3,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.1,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "stormshaper_ionization",
+  "type": "SPELL",
+  "name": {
+    "str": "电离术"
+  },
+  "description": "通过操控空气中的电荷，你可以在大片区域内召唤出一道闪电。虽然它的破坏力与自然产生的闪电相去甚远，但它所产生的强光和雷击会让你的敌人战战兢兢。",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "self",
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "stormshaper_ionization_thunderclap"
+    }
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "energy_source": "MANA",
+  "spell_class": "STORMSHAPER",
+  "difficulty": 8,
+  "base_casting_time": 350,
+  "final_casting_time": 140,
+  "casting_time_increment": -5,
+  "base_energy_cost": 300,
+  "max_level": 45,
+  "min_damage": 15,
+  "max_damage": 90,
+  "damage_increment": 1.5,
+  "damage_type": "electric",
+  "min_aoe": 7,
+  "max_aoe": 7,
+  "min_range": 12,
+  "max_range": 36,
+  "range_increment": 0.4,
+  "field_id": "fd_electricity",
+  "field_chance": 3,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.1,
+  "field_intensity_variance": 0.5
+}
+```
+

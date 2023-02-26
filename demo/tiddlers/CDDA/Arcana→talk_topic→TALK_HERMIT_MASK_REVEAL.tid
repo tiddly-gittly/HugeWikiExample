@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_MASK_REVEAL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_MASK_REVEAL|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_MASK_REVEAL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_MASK_REVEAL",
+  "dynamic_line": "I should've suspected as such.  It has been so long since I have seen one of those masks.  But do you wear it with purpose?",
+  "responses": [
+    {
+      "switch": true,
+      "text": "I do.  I am not your enemy, Keeper.  That is what you are, correct?",
+      "topic": "TALK_HERMIT_MASK_TRUST",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "opinion": {
+        "trust": 1,
+        "value": 1
+      },
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ]
+    },
+    {
+      "text": "[ATTACK] My purpose is to finish what my brethren started, and destroy threats to humanity.  For your worship of a monster from Beyond, and for the wounds in The Veil your order has inflicted, I sentence you to death.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "effect": "insult_combat"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "I'm not one of the mage hunters actually, but I've learned the usefulness of these items.",
+      "topic": "TALK_HERMIT_MASK_NOT",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_MASK_REVEAL",
+  "dynamic_line": "我应该这么怀疑的。我已经很久没见过那种面具了。但你是故意穿的吗？",
+  "responses": [
+    {
+      "switch": true,
+      "text": "我愿意。我不是你的敌人，守卫。你就是这样，对吗？",
+      "topic": "TALK_HERMIT_MASK_TRUST",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "opinion": {
+        "trust": 1,
+        "value": 1
+      },
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ]
+    },
+    {
+      "text": "[攻击]我的目的是结束我的兄弟们之前做的事，消灭对人类的威胁。因为你崇拜来自远方的怪物，也因为你的命令在帷幕上造成的伤害，我判你死刑。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "effect": "insult_combat"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "其实我不是法师猎人，但我已经学会了这些东西的用法。",
+      "topic": "TALK_HERMIT_MASK_NOT",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+

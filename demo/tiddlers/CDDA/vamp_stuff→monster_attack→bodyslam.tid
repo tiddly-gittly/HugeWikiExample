@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: monster_attack vamp_stuff
+title: vamp_stuff→monster_attack→bodyslam
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bodyslam|http://cdda.aloxaf.cn/search?q=bodyslam]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "bodyslam",
+  "cooldown": 15,
+  "move_cost": 200,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 10,
+      "armor_penetration": 18,
+      "armor_multiplier": 0.7
+    }
+  ],
+  "effects": [
+    {
+      "id": "downed",
+      "duration": 3
+    }
+  ],
+  "hit_dmg_u": "The %1$s pressed you with its body!",
+  "hit_dmg_npc": "The %1$s body slammed <npcname>!",
+  "no_dmg_msg_u": "The %1$s tries to body slam you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "The %1$s tries to body slam <npcname>, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "bodyslam",
+  "cooldown": 15,
+  "move_cost": 200,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 10,
+      "armor_penetration": 18,
+      "armor_multiplier": 0.7
+    }
+  ],
+  "effects": [
+    {
+      "id": "downed",
+      "duration": 3
+    }
+  ],
+  "hit_dmg_u": "%1$s用它的身体压住了你！",
+  "hit_dmg_npc": "%1$s猛撞了<npcname>！",
+  "no_dmg_msg_u": "%1$s 尝试用身体猛撞你，但是没有穿透你的护甲！",
+  "no_dmg_msg_npc": "%1$s尝试用身体猛撞<npcname>，但是没有穿透护甲！"
+}
+```
+

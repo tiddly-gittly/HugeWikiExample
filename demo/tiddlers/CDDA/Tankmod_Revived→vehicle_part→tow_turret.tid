@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part Tankmod_Revived
+title: Tankmod_Revived→vehicle_part→tow_turret
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tow_turret|http://cdda.aloxaf.cn/search?q=tow_turret]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/parts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "tow_turret",
+  "looks_like": "tow_launcher",
+  "copy-from": "turret_tank",
+  "name": "ATGM turret",
+  "item": "atgm_turret",
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        25,
+        50
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        125,
+        250
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ],
+        [
+          "launcher",
+          3
+        ],
+        [
+          "electronics",
+          3
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ],
+        [
+          "welding_standard",
+          10
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "tow_turret",
+  "looks_like": "tow_launcher",
+  "copy-from": "turret_tank",
+  "name": "反坦克导弹炮塔",
+  "item": "atgm_turret",
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        25,
+        50
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        125,
+        250
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ],
+        [
+          "launcher",
+          3
+        ],
+        [
+          "electronics",
+          3
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ],
+        [
+          "welding_standard",
+          10
+        ]
+      ]
+    }
+  }
+}
+```
+

@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→scroll_spell_lightning
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：scroll_spell_lightning|http://cdda.aloxaf.cn/search?q=scroll_spell_lightning]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "scroll_spell_lightning",
+  "copy-from": "scroll_magic_base",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "Pattern Scroll (Shockstorm)",
+    "str_pl": "Pattern Scrolls (Shockstorm)"
+  },
+  "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you, with close enemies taking double damage.\"",
+  "price": "3000 USD",
+  "price_postapoc": "100 USD",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_pattern_shockstorm",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "scroll_spell_lightning",
+  "copy-from": "scroll_magic_base",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "彩纹绘卷（冲击波）",
+    "str_pl": "彩纹绘卷（冲击波）"
+  },
+  "description": "这是一幅在纸上写有华丽图案的卷轴，描绘了奇怪的几何图案，其顺序不自然。激活它来探索它的秘密。（记得系上“施法”键！）\n“这个法术会在你周围发出闪电，近身敌人受到双倍伤害。”",
+  "price": "3000 USD",
+  "price_postapoc": "100 USD",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_pattern_shockstorm",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+

@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→nocturne_sstrike
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：nocturne_sstrike|http://cdda.aloxaf.cn/search?q=nocturne_sstrike]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "nocturne_sstrike",
+  "move_cost": 250,
+  "blockable": false,
+  "dodgeable": false,
+  "no_adjacent": true,
+  "range": 5,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 4,
+      "armor_penetration": 999
+    }
+  ],
+  "body_parts": [
+    [
+      "head",
+      1
+    ]
+  ],
+  "effects": [
+    {
+      "id": "blind",
+      "duration": 2
+    }
+  ],
+  "hit_dmg_u": "A shadow emerges from %1$s and scratches you!",
+  "hit_dmg_npc": "%1$s shadowstrikes <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to scratch you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to scratch <npcname>, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "nocturne_sstrike",
+  "move_cost": 250,
+  "blockable": false,
+  "dodgeable": false,
+  "no_adjacent": true,
+  "range": 5,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 4,
+      "armor_penetration": 999
+    }
+  ],
+  "body_parts": [
+    [
+      "head",
+      1
+    ]
+  ],
+  "effects": [
+    {
+      "id": "blind",
+      "duration": 2
+    }
+  ],
+  "hit_dmg_u": "%1$s出现了一个阴影，划伤了你！",
+  "hit_dmg_npc": "%1$s shadowstrikes <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to scratch you，but fails to penetrate your armor！",
+  "no_dmg_msg_npc": "%1$s tries to scratch <npcname>，but fails to penetrate their armor！"
+}
+```
+

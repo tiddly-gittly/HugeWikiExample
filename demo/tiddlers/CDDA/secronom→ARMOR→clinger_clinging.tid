@@ -1,0 +1,187 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom
+title: secronom→ARMOR→clinger_clinging
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：clinger_clinging|http://cdda.aloxaf.cn/search?q=clinger_clinging]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_monitem.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Maximum of 2 clingers clinging on player's feet.",
+  "id": "clinger_clinging",
+  "type": "ARMOR",
+  "name": {
+    "str": "<color_magenta>clinger</color>"
+  },
+  "description": "A filthy rotten creature that greatly hampers your reflexes. Activate to pull it off.",
+  "weight": "1300 g",
+  "volume": "500 ml",
+  "price": "0 cent",
+  "to_hit": -1,
+  "bashing": 1,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨨",
+  "color": "yellow",
+  "armor": [
+    {
+      "encumbrance": 40,
+      "coverage": 100,
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ],
+      "material": [
+        "flesh"
+      ],
+      "material_thickness": 1,
+      "environmental_protection": 0
+    }
+  ],
+  "warmth": 0,
+  "use_action": {
+    "type": "countdown",
+    "name": "Pull it off",
+    "message": "You start pulling the clinger off of you."
+  },
+  "countdown_interval": 6,
+  "countdown_destroy": true,
+  "countdown_action": {
+    "type": "place_monster",
+    "monster_id": "mon_zombie_cling",
+    "difficulty": 999,
+    "hostile_msg": "The clinger detaches!",
+    "friendly_msg": "How the turntables...",
+    "place_randomly": true,
+    "skills": [
+      "dodge",
+      "unarmed"
+    ],
+    "moves": 125
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "MOVE_COST",
+            "add": 25
+          },
+          {
+            "value": "DEXTERITY",
+            "add": -2
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "PERSONAL",
+    "FRAGILE",
+    "BELTED",
+    "NO_DROP",
+    "NO_TAKEOFF"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Maximum of 2 clingers clinging on player's feet.",
+  "id": "clinger_clinging",
+  "type": "ARMOR",
+  "name": {
+    "str": "<color_magenta>黏着物</color>"
+  },
+  "description": "一个严重阻碍你的反应神经的肮脏腐烂的生物。激活以将其拔除。",
+  "weight": "1300 g",
+  "volume": "500 ml",
+  "price": "0 cent",
+  "to_hit": -1,
+  "bashing": 1,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨨",
+  "color": "yellow",
+  "armor": [
+    {
+      "encumbrance": 40,
+      "coverage": 100,
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ],
+      "material": [
+        "flesh"
+      ],
+      "material_thickness": 1,
+      "environmental_protection": 0
+    }
+  ],
+  "warmth": 0,
+  "use_action": {
+    "type": "countdown",
+    "name": "Pull it off",
+    "message": "你开始拔除黏着物"
+  },
+  "countdown_interval": 6,
+  "countdown_destroy": true,
+  "countdown_action": {
+    "type": "place_monster",
+    "monster_id": "mon_zombie_cling",
+    "difficulty": 999,
+    "hostile_msg": "The clinger detaches!",
+    "friendly_msg": "How the turntables...",
+    "place_randomly": true,
+    "skills": [
+      "dodge",
+      "unarmed"
+    ],
+    "moves": 125
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "MOVE_COST",
+            "add": 25
+          },
+          {
+            "value": "DEXTERITY",
+            "add": -2
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "PERSONAL",
+    "FRAGILE",
+    "BELTED",
+    "NO_DROP",
+    "NO_TAKEOFF"
+  ]
+}
+```
+

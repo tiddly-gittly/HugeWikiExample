@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→t4_elem_firewall
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t4_elem_firewall|http://cdda.aloxaf.cn/search?q=t4_elem_firewall]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/Profane_Conjurer/v_elem_T4.json
+
+
+!! 原文
+
+```json
+{
+  "id": "t4_elem_firewall",
+  "type": "SPELL",
+  "name": {
+    "str": "Fire Wall"
+  },
+  "description": "Surrounds the foe inside a blazing wall of flames.\n* Creates fire fields outside the aoe range.\n\nThis is a <color_light_red>tier 4</color> spell.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "base_energy_cost": 500,
+  "final_energy_cost": 200,
+  "energy_source": "MANA",
+  "spell_class": "VAMP_ELEM_spellcaster",
+  "difficulty": 4,
+  "max_level": 5,
+  "min_range": 15,
+  "max_range": 15,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "aoe_increment": -0.3,
+  "field_id": "fd_firewall",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS"
+  ],
+  "base_casting_time": 250,
+  "damage_type": "heat"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "t4_elem_firewall",
+  "type": "SPELL",
+  "name": {
+    "str": "火焰之墙"
+  },
+  "description": "围绕在燃烧的火焰墙内的敌人。\n *在aoe范围外制造火场。\n\n这是一个<color_light_red>四级</color>法术。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "base_energy_cost": 500,
+  "final_energy_cost": 200,
+  "energy_source": "MANA",
+  "spell_class": "VAMP_ELEM_spellcaster",
+  "difficulty": 4,
+  "max_level": 5,
+  "min_range": 15,
+  "max_range": 15,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "aoe_increment": -0.3,
+  "field_id": "fd_firewall",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS"
+  ],
+  "base_casting_time": 250,
+  "damage_type": "heat"
+}
+```
+

@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: furniture Arcana
+title: Arcana→furniture→f_transmutation_crucible_deployed
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_transmutation_crucible_deployed|http://cdda.aloxaf.cn/search?q=f_transmutation_crucible_deployed]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_transmutation_crucible_deployed",
+  "name": "deployed transmutation crucible",
+  "description": "Shifting, flowing stones slithering around a strange stone crucible.  Serves as an anvil and crucible for metalworking, along with serving as a workbench and assisting with alchemy.  Can be reclaimed by examining it.\n\nProvides the following:\n* Level 3 anvil quality.\n* Level 2 boiling quality.\n* Level 2 chemical making quality.\n* Level 1 containing quality.\n* Level 1 food cooking quality.\n* Level 2 clean surface quality.\n* Additionally serves as a crucible.",
+  "symbol": "n",
+  "color": "dark_gray",
+  "looks_like": "f_slab",
+  "move_cost_mod": 2,
+  "coverage": 30,
+  "required_str": 12,
+  "crafting_pseudo_item": "transmutation_crucible_deployed_fake",
+  "flags": [
+    "PLACE_ITEM",
+    "BLOCKSDOOR",
+    "TRANSPARENT",
+    "ALLOW_FIELD_EFFECT",
+    "MOUNTABLE",
+    "SHORT",
+    "MINEABLE",
+    "FLAT_SURF"
+  ],
+  "deployed_item": "transmutation_crucible",
+  "bash": {
+    "str_min": 20,
+    "str_max": 40,
+    "sound": "smash!",
+    "sound_fail": "thump.",
+    "items": [
+      {
+        "item": "transmutation_crucible",
+        "prob": 75
+      },
+      {
+        "item": "rock",
+        "count": [
+          2,
+          7
+        ]
+      }
+    ]
+  },
+  "examine_action": "workbench",
+  "workbench": {
+    "multiplier": 1.05,
+    "mass": 500000,
+    "volume": "500L"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_transmutation_crucible_deployed",
+  "name": "变形坩埚",
+  "description": "流动的石头在奇怪的石头坩埚周围滑动。用作金属加工的铁砧和坩埚，以及工作台和炼金术辅助。可以通过检查回收。\n\n提供以下内容：\n*3级铁砧质量。\n*二级沸腾质量。\n*二级化学品制造质量。\n*包含质量的1级。\n*1级食品烹饪质量。\n*2级清洁表面质量。\n*还用作坩埚。",
+  "symbol": "n",
+  "color": "dark_gray",
+  "looks_like": "f_slab",
+  "move_cost_mod": 2,
+  "coverage": 30,
+  "required_str": 12,
+  "crafting_pseudo_item": "transmutation_crucible_deployed_fake",
+  "flags": [
+    "PLACE_ITEM",
+    "BLOCKSDOOR",
+    "TRANSPARENT",
+    "ALLOW_FIELD_EFFECT",
+    "MOUNTABLE",
+    "SHORT",
+    "MINEABLE",
+    "FLAT_SURF"
+  ],
+  "deployed_item": "transmutation_crucible",
+  "bash": {
+    "str_min": 20,
+    "str_max": 40,
+    "sound": "smash!",
+    "sound_fail": "thump.",
+    "items": [
+      {
+        "item": "transmutation_crucible",
+        "prob": 75
+      },
+      {
+        "item": "rock",
+        "count": [
+          2,
+          7
+        ]
+      }
+    ]
+  },
+  "examine_action": "workbench",
+  "workbench": {
+    "multiplier": 1.05,
+    "mass": 500000,
+    "volume": "500L"
+  }
+}
+```
+

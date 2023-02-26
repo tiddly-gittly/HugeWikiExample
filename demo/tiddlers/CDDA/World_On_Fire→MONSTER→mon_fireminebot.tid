@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_fireminebot
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_fireminebot|http://cdda.aloxaf.cn/search?q=mon_fireminebot]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_fireminebot",
+  "type": "MONSTER",
+  "name": {
+    "str": "incendiary skitterbot"
+  },
+  "description": "A insectoid robot the size of a small dog, designed for firey entries. Primed with a small beeping sound, it can skate across the ground with great speed.",
+  "default_faction": "military",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 2,
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 50,
+  "speed": 130,
+  "material": [
+    "steel"
+  ],
+  "symbol": "r",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "armor_bash": 12,
+  "armor_cut": 12,
+  "armor_bullet": 12,
+  "vision_day": 50,
+  "revert_to_itype": "bot_fireminebot",
+  "path_settings": {
+    "max_dist": 5
+  },
+  "starting_ammo": {
+    "grenade_inc": 1
+  },
+  "special_attacks": [
+    [
+      "KAMIKAZE",
+      0
+    ]
+  ],
+  "death_function": {
+    "effect": {
+      "id": "death_conflagration",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE",
+    "message": "A %s explodes!"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "ELECTRONIC",
+    "NO_BREATHE",
+    "PATH_AVOID_DANGER_1"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_fireminebot",
+  "type": "MONSTER",
+  "name": {
+    "str": "掠行纵火机器人"
+  },
+  "description": "一台小狗大小的昆虫机器人，能够爆炸出巨大的火球。启动后会发出哔哔的响声，并且能够以极快的速度滑过地面。",
+  "default_faction": "military",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 2,
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 50,
+  "speed": 130,
+  "material": [
+    "steel"
+  ],
+  "symbol": "r",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "armor_bash": 12,
+  "armor_cut": 12,
+  "armor_bullet": 12,
+  "vision_day": 50,
+  "revert_to_itype": "bot_fireminebot",
+  "path_settings": {
+    "max_dist": 5
+  },
+  "starting_ammo": {
+    "grenade_inc": 1
+  },
+  "special_attacks": [
+    [
+      "KAMIKAZE",
+      0
+    ]
+  ],
+  "death_function": {
+    "effect": {
+      "id": "death_conflagration",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE",
+    "message": "A %s explodes!"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "ELECTRONIC",
+    "NO_BREATHE",
+    "PATH_AVOID_DANGER_1"
+  ]
+}
+```
+

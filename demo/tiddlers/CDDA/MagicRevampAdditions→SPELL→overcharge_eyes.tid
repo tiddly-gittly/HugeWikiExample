@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→overcharge_eyes
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：overcharge_eyes|http://cdda.aloxaf.cn/search?q=overcharge_eyes]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/technomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "overcharge_eyes",
+  "type": "SPELL",
+  "name": {
+    "str": "Optical Sneeze Beam"
+  },
+  "description": "You overcharge your internal batteries to send a semi-directed beam from your face.  The inventor of this spell must have had some weird sense of humor.",
+  "message": "You overcharge your bionic energy through what ley lines you have left, and channel it through the center of your face.",
+  "sound_description": "bzzzzzzt!",
+  "sound_ambient": true,
+  "effect": "attack",
+  "shape": "cone",
+  "extra_effects": [
+    {
+      "id": "overcharge_burn",
+      "hit_self": true
+    }
+  ],
+  "min_damage": 90,
+  "damage_increment": 5,
+  "max_damage": 300,
+  "min_range": 8,
+  "range_increment": 0.35,
+  "max_range": 30,
+  "min_aoe": 10,
+  "aoe_increment": 0.17,
+  "max_aoe": 22,
+  "base_energy_cost": 500,
+  "final_energy_cost": 500,
+  "spell_class": "TECHNOMANCER",
+  "energy_source": "BIONIC",
+  "damage_type": "cut",
+  "difficulty": 1,
+  "max_level": 45,
+  "base_casting_time": 120,
+  "final_casting_time": 120,
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "LOUD",
+    "VERBAL",
+    "NO_HANDS",
+    "NO_LEGS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "overcharge_eyes",
+  "type": "SPELL",
+  "name": {
+    "str": "喷嚏激光术"
+  },
+  "description": "你将体内的生化电池过载，从你的脸上射出半定向的激光光束。这个法术的发明者一定有某种诡异的幽默感。",
+  "message": "你将体内的生化能量过载并导入你仅余的灵脉中，并将其导引至脸部射出。",
+  "sound_description": "bzzzzzzt!",
+  "sound_ambient": true,
+  "effect": "attack",
+  "shape": "cone",
+  "extra_effects": [
+    {
+      "id": "overcharge_burn",
+      "hit_self": true
+    }
+  ],
+  "min_damage": 90,
+  "damage_increment": 5,
+  "max_damage": 300,
+  "min_range": 8,
+  "range_increment": 0.35,
+  "max_range": 30,
+  "min_aoe": 10,
+  "aoe_increment": 0.17,
+  "max_aoe": 22,
+  "base_energy_cost": 500,
+  "final_energy_cost": 500,
+  "spell_class": "TECHNOMANCER",
+  "energy_source": "BIONIC",
+  "damage_type": "cut",
+  "difficulty": 1,
+  "max_level": 45,
+  "base_casting_time": 120,
+  "final_casting_time": 120,
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "LOUD",
+    "VERBAL",
+    "NO_HANDS",
+    "NO_LEGS"
+  ]
+}
+```
+

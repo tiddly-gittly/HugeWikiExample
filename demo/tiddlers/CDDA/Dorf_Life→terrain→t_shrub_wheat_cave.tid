@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: terrain Dorf_Life
+title: Dorf_Life→terrain→t_shrub_wheat_cave
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_shrub_wheat_cave|http://cdda.aloxaf.cn/search?q=t_shrub_wheat_cave]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/cave_terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_shrub_wheat_cave",
+  "name": "patch of cloudy brush",
+  "description": "A patch of upright stalks covered in fluffy, cotton-like clumps.",
+  "looks_like": "t_underbrush",
+  "symbol": "#",
+  "color": [
+    "brown_green",
+    "white_green",
+    "white_green",
+    "brown_green"
+  ],
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT"
+  ],
+  "transforms_into": "t_shrub_wheat_cave_harvested",
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "id": "wheat_cave_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "ter_set": "t_moss_underground",
+    "items": [
+      {
+        "item": "straw_pile",
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_shrub_wheat_cave",
+  "name": "一大片云朵蘑菇丛",
+  "description": "一丛直立的菌柄，上面长着蓬松的棉花状的球。",
+  "looks_like": "t_underbrush",
+  "symbol": "#",
+  "color": [
+    "brown_green",
+    "white_green",
+    "white_green",
+    "brown_green"
+  ],
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT"
+  ],
+  "transforms_into": "t_shrub_wheat_cave_harvested",
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "id": "wheat_cave_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "ter_set": "t_moss_underground",
+    "items": [
+      {
+        "item": "straw_pile",
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

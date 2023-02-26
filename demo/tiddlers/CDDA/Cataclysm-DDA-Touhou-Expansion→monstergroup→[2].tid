@@ -1,0 +1,1047 @@
+creator: 林一二
+revision: 0
+tags: monstergroup Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→monstergroup→[2]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monstergroups/wilderness.json
+
+
+!! 原文
+
+```json
+{
+  "name": "GROUP_PARK_ANIMAL",
+  "type": "monstergroup",
+  "//": "Current SPRING first DAY count is 425.  Note that 'freq' units are tenth of a percent, with default filling in the gap.",
+  "is_animal": true,
+  "monsters": [
+    {
+      "monster": "mon_null",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_crow",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_raven",
+      "weight": 45,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_crow_mutant_small",
+      "weight": 25,
+      "cost_multiplier": 2
+    },
+    {
+      "monster": "mon_pigeon",
+      "weight": 50,
+      "cost_multiplier": 0,
+      "pack_size": [
+        1,
+        3
+      ],
+      "conditions": [
+        "DAWN",
+        "DUSK",
+        "DAY",
+        "SPRING",
+        "SUMMER",
+        "AUTUMN"
+      ]
+    },
+    {
+      "monster": "mon_pigeon",
+      "weight": 15,
+      "cost_multiplier": 0,
+      "pack_size": [
+        1,
+        3
+      ],
+      "conditions": [
+        "DAWN",
+        "DUSK",
+        "DAY",
+        "WINTER"
+      ]
+    },
+    {
+      "monster": "mon_bluejay",
+      "weight": 25,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_cardinal",
+      "weight": 25,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_robin",
+      "weight": 35,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_sparrow",
+      "weight": 25,
+      "cost_multiplier": 0
+    },
+    {
+      "group": "GROUP_STRAY_CATS",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_chipmunk",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_fox_red",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_rabbit",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_squirrel",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_squirrel_red",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_mantis_small",
+      "weight": 5,
+      "cost_multiplier": 10
+    },
+    {
+      "monster": "mon_lady_bug",
+      "weight": 8,
+      "cost_multiplier": 10
+    },
+    {
+      "monster": "mon_lady_bug_giant",
+      "weight": 8,
+      "cost_multiplier": 10,
+      "starts": "15 days"
+    },
+    {
+      "monster": "mon_aphid",
+      "weight": 20,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_grasshopper_small",
+      "weight": 30,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_antlion_larva",
+      "weight": 7,
+      "cost_multiplier": 10
+    },
+    {
+      "monster": "mon_antlion_giant",
+      "weight": 5,
+      "cost_multiplier": 10
+    },
+    {
+      "monster": "mon_hummingbird",
+      "weight": 25,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_woodpecker",
+      "weight": 25,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_icadyptes",
+      "weight": 25,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_pederpes",
+      "weight": 35,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_meganeura",
+      "weight": 25,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_dodo",
+      "weight": 25,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_ectopistes",
+      "weight": 25,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_thylacine",
+      "weight": 50,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_weigeltisaurus",
+      "weight": 25,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_lystrosaurus",
+      "weight": 50,
+      "pack_size": [
+        1,
+        3
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_jackalope",
+      "weight": 50,
+      "cost_multiplier": 0,
+      "starts": "2 days"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_STRAY_DOGS",
+  "type": "monstergroup",
+  "default": "mon_dog",
+  "monsters": [
+    {
+      "group": "GROUP_PET_DOGS",
+      "weight": 65,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_dog_mutant_mongrel",
+      "weight": 5,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_thylacine",
+      "weight": 10,
+      "cost_multiplier": 0,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_pristerognathus",
+      "weight": 10,
+      "cost_multiplier": 0,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_viatkogorgon",
+      "weight": 20,
+      "cost_multiplier": 0,
+      "starts": "2 days",
+      "conditions": [
+        "DUSK",
+        "NIGHT"
+      ]
+    },
+    {
+      "monster": "mon_chupacabra",
+      "weight": 10,
+      "cost_multiplier": 0,
+      "starts": "2 days"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_SAFE",
+  "type": "monstergroup",
+  "is_safe": true,
+  "is_animal": true,
+  "monsters": [
+    {
+      "monster": "mon_null",
+      "weight": 200
+    },
+    {
+      "monster": "mon_bat",
+      "weight": 10
+    },
+    {
+      "monster": "mon_bobcat",
+      "weight": 10
+    },
+    {
+      "monster": "mon_chicken",
+      "weight": 10
+    },
+    {
+      "monster": "mon_chipmunk",
+      "weight": 10
+    },
+    {
+      "monster": "mon_crow",
+      "weight": 10
+    },
+    {
+      "monster": "mon_raven",
+      "weight": 10
+    },
+    {
+      "monster": "mon_bluejay",
+      "weight": 5
+    },
+    {
+      "monster": "mon_cardinal",
+      "weight": 5
+    },
+    {
+      "monster": "mon_sparrow",
+      "weight": 10
+    },
+    {
+      "monster": "mon_robin",
+      "weight": 10
+    },
+    {
+      "monster": "mon_pigeon",
+      "weight": 10
+    },
+    {
+      "monster": "mon_deer",
+      "weight": 10
+    },
+    {
+      "monster": "mon_duck",
+      "weight": 10
+    },
+    {
+      "group": "GROUP_STRAY_CATS",
+      "weight": 10
+    },
+    {
+      "group": "GROUP_STRAY_DOGS",
+      "weight": 10
+    },
+    {
+      "monster": "mon_fox_gray",
+      "weight": 10
+    },
+    {
+      "monster": "mon_fox_red",
+      "weight": 10
+    },
+    {
+      "monster": "mon_goose_canadian",
+      "weight": 10
+    },
+    {
+      "monster": "mon_groundhog",
+      "weight": 10
+    },
+    {
+      "monster": "mon_hare",
+      "weight": 10
+    },
+    {
+      "monster": "mon_rabbit",
+      "weight": 10
+    },
+    {
+      "monster": "mon_squirrel_red",
+      "weight": 10
+    },
+    {
+      "monster": "mon_weasel",
+      "weight": 10
+    },
+    {
+      "monster": "mon_turkey",
+      "weight": 10
+    },
+    {
+      "monster": "mon_raccoon",
+      "weight": 10
+    },
+    {
+      "monster": "mon_opossum",
+      "weight": 10
+    },
+    {
+      "monster": "mon_sewer_rat",
+      "weight": 10
+    },
+    {
+      "monster": "mon_black_rat",
+      "weight": 10
+    },
+    {
+      "monster": "mon_rattlesnake",
+      "weight": 10
+    },
+    {
+      "monster": "mon_cow",
+      "weight": 10
+    },
+    {
+      "monster": "mon_horse",
+      "weight": 10
+    },
+    {
+      "monster": "mon_pig",
+      "weight": 10
+    },
+    {
+      "monster": "mon_sheep",
+      "weight": 10
+    },
+    {
+      "monster": "mon_goat",
+      "weight": 10
+    },
+    {
+      "monster": "mon_lemming",
+      "weight": 10
+    },
+    {
+      "monster": "mon_goose",
+      "weight": 10
+    },
+    {
+      "monster": "mon_goose_golden",
+      "weight": 1
+    },
+    {
+      "monster": "mon_llama",
+      "weight": 10
+    },
+    {
+      "monster": "mon_woodlouse",
+      "weight": 10
+    },
+    {
+      "monster": "mon_cicada_nymph",
+      "weight": 10
+    },
+    {
+      "monster": "mon_cotylorhynchus",
+      "weight": 15,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_dodo",
+      "weight": 75,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_ectopistes",
+      "weight": 50,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_icadyptes",
+      "weight": 35,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_lystrosaurus",
+      "weight": 35,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_moa",
+      "weight": 35,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_moschorhinus",
+      "weight": 10,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_pristerognathus",
+      "weight": 10,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_scutosaurus",
+      "weight": 25,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_thylacine",
+      "weight": 10,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_weigeltisaurus",
+      "weight": 50,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_jackalope",
+      "weight": 35,
+      "starts": "2 days"
+    }
+  ],
+  "//": "Same as GROUP_SAFE, increases overall spawning and adds the last monsters, seems like the extend field is not yet implemented"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_EGG_ANOMALOCARIS",
+  "type": "monstergroup",
+  "monsters": [
+    {
+      "monster": "mon_anomalocaris_baby"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_WILDLIFE_AQUATIC_ALL",
+  "type": "monstergroup",
+  "monsters": [
+    {
+      "monster": "mon_aegirocassis",
+      "weight": 100,
+      "pack_size": [
+        1,
+        1
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_anomalocaris",
+      "weight": 65,
+      "pack_size": [
+        2,
+        4
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_chasmataspis",
+      "weight": 100,
+      "pack_size": [
+        1,
+        3
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_eusarcana",
+      "weight": 100,
+      "pack_size": [
+        2,
+        3
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_hurdia",
+      "weight": 100,
+      "pack_size": [
+        3,
+        9
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_jaekelopterus",
+      "weight": 100,
+      "pack_size": [
+        1,
+        3
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_megalograptus",
+      "weight": 100,
+      "pack_size": [
+        2,
+        6
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_opabinia",
+      "weight": 100,
+      "pack_size": [
+        3,
+        9
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_pambdelurion",
+      "weight": 100,
+      "pack_size": [
+        4,
+        8
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_sidneyia",
+      "weight": 100,
+      "pack_size": [
+        3,
+        9
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_holoptychius",
+      "weight": 100,
+      "pack_size": [
+        2,
+        3
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_coccosteus",
+      "weight": 100,
+      "pack_size": [
+        2,
+        3
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_dipterus",
+      "weight": 100,
+      "pack_size": [
+        2,
+        3
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_dunkleosteus",
+      "weight": 100,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_lamprey",
+      "weight": 100,
+      "pack_size": [
+        3,
+        5
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_megamastax",
+      "weight": 100,
+      "pack_size": [
+        2,
+        3
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_saurichthys",
+      "weight": 100,
+      "pack_size": [
+        1,
+        3
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_agoniatites",
+      "weight": 100,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_cleoniceras",
+      "weight": 100,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_endoceras",
+      "weight": 100,
+      "pack_size": [
+        2,
+        4
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_michelinoceras",
+      "weight": 100,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_paracoroniceras",
+      "weight": 100,
+      "pack_size": [
+        2,
+        4
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_parapuzosia",
+      "weight": 100,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_ichthyosaurus",
+      "weight": 50,
+      "pack_size": [
+        1,
+        1
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_plesiosaurus",
+      "weight": 50,
+      "pack_size": [
+        1,
+        1
+      ],
+      "starts": "2 days"
+    }
+  ],
+  "//": "All things that live IN water should go here, more for listing than for spawning purposes"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_MIB",
+  "type": "monstergroup",
+  "monsters": [
+    {
+      "monster": "mon_mib",
+      "weight": 100
+    },
+    {
+      "monster": "mon_mib2",
+      "weight": 100
+    },
+    {
+      "monster": "mon_mib3",
+      "weight": 100
+    },
+    {
+      "monster": "mon_mib4",
+      "weight": 100
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_PARK_ANIMAL",
+  "type": "monstergroup",
+  "//": "Current SPRING first DAY count is 425.  Note that 'freq' units are tenth of a percent, with default filling in the gap.",
+  "is_animal": true,
+  "monsters": [
+    {
+      "monster": "mon_null",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_crow",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_raven",
+      "weight": 45,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_crow_mutant_small",
+      "weight": 25,
+      "cost_multiplier": 2
+    },
+    {
+      "monster": "mon_pigeon",
+      "weight": 50,
+      "cost_multiplier": 0,
+      "pack_size": [
+        1,
+        3
+      ],
+      "conditions": [
+        "DAWN",
+        "DUSK",
+        "DAY",
+        "SPRING",
+        "SUMMER",
+        "AUTUMN"
+      ]
+    },
+    {
+      "monster": "mon_pigeon",
+      "weight": 15,
+      "cost_multiplier": 0,
+      "pack_size": [
+        1,
+        3
+      ],
+      "conditions": [
+        "DAWN",
+        "DUSK",
+        "DAY",
+        "WINTER"
+      ]
+    },
+    {
+      "monster": "mon_bluejay",
+      "weight": 25,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_cardinal",
+      "weight": 25,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_robin",
+      "weight": 35,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_sparrow",
+      "weight": 25,
+      "cost_multiplier": 0
+    },
+    {
+      "group": "GROUP_STRAY_CATS",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_chipmunk",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_fox_red",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_rabbit",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_squirrel",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_squirrel_red",
+      "weight": 50,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_mantis_small",
+      "weight": 5,
+      "cost_multiplier": 10
+    },
+    {
+      "monster": "mon_lady_bug",
+      "weight": 8,
+      "cost_multiplier": 10
+    },
+    {
+      "monster": "mon_lady_bug_giant",
+      "weight": 8,
+      "cost_multiplier": 10,
+      "starts": "15 days"
+    },
+    {
+      "monster": "mon_aphid",
+      "weight": 20,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_grasshopper_small",
+      "weight": 30,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_antlion_larva",
+      "weight": 7,
+      "cost_multiplier": 10
+    },
+    {
+      "monster": "mon_antlion_giant",
+      "weight": 5,
+      "cost_multiplier": 10
+    },
+    {
+      "monster": "mon_hummingbird",
+      "weight": 25,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_woodpecker",
+      "weight": 25,
+      "cost_multiplier": 0
+    },
+    {
+      "monster": "mon_icadyptes",
+      "weight": 25,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_pederpes",
+      "weight": 35,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_meganeura",
+      "weight": 25,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_dodo",
+      "weight": 25,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_ectopistes",
+      "weight": 25,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_thylacine",
+      "weight": 50,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_weigeltisaurus",
+      "weight": 25,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_lystrosaurus",
+      "weight": 50,
+      "pack_size": [
+        1,
+        3
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_jackalope",
+      "weight": 50,
+      "cost_multiplier": 0,
+      "starts": "2 days"
+    }
+  ]
+}
+```
+

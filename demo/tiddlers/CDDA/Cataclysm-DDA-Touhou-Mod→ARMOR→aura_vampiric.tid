@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→ARMOR→aura_vampiric
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：aura_vampiric|http://cdda.aloxaf.cn/search?q=aura_vampiric]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/items/touhou_etherealitems.json
+
+
+!! 原文
+
+```json
+{
+  "id": "aura_vampiric",
+  "type": "ARMOR",
+  "name": {
+    "str": "Vampiric aura (aura)",
+    "str_pl": "Vampiric aura (auras)"
+  },
+  "description": "Your unleashed vampiric essence.",
+  "weight": "0 g",
+  "volume": "0 ml",
+  "price_postapoc": 0,
+  "symbol": "*",
+  "color": "white",
+  "material": [
+    "magic_blood"
+  ],
+  "material_thickness": 1,
+  "armor": [
+    {
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "coverage": 0,
+      "encumbrance": [
+        0,
+        0
+      ]
+    }
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "vampiric_claw"
+          }
+        ],
+        "values": [
+          {
+            "value": "ARMOR_BASH",
+            "add": 2
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": 2
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": 4
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "add": 2
+          }
+        ],
+        "//": "ARMOR_X add +n REDUCES armor for n value, this is intended here as the aura increases melee dmg while reducing defense"
+      }
+    ]
+  },
+  "flags": [
+    "AURA",
+    "NO_TAKEOFF",
+    "NONCONDUCTIVE",
+    "ONLY_ONE",
+    "OVERSIZE",
+    "SEMITANGIBLE",
+    "TRADER_AVOID",
+    "UNARMED_WEAPON",
+    "ZERO_WEIGHT"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "aura_vampiric",
+  "type": "ARMOR",
+  "name": {
+    "str": "吸血鬼光环（光环）",
+    "str_pl": "吸血鬼光环（光环）"
+  },
+  "description": "Your unleashed vampiric essence.",
+  "weight": "0 g",
+  "volume": "0 ml",
+  "price_postapoc": 0,
+  "symbol": "*",
+  "color": "white",
+  "material": [
+    "magic_blood"
+  ],
+  "material_thickness": 1,
+  "armor": [
+    {
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "coverage": 0,
+      "encumbrance": [
+        0,
+        0
+      ]
+    }
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "vampiric_claw"
+          }
+        ],
+        "values": [
+          {
+            "value": "ARMOR_BASH",
+            "add": 2
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": 2
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": 4
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "add": 2
+          }
+        ],
+        "//": "ARMOR_X add +n REDUCES armor for n value, this is intended here as the aura increases melee dmg while reducing defense"
+      }
+    ]
+  },
+  "flags": [
+    "AURA",
+    "NO_TAKEOFF",
+    "NONCONDUCTIVE",
+    "ONLY_ONE",
+    "OVERSIZE",
+    "SEMITANGIBLE",
+    "TRADER_AVOID",
+    "UNARMED_WEAPON",
+    "ZERO_WEIGHT"
+  ]
+}
+```
+

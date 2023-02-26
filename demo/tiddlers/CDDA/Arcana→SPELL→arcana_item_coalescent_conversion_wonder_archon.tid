@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_coalescent_conversion_wonder_archon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_coalescent_conversion_wonder_archon|http://cdda.aloxaf.cn/search?q=arcana_item_coalescent_conversion_wonder_archon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_coalescent_conversion_wonder_archon",
+  "type": "SPELL",
+  "name": {
+    "str": "Coalescent Conversion Archon Rift"
+  },
+  "description": "Creates an archon rift nearby.",
+  "valid_targets": [
+    "ground"
+  ],
+  "message": "You feel a slight chill despite the heat given off by the newly-created crystal…",
+  "flags": [
+    "RANDOM_TARGET",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_range": 10,
+  "max_range": 10,
+  "field_id": "fd_archon_rift",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "min_duration": 45000,
+  "max_duration": 90000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_coalescent_conversion_wonder_archon",
+  "type": "SPELL",
+  "name": {
+    "str": "Coalescent Conversion Archon Rift"
+  },
+  "description": "Creates an archon rift nearby.",
+  "valid_targets": [
+    "ground"
+  ],
+  "message": "尽管新创造的水晶散发出热量，你还是感觉到一丝寒意…",
+  "flags": [
+    "RANDOM_TARGET",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_range": 10,
+  "max_range": 10,
+  "field_id": "fd_archon_rift",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "min_duration": 45000,
+  "max_duration": 90000
+}
+```
+

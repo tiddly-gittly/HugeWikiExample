@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_shrub_vector
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_shrub_vector|http://cdda.aloxaf.cn/search?q=t_shrub_vector]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_shrub_vector",
+  "looks_like": "t_shrub_fungal",
+  "name": "vector shrub",
+  "description": "A vague reminiscence of a shrub, with large outgrowths of branches and leaves that blooms in vector dust.",
+  "symbol": "#",
+  "color": "blue",
+  "move_cost": 8,
+  "emissions": [
+    "secro_vector_smol_seeding"
+  ],
+  "light_emitted": 3,
+  "coverage": 40,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "PLACE_ITEM",
+    "SHRUB",
+    "VECTOR",
+    "EMITTER",
+    "SHORT"
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "oof!",
+    "ter_set": "t_vector"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_shrub_vector",
+  "looks_like": "t_shrub_fungal",
+  "name": "载体灌木丛",
+  "description": "一种灌木的模糊追忆在这过度生长的枝叶中，于病毒载体尘中盛开着。",
+  "symbol": "#",
+  "color": "blue",
+  "move_cost": 8,
+  "emissions": [
+    "secro_vector_smol_seeding"
+  ],
+  "light_emitted": 3,
+  "coverage": 40,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "PLACE_ITEM",
+    "SHRUB",
+    "VECTOR",
+    "EMITTER",
+    "SHORT"
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "oof!",
+    "ter_set": "t_vector"
+  }
+}
+```
+

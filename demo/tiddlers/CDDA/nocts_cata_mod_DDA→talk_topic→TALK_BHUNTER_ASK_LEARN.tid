@@ -1,0 +1,261 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BHUNTER_ASK_LEARN
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BHUNTER_ASK_LEARN|http://cdda.aloxaf.cn/search?q=TALK_BHUNTER_ASK_LEARN]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BHUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BHUNTER_ASK_LEARN",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_effect": "evy_ousted",
+    "yes": "I was under orders to investigate this place and find any survivors.  Between that and having been a computer hacker during my college days, it wasn't too hard to follow the trail.  The hard part was scavenging supplies and staying alive.",
+    "no": "I used to be a computer hacker before the world went to hell.  After it did, when I wasn't looking for food and gear or fighting for my life, I was following leads to this place.  The military weren't all that good at keeping their secrets."
+  },
+  "responses": [
+    {
+      "text": "You seem rather well-equipped for a mere hacker.",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              {
+                "u_has_intelligence": 10
+              },
+              {
+                "u_has_perception": 10
+              }
+            ]
+          },
+          {
+            "not": {
+              "or": [
+                {
+                  "u_has_effect": "evy_ousted"
+                },
+                {
+                  "u_has_effect": "evy_asked_info_recently"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 3
+      },
+      "success": {
+        "topic": "TALK_BHUNTER_ADMIT",
+        "opinion": {
+          "trust": 1
+        },
+        "effect": {
+          "u_add_effect": "evy_ousted",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_BHUNTER_DENY",
+        "opinion": {
+          "trust": -1,
+          "anger": 1
+        },
+        "effect": {
+          "u_add_effect": "evy_asked_info_recently",
+          "duration": 1800
+        }
+      }
+    },
+    {
+      "text": "You seem rather well-equipped for a mere hacker.",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              {
+                "u_has_intelligence": 11
+              },
+              {
+                "u_has_perception": 11
+              }
+            ]
+          },
+          {
+            "not": {
+              "u_has_effect": "evy_ousted"
+            }
+          },
+          {
+            "u_has_effect": "evy_asked_info_recently"
+          }
+        ]
+      },
+      "topic": "TALK_BHUNTER_NOPE"
+    },
+    {
+      "text": "Right.  Research Directive Z-12 ring a bell to you, Hunter?",
+      "topic": "TALK_BHUNTER_CONFIRM_OUST",
+      "condition": {
+        "and": [
+          {
+            "u_has_any_trait": [
+              "SUPER_SOLDIER_MARKER"
+            ]
+          },
+          {
+            "not": {
+              "u_has_effect": "evy_ousted"
+            }
+          }
+        ]
+      },
+      "effect": {
+        "u_add_effect": "evy_ousted",
+        "duration": "PERMANENT"
+      }
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_BHUNTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BHUNTER_ASK_LEARN",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_effect": "evy_ousted",
+    "yes": "我奉命调查这个地方并找到幸存者。在大学期间，我曾是一名电脑黑客，因此追踪这些线索并不太难。最难的部分是寻找补给并活下去。",
+    "no": "在世界毁灭之前，我曾是一名电脑黑客。在那之后，当无需为生计奔波时，我就在寻找这个地点的线索。军方并不擅长保守秘密。"
+  },
+  "responses": [
+    {
+      "text": "对于黑客来说，你似乎装备得相当精良。",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              {
+                "u_has_intelligence": 10
+              },
+              {
+                "u_has_perception": 10
+              }
+            ]
+          },
+          {
+            "not": {
+              "or": [
+                {
+                  "u_has_effect": "evy_ousted"
+                },
+                {
+                  "u_has_effect": "evy_asked_info_recently"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 3
+      },
+      "success": {
+        "topic": "TALK_BHUNTER_ADMIT",
+        "opinion": {
+          "trust": 1
+        },
+        "effect": {
+          "u_add_effect": "evy_ousted",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_BHUNTER_DENY",
+        "opinion": {
+          "trust": -1,
+          "anger": 1
+        },
+        "effect": {
+          "u_add_effect": "evy_asked_info_recently",
+          "duration": 1800
+        }
+      }
+    },
+    {
+      "text": "对于黑客来说，你似乎装备得相当精良。",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              {
+                "u_has_intelligence": 11
+              },
+              {
+                "u_has_perception": 11
+              }
+            ]
+          },
+          {
+            "not": {
+              "u_has_effect": "evy_ousted"
+            }
+          },
+          {
+            "u_has_effect": "evy_asked_info_recently"
+          }
+        ]
+      },
+      "topic": "TALK_BHUNTER_NOPE"
+    },
+    {
+      "text": "正确的。研究指令Z-12对你有影响吗，猎人？",
+      "topic": "TALK_BHUNTER_CONFIRM_OUST",
+      "condition": {
+        "and": [
+          {
+            "u_has_any_trait": [
+              "SUPER_SOLDIER_MARKER"
+            ]
+          },
+          {
+            "not": {
+              "u_has_effect": "evy_ousted"
+            }
+          }
+        ]
+      },
+      "effect": {
+        "u_add_effect": "evy_ousted",
+        "duration": "PERMANENT"
+      }
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_BHUNTER"
+    }
+  ]
+}
+```
+

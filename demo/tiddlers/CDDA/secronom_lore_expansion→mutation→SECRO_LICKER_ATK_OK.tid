@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_LICKER_ATK_OK
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_LICKER_ATK_OK|http://cdda.aloxaf.cn/search?q=SECRO_LICKER_ATK_OK]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_LICKER_ATK_OK",
+  "name": {
+    "str": "Tongue Lasher"
+  },
+  "points": 4,
+  "visibility": 5,
+  "ugliness": 6,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "Due to further alteration, your tongue have become broader and has developed a set of retractable bony blades on either sides of its surface. Despite its significant improvements on senses and offensive capabilities, your conversations with other people also becomes much more difficult to handle... but find it great for terrorizing.",
+  "types": [
+    "MUZZLE"
+  ],
+  "prereqs": [
+    "SECRO_LICKER_ATK"
+  ],
+  "dodge_modifier": 0.125,
+  "hearing_modifier": 0.15,
+  "social_modifiers": {
+    "persuade": -10,
+    "lie": -10,
+    "intimidate": 10
+  },
+  "attacks": [
+    {
+      "attack_text_u": "You lick %s",
+      "attack_text_npc": "%1$s licks %2$s",
+      "body_part": "mouth",
+      "blocker_mutations": [
+        "SECRO_LICKER_ATK_THRESHOLD"
+      ],
+      "chance": 20,
+      "strength_damage": {
+        "damage_type": "cut",
+        "amount": 0.5
+      }
+    },
+    {
+      "attack_text_u": "You lashed %s with your tongue",
+      "attack_text_npc": "%1$s lashes %2$s with their tongue",
+      "body_part": "mouth",
+      "required_mutations": [
+        "SECRO_LICKER_ATK_THRESHOLD"
+      ],
+      "chance": 20,
+      "strength_damage": {
+        "damage_type": "cut",
+        "amount": 0.85
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_LICKER_ATK_OK",
+  "name": {
+    "str": "打舌器"
+  },
+  "points": 4,
+  "visibility": 5,
+  "ugliness": 6,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "由于进一步的改变，你的舌头变得更宽了，并且在它的表面两侧形成了一套可伸缩的骨刀片。尽管它在感官和攻击能力上有了显著的提高，但你与他人的对话也变得更加难以处理…但我觉得这很适合恐吓。",
+  "types": [
+    "MUZZLE"
+  ],
+  "prereqs": [
+    "SECRO_LICKER_ATK"
+  ],
+  "dodge_modifier": 0.125,
+  "hearing_modifier": 0.15,
+  "social_modifiers": {
+    "persuade": -10,
+    "lie": -10,
+    "intimidate": 10
+  },
+  "attacks": [
+    {
+      "attack_text_u": "You lick %s",
+      "attack_text_npc": "%1$s licks %2$s",
+      "body_part": "mouth",
+      "blocker_mutations": [
+        "SECRO_LICKER_ATK_THRESHOLD"
+      ],
+      "chance": 20,
+      "strength_damage": {
+        "damage_type": "cut",
+        "amount": 0.5
+      }
+    },
+    {
+      "attack_text_u": "You lashed %s with your tongue",
+      "attack_text_npc": "%1$s lashes %2$s with their tongue",
+      "body_part": "mouth",
+      "required_mutations": [
+        "SECRO_LICKER_ATK_THRESHOLD"
+      ],
+      "chance": 20,
+      "strength_damage": {
+        "damage_type": "cut",
+        "amount": 0.85
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_stinger_flute_empowered
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_stinger_flute_empowered|http://cdda.aloxaf.cn/search?q=arcana_item_stinger_flute_empowered]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_stinger_flute_empowered",
+  "name": {
+    "str": "Elusive Enhancement"
+  },
+  "description": "Spawns the item needed to make the effects work.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "A jolt of energy arcs through your body from the flute!",
+  "effect": "spawn_item",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "effect_str": "halo_flute_effect",
+  "extra_effects": [
+    {
+      "id": "arcana_item_amulet_exotic_empowered_fatigue",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 406800,
+  "max_duration": 406800
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_stinger_flute_empowered",
+  "name": {
+    "str": "诡步"
+  },
+  "description": "Spawns the item needed to make the effects work.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "一股能量从长笛中脉冲通过你的身体！",
+  "effect": "spawn_item",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "effect_str": "halo_flute_effect",
+  "extra_effects": [
+    {
+      "id": "arcana_item_amulet_exotic_empowered_fatigue",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 406800,
+  "max_duration": 406800
+}
+```
+

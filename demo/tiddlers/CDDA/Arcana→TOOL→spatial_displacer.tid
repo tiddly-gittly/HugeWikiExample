@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→spatial_displacer
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：spatial_displacer|http://cdda.aloxaf.cn/search?q=spatial_displacer]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "spatial_displacer",
+  "type": "TOOL",
+  "name": {
+    "str": "spatial displacer"
+  },
+  "description": "A cutting-edge piece of dimensional science, heavily modified to incorporate refinements from Beyond.  Using it will teleport you to a targeted location, a vast improvement over the uncertainty of previous devices, even destroying any obstacles that would make emergence unsafe.  However, using it might unwanted attention from things that do not belong in this world…",
+  "weight": "1360 g",
+  "volume": "2 L",
+  "price": "9000 USD",
+  "price_postapoc": "15 USD",
+  "to_hit": -1,
+  "bashing": 4,
+  "material": [
+    "steel"
+  ],
+  "looks_like": "teleporter",
+  "symbol": ";",
+  "color": "magenta",
+  "ammo": [
+    "essence_type"
+  ],
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "essence_type": 20
+      },
+      "rigid": true
+    }
+  ],
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_spatial_displacement",
+      "no_fail": true,
+      "level": 0
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "spatial_displacer",
+  "type": "TOOL",
+  "name": {
+    "str": "空间置换器"
+  },
+  "description": "一个最前沿的空间科学，经过大量修改，融入了来自异界的改进。使用它可以将你传送到一个目标位置，相比于以前的设备的不确定性有了很大的改善，甚至可以摧毁任何目标地点上导致传送不安全的障碍。然而，使用它可能会引起一些不属于这个世界的事物的不必要的注意…",
+  "weight": "1360 g",
+  "volume": "2 L",
+  "price": "9000 USD",
+  "price_postapoc": "15 USD",
+  "to_hit": -1,
+  "bashing": 4,
+  "material": [
+    "steel"
+  ],
+  "looks_like": "teleporter",
+  "symbol": ";",
+  "color": "magenta",
+  "ammo": [
+    "essence_type"
+  ],
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "essence_type": 20
+      },
+      "rigid": true
+    }
+  ],
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_spatial_displacement",
+      "no_fail": true,
+      "level": 0
+    }
+  ]
+}
+```
+

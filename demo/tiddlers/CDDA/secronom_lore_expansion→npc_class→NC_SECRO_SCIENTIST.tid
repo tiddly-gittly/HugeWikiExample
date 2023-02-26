@@ -1,0 +1,201 @@
+creator: 林一二
+revision: 0
+tags: npc_class secronom_lore_expansion
+title: secronom_lore_expansion→npc_class→NC_SECRO_SCIENTIST
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：NC_SECRO_SCIENTIST|http://cdda.aloxaf.cn/search?q=NC_SECRO_SCIENTIST]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/secro_npc_classes_facs.json
+
+
+!! 原文
+
+```json
+{
+  "type": "npc_class",
+  "id": "NC_SECRO_SCIENTIST",
+  "name": {
+    "str": "Secronom Scientist"
+  },
+  "job_description": "I'm one of the mfs who made secronom and shit.",
+  "traits": [
+    {
+      "group": "NPC_starting_traits"
+    },
+    {
+      "group": "Appearance_demographics"
+    }
+  ],
+  "bonus_str": {
+    "rng": [
+      -1,
+      -3
+    ]
+  },
+  "bonus_dex": {
+    "rng": [
+      -1,
+      0
+    ]
+  },
+  "bonus_int": {
+    "rng": [
+      2,
+      5
+    ]
+  },
+  "weapon_override": "EMPTY_GROUP",
+  "skills": [
+    {
+      "skill": "ALL",
+      "level": {
+        "mul": [
+          {
+            "one_in": 3
+          },
+          {
+            "sum": [
+              {
+                "dice": [
+                  2,
+                  2
+                ]
+              },
+              {
+                "constant": -4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "skill": "computer",
+      "bonus": {
+        "rng": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "electronics",
+      "bonus": {
+        "rng": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "firstaid",
+      "bonus": {
+        "rng": [
+          1,
+          4
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "npc_class",
+  "id": "NC_SECRO_SCIENTIST",
+  "name": {
+    "str": "Secronom Scientist"
+  },
+  "job_description": "I'm one of the mfs who made secronom and shit.",
+  "traits": [
+    {
+      "group": "NPC_starting_traits"
+    },
+    {
+      "group": "Appearance_demographics"
+    }
+  ],
+  "bonus_str": {
+    "rng": [
+      -1,
+      -3
+    ]
+  },
+  "bonus_dex": {
+    "rng": [
+      -1,
+      0
+    ]
+  },
+  "bonus_int": {
+    "rng": [
+      2,
+      5
+    ]
+  },
+  "weapon_override": "EMPTY_GROUP",
+  "skills": [
+    {
+      "skill": "ALL",
+      "level": {
+        "mul": [
+          {
+            "one_in": 3
+          },
+          {
+            "sum": [
+              {
+                "dice": [
+                  2,
+                  2
+                ]
+              },
+              {
+                "constant": -4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "skill": "computer",
+      "bonus": {
+        "rng": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "electronics",
+      "bonus": {
+        "rng": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "firstaid",
+      "bonus": {
+        "rng": [
+          1,
+          4
+        ]
+      }
+    }
+  ]
+}
+```
+

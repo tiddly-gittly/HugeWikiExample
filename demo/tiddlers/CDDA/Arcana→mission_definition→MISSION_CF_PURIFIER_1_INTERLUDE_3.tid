@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_PURIFIER_1_INTERLUDE_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_PURIFIER_1_INTERLUDE_3|http://cdda.aloxaf.cn/search?q=MISSION_CF_PURIFIER_1_INTERLUDE_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_PURIFIER_1_INTERLUDE_3",
+  "type": "mission_definition",
+  "name": {
+    "str": "Investigate Research Material Transport Site"
+  },
+  "description": "Investigate the location known to be used for organizing the transportation of items from local science labs, which may have the documents Nicholas is looking for.  Additionally, bring a t-substrate sample back to Hub 01.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 5,
+  "has_generic_rewards": false,
+  "item": "sample_t_substrate",
+  "value": 10000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "arcana_warehouse_lab",
+      "om_special": "Lab_arcana_warehouse",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    },
+    "effect": [
+      {
+        "npc_add_var": "nicholas_mission_2_mid",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
+    "offer": "Seeing this is probably a bug.",
+    "accepted": "Seeing this is probably a bug.",
+    "rejected": "Seeing this is probably a bug.",
+    "advice": "Seeing this is probably a bug.",
+    "inquire": "Did you find it?",
+    "success": "Good.  Here is your payment.",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "u_buy_item": "RobofacCoin",
+        "count": 1
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_PURIFIER_1_INTERLUDE_3",
+  "type": "mission_definition",
+  "name": {
+    "str": "Investigate Research Material Transport Site"
+  },
+  "description": "Investigate the location known to be used for organizing the transportation of items from local science labs, which may have the documents Nicholas is looking for.  Additionally, bring a t-substrate sample back to Hub 01.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 5,
+  "has_generic_rewards": false,
+  "item": "sample_t_substrate",
+  "value": 10000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "arcana_warehouse_lab",
+      "om_special": "Lab_arcana_warehouse",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    },
+    "effect": [
+      {
+        "npc_add_var": "nicholas_mission_2_mid",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
+    "offer": "Seeing this is probably a bug.",
+    "accepted": "Seeing this is probably a bug.",
+    "rejected": "Seeing this is probably a bug.",
+    "advice": "Seeing this is probably a bug.",
+    "inquire": "你找到了吗？",
+    "success": "Good.  Here is your payment.",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "u_buy_item": "RobofacCoin",
+        "count": 1
+      }
+    ]
+  }
+}
+```
+

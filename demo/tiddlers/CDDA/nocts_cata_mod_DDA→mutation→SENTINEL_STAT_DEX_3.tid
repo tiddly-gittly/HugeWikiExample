@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_STAT_DEX_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_STAT_DEX_3|http://cdda.aloxaf.cn/search?q=SENTINEL_STAT_DEX_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_STAT_DEX_3",
+  "name": {
+    "str": "Sentinel Dexterity III"
+  },
+  "points": 3,
+  "description": "Your dexterity has been increased by your physical alterations, relative to your natural agility.  Dexterity +6.",
+  "valid": false,
+  "purifiable": false,
+  "cancels": [
+    "DEX_UP",
+    "DEX_UP_2",
+    "DEX_UP_3",
+    "DEX_UP_4",
+    "DEX_ALPHA"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_DEX_2",
+    "SENTINEL_PERK_DEX_3"
+  ],
+  "prereqs2": [
+    "SENTINEL_STAT_DEX_2"
+  ],
+  "changes_to": [
+    "SENTINEL_STAT_DEX_4"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "passive_mods": {
+    "dex_mod": 6
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_STAT_DEX_3",
+  "name": {
+    "str": "哨兵敏捷 III"
+  },
+  "points": 3,
+  "description": "相对于你天生的敏捷而言，你的身体变化增强了你的敏捷。敏捷+6。",
+  "valid": false,
+  "purifiable": false,
+  "cancels": [
+    "DEX_UP",
+    "DEX_UP_2",
+    "DEX_UP_3",
+    "DEX_UP_4",
+    "DEX_ALPHA"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_DEX_2",
+    "SENTINEL_PERK_DEX_3"
+  ],
+  "prereqs2": [
+    "SENTINEL_STAT_DEX_2"
+  ],
+  "changes_to": [
+    "SENTINEL_STAT_DEX_4"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "passive_mods": {
+    "dex_mod": 6
+  }
+}
+```
+

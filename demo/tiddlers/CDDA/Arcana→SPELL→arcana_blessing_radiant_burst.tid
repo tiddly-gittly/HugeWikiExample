@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_radiant_burst
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_radiant_burst|http://cdda.aloxaf.cn/search?q=arcana_blessing_radiant_burst]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_radiant_burst",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Radiant Burst"
+  },
+  "description": "Arcane Blessing\nUsing this spell will blast a cone-shaped area with a crackling burst of energy, striking enemies blind with divine lightning.  Anything in the center line will take double damage.",
+  "message": "Unearthly trails of lightning arc outward, bathing a swath ahead of you in an eerie glow.",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_lightning_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_radiant_burst_line",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_radiant_burst_noise",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "blind",
+  "min_damage": 40,
+  "max_damage": 200,
+  "damage_increment": 8,
+  "min_range": 6,
+  "max_range": 20,
+  "range_increment": 0.7,
+  "min_aoe": 10,
+  "max_aoe": 40,
+  "aoe_increment": 1.5,
+  "max_level": 20,
+  "difficulty": 80,
+  "skill": "magic",
+  "base_casting_time": 450,
+  "final_casting_time": 225,
+  "casting_time_increment": -11.25,
+  "energy_source": "MANA",
+  "base_energy_cost": 540,
+  "final_energy_cost": 270,
+  "energy_increment": -13.5,
+  "min_duration": 2400,
+  "max_duration": 12000,
+  "duration_increment": 480,
+  "damage_type": "electric",
+  "field_id": "fd_electricity",
+  "field_chance": 10,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.1,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_radiant_burst",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：雷光电爆"
+  },
+  "description": "奥术祝福\n使用该法术将炸裂一个锥形区域，发出一阵crack啪作响的能量，用神圣的闪电打击敌人。",
+  "message": "奥术祝福\n闪电般的尘埃痕迹向外弯曲，在你面前闪闪发光。",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_lightning_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_radiant_burst_line",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_radiant_burst_noise",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "blind",
+  "min_damage": 40,
+  "max_damage": 200,
+  "damage_increment": 8,
+  "min_range": 6,
+  "max_range": 20,
+  "range_increment": 0.7,
+  "min_aoe": 10,
+  "max_aoe": 40,
+  "aoe_increment": 1.5,
+  "max_level": 20,
+  "difficulty": 80,
+  "skill": "magic",
+  "base_casting_time": 450,
+  "final_casting_time": 225,
+  "casting_time_increment": -11.25,
+  "energy_source": "MANA",
+  "base_energy_cost": 540,
+  "final_energy_cost": 270,
+  "energy_increment": -13.5,
+  "min_duration": 2400,
+  "max_duration": 12000,
+  "duration_increment": 480,
+  "damage_type": "electric",
+  "field_id": "fd_electricity",
+  "field_chance": 10,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.1,
+  "field_intensity_variance": 0.5
+}
+```
+

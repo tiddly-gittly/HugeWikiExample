@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_prionosuchus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_prionosuchus|http://cdda.aloxaf.cn/search?q=mon_prionosuchus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_amphibian.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_prionosuchus",
+  "type": "MONSTER",
+  "name": {
+    "str": "prionosuchus",
+    "str_pl": "prionosuchus"
+  },
+  "description": "An alligator-looking beast, around twice larger than a crocodile.  The triangular head is adapted to catch fish, large enough to expand the definition of fish quite a bit.  The massive body is covered in some sort of hardened leather, looking like proto-scales.",
+  "volume": "1800 L",
+  "weight": "2000 kg",
+  "default_faction": "touhou_amphibianancient_large",
+  "bodytype": "gator",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "AMPHIBIAN"
+  ],
+  "harvest": "reptile_terrestrial_large_leather",
+  "hp": 800,
+  "speed": 115,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "p",
+  "looks_like": "mon_gator",
+  "color": "brown",
+  "aggression": 25,
+  "morale": 50,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 5,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 6
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 4,
+  "armor_stab": 2,
+  "vision_night": 25,
+  "path_settings": {
+    "max_dist": 12
+  },
+  "reproduction": {
+    "baby_egg": "egg_prionosuchus",
+    "baby_count": 8,
+    "baby_timer": 48
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      85
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Based on Prionosuchus plummeri. No reproductive data",
+  "//2": "Add 'grasping bite' attack",
+  "//3": "Should have no movement speed demerit while in water"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_prionosuchus",
+  "type": "MONSTER",
+  "name": {
+    "str": "prionosuchus",
+    "str_pl": "prionosuchus"
+  },
+  "description": "An alligator-looking beast, around twice larger than a crocodile.  The triangular head is adapted to catch fish, large enough to expand the definition of fish quite a bit.  The massive body is covered in some sort of hardened leather, looking like proto-scales.",
+  "volume": "1800 L",
+  "weight": "2000 kg",
+  "default_faction": "touhou_amphibianancient_large",
+  "bodytype": "gator",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "AMPHIBIAN"
+  ],
+  "harvest": "reptile_terrestrial_large_leather",
+  "hp": 800,
+  "speed": 115,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "p",
+  "looks_like": "mon_gator",
+  "color": "brown",
+  "aggression": 25,
+  "morale": 50,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 5,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 6
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 4,
+  "armor_stab": 2,
+  "vision_night": 25,
+  "path_settings": {
+    "max_dist": 12
+  },
+  "reproduction": {
+    "baby_egg": "egg_prionosuchus",
+    "baby_count": 8,
+    "baby_timer": 48
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      85
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Based on Prionosuchus plummeri. No reproductive data",
+  "//2": "Add 'grasping bite' attack",
+  "//3": "Should have no movement speed demerit while in water"
+}
+```
+

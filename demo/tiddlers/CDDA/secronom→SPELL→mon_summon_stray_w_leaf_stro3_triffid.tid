@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_summon_stray_w_leaf_stro3_triffid
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_summon_stray_w_leaf_stro3_triffid|http://cdda.aloxaf.cn/search?q=mon_summon_stray_w_leaf_stro3_triffid]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_summon_stray_w_leaf_stro3_triffid",
+  "name": {
+    "str": "Summon 2 Triffids"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its hand to create and send forth 2 triffids, along with the wild outgrowth.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "HOSTILE_SUMMON",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "mon_zombie_stray_w_leaf_stro2_wildo"
+    }
+  ],
+  "min_damage": 2,
+  "max_damage": 2,
+  "min_aoe": 4,
+  "max_aoe": 4,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_zombie_stray_w_leaf_stro3_triffid",
+  "min_duration": 4000,
+  "max_duration": 8000,
+  "min_range": 14,
+  "max_range": 14
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_summon_stray_w_leaf_stro3_triffid",
+  "name": {
+    "str": "召唤2个三尖树"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n“施法者通过它的手创造并发射出2个三尖树，以及野生生物。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "HOSTILE_SUMMON",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "mon_zombie_stray_w_leaf_stro2_wildo"
+    }
+  ],
+  "min_damage": 2,
+  "max_damage": 2,
+  "min_aoe": 4,
+  "max_aoe": 4,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_zombie_stray_w_leaf_stro3_triffid",
+  "min_duration": 4000,
+  "max_duration": 8000,
+  "min_range": 14,
+  "max_range": 14
+}
+```
+

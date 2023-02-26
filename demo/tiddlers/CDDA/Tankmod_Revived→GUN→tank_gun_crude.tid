@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: GUN Tankmod_Revived
+title: Tankmod_Revived→GUN→tank_gun_crude
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tank_gun_crude|http://cdda.aloxaf.cn/search?q=tank_gun_crude]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tank_gun_crude",
+  "type": "GUN",
+  "symbol": "(",
+  "color": "green",
+  "name": {
+    "str_sp": "makeshift 120mm tank gun"
+  },
+  "description": "A makeshift cannon crudely chambered for 120mm tank shells, with a short thick-walled barrel and a breechblock fashioned out of hardened steel.  Very unreliable and massively reduces performance, but simpler to install and easier to repair.  Only holds a single shot, uses electric ignition, and must be mounted on a vehicle to fire.",
+  "price": 25000000,
+  "price_postapoc": 4000,
+  "material": [
+    "steel"
+  ],
+  "flags": [
+    "NO_RELOAD",
+    "MOUNTED_GUN",
+    "STR_RELOAD"
+  ],
+  "skill": "launcher",
+  "ammo": "120mm_usable",
+  "weight": "1000 kg",
+  "volume": "4500 ml",
+  "longest_side": "312 cm",
+  "bashing": 12,
+  "to_hit": -6,
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": -15,
+    "armor_penetration": -15
+  },
+  "range": -15,
+  "dispersion": 400,
+  "recoil": 180000,
+  "durability": 4,
+  "blackpowder_tolerance": 12,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "120mm_usable": 1
+      }
+    }
+  ],
+  "reload": 1200,
+  "ups_charges": 50
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tank_gun_crude",
+  "type": "GUN",
+  "symbol": "(",
+  "color": "green",
+  "name": {
+    "str_sp": "120mm 自制坦克炮"
+  },
+  "description": "一种临时加农炮，简陋地装着120毫米的坦克炮弹，有一个厚壁短筒和一个由淬火钢制成的炮尾座。非常不可靠，性能大大降低，但安装更简单，维修更容易。只有持有一个单一的射击，使用电点火，并必须安装在车辆上开火。",
+  "price": 25000000,
+  "price_postapoc": 4000,
+  "material": [
+    "steel"
+  ],
+  "flags": [
+    "NO_RELOAD",
+    "MOUNTED_GUN",
+    "STR_RELOAD"
+  ],
+  "skill": "launcher",
+  "ammo": "120mm_usable",
+  "weight": "1000 kg",
+  "volume": "4500 ml",
+  "longest_side": "312 cm",
+  "bashing": 12,
+  "to_hit": -6,
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": -15,
+    "armor_penetration": -15
+  },
+  "range": -15,
+  "dispersion": 400,
+  "recoil": 180000,
+  "durability": 4,
+  "blackpowder_tolerance": 12,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "120mm_usable": 1
+      }
+    }
+  ],
+  "reload": 1200,
+  "ups_charges": 50
+}
+```
+

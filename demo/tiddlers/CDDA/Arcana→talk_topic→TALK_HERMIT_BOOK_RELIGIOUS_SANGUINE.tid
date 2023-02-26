@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_BOOK_RELIGIOUS_SANGUINE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_BOOK_RELIGIOUS_SANGUINE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_BOOK_RELIGIOUS_SANGUINE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS_SANGUINE",
+  "dynamic_line": "Hmm.  The nature of a blood mage, I suspect.  Sounds about right.  Even if you will not serve He From Beyond The Veil, there are insights to find your own use for.  And if you accept it, I have a task that will benefit us both.",
+  "responses": [
+    {
+      "text": "We'll see.",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS_SANGUINE",
+  "dynamic_line": "嗯。我怀疑血法师的本性。听起来不错。即使你不愿意臣服帷幕彼端古神，你也有自己的见解。如果你接受，我有一个任务，对我们双方都有好处。",
+  "responses": [
+    {
+      "text": "我们拭目以待。",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

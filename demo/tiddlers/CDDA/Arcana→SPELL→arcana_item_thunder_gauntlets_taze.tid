@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_thunder_gauntlets_taze
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_thunder_gauntlets_taze|http://cdda.aloxaf.cn/search?q=arcana_item_thunder_gauntlets_taze]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_thunder_gauntlets_taze",
+  "type": "SPELL",
+  "name": {
+    "str": "Hand of Thunder"
+  },
+  "description": "A short-ranged jolt, doing minor damage and stunning the target.",
+  "message": "A bolt of blood-red lightning arcs from your fingertips, fading to a natural coloration as it courses through your victim!",
+  "valid_targets": [
+    "hostile"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_thunder_gauntlets_lifedrain",
+      "hit_self": true
+    }
+  ],
+  "effect_str": "stunned",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "sound_description": "an electric buzzing",
+  "min_range": 2,
+  "max_range": 2,
+  "effect": "attack",
+  "shape": "blast",
+  "min_duration": 1200,
+  "max_duration": 2400,
+  "min_damage": 45,
+  "max_damage": 90,
+  "damage_type": "pure",
+  "field_id": "fd_electricity",
+  "field_chance": 1,
+  "min_field_intensity": 2,
+  "max_field_intensity": 2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_thunder_gauntlets_taze",
+  "type": "SPELL",
+  "name": {
+    "str": "雷霆之手"
+  },
+  "description": "A short-ranged jolt, doing minor damage and stunning the target.",
+  "message": "一道血红色的闪电从你的指尖划出弧线，当它穿过你的受害者时，它会褪色成自然的颜色！",
+  "valid_targets": [
+    "hostile"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_thunder_gauntlets_lifedrain",
+      "hit_self": true
+    }
+  ],
+  "effect_str": "stunned",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "sound_description": "an electric buzzing",
+  "min_range": 2,
+  "max_range": 2,
+  "effect": "attack",
+  "shape": "blast",
+  "min_duration": 1200,
+  "max_duration": 2400,
+  "min_damage": 45,
+  "max_damage": 90,
+  "damage_type": "pure",
+  "field_id": "fd_electricity",
+  "field_chance": 1,
+  "min_field_intensity": 2,
+  "max_field_intensity": 2,
+  "field_intensity_variance": 0.5
+}
+```
+

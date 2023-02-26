@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_PERK_STR_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_PERK_STR_3|http://cdda.aloxaf.cn/search?q=SENTINEL_PERK_STR_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_STR_3",
+  "name": {
+    "str": "Sentinel Physicality III"
+  },
+  "points": 4,
+  "visibility": 1,
+  "bodytemp_modifiers": [
+    400,
+    400
+  ],
+  "description": "Targeted mutagenic treatment has improved your muscular development.  Your maximum stamina, stamina regeneration, and maximum weight carried is doubled, and you heal much faster.  In exchange, your metabolism and thirst is further increased, and your body runs hotter.",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "types": [
+    "METABOLISM",
+    "HEALING"
+  ],
+  "cancels": [
+    "NO_THIRST",
+    "THIRST",
+    "THIRST2",
+    "THIRST3",
+    "GOODCARDIO",
+    "GOODCARDIO2",
+    "BADCARDIO"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_STR_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "cardio_multiplier": 2,
+  "weight_capacity_modifier": 2,
+  "healing_awake": 0.4,
+  "healing_resting": 1,
+  "mending_modifier": 4,
+  "vitamin_rates": [
+    [
+      "blood",
+      -4
+    ],
+    [
+      "redcells",
+      -4
+    ]
+  ],
+  "metabolism_modifier": 1,
+  "thirst_modifier": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_STR_3",
+  "name": {
+    "str": "哨兵体质 III"
+  },
+  "points": 4,
+  "visibility": 1,
+  "bodytemp_modifiers": [
+    400,
+    400
+  ],
+  "description": "靶向诱变治疗改善了你的肌肉发育。你的耐力上限、耐力回复速度和最大负重是原来的两倍，并且你的愈合速度极快。但你的新陈代谢和口渴速度极大增加，并且大幅提升你的体温。",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "types": [
+    "METABOLISM",
+    "HEALING"
+  ],
+  "cancels": [
+    "NO_THIRST",
+    "THIRST",
+    "THIRST2",
+    "THIRST3",
+    "GOODCARDIO",
+    "GOODCARDIO2",
+    "BADCARDIO"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_STR_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "cardio_multiplier": 2,
+  "weight_capacity_modifier": 2,
+  "healing_awake": 0.4,
+  "healing_resting": 1,
+  "mending_modifier": 4,
+  "vitamin_rates": [
+    [
+      "blood",
+      -4
+    ],
+    [
+      "redcells",
+      -4
+    ]
+  ],
+  "metabolism_modifier": 1,
+  "thirst_modifier": 1
+}
+```
+

@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: bionic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→bionic→bio_plasma_cell
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bio_plasma_cell|http://cdda.aloxaf.cn/search?q=bio_plasma_cell]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_bionics.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bio_plasma_cell",
+  "type": "bionic",
+  "name": {
+    "str": "Plasma Pulse Cell"
+  },
+  "//": "Spikes of power at low efficiency because the available fuels have much smaller stack sizes than most fuels.  Since hydrogen is energy-dense, power per unit is massive.",
+  "description": "Implanted in your chest is a small, advanced form of hydrogen fuel cell.  Designed to produce a spike of power production for cutting-edge military cybernetics, it is significantly less efficient than a traditional hydrogen fuel cell, but each pulse still puts out a lot of power.  Each pulse vents a jet of intense heat, making it dangerous in confined spaces.  It has two chambers, this one is configured for military-grade hydrogen canisters.",
+  "occupied_bodyparts": [
+    [
+      "torso",
+      15
+    ]
+  ],
+  "encumbrance": [
+    [
+      "torso",
+      5
+    ]
+  ],
+  "fuel_options": [
+    "hydrogen_cell"
+  ],
+  "fuel_efficiency": 0.25,
+  "exothermic_power_gen": true,
+  "time": 1,
+  "flags": [
+    "BIONIC_TOGGLED",
+    "BIONIC_POWER_SOURCE",
+    "BIONIC_NPC_USABLE"
+  ],
+  "included_bionics": [
+    "bio_plasma_cell_hydrogen"
+  ],
+  "passive_pseudo_items": [
+    "c_internal_plasma_tank"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bio_plasma_cell",
+  "type": "bionic",
+  "name": {
+    "str": "等离子体脉冲电池"
+  },
+  "//": "Spikes of power at low efficiency because the available fuels have much smaller stack sizes than most fuels.  Since hydrogen is energy-dense, power per unit is massive.",
+  "description": "植入你胸部的是一种小型的高级氢燃料电池。旨在为尖端军事设备提供峰值功率，其效率明显低于传统的氢燃料电池，但每一次脉冲仍能释放大量能量与热量，这使得在密闭空间里使用它很危险。它有两个腔室，也可以使用密度更大的军用固态氢罐。",
+  "occupied_bodyparts": [
+    [
+      "torso",
+      15
+    ]
+  ],
+  "encumbrance": [
+    [
+      "torso",
+      5
+    ]
+  ],
+  "fuel_options": [
+    "hydrogen_cell"
+  ],
+  "fuel_efficiency": 0.25,
+  "exothermic_power_gen": true,
+  "time": 1,
+  "flags": [
+    "BIONIC_TOGGLED",
+    "BIONIC_POWER_SOURCE",
+    "BIONIC_NPC_USABLE"
+  ],
+  "included_bionics": [
+    "bio_plasma_cell_hydrogen"
+  ],
+  "passive_pseudo_items": [
+    "c_internal_plasma_tank"
+  ]
+}
+```
+

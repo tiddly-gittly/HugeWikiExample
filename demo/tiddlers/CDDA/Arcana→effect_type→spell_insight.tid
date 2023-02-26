@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→spell_insight
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：spell_insight|http://cdda.aloxaf.cn/search?q=spell_insight]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "spell_insight",
+  "name": [
+    "Insight"
+  ],
+  "desc": [
+    "The eyes of The Beyond shall guide you.  Your perception is augmented by magic, and you can see clearly in darkness."
+  ],
+  "remove_message": "You feel deadened as your magically-induced perception leaves you.",
+  "decay_messages": [
+    [
+      "Your spell of insight is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "per_mod": [
+      1
+    ]
+  },
+  "scaling_mods": {
+    "per_mod": [
+      0.0825
+    ]
+  },
+  "flags": [
+    "NIGHT_VISION"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "spell_insight",
+  "name": [
+    "洞察"
+  ],
+  "desc": [
+    "远方的眼睛将指引你。你的知觉被魔法增强了，在黑暗中你能看得很清楚。"
+  ],
+  "remove_message": "当你的魔法感应离开你的时候，你会感到麻木。",
+  "decay_messages": [
+    [
+      "增强你的洞察力的魔力正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "per_mod": [
+      1
+    ]
+  },
+  "scaling_mods": {
+    "per_mod": [
+      0.0825
+    ]
+  },
+  "flags": [
+    "NIGHT_VISION"
+  ]
+}
+```
+

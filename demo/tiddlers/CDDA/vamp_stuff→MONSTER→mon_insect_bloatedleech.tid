@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_insect_bloatedleech
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_bloatedleech|http://cdda.aloxaf.cn/search?q=mon_insect_bloatedleech]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Insects/+Leech.json
+
+
+!! 原文
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "bodytype": "snake",
+  "color": "light_green_green",
+  "death_drops": "leech",
+  "death_function": {
+    "effect": {
+      "id": "death_gas",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE",
+    "message": "A %s explodes!"
+  },
+  "default_faction": "leech",
+  "description": "A large worm with a nearly transparent, bloated hump in its back, filled with pressurized poison gas. It slithers faster than most and definitely, it will explode when touched.",
+  "diff": 15,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "exempt",
+  "hp": 15,
+  "id": "mon_insect_bloatedleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_skill": 1,
+  "morale": 100,
+  "name": {
+    "str": "bloated leech"
+  },
+  "special_attacks": [
+    [
+      "SUICIDE",
+      5
+    ]
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 145,
+  "symbol": "~",
+  "type": "MONSTER"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "bodytype": "snake",
+  "color": "light_green_green",
+  "death_drops": "leech",
+  "death_function": {
+    "effect": {
+      "id": "death_gas",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE",
+    "message": "A %s explodes!"
+  },
+  "default_faction": "leech",
+  "description": "一种巨大的蠕虫，背部有一个几乎透明的肿胀隆包，里面充满了高压毒气。它滑动的速度比大多数蠕虫都快，而且肯定的是，当它被触碰时会爆炸。",
+  "diff": 15,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "exempt",
+  "hp": 15,
+  "id": "mon_insect_bloatedleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_skill": 1,
+  "morale": 100,
+  "name": {
+    "str": "臃肿水蛭"
+  },
+  "special_attacks": [
+    [
+      "SUICIDE",
+      5
+    ]
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 145,
+  "symbol": "~",
+  "type": "MONSTER"
+}
+```
+

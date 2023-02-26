@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_zombie_succumbvampire_sinker
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_succumbvampire_sinker|http://cdda.aloxaf.cn/search?q=mon_zombie_succumbvampire_sinker]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Zombies/Vampire.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_succumbvampire_sinker",
+  "type": "MONSTER",
+  "name": {
+    "str": "rogue sinker"
+  },
+  "description": "Shrouded in black, mystical mist, it moves silently in every step while remains unseen to its prey. A vampire skilled in lashing and striking, with pure wisdom to the acts of the dark days.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "bodytype": "human",
+  "hp": 480,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "V",
+  "color": "light_gray_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 6,
+  "harvest": "exempt",
+  "armor_bash": 1,
+  "armor_cut": 10,
+  "armor_bullet": 6,
+  "vision_day": 50,
+  "vision_night": 20,
+  "special_attacks": [
+    [
+      "BRANDISH",
+      22
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "v_sink_bstrike"
+      },
+      "cooldown": 28
+    }
+  ],
+  "looks_like": "mon_zombie_succumbvampire",
+  "death_drops": "succumbvampire",
+  "death_function": {
+    "message": "The %s disappears.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "NIGHT_INVISIBILITY",
+    "CAN_OPEN_DOORS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_succumbvampire_sinker",
+  "type": "MONSTER",
+  "name": {
+    "str": "流浪堕落者"
+  },
+  "description": "它笼罩在黑色神秘的薄雾中，每一步都在无声地移动，而猎物却看不见它。这是一个擅长鞭打和猛击的吸血鬼。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "bodytype": "human",
+  "hp": 480,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "V",
+  "color": "light_gray_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 6,
+  "harvest": "exempt",
+  "armor_bash": 1,
+  "armor_cut": 10,
+  "armor_bullet": 6,
+  "vision_day": 50,
+  "vision_night": 20,
+  "special_attacks": [
+    [
+      "BRANDISH",
+      22
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "v_sink_bstrike"
+      },
+      "cooldown": 28
+    }
+  ],
+  "looks_like": "mon_zombie_succumbvampire",
+  "death_drops": "succumbvampire",
+  "death_function": {
+    "message": "The %s disappears.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "NIGHT_INVISIBILITY",
+    "CAN_OPEN_DOORS"
+  ]
+}
+```
+

@@ -1,0 +1,227 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_gyokuto_base
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_gyokuto_base|http://cdda.aloxaf.cn/search?q=mon_gyokuto_base]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_youkai.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_gyokuto_base",
+  "type": "MONSTER",
+  "name": "moon rabbit",
+  "description": "Template for LDC conscripts. NOTE: they should be interactable NPCs, NOT monsters",
+  "default_faction": "factionless",
+  "species": [
+    "MAMMAL"
+  ],
+  "diff": 8,
+  "volume": "46250 ml",
+  "weight": "55 kg",
+  "hp": 100,
+  "speed": 110,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "🐰",
+  "color": "white",
+  "aggression": 0,
+  "harvest": "human",
+  "morale": 10,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 0
+    }
+  ],
+  "dodge": 1,
+  "path_settings": {
+    "max_dist": 20,
+    "avoid_traps": true
+  },
+  "vision_day": 50,
+  "vision_night": 35,
+  "special_attacks": [
+    [
+      "PARROT_AT_DANGER",
+      33
+    ],
+    [
+      "SEARCHLIGHT",
+      50
+    ]
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "subway",
+        40
+      ],
+      [
+        "sewer",
+        20
+      ],
+      [
+        "trash",
+        5
+      ],
+      [
+        "bedroom",
+        1
+      ],
+      [
+        "dresser",
+        5
+      ],
+      [
+        "ammo",
+        18
+      ]
+    ]
+  },
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "The %s dies!"
+  },
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "CLIMBS",
+    "GROUP_BASH",
+    "GROUP_MORALE",
+    "HEARS",
+    "HUMAN",
+    "PATH_AVOID_DANGER_2",
+    "RANGED_ATTACKER",
+    "SEES",
+    "WARM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_gyokuto_base",
+  "type": "MONSTER",
+  "name": "月兔",
+  "description": "Template for LDC conscripts. NOTE: they should be interactable NPCs, NOT monsters",
+  "default_faction": "factionless",
+  "species": [
+    "MAMMAL"
+  ],
+  "diff": 8,
+  "volume": "46250 ml",
+  "weight": "55 kg",
+  "hp": 100,
+  "speed": 110,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "🐰",
+  "color": "white",
+  "aggression": 0,
+  "harvest": "human",
+  "morale": 10,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 0
+    }
+  ],
+  "dodge": 1,
+  "path_settings": {
+    "max_dist": 20,
+    "avoid_traps": true
+  },
+  "vision_day": 50,
+  "vision_night": 35,
+  "special_attacks": [
+    [
+      "PARROT_AT_DANGER",
+      33
+    ],
+    [
+      "SEARCHLIGHT",
+      50
+    ]
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "subway",
+        40
+      ],
+      [
+        "sewer",
+        20
+      ],
+      [
+        "trash",
+        5
+      ],
+      [
+        "bedroom",
+        1
+      ],
+      [
+        "dresser",
+        5
+      ],
+      [
+        "ammo",
+        18
+      ]
+    ]
+  },
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "The %s dies!"
+  },
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "CLIMBS",
+    "GROUP_BASH",
+    "GROUP_MORALE",
+    "HEARS",
+    "HUMAN",
+    "PATH_AVOID_DANGER_2",
+    "RANGED_ATTACKER",
+    "SEES",
+    "WARM"
+  ]
+}
+```
+

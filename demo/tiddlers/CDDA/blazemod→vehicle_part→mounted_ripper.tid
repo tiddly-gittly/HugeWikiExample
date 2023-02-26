@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→mounted_ripper
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mounted_ripper|http://cdda.aloxaf.cn/search?q=mounted_ripper]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blaze_weapons_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mounted_ripper",
+  "copy-from": "turret",
+  "type": "vehicle_part",
+  "name": {
+    "str": "ripper turret"
+  },
+  "item": "ripper",
+  "broken_symbol": "x",
+  "color": "dark_gray",
+  "broken_color": "dark_gray",
+  "power": -8750,
+  "breaks_into": [
+    {
+      "item": "ripper",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "extend": {
+    "flags": [
+      "EXTRA_DRAG"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mounted_ripper",
+  "copy-from": "turret",
+  "type": "vehicle_part",
+  "name": {
+    "str": "撕裂者炮塔"
+  },
+  "item": "ripper",
+  "broken_symbol": "x",
+  "color": "dark_gray",
+  "broken_color": "dark_gray",
+  "power": -8750,
+  "breaks_into": [
+    {
+      "item": "ripper",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "extend": {
+    "flags": [
+      "EXTRA_DRAG"
+    ]
+  }
+}
+```
+

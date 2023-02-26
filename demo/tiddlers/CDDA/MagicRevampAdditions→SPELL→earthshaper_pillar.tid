@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→earthshaper_pillar
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：earthshaper_pillar|http://cdda.aloxaf.cn/search?q=earthshaper_pillar]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/earthshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "earthshaper_pillar",
+  "type": "SPELL",
+  "name": {
+    "str": "Pillar of Stone"
+  },
+  "description": "Drawing upon the surrounding earth, you form a pillar of solid rock.  Experience will make the task easier, and less disruptive to the surrounding area.",
+  "valid_targets": [
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "effect_str": "earthshaper_pillar",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "earthshaper_pillar_side_effect"
+    }
+  ],
+  "flags": [
+    "SOMATIC",
+    "LOUD",
+    "NO_PROJECTILE"
+  ],
+  "spell_class": "EARTHSHAPER",
+  "energy_source": "MANA",
+  "difficulty": 3,
+  "base_casting_time": 30000,
+  "final_casting_time": 6000,
+  "casting_time_increment": -2400,
+  "base_energy_cost": 500,
+  "max_level": 10,
+  "min_range": 3,
+  "max_range": 6,
+  "range_increment": 0.3
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "earthshaper_pillar",
+  "type": "SPELL",
+  "name": {
+    "str": "石柱术"
+  },
+  "description": "你用魔法将四周的泥土堆起，形成一根硬石柱。经验的累积将使施法更容易，并减少对周围区域的破坏。",
+  "valid_targets": [
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "effect_str": "earthshaper_pillar",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "earthshaper_pillar_side_effect"
+    }
+  ],
+  "flags": [
+    "SOMATIC",
+    "LOUD",
+    "NO_PROJECTILE"
+  ],
+  "spell_class": "EARTHSHAPER",
+  "energy_source": "MANA",
+  "difficulty": 3,
+  "base_casting_time": 30000,
+  "final_casting_time": 6000,
+  "casting_time_increment": -2400,
+  "base_energy_cost": 500,
+  "max_level": 10,
+  "min_range": 3,
+  "max_range": 6,
+  "range_increment": 0.3
+}
+```
+

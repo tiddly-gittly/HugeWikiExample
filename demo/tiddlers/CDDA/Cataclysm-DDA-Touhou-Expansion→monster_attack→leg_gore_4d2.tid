@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: monster_attack Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→monster_attack→leg_gore_4d2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：leg_gore_4d2|http://cdda.aloxaf.cn/search?q=leg_gore_4d2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monster_special_attacks/thex_monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "leg_gore_4d2",
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "cooldown": 1,
+  "move_cost": 85,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 20,
+      "armor_penetration": 2
+    }
+  ],
+  "attack_upper": false,
+  "min_mul": 0.2,
+  "max_mul": 0.4,
+  "effects": [
+    {
+      "id": "bleed",
+      "duration": 300,
+      "affect_hit_bp": true
+    }
+  ],
+  "hit_dmg_u": "The %1$s gores your %2$s with its antlers!",
+  "hit_dmg_npc": "The %1$s gores <npcname>'s %2$s with its antlers!",
+  "miss_msg_u": "The %s attempts to gore your %2$s!  You dodge!",
+  "miss_msg_npc": "The %s tries to gore <npcname>'s %2$s, but they dodge!",
+  "no_dmg_msg_u": "The %1$s headbutts at your %2$s, but your armor protects you!",
+  "no_dmg_msg_npc": "The %1$s headbutts at <npcname>, but the armor protects them!",
+  "dodgeable": true,
+  "blockable": true
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "leg_gore_4d2",
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "cooldown": 1,
+  "move_cost": 85,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 20,
+      "armor_penetration": 2
+    }
+  ],
+  "attack_upper": false,
+  "min_mul": 0.2,
+  "max_mul": 0.4,
+  "effects": [
+    {
+      "id": "bleed",
+      "duration": 300,
+      "affect_hit_bp": true
+    }
+  ],
+  "hit_dmg_u": "The %1$s gores your %2$s with its antlers!",
+  "hit_dmg_npc": "The %1$s gores <npcname>'s %2$s with its antlers!",
+  "miss_msg_u": "The %s attempts to gore your %2$s!  You dodge!",
+  "miss_msg_npc": "The %s tries to gore <npcname>'s %2$s, but they dodge!",
+  "no_dmg_msg_u": "The %1$s headbutts at your %2$s, but your armor protects you!",
+  "no_dmg_msg_npc": "The %1$s headbutts at <npcname>, but the armor protects them!",
+  "dodgeable": true,
+  "blockable": true
+}
+```
+

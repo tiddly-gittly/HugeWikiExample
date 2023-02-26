@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_dark_wyrm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_dark_wyrm|http://cdda.aloxaf.cn/search?q=summon_dark_wyrm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_dark_wyrm",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of the eye",
+    "str_pl": "glyphs of the eye"
+  },
+  "//": "Explanation: Petrified eyes are associated with dark wyrms due to the mine finale that features one.",
+  "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  It is somewhat difficult to control.",
+  "price": "1500 USD",
+  "price_postapoc": "50 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_dark_wyrm_summoned_glyph",
+    "friendly_msg": "The wyrm springs forth, seeming to regard you passively, or at least ignoring your presence.",
+    "hostile_msg": "The wyrm springs forth, reacting to unfamiliar sounds and scent with a malevolent screech!",
+    "difficulty": 5,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_dark_wyrm",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：眼珠",
+    "str_pl": "雕文：眼珠"
+  },
+  "//": "Explanation: Petrified eyes are associated with dark wyrms due to the mine finale that features one.",
+  "description": "一枚奇怪的银制徽章，上面刻着双翼龙形图案。使用它会召唤出一只暗龙，并绑定在你的意志上。这一枚比较难控制。",
+  "price": "1500 USD",
+  "price_postapoc": "50 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_dark_wyrm_summoned_glyph",
+    "friendly_msg": "暗龙突然出现，似乎被动地看待你，或者至少忽视你的存在。",
+    "hostile_msg": "暗龙突然出现，对陌生的声音和气味做出反应，发出恶毒的尖叫声！",
+    "difficulty": 5,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+

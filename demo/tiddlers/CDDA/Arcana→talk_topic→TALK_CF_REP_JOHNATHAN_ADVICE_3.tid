@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_JOHNATHAN_ADVICE_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_JOHNATHAN_ADVICE_3|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_JOHNATHAN_ADVICE_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_JOHNATHAN_ADVICE_3",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "You know your duty.  \"If they are a threat to humanity, be they blood mage or bandit, offer no mercy and expect none in return.\"  Those among the Order who are willing to abandon their ways, or even merely offer truce to us, are vanishingly rare.  They are continuing their studies, continuing to prey upon the innocent to fuel their practices.  May Odin grant you victory in battle.",
+    "no": {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": "You have seen the worst of your order.  I would advise caution, and be prepared for a fight even if they recognize that you're one of them.  That you pursue this task means I can trust you to do what's right.  They're preying upon people just as the Order has for decades, and not even the threat of humanity's extinction has swayed them.  It's unfortunate, as killing each other is the last thing we should be doing in times like these, but they must be brought to justice.",
+      "no": "The Sanguine Order is dangerous.  It is not merely their dabbling in dangerous forces, they were a threat even before their discoveries.  They are murderers, worse than any petty bandit.  While I am hopeful that some of their number might face the threat of humanity's end, and come to understand this cannot continue, this group has been confirmed to still be just as senseless in their actions as the Order typically is.  Do not trust them, and do not underestimate them."
+    }
+  },
+  "responses": [
+    {
+      "text": "\"Dii supra et infra, dōnēs nobis virtus.\"  I'll deal with them.",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "We'll see what comes of it, hunter.",
+      "switch": true,
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "So be it.  \"No matter the cost, no matter what we must do, for the strength and safety of this world…\"",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      },
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "Understood.  Thank you.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_JOHNATHAN_ADVICE_3",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "你知道你的职责。”如果他们是对人类的威胁，不管他们是血法师还是土匪，都不要手下留情，不求回报。”那些愿意放弃自己的道路，甚至仅仅向我们提出休战的教团中的人是非常罕见的。他们在继续研究，继续掠夺无辜者来助长他们的行为。愿奥丁赐予你战斗的胜利。",
+    "no": {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": "你已经看到了你最糟糕的任务。我建议谨慎行事，并做好战斗准备，即使他们认识到你是他们中的一员。你追求这个任务意味着我可以信任你做正确的事。几十年来，他们一直在掠夺人类，甚至人类灭绝的威胁也没有动摇他们。这很不幸，因为在这种时候，互相残杀是我们最不应该做的事情，他们必须被绳之以法。",
+      "no": "猩红教派是危险的。这不仅仅是他们涉足危险的力量，他们甚至在发现之前就已经是一个威胁。他们是杀人犯，比任何小土匪都要凶残。虽然我希望他们中的一些人可能面临人类末日的威胁，并逐渐明白这种情况不能继续下去，但这一群体已被证实仍像秩序一样毫无意义。不要相信他们，也不要低估他们。"
+    }
+  },
+  "responses": [
+    {
+      "text": "“天上地下之神，给予我们勇气。”我来对付他们。",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "我们看看结果如何，猎人。",
+      "switch": true,
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "就这样吧。”不管付出什么代价，不管我们必须做什么，为了这个世界的力量和安全……”",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      },
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "理解。非常感谢。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

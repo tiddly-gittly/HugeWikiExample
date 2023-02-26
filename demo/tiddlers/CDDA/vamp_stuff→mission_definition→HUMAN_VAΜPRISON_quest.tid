@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→HUMAN_VAΜPRISON_quest
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：HUMAN_VA%u039CPRISON_quest|http://cdda.aloxaf.cn/search?q=HUMAN_VA%u039CPRISON_quest]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "HUMAN_VAΜPRISON_quest",
+  "type": "mission_definition",
+  "name": {
+    "str": "Bring Prisoner to the outskirts"
+  },
+  "description": "Take the prisoner to the <color_light_blue>wasteland outskirts</color>.",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 3,
+  "value": 30000,
+  "destination": "wo3",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "wo3",
+      "om_special": "Wasteland Outskirts",
+      "reveal_radius": 2,
+      "search_range": 80
+    },
+    "effect": [
+      "follow"
+    ]
+  },
+  "end": {
+    "effect": [
+      "leave",
+      {
+        "npc_change_faction": "wastelander"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "We're going, right?",
+    "offer": "Lead me to that place, then...",
+    "accepted": "Awesome!",
+    "rejected": "Well, atleast you've made me happy before my fate...",
+    "advice": "You need my advice for this? I could say something if I'm already free in the wilderness...",
+    "inquire": "What?",
+    "success": "Damn! This place is like a fortress! But you should've warned me about the vampires living here... They freak me out everytime I see one...",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "Ummm...."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "HUMAN_VAΜPRISON_quest",
+  "type": "mission_definition",
+  "name": {
+    "str": "把囚犯带到郊区"
+  },
+  "description": "把犯人带到<color_light_blue>荒地的郊外</color>。",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 3,
+  "value": 30000,
+  "destination": "wo3",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "wo3",
+      "om_special": "Wasteland Outskirts",
+      "reveal_radius": 2,
+      "search_range": 80
+    },
+    "effect": [
+      "follow"
+    ]
+  },
+  "end": {
+    "effect": [
+      "leave",
+      {
+        "npc_change_faction": "wastelander"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "我们要走了，对吗？",
+    "offer": "那带我去那个地方...",
+    "accepted": "嗯，那太好了！",
+    "rejected": "好吧，至少你让我在命运面前快乐...",
+    "advice": "你需要我的建议吗？如果我自由了，我倒是可以说点什么...",
+    "inquire": "什么？",
+    "success": "可恶！这地方像个堡垒！但你应该警告我住在这里的吸血鬼...每次我看到它们，它们都会吓我一跳...",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "嗯...."
+  }
+}
+```
+

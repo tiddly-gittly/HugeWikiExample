@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_zombie_fspitter
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_fspitter|http://cdda.aloxaf.cn/search?q=mon_zombie_fspitter]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_fspitter",
+  "type": "MONSTER",
+  "name": {
+    "str": "fire spitter zombie"
+  },
+  "description": "A hunched human body with its eyes pushed up into its forehead and drooping cheeks, most of its face is occupied by a puckered mouth.  Its stomach is swollen and nearly translucent, with a sickly colorless tint.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 10,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 70,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "yellow_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "dodge": 1,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 20,
+      "move_cost": 150,
+      "gun_type": "napalm_gob",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "ranges": [
+        [
+          2,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "description": "Spitter vomits out a glob of firey spit!"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "burn_into": "mon_zombie_scorched",
+  "upgrades": {
+    "half_life": 28,
+    "into": "mon_zombie_incendiary"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "FIREPROOF",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_fspitter",
+  "type": "MONSTER",
+  "name": {
+    "str": "吐火丧尸"
+  },
+  "description": "一个佝偻身子的人形怪物，眼睛突出到了额头位置，脸颊则严重下垂，脸的大部分被皱起的嘴占据。它的胃肿胀地厉害，几乎半透明，仅有一丝病态的色泽。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 10,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 70,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "yellow_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "dodge": 1,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 20,
+      "move_cost": 150,
+      "gun_type": "napalm_gob",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "ranges": [
+        [
+          2,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "description": "吐火丧尸吐出一团火焰般的唾沫！"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "burn_into": "mon_zombie_scorched",
+  "upgrades": {
+    "half_life": 28,
+    "into": "mon_zombie_incendiary"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "FIREPROOF",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

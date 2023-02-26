@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: TOOL secronom_lore_expansion
+title: secronom_lore_expansion→TOOL→bot_secro_laserturret_mod
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bot_secro_laserturret_mod|http://cdda.aloxaf.cn/search?q=bot_secro_laserturret_mod]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/secro_bots.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bot_secro_laserturret_mod",
+  "type": "TOOL",
+  "name": {
+    "str": "inactive laser beam turret"
+  },
+  "description": "An inactive SDP-L1 turret. Use to place it.",
+  "volume": "60000 ml",
+  "weight": "172 kg",
+  "price": "200 USD",
+  "to_hit": -5,
+  "bashing": 10,
+  "material": [
+    "steel"
+  ],
+  "symbol": "2",
+  "color": "light_red",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_secro_laserturret_mod",
+    "friendly_msg": "The SPD-L1 emits a beeping sound, then scans the vicinity...",
+    "hostile_msg": "Oh no...",
+    "difficulty": 0,
+    "moves": 250,
+    "skills": [
+      "electronics",
+      "computer"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bot_secro_laserturret_mod",
+  "type": "TOOL",
+  "name": {
+    "str": "无效激光束转台"
+  },
+  "description": "一个未激活的SDP-L1炮塔。激活以放置它。",
+  "volume": "60000 ml",
+  "weight": "172 kg",
+  "price": "200 USD",
+  "to_hit": -5,
+  "bashing": 10,
+  "material": [
+    "steel"
+  ],
+  "symbol": "2",
+  "color": "light_red",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_secro_laserturret_mod",
+    "friendly_msg": "SPD-L1 发出嘟嘟声，然后扫描附近...",
+    "hostile_msg": "哦，不...",
+    "difficulty": 0,
+    "moves": 250,
+    "skills": [
+      "electronics",
+      "computer"
+    ]
+  }
+}
+```
+

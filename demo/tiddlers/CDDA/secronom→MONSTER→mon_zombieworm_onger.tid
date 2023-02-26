@@ -1,0 +1,201 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombieworm_onger
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombieworm_onger|http://cdda.aloxaf.cn/search?q=mon_zombieworm_onger]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Worms.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Only evolves from grave digger.",
+  "id": "mon_zombieworm_onger",
+  "looks_like": "mon_yugg",
+  "type": "MONSTER",
+  "name": {
+    "str": "wormonger"
+  },
+  "description": "A catastrophic worm as wide as a car, with the rest of its body hidden underneath. Its overconsumption of dead bodies must've caused it to suffer from further mutations.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROWORM"
+  ],
+  "bodytype": "snake",
+  "volume": "1000000 ml",
+  "weight": "375000 g",
+  "harvest": "zombie",
+  "hp": 775,
+  "speed": 20,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚕",
+  "color": "white_red",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 10,
+  "melee_dice": 4,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "armor_bash": 24,
+  "armor_cut": 10,
+  "armor_bullet": 6,
+  "armor_stab": 6,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombieworm_onger_destroy_check"
+      },
+      "cooldown": 55,
+      "monster_message": "<color_light_red>%1$s destroys its surroundings!</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 50,
+      "accuracy": 5,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 40,
+          "armor_multiplier": 0.5
+        },
+        {
+          "damage_type": "bash",
+          "amount": 40,
+          "armor_multiplier": 0.4
+        }
+      ]
+    }
+  ],
+  "anger_triggers": [
+    "HURT"
+  ],
+  "vision_day": 24,
+  "vision_night": 4,
+  "flags": [
+    "DIGS",
+    "CAN_DIG",
+    "HEARS",
+    "SEES",
+    "GOODHEARING",
+    "SMELLS",
+    "WARM",
+    "PLASTIC",
+    "STUN_IMMUNE",
+    "PUSH_VEH",
+    "PUSH_MON",
+    "DESTROYS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Only evolves from grave digger.",
+  "id": "mon_zombieworm_onger",
+  "looks_like": "mon_yugg",
+  "type": "MONSTER",
+  "name": {
+    "str": "巨虫泰坦"
+  },
+  "description": "一种像汽车一样宽的灾难性蠕虫，其身体的其余部分隐藏在地下。它对尸体的巨量消耗让它进一步的变异着。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROWORM"
+  ],
+  "bodytype": "snake",
+  "volume": "1000000 ml",
+  "weight": "375000 g",
+  "harvest": "zombie",
+  "hp": 775,
+  "speed": 20,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚕",
+  "color": "white_red",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 10,
+  "melee_dice": 4,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "armor_bash": 24,
+  "armor_cut": 10,
+  "armor_bullet": 6,
+  "armor_stab": 6,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombieworm_onger_destroy_check"
+      },
+      "cooldown": 55,
+      "monster_message": "<color_light_red>%1$s破坏了它的周围环境！</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 50,
+      "accuracy": 5,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 40,
+          "armor_multiplier": 0.5
+        },
+        {
+          "damage_type": "bash",
+          "amount": 40,
+          "armor_multiplier": 0.4
+        }
+      ]
+    }
+  ],
+  "anger_triggers": [
+    "HURT"
+  ],
+  "vision_day": 24,
+  "vision_night": 4,
+  "flags": [
+    "DIGS",
+    "CAN_DIG",
+    "HEARS",
+    "SEES",
+    "GOODHEARING",
+    "SMELLS",
+    "WARM",
+    "PLASTIC",
+    "STUN_IMMUNE",
+    "PUSH_VEH",
+    "PUSH_MON",
+    "DESTROYS"
+  ]
+}
+```
+

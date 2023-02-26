@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: TOOL secronom
+title: secronom→TOOL→SSimpactgrenade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SSimpactgrenade|http://cdda.aloxaf.cn/search?q=SSimpactgrenade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_ammo_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "SSimpactgrenade",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "SS grenade"
+  },
+  "description": "A round, metallic grenade.",
+  "weight": "240 g",
+  "volume": "500 ml",
+  "to_hit": -1,
+  "bashing": 6,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "symbol": "*",
+  "color": "light_red",
+  "explode_in_fire": true,
+  "use_action": {
+    "target": "SSimpactgrenadeact",
+    "target_charges": 3,
+    "active": true,
+    "type": "transform"
+  },
+  "flags": [
+    "TRADER_AVOID",
+    "CUSTOM_EXPLOSION"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "SSimpactgrenade",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "SS手榴弹"
+  },
+  "description": "圆形金属手榴弹。",
+  "weight": "240 g",
+  "volume": "500 ml",
+  "to_hit": -1,
+  "bashing": 6,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "symbol": "*",
+  "color": "light_red",
+  "explode_in_fire": true,
+  "use_action": {
+    "target": "SSimpactgrenadeact",
+    "target_charges": 3,
+    "active": true,
+    "type": "transform"
+  },
+  "flags": [
+    "TRADER_AVOID",
+    "CUSTOM_EXPLOSION"
+  ]
+}
+```
+

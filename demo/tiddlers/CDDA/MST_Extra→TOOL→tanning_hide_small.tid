@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: TOOL MST_Extra
+title: MST_Extra→TOOL→tanning_hide_small
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tanning_hide_small|http://cdda.aloxaf.cn/search?q=tanning_hide_small]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tanning_hide_small",
+  "copy-from": "tanning_hide",
+  "type": "TOOL",
+  "name": {
+    "str": "scrap of tanning leather",
+    "str_pl": "scraps of tanning leather"
+  },
+  "description": "A small piece of treated animal hide, undergoing the chemical processes required to become leather.  You will be able to activate it to unroll and make use of it when it is done.",
+  "weight": "80 g",
+  "volume": "200 ml",
+  "use_action": {
+    "target": "leather",
+    "msg": "You carefully unfold the tanning leather scrap and shake it clean.",
+    "moves": 150,
+    "type": "delayed_transform",
+    "transform_age": 5760,
+    "not_ready_msg": "The scrap of tanning leather isn't done yet.",
+    "//": "Should be 9.6 hours, but I suspect the timing hasn't been updated yet."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tanning_hide_small",
+  "copy-from": "tanning_hide",
+  "type": "TOOL",
+  "name": {
+    "str": "小块鞣制皮革",
+    "str_pl": "小块鞣制皮革"
+  },
+  "description": "一小块已经经过处理的动物皮,经过一系列必要的化学反应以变成鞣制皮革.当它鞣制完成后你就可以激活以展开并使用.",
+  "weight": "80 g",
+  "volume": "200 ml",
+  "use_action": {
+    "target": "leather",
+    "msg": "你煞费苦心地展开鞣制中的皮革，把它抖干净。",
+    "moves": 150,
+    "type": "delayed_transform",
+    "transform_age": 5760,
+    "not_ready_msg": "The scrap of tanning leather isn't done yet.",
+    "//": "Should be 9.6 hours, but I suspect the timing hasn't been updated yet."
+  }
+}
+```
+

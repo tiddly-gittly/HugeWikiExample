@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: monster_attack vamp_stuff
+title: vamp_stuff→monster_attack→tentaclebones
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tentaclebones|http://cdda.aloxaf.cn/search?q=tentaclebones]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "tentaclebones",
+  "cooldown": 10,
+  "move_cost": 100,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 3,
+      "armor_multiplier": 0.5
+    },
+    {
+      "damage_type": "stab",
+      "amount": 13,
+      "armor_multiplier": 0.5
+    }
+  ],
+  "body_parts": [
+    [
+      "head",
+      3
+    ],
+    [
+      "eyes",
+      2
+    ],
+    [
+      "mouth",
+      1
+    ],
+    [
+      "torso",
+      4
+    ],
+    [
+      "arm_l",
+      3
+    ],
+    [
+      "arm_r",
+      3
+    ],
+    [
+      "hand_l",
+      2
+    ],
+    [
+      "hand_r",
+      2
+    ],
+    [
+      "leg_l",
+      3
+    ],
+    [
+      "leg_r",
+      3
+    ],
+    [
+      "foot_l",
+      2
+    ],
+    [
+      "foot_r",
+      2
+    ]
+  ],
+  "hit_dmg_u": "The %1$s tentacle bones stabs you!",
+  "hit_dmg_npc": "The %1$s tentacle bones stabs <npcname>!",
+  "no_dmg_msg_u": "The %1$s stabs you with tentacle bones, but fails to penetrate your armor.",
+  "no_dmg_msg_npc": "The %1$s stabs <npcname> with tentacle bones, but fails to penetrate their armor."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "tentaclebones",
+  "cooldown": 10,
+  "move_cost": 100,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 3,
+      "armor_multiplier": 0.5
+    },
+    {
+      "damage_type": "stab",
+      "amount": 13,
+      "armor_multiplier": 0.5
+    }
+  ],
+  "body_parts": [
+    [
+      "head",
+      3
+    ],
+    [
+      "eyes",
+      2
+    ],
+    [
+      "mouth",
+      1
+    ],
+    [
+      "torso",
+      4
+    ],
+    [
+      "arm_l",
+      3
+    ],
+    [
+      "arm_r",
+      3
+    ],
+    [
+      "hand_l",
+      2
+    ],
+    [
+      "hand_r",
+      2
+    ],
+    [
+      "leg_l",
+      3
+    ],
+    [
+      "leg_r",
+      3
+    ],
+    [
+      "foot_l",
+      2
+    ],
+    [
+      "foot_r",
+      2
+    ]
+  ],
+  "hit_dmg_u": "%1$s的触手骨头刺向了你！",
+  "hit_dmg_npc": "%1$s的触手骨头刺向了<npcname>！",
+  "no_dmg_msg_u": "%1$s的触手骨头刺向了你！但是没有穿透你的护甲。",
+  "no_dmg_msg_npc": "%1$s的触手骨头刺向了 <npcname>！但是没有穿透护甲。"
+}
+```
+

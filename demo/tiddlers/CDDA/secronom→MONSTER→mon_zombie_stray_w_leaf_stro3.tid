@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_stray_w_leaf_stro3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_leaf_stro3|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_leaf_stro3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_stro3",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "stray zombie"
+  },
+  "description": "In every step it takes, befalls seducing spores from its coveted flowers. This almighty stray of nature, has succesfully ascended into a frightful vine beast.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN",
+    "PLANT"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "harvest": "zombie_thorny",
+  "hp": 335,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_magenta",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 30,
+  "armor_cut": 20,
+  "armor_bullet": 15,
+  "armor_stab": 15,
+  "emit_fields": [
+    "secro_nstro3_ss"
+  ],
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_summon_stray_w_leaf_stro3_triffid"
+      },
+      "cooldown": 59,
+      "monster_message": "%1$s strikes the ground, then a wild outgrowth of vines and branches erupts under %3$s!\nTriffids burst out of it too!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY",
+    "SWIMS",
+    "PARALYZEVENOM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_stro3",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "酸液离群丧尸"
+  },
+  "description": "它每走一步，都会从它梦寐以求的花朵上吸引孢子。这个全能的大自然流浪者，成功地升为可怕的藤蔓野兽。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN",
+    "PLANT"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "harvest": "zombie_thorny",
+  "hp": 335,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_magenta",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 30,
+  "armor_cut": 20,
+  "armor_bullet": 15,
+  "armor_stab": 15,
+  "emit_fields": [
+    "secro_nstro3_ss"
+  ],
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_summon_stray_w_leaf_stro3_triffid"
+      },
+      "cooldown": 59,
+      "monster_message": "%1$s猛击地面，然后一个快速生长的野生藤蔓树枝从%3$s脚下爆出！\n三尖树也爆开了出来！"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY",
+    "SWIMS",
+    "PARALYZEVENOM"
+  ]
+}
+```
+

@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: TOOL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→TOOL→BL9_laser_blade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_laser_blade|http://cdda.aloxaf.cn/search?q=BL9_laser_blade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Items/melee_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_laser_blade",
+  "looks_like": "jian",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9 experimental laser blade"
+  },
+  "description": "A highly experimental futuristic blade with a unique design that uses BL9 capable of changing it's physical and chemical structure to cause various offensive effects, in this case, concentrated rays of vaporized BL9",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 4,
+  "cutting": 20,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_laser_melee_effect",
+            "message": "As you strike with the blade it emits concentrated rays of vaporized BL9 at %2$s wildly!",
+            "npc_message": "As %1$s strikes with the blade it emits concentrated rays of vaporized BL9 at %2$s wildly!"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "SWEEP",
+    "BRUTAL",
+    "tec_brawl_feint_melee",
+    "tec_swordsmanship_ringen",
+    "tec_swordsmanship_feint"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "SHEATH_SWORD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_laser_blade",
+  "looks_like": "jian",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9实验激光刀片"
+  },
+  "description": "一种高度实验性的未来派刀片，独特的设计，使用BL9能够改变它的物理和化学结构，从而产生各种攻击性的效果，在这种情况下，BL9蒸发的集中光线",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 4,
+  "cutting": 20,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_laser_melee_effect",
+            "message": "当你用刀锋打击时，它会在%2$s点发射出浓缩的BL9蒸发光线！",
+            "npc_message": "当%1$s用刀片攻击时，它在%2$s疯狂地发射出浓缩的蒸发BL9射线！"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "SWEEP",
+    "BRUTAL",
+    "tec_brawl_feint_melee",
+    "tec_swordsmanship_ringen",
+    "tec_swordsmanship_feint"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "SHEATH_SWORD"
+  ]
+}
+```
+

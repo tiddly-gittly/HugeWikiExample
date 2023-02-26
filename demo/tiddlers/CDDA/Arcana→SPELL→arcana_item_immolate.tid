@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_immolate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_immolate|http://cdda.aloxaf.cn/search?q=arcana_item_immolate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_immolate",
+  "type": "SPELL",
+  "name": {
+    "str": "Immolate"
+  },
+  "description": "Blast a nearby target with fire.",
+  "message": "The talisman burns away, loosing a bolt of flame!",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "min_damage": 15,
+  "max_damage": 25,
+  "damage_type": "heat",
+  "min_range": 5,
+  "max_range": 5,
+  "base_casting_time": 5,
+  "final_casting_time": 5,
+  "field_id": "fd_fire",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_immolate",
+  "type": "SPELL",
+  "name": {
+    "str": "焚祭"
+  },
+  "description": "Blast a nearby target with fire.",
+  "message": "护身符燃烧殆尽，释放出一道火焰！",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "min_damage": 15,
+  "max_damage": 25,
+  "damage_type": "heat",
+  "min_range": 5,
+  "max_range": 5,
+  "base_casting_time": 5,
+  "final_casting_time": 5,
+  "field_id": "fd_fire",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+

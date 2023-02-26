@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_1_SANGUINE_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_1_SANGUINE_2|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_1_SANGUINE_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_SANGUINE_2",
+  "dynamic_line": "Hmmph.  You have your own responsibilities.  You must be better than they were.",
+  "responses": [
+    {
+      "text": "What can be done then?",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "We shall see.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_SANGUINE_2",
+  "dynamic_line": "嗯每小时。你有自己的责任。你一定比他们强。",
+  "responses": [
+    {
+      "text": "那能做什么呢？",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "我们会看到的。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→free_action
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：free_action|http://cdda.aloxaf.cn/search?q=free_action]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "free_action",
+  "name": [
+    "Free Action"
+  ],
+  "desc": [
+    "Protection against paralytic and other hindering effects."
+  ],
+  "remove_message": "You feel the otherworldly tension in your muscles leave your body, as the ward against paralytic effects fades.",
+  "removes_effects": [
+    "downed",
+    "winded",
+    "stunned",
+    "dazed",
+    "bouldering",
+    "paralyzepoison",
+    "webbed",
+    "slimed",
+    "sap",
+    "crushed",
+    "relax_gas",
+    "grabbed"
+  ],
+  "decay_messages": [
+    [
+      "Your spell of free action is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "free_action",
+  "name": [
+    "挣脱束缚"
+  ],
+  "desc": [
+    "防止麻痹和其他阻碍作用。"
+  ],
+  "remove_message": "你会感觉到你肌肉中超自然的紧绷感离开你的身体，因为麻痹防护结界在逐渐消退。",
+  "removes_effects": [
+    "downed",
+    "winded",
+    "stunned",
+    "dazed",
+    "bouldering",
+    "paralyzepoison",
+    "webbed",
+    "slimed",
+    "sap",
+    "crushed",
+    "relax_gas",
+    "grabbed"
+  ],
+  "decay_messages": [
+    [
+      "令你挣脱束缚的魔力正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+

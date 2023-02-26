@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_skeleton
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_skeleton|http://cdda.aloxaf.cn/search?q=mon_sflesh_skeleton]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_skeleton",
+  "type": "MONSTER",
+  "name": {
+    "str": "skeleton"
+  },
+  "description": "A monstrous overgrowth of ossified tissue has replaced this zombie's rotting skin with an organic armor of dense bone.  Large clumps of black goo seep from its joints as it shambles aimlessly, with sickening crackling sounds filling the air around it.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 38,
+  "speed": 60,
+  "material": [
+    "bone",
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 3,
+  "armor_cut": 15,
+  "armor_bullet": 12,
+  "armor_stab": 30,
+  "armor_acid": 3,
+  "vision_day": 30,
+  "vision_night": 3,
+  "harvest": "mr_bones",
+  "special_attacks": [
+    [
+      "scratch",
+      10
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "death_drops": "default_zombie_clothes",
+  "burn_into": "mon_skeleton",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "HARDTOSHOOT",
+    "NO_BREATHE",
+    "POISON",
+    "STUN_IMMUNE",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_skeleton",
+  "type": "MONSTER",
+  "name": {
+    "str": "骷髅"
+  },
+  "description": "一层巨大的过度生长而成的骨化组织已经形成了致密有机的骨制盔甲并取代了这只丧尸表面原来早已腐烂的皮肤。大块的黑色粘液从其关节不断渗出，它毫无目的蹒跚而行，全身的关节随着移动不断发出令人作呕的咔嗒声。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 38,
+  "speed": 60,
+  "material": [
+    "bone",
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 3,
+  "armor_cut": 15,
+  "armor_bullet": 12,
+  "armor_stab": 30,
+  "armor_acid": 3,
+  "vision_day": 30,
+  "vision_night": 3,
+  "harvest": "mr_bones",
+  "special_attacks": [
+    [
+      "scratch",
+      10
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "death_drops": "default_zombie_clothes",
+  "burn_into": "mon_skeleton",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "HARDTOSHOOT",
+    "NO_BREATHE",
+    "POISON",
+    "STUN_IMMUNE",
+    "FILTHY"
+  ]
+}
+```
+

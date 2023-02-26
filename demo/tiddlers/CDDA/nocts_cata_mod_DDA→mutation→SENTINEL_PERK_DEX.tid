@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_PERK_DEX
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_PERK_DEX|http://cdda.aloxaf.cn/search?q=SENTINEL_PERK_DEX]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_DEX",
+  "name": {
+    "str": "Sentinel Reflexes I"
+  },
+  "points": 1,
+  "description": "Targeted mutagenic treatment has sharpened your reflexes.  You can move and attack a bit faster, and your dodging is improved slightly.  In exchange, you need slightly more rest than normal, and are slightly more sensitive to electrical discharges.",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "types": [
+    "SLEEP",
+    "RUNNING"
+  ],
+  "cancels": [
+    "BADKNEES"
+  ],
+  "changes_to": [
+    "SENTINEL_PERK_DEX_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "movecost_modifier": 0.875,
+  "attackcost_modifier": 0.9375,
+  "dodge_modifier": 1,
+  "fatigue_modifier": 0.25,
+  "armor": [
+    {
+      "parts": "ALL",
+      "electric": -1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_DEX",
+  "name": {
+    "str": "哨兵反应 I"
+  },
+  "points": 1,
+  "description": "靶向诱变治疗提高了你的反应速度。稍微提升了你的行动速度与闪避能力。但你需要比平时稍微多休息，而且对放电稍微敏感。",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "types": [
+    "SLEEP",
+    "RUNNING"
+  ],
+  "cancels": [
+    "BADKNEES"
+  ],
+  "changes_to": [
+    "SENTINEL_PERK_DEX_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "movecost_modifier": 0.875,
+  "attackcost_modifier": 0.9375,
+  "dodge_modifier": 1,
+  "fatigue_modifier": 0.25,
+  "armor": [
+    {
+      "parts": "ALL",
+      "electric": -1
+    }
+  ]
+}
+```
+

@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→bloodaxe_act
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bloodaxe_act|http://cdda.aloxaf.cn/search?q=bloodaxe_act]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bloodaxe_act",
+  "//": "Can't use copy-from because qualities refuse to be deleted, causing it to try and chop wood instead of exploding.",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "glowing veinreaver"
+  },
+  "description": "A modified hatchet, the axehead giving off a wicked red glow.  Throwing it might be a smart idea, as you'll have little time to evade its blast.",
+  "weight": "707 g",
+  "volume": "750 ml",
+  "longest_side": "45 cm",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 10,
+  "cutting": 7,
+  "thrown_damage": [
+    {
+      "damage_type": "cold",
+      "amount": 20
+    }
+  ],
+  "material": [
+    "steel",
+    "wood"
+  ],
+  "symbol": ";",
+  "looks_like": "hatchet",
+  "color": "brown",
+  "turns_per_charge": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 3
+      }
+    }
+  ],
+  "ammo": "essence_blood_type",
+  "revert_to": "bloodaxe",
+  "use_action": {
+    "type": "explosion",
+    "fields_type": "fd_blood",
+    "fields_radius": 3,
+    "fields_min_intensity": 3,
+    "fields_max_intensity": 3,
+    "sound_volume": 1,
+    "sound_msg": "Drip.",
+    "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
+    "explosion": {
+      "power": 500,
+      "distance_factor": 0.45
+    }
+  },
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "LIGHT_8",
+    "NO_SALVAGE",
+    "NO_UNLOAD",
+    "NO_RELOAD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bloodaxe_act",
+  "//": "Can't use copy-from because qualities refuse to be deleted, causing it to try and chop wood instead of exploding.",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "鲜血掠夺者"
+  },
+  "description": "一把改良的斧头，斧头发出邪恶的红光。扔掉它可能是个聪明的主意，因为你几乎没有时间逃避它的冲击。",
+  "weight": "707 g",
+  "volume": "750 ml",
+  "longest_side": "45 cm",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 10,
+  "cutting": 7,
+  "thrown_damage": [
+    {
+      "damage_type": "cold",
+      "amount": 20
+    }
+  ],
+  "material": [
+    "steel",
+    "wood"
+  ],
+  "symbol": ";",
+  "looks_like": "hatchet",
+  "color": "brown",
+  "turns_per_charge": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 3
+      }
+    }
+  ],
+  "ammo": "essence_blood_type",
+  "revert_to": "bloodaxe",
+  "use_action": {
+    "type": "explosion",
+    "fields_type": "fd_blood",
+    "fields_radius": 3,
+    "fields_min_intensity": 3,
+    "fields_max_intensity": 3,
+    "sound_volume": 1,
+    "sound_msg": "Drip.",
+    "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
+    "explosion": {
+      "power": 500,
+      "distance_factor": 0.45
+    }
+  },
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "LIGHT_8",
+    "NO_SALVAGE",
+    "NO_UNLOAD",
+    "NO_RELOAD"
+  ]
+}
+```
+

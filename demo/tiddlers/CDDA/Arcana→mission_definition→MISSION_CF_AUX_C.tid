@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_AUX_C
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_AUX_C|http://cdda.aloxaf.cn/search?q=MISSION_CF_AUX_C]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_AUX_C",
+  "type": "mission_definition",
+  "name": {
+    "str": "Bring a copy of History of Alchemy"
+  },
+  "description": "Find a copy of History of Alchemy for the Old Guard doctor stationed at the rural church.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 3,
+  "item": "book_potioncraft",
+  "value": 25000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 10
+      },
+      {
+        "u_spawn_item": "rx12_injector"
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_aux_c"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "I need you to do something discreet for me, if you could.  The locals here are still a bit reluctant to work with us, and I can understand why.  Personally, I just want to go about my duties here as best as I'm able, and I think the best way to keep my superiors from causing trouble would be if I provided them with information that'd give them good reason to work with this place, instead of working against them.  I have something in mind that'd kill two birds with one stone, as it were.  If you can provide me with a copy of their medical text, History of Alchemy, I'll be able to better treat people here, and it'll give me a bargaining chip to keep things civil between the locals and my superiors.",
+    "accepted": "Excellent.  I know this is a bit of an odd task, but it will do a lot to ease my mind.  Not to mention, as anomalous as all this is, having the opportunity to better understand what I've gotten myself into would be appreciated.",
+    "rejected": "Please reconsider, I'll do what I can to repay you if you're able to handle this for me.",
+    "advice": "You can see if they have a book to spare, but do try not to be overly obvious about it…",
+    "inquire": "Do you have it yet?",
+    "success": "Thank you.  I've already been in contact with my CO and they're interested in getting more intel as well.  I'm still a little concerned, but I feel a bit more confident that they aren't going to do anything rash.  As promised, fair payment and a little something extra.  This is an RX-12 stimulant delivery module.  You might find it useful for emergencies.  Came in with the latest gear shipment.",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_AUX_C",
+  "type": "mission_definition",
+  "name": {
+    "str": "收集一本炼金术史"
+  },
+  "description": "为驻扎在乡村教堂的老护卫医生找一本炼金术历史。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 3,
+  "item": "book_potioncraft",
+  "value": 25000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 10
+      },
+      {
+        "u_spawn_item": "rx12_injector"
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_aux_c"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "I need you to do something discreet for me, if you could.  The locals here are still a bit reluctant to work with us, and I can understand why.  Personally, I just want to go about my duties here as best as I'm able, and I think the best way to keep my superiors from causing trouble would be if I provided them with information that'd give them good reason to work with this place, instead of working against them.  I have something in mind that'd kill two birds with one stone, as it were.  If you can provide me with a copy of their medical text, History of Alchemy, I'll be able to better treat people here, and it'll give me a bargaining chip to keep things civil between the locals and my superiors.",
+    "accepted": "非常好。我知道这是一个有点奇怪的任务，但它将大大卸下我的心上的负担。不用说你也知道，这一切看起来都很反常，但如果有机会更好地了解我自己的处境，我将不胜感激。",
+    "rejected": "请重新考虑，如果你能帮我处理这件事，我会尽我所能报答你。",
+    "advice": "你可以看看他们是否有多余的书，但不要过于明显…",
+    "inquire": "你有吗？",
+    "success": "非常感谢。我已经和我的公司联系过了，他们也有兴趣得到更多的情报。我还是有点担心，但我觉得他们不会做出鲁莽的事。正如承诺的，公平的付款和一些额外的东西。这是一个RX-12兴奋剂输送模块。你可能会发现它对紧急情况很有用。带来了最新的装备。",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  }
+}
+```
+

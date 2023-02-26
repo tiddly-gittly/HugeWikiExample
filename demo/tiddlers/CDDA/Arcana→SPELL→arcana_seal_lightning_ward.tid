@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_seal_lightning_ward
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_seal_lightning_ward|http://cdda.aloxaf.cn/search?q=arcana_seal_lightning_ward]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_seals.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_seal_lightning_ward",
+  "type": "SPELL",
+  "name": {
+    "str": "Seal: Lightning Ward"
+  },
+  "description": "Magic Seal\nUsing this spell will grant a blessing that completely protects against lightning, at the expense of slowing you down a bit.  It can be cast on yourself or an ally.",
+  "message": "\"One foot after the other, always grounded…\"  You cast %s!",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DURATION"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "lightning_ward",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 100,
+  "final_casting_time": 100,
+  "min_duration": 72000,
+  "max_duration": 96000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_seal_lightning_ward",
+  "type": "SPELL",
+  "name": {
+    "str": "魔印：抗电"
+  },
+  "description": "法术魔印\n使用此法术会给予祝福，可以完全抵御闪电，但会降低你的速度。它可以投在你自己或一个盟友身上。",
+  "message": "“一只脚接一只脚，总是脚踏实地……”你施放了 %s！",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "RANDOM_DURATION"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "lightning_ward",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 100,
+  "final_casting_time": 100,
+  "min_duration": 72000,
+  "max_duration": 96000
+}
+```
+

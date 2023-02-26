@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_MSCI_APOPHIS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MSCI_APOPHIS|http://cdda.aloxaf.cn/search?q=TALK_MSCI_APOPHIS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_MSCI.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MSCI_APOPHIS",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "You have that badge, you should know how powerful those things are.  Apophis could take them all at once.  Have you seen a zombie hulk?  They couldn't even scratch it.  Worse still, there are some rejects from the Bio-Weapon program that have sided with him, the abominations as they've come to be known.  This is why we are hiding here.",
+    "no": "Ha!  You really have no idea, do you?  Have you ever fought an augmented abomination?  How about the ones that've succumbed to undeath?  Tough, right?  They have nothing on Apophis.  It's incredibly durable thanks to its armor and its heavy weaponry is a step above the rest of the Project.  Apophis is far more dangerous than any ordinary enemy."
+  },
+  "responses": [
+    {
+      "text": "I'm one of the originals it seems.  It's going to come after me anyway, so why not fight it?",
+      "topic": "TALK_MSCI_APOPHIS_ORIGINAL",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA"
+        ]
+      }
+    },
+    {
+      "text": "I'm not one of those monsters.  There has to be something I can do.",
+      "topic": "TALK_MSCI_APOPHIS_FAILED",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED"
+        ]
+      }
+    },
+    {
+      "text": "Dealing with this mess is what I was created for.",
+      "topic": "TALK_MSCI_APOPHIS_SOLDIER",
+      "condition": {
+        "u_has_any_trait": [
+          "SUPER_SOLDIER_MARKER"
+        ]
+      }
+    },
+    {
+      "text": "…",
+      "topic": "TALK_MSCI"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MSCI_APOPHIS",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "你有那个徽章，你应该知道那些东西有多强大。阿波菲斯可以一次把它们全部击败。你见过浩克丧尸吗？他们甚至无法伤害它。更糟糕的是，一些生物武器项目的拒绝者站在了他一边。这就是为什么我们躲在这里。",
+    "no": "哈！你真的不知道吗？你曾经对抗过生物武器吗？比如那些失败的版本？很艰难，对吧？他们没有阿波菲斯的那些装备，由于它的装甲和重型武器比其他生物武器先进一步，它的耐用程度令人难以置信。阿波菲斯比任何普通敌人都要危险得多。"
+  },
+  "responses": [
+    {
+      "text": "我似乎是原型之一。反正它会来找我，那么为什么不与之抗争呢?",
+      "topic": "TALK_MSCI_APOPHIS_ORIGINAL",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA"
+        ]
+      }
+    },
+    {
+      "text": "我不是那种怪物。我一定能做点什么。",
+      "topic": "TALK_MSCI_APOPHIS_FAILED",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED"
+        ]
+      }
+    },
+    {
+      "text": "处理这些烂摊子是我的使命。",
+      "topic": "TALK_MSCI_APOPHIS_SOLDIER",
+      "condition": {
+        "u_has_any_trait": [
+          "SUPER_SOLDIER_MARKER"
+        ]
+      }
+    },
+    {
+      "text": "…",
+      "topic": "TALK_MSCI"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_insect_acidicleech
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_acidicleech|http://cdda.aloxaf.cn/search?q=mon_insect_acidicleech]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Insects/+Leech.json
+
+
+!! 原文
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "HURT",
+    "FRIEND_DIED"
+  ],
+  "armor_bash": 7,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "bodytype": "snake",
+  "color": "yellow_green",
+  "death_drops": "leech",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "default_faction": "leech",
+  "description": "Its mouth doesn't stop drooping yellowish chemical stuff into the terrain it passes by. This leech's flesh has completely adopted to handle the extreme hazards cause by acid, and became a part to its internal organs. Due to thinned skin layer, it is fragile to physical harm, but overprotected by burning blood.",
+  "diff": 25,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "ACIDPROOF",
+    "ACID_BLOOD",
+    "ACIDTRAIL",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "zombie_meatslug",
+  "hp": 140,
+  "id": "mon_insect_acidicleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "melee_dice": 2,
+  "melee_dice_sides": 5,
+  "melee_skill": 3,
+  "morale": 100,
+  "name": {
+    "str": "acidic leech"
+  },
+  "special_attacks": [
+    [
+      "crunch",
+      20
+    ],
+    [
+      "sucking",
+      15
+    ],
+    [
+      "ACID",
+      30
+    ]
+  ],
+  "special_when_hit": [
+    "ACIDSPLASH",
+    100
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 85,
+  "symbol": "$",
+  "type": "MONSTER"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "HURT",
+    "FRIEND_DIED"
+  ],
+  "armor_bash": 7,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "bodytype": "snake",
+  "color": "yellow_green",
+  "death_drops": "leech",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "default_faction": "leech",
+  "description": "它的嘴不停地把黄色的化学物质流到它经过的地方。这种水蛭的肉已经完全适应了处理由酸引起的极端危害，并成为其内脏的一部分。由于皮肤层变薄，对身体的伤害是脆弱的，但被灼伤的血液过度保护。",
+  "diff": 25,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "ACIDPROOF",
+    "ACID_BLOOD",
+    "ACIDTRAIL",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "zombie_meatslug",
+  "hp": 140,
+  "id": "mon_insect_acidicleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "melee_dice": 2,
+  "melee_dice_sides": 5,
+  "melee_skill": 3,
+  "morale": 100,
+  "name": {
+    "str": "强酸水蛭"
+  },
+  "special_attacks": [
+    [
+      "crunch",
+      20
+    ],
+    [
+      "sucking",
+      15
+    ],
+    [
+      "ACID",
+      30
+    ]
+  ],
+  "special_when_hit": [
+    "ACIDSPLASH",
+    100
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 85,
+  "symbol": "$",
+  "type": "MONSTER"
+}
+```
+

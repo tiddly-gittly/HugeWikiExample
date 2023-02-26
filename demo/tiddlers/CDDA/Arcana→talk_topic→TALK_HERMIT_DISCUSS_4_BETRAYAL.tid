@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_4_BETRAYAL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_4_BETRAYAL|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_4_BETRAYAL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_4_BETRAYAL",
+  "dynamic_line": "We had power, a sanctum that we would've been willing to share with them, potentially the means to rebuild.  That was their folly, seeing a chance to take what they sought in a single act, when we could've sheltered them.",
+  "responses": [
+    {
+      "text": "You learned the hard way, not to trust the Sanguine Order.",
+      "topic": "TALK_HERMIT_DISCUSS_4_BETRAYAL_FLAME",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "And our actions doomed us both.",
+      "topic": "TALK_HERMIT_DISCUSS_4_BETRAYAL_SANGUINE",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "I see.  I have another thing to ask about.",
+      "topic": "TALK_HERMIT_DISCUSS_4"
+    },
+    {
+      "text": "Oh.  That is all for now.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_4_BETRAYAL",
+  "dynamic_line": "我们有权力，一个我们愿意与他们分享的避难所，可能是重建的手段。这是他们的愚蠢之举，以为我们本可以庇护他们的时候，一次就抓住了他们想要的东西。",
+  "responses": [
+    {
+      "text": "你学会了艰难的方法，不要相信猩红教派。",
+      "topic": "TALK_HERMIT_DISCUSS_4_BETRAYAL_FLAME",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "我们的行为注定了我们俩。",
+      "topic": "TALK_HERMIT_DISCUSS_4_BETRAYAL_SANGUINE",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "我懂了。我还有一件事要问。",
+      "topic": "TALK_HERMIT_DISCUSS_4"
+    },
+    {
+      "text": "哦。现在到此为止。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

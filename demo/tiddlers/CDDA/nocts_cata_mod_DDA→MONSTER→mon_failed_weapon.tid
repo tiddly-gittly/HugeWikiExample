@@ -1,0 +1,221 @@
+creator: 林一二
+revision: 0
+tags: MONSTER nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→MONSTER→mon_failed_weapon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_failed_weapon|http://cdda.aloxaf.cn/search?q=mon_failed_weapon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_failed_weapon",
+  "type": "MONSTER",
+  "name": {
+    "str": "augmented abomination"
+  },
+  "description": "A heavily-augmented mutant of some sort, deformed from its enhancements.  It seems even more indiscriminate in its rampage than the undead.",
+  "default_faction": "fbio_weapon",
+  "species": [
+    "FBIO-WEAPON"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 200,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "B",
+  "color": "red_cyan",
+  "aggression": 5,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 5,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 8,
+  "armor_cut": 12,
+  "armor_stab": 8,
+  "armor_bullet": 10,
+  "armor_acid": 8,
+  "armor_fire": 6,
+  "vision_day": 40,
+  "vision_night": 3,
+  "path_settings": {
+    "max_dist": 50
+  },
+  "luminance": 14,
+  "regenerates": 5,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -3
+    ]
+  ],
+  "regen_morale": true,
+  "harvest": "CBM_FAILED_BIO",
+  "special_attacks": [
+    [
+      "SHOCKSTORM",
+      15
+    ],
+    [
+      "PARROT",
+      80
+    ]
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    75
+  ],
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED",
+    "HURT",
+    "STALK",
+    "PLAYER_CLOSE"
+  ],
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "death_drops": "wild_bio_weapom_item",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "HUMAN",
+    "ELECTRIC",
+    "BASHES",
+    "PUSH_VEH",
+    "PATH_AVOID_DANGER_1"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_failed_weapon",
+  "type": "MONSTER",
+  "name": {
+    "str": "生物武器"
+  },
+  "description": "一只因改造而失去了理智的生物武器。现在，他会猎杀一切生命体。",
+  "default_faction": "fbio_weapon",
+  "species": [
+    "FBIO-WEAPON"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 200,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "B",
+  "color": "red_cyan",
+  "aggression": 5,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 5,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 8,
+  "armor_cut": 12,
+  "armor_stab": 8,
+  "armor_bullet": 10,
+  "armor_acid": 8,
+  "armor_fire": 6,
+  "vision_day": 40,
+  "vision_night": 3,
+  "path_settings": {
+    "max_dist": 50
+  },
+  "luminance": 14,
+  "regenerates": 5,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -3
+    ]
+  ],
+  "regen_morale": true,
+  "harvest": "CBM_FAILED_BIO",
+  "special_attacks": [
+    [
+      "SHOCKSTORM",
+      15
+    ],
+    [
+      "PARROT",
+      80
+    ]
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    75
+  ],
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED",
+    "HURT",
+    "STALK",
+    "PLAYER_CLOSE"
+  ],
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "death_drops": "wild_bio_weapom_item",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "HUMAN",
+    "ELECTRIC",
+    "BASHES",
+    "PUSH_VEH",
+    "PATH_AVOID_DANGER_1"
+  ]
+}
+```
+

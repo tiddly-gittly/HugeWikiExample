@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL_ARMOR→c_power_armor_surv_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_power_armor_surv_on|http://cdda.aloxaf.cn/search?q=c_power_armor_surv_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_power_armor_surv_on",
+  "copy-from": "c_power_armor_surv",
+  "repairs_like": "c_power_armor_surv",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "makeshift power armor (on)",
+    "str_pl": "makeshift power armors (on)"
+  },
+  "description": "An incredibly heavy suit of steel plates covering a network of hydraulics, driven by pieces of a stripped-down diesel engine jury-rigged to assist the wearer's movements.  It's currently active, strengthening the wearer and making the armor less encumbering, but also being warmer and making stealth more difficult.",
+  "extend": {
+    "effects": [
+      "TRADER_AVOID"
+    ]
+  },
+  "//": "power_draw does not actually work sanely for non-battery items, so value fits for roughly how many turns one unit of the weakest allowed fuel would last at twice the power draw of vanilla power armor, rounded down.",
+  "turns_per_charge": 3,
+  "revert_to": "c_power_armor_surv",
+  "revert_msg": "Your makeshift power armor sputters and dies!",
+  "use_action": {
+    "target": "c_power_armor_surv",
+    "msg": "You shut the makeshift power armor off.",
+    "menu_text": "Turn off",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "warmth": 45,
+  "armor": [
+    {
+      "encumbrance": 15,
+      "coverage": 90,
+      "covers": [
+        "head",
+        "mouth",
+        "eyes",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_power_armor_surv_on",
+  "copy-from": "c_power_armor_surv",
+  "repairs_like": "c_power_armor_surv",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "自制动力装甲（开）",
+    "str_pl": "自制动力装甲（开）"
+  },
+  "description": "这是一套由覆盖着液压系统的钢板组成的极其沉重的盔甲，由一台被拆卸下来的柴油发动机驱动来辅助穿着者的行动。它目前处于开启状态，会提升你的力量并且减少装甲的累赘，但会让身体变热并且让潜行变得更加困难。 ",
+  "extend": {
+    "effects": [
+      "TRADER_AVOID"
+    ]
+  },
+  "//": "power_draw does not actually work sanely for non-battery items, so value fits for roughly how many turns one unit of the weakest allowed fuel would last at twice the power draw of vanilla power armor, rounded down.",
+  "turns_per_charge": 3,
+  "revert_to": "c_power_armor_surv",
+  "revert_msg": "Your makeshift power armor sputters and dies!",
+  "use_action": {
+    "target": "c_power_armor_surv",
+    "msg": "你关闭了自制动力护甲。",
+    "menu_text": "关闭",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "warmth": 45,
+  "armor": [
+    {
+      "encumbrance": 15,
+      "coverage": 90,
+      "covers": [
+        "head",
+        "mouth",
+        "eyes",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r"
+      ]
+    }
+  ]
+}
+```
+

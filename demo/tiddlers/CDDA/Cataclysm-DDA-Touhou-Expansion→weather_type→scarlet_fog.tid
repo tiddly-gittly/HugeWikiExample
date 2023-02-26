@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: weather_type Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→weather_type→scarlet_fog
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：scarlet_fog|http://cdda.aloxaf.cn/search?q=scarlet_fog]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/thex_weather_type.json
+
+
+!! 原文
+
+```json
+{
+  "id": "scarlet_fog",
+  "type": "weather_type",
+  "name": "Foggy",
+  "color": "red",
+  "map_color": "h_light_red",
+  "sym": ".",
+  "ranged_penalty": 3,
+  "sight_penalty": 1.2,
+  "light_modifier": -20,
+  "sun_multiplier": 0.4,
+  "sound_attn": 0,
+  "dangerous": false,
+  "precip": "none",
+  "rains": false,
+  "acidic": false,
+  "sound_category": "cloudy",
+  "required_weathers": [
+    "scarlet_mist"
+  ],
+  "sun_intensity": "none",
+  "condition": {
+    "or": [
+      {
+        "compare_int": [
+          {
+            "weather": "humidity"
+          },
+          ">=",
+          {
+            "const": 97
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "weather": "pressure"
+          },
+          ">",
+          {
+            "const": 1005
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "weather": "windpower"
+          },
+          "<",
+          {
+            "const": 5
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "weather": "windpower"
+          },
+          ">",
+          {
+            "const": 1
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "scarlet_fog",
+  "type": "weather_type",
+  "name": "浓雾",
+  "color": "red",
+  "map_color": "h_light_red",
+  "sym": ".",
+  "ranged_penalty": 3,
+  "sight_penalty": 1.2,
+  "light_modifier": -20,
+  "sun_multiplier": 0.4,
+  "sound_attn": 0,
+  "dangerous": false,
+  "precip": "none",
+  "rains": false,
+  "acidic": false,
+  "sound_category": "cloudy",
+  "required_weathers": [
+    "scarlet_mist"
+  ],
+  "sun_intensity": "none",
+  "condition": {
+    "or": [
+      {
+        "compare_int": [
+          {
+            "weather": "humidity"
+          },
+          ">=",
+          {
+            "const": 97
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "weather": "pressure"
+          },
+          ">",
+          {
+            "const": 1005
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "weather": "windpower"
+          },
+          "<",
+          {
+            "const": 5
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "weather": "windpower"
+          },
+          ">",
+          {
+            "const": 1
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+

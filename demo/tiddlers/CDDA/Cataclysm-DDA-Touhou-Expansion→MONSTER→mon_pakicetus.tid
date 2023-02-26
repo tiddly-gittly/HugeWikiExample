@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_pakicetus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_pakicetus|http://cdda.aloxaf.cn/search?q=mon_pakicetus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_mammal.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_pakicetus",
+  "type": "MONSTER",
+  "name": {
+    "str": "pakicetus",
+    "str_pl": "pakicetus"
+  },
+  "description": "A weird-looking animal (or strangely enough, cute?) looks like a big rat with the eyes situated towards the top of the head.  It's short, with the largest individuals reaching 1 m high, and has bizarre webbed, slightly long fingers with thick yet blunt claws.  It roams around water, hunting for fish to eat.",
+  "volume": "45 L",
+  "weight": "45 kg",
+  "default_faction": "touhou_piscivore",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_fur",
+  "hp": 55,
+  "speed": 115,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "p",
+  "color": "brown",
+  "aggression": -10,
+  "morale": 15,
+  "melee_skill": 5,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 1,
+  "armor_cut": 2,
+  "vision_day": 35,
+  "vision_night": 6,
+  "path_settings": {
+    "max_dist": 8
+  },
+  "reproduction": {
+    "baby_monster": "mon_pakicetus_pup",
+    "baby_count": 2,
+    "baby_timer": 60
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "STALK"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      100
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WARM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_pakicetus",
+  "type": "MONSTER",
+  "name": {
+    "str": "pakicetus",
+    "str_pl": "pakicetus"
+  },
+  "description": "A weird-looking animal (or strangely enough, cute?) looks like a big rat with the eyes situated towards the top of the head.  It's short, with the largest individuals reaching 1 m high, and has bizarre webbed, slightly long fingers with thick yet blunt claws.  It roams around water, hunting for fish to eat.",
+  "volume": "45 L",
+  "weight": "45 kg",
+  "default_faction": "touhou_piscivore",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_fur",
+  "hp": 55,
+  "speed": 115,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "p",
+  "color": "brown",
+  "aggression": -10,
+  "morale": 15,
+  "melee_skill": 5,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 1,
+  "armor_cut": 2,
+  "vision_day": 35,
+  "vision_night": 6,
+  "path_settings": {
+    "max_dist": 8
+  },
+  "reproduction": {
+    "baby_monster": "mon_pakicetus_pup",
+    "baby_count": 2,
+    "baby_timer": 60
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "STALK"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      100
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WARM"
+  ]
+}
+```
+

@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: GUN secronom
+title: secronom→GUN→mawy_mouth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mawy_mouth|http://cdda.aloxaf.cn/search?q=mawy_mouth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_gun_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mawy_mouth",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "sinister maw's mouth"
+  },
+  "description": "Sinister maw's mouth. It spews out fleshy webbings.",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "NO_PENETRATE_OBSTACLES",
+    "SECRO_MAWYFLESH"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 13,
+  "dispersion": 4000,
+  "modes": [
+    [
+      "N",
+      "near",
+      2
+    ],
+    [
+      "M",
+      "mid",
+      1
+    ]
+  ],
+  "ranged_damage": {
+    "damage_type": "bash",
+    "amount": 3
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mawy_mouth",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "阴险的嘴巴"
+  },
+  "description": "阴险的嘴巴。它吐出肉质的蹼。",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "NO_PENETRATE_OBSTACLES",
+    "SECRO_MAWYFLESH"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 13,
+  "dispersion": 4000,
+  "modes": [
+    [
+      "N",
+      "near",
+      2
+    ],
+    [
+      "M",
+      "mid",
+      1
+    ]
+  ],
+  "ranged_damage": {
+    "damage_type": "bash",
+    "amount": 3
+  }
+}
+```
+

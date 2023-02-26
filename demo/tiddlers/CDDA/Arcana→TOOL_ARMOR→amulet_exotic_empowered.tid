@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→amulet_exotic_empowered
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：amulet_exotic_empowered|http://cdda.aloxaf.cn/search?q=amulet_exotic_empowered]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "amulet_exotic_empowered",
+  "copy-from": "amulet_exotic",
+  "sub": "amulet_exotic",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "shrouded exotic amulet"
+  },
+  "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Activating it will shroud your life force, rendering you invisible (but not inaudible) to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 28 hours to charge.",
+  "price_postapoc": "15 USD",
+  "charges_per_use": 28,
+  "ammo": "primitive_magic_item_ammo_type",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "primitive_magic_item_ammo_type": 168
+      }
+    }
+  ],
+  "flags": [
+    "FANCY",
+    "NO_RELOAD",
+    "NO_UNLOAD",
+    "TARDIS"
+  ],
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "1 h",
+      "regenerate_ammo": true
+    }
+  },
+  "//": "Flame talisman and air talisman.  Each use has power equivalent to 280 mana.",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_amulet_exotic_empowered",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "amulet_exotic_empowered",
+  "copy-from": "amulet_exotic",
+  "sub": "amulet_exotic",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "异域护身符"
+  },
+  "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Activating it will shroud your life force, rendering you invisible (but not inaudible) to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 28 hours to charge.",
+  "price_postapoc": "15 USD",
+  "charges_per_use": 28,
+  "ammo": "primitive_magic_item_ammo_type",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "primitive_magic_item_ammo_type": 168
+      }
+    }
+  ],
+  "flags": [
+    "FANCY",
+    "NO_RELOAD",
+    "NO_UNLOAD",
+    "TARDIS"
+  ],
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "1 h",
+      "regenerate_ammo": true
+    }
+  },
+  "//": "Flame talisman and air talisman.  Each use has power equivalent to 280 mana.",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_amulet_exotic_empowered",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+

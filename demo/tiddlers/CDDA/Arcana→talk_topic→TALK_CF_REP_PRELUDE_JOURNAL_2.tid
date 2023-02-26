@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_PRELUDE_JOURNAL_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_PRELUDE_JOURNAL_2|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_PRELUDE_JOURNAL_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_REP_PRELUDE_JOURNAL_2",
+  "type": "talk_topic",
+  "dynamic_line": "A few of their early entries, the first few days into the journey, references nearby landmarks.  The last one before things go off the rails mentions a recently-built otherworldly structure in their path, and I can confirm which location that is.  Given the description suggests something anomalous happened there more recently, it's possible that the source of this took up residence there.  Go talk to Johnathan, tell him we have what we need.",
+  "speaker_effect": [
+    {
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_5",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_data_5",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "text": "Thank you.  One more thing before I go.",
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "Thank you.  Bye for now.",
+      "topic": "TALK_DONE",
+      "effect": {
+        "u_add_effect": "sofia_deacon_message",
+        "duration": "PERMANENT"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_REP_PRELUDE_JOURNAL_2",
+  "type": "talk_topic",
+  "dynamic_line": "在旅途的前几天，他们的一些行动依赖附近的地标。在事情偏离轨道之前的最后一个成员提到了在他们的行进路线上最近产生的一个超自然的结构，我可以确定这是在哪一个位置。鉴于描述显示最近那里发生了一些不正常的事情，这很可能是来源于那里。去和约翰纳森谈谈，告诉他我们已经拥有了我们需要的东西。",
+  "speaker_effect": [
+    {
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_5",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_data_5",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "text": "非常感谢。在我走之前还有一件事。",
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "非常感谢。再见。",
+      "topic": "TALK_DONE",
+      "effect": {
+        "u_add_effect": "sofia_deacon_message",
+        "duration": "PERMANENT"
+      }
+    }
+  ]
+}
+```
+

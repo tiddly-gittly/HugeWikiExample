@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: terrain Dorf_Life
+title: Dorf_Life→terrain→t_shrub_helmet_plump_harvested
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_shrub_helmet_plump_harvested|http://cdda.aloxaf.cn/search?q=t_shrub_helmet_plump_harvested]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/cave_terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_shrub_helmet_plump_harvested",
+  "name": "uprooted cavern patch",
+  "description": "A torn-up patch of bruised pink stalks.",
+  "looks_like": "t_underbrush_harvested_spring",
+  "symbol": "#",
+  "color": "light_red_green",
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT",
+    "HARVESTED"
+  ],
+  "transforms_into": "t_shrub_helmet_plump",
+  "examine_action": "harvested_plant",
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "ter_set": "t_moss_underground",
+    "items": [
+      {
+        "item": "withered",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_shrub_helmet_plump_harvested",
+  "name": "收获过的硬豆荚菌坑",
+  "description": "一片被撕碎的粉红色的菌柄。",
+  "looks_like": "t_underbrush_harvested_spring",
+  "symbol": "#",
+  "color": "light_red_green",
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT",
+    "HARVESTED"
+  ],
+  "transforms_into": "t_shrub_helmet_plump",
+  "examine_action": "harvested_plant",
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "ter_set": "t_moss_underground",
+    "items": [
+      {
+        "item": "withered",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

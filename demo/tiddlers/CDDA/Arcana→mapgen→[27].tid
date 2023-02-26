@@ -1,0 +1,234 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[27]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "//": "7x7 workstation with chance of magitech-related materials.",
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "lab_room_7x7_rare",
+  "object": {
+    "mapgensize": [
+      7,
+      7
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      ".xcccx.",
+      ".h...h.",
+      ".......",
+      "..rrr..",
+      ".......",
+      ".dh.hd.",
+      ".dcccd."
+    ],
+    "palettes": [
+      "lab_palette"
+    ],
+    "mapping": {
+      "d": {
+        "items": [
+          {
+            "item": "office",
+            "chance": 50
+          },
+          {
+            "item": "textbooks",
+            "chance": 25
+          },
+          {
+            "item": "science",
+            "chance": 10
+          }
+        ]
+      },
+      "c": {
+        "items": [
+          {
+            "item": "supplies_electronics",
+            "chance": 50
+          },
+          {
+            "item": "supplies_mechanics",
+            "chance": 50
+          },
+          {
+            "item": "arcana_hunt_random",
+            "chance": 25
+          },
+          {
+            "item": "lab_magitech_general",
+            "chance": 10
+          }
+        ]
+      },
+      "r": {
+        "items": [
+          {
+            "item": "tools_science",
+            "chance": 50
+          },
+          {
+            "item": "tools_electronics",
+            "chance": 50
+          },
+          {
+            "item": "tools_robotics",
+            "chance": 50
+          },
+          {
+            "item": "autodoc_installation_magitech",
+            "chance": 5
+          }
+        ]
+      },
+      "h": {
+        "item": [
+          {
+            "item": "coat_lab",
+            "chance": 10
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_cf_4_roof_2",
+  "object": {
+    "place_nested": [
+      {
+        "chunks": [
+          "cf_church_upgrade_4_g"
+        ],
+        "x": 3,
+        "y": 0
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "7x7 workstation with chance of magitech-related materials.",
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "lab_room_7x7_rare",
+  "object": {
+    "mapgensize": [
+      7,
+      7
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      ".xcccx.",
+      ".h...h.",
+      ".......",
+      "..rrr..",
+      ".......",
+      ".dh.hd.",
+      ".dcccd."
+    ],
+    "palettes": [
+      "lab_palette"
+    ],
+    "mapping": {
+      "d": {
+        "items": [
+          {
+            "item": "office",
+            "chance": 50
+          },
+          {
+            "item": "textbooks",
+            "chance": 25
+          },
+          {
+            "item": "science",
+            "chance": 10
+          }
+        ]
+      },
+      "c": {
+        "items": [
+          {
+            "item": "supplies_electronics",
+            "chance": 50
+          },
+          {
+            "item": "supplies_mechanics",
+            "chance": 50
+          },
+          {
+            "item": "arcana_hunt_random",
+            "chance": 25
+          },
+          {
+            "item": "lab_magitech_general",
+            "chance": 10
+          }
+        ]
+      },
+      "r": {
+        "items": [
+          {
+            "item": "tools_science",
+            "chance": 50
+          },
+          {
+            "item": "tools_electronics",
+            "chance": 50
+          },
+          {
+            "item": "tools_robotics",
+            "chance": 50
+          },
+          {
+            "item": "autodoc_installation_magitech",
+            "chance": 5
+          }
+        ]
+      },
+      "h": {
+        "item": [
+          {
+            "item": "coat_lab",
+            "chance": 10
+          }
+        ]
+      }
+    }
+  }
+}
+```
+

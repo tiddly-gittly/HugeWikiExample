@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_module_electric_act
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_module_electric_act|http://cdda.aloxaf.cn/search?q=secro_power_armor_module_electric_act]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armor_modules.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_module_electric_act",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom module implant \"Shock\""
+  },
+  "description": "A set of power armor modules that installs a pair of augmented gloves. Module implant type \"Shock\" allows the power armor to send electric discharges whenever the user performs an attack. Uses a built-in UPS.",
+  "weight": "3005 g",
+  "volume": "2 L",
+  "price": "11000 USD",
+  "price_postapoc": "1100 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_frame",
+  "color": "cyan_white",
+  "power_armor": true,
+  "turns_per_charge": 1,
+  "charges_per_use": 1,
+  "revert_to": "secro_power_armor_module_electric",
+  "use_action": {
+    "target": "secro_power_armor_module_electric",
+    "msg": "\"Shock\" module - <color_red>offline",
+    "type": "transform",
+    "menu_text": "Deactivate \"Shock\" module"
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "secro_power_armor_module_electric_act_shockdischarge",
+            "hit_self": false,
+            "once_in": 10,
+            "message": "Your power gloves shocked %2$s!",
+            "npc_message": "%1$s's power gloves %2$s!"
+          },
+          {
+            "id": "secro_power_armor_module_electric_act_random",
+            "hit_self": false,
+            "once_in": 200,
+            "message": "Your power gloves generated several high-powered electric discharges!",
+            "npc_message": "%1$s's power gloves overcharged!"
+          }
+        ]
+      }
+    ]
+  },
+  "ammo": "battery",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 500
+      }
+    }
+  ],
+  "flags": [
+    "WATERPROOF",
+    "OUTER",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "NO_TAKEOFF",
+    "RECHARGE",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 10,
+      "coverage": 10,
+      "material": [
+        "superalloy"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_module_electric_act",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom模块植入“冲击”"
+  },
+  "description": "一套安装了一副增强手套的动力装甲模块。模块植入式“电击”允许动力装甲在用户发动攻击时发出放电。使用内置不间断电源。",
+  "weight": "3005 g",
+  "volume": "2 L",
+  "price": "11000 USD",
+  "price_postapoc": "1100 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_frame",
+  "color": "cyan_white",
+  "power_armor": true,
+  "turns_per_charge": 1,
+  "charges_per_use": 1,
+  "revert_to": "secro_power_armor_module_electric",
+  "use_action": {
+    "target": "secro_power_armor_module_electric",
+    "msg": "“电击”模块 - <color_red>离线",
+    "type": "transform",
+    "menu_text": "关闭“电击”模块"
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "secro_power_armor_module_electric_act_shockdischarge",
+            "hit_self": false,
+            "once_in": 10,
+            "message": "你的动力手套震慑了%2$s！",
+            "npc_message": "%1$s的能量包住了%2$s！"
+          },
+          {
+            "id": "secro_power_armor_module_electric_act_random",
+            "hit_self": false,
+            "once_in": 200,
+            "message": "你的动力手套产生了几次高功率放电！",
+            "npc_message": "%1$s的动力手套过载了！"
+          }
+        ]
+      }
+    ]
+  },
+  "ammo": "battery",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 500
+      }
+    }
+  ],
+  "flags": [
+    "WATERPROOF",
+    "OUTER",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "NO_TAKEOFF",
+    "RECHARGE",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 10,
+      "coverage": 10,
+      "material": [
+        "superalloy"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

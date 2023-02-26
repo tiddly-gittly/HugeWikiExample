@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_MAGIC
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_MAGIC|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_MAGIC]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_MAGIC",
+  "dynamic_line": {
+    "u_has_effect": "cf_sofia_notes_given",
+    "yes": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  But it's useful to remind us to treat even the items we're familiar with cautiously, and never make the assumption that we understand enough to make a rash mistake.",
+    "no": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  Here.  This may prove better than trying to toy with the unknown unaided."
+  },
+  "responses": [
+    {
+      "text": "…",
+      "switch": true,
+      "topic": "TALK_CF_REP",
+      "condition": {
+        "u_has_effect": "cf_sofia_notes_given"
+      }
+    },
+    {
+      "text": "Er.  Thanks, I think.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP",
+      "effect": [
+        {
+          "u_spawn_item": "book_magicfordummies"
+        },
+        {
+          "u_add_effect": "cf_sofia_notes_given",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_MAGIC",
+  "dynamic_line": {
+    "u_has_effect": "cf_sofia_notes_given",
+    "yes": "你完全有权认为这很荒谬。我们谈到魔法和奥术，当它是一些我们只有足够的理解力才能安全使用的效果时。也许，当它有一个命令，一个它自己的逻辑，这样称呼它可能也是不正确的。但提醒我们谨慎对待我们所熟悉的事物是很有用的，千万不要以为自己了解得足够多就犯了轻率的错误。",
+    "no": "你完全有权认为这很荒谬。我们谈到魔法和奥术，当它是一些我们只有足够的理解力才能安全使用的效果时。也许，当它有一个命令，一个它自己的逻辑，这样称呼它可能也是不正确的。在这里。这可能会比试图在无人帮助下玩弄未知事物要好。"
+  },
+  "responses": [
+    {
+      "text": "…",
+      "switch": true,
+      "topic": "TALK_CF_REP",
+      "condition": {
+        "u_has_effect": "cf_sofia_notes_given"
+      }
+    },
+    {
+      "text": "呃。谢谢，我想。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP",
+      "effect": [
+        {
+          "u_spawn_item": "book_magicfordummies"
+        },
+        {
+          "u_add_effect": "cf_sofia_notes_given",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+

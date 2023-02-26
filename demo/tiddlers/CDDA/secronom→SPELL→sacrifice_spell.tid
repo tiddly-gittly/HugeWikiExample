@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→sacrifice_spell
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sacrifice_spell|http://cdda.aloxaf.cn/search?q=sacrifice_spell]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Reminder that these appears in the debug spellcasting. Disable the mod if you're testing spell-related stuff!",
+  "id": "sacrifice_spell",
+  "type": "SPELL",
+  "name": {
+    "str": "Sacrifice"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster deals an instant death damage, sacrificing itself upon casting a spell that's been combined with.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground",
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_sacrifice_effect",
+  "min_damage": 100000000,
+  "max_damage": 100000000,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "damage_type": "pure"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Reminder that these appears in the debug spellcasting. Disable the mod if you're testing spell-related stuff!",
+  "id": "sacrifice_spell",
+  "type": "SPELL",
+  "name": {
+    "str": "牺牲"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者造成瞬间死亡伤害，在施法时牺牲自己。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground",
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_sacrifice_effect",
+  "min_damage": 100000000,
+  "max_damage": 100000000,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "damage_type": "pure"
+}
+```
+

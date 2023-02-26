@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→SPELL→merc_leaping_slash
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：merc_leaping_slash|http://cdda.aloxaf.cn/search?q=merc_leaping_slash]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_spell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "merc_leaping_slash",
+  "type": "SPELL",
+  "name": {
+    "str": "Leaping Slash"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster leaps towards it's target and slashes them with it's arm-blade that deals high cutting damage then the caster leaps back to the same position where he initially was'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "affected_body_parts": [
+    "head",
+    "arm_l",
+    "arm_r",
+    "torso"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 38,
+  "max_damage": 42,
+  "min_range": 7,
+  "max_range": 7,
+  "damage_type": "cut"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "merc_leaping_slash",
+  "type": "SPELL",
+  "name": {
+    "str": "跳跃式斜杠"
+  },
+  "description": "怪物施法的。如果你看到的是这个，那么读这个吧：\n'施法者向目标跳跃，用手臂上的刀刃砍伤目标，造成很高的切割伤害，然后施法者跳回原来的位置'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "affected_body_parts": [
+    "head",
+    "arm_l",
+    "arm_r",
+    "torso"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 38,
+  "max_damage": 42,
+  "min_range": 7,
+  "max_range": 7,
+  "damage_type": "cut"
+}
+```
+

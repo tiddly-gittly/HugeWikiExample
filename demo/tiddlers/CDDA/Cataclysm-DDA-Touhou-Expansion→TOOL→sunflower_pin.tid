@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: TOOL Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→TOOL→sunflower_pin
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sunflower_pin|http://cdda.aloxaf.cn/search?q=sunflower_pin]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/magic/sunflower_pin.json
+
+
+!! 原文
+
+```json
+{
+  "id": "sunflower_pin",
+  "type": "TOOL",
+  "name": {
+    "str": "sunflower pin",
+    "str_pl": "sunflower pins"
+  },
+  "description": "A small, sunflower-shaped metal pin.  Touching it makes you focus on the surrounding soil.",
+  "volume": "5 ml",
+  "weight": "10 g",
+  "longest_side": "3 cm",
+  "price_postapoc": 25000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "bad",
+    "length": "short",
+    "surface": "any"
+  },
+  "bashing": 1,
+  "cutting": 1,
+  "material": [
+    "steel"
+  ],
+  "symbol": "*",
+  "looks_like": "f_sunflower",
+  "color": "yellow",
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 6
+      }
+    }
+  ],
+  "relic_data": {
+    "charge_info": {
+      "regenerate_ammo": true,
+      "recharge_type": "periodic",
+      "time": "10 m"
+    }
+  },
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "sunflower_spam",
+      "no_fail": true,
+      "level": 1
+    }
+  ],
+  "flags": [
+    "NO_RELOAD",
+    "NO_UNLOAD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "sunflower_pin",
+  "type": "TOOL",
+  "name": {
+    "str": "sunflower pin",
+    "str_pl": "sunflower pins"
+  },
+  "description": "A small, sunflower-shaped metal pin.  Touching it makes you focus on the surrounding soil.",
+  "volume": "5 ml",
+  "weight": "10 g",
+  "longest_side": "3 cm",
+  "price_postapoc": 25000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "bad",
+    "length": "short",
+    "surface": "any"
+  },
+  "bashing": 1,
+  "cutting": 1,
+  "material": [
+    "steel"
+  ],
+  "symbol": "*",
+  "looks_like": "f_sunflower",
+  "color": "yellow",
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 6
+      }
+    }
+  ],
+  "relic_data": {
+    "charge_info": {
+      "regenerate_ammo": true,
+      "recharge_type": "periodic",
+      "time": "10 m"
+    }
+  },
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "sunflower_spam",
+      "no_fail": true,
+      "level": 1
+    }
+  ],
+  "flags": [
+    "NO_RELOAD",
+    "NO_UNLOAD"
+  ]
+}
+```
+

@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_item_blobgem
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_item_blobgem|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_item_blobgem]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_itemvalidation.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_blobgem",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "I will give you 3 tokens for each amorphous amber you bring to me.",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "I will give you 245$ for each amorphous amber you bring to me.",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "I will give you 95$ for each amorphous amber you bring to me.",
+        "no": "I will give you 45$ and 3 tokens for each amorphous amber you bring to me."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Okay...",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeriblobgemval"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_blobgem",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "你给我带来的每一个无定形琥珀，我就给你3个代币。",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "我会给你245美元买一个你带给我的无定形琥珀。",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "你带给我的每一个无定形的琥珀我给你95美元。",
+        "no": "我会给你45美元和3个代币为您带来的每一个无定形琥珀给我。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "好吧……",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeriblobgemval"
+      }
+    }
+  ]
+}
+```
+

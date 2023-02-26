@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: TOOL MST_Extra
+title: MST_Extra→TOOL→milk_curdling2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：milk_curdling2|http://cdda.aloxaf.cn/search?q=milk_curdling2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/obsolete.json
+
+
+!! 原文
+
+```json
+{
+  "id": "milk_curdling2",
+  "type": "TOOL",
+  "category": "food",
+  "name": {
+    "str": "batch of curdling milk",
+    "str_pl": "batches of curdling milk"
+  },
+  "description": "A sealed waterskin filled with milk that is undergoing the process to become a crude form of cheese, having had vinegar and natural rennet added.",
+  "weight": "3617 g",
+  "volume": "3500 ml",
+  "price": 4000,
+  "to_hit": -1,
+  "bashing": 2,
+  "material": [
+    "milk",
+    "leather"
+  ],
+  "symbol": ")",
+  "color": "white",
+  "use_action": {
+    "target": "milk_curdled",
+    "msg": "The milk appears to have finished curdling, and is ready for further processing.  Checking on it has exposed the mixture to the atmosphere.",
+    "container": "waterskin2",
+    "target_charges": 12,
+    "moves": 150,
+    "type": "delayed_transform",
+    "transform_age": 36000,
+    "not_ready_msg": "The milk is still curdling."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "milk_curdling2",
+  "type": "TOOL",
+  "category": "food",
+  "name": {
+    "str": "中包凝结中的酪乳",
+    "str_pl": "中包凝结中的酪乳"
+  },
+  "description": "一包用动物胃囊密封的凝结牛奶。牛奶、醋酸和胃囊内的微生物一同发酵，产生凝乳酶使蛋白结块，正在向粗制奶酪转变中。",
+  "weight": "3617 g",
+  "volume": "3500 ml",
+  "price": 4000,
+  "to_hit": -1,
+  "bashing": 2,
+  "material": [
+    "milk",
+    "leather"
+  ],
+  "symbol": ")",
+  "color": "white",
+  "use_action": {
+    "target": "milk_curdled",
+    "msg": "牛奶似乎已经凝结完毕，可以进一步处理。检查它暴露在空气中的混合物。",
+    "container": "waterskin2",
+    "target_charges": 12,
+    "moves": 150,
+    "type": "delayed_transform",
+    "transform_age": 36000,
+    "not_ready_msg": "The milk is still curdling."
+  }
+}
+```
+

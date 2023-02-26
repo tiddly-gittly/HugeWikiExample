@@ -1,0 +1,215 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_salden_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_salden_3|http://cdda.aloxaf.cn/search?q=mon_BL9_salden_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens_dominators.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_salden_3",
+  "looks_like": "mon_zombie_phase_skulker",
+  "type": "MONSTER",
+  "name": {
+    "str": "Saldenium Psionics Master"
+  },
+  "description": "A tall leathery-skinned fierce-looking humanoid-alien emitting a bright solar-orange crystalline light, it's forehead is ridged, it's entire face is covered with multiple curved spikes and it's neck has some sorts of breathing tubes, it's wearing a cape and wielding a sleek glowing PDA-like alien artifact",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 530,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 5,
+      "armor_penetration": 14
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 19,
+  "armor_cut": 19,
+  "armor_bullet": 19,
+  "death_drops": "BL9_Drops_Aliens_Dominators_Military",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 7,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 26,
+          "armor_penetration": 22
+        }
+      ],
+      "hit_dmg_u": "The %1$s conjures a glowing longsword and strikes you with it!",
+      "hit_dmg_npc": "The %1$s conjures a glowing longsword and strikes <npcname> with it!",
+      "no_dmg_msg_u": "The %1$s conjures a glowing longsword and tries to strike you with it, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s conjures a glowing longsword and tries to strike <npcname> with it, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s conjures a glowing longsword and tries to strike you, but you dodge!",
+      "miss_msg_npc": "The %s conjures a glowing longsword and tries to strike <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "salden_psi_ray"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s conjures a bright solar-orange ray of light which explodes violently upon reaching %3$s!</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_salden_3",
+  "looks_like": "mon_zombie_phase_skulker",
+  "type": "MONSTER",
+  "name": {
+    "str": "萨尔德尼姆灵能大师"
+  },
+  "description": "一个高大的皮革皮肤凶猛的人形外星人发射出明亮的太阳橙色水晶光，它的前额是脊状的，它的整个脸上覆盖着多个弯曲的尖刺，它的脖子上有一些呼吸管，它穿着斗篷，挥舞着一个光滑发光的类似PDA的外星人神器",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 530,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 5,
+      "armor_penetration": 14
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 19,
+  "armor_cut": 19,
+  "armor_bullet": 19,
+  "death_drops": "BL9_Drops_Aliens_Dominators_Military",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 7,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 26,
+          "armor_penetration": 22
+        }
+      ],
+      "hit_dmg_u": "The %1$s conjures a glowing longsword and strikes you with it!",
+      "hit_dmg_npc": "The %1$s conjures a glowing longsword and strikes <npcname> with it!",
+      "no_dmg_msg_u": "The %1$s conjures a glowing longsword and tries to strike you with it, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s conjures a glowing longsword and tries to strike <npcname> with it, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s conjures a glowing longsword and tries to strike you, but you dodge!",
+      "miss_msg_npc": "The %s conjures a glowing longsword and tries to strike <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "salden_psi_ray"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s召唤出一束阳橙色的明亮光束射向%3$s，并且一接触到其时就猛烈地爆炸了！</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

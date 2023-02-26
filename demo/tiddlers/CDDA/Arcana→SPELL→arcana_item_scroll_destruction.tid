@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_scroll_destruction
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_scroll_destruction|http://cdda.aloxaf.cn/search?q=arcana_item_scroll_destruction]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_scroll_destruction",
+  "type": "SPELL",
+  "name": {
+    "str": "Cry of Hatred"
+  },
+  "description": "Similar effects to Wave of Destruction, though with different side effects.",
+  "message": "\"There is an end to all things.\"  A horrible cacophony resounds, rising to a thunderous boom that blasts your surroundings!",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_destruction_spike",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_scroll_destruction_noise",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_scroll_destruction_attention",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_scroll_destruction_cold",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_destruction_pulse",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect_str": "dazed",
+  "min_damage": 60,
+  "max_damage": 120,
+  "min_aoe": 24,
+  "max_aoe": 24,
+  "min_duration": 1500,
+  "max_duration": 3000,
+  "damage_type": "bash",
+  "field_id": "fd_toxic_gas",
+  "field_chance": 10,
+  "min_field_intensity": 3,
+  "max_field_intensity": 3
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_scroll_destruction",
+  "type": "SPELL",
+  "name": {
+    "str": "怨泣"
+  },
+  "description": "Similar effects to Wave of Destruction, though with different side effects.",
+  "message": "“万物皆有尽头。”一阵可怕的杂音回响着，引发出雷鸣般的爆炸冲击你的四周！",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_destruction_spike",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_scroll_destruction_noise",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_scroll_destruction_attention",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_scroll_destruction_cold",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_destruction_pulse",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect_str": "dazed",
+  "min_damage": 60,
+  "max_damage": 120,
+  "min_aoe": 24,
+  "max_aoe": 24,
+  "min_duration": 1500,
+  "max_duration": 3000,
+  "damage_type": "bash",
+  "field_id": "fd_toxic_gas",
+  "field_chance": 10,
+  "min_field_intensity": 3,
+  "max_field_intensity": 3
+}
+```
+

@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_1_DRAGONBLOOD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_1_DRAGONBLOOD|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_1_DRAGONBLOOD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_DRAGONBLOOD",
+  "dynamic_line": "Then the path ahead of you shall be difficult, but there is still hope.  You will not be able to make full use of the blade once it is restored, but you can still help.",
+  "responses": [
+    {
+      "switch": true,
+      "text": "We'll see if I can.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "In what way, then?",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_DRAGONBLOOD",
+  "dynamic_line": "那么，你面前的道路将是艰难的，但仍有希望。一旦刀片恢复，您将无法充分利用刀片，但您仍然可以提供帮助。",
+  "responses": [
+    {
+      "switch": true,
+      "text": "我们看看我能不能。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "那么，用什么方式呢？",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_mib3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_mib3|http://cdda.aloxaf.cn/search?q=mon_mib3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_MIB.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_mib3",
+  "type": "MONSTER",
+  "name": {
+    "str": "Man in Black",
+    "str_pl": "Men in Black"
+  },
+  "copy-from": "mon_mib",
+  "vision_night": 35,
+  "special_attacks": [
+    {
+      "gun_type": "glock_17",
+      "type": "gun",
+      "description": "The %s shoots!",
+      "ammo_type": "9mmfmj",
+      "cooldown": 3,
+      "fake_dex": 10,
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "pistol",
+          4
+        ]
+      ],
+      "max_ammo": 21,
+      "move_cost": 120,
+      "targeting_cost": 105,
+      "require_targeting_player": true,
+      "ranges": [
+        [
+          2,
+          12,
+          "BURST"
+        ],
+        [
+          13,
+          18,
+          "SEMI_AUTO"
+        ]
+      ]
+    },
+    [
+      "PARROT_AT_DANGER",
+      20
+    ]
+  ],
+  "death_function": {
+    "effect": {
+      "id": "death_mib_alienspawn",
+      "hit_self": true
+    },
+    "message": "The %s stops on its tracks, the flesh starts to melt and something comes out from the body!",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "DROPS_AMMO",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES"
+  ],
+  "//": "Alien type MIB, add pile-of-flesh corpse"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_mib3",
+  "type": "MONSTER",
+  "name": {
+    "str": "Man in Black",
+    "str_pl": "Men in Black"
+  },
+  "copy-from": "mon_mib",
+  "vision_night": 35,
+  "special_attacks": [
+    {
+      "gun_type": "glock_17",
+      "type": "gun",
+      "description": "The %s shoots！",
+      "ammo_type": "9mmfmj",
+      "cooldown": 3,
+      "fake_dex": 10,
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "pistol",
+          4
+        ]
+      ],
+      "max_ammo": 21,
+      "move_cost": 120,
+      "targeting_cost": 105,
+      "require_targeting_player": true,
+      "ranges": [
+        [
+          2,
+          12,
+          "BURST"
+        ],
+        [
+          13,
+          18,
+          "SEMI_AUTO"
+        ]
+      ]
+    },
+    [
+      "PARROT_AT_DANGER",
+      20
+    ]
+  ],
+  "death_function": {
+    "effect": {
+      "id": "death_mib_alienspawn",
+      "hit_self": true
+    },
+    "message": "The %s stops on its tracks, the flesh starts to melt and something comes out from the body!",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "DROPS_AMMO",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES"
+  ],
+  "//": "Alien type MIB, add pile-of-flesh corpse"
+}
+```
+

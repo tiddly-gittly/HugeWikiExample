@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_seal_shockstorm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_seal_shockstorm|http://cdda.aloxaf.cn/search?q=arcana_seal_shockstorm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_seals.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_seal_shockstorm",
+  "type": "SPELL",
+  "name": {
+    "str": "Seal: Shockstorm"
+  },
+  "description": "Magic Seal\nUsing this spell will call forth lightning all around you.  Anything close to you will take double damage.  Beware using it around allies.",
+  "message": "\"Let it be a thunder to split the heavens and earth…\"  You cast %s!",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_lightning_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_spike",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_noise",
+      "hit_self": false,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "SILENT",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "effect_str": "zapped",
+  "min_damage": 75,
+  "max_damage": 100,
+  "min_aoe": 4,
+  "max_aoe": 12,
+  "aoe_increment": 0.8,
+  "max_level": 10,
+  "skill": "magic",
+  "base_casting_time": 120,
+  "final_casting_time": 120,
+  "min_duration": 15000,
+  "max_duration": 20000,
+  "damage_type": "electric",
+  "field_id": "fd_electricity",
+  "field_chance": 10,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_seal_shockstorm",
+  "type": "SPELL",
+  "name": {
+    "str": "魔印：冲击波"
+  },
+  "description": "法术魔印\n使用这个法术会在你周围召唤闪电。任何靠近你的东西都会受到双倍伤害。小心在盟友周围使用它。",
+  "message": "“让它成为分裂天地的雷声……”你施放了 %s！",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_lightning_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_spike",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_noise",
+      "hit_self": false,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "SILENT",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "effect_str": "zapped",
+  "min_damage": 75,
+  "max_damage": 100,
+  "min_aoe": 4,
+  "max_aoe": 12,
+  "aoe_increment": 0.8,
+  "max_level": 10,
+  "skill": "magic",
+  "base_casting_time": 120,
+  "final_casting_time": 120,
+  "min_duration": 15000,
+  "max_duration": 20000,
+  "damage_type": "electric",
+  "field_id": "fd_electricity",
+  "field_chance": 10,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+

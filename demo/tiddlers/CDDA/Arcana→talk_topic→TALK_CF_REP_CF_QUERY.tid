@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_CF_QUERY
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_CF_QUERY|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_CF_QUERY]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_CF_QUERY",
+  "dynamic_line": "A religious order.  Of many faiths, along many paths.  We were never that large in size, mostly just a few local communities united by the depredations of a cult.  Before any of these arcane goings-on happened, but when the cracks in the Veil began to show its effects, we adapted just as the Sanguine Order did.",
+  "responses": [
+    {
+      "text": "What do you mean, arcane?",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_ARCANIST",
+            "PROF_ARCANIST2",
+            "PROF_SANGUINE",
+            "PROF_CHALICE",
+            "PROF_CHALICE2",
+            "THRESH_VEIL",
+            "THRESH_DRAGONBLOOD"
+          ]
+        }
+      },
+      "topic": "TALK_CF_REP_ARCANE"
+    },
+    {
+      "text": "The Veil?",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_ARCANIST",
+            "PROF_ARCANIST2",
+            "PROF_SANGUINE",
+            "PROF_CHALICE",
+            "PROF_CHALICE2",
+            "THRESH_VEIL",
+            "THRESH_DRAGONBLOOD"
+          ]
+        }
+      },
+      "topic": "TALK_CF_REP_VEIL"
+    },
+    {
+      "text": "And who were the Sanguine Order?",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_SANGUINE",
+            "PROF_CHALICE",
+            "PROF_CHALICE2"
+          ]
+        }
+      },
+      "topic": "TALK_CF_REP_SANGUINE_QUERY"
+    },
+    {
+      "text": "…",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_CF_QUERY",
+  "dynamic_line": "一个宗教组织。有许多信仰，也有许多分支。我们的规模从来没有那么大，主要由于一些当地的社区因为被邪教掠夺而团结在一起。在这些神秘的事情发生之前，当世界屏障上的裂缝开始显现出它的效果时，我们就成了猩红教派。",
+  "responses": [
+    {
+      "text": "你什么意思，奥术？",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_ARCANIST",
+            "PROF_ARCANIST2",
+            "PROF_SANGUINE",
+            "PROF_CHALICE",
+            "PROF_CHALICE2",
+            "THRESH_VEIL",
+            "THRESH_DRAGONBLOOD"
+          ]
+        }
+      },
+      "topic": "TALK_CF_REP_ARCANE"
+    },
+    {
+      "text": "帷幕？",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_ARCANIST",
+            "PROF_ARCANIST2",
+            "PROF_SANGUINE",
+            "PROF_CHALICE",
+            "PROF_CHALICE2",
+            "THRESH_VEIL",
+            "THRESH_DRAGONBLOOD"
+          ]
+        }
+      },
+      "topic": "TALK_CF_REP_VEIL"
+    },
+    {
+      "text": "谁曾是猩红教派一员？",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_SANGUINE",
+            "PROF_CHALICE",
+            "PROF_CHALICE2"
+          ]
+        }
+      },
+      "topic": "TALK_CF_REP_SANGUINE_QUERY"
+    },
+    {
+      "text": "…",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

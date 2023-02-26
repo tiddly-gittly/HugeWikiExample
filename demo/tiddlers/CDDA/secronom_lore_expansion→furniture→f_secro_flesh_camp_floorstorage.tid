@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: furniture secronom_lore_expansion
+title: secronom_lore_expansion→furniture→f_secro_flesh_camp_floorstorage
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_secro_flesh_camp_floorstorage|http://cdda.aloxaf.cn/search?q=f_secro_flesh_camp_floorstorage]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Maps/-Essentials/flesh_ter_furn_camp.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_secro_flesh_camp_floorstorage",
+  "name": "floor residue",
+  "symbol": "o",
+  "description": "A gaping mouth on the floor. Good for storing items, just don't fall into it.",
+  "color": "red",
+  "move_cost_mod": 3,
+  "coverage": 10,
+  "required_str": -1,
+  "flags": [
+    "CONTAINER",
+    "PLACE_ITEM",
+    "TRANSPARENT",
+    "FLAMMABLE_HARD",
+    "MOUNTABLE",
+    "S_FLESH"
+  ],
+  "max_volume": "2500 L",
+  "bash": {
+    "str_min": 20,
+    "str_max": 30,
+    "sound": "splook!",
+    "sound_fail": "splat!",
+    "items": [
+      {
+        "item": "secro_flesh",
+        "count": [
+          2,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_secro_flesh_camp_floorstorage",
+  "name": "地板储物缝",
+  "symbol": "o",
+  "description": "从地板的缝隙中张来了一个大嘴，适合存储东西，但是小心别掉进去。",
+  "color": "red",
+  "move_cost_mod": 3,
+  "coverage": 10,
+  "required_str": -1,
+  "flags": [
+    "CONTAINER",
+    "PLACE_ITEM",
+    "TRANSPARENT",
+    "FLAMMABLE_HARD",
+    "MOUNTABLE",
+    "S_FLESH"
+  ],
+  "max_volume": "2500 L",
+  "bash": {
+    "str_min": 20,
+    "str_max": 30,
+    "sound": "splook!",
+    "sound_fail": "splat!",
+    "items": [
+      {
+        "item": "secro_flesh",
+        "count": [
+          2,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+

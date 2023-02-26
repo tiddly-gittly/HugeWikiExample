@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→biomancer_visceral_projection
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：biomancer_visceral_projection|http://cdda.aloxaf.cn/search?q=biomancer_visceral_projection]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/biomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "biomancer_visceral_projection",
+  "type": "SPELL",
+  "name": {
+    "str": "Visceral Projection"
+  },
+  "description": "Projects a spray of acrid blood and gore all around you, growing to ensnare your prey in in a field of twitching poisonous tendrils.",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "effect_str": "badpoison",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "biomancer_visceral_paralyze"
+    },
+    {
+      "id": "biomancer_visceral_backlash",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "VERBAL",
+    "NO_HANDS"
+  ],
+  "spell_class": "BIOMANCER",
+  "energy_source": "MANA",
+  "difficulty": 4,
+  "base_casting_time": 200,
+  "base_energy_cost": 150,
+  "max_level": 30,
+  "min_damage": 1,
+  "max_damage": 15,
+  "damage_increment": 0.45,
+  "damage_type": "biological",
+  "min_aoe": 2,
+  "max_aoe": 9,
+  "aoe_increment": 0.2,
+  "field_id": "fd_blood",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "biomancer_visceral_projection",
+  "type": "SPELL",
+  "name": {
+    "str": "脏腑四射"
+  },
+  "description": "在你四周喷射出辛辣刺鼻的血肉，不断生长并将你的猎物捕获进一片有毒的卷须之中。",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "effect_str": "badpoison",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "biomancer_visceral_paralyze"
+    },
+    {
+      "id": "biomancer_visceral_backlash",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "VERBAL",
+    "NO_HANDS"
+  ],
+  "spell_class": "BIOMANCER",
+  "energy_source": "MANA",
+  "difficulty": 4,
+  "base_casting_time": 200,
+  "base_energy_cost": 150,
+  "max_level": 30,
+  "min_damage": 1,
+  "max_damage": 15,
+  "damage_increment": 0.45,
+  "damage_type": "biological",
+  "min_aoe": 2,
+  "max_aoe": 9,
+  "aoe_increment": 0.2,
+  "field_id": "fd_blood",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.1
+}
+```
+

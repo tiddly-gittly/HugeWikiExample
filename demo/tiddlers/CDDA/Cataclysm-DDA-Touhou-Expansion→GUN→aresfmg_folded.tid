@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: GUN Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUN→aresfmg_folded
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：aresfmg_folded|http://cdda.aloxaf.cn/search?q=aresfmg_folded]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gun/thex_generic_gun.json
+
+
+!! 原文
+
+```json
+{
+  "id": "aresfmg_folded",
+  "type": "GUN",
+  "name": {
+    "str": "ARES FMG (folded)",
+    "str_pl": "ARES FMG (folded)"
+  },
+  "description": "A very compact, folded SMG.  Made from steel, it's shaped like a box, compact enough to fit your pocket.",
+  "volume": "1000 ml",
+  "weight": "2090 g",
+  "longest_side": "250 mm",
+  "//": "Estimated dimensions folded: 100*250*40 mm",
+  "price": 40000,
+  "price_postapoc": 1500,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "solid",
+    "length": "hand",
+    "surface": "point"
+  },
+  "bashing": 10,
+  "material": [
+    "steel"
+  ],
+  "symbol": "[",
+  "looks_like": "radio",
+  "color": "dark_gray",
+  "ammo": [
+    "9mm"
+  ],
+  "skill": "smg",
+  "dispersion": 360,
+  "durability": 6,
+  "reload_noise_volume": 10,
+  "blackpowder_tolerance": 24,
+  "min_cycle_recoil": 450,
+  "modes": [
+    [
+      "DEFAULT",
+      "folded",
+      0,
+      [
+        "MELEE"
+      ]
+    ]
+  ],
+  "valid_mod_locations": [
+    [
+      "accessories",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "sights mount",
+      1
+    ]
+  ],
+  "faults": [
+    "fault_gun_blackpowder",
+    "fault_gun_dirt",
+    "fault_gun_chamber_spent"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "item_restriction": [
+        "uzimag_20rd",
+        "uzimag_25rd",
+        "uzimag",
+        "mp40mag_32rd"
+      ]
+    }
+  ],
+  "use_action": {
+    "target": "aresfmg_unfolded",
+    "type": "transform",
+    "msg": "You unfold the weapon.",
+    "menu_text": "Unfold weapon",
+    "moves": 100
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "aresfmg_folded",
+  "type": "GUN",
+  "name": {
+    "str": "ARES FMG （folded）",
+    "str_pl": "ARES FMG （folded）"
+  },
+  "description": "A very compact, folded SMG.  Made from steel, it's shaped like a box, compact enough to fit your pocket.",
+  "volume": "1000 ml",
+  "weight": "2090 g",
+  "longest_side": "250 mm",
+  "//": "Estimated dimensions folded: 100*250*40 mm",
+  "price": 40000,
+  "price_postapoc": 1500,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "solid",
+    "length": "hand",
+    "surface": "point"
+  },
+  "bashing": 10,
+  "material": [
+    "steel"
+  ],
+  "symbol": "[",
+  "looks_like": "radio",
+  "color": "dark_gray",
+  "ammo": [
+    "9mm"
+  ],
+  "skill": "smg",
+  "dispersion": 360,
+  "durability": 6,
+  "reload_noise_volume": 10,
+  "blackpowder_tolerance": 24,
+  "min_cycle_recoil": 450,
+  "modes": [
+    [
+      "DEFAULT",
+      "folded",
+      0,
+      [
+        "MELEE"
+      ]
+    ]
+  ],
+  "valid_mod_locations": [
+    [
+      "accessories",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "sights mount",
+      1
+    ]
+  ],
+  "faults": [
+    "fault_gun_blackpowder",
+    "fault_gun_dirt",
+    "fault_gun_chamber_spent"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "item_restriction": [
+        "uzimag_20rd",
+        "uzimag_25rd",
+        "uzimag",
+        "mp40mag_32rd"
+      ]
+    }
+  ],
+  "use_action": {
+    "target": "aresfmg_unfolded",
+    "type": "transform",
+    "msg": "You unfold the weapon.",
+    "menu_text": "Unfold weapon",
+    "moves": 100
+  }
+}
+```
+

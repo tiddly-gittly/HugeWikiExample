@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→bio_grotesque
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bio_grotesque|http://cdda.aloxaf.cn/search?q=bio_grotesque]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/biomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bio_grotesque",
+  "type": "SPELL",
+  "name": {
+    "str": "Grotesque Enhancement"
+  },
+  "description": "A spell that warps your body in alien ways to increase your physical abilities and strength.",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "effect_str": "bio_boost",
+  "shape": "blast",
+  "base_casting_time": 200,
+  "base_energy_cost": 150,
+  "energy_source": "MANA",
+  "spell_class": "BIOMANCER",
+  "difficulty": 6,
+  "max_level": 30,
+  "flags": [
+    "SOMATIC",
+    "LOUD"
+  ],
+  "//": "duration is in moves",
+  "min_duration": 6000,
+  "max_duration": 18000,
+  "duration_increment": 300
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bio_grotesque",
+  "type": "SPELL",
+  "name": {
+    "str": "扭曲强化"
+  },
+  "description": "这个法术能以怪异的方式将你的躯体完全扭曲，并增强你的力量及感知。",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "effect_str": "bio_boost",
+  "shape": "blast",
+  "base_casting_time": 200,
+  "base_energy_cost": 150,
+  "energy_source": "MANA",
+  "spell_class": "BIOMANCER",
+  "difficulty": 6,
+  "max_level": 30,
+  "flags": [
+    "SOMATIC",
+    "LOUD"
+  ],
+  "//": "duration is in moves",
+  "min_duration": 6000,
+  "max_duration": 18000,
+  "duration_increment": 300
+}
+```
+

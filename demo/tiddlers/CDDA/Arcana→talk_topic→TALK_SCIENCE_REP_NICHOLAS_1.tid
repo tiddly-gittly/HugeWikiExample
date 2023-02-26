@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_SCIENCE_REP_NICHOLAS_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SCIENCE_REP_NICHOLAS_1|http://cdda.aloxaf.cn/search?q=TALK_SCIENCE_REP_NICHOLAS_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_SCIENCE_REP.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_SCIENCE_REP_NICHOLAS_1",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "PROF_FED",
+    "yes": "There isn't a lot that I can do, Marshal.  Anomalous materials weren't my preferred area of study back in the day, and I can't exactly pull information out of thin air.",
+    "no": "We don't have the manpower to go poking around in ruined old labs, if that's what you're asking.  I don't know what you expect me to be able to do."
+  },
+  "responses": [
+    {
+      "text": "I have a printout of what we know so far, would that help?",
+      "condition": {
+        "u_has_item": "cf_purifier_project_data"
+      },
+      "switch": true,
+      "topic": "TALK_SCIENCE_REP_NICHOLAS_2"
+    },
+    {
+      "text": "I might need the printout Nicholas gave me to help with that…",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "Never mind.",
+      "topic": "TALK_SCIENCE_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_SCIENCE_REP_NICHOLAS_1",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "PROF_FED",
+    "yes": "我无能为力，元帅。异常材料在当时不是我最喜欢的研究领域，我也无法准确地从稀薄的空气中提取信息。",
+    "no": "如果你是问这个的话，我们没有人力去破败的旧实验室里闲逛。我不知道你希望我能做什么。"
+  },
+  "responses": [
+    {
+      "text": "我有一份我们目前所知的打印资料，对你有帮助吗？",
+      "condition": {
+        "u_has_item": "cf_purifier_project_data"
+      },
+      "switch": true,
+      "topic": "TALK_SCIENCE_REP_NICHOLAS_2"
+    },
+    {
+      "text": "我可能需要尼古拉斯给我的打印件来帮我…",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "算了。",
+      "topic": "TALK_SCIENCE_REP"
+    }
+  ]
+}
+```
+

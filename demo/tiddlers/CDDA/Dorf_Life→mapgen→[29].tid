@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: mapgen Dorf_Life
+title: Dorf_Life→mapgen→[29]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/mapgen_overlays.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_camp",
+  "object": {
+    "mapgensize": [
+      12,
+      12
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "  ,,,,,,,,  ",
+      " ---,,,,--- ",
+      ",-~-,,,,-~-,",
+      ",-+-,,,,-+-,",
+      ",,,,,,,,,,,,",
+      ",,,,,b,,,,,,",
+      ",,,,,,,,,,,,",
+      ",,,,,,,,,,,,",
+      ",-+-,,,,-+-,",
+      ",-~-,,,,-~-,",
+      " ---,,,,--- ",
+      "  ,,,,,,,,  "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "-": "t_moss_underground",
+      "~": "t_moss_underground",
+      "+": "t_moss_underground",
+      "b": "t_rock_floor"
+    },
+    "furniture": {
+      "-": "f_canvas_wall",
+      "~": "f_groundsheet",
+      "+": "f_canvas_door",
+      "b": "f_brazier"
+    },
+    "place_items": [
+      {
+        "item": "caveyot_survivors",
+        "x": [
+          4,
+          7
+        ],
+        "y": [
+          2,
+          9
+        ],
+        "chance": 90,
+        "repeat": 5
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_zombie_survivor",
+        "x": [
+          0,
+          11
+        ],
+        "y": [
+          0,
+          11
+        ],
+        "repeat": [
+          2,
+          5
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_camp",
+  "object": {
+    "mapgensize": [
+      12,
+      12
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "  ,,,,,,,,  ",
+      " ---,,,,--- ",
+      ",-~-,,,,-~-,",
+      ",-+-,,,,-+-,",
+      ",,,,,,,,,,,,",
+      ",,,,,b,,,,,,",
+      ",,,,,,,,,,,,",
+      ",,,,,,,,,,,,",
+      ",-+-,,,,-+-,",
+      ",-~-,,,,-~-,",
+      " ---,,,,--- ",
+      "  ,,,,,,,,  "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "-": "t_moss_underground",
+      "~": "t_moss_underground",
+      "+": "t_moss_underground",
+      "b": "t_rock_floor"
+    },
+    "furniture": {
+      "-": "f_canvas_wall",
+      "~": "f_groundsheet",
+      "+": "f_canvas_door",
+      "b": "f_brazier"
+    },
+    "place_items": [
+      {
+        "item": "caveyot_survivors",
+        "x": [
+          4,
+          7
+        ],
+        "y": [
+          2,
+          9
+        ],
+        "chance": 90,
+        "repeat": 5
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_zombie_survivor",
+        "x": [
+          0,
+          11
+        ],
+        "y": [
+          0,
+          11
+        ],
+        "repeat": [
+          2,
+          5
+        ]
+      }
+    ]
+  }
+}
+```
+

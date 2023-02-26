@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom_lore_expansion
+title: secronom_lore_expansion→effect_on_condition→eoc_secro_pafv_growth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_pafv_growth|http://cdda.aloxaf.cn/search?q=eoc_secro_pafv_growth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_pafv_growth",
+  "recurrence": [
+    "24 hours",
+    "24 hours"
+  ],
+  "condition": {
+    "and": [
+      {
+        "u_has_flag": "SECRO_WEARING_FLESH_VESSEL"
+      },
+      {
+        "or": [
+          {
+            "u_has_item": "secro_power_armor_flesh"
+          },
+          {
+            "u_has_item": "secro_power_armor_flesh_act"
+          },
+          {
+            "u_has_item": "secro_power_armor_flesh2"
+          },
+          {
+            "u_has_item": "secro_power_armor_flesh2_act"
+          },
+          {
+            "u_has_item": "secro_power_armor_flesh3"
+          },
+          {
+            "u_has_item": "secro_power_armor_flesh3_act"
+          }
+        ]
+      }
+    ]
+  },
+  "deactivate_condition": {
+    "not": {
+      "u_has_flag": "SECRO_WEARING_FLESH_VESSEL"
+    }
+  },
+  "effect": [
+    {
+      "u_message": "You felt uncomfortable for a split second․",
+      "type": "grazing"
+    },
+    {
+      "u_adjust_var": "secro_fleshvessel",
+      "type": "growth",
+      "context": "time",
+      "adjustment": 1
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "secro_fleshvessel",
+          "type": "consumption",
+          "context": "bonus"
+        },
+        "+=",
+        {
+          "u_val": "var",
+          "var_name": "secro_fleshvessel",
+          "type": "growth",
+          "context": "time"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_pafv_growth",
+  "recurrence": [
+    "24 hours",
+    "24 hours"
+  ],
+  "condition": {
+    "and": [
+      {
+        "u_has_flag": "SECRO_WEARING_FLESH_VESSEL"
+      },
+      {
+        "or": [
+          {
+            "u_has_item": "secro_power_armor_flesh"
+          },
+          {
+            "u_has_item": "secro_power_armor_flesh_act"
+          },
+          {
+            "u_has_item": "secro_power_armor_flesh2"
+          },
+          {
+            "u_has_item": "secro_power_armor_flesh2_act"
+          },
+          {
+            "u_has_item": "secro_power_armor_flesh3"
+          },
+          {
+            "u_has_item": "secro_power_armor_flesh3_act"
+          }
+        ]
+      }
+    ]
+  },
+  "deactivate_condition": {
+    "not": {
+      "u_has_flag": "SECRO_WEARING_FLESH_VESSEL"
+    }
+  },
+  "effect": [
+    {
+      "u_message": "You felt uncomfortable for a split second․",
+      "type": "grazing"
+    },
+    {
+      "u_adjust_var": "secro_fleshvessel",
+      "type": "growth",
+      "context": "time",
+      "adjustment": 1
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "secro_fleshvessel",
+          "type": "consumption",
+          "context": "bonus"
+        },
+        "+=",
+        {
+          "u_val": "var",
+          "var_name": "secro_fleshvessel",
+          "type": "growth",
+          "context": "time"
+        }
+      ]
+    }
+  ]
+}
+```
+

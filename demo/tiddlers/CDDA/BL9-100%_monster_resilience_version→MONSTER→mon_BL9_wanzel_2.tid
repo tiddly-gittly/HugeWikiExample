@@ -1,0 +1,199 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_wanzel_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_wanzel_2|http://cdda.aloxaf.cn/search?q=mon_BL9_wanzel_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens_dominators.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_wanzel_2",
+  "looks_like": "mon_zombie_thorny",
+  "type": "MONSTER",
+  "name": {
+    "str": "Wanzeltium Mutant"
+  },
+  "description": "Over 5'8 feet tall reptile-like humanoid, emitting a bright green crystalline light, with a heavily distorted reptilian head having a greatly widened forehead covered with multiple thick skin lines, multiple pulsating hair-like BL9 spiky tentacle-protrusions coming out of the back and sides of it's head",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 375,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "stab",
+      "amount": 10,
+      "armor_penetration": 16
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 13,
+  "armor_cut": 13,
+  "armor_bullet": 13,
+  "death_drops": "BL9_Drops_Aliens_Dominators",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 18,
+          "armor_penetration": 18
+        }
+      ],
+      "hit_dmg_u": "The %1$s wildly swings it's tentacle protrusions at you!",
+      "hit_dmg_npc": "The %1$s wildly swings it's tentacle protrusions at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to wildly swing it's tentacle protrusions at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to wildly swing it's tentacle protrusions at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s wildly swings it's tentacle protrusions at you, but you dodge!",
+      "miss_msg_npc": "The %s wildly swings it's tentacle protrusions at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_wanzel_2",
+  "looks_like": "mon_zombie_thorny",
+  "type": "MONSTER",
+  "name": {
+    "str": "万泽尔提姆突变体"
+  },
+  "description": "身高超过5英尺8英尺的类爬行动物类人，散发出明亮的绿色水晶光，严重扭曲的爬行动物头部有一个大大加宽的前额，覆盖着多条厚厚的皮肤线条，头部后部和两侧有多个像BL9尖尖触须一样的脉动毛发",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 375,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "stab",
+      "amount": 10,
+      "armor_penetration": 16
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 13,
+  "armor_cut": 13,
+  "armor_bullet": 13,
+  "death_drops": "BL9_Drops_Aliens_Dominators",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 18,
+          "armor_penetration": 18
+        }
+      ],
+      "hit_dmg_u": "The %1$s wildly swings it's tentacle protrusions at you!",
+      "hit_dmg_npc": "The %1$s wildly swings it's tentacle protrusions at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to wildly swing it's tentacle protrusions at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to wildly swing it's tentacle protrusions at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s wildly swings it's tentacle protrusions at you, but you dodge!",
+      "miss_msg_npc": "The %s wildly swings it's tentacle protrusions at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

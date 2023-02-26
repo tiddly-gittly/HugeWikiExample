@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_desolation_aura
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_desolation_aura|http://cdda.aloxaf.cn/search?q=mon_desolation_aura]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/+Misc/v_spell_mon.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_desolation_aura",
+  "type": "MONSTER",
+  "name": {
+    "str": "desolate gloom"
+  },
+  "description": "A hovering mist of pure dread, undulating in soft, patterned beats.",
+  "default_faction": "player",
+  "species": [
+    "HORROR"
+  ],
+  "diff": 30,
+  "volume": "3 ml",
+  "weight": "3 g",
+  "//": "No way to make this monster immune to its own emitted fields, so an invincible HP is needed here. Take note that only the player and any vampire NPCs are immune, and nothing else.",
+  "hp": 1000000,
+  "speed": 50,
+  "symbol": "*",
+  "color": "light_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "dodge": 6,
+  "vision_day": 30,
+  "vision_night": 30,
+  "harvest": "exempt",
+  "emit_fields": [
+    "emit_v_desolate"
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "NOHEAD",
+    "HARDTOSHOOT",
+    "WEBWALK",
+    "FLIES",
+    "PLASTIC",
+    "ELECTRIC",
+    "ACIDPROOF",
+    "NO_BREATHE",
+    "NOGIB"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_desolation_aura",
+  "type": "MONSTER",
+  "name": {
+    "str": "凄暗"
+  },
+  "description": "一团由纯粹恐惧构成的雾气，轻柔地有规律地起伏着。",
+  "default_faction": "player",
+  "species": [
+    "HORROR"
+  ],
+  "diff": 30,
+  "volume": "3 ml",
+  "weight": "3 g",
+  "//": "No way to make this monster immune to its own emitted fields, so an invincible HP is needed here. Take note that only the player and any vampire NPCs are immune, and nothing else.",
+  "hp": 1000000,
+  "speed": 50,
+  "symbol": "*",
+  "color": "light_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "dodge": 6,
+  "vision_day": 30,
+  "vision_night": 30,
+  "harvest": "exempt",
+  "emit_fields": [
+    "emit_v_desolate"
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "NOHEAD",
+    "HARDTOSHOOT",
+    "WEBWALK",
+    "FLIES",
+    "PLASTIC",
+    "ELECTRIC",
+    "ACIDPROOF",
+    "NO_BREATHE",
+    "NOGIB"
+  ]
+}
+```
+

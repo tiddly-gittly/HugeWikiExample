@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_WS2_quest2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_WS2_quest2|http://cdda.aloxaf.cn/search?q=VAMP_WS2_quest2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_WS2_quest2",
+  "type": "mission_definition",
+  "name": {
+    "str": "Slay the succumbed vampire"
+  },
+  "description": "Kill the <color_magenta>succumbed vampire</color> then talk to the guard.\n<color_red>Going unprepared is a death trap!</color>",
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 10,
+  "value": 100000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "cabin",
+      "om_special": "Cabin",
+      "reveal_radius": 3,
+      "search_range": 90,
+      "min_distance": 30,
+      "must_see": false,
+      "z": 0
+    },
+    "update_mapgen": {
+      "place_monster": [
+        {
+          "monster": "mon_zombie_succumbvampire",
+          "x": 11,
+          "y": 11,
+          "target": true
+        }
+      ]
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "It's easy, I think...",
+    "offer": "With the radio working well, we will be able to connect to the outsiders and hope for them to receive our message. Yet there's this vampire I am worried about, wandering the cursed lands and wicked to its vile nature. Our scouting patrol knows the coordinates, and I want you to put it down immediately before it brings wrath to other survivors.",
+    "accepted": "With it wielding the power of an immortal, provoking unprepared is a suicidal act.",
+    "rejected": "The monster does not rest after a kill...",
+    "advice": "Bring guns and keep your distance, us vampires will take down humans for almost instantly.",
+    "inquire": "Is it dead?",
+    "success": "Fascinating job mortal! With its death, others will be safe... A bit.",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "*glares*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_WS2_quest2",
+  "type": "mission_definition",
+  "name": {
+    "str": "杀死屈服的吸血鬼"
+  },
+  "description": "杀死<color_magenta>吸血鬼</color>然后和守卫谈谈。\n<color_red>毫无准备是一个死亡陷阱！</color>",
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 10,
+  "value": 100000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "cabin",
+      "om_special": "Cabin",
+      "reveal_radius": 3,
+      "search_range": 90,
+      "min_distance": 30,
+      "must_see": false,
+      "z": 0
+    },
+    "update_mapgen": {
+      "place_monster": [
+        {
+          "monster": "mon_zombie_succumbvampire",
+          "x": 11,
+          "y": 11,
+          "target": true
+        }
+      ]
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "我认为这很容易...",
+    "offer": "收音机工作正常后，我们将能够与外界联系，并希望他们能收到我们的信息。然而有一个我很担心的吸血鬼，游荡在被诅咒的土地上，邪恶到它邪恶的本性。我们的侦察巡逻队知道坐标，我希望你在它给其他幸存者带来愤怒之前立即把它放下。",
+    "accepted": "它拥有不朽的力量，毫无准备的挑衅是一种自杀行为。",
+    "rejected": "怪物杀人后不会休息...",
+    "advice": "拿上枪并保持距离，我们吸血鬼几乎可以在一瞬间干掉人类。",
+    "inquire": "它死了吗？",
+    "success": "迷人的工作凡人！随着它的死亡，其他人将会安全...有点。",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "*怒视*"
+  }
+}
+```
+

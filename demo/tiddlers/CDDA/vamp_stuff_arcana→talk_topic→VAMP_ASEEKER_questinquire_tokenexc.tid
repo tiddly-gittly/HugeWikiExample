@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_questinquire_tokenexc
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_questinquire_tokenexc|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_questinquire_tokenexc]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_tokenexchange.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Rewards based on Cataclysm days and sorted by tiers. Basically, tier 1 and 2 are focused for your character productivity. Buy if you're desperate about the odds in RNG. VS = Vampiric Stuff and AM = Arcana and Magic items. Someday I'll tell chaosvolt about this.",
+  "id": "VAMP_ASEEKER_questinquire_tokenexc",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "days_since_cataclysm": 5,
+    "no": "I don't know if I have something for you to exchange at this moment...",
+    "yes": {
+      "days_since_cataclysm": 15,
+      "//": "Supply related items, namely some recipe materials.",
+      "no": "Well, my ware is too small. Maybe you could be needing something at these stuff.",
+      "yes": {
+        "days_since_cataclysm": 30,
+        "//": "Tools related items, like forges.",
+        "no": "I've got some supplies for your stock...",
+        "yes": {
+          "days_since_cataclysm": 60,
+          "//": "Well-made items, like weapons and armors.",
+          "no": "Lets see what could we exchange for your tokens...",
+          "yes": {
+            "days_since_cataclysm": 120,
+            "//": "High-grade items, like guns and stronger armors.",
+            "no": "Well... The gunshop is offering you with limited guns in exchange of tokens.",
+            "yes": {
+              "days_since_cataclysm": 240,
+              "//": "Exclusive items, or those you can't get from either crafting nor in the wilds.",
+              "no": "A set of items for your endeavors!",
+              "yes": {
+                "days_since_cataclysm": 480,
+                "//": "Exclusive items that costs more than 500 tokens... I guess.",
+                "no": "For all of your pain, these items would help you out!",
+                "yes": {
+                  "days_since_cataclysm": 960,
+                  "//": "Notifies player that no more stocks will be added.",
+                  "no": "This stock is at its finest!",
+                  "yes": "I guess you're waiting for more contents... Don't wait for something else."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "(Inquire for tier 1 VS rewards)",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct1VS",
+      "condition": {
+        "days_since_cataclysm": 5
+      }
+    },
+    {
+      "text": "(Inquire for tier 2 VS rewards)",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct2VS",
+      "condition": {
+        "days_since_cataclysm": 15
+      }
+    },
+    {
+      "text": "(Inquire for tier 3 VS rewards)",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "days_since_cataclysm": 30
+      }
+    },
+    {
+      "text": "(Inquire for tier 4 VS rewards)",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "days_since_cataclysm": 60
+      }
+    },
+    {
+      "text": "I change my mind...",
+      "topic": "VAMP_ASEEKER_main"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Rewards based on Cataclysm days and sorted by tiers. Basically, tier 1 and 2 are focused for your character productivity. Buy if you're desperate about the odds in RNG. VS = Vampiric Stuff and AM = Arcana and Magic items. Someday I'll tell chaosvolt about this.",
+  "id": "VAMP_ASEEKER_questinquire_tokenexc",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "days_since_cataclysm": 5,
+    "no": "我不知道此刻我是否有东西要和你交换…",
+    "yes": {
+      "days_since_cataclysm": 15,
+      "//": "Supply related items, namely some recipe materials.",
+      "no": "嗯，我的餐具太小了。也许你需要一些东西。",
+      "yes": {
+        "days_since_cataclysm": 30,
+        "//": "Tools related items, like forges.",
+        "no": "我有一些你的存货…",
+        "yes": {
+          "days_since_cataclysm": 60,
+          "//": "Well-made items, like weapons and armors.",
+          "no": "让我们看看能用什么交换你的代币…",
+          "yes": {
+            "days_since_cataclysm": 120,
+            "//": "High-grade items, like guns and stronger armors.",
+            "no": "好…枪械店为你提供有限的枪支来交换代币。",
+            "yes": {
+              "days_since_cataclysm": 240,
+              "//": "Exclusive items, or those you can't get from either crafting nor in the wilds.",
+              "no": "一套物品奖赏你的努力！",
+              "yes": {
+                "days_since_cataclysm": 480,
+                "//": "Exclusive items that costs more than 500 tokens... I guess.",
+                "no": "对于你所有的痛苦，这些东西会帮你解决的！",
+                "yes": {
+                  "days_since_cataclysm": 960,
+                  "//": "Notifies player that no more stocks will be added.",
+                  "no": "这股票是最好的！",
+                  "yes": "我猜你在等更多的内容…别再等了。"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "（查询1级幸存奖励）",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct1VS",
+      "condition": {
+        "days_since_cataclysm": 5
+      }
+    },
+    {
+      "text": "（查询2级幸存奖励）",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct2VS",
+      "condition": {
+        "days_since_cataclysm": 15
+      }
+    },
+    {
+      "text": "（查询3级幸存奖励）",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "days_since_cataclysm": 30
+      }
+    },
+    {
+      "text": "（查询4级幸存奖励）",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "days_since_cataclysm": 60
+      }
+    },
+    {
+      "text": "我改变主意了…",
+      "topic": "VAMP_ASEEKER_main"
+    }
+  ]
+}
+```
+

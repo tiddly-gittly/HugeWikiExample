@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_insect_leech
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_leech|http://cdda.aloxaf.cn/search?q=mon_insect_leech]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Insects/+Leech.json
+
+
+!! 原文
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_WEAK",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "bodytype": "snake",
+  "color": "pink",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "A segmented, small worm technically a pest for living things. When biting, it extracts a liquid from its mouth that disables blood clotting, which can be deadly for a limited time.",
+  "diff": 5,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "meatslug",
+  "hp": 20,
+  "id": "mon_insect_leech",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_skill": 2,
+  "morale": 100,
+  "name": {
+    "str": "leech"
+  },
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 100,
+  "symbol": "~",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_LEECH_UPGRADE"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_WEAK",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "bodytype": "snake",
+  "color": "pink",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "一种分节的小蠕虫，按理说是种害虫。当它咬人时，它会从嘴里分泌一种液体来阻止血液凝结，一定时间内足以致命。",
+  "diff": 5,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "meatslug",
+  "hp": 20,
+  "id": "mon_insect_leech",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_skill": 2,
+  "morale": 100,
+  "name": {
+    "str": "水蛭"
+  },
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 100,
+  "symbol": "~",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_LEECH_UPGRADE"
+  }
+}
+```
+

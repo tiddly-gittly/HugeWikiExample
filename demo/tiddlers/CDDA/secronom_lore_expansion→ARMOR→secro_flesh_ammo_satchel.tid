@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_ammo_satchel
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_ammo_satchel|http://cdda.aloxaf.cn/search?q=secro_flesh_ammo_satchel]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_ammo_pouch.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_ammo_satchel",
+  "type": "ARMOR",
+  "name": {
+    "str": "ammo satchel"
+  },
+  "description": "A fleshy ammo bag worn at the waist.  It is capable of holding a single large magazine close at hand.",
+  "weight": "225 g",
+  "volume": "500 ml",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "ragpouch",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_item_length": "300 mm",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 40,
+      "flag_restriction": [
+        "MAG_COMPACT",
+        "MAG_BULKY"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Stash ammo",
+    "holster_msg": "You stash your %s."
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "BELTED"
+  ],
+  "armor": [
+    {
+      "encumbrance": 4,
+      "coverage": 20,
+      "covers": [
+        "torso"
+      ],
+      "specifically_covers": [
+        "torso_waist"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_ammo_satchel",
+  "type": "ARMOR",
+  "name": {
+    "str": "弹匣包（腰）"
+  },
+  "description": "一个绑在腰上的肉质弹匣包。可装一个大型弹匣，保证能随手取用。",
+  "weight": "225 g",
+  "volume": "500 ml",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "ragpouch",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_item_length": "300 mm",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 40,
+      "flag_restriction": [
+        "MAG_COMPACT",
+        "MAG_BULKY"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "存储弹药",
+    "holster_msg": "你收好了%s。"
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "BELTED"
+  ],
+  "armor": [
+    {
+      "encumbrance": 4,
+      "coverage": 20,
+      "covers": [
+        "torso"
+      ],
+      "specifically_covers": [
+        "torso_waist"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

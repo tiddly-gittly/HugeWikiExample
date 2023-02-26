@@ -1,0 +1,131 @@
+creator: 林一二
+revision: 0
+tags: TOOL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL→c_mi_go_extruder_salvaged
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_mi_go_extruder_salvaged|http://cdda.aloxaf.cn/search?q=c_mi_go_extruder_salvaged]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_mi_go_extruder_salvaged",
+  "type": "TOOL",
+  "symbol": "/",
+  "color": "green",
+  "name": {
+    "str": "salvaged resin extruder"
+  },
+  "description": "A strange device made of alien flesh blended with technology.  Three thin spines of synthetic ivory surround some sort of nozzle, its contents steadily regenerating.  It can be activated to produce shards of resin, for whatever use you may have for such a thing.  Activate it will set it to apply resin more slowly, letting it be used for repairing salvaged mi-go biotechnlogy.",
+  "price_postapoc": "25 USD",
+  "material": [
+    "alien_resin",
+    "flesh",
+    "steel"
+  ],
+  "weight": "300 g",
+  "volume": "250 ml",
+  "ammo": [
+    "battery"
+  ],
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "1 h",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 100
+      }
+    }
+  ],
+  "charges_per_use": 25,
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "c_resin_create",
+      "no_fail": true,
+      "level": 0
+    },
+    {
+      "type": "transform",
+      "msg": "You switch the %s to weaving mode",
+      "target": "c_mi_go_extruder_salvaged_alt",
+      "menu_text": "switch mode",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_mi_go_extruder_salvaged",
+  "type": "TOOL",
+  "symbol": "/",
+  "color": "green",
+  "name": {
+    "str": "改装树脂挤出机"
+  },
+  "description": "一种由异界血肉和科技制成的奇怪装置。三根合成象牙的细刺围绕着某种喷嘴，喷嘴内的物质不断再生。激活它可以产生树脂碎片，无论你对这种东西有什么用途。激活它会将其设置为更缓慢地涂抹树脂，使其用于修复改装的米·戈生物技术。",
+  "price_postapoc": "25 USD",
+  "material": [
+    "alien_resin",
+    "flesh",
+    "steel"
+  ],
+  "weight": "300 g",
+  "volume": "250 ml",
+  "ammo": [
+    "battery"
+  ],
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "1 h",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 100
+      }
+    }
+  ],
+  "charges_per_use": 25,
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "c_resin_create",
+      "no_fail": true,
+      "level": 0
+    },
+    {
+      "type": "transform",
+      "msg": "你将%s切换到编织模式",
+      "target": "c_mi_go_extruder_salvaged_alt",
+      "menu_text": "切换模式",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+

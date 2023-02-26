@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_DEACON_MISSION_BACKDOOR
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_DEACON_MISSION_BACKDOOR|http://cdda.aloxaf.cn/search?q=TALK_CF_DEACON_MISSION_BACKDOOR]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_DEACON.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_DEACON_MISSION_BACKDOOR",
+  "type": "talk_topic",
+  "dynamic_line": "Thank you.  I'm hopeful they'll be able to take care of themselves, for now I plan to stay here and help out as best as I can.  I know this isn't much, but here.  It's the least I could do.",
+  "responses": [
+    {
+      "text": "Thank you!",
+      "effect": [
+        {
+          "u_spawn_item": "FMCNote",
+          "count": 5
+        },
+        {
+          "npc_add_effect": "rural_church_aware",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_CF_DEACON"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_DEACON_MISSION_BACKDOOR",
+  "type": "talk_topic",
+  "dynamic_line": "非常感谢。我希望他们能照顾好自己，现在我计划留在这里，尽我所能帮助他们。我知道这不算多，但在这里。这是我至少能做的。",
+  "responses": [
+    {
+      "text": "嗯，谢了！",
+      "effect": [
+        {
+          "u_spawn_item": "FMCNote",
+          "count": 5
+        },
+        {
+          "npc_add_effect": "rural_church_aware",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_CF_DEACON"
+    }
+  ]
+}
+```
+

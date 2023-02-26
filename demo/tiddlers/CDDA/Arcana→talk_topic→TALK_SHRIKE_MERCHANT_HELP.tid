@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_SHRIKE_MERCHANT_HELP
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SHRIKE_MERCHANT_HELP|http://cdda.aloxaf.cn/search?q=TALK_SHRIKE_MERCHANT_HELP]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_SHRIKE_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_SHRIKE_MERCHANT_HELP",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "Hah.  That is your job, isn't it?  Hunting the wicked and otherworldly.  No offense, but I prefer to deal with such matters myself.  It's a rare chance to put my talents to good use, without harming the innocent.  Feels like it brings purpose to what we called The Path.",
+    "no": "For now, I'd rather have this task all to myself.  There are few joys in this new world to be had, and these hunts of mine are a rare chance to cut loose in a way that lets me do some good for once."
+  },
+  "speaker_effect": {
+    "effect": {
+      "u_add_var": "cf_horace_mission",
+      "type": "flag",
+      "context": "knowledge",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "…",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_SHRIKE_MERCHANT_HELP",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "哈。那是你的工作，不是吗？追捕邪恶和超自然的人。无意冒犯，但我更喜欢自己处理这些事情。这是一个难得的机会，在不伤害无辜的情况下，充分发挥我的才能。感觉它给我们所谓的道路带来了目标。",
+    "no": "现在，我宁愿把这件事全交给我自己。在这个新的世界里，几乎没有什么乐趣可以享受，而我的这些狩猎活动是一个难得的机会，让我可以做一些有益的事情。"
+  },
+  "speaker_effect": {
+    "effect": {
+      "u_add_var": "cf_horace_mission",
+      "type": "flag",
+      "context": "knowledge",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "…",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    }
+  ]
+}
+```
+

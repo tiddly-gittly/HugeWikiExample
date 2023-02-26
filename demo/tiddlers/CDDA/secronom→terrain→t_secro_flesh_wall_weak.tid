@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_flesh_wall_weak
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_flesh_wall_weak|http://cdda.aloxaf.cn/search?q=t_secro_flesh_wall_weak]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_flesh_wall_weak",
+  "name": "flesh wall",
+  "description": "Disgusting wall of meat, slimy and organic as it seems to live. This compact lumps of flesh is sinister to the core. This flesh is underdeveloped, and a simple bash would take it down.",
+  "symbol": "#",
+  "color": "red",
+  "move_cost": 0,
+  "coverage": 100,
+  "flags": [
+    "FLAMMABLE_HARD",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "WALL",
+    "AUTO_WALL_SYMBOL",
+    "S_FLESH",
+    "BLOCK_WIND",
+    "FF_BIOHAZARD"
+  ],
+  "bash": {
+    "str_min": 10,
+    "str_max": 20,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_secro_flesh"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_flesh_wall_weak",
+  "name": "肉山",
+  "description": "恶心的肉墙，粘糊糊的，有机的，因为它似乎生活。这密集的肉块是邪恶的核心。这肉还没发育好，一个简单的猛击就能把它取下来。",
+  "symbol": "#",
+  "color": "red",
+  "move_cost": 0,
+  "coverage": 100,
+  "flags": [
+    "FLAMMABLE_HARD",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "WALL",
+    "AUTO_WALL_SYMBOL",
+    "S_FLESH",
+    "BLOCK_WIND",
+    "FF_BIOHAZARD"
+  ],
+  "bash": {
+    "str_min": 10,
+    "str_max": 20,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_secro_flesh"
+  }
+}
+```
+

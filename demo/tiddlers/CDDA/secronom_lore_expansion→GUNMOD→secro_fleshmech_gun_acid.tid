@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: GUNMOD secronom_lore_expansion
+title: secronom_lore_expansion→GUNMOD→secro_fleshmech_gun_acid
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_fleshmech_gun_acid|http://cdda.aloxaf.cn/search?q=secro_fleshmech_gun_acid]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Monsters/-Essentials/secro_mech_weapons.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_fleshmech_gun_acid",
+  "type": "GUNMOD",
+  "name": {
+    "str": "SPEMF acid spitter"
+  },
+  "description": "A large, elongated limb-like proboscis that sprouts from the back of the mech when activated. Bursts globs of blood acid.",
+  "weight": "1 g",
+  "volume": "0 ml",
+  "mod_targets": [
+    "rifle"
+  ],
+  "price": "850 USD",
+  "price_postapoc": "0 cent",
+  "install_time": "0 s",
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "(",
+  "color": "light_red",
+  "location": "SPEMF accessories",
+  "gun_data": {
+    "skill": "secro_flesh_combat",
+    "range": 15,
+    "ranged_damage": {
+      "damage_type": "acid",
+      "amount": 6
+    },
+    "dispersion": 100,
+    "durability": 10,
+    "ups_charges": 32,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        3
+      ]
+    ],
+    "ammo_effects": [
+      "SECRO_BLOODACID_SMOL"
+    ],
+    "ammo": [
+      "secro_flesh"
+    ],
+    "clip_size": 6
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 6
+      }
+    }
+  ],
+  "flags": [
+    "IRREMOVABLE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_fleshmech_gun_acid",
+  "type": "GUNMOD",
+  "name": {
+    "str": "SPEMF酸吐器"
+  },
+  "description": "一种大的、细长的四肢状的长鼻，当机械装置被激活时从它的后部长出。爆发出血酸球。",
+  "weight": "1 g",
+  "volume": "0 ml",
+  "mod_targets": [
+    "rifle"
+  ],
+  "price": "850 USD",
+  "price_postapoc": "0 cent",
+  "install_time": "0 s",
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "(",
+  "color": "light_red",
+  "location": "SPEMF accessories",
+  "gun_data": {
+    "skill": "secro_flesh_combat",
+    "range": 15,
+    "ranged_damage": {
+      "damage_type": "acid",
+      "amount": 6
+    },
+    "dispersion": 100,
+    "durability": 10,
+    "ups_charges": 32,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        3
+      ]
+    ],
+    "ammo_effects": [
+      "SECRO_BLOODACID_SMOL"
+    ],
+    "ammo": [
+      "secro_flesh"
+    ],
+    "clip_size": 6
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 6
+      }
+    }
+  ],
+  "flags": [
+    "IRREMOVABLE"
+  ]
+}
+```
+

@@ -1,0 +1,349 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_questinquire_ihave_essence
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_questinquire_ihave_essence|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_questinquire_ihave_essence]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_itemprocess.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Get used to the spam of token giving. I just have to ensure you get the rewards and you'll get the money without notifying you about it.",
+  "id": "VAMP_ASEEKER_questinquire_ihave_essence",
+  "type": "talk_topic",
+  "dynamic_line": "It fits in my collection. Want to sell these to me?",
+  "responses": [
+    {
+      "text": "Yes! Here's your 15 essences!",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_essence",
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "essence",
+              "count": 15
+            }
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekerrewardingcollabitems"
+            }
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekerrewardingcollabmoney"
+            }
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekernorewardcollab"
+            }
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_sell_item": "essence",
+          "count": 15
+        },
+        {
+          "u_spend_cash": -3000
+        }
+      ]
+    },
+    {
+      "text": "Yes! Here's your 7 essences!",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_essence",
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "essence",
+              "count": 15
+            }
+          },
+          {
+            "npc_has_trait": "vaseekerrewardingcollabitems"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_sell_item": "essence",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "text": "Yes! Here's your 7 essences!",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_essence",
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "essence",
+              "count": 15
+            }
+          },
+          {
+            "npc_has_trait": "vaseekerrewardingcollabmoney"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_sell_item": "essence",
+          "count": 15
+        },
+        {
+          "u_spend_cash": -20500
+        }
+      ]
+    },
+    {
+      "text": "Yes! Here's your 7 essences!",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_essence",
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "essence",
+              "count": 15
+            }
+          },
+          {
+            "npc_has_trait": "vaseekernorewardcollab"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_sell_item": "essence",
+          "count": 15
+        },
+        {
+          "u_spend_cash": -9000
+        }
+      ]
+    },
+    {
+      "text": "I got no more...",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "essence",
+            "count": 15
+          }
+        }
+      }
+    },
+    {
+      "text": "I have to collect more...",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "essence",
+            "count": 15
+          }
+        }
+      }
+    },
+    {
+      "text": "I want to sell something else...",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "u_has_items": {
+          "item": "essence",
+          "count": 15
+        }
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Get used to the spam of token giving. I just have to ensure you get the rewards and you'll get the money without notifying you about it.",
+  "id": "VAMP_ASEEKER_questinquire_ihave_essence",
+  "type": "talk_topic",
+  "dynamic_line": "它适合我的收藏。想把这些卖给我吗？",
+  "responses": [
+    {
+      "text": "对！这是你要的15个源质！",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_essence",
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "essence",
+              "count": 15
+            }
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekerrewardingcollabitems"
+            }
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekerrewardingcollabmoney"
+            }
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekernorewardcollab"
+            }
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_sell_item": "essence",
+          "count": 15
+        },
+        {
+          "u_spend_cash": -3000
+        }
+      ]
+    },
+    {
+      "text": "对！这是你要的7个源质！",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_essence",
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "essence",
+              "count": 15
+            }
+          },
+          {
+            "npc_has_trait": "vaseekerrewardingcollabitems"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_sell_item": "essence",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "text": "对！这是你要的7个源质！",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_essence",
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "essence",
+              "count": 15
+            }
+          },
+          {
+            "npc_has_trait": "vaseekerrewardingcollabmoney"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_sell_item": "essence",
+          "count": 15
+        },
+        {
+          "u_spend_cash": -20500
+        }
+      ]
+    },
+    {
+      "text": "对！这是你要的7个源质！",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_essence",
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "essence",
+              "count": 15
+            }
+          },
+          {
+            "npc_has_trait": "vaseekernorewardcollab"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_sell_item": "essence",
+          "count": 15
+        },
+        {
+          "u_spend_cash": -9000
+        }
+      ]
+    },
+    {
+      "text": "我没有更多…",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "essence",
+            "count": 15
+          }
+        }
+      }
+    },
+    {
+      "text": "我需要收集更多…",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "essence",
+            "count": 15
+          }
+        }
+      }
+    },
+    {
+      "text": "我想卖点别的…",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "u_has_items": {
+          "item": "essence",
+          "count": 15
+        }
+      }
+    }
+  ]
+}
+```
+

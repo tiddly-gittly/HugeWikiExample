@@ -1,0 +1,67 @@
+creator: 林一二
+revision: 0
+tags: effect_type secronom
+title: secronom→effect_type→secro_flesh_bio_limb
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_bio_limb|http://cdda.aloxaf.cn/search?q=secro_flesh_bio_limb]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "secro_flesh_bio_limb",
+  "name": [
+    "Mending"
+  ],
+  "desc": [
+    "Your broken limbs are mending!"
+  ],
+  "max_duration": 10,
+  "main_parts_only": true,
+  "rating": "good",
+  "removes_effects": [
+    "disabled"
+  ],
+  "//": "Due to the disabled effect being hardcode, we force the broken limb to block the effect.",
+  "blocks_effects": [
+    "disabled"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "secro_flesh_bio_limb",
+  "name": [
+    "修复"
+  ],
+  "desc": [
+    "你的断肢正在愈合！"
+  ],
+  "max_duration": 10,
+  "main_parts_only": true,
+  "rating": "good",
+  "removes_effects": [
+    "disabled"
+  ],
+  "//": "Due to the disabled effect being hardcode, we force the broken limb to block the effect.",
+  "blocks_effects": [
+    "disabled"
+  ]
+}
+```
+

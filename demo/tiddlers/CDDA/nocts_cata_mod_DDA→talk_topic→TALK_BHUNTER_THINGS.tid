@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BHUNTER_THINGS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BHUNTER_THINGS|http://cdda.aloxaf.cn/search?q=TALK_BHUNTER_THINGS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BHUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BHUNTER_THINGS",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "BIO_WEAPON_FAILED",
+      "BIO_WEAPON_FAILED_SCEN"
+    ],
+    "yes": "Those augmented abominations, the notes I found tied them to a thing called the Bio-Weapon Project.  You look like you're in the same shape as them, though you're not trying to kill me at least.  Can I trust you?",
+    "no": "Bio-Weapons, that's what the notes in this lab called those things outside.  At least they were supposed to be.  I don't know what went wrong or who's ordering them around, but they seem hell-bent on destroying everything connected to the project."
+  },
+  "responses": [
+    {
+      "text": "I'm not one of them.  You can trust me.",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED",
+          "BIO_WEAPON_FAILED_SCEN"
+        ]
+      },
+      "topic": "TALK_BHUNTER"
+    },
+    {
+      "text": "I don't want to end up like those things.  I don't want to become a monster, please…",
+      "trial": {
+        "type": "NONE"
+      },
+      "success": {
+        "opinion": {
+          "fear": -1,
+          "trust": 1
+        },
+        "topic": "TALK_BHUNTER_THINGS_FAILED"
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED",
+          "BIO_WEAPON_FAILED_SCEN"
+        ]
+      }
+    },
+    {
+      "text": "I see.",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "BIO_WEAPON_FAILED",
+            "BIO_WEAPON_FAILED_SCEN"
+          ]
+        }
+      },
+      "topic": "TALK_BHUNTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BHUNTER_THINGS",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "BIO_WEAPON_FAILED",
+      "BIO_WEAPON_FAILED_SCEN"
+    ],
+    "yes": "那些生物武器，和我找到的一个生化武器计划的文件相关。你看起来和他们一样，虽然你并不想杀我。我能相信你吗？",
+    "no": "生物武器，这就是实验室里的笔记所说的那些东西。至少他们应该是。我不知道出了什么问题或是谁指使他们的，但他们似乎执意要破坏与项目有关的一切。"
+  },
+  "responses": [
+    {
+      "text": "我不是他们中的一员。你可以相信我。",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED",
+          "BIO_WEAPON_FAILED_SCEN"
+        ]
+      },
+      "topic": "TALK_BHUNTER"
+    },
+    {
+      "text": "我不想最后变成那样。我不想变成怪物，拜托……",
+      "trial": {
+        "type": "NONE"
+      },
+      "success": {
+        "opinion": {
+          "fear": -1,
+          "trust": 1
+        },
+        "topic": "TALK_BHUNTER_THINGS_FAILED"
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED",
+          "BIO_WEAPON_FAILED_SCEN"
+        ]
+      }
+    },
+    {
+      "text": "我懂了。",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "BIO_WEAPON_FAILED",
+            "BIO_WEAPON_FAILED_SCEN"
+          ]
+        }
+      },
+      "topic": "TALK_BHUNTER"
+    }
+  ]
+}
+```
+

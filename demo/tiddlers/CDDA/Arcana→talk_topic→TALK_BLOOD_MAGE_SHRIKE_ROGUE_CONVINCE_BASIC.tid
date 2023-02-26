@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE_BASIC
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE_BASIC|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE_BASIC]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_ROGUE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE_BASIC",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "So you've dabbled in our art, Dragonblood, and seen potential in it?  And yet you're clearly here for blood too.  Maybe I like directing a little violence in the right direction though, so I might be willing to see where this goes.",
+    "no": "I like the way you think.  Small problem, killing's not over yet is it?  You came here with talk of setting things right, and yet you're here for blood.  I suppose the magus saying their way's the right way to fix things is just as foolish.  Fine, let's see where this goes."
+  },
+  "responses": [
+    {
+      "text": "Come with me, then.",
+      "topic": "TALK_AGREE_FOLLOW",
+      "effect": "follow"
+    },
+    {
+      "text": "[ATTACK] On second thought, I'd rather rearrange your face.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE_BASIC",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "那么你涉猎过我们的艺术，龙血，看到了其中的潜力？但很明显，你来这里也是为了流血。也许我喜欢在正确的方向上导演一些暴力，所以我可能愿意看看这会发生什么。",
+    "no": "我喜欢你的想法。小问题，杀戮还没结束吧？你来这里是为了纠正错误，但你来这里是为了流血。我想法师们说他们的方法是解决问题的正确方法也是愚蠢的。好吧，让我们看看会发生什么。"
+  },
+  "responses": [
+    {
+      "text": "那就跟我来。",
+      "topic": "TALK_AGREE_FOLLOW",
+      "effect": "follow"
+    },
+    {
+      "text": "[攻击]转念一想，我宁愿重新整理你的脸。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

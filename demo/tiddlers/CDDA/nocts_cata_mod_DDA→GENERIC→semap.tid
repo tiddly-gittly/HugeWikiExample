@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: GENERIC nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→GENERIC→semap
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：semap|http://cdda.aloxaf.cn/search?q=semap]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "semap",
+  "category": "maps",
+  "type": "GENERIC",
+  "symbol": ";",
+  "color": "blue",
+  "looks_like": "survivormap",
+  "name": {
+    "str": "Encampment Project Reminder"
+  },
+  "description": "A note describing a group of people creating prepper settlements.  You try to remember if there are any of them nearby.  Maybe the back of the note has coordinates to their settlements.",
+  "material": [
+    "paper"
+  ],
+  "weight": "30 g",
+  "volume": "250 ml",
+  "to_hit": -1,
+  "use_action": {
+    "type": "reveal_map",
+    "radius": 180,
+    "terrain": [
+      "surv_emcampn",
+      "surv_emcampb",
+      "surv_emcampz"
+    ],
+    "message": "You read the back of the note and plan your next move."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "semap",
+  "category": "maps",
+  "type": "GENERIC",
+  "symbol": ";",
+  "color": "blue",
+  "looks_like": "survivormap",
+  "name": {
+    "str": "营地计划提醒"
+  },
+  "description": "描述一群人建立预备定居点的笔记。你试着想起附近是否有这样的人。也许纸条的背面有他们定居点的坐标。",
+  "material": [
+    "paper"
+  ],
+  "weight": "30 g",
+  "volume": "250 ml",
+  "to_hit": -1,
+  "use_action": {
+    "type": "reveal_map",
+    "radius": 180,
+    "terrain": [
+      "surv_emcampn",
+      "surv_emcampb",
+      "surv_emcampz"
+    ],
+    "message": "你读了纸条后面的内容，并计划下一步的行动。"
+  }
+}
+```
+

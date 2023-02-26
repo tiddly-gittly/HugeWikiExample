@@ -1,0 +1,507 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER",
+  "dynamic_line": {
+    "npc_has_trait": "SHRIKE_MISSION_MARKER",
+    "yes": {
+      "npc_has_var": "elena_convinced",
+      "type": "flag",
+      "context": "shrike",
+      "value": "yes",
+      "yes": "Welcome.  Try not to cause any trouble.",
+      "no": {
+        "npc_has_var": "elena_failed",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes",
+        "yes": "We've nothing more to discuss.  Leave.",
+        "no": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ],
+          "yes": "…hunter.  They wouldn't just send anything less than a fully hunting party.  Why are you here?",
+          "no": {
+            "u_has_any_trait": [
+              "PROF_SANGUINE",
+              "THRESH_DRAGONBLOOD"
+            ],
+            "yes": "Well, aren't you a pleasant surprise to see?  I'm aware of the hunters scouting out this place, tracking us.  But they let you through.  Why's that, I wonder?",
+            "no": "The hunters sent you, didn't they?  Unusual of them.  What angle are they getting at?"
+          }
+        }
+      }
+    },
+    "no": {
+      "u_has_any_trait": [
+        "PROF_CLEANSINGFLAME",
+        "PROF_CLEANSINGFLAME2"
+      ],
+      "yes": [
+        "I've nothing to say to you, Hunter.  If you haven't gotten yourself in trouble yet, speak to the huntmaster.",
+        "Hmmph.  Where's the rest of you, they usually come a dozen at a time…",
+        "You have a lot of nerve intruding here, you know.",
+        "Speak to the huntmaster if you've got something to say.",
+        "Don't make me regret letting you live long enough to make it past the front door…"
+      ],
+      "no": [
+        "Speak to our leader if you're here for something.",
+        "It's not safe to be here, you know.",
+        "I'm not in charge here, sorry."
+      ]
+    }
+  },
+  "responses": [
+    {
+      "text": "[MISSION] Do you have any information about cursed ritual blades?",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              {
+                "u_has_mission": "MISSION_HERMIT_RESTORE_SWORD"
+              },
+              {
+                "u_has_effect": "hermit_quest_backdoor"
+              }
+            ]
+          },
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "npc_has_var": "elena_convinced",
+            "type": "flag",
+            "context": "shrike",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_blade_help",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE"
+    },
+    {
+      "text": "…lanius.  I'm here for information.",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CLEANSINGFLAME",
+              "PROF_CLEANSINGFLAME2"
+            ]
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_convinced",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_failed",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CLEANSINGFLAME"
+    },
+    {
+      "text": "I was asked to bring back any research that would help us.",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_convinced",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_failed",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_QUERY"
+    },
+    {
+      "text": "Who are you?",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_failed",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHO"
+    },
+    {
+      "text": "What can you tell me about this place?",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_failed",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE"
+    },
+    {
+      "text": "Do you have anything to trade?",
+      "effect": "start_trade",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "u_has_var": "elena_trade",
+            "type": "flag",
+            "context": "shrike",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_failed",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "[ATTACK] Ecce, sanguinem magum…",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "effect": [
+        {
+          "u_faction_rep": -30
+        },
+        "insult_combat"
+      ],
+      "topic": "TALK_DONE",
+      "opinion": {
+        "value": -1
+      }
+    },
+    {
+      "text": "I'll just be going…",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER",
+  "dynamic_line": {
+    "npc_has_trait": "SHRIKE_MISSION_MARKER",
+    "yes": {
+      "npc_has_var": "elena_convinced",
+      "type": "flag",
+      "context": "shrike",
+      "value": "yes",
+      "yes": "欢迎光临。尽量不要惹麻烦。",
+      "no": {
+        "npc_has_var": "elena_failed",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes",
+        "yes": "我们没什么可讨论的了。离开。",
+        "no": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ],
+          "yes": "…猎人。他们不会只派一个完整的狩猎队。你为什么在这里？",
+          "no": {
+            "u_has_any_trait": [
+              "PROF_SANGUINE",
+              "THRESH_DRAGONBLOOD"
+            ],
+            "yes": "嗯，你不觉得很惊喜吗？我知道猎人在这里侦察，跟踪我们。但他们让你通过了。我想知道为什么？",
+            "no": "猎人派你来的，不是吗？不寻常的。他们的角度是什么？"
+          }
+        }
+      }
+    },
+    "no": {
+      "u_has_any_trait": [
+        "PROF_CLEANSINGFLAME",
+        "PROF_CLEANSINGFLAME2"
+      ],
+      "yes": [
+        "我没什么好说的，猎人。如果你还没有惹麻烦的话，就去和猎人长官谈谈。",
+        "嗯。你们其他人手呢，他们通常一次来一打…",
+        "你胆子还真大，竟敢闯进来。",
+        "如果你有什么要说的话，就跟猎人长官说。",
+        "我会让你活着走出大门，别让我遗憾..."
+      ],
+      "no": [
+        "如果你有什么事，要找我们的领导。",
+        "你知道，在这里不安全。",
+        "这儿不归我管，抱歉。"
+      ]
+    }
+  },
+  "responses": [
+    {
+      "text": "【任务】你有关于被诅咒的仪式刀的信息吗？",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              {
+                "u_has_mission": "MISSION_HERMIT_RESTORE_SWORD"
+              },
+              {
+                "u_has_effect": "hermit_quest_backdoor"
+              }
+            ]
+          },
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "npc_has_var": "elena_convinced",
+            "type": "flag",
+            "context": "shrike",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_blade_help",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE"
+    },
+    {
+      "text": "……屠猎者。我来这里是为了了解情况。",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CLEANSINGFLAME",
+              "PROF_CLEANSINGFLAME2"
+            ]
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_convinced",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_failed",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CLEANSINGFLAME"
+    },
+    {
+      "text": "我要我们做的任何研究都能帮上忙。",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_convinced",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_failed",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_QUERY"
+    },
+    {
+      "text": "你是谁？",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_failed",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHO"
+    },
+    {
+      "text": "你能告诉我这是个什么地方？",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_failed",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE"
+    },
+    {
+      "text": "你有什么要交易的？",
+      "effect": "start_trade",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "SHRIKE_MISSION_MARKER"
+          },
+          {
+            "u_has_var": "elena_trade",
+            "type": "flag",
+            "context": "shrike",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "elena_failed",
+              "type": "flag",
+              "context": "shrike",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "[攻击]啊，圣洁的马格姆...",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "effect": [
+        {
+          "u_faction_rep": -30
+        },
+        "insult_combat"
+      ],
+      "topic": "TALK_DONE",
+      "opinion": {
+        "value": -1
+      }
+    },
+    {
+      "text": "我要走了…",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

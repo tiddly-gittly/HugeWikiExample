@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9tree_birch
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9tree_birch|http://cdda.aloxaf.cn/search?q=f_BL9tree_birch]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_birch",
+  "name": "birch tree",
+  "looks_like": "t_tree_birch",
+  "description": "A tall deciduous tree of the 'Betula' genus, with the characteristic peeling bark.  Species like 'B. alleghaniensis', 'B. papyrifera', and 'B. populifolia' are the most common in the New England region.  You could tear off some strips of bark if you examined the tree more closely.  You could cut it down with the right tools.",
+  "symbol": "7",
+  "color": "white",
+  "//": "barren in winter, harvestable all year round",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "id": "birch_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_birch",
+  "name": "桦树",
+  "looks_like": "t_tree_birch",
+  "description": "一棵高大的落叶树，分类学上属于桦属，在新英格兰地区主要由北美黄桦、北美白桦、北美灰桦组成。如果你仔细观察的话，你可以撕下一些成熟的桦树皮。你可以用合适的工具砍倒它。",
+  "symbol": "7",
+  "color": "white",
+  "//": "barren in winter, harvestable all year round",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "id": "birch_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+

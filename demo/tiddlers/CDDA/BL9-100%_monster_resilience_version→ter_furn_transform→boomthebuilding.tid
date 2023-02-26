@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: ter_furn_transform BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→ter_furn_transform→boomthebuilding
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：boomthebuilding|http://cdda.aloxaf.cn/search?q=boomthebuilding]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/terfurn_transform.json
+
+
+!! 原文
+
+```json
+{
+  "type": "ter_furn_transform",
+  "id": "boomthebuilding",
+  "terrain": [
+    {
+      "result": "t_dirt",
+      "valid_flags": [
+        "TRANSPARENT",
+        "WALL",
+        "CONNECT_TO_WALL",
+        "MOUNTABLE",
+        "THIN_OBSTACLE",
+        "BURROWABLE"
+      ],
+      "message": "The walls here has collapsed."
+    }
+  ],
+  "furniture": [
+    {
+      "result": [
+        "f_rubble",
+        [
+          "f_null",
+          2
+        ]
+      ],
+      "valid_flags": [
+        "MINEABLE",
+        "MOUNTABLE",
+        "FLAT_SURF"
+      ],
+      "message": "Rubbles have formed."
+    },
+    {
+      "result": [
+        "f_rubble",
+        [
+          "f_null",
+          2
+        ]
+      ],
+      "valid_furniture": [
+        "f_null"
+      ],
+      "message": "Rubbles have formed."
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "ter_furn_transform",
+  "id": "boomthebuilding",
+  "terrain": [
+    {
+      "result": "t_dirt",
+      "valid_flags": [
+        "TRANSPARENT",
+        "WALL",
+        "CONNECT_TO_WALL",
+        "MOUNTABLE",
+        "THIN_OBSTACLE",
+        "BURROWABLE"
+      ],
+      "message": "这里的墙倒塌了。"
+    }
+  ],
+  "furniture": [
+    {
+      "result": [
+        "f_rubble",
+        [
+          "f_null",
+          2
+        ]
+      ],
+      "valid_flags": [
+        "MINEABLE",
+        "MOUNTABLE",
+        "FLAT_SURF"
+      ],
+      "message": "Rubbles have formed."
+    },
+    {
+      "result": [
+        "f_rubble",
+        [
+          "f_null",
+          2
+        ]
+      ],
+      "valid_furniture": [
+        "f_null"
+      ],
+      "message": "Rubbles have formed."
+    }
+  ]
+}
+```
+

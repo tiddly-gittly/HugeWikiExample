@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_SANGUINE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_SANGUINE|http://cdda.aloxaf.cn/search?q=TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_SANGUINE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MERCHANT_CF_AUX.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_SANGUINE",
+  "type": "talk_topic",
+  "dynamic_line": "I have no idea.  That Johnathan boy seemed the book-burning type, but when we arranged the deal the other lady was keeping a close eye on him.  Had me promise to hand 'em over to someone else she was workin' with, instead of him.  We have a deal or not?",
+  "responses": [
+    {
+      "text": "Alright, fine.  I have one here.",
+      "condition": {
+        "u_has_item": "book_bloodmagic"
+      },
+      "effect": [
+        {
+          "u_consume_item": "book_bloodmagic"
+        },
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 12
+        }
+      ],
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+    },
+    {
+      "text": "We'll see, maybe another time.",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "No thanks, that's all for now I guess.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_SANGUINE",
+  "type": "talk_topic",
+  "dynamic_line": "我不知道。那个约翰纳森的男孩似乎是个爱读书的人，但当我们安排这笔交易时，另一位女士正密切注视着他。让我答应把它们交给她一起工作的人，而不是他。我们有没有交易？",
+  "responses": [
+    {
+      "text": "好吧，很好。我这里有一个。",
+      "condition": {
+        "u_has_item": "book_bloodmagic"
+      },
+      "effect": [
+        {
+          "u_consume_item": "book_bloodmagic"
+        },
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 12
+        }
+      ],
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+    },
+    {
+      "text": "我们拭目以待，也许下次吧。",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "不用了，谢谢，我想就这些了。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

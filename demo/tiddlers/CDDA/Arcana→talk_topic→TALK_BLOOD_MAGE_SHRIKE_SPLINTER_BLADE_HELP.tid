@@ -1,0 +1,163 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_HELP
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_HELP|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_HELP]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_HELP",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "You're working with them too?  Perhaps there's hope for the lot of us after all.  I'm used to seeing you mage hunters trying to smash any relic they can't exploit with their little hammers.  I'm not familiar with the curse's functionality, but the fundamentals of it can be found in the Sanguine Codex.  If you had access to the Keeper's own consecration rituals, you could do something with that.",
+    "no": {
+      "u_has_any_trait": [
+        "PROF_CHALICE",
+        "PROF_CHALICE2"
+      ],
+      "yes": "I'm aware that your holy book includes consecration rituals that could be adapted to do that.  You'll likely need information on how the curse functions to properly fix it, some of it could perhaps be puzzled out from a copy of Sanguine Codex.",
+      "no": {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": "You'll need Keeper magic to fix Keeper relics, that's for certain.  Very few magi had a handle on curse-binding for that matter, so you'll likely need a copy of the Codex on hand too.  Otherwise you're more likely to burn the curse out and turn it into a useless piece of metal.",
+        "no": "I don't know if I can help you very directly.  You'll need information on the curse itself first, from a copy of the Sanguine Codex.  Then you'll want the rituals the sword's old owners used for consecrating relics.  That's probably in their book, Oaths To The Chalice."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "We don't just smash things with hammers, believe it or not.  Rendering it safe yet functional would be a much better outcome.",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME2"
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_1"
+    },
+    {
+      "text": "We have more methods than mere destruction, and a reason for each method used.  Hence, not wishing to destroy this item.",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME"
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_1"
+    },
+    {
+      "text": "So I'll need a copy of Sanguine Codex then, great.",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_2"
+    },
+    {
+      "text": "Do you have a copy of Sanguine Codex I can use for that?",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_item": "book_bloodmagic"
+        }
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX"
+    },
+    {
+      "text": "I have some other questions.",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE"
+    },
+    {
+      "text": "I'll try to figure it out.",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_HELP",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "你也和他们一起工作？也许我们大家终究还是有希望的。我已经习惯于看到你们这些法师猎人试图用他们的小锤子砸碎任何他们无法利用的遗迹。我不熟悉诅咒的功能，但它的基本原理可以在血红法典中找到。如果你能接触到守誓者自己的献祭仪式，你也可以用它做些什么。",
+    "no": {
+      "u_has_any_trait": [
+        "PROF_CHALICE",
+        "PROF_CHALICE2"
+      ],
+      "yes": "我知道你的圣书中包括了可以用来做这件事的祭祀仪式。你可能需要关于诅咒如何运作的信息来正确地修复它，其中一些可能会从一本乐观的法典中被弄明白。",
+      "no": {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": "你需要守誓者的魔法来修复守护者的遗物，这是肯定的。很少有法师能处理缠绕的诅咒，所以你可能也需要一份血红法典。否则你更有可能把诅咒连同魔力一起烧掉，令它变成一块无用的金属。",
+        "no": "I don't know if I can help you very directly.  You'll need information on the curse itself first, from a copy of the Sanguine Codex.  Then you'll want the rituals the sword's old owners used for consecrating relics.  That's probably in their book, Oaths To The Chalice."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "我们不只是用锤子砸东西，信不信由你。让它既安全又实用是一个更好的结果。",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME2"
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_1"
+    },
+    {
+      "text": "我们有更多的方法不仅仅是破坏，而且每种方法都有原因。因此，不想销毁这件物品。",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME"
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_1"
+    },
+    {
+      "text": "所以我需要一份乐观的法典，太好了。",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_2"
+    },
+    {
+      "text": "你有我可以用的血法典吗？",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_item": "book_bloodmagic"
+        }
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX"
+    },
+    {
+      "text": "我还有其他问题。",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE"
+    },
+    {
+      "text": "我会设法弄清楚的。",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+

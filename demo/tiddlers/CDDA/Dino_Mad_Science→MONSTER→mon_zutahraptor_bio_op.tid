@@ -1,0 +1,199 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Dino_Mad_Science
+title: Dino_Mad_Science→MONSTER→mon_zutahraptor_bio_op
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zutahraptor_bio_op|http://cdda.aloxaf.cn/search?q=mon_zutahraptor_bio_op]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dino_Mad_Science/monsters/laser_dinos_zinos.json
+
+
+!! 原文
+
+```json
+{
+  "type": "MONSTER",
+  "id": "mon_zutahraptor_bio_op",
+  "name": {
+    "str_sp": "Utahraptor zombie bio-operator"
+  },
+  "copy-from": "mon_zutahraptor",
+  "diff": 5,
+  "proportional": {
+    "hp": 1.6,
+    "speed": 1.15
+  },
+  "morale": 100,
+  "aggression": 100,
+  "relative": {
+    "melee_skill": 9,
+    "melee_dice": 4,
+    "dodge": 2,
+    "armor_bash": 5,
+    "armor_cut": 5,
+    "armor_bullet": 5
+  },
+  "extend": {
+    "flags": [
+      "ACIDPROOF",
+      "ELECTRIC"
+    ]
+  },
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 4
+    }
+  ],
+  "vision_day": 100,
+  "vision_night": 100,
+  "luminance": 2,
+  "starting_ammo": {
+    "battery": 10
+  },
+  "special_attacks": [
+    [
+      "BIO_OP_TAKEDOWN",
+      20
+    ],
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 20,
+      "gun_type": "laser_rifle_dino2",
+      "fake_skills": [
+        [
+          "gun",
+          2
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "fake_dex": 1,
+      "ranges": [
+        [
+          0,
+          50,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "laser_lock": false,
+      "targeting_cost": 1,
+      "targeting_timeout_extend": -1,
+      "targeting_sound": "\"TARGET *zZzZzz* ACQUIRED.\"",
+      "targeting_volume": 70,
+      "no_ammo_sound": "*zZzzz*-TARGET ACQUIRED.  *beeeep*.  OUT OF AMMO.-*zZzZ*"
+    }
+  ],
+  "description": "The corpse of an intimidatingly large cyber-raptor.  Bloody hair-like filaments and crackling bionics coat its silvery armor plating.  Its eyes glow blood red as it scans with its laser rifle shoulder-mount.  The laser could probably be retrived through field dressing or dissection.",
+  "special_when_hit": [
+    "ZAPBACK",
+    75
+  ],
+  "harvest": "CBM_ZINO_LASER",
+  "death_drops": "laser_cbm_dino_drops"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "MONSTER",
+  "id": "mon_zutahraptor_bio_op",
+  "name": {
+    "str_sp": "丧尸生化犹他盗龙"
+  },
+  "copy-from": "mon_zutahraptor",
+  "diff": 5,
+  "proportional": {
+    "hp": 1.6,
+    "speed": 1.15
+  },
+  "morale": 100,
+  "aggression": 100,
+  "relative": {
+    "melee_skill": 9,
+    "melee_dice": 4,
+    "dodge": 2,
+    "armor_bash": 5,
+    "armor_cut": 5,
+    "armor_bullet": 5
+  },
+  "extend": {
+    "flags": [
+      "ACIDPROOF",
+      "ELECTRIC"
+    ]
+  },
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 4
+    }
+  ],
+  "vision_day": 100,
+  "vision_night": 100,
+  "luminance": 2,
+  "starting_ammo": {
+    "battery": 10
+  },
+  "special_attacks": [
+    [
+      "BIO_OP_TAKEDOWN",
+      20
+    ],
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 20,
+      "gun_type": "laser_rifle_dino2",
+      "fake_skills": [
+        [
+          "gun",
+          2
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "fake_dex": 1,
+      "ranges": [
+        [
+          0,
+          50,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "laser_lock": false,
+      "targeting_cost": 1,
+      "targeting_timeout_extend": -1,
+      "targeting_sound": "\"TARGET *zZzZzz* ACQUIRED.\"",
+      "targeting_volume": 70,
+      "no_ammo_sound": "*滋滋滋滋滋*——捕捉到目标。*哔——*弹药已耗尽。——*滋滋滋滋*"
+    }
+  ],
+  "description": "一具令人生畏的赛博犹他盗龙的尸体，长着毛发一般的细丝，银色的装甲板上露出噼啪作响的仿生装置。它的眼睛中发出血红的光，像是在为肩式激光步枪扫描着。激光武器可以通过清理内脏或解剖来获得。",
+  "special_when_hit": [
+    "ZAPBACK",
+    75
+  ],
+  "harvest": "CBM_ZINO_LASER",
+  "death_drops": "laser_cbm_dino_drops"
+}
+```
+

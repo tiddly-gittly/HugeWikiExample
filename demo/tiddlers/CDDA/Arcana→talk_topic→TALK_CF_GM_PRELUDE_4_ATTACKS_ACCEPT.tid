@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_PRELUDE_4_ATTACKS_ACCEPT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_PRELUDE_4_ATTACKS_ACCEPT|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_PRELUDE_4_ATTACKS_ACCEPT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS_ACCEPT",
+  "type": "talk_topic",
+  "dynamic_line": "Alright.  I'll give you directions as best as I can.  This should lead you to the last site where they broke camp before their return.  They left some of their gear with the bodies, and there might be some clues left behind.  Search for any items that stand out, possibly anomalous materials they might have scavenged from the region.",
+  "speaker_effect": [
+    {
+      "effect": {
+        "add_mission": "MISSION_CF_GM_4_PRELUDE"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "text": "Do you have any advice?",
+      "topic": "TALK_CF_GM_PRELUDE_4_ACCEPT_ADVICE"
+    },
+    {
+      "text": "I have something else to ask about.",
+      "topic": "TALK_CF_GM_PRELUDE_4"
+    },
+    {
+      "text": "I'll be back later.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS_ACCEPT",
+  "type": "talk_topic",
+  "dynamic_line": "好吧。我会尽我所能给你指路。这应该会把你带到他们回来前最后一个营地。他们在尸体上留下了一些装备，可能留下了一些线索。寻找任何突出的物品，可能是他们从该地区清除的异常物质。",
+  "speaker_effect": [
+    {
+      "effect": {
+        "add_mission": "MISSION_CF_GM_4_PRELUDE"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "text": "你有什么建议吗？",
+      "topic": "TALK_CF_GM_PRELUDE_4_ACCEPT_ADVICE"
+    },
+    {
+      "text": "我还有别的事要问。",
+      "topic": "TALK_CF_GM_PRELUDE_4"
+    },
+    {
+      "text": "我稍后再来。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

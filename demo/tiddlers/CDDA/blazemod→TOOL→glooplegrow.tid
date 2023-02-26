@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: TOOL blazemod
+title: blazemod→TOOL→glooplegrow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：glooplegrow|http://cdda.aloxaf.cn/search?q=glooplegrow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/tools/blob_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "glooplegrow",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "growing gelatinous mass"
+  },
+  "description": "Not quite fully grown, this blob requires nourishment to fully develop.",
+  "weight": "3562 g",
+  "volume": "2 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "light_green",
+  "use_action": {
+    "target": "gloople",
+    "msg": "The blob balloons to full size.",
+    "type": "delayed_transform",
+    "transform_age": 2400,
+    "not_ready_msg": "Whatever it's doing, it's not done yet."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "glooplegrow",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "凝胶变形怪（生长中）"
+  },
+  "description": "还没有完全长成，这只变形怪需要更多营养成分才能完全成长。",
+  "weight": "3562 g",
+  "volume": "2 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "light_green",
+  "use_action": {
+    "target": "gloople",
+    "msg": "变形怪长大到完整大小。",
+    "type": "delayed_transform",
+    "transform_age": 2400,
+    "not_ready_msg": "Whatever it's doing, it's not done yet."
+  }
+}
+```
+

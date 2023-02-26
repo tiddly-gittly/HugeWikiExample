@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: GUN Tankmod_Revived
+title: Tankmod_Revived→GUN→tank_gun_crude_105mm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tank_gun_crude_105mm|http://cdda.aloxaf.cn/search?q=tank_gun_crude_105mm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tank_gun_crude_105mm",
+  "type": "GUN",
+  "symbol": "(",
+  "color": "green",
+  "name": {
+    "str_sp": "makeshift 105mm tank gun"
+  },
+  "description": "A makeshift cannon crudely chambered for 105mm tank shells, with a short thick-walled barrel and a breechblock fashioned out of hardened steel.  Very unreliable and massively reduces performance, but simpler to install and easier to repair.  Only holds a single shot, uses electric ignition, and must be mounted on a vehicle to fire.",
+  "price": 20000000,
+  "price_postapoc": 3500,
+  "material": [
+    "steel"
+  ],
+  "flags": [
+    "NO_RELOAD",
+    "MOUNTED_GUN",
+    "STR_RELOAD"
+  ],
+  "skill": "launcher",
+  "ammo": "105mm",
+  "weight": "750 kg",
+  "volume": "2900 ml",
+  "longest_side": "330 cm",
+  "bashing": 12,
+  "to_hit": -6,
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": -10,
+    "armor_penetration": -10
+  },
+  "range": -25,
+  "dispersion": 300,
+  "recoil": 250000,
+  "durability": 4,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "105mm": 1
+      }
+    }
+  ],
+  "blackpowder_tolerance": 12,
+  "clip_size": 1,
+  "reload": 1000,
+  "ups_charges": 50
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tank_gun_crude_105mm",
+  "type": "GUN",
+  "symbol": "(",
+  "color": "green",
+  "name": {
+    "str_sp": "105mm 自制坦克炮"
+  },
+  "description": "一种临时的加农炮，简陋地装着105毫米的坦克炮弹，有一个短而厚的炮筒和一个由淬火钢制成的炮尾座。非常不可靠，性能大大降低，但安装更简单，维修更容易。只有持有一个单一的射击，使用电点火，并必须安装在车辆上开火。",
+  "price": 20000000,
+  "price_postapoc": 3500,
+  "material": [
+    "steel"
+  ],
+  "flags": [
+    "NO_RELOAD",
+    "MOUNTED_GUN",
+    "STR_RELOAD"
+  ],
+  "skill": "launcher",
+  "ammo": "105mm",
+  "weight": "750 kg",
+  "volume": "2900 ml",
+  "longest_side": "330 cm",
+  "bashing": 12,
+  "to_hit": -6,
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": -10,
+    "armor_penetration": -10
+  },
+  "range": -25,
+  "dispersion": 300,
+  "recoil": 250000,
+  "durability": 4,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "105mm": 1
+      }
+    }
+  ],
+  "blackpowder_tolerance": 12,
+  "clip_size": 1,
+  "reload": 1000,
+  "ups_charges": 50
+}
+```
+

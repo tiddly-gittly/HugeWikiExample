@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_ulniv_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_ulniv_1|http://cdda.aloxaf.cn/search?q=mon_BL9_ulniv_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_ulniv_1",
+  "looks_like": "mon_zombie_mancroc",
+  "type": "MONSTER",
+  "name": {
+    "str": "Ulniviunite Mutant"
+  },
+  "description": "A human gone feral - slowly turning into some sort of a sand-brown alien pangolin creature - it's body is partly covered with mucousy thick and durable scales, grotesquely fleshy pangolin-like tail emerges from the lower part of it's back, it's hands are slowly turning into incredibly sharp and sturdy claws, it looks confused yet enraged",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 168,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_penetration": 9
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 6,
+  "armor_cut": 6,
+  "armor_bullet": 6,
+  "death_drops": "BL9_Drops_Aliens",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously claws you!",
+      "hit_dmg_npc": "The %1$s ferociously claws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to claw you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to claw <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's knifelike claw at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's knifelike claw at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_ulniv_1",
+  "looks_like": "mon_zombie_mancroc",
+  "type": "MONSTER",
+  "name": {
+    "str": "乌尔尼维突变体"
+  },
+  "description": "一只野性消失的人类——慢慢变成某种沙褐色的外来穿山甲生物——它的身体部分覆盖着粘液状的厚而耐用的鳞片，背部下部露出奇怪的肉质穿山甲般的尾巴，它的手正在慢慢变成令人难以置信的锋利和强壮的爪子，它看起来困惑而又愤怒",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 168,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_penetration": 9
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 6,
+  "armor_cut": 6,
+  "armor_bullet": 6,
+  "death_drops": "BL9_Drops_Aliens",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously claws you!",
+      "hit_dmg_npc": "The %1$s ferociously claws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to claw you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to claw <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's knifelike claw at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's knifelike claw at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

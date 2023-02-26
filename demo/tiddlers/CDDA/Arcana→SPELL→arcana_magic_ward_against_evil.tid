@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_ward_against_evil
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_ward_against_evil|http://cdda.aloxaf.cn/search?q=arcana_magic_ward_against_evil]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_ward_against_evil",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Ward Against Evil"
+  },
+  "description": "Magic Sign\nUsing this spell will grant a blessing that protects against certain anomalous threats.  It can be used on yourself or an ally.",
+  "message": "\"The wicked falter before the vigilant…\"  You cast %s!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_5",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "cleric_warding",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "energy_source": "STAMINA",
+  "difficulty": 50,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 240,
+  "final_casting_time": 120,
+  "casting_time_increment": -12,
+  "base_energy_cost": 3000,
+  "final_energy_cost": 1500,
+  "energy_increment": -150,
+  "min_duration": 60000,
+  "max_duration": 120000,
+  "duration_increment": 6000,
+  "spell_class": "SPELL_CLERIC"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_ward_against_evil",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：辟邪"
+  },
+  "description": "魔法符号\n使用该法术将获得祝福，可以抵御某些异常威胁它可以在自己或盟友身上使用。",
+  "message": "“恶人在警惕者面前蹒跚……”你施放了 %s！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_5",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "cleric_warding",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "energy_source": "STAMINA",
+  "difficulty": 50,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 240,
+  "final_casting_time": 120,
+  "casting_time_increment": -12,
+  "base_energy_cost": 3000,
+  "final_energy_cost": 1500,
+  "energy_increment": -150,
+  "min_duration": 60000,
+  "max_duration": 120000,
+  "duration_increment": 6000,
+  "spell_class": "SPELL_CLERIC"
+}
+```
+

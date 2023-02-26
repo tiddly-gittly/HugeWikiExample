@@ -1,0 +1,59 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BIO_1_RECRUIT_FAILED
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BIO_1_RECRUIT_FAILED|http://cdda.aloxaf.cn/search?q=TALK_BIO_1_RECRUIT_FAILED]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BIO_1.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_1_RECRUIT_FAILED",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "What, like going out there, killing zombies, protecting the innocent?  Is that what the sappy motivational speech is for?  Well, reject or not, I see that same fire in your eye that any bio-weapon has.  I think you've got a point.  Let's see where this goes.",
+    "no": "Eh?  Wait, I get it now.  So that's what you're on about.  I would've mistaken you for just some civilian cyberjunkie, but you're one of us.  And you just might have a point.  We'll see how it goes."
+  },
+  "responses": [
+    {
+      "text": "Let's go.",
+      "topic": "TALK_DONE",
+      "effect": "follow"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_1_RECRUIT_FAILED",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "什么，比如出去，杀丧尸，保护无辜？这就是愚蠢的动机演讲的目的吗？不管你拒绝与否，我在你眼中看到的火焰和任何生物武器都是一样的。我想你说得有道理。让我们看看这是怎么回事。",
+    "no": "嗯？等等，我现在明白了。所以这就是你要说的。我会误以为你只是个普通的生化瘾君子，但你是我们中的一员。你也许有道理。我们拭目以待。"
+  },
+  "responses": [
+    {
+      "text": "一起走吧。",
+      "topic": "TALK_DONE",
+      "effect": "follow"
+    }
+  ]
+}
+```
+

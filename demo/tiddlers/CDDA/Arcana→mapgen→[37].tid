@@ -1,0 +1,272 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[37]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_library_1"
+  ],
+  "weight": 125,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "------------------------",
+      "------------------------",
+      "........--..............",
+      ".ppppppp--ppppppppppppp.",
+      ".#####::**:::::###oo###.",
+      ".#d bc         | hh h #.",
+      ".#d  %     h[h | [[[[ #.",
+      ".#d bc     h[h |  hhh #.",
+      ".#y  %         |+|||||#.",
+      ".#   c                o.",
+      ".o        h%%h   JJ  U#.",
+      ".#M  WW   h%%h   JJ  I#.",
+      ".#M  TT   h%%h   JJ  I#.",
+      ".#M  PP   h%%h   OO  N#.",
+      ".#M  AA   h%%h   OO  N#.",
+      ".#                    #.",
+      ".#QQQQQQQQQQQQQQ NNNNN#.",
+      ".##########|||||+|||###.",
+      ".....5...4#d   x | [#...",
+      "..........#h cc| + S#...",
+      "....5..5..#||||| |||#...",
+      "..........o  B * + S#...",
+      ".5.....5..#[[[y: | [#...",
+      "..........######o####..."
+    ],
+    "palettes": [
+      "standard_building_palette",
+      "library_palette"
+    ],
+    "terrain": {
+      "x": "t_door_locked_interior"
+    },
+    "place_loot": [
+      {
+        "item": "matches",
+        "x": 11,
+        "y": 18,
+        "chance": 50
+      },
+      {
+        "group": "reading_lights",
+        "x": 11,
+        "y": 18,
+        "chance": 90
+      },
+      {
+        "item": "scroll_blank",
+        "x": 11,
+        "y": 18,
+        "chance": 75
+      },
+      {
+        "group": "unaligned_arcanist_books",
+        "x": [
+          13,
+          14
+        ],
+        "y": 19,
+        "chance": 50,
+        "repeat": 10
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_MAYBE_ZOMBIE",
+        "x": [
+          16,
+          21
+        ],
+        "y": [
+          5,
+          7
+        ],
+        "density": 1
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_shady",
+          "mon_zombie_shady",
+          "mon_zombie_shady",
+          "mon_zombie_shady",
+          "mon_dementia",
+          "mon_dementia",
+          "mon_zombie_master",
+          "mon_zombie_necro"
+        ],
+        "x": [
+          11,
+          14
+        ],
+        "y": [
+          18,
+          19
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_aux_b_2",
+  "object": {
+    "place_loot": [
+      {
+        "group": "rural_church_hunter_haul",
+        "x": [
+          8,
+          9
+        ],
+        "y": [
+          12,
+          13
+        ],
+        "chance": 75,
+        "repeat": 5
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_library_1"
+  ],
+  "weight": 125,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "------------------------",
+      "------------------------",
+      "........--..............",
+      ".ppppppp--ppppppppppppp.",
+      ".#####::**:::::###oo###.",
+      ".#d bc         | hh h #.",
+      ".#d  %     h[h | [[[[ #.",
+      ".#d bc     h[h |  hhh #.",
+      ".#y  %         |+|||||#.",
+      ".#   c                o.",
+      ".o        h%%h   JJ  U#.",
+      ".#M  WW   h%%h   JJ  I#.",
+      ".#M  TT   h%%h   JJ  I#.",
+      ".#M  PP   h%%h   OO  N#.",
+      ".#M  AA   h%%h   OO  N#.",
+      ".#                    #.",
+      ".#QQQQQQQQQQQQQQ NNNNN#.",
+      ".##########|||||+|||###.",
+      ".....5...4#d   x | [#...",
+      "..........#h cc| + S#...",
+      "....5..5..#||||| |||#...",
+      "..........o  B * + S#...",
+      ".5.....5..#[[[y: | [#...",
+      "..........######o####..."
+    ],
+    "palettes": [
+      "standard_building_palette",
+      "library_palette"
+    ],
+    "terrain": {
+      "x": "t_door_locked_interior"
+    },
+    "place_loot": [
+      {
+        "item": "matches",
+        "x": 11,
+        "y": 18,
+        "chance": 50
+      },
+      {
+        "group": "reading_lights",
+        "x": 11,
+        "y": 18,
+        "chance": 90
+      },
+      {
+        "item": "scroll_blank",
+        "x": 11,
+        "y": 18,
+        "chance": 75
+      },
+      {
+        "group": "unaligned_arcanist_books",
+        "x": [
+          13,
+          14
+        ],
+        "y": 19,
+        "chance": 50,
+        "repeat": 10
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_MAYBE_ZOMBIE",
+        "x": [
+          16,
+          21
+        ],
+        "y": [
+          5,
+          7
+        ],
+        "density": 1
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_shady",
+          "mon_zombie_shady",
+          "mon_zombie_shady",
+          "mon_zombie_shady",
+          "mon_dementia",
+          "mon_dementia",
+          "mon_zombie_master",
+          "mon_zombie_necro"
+        ],
+        "x": [
+          11,
+          14
+        ],
+        "y": [
+          18,
+          19
+        ]
+      }
+    ]
+  }
+}
+```
+

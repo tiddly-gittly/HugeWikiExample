@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_portal_carrion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_portal_carrion|http://cdda.aloxaf.cn/search?q=fd_portal_carrion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Spawning monsters with fields has a delay for approximately 10 turns (probably depends on device's memory). This is a bug that spawns all monster in an instance.",
+  "id": "fd_portal_carrion",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "carrion portal",
+      "color": "red",
+      "sym": "*",
+      "light_emitted": 5,
+      "monster_spawn_chance": 1000,
+      "monster_spawn_count": 1,
+      "monster_spawn_radius": 2,
+      "monster_spawn_group": "GROUP_CARRIONS"
+    },
+    {
+      "color": "red",
+      "light_emitted": 10,
+      "monster_spawn_chance": 100,
+      "monster_spawn_count": 2,
+      "monster_spawn_radius": 2,
+      "monster_spawn_group": "GROUP_CARRIONS"
+    },
+    {
+      "color": "light_red",
+      "transparent": false,
+      "monster_spawn_chance": 10,
+      "monster_spawn_count": 3,
+      "monster_spawn_radius": 4,
+      "monster_spawn_group": "GROUP_CARRIONS",
+      "light_emitted": 15
+    }
+  ],
+  "priority": 9,
+  "half_life": "20 seconds",
+  "accelerated_decay": true,
+  "gas_absorption_factor": 20,
+  "dirty_transparency_cache": true,
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Spawning monsters with fields has a delay for approximately 10 turns (probably depends on device's memory). This is a bug that spawns all monster in an instance.",
+  "id": "fd_portal_carrion",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "carrion portal",
+      "color": "red",
+      "sym": "*",
+      "light_emitted": 5,
+      "monster_spawn_chance": 1000,
+      "monster_spawn_count": 1,
+      "monster_spawn_radius": 2,
+      "monster_spawn_group": "GROUP_CARRIONS"
+    },
+    {
+      "color": "red",
+      "light_emitted": 10,
+      "monster_spawn_chance": 100,
+      "monster_spawn_count": 2,
+      "monster_spawn_radius": 2,
+      "monster_spawn_group": "GROUP_CARRIONS"
+    },
+    {
+      "color": "light_red",
+      "transparent": false,
+      "monster_spawn_chance": 10,
+      "monster_spawn_count": 3,
+      "monster_spawn_radius": 4,
+      "monster_spawn_group": "GROUP_CARRIONS",
+      "light_emitted": 15
+    }
+  ],
+  "priority": 9,
+  "half_life": "20 seconds",
+  "accelerated_decay": true,
+  "gas_absorption_factor": 20,
+  "dirty_transparency_cache": true,
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true
+}
+```
+

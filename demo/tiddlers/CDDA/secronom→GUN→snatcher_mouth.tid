@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: GUN secronom
+title: secronom→GUN→snatcher_mouth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：snatcher_mouth|http://cdda.aloxaf.cn/search?q=snatcher_mouth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_gun_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "snatcher_mouth",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "snatcher zombie's mouth"
+  },
+  "description": "Sends off a long-ranged tongue with precise accuracy, stopping the target's movement. Takes a long time to replenish before firing a new one.",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "SECRO_SNATCHER"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 30,
+  "dispersion": 10,
+  "ranged_damage": {
+    "damage_type": "bash",
+    "amount": 3
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "snatcher_mouth",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "掠夺丧尸的嘴"
+  },
+  "description": "以精确的精度发射远程舌头，阻止目标的移动。在发射一个新的之前需要很长时间来补充能量。",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "SECRO_SNATCHER"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 30,
+  "dispersion": 10,
+  "ranged_damage": {
+    "damage_type": "bash",
+    "amount": 3
+  }
+}
+```
+

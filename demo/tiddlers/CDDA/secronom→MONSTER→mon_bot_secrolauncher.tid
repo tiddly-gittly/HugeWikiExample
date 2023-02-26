@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_bot_secrolauncher
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_bot_secrolauncher|http://cdda.aloxaf.cn/search?q=mon_bot_secrolauncher]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Bots/SecronomDragon_spawns.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_bot_secrolauncher",
+  "type": "MONSTER",
+  "name": {
+    "str": "launcher"
+  },
+  "description": "An automated missile deploying helidrone. It launches homing missiles from its hatch, activating them upon release.",
+  "default_faction": "bot",
+  "species": [
+    "ROBOT"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 55,
+  "speed": 85,
+  "material": [
+    "steel"
+  ],
+  "symbol": "H",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "armor_cut": 4,
+  "armor_bullet": 3,
+  "armor_bash": 2,
+  "armor_stab": 3,
+  "harvest": "exempt",
+  "armor_acid": 8,
+  "armor_fire": 10,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_bot_secrolauncher_target"
+      },
+      "cooldown": 50,
+      "monster_message": "<color_yellow>%1$s sends out missiles!</color>"
+    }
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        1
+      ]
+    ]
+  },
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "FLIES",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "POISON",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_bot_secrolauncher",
+  "type": "MONSTER",
+  "name": {
+    "str": "发射器"
+  },
+  "description": "部署直升机的自动导弹。它从舱口发射一枚寻的导弹，释放后激活它们。",
+  "default_faction": "bot",
+  "species": [
+    "ROBOT"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 55,
+  "speed": 85,
+  "material": [
+    "steel"
+  ],
+  "symbol": "H",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "armor_cut": 4,
+  "armor_bullet": 3,
+  "armor_bash": 2,
+  "armor_stab": 3,
+  "harvest": "exempt",
+  "armor_acid": 8,
+  "armor_fire": 10,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_bot_secrolauncher_target"
+      },
+      "cooldown": 50,
+      "monster_message": "<color_yellow>%1$s发射导弹！</color>"
+    }
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        1
+      ]
+    ]
+  },
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "FLIES",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "POISON",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+

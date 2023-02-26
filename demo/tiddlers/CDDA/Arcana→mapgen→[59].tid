@@ -1,0 +1,301 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[59]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "method": "json",
+  "om_terrain": "cabin_3",
+  "type": "mapgen",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "........................",
+      "........................",
+      "........._____________..",
+      "........_______________.",
+      "........_______________.",
+      "........__##ww#######__.",
+      "........__#1& c#[ dc#__.",
+      "........__wF  t#[   #__.",
+      "........__wS  c#[  ]#__.",
+      "........__#2   ##X###__.",
+      "........__#3       A#__.",
+      "........__####     Aw__.",
+      "........_0#s +  B BBw__.",
+      "........_%#T #Y BDBB#__.",
+      "........__#####+#ww##__.",
+      "........___bbb_________.",
+      "........_______________.",
+      "........._____________..",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "cabin_palette"
+    ],
+    "terrain": {
+      "0": "t_grass",
+      "[": "t_floor",
+      "]": "t_floor",
+      ".": [
+        [
+          "t_grass",
+          6
+        ],
+        "t_dirt",
+        "t_tree_dead",
+        "t_tree_maple",
+        "t_tree_young",
+        "t_tree",
+        [
+          "t_tree_pine",
+          2
+        ],
+        [
+          "t_underbrush",
+          3
+        ]
+      ],
+      "_": [
+        "t_dirt",
+        [
+          "t_grass",
+          6
+        ]
+      ],
+      "X": "t_door_boarded",
+      "b": "t_grass"
+    },
+    "furniture": {
+      "[": "f_bookcase",
+      "]": "f_counter"
+    },
+    "items": {
+      "[": {
+        "item": "chalice_cult_books_postapoc",
+        "chance": 50,
+        "repeat": 3
+      }
+    },
+    "place_loot": [
+      {
+        "item": "book_magicfordummies",
+        "x": 19,
+        "y": 8
+      },
+      {
+        "item": "note_chalice_hint",
+        "x": 19,
+        "y": 8
+      },
+      {
+        "item": "arcanemap",
+        "x": 19,
+        "y": 8
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_GM_1_b",
+  "object": {
+    "set": [
+      {
+        "line": "terrain",
+        "id": "t_fence_post",
+        "x": 23,
+        "x2": 23,
+        "y": 0,
+        "y2": 4
+      },
+      {
+        "line": "terrain",
+        "id": "t_fence_post",
+        "x": 18,
+        "x2": 22,
+        "y": 0,
+        "y2": 0
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 22,
+        "x2": 22,
+        "y": 1,
+        "y2": 10
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 13,
+        "x2": 21,
+        "y": 1,
+        "y2": 1
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 22,
+        "x2": 22,
+        "y": 11,
+        "y2": 15
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 8,
+        "x2": 12,
+        "y": 1,
+        "y2": 1
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 22,
+        "x2": 22,
+        "y": 16,
+        "y2": 20
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 3,
+        "x2": 7,
+        "y": 1,
+        "y2": 1
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "om_terrain": "cabin_3",
+  "type": "mapgen",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "........................",
+      "........................",
+      "........._____________..",
+      "........_______________.",
+      "........_______________.",
+      "........__##ww#######__.",
+      "........__#1& c#[ dc#__.",
+      "........__wF  t#[   #__.",
+      "........__wS  c#[  ]#__.",
+      "........__#2   ##X###__.",
+      "........__#3       A#__.",
+      "........__####     Aw__.",
+      "........_0#s +  B BBw__.",
+      "........_%#T #Y BDBB#__.",
+      "........__#####+#ww##__.",
+      "........___bbb_________.",
+      "........_______________.",
+      "........._____________..",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "cabin_palette"
+    ],
+    "terrain": {
+      "0": "t_grass",
+      "[": "t_floor",
+      "]": "t_floor",
+      ".": [
+        [
+          "t_grass",
+          6
+        ],
+        "t_dirt",
+        "t_tree_dead",
+        "t_tree_maple",
+        "t_tree_young",
+        "t_tree",
+        [
+          "t_tree_pine",
+          2
+        ],
+        [
+          "t_underbrush",
+          3
+        ]
+      ],
+      "_": [
+        "t_dirt",
+        [
+          "t_grass",
+          6
+        ]
+      ],
+      "X": "t_door_boarded",
+      "b": "t_grass"
+    },
+    "furniture": {
+      "[": "f_bookcase",
+      "]": "f_counter"
+    },
+    "items": {
+      "[": {
+        "item": "chalice_cult_books_postapoc",
+        "chance": 50,
+        "repeat": 3
+      }
+    },
+    "place_loot": [
+      {
+        "item": "book_magicfordummies",
+        "x": 19,
+        "y": 8
+      },
+      {
+        "item": "note_chalice_hint",
+        "x": 19,
+        "y": 8
+      },
+      {
+        "item": "arcanemap",
+        "x": 19,
+        "y": 8
+      }
+    ]
+  }
+}
+```
+

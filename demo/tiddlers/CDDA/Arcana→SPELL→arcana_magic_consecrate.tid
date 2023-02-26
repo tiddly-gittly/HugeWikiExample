@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_consecrate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_consecrate|http://cdda.aloxaf.cn/search?q=arcana_magic_consecrate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_consecrate",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Consecrate"
+  },
+  "description": "Magic Sign\nUsing this spell will alter the terrain around you, driving off various signs of otherworldly corruption afflicting the land.  It will also harm a limited selection of otherworldly monsters.",
+  "message": "\"I am that which reveals the wicked, and scourges them with flame…\"  You cast %s!",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_consecrate",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_consecrate_lesser",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_6",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "energy_source": "STAMINA",
+  "max_level": 10,
+  "difficulty": 60,
+  "skill": "magic",
+  "min_damage": 4,
+  "max_damage": 2,
+  "damage_increment": -0.2,
+  "min_aoe": 8,
+  "max_aoe": 12,
+  "aoe_increment": 0.4,
+  "min_range": 8,
+  "max_range": 16,
+  "range_increment": 0.8,
+  "base_casting_time": 280,
+  "final_casting_time": 140,
+  "casting_time_increment": -14,
+  "base_energy_cost": 3500,
+  "final_energy_cost": 1750,
+  "energy_increment": -175
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_consecrate",
+  "type": "SPELL",
+  "name": {
+    "str": "标记：祝圣"
+  },
+  "description": "魔法符号\n使用此法术将改变你周围的地形，驱散困扰这片土地的各种异界迹象。它还会伤害一部分特定的异界怪物。",
+  "message": "“我就是那揭露恶人，用火焰鞭打他们的人……”你施放了 %s！",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_consecrate",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_consecrate_lesser",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_6",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "energy_source": "STAMINA",
+  "max_level": 10,
+  "difficulty": 60,
+  "skill": "magic",
+  "min_damage": 4,
+  "max_damage": 2,
+  "damage_increment": -0.2,
+  "min_aoe": 8,
+  "max_aoe": 12,
+  "aoe_increment": 0.4,
+  "min_range": 8,
+  "max_range": 16,
+  "range_increment": 0.8,
+  "base_casting_time": 280,
+  "final_casting_time": 140,
+  "casting_time_increment": -14,
+  "base_energy_cost": 3500,
+  "final_energy_cost": 1750,
+  "energy_increment": -175
+}
+```
+

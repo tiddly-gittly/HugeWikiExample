@@ -1,0 +1,229 @@
+creator: 林一二
+revision: 0
+tags: GUN Arcana
+title: Arcana→GUN→bloodscourge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bloodscourge|http://cdda.aloxaf.cn/search?q=bloodscourge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bloodscourge",
+  "type": "GUN",
+  "category": "weapons",
+  "name": {
+    "str": "hellfire staff",
+    "str_pl": "hellfire staves"
+  },
+  "description": "A staff decorated with silver and a skull motif, capped with a strange red gem.  The metal parts feel uncomfortably warm to the touch.  Firing it projects a gout of wicked flame.  It can also be used to spark magical flames, but this will drain fatigue to use.",
+  "weight": "2800 g",
+  "volume": "3 L",
+  "longest_side": "150 cm",
+  "price": "600 USD",
+  "price_postapoc": "75 USD",
+  "to_hit": 3,
+  "bashing": 21,
+  "material": [
+    "wood",
+    "silver",
+    "bone"
+  ],
+  "symbol": "/",
+  "looks_like": "q_staff",
+  "color": "red",
+  "ammo": "essence_blood_type",
+  "skill": "magic",
+  "range": 20,
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 20,
+    "armor_penetration": 3
+  },
+  "dispersion": 250,
+  "durability": 10,
+  "loudness": 100,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 15
+      }
+    }
+  ],
+  "clip_size": 15,
+  "reload": 300,
+  "modes": [
+    [
+      "DEFAULT",
+      "single",
+      1
+    ],
+    [
+      "BURST",
+      "triple",
+      3
+    ]
+  ],
+  "ammo_effects": [
+    "FLAME",
+    "STREAM",
+    "IGNITE"
+  ],
+  "techniques": [
+    "WBLOCK_1",
+    "RAPID"
+  ],
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_sparks",
+    "no_fail": true,
+    "level": 0,
+    "need_wielding": true
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_bloodscourge_fire",
+            "once_in": 3,
+            "message": "The air around %2$s wavers with unearthly heat in the wake of your strike!",
+            "npc_message": "%2$s suddenly bursts into flames as %1$s swings at them!"
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "NEVER_JAMS",
+    "DURABLE_MELEE",
+    "PRIMITIVE_RANGED_WEAPON",
+    "NONCONDUCTIVE",
+    "NO_SALVAGE",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED",
+    "SHEATH_SPEAR"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bloodscourge",
+  "type": "GUN",
+  "category": "weapons",
+  "name": {
+    "str": "地狱火杖",
+    "str_pl": "地狱火杖"
+  },
+  "description": "一根用银和骷髅图案装饰的杖，顶端镶嵌着一颗奇怪的红色宝石。金属的部分摸起来令人感到不适的温暖。使用它施法会产生一股邪恶的火焰。它也可以用来点燃魔法火焰，但这会消耗疲劳。",
+  "weight": "2800 g",
+  "volume": "3 L",
+  "longest_side": "150 cm",
+  "price": "600 USD",
+  "price_postapoc": "75 USD",
+  "to_hit": 3,
+  "bashing": 21,
+  "material": [
+    "wood",
+    "silver",
+    "bone"
+  ],
+  "symbol": "/",
+  "looks_like": "q_staff",
+  "color": "red",
+  "ammo": "essence_blood_type",
+  "skill": "magic",
+  "range": 20,
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 20,
+    "armor_penetration": 3
+  },
+  "dispersion": 250,
+  "durability": 10,
+  "loudness": 100,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 15
+      }
+    }
+  ],
+  "clip_size": 15,
+  "reload": 300,
+  "modes": [
+    [
+      "DEFAULT",
+      "single",
+      1
+    ],
+    [
+      "BURST",
+      "triple",
+      3
+    ]
+  ],
+  "ammo_effects": [
+    "FLAME",
+    "STREAM",
+    "IGNITE"
+  ],
+  "techniques": [
+    "WBLOCK_1",
+    "RAPID"
+  ],
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_sparks",
+    "no_fail": true,
+    "level": 0,
+    "need_wielding": true
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_bloodscourge_fire",
+            "once_in": 3,
+            "message": "在你的攻击之后，%2$s周围的空气中充满了神秘的热量！",
+            "npc_message": "当%1$s向他们挥舞时，%2$s突然着火！"
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "NEVER_JAMS",
+    "DURABLE_MELEE",
+    "PRIMITIVE_RANGED_WEAPON",
+    "NONCONDUCTIVE",
+    "NO_SALVAGE",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED",
+    "SHEATH_SPEAR"
+  ]
+}
+```
+

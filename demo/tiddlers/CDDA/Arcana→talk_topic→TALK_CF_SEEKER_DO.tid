@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_SEEKER_DO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_SEEKER_DO|http://cdda.aloxaf.cn/search?q=TALK_CF_SEEKER_DO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_SEEKER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_SEEKER_DO",
+  "type": "talk_topic",
+  "dynamic_line": "I help keep records and preserve knowledge that the others have collected.  If you have need of anything, I have gathered a few supplies and books to spare, and could trade for them if you wish.",
+  "responses": [
+    {
+      "text": "Let's trade then.",
+      "effect": "start_trade",
+      "switch": true,
+      "condition": {
+        "u_has_effect": "cf_seeker_traded"
+      },
+      "topic": "TALK_CF_SEEKER"
+    },
+    {
+      "text": "Let's trade then.",
+      "effect": [
+        {
+          "u_add_effect": "cf_seeker_traded",
+          "duration": "PERMANENT"
+        },
+        "start_trade"
+      ],
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_SEEKER"
+    },
+    {
+      "text": "It's fine.  Nevermind.",
+      "topic": "TALK_CF_SEEKER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_SEEKER_DO",
+  "type": "talk_topic",
+  "dynamic_line": "我会帮助保存记录并保存其他人收集的知识。如果你有任何需要，我会收集一些物资和书籍以作备用，如果你愿意，可以进行交易。",
+  "responses": [
+    {
+      "text": "那么让我们交易吧。",
+      "effect": "start_trade",
+      "switch": true,
+      "condition": {
+        "u_has_effect": "cf_seeker_traded"
+      },
+      "topic": "TALK_CF_SEEKER"
+    },
+    {
+      "text": "那么让我们交易吧。",
+      "effect": [
+        {
+          "u_add_effect": "cf_seeker_traded",
+          "duration": "PERMANENT"
+        },
+        "start_trade"
+      ],
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_SEEKER"
+    },
+    {
+      "text": "没关系。没关系。",
+      "topic": "TALK_CF_SEEKER"
+    }
+  ]
+}
+```
+

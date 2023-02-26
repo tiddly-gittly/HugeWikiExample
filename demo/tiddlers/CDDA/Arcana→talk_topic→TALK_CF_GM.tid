@@ -1,0 +1,435 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM|http://cdda.aloxaf.cn/search?q=TALK_CF_GM]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_GM",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": {
+      "u_male": "Greetings, Brother.  This is a sacred place.",
+      "no": "Greetings, Sister.  This is a sacred place."
+    },
+    "no": {
+      "u_has_any_trait": [
+        "PROF_SANGUINE",
+        "THRESH_DRAGONBLOOD"
+      ],
+      "yes": {
+        "u_has_effect": "cf_mission_1",
+        "yes": "A pleasant surprise to see you working with us.  What do you require?",
+        "no": "You are not welcome here sanguinist.  State your intentions."
+      },
+      "no": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ],
+        "yes": {
+          "u_has_effect": "cf_mission_1",
+          "yes": "Welcome, Keeper.  What do you require?",
+          "no": "Servant of the otherworldly, you are welcome here, so long as you cause no trouble."
+        },
+        "no": {
+          "u_has_trait": "PROF_ARCANIST2",
+          "yes": {
+            "u_has_effect": "cf_mission_1",
+            "yes": "Welcome back.  What do you need?",
+            "no": "I can sense the touch of the otherworldly about you.  For what purpose are you here?"
+          },
+          "no": "Welcome to our sanctum."
+        }
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "[MISSION] Sofia asked that I recruit traders or other assistance at the center.  Any advice for that?",
+      "topic": "TALK_CF_GM_ADVICE_1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    },
+    {
+      "text": "[MISSION] Sofia asked me to investigate a lead on a remnant of the Keepers.  She said you knew more about that?",
+      "topic": "TALK_CF_GM_ADVICE_2",
+      "condition": {
+        "u_has_mission": "MISSION_CF_REP_5"
+      }
+    },
+    {
+      "text": "[MISSION] Sofia asked me to investigate a lead on a band of renegade Sanguine Shrikes.  Do you have any advice?",
+      "topic": "TALK_CF_GM_ADVICE_3",
+      "condition": {
+        "u_has_mission": "MISSION_CF_REP_6"
+      }
+    },
+    {
+      "text": "[MISSION] Nicholas asked me to investigate a research facility for a component he needs.  Do you have any advice?",
+      "topic": "TALK_CF_GM_ADVICE_4",
+      "condition": {
+        "u_has_mission": "MISSION_CF_PURIFIER_1_3"
+      }
+    },
+    {
+      "text": "So, how are things working out with the new arrivals so far?",
+      "topic": "TALK_CF_GM_MISSION_4_OPINION",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "npc_has_var": "johnathan_opinion_given",
+              "type": "flag",
+              "context": "knowledge",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_var": "sofia_mission_4_end",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Who are you?",
+      "topic": "TALK_CF_GM_WHO"
+    },
+    {
+      "text": "What can you tell me about this place?",
+      "topic": "TALK_CF_GM_WHERE"
+    },
+    {
+      "text": "Are there any others of us left?",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME"
+      },
+      "topic": "TALK_CF_GM_OTHERS"
+    },
+    {
+      "text": "What other arcane groups are out there?",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2",
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2",
+          "PROF_SANGUINE",
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_CF_GM_ARCANISTS"
+    },
+    {
+      "text": "What can you tell me about your group?",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ]
+        }
+      },
+      "topic": "TALK_CF_GM_GROUP"
+    },
+    {
+      "text": "What can I do to help?",
+      "condition": {
+        "npc_has_var": "johnathan_prelude_ended",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "Alright, I think that's everything we need to track this anomaly down.",
+      "condition": {
+        "u_has_var": "johnathan_prelude_data_5",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_GM_PRELUDE_4_READY"
+    },
+    {
+      "text": "Any advice for this mission?",
+      "condition": {
+        "u_has_var": "johnathan_prelude_mid",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_GM_PRELUDE_4_MID_ADVICE"
+    },
+    {
+      "text": "Anything I can do to help?",
+      "condition": {
+        "npc_has_effect": "cf_mission_3"
+      },
+      "switch": true,
+      "topic": "TALK_CF_GM_PRELUDE_4"
+    },
+    {
+      "text": "Anything I can do to help?",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "Well, bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_GM",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": {
+      "u_male": "Greetings, Brother.  This is a sacred place.",
+      "no": "你好，姐姐。这是一个神圣的地方。"
+    },
+    "no": {
+      "u_has_any_trait": [
+        "PROF_SANGUINE",
+        "THRESH_DRAGONBLOOD"
+      ],
+      "yes": {
+        "u_has_effect": "cf_mission_1",
+        "yes": "很高兴看到你和我们一起工作。你需要什么？",
+        "no": "你在这里不受欢迎。陈述你的意图。"
+      },
+      "no": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ],
+        "yes": {
+          "u_has_effect": "cf_mission_1",
+          "yes": "欢迎，守门员。你需要什么？",
+          "no": "超自然的仆人，欢迎你来这里，只要你不惹麻烦。"
+        },
+        "no": {
+          "u_has_trait": "PROF_ARCANIST2",
+          "yes": {
+            "u_has_effect": "cf_mission_1",
+            "yes": "欢迎回来。你需要什么？",
+            "no": "我能感觉到你超凡脱俗的感觉。你来这里是为了什么？"
+          },
+          "no": "欢迎来到我们的圣地。"
+        }
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "[任务]索菲亚要求我在中心招募交易员或其他协助人员。有什么建议吗？",
+      "topic": "TALK_CF_GM_ADVICE_1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    },
+    {
+      "text": "[任务]索菲亚让我去调查一个关于看守者残余的线索。她说你知道的更多？",
+      "topic": "TALK_CF_GM_ADVICE_2",
+      "condition": {
+        "u_has_mission": "MISSION_CF_REP_5"
+      }
+    },
+    {
+      "text": "[任务]索菲亚让我调查一伙背叛猩红教派的屠猎者的线索。你有什么建议吗？",
+      "topic": "TALK_CF_GM_ADVICE_3",
+      "condition": {
+        "u_has_mission": "MISSION_CF_REP_6"
+      }
+    },
+    {
+      "text": "[任务]尼古拉斯让我调查一个他需要的部件的研究机构。有什么建议吗？",
+      "topic": "TALK_CF_GM_ADVICE_4",
+      "condition": {
+        "u_has_mission": "MISSION_CF_PURIFIER_1_3"
+      }
+    },
+    {
+      "text": "那么，到目前为止，新来的人进展如何？",
+      "topic": "TALK_CF_GM_MISSION_4_OPINION",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "npc_has_var": "johnathan_opinion_given",
+              "type": "flag",
+              "context": "knowledge",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_var": "sofia_mission_4_end",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "text": "你是谁？",
+      "topic": "TALK_CF_GM_WHO"
+    },
+    {
+      "text": "你能告诉我这是个什么地方？",
+      "topic": "TALK_CF_GM_WHERE"
+    },
+    {
+      "text": "我们还有其他人吗？",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME"
+      },
+      "topic": "TALK_CF_GM_OTHERS"
+    },
+    {
+      "text": "还有其他什么神秘团体？",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2",
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2",
+          "PROF_SANGUINE",
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_CF_GM_ARCANISTS"
+    },
+    {
+      "text": "你能告诉我关于你们团队的什么？",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ]
+        }
+      },
+      "topic": "TALK_CF_GM_GROUP"
+    },
+    {
+      "text": "我能帮忙吗？",
+      "condition": {
+        "npc_has_var": "johnathan_prelude_ended",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "好吧，我想这就是我们追踪这异常现象所需要的一切。",
+      "condition": {
+        "u_has_var": "johnathan_prelude_data_5",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_GM_PRELUDE_4_READY"
+    },
+    {
+      "text": "对这次任务有什么建议吗？",
+      "condition": {
+        "u_has_var": "johnathan_prelude_mid",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_GM_PRELUDE_4_MID_ADVICE"
+    },
+    {
+      "text": "我能帮上什么忙吗？",
+      "condition": {
+        "npc_has_effect": "cf_mission_3"
+      },
+      "switch": true,
+      "topic": "TALK_CF_GM_PRELUDE_4"
+    },
+    {
+      "text": "我能帮上什么忙吗？",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "好的，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

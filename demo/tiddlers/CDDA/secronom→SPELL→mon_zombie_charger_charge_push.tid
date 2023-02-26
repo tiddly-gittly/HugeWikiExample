@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_charger_charge_push
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_charger_charge_push|http://cdda.aloxaf.cn/search?q=mon_zombie_charger_charge_push]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_large.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Let's push the charger back from the player. This does work SOMETIMES, and this'll prevent the glitch to occur.",
+  "id": "mon_zombie_charger_charge_push",
+  "type": "SPELL",
+  "name": {
+    "str": "Stop"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster stops by the target.'",
+  "effect": "area_push",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE",
+    "NO_EXPLOSION_SFX"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "min_aoe": 1,
+  "max_aoe": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Let's push the charger back from the player. This does work SOMETIMES, and this'll prevent the glitch to occur.",
+  "id": "mon_zombie_charger_charge_push",
+  "type": "SPELL",
+  "name": {
+    "str": "住手"
+  },
+  "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者停在目标旁边。’",
+  "effect": "area_push",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE",
+    "NO_EXPLOSION_SFX"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "min_aoe": 1,
+  "max_aoe": 1
+}
+```
+

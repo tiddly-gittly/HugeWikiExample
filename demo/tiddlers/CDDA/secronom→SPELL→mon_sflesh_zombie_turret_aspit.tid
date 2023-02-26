@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_zombie_turret_aspit
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_turret_aspit|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_turret_aspit]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_turret_aspit",
+  "type": "SPELL",
+  "name": {
+    "str": "Acid Spit"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spews out a glob of acid onto the target, dealing acid damage and creates a blood acid underneath. Casted randomly between 2 to 4 times.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 4,
+  "max_damage": 8,
+  "max_range": 10,
+  "min_range": 10,
+  "damage_type": "acid",
+  "field_id": "fd_blood_acid",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_turret_aspit",
+  "type": "SPELL",
+  "name": {
+    "str": "酸液"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者向目标喷出一团酸液，造成酸液伤害，并在其下方产生血酸。随机铸造2到4次",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 4,
+  "max_damage": 8,
+  "max_range": 10,
+  "min_range": 10,
+  "damage_type": "acid",
+  "field_id": "fd_blood_acid",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+

@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→maneater_floralbite
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：maneater_floralbite|http://cdda.aloxaf.cn/search?q=maneater_floralbite]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "maneater_floralbite",
+  "accuracy": 8,
+  "move_cost": 150,
+  "blockable": false,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 16
+    }
+  ],
+  "hit_dmg_u": "%1$s bites at your %2$s!",
+  "hit_dmg_npc": "%1$s bites <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to bite you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to bite <npcname>, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "maneater_floralbite",
+  "accuracy": 8,
+  "move_cost": 150,
+  "blockable": false,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 16
+    }
+  ],
+  "hit_dmg_u": "%1$s bites at your %2$s!",
+  "hit_dmg_npc": "%1$s bites <npcname>！",
+  "no_dmg_msg_u": "%1$s tries to bite you，but fails to penetrate your armor！",
+  "no_dmg_msg_npc": "%1$s tries to bite <npcname>，but fails to penetrate their armor！"
+}
+```
+

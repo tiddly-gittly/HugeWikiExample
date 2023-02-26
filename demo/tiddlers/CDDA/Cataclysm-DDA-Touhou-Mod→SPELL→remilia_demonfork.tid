@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→remilia_demonfork
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：remilia_demonfork|http://cdda.aloxaf.cn/search?q=remilia_demonfork]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_remi.json
+
+
+!! 原文
+
+```json
+{
+  "id": "remilia_demonfork",
+  "type": "SPELL",
+  "name": "Demons' dinner fork",
+  "description": "Summon several spears of red magic and throw them in front of you.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "remilia_demonfork2"
+    },
+    {
+      "id": "remilia_demonfork3"
+    }
+  ],
+  "shape": "cone",
+  "damage_type": "stab",
+  "min_damage": 3,
+  "max_damage": 8,
+  "damage_increment": 0.5,
+  "min_range": 5,
+  "max_range": 16,
+  "range_increment": 1.1,
+  "min_aoe": 60,
+  "max_aoe": 60,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 92,
+  "final_energy_cost": 166,
+  "energy_increment": 8,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_EXPLOSION_SFX",
+    "NO_LEGS",
+    "SOMATIC",
+    "WONDER"
+  ],
+  "//": "This works by repeatedly casting the cone, ideally it should cast several diverging lines instead",
+  "//2": "Damage should go from 27.9 at min lvl to 96 at max lvl, not counting the bleeding effect"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "remilia_demonfork",
+  "type": "SPELL",
+  "name": "Demons' dinner fork",
+  "description": "Summon several spears of red magic and throw them in front of you.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "remilia_demonfork2"
+    },
+    {
+      "id": "remilia_demonfork3"
+    }
+  ],
+  "shape": "cone",
+  "damage_type": "stab",
+  "min_damage": 3,
+  "max_damage": 8,
+  "damage_increment": 0.5,
+  "min_range": 5,
+  "max_range": 16,
+  "range_increment": 1.1,
+  "min_aoe": 60,
+  "max_aoe": 60,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 92,
+  "final_energy_cost": 166,
+  "energy_increment": 8,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_EXPLOSION_SFX",
+    "NO_LEGS",
+    "SOMATIC",
+    "WONDER"
+  ],
+  "//": "This works by repeatedly casting the cone, ideally it should cast several diverging lines instead",
+  "//2": "Damage should go from 27.9 at min lvl to 96 at max lvl, not counting the bleeding effect"
+}
+```
+

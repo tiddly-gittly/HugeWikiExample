@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_SANGUINE_ASK
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_SANGUINE_ASK|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_SANGUINE_ASK]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_SANGUINE_ASK",
+  "dynamic_line": "You had to have known what you were walking into.  Either you are here to make peace, or else there is a trick at play here.  If so, know that we are watching.  Now please, for what purpose have you come here?",
+  "responses": [
+    {
+      "text": "You are correct.  I'm not here for a fight.",
+      "topic": "TALK_CF_REP_SANGUINE_MOTIVE_1"
+    },
+    {
+      "text": "My reasons are my own.",
+      "topic": "TALK_CF_REP_SANGUINE_MOTIVE_2"
+    },
+    {
+      "text": "[ATTACK] To finish what my fellows started.  I need no tricks to put your kind down.",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "u_faction_rep": -30
+        },
+        "insult_combat"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_SANGUINE_ASK",
+  "dynamic_line": "你一定知道你要走进什么地方。不是你来这里是为了和好，就是这里有个诡计。如果是这样的话，要知道我们在观察。请问，你来这里是为了什么？",
+  "responses": [
+    {
+      "text": "你是对的。我不是来打架的。",
+      "topic": "TALK_CF_REP_SANGUINE_MOTIVE_1"
+    },
+    {
+      "text": "我的理由是我自己的。",
+      "topic": "TALK_CF_REP_SANGUINE_MOTIVE_2"
+    },
+    {
+      "text": "[攻击]完成我本来要做的事。我用不着耍什么花招来打倒你这种人。",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "u_faction_rep": -30
+        },
+        "insult_combat"
+      ]
+    }
+  ]
+}
+```
+

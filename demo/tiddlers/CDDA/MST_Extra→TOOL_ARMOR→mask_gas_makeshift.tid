@@ -1,0 +1,131 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR MST_Extra
+title: MST_Extra→TOOL_ARMOR→mask_gas_makeshift
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mask_gas_makeshift|http://cdda.aloxaf.cn/search?q=mask_gas_makeshift]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mask_gas_makeshift",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "makeshift gas hood"
+  },
+  "looks_like": "balclava",
+  "category": "clothing",
+  "//": "Realistically it would be always on, but there's no way to make it only deplete charges in gas without the use action.",
+  "description": "A hood with added lenses and pockets for filter material sewn between layers of fabric, similar to designs common in WWI.  It is designed to be worn over a helmet.  It must be prepared before use.",
+  "weight": "850 g",
+  "volume": "1500 ml",
+  "price": 4000,
+  "to_hit": -1,
+  "material": [
+    "cotton",
+    "plastic"
+  ],
+  "symbol": "[",
+  "color": "light_gray",
+  "warmth": 15,
+  "material_thickness": 2,
+  "environmental_protection": 1,
+  "environmental_protection_with_filter": 15,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "gasfilter_m": 100
+      }
+    }
+  ],
+  "ammo": [
+    "gasfilter_m"
+  ],
+  "use_action": "GASMASK",
+  "flags": [
+    "OUTER"
+  ],
+  "armor": [
+    {
+      "encumbrance": 20,
+      "coverage": 100,
+      "covers": [
+        "head",
+        "mouth",
+        "eyes"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mask_gas_makeshift",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "简易防毒面罩"
+  },
+  "looks_like": "balclava",
+  "category": "clothing",
+  "//": "Realistically it would be always on, but there's no way to make it only deplete charges in gas without the use action.",
+  "description": "一种源自于一战的防毒面具，类似于在织物层缝上两个镜片和滤袋的头罩，能直接套在头盔上，虽透气性很好，但也使效果不如现代防毒面具，配套过滤器需要准备一下才能使用。",
+  "weight": "850 g",
+  "volume": "1500 ml",
+  "price": 4000,
+  "to_hit": -1,
+  "material": [
+    "cotton",
+    "plastic"
+  ],
+  "symbol": "[",
+  "color": "light_gray",
+  "warmth": 15,
+  "material_thickness": 2,
+  "environmental_protection": 1,
+  "environmental_protection_with_filter": 15,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "gasfilter_m": 100
+      }
+    }
+  ],
+  "ammo": [
+    "gasfilter_m"
+  ],
+  "use_action": "GASMASK",
+  "flags": [
+    "OUTER"
+  ],
+  "armor": [
+    {
+      "encumbrance": 20,
+      "coverage": 100,
+      "covers": [
+        "head",
+        "mouth",
+        "eyes"
+      ]
+    }
+  ]
+}
+```
+

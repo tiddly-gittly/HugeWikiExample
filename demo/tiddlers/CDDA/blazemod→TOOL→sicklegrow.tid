@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: TOOL blazemod
+title: blazemod→TOOL→sicklegrow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sicklegrow|http://cdda.aloxaf.cn/search?q=sicklegrow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/tools/blob_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "sicklegrow",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "growing spiky mass"
+  },
+  "description": "Not quite fully grown, this blob requires nourishment to fully develop.",
+  "weight": "12140 g",
+  "volume": "4 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "blue",
+  "use_action": {
+    "target": "gelrazor",
+    "msg": "The blob balloons to full size.",
+    "type": "delayed_transform",
+    "transform_age": 4800,
+    "not_ready_msg": "Whatever it's doing, it's not done yet."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "sicklegrow",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "尖刺变形怪（生长中）"
+  },
+  "description": "还没有完全长成，这只变形怪需要更多营养成分才能完全成长。",
+  "weight": "12140 g",
+  "volume": "4 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "blue",
+  "use_action": {
+    "target": "gelrazor",
+    "msg": "变形怪长大到完整大小。",
+    "type": "delayed_transform",
+    "transform_age": 4800,
+    "not_ready_msg": "Whatever it's doing, it's not done yet."
+  }
+}
+```
+

@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_AUX_B
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_AUX_B|http://cdda.aloxaf.cn/search?q=MISSION_CF_AUX_B]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_AUX_B",
+  "type": "mission_definition",
+  "name": {
+    "str": "Bring Wraithslayer Crossbow"
+  },
+  "description": "Find or make a wraithslayer crossbow for the scavengers operating out of the rural church.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 3,
+  "item": "ethereal_crossbow",
+  "value": 50000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 20
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_aux_b_1"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_aux_b_2"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "Welp, some of the boys here have been getting interested in the mystical stuff these fellas are preaching, but personally I'm most interested in one of them magic stringless crossbows they take a liking to.  Ammo for it's real portable, they seem to have plenty of it, and it goes through tough hide like nothing I've ever seen before.  I don't know if they have one to spare, but if you can get your hands on one, I'll pay up as well as I can for it.",
+    "accepted": "Alright then.  I don't think they'd look too kindly on us diving right into carrying these things around, but I'll talk it out with them later on.  Just don't want to bother them too much about it, you know?",
+    "rejected": "Hell, you change your mind just come see me, y'hear?",
+    "advice": "Figure they have some way to make those things, if you can't get your hands on one…",
+    "inquire": "Any luck?",
+    "success": "Damn this thing looks fancy, I hope this is enough for your trouble.  Actually hell, the boys and I just took in a decent haul not long ago, I can do one better than just paying you.  I'll have a cut of the last hunt laid out on the table in the main room laid out for you.",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_AUX_B",
+  "type": "mission_definition",
+  "name": {
+    "str": "收集狩灵弩"
+  },
+  "description": "为乡村教堂外的拾荒者寻找或制作一把杀灵者弩。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 3,
+  "item": "ethereal_crossbow",
+  "value": 50000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 20
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_aux_b_1"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_aux_b_2"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "嗯，这里的一些男孩一直对这些家伙所宣扬的神秘的东西感兴趣，但我个人最感兴趣的是他们喜欢的魔法无弦弩。弹药是真正的便携式，他们似乎有足够的，它通过坚硬的隐藏，我从来没有见过。我不知道他们有没有多余的，但如果你能弄到一个，我会尽我所能付清。",
+    "accepted": "那好吧。我不认为他们会因为我们直接带着这些东西到处跑而显得太和蔼可亲，但我稍后会和他们谈的。只是不想太麻烦他们，你知道吗？",
+    "rejected": "妈的，你改变主意了过来见我，听到了吗？",
+    "advice": "我想他们有办法做这些东西，如果你拿不到的话…",
+    "inquire": "成功了没？",
+    "success": "该死的，这东西看起来很花哨，我希望这足够解决你的麻烦了。事实上，我和孩子们不久前刚刚赚了不少钱，我能做的比付钱给你更好。我会把最后一次狩猎的一部分放在主房间的桌子上，给你摆好。",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  }
+}
+```
+

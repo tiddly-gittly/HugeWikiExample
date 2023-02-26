@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: GUN secronom
+title: secronom→GUN→walther2000
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：walther2000|http://cdda.aloxaf.cn/search?q=walther2000]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Items/secro_guns.json
+
+
+!! 原文
+
+```json
+{
+  "id": "walther2000",
+  "copy-from": "rifle_base",
+  "type": "GUN",
+  "name": {
+    "str": "Walther 2000",
+    "str_pl": "Walther 2000"
+  },
+  "description": "A semi-automatic bullpup sniper rifle. The usage of .300 winchester magnum made it particularly accurate in extreme distances. Its rarity in the market was crazed by gun nuts as collectibles.",
+  "weight": "6962 g",
+  "volume": "2500 ml",
+  "price": "18290 USD",
+  "//": "The price was actually a wooping 75,000$. IDK if that's true, but lets bend the rules of money here -_-.",
+  "to_hit": -1,
+  "bashing": 12,
+  "material": [
+    "steel"
+  ],
+  "ammo": [
+    "300"
+  ],
+  "range": 50,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 10
+  },
+  "dispersion": 80,
+  "durability": 8,
+  "barrel_volume": "1000 ml",
+  "default_mods": [
+    "bipod",
+    "rifle_scope"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "magazine_well": "250 ml",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "walther2000mag"
+      ]
+    }
+  ],
+  "flags": [
+    "NEVER_JAMS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "walther2000",
+  "copy-from": "rifle_base",
+  "type": "GUN",
+  "name": {
+    "str": "瓦尔特 WA2000狙击步枪",
+    "str_pl": "瓦尔特 WA2000狙击步枪"
+  },
+  "description": "一把来自德国卡尔·瓦尔特公司的瓦尔塔 WA2000 半自动狙击步枪，使用.300温彻斯特马格南在极端距离下的射击尤其精准，因在市场上的稀缺性令想把她娶回家的枪迷们为之疯狂。",
+  "weight": "6962 g",
+  "volume": "2500 ml",
+  "price": "18290 USD",
+  "//": "The price was actually a wooping 75,000$. IDK if that's true, but lets bend the rules of money here -_-.",
+  "to_hit": -1,
+  "bashing": 12,
+  "material": [
+    "steel"
+  ],
+  "ammo": [
+    "300"
+  ],
+  "range": 50,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 10
+  },
+  "dispersion": 80,
+  "durability": 8,
+  "barrel_volume": "1000 ml",
+  "default_mods": [
+    "bipod",
+    "rifle_scope"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "magazine_well": "250 ml",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "walther2000mag"
+      ]
+    }
+  ],
+  "flags": [
+    "NEVER_JAMS"
+  ]
+}
+```
+

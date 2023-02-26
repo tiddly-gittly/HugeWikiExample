@@ -1,0 +1,759 @@
+creator: 林一二
+revision: 0
+tags: mapgen nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mapgen→[5]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Terrain/Unknown_Lab.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Unknown_Lab_b2"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_soil",
+    "rows": [
+      "                        ",
+      "  ||||||||||||||||||||| ",
+      "  ||||||||||||||||||||| ",
+      " |||_..ji.._.....+..{|| ",
+      " ||6...CC........+..{|| ",
+      " ||6c.......||++||..{|| ",
+      " ||6........||..R|..{|| ",
+      " |||WWWWWWWW||..||r.{|| ",
+      "||||WWWWWWWW||++||||||| ",
+      "{{|.............|       ",
+      "..|.............|       ",
+      "..|..vv..vv..|++||||    ",
+      ".r|..vv..vv..|....r|    ",
+      ".r|..........|....r|    ",
+      "|||..........|g...r|    ",
+      ".||...d..d...|CC..F|    ",
+      ".||..c6..6c..|O...F|    ",
+      ".||..........|....F|    ",
+      "|||..........|....F|    ",
+      "..|..d...d...|++||||    ",
+      "..+..c6..6c..+..|       ",
+      "..+..........+..|       ",
+      "..|....__....||||       ",
+      "||||||||||||||          "
+    ],
+    "terrain": {
+      "6": "t_metal_floor",
+      "|": "t_wall_metal",
+      "+": "t_door_metal_c",
+      ".": "t_metal_floor",
+      "_": "t_utility_light",
+      "{": "t_metal_floor",
+      "C": "t_metal_floor",
+      "F": "t_metal_floor",
+      "O": "t_metal_floor",
+      "R": "t_card_reader_broken",
+      "W": "t_window_bars",
+      "c": "t_metal_floor",
+      "d": "t_metal_floor",
+      "g": "t_metal_floor",
+      "i": "t_metal_floor",
+      "j": "t_metal_floor",
+      "r": "t_metal_floor",
+      "v": "t_vat"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "{": "f_locker",
+      "C": "f_counter",
+      "F": "f_fridge",
+      "O": "f_fvat_empty",
+      "c": "f_chair",
+      "d": "f_desk",
+      "g": "f_still",
+      "i": "f_autodoc",
+      "j": "f_autodoc_couch",
+      "r": "f_rack"
+    },
+    "place_loot": [
+      {
+        "item": "flesh_pistol",
+        "x": 1,
+        "y": 12
+      },
+      {
+        "item": "evil_invitation",
+        "x": 1,
+        "y": 12
+      },
+      {
+        "item": "omnitech_weapon_ups_kit",
+        "x": 1,
+        "y": 13
+      },
+      {
+        "item": "omnitech_weapon_ups_manual",
+        "x": 1,
+        "y": 13
+      },
+      {
+        "item": "blood_m",
+        "x": 14,
+        "y": 15
+      },
+      {
+        "item": "blood_p",
+        "x": 15,
+        "y": 15
+      },
+      {
+        "item": "acs_74_stealth_cloak_on",
+        "x": 18,
+        "y": 7
+      },
+      {
+        "item": "megamap",
+        "x": 18,
+        "y": 7
+      },
+      {
+        "group": "guns_milspec",
+        "x": [
+          0,
+          1
+        ],
+        "y": 9,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "group": "chem_lab",
+        "x": 18,
+        "y": [
+          12,
+          14
+        ],
+        "chance": 75,
+        "repeat": 9
+      },
+      {
+        "group": "mut_lab",
+        "x": 18,
+        "y": [
+          15,
+          18
+        ],
+        "chance": 50,
+        "repeat": 12
+      },
+      {
+        "group": "bionics_mil",
+        "x": 20,
+        "y": [
+          3,
+          7
+        ],
+        "chance": 75,
+        "repeat": 4
+      },
+      {
+        "group": "bionics",
+        "x": 20,
+        "y": [
+          3,
+          7
+        ],
+        "chance": 75,
+        "repeat": 4
+      },
+      {
+        "group": "bionic_power_storage_mil",
+        "x": 20,
+        "y": [
+          3,
+          7
+        ],
+        "chance": 75,
+        "repeat": 2
+      },
+      {
+        "item": "cbm_rtg_inductor",
+        "x": 20,
+        "y": [
+          3,
+          7
+        ]
+      },
+      {
+        "item": "anesthetic_kit",
+        "x": [
+          7,
+          8
+        ],
+        "y": 4,
+        "chance": 75,
+        "repeat": 2
+      },
+      {
+        "group": "remains_soldier",
+        "x": 8,
+        "y": 11,
+        "chance": 95
+      },
+      {
+        "group": "remains_soldier",
+        "x": 12,
+        "y": 9,
+        "chance": 95
+      },
+      {
+        "group": "remains_soldier",
+        "x": 4,
+        "y": 12,
+        "chance": 95
+      },
+      {
+        "group": "remains_soldier",
+        "x": 7,
+        "y": 17,
+        "chance": 95
+      },
+      {
+        "group": "remains_soldier",
+        "x": 12,
+        "y": 22,
+        "chance": 95
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 11
+      },
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 12
+      },
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 13
+      },
+      {
+        "field": "fd_blood",
+        "x": 12,
+        "y": 9
+      },
+      {
+        "field": "fd_blood",
+        "x": 13,
+        "y": 10
+      },
+      {
+        "field": "fd_blood",
+        "x": 13,
+        "y": 11
+      },
+      {
+        "field": "fd_blood",
+        "x": 4,
+        "y": 12
+      },
+      {
+        "field": "fd_blood",
+        "x": 3,
+        "y": 13
+      },
+      {
+        "field": "fd_blood",
+        "x": 3,
+        "y": 14
+      },
+      {
+        "field": "fd_blood",
+        "x": 7,
+        "y": 17
+      },
+      {
+        "field": "fd_blood",
+        "x": 7,
+        "y": 18
+      },
+      {
+        "field": "fd_blood",
+        "x": 7,
+        "y": 19
+      },
+      {
+        "field": "fd_blood",
+        "x": 12,
+        "y": 22
+      },
+      {
+        "field": "fd_blood",
+        "x": 11,
+        "y": 23
+      },
+      {
+        "field": "fd_blood",
+        "x": 12,
+        "y": 23
+      },
+      {
+        "field": "fd_blood",
+        "x": 13,
+        "y": 23
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "chem_cart",
+        "x": 16,
+        "y": 12,
+        "chance": 99,
+        "fuel": 25,
+        "status": 25,
+        "rotation": 0
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_failed_weapon",
+        "x": 1,
+        "y": 22
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 15,
+        "y": 21
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 4,
+        "y": 18
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 13,
+        "y": 22
+      },
+      {
+        "monster": "hulk_weapon",
+        "x": 4,
+        "y": 3
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "sketchy_cabin_2_roof"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_metal_flat_roof",
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "           ,,,,,,,,,,,, ",
+      "           ,,,,,,,,,,,, ",
+      "           ,,,,,,,N,X,, ",
+      "           ,,,,,,,,,,,, ",
+      "           ,,,,,,,,,,,, ",
+      "           ,,,,,,,,,,,, ",
+      "           ,,,,,,,,,,,, ",
+      "           ,,,,,,,,,,,, ",
+      "           ,,,,,,,,,,,, ",
+      "           ,,,,,,,,,,,, ",
+      "           ,,^,,,,,,,,, ",
+      "           ,,^,,,,,,,,, ",
+      "           ,,,,,,,,,,,, ",
+      "           ,,,,,,,,,,,, ",
+      "                        "
+    ],
+    "palettes": [
+      "roof_palette"
+    ],
+    "terrain": {
+      ",": "t_metal_flat_roof",
+      "^": "t_metal_flat_roof",
+      "N": "t_metal_flat_roof",
+      "X": "t_metal_flat_roof"
+    },
+    "furniture": {
+      "C": "f_solar_unit"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Unknown_Lab_b2"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_soil",
+    "rows": [
+      "                        ",
+      "  ||||||||||||||||||||| ",
+      "  ||||||||||||||||||||| ",
+      " |||_..ji.._.....+..{|| ",
+      " ||6...CC........+..{|| ",
+      " ||6c.......||++||..{|| ",
+      " ||6........||..R|..{|| ",
+      " |||WWWWWWWW||..||r.{|| ",
+      "||||WWWWWWWW||++||||||| ",
+      "{{|.............|       ",
+      "..|.............|       ",
+      "..|..vv..vv..|++||||    ",
+      ".r|..vv..vv..|....r|    ",
+      ".r|..........|....r|    ",
+      "|||..........|g...r|    ",
+      ".||...d..d...|CC..F|    ",
+      ".||..c6..6c..|O...F|    ",
+      ".||..........|....F|    ",
+      "|||..........|....F|    ",
+      "..|..d...d...|++||||    ",
+      "..+..c6..6c..+..|       ",
+      "..+..........+..|       ",
+      "..|....__....||||       ",
+      "||||||||||||||          "
+    ],
+    "terrain": {
+      "6": "t_metal_floor",
+      "|": "t_wall_metal",
+      "+": "t_door_metal_c",
+      ".": "t_metal_floor",
+      "_": "t_utility_light",
+      "{": "t_metal_floor",
+      "C": "t_metal_floor",
+      "F": "t_metal_floor",
+      "O": "t_metal_floor",
+      "R": "t_card_reader_broken",
+      "W": "t_window_bars",
+      "c": "t_metal_floor",
+      "d": "t_metal_floor",
+      "g": "t_metal_floor",
+      "i": "t_metal_floor",
+      "j": "t_metal_floor",
+      "r": "t_metal_floor",
+      "v": "t_vat"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "{": "f_locker",
+      "C": "f_counter",
+      "F": "f_fridge",
+      "O": "f_fvat_empty",
+      "c": "f_chair",
+      "d": "f_desk",
+      "g": "f_still",
+      "i": "f_autodoc",
+      "j": "f_autodoc_couch",
+      "r": "f_rack"
+    },
+    "place_loot": [
+      {
+        "item": "flesh_pistol",
+        "x": 1,
+        "y": 12
+      },
+      {
+        "item": "evil_invitation",
+        "x": 1,
+        "y": 12
+      },
+      {
+        "item": "omnitech_weapon_ups_kit",
+        "x": 1,
+        "y": 13
+      },
+      {
+        "item": "omnitech_weapon_ups_manual",
+        "x": 1,
+        "y": 13
+      },
+      {
+        "item": "blood_m",
+        "x": 14,
+        "y": 15
+      },
+      {
+        "item": "blood_p",
+        "x": 15,
+        "y": 15
+      },
+      {
+        "item": "acs_74_stealth_cloak_on",
+        "x": 18,
+        "y": 7
+      },
+      {
+        "item": "megamap",
+        "x": 18,
+        "y": 7
+      },
+      {
+        "group": "guns_milspec",
+        "x": [
+          0,
+          1
+        ],
+        "y": 9,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "group": "chem_lab",
+        "x": 18,
+        "y": [
+          12,
+          14
+        ],
+        "chance": 75,
+        "repeat": 9
+      },
+      {
+        "group": "mut_lab",
+        "x": 18,
+        "y": [
+          15,
+          18
+        ],
+        "chance": 50,
+        "repeat": 12
+      },
+      {
+        "group": "bionics_mil",
+        "x": 20,
+        "y": [
+          3,
+          7
+        ],
+        "chance": 75,
+        "repeat": 4
+      },
+      {
+        "group": "bionics",
+        "x": 20,
+        "y": [
+          3,
+          7
+        ],
+        "chance": 75,
+        "repeat": 4
+      },
+      {
+        "group": "bionic_power_storage_mil",
+        "x": 20,
+        "y": [
+          3,
+          7
+        ],
+        "chance": 75,
+        "repeat": 2
+      },
+      {
+        "item": "cbm_rtg_inductor",
+        "x": 20,
+        "y": [
+          3,
+          7
+        ]
+      },
+      {
+        "item": "anesthetic_kit",
+        "x": [
+          7,
+          8
+        ],
+        "y": 4,
+        "chance": 75,
+        "repeat": 2
+      },
+      {
+        "group": "remains_soldier",
+        "x": 8,
+        "y": 11,
+        "chance": 95
+      },
+      {
+        "group": "remains_soldier",
+        "x": 12,
+        "y": 9,
+        "chance": 95
+      },
+      {
+        "group": "remains_soldier",
+        "x": 4,
+        "y": 12,
+        "chance": 95
+      },
+      {
+        "group": "remains_soldier",
+        "x": 7,
+        "y": 17,
+        "chance": 95
+      },
+      {
+        "group": "remains_soldier",
+        "x": 12,
+        "y": 22,
+        "chance": 95
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 11
+      },
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 12
+      },
+      {
+        "field": "fd_blood",
+        "x": 8,
+        "y": 13
+      },
+      {
+        "field": "fd_blood",
+        "x": 12,
+        "y": 9
+      },
+      {
+        "field": "fd_blood",
+        "x": 13,
+        "y": 10
+      },
+      {
+        "field": "fd_blood",
+        "x": 13,
+        "y": 11
+      },
+      {
+        "field": "fd_blood",
+        "x": 4,
+        "y": 12
+      },
+      {
+        "field": "fd_blood",
+        "x": 3,
+        "y": 13
+      },
+      {
+        "field": "fd_blood",
+        "x": 3,
+        "y": 14
+      },
+      {
+        "field": "fd_blood",
+        "x": 7,
+        "y": 17
+      },
+      {
+        "field": "fd_blood",
+        "x": 7,
+        "y": 18
+      },
+      {
+        "field": "fd_blood",
+        "x": 7,
+        "y": 19
+      },
+      {
+        "field": "fd_blood",
+        "x": 12,
+        "y": 22
+      },
+      {
+        "field": "fd_blood",
+        "x": 11,
+        "y": 23
+      },
+      {
+        "field": "fd_blood",
+        "x": 12,
+        "y": 23
+      },
+      {
+        "field": "fd_blood",
+        "x": 13,
+        "y": 23
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "chem_cart",
+        "x": 16,
+        "y": 12,
+        "chance": 99,
+        "fuel": 25,
+        "status": 25,
+        "rotation": 0
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_failed_weapon",
+        "x": 1,
+        "y": 22
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 15,
+        "y": 21
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 4,
+        "y": 18
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 13,
+        "y": 22
+      },
+      {
+        "monster": "hulk_weapon",
+        "x": 4,
+        "y": 3
+      }
+    ]
+  }
+}
+```
+

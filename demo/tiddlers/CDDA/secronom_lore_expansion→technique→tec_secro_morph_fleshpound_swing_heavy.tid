@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: technique secronom_lore_expansion
+title: secronom_lore_expansion→technique→tec_secro_morph_fleshpound_swing_heavy
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_secro_morph_fleshpound_swing_heavy|http://cdda.aloxaf.cn/search?q=tec_secro_morph_fleshpound_swing_heavy]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_fleshpound_swing_heavy",
+  "name": "Heavy Swing",
+  "messages": [
+    "You swing an arm with great momentum at %s",
+    "<npcname> swings their arm with great momentum at %s"
+  ],
+  "melee_allowed": true,
+  "weighting": -4,
+  "stun_dur": 3,
+  "knockback_dist": 2,
+  "crit_tec": true,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 4
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 2.25
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 2
+    }
+  ],
+  "description": "+100% bash, +125% movecost, stun 3 turns, knock 2 tiles, crit only",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_fleshpound_swing_heavy",
+  "name": "剧烈摆动",
+  "messages": [
+    "你在%s以巨大的动量挥动手臂",
+    "<npcname>在%s以巨大的动量摆动他们的手臂"
+  ],
+  "melee_allowed": true,
+  "weighting": -4,
+  "stun_dur": 3,
+  "knockback_dist": 2,
+  "crit_tec": true,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 4
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 2.25
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 2
+    }
+  ],
+  "description": "+100% 钝击，+125% 移动消耗，击晕3回合，击退2格，仅暴击",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+

@@ -1,0 +1,214 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[51]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "arcana_cave_underground_1",
+  "object": {
+    "mapgensize": [
+      7,
+      7
+    ],
+    "rows": [
+      " ~~~~~ ",
+      "~~~~~~;",
+      "~~~~~;;",
+      "~~~~~;;",
+      "~~~~~;;",
+      "~~~~~~;",
+      " ~~~~~ "
+    ],
+    "palettes": [
+      "arcana_palette"
+    ],
+    "items": {
+      "~": {
+        "item": "magic_crafting",
+        "chance": 25
+      }
+    },
+    "place_monster": [
+      {
+        "monster": [
+          "mon_chud",
+          "mon_one_eye",
+          "mon_crawler",
+          "mon_twisted_body",
+          "mon_human_snail"
+        ],
+        "x": [
+          0,
+          4
+        ],
+        "y": [
+          1,
+          5
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "cf_church_upgrade_8_a",
+  "object": {
+    "mapgensize": [
+      12,
+      12
+    ],
+    "rows": [
+      "   FF[[  Cst",
+      "   hh       ",
+      "   dd       ",
+      "           S",
+      "ns       C S",
+      "            ",
+      "            ",
+      "            ",
+      "            ",
+      "            ",
+      "            ",
+      "            "
+    ],
+    "terrain": {
+      "|": "t_drystone_wall_half"
+    },
+    "furniture": {
+      "[": "f_bookcase",
+      "C": "f_counter",
+      "F": "f_fireplace",
+      "S": "f_shower",
+      "d": "f_desk",
+      "h": "f_chair",
+      "n": "f_cupboard",
+      "s": "f_sink"
+    },
+    "toilets": {
+      "t": {}
+    },
+    "place_loot": [
+      {
+        "group": "preserved_food",
+        "x": 0,
+        "y": 4,
+        "chance": 75,
+        "repeat": 10
+      },
+      {
+        "group": "homebooks",
+        "x": [
+          5,
+          6
+        ],
+        "y": 0,
+        "chance": 75,
+        "repeat": 15
+      },
+      {
+        "group": "reading_lights",
+        "x": [
+          3,
+          4
+        ],
+        "y": 2
+      },
+      {
+        "item": "bucket",
+        "x": 9,
+        "y": 0,
+        "chance": 90
+      },
+      {
+        "item": "bucket",
+        "x": 9,
+        "y": 4,
+        "chance": 90
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "arcana_cave_underground_1",
+  "object": {
+    "mapgensize": [
+      7,
+      7
+    ],
+    "rows": [
+      " ~~~~~ ",
+      "~~~~~~;",
+      "~~~~~;;",
+      "~~~~~;;",
+      "~~~~~;;",
+      "~~~~~~;",
+      " ~~~~~ "
+    ],
+    "palettes": [
+      "arcana_palette"
+    ],
+    "items": {
+      "~": {
+        "item": "magic_crafting",
+        "chance": 25
+      }
+    },
+    "place_monster": [
+      {
+        "monster": [
+          "mon_chud",
+          "mon_one_eye",
+          "mon_crawler",
+          "mon_twisted_body",
+          "mon_human_snail"
+        ],
+        "x": [
+          0,
+          4
+        ],
+        "y": [
+          1,
+          5
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

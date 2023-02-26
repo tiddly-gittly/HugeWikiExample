@@ -1,0 +1,67 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_UNDERSEEKER_attention
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_UNDERSEEKER_attention|http://cdda.aloxaf.cn/search?q=TALK_VAMP_UNDERSEEKER_attention]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Underrefugee/v_us_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_UNDERSEEKER_attention",
+  "type": "talk_topic",
+  "dynamic_line": "I see you've been working hard to help us on our problems... Nice meeting you and I apologize for ignoring you from the start I glanced on your eyes.",
+  "responses": [
+    {
+      "text": "As I was saying...",
+      "topic": "TALK_DONE",
+      "//": "Rep up by 5.",
+      "effect": [
+        {
+          "u_faction_rep": 5
+        },
+        {
+          "u_add_trait": "underseekermeet"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_UNDERSEEKER_attention",
+  "type": "talk_topic",
+  "dynamic_line": "我看到你一直在努力帮助我们解决问题…很高兴见到你，我很抱歉从一开始就我瞥了你一眼之后就忽视了你。",
+  "responses": [
+    {
+      "text": "就像我之前说的一样...",
+      "topic": "TALK_DONE",
+      "//": "Rep up by 5.",
+      "effect": [
+        {
+          "u_faction_rep": 5
+        },
+        {
+          "u_add_trait": "underseekermeet"
+        }
+      ]
+    }
+  ]
+}
+```
+

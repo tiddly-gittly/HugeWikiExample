@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_lichhook
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_lichhook|http://cdda.aloxaf.cn/search?q=arcana_item_lichhook]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_lichhook",
+  "type": "SPELL",
+  "name": {
+    "str": "Sundering Flesh"
+  },
+  "description": "Ensnares and poisons a single target.",
+  "message": "Venomous tendrils erupt from the ground by your command, to ensnare and infest your enemy!",
+  "valid_targets": [
+    "hostile"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_lichhook_freeze",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_lichhook_slow",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_lichhook_poison",
+      "hit_self": false
+    }
+  ],
+  "effect_str": "badpoison",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "min_range": 3,
+  "max_range": 3,
+  "effect": "attack",
+  "shape": "blast",
+  "min_duration": 800,
+  "max_duration": 1200,
+  "min_damage": 30,
+  "max_damage": 50,
+  "damage_type": "biological",
+  "field_id": "fd_gibs_flesh",
+  "field_chance": 1,
+  "min_field_intensity": 3,
+  "max_field_intensity": 3
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_lichhook",
+  "type": "SPELL",
+  "name": {
+    "str": "崩裂血肉"
+  },
+  "description": "Ensnares and poisons a single target.",
+  "message": "听你号令，带毒的卷须破地而出，捕获并侵扰你的敌人！",
+  "valid_targets": [
+    "hostile"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_lichhook_freeze",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_lichhook_slow",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_lichhook_poison",
+      "hit_self": false
+    }
+  ],
+  "effect_str": "badpoison",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "min_range": 3,
+  "max_range": 3,
+  "effect": "attack",
+  "shape": "blast",
+  "min_duration": 800,
+  "max_duration": 1200,
+  "min_damage": 30,
+  "max_damage": 50,
+  "damage_type": "biological",
+  "field_id": "fd_gibs_flesh",
+  "field_chance": 1,
+  "min_field_intensity": 3,
+  "max_field_intensity": 3
+}
+```
+

@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_INNERFIRE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_INNERFIRE|http://cdda.aloxaf.cn/search?q=ARCANA_INNERFIRE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_INNERFIRE",
+  "name": {
+    "str": "Inner Fire"
+  },
+  "points": 2,
+  "mixed_effect": true,
+  "bodytemp_modifiers": [
+    250,
+    1000
+  ],
+  "bodytemp_sleep": 250,
+  "description": "That strange warmth deep within your body has grown more intense, and its effects have become more pronounced.  While you still need to eat and drink more, your stamina and healing have adapted in turn.  A strange glow can also be faintly seen in the back of your throat, lending an unnatural aura of menace to your every word.",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_INNERHEAT"
+  ],
+  "changes_to": [
+    "ARCANA_DRAGONFIRE"
+  ],
+  "leads_to": [
+    "ARCANA_FIREAFFINITY",
+    "ARCANA_TOXINIMMUNE"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "METABOLISM"
+  ],
+  "metabolism_modifier": 0.5,
+  "stomach_size_multiplier": 2,
+  "thirst_modifier": 0.25,
+  "healing_awake": 1,
+  "healing_resting": 0.5,
+  "mending_modifier": 1,
+  "stamina_regen_modifier": 0.666,
+  "social_modifiers": {
+    "persuade": -25,
+    "intimidate": 25
+  },
+  "vitamin_rates": [
+    [
+      "blood",
+      -3
+    ],
+    [
+      "redcells",
+      -3
+    ]
+  ],
+  "flags": [
+    "PRED2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_INNERFIRE",
+  "name": {
+    "str": "内火"
+  },
+  "points": 2,
+  "mixed_effect": true,
+  "bodytemp_modifiers": [
+    250,
+    1000
+  ],
+  "bodytemp_sleep": 250,
+  "description": "你身体深处那股奇怪的温暖变得更加强烈，它的影响也变得更加明显。当你还需要多吃多喝的时候，你的耐力和治疗能力已经适应了。一种奇怪的光芒也可以在你的喉咙后面隐约可见，给你的每一句话都带来一种不自然的威胁。",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_INNERHEAT"
+  ],
+  "changes_to": [
+    "ARCANA_DRAGONFIRE"
+  ],
+  "leads_to": [
+    "ARCANA_FIREAFFINITY",
+    "ARCANA_TOXINIMMUNE"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "METABOLISM"
+  ],
+  "metabolism_modifier": 0.5,
+  "stomach_size_multiplier": 2,
+  "thirst_modifier": 0.25,
+  "healing_awake": 1,
+  "healing_resting": 0.5,
+  "mending_modifier": 1,
+  "stamina_regen_modifier": 0.666,
+  "social_modifiers": {
+    "persuade": -25,
+    "intimidate": 25
+  },
+  "vitamin_rates": [
+    [
+      "blood",
+      -3
+    ],
+    [
+      "redcells",
+      -3
+    ]
+  ],
+  "flags": [
+    "PRED2"
+  ]
+}
+```
+

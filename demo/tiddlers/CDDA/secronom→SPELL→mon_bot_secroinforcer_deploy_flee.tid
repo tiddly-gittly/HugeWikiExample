@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_bot_secroinforcer_deploy_flee
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_bot_secroinforcer_deploy_flee|http://cdda.aloxaf.cn/search?q=mon_bot_secroinforcer_deploy_flee]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_bot_secroinforcer_deploy_flee",
+  "type": "SPELL",
+  "name": {
+    "str": "Flee"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster then takes distance for half of the cooldown duration.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "run",
+  "min_duration": 1000,
+  "max_duration": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_bot_secroinforcer_deploy_flee",
+  "type": "SPELL",
+  "name": {
+    "str": "逃跑"
+  },
+  "description": "由怪物施放的咒语。如果你看到了这个，那就读读这个：\n“施法者在一半的冷却时间内保持距离。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "run",
+  "min_duration": 1000,
+  "max_duration": 1000
+}
+```
+

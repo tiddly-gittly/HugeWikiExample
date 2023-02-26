@@ -1,0 +1,259 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_archon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_archon|http://cdda.aloxaf.cn/search?q=mon_archon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_archon",
+  "type": "MONSTER",
+  "name": {
+    "str": "host of the archon",
+    "str_pl": "hosts of the archon"
+  },
+  "description": "A tall, robed figure twisted into a mockery of the human form, brandishing a strange golden talisman.  You feel an otherworldly presence about it.",
+  "default_faction": "archon",
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "HORROR"
+  ],
+  "volume": "77500 ml",
+  "weight": "81500 g",
+  "diff": 35,
+  "hp": 1250,
+  "speed": 120,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "H",
+  "looks_like": "mon_zombie_master",
+  "color": "yellow",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 9,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    },
+    {
+      "damage_type": "cold",
+      "amount": 5,
+      "armor_multiplier": 0.1
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_stab": 5,
+  "armor_bullet": 5,
+  "armor_fire": 5,
+  "armor_acid": 5,
+  "vision_night": 25,
+  "harvest": "human",
+  "starting_ammo": {
+    "bot_vortex": 6
+  },
+  "special_attacks": [
+    [
+      "STARE",
+      50
+    ],
+    [
+      "FEAR_PARALYZE",
+      40
+    ],
+    [
+      "GRENADIER_ELITE",
+      15
+    ],
+    [
+      "PARROT",
+      25
+    ],
+    {
+      "type": "gun",
+      "cooldown": 15,
+      "move_cost": 50,
+      "gun_type": "monster_lightning_fake",
+      "fake_str": 8,
+      "fake_dex": 7,
+      "fake_per": 9,
+      "ranges": [
+        [
+          2,
+          25,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": false,
+      "description": "A beam of lightning arcs from the host of the archon's symbol of judgment!",
+      "no_ammo_sound": "a horrific screech!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_archon_gaze"
+      },
+      "cooldown": 10,
+      "monster_message": "You briefly sense the otherworldly presence controlling the host, as it glares at %3$s."
+    }
+  ],
+  "//": "Here, have some chalice-specific loot",
+  "death_drops": "mon_archon_death_drops",
+  "flags": [
+    "ELECTRIC",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "HUMAN",
+    "PATH_AVOID_DANGER_2",
+    "CAN_OPEN_DOORS",
+    "PRIORITIZE_TARGETS",
+    "HARDTOSHOOT",
+    "QUEEN",
+    "NIGHT_INVISIBILITY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_archon",
+  "type": "MONSTER",
+  "name": {
+    "str": "执政官的躯壳",
+    "str_pl": "执政官的躯壳"
+  },
+  "description": "一个高高的，穿着长袍的人扭曲成一个嘲弄人的形式，挥舞着一个奇怪的金色护身符。你觉得这是一个超凡脱俗的存在。",
+  "default_faction": "archon",
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "HORROR"
+  ],
+  "volume": "77500 ml",
+  "weight": "81500 g",
+  "diff": 35,
+  "hp": 1250,
+  "speed": 120,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "H",
+  "looks_like": "mon_zombie_master",
+  "color": "yellow",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 9,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    },
+    {
+      "damage_type": "cold",
+      "amount": 5,
+      "armor_multiplier": 0.1
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_stab": 5,
+  "armor_bullet": 5,
+  "armor_fire": 5,
+  "armor_acid": 5,
+  "vision_night": 25,
+  "harvest": "human",
+  "starting_ammo": {
+    "bot_vortex": 6
+  },
+  "special_attacks": [
+    [
+      "STARE",
+      50
+    ],
+    [
+      "FEAR_PARALYZE",
+      40
+    ],
+    [
+      "GRENADIER_ELITE",
+      15
+    ],
+    [
+      "PARROT",
+      25
+    ],
+    {
+      "type": "gun",
+      "cooldown": 15,
+      "move_cost": 50,
+      "gun_type": "monster_lightning_fake",
+      "fake_str": 8,
+      "fake_dex": 7,
+      "fake_per": 9,
+      "ranges": [
+        [
+          2,
+          25,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": false,
+      "description": "一束闪电从执政官的审判符文中射出！",
+      "no_ammo_sound": "一声可怕的尖叫！"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_archon_gaze"
+      },
+      "cooldown": 10,
+      "monster_message": "当它盯着%3$s时，你在一瞬间感觉到有异界的存在控制着这个躯壳。"
+    }
+  ],
+  "//": "Here, have some chalice-specific loot",
+  "death_drops": "mon_archon_death_drops",
+  "flags": [
+    "ELECTRIC",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "HUMAN",
+    "PATH_AVOID_DANGER_2",
+    "CAN_OPEN_DOORS",
+    "PRIORITIZE_TARGETS",
+    "HARDTOSHOOT",
+    "QUEEN",
+    "NIGHT_INVISIBILITY"
+  ]
+}
+```
+

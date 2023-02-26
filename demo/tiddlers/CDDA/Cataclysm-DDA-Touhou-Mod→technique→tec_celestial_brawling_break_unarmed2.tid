@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_celestial_brawling_break_unarmed2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_celestial_brawling_break_unarmed2|http://cdda.aloxaf.cn/search?q=tec_celestial_brawling_break_unarmed2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_celestial_brawling_break_unarmed2",
+  "type": "technique",
+  "name": "Grab Break (Crit)",
+  "messages": [
+    "The %s tries to grab you, but you break them away!",
+    "The %s tries to grab <npcname>, but <npcname> breaks them away!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "unarmed",
+      "level": 4
+    }
+  ],
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "defensive": true,
+  "grab_break": true,
+  "knockback_dist": 2,
+  "knockback_spread": 2,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 2.5
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 2.5
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 2.5
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_celestial_brawling_break_unarmed2",
+  "type": "technique",
+  "name": "反擒拿（暴击）",
+  "messages": [
+    "%s 试着抓住你，但你击退了！",
+    "The %s tries to grab <npcname>，but <npcname> breaks them away！"
+  ],
+  "skill_requirements": [
+    {
+      "name": "unarmed",
+      "level": 4
+    }
+  ],
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "defensive": true,
+  "grab_break": true,
+  "knockback_dist": 2,
+  "knockback_spread": 2,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 2.5
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 2.5
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 2.5
+    }
+  ]
+}
+```
+

@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_mancroc
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_mancroc|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_mancroc]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_mancroc",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie snapper"
+  },
+  "description": "With a crocodile-like snout and rows of protruding teeth, this swimwear-clad zombie lurks in the water.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 5,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 11,
+  "armor_cut": 10,
+  "armor_bullet": 8,
+  "vision_day": 25,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10,
+      "accuracy": 6,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.3
+        },
+        {
+          "damage_type": "bash",
+          "amount": 16,
+          "armor_multiplier": 0.3
+        }
+      ]
+    },
+    [
+      "GRAB",
+      20
+    ],
+    [
+      "GRAB_DRAG",
+      10
+    ]
+  ],
+  "death_drops": "mon_zombie_swimmer_death_drops",
+  "burn_into": "mon_zombie_mancroc",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "GRABS",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "SWIMS",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_mancroc",
+  "type": "MONSTER",
+  "name": {
+    "str": "类鱼丧尸"
+  },
+  "description": "首先入眼的是一张鳄鱼般的大嘴和外突的牙齿，这种穿着泳衣的丧尸潜伏在水里。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 5,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 11,
+  "armor_cut": 10,
+  "armor_bullet": 8,
+  "vision_day": 25,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10,
+      "accuracy": 6,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.3
+        },
+        {
+          "damage_type": "bash",
+          "amount": 16,
+          "armor_multiplier": 0.3
+        }
+      ]
+    },
+    [
+      "GRAB",
+      20
+    ],
+    [
+      "GRAB_DRAG",
+      10
+    ]
+  ],
+  "death_drops": "mon_zombie_swimmer_death_drops",
+  "burn_into": "mon_zombie_mancroc",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "GRABS",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "SWIMS",
+    "FILTHY"
+  ]
+}
+```
+

@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: mutation MagicRevampAdditions
+title: MagicRevampAdditions→mutation→SHAPESHIFTER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SHAPESHIFTER|http://cdda.aloxaf.cn/search?q=SHAPESHIFTER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/traits/attunements.json
+
+
+!! 原文
+
+```json
+{
+  "id": "SHAPESHIFTER",
+  "type": "mutation",
+  "name": {
+    "str": "Shapeshifter"
+  },
+  "points": 8,
+  "starting_trait": false,
+  "purifiable": false,
+  "valid": false,
+  "description": "The shapeshifter is the Biomancer refined - able to use a flicker of mana to change shape at the drop of a hat to make yourself more inviting or shape others into desired shapes.",
+  "prereqs": [
+    "BIOMANCER",
+    "MAGUS"
+  ],
+  "spells_learned": [
+    [
+      "shapeshifter_alkahest",
+      5
+    ],
+    [
+      "biomechanic",
+      5
+    ]
+  ],
+  "//": "Purposefully omits torso, head, etc.",
+  "encumbrance_multiplier_always": {
+    "arm_l": 0.4,
+    "arm_r": 0.4,
+    "hand_l": 0.4,
+    "hand_r": 0.4,
+    "leg_l": 0.4,
+    "leg_r": 0.4,
+    "mouth": 0.4
+  },
+  "ugliness": -7,
+  "social_modifiers": {
+    "persuade": 10,
+    "lie": 10,
+    "intimidate": 10
+  },
+  "flags": [
+    "ATTUNEMENT",
+    "ALKAHEST_IMMUNE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "SHAPESHIFTER",
+  "type": "mutation",
+  "name": {
+    "str": "变形者"
+  },
+  "points": 8,
+  "starting_trait": false,
+  "purifiable": false,
+  "valid": false,
+  "description": "变形者是一位精益求精的生化术士，摘帽瞬间就能仅用少许的魔力改变自身形状，将你自己变的更迷人或其他想要的体型。",
+  "prereqs": [
+    "BIOMANCER",
+    "MAGUS"
+  ],
+  "spells_learned": [
+    [
+      "shapeshifter_alkahest",
+      5
+    ],
+    [
+      "biomechanic",
+      5
+    ]
+  ],
+  "//": "Purposefully omits torso, head, etc.",
+  "encumbrance_multiplier_always": {
+    "arm_l": 0.4,
+    "arm_r": 0.4,
+    "hand_l": 0.4,
+    "hand_r": 0.4,
+    "leg_l": 0.4,
+    "leg_r": 0.4,
+    "mouth": 0.4
+  },
+  "ugliness": -7,
+  "social_modifiers": {
+    "persuade": 10,
+    "lie": 10,
+    "intimidate": 10
+  },
+  "flags": [
+    "ATTUNEMENT",
+    "ALKAHEST_IMMUNE"
+  ]
+}
+```
+

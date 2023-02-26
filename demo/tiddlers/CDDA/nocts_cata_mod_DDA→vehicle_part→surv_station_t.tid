@@ -1,0 +1,349 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→vehicle_part→surv_station_t
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：surv_station_t|http://cdda.aloxaf.cn/search?q=surv_station_t]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Vehicles/c_vehicle_parts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "surv_station_t",
+  "//": "Almost all utilities in one!",
+  "name": "survivor's station unit",
+  "description": "A makeshift vehicle mountable station comprised of many utilities, all compressed into a single unit.  Combines the functionality of a vehicle kitchen unit, forge, welder, chemistry set, and all of the myriad functions of the FOODCO kitchen buddy.  As a consequence, it leaves no space left for storage.",
+  "looks_like": "craft_rig",
+  "symbol": "&",
+  "color": "light_red",
+  "broken_symbol": "x",
+  "broken_color": "light_red",
+  "damage_modifier": 80,
+  "durability": 100,
+  "item": "surv_station",
+  "location": "center",
+  "flags": [
+    "OBSTACLE"
+  ],
+  "pseudo_tools": [
+    {
+      "id": "vac_sealer"
+    },
+    {
+      "id": "dehydrator"
+    },
+    {
+      "id": "water_purifier",
+      "hotkey": "p"
+    },
+    {
+      "id": "food_processor"
+    },
+    {
+      "id": "press"
+    },
+    {
+      "id": "puller"
+    },
+    {
+      "id": "chemistry_set"
+    },
+    {
+      "id": "electrolysis_kit"
+    },
+    {
+      "id": "water_faucet"
+    },
+    {
+      "id": "forge"
+    },
+    {
+      "id": "hotplate",
+      "hotkey": "h"
+    },
+    {
+      "id": "pot"
+    },
+    {
+      "id": "pan"
+    },
+    {
+      "id": "welder",
+      "hotkey": "w"
+    },
+    {
+      "id": "soldering_iron",
+      "hotkey": "s"
+    }
+  ],
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        30,
+        40
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        30,
+        40
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        30,
+        40
+      ]
+    },
+    {
+      "item": "circuit",
+      "count": [
+        30,
+        40
+      ]
+    },
+    {
+      "item": "e_scrap",
+      "count": [
+        30,
+        40
+      ]
+    },
+    {
+      "item": "amplifier",
+      "count": [
+        30,
+        40
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          7
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "surv_station_t",
+  "//": "Almost all utilities in one!",
+  "name": "幸存者车载工作台",
+  "description": "一个集成许多实用工具的自制车载工作台，所有工具都压缩精简成一个紧凑部件。集成了车载烹饪、锻造、焊接、化工和伙夫牌厨房机的所有功能。因此没有储存空间。",
+  "looks_like": "craft_rig",
+  "symbol": "&",
+  "color": "light_red",
+  "broken_symbol": "x",
+  "broken_color": "light_red",
+  "damage_modifier": 80,
+  "durability": 100,
+  "item": "surv_station",
+  "location": "center",
+  "flags": [
+    "OBSTACLE"
+  ],
+  "pseudo_tools": [
+    {
+      "id": "vac_sealer"
+    },
+    {
+      "id": "dehydrator"
+    },
+    {
+      "id": "water_purifier",
+      "hotkey": "p"
+    },
+    {
+      "id": "food_processor"
+    },
+    {
+      "id": "press"
+    },
+    {
+      "id": "puller"
+    },
+    {
+      "id": "chemistry_set"
+    },
+    {
+      "id": "electrolysis_kit"
+    },
+    {
+      "id": "water_faucet"
+    },
+    {
+      "id": "forge"
+    },
+    {
+      "id": "hotplate",
+      "hotkey": "h"
+    },
+    {
+      "id": "pot"
+    },
+    {
+      "id": "pan"
+    },
+    {
+      "id": "welder",
+      "hotkey": "w"
+    },
+    {
+      "id": "soldering_iron",
+      "hotkey": "s"
+    }
+  ],
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        30,
+        40
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        30,
+        40
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        30,
+        40
+      ]
+    },
+    {
+      "item": "circuit",
+      "count": [
+        30,
+        40
+      ]
+    },
+    {
+      "item": "e_scrap",
+      "count": [
+        30,
+        40
+      ]
+    },
+    {
+      "item": "amplifier",
+      "count": [
+        30,
+        40
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          7
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+

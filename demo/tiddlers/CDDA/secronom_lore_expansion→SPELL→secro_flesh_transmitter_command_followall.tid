@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→secro_flesh_transmitter_command_followall
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_transmitter_command_followall|http://cdda.aloxaf.cn/search?q=secro_flesh_transmitter_command_followall]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_magic.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "secro_flesh_transmitter_command_followall",
+  "name": {
+    "str": "Follow"
+  },
+  "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'All nearby amalgam starts to follow you .'",
+  "message": "The transmitter writhes wildly!",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_sflesh_hatchery_amalgam"
+  ],
+  "min_aoe": 10,
+  "max_aoe": 10,
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "controlled",
+  "min_duration": 100000,
+  "max_duration": 100000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "secro_flesh_transmitter_command_followall",
+  "name": {
+    "str": "跟随"
+  },
+  "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“所有附近的混合怪都开始跟随你。”",
+  "message": "发报机狂转！",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_sflesh_hatchery_amalgam"
+  ],
+  "min_aoe": 10,
+  "max_aoe": 10,
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "controlled",
+  "min_duration": 100000,
+  "max_duration": 100000
+}
+```
+

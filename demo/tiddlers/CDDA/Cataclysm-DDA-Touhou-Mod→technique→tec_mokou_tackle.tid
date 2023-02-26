@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_mokou_tackle
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_mokou_tackle|http://cdda.aloxaf.cn/search?q=tec_mokou_tackle]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_mokou_tackle",
+  "type": "technique",
+  "name": "Tackle",
+  "messages": [
+    "You tackle %s!",
+    "<npcname> tackles %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 2
+    }
+  ],
+  "melee_allowed": true,
+  "knockback_follow": true,
+  "grab_break": true,
+  "knockback_dist": 2,
+  "down_dur": 2,
+  "stun_dur": 1,
+  "weighting": -2,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.667
+    },
+    {
+      "stat": "damage",
+      "type": "heat",
+      "scaling-stat": "str",
+      "scale": 1
+    }
+  ],
+  "//": "Lunge but called tackle"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_mokou_tackle",
+  "type": "technique",
+  "name": "Tackle",
+  "messages": [
+    "You tackle %s!",
+    "<npcname> tackles %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 2
+    }
+  ],
+  "melee_allowed": true,
+  "knockback_follow": true,
+  "grab_break": true,
+  "knockback_dist": 2,
+  "down_dur": 2,
+  "stun_dur": 1,
+  "weighting": -2,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.667
+    },
+    {
+      "stat": "damage",
+      "type": "heat",
+      "scaling-stat": "str",
+      "scale": 1
+    }
+  ],
+  "//": "Lunge but called tackle"
+}
+```
+

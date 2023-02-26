@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→magnetismmage_electrolaser
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：magnetismmage_electrolaser|http://cdda.aloxaf.cn/search?q=magnetismmage_electrolaser]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Magnetism_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "id": "magnetismmage_electrolaser",
+  "type": "SPELL",
+  "name": {
+    "str": "Electrolaser"
+  },
+  "description": "Creates a conductive channel from the caster's hand to the target by ionizing air molecules using a high-powered laser beam, then sends a powerful half million volt charge down the channel.",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS",
+    "LOUD"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "damage_type": "heat",
+  "min_damage": 15,
+  "max_damage": 90,
+  "damage_increment": 1.8,
+  "min_range": 6,
+  "max_range": 31,
+  "range_increment": 0.6,
+  "min_aoe": 1,
+  "max_aoe": 4,
+  "aoe_increment": 0.12,
+  "max_level": 43,
+  "difficulty": 9,
+  "spell_class": "MAGNETISM_MAGE",
+  "base_casting_time": 250,
+  "final_casting_time": 60,
+  "casting_time_increment": -5,
+  "energy_source": "MANA",
+  "base_energy_cost": 500,
+  "final_energy_cost": 120,
+  "energy_increment": -10,
+  "extra_effects": [
+    {
+      "id": "magnetismmage_electrolaser_electro"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "magnetismmage_electrolaser",
+  "type": "SPELL",
+  "name": {
+    "str": "电子激光"
+  },
+  "description": "通过使用高功率激光束电离空气分子，创建出一条从施法者手到目标的导电通道，然后沿着通道释放出50万伏的强大电荷。",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS",
+    "LOUD"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "damage_type": "heat",
+  "min_damage": 15,
+  "max_damage": 90,
+  "damage_increment": 1.8,
+  "min_range": 6,
+  "max_range": 31,
+  "range_increment": 0.6,
+  "min_aoe": 1,
+  "max_aoe": 4,
+  "aoe_increment": 0.12,
+  "max_level": 43,
+  "difficulty": 9,
+  "spell_class": "MAGNETISM_MAGE",
+  "base_casting_time": 250,
+  "final_casting_time": 60,
+  "casting_time_increment": -5,
+  "energy_source": "MANA",
+  "base_energy_cost": 500,
+  "final_energy_cost": 120,
+  "energy_increment": -10,
+  "extra_effects": [
+    {
+      "id": "magnetismmage_electrolaser_electro"
+    }
+  ]
+}
+```
+

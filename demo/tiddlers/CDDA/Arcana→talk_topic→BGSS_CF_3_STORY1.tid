@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→BGSS_CF_3_STORY1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BGSS_CF_3_STORY1|http://cdda.aloxaf.cn/search?q=BGSS_CF_3_STORY1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MAGE_HUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BGSS_CF_3_STORY1",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "BGSS_CF_FILTER",
+    "yes": "I was with Grandmaster Leone and a few others.  We were going to meet up with another hunting party in a local sanctum.",
+    "no": "I was with Sofia and a couple others.  She was en route here, to meet the padre and ask for shelter on the way to one of our safehouses."
+  },
+  "responses": [
+    {
+      "text": "What'd you find when you arrived?",
+      "topic": "BGSS_CF_3_STORY2"
+    },
+    {
+      "text": "<done_conversation_section>",
+      "topic": "TALK_FRIEND"
+    },
+    {
+      "text": "<end_talking>",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BGSS_CF_3_STORY1",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "BGSS_CF_FILTER",
+    "yes": "我和莱昂爷爷和其他几个人在一起。我们打算在当地的一个庇护所会见另一个狩猎队。",
+    "no": "我和索菲亚和其他几个人在一起。她在来这里的路上，去见牧师，在去我们的一个安全屋的路上请求庇护。"
+  },
+  "responses": [
+    {
+      "text": "你到的时候发现了什么？",
+      "topic": "BGSS_CF_3_STORY2"
+    },
+    {
+      "text": "<done_conversation_section>",
+      "topic": "TALK_FRIEND"
+    },
+    {
+      "text": "<end_talking>",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

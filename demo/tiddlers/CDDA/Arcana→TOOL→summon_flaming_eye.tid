@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_flaming_eye
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_flaming_eye|http://cdda.aloxaf.cn/search?q=summon_flaming_eye]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_flaming_eye",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of Gehenna",
+    "str_pl": "glyphs of Gehenna"
+  },
+  "//": "ID retained to prevent tileset breakage, monster summoned was changed due to flaming eyes being useless if friendly.",
+  "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.  It is somewhat easy to control.",
+  "price": "1500 USD",
+  "price_postapoc": "30 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_flesh_angel_summoned_glyph",
+    "friendly_msg": "A twisted mimicry of the divine is called forth, bound to your will.",
+    "hostile_msg": "The flesh angel levels a wicked gaze upon you, ignoring your commands.",
+    "difficulty": 3,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_flaming_eye",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：欣嫩谷",
+    "str_pl": "雕文：欣嫩谷"
+  },
+  "//": "ID retained to prevent tileset breakage, monster summoned was changed due to flaming eyes being useless if friendly.",
+  "description": "一枚奇怪的银制徽章，上面刻着扭曲的天使形象。使用它会召唤出一个血肉天使，并绑定在你的意志上。希望如此。这一枚比较容易控制。",
+  "price": "1500 USD",
+  "price_postapoc": "30 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_flesh_angel_summoned_glyph",
+    "friendly_msg": "一个扭曲的神使的模仿物被召唤出来，并被你的意志所束缚。",
+    "hostile_msg": "血肉天使邪恶地注视着你，无视你的命令。",
+    "difficulty": 3,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+

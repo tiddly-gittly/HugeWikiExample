@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→sun_sword_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sun_sword_on|http://cdda.aloxaf.cn/search?q=sun_sword_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "sun_sword_on",
+  "type": "TOOL",
+  "copy-from": "sun_sword",
+  "repairs_like": "sun_sword",
+  "category": "weapons",
+  "name": {
+    "str": "incorruptible sword (on)",
+    "str_pl": "incorruptible swords (on)"
+  },
+  "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  The blade is giving off an intense white light, and searing heat.",
+  "turns_per_charge": 100,
+  "revert_to": "sun_sword",
+  "techniques": [
+    "WBLOCK_2",
+    "tec_weapon_incorruptible_slash"
+  ],
+  "use_action": [
+    {
+      "type": "firestarter",
+      "moves": 30
+    },
+    {
+      "menu_text": "Turn off",
+      "type": "transform",
+      "msg": "The sword's radiance fades.",
+      "target": "sun_sword",
+      "ammo_scale": 0
+    }
+  ],
+  "relative": {
+    "cutting": 5
+  },
+  "extend": {
+    "flags": [
+      "FIRE",
+      "LIGHT_240",
+      "CHARGEDIM",
+      "FLAMING",
+      "NONCONDUCTIVE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "SHEATH_SWORD"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "sun_sword_on",
+  "type": "TOOL",
+  "copy-from": "sun_sword",
+  "repairs_like": "sun_sword",
+  "category": "weapons",
+  "name": {
+    "str": "不朽之剑（开）",
+    "str_pl": "不朽之剑（开）"
+  },
+  "description": "这是某种形式的剑，装饰有一个金色的十字架图案的刀片。刀片发出强烈的白光和灼热。",
+  "turns_per_charge": 100,
+  "revert_to": "sun_sword",
+  "techniques": [
+    "WBLOCK_2",
+    "tec_weapon_incorruptible_slash"
+  ],
+  "use_action": [
+    {
+      "type": "firestarter",
+      "moves": 30
+    },
+    {
+      "menu_text": "关闭",
+      "type": "transform",
+      "msg": "剑的光辉褪去。",
+      "target": "sun_sword",
+      "ammo_scale": 0
+    }
+  ],
+  "relative": {
+    "cutting": 5
+  },
+  "extend": {
+    "flags": [
+      "FIRE",
+      "LIGHT_240",
+      "CHARGEDIM",
+      "FLAMING",
+      "NONCONDUCTIVE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "SHEATH_SWORD"
+    ]
+  }
+}
+```
+

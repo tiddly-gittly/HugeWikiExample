@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: item_group vamp_stuff
+title: vamp_stuff→item_group→spellbook_loot_0
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：spellbook_loot_0|http://cdda.aloxaf.cn/search?q=spellbook_loot_0]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/spellbook_item_groups.json
+
+
+!! 原文
+
+```json
+{
+  "id": "spellbook_loot_0",
+  "copy-from": "spellbook_loot_0",
+  "type": "item_group",
+  "//": "the difference between tiers and loot are that loot should be easy to",
+  "//2": "drop into an itemgroup or mapgen without having multiple entries for higher tier spellbooks.",
+  "//3": "and loot tiers will not always have the lower tier spellbook tiers.",
+  "extend": {
+    "items": [
+      {
+        "group": "spellbook_tier_0",
+        "prob": 60
+      },
+      {
+        "group": "spellbook_tier_1",
+        "prob": 30
+      },
+      {
+        "group": "spellbook_tier_2",
+        "prob": 9
+      },
+      {
+        "group": "spellbook_tier_3",
+        "prob": 1
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "spellbook_loot_0",
+  "copy-from": "spellbook_loot_0",
+  "type": "item_group",
+  "//": "the difference between tiers and loot are that loot should be easy to",
+  "//2": "drop into an itemgroup or mapgen without having multiple entries for higher tier spellbooks.",
+  "//3": "and loot tiers will not always have the lower tier spellbook tiers.",
+  "extend": {
+    "items": [
+      {
+        "group": "spellbook_tier_0",
+        "prob": 60
+      },
+      {
+        "group": "spellbook_tier_1",
+        "prob": 30
+      },
+      {
+        "group": "spellbook_tier_2",
+        "prob": 9
+      },
+      {
+        "group": "spellbook_tier_3",
+        "prob": 1
+      }
+    ]
+  }
+}
+```
+

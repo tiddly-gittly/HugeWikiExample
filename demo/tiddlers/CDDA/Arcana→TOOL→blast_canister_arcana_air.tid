@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→blast_canister_arcana_air
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：blast_canister_arcana_air|http://cdda.aloxaf.cn/search?q=blast_canister_arcana_air]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "blast_canister_arcana_air",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "thunderous blast canister"
+  },
+  "description": "This is a small canister with elemental energy bound to it.  Activate to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area immediately around it with lightning.  It will also arm on its own if thrown.",
+  "weight": "550 g",
+  "volume": "250 ml",
+  "price_postapoc": "5 USD",
+  "material": "clay",
+  "symbol": "*",
+  "looks_like": "acidbomb",
+  "color": "brown",
+  "use_action": {
+    "target": "blast_canister_arcana_air_act",
+    "msg": "The thunderous blast canister glows faintly as you arm it.",
+    "target_charges": 3,
+    "active": true,
+    "menu_text": "Arm",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "flags": [
+    "BOMB",
+    "ACT_ON_RANGED_HIT"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "blast_canister_arcana_air",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "雷霆爆炸罐"
+  },
+  "description": "这是一个小罐子，上面绑着元素能量。激活以准备使用，然后几秒钟后爆炸。它的效果会立即用闪电将其周围的区域炸毁。如果被扔出去，它也会自己武装起来。",
+  "weight": "550 g",
+  "volume": "250 ml",
+  "price_postapoc": "5 USD",
+  "material": "clay",
+  "symbol": "*",
+  "looks_like": "acidbomb",
+  "color": "brown",
+  "use_action": {
+    "target": "blast_canister_arcana_air_act",
+    "msg": "当你装备它时，雷鸣般的爆炸罐会发出微弱的光。",
+    "target_charges": 3,
+    "active": true,
+    "menu_text": "激活",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "flags": [
+    "BOMB",
+    "ACT_ON_RANGED_HIT"
+  ]
+}
+```
+

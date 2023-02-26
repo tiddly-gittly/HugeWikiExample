@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MARLOSS_VOICE_INTERLOPERS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MARLOSS_VOICE_INTERLOPERS|http://cdda.aloxaf.cn/search?q=TALK_MARLOSS_VOICE_INTERLOPERS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MARLOSS_VOICE.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_MARLOSS_VOICE_INTERLOPERS",
+  "dynamic_line": "I do not know what you mean.  We seek harmony, and greater understanding of the world.  We have found peace here.",
+  "responses": [
+    {
+      "text": "You are dangerously ignorant of the threat this place presents, and their intent.",
+      "topic": "TALK_MARLOSS_VOICE_INTERLOPERS_PARAGON",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      }
+    },
+    {
+      "text": "These things do not belong in this world.",
+      "topic": "TALK_MARLOSS_VOICE_INTERLOPERS_CHALICE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "text": "\"Any otherworldly monster must be returned to its true domain, living or dead.\"  That is my duty.  Do not interfere.",
+      "topic": "TALK_MARLOSS_VOICE_INTERLOPERS_CLEANSINGFLAME",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME"
+      }
+    },
+    {
+      "text": "These things are an infection that must be cured.",
+      "topic": "TALK_MARLOSS_VOICE_INTERLOPERS_CLEANSINGFLAME2",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME2"
+      }
+    },
+    {
+      "text": "Then enjoy your peace while it lasts.  I've nothing more to say to you.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_MARLOSS_VOICE_INTERLOPERS",
+  "dynamic_line": "我不知道你的意思。我们寻求和谐，对世界有更深入的了解。我们在这里找到了和平。",
+  "responses": [
+    {
+      "text": "你很危险地不知道这个地方所带来的威胁及其意图。",
+      "topic": "TALK_MARLOSS_VOICE_INTERLOPERS_PARAGON",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      }
+    },
+    {
+      "text": "这些东西不属于这个世界。",
+      "topic": "TALK_MARLOSS_VOICE_INTERLOPERS_CHALICE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "text": "“任何一个异域怪物都必须回到它的该待的地方，无论是死是活。”这是我的职责。不要阻止我。",
+      "topic": "TALK_MARLOSS_VOICE_INTERLOPERS_CLEANSINGFLAME",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME"
+      }
+    },
+    {
+      "text": "这些都是必须治愈的感染。",
+      "topic": "TALK_MARLOSS_VOICE_INTERLOPERS_CLEANSINGFLAME2",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME2"
+      }
+    },
+    {
+      "text": "然后享受你的和平，持续一会儿。我无话可说。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

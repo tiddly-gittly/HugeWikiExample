@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_blacktitan_charging
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_blacktitan_charging|http://cdda.aloxaf.cn/search?q=mon_zombie_blacktitan_charging]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Titan.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_blacktitan_charging",
+  "copy-from": "mon_zombie_blacktitan",
+  "type": "MONSTER",
+  "name": {
+    "str": "black titan"
+  },
+  "description": "A hulking body with its skin desaturated from prolonged mutations. Sharp bone outgrowths protrude under its thick exoskeletal plates. Its hands are crossed together.",
+  "speed": 65,
+  "armor_bash": 57,
+  "armor_cut": 42,
+  "armor_bullet": 35,
+  "symbol": "⩞",
+  "color": "black_red",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_blacktitan_charging_target"
+      },
+      "cooldown": 6,
+      "monster_message": "<color_yellow>%1$s charges at %3$s!</color>"
+    },
+    [
+      "SMASH",
+      9999
+    ]
+  ],
+  "extend": {
+    "flags": [
+      "PACIFIST"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_blacktitan_charging",
+  "copy-from": "mon_zombie_blacktitan",
+  "type": "MONSTER",
+  "name": {
+    "str": "漆黑泰坦丧尸"
+  },
+  "description": "皮肤因长期突变而变得不饱和的笨重的身体。尖锐的骨头突出在厚的外骨骼板下。它的双手交叉在一起。",
+  "speed": 65,
+  "armor_bash": 57,
+  "armor_cut": 42,
+  "armor_bullet": 35,
+  "symbol": "⩞",
+  "color": "black_red",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_blacktitan_charging_target"
+      },
+      "cooldown": 6,
+      "monster_message": "<color_yellow> %1$s收费%3$s！</color>"
+    },
+    [
+      "SMASH",
+      9999
+    ]
+  ],
+  "extend": {
+    "flags": [
+      "PACIFIST"
+    ]
+  }
+}
+```
+

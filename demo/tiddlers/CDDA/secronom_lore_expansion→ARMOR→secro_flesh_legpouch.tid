@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_legpouch
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_legpouch|http://cdda.aloxaf.cn/search?q=secro_flesh_legpouch]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_ammo_pouch.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_legpouch",
+  "type": "ARMOR",
+  "name": {
+    "str": "ankle ammo pouch",
+    "str_pl": "ankle ammo pouches"
+  },
+  "description": "A small fleshy ammo pouch that can be strapped to your ankle and hold a single small magazine close at hand.",
+  "volume": "250 ml",
+  "weight": "75 g",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "ragpouch",
+  "color": "red",
+  "sided": true,
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_item_length": "240 mm",
+      "max_contains_volume": "250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 40,
+      "flag_restriction": [
+        "MAG_COMPACT"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Stash ammo",
+    "holster_msg": "You stash your %s."
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "BELTED",
+    "OVERSIZE",
+    "ALLOWS_NATURAL_ATTACKS"
+  ],
+  "armor": [
+    {
+      "encumbrance": 1,
+      "coverage": 5,
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ],
+      "specifically_covers": [
+        "foot_ankle_l",
+        "foot_ankle_r"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1,
+      "layers": [
+        "BELTED"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_legpouch",
+  "type": "ARMOR",
+  "name": {
+    "str": "弹匣包（脚）",
+    "str_pl": "弹匣包（脚）"
+  },
+  "description": "一个小的肉质弹药袋，可以绑在你的脚踝和举行一个小弹夹在手附近。",
+  "volume": "250 ml",
+  "weight": "75 g",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "ragpouch",
+  "color": "red",
+  "sided": true,
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_item_length": "240 mm",
+      "max_contains_volume": "250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 40,
+      "flag_restriction": [
+        "MAG_COMPACT"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "存储弹药",
+    "holster_msg": "你收好了%s。"
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "BELTED",
+    "OVERSIZE",
+    "ALLOWS_NATURAL_ATTACKS"
+  ],
+  "armor": [
+    {
+      "encumbrance": 1,
+      "coverage": 5,
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ],
+      "specifically_covers": [
+        "foot_ankle_l",
+        "foot_ankle_r"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1,
+      "layers": [
+        "BELTED"
+      ]
+    }
+  ]
+}
+```
+

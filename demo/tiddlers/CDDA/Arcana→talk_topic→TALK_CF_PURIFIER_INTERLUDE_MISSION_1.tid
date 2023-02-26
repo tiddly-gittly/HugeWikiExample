@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_INTERLUDE_MISSION_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_INTERLUDE_MISSION_1|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_INTERLUDE_MISSION_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_INTERLUDE_MISSION_1",
+  "type": "talk_topic",
+  "dynamic_line": "Seems reasonable, then.  I'll get in touch with them and work out what information I can get out of this.  Check up on them sometime later and they will probably be glad to hear back from you.",
+  "speaker_effect": {
+    "effect": [
+      {
+        "u_add_var": "nicholas_info_sent",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "Thanks!  Before I go…",
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "Thanks, I'll be back later!",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_INTERLUDE_MISSION_1",
+  "type": "talk_topic",
+  "dynamic_line": "似乎很合理。我会和他们联系，找出我能从中获得什么信息。过些时候去看看他们，他们可能会很高兴收到你的到来。",
+  "speaker_effect": {
+    "effect": [
+      {
+        "u_add_var": "nicholas_info_sent",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "谢谢！在我走之前…",
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "谢谢，我晚点回来！",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

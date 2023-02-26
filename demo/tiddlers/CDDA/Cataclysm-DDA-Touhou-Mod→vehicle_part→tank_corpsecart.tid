@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→vehicle_part→tank_corpsecart
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tank_corpsecart|http://cdda.aloxaf.cn/search?q=tank_corpsecart]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/vehicleparts/touhou_fueltanks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tank_corpsecart",
+  "type": "vehicle_part",
+  "categories": [
+    "energy",
+    "movement"
+  ],
+  "name": {
+    "str": "corpse reactor tank"
+  },
+  "description": "Test corpse reactor tank for kaenbyou_wheelbarrow ",
+  "symbol": "X",
+  "color": "brown",
+  "broken_color": "red",
+  "item": "tank_corpsecart",
+  "location": "fuel_source",
+  "durability": 200,
+  "damage_reduction": {
+    "all": 10
+  },
+  "folded_volume": "2500 ml",
+  "breaks_into": [
+    {
+      "item": "splinter",
+      "count": [
+        7,
+        9
+      ]
+    },
+    {
+      "item": "nail",
+      "charges": [
+        5,
+        10
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_nail_install",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "15 m",
+      "using": [
+        [
+          "vehicle_nail_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "adhesive",
+          2
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "FLUIDTANK"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tank_corpsecart",
+  "type": "vehicle_part",
+  "categories": [
+    "energy",
+    "movement"
+  ],
+  "name": {
+    "str": "corpse reactor tank"
+  },
+  "description": "Test corpse reactor tank for kaenbyou_wheelbarrow ",
+  "symbol": "X",
+  "color": "brown",
+  "broken_color": "red",
+  "item": "tank_corpsecart",
+  "location": "fuel_source",
+  "durability": 200,
+  "damage_reduction": {
+    "all": 10
+  },
+  "folded_volume": "2500 ml",
+  "breaks_into": [
+    {
+      "item": "splinter",
+      "count": [
+        7,
+        9
+      ]
+    },
+    {
+      "item": "nail",
+      "charges": [
+        5,
+        10
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_nail_install",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "15 m",
+      "using": [
+        [
+          "vehicle_nail_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "adhesive",
+          2
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "FLUIDTANK"
+  ]
+}
+```
+

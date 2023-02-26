@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→frostie_trunk
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：frostie_trunk|http://cdda.aloxaf.cn/search?q=frostie_trunk]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "frostie_trunk",
+  "type": "vehicle_part",
+  "name": {
+    "str": "ice pack"
+  },
+  "item": "frostie",
+  "location": "center",
+  "symbol": "H",
+  "broken_symbol": "#",
+  "color": "light_blue",
+  "broken_color": "light_blue",
+  "durability": 100,
+  "epower": 0,
+  "size": 400,
+  "damage_modifier": 80,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "frostiegrow"
+    }
+  ],
+  "description": "A living blob, existing in a super-cooled state.  It will keep items stored in it cold, reducing the speed at which food and drink rots.",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "CARGO",
+    "OBSTACLE",
+    "FRIDGE",
+    "COVERED"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "frostie_trunk",
+  "type": "vehicle_part",
+  "name": {
+    "str": "变形怪冷藏箱"
+  },
+  "item": "frostie",
+  "location": "center",
+  "symbol": "H",
+  "broken_symbol": "#",
+  "color": "light_blue",
+  "broken_color": "light_blue",
+  "durability": 100,
+  "epower": 0,
+  "size": 400,
+  "damage_modifier": 80,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "frostiegrow"
+    }
+  ],
+  "description": "一只活的处于极寒状态的变形怪变成的载具部件。它会让存放在体内的物品保持冰凉状态，降低食物腐败速度。",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "CARGO",
+    "OBSTACLE",
+    "FRIDGE",
+    "COVERED"
+  ]
+}
+```
+

@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_yeti
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_yeti|http://cdda.aloxaf.cn/search?q=mon_yeti]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_youkai.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_yeti",
+  "type": "MONSTER",
+  "name": {
+    "str": "sasquatch"
+  },
+  "copy-from": "mon_sasquatch",
+  "description": "The abominable snowman.  Looks and walks like a big gorilla, walking on two legs, with gray, not white fur covering its body.  Seems unlikely to look for friends during snowstorms.",
+  "default_faction": "touhou_yeti",
+  "hp": 190,
+  "speed": 145,
+  "looks_like": "mon_sasquatch",
+  "color": "dark_gray",
+  "aggression": 5,
+  "morale": 35,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 5,
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 4,
+  "armor_stab": 4,
+  "armor_bullet": 0,
+  "vision_day": 40,
+  "vision_night": 35,
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "fear_triggers": [
+    "FRIEND_DIED"
+  ],
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "GROUP_BASH",
+    "HEARS",
+    "KEENNOSE",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "WARM"
+  ],
+  "//": "Should only show up during WINTER, also should have a mi-go (true) component?"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_yeti",
+  "type": "MONSTER",
+  "name": {
+    "str": "sasquatch"
+  },
+  "copy-from": "mon_sasquatch",
+  "description": "The abominable snowman.  Looks and walks like a big gorilla, walking on two legs, with gray, not white fur covering its body.  Seems unlikely to look for friends during snowstorms.",
+  "default_faction": "touhou_yeti",
+  "hp": 190,
+  "speed": 145,
+  "looks_like": "mon_sasquatch",
+  "color": "dark_gray",
+  "aggression": 5,
+  "morale": 35,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 5,
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 4,
+  "armor_stab": 4,
+  "armor_bullet": 0,
+  "vision_day": 40,
+  "vision_night": 35,
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "fear_triggers": [
+    "FRIEND_DIED"
+  ],
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "GROUP_BASH",
+    "HEARS",
+    "KEENNOSE",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "WARM"
+  ],
+  "//": "Should only show up during WINTER, also should have a mi-go (true) component?"
+}
+```
+

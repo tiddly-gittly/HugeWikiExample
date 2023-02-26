@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_vector
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_vector|http://cdda.aloxaf.cn/search?q=mon_vector]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Unknown/Vector.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Alien plant creatures with similarities and resemblance to the CDDA's fungal critters.",
+  "id": "mon_vector",
+  "looks_like": "mon_fungaloid",
+  "type": "MONSTER",
+  "name": {
+    "str": "vector"
+  },
+  "description": "A briskly, nearly 10-feet tall light blue-ish plant with luminating broad leaves and errant stripes in its stem and branches, twitching wildly as it moves. Feeble yet pleasant to the sight, dust particles enshroud the creature that twinkles like a starry night sky.",
+  "default_faction": "vector",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 95,
+  "speed": 60,
+  "material": [
+    "veggy"
+  ],
+  "emit_fields": [
+    "secro_vector_normal",
+    "secro_vector_normal_seeding"
+  ],
+  "symbol": "V",
+  "color": "light_blue",
+  "attack_effs": [
+    {
+      "id": "vector_infect",
+      "duration": 120,
+      "chance": 5
+    }
+  ],
+  "aggression": -35,
+  "morale": 20,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 10,
+  "armor_bullet": 10,
+  "armor_stab": 10,
+  "armor_acid": 3,
+  "vision_day": 30,
+  "vision_night": 12,
+  "harvest": "exempt",
+  "luminance": 3,
+  "path_settings": {
+    "max_dist": 1
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "monster_message": "<color_yellow>%1$s blooms a vector haze!</color>",
+      "spell_data": {
+        "id": "mon_vector_rize_smol_check"
+      },
+      "cooldown": 16
+    }
+  ],
+  "upgrades": {
+    "age_grow": 6,
+    "into_group": "GROUP_VECTOR_GROW"
+  },
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "BASHES",
+    "GROUP_BASH",
+    "NOHEAD",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Alien plant creatures with similarities and resemblance to the CDDA's fungal critters.",
+  "id": "mon_vector",
+  "looks_like": "mon_fungaloid",
+  "type": "MONSTER",
+  "name": {
+    "str": "载体"
+  },
+  "description": "一种生机勃勃，近10英尺高的浅蓝色植物，叶亮而宽，茎和枝上有不规则的条纹，在运动时剧烈地抽搐。微弱但令人愉快的是，尘埃颗粒笼罩着这个像星空般闪烁的生物。",
+  "default_faction": "vector",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 95,
+  "speed": 60,
+  "material": [
+    "veggy"
+  ],
+  "emit_fields": [
+    "secro_vector_normal",
+    "secro_vector_normal_seeding"
+  ],
+  "symbol": "V",
+  "color": "light_blue",
+  "attack_effs": [
+    {
+      "id": "vector_infect",
+      "duration": 120,
+      "chance": 5
+    }
+  ],
+  "aggression": -35,
+  "morale": 20,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 10,
+  "armor_bullet": 10,
+  "armor_stab": 10,
+  "armor_acid": 3,
+  "vision_day": 30,
+  "vision_night": 12,
+  "harvest": "exempt",
+  "luminance": 3,
+  "path_settings": {
+    "max_dist": 1
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "monster_message": "<color_yellow>%1$s绽放出一股病毒迷雾！</color>",
+      "spell_data": {
+        "id": "mon_vector_rize_smol_check"
+      },
+      "cooldown": 16
+    }
+  ],
+  "upgrades": {
+    "age_grow": 6,
+    "into_group": "GROUP_VECTOR_GROW"
+  },
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "BASHES",
+    "GROUP_BASH",
+    "NOHEAD",
+    "NO_BREATHE"
+  ]
+}
+```
+

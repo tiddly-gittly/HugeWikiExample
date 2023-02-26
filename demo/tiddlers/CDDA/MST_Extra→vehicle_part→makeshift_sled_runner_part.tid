@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part MST_Extra
+title: MST_Extra→vehicle_part→makeshift_sled_runner_part
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：makeshift_sled_runner_part|http://cdda.aloxaf.cn/search?q=makeshift_sled_runner_part]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/vehicles/vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "makeshift_sled_runner_part",
+  "looks_like": "wheel_wood",
+  "type": "vehicle_part",
+  "name": "sled runners",
+  "item": "makeshift_sled_runners_item",
+  "location": "under",
+  "symbol": "o",
+  "broken_symbol": "x",
+  "color": "brown",
+  "durability": 25,
+  "damage_modifier": 50,
+  "folded_volume": 10,
+  "flags": [
+    "WHEEL",
+    "STABLE"
+  ],
+  "breaks_into": [
+    {
+      "item": "splinter",
+      "count": [
+        3,
+        6
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "survival",
+          0
+        ]
+      ],
+      "time": "15 m",
+      "using": [
+        [
+          "vehicle_sled",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "survival",
+          0
+        ]
+      ],
+      "time": "10 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "15 m",
+      "using": [
+        [
+          "vehicle_sled",
+          1
+        ]
+      ]
+    }
+  },
+  "damage_reduction": {
+    "all": 8
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "makeshift_sled_runner_part",
+  "looks_like": "wheel_wood",
+  "type": "vehicle_part",
+  "name": "雪橇滑行板",
+  "item": "makeshift_sled_runners_item",
+  "location": "under",
+  "symbol": "o",
+  "broken_symbol": "x",
+  "color": "brown",
+  "durability": 25,
+  "damage_modifier": 50,
+  "folded_volume": 10,
+  "flags": [
+    "WHEEL",
+    "STABLE"
+  ],
+  "breaks_into": [
+    {
+      "item": "splinter",
+      "count": [
+        3,
+        6
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "survival",
+          0
+        ]
+      ],
+      "time": "15 m",
+      "using": [
+        [
+          "vehicle_sled",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "survival",
+          0
+        ]
+      ],
+      "time": "10 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "15 m",
+      "using": [
+        [
+          "vehicle_sled",
+          1
+        ]
+      ]
+    }
+  },
+  "damage_reduction": {
+    "all": 8
+  }
+}
+```
+

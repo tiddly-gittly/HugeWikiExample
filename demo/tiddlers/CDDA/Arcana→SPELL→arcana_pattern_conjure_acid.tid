@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_pattern_conjure_acid
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_pattern_conjure_acid|http://cdda.aloxaf.cn/search?q=arcana_pattern_conjure_acid]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_pattern_scrolls.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_conjure_acid",
+  "name": {
+    "str": "Pattern: Conjure Acid"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_ACID",
+  "description": "This grants a specific spell mutation.",
+  "message": "You gaze deep into the strange patterns, dizzying orbital diagrams almost resembling a model of some complex chemical compound…",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_conjure_acid",
+  "name": {
+    "str": "图案：召唤酸"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_ACID",
+  "description": "这赋予了特定的咒语突变。",
+  "message": "你凝视着奇怪的图案，令人眼花缭乱的轨道图，几乎像是某种复杂化合物的模型……",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+

@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→SPELL→c_flesh_shotgun_regen
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_flesh_shotgun_regen|http://cdda.aloxaf.cn/search?q=c_flesh_shotgun_regen]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/legacy.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_flesh_shotgun_regen",
+  "type": "SPELL",
+  "name": {
+    "str": "Weave Magazine"
+  },
+  "description": "Creates a fleshwoven magazine.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "A tendril slithers from the biological scattergun and jabs into you, draining something before a small magazine of living flesh weaves itself together and sloughs off the weapon.",
+  "extra_effects": [
+    {
+      "id": "c_flesh_shotgun_regen_2",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "PERMANENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "flesh_shotgun_magazine",
+  "min_damage": 1,
+  "max_damage": 1,
+  "energy_source": "HP",
+  "base_energy_cost": 12,
+  "final_energy_cost": 12
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_flesh_shotgun_regen",
+  "type": "SPELL",
+  "name": {
+    "str": "Weave Magazine"
+  },
+  "description": "Creates a fleshwoven magazine.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "A tendril slithers from the biological scattergun and jabs into you, draining something before a small magazine of living flesh weaves itself together and sloughs off the weapon.",
+  "extra_effects": [
+    {
+      "id": "c_flesh_shotgun_regen_2",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "PERMANENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "flesh_shotgun_magazine",
+  "min_damage": 1,
+  "max_damage": 1,
+  "energy_source": "HP",
+  "base_energy_cost": 12,
+  "final_energy_cost": 12
+}
+```
+

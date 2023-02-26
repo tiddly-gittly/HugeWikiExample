@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: SPELL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→SPELL→mon_clawer_charge_pull
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_clawer_charge_pull|http://cdda.aloxaf.cn/search?q=mon_clawer_charge_pull]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_spell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_clawer_charge_pull",
+  "type": "SPELL",
+  "name": {
+    "str": "Charge"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sprints toward the target. This is casted randomly between 20 to 30 times.'",
+  "effect": "area_pull",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "mon_clawer_charge"
+    },
+    {
+      "id": "mon_charge_push"
+    }
+  ],
+  "min_aoe": 15,
+  "max_aoe": 15
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_clawer_charge_pull",
+  "type": "SPELL",
+  "name": {
+    "str": "冲锋"
+  },
+  "description": "怪物施法的。如果你看到了这个，那就读这个：\n'施法者冲向目标。这是随机铸造20至30次",
+  "effect": "area_pull",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "mon_clawer_charge"
+    },
+    {
+      "id": "mon_charge_push"
+    }
+  ],
+  "min_aoe": 15,
+  "max_aoe": 15
+}
+```
+

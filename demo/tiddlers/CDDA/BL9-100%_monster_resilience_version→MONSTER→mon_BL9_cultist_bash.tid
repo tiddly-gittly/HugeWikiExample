@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_cultist_bash
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_cultist_bash|http://cdda.aloxaf.cn/search?q=mon_BL9_cultist_bash]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/Infantry.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_cultist_bash",
+  "looks_like": "mon_dementia",
+  "type": "MONSTER",
+  "name": {
+    "str": "Armed BL9-Cultist - Flail"
+  },
+  "description": "A zealot infected by the BL9. It appears to be sentient, having all characteristics of a normal person except for strangely solemn gaze, deathly pale skin and bloodshot eyes indicating the BL9 presence, their motive is to kill those that didn't accept the blessing of their \"dios\", this one is armed with a flail and it seems to know how to use it well.",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "speed": 100,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 3,
+      "armor_penetration": 6
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 4,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "special_attacks": [
+    [
+      "PARROT",
+      11
+    ]
+  ],
+  "death_drops": "BL9_Drops_Cult",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_cultist_bash",
+  "looks_like": "mon_dementia",
+  "type": "MONSTER",
+  "name": {
+    "str": "武装BL9邪教者-连枷"
+  },
+  "description": "一个被BL9感染的狂热者。它似乎有知觉，拥有正常人的所有特征，除了奇怪的庄严凝视，死灰的皮肤和充血的眼睛表明BL9的存在，他们的动机是杀死那些不接受他们的“迪奥”祝福的人，这个人带着连枷，似乎知道如何很好地使用它。",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "speed": 100,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 3,
+      "armor_penetration": 6
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 4,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "special_attacks": [
+    [
+      "PARROT",
+      11
+    ]
+  ],
+  "death_drops": "BL9_Drops_Cult",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: terrain BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→terrain→t_card_military
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_card_military|http://cdda.aloxaf.cn/search?q=t_card_military]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_card_military",
+  "name": "card reader",
+  "description": "This is a smartcard reader.  The universal symbol of an eagle driving a tank, biting a grenade pin stands rampant in front of an American flag.  A small, red LED remains constant, as if watching you, waiting.  You could swipe a military ID card in front of the reader if you dared.",
+  "//": "Military",
+  "symbol": "6",
+  "color": "pink",
+  "move_cost": 0,
+  "flags": [
+    "NOITEM",
+    "CONNECT_TO_WALL"
+  ],
+  "examine_action": {
+    "type": "cardreader",
+    "flags": [
+      "MILITARY_CARD"
+    ],
+    "terrain_changes": {
+      "t_door_metal_locked": "t_door_metal_c"
+    },
+    "query_msg": "Swipe your ID card?",
+    "success_msg": "You insert your ID card.\n<color_light_green>The nearby doors unlock.</color>",
+    "redundant_msg": "The nearby doors are already opened."
+  },
+  "bash": {
+    "str_min": 740,
+    "str_max": 900,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "ter_set": "t_card_reader_broken",
+    "items": [
+      {
+        "item": "plastic_chunk",
+        "count": [
+          0,
+          2
+        ]
+      },
+      {
+        "item": "scrap",
+        "prob": 50
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_card_military",
+  "name": "读卡器",
+  "description": "这是智能读卡器。面板上展示着一个美国国旗和一只雄鹰驾驶着坦克，咬着一枚手榴弹插销的图案。一个小小的红色LED灯始终如一，仿佛在注视着你，等待着。如果你敢的话，也许一个军用ID卡可以刷卡开门。",
+  "//": "Military",
+  "symbol": "6",
+  "color": "pink",
+  "move_cost": 0,
+  "flags": [
+    "NOITEM",
+    "CONNECT_TO_WALL"
+  ],
+  "examine_action": {
+    "type": "cardreader",
+    "flags": [
+      "MILITARY_CARD"
+    ],
+    "terrain_changes": {
+      "t_door_metal_locked": "t_door_metal_c"
+    },
+    "query_msg": "Swipe your ID card?",
+    "success_msg": "You insert your ID card.\n<color_light_green>The nearby doors unlock.</color>",
+    "redundant_msg": "The nearby doors are already opened."
+  },
+  "bash": {
+    "str_min": 740,
+    "str_max": 900,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "ter_set": "t_card_reader_broken",
+    "items": [
+      {
+        "item": "plastic_chunk",
+        "count": [
+          0,
+          2
+        ]
+      },
+      {
+        "item": "scrap",
+        "prob": 50
+      }
+    ]
+  }
+}
+```
+

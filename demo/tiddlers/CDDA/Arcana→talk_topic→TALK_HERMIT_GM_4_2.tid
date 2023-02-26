@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_GM_4_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_GM_4_2|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_GM_4_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_HERMIT_GM_4_2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_VEIL",
+    "yes": "I do not know how to slay this enemy, Chosen.  But there is always an option.  No matter how desperate things may seem.  He From Beyond The Veil has no doubt conferred many blessings upon you, some may prove useful tools to aid you in your time of need, and no doubt many other weapons may be at your disposal.  I am hopeful then, that perseverance will see you through long enough to find your answer.",
+    "no": {
+      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "yes": "You are a member of the Cleaning Flame, are you not?  I can tell by that fire in your eyes.  Perhaps it is foolish of me to lecture one of you on the virtue of determination.  As your tenets say, so long as the Sun shines upon the Earth.  I'm afraid I know too little of this interloper to guide you.  I would say only to be cautious, but that too is what your order demands, is it not?",
+      "no": "I do not know what form this interloper may take, what dreadful power and madness you may face.  Be prepared for anything, but that advice is of little use to you.  That you do not lose hope is what's more useful to you.  Without that, you will not find the answers you seek."
+    }
+  },
+  "responses": [
+    {
+      "text": "Alright.  Thanks, I guess.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_HERMIT_GM_4_2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_VEIL",
+    "yes": "我不知道如何杀死这个被选中的敌人。但总有一个选择。不管事情看起来多么绝望，帷幕彼端古神无疑给了你许多祝福，一些可能被证明是有用的工具，在你需要的时候帮助你，毫无疑问，许多其他武器可能在你的使用。我希望，这种毅力会让你度过足够长的时间，找到你的答案。",
+    "no": {
+      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "yes": "你是清洁之火的一员，是吗？我能从你眼中的火光看出。也许我对你们中的一个人讲决心的美德是愚蠢的。正如你们的信条所说，只要太阳照耀地球。我也不太害怕这个闯入者。我只想说谨慎一点，但这也是你们订货的要求，不是吗？",
+      "no": "我不知道这个闯入者会采取什么形式，你会面临什么可怕的力量和疯狂。对任何事都要做好准备，但那建议对你没什么用处。你不要失去希望对你更有用。没有这些，你将无法找到你所寻求的答案。"
+    }
+  },
+  "responses": [
+    {
+      "text": "好吧。谢谢，我猜我该谢谢你。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: mapgen Dorf_Life
+title: Dorf_Life→mapgen→[42]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/mapgen_overlays.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_dumpshack",
+  "object": {
+    "mapgensize": [
+      9,
+      9
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "|||||||||",
+      "|ccccccc|",
+      "|'''''''|",
+      "|'''''''|",
+      "|'''''''|",
+      "|'''''''|",
+      "|'''''''|",
+      "|'''''''|",
+      "||||+||||"
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "'": "t_floor",
+      "c": "t_floor",
+      "|": "t_wall",
+      "+": "t_door_locked"
+    },
+    "furniture": {
+      "c": "f_counter"
+    },
+    "place_loot": [
+      {
+        "group": "toxic_dump_equipment",
+        "x": [
+          1,
+          8
+        ],
+        "y": 1,
+        "chance": 80,
+        "repeat": 3
+      },
+      {
+        "item": "id_military",
+        "x": [
+          3,
+          5
+        ],
+        "y": [
+          3,
+          5
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_dumpshack",
+  "object": {
+    "mapgensize": [
+      9,
+      9
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "|||||||||",
+      "|ccccccc|",
+      "|'''''''|",
+      "|'''''''|",
+      "|'''''''|",
+      "|'''''''|",
+      "|'''''''|",
+      "|'''''''|",
+      "||||+||||"
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "'": "t_floor",
+      "c": "t_floor",
+      "|": "t_wall",
+      "+": "t_door_locked"
+    },
+    "furniture": {
+      "c": "f_counter"
+    },
+    "place_loot": [
+      {
+        "group": "toxic_dump_equipment",
+        "x": [
+          1,
+          8
+        ],
+        "y": 1,
+        "chance": 80,
+        "repeat": 3
+      },
+      {
+        "item": "id_military",
+        "x": [
+          3,
+          5
+        ],
+        "y": [
+          3,
+          5
+        ]
+      }
+    ]
+  }
+}
+```
+

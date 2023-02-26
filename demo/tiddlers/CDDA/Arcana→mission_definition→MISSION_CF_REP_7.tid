@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_REP_7
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_REP_7|http://cdda.aloxaf.cn/search?q=MISSION_CF_REP_7]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_REP_7",
+  "type": "mission_definition",
+  "name": {
+    "str": "Bring Back Relay Beacon"
+  },
+  "description": "Retrieve a radio relay beacon from a radio station recently secured by a contact allied with the Cleansing Flame.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 5,
+  "value": 35000,
+  "has_generic_rewards": false,
+  "item": "arcana_radio_relay_beacon",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "station_radio_1",
+      "search_range": 360,
+      "reveal_radius": 3
+    },
+    "update_mapgen": [
+      {
+        "mapgen_update_id": "arcana_radio_station"
+      },
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_9_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_9_b"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Odin, guide my hand…",
+    "offer": "We've been working on finishing up some improvements to our outpost here.  One I've been looking into is improving our radio, to help get in touch with others.  Not long ago we received a brief burst of radio chatter that will lead us to a chance at killing two birds with one stone.  One of our contacts from before the apocalypse had evidently secured a radio transmitter and established contact, before something knocked out the signal.  I'd like you to investigate.",
+    "accepted": "Thank you.  They'd secured a radio station in one of the old towns, I'd advise caution.  They confirmed the use of what they called a relay beacon to make use of the station's transmitter.  It not only contains what they used to get their signal across to us, but a tracker that whoever else they're working with can use to get in touch with us.  Return with that and we should be able to re-establish contact.",
+    "rejected": "Please, speak with me if you change your mind.  We don't know who else they might be in contact with, nor whether they might move on before we can get in touch with them.",
+    "advice": "Be prepared for a fight.  They mentioned being followed by something, and that's going to be in addition to the usual abominations that infest the cities.",
+    "inquire": "Have you found it?",
+    "success": "Thank you.  This should provide the finishing touches.  I'll get to work immediately, I know the rest of them were already looking for us.  They should be here shortly, now that we have the means to extend our signal as well as a signal they can track.  That should be everything we need for now.",
+    "success_lie": "What do you think you're trying to pull?",
+    "failure": "But how…"
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_add_effect": "cf_mission_sofia_7",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 14
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_10_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_10_b"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_REP_7",
+  "type": "mission_definition",
+  "name": {
+    "str": "返回中继信标"
+  },
+  "description": "从一个电台取回一个无线电中继信标，该电台最近被一个与净化圣火联盟的联系所保护。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 5,
+  "value": 35000,
+  "has_generic_rewards": false,
+  "item": "arcana_radio_relay_beacon",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "station_radio_1",
+      "search_range": 360,
+      "reveal_radius": 3
+    },
+    "update_mapgen": [
+      {
+        "mapgen_update_id": "arcana_radio_station"
+      },
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_9_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_9_b"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "奥丁，牵着我的手…",
+    "offer": "我们一直在努力改进我们的前哨基地。我一直在研究的一个问题是改进我们的收音机，以便与其他人取得联系。不久前，我们收到一个简短的无线电谈话，这将使我们有机会一举两得。在世界末日之前，我们的一个联系人显然在有什么东西破坏了信号之前，固定了一个无线电发射器并建立了联系。我想让你调查一下。",
+    "accepted": "非常感谢。他们在一个老城里搞到了一个电台，我建议你小心点。他们确认使用他们所称的中继信标来利用空间站的发射机。它不仅包含了他们用来把信号传给我们的东西，还有一个跟踪器，不管他们和谁一起工作，都可以用来联系我们。带着它回去，我们就能重新建立联系了。",
+    "rejected": "如果你改变主意，请跟我说。我们不知道他们还会和谁联系，也不知道他们是否会在我们联系他们之前离开。",
+    "advice": "准备战斗。他们提到了被跟踪的东西，这将是除了通常在城市中流行的可憎的东西。",
+    "inquire": "你找到了吗？",
+    "success": "非常感谢。这应该是最后的润色。我马上就去工作，我知道其他人已经在找我们了。他们应该很快就到这里，现在我们有办法扩大我们的信号，以及他们可以跟踪的信号。这应该是我们现在需要的一切。",
+    "success_lie": "你觉得你想拉什么？",
+    "failure": "但是如何…"
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_add_effect": "cf_mission_sofia_7",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 14
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_10_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_10_b"
+      }
+    ]
+  }
+}
+```
+

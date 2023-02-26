@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MARLOSS_VOICE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MARLOSS_VOICE|http://cdda.aloxaf.cn/search?q=TALK_MARLOSS_VOICE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MARLOSS_VOICE.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_MARLOSS_VOICE",
+  "responses": [
+    {
+      "text": "For what purpose do you aid these interlopers?",
+      "topic": "TALK_MARLOSS_VOICE_INTERLOPERS",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_flag": "mycus"
+            }
+          },
+          {
+            "u_has_any_trait": [
+              "THRESH_VEIL",
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "PROF_CLEANSINGFLAME",
+              "PROF_CLEANSINGFLAME2"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_MARLOSS_VOICE",
+  "responses": [
+    {
+      "text": "你为这些闯入者提供什么帮助？",
+      "topic": "TALK_MARLOSS_VOICE_INTERLOPERS",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_flag": "mycus"
+            }
+          },
+          {
+            "u_has_any_trait": [
+              "THRESH_VEIL",
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "PROF_CLEANSINGFLAME",
+              "PROF_CLEANSINGFLAME2"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+

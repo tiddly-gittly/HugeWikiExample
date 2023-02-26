@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "You've heard of the Keepers of The Oath, haven't you?  The slaves to their new god from Beyond.  Our disagreements aside, it wasn't right how our order tricked them like that.  I don't know how much of the story you've heard, hunter, so ask away.",
+    "no": {
+      "u_has_any_trait": [
+        "PROF_CHALICE",
+        "PROF_CHALICE2"
+      ],
+      "yes": "You must know of it, don't you?  The magi, the corruption ritual, the THING that drowned the last gasp of both our orders in a deluge of blood and madness.  I hope the magus that concocted that scheme died there with the priests and had his soul devoured by the abomination they ended up summoning.  Tell me, Keeper.  What answers do you seek?",
+      "no": {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": "I wonder how much you know about that.  Brings to mind stories of the day our Order destroyed itself in its short-sightedness.  I can answer what questions you have.",
+        "no": "That brings back memories of a fascinating story, from the old days.  Of magi tampering with another order's sacred relic.  Practically blew up in their face, if I recall.  One of the incidents that encouraged us to break with the Sanguine Order.  What do you want to know about that old tale?"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "What did they do to the sword?",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_WHAT1"
+    },
+    {
+      "text": "What happened back then?",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_WHAT2"
+    },
+    {
+      "text": "I need help undoing the curse put upon it.",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_HELP"
+    },
+    {
+      "text": "Another time, maybe.",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "你听说过守誓者，是吗？那些仆从们从远方来到他们的新神那里。撇开我们的分歧不谈，我们不应该向他们隐瞒我们的行为。我不知道你听过多少故事，猎人，所以请你走开。",
+    "no": {
+      "u_has_any_trait": [
+        "PROF_CHALICE",
+        "PROF_CHALICE2"
+      ],
+      "yes": "你一定知道，不是吗？巫师，腐败仪式，把我们两个教团的最后一口气都淹没在血腥和疯狂之中的东西。我希望策划这个阴谋的法师和祭司们一起死在那里，他的灵魂被他们最后召唤的可憎之物吞噬。告诉我，守护者。你在寻找什么答案？",
+      "no": {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": "我不知道你知道多少。我们的秩序因短视而自我毁灭的故事让人记忆犹新。我可以回答你的问题。",
+        "no": "这让我想起了一个有趣的故事，从过去的日子。三博士篡改另一个骑士团的圣物。如果我记得的话，他们几乎被炸飞了。一个鼓励我们打破猩红教派的事件。关于那个古老的故事你想知道什么？"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "他们对剑做了什么？",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_WHAT1"
+    },
+    {
+      "text": "那时候发生了什么？",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_WHAT2"
+    },
+    {
+      "text": "我需要帮助解除诅咒。",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_HELP"
+    },
+    {
+      "text": "也许下次吧。",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+

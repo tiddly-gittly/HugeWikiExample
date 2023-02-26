@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_zombie_fire
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_fire|http://cdda.aloxaf.cn/search?q=mon_zombie_fire]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_fire",
+  "type": "MONSTER",
+  "name": {
+    "str": "crimson zombie"
+  },
+  "description": "A human body with crimson flesh, occasionally a flicker of flame can be seen.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 10,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 85,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 2,
+  "luminance": 8,
+  "harvest": "CBM_CIV",
+  "special_attacks": [
+    [
+      "FLAMETHROWER",
+      25
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "upgrades": {
+    "half_life": 28,
+    "into": "mon_zombie_nullfire"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "FIREPROOF",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_fire",
+  "type": "MONSTER",
+  "name": {
+    "str": "深红丧尸"
+  },
+  "description": "一个身上长满红色肉块的人形怪物，偶尔可以看到其中一闪一闪的火焰。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 10,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 85,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 2,
+  "luminance": 8,
+  "harvest": "CBM_CIV",
+  "special_attacks": [
+    [
+      "FLAMETHROWER",
+      25
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "upgrades": {
+    "half_life": 28,
+    "into": "mon_zombie_nullfire"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "FIREPROOF",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

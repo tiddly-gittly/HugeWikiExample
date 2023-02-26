@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MISSION_SEER_BLOOD_MAGIC
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MISSION_SEER_BLOOD_MAGIC|http://cdda.aloxaf.cn/search?q=TALK_MISSION_SEER_BLOOD_MAGIC]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BONE_SEER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MISSION_SEER_BLOOD_MAGIC",
+  "type": "talk_topic",
+  "dynamic_line": "I suspect it is you who does not understand.  This is understandable, but this is why I offer you this chance to learn the verses the bones seek to sing.  I know not of what you called it, but this is not a thing of blood.  Blood is an impure thing, far too transient to offer worthy songs.  It is shed wantonly, and does not hold the permanence that bones carry with them.",
+  "//": "This is framed in such a way that it idiotproofs the dialogue, because TALK_NONE can potentially put you into a loop.",
+  "responses": [
+    {
+      "text": "If you insist, we'll see.  Explain again what you're asking of me.",
+      "topic": "TALK_MISSION_OFFER_SEER",
+      "effect": {
+        "u_add_var": "blood_magic_query",
+        "type": "dialogue",
+        "context": "blood_magic",
+        "value": "yes"
+      }
+    },
+    {
+      "text": "I need time to consider this.",
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "[ATTACK] You are treading dangerously close to things you do not truly understand.  I can't let you corrupt anyone else.  Ecce, sanguinem magum…",
+      "effect": "insult_combat",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MISSION_SEER_BLOOD_MAGIC",
+  "type": "talk_topic",
+  "dynamic_line": "我怀疑你不明白，但这是可以被理解的，这就是为什么我给你这个机会来学习骨头所吟唱的诗歌。我不知道你怎样称呼它，但都不是像血液这样的东西。血液是一种不纯之物，如烟云般短暂，无法谱写任何诗词。它的变化随意且混乱，不像骨头那般永恒。",
+  "//": "This is framed in such a way that it idiotproofs the dialogue, because TALK_NONE can potentially put you into a loop.",
+  "responses": [
+    {
+      "text": "如果你坚持的话，那就让我们拭目以待。再跟我说一遍你的要求。",
+      "topic": "TALK_MISSION_OFFER_SEER",
+      "effect": {
+        "u_add_var": "blood_magic_query",
+        "type": "dialogue",
+        "context": "blood_magic",
+        "value": "yes"
+      }
+    },
+    {
+      "text": "我需要时间考虑一下。",
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "[攻击]你正在逐渐涉足你所不理解的事物。我不会让你去腐蚀他人的，看啊，圣洁之血...",
+      "effect": "insult_combat",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

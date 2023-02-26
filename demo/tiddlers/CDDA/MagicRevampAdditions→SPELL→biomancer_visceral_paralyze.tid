@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→biomancer_visceral_paralyze
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：biomancer_visceral_paralyze|http://cdda.aloxaf.cn/search?q=biomancer_visceral_paralyze]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/biomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "biomancer_visceral_paralyze",
+  "type": "SPELL",
+  "name": {
+    "str": "Visceral Paralysis"
+  },
+  "description": "Paralytic side effect of Projection.",
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "effect": "attack",
+  "effect_str": "biomancer_dart_venom",
+  "shape": "blast",
+  "flags": [
+    "SILENT"
+  ],
+  "max_level": 30,
+  "min_aoe": 2,
+  "max_aoe": 9,
+  "aoe_increment": 0.2,
+  "min_duration": 6000,
+  "max_duration": 27000,
+  "duration_increment": 450,
+  "field_id": "fd_gibs_flesh",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "biomancer_visceral_paralyze",
+  "type": "SPELL",
+  "name": {
+    "str": "脏腑麻痹"
+  },
+  "description": "由于脏腑四射导致的麻痹副作用。",
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "effect": "attack",
+  "effect_str": "biomancer_dart_venom",
+  "shape": "blast",
+  "flags": [
+    "SILENT"
+  ],
+  "max_level": 30,
+  "min_aoe": 2,
+  "max_aoe": 9,
+  "aoe_increment": 0.2,
+  "min_duration": 6000,
+  "max_duration": 27000,
+  "duration_increment": 450,
+  "field_id": "fd_gibs_flesh",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.1
+}
+```
+

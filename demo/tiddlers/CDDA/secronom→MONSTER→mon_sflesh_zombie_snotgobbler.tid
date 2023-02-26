@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_snotgobbler
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_snotgobbler|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_snotgobbler]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_snotgobbler",
+  "type": "MONSTER",
+  "name": {
+    "str": "snotgobbler"
+  },
+  "description": "This swollen, gooey looking mutant child looks bad, even for a zombie.  Maybe that's why it seems to want a hug so badly.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 31,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "z",
+  "color": "pink",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 3,
+      "damage_type": "cut"
+    }
+  ],
+  "armor_bash": 4,
+  "dodge": 1,
+  "vision_day": 30,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "GRAB",
+      5
+    ]
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "default_zombie_clothes",
+        100
+      ],
+      [
+        "child_items",
+        65
+      ]
+    ]
+  },
+  "death_function": {
+    "effect": {
+      "id": "death_boomer",
+      "hit_self": true
+    },
+    "message": "A %s explode!"
+  },
+  "burn_into": "mon_zombie_snotgobbler",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_snotgobbler",
+  "type": "MONSTER",
+  "name": {
+    "str": "小鼻涕鬼丧尸"
+  },
+  "description": "这个肿胀的，黏糊糊的变种孩子看起来很糟糕，甚至对一个丧尸来说。也许这就是为什么它如此渴望拥抱。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 31,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "z",
+  "color": "pink",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 3,
+      "damage_type": "cut"
+    }
+  ],
+  "armor_bash": 4,
+  "dodge": 1,
+  "vision_day": 30,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "GRAB",
+      5
+    ]
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "default_zombie_clothes",
+        100
+      ],
+      [
+        "child_items",
+        65
+      ]
+    ]
+  },
+  "death_function": {
+    "effect": {
+      "id": "death_boomer",
+      "hit_self": true
+    },
+    "message": "A %s explode!"
+  },
+  "burn_into": "mon_zombie_snotgobbler",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

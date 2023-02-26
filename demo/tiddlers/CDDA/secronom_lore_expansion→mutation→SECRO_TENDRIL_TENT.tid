@@ -1,0 +1,379 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_TENDRIL_TENT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_TENDRIL_TENT|http://cdda.aloxaf.cn/search?q=SECRO_TENDRIL_TENT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_TENDRIL_TENT",
+  "name": {
+    "str": "Tendricles"
+  },
+  "points": -5,
+  "visibility": 6,
+  "ugliness": 10,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "Your whole body has small wriggly tentacle outgrowths, while your tendril pairs became shorter in length, increasing dex by 1 and decreasing their encumbrance and impact damage. The outgrowths are tough, providing 1 bash resistance to all body parts, yet increases their encumbrance by 5 and becomes much more uncomfortable when wearing tight clothes.",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l",
+    "hand_r"
+  ],
+  "prereqs": [
+    "SECRO_TENDRIL"
+  ],
+  "leads_to": [
+    "SECRO_TENDRIL_TENT_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      15
+    ],
+    [
+      "hand_r",
+      15
+    ],
+    [
+      "foot_r",
+      5
+    ],
+    [
+      "foot_l",
+      5
+    ],
+    [
+      "leg_r",
+      5
+    ],
+    [
+      "leg_l",
+      5
+    ],
+    [
+      "torso",
+      5
+    ],
+    [
+      "head",
+      5
+    ],
+    [
+      "arm_l",
+      5
+    ],
+    [
+      "arm_r",
+      5
+    ]
+  ],
+  "encumbrance_covered": [
+    [
+      "hand_l",
+      25
+    ],
+    [
+      "hand_r",
+      25
+    ],
+    [
+      "foot_r",
+      25
+    ],
+    [
+      "foot_l",
+      25
+    ],
+    [
+      "leg_r",
+      25
+    ],
+    [
+      "leg_l",
+      25
+    ],
+    [
+      "torso",
+      25
+    ],
+    [
+      "head",
+      25
+    ],
+    [
+      "arm_l",
+      25
+    ],
+    [
+      "arm_r",
+      25
+    ]
+  ],
+  "rand_bash_bonus": {
+    "min": 1,
+    "max": 2
+  },
+  "attacks": [
+    {
+      "attack_text_u": "You slap %s with your tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their tendrils",
+      "body_part": "hand_l",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.375
+      }
+    },
+    {
+      "attack_text_u": "You slap %s with your tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their tendrils",
+      "body_part": "hand_r",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.375
+      }
+    },
+    {
+      "attack_text_u": "You pierced %s with your tendrils",
+      "attack_text_npc": "%1$s pierces %2$s with their tendrils",
+      "body_part": "hand_l",
+      "chance": 30,
+      "strength_damage": {
+        "damage_type": "stab",
+        "amount": 0.3
+      }
+    },
+    {
+      "attack_text_u": "You pierced %s with your tendrils",
+      "attack_text_npc": "%1$s pierces %2$s with their tendrils",
+      "body_part": "hand_r",
+      "chance": 30,
+      "strength_damage": {
+        "damage_type": "stab",
+        "amount": 0.3
+      }
+    }
+  ],
+  "armor": [
+    {
+      "parts": [
+        "arm_l",
+        "arm_r"
+      ],
+      "bash": 1
+    },
+    {
+      "parts": "ALL",
+      "bash": 2
+    }
+  ],
+  "passive_mods": {
+    "dex_mod": 1
+  },
+  "attackcost_modifier": 0.95,
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_TENDRIL_TENT",
+  "name": {
+    "str": "腱"
+  },
+  "points": -5,
+  "visibility": 6,
+  "ugliness": 10,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "你的整个身体都有小的蠕动的触手，而你的卷须对长度变短，增加1的dex和减少他们的负担和冲击伤害。这些赘肉很坚硬，对身体的所有部位都有一个冲击累赘，但会使它们的负担增加5，穿紧身衣服时会变得更不舒服。",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l",
+    "hand_r"
+  ],
+  "prereqs": [
+    "SECRO_TENDRIL"
+  ],
+  "leads_to": [
+    "SECRO_TENDRIL_TENT_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      15
+    ],
+    [
+      "hand_r",
+      15
+    ],
+    [
+      "foot_r",
+      5
+    ],
+    [
+      "foot_l",
+      5
+    ],
+    [
+      "leg_r",
+      5
+    ],
+    [
+      "leg_l",
+      5
+    ],
+    [
+      "torso",
+      5
+    ],
+    [
+      "head",
+      5
+    ],
+    [
+      "arm_l",
+      5
+    ],
+    [
+      "arm_r",
+      5
+    ]
+  ],
+  "encumbrance_covered": [
+    [
+      "hand_l",
+      25
+    ],
+    [
+      "hand_r",
+      25
+    ],
+    [
+      "foot_r",
+      25
+    ],
+    [
+      "foot_l",
+      25
+    ],
+    [
+      "leg_r",
+      25
+    ],
+    [
+      "leg_l",
+      25
+    ],
+    [
+      "torso",
+      25
+    ],
+    [
+      "head",
+      25
+    ],
+    [
+      "arm_l",
+      25
+    ],
+    [
+      "arm_r",
+      25
+    ]
+  ],
+  "rand_bash_bonus": {
+    "min": 1,
+    "max": 2
+  },
+  "attacks": [
+    {
+      "attack_text_u": "You slap %s with your tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their tendrils",
+      "body_part": "hand_l",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.375
+      }
+    },
+    {
+      "attack_text_u": "You slap %s with your tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their tendrils",
+      "body_part": "hand_r",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.375
+      }
+    },
+    {
+      "attack_text_u": "You pierced %s with your tendrils",
+      "attack_text_npc": "%1$s pierces %2$s with their tendrils",
+      "body_part": "hand_l",
+      "chance": 30,
+      "strength_damage": {
+        "damage_type": "stab",
+        "amount": 0.3
+      }
+    },
+    {
+      "attack_text_u": "You pierced %s with your tendrils",
+      "attack_text_npc": "%1$s pierces %2$s with their tendrils",
+      "body_part": "hand_r",
+      "chance": 30,
+      "strength_damage": {
+        "damage_type": "stab",
+        "amount": 0.3
+      }
+    }
+  ],
+  "armor": [
+    {
+      "parts": [
+        "arm_l",
+        "arm_r"
+      ],
+      "bash": 1
+    },
+    {
+      "parts": "ALL",
+      "bash": 2
+    }
+  ],
+  "passive_mods": {
+    "dex_mod": 1
+  },
+  "attackcost_modifier": 0.95,
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

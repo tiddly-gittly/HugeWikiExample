@@ -1,0 +1,57 @@
+creator: 林一二
+revision: 0
+tags: talk_topic secronom_lore_expansion
+title: secronom_lore_expansion→talk_topic→TALK_SECRO_RESEARCHER_mission1_where
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SECRO_RESEARCHER_mission1_where|http://cdda.aloxaf.cn/search?q=TALK_SECRO_RESEARCHER_mission1_where]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/Dialogues/secro_researcher.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_RESEARCHER_mission1_where",
+  "dynamic_line": "That's not necessary, as while you were dealing with the enigma chamber, I've sent a scout drone to search for that specimen using a tracker device, and it may take a while for its report.",
+  "responses": [
+    {
+      "text": "Okay... I'll wait for it.",
+      "topic": "TALK_SECRO_RESEARCHER_main",
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_researcher_mission1_gonnastart"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_RESEARCHER_mission1_where",
+  "dynamic_line": "这是没有必要的，因为当你在处理神秘密室的时候，我已经派了一架侦察机去用追踪装置搜索那个标本，它的报告可能需要一段时间。",
+  "responses": [
+    {
+      "text": "可以…我会等的。",
+      "topic": "TALK_SECRO_RESEARCHER_main",
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_researcher_mission1_gonnastart"
+      }
+    }
+  ]
+}
+```
+

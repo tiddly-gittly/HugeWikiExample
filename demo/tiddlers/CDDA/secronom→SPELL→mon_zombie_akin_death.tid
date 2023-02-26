@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_akin_death
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_akin_death|http://cdda.aloxaf.cn/search?q=mon_zombie_akin_death]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_ondeath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_akin_death",
+  "type": "SPELL",
+  "name": {
+    "str": "Visceral Collapse"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's death removes its debuffs from the targets.'",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_akin_death",
+  "min_aoe": 40,
+  "max_aoe": 40,
+  "min_duration": 100,
+  "max_duration": 100
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_akin_death",
+  "type": "SPELL",
+  "name": {
+    "str": "内脏塌陷"
+  },
+  "description": "怪物施法。如果你看到了这一点，那么请阅读这一条：\n“施法者之死消除了其对目标的减益。”",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_akin_death",
+  "min_aoe": 40,
+  "max_aoe": 40,
+  "min_duration": 100,
+  "max_duration": 100
+}
+```
+

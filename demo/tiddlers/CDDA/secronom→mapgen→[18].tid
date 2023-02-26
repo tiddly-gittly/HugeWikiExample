@@ -1,0 +1,792 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[18]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/Flesh/flesh_city.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Hardware Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 375,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "________________________",
+      "________________________",
+      "~~~~~~~~~~~_____________",
+      "~~~~~~~~~~~_____________",
+      "*|-----++-|_____________",
+      "*|[[[[...]|_____________",
+      "*|.......]O_____________",
+      "*|[.[....]|-----------|~",
+      "*|[.[.....y[[[[[[[[[[[|~",
+      "*|[.[.................|~",
+      "*|[.[.#%###...........|~",
+      "*|[...#l.....[[[[[[[[[|~",
+      "*|-+-------.----------|~",
+      "*|..y|]]]]].]]]]]]]]|~~~",
+      "*|&.S|..............|~**",
+      "*|||||]]]]].]]]]]]]]|~**",
+      "*****|..............|~**",
+      "*****|dh............O___",
+      "*****|dd..@@@@.h....;___",
+      "*****|O-------------|___",
+      "****************_4UU____",
+      "****************________",
+      "****************________",
+      "************************"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "%": "t_secro_console_broken_flesh",
+      "*": [
+        [
+          "t_secro_grass_flesh",
+          5
+        ],
+        [
+          "t_secro_grass_long_flesh",
+          2
+        ],
+        "t_secro_dirt_flesh",
+        "t_secro_shrub_flesh"
+      ],
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_wall_w_flesh",
+      ".": "t_secro_floor_flesh",
+      ";": "t_secro_door_locked_flesh",
+      "O": "t_secro_window_flesh",
+      "_": "t_secro_pavement_flesh",
+      "U": "t_secro_pavement_flesh",
+      "|": "t_secro_wall_w_flesh",
+      "~": "t_secro_sidewalk_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "@": "f_locker",
+      "[": "f_bookcase",
+      "]": "f_rack",
+      "d": "f_desk",
+      "h": "f_chair",
+      "l": "f_stool",
+      "S": "f_sink",
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ],
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "place_items": [
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          6,
+          10
+        ],
+        "y": 13,
+        "chance": 85,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          12,
+          19
+        ],
+        "y": 13,
+        "chance": 85,
+        "repeat": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          6,
+          10
+        ],
+        "y": 15,
+        "chance": 85,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          12,
+          19
+        ],
+        "y": 15,
+        "chance": 85,
+        "repeat": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          2,
+          5
+        ],
+        "y": 5,
+        "chance": 90,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          11,
+          21
+        ],
+        "y": 8,
+        "chance": 90,
+        "repeat": [
+          3,
+          8
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          13,
+          21
+        ],
+        "y": 11,
+        "chance": 90,
+        "repeat": [
+          3,
+          6
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": 2,
+        "y": [
+          7,
+          11
+        ],
+        "chance": 90,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": 4,
+        "y": [
+          7,
+          10
+        ],
+        "chance": 90,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": 9,
+        "y": [
+          5,
+          7
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          10,
+          13
+        ],
+        "y": 18,
+        "chance": 80,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "item": "hardware",
+        "x": [
+          14,
+          19
+        ],
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "office",
+        "x": 6,
+        "y": [
+          17,
+          18
+        ],
+        "chance": 50
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Hardware Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 375,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "________________________",
+      "________________________",
+      "~~~~~~~~~~~_____________",
+      "~~~~~~~~~~~_____________",
+      "*|-----++-|_____________",
+      "*|[[[[...]|_____________",
+      "*|.......]O_____________",
+      "*|[.[....]|-----------|~",
+      "*|[.[.....y[[[[[[[[[[[|~",
+      "*|[.[.................|~",
+      "*|[.[.#%###...........|~",
+      "*|[...#l.....[[[[[[[[[|~",
+      "*|-+-------.----------|~",
+      "*|..y|]]]]].]]]]]]]]|~~~",
+      "*|&.S|..............|~**",
+      "*|||||]]]]].]]]]]]]]|~**",
+      "*****|..............|~**",
+      "*****|dh............O___",
+      "*****|dd..@@@@.h....;___",
+      "*****|O-------------|___",
+      "****************_4UU____",
+      "****************________",
+      "****************________",
+      "************************"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "%": "t_secro_console_broken_flesh",
+      "*": [
+        [
+          "t_secro_grass_flesh",
+          5
+        ],
+        [
+          "t_secro_grass_long_flesh",
+          2
+        ],
+        "t_secro_dirt_flesh",
+        "t_secro_shrub_flesh"
+      ],
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_wall_w_flesh",
+      ".": "t_secro_floor_flesh",
+      ";": "t_secro_door_locked_flesh",
+      "O": "t_secro_window_flesh",
+      "_": "t_secro_pavement_flesh",
+      "U": "t_secro_pavement_flesh",
+      "|": "t_secro_wall_w_flesh",
+      "~": "t_secro_sidewalk_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "@": "f_locker",
+      "[": "f_bookcase",
+      "]": "f_rack",
+      "d": "f_desk",
+      "h": "f_chair",
+      "l": "f_stool",
+      "S": "f_sink",
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ],
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "place_items": [
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          6,
+          10
+        ],
+        "y": 13,
+        "chance": 85,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          12,
+          19
+        ],
+        "y": 13,
+        "chance": 85,
+        "repeat": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          6,
+          10
+        ],
+        "y": 15,
+        "chance": 85,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          12,
+          19
+        ],
+        "y": 15,
+        "chance": 85,
+        "repeat": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          2,
+          5
+        ],
+        "y": 5,
+        "chance": 90,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          11,
+          21
+        ],
+        "y": 8,
+        "chance": 90,
+        "repeat": [
+          3,
+          8
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          13,
+          21
+        ],
+        "y": 11,
+        "chance": 90,
+        "repeat": [
+          3,
+          6
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": 2,
+        "y": [
+          7,
+          11
+        ],
+        "chance": 90,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": 4,
+        "y": [
+          7,
+          10
+        ],
+        "chance": 90,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": 9,
+        "y": [
+          5,
+          7
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          10,
+          13
+        ],
+        "y": 18,
+        "chance": 80,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "item": "hardware",
+        "x": [
+          14,
+          19
+        ],
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "office",
+        "x": 6,
+        "y": [
+          17,
+          18
+        ],
+        "chance": 50
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Hardware Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 375,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "________________________",
+      "________________________",
+      "~~~~~~~~~~~_____________",
+      "~~~~~~~~~~~_____________",
+      "*|-----++-|_____________",
+      "*|[[[[...]|_____________",
+      "*|.......]O_____________",
+      "*|[.[....]|-----------|~",
+      "*|[.[.....y[[[[[[[[[[[|~",
+      "*|[.[.................|~",
+      "*|[.[.#%###...........|~",
+      "*|[...#l.....[[[[[[[[[|~",
+      "*|-+-------.----------|~",
+      "*|..y|]]]]].]]]]]]]]|~~~",
+      "*|&.S|..............|~**",
+      "*|||||]]]]].]]]]]]]]|~**",
+      "*****|..............|~**",
+      "*****|dh............O___",
+      "*****|dd..@@@@.h....;___",
+      "*****|O-------------|___",
+      "****************_4UU____",
+      "****************________",
+      "****************________",
+      "************************"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "%": "t_secro_console_broken_flesh",
+      "*": [
+        [
+          "t_secro_grass_flesh",
+          5
+        ],
+        [
+          "t_secro_grass_long_flesh",
+          2
+        ],
+        "t_secro_dirt_flesh",
+        "t_secro_shrub_flesh"
+      ],
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_wall_w_flesh",
+      ".": "t_secro_floor_flesh",
+      ";": "t_secro_door_locked_flesh",
+      "O": "t_secro_window_flesh",
+      "_": "t_secro_pavement_flesh",
+      "U": "t_secro_pavement_flesh",
+      "|": "t_secro_wall_w_flesh",
+      "~": "t_secro_sidewalk_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "@": "f_locker",
+      "[": "f_bookcase",
+      "]": "f_rack",
+      "d": "f_desk",
+      "h": "f_chair",
+      "l": "f_stool",
+      "S": "f_sink",
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ],
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "place_items": [
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          6,
+          10
+        ],
+        "y": 13,
+        "chance": 85,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          12,
+          19
+        ],
+        "y": 13,
+        "chance": 85,
+        "repeat": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          6,
+          10
+        ],
+        "y": 15,
+        "chance": 85,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "plumbing_bulk",
+        "x": [
+          12,
+          19
+        ],
+        "y": 15,
+        "chance": 85,
+        "repeat": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          2,
+          5
+        ],
+        "y": 5,
+        "chance": 90,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          11,
+          21
+        ],
+        "y": 8,
+        "chance": 90,
+        "repeat": [
+          3,
+          8
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          13,
+          21
+        ],
+        "y": 11,
+        "chance": 90,
+        "repeat": [
+          3,
+          6
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": 2,
+        "y": [
+          7,
+          11
+        ],
+        "chance": 90,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": 4,
+        "y": [
+          7,
+          10
+        ],
+        "chance": 90,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": 9,
+        "y": [
+          5,
+          7
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "hardware_plumbing",
+        "x": [
+          10,
+          13
+        ],
+        "y": 18,
+        "chance": 80,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "item": "hardware",
+        "x": [
+          14,
+          19
+        ],
+        "y": [
+          16,
+          18
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "office",
+        "x": 6,
+        "y": [
+          17,
+          18
+        ],
+        "chance": 50
+      }
+    ]
+  }
+}
+```
+

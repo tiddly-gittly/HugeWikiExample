@@ -1,0 +1,291 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_seraphic_shade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_seraphic_shade|http://cdda.aloxaf.cn/search?q=mon_seraphic_shade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_seraphic_shade",
+  "type": "MONSTER",
+  "name": {
+    "str": "seraphic shade"
+  },
+  "description": "A tall living shadow with a humanoid silhouette.  Six projections of shifting darkness disrupt its outline, giving the impression of a six-winged figure.  An outright tangible aura of malevolence radiates from it.",
+  "default_faction": "archon",
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "NETHER"
+  ],
+  "volume": "77500 ml",
+  "weight": "81500 g",
+  "diff": 50,
+  "hp": 1750,
+  "speed": 80,
+  "symbol": "H",
+  "looks_like": "mon_darkman",
+  "color": "blue",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 7,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "cold",
+      "amount": 9,
+      "armor_multiplier": 0.1
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 15,
+  "armor_cut": 5,
+  "armor_stab": 10,
+  "armor_bullet": 25,
+  "armor_fire": 20,
+  "armor_acid": 25,
+  "vision_day": 50,
+  "vision_night": 50,
+  "luminance": 1,
+  "harvest": "exempt",
+  "starting_ammo": {
+    "bot_vortex": 5,
+    "bot_shadows_fake": 5,
+    "bot_seraphic_mimic": 10
+  },
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -50
+    ],
+    [
+      "dazed",
+      -25
+    ]
+  ],
+  "regenerates_in_dark": true,
+  "regen_morale": true,
+  "special_attacks": [
+    [
+      "STARE",
+      75
+    ],
+    [
+      "FEAR_PARALYZE",
+      50
+    ],
+    [
+      "GRENADIER_ELITE",
+      20
+    ],
+    [
+      "PARROT",
+      40
+    ],
+    {
+      "type": "gun",
+      "cooldown": 25,
+      "move_cost": 50,
+      "gun_type": "monster_laser_fake",
+      "fake_str": 8,
+      "fake_dex": 7,
+      "fake_per": 9,
+      "ranges": [
+        [
+          2,
+          20,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": false,
+      "description": "A radiant beam of otherworldly energy lances out from the seraphic shade's body!",
+      "no_ammo_sound": "a horrific screech!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_archon_gaze_improved"
+      },
+      "cooldown": 25,
+      "monster_message": "You briefly sense the seraphic shade's otherworldly presence, as it glares at %3$s."
+    }
+  ],
+  "death_drops": "mon_seraphic_shade_death_drops",
+  "death_function": {
+    "message": "The %s's body evaporates.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "PATH_AVOID_DANGER_2",
+    "CAN_OPEN_DOORS",
+    "PRIORITIZE_TARGETS",
+    "SEES",
+    "FLIES",
+    "HARDTOSHOOT",
+    "STUN_IMMUNE",
+    "STUMBLES",
+    "PUSH_MON",
+    "NO_BREATHE",
+    "NOHEAD",
+    "COLDPROOF",
+    "QUEEN"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_seraphic_shade",
+  "type": "MONSTER",
+  "name": {
+    "str": "天使之影"
+  },
+  "description": "一个有人形轮廓的高高的活生生的影子。黑暗的六个投影破坏了它的轮廓，给人一个六翼人物的印象。一种彻头彻尾的明显的恶意光环从它身上散发出来。",
+  "default_faction": "archon",
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "NETHER"
+  ],
+  "volume": "77500 ml",
+  "weight": "81500 g",
+  "diff": 50,
+  "hp": 1750,
+  "speed": 80,
+  "symbol": "H",
+  "looks_like": "mon_darkman",
+  "color": "blue",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 7,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "cold",
+      "amount": 9,
+      "armor_multiplier": 0.1
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 15,
+  "armor_cut": 5,
+  "armor_stab": 10,
+  "armor_bullet": 25,
+  "armor_fire": 20,
+  "armor_acid": 25,
+  "vision_day": 50,
+  "vision_night": 50,
+  "luminance": 1,
+  "harvest": "exempt",
+  "starting_ammo": {
+    "bot_vortex": 5,
+    "bot_shadows_fake": 5,
+    "bot_seraphic_mimic": 10
+  },
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -50
+    ],
+    [
+      "dazed",
+      -25
+    ]
+  ],
+  "regenerates_in_dark": true,
+  "regen_morale": true,
+  "special_attacks": [
+    [
+      "STARE",
+      75
+    ],
+    [
+      "FEAR_PARALYZE",
+      50
+    ],
+    [
+      "GRENADIER_ELITE",
+      20
+    ],
+    [
+      "PARROT",
+      40
+    ],
+    {
+      "type": "gun",
+      "cooldown": 25,
+      "move_cost": 50,
+      "gun_type": "monster_laser_fake",
+      "fake_str": 8,
+      "fake_dex": 7,
+      "fake_per": 9,
+      "ranges": [
+        [
+          2,
+          20,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": false,
+      "description": "一束超自然能量的光芒从天使之影的身体里喷发出来！",
+      "no_ammo_sound": "一声可怕的尖叫！"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_archon_gaze_improved"
+      },
+      "cooldown": 25,
+      "monster_message": "你会短暂地感觉到六边形阴影的超自然存在，因为它在%3$s闪耀。"
+    }
+  ],
+  "death_drops": "mon_seraphic_shade_death_drops",
+  "death_function": {
+    "message": "The %s's body evaporates.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "PATH_AVOID_DANGER_2",
+    "CAN_OPEN_DOORS",
+    "PRIORITIZE_TARGETS",
+    "SEES",
+    "FLIES",
+    "HARDTOSHOOT",
+    "STUN_IMMUNE",
+    "STUMBLES",
+    "PUSH_MON",
+    "NO_BREATHE",
+    "NOHEAD",
+    "COLDPROOF",
+    "QUEEN"
+  ]
+}
+```
+

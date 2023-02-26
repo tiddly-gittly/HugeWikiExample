@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→t4_blood_riptide
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t4_blood_riptide|http://cdda.aloxaf.cn/search?q=t4_blood_riptide]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/Hemomancer/v_blood_T4.json
+
+
+!! 原文
+
+```json
+{
+  "id": "t4_blood_riptide",
+  "type": "SPELL",
+  "name": {
+    "str": "Riptide"
+  },
+  "description": "Conjures a large amount of blood to strike the targets inside a wide cone, dealing <color_magenta>bashing damage</color>.\n\nThis is a <color_light_red>tier 4</color> spell.",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "base_energy_cost": 10,
+  "final_energy_cost": 15,
+  "energy_source": "HP",
+  "spell_class": "VAMP_BLOOD_spellcaster",
+  "difficulty": 3,
+  "min_damage": 30,
+  "max_damage": 90,
+  "max_level": 20,
+  "min_aoe": 60,
+  "max_aoe": 60,
+  "min_range": 5,
+  "max_range": 10,
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "base_casting_time": 225,
+  "field_id": "fd_blood",
+  "min_field_intensity": 1,
+  "max_field_intensity": 2,
+  "field_chance": 5,
+  "damage_type": "bash"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "t4_blood_riptide",
+  "type": "SPELL",
+  "name": {
+    "str": "激流"
+  },
+  "description": "召唤大量鲜血打击一个大圆锥体内的目标，造成<color_magenta>点打击伤害</color>点。\n\n这是一个<color_light_red>第4层的咒语。",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "base_energy_cost": 10,
+  "final_energy_cost": 15,
+  "energy_source": "HP",
+  "spell_class": "VAMP_BLOOD_spellcaster",
+  "difficulty": 3,
+  "min_damage": 30,
+  "max_damage": 90,
+  "max_level": 20,
+  "min_aoe": 60,
+  "max_aoe": 60,
+  "min_range": 5,
+  "max_range": 10,
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "base_casting_time": 225,
+  "field_id": "fd_blood",
+  "min_field_intensity": 1,
+  "max_field_intensity": 2,
+  "field_chance": 5,
+  "damage_type": "bash"
+}
+```
+

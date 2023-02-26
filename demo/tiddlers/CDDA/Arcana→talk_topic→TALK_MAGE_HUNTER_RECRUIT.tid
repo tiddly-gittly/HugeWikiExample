@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MAGE_HUNTER_RECRUIT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MAGE_HUNTER_RECRUIT|http://cdda.aloxaf.cn/search?q=TALK_MAGE_HUNTER_RECRUIT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MAGE_HUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_RECRUIT",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "So long as the Sun shines upon the Earth.  I am prepared to do my duty.",
+    "So be it.  When you're ready.",
+    "Dii vult.  Let's go.",
+    "We'll manage, but thank you.  Speak with Sofia, she might have something for you to do.",
+    {
+      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "yes": {
+        "u_male": "As you see fit, Brother.",
+        "no": "As you see fit, Sister."
+      },
+      "no": "As you see fit."
+    },
+    {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": [
+        "I sure hope Sofia knows what she's doing… let's go then.",
+        "Alright.  Stay in my sight.",
+        "I see.  Be careful, and remember.  This thing is a threat, not something to toy around with."
+      ],
+      "no": "At your command, then."
+    }
+  ],
+  "responses": [
+    {
+      "text": "Let's go.",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "u_add_effect": "cf_mission_3_recruited",
+          "duration": "PERMANENT"
+        },
+        "follow"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_RECRUIT",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "只要太阳照耀地球。我准备履行我的职责。",
+    "就这样吧。等你准备好了。",
+    "迪伊·瓦特。走吧。",
+    "我们会设法的，但谢谢你。跟索菲亚谈谈，她可能有事要你做。",
+    {
+      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "yes": {
+        "u_male": "As you see fit, Brother.",
+        "no": "As you see fit, Sister."
+      },
+      "no": "As you see fit."
+    },
+    {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": [
+        "I sure hope Sofia knows what she's doing… let's go then.",
+        "Alright.  Stay in my sight.",
+        "I see.  Be careful, and remember.  This thing is a threat, not something to toy around with."
+      ],
+      "no": "At your command, then."
+    }
+  ],
+  "responses": [
+    {
+      "text": "一起走吧。",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "u_add_effect": "cf_mission_3_recruited",
+          "duration": "PERMANENT"
+        },
+        "follow"
+      ]
+    }
+  ]
+}
+```
+

@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_titan_charging_stop_random
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_titan_charging_stop_random|http://cdda.aloxaf.cn/search?q=mon_zombie_titan_charging_stop_random]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_zombie_titan_charging_stop_random",
+  "name": {
+    "str": "a spell"
+  },
+  "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_titan_charging_stop",
+      "hit_self": true
+    },
+    {
+      "id": "secro_spell_null"
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "WONDER"
+  ],
+  "valid_targets": [
+    "none"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 1,
+  "max_damage": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_zombie_titan_charging_stop_random",
+  "name": {
+    "str": "一个法术"
+  },
+  "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_titan_charging_stop",
+      "hit_self": true
+    },
+    {
+      "id": "secro_spell_null"
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "WONDER"
+  ],
+  "valid_targets": [
+    "none"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 1,
+  "max_damage": 1
+}
+```
+

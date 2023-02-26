@@ -1,0 +1,283 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CLEANSINGFLAME
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CLEANSINGFLAME|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CLEANSINGFLAME]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CLEANSINGFLAME",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "I was right.  You are still a hunter.  And yet, you've strayed beyond what is proper for your order.  They still sent you, didn't they?  Explain yourself.",
+    "no": {
+      "u_has_trait": "THRESH_VEIL",
+      "yes": "There's something about you, hunter.  Something anomalous.  You're not just here on behalf of the Cleansing Flame, are you?  What is it you seek?",
+      "no": "And what makes you think I would trust your intentions?  Your kind have destroyed so much, knowledge that could've been used to adapt and survive in these trying times."
+    }
+  },
+  "responses": [
+    {
+      "text": "I have used what methods I deem necessary.  I am here to ensure our future, not just my own survival.",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_FALLEN"
+    },
+    {
+      "text": "I am more than just a hunter, now.  I understand the importance of working together, using any means necessary, to ensure humanity's survival.  Will you aid us with this?",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "THRESH_VEIL"
+          },
+          {
+            "u_has_effect": "shrike_inquire_denied"
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
+      "opinion": {
+        "anger": 2
+      }
+    },
+    {
+      "text": "I am more than just a hunter, now.  I understand the importance of working together, using any means necessary, to ensure humanity's survival.  Will you aid us with this?",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 50
+      },
+      "switch": true,
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CHOSEN",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_FAILURE",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        }
+      }
+    },
+    {
+      "text": "We have a community that is thriving, making developments to ensure our survival.  If humanity's survival is your focus as well, then we are not enemies.",
+      "condition": {
+        "u_has_effect": "shrike_inquire_denied"
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
+      "opinion": {
+        "anger": 3
+      }
+    },
+    {
+      "text": "We have a community that is thriving, making developments to ensure our survival.  If humanity's survival is your focus as well, then we are not enemies.",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 15
+      },
+      "switch": true,
+      "default": true,
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_SUCCESS",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        }
+      }
+    },
+    {
+      "text": "If I had any ill intent here, you would already be dead, and I would've simply taken what we're after.  Is that sufficient proof?",
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 30
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_DEFIANT",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        },
+        "effect": [
+          {
+            "u_faction_rep": -30
+          },
+          "insult_combat"
+        ]
+      }
+    },
+    {
+      "text": "Nevermind…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CLEANSINGFLAME",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "我是对的。你还是个猎人。然而，你已经偏离了你的秩序。他们还是派你来的，不是吗？你自己解释一下。",
+    "no": {
+      "u_has_trait": "THRESH_VEIL",
+      "yes": "你有些事，猎人。不正常的事。你不是来这里代表净化圣火的吧？你在找什么？",
+      "no": "你凭什么认为我会相信你的意图？你们这帮人毁了这么多本可以用来适应和生存的知识。"
+    }
+  },
+  "responses": [
+    {
+      "text": "我用了我认为必要的方法。我来这里是为了确保我们的未来，而不仅仅是为了我自己的生存。",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_FALLEN"
+    },
+    {
+      "text": "我现在不仅仅是个猎人。我理解为确保人类生存而共同努力的重要性，使用任何必要的手段。你能帮我们吗？",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "THRESH_VEIL"
+          },
+          {
+            "u_has_effect": "shrike_inquire_denied"
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
+      "opinion": {
+        "anger": 2
+      }
+    },
+    {
+      "text": "我现在不仅仅是个猎人。我理解为确保人类生存而共同努力的重要性，使用任何必要的手段。你能帮我们吗？",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 50
+      },
+      "switch": true,
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CHOSEN",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_FAILURE",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        }
+      }
+    },
+    {
+      "text": "我们有一个欣欣向荣的社区，不断发展以确保我们的生存。如果人类的生存也是你关注的焦点，那么我们不是敌人。",
+      "condition": {
+        "u_has_effect": "shrike_inquire_denied"
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
+      "opinion": {
+        "anger": 3
+      }
+    },
+    {
+      "text": "我们有一个欣欣向荣的社区，不断发展以确保我们的生存。如果人类的生存也是你关注的焦点，那么我们不是敌人。",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 15
+      },
+      "switch": true,
+      "default": true,
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_SUCCESS",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        }
+      }
+    },
+    {
+      "text": "如果我在这里有什么恶意，你早就死了，而我只会拿走我们想要的东西。这充分证明了吗？",
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 30
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_DEFIANT",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        },
+        "effect": [
+          {
+            "u_faction_rep": -30
+          },
+          "insult_combat"
+        ]
+      }
+    },
+    {
+      "text": "别担心…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+

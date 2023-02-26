@@ -1,0 +1,247 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_DEACON
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_DEACON|http://cdda.aloxaf.cn/search?q=TALK_CF_DEACON]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_DEACON.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_DEACON",
+  "dynamic_line": {
+    "u_is_wearing": "badge_marshal",
+    "yes": "Hello, Marshal.  How may I help you?",
+    "no": "Hello.  How may I help you?"
+  },
+  "responses": [
+    {
+      "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_DEACON_GM_PRELUDE"
+    },
+    {
+      "text": "[MISSION] I spoke with Sofia.  They're doing alright, so far.",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "sofia_deacon_message"
+          },
+          {
+            "not": {
+              "u_has_mission": "MISSION_CF_DEACON_1"
+            }
+          },
+          {
+            "not": {
+              "npc_has_effect": "rural_church_aware"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_DEACON_MISSION_BACKDOOR"
+    },
+    {
+      "text": "[MISSION] Sofia asked me to find additional trade partners and labor to help build the outpost they're working on.  Can you give me any advice?",
+      "topic": "TALK_CF_DEACON_MISSION_CF_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "npc_has_var": "sofia_refugee_convinced",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Who are you?",
+      "topic": "TALK_CF_DEACON_WHO"
+    },
+    {
+      "text": "What do you do here?",
+      "topic": "TALK_CF_DEACON_DO"
+    },
+    {
+      "text": "Need help with anything?",
+      "condition": {
+        "not": {
+          "u_has_effect": "already_asked_deacon"
+        }
+      },
+      "topic": "TALK_CF_DEACON_HELP"
+    },
+    {
+      "text": "Well, bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_DEACON",
+  "dynamic_line": {
+    "u_is_wearing": "badge_marshal",
+    "yes": "你好，执法官。需要我为你做些什么？",
+    "no": "你好。我能帮你什么忙？"
+  },
+  "responses": [
+    {
+      "text": "我被派去询问最近有什么异常生物袭击幸存者。知道吗？",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_DEACON_GM_PRELUDE"
+    },
+    {
+      "text": "[任务]我和索菲亚谈过了。到目前为止，他们做得还不错。",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "sofia_deacon_message"
+          },
+          {
+            "not": {
+              "u_has_mission": "MISSION_CF_DEACON_1"
+            }
+          },
+          {
+            "not": {
+              "npc_has_effect": "rural_church_aware"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_DEACON_MISSION_BACKDOOR"
+    },
+    {
+      "text": "[任务]索菲亚要求我寻找更多的贸易伙伴和劳动力，帮助他们建立前哨站。你能给我一些建议吗？",
+      "topic": "TALK_CF_DEACON_MISSION_CF_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "npc_has_var": "sofia_refugee_convinced",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    },
+    {
+      "text": "你是谁？",
+      "topic": "TALK_CF_DEACON_WHO"
+    },
+    {
+      "text": "你在这里做什么？",
+      "topic": "TALK_CF_DEACON_DO"
+    },
+    {
+      "text": "能帮你什么忙吗？",
+      "condition": {
+        "not": {
+          "u_has_effect": "already_asked_deacon"
+        }
+      },
+      "topic": "TALK_CF_DEACON_HELP"
+    },
+    {
+      "text": "好的，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

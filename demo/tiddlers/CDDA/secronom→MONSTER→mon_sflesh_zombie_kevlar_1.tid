@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_kevlar_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_kevlar_1|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_kevlar_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_kevlar_1",
+  "type": "MONSTER",
+  "name": {
+    "str": "Kevlar zombie"
+  },
+  "description": "This zombie was once wearing some kind of uniform with heavy, bulletproof materials sewn in.  At this point it's impossible to tell what kind of uniform it was: the monster's skin has grown over the fabric, splitting and tearing it to shreds, turning the remaining Kevlar and other bits of armor material into part of its hide.  Its hands, similarly, have fused into large leathery cudgels.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "72500 ml",
+  "weight": "85500 g",
+  "hp": 188,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 23,
+  "armor_cut": 30,
+  "armor_bullet": 23,
+  "vision_day": 30,
+  "vision_night": 5,
+  "harvest": "zombie_kevlar",
+  "special_attacks": [
+    {
+      "id": "slam",
+      "cooldown": 10,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 12
+        }
+      ]
+    },
+    [
+      "SMASH",
+      30
+    ]
+  ],
+  "death_drops": "mon_zombie_kevlar_death_drops",
+  "burn_into": "mon_zombie_kevlar_1",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_kevlar_1",
+  "type": "MONSTER",
+  "name": {
+    "str": "凯夫拉丧尸"
+  },
+  "description": "这只丧尸曾经穿着一种有重型防弹材料夹层的制服，但现在怪物的外皮已经覆盖在原有布料上，将制服撕裂成碎片，把剩下的凯夫拉装甲和其他防弹材料变成了它的一部分。同样的，它的双手也融合成了巨大的厚皮粗棒。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "72500 ml",
+  "weight": "85500 g",
+  "hp": 188,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 23,
+  "armor_cut": 30,
+  "armor_bullet": 23,
+  "vision_day": 30,
+  "vision_night": 5,
+  "harvest": "zombie_kevlar",
+  "special_attacks": [
+    {
+      "id": "slam",
+      "cooldown": 10,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 12
+        }
+      ]
+    },
+    [
+      "SMASH",
+      30
+    ]
+  ],
+  "death_drops": "mon_zombie_kevlar_death_drops",
+  "burn_into": "mon_zombie_kevlar_1",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

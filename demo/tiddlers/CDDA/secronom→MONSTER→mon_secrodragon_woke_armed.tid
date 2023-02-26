@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_secrodragon_woke_armed
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_secrodragon_woke_armed|http://cdda.aloxaf.cn/search?q=mon_secrodragon_woke_armed]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Bots/SecronomDragon.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_secrodragon_woke_armed",
+  "copy-from": "mon_secrodragon_woke",
+  "type": "MONSTER",
+  "name": {
+    "str": "secronom dragon (armed)"
+  },
+  "description": "This massively armored reptilian has its own purpose: ERADICATION.\nIt's the product of technological advancements using mere bionics, altogether with vast weaponry installations to form the \"SAVIOR\".",
+  "color": "white_red",
+  "speed": 30,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_secrodragon_woke_armed_target"
+      },
+      "cooldown": 5,
+      "monster_message": "<color_light_red>%1$s's reinforcer bots detaches from its hips as it engages for combat!</color>\n<color_dark_gray>The reinforcer bots shoot off and take their distance.</color>"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_secrodragon_woke_armed",
+  "copy-from": "mon_secrodragon_woke",
+  "type": "MONSTER",
+  "name": {
+    "str": "生物武器-龙（武装状态）"
+  },
+  "description": "这种身披铠甲的爬行动物有自己的目的：消灭它。\n它是技术进步的产物，仅仅使用仿生学，再加上庞大的武器装备，形成了“救世主”。",
+  "color": "white_red",
+  "speed": 30,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_secrodragon_woke_armed_target"
+      },
+      "cooldown": 5,
+      "monster_message": "<color_light_red>%1$s在战斗中从髋关节处发射了强化机器人！</color> \n <color_dark_gray>强化机器人被发射了出来，并正在保持与目标距离。</color>"
+    }
+  ]
+}
+```
+

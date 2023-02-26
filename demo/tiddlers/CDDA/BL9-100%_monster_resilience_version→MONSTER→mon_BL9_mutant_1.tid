@@ -1,0 +1,207 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_mutant_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_mutant_1|http://cdda.aloxaf.cn/search?q=mon_BL9_mutant_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/Infantry.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_mutant_1",
+  "looks_like": "mon_zombie_gasbag_impaler",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9 Mutant - Type i "
+  },
+  "description": "A BL9-infused human with it's head ruptured, revealing a slender, tendril-like whip. This whip is tipped with a sharp and flexible blade.",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 172,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5,
+      "armor_penetration": 7
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "death_drops": "BL9_Drops_Tendril",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 7,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's blade-like whip at you!",
+      "hit_dmg_npc": "The %1$s swings it's blade-like whip at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's blade-like whip at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swings it's blade-like whip at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's blade-like whip at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's blade-like whip at <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "BL9_1_horizontalslash"
+      },
+      "cooldown": 10,
+      "monster_message": "<color_light_red>%1$s sweeps it's bladed tendril at %3$s!\nThe tendril writhes wildly!</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_mutant_1",
+  "looks_like": "mon_zombie_gasbag_impaler",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9突变体-Ⅰ型"
+  },
+  "description": "一个被注射了BL9的人，其头部已经裂开成了两半，其中露出一条细长的卷须状鞭子。而在这鞭子顶端长着一根锋利且灵活的尖刃。",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 172,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5,
+      "armor_penetration": 7
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "death_drops": "BL9_Drops_Tendril",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 7,
+          "armor_penetration": 10
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's blade-like whip at you!",
+      "hit_dmg_npc": "The %1$s swings it's blade-like whip at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's blade-like whip at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swings it's blade-like whip at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's blade-like whip at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's blade-like whip at <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "BL9_1_horizontalslash"
+      },
+      "cooldown": 10,
+      "monster_message": "<color_light_red>%1$s用其锋利的触手大幅扫向%3$s！\n触手正在空气中疯狂的扭动！</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

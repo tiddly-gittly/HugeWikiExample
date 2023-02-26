@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→mutation→VAMPIRE_BAT_REMI_active
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMPIRE_BAT_REMI_active|http://cdda.aloxaf.cn/search?q=VAMPIRE_BAT_REMI_active]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMPIRE_BAT_REMI_active",
+  "type": "mutation",
+  "name": "Vampire shapeshifting (bat)",
+  "copy-from": "VAMPIRE_BAT_REMI",
+  "description": "If nothing else revealed you're a vampire, this will surely do.  You're currently transformed into bat form.  Activate the mutation to switch forms.",
+  "active": true,
+  "ugliness": 4,
+  "visibility": 6,
+  "weight_capacity_modifier": 0.33,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "ench_effects": [
+        {
+          "effect": "remi_levitation",
+          "intensity": 1
+        }
+      ],
+      "values": [
+        {
+          "value": "FOOTSTEP_NOISE",
+          "multiply": -0.8
+        },
+        {
+          "value": "MELEE_DAMAGE",
+          "multiply": -0.5
+        },
+        {
+          "value": "METABOLISM",
+          "multiply": -0.5
+        }
+      ]
+    }
+  ],
+  "transform": {
+    "target": "VAMPIRE_BAT_REMI",
+    "active": false,
+    "moves": 100
+  },
+  "extend": {
+    "flags": [
+      "SMALL"
+    ]
+  },
+  "cancels": [
+    "WINGS_BAT",
+    "WINGS_BIRD",
+    "WINGS_BUTTERFLY",
+    "WINGS_INSECT",
+    "WINGS_STUB"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMPIRE_BAT_REMI_active",
+  "type": "mutation",
+  "name": "吸血鬼变形（蝙蝠）",
+  "copy-from": "VAMPIRE_BAT_REMI",
+  "description": "If nothing else revealed you're a vampire, this will surely do.  You're currently transformed into bat form.  Activate the mutation to switch forms.",
+  "active": true,
+  "ugliness": 4,
+  "visibility": 6,
+  "weight_capacity_modifier": 0.33,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "ench_effects": [
+        {
+          "effect": "remi_levitation",
+          "intensity": 1
+        }
+      ],
+      "values": [
+        {
+          "value": "FOOTSTEP_NOISE",
+          "multiply": -0.8
+        },
+        {
+          "value": "MELEE_DAMAGE",
+          "multiply": -0.5
+        },
+        {
+          "value": "METABOLISM",
+          "multiply": -0.5
+        }
+      ]
+    }
+  ],
+  "transform": {
+    "target": "VAMPIRE_BAT_REMI",
+    "active": false,
+    "moves": 100
+  },
+  "extend": {
+    "flags": [
+      "SMALL"
+    ]
+  },
+  "cancels": [
+    "WINGS_BAT",
+    "WINGS_BIRD",
+    "WINGS_BUTTERFLY",
+    "WINGS_INSECT",
+    "WINGS_STUB"
+  ]
+}
+```
+

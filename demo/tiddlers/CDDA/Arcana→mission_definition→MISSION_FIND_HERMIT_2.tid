@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_FIND_HERMIT_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_FIND_HERMIT_2|http://cdda.aloxaf.cn/search?q=MISSION_FIND_HERMIT_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_FIND_HERMIT_2",
+  "type": "mission_definition",
+  "name": {
+    "str": "Reach Ruined Shrine"
+  },
+  "description": "Lead your companion to the suspected location of a ruined shrine, that allegedly didn't exist before the cataclysm…",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 4,
+  "value": 40000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_FIND_HERMIT_3",
+  "destination": "shrine_anomaly",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "shrine_anomaly",
+      "om_special": "Ruined Shrine",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "dialogue": {
+    "describe": "If you see this, it's a bug!",
+    "offer": "I've tried to think about what I can recall from the dreams.  Seeing that last place with my own eyes brought a bit of clarity to what I remember.  There's another place that stood out, another part of the countryside I've been to with strange features that shouldn't be there.  It might be more useful to investigate than the last place, too.",
+    "accepted": "I've been in that part of the countryside before, and what I saw in the dream definitely wasn't there back then.  Looked a bit more dangerous but there might be something valuable to make up for it.  And if there's nothing there, fine by me.  Would mean those dreams are just that, and nothing meaningful.",
+    "rejected": "Alright.  Talk to me if you change your mind.  Maybe that last place was a fluke, maybe it had been there all this time and I just didn't remember until now.",
+    "advice": "I saw some sort of artificial structure, otherworldly but definitely manmade.  Or made by something, at least.  Expect anomalous monsters, whatever other hazards if any of it's actually real.",
+    "inquire": "Any luck so far?",
+    "success": "This place is giving me the creeps.  It's real alright, too damn real.  We should be careful, clean the place out if you want but might be worth seeing if anything else I can recall stands out.",
+    "success_lie": "What madness is this?",
+    "failure": "How …?"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_FIND_HERMIT_2",
+  "type": "mission_definition",
+  "name": {
+    "str": "到达毁坏的神殿"
+  },
+  "description": "带你的同伴去一个被破坏的神殿的可疑地点，据说在大灾变之前不存在…",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 4,
+  "value": 40000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_FIND_HERMIT_3",
+  "destination": "shrine_anomaly",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "shrine_anomaly",
+      "om_special": "Ruined Shrine",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "dialogue": {
+    "describe": "If you see this, it's a bug!",
+    "offer": "我试着想想我能从梦中回忆起什么。亲眼看到最后一个地方，让我的记忆更加清晰。还有一个地方很突出，我去过的乡村的另一个地方，有着不该有的奇怪特征。调查可能比最后一个地方更有用。",
+    "accepted": "我以前去过乡下的那个地方，我在梦里看到的肯定不在那时候。看上去有点危险，但也许有什么值得弥补的。如果什么都没有，我很好。意味着那些梦就是这样，没有任何意义。",
+    "rejected": "好吧。如果你改变主意就跟我说。也许最后一个地方是个侥幸，也许它一直在那里，我只是直到现在才想起。",
+    "advice": "我看到了某种人造结构，超凡脱俗但绝对是人造的。或者至少是做的。期待异常的怪物，无论其他危险，如果任何一个是真的。",
+    "inquire": "到目前为止有什么进展吗？",
+    "success": "这个地方让我毛骨悚然。这是真的，好吧，太他妈的真实了。我们应该小心，如果你愿意的话，把这个地方打扫干净，但如果还有什么我能记得的地方值得一看。",
+    "success_lie": "这是什么疯狂？",
+    "failure": "如何…？"
+  }
+}
+```
+

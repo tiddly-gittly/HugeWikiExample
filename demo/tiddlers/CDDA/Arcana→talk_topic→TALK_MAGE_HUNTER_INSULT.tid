@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MAGE_HUNTER_INSULT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MAGE_HUNTER_INSULT|http://cdda.aloxaf.cn/search?q=TALK_MAGE_HUNTER_INSULT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MAGE_HUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_INSULT",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "Sofia's orders are the only reason you lived long enough to make it past the front door.  I suggest you leave while you still can.",
+    "Our very founding was due to vermin like you preying upon the innocent.  You should be satisfied with being allowed to live.",
+    "If you're foolish enough to start a fight in OUR sanctum, I will be happy to send you to whatever Hell awaits you.",
+    "Go on.  Give me a reason, impium profligatum.",
+    "Prove you can be trusted, then.  Or you can slither away like the serpent you are, blood mage.",
+    "I have every reason to slay you where you stand, until you prove yourself.  If not for my orders, you would already be dead."
+  ],
+  "responses": [
+    {
+      "text": "[ATTACK] If that's the way you're going to be, then I'll send you and your misbegotten kin to meet your so-called gods.",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "u_faction_rep": -30
+        },
+        "insult_combat"
+      ],
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "cf_mission_1"
+            }
+          },
+          {
+            "u_has_trait": "PROF_SANGUINE"
+          }
+        ]
+      }
+    },
+    {
+      "text": "…",
+      "topic": "TALK_MAGE_HUNTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_INSULT",
+  "type": "talk_topic",
+  "dynamic_line": [
+    "索菲亚的命令是你活得够久的唯一原因。我建议你趁还可以的时候离开。",
+    "我们的成立是因为像你这样的害虫在掠夺无辜。你应该对被允许生活感到满意。",
+    "如果你蠢到在我们的圣殿里打架，我很乐意把你送到地狱里去。",
+    "继续给我一个理由，浪荡鬼。",
+    "那就证明你是可以信任的。或者你可以像蛇一样溜走，血法师。",
+    "我有充分的理由在你证明自己之前杀了你。如果不是我的命令，你早就死了。"
+  ],
+  "responses": [
+    {
+      "text": "[攻击]如果你是这样的话，那我就派你和你的冤家去见你所谓的神。",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "u_faction_rep": -30
+        },
+        "insult_combat"
+      ],
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "cf_mission_1"
+            }
+          },
+          {
+            "u_has_trait": "PROF_SANGUINE"
+          }
+        ]
+      }
+    },
+    {
+      "text": "…",
+      "topic": "TALK_MAGE_HUNTER"
+    }
+  ]
+}
+```
+

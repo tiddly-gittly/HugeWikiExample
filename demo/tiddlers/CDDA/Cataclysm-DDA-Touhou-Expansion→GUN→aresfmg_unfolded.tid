@@ -1,0 +1,199 @@
+creator: 林一二
+revision: 0
+tags: GUN Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUN→aresfmg_unfolded
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：aresfmg_unfolded|http://cdda.aloxaf.cn/search?q=aresfmg_unfolded]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gun/thex_generic_gun.json
+
+
+!! 原文
+
+```json
+{
+  "id": "aresfmg_unfolded",
+  "type": "GUN",
+  "name": {
+    "str": "ARES FMG",
+    "str_pl": "ARES FMG"
+  },
+  "description": "A very compact, unfolded SMG.  Made from steel, it's ready to shoot.",
+  "volume": "1200 ml",
+  "weight": "2090 g",
+  "longest_side": "503 mm",
+  "//": "Estimated dimensions unfolded: 40*500*40 mm body + 40*200*40 mm handle",
+  "price": 40000,
+  "price_postapoc": 1500,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "solid",
+    "length": "short",
+    "surface": "point"
+  },
+  "bashing": 10,
+  "material": [
+    "steel"
+  ],
+  "symbol": "[",
+  "looks_like": "uzi",
+  "color": "dark_gray",
+  "ammo": [
+    "9mm"
+  ],
+  "skill": "smg",
+  "dispersion": 360,
+  "durability": 6,
+  "reload_noise_volume": 10,
+  "blackpowder_tolerance": 24,
+  "min_cycle_recoil": 450,
+  "modes": [
+    [
+      "DEFAULT",
+      "burst",
+      4
+    ]
+  ],
+  "valid_mod_locations": [
+    [
+      "accessories",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "sights mount",
+      1
+    ]
+  ],
+  "//2": "stock: folding stock, adjustable stock; stock mount: stock mount; stock accessory: cheeck pad, butt hook",
+  "faults": [
+    "fault_gun_blackpowder",
+    "fault_gun_dirt",
+    "fault_gun_chamber_spent"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "item_restriction": [
+        "uzimag_20rd",
+        "uzimag_25rd",
+        "uzimag",
+        "mp40mag_32rd"
+      ]
+    }
+  ],
+  "use_action": {
+    "target": "aresfmg_folded",
+    "type": "transform",
+    "msg": "You fold the weapon.",
+    "menu_text": "Fold weapon",
+    "moves": 100
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "aresfmg_unfolded",
+  "type": "GUN",
+  "name": {
+    "str": "ARES FMG",
+    "str_pl": "ARES FMG"
+  },
+  "description": "A very compact, unfolded SMG.  Made from steel, it's ready to shoot.",
+  "volume": "1200 ml",
+  "weight": "2090 g",
+  "longest_side": "503 mm",
+  "//": "Estimated dimensions unfolded: 40*500*40 mm body + 40*200*40 mm handle",
+  "price": 40000,
+  "price_postapoc": 1500,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "solid",
+    "length": "short",
+    "surface": "point"
+  },
+  "bashing": 10,
+  "material": [
+    "steel"
+  ],
+  "symbol": "[",
+  "looks_like": "uzi",
+  "color": "dark_gray",
+  "ammo": [
+    "9mm"
+  ],
+  "skill": "smg",
+  "dispersion": 360,
+  "durability": 6,
+  "reload_noise_volume": 10,
+  "blackpowder_tolerance": 24,
+  "min_cycle_recoil": 450,
+  "modes": [
+    [
+      "DEFAULT",
+      "burst",
+      4
+    ]
+  ],
+  "valid_mod_locations": [
+    [
+      "accessories",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "sights mount",
+      1
+    ]
+  ],
+  "//2": "stock: folding stock, adjustable stock; stock mount: stock mount; stock accessory: cheeck pad, butt hook",
+  "faults": [
+    "fault_gun_blackpowder",
+    "fault_gun_dirt",
+    "fault_gun_chamber_spent"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "item_restriction": [
+        "uzimag_20rd",
+        "uzimag_25rd",
+        "uzimag",
+        "mp40mag_32rd"
+      ]
+    }
+  ],
+  "use_action": {
+    "target": "aresfmg_folded",
+    "type": "transform",
+    "msg": "You fold the weapon.",
+    "menu_text": "Fold weapon",
+    "moves": 100
+  }
+}
+```
+

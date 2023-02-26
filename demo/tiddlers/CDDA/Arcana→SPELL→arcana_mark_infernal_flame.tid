@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_mark_infernal_flame
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mark_infernal_flame|http://cdda.aloxaf.cn/search?q=arcana_mark_infernal_flame]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_sanguine_marks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_mark_infernal_flame",
+  "type": "SPELL",
+  "name": {
+    "str": "Mark: Infernal Breath"
+  },
+  "description": "Sanguine Mark\nUsing this spell will channel your inner fire into a devastating blast, inflicting horrific burns and leaving a permanent scar upon the land.  Be careful using it around allies, and beware the risk of damaging the fabric of reality.",
+  "message": "A bolt of flame leaps from your mouth, shaped into unholy fire with a wave of the hand.  %s!",
+  "effect": "attack",
+  "shape": "line",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SILENT",
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_fire_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_infernal_flame_corruption",
+      "hit_self": false,
+      "max_level": 5
+    },
+    {
+      "id": "arcana_aftermath_infernal_flame_field",
+      "hit_self": false,
+      "max_level": 5
+    },
+    {
+      "id": "arcana_aftermath_infernal_flame_noise",
+      "hit_self": false,
+      "max_level": 5
+    },
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_7",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "//": "Full damage with no spike effect, for single-target and line spells.",
+  "min_damage": 140,
+  "max_damage": 350,
+  "damage_increment": 42,
+  "effect_str": "bleed",
+  "min_duration": 1400,
+  "max_duration": 3500,
+  "duration_increment": 420,
+  "min_range": 10,
+  "max_range": 15,
+  "range_increment": 1,
+  "max_level": 5,
+  "difficulty": 70,
+  "skill": "magic",
+  "base_casting_time": 240,
+  "final_casting_time": 120,
+  "casting_time_increment": -24,
+  "energy_source": "HP",
+  "base_energy_cost": 32,
+  "final_energy_cost": 16,
+  "energy_increment": -3.2,
+  "damage_type": "heat",
+  "field_id": "fd_fire",
+  "field_chance": 3,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.4,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_mark_infernal_flame",
+  "type": "SPELL",
+  "name": {
+    "str": "印记：地狱之气"
+  },
+  "description": "猩红印记\n使用此法术将引导你的内心之火进入毁灭性爆炸，造成可怕的烧伤，并在土地上留下永久的疤痕。在盟友周围小心使用它，并小心破坏现实结构的风险。",
+  "message": "一道火焰从你的嘴中喷出，用手一挥就变成了邪恶之火。%s ！",
+  "effect": "attack",
+  "shape": "line",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SILENT",
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_fire_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_infernal_flame_corruption",
+      "hit_self": false,
+      "max_level": 5
+    },
+    {
+      "id": "arcana_aftermath_infernal_flame_field",
+      "hit_self": false,
+      "max_level": 5
+    },
+    {
+      "id": "arcana_aftermath_infernal_flame_noise",
+      "hit_self": false,
+      "max_level": 5
+    },
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_7",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "//": "Full damage with no spike effect, for single-target and line spells.",
+  "min_damage": 140,
+  "max_damage": 350,
+  "damage_increment": 42,
+  "effect_str": "bleed",
+  "min_duration": 1400,
+  "max_duration": 3500,
+  "duration_increment": 420,
+  "min_range": 10,
+  "max_range": 15,
+  "range_increment": 1,
+  "max_level": 5,
+  "difficulty": 70,
+  "skill": "magic",
+  "base_casting_time": 240,
+  "final_casting_time": 120,
+  "casting_time_increment": -24,
+  "energy_source": "HP",
+  "base_energy_cost": 32,
+  "final_energy_cost": 16,
+  "energy_increment": -3.2,
+  "damage_type": "heat",
+  "field_id": "fd_fire",
+  "field_chance": 3,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.4,
+  "field_intensity_variance": 0.5
+}
+```
+

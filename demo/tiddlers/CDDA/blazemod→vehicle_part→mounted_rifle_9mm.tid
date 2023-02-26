@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→mounted_rifle_9mm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mounted_rifle_9mm|http://cdda.aloxaf.cn/search?q=mounted_rifle_9mm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blaze_weapons_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mounted_rifle_9mm",
+  "copy-from": "turret",
+  "type": "vehicle_part",
+  "name": {
+    "str": "9x19mm pipe rifle turret"
+  },
+  "item": "rifle_9mm",
+  "breaks_into": [
+    {
+      "item": "rifle_9mm",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mounted_rifle_9mm",
+  "copy-from": "turret",
+  "type": "vehicle_part",
+  "name": {
+    "str": "自制钢管步枪（9x19mm口径）炮塔"
+  },
+  "item": "rifle_9mm",
+  "breaks_into": [
+    {
+      "item": "rifle_9mm",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+

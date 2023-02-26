@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→SECRONOM_FLESH_BIO_check_random
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRONOM_FLESH_BIO_check_random|http://cdda.aloxaf.cn/search?q=SECRONOM_FLESH_BIO_check_random]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation_magic.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "SECRONOM_FLESH_BIO_check_random",
+  "name": {
+    "str": "a spell"
+  },
+  "description": "Target spell casted by an item. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+  "message": "",
+  "extra_effects": [
+    {
+      "id": "SECRONOM_FLESH_BIO_check"
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "WONDER",
+    "RANDOM_TARGET",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ally",
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_magic_target",
+  "min_damage": 10,
+  "max_damage": 10,
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "SECRONOM_FLESH_BIO_check_random",
+  "name": {
+    "str": "咒语"
+  },
+  "description": "由物品施放的目标法术。如果你看到了这个，那就读读这个：\n“施法者将视线锁定目标，然后随机施放其中一个法术。”",
+  "message": "",
+  "extra_effects": [
+    {
+      "id": "SECRONOM_FLESH_BIO_check"
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "WONDER",
+    "RANDOM_TARGET",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ally",
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_magic_target",
+  "min_damage": 10,
+  "max_damage": 10,
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+

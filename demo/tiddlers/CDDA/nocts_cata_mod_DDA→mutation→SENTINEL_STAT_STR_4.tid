@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_STAT_STR_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_STAT_STR_4|http://cdda.aloxaf.cn/search?q=SENTINEL_STAT_STR_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_STAT_STR_4",
+  "name": {
+    "str": "Sentinel Strength IV"
+  },
+  "points": 4,
+  "description": "Your strength has been greatly increased by your physical alterations, relative to your natural physique.  Strength +8.",
+  "valid": false,
+  "purifiable": false,
+  "cancels": [
+    "STR_UP",
+    "STR_UP_2",
+    "STR_UP_3",
+    "STR_UP_4",
+    "STR_ALPHA"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_STR_2",
+    "SENTINEL_PERK_STR_3"
+  ],
+  "prereqs2": [
+    "SENTINEL_STAT_STR_3"
+  ],
+  "changes_to": [
+    "SENTINEL_STAT_STR_5"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "passive_mods": {
+    "str_mod": 8
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_STAT_STR_4",
+  "name": {
+    "str": "哨兵力量 IV"
+  },
+  "points": 4,
+  "description": "相对于你天生的力量而言，你的身体变化较大地增强了你的力量。力量+8。",
+  "valid": false,
+  "purifiable": false,
+  "cancels": [
+    "STR_UP",
+    "STR_UP_2",
+    "STR_UP_3",
+    "STR_UP_4",
+    "STR_ALPHA"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_STR_2",
+    "SENTINEL_PERK_STR_3"
+  ],
+  "prereqs2": [
+    "SENTINEL_STAT_STR_3"
+  ],
+  "changes_to": [
+    "SENTINEL_STAT_STR_5"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "passive_mods": {
+    "str_mod": 8
+  }
+}
+```
+

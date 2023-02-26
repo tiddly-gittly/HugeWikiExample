@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→oozle_frame
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：oozle_frame|http://cdda.aloxaf.cn/search?q=oozle_frame]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_frames.json
+
+
+!! 原文
+
+```json
+{
+  "id": "oozle_frame",
+  "type": "vehicle_part",
+  "name": {
+    "str": "ooze chassis"
+  },
+  "item": "oozle",
+  "location": "structure",
+  "standard_symbols": true,
+  "color": "green",
+  "broken_color": "green",
+  "durability": 500,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "description": "A living blob, shaped to provide attachment points for other blobs.  Other vehicle components and blobs can be mounted on it.  If all the frames and components of a vehicle are foldable or made from blobs, the vehicle can be folding into a small package and picked up as a normal item.",
+  "flags": [
+    "MOUNTABLE",
+    "INITIAL_PART"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "oozle_frame",
+  "type": "vehicle_part",
+  "name": {
+    "str": "软泥底盘"
+  },
+  "item": "oozle",
+  "location": "structure",
+  "standard_symbols": true,
+  "color": "green",
+  "broken_color": "green",
+  "durability": 500,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "description": "一只活的变形怪变成车辆框架，其他变形怪和载具部件能够安装在它上面。如果构成载具的所有框架和部件都可折叠（变形怪可以），那么这辆载具能够被打包折叠并可像普通物品一样被拾取带走。",
+  "flags": [
+    "MOUNTABLE",
+    "INITIAL_PART"
+  ]
+}
+```
+

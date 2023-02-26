@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_PURIFIER_1_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_PURIFIER_1_3|http://cdda.aloxaf.cn/search?q=MISSION_CF_PURIFIER_1_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_PURIFIER_1_3",
+  "type": "mission_definition",
+  "name": {
+    "str": "Retrieve dimensional focus lens from Project Kairos facility"
+  },
+  "description": "Investigate the research facility now suspected to be the location of Project Kairos, and retrieve a vital component known as a dimensional focus lens from it.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 8,
+  "value": 200000,
+  "has_generic_rewards": false,
+  "item": "dimensional_focus_lens",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "lab_arcane_1_6_north",
+      "om_special": "lab_arcane",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "random": true,
+      "search_range": 180,
+      "min_distance": 10
+    }
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "A large volume, the bulk of anomalous items on these shipping records, eventually found their way to a single site.  That's what we're after, and I've also figured out exactly what we need.  One of the earlier shipments on record mentions something called a dimensional focus lens.  Given what we know of the project and what they were trying to accomplish, that's the component we need to acquire to use their findings to further our own work.  Will you help us?",
+    "accepted": "Thank you.  I'll give you directions to your objective.  Whatever device the component was used for, it'll likely be well-secured, unless there's been a containment breach or some other disaster.  Take apart any anomalous machinery you find down there, we don't know if it will have been used for a portable device, or a machine that'll have to be scrapped to recover the component.",
+    "rejected": "Please return to me if you change your mind.  We are on the edge of a breakthrough, and this might give us the means to massively improve our changes of survival.",
+    "advice": "There's no way they haven't been overrun by now.  If you've ever explored those old facilities you'll know there's a high risk of the place crawling with undead.  Who knows what other anomalies may be there, too?  Be on your guard.",
+    "inquire": "Have you found it?",
+    "success": "It's just as I thought.  The culmination of several different research facilities, a project to bring these pieces together, and a very faint aura to it.  They did a lot of testing with the machinery they built, didn't they?  That helps us too.  This a lot for me to take in and analyze, give me about three days and I should have some results you might be interested in taking a look at.  In the meantime, if you have any questions I'll see what I can answer.",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_var": "nicholas_mission_3_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "npc_add_effect": "cf_purifier_making_item",
+        "duration": 259200
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 20
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_PURIFIER_1_3",
+  "type": "mission_definition",
+  "name": {
+    "str": "从Kairos项目设施中取回空间聚焦透镜"
+  },
+  "description": "调查现在被怀疑是凯罗斯项目所在地的研究设施，并从中取回一个被称为空间聚焦透镜的重要部件。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 8,
+  "value": 200000,
+  "has_generic_rewards": false,
+  "item": "dimensional_focus_lens",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "lab_arcane_1_6_north",
+      "om_special": "lab_arcane",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "random": true,
+      "search_range": 180,
+      "min_distance": 10
+    }
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "这些运输记录上的大量异常物品最终被运到了一个地点。这就是我们所追求的，我也已经弄清楚了我们到底需要什么。记录在案的早期发货之一提到了一种称为维度聚焦透镜的东西。鉴于我们对该项目的了解以及他们试图实现的目标，这是我们需要获得的组件，以利用他们的发现来推进我们自己的工作。你能帮我们吗？",
+    "accepted": "非常感谢。我会告诉你目标的方向。不管这个组件是用来做什么的，它都很可能是安全的，除非发生了安全壳破裂或其他灾难。把你在下面发现的任何不正常的机器拆开，我们不知道它是否会被用于便携式设备，或者必须报废才能恢复部件的机器。",
+    "rejected": "如果你改变主意，请回到我身边。我们正处于一个突破的边缘，这可能会为我们提供大规模改善我们现有的处境的手段。",
+    "advice": "它们不可能现在还没有被占领。如果你曾经探索过那些古老的设施，你就会知道那里很有可能爬满不死生物。谁知道还有什么异常呢？小心点。",
+    "inquire": "你找到了吗？",
+    "success": "正如我所想。几个不同的研究设施的顶峰，一个将这些作品结合在一起的项目，以及一个非常微弱的光环。他们用他们制造的机器做了很多测试，不是吗？这对我们也有帮助。这对我来说有很多需要接受和分析的地方，给我大约三天的时间，我应该会有一些结果，你可能有兴趣看看。同时，如果你有任何问题，我会看看我能回答什么。",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_var": "nicholas_mission_3_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "npc_add_effect": "cf_purifier_making_item",
+        "duration": 259200
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 20
+      }
+    ]
+  }
+}
+```
+

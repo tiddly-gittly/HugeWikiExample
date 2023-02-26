@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_questinquire_tokenexct1VS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_questinquire_tokenexct1VS|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_questinquire_tokenexct1VS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_tokenexchange.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_questinquire_tokenexct1VS",
+  "type": "talk_topic",
+  "dynamic_line": "Just look at this list:\n10 blood powders for 1 token\nblood draw kit with blood for 1 token\n1 blood compact sheet for 2 tokens.",
+  "responses": [
+    {
+      "text": "I'll exchange a token for 10 blood powders",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct1VS",
+      "condition": {
+        "u_has_item": "arcanetoken"
+      },
+      "effect": [
+        {
+          "u_spawn_item": "bloodpowder",
+          "count": 10
+        },
+        {
+          "u_sell_item": "arcanetoken"
+        }
+      ]
+    },
+    {
+      "text": "I'll exchange a token for blood draw kit with blood",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct1VS",
+      "condition": {
+        "u_has_item": "arcanetoken"
+      },
+      "effect": [
+        {
+          "u_spawn_item": "blood",
+          "container": "vacutainer"
+        },
+        {
+          "u_sell_item": "arcanetoken"
+        }
+      ]
+    },
+    {
+      "text": "I'll exchange 2 tokens for a blood compact sheet",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct1VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 2
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "compactsheet"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "text": "Okay...",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexc"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_questinquire_tokenexct1VS",
+  "type": "talk_topic",
+  "dynamic_line": "看看这个清单：\n 10血粉换1个代币",
+  "responses": [
+    {
+      "text": "我要用一个代币换10个血粉",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct1VS",
+      "condition": {
+        "u_has_item": "arcanetoken"
+      },
+      "effect": [
+        {
+          "u_spawn_item": "bloodpowder",
+          "count": 10
+        },
+        {
+          "u_sell_item": "arcanetoken"
+        }
+      ]
+    },
+    {
+      "text": "我要用一个代币换一个带血的抽血箱",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct1VS",
+      "condition": {
+        "u_has_item": "arcanetoken"
+      },
+      "effect": [
+        {
+          "u_spawn_item": "blood",
+          "container": "vacutainer"
+        },
+        {
+          "u_sell_item": "arcanetoken"
+        }
+      ]
+    },
+    {
+      "text": "我要用两个代币换一张血样",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct1VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 2
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "compactsheet"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "text": "好吧……",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexc"
+    }
+  ]
+}
+```
+

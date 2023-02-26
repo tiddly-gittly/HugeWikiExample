@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_FREE_MERCHANTS_MERCHANT_Talk_CF_MISSION_DEAL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_FREE_MERCHANTS_MERCHANT_Talk_CF_MISSION_DEAL|http://cdda.aloxaf.cn/search?q=TALK_FREE_MERCHANTS_MERCHANT_Talk_CF_MISSION_DEAL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_FREE_MERCHANTS_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_FREE_MERCHANTS_MERCHANT_Talk_CF_MISSION_DEAL",
+  "type": "talk_topic",
+  "dynamic_line": "Pleasure doing business with you.  I'll have my men set up the next caravan with the usual instructions and put together their inventory based on Sofia's recommendations.  Let me print up the receipt.",
+  "responses": [
+    {
+      "text": "Thank you.  I'll bring this back to her.",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "npc_add_effect": "cf_mission_receipt",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "cf_mission_receipt",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "cf_rep_trade_receipt"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_FREE_MERCHANTS_MERCHANT_Talk_CF_MISSION_DEAL",
+  "type": "talk_topic",
+  "dynamic_line": "很高兴和你做生意。我会让我的人按照通常的指示安排下一个车队，并根据索菲亚的建议整理他们的库存。让我把收据打印出来。",
+  "responses": [
+    {
+      "text": "非常感谢。我会把这个还给她。",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "npc_add_effect": "cf_mission_receipt",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "cf_mission_receipt",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "cf_rep_trade_receipt"
+        }
+      ]
+    }
+  ]
+}
+```
+

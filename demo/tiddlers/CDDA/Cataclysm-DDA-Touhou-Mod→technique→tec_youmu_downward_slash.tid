@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_youmu_downward_slash
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_youmu_downward_slash|http://cdda.aloxaf.cn/search?q=tec_youmu_downward_slash]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_youmu_downward_slash",
+  "type": "technique",
+  "name": "Downward slash",
+  "messages": [
+    "You rise your weapon high, and forcefully hit %s",
+    "<npcname> rises their weapon and then forcefully hits %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 4
+    }
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": false,
+  "weighting": 1,
+  "flat_bonuses": [
+    {
+      "stat": "arpen",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 1.5
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.1
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.33
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_youmu_downward_slash",
+  "type": "technique",
+  "name": "Downward slash",
+  "messages": [
+    "You rise your weapon high, and forcefully hit %s",
+    "<npcname> rises their weapon and then forcefully hits %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 4
+    }
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": false,
+  "weighting": 1,
+  "flat_bonuses": [
+    {
+      "stat": "arpen",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 1.5
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.1
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.33
+    }
+  ]
+}
+```
+

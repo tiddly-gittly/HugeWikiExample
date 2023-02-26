@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→v_hemo_share
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_hemo_share|http://cdda.aloxaf.cn/search?q=v_hemo_share]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "v_hemo_share",
+  "type": "SPELL",
+  "name": {
+    "str": "Share"
+  },
+  "description": "Caster sends out blood tentacles that attaches to nearby allies, regaining large portion of health while damaging the caster.",
+  "extra_effects": [
+    {
+      "id": "v_hemo_shareblood",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground",
+    "ally",
+    "self"
+  ],
+  "min_damage": 60,
+  "max_damage": 60,
+  "effect": "attack",
+  "shape": "blast"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "v_hemo_share",
+  "type": "SPELL",
+  "name": {
+    "str": "分享"
+  },
+  "description": "施法者放出附在附近盟友身上的血触手，在伤害施法者的同时恢复大部分生命值。",
+  "extra_effects": [
+    {
+      "id": "v_hemo_shareblood",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground",
+    "ally",
+    "self"
+  ],
+  "min_damage": 60,
+  "max_damage": 60,
+  "effect": "attack",
+  "shape": "blast"
+}
+```
+

@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Arcana
+title: Arcana→ARMOR→halo_drainlife
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：halo_drainlife|http://cdda.aloxaf.cn/search?q=halo_drainlife]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "halo_drainlife",
+  "copy-from": "spell_base",
+  "type": "ARMOR",
+  "name": {
+    "str": "horned halo"
+  },
+  "description": "A strange radiance permeating your body, granting you a life-draining touch.",
+  "color": "dark_gray",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life"
+          }
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "ONLY_ONE",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "halo_drainlife",
+  "copy-from": "spell_base",
+  "type": "ARMOR",
+  "name": {
+    "str": "光环：尖角"
+  },
+  "description": "一种奇怪的光芒渗透你的身体，给你一种生命的感觉。",
+  "color": "dark_gray",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life"
+          }
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "ONLY_ONE",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+

@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_meiling_down
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_meiling_down|http://cdda.aloxaf.cn/search?q=tec_meiling_down]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_meiling_down",
+  "type": "technique",
+  "name": "Sweeping kick",
+  "messages": [
+    "You sweep at %s",
+    "<npcname> sweeps at %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 2
+    }
+  ],
+  "crit_ok": true,
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": true,
+  "down_dur": 1,
+  "weighting": 1,
+  "attack_override": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.8
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "dex",
+      "scale": 1.334
+    }
+  ],
+  "//": "Original tec_taichi_counter "
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_meiling_down",
+  "type": "technique",
+  "name": "Sweeping kick",
+  "messages": [
+    "You sweep at %s",
+    "<npcname> sweeps at %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 2
+    }
+  ],
+  "crit_ok": true,
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": true,
+  "down_dur": 1,
+  "weighting": 1,
+  "attack_override": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.8
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "dex",
+      "scale": 1.334
+    }
+  ],
+  "//": "Original tec_taichi_counter "
+}
+```
+

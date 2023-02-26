@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9underbrush
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9underbrush|http://cdda.aloxaf.cn/search?q=f_BL9underbrush]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9underbrush",
+  "name": "underbrush",
+  "looks_like": "t_underbrush",
+  "description": "Small plants and shrubs that decorate the forest.  An observant forager could obtain edible plants, acorns, eggs, and mushrooms from it.",
+  "symbol": "#",
+  "color": "light_green",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "coverage": 40,
+  "flags": [
+    "TRANSPARENT",
+    "DIGGABLE",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "PLACE_ITEM",
+    "SHRUB",
+    "SHORT"
+  ],
+  "examine_action": "shrub_wildveggies",
+  "bash": {
+    "str_min": 4,
+    "str_max": 30,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "items": [
+      {
+        "item": "withered",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9underbrush",
+  "name": "灌木丛",
+  "looks_like": "t_underbrush",
+  "description": "四散在森林中的小型植物和灌木。一个有敏锐观察力的采集者能从中找到各种食用植物，橡实，蛋和蘑菇。",
+  "symbol": "#",
+  "color": "light_green",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "coverage": 40,
+  "flags": [
+    "TRANSPARENT",
+    "DIGGABLE",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "PLACE_ITEM",
+    "SHRUB",
+    "SHORT"
+  ],
+  "examine_action": "shrub_wildveggies",
+  "bash": {
+    "str_min": 4,
+    "str_max": 30,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "items": [
+      {
+        "item": "withered",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

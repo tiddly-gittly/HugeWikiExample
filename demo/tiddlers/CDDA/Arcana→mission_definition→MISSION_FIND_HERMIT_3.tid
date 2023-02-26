@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_FIND_HERMIT_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_FIND_HERMIT_3|http://cdda.aloxaf.cn/search?q=MISSION_FIND_HERMIT_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_FIND_HERMIT_3",
+  "type": "mission_definition",
+  "name": {
+    "str": "Reach Odd House"
+  },
+  "description": "Lead your companion to a rural house suspected to be inhabited by someone.  There might be something to those weird dreams after all…",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 3,
+  "value": 30000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "destination": "arcana_hermitage_1",
+  "start": {
+    "effect": {
+      "u_add_effect": "sent_to_hermit",
+      "duration": "PERMANENT"
+    },
+    "assign_mission_target": {
+      "om_terrain": "arcana_hermitage_1",
+      "om_special": "Hermit Cabin",
+      "reveal_radius": 3,
+      "search_range": 360,
+      "z": 0
+    }
+  },
+  "dialogue": {
+    "describe": "If you see this, it's a bug!",
+    "offer": "I'm convinced there's something to this.  I tried to go over any of what I remember, bring up anything that stood out.  This isn't giving me any answers or even any closure, just more questions.  One thing stood out though.  A house of some sort, and in that dream I didn't just see images of it.  I saw someone traveling there, and a shadow of something otherworldly hanging over the place.  Thinking on what I recalled was calming, for some reason.  Maybe we'll find something?",
+    "accepted": "Alright.  I'll show you what I recall of the area, and maybe we'll find something this time.  Can't be any worse than the last place we visited.",
+    "rejected": "I understand.  But this was the one dream, out of all the weird shit I can remember, that actually felt like more than just a warning, or omen, or whatever the hell the rest have been.",
+    "advice": "It was a rural house of sort sort.  Nothing dangerous or even weird stood out in that dream.  In fact it seemed like the most mundane out of the bunch, but there was this sense of foreboding, and what happened in it was so much more vivid.",
+    "inquire": "Any luck so far?",
+    "success": "Looks like the place.  I can see signs of the house being inhabited.  The place looks so familar even though this is the first time I've ever laid eyes on it in the waking world.  Maybe the dreams were visions of the future, if so I'm guessing that one was about traveling here, not just an omen or whatever.  I'll let you decide what to do if we meet anyone here, I don't know if the other dreams will do us much good.  At least trying to make sense of them, seeing these places in person made me feel, I don't know, better.  Less uneasy.  Thank you.",
+    "success_lie": "What madness is this?",
+    "failure": "How …?"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_FIND_HERMIT_3",
+  "type": "mission_definition",
+  "name": {
+    "str": "到达奇异之家"
+  },
+  "description": "带你的同伴去一所怀疑有人居住的乡村房子。毕竟，那些奇怪的梦可能有些什么…",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 3,
+  "value": 30000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "destination": "arcana_hermitage_1",
+  "start": {
+    "effect": {
+      "u_add_effect": "sent_to_hermit",
+      "duration": "PERMANENT"
+    },
+    "assign_mission_target": {
+      "om_terrain": "arcana_hermitage_1",
+      "om_special": "Hermit Cabin",
+      "reveal_radius": 3,
+      "search_range": 360,
+      "z": 0
+    }
+  },
+  "dialogue": {
+    "describe": "If you see this, it's a bug!",
+    "offer": "我相信这是有道理的。我试着回顾我记忆中的任何东西，提出任何突出的东西。这不是给我任何答案，甚至没有任何结束，只是更多的问题。但有一件事很突出。一栋房子，在梦中我不仅仅看到它的图像。我看见有人在那里旅行，一个超凡脱俗的影子笼罩着这个地方。因为某种原因，我回忆起的事情让我平静下来。也许我们能找到点什么？",
+    "accepted": "好吧。我给你看看我对这个地区的记忆，也许这次我们能找到一些东西。不会比我们上次去的地方更糟了。",
+    "rejected": "我理解。但这是唯一的一个梦，在我记忆中所有奇怪的东西中，它实际上不仅仅是一个警告或预兆，或是其他一切。",
+    "advice": "这是一个类似农村的房子。在那个梦里，没有什么危险甚至怪异的东西。事实上，这似乎是最平凡的，但有一种不祥的预感，其中发生的事情要生动得多。",
+    "inquire": "到目前为止有什么进展吗？",
+    "success": "看起来像是那个地方。我能看到房子有人住的迹象。尽管这是我第一次在清醒的世界里看到它，但它看起来还是那么的亲切。也许梦是对未来的憧憬，如果是这样的话，我猜是关于在这里旅行，而不仅仅是一个预兆或其他什么。如果我们在这里遇到任何人，我会让你决定怎么做，我不知道其他的梦是否会对我们有多大好处。至少想弄清楚这些地方，亲眼看到这些地方让我感觉，我不知道，感觉好多了。不那么不安。非常感谢。",
+    "success_lie": "这是什么疯狂？",
+    "failure": "如何…？"
+  }
+}
+```
+

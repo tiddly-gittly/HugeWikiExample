@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→strength_potion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：strength_potion|http://cdda.aloxaf.cn/search?q=strength_potion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "strength_potion",
+  "type": "COMESTIBLE",
+  "comestible_type": "DRINK",
+  "category": "drugs",
+  "name": {
+    "str": "white potion",
+    "str_pl": "white potion"
+  },
+  "description": "A strange white liquid with a scent that makes your nose itch.  The second step towards creating the elixir of life, allegedly.  Drinking this will strengthen the body, lowering other attributes and draining fatigue for the duration.",
+  "weight": "150 g",
+  "volume": "250 ml",
+  "price": "300 USD",
+  "price_postapoc": "60 USD",
+  "phase": "liquid",
+  "container": "flask_glass",
+  "looks_like": "poppy_pain",
+  "symbol": "~",
+  "color": "dark_gray",
+  "charges": 2,
+  "healthy": -2,
+  "fun": -2,
+  "freezing_point": -150,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "You drink the potion and feel wicked power spread through your body.",
+    "effects": [
+      {
+        "id": "potion_strength",
+        "duration": 900
+      }
+    ]
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "strength_potion",
+  "type": "COMESTIBLE",
+  "comestible_type": "DRINK",
+  "category": "drugs",
+  "name": {
+    "str": "白色药水",
+    "str_pl": "白色药水"
+  },
+  "description": "A strange white liquid with a scent that makes your nose itch.  The second step towards creating the elixir of life, allegedly.  Drinking this will strengthen the body, lowering other attributes and draining fatigue for the duration.",
+  "weight": "150 g",
+  "volume": "250 ml",
+  "price": "300 USD",
+  "price_postapoc": "60 USD",
+  "phase": "liquid",
+  "container": "flask_glass",
+  "looks_like": "poppy_pain",
+  "symbol": "~",
+  "color": "dark_gray",
+  "charges": 2,
+  "healthy": -2,
+  "fun": -2,
+  "freezing_point": -150,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "你喝下药水，感觉邪恶的力量在你的身体里蔓延。",
+    "effects": [
+      {
+        "id": "potion_strength",
+        "duration": 900
+      }
+    ]
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+

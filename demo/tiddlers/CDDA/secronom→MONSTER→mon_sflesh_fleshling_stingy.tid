@@ -1,0 +1,183 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_fleshling_stingy
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_stingy|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_stingy]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Amalgam.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_fleshling_stingy",
+  "type": "MONSTER",
+  "name": {
+    "str": "amalgam stinger"
+  },
+  "description": "A rotten conglomeration of fused limbs and appendages that has been formed into a stout, meandering humanoid. Several parts of its body are infused with bulbous warts, to which are seem to be filled with sizzling crimson acid. A slender, predominant limb sways like a whip, flowing freely around itself. It is tipped with a barbed stinger that drips with a potent corrosive compound.",
+  "default_faction": "secro_flesh3",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 120,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "♪",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "amount": 5,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 3,
+      "damage_type": "stab"
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_night": 5,
+  "harvest": "exempt",
+  "attack_effs": [
+    {
+      "id": "secro_blood_acid",
+      "duration": 1
+    }
+  ],
+  "special_attacks": [
+    [
+      "GRAB",
+      10
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_fleshling_stingy_target_random"
+      },
+      "cooldown": 30,
+      "monster_message": "<color_light_red>%1$s twitches violently as it glares at %3$s!</color>"
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_fleshling_stingy",
+  "type": "MONSTER",
+  "name": {
+    "str": "毒刺混合怪"
+  },
+  "description": "一种由融合的四肢和附属物组成的腐烂的聚合体，已形成一种粗壮、蜿蜒的人形。它身体的几个部位充满了球状疣，似乎充满了嘶嘶作响的深红色酸。一条细长的、占优势的肢体像鞭子一样摆动，在自己周围自由地流动。它的顶端有一根带刺的毒刺，上面滴着一种强效的腐蚀性化合物。",
+  "default_faction": "secro_flesh3",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 120,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "♪",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "amount": 5,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 3,
+      "damage_type": "stab"
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_night": 5,
+  "harvest": "exempt",
+  "attack_effs": [
+    {
+      "id": "secro_blood_acid",
+      "duration": 1
+    }
+  ],
+  "special_attacks": [
+    [
+      "GRAB",
+      10
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_fleshling_stingy_target_random"
+      },
+      "cooldown": 30,
+      "monster_message": "<color_light_red>%1$s紧紧地盯着%3$s，并剧烈地抽搐起来！</color>"
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON"
+  ]
+}
+```
+

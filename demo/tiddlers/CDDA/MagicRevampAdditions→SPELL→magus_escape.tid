@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→magus_escape
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：magus_escape|http://cdda.aloxaf.cn/search?q=magus_escape]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/magus.json
+
+
+!! 原文
+
+```json
+{
+  "id": "magus_escape",
+  "type": "SPELL",
+  "name": {
+    "str": "Escape"
+  },
+  "description": "Teleports you in a random direction a medium distance, to help escape your foes in dangerous situations.",
+  "effect": "short_range_teleport",
+  "shape": "blast",
+  "valid_targets": [
+    "none"
+  ],
+  "flags": [
+    "SOMATIC",
+    "SILENT",
+    "NO_LEGS",
+    "VERBAL"
+  ],
+  "min_aoe": 5,
+  "max_aoe": 15,
+  "aoe_increment": 0.25,
+  "min_range": 25,
+  "max_range": 52,
+  "range_increment": 0.5,
+  "max_level": 30,
+  "difficulty": 5,
+  "spell_class": "MAGUS",
+  "base_casting_time": 100,
+  "energy_source": "MANA",
+  "base_energy_cost": 250
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "magus_escape",
+  "type": "SPELL",
+  "name": {
+    "str": "逃脱术"
+  },
+  "description": "将你向随机方向传送一段中等的距离，可以在危险情况下帮你逃出敌人包围。",
+  "effect": "short_range_teleport",
+  "shape": "blast",
+  "valid_targets": [
+    "none"
+  ],
+  "flags": [
+    "SOMATIC",
+    "SILENT",
+    "NO_LEGS",
+    "VERBAL"
+  ],
+  "min_aoe": 5,
+  "max_aoe": 15,
+  "aoe_increment": 0.25,
+  "min_range": 25,
+  "max_range": 52,
+  "range_increment": 0.5,
+  "max_level": 30,
+  "difficulty": 5,
+  "spell_class": "MAGUS",
+  "base_casting_time": 100,
+  "energy_source": "MANA",
+  "base_energy_cost": 250
+}
+```
+

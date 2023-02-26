@@ -1,0 +1,263 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→cyclopean_mirror
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cyclopean_mirror|http://cdda.aloxaf.cn/search?q=cyclopean_mirror]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "cyclopean_mirror",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "cyclopean mirror"
+  },
+  "category": "armor",
+  "description": "An ornate round mirror in an archaic style, unnaturally light for its size.  Natural scenery appears to be engraved into it, and light reflected from it projects a completely different, otherworldly pattern.  It is capable of moving on its own when equipped, blocking melee attacks like a small shield.  When fueled by essence, it projects a barrier that provides minor physical defense to the entire body, negates electricity and radiation, halves other forms of elemental damage, and grants partial resistance to psychic influence and extreme temperatures.",
+  "weight": "500 g",
+  "volume": "4 L",
+  "price": "900 USD",
+  "price_postapoc": "90 USD",
+  "bashing": 8,
+  "material": [
+    "iron"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 25
+      }
+    }
+  ],
+  "symbol": "[",
+  "looks_like": "shield_round",
+  "color": "light_gray",
+  "charges_per_use": 1,
+  "ammo": "essence_type",
+  "use_action": [
+    {
+      "target": "cyclopean_mirror_on",
+      "msg": "The mirror glows and reveals its otherworldly reflection, as a faint protective aura envelops you.",
+      "active": true,
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "The mirror needs essence to function.",
+      "menu_text": "Activate protective aura",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ],
+  "techniques": [
+    "WBLOCK_3"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "values": [
+          {
+            "value": "ARMOR_BASH",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_HEAT",
+            "multiply": -0.5
+          },
+          {
+            "value": "ARMOR_COLD",
+            "multiply": -0.5
+          },
+          {
+            "value": "ARMOR_ACID",
+            "multiply": -0.5
+          },
+          {
+            "value": "CLIMATE_CONTROL_HEAT",
+            "add": 50
+          },
+          {
+            "value": "CLIMATE_CONTROL_CHILL",
+            "add": 50
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "ALLOWS_NATURAL_ATTACKS",
+    "OVERSIZE",
+    "STURDY",
+    "UNBREAKABLE_MELEE",
+    "BLOCK_WHILE_WORN",
+    "NO_SALVAGE",
+    "AURA",
+    "ONLY_ONE",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "sided": true,
+  "material_thickness": 4,
+  "armor": [
+    {
+      "encumbrance": 10,
+      "coverage": 80,
+      "covers": [
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "cyclopean_mirror",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "巨镜"
+  },
+  "category": "armor",
+  "description": "古色古香的华丽圆镜，因其尺寸而显得不自然。自然风景似乎被雕刻在其中，从中反射的光线投射出一种完全不同的、超凡脱俗的图案。装备后可以自行移动，像小盾牌一样阻挡近战攻击。当受到精髓的推动时，它会投射出一道屏障，为整个身体提供轻微的物理防御，消除电流和辐射，将其他形式的元素伤害减半，并对心理影响和极端温度给予部分抵抗。",
+  "weight": "500 g",
+  "volume": "4 L",
+  "price": "900 USD",
+  "price_postapoc": "90 USD",
+  "bashing": 8,
+  "material": [
+    "iron"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 25
+      }
+    }
+  ],
+  "symbol": "[",
+  "looks_like": "shield_round",
+  "color": "light_gray",
+  "charges_per_use": 1,
+  "ammo": "essence_type",
+  "use_action": [
+    {
+      "target": "cyclopean_mirror_on",
+      "msg": "The mirror glows and reveals its otherworldly reflection, as a faint protective aura envelops you.",
+      "active": true,
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "镜子需要源质才能发挥作用。",
+      "menu_text": "激活防护光环",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ],
+  "techniques": [
+    "WBLOCK_3"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "values": [
+          {
+            "value": "ARMOR_BASH",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "add": -10
+          },
+          {
+            "value": "ARMOR_HEAT",
+            "multiply": -0.5
+          },
+          {
+            "value": "ARMOR_COLD",
+            "multiply": -0.5
+          },
+          {
+            "value": "ARMOR_ACID",
+            "multiply": -0.5
+          },
+          {
+            "value": "CLIMATE_CONTROL_HEAT",
+            "add": 50
+          },
+          {
+            "value": "CLIMATE_CONTROL_CHILL",
+            "add": 50
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "ALLOWS_NATURAL_ATTACKS",
+    "OVERSIZE",
+    "STURDY",
+    "UNBREAKABLE_MELEE",
+    "BLOCK_WHILE_WORN",
+    "NO_SALVAGE",
+    "AURA",
+    "ONLY_ONE",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "sided": true,
+  "material_thickness": 4,
+  "armor": [
+    {
+      "encumbrance": 10,
+      "coverage": 80,
+      "covers": [
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r"
+      ]
+    }
+  ]
+}
+```
+

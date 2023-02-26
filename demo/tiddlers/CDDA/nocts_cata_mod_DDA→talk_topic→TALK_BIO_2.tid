@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BIO_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BIO_2|http://cdda.aloxaf.cn/search?q=TALK_BIO_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BIO_2.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_2",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "I really hope that badge belongs to you…",
+    "no": "Hey visitor, anything exciting out there?"
+  },
+  "responses": [
+    {
+      "text": "What's with the badge?  A Bio-Weapon, it says?",
+      "topic": "TALK_BIO_2_U_BIO"
+    },
+    {
+      "text": "Kinda boring here huh?",
+      "topic": "TALK_BIO_2_BORING"
+    },
+    {
+      "text": "[MISSION] Router suggested that I talk to you about joining the hunt for Apophis.",
+      "topic": "TALK_BIO_2_APOPHIS",
+      "condition": {
+        "u_has_mission": "MISSION_PROOF_APOPHIS_DEAD"
+      }
+    },
+    {
+      "text": "How are you holding up?  Router asked that I check on you.",
+      "topic": "TALK_BIO_2_ROUTER",
+      "condition": {
+        "u_has_effect": "router_suggestion"
+      }
+    },
+    {
+      "text": "Well, bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_2",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "我真的希望这个徽章是属于你的……",
+    "no": "嘿，客人，外面有什么刺激的事吗？"
+  },
+  "responses": [
+    {
+      "text": "这徽章是怎么回事？上面说是生物武器？",
+      "topic": "TALK_BIO_2_U_BIO"
+    },
+    {
+      "text": "这里有点无聊吧？",
+      "topic": "TALK_BIO_2_BORING"
+    },
+    {
+      "text": "[任务]露特尔建议我和你谈谈加入追捕阿波菲斯的行动。",
+      "topic": "TALK_BIO_2_APOPHIS",
+      "condition": {
+        "u_has_mission": "MISSION_PROOF_APOPHIS_DEAD"
+      }
+    },
+    {
+      "text": "你还好吗？露特尔让我去看看你。",
+      "topic": "TALK_BIO_2_ROUTER",
+      "condition": {
+        "u_has_effect": "router_suggestion"
+      }
+    },
+    {
+      "text": "好的，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

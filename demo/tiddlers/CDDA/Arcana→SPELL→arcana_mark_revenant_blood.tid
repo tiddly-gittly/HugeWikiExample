@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_mark_revenant_blood
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mark_revenant_blood|http://cdda.aloxaf.cn/search?q=arcana_mark_revenant_blood]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_sanguine_marks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_mark_revenant_blood",
+  "type": "SPELL",
+  "name": {
+    "str": "Mark: Revenant Blood"
+  },
+  "description": "Sanguine Mark\nUsing this spell will guard against poison, protect against pestilence in food and water, and burn out fungal influences or other parasites.",
+  "message": "With a sign, you feel your blood burning with magical power.  %s!",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_4",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "dragonblood_clarity",
+  "energy_source": "HP",
+  "difficulty": 40,
+  "skill": "magic",
+  "max_level": 5,
+  "base_casting_time": 150,
+  "final_casting_time": 75,
+  "casting_time_increment": -15,
+  "base_energy_cost": 20,
+  "final_energy_cost": 10,
+  "energy_increment": -2,
+  "min_duration": 48000,
+  "max_duration": 120000,
+  "duration_increment": 14400
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_mark_revenant_blood",
+  "type": "SPELL",
+  "name": {
+    "str": "印记：复仇之血"
+  },
+  "description": "猩红印记\n使用此法术可以防毒，防止食物和水中的瘟疫，并烧掉真菌或其他寄生虫。",
+  "message": "有了一个标志，你会感到你的血液燃烧着神奇的力量。%s ！",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_4",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "dragonblood_clarity",
+  "energy_source": "HP",
+  "difficulty": 40,
+  "skill": "magic",
+  "max_level": 5,
+  "base_casting_time": 150,
+  "final_casting_time": 75,
+  "casting_time_increment": -15,
+  "base_energy_cost": 20,
+  "final_energy_cost": 10,
+  "energy_increment": -2,
+  "min_duration": 48000,
+  "max_duration": 120000,
+  "duration_increment": 14400
+}
+```
+

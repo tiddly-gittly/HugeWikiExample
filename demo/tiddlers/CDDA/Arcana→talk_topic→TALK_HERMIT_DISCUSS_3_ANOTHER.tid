@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_ANOTHER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_ANOTHER|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_ANOTHER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_ANOTHER",
+  "dynamic_line": "I'm well past my prime.  You've already proven yourself capable and worthy of His favor.  Better that I do what I can, to guide you down the right path.",
+  "responses": [
+    {
+      "text": "And what did you say of the abyss?",
+      "topic": "TALK_HERMIT_DISCUSS_3_ABYSS"
+    },
+    {
+      "switch": true,
+      "text": "Alright.  That is all for now.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "Alright.  I am ready.",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_ANOTHER",
+  "dynamic_line": "我已经过了青春年华。你已经证明了自己的能力，值得他的青睐。我最好尽我所能，引导你走上正确的道路。",
+  "responses": [
+    {
+      "text": "你对深渊怎么说？",
+      "topic": "TALK_HERMIT_DISCUSS_3_ABYSS"
+    },
+    {
+      "switch": true,
+      "text": "好吧。现在到此为止。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "好吧。我准备好了。",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

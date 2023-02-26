@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: talk_topic secronom_lore_expansion
+title: secronom_lore_expansion→talk_topic→TALK_SECRO_SCIENTIST_repair
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SECRO_SCIENTIST_repair|http://cdda.aloxaf.cn/search?q=TALK_SECRO_SCIENTIST_repair]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/Dialogues/secro_scientist_repairs.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_SCIENTIST_repair",
+  "dynamic_line": {
+    "u_has_effect": "secro_scientist_repairing",
+    "no": "What do you want to repair?",
+    "yes": "I'm currently working on repairs..."
+  },
+  "responses": [
+    {
+      "text": "Let me check the progress of SDP-L1 turret's repair.",
+      "topic": "TALK_SECRO_SCIENTIST_repair_laserturret",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "secro_scientist_repairing"
+          },
+          {
+            "not": {
+              "npc_has_effect": "secro_scientist_repairing_laserturret"
+            }
+          },
+          {
+            "u_has_effect": "secro_scientist_repair_laserturret"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Let me check the progress of SDP-L1 turret's repair.",
+      "topic": "TALK_SECRO_SCIENTIST_repair_laserturret_no",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "secro_scientist_repairing"
+          },
+          {
+            "npc_has_effect": "secro_scientist_repairing_laserturret"
+          },
+          {
+            "u_has_effect": "secro_scientist_repair_laserturret"
+          }
+        ]
+      }
+    },
+    {
+      "text": "SDP-L1 turret.",
+      "topic": "TALK_SECRO_SCIENTIST_repair_laserturret_needs",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "broken_secro_laserturret"
+          },
+          {
+            "not": {
+              "u_has_effect": "secro_scientist_repairing"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_effect": "secro_scientist_repairing"
+        },
+        "true": "I'll check them later.",
+        "false": "I got nothing."
+      },
+      "topic": "TALK_SECRO_SCIENTIST_main"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_SCIENTIST_repair",
+  "dynamic_line": {
+    "u_has_effect": "secro_scientist_repairing",
+    "no": "你想修什么？",
+    "yes": "我现在正在修理…"
+  },
+  "responses": [
+    {
+      "text": "让我检查一下SDP-L1炮塔的维修进度。",
+      "topic": "TALK_SECRO_SCIENTIST_repair_laserturret",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "secro_scientist_repairing"
+          },
+          {
+            "not": {
+              "npc_has_effect": "secro_scientist_repairing_laserturret"
+            }
+          },
+          {
+            "u_has_effect": "secro_scientist_repair_laserturret"
+          }
+        ]
+      }
+    },
+    {
+      "text": "让我检查一下SDP-L1炮塔的维修进度。",
+      "topic": "TALK_SECRO_SCIENTIST_repair_laserturret_no",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "secro_scientist_repairing"
+          },
+          {
+            "npc_has_effect": "secro_scientist_repairing_laserturret"
+          },
+          {
+            "u_has_effect": "secro_scientist_repair_laserturret"
+          }
+        ]
+      }
+    },
+    {
+      "text": "SDP-L1炮塔。",
+      "topic": "TALK_SECRO_SCIENTIST_repair_laserturret_needs",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "broken_secro_laserturret"
+          },
+          {
+            "not": {
+              "u_has_effect": "secro_scientist_repairing"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_effect": "secro_scientist_repairing"
+        },
+        "true": "I'll check them later.",
+        "false": "I got nothing."
+      },
+      "topic": "TALK_SECRO_SCIENTIST_main"
+    }
+  ]
+}
+```
+

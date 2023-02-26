@@ -1,0 +1,237 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→hauberk_jade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：hauberk_jade|http://cdda.aloxaf.cn/search?q=hauberk_jade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "hauberk_jade",
+  "type": "TOOL_ARMOR",
+  "copy-from": "qt_chainmail_hauberk",
+  "name": {
+    "str": "jade hauberk"
+  },
+  "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  The copper conducts electric shocks around you, providing passive immunity to lightning.  Activating it will grant immunity to fire and blade, reduce ballistic damage to one-tenth what you would normally take, and give resistance to other environmental hazards.",
+  "//": "Requires an item that did not exist pre-cataclysm to make.",
+  "price_postapoc": "150 USD",
+  "material": [
+    "iron",
+    "copper",
+    "leather",
+    "cotton"
+  ],
+  "color": "light_red",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 300
+      }
+    }
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "values": [
+          {
+            "value": "ARMOR_HEAT",
+            "multiply": -1
+          },
+          {
+            "value": "ARMOR_STAB",
+            "multiply": -1
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "multiply": -0.9
+          },
+          {
+            "value": "CLIMATE_CONTROL_HEAT",
+            "add": 50
+          },
+          {
+            "value": "CLIMATE_CONTROL_CHILL",
+            "add": 50
+          }
+        ]
+      }
+    ]
+  },
+  "ammo": "essence_dull_type",
+  "use_action": [
+    {
+      "target": "hauberk_jade_on",
+      "msg": "A brilliant radiance pierces through the mantle from the gorget, until your body is shrouded in a strange glow.",
+      "active": true,
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "This requires dull essence to invoke.",
+      "menu_text": "Project barrier",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_jade_hauberk_healing",
+      "no_fail": true,
+      "level": 0,
+      "need_worn": true
+    }
+  ],
+  "relative": {
+    "weight": "3020 g",
+    "price": "550 USD"
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE",
+      "ELECTRIC_IMMUNE",
+      "RAINPROOF",
+      "TRADER_KEEP_EQUIPPED"
+    ]
+  },
+  "material_thickness": 7,
+  "environmental_protection": 1,
+  "armor": [
+    {
+      "encumbrance": 20,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "leg_l",
+        "leg_r"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "hauberk_jade",
+  "type": "TOOL_ARMOR",
+  "copy-from": "qt_chainmail_hauberk",
+  "name": {
+    "str": "玉锁甲"
+  },
+  "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  The copper conducts electric shocks around you, providing passive immunity to lightning.  Activating it will grant immunity to fire and blade, reduce ballistic damage to one-tenth what you would normally take, and give resistance to other environmental hazards.",
+  "//": "Requires an item that did not exist pre-cataclysm to make.",
+  "price_postapoc": "150 USD",
+  "material": [
+    "iron",
+    "copper",
+    "leather",
+    "cotton"
+  ],
+  "color": "light_red",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 300
+      }
+    }
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "values": [
+          {
+            "value": "ARMOR_HEAT",
+            "multiply": -1
+          },
+          {
+            "value": "ARMOR_STAB",
+            "multiply": -1
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "multiply": -0.9
+          },
+          {
+            "value": "CLIMATE_CONTROL_HEAT",
+            "add": 50
+          },
+          {
+            "value": "CLIMATE_CONTROL_CHILL",
+            "add": 50
+          }
+        ]
+      }
+    ]
+  },
+  "ammo": "essence_dull_type",
+  "use_action": [
+    {
+      "target": "hauberk_jade_on",
+      "msg": "一束灿烂的光芒从护喉渗透到整个斗篷，直到你的身体笼罩在一种奇怪的光芒中。",
+      "active": true,
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "它需要阴黯源质来启动。",
+      "menu_text": "屏障项目",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_jade_hauberk_healing",
+      "no_fail": true,
+      "level": 0,
+      "need_worn": true
+    }
+  ],
+  "relative": {
+    "weight": "3020 g",
+    "price": "550 USD"
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE",
+      "ELECTRIC_IMMUNE",
+      "RAINPROOF",
+      "TRADER_KEEP_EQUIPPED"
+    ]
+  },
+  "material_thickness": 7,
+  "environmental_protection": 1,
+  "armor": [
+    {
+      "encumbrance": 20,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "leg_l",
+        "leg_r"
+      ]
+    }
+  ]
+}
+```
+

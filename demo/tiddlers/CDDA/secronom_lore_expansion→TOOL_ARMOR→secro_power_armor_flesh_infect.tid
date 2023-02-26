@@ -1,0 +1,293 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_flesh_infect
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_flesh_infect|http://cdda.aloxaf.cn/search?q=secro_power_armor_flesh_infect]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armors.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_flesh_infect",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "flesh vessel \"Pathogen\""
+  },
+  "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel (Pathogen)\" is the result of prolonged research for augmentation using mutagens. Its cell structure is much more intricate than the other vessel types. Yet due to its extreme need of flesh, users may not last long wearing the suit.\n\nSecronom exoskeleton type \"Vessel (Pathogen)\" provides:\n<color_white>Maximum health: <color_light_green>+5%</color>\nBiological armor: <color_light_green>+1</color>\nMetabolism: <color_light_green>-20%</color></color>\n\nActivate to perform:\n<color_cyan><color_pink>[FORM]</color> Hivemind</color> - <color_yellow>500 movecost</color>/<color_red>50 flesh</color>\n<color_white>* Your flesh vessel forms a sentient flesh hivemind. This hivemind starts off as an overseer, and will eventually die if left inactive. Interact for additional commands.</color>",
+  "weight": "17600 g",
+  "volume": "19 L",
+  "price": "323000 USD",
+  "price_postapoc": "3000 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_light",
+  "color": "light_red_white",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 200
+      }
+    }
+  ],
+  "warmth": 30,
+  "power_armor": true,
+  "charges_per_use": 50,
+  "use_action": [
+    {
+      "type": "place_npc",
+      "npc_class_id": "secronom_flesh_spawn_start",
+      "summon_msg": "You formed an artificial flesh hivemind...",
+      "place_randomly": false,
+      "moves": 500
+    }
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "ARMOR_BIO",
+            "add": -1
+          },
+          {
+            "value": "MAX_HP",
+            "multiply": 0.05
+          },
+          {
+            "value": "METABOLISM",
+            "multiply": -0.2
+          }
+        ],
+        "hit_you_effect": [
+          {
+            "id": "mon_flesh_infect_target",
+            "hit_self": false,
+            "once_in": 5,
+            "message": "Your vessel infects %2$s!",
+            "npc_message": "%1$s's vessel infects %2$s!"
+          }
+        ]
+      }
+    ]
+  },
+  "qualities": [
+    [
+      "GLARE",
+      1
+    ],
+    [
+      "SECRO_FLESH_MORPHING",
+      2
+    ],
+    [
+      "SECRO_FLESH_REFORMING",
+      2
+    ]
+  ],
+  "flags": [
+    "NO_TAKEOFF",
+    "WATERPROOF",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "SUN_GLASSES",
+    "OVERSIZE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 50,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r",
+        "head",
+        "eyes",
+        "mouth"
+      ],
+      "material": [
+        "secro_flesh_reinforced"
+      ],
+      "material_thickness": 7,
+      "environmental_protection": 12
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_flesh_infect",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "脉管装甲-“病原体型”"
+  },
+  "description": "一种利用最新研究成果制造出来的合成战斗服。Secronom外骨骼型号“脉管（病原型）”是长期使用诱变剂增强研究的结果。它的细胞结构比其他脉管装甲复杂得多。然而，由于它对血肉的极度需求，使用者恐怕不能长时间地穿着它。\n\n Secronom外骨骼型号“脉管（病原型）”提供：\n<color_white>最大生命值：<color_light_green>+5%</color> \n生物护甲：<color_light_green>+1 </color> \n新陈代谢：<color_light_green>-20%</color> </color> \n\n激活使用：\n<color_cyan> <color_pink>[形成]</color> 主巢心智 </color>-<color_yellow> 500移动消耗</color>/<color_red> 50血肉</color>\n <color_white>*你的脉管装甲会形成一个新的自律主巢心智。这个主巢心智一开始是作为一个监督者，如果不活动的话，最终会死去。交互以添加命令。</color>",
+  "weight": "17600 g",
+  "volume": "19 L",
+  "price": "323000 USD",
+  "price_postapoc": "3000 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_light",
+  "color": "light_red_white",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 200
+      }
+    }
+  ],
+  "warmth": 30,
+  "power_armor": true,
+  "charges_per_use": 50,
+  "use_action": [
+    {
+      "type": "place_npc",
+      "npc_class_id": "secronom_flesh_spawn_start",
+      "summon_msg": "You formed an artificial flesh hivemind...",
+      "place_randomly": false,
+      "moves": 500
+    }
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "ARMOR_BIO",
+            "add": -1
+          },
+          {
+            "value": "MAX_HP",
+            "multiply": 0.05
+          },
+          {
+            "value": "METABOLISM",
+            "multiply": -0.2
+          }
+        ],
+        "hit_you_effect": [
+          {
+            "id": "mon_flesh_infect_target",
+            "hit_self": false,
+            "once_in": 5,
+            "message": "你的血管感染了%2$s！",
+            "npc_message": "%1$s的血管感染%2$s！"
+          }
+        ]
+      }
+    ]
+  },
+  "qualities": [
+    [
+      "GLARE",
+      1
+    ],
+    [
+      "SECRO_FLESH_MORPHING",
+      2
+    ],
+    [
+      "SECRO_FLESH_REFORMING",
+      2
+    ]
+  ],
+  "flags": [
+    "NO_TAKEOFF",
+    "WATERPROOF",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "SUN_GLASSES",
+    "OVERSIZE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 50,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r",
+        "head",
+        "eyes",
+        "mouth"
+      ],
+      "material": [
+        "secro_flesh_reinforced"
+      ],
+      "material_thickness": 7,
+      "environmental_protection": 12
+    }
+  ]
+}
+```
+

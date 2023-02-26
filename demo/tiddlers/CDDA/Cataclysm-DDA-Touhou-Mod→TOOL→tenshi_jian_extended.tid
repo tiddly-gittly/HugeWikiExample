@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: TOOL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→TOOL→tenshi_jian_extended
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tenshi_jian_extended|http://cdda.aloxaf.cn/search?q=tenshi_jian_extended]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/items/touhou_melee.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tenshi_jian_extended",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "sword of hisou (summoned)",
+    "str_pl": "swords of hisou (summoned)"
+  },
+  "description": "A golden, shape-shifting jian that is spiritually summoned into battle, allowing it to be stored without taking up a significant amount of space or weighing the user down. Activate to dismiss it.",
+  "//": "Touhou Wiki states that it's a golden Chinese jian, the sword is shape shifting, and that the sword is probably spiritually summoned into battle.",
+  "volume": "1300 ml",
+  "weight": "300 g",
+  "longest_side": "65 cm",
+  "//2": "I assume the blade of the sword looks like a flame so it has a dynamic volume, but that one should be the average for a static 50 cm long, 5 cm wide blade + the hilt",
+  "price_postapoc": 8000,
+  "to_hit": {
+    "balance": "good",
+    "grip": "weapon",
+    "length": "short",
+    "surface": "any"
+  },
+  "bashing": 5,
+  "cutting": 28,
+  "material": [
+    "steel"
+  ],
+  "symbol": "/",
+  "color": "yellow",
+  "techniques": [
+    "WBLOCK_2"
+  ],
+  "weapon_category": [
+    "JAPANESE_SWORDS",
+    "SHORT_SWORDS"
+  ],
+  "use_action": {
+    "menu_text": "Dismiss Sword",
+    "type": "transform",
+    "target": "tenshi_jian",
+    "msg": "You dismiss your sword."
+  },
+  "flags": [
+    "DURABLE_MELEE",
+    "SHEATH_SWORD",
+    "STURDY",
+    "TRADER_AVOID"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tenshi_jian_extended",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "绯想之剑（召唤）",
+    "str_pl": "绯想之剑（召唤）"
+  },
+  "description": "一把不定形的金色的剑，可以用精神力召唤到战斗中，能在不占用大量空间和感到重量的情况下存储它。激活以召回它。",
+  "//": "Touhou Wiki states that it's a golden Chinese jian, the sword is shape shifting, and that the sword is probably spiritually summoned into battle.",
+  "volume": "1300 ml",
+  "weight": "300 g",
+  "longest_side": "65 cm",
+  "//2": "I assume the blade of the sword looks like a flame so it has a dynamic volume, but that one should be the average for a static 50 cm long, 5 cm wide blade + the hilt",
+  "price_postapoc": 8000,
+  "to_hit": {
+    "balance": "good",
+    "grip": "weapon",
+    "length": "short",
+    "surface": "any"
+  },
+  "bashing": 5,
+  "cutting": 28,
+  "material": [
+    "steel"
+  ],
+  "symbol": "/",
+  "color": "yellow",
+  "techniques": [
+    "WBLOCK_2"
+  ],
+  "weapon_category": [
+    "JAPANESE_SWORDS",
+    "SHORT_SWORDS"
+  ],
+  "use_action": {
+    "menu_text": "召回剑",
+    "type": "transform",
+    "target": "tenshi_jian",
+    "msg": "你召回了你的剑。"
+  },
+  "flags": [
+    "DURABLE_MELEE",
+    "SHEATH_SWORD",
+    "STURDY",
+    "TRADER_AVOID"
+  ]
+}
+```
+

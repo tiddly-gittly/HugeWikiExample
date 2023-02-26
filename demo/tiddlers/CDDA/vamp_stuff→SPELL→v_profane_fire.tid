@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→v_profane_fire
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_profane_fire|http://cdda.aloxaf.cn/search?q=v_profane_fire]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "v_profane_fire",
+  "type": "SPELL",
+  "name": {
+    "str": "Dark Fireblast"
+  },
+  "description": "Fire infused with black magic engulfs the target, inflicting them with profane curse.",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "effect_str": "profane_curse",
+  "min_damage": 5,
+  "max_damage": 5,
+  "min_range": 10,
+  "max_range": 10,
+  "min_duration": 6000,
+  "max_duration": 6000,
+  "damage_type": "heat"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "v_profane_fire",
+  "type": "SPELL",
+  "name": {
+    "str": "暗火流星"
+  },
+  "description": "用灌输了黑魔法的火焰吞噬目标，让他们受到亵渎的诅咒。",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "effect_str": "profane_curse",
+  "min_damage": 5,
+  "max_damage": 5,
+  "min_range": 10,
+  "max_range": 10,
+  "min_duration": 6000,
+  "max_duration": 6000,
+  "damage_type": "heat"
+}
+```
+

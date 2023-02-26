@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_baldric
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_baldric|http://cdda.aloxaf.cn/search?q=secro_flesh_baldric]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_sheath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_baldric",
+  "type": "ARMOR",
+  "name": {
+    "str": "baldric"
+  },
+  "description": "A fleshy scabbard, big enough for anything up to a longsword, or even a bit larger than that.  Designed to be worn at the waist, secured by a shoulder belt.  Activate to sheath/draw a sword.",
+  "weight": "2031 g",
+  "volume": "2 L",
+  "bashing": 4,
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "sheath",
+  "color": "red",
+  "pocket_data": [
+    {
+      "magazine_well": "1500 ml",
+      "max_contains_volume": "3 L",
+      "max_contains_weight": "4 kg",
+      "max_item_length": "130 cm",
+      "moves": 30,
+      "holster": true,
+      "flag_restriction": [
+        "SHEATH_SWORD"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Sheath sword",
+    "holster_msg": "You sheath your %s"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "WATER_FRIENDLY"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        3,
+        5
+      ],
+      "coverage": 10,
+      "covers": [
+        "torso"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_baldric",
+  "type": "ARMOR",
+  "name": {
+    "str": "大刀鞘（肩）"
+  },
+  "description": "一个肉质刀鞘，大小足够容纳一把长剑，或是比它稍大的武器。刀鞘穿在腰间，加以肩带系稳。使用它来收拔武器。",
+  "weight": "2031 g",
+  "volume": "2 L",
+  "bashing": 4,
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "sheath",
+  "color": "red",
+  "pocket_data": [
+    {
+      "magazine_well": "1500 ml",
+      "max_contains_volume": "3 L",
+      "max_contains_weight": "4 kg",
+      "max_item_length": "130 cm",
+      "moves": 30,
+      "holster": true,
+      "flag_restriction": [
+        "SHEATH_SWORD"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "收刀",
+    "holster_msg": "你将%s收鞘"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "WATER_FRIENDLY"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        3,
+        5
+      ],
+      "coverage": 10,
+      "covers": [
+        "torso"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

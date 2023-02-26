@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→SPELL→c_death_explosion_hulk_weapon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_death_explosion_hulk_weapon|http://cdda.aloxaf.cn/search?q=c_death_explosion_hulk_weapon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_death_explosion_hulk_weapon",
+  "type": "SPELL",
+  "name": {
+    "str": "Death Explosion Plus Acid"
+  },
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "description": "Small explosion plus acid effect, used by Apophis.",
+  "min_aoe": 8,
+  "max_aoe": 8,
+  "min_damage": 8,
+  "max_damage": 8,
+  "effect": "explosion",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_death_explosion_hulk_weapon",
+  "type": "SPELL",
+  "name": {
+    "str": "死亡酸液爆炸"
+  },
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "description": "小型酸液爆炸效果，阿波菲斯使用。",
+  "min_aoe": 8,
+  "max_aoe": 8,
+  "min_damage": 8,
+  "max_damage": 8,
+  "effect": "explosion",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  ]
+}
+```
+

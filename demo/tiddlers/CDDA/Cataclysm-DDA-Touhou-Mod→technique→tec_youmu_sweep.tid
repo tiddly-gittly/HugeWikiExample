@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_youmu_sweep
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_youmu_sweep|http://cdda.aloxaf.cn/search?q=tec_youmu_sweep]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_youmu_sweep",
+  "type": "technique",
+  "name": "Sweep",
+  "messages": [
+    "You sweep at %s, slowing them down",
+    "<npcname> sweeps at %s, slowing them down"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": false,
+  "down_dur": 2,
+  "aoe": "wide",
+  "weighting": -1,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 0.9
+    }
+  ],
+  "//": "Should target legs and feet only"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_youmu_sweep",
+  "type": "technique",
+  "name": "Sweep",
+  "messages": [
+    "You sweep at %s, slowing them down",
+    "<npcname> sweeps at %s, slowing them down"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": false,
+  "down_dur": 2,
+  "aoe": "wide",
+  "weighting": -1,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 0.9
+    }
+  ],
+  "//": "Should target legs and feet only"
+}
+```
+

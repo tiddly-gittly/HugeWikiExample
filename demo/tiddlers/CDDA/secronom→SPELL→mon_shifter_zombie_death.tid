@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_shifter_zombie_death
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_shifter_zombie_death|http://cdda.aloxaf.cn/search?q=mon_shifter_zombie_death]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_ondeath.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_shifter_zombie_death",
+  "name": {
+    "str": "Reveal"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster reveals itself.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "HOSTILE_SUMMON",
+    "PERMANENT"
+  ],
+  "valid_targets": [
+    "self",
+    "ground"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_shifter"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_shifter_zombie_death",
+  "name": {
+    "str": "揭示"
+  },
+  "description": "怪物施放的咒语。如果你看到了这个，则改读这个：\n\"施法者显现\"",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "HOSTILE_SUMMON",
+    "PERMANENT"
+  ],
+  "valid_targets": [
+    "self",
+    "ground"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_shifter"
+}
+```
+

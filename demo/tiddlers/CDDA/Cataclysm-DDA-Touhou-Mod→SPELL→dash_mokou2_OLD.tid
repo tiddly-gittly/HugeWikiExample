@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→dash_mokou2_OLD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dash_mokou2_OLD|http://cdda.aloxaf.cn/search?q=dash_mokou2_OLD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_wip_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "dash_mokou2_OLD",
+  "type": "SPELL",
+  "name": "Dash",
+  "description": "AoE fire effect for dash_mokou ",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 25,
+  "max_damage": 25,
+  "min_range": 5,
+  "max_range": 5,
+  "max_level": 1,
+  "difficulty": -20,
+  "base_casting_time": 0,
+  "base_energy_cost": 0,
+  "energy_source": "STAMINA",
+  "flags": [
+    "IGNITE_FLAMMABLE"
+  ],
+  "//": "This doesn't work as intended: the aoe is cast *before* the dash regardless of the spell-subspell order (including the EXTRA_EFFECTS_FIRST flag). Also, sometimes the aoe is cast at min_range distance away in front of the landing spot... which would be interesting for other spells if it were replicable"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "dash_mokou2_OLD",
+  "type": "SPELL",
+  "name": "Dash",
+  "description": "AoE fire effect for dash_mokou ",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 25,
+  "max_damage": 25,
+  "min_range": 5,
+  "max_range": 5,
+  "max_level": 1,
+  "difficulty": -20,
+  "base_casting_time": 0,
+  "base_energy_cost": 0,
+  "energy_source": "STAMINA",
+  "flags": [
+    "IGNITE_FLAMMABLE"
+  ],
+  "//": "This doesn't work as intended: the aoe is cast *before* the dash regardless of the spell-subspell order (including the EXTRA_EFFECTS_FIRST flag). Also, sometimes the aoe is cast at min_range distance away in front of the landing spot... which would be interesting for other spells if it were replicable"
+}
+```
+

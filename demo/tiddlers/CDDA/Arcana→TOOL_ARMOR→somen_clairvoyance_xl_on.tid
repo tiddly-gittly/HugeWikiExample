@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→somen_clairvoyance_xl_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：somen_clairvoyance_xl_on|http://cdda.aloxaf.cn/search?q=somen_clairvoyance_xl_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "somen_clairvoyance_xl_on",
+  "type": "TOOL_ARMOR",
+  "copy-from": "somen_clairvoyance_xl",
+  "name": {
+    "str": "hunter's visor (on)",
+    "str_pl": "hunter's visors (on)"
+  },
+  "description": "A half-mask covering the top half of the face, made of iron decorated with other metal.  It vaguely gives the appearance of a hateful glare.",
+  "turns_per_charge": 100,
+  "revert_to": "somen_clairvoyance_xl",
+  "qualities": [
+    [
+      "GLARE",
+      1
+    ]
+  ],
+  "use_action": {
+    "target": "somen_clairvoyance_xl",
+    "msg": "The visor shifts back to its normal appearance.",
+    "menu_text": "Turn off",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "SUN_GLASSES",
+      "BLIND",
+      "IR_EFFECT",
+      "PARTIAL_DEAF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "somen_clairvoyance_xl_on",
+  "type": "TOOL_ARMOR",
+  "copy-from": "somen_clairvoyance_xl",
+  "name": {
+    "str": "猎手面罩（开）",
+    "str_pl": "猎手面罩（开）"
+  },
+  "description": "覆盖上半部分面部的半面罩，由铁制成，用其他金属装饰。它隐约给人一种可恨的怒目而视的感觉。",
+  "turns_per_charge": 100,
+  "revert_to": "somen_clairvoyance_xl",
+  "qualities": [
+    [
+      "GLARE",
+      1
+    ]
+  ],
+  "use_action": {
+    "target": "somen_clairvoyance_xl",
+    "msg": "遮阳板变回正常外观。",
+    "menu_text": "关闭",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "SUN_GLASSES",
+      "BLIND",
+      "IR_EFFECT",
+      "PARTIAL_DEAF"
+    ]
+  }
+}
+```
+

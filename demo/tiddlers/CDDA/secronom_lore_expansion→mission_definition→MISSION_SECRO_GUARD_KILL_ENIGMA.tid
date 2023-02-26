@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: mission_definition secronom_lore_expansion
+title: secronom_lore_expansion→mission_definition→MISSION_SECRO_GUARD_KILL_ENIGMA
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_SECRO_GUARD_KILL_ENIGMA|http://cdda.aloxaf.cn/search?q=MISSION_SECRO_GUARD_KILL_ENIGMA]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/secro_missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_SECRO_GUARD_KILL_ENIGMA",
+  "type": "mission_definition",
+  "name": {
+    "str": "Clear the enigma chamber"
+  },
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 5,
+  "value": 200000,
+  "start": {
+    "effect": [
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_guard_mission1_progress"
+      },
+      "follow_only"
+    ],
+    "assign_mission_target": {
+      "om_terrain": "SecronomSSLab_enigmaspecs",
+      "reveal_radius": 1,
+      "search_range": 10,
+      "z": -2
+    },
+    "update_mapgen": {
+      "place_monster": [
+        {
+          "monster": "mon_ayenel",
+          "x": 16,
+          "y": 10,
+          "target": true
+        },
+        {
+          "monster": "mon_maneater",
+          "x": 9,
+          "y": 22,
+          "target": true
+        }
+      ],
+      "place_nested": [
+        {
+          "chunks": [
+            "secro_guard_mission1_opendadoor"
+          ],
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  },
+  "end": {
+    "effect": {
+      "duration": "PERMANENT",
+      "u_add_effect": "secro_guard_partake_mission1"
+    }
+  },
+  "followup": "MISSION_SECRO_GUARD_HELP_SHAPESHIFTER",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "…",
+    "offer": "So she wants you to clear out the enigma chamber, and you need my help to access that room. But are you ready? You can refuse if it felt like a deathwish.",
+    "accepted": "Let's head to that chamber real quick!",
+    "rejected": "Just ask me again once you're ready to take on.",
+    "advice": "Since this facility have come into chaos, we might see creatures other than them.",
+    "inquire": "Did you killed them?",
+    "success": "Great! Lets head back to others and see if they need anything else. Enigma chamber is pretty messed up anyway.",
+    "success_lie": "Really? I've come alongside you and yet you lied to something you obviously didn't do?",
+    "failure": "..."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_SECRO_GUARD_KILL_ENIGMA",
+  "type": "mission_definition",
+  "name": {
+    "str": "清除密室之谜"
+  },
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 5,
+  "value": 200000,
+  "start": {
+    "effect": [
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_guard_mission1_progress"
+      },
+      "follow_only"
+    ],
+    "assign_mission_target": {
+      "om_terrain": "SecronomSSLab_enigmaspecs",
+      "reveal_radius": 1,
+      "search_range": 10,
+      "z": -2
+    },
+    "update_mapgen": {
+      "place_monster": [
+        {
+          "monster": "mon_ayenel",
+          "x": 16,
+          "y": 10,
+          "target": true
+        },
+        {
+          "monster": "mon_maneater",
+          "x": 9,
+          "y": 22,
+          "target": true
+        }
+      ],
+      "place_nested": [
+        {
+          "chunks": [
+            "secro_guard_mission1_opendadoor"
+          ],
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  },
+  "end": {
+    "effect": {
+      "duration": "PERMANENT",
+      "u_add_effect": "secro_guard_partake_mission1"
+    }
+  },
+  "followup": "MISSION_SECRO_GUARD_HELP_SHAPESHIFTER",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "…",
+    "offer": "所以她想让你清理神秘密室，你需要我的帮助才能进入那个房间。但你准备好了吗？你可以拒绝，如果它感觉像死亡之翼。",
+    "accepted": "我们赶快去那个房间！",
+    "rejected": "等你准备好了再问我一次。",
+    "advice": "既然这个设施已经陷入混乱，我们可能会看到其他的生物。",
+    "inquire": "你杀了他们吗？",
+    "success": "太好了！让我们回头看看其他人是否还需要什么。不管怎样，神秘密室还是一团糟。",
+    "success_lie": "真正地？我和你并肩作战，但你却对你明明没做的事撒谎？",
+    "failure": "…"
+  }
+}
+```
+

@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→t6_elem_elemward
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t6_elem_elemward|http://cdda.aloxaf.cn/search?q=t6_elem_elemward]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/Profane_Conjurer/v_elem_T6.json
+
+
+!! 原文
+
+```json
+{
+  "id": "t6_elem_elemward",
+  "type": "SPELL",
+  "name": {
+    "str": "Elemental Ward"
+  },
+  "description": "Creates a barrier that protects you or an ally from all <color_yellow>elemental blights</color>.\n* Doesn't nullify existing <color_yellow>blights</color>.\n\nThis is a <color_magenta>tier 6</color> spell.",
+  "valid_targets": [
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "v_spell_elem_bar",
+  "base_energy_cost": 300,
+  "final_energy_cost": 450,
+  "energy_source": "MANA",
+  "spell_class": "VAMP_ELEM_spellcaster",
+  "difficulty": 6,
+  "max_level": 5,
+  "min_range": 3,
+  "max_range": 8,
+  "min_duration": 3000,
+  "max_duration": 4500,
+  "duration_increment": 500,
+  "base_casting_time": 200,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "t6_elem_elemward",
+  "type": "SPELL",
+  "name": {
+    "str": "元素防护"
+  },
+  "description": "创造一道屏障，保护你或你的盟友免受所有<color_yellow>元素枯萎</color>的伤害。\n*不会消除现有的枯萎病。\n\n这是<color_magenta>第6层的咒语。",
+  "valid_targets": [
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "v_spell_elem_bar",
+  "base_energy_cost": 300,
+  "final_energy_cost": 450,
+  "energy_source": "MANA",
+  "spell_class": "VAMP_ELEM_spellcaster",
+  "difficulty": 6,
+  "max_level": 5,
+  "min_range": 3,
+  "max_range": 8,
+  "min_duration": 3000,
+  "max_duration": 4500,
+  "duration_increment": 500,
+  "base_casting_time": 200,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ]
+}
+```
+

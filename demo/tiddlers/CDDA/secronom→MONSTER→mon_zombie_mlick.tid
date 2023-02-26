@@ -1,0 +1,213 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_mlick
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_mlick|http://cdda.aloxaf.cn/search?q=mon_zombie_mlick]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Licker.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_mlick",
+  "type": "MONSTER",
+  "name": {
+    "str": "licker zombie"
+  },
+  "description": "An ever dominant licker with much more distinction to its terrific appearance: its skin sheds into a fleshy physique, claws arose awkwardly and its tongue grew much longer.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2",
+    "HUMAN"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "harvest": "zombie",
+  "hp": 90,
+  "speed": 130,
+  "diff": 5,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⟆",
+  "color": "pink_red",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 5,
+  "melee_dice": 0,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_cut": 6,
+  "armor_bash": 4,
+  "armor_stab": 6,
+  "armor_bullet": 6,
+  "dodge": 4,
+  "vision_day": 10,
+  "special_attacks": [
+    [
+      "scratch",
+      4
+    ],
+    [
+      "GRAB",
+      6
+    ],
+    [
+      "LUNGE",
+      14
+    ],
+    {
+      "type": "leap",
+      "allow_no_target": false,
+      "cooldown": 10,
+      "max_range": 7
+    }
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "default_zombie_clothes",
+        100
+      ],
+      [
+        "child_items",
+        65
+      ]
+    ]
+  },
+  "upgrades": {
+    "half_life": 20,
+    "into": "mon_zombie_xlick"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES",
+    "GROUP_MORALE",
+    "HARDTOSHOOT"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_mlick",
+  "type": "MONSTER",
+  "name": {
+    "str": "变异舔食者"
+  },
+  "description": "它是一种更强大的舔食者，外表也更为与众不同：它的皮肤蜕变成了肉状，双爪难看地上翘，舌头也长得更长了。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2",
+    "HUMAN"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "harvest": "zombie",
+  "hp": 90,
+  "speed": 130,
+  "diff": 5,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⟆",
+  "color": "pink_red",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 5,
+  "melee_dice": 0,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_cut": 6,
+  "armor_bash": 4,
+  "armor_stab": 6,
+  "armor_bullet": 6,
+  "dodge": 4,
+  "vision_day": 10,
+  "special_attacks": [
+    [
+      "scratch",
+      4
+    ],
+    [
+      "GRAB",
+      6
+    ],
+    [
+      "LUNGE",
+      14
+    ],
+    {
+      "type": "leap",
+      "allow_no_target": false,
+      "cooldown": 10,
+      "max_range": 7
+    }
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "default_zombie_clothes",
+        100
+      ],
+      [
+        "child_items",
+        65
+      ]
+    ]
+  },
+  "upgrades": {
+    "half_life": 20,
+    "into": "mon_zombie_xlick"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES",
+    "GROUP_MORALE",
+    "HARDTOSHOOT"
+  ]
+}
+```
+

@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→effect_on_condition→WINGS_BAT_REMI_activate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：WINGS_BAT_REMI_activate|http://cdda.aloxaf.cn/search?q=WINGS_BAT_REMI_activate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutation_eocs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "WINGS_BAT_REMI_activate",
+  "type": "effect_on_condition",
+  "condition": {
+    "compare_int": [
+      {
+        "u_val": "stamina"
+      },
+      ">=",
+      {
+        "const": 200
+      }
+    ]
+  },
+  "effect": {
+    "queue_eocs": [
+      "WINGS_BAT_REMI_drain1"
+    ],
+    "time_in_future": "2 s"
+  },
+  "false_effect": {
+    "run_eocs": "WINGS_BAT_REMI_stop"
+  },
+  "//": "queue_eocs instead of run_eocs as the latter triggers immediately, before WINGS_BAT_REMI_spread (and remi_levitation) are present, not running the cycle"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "WINGS_BAT_REMI_activate",
+  "type": "effect_on_condition",
+  "condition": {
+    "compare_int": [
+      {
+        "u_val": "stamina"
+      },
+      ">=",
+      {
+        "const": 200
+      }
+    ]
+  },
+  "effect": {
+    "queue_eocs": [
+      "WINGS_BAT_REMI_drain1"
+    ],
+    "time_in_future": "2 s"
+  },
+  "false_effect": {
+    "run_eocs": "WINGS_BAT_REMI_stop"
+  },
+  "//": "queue_eocs instead of run_eocs as the latter triggers immediately, before WINGS_BAT_REMI_spread (and remi_levitation) are present, not running the cycle"
+}
+```
+

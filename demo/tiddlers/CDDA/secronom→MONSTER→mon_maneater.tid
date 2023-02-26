@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_maneater
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_maneater|http://cdda.aloxaf.cn/search?q=mon_maneater]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Abberations/Maneater.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_maneater",
+  "type": "MONSTER",
+  "name": {
+    "str": "maneater"
+  },
+  "description": "A triffid-looking creature, composed of staggering flesh and bones. Its 'flower petals' are lined with razor-sharp teeth, with slender 'vines' twitching incoherently. Unique to its adaptive instincts, its need for 'nutrients' drive it to face everything with voracious intent.",
+  "default_faction": "maneater",
+  "species": [
+    "ABERRATION",
+    "SECROSPEC"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 275,
+  "speed": 90,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "☋",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "attack_cost": 145,
+  "dodge": 1,
+  "harvest": "zombie",
+  "armor_bash": 4,
+  "armor_cut": 16,
+  "armor_bullet": 12,
+  "armor_stab": 10,
+  "vision_day": 8,
+  "vision_night": 8,
+  "special_attacks": [
+    [
+      "maneater_vineslash",
+      12
+    ],
+    [
+      "maneater_floralbite",
+      26
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_maneater_bsuck_target"
+      },
+      "cooldown": 37,
+      "monster_message": "<color_yellow>%1$s's vines pulls %3$s in!</color>"
+    }
+  ],
+  "looks_like": "mon_triffid",
+  "flags": [
+    "HEARS",
+    "SEES",
+    "SMELLS",
+    "WARM",
+    "GRABS",
+    "CLIMBS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_maneater",
+  "type": "MONSTER",
+  "name": {
+    "str": "恐怖食人花"
+  },
+  "description": "一种看起来像三脚兽的生物，由摇摇晃晃的肉和骨头组成。它的“花瓣”排列着锋利的牙齿，纤细的“藤蔓”不连贯地抽动着。独特的适应性本能，它对“营养”的需求驱使它以贪婪的意图面对一切。",
+  "default_faction": "maneater",
+  "species": [
+    "ABERRATION",
+    "SECROSPEC"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 275,
+  "speed": 90,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "☋",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "attack_cost": 145,
+  "dodge": 1,
+  "harvest": "zombie",
+  "armor_bash": 4,
+  "armor_cut": 16,
+  "armor_bullet": 12,
+  "armor_stab": 10,
+  "vision_day": 8,
+  "vision_night": 8,
+  "special_attacks": [
+    [
+      "maneater_vineslash",
+      12
+    ],
+    [
+      "maneater_floralbite",
+      26
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_maneater_bsuck_target"
+      },
+      "cooldown": 37,
+      "monster_message": "<color_yellow>%1$s的葡萄藤吸引了%3$s！</color>"
+    }
+  ],
+  "looks_like": "mon_triffid",
+  "flags": [
+    "HEARS",
+    "SEES",
+    "SMELLS",
+    "WARM",
+    "GRABS",
+    "CLIMBS"
+  ]
+}
+```
+

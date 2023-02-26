@@ -1,0 +1,263 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[23]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "house_arcana_encounter_4",
+  "//": "A mage hunter trapped themselves after being followed by ...something.",
+  "object": {
+    "mapgensize": [
+      24,
+      24
+    ],
+    "set": [
+      {
+        "point": "terrain",
+        "id": "t_door_frame",
+        "x": 19,
+        "y": 11
+      }
+    ],
+    "place_loot": [
+      {
+        "item": "splinter",
+        "x": [
+          18,
+          20
+        ],
+        "y": 10,
+        "repeat": [
+          10,
+          20
+        ]
+      },
+      {
+        "group": "cleansing_flame_casualties",
+        "x": [
+          18,
+          20
+        ],
+        "y": [
+          7,
+          9
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_shady",
+          "mon_zombie_shady",
+          "mon_dementia",
+          "mon_dementia",
+          "mon_zombie_survivor",
+          "mon_zombie_survivor",
+          "mon_zombie_thorny",
+          "mon_zombie_necro"
+        ],
+        "x": [
+          14,
+          19
+        ],
+        "y": [
+          12,
+          15
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_cf_4_tacoma_commune_2",
+  "object": {
+    "set": [
+      {
+        "line": "furniture",
+        "id": "f_table",
+        "x": 13,
+        "x2": 13,
+        "y": 13,
+        "y2": 15
+      },
+      {
+        "point": "furniture",
+        "id": "f_chair",
+        "x": 12,
+        "y": 14
+      }
+    ],
+    "place_nested": [
+      {
+        "chunks": [
+          "cf_church_upgrade_4_e"
+        ],
+        "x": 4,
+        "y": 0
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "farming_seeds",
+        "x": 13,
+        "y": [
+          13,
+          15
+        ],
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "group": "farming_tools",
+        "x": 13,
+        "y": [
+          13,
+          15
+        ],
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "camping",
+        "x": 13,
+        "y": [
+          13,
+          15
+        ],
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "rural_church_start_scales",
+        "x": 13,
+        "y": 15
+      }
+    ],
+    "faction_owner": [
+      {
+        "id": "cleansing_flame",
+        "x": 13,
+        "y": [
+          13,
+          15
+        ]
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "cf_auxillery_guard_3",
+        "x": 4,
+        "y": 10,
+        "add_trait": "CF_AUX_MARKER_1"
+      },
+      {
+        "class": "cf_auxillery_guard_3",
+        "x": 10,
+        "y": 13,
+        "add_trait": "CF_AUX_MARKER_1"
+      },
+      {
+        "class": "cf_auxillery_merchant_5",
+        "x": 12,
+        "y": 14,
+        "add_trait": "CF_AUX_MARKER_6"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "house_arcana_encounter_4",
+  "//": "A mage hunter trapped themselves after being followed by ...something.",
+  "object": {
+    "mapgensize": [
+      24,
+      24
+    ],
+    "set": [
+      {
+        "point": "terrain",
+        "id": "t_door_frame",
+        "x": 19,
+        "y": 11
+      }
+    ],
+    "place_loot": [
+      {
+        "item": "splinter",
+        "x": [
+          18,
+          20
+        ],
+        "y": 10,
+        "repeat": [
+          10,
+          20
+        ]
+      },
+      {
+        "group": "cleansing_flame_casualties",
+        "x": [
+          18,
+          20
+        ],
+        "y": [
+          7,
+          9
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_shady",
+          "mon_zombie_shady",
+          "mon_dementia",
+          "mon_dementia",
+          "mon_zombie_survivor",
+          "mon_zombie_survivor",
+          "mon_zombie_thorny",
+          "mon_zombie_necro"
+        ],
+        "x": [
+          14,
+          19
+        ],
+        "y": [
+          12,
+          15
+        ]
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_door_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_door_flesh|http://cdda.aloxaf.cn/search?q=t_secro_door_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_door_flesh",
+  "name": "fleshed wood door",
+  "description": "A standard door that is covered in thick, fleshy veins.",
+  "symbol": "+",
+  "color": "red",
+  "move_cost": 0,
+  "coverage": 95,
+  "roof": "t_secro_flat_roof_flesh",
+  "flags": [
+    "FLAMMABLE_ASH",
+    "DOOR",
+    "NOITEM",
+    "BARRICADABLE_DOOR",
+    "CONNECT_TO_WALL",
+    "BLOCK_WIND",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splat!",
+    "sound_fail": "splat!",
+    "ter_set": "t_door_c"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_door_flesh",
+  "name": "血肉木门",
+  "description": "覆盖着厚厚的肉质血管的木门。",
+  "symbol": "+",
+  "color": "red",
+  "move_cost": 0,
+  "coverage": 95,
+  "roof": "t_secro_flat_roof_flesh",
+  "flags": [
+    "FLAMMABLE_ASH",
+    "DOOR",
+    "NOITEM",
+    "BARRICADABLE_DOOR",
+    "CONNECT_TO_WALL",
+    "BLOCK_WIND",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splat!",
+    "sound_fail": "splat!",
+    "ter_set": "t_door_c"
+  }
+}
+```
+

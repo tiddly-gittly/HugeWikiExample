@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_moschorhinus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_moschorhinus|http://cdda.aloxaf.cn/search?q=mon_moschorhinus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_theriodontia.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_moschorhinus",
+  "type": "MONSTER",
+  "name": {
+    "str": "moschorhinus",
+    "str_pl": "moschorhinus"
+  },
+  "description": "A dog-looking… beast, this animal mimics a mix between man's best friend and a cat-sized saber tooth cat with a thick and short tail.  The gait is almost agile, or better put, almost not awkward.  Each limb ends in small paws with short yet sharp claws.  The very robust, trapezoidal head, features sharp fangs showing well past the lips.  It hunts their prey as if they were toying with it.",
+  "volume": "8 L",
+  "weight": "8 kg",
+  "default_faction": "touhou_moschorhinus",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_leather",
+  "hp": 16,
+  "speed": 140,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ĉ",
+  "color": "brown",
+  "aggression": 0,
+  "morale": 20,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_WEAK"
+  ],
+  "fear_triggers": [
+    "FRIEND_ATTACKED"
+  ],
+  "special_attacks": [
+    [
+      "bite_5d3",
+      8
+    ],
+    [
+      "EAT_FOOD",
+      65
+    ],
+    {
+      "id": "scratch",
+      "attack_upper": false,
+      "cooldown": 10
+    }
+  ],
+  "reproduction": {
+    "baby_egg": "egg_moschorhinus",
+    "baby_count": 5,
+    "baby_timer": 60
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "HIT_AND_RUN",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWARMS",
+    "WARM"
+  ],
+  "//": "Based on Moschorhinus sp. and mon_cat . No reproductive data, I'm assuming these laid eggs. Larger than a cat, kind of sprawls instead of having an erect posture, big headed"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_moschorhinus",
+  "type": "MONSTER",
+  "name": {
+    "str": "moschorhinus",
+    "str_pl": "moschorhinus"
+  },
+  "description": "A dog-looking… beast, this animal mimics a mix between man's best friend and a cat-sized saber tooth cat with a thick and short tail.  The gait is almost agile, or better put, almost not awkward.  Each limb ends in small paws with short yet sharp claws.  The very robust, trapezoidal head, features sharp fangs showing well past the lips.  It hunts their prey as if they were toying with it.",
+  "volume": "8 L",
+  "weight": "8 kg",
+  "default_faction": "touhou_moschorhinus",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_leather",
+  "hp": 16,
+  "speed": 140,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ĉ",
+  "color": "brown",
+  "aggression": 0,
+  "morale": 20,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_WEAK"
+  ],
+  "fear_triggers": [
+    "FRIEND_ATTACKED"
+  ],
+  "special_attacks": [
+    [
+      "bite_5d3",
+      8
+    ],
+    [
+      "EAT_FOOD",
+      65
+    ],
+    {
+      "id": "scratch",
+      "attack_upper": false,
+      "cooldown": 10
+    }
+  ],
+  "reproduction": {
+    "baby_egg": "egg_moschorhinus",
+    "baby_count": 5,
+    "baby_timer": 60
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "HIT_AND_RUN",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWARMS",
+    "WARM"
+  ],
+  "//": "Based on Moschorhinus sp. and mon_cat . No reproductive data, I'm assuming these laid eggs. Larger than a cat, kind of sprawls instead of having an erect posture, big headed"
+}
+```
+

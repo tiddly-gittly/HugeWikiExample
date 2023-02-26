@@ -1,0 +1,317 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→[0]
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_AUX_MERC_GM_PRELUDE%2CTALK_MERCHANT_CF_AUX_GM_PRELUDE%2CTALK_CF_DEACON_GM_PRELUDE%2CTALK_SHRIKE_MERCHANT_GM_PRELUDE%2CTALK_ARSONIST_GM_PRELUDE%2CTALK_EVAC_HUNTER_GM_PRELUDE%2CTALK_EVAC_MERCHANT_GM_PRELUDE%2CTALK_FREE_MERCHANTS_MERCHANT_Talk_GM_PRELUDE%2CTALK_OLD_GUARD_REP_GM_PRELUDE%2CTALK_SCAVENGER_MERC_GM_PRELUDE%2CTALK_SCIENCE_REP_GM_PRELUDE%2CTALK_RANCH_FOREMAN_GM_PRELUDE%2CTALK_RANCH_NURSE_GM_PRELUDE%2CTALK_RANCH_SCAVENGER_1_GM_PRELUDE%2CTALK_RANCH_BARKEEP_GM_PRELUDE%2CTALK_RANCH_CROP_OVERSEER_GM_PRELUDE%2CTALK_ROBOFAC_INTERCOM_GM_PRELUDE%2CTALK_ROBOFAC_FREE_MERCHANT_GM_PRELUDE|http://cdda.aloxaf.cn/search?q=TALK_CF_AUX_MERC_GM_PRELUDE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/COMMON_TALK.json
+
+
+!! 原文
+
+```json
+{
+  "id": [
+    "TALK_CF_AUX_MERC_GM_PRELUDE",
+    "TALK_MERCHANT_CF_AUX_GM_PRELUDE",
+    "TALK_CF_DEACON_GM_PRELUDE",
+    "TALK_SHRIKE_MERCHANT_GM_PRELUDE",
+    "TALK_ARSONIST_GM_PRELUDE",
+    "TALK_EVAC_HUNTER_GM_PRELUDE",
+    "TALK_EVAC_MERCHANT_GM_PRELUDE",
+    "TALK_FREE_MERCHANTS_MERCHANT_Talk_GM_PRELUDE",
+    "TALK_OLD_GUARD_REP_GM_PRELUDE",
+    "TALK_SCAVENGER_MERC_GM_PRELUDE",
+    "TALK_SCIENCE_REP_GM_PRELUDE",
+    "TALK_RANCH_FOREMAN_GM_PRELUDE",
+    "TALK_RANCH_NURSE_GM_PRELUDE",
+    "TALK_RANCH_SCAVENGER_1_GM_PRELUDE",
+    "TALK_RANCH_BARKEEP_GM_PRELUDE",
+    "TALK_RANCH_CROP_OVERSEER_GM_PRELUDE",
+    "TALK_ROBOFAC_INTERCOM_GM_PRELUDE",
+    "TALK_ROBOFAC_FREE_MERCHANT_GM_PRELUDE"
+  ],
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "Thank you.  I think I've gathered enough information, I should go bring this back to the person who sent me.",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_5",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "condition": {
+        "u_has_var": "johnathan_prelude_data_4",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "That should help.  I'll see if anyone else knows more, maybe one more report should help.",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_4",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "condition": {
+        "u_has_var": "johnathan_prelude_data_3",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "Thanks!  I'll keep asking around, just in case anyone else knows of any other attacks.",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_3",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "condition": {
+        "u_has_var": "johnathan_prelude_data_2",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "That helps, I'll see if anyone else knows of other attacks that might be connected.",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_2",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "condition": {
+        "u_has_var": "johnathan_prelude_data_1",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "That should help, I'll keep asking around to see if anyone has more information.",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_1",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "switch": true,
+      "default": true,
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": [
+    "TALK_CF_AUX_MERC_GM_PRELUDE",
+    "TALK_MERCHANT_CF_AUX_GM_PRELUDE",
+    "TALK_CF_DEACON_GM_PRELUDE",
+    "TALK_SHRIKE_MERCHANT_GM_PRELUDE",
+    "TALK_ARSONIST_GM_PRELUDE",
+    "TALK_EVAC_HUNTER_GM_PRELUDE",
+    "TALK_EVAC_MERCHANT_GM_PRELUDE",
+    "TALK_FREE_MERCHANTS_MERCHANT_Talk_GM_PRELUDE",
+    "TALK_OLD_GUARD_REP_GM_PRELUDE",
+    "TALK_SCAVENGER_MERC_GM_PRELUDE",
+    "TALK_SCIENCE_REP_GM_PRELUDE",
+    "TALK_RANCH_FOREMAN_GM_PRELUDE",
+    "TALK_RANCH_NURSE_GM_PRELUDE",
+    "TALK_RANCH_SCAVENGER_1_GM_PRELUDE",
+    "TALK_RANCH_BARKEEP_GM_PRELUDE",
+    "TALK_RANCH_CROP_OVERSEER_GM_PRELUDE",
+    "TALK_ROBOFAC_INTERCOM_GM_PRELUDE",
+    "TALK_ROBOFAC_FREE_MERCHANT_GM_PRELUDE"
+  ],
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "非常感谢。我想我已经收集了足够的信息，我应该把这个拿回来给送我的人。",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_5",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "condition": {
+        "u_has_var": "johnathan_prelude_data_4",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "这应该有帮助。我看看有没有其他人知道的更多，也许多一份报告应该会有帮助。",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_4",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "condition": {
+        "u_has_var": "johnathan_prelude_data_3",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "谢谢！我会四处打听，以防有人知道其他袭击事件。",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_3",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "condition": {
+        "u_has_var": "johnathan_prelude_data_2",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "这有帮助，我会看看是否有人知道其他可能与之相关的攻击。",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_2",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "condition": {
+        "u_has_var": "johnathan_prelude_data_1",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "那会有帮助的，我会继续询问周围是否有人有更多的信息。",
+      "effect": [
+        {
+          "u_add_var": "johnathan_prelude_data_1",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "npc_add_var": "johnathan_prelude_mid",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ],
+      "switch": true,
+      "default": true,
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

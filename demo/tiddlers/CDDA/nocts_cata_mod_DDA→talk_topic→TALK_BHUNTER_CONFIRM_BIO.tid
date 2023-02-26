@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BHUNTER_CONFIRM_BIO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BHUNTER_CONFIRM_BIO|http://cdda.aloxaf.cn/search?q=TALK_BHUNTER_CONFIRM_BIO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BHUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BHUNTER_CONFIRM_BIO",
+  "type": "talk_topic",
+  "dynamic_line": "Project… you're right.  Between that and your augmentations, it's hard to deny the evidence right in front of me.  Sorry I doubted you.",
+  "responses": [
+    {
+      "text": "It's fine.",
+      "trial": {
+        "type": "NONE"
+      },
+      "success": {
+        "opinion": {
+          "trust": 1,
+          "fear": -1,
+          "value": 1,
+          "anger": -1
+        },
+        "topic": "TALK_BHUNTER"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BHUNTER_CONFIRM_BIO",
+  "type": "talk_topic",
+  "dynamic_line": "计划……你说得对。你说的那些和你的身体强化，很难否认摆在面前的证据。抱歉我怀疑了你。",
+  "responses": [
+    {
+      "text": "没关系。",
+      "trial": {
+        "type": "NONE"
+      },
+      "success": {
+        "opinion": {
+          "trust": 1,
+          "fear": -1,
+          "value": 1,
+          "anger": -1
+        },
+        "topic": "TALK_BHUNTER"
+      }
+    }
+  ]
+}
+```
+

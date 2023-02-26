@@ -1,0 +1,153 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_zombie_firebag
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_firebag|http://cdda.aloxaf.cn/search?q=mon_zombie_firebag]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_firebag",
+  "type": "MONSTER",
+  "name": {
+    "str": "ember bloated zombie"
+  },
+  "description": "With its ember skin swollen to near rupture with methane gas, this cyst covered zombie looks like it could violently burst under the slightest of disturbances, and fire would probably be a very bad idea.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 5,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 15,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "magenta_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "vision_night": 3,
+  "harvest": "exempt",
+  "starting_ammo": {
+    "molotov": 1
+  },
+  "special_attacks": [
+    [
+      "KAMIKAZE",
+      0
+    ],
+    [
+      "scratch",
+      15
+    ]
+  ],
+  "death_drops": "default_zombie_items",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "FLAMMABLE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_firebag",
+  "type": "MONSTER",
+  "name": {
+    "str": "余烬爆浆丧尸"
+  },
+  "description": "一具充满灰烬的皮肤下充满了臌胀的甲烷气体的尸体，隆起的皮肤遍布着黑色的血管，随时都可能爆出大量燃气，点火可能是一个非常糟糕的主意。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 5,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 15,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "magenta_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "vision_night": 3,
+  "harvest": "exempt",
+  "starting_ammo": {
+    "molotov": 1
+  },
+  "special_attacks": [
+    [
+      "KAMIKAZE",
+      0
+    ],
+    [
+      "scratch",
+      15
+    ]
+  ],
+  "death_drops": "default_zombie_items",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "FLAMMABLE"
+  ]
+}
+```
+

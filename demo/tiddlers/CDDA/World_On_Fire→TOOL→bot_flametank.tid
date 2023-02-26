@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: TOOL World_On_Fire
+title: World_On_Fire→TOOL→bot_flametank
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bot_flametank|http://cdda.aloxaf.cn/search?q=bot_flametank]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bot_flametank",
+  "looks_like": "mon_flametank",
+  "type": "TOOL",
+  "name": {
+    "str": "inactive exterminator tank"
+  },
+  "description": "This is an inactive exterminator tank. It resembles a large tank only armed with a flamethrower & napalm bomb launchers. Using this item involves placing it on the ground and turning it on.  If reprogrammed and rewired successfully the tank will race towards enemies and torch them alive.",
+  "weight": "175000 g",
+  "volume": "655000 ml",
+  "price": "800 USD",
+  "to_hit": -3,
+  "bashing": 8,
+  "material": [
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_red",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_flametank",
+    "friendly_msg": "The exterminator tank shudders briefly and rolls away.",
+    "hostile_msg": "The exterminator tank detects gross pests in the area, and shines a multitude of colored lights in your face!",
+    "//": "Not as lethal as a secubot but far more fiddly and complex with its implied assembly and sub-deployment systems",
+    "difficulty": 10,
+    "moves": 100,
+    "skills": [
+      "electronics",
+      "computer"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bot_flametank",
+  "looks_like": "mon_flametank",
+  "type": "TOOL",
+  "name": {
+    "str": "炽虫者坦克（关）"
+  },
+  "description": "这是一个未激活的炽虫者坦克。它就像一个只配备了火焰喷射器和凝固汽油弹发射器的大型坦克。使用该物品以将它放置在地上并打开它，如果重新编程和布线成功，坦克将冲向敌人，并将他们活活烧死。",
+  "weight": "175000 g",
+  "volume": "655000 ml",
+  "price": "800 USD",
+  "to_hit": -3,
+  "bashing": 8,
+  "material": [
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_red",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_flametank",
+    "friendly_msg": "炽虫者坦克颤抖了一下，然后滚走了。",
+    "hostile_msg": "炽虫者坦克检测到该地区的害虫威胁，并把大量的彩色光照在你的脸上!",
+    "//": "Not as lethal as a secubot but far more fiddly and complex with its implied assembly and sub-deployment systems",
+    "difficulty": 10,
+    "moves": 100,
+    "skills": [
+      "electronics",
+      "computer"
+    ]
+  }
+}
+```
+

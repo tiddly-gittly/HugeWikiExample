@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_tough
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_tough|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_tough]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_tough",
+  "type": "MONSTER",
+  "name": {
+    "str": "tough zombie"
+  },
+  "description": "Once an athletic human, now a brutal monster. Its facial features are twisted into an expression of pure rage.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_red",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "dodge": 1,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 0.7
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_tough",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_tough",
+  "type": "MONSTER",
+  "name": {
+    "str": "健壮丧尸"
+  },
+  "description": "这个丧尸的生前矫健的如同一名运动员，如今成为了凶残的丧尸怪物。它面孔扭曲，每一个毛孔都释放出纯粹的破坏欲望。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_red",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "dodge": 1,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 0.7
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_tough",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: effect_type secronom
+title: secronom→effect_type→secro_mawy_web
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_mawy_web|http://cdda.aloxaf.cn/search?q=secro_mawy_web]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "secro_mawy_web",
+  "name": [
+    "Webbed",
+    "Webbed",
+    "Webbed",
+    "Webbed",
+    "Webbed",
+    "Ensnared"
+  ],
+  "desc": [
+    "The flesh webs sticks firmly on you!"
+  ],
+  "show_in_info": true,
+  "apply_message": "You've been covered in flesh webs!",
+  "miss_messages": [
+    [
+      "You can't move well with this sticky webs...",
+      1
+    ]
+  ],
+  "remove_message": "You've got rid of the webs!",
+  "rating": "bad",
+  "int_add_val": 1,
+  "int_dur_factor": "20 seconds",
+  "max_intensity": 6,
+  "int_decay_step": -1,
+  "int_decay_tick": 5,
+  "base_mods": {
+    "speed_mod": [
+      -20
+    ],
+    "dex_mod": [
+      -2
+    ]
+  },
+  "scaling_mods": {
+    "speed_mod": [
+      -10
+    ],
+    "dex_mod": [
+      -1
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "secro_mawy_web",
+  "name": [
+    "被网住",
+    "被网住",
+    "被网住",
+    "被网住",
+    "被网住",
+    "诱捕"
+  ],
+  "desc": [
+    "肉网紧紧地粘在你身上！"
+  ],
+  "show_in_info": true,
+  "apply_message": "你被肉网覆盖了！",
+  "miss_messages": [
+    [
+      "有这些黏糊糊的网在身上，你不能很好地移动...",
+      1
+    ]
+  ],
+  "remove_message": "你已经从网中挣脱出来了！",
+  "rating": "bad",
+  "int_add_val": 1,
+  "int_dur_factor": "20 seconds",
+  "max_intensity": 6,
+  "int_decay_step": -1,
+  "int_decay_tick": 5,
+  "base_mods": {
+    "speed_mod": [
+      -20
+    ],
+    "dex_mod": [
+      -2
+    ]
+  },
+  "scaling_mods": {
+    "speed_mod": [
+      -10
+    ],
+    "dex_mod": [
+      -1
+    ]
+  }
+}
+```
+

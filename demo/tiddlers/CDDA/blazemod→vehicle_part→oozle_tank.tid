@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→oozle_tank
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：oozle_tank|http://cdda.aloxaf.cn/search?q=oozle_tank]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "oozle_tank",
+  "type": "vehicle_part",
+  "name": {
+    "str": "pod (20L)"
+  },
+  "item": "oozle_tank",
+  "location": "fuel_source",
+  "symbol": "O",
+  "broken_symbol": "#",
+  "color": "green",
+  "broken_color": "green",
+  "durability": 500,
+  "damage_modifier": 10,
+  "folded_volume": "7500 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "description": "A living blob, formed into a storage space for holding liquids.  If filled with the appropriate fuel for the vehicle's engine, the engine will automatically draw fuel from the tank when the engine is on.  If filled with water, you can access the water from a water faucet, if one is installed in the vehicle.  You can also use a rubber hose to siphon liquids out of a tank.",
+  "flags": [
+    "FLUIDTANK"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "oozle_tank",
+  "type": "vehicle_part",
+  "name": {
+    "str": "变形怪油箱（20升）"
+  },
+  "item": "oozle_tank",
+  "location": "fuel_source",
+  "symbol": "O",
+  "broken_symbol": "#",
+  "color": "green",
+  "broken_color": "green",
+  "durability": 500,
+  "damage_modifier": 10,
+  "folded_volume": "7500 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "description": "一只活的变形怪变成的水箱。装入车辆引擎所对应消耗的燃料后，引擎启动时将会自动从对应的水箱内抽取燃料。装入水或其他液体后，可以在车辆水龙头处获取对应液体。你也可以使用一根橡胶软管从水箱中抽取液体。",
+  "flags": [
+    "FLUIDTANK"
+  ]
+}
+```
+

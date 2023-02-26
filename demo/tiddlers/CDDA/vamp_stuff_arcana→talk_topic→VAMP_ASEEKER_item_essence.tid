@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_item_essence
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_item_essence|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_item_essence]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_itemvalidation.json
+
+
+!! 原文
+
+```json
+{
+  "//": "You get tokens as your reward, and can be traded for some (unique) items. For those who are greedy for money? Good luck getting rich :3",
+  "id": "VAMP_ASEEKER_item_essence",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "I will give you 1 token for every 15 essences you bring to me.",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "I will give you 205$ for every 15 essences you bring to me.",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "I will give you 90$ for every 15 essences you bring to me.",
+        "no": "I will give you 30$ and 1 token for every 15 essences you bring to me."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Okay...",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeriessenceval"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "You get tokens as your reward, and can be traded for some (unique) items. For those who are greedy for money? Good luck getting rich :3",
+  "id": "VAMP_ASEEKER_item_essence",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "你每给我带来15种香精，我就给你一个代币。",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "你每给我带来15种香精，我就给你205美元。",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "你每给我带来15种香精，我就给你90美元。",
+        "no": "你每给我带来15种香精，我就给你30美元和1个代币。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "好吧……",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeriessenceval"
+      }
+    }
+  ]
+}
+```
+

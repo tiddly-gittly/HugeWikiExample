@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: furniture MST_Extra
+title: MST_Extra→furniture→f_pulley_lifter
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_pulley_lifter|http://cdda.aloxaf.cn/search?q=f_pulley_lifter]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_pulley_lifter",
+  "name": "rope and pulley lifter",
+  "symbol": "|",
+  "looks_like": "vp_crane_tiny",
+  "description": "A system of ropes and pulleys hanging from the ceiling, rigged up to serve as a block and tackle for lifting vehicle components, or even light enough vehicles.  It isn't very powerful, but it'll do in a pinch.",
+  "color": "brown",
+  "move_cost_mod": 0,
+  "required_str": -1,
+  "crafting_pseudo_item": "pulley_lifting",
+  "flags": [
+    "PLACE_ITEM",
+    "TRANSPARENT",
+    "EASY_DECONSTRUCT",
+    "FLAMMABLE_ASH",
+    "NOCOLLIDE"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "rope_makeshift_30",
+        "count": 1
+      },
+      {
+        "item": "2x4",
+        "count": 8
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 8,
+    "str_max": 40,
+    "sound": "crunch!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "rope_makeshift_6",
+        "count": [
+          3,
+          4
+        ]
+      },
+      {
+        "item": "2x4",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          2,
+          4
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_pulley_lifter",
+  "name": "绳轮式升降机",
+  "symbol": "|",
+  "looks_like": "vp_crane_tiny",
+  "description": "悬挂在顶层的滑轮升降组,配装好后能够用于吊起一些载具部件,虽然承重能力不佳,但在紧要关头也能排上用场.",
+  "color": "brown",
+  "move_cost_mod": 0,
+  "required_str": -1,
+  "crafting_pseudo_item": "pulley_lifting",
+  "flags": [
+    "PLACE_ITEM",
+    "TRANSPARENT",
+    "EASY_DECONSTRUCT",
+    "FLAMMABLE_ASH",
+    "NOCOLLIDE"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "rope_makeshift_30",
+        "count": 1
+      },
+      {
+        "item": "2x4",
+        "count": 8
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 8,
+    "str_max": 40,
+    "sound": "crunch!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "rope_makeshift_6",
+        "count": [
+          3,
+          4
+        ]
+      },
+      {
+        "item": "2x4",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          2,
+          4
+        ]
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→robe_shadow_xl_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：robe_shadow_xl_on|http://cdda.aloxaf.cn/search?q=robe_shadow_xl_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "robe_shadow_xl_on",
+  "copy-from": "robe_shadow_xl",
+  "repairs_like": "robe_shadow",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "illusory mantle (on)",
+    "str_pl": "illusory mantles (on)"
+  },
+  "description": "A loose-fitting, short cape with decorative trim over the shoulders, dyed a simple dark gray.  Loosely fits over the shoulders even for mutant survivors.  The air wavers around it, barely noticeable to you.",
+  "turns_per_charge": 300,
+  "revert_to": "robe_shadow_xl",
+  "revert_msg": "The cape's fabric returns to its normal gray color, dispelling the illusion.",
+  "use_action": [
+    {
+      "target": "robe_shadow_xl",
+      "msg": "The cape's fabric returns to its normal gray color, dispelling the illusion.",
+      "menu_text": "Turn off",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "robe_shadow_xl_on",
+  "copy-from": "robe_shadow_xl",
+  "repairs_like": "robe_shadow",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "幻影斗篷（开）",
+    "str_pl": "幻影斗篷（开）"
+  },
+  "description": "一种宽松的短披风，肩部有装饰性的镶边，染成简单的深灰色。即使是变异幸存者也可以松松地搭在肩上。空气在它周围摇摆，你几乎看不到。",
+  "turns_per_charge": 300,
+  "revert_to": "robe_shadow_xl",
+  "revert_msg": "The cape's fabric returns to its normal gray color, dispelling the illusion.",
+  "use_action": [
+    {
+      "target": "robe_shadow_xl",
+      "msg": "斗篷的面料恢复到正常的灰色，消除了错觉。",
+      "menu_text": "关闭",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+

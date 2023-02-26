@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_DRAGONSCALES
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_DRAGONSCALES|http://cdda.aloxaf.cn/search?q=ARCANA_DRAGONSCALES]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONSCALES",
+  "name": {
+    "str": "Draconic Scales"
+  },
+  "points": 2,
+  "visibility": 10,
+  "ugliness": 3,
+  "description": "A set of thick scales and armored plates now covers your body, acting as natural armor.  Somewhat reduces wet effects.",
+  "valid": false,
+  "purifiable": false,
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "prereqs": [
+    "ARCANA_SCALYPATCHES"
+  ],
+  "changes_to": [
+    "ARCANA_PLATES"
+  ],
+  "leads_to": [
+    "ARCANA_SCALYWINGS",
+    "ARCANA_SCALYTAIL",
+    "ARCANA_SCALYLEGS"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "types": [
+    "SKIN"
+  ],
+  "stealth_modifier": -30,
+  "wet_protection": [
+    {
+      "part": "head",
+      "ignored": 5
+    },
+    {
+      "part": "leg_l",
+      "ignored": 16
+    },
+    {
+      "part": "leg_r",
+      "ignored": 16
+    },
+    {
+      "part": "foot_l",
+      "ignored": 5
+    },
+    {
+      "part": "foot_r",
+      "ignored": 5
+    },
+    {
+      "part": "arm_l",
+      "ignored": 14
+    },
+    {
+      "part": "arm_r",
+      "ignored": 14
+    },
+    {
+      "part": "hand_l",
+      "ignored": 4
+    },
+    {
+      "part": "hand_r",
+      "ignored": 4
+    },
+    {
+      "part": "torso",
+      "ignored": 30
+    }
+  ],
+  "armor": [
+    {
+      "part_types": [
+        "tail"
+      ],
+      "cut": 14,
+      "bash": 10
+    }
+  ],
+  "integrated_armor": [
+    "integrated_dragonscales"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONSCALES",
+  "name": {
+    "str": "龙鳞"
+  },
+  "points": 2,
+  "visibility": 10,
+  "ugliness": 3,
+  "description": "A set of thick scales and armored plates now covers your body, acting as natural armor.  Somewhat reduces wet effects.",
+  "valid": false,
+  "purifiable": false,
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "prereqs": [
+    "ARCANA_SCALYPATCHES"
+  ],
+  "changes_to": [
+    "ARCANA_PLATES"
+  ],
+  "leads_to": [
+    "ARCANA_SCALYWINGS",
+    "ARCANA_SCALYTAIL",
+    "ARCANA_SCALYLEGS"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "types": [
+    "SKIN"
+  ],
+  "stealth_modifier": -30,
+  "wet_protection": [
+    {
+      "part": "head",
+      "ignored": 5
+    },
+    {
+      "part": "leg_l",
+      "ignored": 16
+    },
+    {
+      "part": "leg_r",
+      "ignored": 16
+    },
+    {
+      "part": "foot_l",
+      "ignored": 5
+    },
+    {
+      "part": "foot_r",
+      "ignored": 5
+    },
+    {
+      "part": "arm_l",
+      "ignored": 14
+    },
+    {
+      "part": "arm_r",
+      "ignored": 14
+    },
+    {
+      "part": "hand_l",
+      "ignored": 4
+    },
+    {
+      "part": "hand_r",
+      "ignored": 4
+    },
+    {
+      "part": "torso",
+      "ignored": 30
+    }
+  ],
+  "armor": [
+    {
+      "part_types": [
+        "tail"
+      ],
+      "cut": 14,
+      "bash": 10
+    }
+  ],
+  "integrated_armor": [
+    "integrated_dragonscales"
+  ]
+}
+```
+

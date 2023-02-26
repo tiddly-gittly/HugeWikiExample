@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_yugg_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_yugg_summoned|http://cdda.aloxaf.cn/search?q=mon_yugg_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_yugg_summoned",
+  "copy-from": "mon_yugg",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned yugg"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "weight": "200000 g",
+  "mountable_weight_ratio": 0.9,
+  "speed": 150,
+  "vision_night": 40,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_dart_yugg"
+      },
+      "cooldown": 20,
+      "monster_message": "The summoned yugg fires a dart at %3$s!"
+    }
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_yugg_bound",
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_MOUNTABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES",
+      "DESTROYS",
+      "DIGS"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_yugg_summoned",
+  "copy-from": "mon_yugg",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤育格巨噬虫"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "weight": "200000 g",
+  "mountable_weight_ratio": 0.9,
+  "speed": 150,
+  "vision_night": 40,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_dart_yugg"
+      },
+      "cooldown": 20,
+      "monster_message": "召唤的尤格在%3$s发射飞镖！"
+    }
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_yugg_bound",
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_MOUNTABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES",
+      "DESTROYS",
+      "DIGS"
+    ]
+  }
+}
+```
+

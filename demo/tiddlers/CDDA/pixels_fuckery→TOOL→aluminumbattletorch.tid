@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: TOOL pixels_fuckery
+title: pixels_fuckery→TOOL→aluminumbattletorch
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：aluminumbattletorch|http://cdda.aloxaf.cn/search?q=aluminumbattletorch]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/pixels_fuckery/pix_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "aluminumbattletorch",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "aluminum Louisville Slaughterer"
+  },
+  "description": "This is a sturdy aluminum bat, wrapped in gasoline-soaked rags.  Light it, and the ball game will REALLY heat up.  You'll need a lighter or matches to light it.",
+  "weight": "800 g",
+  "volume": "2 L",
+  "price": "160 USD",
+  "to_hit": 3,
+  "bashing": 20,
+  "material": [
+    "aluminum"
+  ],
+  "symbol": "/",
+  "color": "light_gray",
+  "initial_charges": 25,
+  "max_charges": 25,
+  "charges_per_use": 1,
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "use_action": {
+    "target": "aluminumbattletorch_lit",
+    "msg": "You light the Aluminum Louisville Slaughterer.",
+    "active": true,
+    "need_fire": 1,
+    "menu_text": "Light",
+    "type": "transform"
+  },
+  "flags": [
+    "DURABLE_MELEE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "aluminumbattletorch",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "铝制路易维尔屠杀者"
+  },
+  "description": "这是一根结实的铝制棒球棍，外面裹着浸过汽油的破布。点燃它，球赛就真的燃起来了。你需要一个打火机或火柴来点燃它。",
+  "weight": "800 g",
+  "volume": "2 L",
+  "price": "160 USD",
+  "to_hit": 3,
+  "bashing": 20,
+  "material": [
+    "aluminum"
+  ],
+  "symbol": "/",
+  "color": "light_gray",
+  "initial_charges": 25,
+  "max_charges": 25,
+  "charges_per_use": 1,
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "use_action": {
+    "target": "aluminumbattletorch_lit",
+    "msg": "你点燃了铝制路易维尔屠杀者。",
+    "active": true,
+    "need_fire": 1,
+    "menu_text": "光源",
+    "type": "transform"
+  },
+  "flags": [
+    "DURABLE_MELEE"
+  ]
+}
+```
+

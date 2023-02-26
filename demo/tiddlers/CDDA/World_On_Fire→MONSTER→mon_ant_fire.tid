@@ -1,0 +1,205 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_ant_fire
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_ant_fire|http://cdda.aloxaf.cn/search?q=mon_ant_fire]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_ant_fire",
+  "type": "MONSTER",
+  "name": {
+    "str": "giant fire ant"
+  },
+  "description": "A monstrous firey-orange ant with a slighty, glowing abdomen, that ends with a small stinger at the tip.",
+  "default_faction": "ant",
+  "bodytype": "insect",
+  "species": [
+    "INSECT"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 60,
+  "speed": 100,
+  "material": [
+    "iflesh"
+  ],
+  "symbol": "a",
+  "color": "light_red",
+  "morale": 60,
+  "aggression": 40,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 6,
+  "armor_cut": 10,
+  "armor_bullet": 8,
+  "vision_day": 5,
+  "vision_night": 5,
+  "upgrades": {
+    "age_grow": 14,
+    "into": "mon_ant_fire_soldier"
+  },
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      30
+    ],
+    {
+      "id": "firesting"
+    },
+    {
+      "type": "gun",
+      "cooldown": 25,
+      "move_cost": 150,
+      "gun_type": "napalm_spit",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "ranges": [
+        [
+          2,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "description": "Fire ant manibles click with a spark, launching firey spit!"
+    }
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT",
+    "PLAYER_CLOSE"
+  ],
+  "harvest": "arachnid_fire",
+  "flags": [
+    "FIREPROOF",
+    "CLIMBS",
+    "HEARS",
+    "ATTACKMON",
+    "SEES",
+    "SMELLS",
+    "SWIMS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_ant_fire",
+  "type": "MONSTER",
+  "name": {
+    "str": "巨型火焰蚁"
+  },
+  "description": "一只凶猛的炽橙色蚂蚁，腹部瘦弱发光，末端有一个小型毒刺。",
+  "default_faction": "ant",
+  "bodytype": "insect",
+  "species": [
+    "INSECT"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 60,
+  "speed": 100,
+  "material": [
+    "iflesh"
+  ],
+  "symbol": "a",
+  "color": "light_red",
+  "morale": 60,
+  "aggression": 40,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 6,
+  "armor_cut": 10,
+  "armor_bullet": 8,
+  "vision_day": 5,
+  "vision_night": 5,
+  "upgrades": {
+    "age_grow": 14,
+    "into": "mon_ant_fire_soldier"
+  },
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      30
+    ],
+    {
+      "id": "firesting"
+    },
+    {
+      "type": "gun",
+      "cooldown": 25,
+      "move_cost": 150,
+      "gun_type": "napalm_spit",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "ranges": [
+        [
+          2,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "description": "火蚁的下颚带着火星发出咔哒声，发射出火球！"
+    }
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT",
+    "PLAYER_CLOSE"
+  ],
+  "harvest": "arachnid_fire",
+  "flags": [
+    "FIREPROOF",
+    "CLIMBS",
+    "HEARS",
+    "ATTACKMON",
+    "SEES",
+    "SMELLS",
+    "SWIMS"
+  ]
+}
+```
+

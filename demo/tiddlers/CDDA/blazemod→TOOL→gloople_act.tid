@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: TOOL blazemod
+title: blazemod→TOOL→gloople_act
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gloople_act|http://cdda.aloxaf.cn/search?q=gloople_act]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/tools/blob_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gloople_act",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "multiplying gelatinous mass"
+  },
+  "description": "Having been fed, this blob is now rapidly multiplying into other copies of itself; extremely noisy copies!  And even worse, it's stuck to your hands until whatever it's doing is done!  Catch those blobs before they bring in every zombie for miles!",
+  "weight": "8662 g",
+  "volume": "5 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "light_green",
+  "ammo": [
+    "bfeed"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "bfeed": 40
+      }
+    }
+  ],
+  "charges_per_use": 20,
+  "turns_per_charge": 1,
+  "revert_to": "gloople",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_gloople",
+    "friendly_msg": "A blob splits and bounces away!",
+    "hostile_msg": "A blob splits and bounces away!",
+    "difficulty": 1,
+    "moves": 250,
+    "place_randomly": true,
+    "skills": [
+      "chemistry",
+      "cooking"
+    ]
+  },
+  "flags": [
+    "NO_UNWIELD",
+    "UNBREAKABLE_MELEE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gloople_act",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "凝胶变形怪（分裂中）"
+  },
+  "description": "在经过喂食后，这只变形怪正在迅速繁殖分裂出自身的克隆体；更加吵闹的克隆体！更糟糕的是，它在繁殖完成将一直粘在你的手上！赶紧在那些变形怪引来方圆几英里的每一只丧尸之前抓住它们！",
+  "weight": "8662 g",
+  "volume": "5 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "light_green",
+  "ammo": [
+    "bfeed"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "bfeed": 40
+      }
+    }
+  ],
+  "charges_per_use": 20,
+  "turns_per_charge": 1,
+  "revert_to": "gloople",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_gloople",
+    "friendly_msg": "一只变形怪分裂并蹦了出来！",
+    "hostile_msg": "一只变形怪分裂并蹦了出来！",
+    "difficulty": 1,
+    "moves": 250,
+    "place_randomly": true,
+    "skills": [
+      "chemistry",
+      "cooking"
+    ]
+  },
+  "flags": [
+    "NO_UNWIELD",
+    "UNBREAKABLE_MELEE"
+  ]
+}
+```
+

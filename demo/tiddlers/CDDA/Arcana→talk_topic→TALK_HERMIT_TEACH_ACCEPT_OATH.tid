@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_TEACH_ACCEPT_OATH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_TEACH_ACCEPT_OATH|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_TEACH_ACCEPT_OATH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_TEACH_ACCEPT_OATH",
+  "dynamic_line": "…but be cautious in these acts.  Let every wound in The Veil be a necessary one, or else leave no mark.  We are kin, it seems.  He From Beyond The Veil has granted us a second chance, it seems.",
+  "responses": [
+    {
+      "text": "Tell me what I can do to serve Him.",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "So it seems.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_TEACH_ACCEPT_OATH",
+  "dynamic_line": "……但在这些行为中要谨慎。让帷幕上的每一处伤口都是必须的，否则就不留痕迹。在他看来，我们是一样的。帷幕彼端古神似乎给了我们第二次机会。",
+  "responses": [
+    {
+      "text": "告诉我我能为他做些什么。",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "看来是这样。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

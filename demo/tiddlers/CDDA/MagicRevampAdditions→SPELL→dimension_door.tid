@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→dimension_door
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dimension_door|http://cdda.aloxaf.cn/search?q=dimension_door]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/magus.json
+
+
+!! 原文
+
+```json
+{
+  "id": "dimension_door",
+  "type": "SPELL",
+  "name": {
+    "str": "Dimension Door"
+  },
+  "description": "Teleports you randomly near a target location.",
+  "effect": "short_range_teleport",
+  "shape": "blast",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "SILENT",
+    "NO_LEGS",
+    "TARGET_TELEPORT"
+  ],
+  "min_range": 10,
+  "max_range": 30,
+  "range_increment": 1,
+  "min_aoe": 6,
+  "max_aoe": 2,
+  "aoe_increment": -0.3,
+  "max_level": 45,
+  "difficulty": 5,
+  "spell_class": "MAGUS",
+  "base_casting_time": 600,
+  "energy_source": "MANA",
+  "base_energy_cost": 600,
+  "energy_increment": -10,
+  "final_energy_cost": 250
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "dimension_door",
+  "type": "SPELL",
+  "name": {
+    "str": "次元门"
+  },
+  "description": "将你随机传送至目标位置附近。",
+  "effect": "short_range_teleport",
+  "shape": "blast",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "SILENT",
+    "NO_LEGS",
+    "TARGET_TELEPORT"
+  ],
+  "min_range": 10,
+  "max_range": 30,
+  "range_increment": 1,
+  "min_aoe": 6,
+  "max_aoe": 2,
+  "aoe_increment": -0.3,
+  "max_level": 45,
+  "difficulty": 5,
+  "spell_class": "MAGUS",
+  "base_casting_time": 600,
+  "energy_source": "MANA",
+  "base_energy_cost": 600,
+  "energy_increment": -10,
+  "final_energy_cost": 250
+}
+```
+

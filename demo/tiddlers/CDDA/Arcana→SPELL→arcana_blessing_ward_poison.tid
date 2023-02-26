@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_ward_poison
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_ward_poison|http://cdda.aloxaf.cn/search?q=arcana_blessing_ward_poison]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_ward_poison",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Ward (Poison)"
+  },
+  "description": "Arcane Blessing\nUsing this spell will grant a blessing that protects against toxic gas and other forms of poison.  It can be used on yourself or an ally.",
+  "message": "You channel energy, spreading a revitalizing glow by your will.",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "poison_ward",
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "energy_source": "MANA",
+  "difficulty": 30,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 200,
+  "final_casting_time": 100,
+  "casting_time_increment": -5,
+  "base_energy_cost": 240,
+  "final_energy_cost": 120,
+  "energy_increment": -6,
+  "min_duration": 18000,
+  "max_duration": 90000,
+  "duration_increment": 3600
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_ward_poison",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：结界（毒）"
+  },
+  "description": "奥术祝福\n使用该法术会给予祝福，以防止有毒气体和其他形式的毒药。它可以在自己或盟友身上使用。",
+  "message": "你引导能量，根据你的意愿散发出焕发活力的光芒。",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "poison_ward",
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "energy_source": "MANA",
+  "difficulty": 30,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 200,
+  "final_casting_time": 100,
+  "casting_time_increment": -5,
+  "base_energy_cost": 240,
+  "final_energy_cost": 120,
+  "energy_increment": -6,
+  "min_duration": 18000,
+  "max_duration": 90000,
+  "duration_increment": 3600
+}
+```
+

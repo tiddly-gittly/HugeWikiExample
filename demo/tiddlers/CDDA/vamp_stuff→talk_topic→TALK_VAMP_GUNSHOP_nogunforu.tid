@@ -1,0 +1,55 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_GUNSHOP_nogunforu
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_GUNSHOP_nogunforu|http://cdda.aloxaf.cn/search?q=TALK_VAMP_GUNSHOP_nogunforu]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/v_vgs_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_GUNSHOP_nogunforu",
+  "type": "talk_topic",
+  "dynamic_line": "Tell him that we don't have any spare guns to give.",
+  "responses": [
+    {
+      "text": "Sorry...",
+      "topic": "TALK_VAMP_GUNSHOP_givesupplies",
+      "effect": {
+        "u_add_trait": "wvgsgun"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_GUNSHOP_nogunforu",
+  "type": "talk_topic",
+  "dynamic_line": "那就告诉他我们没有多余的枪了。",
+  "responses": [
+    {
+      "text": "对不起。",
+      "topic": "TALK_VAMP_GUNSHOP_givesupplies",
+      "effect": {
+        "u_add_trait": "wvgsgun"
+      }
+    }
+  ]
+}
+```
+

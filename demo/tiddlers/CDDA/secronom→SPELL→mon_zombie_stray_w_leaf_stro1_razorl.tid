@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_stray_w_leaf_stro1_razorl
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_leaf_stro1_razorl|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_leaf_stro1_razorl]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_stro1_razorl",
+  "type": "SPELL",
+  "name": {
+    "str": "Razor Leaf"
+  },
+  "description": "(Combo) spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sends its sharp leaves to mince the targets in a line, dealing moderate cutting damage.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_stray_w_leaf_stro1_lace"
+    },
+    {
+      "id": "mon_zombie_stray_w_leaf_stro1_lace"
+    }
+  ],
+  "min_damage": 7,
+  "max_damage": 14,
+  "min_range": 7,
+  "max_range": 7,
+  "min_aoe": 1,
+  "max_aoe": 3,
+  "damage_type": "cut"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_stro1_razorl",
+  "type": "SPELL",
+  "name": {
+    "str": "飞叶快刀"
+  },
+  "description": "（combo）怪物释放的法术。如果你看到了这个，那么请阅读下面的文字：\n“施法者发射出一行锋利的叶子将目标切片，造成中等程度的斩击伤害。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_stray_w_leaf_stro1_lace"
+    },
+    {
+      "id": "mon_zombie_stray_w_leaf_stro1_lace"
+    }
+  ],
+  "min_damage": 7,
+  "max_damage": 14,
+  "min_range": 7,
+  "max_range": 7,
+  "min_aoe": 1,
+  "max_aoe": 3,
+  "damage_type": "cut"
+}
+```
+

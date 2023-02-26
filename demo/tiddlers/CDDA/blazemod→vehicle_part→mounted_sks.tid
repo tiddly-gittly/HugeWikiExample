@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→mounted_sks
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mounted_sks|http://cdda.aloxaf.cn/search?q=mounted_sks]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blaze_weapons_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mounted_sks",
+  "copy-from": "turret",
+  "type": "vehicle_part",
+  "name": {
+    "str": "SKS turret"
+  },
+  "item": "sks",
+  "breaks_into": [
+    {
+      "item": "sks",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mounted_sks",
+  "copy-from": "turret",
+  "type": "vehicle_part",
+  "name": {
+    "str": "SKS 步枪炮塔"
+  },
+  "item": "sks",
+  "breaks_into": [
+    {
+      "item": "sks",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+

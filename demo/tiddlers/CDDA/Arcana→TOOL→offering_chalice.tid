@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→offering_chalice
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：offering_chalice|http://cdda.aloxaf.cn/search?q=offering_chalice]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "offering_chalice",
+  "type": "TOOL",
+  "name": {
+    "str": "offering chalice"
+  },
+  "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  It is filled with a thick black liquid that you seem unable to pour out.  Using it will allow you to perform a ritual that can convert your own life force into blood essence.  Doing so will take 15 minutes, inflicting harm upon your body at the end, as well as dire consequences if overused…",
+  "weight": "2500 g",
+  "volume": "1 L",
+  "price": "1600 USD",
+  "price_postapoc": "30 USD",
+  "to_hit": -1,
+  "bashing": 6,
+  "material": [
+    "gold"
+  ],
+  "symbol": ";",
+  "looks_like": "small_relic",
+  "color": "yellow",
+  "flags": [
+    "MAGIC_FOCUS"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "REGEN_MANA",
+            "multiply": 0.25
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    "MEDITATE",
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_chalice_offering",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "offering_chalice",
+  "type": "TOOL",
+  "name": {
+    "str": "献祭圣杯"
+  },
+  "description": "这是一个奇怪的金杯，上面刻着一些陌生的文字。它充满了一种粘稠的黑色液体，你似乎无法倒出。使用它可以让你进行一个仪式，将你自己的生命力转化为精血。这样做需要15分钟，最终会对你的身体造成伤害，如果过度使用也会造成可怕的后果…",
+  "weight": "2500 g",
+  "volume": "1 L",
+  "price": "1600 USD",
+  "price_postapoc": "30 USD",
+  "to_hit": -1,
+  "bashing": 6,
+  "material": [
+    "gold"
+  ],
+  "symbol": ";",
+  "looks_like": "small_relic",
+  "color": "yellow",
+  "flags": [
+    "MAGIC_FOCUS"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "REGEN_MANA",
+            "multiply": 0.25
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    "MEDITATE",
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_chalice_offering",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  ]
+}
+```
+

@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→biomancer_coagulant_weave
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：biomancer_coagulant_weave|http://cdda.aloxaf.cn/search?q=biomancer_coagulant_weave]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/biomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "biomancer_coagulant_weave",
+  "type": "SPELL",
+  "name": {
+    "str": "Coagulant Weave"
+  },
+  "description": "Turns your biological mastery inwards, medically enhancing your flesh.  Rather than strength of healing, it staves off blood loss and purges wounds before they can turn septic, at the cost of increased hunger and thirst.",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "effect_str": "bio_weave",
+  "shape": "blast",
+  "flags": [
+    "SOMATIC",
+    "VERBAL"
+  ],
+  "energy_source": "MANA",
+  "spell_class": "BIOMANCER",
+  "difficulty": 5,
+  "base_casting_time": 400,
+  "base_energy_cost": 150,
+  "max_level": 30,
+  "min_duration": 6000,
+  "max_duration": 18000,
+  "duration_increment": 300
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "biomancer_coagulant_weave",
+  "type": "SPELL",
+  "name": {
+    "str": "凝结组织"
+  },
+  "description": "将你对生化魔法的掌握转化至体内，增强你的肉体。与医疗能量不同，它通过防止失血，在伤口化脓之前消除伤口，代价是加速新陈代谢，容易饥饿及口渴。",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "effect_str": "bio_weave",
+  "shape": "blast",
+  "flags": [
+    "SOMATIC",
+    "VERBAL"
+  ],
+  "energy_source": "MANA",
+  "spell_class": "BIOMANCER",
+  "difficulty": 5,
+  "base_casting_time": 400,
+  "base_energy_cost": 150,
+  "max_level": 30,
+  "min_duration": 6000,
+  "max_duration": 18000,
+  "duration_increment": 300
+}
+```
+

@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_survivor_vest
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_survivor_vest|http://cdda.aloxaf.cn/search?q=secro_flesh_survivor_vest]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_holster.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_survivor_vest",
+  "type": "ARMOR",
+  "name": {
+    "str": "survivor harness",
+    "str_pl": "survivor harnesses"
+  },
+  "description": "A custom-built light harness covered with pouches and including an integral tactical sling for a small rifle or other such weapon.  Durable and carefully crafted to be comfortable to wear.  Activate to holster/draw your weapon.",
+  "weight": "400 g",
+  "volume": "1250 ml",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "tacvest",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "holster": true,
+      "min_item_volume": "1250 ml",
+      "max_contains_volume": "8 L",
+      "max_contains_weight": "8200 g",
+      "max_item_length": "120 cm",
+      "moves": 50
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "20 cm",
+      "moves": 80
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "20 cm",
+      "moves": 80
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "20 cm",
+      "moves": 80
+    }
+  ],
+  "use_action": {
+    "type": "holster"
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "STURDY",
+    "BELTED"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        4,
+        12
+      ],
+      "coverage": 20,
+      "covers": [
+        "torso"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_survivor_vest",
+  "type": "ARMOR",
+  "name": {
+    "str": "幸存者背带",
+    "str_pl": "幸存者背带"
+  },
+  "description": "一个自制的轻型背带，缝了不少口袋的同时还有一个集成战术吊索用于小型步枪及此类武器。值得信赖的手工技术将它打造得至为舒适耐用。激活它来收拔武器。",
+  "weight": "400 g",
+  "volume": "1250 ml",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "tacvest",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "holster": true,
+      "min_item_volume": "1250 ml",
+      "max_contains_volume": "8 L",
+      "max_contains_weight": "8200 g",
+      "max_item_length": "120 cm",
+      "moves": 50
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "20 cm",
+      "moves": 80
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "20 cm",
+      "moves": 80
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "20 cm",
+      "moves": 80
+    }
+  ],
+  "use_action": {
+    "type": "holster"
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "STURDY",
+    "BELTED"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        4,
+        12
+      ],
+      "coverage": 20,
+      "covers": [
+        "torso"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

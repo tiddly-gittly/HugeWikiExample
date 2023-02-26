@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_FREE_MERCHANT_STOCKS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_FREE_MERCHANT_STOCKS|http://cdda.aloxaf.cn/search?q=TALK_FREE_MERCHANT_STOCKS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_FREE_MERCHANT_STOCKS.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_FREE_MERCHANT_STOCKS",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know of anyone who could help with that?",
+      "topic": "TALK_FREE_MERCHANT_STOCKS_CF_REP_MISSION_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_FREE_MERCHANT_STOCKS",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": " [任务]有人要求我帮助吸引另一个幸存者社区的工作。有人知道可以提供帮助的人吗？",
+      "topic": "TALK_FREE_MERCHANT_STOCKS_CF_REP_MISSION_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+

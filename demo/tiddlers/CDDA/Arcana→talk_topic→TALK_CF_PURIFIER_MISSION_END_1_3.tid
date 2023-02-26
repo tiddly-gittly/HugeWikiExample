@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_MISSION_END_1_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_MISSION_END_1_3|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_MISSION_END_1_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_MISSION_END_1_3",
+  "type": "talk_topic",
+  "dynamic_line": "I'm just about done getting a summary of the project, known locations of supply shipments, and what little else we know copied.  Talk to me when you're ready and I just might have an idea for how we can get what we need.",
+  "speaker_effect": [
+    {
+      "effect": [
+        {
+          "npc_add_var": "nicholas_mission_2_ready",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "text": "We'll see then.",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_MISSION_END_1_3",
+  "type": "talk_topic",
+  "dynamic_line": "我刚刚完成了对项目的总结，已知的供货地点，以及我们所知甚少的其他内容。当你准备好的时候和我谈谈，我可能会有一个想法，我们如何才能得到我们需要的。",
+  "speaker_effect": [
+    {
+      "effect": [
+        {
+          "npc_add_var": "nicholas_mission_2_ready",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "text": "到时候再说。",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+

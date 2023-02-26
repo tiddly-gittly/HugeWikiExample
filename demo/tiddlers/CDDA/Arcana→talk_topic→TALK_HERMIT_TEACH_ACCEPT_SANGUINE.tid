@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_TEACH_ACCEPT_SANGUINE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_TEACH_ACCEPT_SANGUINE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_TEACH_ACCEPT_SANGUINE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_TEACH_ACCEPT_SANGUINE",
+  "dynamic_line": "Always the practical type.  But I can appreciate the drive to put knowledge to good use, rather than be squandered.  As you wish.  I can tell from your demeanor that you are of the Sanguine Order.  And I, of the Keepers of The Oath.  Perhaps He From Beyond The Veil will grant us both penance.",
+  "responses": [
+    {
+      "text": "Then tell me what I must do.",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "We shall see.",
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[ATTACK] I need no penance from your so-called god.  I would rather your knowledge die with you than deal with the likes of him.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_TEACH_ACCEPT_SANGUINE",
+  "dynamic_line": "总是实用型的。但我能欣赏这种将知识充分利用的动力，而不是被浪费。如你所愿。从你的举止我可以看出你是个乐观的人。而我，守着誓言的人。也许他会让我们两个都忏悔。",
+  "responses": [
+    {
+      "text": "那就告诉我该怎么办。",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "我们会看到的。",
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[攻击]我不需要你所谓的上帝的忏悔。我宁愿你的知识和你一起死去，也不愿和他这样的人打交道。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

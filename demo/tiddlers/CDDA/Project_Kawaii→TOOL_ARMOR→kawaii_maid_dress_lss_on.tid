@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Project_Kawaii
+title: Project_Kawaii→TOOL_ARMOR→kawaii_maid_dress_lss_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kawaii_maid_dress_lss_on|http://cdda.aloxaf.cn/search?q=kawaii_maid_dress_lss_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Project_Kawaii/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kawaii_maid_dress_lss_on",
+  "copy-from": "kawaii_maid_dress_lss",
+  "repairs_like": "kawaii_maid_dress_lss",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "Cute Maid Uniform LSS-PRO (on)"
+  },
+  "description": "The standard maid uniform may not be enough to survive in this dangerous new world. This improved version, while still appearing cute and frilly on the outside, actually conceals an advanced armor liner and climate control systems to better endure even the harshest environments.",
+  "flags": [
+    "VARSIZE",
+    "WATERPROOF",
+    "POCKETS",
+    "RAINPROOF",
+    "STURDY",
+    "FANCY",
+    "TRADER_AVOID"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "values": [
+          {
+            "value": "CLIMATE_CONTROL_HEAT",
+            "add": 50
+          },
+          {
+            "value": "CLIMATE_CONTROL_CHILL",
+            "add": 50
+          }
+        ]
+      }
+    ]
+  },
+  "power_draw": "1 kW",
+  "revert_to": "kawaii_maid_dress_lss",
+  "use_action": {
+    "ammo_scale": 0,
+    "type": "transform",
+    "msg": "You turn off the uniform's climate control systems.",
+    "target": "kawaii_maid_dress_lss",
+    "menu_text": "Turn off"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kawaii_maid_dress_lss_on",
+  "copy-from": "kawaii_maid_dress_lss",
+  "repairs_like": "kawaii_maid_dress_lss",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "战斗女仆制服LSS-PRO（开）"
+  },
+  "description": "普通的女仆装可能不足以在这个危险的新世界生存。这一改进版外表看起来仍然可爱, 而且还有褶边，但实际上隐藏了先进的装甲衬里和气温控制系统，以更好地抵御恶劣的环境。",
+  "flags": [
+    "VARSIZE",
+    "WATERPROOF",
+    "POCKETS",
+    "RAINPROOF",
+    "STURDY",
+    "FANCY",
+    "TRADER_AVOID"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "values": [
+          {
+            "value": "CLIMATE_CONTROL_HEAT",
+            "add": 50
+          },
+          {
+            "value": "CLIMATE_CONTROL_CHILL",
+            "add": 50
+          }
+        ]
+      }
+    ]
+  },
+  "power_draw": "1 kW",
+  "revert_to": "kawaii_maid_dress_lss",
+  "use_action": {
+    "ammo_scale": 0,
+    "type": "transform",
+    "msg": "你关掉制服的温控系统。",
+    "target": "kawaii_maid_dress_lss",
+    "menu_text": "关闭"
+  }
+}
+```
+

@@ -1,0 +1,221 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Dino_Mad_Science
+title: Dino_Mad_Science→MONSTER→mon_zpinosaurus_bio_op
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zpinosaurus_bio_op|http://cdda.aloxaf.cn/search?q=mon_zpinosaurus_bio_op]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dino_Mad_Science/monsters/laser_dinos_zinos.json
+
+
+!! 原文
+
+```json
+{
+  "type": "MONSTER",
+  "id": "mon_zpinosaurus_bio_op",
+  "name": {
+    "str": "Spinosaurus zombie bio-operator"
+  },
+  "copy-from": "mon_zpinosaurus",
+  "diff": 5,
+  "proportional": {
+    "hp": 2,
+    "speed": 1.2
+  },
+  "relative": {
+    "morale": 100,
+    "melee_skill": 10,
+    "melee_dice": 9,
+    "dodge": 1,
+    "armor_bash": 8,
+    "armor_cut": 8,
+    "armor_bullet": 8
+  },
+  "flags": [
+    "NO_BREATHE",
+    "ELECTRIC",
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "POISON",
+    "STUMBLES",
+    "BASHES",
+    "DESTROYS",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "WARM",
+    "PUSH_MON",
+    "SWIMS",
+    "INTERIOR_AMMO"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 4
+    }
+  ],
+  "vision_day": 100,
+  "vision_night": 100,
+  "luminance": 1,
+  "starting_ammo": {
+    "battery": 10
+  },
+  "special_attacks": [
+    [
+      "BIO_OP_TAKEDOWN",
+      20
+    ],
+    {
+      "type": "gun",
+      "cooldown": 7,
+      "move_cost": 10,
+      "gun_type": "laser_rifle_dino2",
+      "fake_skills": [
+        [
+          "gun",
+          1
+        ],
+        [
+          "rifle",
+          1
+        ]
+      ],
+      "fake_dex": 1,
+      "ranges": [
+        [
+          0,
+          30,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "laser_lock": false,
+      "targeting_cost": 1,
+      "targeting_timeout_extend": -1,
+      "targeting_sound": "\"TARGET *zZzZzz* ACQUIRED.\"",
+      "targeting_volume": 70,
+      "no_ammo_sound": "*zZzzz*-TARGET ACQUIRED.  *beeeeeeeeep*.  OUT OF AMMO.-*zZzZ*"
+    }
+  ],
+  "description": "A shiny finned dinosaur corpse covered with armor and crackling bionics.  It shambles quickly as it hunts.  Is…  is that a laser rifle on its head?   The laser could probably be retrived through field dressing or dissection.",
+  "special_when_hit": [
+    "ZAPBACK",
+    60
+  ],
+  "harvest": "CBM_ZINO_LASER",
+  "death_drops": "laser_cbm_dino_drops"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "MONSTER",
+  "id": "mon_zpinosaurus_bio_op",
+  "name": {
+    "str": "丧尸生化棘龙"
+  },
+  "copy-from": "mon_zpinosaurus",
+  "diff": 5,
+  "proportional": {
+    "hp": 2,
+    "speed": 1.2
+  },
+  "relative": {
+    "morale": 100,
+    "melee_skill": 10,
+    "melee_dice": 9,
+    "dodge": 1,
+    "armor_bash": 8,
+    "armor_cut": 8,
+    "armor_bullet": 8
+  },
+  "flags": [
+    "NO_BREATHE",
+    "ELECTRIC",
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "POISON",
+    "STUMBLES",
+    "BASHES",
+    "DESTROYS",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "WARM",
+    "PUSH_MON",
+    "SWIMS",
+    "INTERIOR_AMMO"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 4
+    }
+  ],
+  "vision_day": 100,
+  "vision_night": 100,
+  "luminance": 1,
+  "starting_ammo": {
+    "battery": 10
+  },
+  "special_attacks": [
+    [
+      "BIO_OP_TAKEDOWN",
+      20
+    ],
+    {
+      "type": "gun",
+      "cooldown": 7,
+      "move_cost": 10,
+      "gun_type": "laser_rifle_dino2",
+      "fake_skills": [
+        [
+          "gun",
+          1
+        ],
+        [
+          "rifle",
+          1
+        ]
+      ],
+      "fake_dex": 1,
+      "ranges": [
+        [
+          0,
+          30,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "laser_lock": false,
+      "targeting_cost": 1,
+      "targeting_timeout_extend": -1,
+      "targeting_sound": "\"TARGET *zZzZzz* ACQUIRED.\"",
+      "targeting_volume": 70,
+      "no_ammo_sound": "*滋滋滋滋滋*——目标已确认。*哔————*弹药已耗尽。——*滋滋滋滋*"
+    }
+  ],
+  "description": "一具闪光的带鳍兽脚类恐龙尸体，浑身布满了带血盔甲和噼啪作响的生化插件。它在捕猎时蹒跚而行。它头上的那玩意是激光枪吗？它身上的激光枪可通过清理内脏或解剖获得。",
+  "special_when_hit": [
+    "ZAPBACK",
+    60
+  ],
+  "harvest": "CBM_ZINO_LASER",
+  "death_drops": "laser_cbm_dino_drops"
+}
+```
+

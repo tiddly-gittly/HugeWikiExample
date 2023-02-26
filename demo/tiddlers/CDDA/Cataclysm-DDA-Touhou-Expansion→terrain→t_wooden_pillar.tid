@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: terrain Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→terrain→t_wooden_pillar
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_wooden_pillar|http://cdda.aloxaf.cn/search?q=t_wooden_pillar]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/terrain_furniture/thex_terrain.json
+
+
+!! 原文
+
+```json
+{
+  "id": "t_wooden_pillar",
+  "type": "terrain",
+  "name": "wooden support",
+  "description": "A stout wooden pillar.",
+  "symbol": "I",
+  "looks_like": "t_support_l",
+  "color": "brown",
+  "coverage": 80,
+  "move_cost": 0,
+  "bash": {
+    "str_min": 20,
+    "str_max": 100,
+    "sound": "thunk!",
+    "sound_fail": "thud!",
+    "items": [
+      {
+        "item": "splinter",
+        "count": [
+          50,
+          200
+        ]
+      }
+    ],
+    "ter_set": "t_floor"
+  },
+  "flags": [
+    "FLAMMABLE_HARD",
+    "NOITEM",
+    "REDUCE_SCENT",
+    "SUPPORTS_ROOF",
+    "WALL"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "t_wooden_pillar",
+  "type": "terrain",
+  "name": "木制支架",
+  "description": "A stout wooden pillar.",
+  "symbol": "I",
+  "looks_like": "t_support_l",
+  "color": "brown",
+  "coverage": 80,
+  "move_cost": 0,
+  "bash": {
+    "str_min": 20,
+    "str_max": 100,
+    "sound": "thunk!",
+    "sound_fail": "thud!",
+    "items": [
+      {
+        "item": "splinter",
+        "count": [
+          50,
+          200
+        ]
+      }
+    ],
+    "ter_set": "t_floor"
+  },
+  "flags": [
+    "FLAMMABLE_HARD",
+    "NOITEM",
+    "REDUCE_SCENT",
+    "SUPPORTS_ROOF",
+    "WALL"
+  ]
+}
+```
+

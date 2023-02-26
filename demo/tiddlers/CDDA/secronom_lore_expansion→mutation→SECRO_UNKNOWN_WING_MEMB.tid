@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_UNKNOWN_WING_MEMB
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_UNKNOWN_WING_MEMB|http://cdda.aloxaf.cn/search?q=SECRO_UNKNOWN_WING_MEMB]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_UNKNOWN_WING_MEMB",
+  "name": {
+    "str": "Membranous Wings"
+  },
+  "points": 6,
+  "visibility": 8,
+  "ugliness": 8,
+  "valid": false,
+  "description": "You've got wing-like appendages sprouting on your shoulder joints stretching down to your pelvis. The wing is composed of muscle tissues and fiber webbings, with each ends tipped with a sharp, bony blade appendixes. They might be encumbering and heavy, but their strong build provides +2 strength.",
+  "types": [
+    "WINGS"
+  ],
+  "prereqs": [
+    "SECRO_UNKNOWN_WING_START"
+  ],
+  "encumbrance_always": [
+    [
+      "torso",
+      15
+    ]
+  ],
+  "weight_capacity_modifier": 1.15,
+  "dodge_modifier": -1,
+  "movecost_modifier": 1.1,
+  "movecost_obstacle_modifier": 0.925,
+  "attacks": [
+    {
+      "attack_text_u": "You rake %s",
+      "attack_text_npc": "%1$s rakes %2$s",
+      "chance": 50,
+      "strength_damage": {
+        "damage_type": "cut",
+        "amount": 1.25
+      }
+    }
+  ],
+  "passive_mods": {
+    "str_mod": 2
+  },
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_UNKNOWN_WING_MEMB",
+  "name": {
+    "str": "膜翅"
+  },
+  "points": 6,
+  "visibility": 8,
+  "ugliness": 8,
+  "valid": false,
+  "description": "你的肩关节上长出了翅膀状的附属物，一直延伸到骨盆。翅膀由肌肉组织和纤维织带组成，每一个末端都有一个锋利的骨性附肢。他们可能是累赘和沉重，但他们强大的建设提供了+2的力量。",
+  "types": [
+    "WINGS"
+  ],
+  "prereqs": [
+    "SECRO_UNKNOWN_WING_START"
+  ],
+  "encumbrance_always": [
+    [
+      "torso",
+      15
+    ]
+  ],
+  "weight_capacity_modifier": 1.15,
+  "dodge_modifier": -1,
+  "movecost_modifier": 1.1,
+  "movecost_obstacle_modifier": 0.925,
+  "attacks": [
+    {
+      "attack_text_u": "You rake %s",
+      "attack_text_npc": "%1$s rakes %2$s",
+      "chance": 50,
+      "strength_damage": {
+        "damage_type": "cut",
+        "amount": 1.25
+      }
+    }
+  ],
+  "passive_mods": {
+    "str_mod": 2
+  },
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_WS2_quest1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_WS2_quest1|http://cdda.aloxaf.cn/search?q=VAMP_WS2_quest1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_WS2_quest1",
+  "type": "mission_definition",
+  "name": {
+    "str": "Recruit Radio Specialist"
+  },
+  "description": "Ask the <color_yellow>Radio Specialist</color> to join, then talk to the guard after they did.",
+  "goal": "MGOAL_RECRUIT_NPC",
+  "difficulty": 2,
+  "value": 100000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "radio_tower",
+      "om_special": "Radio Tower",
+      "reveal_radius": 2,
+      "search_range": 90,
+      "z": 0
+    },
+    "update_mapgen": {
+      "place_npcs": [
+        {
+          "class": "HUMAN_RADIOSPEC",
+          "x": 10,
+          "y": 10,
+          "target": true
+        }
+      ]
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_WS2_quest2",
+  "dialogue": {
+    "describe": "It's easy, I think...",
+    "offer": "First things first, we have to build a radio tower that transmit signals to our fellow survivors out in the wilds which serves as their waypoint to our place. Well, building that cheap structure is simple, but what I want you to do is to find a person with expertise to operate this kind of stuff.",
+    "accepted": "Great. Now move, mortal.",
+    "rejected": "Great! Let this survivors die out of nowhere then...",
+    "advice": "Just bring them in safely.",
+    "inquire": "Where are they?",
+    "success": "I knew you can bring one. Now let this nerd go to work!",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "*glares*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_WS2_quest1",
+  "type": "mission_definition",
+  "name": {
+    "str": "招聘无线电专家"
+  },
+  "description": "请<color_yellow>无线电专家</color>加入，然后在他们加入后与守卫交谈。",
+  "goal": "MGOAL_RECRUIT_NPC",
+  "difficulty": 2,
+  "value": 100000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "radio_tower",
+      "om_special": "Radio Tower",
+      "reveal_radius": 2,
+      "search_range": 90,
+      "z": 0
+    },
+    "update_mapgen": {
+      "place_npcs": [
+        {
+          "class": "HUMAN_RADIOSPEC",
+          "x": 10,
+          "y": 10,
+          "target": true
+        }
+      ]
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_WS2_quest2",
+  "dialogue": {
+    "describe": "我认为这很容易...",
+    "offer": "首先，我们必须建立一个无线电发射塔，向野外的幸存者发送信号，作为他们到达我们那里的航路点。嗯，建造那种便宜的结构很简单，但我想让你做的是找到一个有专业知识的人来操作这种东西。",
+    "accepted": "太好了。走开，凡人。",
+    "rejected": "太棒了！让这些幸存者凭空死去吧...",
+    "advice": "把它们安全地带进来。",
+    "inquire": "他们在哪？",
+    "success": "我知道你可以带一个。现在让这个书呆子去上班！",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "*怒视*"
+  }
+}
+```
+

@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: ARMOR vamp_stuff
+title: vamp_stuff→ARMOR→v_hemo_crimsoncoat_coat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_hemo_crimsoncoat_coat|http://cdda.aloxaf.cn/search?q=v_hemo_crimsoncoat_coat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/+Misc/v_spell_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "v_hemo_crimsoncoat_coat",
+  "type": "ARMOR",
+  "name": {
+    "str": "crimson coat"
+  },
+  "description": "A thick layer of blood, protecting your body from harm. 'Break' the barrier by dropping it.\n* 75% chance for the coat to react, immediately piercing the attacker when hit that deals <color_green>12 stabbing damage</color> and renders them <color_yellow>unconscious</color> for 1-3 turns.",
+  "weight": "3 g",
+  "volume": "3 ml",
+  "price": "0 cent",
+  "material": [
+    "flesh"
+  ],
+  "symbol": "0",
+  "color": "red",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_me_effect": [
+          {
+            "id": "v_hemo_crimsoncoat_coat_pr_maybe"
+          }
+        ],
+        "values": [
+          {
+            "value": "ARMOR_BASH",
+            "add": -70
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": -70
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": -70
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "PERSONAL",
+    "OVERSIZE",
+    "BLOCK_WHILE_WORN",
+    "SEMITANGIBLE",
+    "NO_DROP"
+  ],
+  "armor": [
+    {
+      "coverage": 100,
+      "covers": [
+        "head",
+        "torso",
+        "arm_r",
+        "arm_l",
+        "leg_r",
+        "leg_l"
+      ],
+      "material": [
+        "flesh"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "v_hemo_crimsoncoat_coat",
+  "type": "ARMOR",
+  "name": {
+    "str": "深红色外套"
+  },
+  "description": "一层浓厚的血液，使你的身体免受伤害。丢下它即可“破除”这层护盾。\n*这层护盾有75%的概率，在被命中时瞬间刺穿攻击者，造成<color_green>12点刺击伤害</color>，并使其<color_yellow>失去知觉</color>，持续1-3回合。",
+  "weight": "3 g",
+  "volume": "3 ml",
+  "price": "0 cent",
+  "material": [
+    "flesh"
+  ],
+  "symbol": "0",
+  "color": "red",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_me_effect": [
+          {
+            "id": "v_hemo_crimsoncoat_coat_pr_maybe"
+          }
+        ],
+        "values": [
+          {
+            "value": "ARMOR_BASH",
+            "add": -70
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": -70
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": -70
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "PERSONAL",
+    "OVERSIZE",
+    "BLOCK_WHILE_WORN",
+    "SEMITANGIBLE",
+    "NO_DROP"
+  ],
+  "armor": [
+    {
+      "coverage": 100,
+      "covers": [
+        "head",
+        "torso",
+        "arm_r",
+        "arm_l",
+        "leg_r",
+        "leg_l"
+      ],
+      "material": [
+        "flesh"
+      ]
+    }
+  ]
+}
+```
+

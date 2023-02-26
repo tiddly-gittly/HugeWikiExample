@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_fleshmonger_reflesh_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_fleshmonger_reflesh_check|http://cdda.aloxaf.cn/search?q=mon_zombie_fleshmonger_reflesh_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_large.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_fleshmonger_reflesh_check",
+  "type": "SPELL",
+  "name": {
+    "str": "Fleshmonger - Reflesh"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster heals its nearby allies. If caster stands above a gore field, perform the healing, otherwise it takes away its own health to do so.'",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT"
+  ],
+  "min_range": 7,
+  "max_range": 7,
+  "shape": "line",
+  "effect": "effect_on_condition",
+  "effect_str": "eoc_secro_mon_zombie_fleshmonger_reflesh_check"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_fleshmonger_reflesh_check",
+  "type": "SPELL",
+  "name": {
+    "str": "肉商-刷新"
+  },
+  "description": "怪物施法。如果你看到了这一点，那么请阅读这一条：\n'施法者治疗其附近的盟友。如果施法者站在血污场上方，进行治疗，否则会夺走其自身的生命。”",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT"
+  ],
+  "min_range": 7,
+  "max_range": 7,
+  "shape": "line",
+  "effect": "effect_on_condition",
+  "effect_str": "eoc_secro_mon_zombie_fleshmonger_reflesh_check"
+}
+```
+

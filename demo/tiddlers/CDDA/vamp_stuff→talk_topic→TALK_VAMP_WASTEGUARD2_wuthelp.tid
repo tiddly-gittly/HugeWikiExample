@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_WASTEGUARD2_wuthelp
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_WASTEGUARD2_wuthelp|http://cdda.aloxaf.cn/search?q=TALK_VAMP_WASTEGUARD2_wuthelp]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/v_wg2_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_WASTEGUARD2_wuthelp",
+  "type": "talk_topic",
+  "dynamic_line": "So you're interested in helping us out with our problems... But I don't want to get you in trouble.",
+  "responses": [
+    {
+      "text": "I'll take the risk!",
+      "topic": "TALK_VAMP_WASTEGUARD2_helpaccept",
+      "effect": {
+        "u_add_trait": "wsg2hired"
+      }
+    },
+    {
+      "text": "Forget it, I'm out of that!",
+      "topic": "TALK_VAMP_WASTEGUARD2_ohrelly"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_WASTEGUARD2_wuthelp",
+  "type": "talk_topic",
+  "dynamic_line": "所以你有兴趣帮我们解决问题…但我不想让你陷入麻烦。",
+  "responses": [
+    {
+      "text": "我愿意冒这个险！",
+      "topic": "TALK_VAMP_WASTEGUARD2_helpaccept",
+      "effect": {
+        "u_add_trait": "wsg2hired"
+      }
+    },
+    {
+      "text": "当我没说，再见！",
+      "topic": "TALK_VAMP_WASTEGUARD2_ohrelly"
+    }
+  ]
+}
+```
+

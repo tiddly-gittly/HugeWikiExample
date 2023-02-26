@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→swordbashtrip
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：swordbashtrip|http://cdda.aloxaf.cn/search?q=swordbashtrip]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "swordbashtrip",
+  "cooldown": 22,
+  "move_cost": 115,
+  "accuracy": 6,
+  "blockable": true,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 10
+    }
+  ],
+  "effects": [
+    {
+      "id": "downed",
+      "duration": 3
+    }
+  ],
+  "body_parts": [
+    [
+      "leg_l",
+      1
+    ],
+    [
+      "leg_r",
+      1
+    ]
+  ],
+  "hit_dmg_u": "%1$s bashes your leg with its sword!",
+  "hit_dmg_npc": "%1$s swordbashed <npcname>'s leg!",
+  "no_dmg_msg_u": "%1$s tries to swordbash your leg, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to swordbash <npcname>'s leg, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "swordbashtrip",
+  "cooldown": 22,
+  "move_cost": 115,
+  "accuracy": 6,
+  "blockable": true,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 10
+    }
+  ],
+  "effects": [
+    {
+      "id": "downed",
+      "duration": 3
+    }
+  ],
+  "body_parts": [
+    [
+      "leg_l",
+      1
+    ],
+    [
+      "leg_r",
+      1
+    ]
+  ],
+  "hit_dmg_u": "%1$s bashes your leg with its sword!",
+  "hit_dmg_npc": "%1$s swordbashed <npcname>'s leg!",
+  "no_dmg_msg_u": "%1$s tries to swordbash your leg, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to swordbash <npcname>'s leg, but fails to penetrate their armor!"
+}
+```
+

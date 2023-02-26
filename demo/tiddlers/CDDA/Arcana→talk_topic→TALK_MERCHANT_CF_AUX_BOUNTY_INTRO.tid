@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MERCHANT_CF_AUX_BOUNTY_INTRO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MERCHANT_CF_AUX_BOUNTY_INTRO|http://cdda.aloxaf.cn/search?q=TALK_MERCHANT_CF_AUX_BOUNTY_INTRO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MERCHANT_CF_AUX.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_BOUNTY_INTRO",
+  "type": "talk_topic",
+  "dynamic_line": "Far as steady jobs go, not much.  I got bounties on behalf of the people running this place, however.  Not like shooting people in the face kinda bounties, more monster-hunting and other stuff like that.  Interested?",
+  "speaker_effect": {
+    "effect": {
+      "u_add_var": "cf_aux_bounty_learned",
+      "type": "flag",
+      "context": "knowledge",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "What sort of bounties are on offer?",
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK"
+    },
+    {
+      "text": "Perhaps another time.",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_BOUNTY_INTRO",
+  "type": "talk_topic",
+  "dynamic_line": "就稳定的工作而言，不多。不过，我代表管理这个地方的人拿到了奖金。不像是朝人的脸上开枪，更多的怪物狩猎之类的。有兴趣吗？",
+  "speaker_effect": {
+    "effect": {
+      "u_add_var": "cf_aux_bounty_learned",
+      "type": "flag",
+      "context": "knowledge",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "有什么样的赏金？",
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK"
+    },
+    {
+      "text": "也许下次吧。",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    }
+  ]
+}
+```
+

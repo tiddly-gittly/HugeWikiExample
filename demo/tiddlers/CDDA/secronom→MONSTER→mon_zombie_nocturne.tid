@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_nocturne
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_nocturne|http://cdda.aloxaf.cn/search?q=mon_zombie_nocturne]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Aggro-type zed. Like a shady zombie, but much stronger and tougher.",
+  "id": "mon_zombie_nocturne",
+  "type": "MONSTER",
+  "name": {
+    "str": "nocturne"
+  },
+  "description": "Concealed in otherworldly shadows, this vicious corpse brings terror to its unfortunate prey. Sets of razor nails glow faintly in the darkness, and baneful eyes affixed to the void.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 230,
+  "speed": 80,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⫝",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "armor_stab": 8,
+  "dodge": 3,
+  "armor_bash": 3,
+  "armor_cut": 5,
+  "armor_bullet": 3,
+  "vision_day": 6,
+  "vision_night": 26,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "nocturne_nsweep",
+      24
+    ],
+    [
+      "nocturne_sstrike",
+      38
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 16,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "regenerates": 3,
+  "regenerates_in_dark": true,
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "NIGHT_INVISIBILITY",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "HARDTOSHOOT",
+    "FILTHY",
+    "SUNDEATH"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Aggro-type zed. Like a shady zombie, but much stronger and tougher.",
+  "id": "mon_zombie_nocturne",
+  "type": "MONSTER",
+  "name": {
+    "str": "漆黑鬼影丧尸"
+  },
+  "description": "隐藏在超自然的阴影中，这具邪恶的尸体给它不幸的猎物带来了恐惧。一排排剃须刀般的指甲在黑暗中隐约发光，邪恶的眼睛悬浮在上空。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 230,
+  "speed": 80,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⫝",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "armor_stab": 8,
+  "dodge": 3,
+  "armor_bash": 3,
+  "armor_cut": 5,
+  "armor_bullet": 3,
+  "vision_day": 6,
+  "vision_night": 26,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "nocturne_nsweep",
+      24
+    ],
+    [
+      "nocturne_sstrike",
+      38
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 16,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "regenerates": 3,
+  "regenerates_in_dark": true,
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "NIGHT_INVISIBILITY",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "HARDTOSHOOT",
+    "FILTHY",
+    "SUNDEATH"
+  ]
+}
+```
+

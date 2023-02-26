@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_fleshling_tiny
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_tiny|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_tiny]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Fleshlings.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Small, random pieces of crap from infected creatures!",
+  "id": "mon_sflesh_fleshling_tiny",
+  "type": "MONSTER",
+  "name": {
+    "str": "fleshling"
+  },
+  "description": "A tiny slab of meat that moves by either hopping or slithering through the ground. Attracted to flesh.",
+  "default_faction": "secro_flesh2",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "200 ml",
+  "weight": "30 g",
+  "hp": 10,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "◇",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_fleshling_tiny_devour"
+      },
+      "cooldown": 50,
+      "monster_message": "<color_magenta>%1$s devours %3$s...</color>"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "PACIFIST"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Small, random pieces of crap from infected creatures!",
+  "id": "mon_sflesh_fleshling_tiny",
+  "type": "MONSTER",
+  "name": {
+    "str": "血肉生物"
+  },
+  "description": "一小块肉，通过跳跃或滑动的方式在地上移动。被肉体所吸引。",
+  "default_faction": "secro_flesh2",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "200 ml",
+  "weight": "30 g",
+  "hp": 10,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "◇",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_fleshling_tiny_devour"
+      },
+      "cooldown": 50,
+      "monster_message": "<color_magenta>%1$s吞噬%3$s…</color>"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "PACIFIST"
+  ]
+}
+```
+

@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: AMMO blazemod
+title: blazemod→AMMO→canbombfire
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：canbombfire|http://cdda.aloxaf.cn/search?q=canbombfire]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/ammo/blaze_ammo.json
+
+
+!! 原文
+
+```json
+{
+  "id": "canbombfire",
+  "copy-from": "canbomb_generic",
+  "type": "AMMO",
+  "name": {
+    "str": "fire canister"
+  },
+  "description": "An IED composed of a container filled with a payload material and a means to trigger it.  Intended to be fired from a specialized launcher.  This one is designed to douse a small area with deadly flames.",
+  "weight": "3816 g",
+  "volume": "250 ml",
+  "price": "6 USD",
+  "count": 1,
+  "stack_size": 1,
+  "damage": {
+    "damage_type": "stab",
+    "amount": 20
+  },
+  "extend": {
+    "effects": [
+      "FLAME"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "canbombfire",
+  "copy-from": "canbomb_generic",
+  "type": "AMMO",
+  "name": {
+    "str": "火焰大炸弹"
+  },
+  "description": "一个简易的爆炸装置，说起来就是里边装了杀伤性物质的密封容器，遭遇撞击后触发。看起来似乎应该用特制的发射器使用，这个设计来让小片区域充满火焰。",
+  "weight": "3816 g",
+  "volume": "250 ml",
+  "price": "6 USD",
+  "count": 1,
+  "stack_size": 1,
+  "damage": {
+    "damage_type": "stab",
+    "amount": 20
+  },
+  "extend": {
+    "effects": [
+      "FLAME"
+    ]
+  }
+}
+```
+

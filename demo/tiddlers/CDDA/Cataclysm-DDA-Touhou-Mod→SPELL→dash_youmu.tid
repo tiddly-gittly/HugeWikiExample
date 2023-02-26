@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→dash_youmu
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dash_youmu|http://cdda.aloxaf.cn/search?q=dash_youmu]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_dashes.json
+
+
+!! 原文
+
+```json
+{
+  "id": "dash_youmu",
+  "type": "SPELL",
+  "name": "Sakura slash",
+  "description": "Dash with great force, slashing at your enemy.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "components": "spell_components_youmuswords",
+  "effect": "dash",
+  "extra_effects": [
+    {
+      "id": "dash_basic_levitate"
+    }
+  ],
+  "shape": "line",
+  "damage_type": "cut",
+  "min_damage": 20,
+  "max_damage": 133,
+  "damage_increment": 13,
+  "min_range": 4,
+  "max_range": 4,
+  "max_level": 10,
+  "difficulty": -20,
+  "base_casting_time": 50,
+  "base_energy_cost": 2500,
+  "energy_source": "STAMINA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "//": "This should do half soul half cut dmg. Also, cherry blossom petals should linger around after I figure how to use field effects...",
+  "//2": "A second dash could be: Youmu activates it and puts down an aoe field. When the first enemy crosses it, she slashes past it 1-2 tiles while dealing heavy cut/soul damage. It should last 4-6 seconds at most, be automatic and if it fails (due no enemy, cc or whatever) it refunds half the cost. Also 1-2 turns after the damage cherry blossom petals should explode from the target."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "dash_youmu",
+  "type": "SPELL",
+  "name": "Sakura slash",
+  "description": "Dash with great force, slashing at your enemy.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "components": "spell_components_youmuswords",
+  "effect": "dash",
+  "extra_effects": [
+    {
+      "id": "dash_basic_levitate"
+    }
+  ],
+  "shape": "line",
+  "damage_type": "cut",
+  "min_damage": 20,
+  "max_damage": 133,
+  "damage_increment": 13,
+  "min_range": 4,
+  "max_range": 4,
+  "max_level": 10,
+  "difficulty": -20,
+  "base_casting_time": 50,
+  "base_energy_cost": 2500,
+  "energy_source": "STAMINA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "//": "This should do half soul half cut dmg. Also, cherry blossom petals should linger around after I figure how to use field effects...",
+  "//2": "A second dash could be: Youmu activates it and puts down an aoe field. When the first enemy crosses it, she slashes past it 1-2 tiles while dealing heavy cut/soul damage. It should last 4-6 seconds at most, be automatic and if it fails (due no enemy, cc or whatever) it refunds half the cost. Also 1-2 turns after the damage cherry blossom petals should explode from the target."
+}
+```
+

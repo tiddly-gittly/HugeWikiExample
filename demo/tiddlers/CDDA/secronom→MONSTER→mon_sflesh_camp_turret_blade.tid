@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_camp_turret_blade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_camp_turret_blade|http://cdda.aloxaf.cn/search?q=mon_sflesh_camp_turret_blade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/BO Turrets.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_camp_turret_blade",
+  "type": "MONSTER",
+  "name": {
+    "str": "flesh heap (blade)"
+  },
+  "description": "A heap of conglomerated flesh infused with blade core. Its body is filled with hundreds of bone outgrowths, and new ones keep on growing. And growing.",
+  "default_faction": "secro_flesh3",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "300 L",
+  "weight": "3125 kg",
+  "hp": 300,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⧻",
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "color": "red_white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "harvest": "exempt",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_camp_turret_blade_target"
+      },
+      "cooldown": 6,
+      "monster_message": "<color_light_red>%1$s undulates</color>"
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "IMMOBILE",
+    "PACIFIST"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_camp_turret_blade",
+  "type": "MONSTER",
+  "name": {
+    "str": "刀锋肉堆"
+  },
+  "description": "一个与刀锋丧尸核心相结合的混合肉堆。它的身体充满了成百上千的骨头，新的骨头还在不断生长着...",
+  "default_faction": "secro_flesh3",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "300 L",
+  "weight": "3125 kg",
+  "hp": 300,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⧻",
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "color": "red_white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "harvest": "exempt",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_camp_turret_blade_target"
+      },
+      "cooldown": 6,
+      "monster_message": "<color_light_red>%1$s上下起伏着...</color>"
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "IMMOBILE",
+    "PACIFIST"
+  ]
+}
+```
+

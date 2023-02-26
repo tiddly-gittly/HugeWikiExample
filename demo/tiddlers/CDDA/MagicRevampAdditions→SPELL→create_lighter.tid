@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→create_lighter
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：create_lighter|http://cdda.aloxaf.cn/search?q=create_lighter]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/kelvinist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "create_lighter",
+  "type": "SPELL",
+  "name": {
+    "str": "Finger Firelighter"
+  },
+  "description": "Summons a small flame that does not burn you, but you can use it to light things on fire.  It seems to need you to have some intent to light things on fire, because you are able to put it in your pocket with no issue.",
+  "valid_targets": [
+    "none"
+  ],
+  "flags": [
+    "NO_LEGS"
+  ],
+  "effect": "spawn_item",
+  "effect_str": "finger_firelighter",
+  "shape": "blast",
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_duration": 6000,
+  "max_duration": 90000,
+  "duration_increment": 5400,
+  "max_level": 15,
+  "spell_class": "KELVINIST",
+  "energy_source": "MANA",
+  "base_casting_time": 250,
+  "final_casting_time": 50,
+  "casting_time_increment": -20,
+  "base_energy_cost": 65,
+  "difficulty": 0
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "create_lighter",
+  "type": "SPELL",
+  "name": {
+    "str": "火焰之指"
+  },
+  "description": "召唤出一朵不会烧到你的小火苗，可以用来点燃其它物品。看起来你需要有点燃东西的想法它才会点火，因为你可以把它安全的存放在你的口袋里。",
+  "valid_targets": [
+    "none"
+  ],
+  "flags": [
+    "NO_LEGS"
+  ],
+  "effect": "spawn_item",
+  "effect_str": "finger_firelighter",
+  "shape": "blast",
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_duration": 6000,
+  "max_duration": 90000,
+  "duration_increment": 5400,
+  "max_level": 15,
+  "spell_class": "KELVINIST",
+  "energy_source": "MANA",
+  "base_casting_time": 250,
+  "final_casting_time": 50,
+  "casting_time_increment": -20,
+  "base_energy_cost": 65,
+  "difficulty": 0
+}
+```
+

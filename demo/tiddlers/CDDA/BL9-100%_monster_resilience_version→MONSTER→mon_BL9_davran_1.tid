@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_davran_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_davran_1|http://cdda.aloxaf.cn/search?q=mon_BL9_davran_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens_dominators.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_davran_1",
+  "looks_like": "mon_zombie_electric",
+  "type": "MONSTER",
+  "name": {
+    "str": "Davranide Grunt"
+  },
+  "description": "An average height smooth-skinned amphibian-like humanoid emitting a bright azure-blue crystalline light, with elongated cranium along with eyes that protrude from each side of it's head on short stalks, it has a calculating yet aggressive gaze",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 425,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 11,
+      "armor_penetration": 18
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 15,
+  "armor_cut": 15,
+  "armor_bullet": 15,
+  "death_drops": "BL9_Drops_Aliens_Dominators",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 20,
+          "armor_penetration": 19
+        }
+      ],
+      "hit_dmg_u": "The %1$s bites you with it's sharp teeth!",
+      "hit_dmg_npc": "The %1$s bites <npcname> with it's sharp teeth!",
+      "no_dmg_msg_u": "The %1$s tries to bite you with it's sharp teeth, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname> with it's sharp teeth, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s attempts to bite you with it's sharp teeth, but you dodge!",
+      "miss_msg_npc": "The %s attempts to bite <npcname> with it's sharp teeth, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_davran_1",
+  "looks_like": "mon_zombie_electric",
+  "type": "MONSTER",
+  "name": {
+    "str": "达夫兰尼德咕哝"
+  },
+  "description": "它是一种平均身高、皮肤光滑的两栖类人形生物，发出明亮的蓝蓝色水晶光，头部两侧各有一对细长的头盖骨和突出的眼睛，目光敏锐而富有侵略性",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 425,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 11,
+      "armor_penetration": 18
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 15,
+  "armor_cut": 15,
+  "armor_bullet": 15,
+  "death_drops": "BL9_Drops_Aliens_Dominators",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 20,
+          "armor_penetration": 19
+        }
+      ],
+      "hit_dmg_u": "The %1$s bites you with it's sharp teeth!",
+      "hit_dmg_npc": "The %1$s bites <npcname> with it's sharp teeth!",
+      "no_dmg_msg_u": "The %1$s tries to bite you with it's sharp teeth, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname> with it's sharp teeth, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s attempts to bite you with it's sharp teeth, but you dodge!",
+      "miss_msg_npc": "The %s attempts to bite <npcname> with it's sharp teeth, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

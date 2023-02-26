@@ -1,0 +1,237 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_mutant_evo_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_mutant_evo_3|http://cdda.aloxaf.cn/search?q=mon_BL9_mutant_evo_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/Infantry.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_mutant_evo_3",
+  "looks_like": "mon_mi_go",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9 Mutant Evolved - type iii"
+  },
+  "description": "A BL9-induced human with it's head ruptured, protruding from it is a parasite with several spindly spiky limbs and an acid-drooling orifice.Multiple tentacles are growing out of the sides of it's body swinging wildly in all directions.",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 245,
+  "speed": 75,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "stab",
+      "amount": 7,
+      "armor_penetration": 14
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Spikyevo",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 9,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "armor_penetration": 23
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 500,
+      "accuracy": 12,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 14,
+          "armor_penetration": 15
+        }
+      ],
+      "hit_dmg_u": "The %1$s swirls it's spiky body you!",
+      "hit_dmg_npc": "The %1$s swrils it's spiky body at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swirl it's spiky body at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swirl it's spiky body at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swirls it's spiky body at you, but you step aside!",
+      "miss_msg_npc": "The %s swirls it's spiky body at <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "BL9_3evo_acidbarf"
+      },
+      "cooldown": 10,
+      "monster_message": "<color_light_red>%1$s vomits a stream of acid at %3$s!</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_mutant_evo_3",
+  "looks_like": "mon_mi_go",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9突变体-Ⅲ型"
+  },
+  "description": "一个由BL9诱变的人类，头部破裂，从破口中钻出一只寄生虫，长有几根细长的尖刺状肢体和一只淌着酸液的口器。多个触须从它身体两侧长出来，向各个方向疯狂摆动。",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 245,
+  "speed": 75,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "stab",
+      "amount": 7,
+      "armor_penetration": 14
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Spikyevo",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 9,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "armor_penetration": 23
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 500,
+      "accuracy": 12,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 14,
+          "armor_penetration": 15
+        }
+      ],
+      "hit_dmg_u": "The %1$s swirls it's spiky body you!",
+      "hit_dmg_npc": "The %1$s swrils it's spiky body at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swirl it's spiky body at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swirl it's spiky body at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swirls it's spiky body at you, but you step aside!",
+      "miss_msg_npc": "The %s swirls it's spiky body at <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "BL9_3evo_acidbarf"
+      },
+      "cooldown": 10,
+      "monster_message": "<color_light_red>%1$s向%3$s吐出了一股酸液！</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

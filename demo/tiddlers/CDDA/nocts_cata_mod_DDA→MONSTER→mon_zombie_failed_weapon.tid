@@ -1,0 +1,233 @@
+creator: 林一二
+revision: 0
+tags: MONSTER nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→MONSTER→mon_zombie_failed_weapon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_failed_weapon|http://cdda.aloxaf.cn/search?q=mon_zombie_failed_weapon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_failed_weapon",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie augmented abomination"
+  },
+  "description": "A zombified, heavily-augmented mutant of some sort.  Dangerous on its own, but even more so in groups.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_cyan",
+  "aggression": 0,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "dodge": 0,
+  "armor_bash": 4,
+  "armor_cut": 6,
+  "armor_stab": 4,
+  "armor_bullet": 5,
+  "armor_acid": 4,
+  "armor_fire": 3,
+  "vision_day": 40,
+  "vision_night": 3,
+  "luminance": 12,
+  "regenerates": 4,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -2
+    ]
+  ],
+  "regen_morale": true,
+  "harvest": "CBM_FAILED_BIO_ZOMBIE",
+  "special_attacks": [
+    [
+      "SHOCKSTORM",
+      10
+    ],
+    [
+      "PARROT",
+      50
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    60
+  ],
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED",
+    "HURT",
+    "STALK",
+    "PLAYER_CLOSE"
+  ],
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "death_drops": "wild_bio_weapom_item",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "REVIVES",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "POISON",
+    "ELECTRIC",
+    "BASHES",
+    "GROUP_BASH",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_failed_weapon",
+  "type": "MONSTER",
+  "name": {
+    "str": "生物武器丧尸"
+  },
+  "description": "丧尸化的生物武器。它本身很危险，成群结队就更危险了。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_cyan",
+  "aggression": 0,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "dodge": 0,
+  "armor_bash": 4,
+  "armor_cut": 6,
+  "armor_stab": 4,
+  "armor_bullet": 5,
+  "armor_acid": 4,
+  "armor_fire": 3,
+  "vision_day": 40,
+  "vision_night": 3,
+  "luminance": 12,
+  "regenerates": 4,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -2
+    ]
+  ],
+  "regen_morale": true,
+  "harvest": "CBM_FAILED_BIO_ZOMBIE",
+  "special_attacks": [
+    [
+      "SHOCKSTORM",
+      10
+    ],
+    [
+      "PARROT",
+      50
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    60
+  ],
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED",
+    "HURT",
+    "STALK",
+    "PLAYER_CLOSE"
+  ],
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "death_drops": "wild_bio_weapom_item",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "REVIVES",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "POISON",
+    "ELECTRIC",
+    "BASHES",
+    "GROUP_BASH",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "FILTHY"
+  ]
+}
+```
+

@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_bootstrap
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_bootstrap|http://cdda.aloxaf.cn/search?q=secro_flesh_bootstrap]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_holster.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_bootstrap",
+  "type": "ARMOR",
+  "name": {
+    "str": "ankle holster"
+  },
+  "description": "A small concealed holster worn on the ankle.  It is awkward to use without practice.  Activate to holster/draw a small pistol.",
+  "weight": "250 g",
+  "volume": "250 ml",
+  "price": 7400,
+  "price_postapoc": 500,
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "holster",
+  "color": "red",
+  "sided": true,
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "ALLOWS_NATURAL_ATTACKS"
+  ],
+  "pocket_data": [
+    {
+      "magazine_well": "200 ml",
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "100 ml",
+      "max_contains_volume": "400 ml",
+      "max_contains_weight": "1 kg",
+      "max_item_length": "20 cm",
+      "moves": 150
+    }
+  ],
+  "use_action": {
+    "type": "holster"
+  },
+  "armor": [
+    {
+      "encumbrance": [
+        3,
+        4
+      ],
+      "coverage": 5,
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ],
+      "specifically_covers": [
+        "foot_ankle_l",
+        "foot_ankle_r"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1,
+      "layers": [
+        "BELTED"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_bootstrap",
+  "type": "ARMOR",
+  "name": {
+    "str": "枪套（脚）"
+  },
+  "description": "一个穿在脚踝上的枪套。不经过练习用起来很笨拙。激活它来收拔手枪。",
+  "weight": "250 g",
+  "volume": "250 ml",
+  "price": 7400,
+  "price_postapoc": 500,
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "holster",
+  "color": "red",
+  "sided": true,
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "ALLOWS_NATURAL_ATTACKS"
+  ],
+  "pocket_data": [
+    {
+      "magazine_well": "200 ml",
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "100 ml",
+      "max_contains_volume": "400 ml",
+      "max_contains_weight": "1 kg",
+      "max_item_length": "20 cm",
+      "moves": 150
+    }
+  ],
+  "use_action": {
+    "type": "holster"
+  },
+  "armor": [
+    {
+      "encumbrance": [
+        3,
+        4
+      ],
+      "coverage": 5,
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ],
+      "specifically_covers": [
+        "foot_ankle_l",
+        "foot_ankle_r"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1,
+      "layers": [
+        "BELTED"
+      ]
+    }
+  ]
+}
+```
+

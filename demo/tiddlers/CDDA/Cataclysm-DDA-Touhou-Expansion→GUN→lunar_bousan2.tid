@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: GUN Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUN→lunar_bousan2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lunar_bousan2|http://cdda.aloxaf.cn/search?q=lunar_bousan2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gun/thex_lunar_gun.json
+
+
+!! 原文
+
+```json
+{
+  "id": "lunar_bousan2",
+  "type": "GUN",
+  "name": "lunar riot shotgun (shot mode)",
+  "copy-from": "lunar_bousan",
+  "description": "The \"Boudou Sandanjou\" is an revolving LDC auto shotgun.  This belongs to an intermediate tier between old human weapons adapted with Lunarian technology and Lunarian tech proper weaponized, as noted by the extremely wide barrel.  Alongside the normal shotgun operation, the weapon is capable of generating vacuum in the action mechanism to release powerful, short ranged blasts after pulling the trigger.  Switching between modes is done by activating a button in the thumbhole.",
+  "dispersion": 450,
+  "ranged_damage": {
+    "damage_type": "bash",
+    "amount": 0,
+    "armor_penetration": 0
+  },
+  "reload": 125,
+  "reload_noise_volume": 4,
+  "min_cycle_recoil": 1200,
+  "use_action": {
+    "type": "transform",
+    "menu_text": "Switch mode: Vacuum",
+    "msg": "You switch between modes, allowing your weapon to generate vacuum.",
+    "target": "lunar_bousan"
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "shot": 6
+      }
+    }
+  ],
+  "flags": [
+    "NEEDS_NO_LUBE",
+    "NEVER_JAMS",
+    "NON_FOULING",
+    "PUMP_ACTION",
+    "RELOAD_ONE",
+    "STURDY",
+    "TRADER_AVOID"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "lunar_bousan2",
+  "type": "GUN",
+  "name": "lunar riot shotgun (shot mode)",
+  "copy-from": "lunar_bousan",
+  "description": "The \"Boudou Sandanjou\" is an revolving LDC auto shotgun.  This belongs to an intermediate tier between old human weapons adapted with Lunarian technology and Lunarian tech proper weaponized, as noted by the extremely wide barrel.  Alongside the normal shotgun operation, the weapon is capable of generating vacuum in the action mechanism to release powerful, short ranged blasts after pulling the trigger.  Switching between modes is done by activating a button in the thumbhole.",
+  "dispersion": 450,
+  "ranged_damage": {
+    "damage_type": "bash",
+    "amount": 0,
+    "armor_penetration": 0
+  },
+  "reload": 125,
+  "reload_noise_volume": 4,
+  "min_cycle_recoil": 1200,
+  "use_action": {
+    "type": "transform",
+    "menu_text": "Switch mode: Vacuum",
+    "msg": "You switch between modes, allowing your weapon to generate vacuum.",
+    "target": "lunar_bousan"
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "shot": 6
+      }
+    }
+  ],
+  "flags": [
+    "NEEDS_NO_LUBE",
+    "NEVER_JAMS",
+    "NON_FOULING",
+    "PUMP_ACTION",
+    "RELOAD_ONE",
+    "STURDY",
+    "TRADER_AVOID"
+  ]
+}
+```
+

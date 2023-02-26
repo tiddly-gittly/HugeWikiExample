@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→jade_wreath_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：jade_wreath_on|http://cdda.aloxaf.cn/search?q=jade_wreath_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "jade_wreath_on",
+  "type": "TOOL_ARMOR",
+  "copy-from": "jade_wreath",
+  "repairs_like": "jade_wreath",
+  "name": {
+    "str": "jade wreath (on)",
+    "str_pl": "jade wreaths (on)"
+  },
+  "description": "A crown of dark green stone with strange geometric patterns carved into it.  It is currently active, completely protecting you against heat and smoke.",
+  "turns_per_charge": 150,
+  "revert_to": "jade_wreath",
+  "use_action": {
+    "target": "jade_wreath",
+    "msg": "The glowing carvings on the jade wreath fade.",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "TRADER_AVOID",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "jade_wreath_on",
+  "type": "TOOL_ARMOR",
+  "copy-from": "jade_wreath",
+  "repairs_like": "jade_wreath",
+  "name": {
+    "str": "玉冠（激活）",
+    "str_pl": "玉冠（激活）"
+  },
+  "description": "一顶深绿色的石头王冠，上面雕刻着奇怪的几何图案。它目前处于活动状态，完全保护您免受高温和烟雾的伤害。",
+  "turns_per_charge": 150,
+  "revert_to": "jade_wreath",
+  "use_action": {
+    "target": "jade_wreath",
+    "msg": "玉环上闪闪发光的雕刻逐渐褪色。",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "TRADER_AVOID",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+

@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_soldier_acid_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_soldier_acid_2|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_soldier_acid_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_soldier_acid_2",
+  "type": "MONSTER",
+  "name": {
+    "str": "acid-support zombie"
+  },
+  "description": "This zombie wears what appears to have once been a soldier's uniform and armor, now a series of cracked and melted plates that have fused to its skin and thickened hide.  Its face and arms blister with strange mutated tubes that pulse and drip with acid.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "copy-from": "mon_sflesh_zombie_soldier_acid_1",
+  "diff": 20,
+  "relative": {
+    "hp": 78,
+    "speed": -10,
+    "melee_skill": 2,
+    "armor_bash": 5
+  },
+  "extend": {
+    "special_attacks": [
+      [
+        "ACID_BARF",
+        5
+      ],
+      {
+        "id": "slam"
+      },
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 50,
+        "gun_type": "acid_spray",
+        "fake_skills": [
+          [
+            "gun",
+            4
+          ],
+          [
+            "rifle",
+            4
+          ]
+        ],
+        "fake_dex": 8,
+        "fake_per": 8,
+        "require_targeting_player": false,
+        "description": "The acid-support zombie launches a hail of corrosive darts!",
+        "ranges": [
+          [
+            2,
+            8,
+            "DEFAULT"
+          ]
+        ]
+      }
+    ],
+    "death_function": {
+      "message": "The %s's body dissolves into acid.",
+      "effect": {
+        "id": "death_acid",
+        "hit_self": true
+      },
+      "corpse_type": "NO_CORPSE"
+    },
+    "flags": [
+      "ACIDPROOF",
+      "ACID_BLOOD"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_soldier_acid_2",
+  "type": "MONSTER",
+  "name": {
+    "str": "酸液支援兵丧尸"
+  },
+  "description": "这只丧尸穿着一件看起来曾经是士兵制服和盔甲的东西，现在已经变成了几块破裂融化的金属板，融到了它外表的厚皮之中。它的脸和胳膊被变异血管涨破，酸液不断随着血管的跳动滴落在地上。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "copy-from": "mon_sflesh_zombie_soldier_acid_1",
+  "diff": 20,
+  "relative": {
+    "hp": 78,
+    "speed": -10,
+    "melee_skill": 2,
+    "armor_bash": 5
+  },
+  "extend": {
+    "special_attacks": [
+      [
+        "ACID_BARF",
+        5
+      ],
+      {
+        "id": "slam"
+      },
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 50,
+        "gun_type": "acid_spray",
+        "fake_skills": [
+          [
+            "gun",
+            4
+          ],
+          [
+            "rifle",
+            4
+          ]
+        ],
+        "fake_dex": 8,
+        "fake_per": 8,
+        "require_targeting_player": false,
+        "description": "The acid-support zombie launches a hail of corrosive darts!",
+        "ranges": [
+          [
+            2,
+            8,
+            "DEFAULT"
+          ]
+        ]
+      }
+    ],
+    "death_function": {
+      "message": "The %s's body dissolves into acid.",
+      "effect": {
+        "id": "death_acid",
+        "hit_self": true
+      },
+      "corpse_type": "NO_CORPSE"
+    },
+    "flags": [
+      "ACIDPROOF",
+      "ACID_BLOOD"
+    ]
+  }
+}
+```
+

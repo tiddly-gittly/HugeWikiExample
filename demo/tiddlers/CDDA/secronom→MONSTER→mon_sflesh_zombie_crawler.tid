@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_crawler
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_crawler|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_crawler]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_crawler",
+  "type": "MONSTER",
+  "name": {
+    "str": "crawling zombie"
+  },
+  "description": "This human corpse drags itself along slowly with its arms.  Its legs are damaged beyond repair.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 20,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "pink_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_day": 10,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_crawler",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GRABS",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_crawler",
+  "type": "MONSTER",
+  "name": {
+    "str": "爬行丧尸"
+  },
+  "description": "一具只靠着上肢缓慢地爬行的人类尸体，而它的下肢已经腐坏得原形崩坏了。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 20,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "pink_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_day": 10,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_crawler",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GRABS",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

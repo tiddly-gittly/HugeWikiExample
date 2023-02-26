@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_DEACON_HELP
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_DEACON_HELP|http://cdda.aloxaf.cn/search?q=TALK_CF_DEACON_HELP]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_DEACON.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_DEACON_HELP",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_effect": "rural_church_aware",
+    "yes": "No doubt the others here have ample work to be done.  As for myself, I'll manage.  I feel a bit bad having left the parish unattended though.  There's a group of survivors who knew Father Alexander currently sheltering there, and they likely will be have work to be done too.  I could direct you there if you'd like, in case you wish to visit them yourself.",
+    "no": "No doubt the others here have ample work to be done.  As for myself, I'll manage.  I feel a bit bad having left the parish unattended though.  There's a group of survivors who knew Father Alexander currently sheltering there, and while I'm confident they can take care of themselves, I'm still worried about them."
+  },
+  "responses": [
+    {
+      "text": "Okay, go ahead.",
+      "condition": {
+        "and": [
+          {
+            "npc_has_effect": "rural_church_aware"
+          },
+          {
+            "not": {
+              "u_has_effect": "already_asked_deacon"
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "effect": [
+        {
+          "u_add_effect": "already_asked_deacon",
+          "duration": "PERMANENT"
+        },
+        {
+          "mapgen_update": "arcana_dummy",
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "reveal_radius": 3
+        }
+      ],
+      "topic": "TALK_CF_DEACON_DESCRIBE"
+    },
+    {
+      "text": "Perhaps I could check on them for you?",
+      "condition": {
+        "and": [
+          "has_no_available_mission",
+          {
+            "not": {
+              "u_has_effect": "already_asked_deacon"
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "effect": [
+        {
+          "u_add_effect": "already_asked_deacon",
+          "duration": "PERMANENT"
+        },
+        {
+          "mapgen_update": "arcana_dummy",
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "reveal_radius": 3
+        }
+      ],
+      "topic": "TALK_CF_DEACON_DESCRIBE"
+    },
+    {
+      "text": "Any way I could do to help with that?",
+      "condition": {
+        "not": {
+          "u_has_effect": "already_asked_deacon"
+        }
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_CF_DEACON"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_DEACON_HELP",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_effect": "rural_church_aware",
+    "yes": "毫无疑问，这里的其他人还有很多工作要做。至于我自己，我会处理的。不过，离开教区无人看管我有点难过。有一群幸存者知道亚历山大神父目前在那里避难，他们可能也有工作要做。如果你愿意的话，我可以带你去那里，以防你自己去拜访他们。",
+    "no": "毫无疑问，这里的其他人还有很多工作要做。至于我自己，我会处理的。不过，离开教区无人看管我有点难过。有一群幸存者知道亚历山大神父目前在那里避难，虽然我有信心他们能自理，但我仍然担心他们。"
+  },
+  "responses": [
+    {
+      "text": "好吧，说吧。",
+      "condition": {
+        "and": [
+          {
+            "npc_has_effect": "rural_church_aware"
+          },
+          {
+            "not": {
+              "u_has_effect": "already_asked_deacon"
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "effect": [
+        {
+          "u_add_effect": "already_asked_deacon",
+          "duration": "PERMANENT"
+        },
+        {
+          "mapgen_update": "arcana_dummy",
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "reveal_radius": 3
+        }
+      ],
+      "topic": "TALK_CF_DEACON_DESCRIBE"
+    },
+    {
+      "text": "也许我可以帮你查一下？",
+      "condition": {
+        "and": [
+          "has_no_available_mission",
+          {
+            "not": {
+              "u_has_effect": "already_asked_deacon"
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "effect": [
+        {
+          "u_add_effect": "already_asked_deacon",
+          "duration": "PERMANENT"
+        },
+        {
+          "mapgen_update": "arcana_dummy",
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "reveal_radius": 3
+        }
+      ],
+      "topic": "TALK_CF_DEACON_DESCRIBE"
+    },
+    {
+      "text": "我能帮上忙吗？",
+      "condition": {
+        "not": {
+          "u_has_effect": "already_asked_deacon"
+        }
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_CF_DEACON"
+    }
+  ]
+}
+```
+

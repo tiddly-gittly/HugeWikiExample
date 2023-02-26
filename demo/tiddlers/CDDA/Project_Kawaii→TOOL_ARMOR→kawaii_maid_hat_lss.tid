@@ -1,0 +1,153 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Project_Kawaii
+title: Project_Kawaii→TOOL_ARMOR→kawaii_maid_hat_lss
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kawaii_maid_hat_lss|http://cdda.aloxaf.cn/search?q=kawaii_maid_hat_lss]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Project_Kawaii/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kawaii_maid_hat_lss",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Cute Maid headdress LSS-PRO"
+  },
+  "description": "A maid must maintain her pride and attends to her duties, no matter how harsh the situation or environment. The headdress is not just a piece of the uniform, it's a symbol of a maid's pride.",
+  "weight": "628 g",
+  "volume": "500 ml",
+  "price": 58000,
+  "price_postapoc": 3000,
+  "to_hit": -1,
+  "bashing": 10,
+  "material": [
+    "kevlar_layered",
+    "cotton"
+  ],
+  "material_thickness": 4,
+  "environmental_protection": 3,
+  "symbol": "[",
+  "color": "white",
+  "looks_like": "kawaii_maid_hat",
+  "warmth": 20,
+  "flags": [
+    "VARSIZE",
+    "FANCY",
+    "WATERPROOF",
+    "RAINPROOF",
+    "STURDY"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "flag_restriction": [
+        "BATTERY_LIGHT",
+        "BATTERY_ULTRA_LIGHT"
+      ],
+      "default_magazine": "light_battery_cell"
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "battery",
+  "use_action": {
+    "type": "transform",
+    "msg": "You activate the headdress' heating mode.",
+    "target": "kawaii_maid_hat_lss1",
+    "active": true,
+    "menu_text": "Change climate control settings",
+    "need_charges": 1,
+    "need_charges_msg": "%s does not have enough power left."
+  },
+  "armor": [
+    {
+      "encumbrance": 10,
+      "coverage": 100,
+      "covers": [
+        "head"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kawaii_maid_hat_lss",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "女仆头饰LSS-PRO"
+  },
+  "description": "无论环境多么恶劣，女仆都必须保持她们身为女仆的自尊，尽职尽责。女仆的头饰不仅仅是制服的一部分，它是女仆骄傲的象征。",
+  "weight": "628 g",
+  "volume": "500 ml",
+  "price": 58000,
+  "price_postapoc": 3000,
+  "to_hit": -1,
+  "bashing": 10,
+  "material": [
+    "kevlar_layered",
+    "cotton"
+  ],
+  "material_thickness": 4,
+  "environmental_protection": 3,
+  "symbol": "[",
+  "color": "white",
+  "looks_like": "kawaii_maid_hat",
+  "warmth": 20,
+  "flags": [
+    "VARSIZE",
+    "FANCY",
+    "WATERPROOF",
+    "RAINPROOF",
+    "STURDY"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "flag_restriction": [
+        "BATTERY_LIGHT",
+        "BATTERY_ULTRA_LIGHT"
+      ],
+      "default_magazine": "light_battery_cell"
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "battery",
+  "use_action": {
+    "type": "transform",
+    "msg": "你激活了头饰的升温模式。",
+    "target": "kawaii_maid_hat_lss1",
+    "active": true,
+    "menu_text": "改变气候控制设置",
+    "need_charges": 1,
+    "need_charges_msg": "%s没有足够的电源。"
+  },
+  "armor": [
+    {
+      "encumbrance": 10,
+      "coverage": 100,
+      "covers": [
+        "head"
+      ]
+    }
+  ]
+}
+```
+

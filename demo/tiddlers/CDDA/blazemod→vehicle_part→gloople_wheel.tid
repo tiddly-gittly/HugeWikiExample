@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→gloople_wheel
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gloople_wheel|http://cdda.aloxaf.cn/search?q=gloople_wheel]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_wheel.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gloople_wheel",
+  "type": "vehicle_part",
+  "name": {
+    "str": "gelatinous wheel"
+  },
+  "item": "gloople_wheel",
+  "location": "under",
+  "symbol": "|",
+  "broken_symbol": "x",
+  "color": "light_green",
+  "broken_color": "light_green",
+  "durability": 250,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "description": "A living blob.  It acts as a wheel.",
+  "breaks_into": [
+    {
+      "item": "glooplegrow"
+    },
+    {
+      "item": "water",
+      "count": [
+        50,
+        100
+      ]
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "rolling_resistance": 1.75,
+  "wheel_type": "standard",
+  "contact_area": 153,
+  "flags": [
+    "WHEEL",
+    "UNSTABLE_WHEEL",
+    "TRACKED"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gloople_wheel",
+  "type": "vehicle_part",
+  "name": {
+    "str": "凝胶车轮"
+  },
+  "item": "gloople_wheel",
+  "location": "under",
+  "symbol": "|",
+  "broken_symbol": "x",
+  "color": "light_green",
+  "broken_color": "light_green",
+  "durability": 250,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "description": "一只活的变形怪变成的车轮。",
+  "breaks_into": [
+    {
+      "item": "glooplegrow"
+    },
+    {
+      "item": "water",
+      "count": [
+        50,
+        100
+      ]
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "rolling_resistance": 1.75,
+  "wheel_type": "standard",
+  "contact_area": 153,
+  "flags": [
+    "WHEEL",
+    "UNSTABLE_WHEEL",
+    "TRACKED"
+  ]
+}
+```
+

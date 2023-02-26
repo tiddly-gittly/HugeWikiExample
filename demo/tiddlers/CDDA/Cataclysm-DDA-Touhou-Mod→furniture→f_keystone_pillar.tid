@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: furniture Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→furniture→f_keystone_pillar
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_keystone_pillar|http://cdda.aloxaf.cn/search?q=f_keystone_pillar]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/terrain_furniture/touhou_magic_furniture.json
+
+
+!! 原文
+
+```json
+{
+  "id": "f_keystone_pillar",
+  "type": "furniture",
+  "name": "keystone pillar",
+  "description": "A heavy, large, tall granite rock, wrapped with a hemp rope.",
+  "symbol": "I",
+  "looks_like": "t_rock_smooth",
+  "color": "light_gray",
+  "bash": {
+    "str_min": 120,
+    "str_max": 400,
+    "sound": "clang!",
+    "sound_fail": "thud!",
+    "items": [
+      {
+        "item": "rock",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "material_rocksalt",
+        "count": [
+          0,
+          1
+        ],
+        "prob": 4
+      }
+    ]
+  },
+  "coverage": 100,
+  "examine_action": "chainfence",
+  "move_cost_mod": -1,
+  "required_str": 20,
+  "flags": [
+    "BLOCK_WIND",
+    "CLIMBABLE",
+    "FLAT_SURF",
+    "NOITEM",
+    "WALL"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "f_keystone_pillar",
+  "type": "furniture",
+  "name": "keystone pillar",
+  "description": "A heavy, large, tall granite rock, wrapped with a hemp rope.",
+  "symbol": "I",
+  "looks_like": "t_rock_smooth",
+  "color": "light_gray",
+  "bash": {
+    "str_min": 120,
+    "str_max": 400,
+    "sound": "clang!",
+    "sound_fail": "thud!",
+    "items": [
+      {
+        "item": "rock",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "material_rocksalt",
+        "count": [
+          0,
+          1
+        ],
+        "prob": 4
+      }
+    ]
+  },
+  "coverage": 100,
+  "examine_action": "chainfence",
+  "move_cost_mod": -1,
+  "required_str": 20,
+  "flags": [
+    "BLOCK_WIND",
+    "CLIMBABLE",
+    "FLAT_SURF",
+    "NOITEM",
+    "WALL"
+  ]
+}
+```
+

@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_SHRIKE_MERCHANT_GM_3_CHANCE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SHRIKE_MERCHANT_GM_3_CHANCE|http://cdda.aloxaf.cn/search?q=TALK_SHRIKE_MERCHANT_GM_3_CHANCE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_SHRIKE_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_SHRIKE_MERCHANT_GM_3_CHANCE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "PROF_SANGUINIST",
+    "yes": "Chances are a magus is leading them, and I doubt they'll stand down even for you.  You might be able to talk their shrike into defecting, if they have one.  I could try giving you one of the code phrases used to identify yourself to whoever's on watch, might buy you enough time to drop them before they alert the others.  Tell me what the hunters know about your target.",
+    "no": "A proper sanguinist sect isn't like Elena's group.  They'll likely be led by a magus, and there's no way you'll talk any sense into them.  If they have a shrike, you might be able to talk them into defecting.  We had a handful of trust passwords used when returning from a scouting run.  Tell me what the hunters have said about your target and maybe I can give you one that'll keep whoever's on watch off your back long enough to silence them.  Better than letting them alert the rest."
+  },
+  "responses": [
+    {
+      "text": "Johnathan said they were one of the transhumanist sects.",
+      "topic": "TALK_SHRIKE_MERCHANT_GM_3_SECT"
+    },
+    {
+      "text": "I'll ask around, and might return later.",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_SHRIKE_MERCHANT_GM_3_CHANCE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "PROF_SANGUINIST",
+    "yes": "很有可能是一位法师在领导他们，我怀疑他们会为你退位。你也许可以说服他们的伯劳鸟叛逃，如果他们有叛逃的话。我可以试着给你一个密码短语，用来向值班的人表明你的身份，这样你就有足够的时间在他们通知其他人之前放下它们。告诉我猎人们对你的目标了解多少。",
+    "no": "一个合适的血统主义教派不像埃琳娜的团体。他们很可能会被法师领导，你不可能对他们说任何有意义的话。如果他们有伯劳鸟，你也许可以说服他们投奔。我们有一些信任密码，是在一次侦察后返回时使用的。告诉我猎人们对你的目标说了些什么，也许我可以给你一个能让任何盯着你的人保持沉默的理由。总比让他们提醒其他人好。"
+  },
+  "responses": [
+    {
+      "text": "约翰纳森说他们是一个跨人文主义教派。",
+      "topic": "TALK_SHRIKE_MERCHANT_GM_3_SECT"
+    },
+    {
+      "text": "我会四处打听，可能会晚点回来。",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    }
+  ]
+}
+```
+

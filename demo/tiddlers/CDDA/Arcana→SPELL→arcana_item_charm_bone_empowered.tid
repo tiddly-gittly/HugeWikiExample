@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_charm_bone_empowered
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_charm_bone_empowered|http://cdda.aloxaf.cn/search?q=arcana_item_charm_bone_empowered]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_charm_bone_empowered",
+  "name": {
+    "str": "Stunning Blast"
+  },
+  "description": "Blasts nearby targets for heavy damage.",
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "message": "A powerful blast of energy radiates from the charm!",
+  "extra_effects": [
+    {
+      "id": "arcana_item_charm_bone_empowered_spike",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_charm_bone_empowered_paralyze",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_charm_bone_empowered_fatigue",
+      "hit_self": true
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "min_damage": 49,
+  "max_damage": 49,
+  "damage_type": "heat",
+  "min_aoe": 8,
+  "max_aoe": 8
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_charm_bone_empowered",
+  "name": {
+    "str": "震颤冲击"
+  },
+  "description": "Blasts nearby targets for heavy damage.",
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "message": "一股强大的能量从护符中散发出来！",
+  "extra_effects": [
+    {
+      "id": "arcana_item_charm_bone_empowered_spike",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_charm_bone_empowered_paralyze",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_charm_bone_empowered_fatigue",
+      "hit_self": true
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "min_damage": 49,
+  "max_damage": 49,
+  "damage_type": "heat",
+  "min_aoe": 8,
+  "max_aoe": 8
+}
+```
+

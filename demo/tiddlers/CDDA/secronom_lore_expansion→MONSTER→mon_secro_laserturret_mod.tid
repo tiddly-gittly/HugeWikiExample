@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom_lore_expansion
+title: secronom_lore_expansion→MONSTER→mon_secro_laserturret_mod
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_secro_laserturret_mod|http://cdda.aloxaf.cn/search?q=mon_secro_laserturret_mod]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Monsters/Bots/SecronomTurrets_modded.json
+
+
+!! 原文
+
+```json
+{
+  "//": "All of these turrets uses their health as ammunition.",
+  "id": "mon_secro_laserturret_mod",
+  "type": "MONSTER",
+  "name": {
+    "str": "laser beam turret"
+  },
+  "description": "SDP-L1, also known as Secronom Defense Project Type \"Laser\", is an advanced laser turret based from the miniature TX-5LR Cerberus. Its autonomous laser cannon fires a concentrated beam of pure heat that pierces through targets. It uses a modified storage battery that allows the turret to operate on its own.",
+  "default_faction": "secro_defense_bot",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 20,
+  "volume": "60000 ml",
+  "weight": "172 kg",
+  "hp": 30,
+  "speed": 100,
+  "material": [
+    "steel"
+  ],
+  "symbol": "2",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "armor_bash": 10,
+  "armor_cut": 10,
+  "armor_bullet": 10,
+  "armor_stab": 10,
+  "luminance": 5,
+  "vision_day": 15,
+  "vision_night": 5,
+  "revert_to_itype": "bot_secro_laserturret_mod",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_secro_laserturret_mod_heatray"
+      },
+      "cooldown": 5,
+      "monster_message": "<color_yellow>%1$s shoots a ray of heat at %3$s!</color>"
+    }
+  ],
+  "death_drops": {},
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "NOHEAD",
+    "ELECTRIC",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "IMMOBILE",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "All of these turrets uses their health as ammunition.",
+  "id": "mon_secro_laserturret_mod",
+  "type": "MONSTER",
+  "name": {
+    "str": "激光束炮台"
+  },
+  "description": "SDP-L1，也被称为Secronom防御项目类型“激光”，是一种基于微型TX-5LR Cerberus的先进激光炮塔。它的自动激光炮发射一束聚热能光束穿透目标。它使用了一个经过改进的蓄电池，使炮塔能够在自己的前身上运行",
+  "default_faction": "secro_defense_bot",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 20,
+  "volume": "60000 ml",
+  "weight": "172 kg",
+  "hp": 30,
+  "speed": 100,
+  "material": [
+    "steel"
+  ],
+  "symbol": "2",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "armor_bash": 10,
+  "armor_cut": 10,
+  "armor_bullet": 10,
+  "armor_stab": 10,
+  "luminance": 5,
+  "vision_day": 15,
+  "vision_night": 5,
+  "revert_to_itype": "bot_secro_laserturret_mod",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_secro_laserturret_mod_heatray"
+      },
+      "cooldown": 5,
+      "monster_message": "<color_yellow>%1$s向%3$s射出了一道热能射线！</color>"
+    }
+  ],
+  "death_drops": {},
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "NOHEAD",
+    "ELECTRIC",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "IMMOBILE",
+    "NO_BREATHE"
+  ]
+}
+```
+

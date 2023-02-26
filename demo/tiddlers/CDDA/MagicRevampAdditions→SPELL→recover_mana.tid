@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→recover_mana
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：recover_mana|http://cdda.aloxaf.cn/search?q=recover_mana]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/animist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "recover_mana",
+  "type": "SPELL",
+  "name": {
+    "str": "Life Conversion"
+  },
+  "description": "You channel your life force itself into your spiritual energy.  You spend hp to regain mana.",
+  "valid_targets": [
+    "self"
+  ],
+  "min_damage": 90,
+  "damage_increment": 15,
+  "max_damage": 1000,
+  "max_level": 50,
+  "effect": "recover_energy",
+  "effect_str": "MANA",
+  "shape": "blast",
+  "spell_class": "ANIMIST",
+  "energy_source": "HP",
+  "base_casting_time": 500,
+  "base_energy_cost": 5,
+  "energy_increment": 1,
+  "final_energy_cost": 60,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "SILENT",
+    "NO_LEGS"
+  ],
+  "difficulty": 3
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "recover_mana",
+  "type": "SPELL",
+  "name": {
+    "str": "生命分流"
+  },
+  "description": "将你的生命力量导入你的精神能量。消耗生命恢复魔力。",
+  "valid_targets": [
+    "self"
+  ],
+  "min_damage": 90,
+  "damage_increment": 15,
+  "max_damage": 1000,
+  "max_level": 50,
+  "effect": "recover_energy",
+  "effect_str": "MANA",
+  "shape": "blast",
+  "spell_class": "ANIMIST",
+  "energy_source": "HP",
+  "base_casting_time": 500,
+  "base_energy_cost": 5,
+  "energy_increment": 1,
+  "final_energy_cost": 60,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "SILENT",
+    "NO_LEGS"
+  ],
+  "difficulty": 3
+}
+```
+

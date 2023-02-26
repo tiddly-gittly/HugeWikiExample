@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_equinox_necros_cut
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_equinox_necros_cut|http://cdda.aloxaf.cn/search?q=mon_zombie_equinox_necros_cut]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_equinox_necros_cut",
+  "type": "MONSTER",
+  "name": {
+    "str": "necros slicer"
+  },
+  "description": "A mutated lump of necrotic flesh, horribly twisted into a spindy creature. Its forelimbs form a pair of scythed blades, and its extra appendages writhe without a pause as they drip neurotoxins from its tip.",
+  "default_faction": "zombie",
+  "bodytype": "spider",
+  "diff": 10,
+  "species": [
+    "ZOMBIE",
+    "ABERRATION"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 40,
+  "speed": 80,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⨱",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_equinox_necros_cut_para"
+  ],
+  "attack_effs": [
+    {
+      "id": "secro_necros_para",
+      "duration": 5,
+      "bp": "torso"
+    },
+    {
+      "id": "secro_necros_para",
+      "duration": 2,
+      "chance": 10,
+      "bp": "torso"
+    },
+    {
+      "id": "secro_necros_para",
+      "duration": 2,
+      "chance": 10,
+      "bp": "torso"
+    },
+    {
+      "id": "secro_necros_para",
+      "duration": 2,
+      "chance": 10,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 9
+    }
+  ],
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "vision_day": 24,
+  "vision_night": 3,
+  "dodge": 2,
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "CLIMBS",
+    "WARM",
+    "NOHEAD",
+    "POISON",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_equinox_necros_cut",
+  "type": "MONSTER",
+  "name": {
+    "str": "腐坏锯割者"
+  },
+  "description": "一块变异的坏死的肉，可怕地扭曲成一个多刺的生物。它的前肢形成了一对镰刀形的刀片，它多余的附属物从尖端滴下神经毒素时不停地扭动。",
+  "default_faction": "zombie",
+  "bodytype": "spider",
+  "diff": 10,
+  "species": [
+    "ZOMBIE",
+    "ABERRATION"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 40,
+  "speed": 80,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⨱",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_equinox_necros_cut_para"
+  ],
+  "attack_effs": [
+    {
+      "id": "secro_necros_para",
+      "duration": 5,
+      "bp": "torso"
+    },
+    {
+      "id": "secro_necros_para",
+      "duration": 2,
+      "chance": 10,
+      "bp": "torso"
+    },
+    {
+      "id": "secro_necros_para",
+      "duration": 2,
+      "chance": 10,
+      "bp": "torso"
+    },
+    {
+      "id": "secro_necros_para",
+      "duration": 2,
+      "chance": 10,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 9
+    }
+  ],
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "vision_day": 24,
+  "vision_night": 3,
+  "dodge": 2,
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "CLIMBS",
+    "WARM",
+    "NOHEAD",
+    "POISON",
+    "NO_BREATHE"
+  ]
+}
+```
+

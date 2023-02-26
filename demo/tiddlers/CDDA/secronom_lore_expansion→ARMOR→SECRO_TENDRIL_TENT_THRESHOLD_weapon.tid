@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→SECRO_TENDRIL_TENT_THRESHOLD_weapon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_TENDRIL_TENT_THRESHOLD_weapon|http://cdda.aloxaf.cn/search?q=SECRO_TENDRIL_TENT_THRESHOLD_weapon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation_items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "SECRO_TENDRIL_TENT_THRESHOLD_weapon",
+  "type": "ARMOR",
+  "symbol": "?",
+  "color": "red",
+  "name": {
+    "str": "tendril whip"
+  },
+  "description": "Your tendril in its swollen, fleshy form, throbbing at unstable rate. You feel its power flowing through you.\n<color_white>Strength: <color_light_green>+2</color>\nBlock: <color_light_green>+2</color>\nAttack speed: <color_red>-5%</color></color>",
+  "weight": "3328 g",
+  "volume": "1500 ml",
+  "price": "0 cent",
+  "material": [
+    "flesh"
+  ],
+  "flags": [
+    "REACH_ATTACK",
+    "UNBREAKABLE_MELEE",
+    "NO_DROP",
+    "NO_UNWIELD"
+  ],
+  "armor": [
+    {
+      "encumbrance": 5,
+      "coverage": 100,
+      "covers": [
+        "hand_r"
+      ]
+    }
+  ],
+  "bashing": 12,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 1,
+            "//": "Multiply by 2, and we'll get the result."
+          },
+          {
+            "value": "BONUS_BLOCK",
+            "add": 1
+          },
+          {
+            "value": "ATTACK_SPEED",
+            "multiply": -0.025
+          }
+        ]
+      }
+    ]
+  },
+  "category": "secro_cores"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "SECRO_TENDRIL_TENT_THRESHOLD_weapon",
+  "type": "ARMOR",
+  "symbol": "?",
+  "color": "red",
+  "name": {
+    "str": "触手鞭"
+  },
+  "description": "你的卷须以其肿胀、多肉的形式，以不稳定的速度跳动着。你感觉到它的力量在你体内流动。\n <color_white>强度：<color_light_green> +2 </color>\n阻挡：<color_light_green>+2 </color>\n攻击速度：<color_red> -5%",
+  "weight": "3328 g",
+  "volume": "1500 ml",
+  "price": "0 cent",
+  "material": [
+    "flesh"
+  ],
+  "flags": [
+    "REACH_ATTACK",
+    "UNBREAKABLE_MELEE",
+    "NO_DROP",
+    "NO_UNWIELD"
+  ],
+  "armor": [
+    {
+      "encumbrance": 5,
+      "coverage": 100,
+      "covers": [
+        "hand_r"
+      ]
+    }
+  ],
+  "bashing": 12,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 1,
+            "//": "Multiply by 2, and we'll get the result."
+          },
+          {
+            "value": "BONUS_BLOCK",
+            "add": 1
+          },
+          {
+            "value": "ATTACK_SPEED",
+            "multiply": -0.025
+          }
+        ]
+      }
+    ]
+  },
+  "category": "secro_cores"
+}
+```
+

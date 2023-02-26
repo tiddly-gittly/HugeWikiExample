@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_holster
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_holster|http://cdda.aloxaf.cn/search?q=secro_flesh_holster]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_holster.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_holster",
+  "type": "ARMOR",
+  "name": {
+    "str": "holster"
+  },
+  "description": "A fleshy strap worn on the hip for holding pistol sized guns.  Activate to holster/draw a gun.",
+  "weight": "275 g",
+  "volume": "500 ml",
+  "price": 9000,
+  "price_postapoc": 500,
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "sheath",
+  "color": "light_red",
+  "sided": true,
+  "pocket_data": [
+    {
+      "magazine_well": "350 ml",
+      "pocket_type": "CONTAINER",
+      "holster": true,
+      "min_item_volume": "300 ml",
+      "max_contains_volume": "1000 ml",
+      "max_contains_weight": "2 kg",
+      "max_item_length": "30 cm",
+      "moves": 50
+    }
+  ],
+  "use_action": {
+    "type": "holster"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        3,
+        4
+      ],
+      "coverage": 5,
+      "covers": [
+        "leg_l",
+        "leg_r"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_holster",
+  "type": "ARMOR",
+  "name": {
+    "str": "枪套（腰）"
+  },
+  "description": "一个挂在臀部的肉质枪套，可以放一把手枪尺寸的枪械。使用它来收拔枪械。",
+  "weight": "275 g",
+  "volume": "500 ml",
+  "price": 9000,
+  "price_postapoc": 500,
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "sheath",
+  "color": "light_red",
+  "sided": true,
+  "pocket_data": [
+    {
+      "magazine_well": "350 ml",
+      "pocket_type": "CONTAINER",
+      "holster": true,
+      "min_item_volume": "300 ml",
+      "max_contains_volume": "1000 ml",
+      "max_contains_weight": "2 kg",
+      "max_item_length": "30 cm",
+      "moves": 50
+    }
+  ],
+  "use_action": {
+    "type": "holster"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        3,
+        4
+      ],
+      "coverage": 5,
+      "covers": [
+        "leg_l",
+        "leg_r"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

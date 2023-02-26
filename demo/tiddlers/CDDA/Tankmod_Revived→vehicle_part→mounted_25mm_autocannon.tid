@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part Tankmod_Revived
+title: Tankmod_Revived→vehicle_part→mounted_25mm_autocannon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mounted_25mm_autocannon|http://cdda.aloxaf.cn/search?q=mounted_25mm_autocannon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/parts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "mounted_25mm_autocannon",
+  "looks_like": "mounted_mk19",
+  "copy-from": "turret_tank",
+  "name": "25mm chaingun",
+  "item": "25mm_autocannon",
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        15,
+        30
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        75,
+        150
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ],
+        [
+          "launcher",
+          3
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ],
+        [
+          "welding_standard",
+          10
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "mounted_25mm_autocannon",
+  "looks_like": "mounted_mk19",
+  "copy-from": "turret_tank",
+  "name": "25mm 机炮",
+  "item": "25mm_autocannon",
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        15,
+        30
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        75,
+        150
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ],
+        [
+          "launcher",
+          3
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ],
+        [
+          "welding_standard",
+          10
+        ]
+      ]
+    }
+  }
+}
+```
+

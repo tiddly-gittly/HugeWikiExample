@@ -1,0 +1,217 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_REP_6
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_REP_6|http://cdda.aloxaf.cn/search?q=MISSION_CF_REP_6]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_REP_6",
+  "type": "mission_definition",
+  "name": {
+    "str": "Secure Research From The Renegade Shrikes"
+  },
+  "description": "Find a suspected splinter faction of the Sanguine Order, who may have research and intel to bring back to Sofia.  Bring back any unique research they have.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 4,
+  "value": 30000,
+  "has_generic_rewards": false,
+  "item": "sanguine_mission_notes",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_REP_7",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "sanguine_holdout_2",
+      "om_special": "sanguine_holdout_shrikes",
+      "om_terrain_replace": "forest",
+      "reveal_radius": 3,
+      "random": true,
+      "search_range": 180,
+      "min_distance": 20
+    },
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_2",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_7_a"
+            ],
+            "x": 2,
+            "y": 4
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_2_roof",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_7_b"
+            ],
+            "x": 2,
+            "y": 3
+          }
+        ]
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Odin, guide my hand…",
+    "offer": "This one might be a bit more risky.  Johnathan's intel confirmed suspicion of a schism within the Sanguine Order, specifically among their shrikes.  They were the hunters of hunters, the biggest threat to us whenever we engaged in a raid on their hideouts.  We've isolated the location of one renegade element acting inconsistent with other such splinter groups.  I'd like you to investigate, and secure any research they might have acquired.  Even if it proves unsafe for us to use, better to prevent it from falling into the wrong hands.",
+    "accepted": "Thank you.  Be careful, they seem to have actively engaged in hostilities against regular sanguinist sects, but we don't know how divergent they are.  They might still be hostile to us.  Attempt to talk them into cooperating peacefully if you can, but expect a fight.",
+    "rejected": "If you change your mind, see me about it.  I'm reluctant to deal with sanguinists given we don't know if they're still engaged in hostilities, but securing whatever they found will be useful to us.",
+    "advice": "Be careful.  They'll likely know you're coming before you even see them, be prepared for a confrontation, or worse an ambush.",
+    "inquire": "Do you have it?",
+    "success": "I'll be careful with this.  Some of it may benefit our own research, but the general rule of thumb is to avoid extensive work with any developments that require blood magic or dimensional alteration to function.  I hope that I didn't put you in too great a danger sending you after them.",
+    "success_lie": "What do you think you're trying to pull?",
+    "failure": "But how…"
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 12
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_2",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_8_a"
+            ],
+            "x": 8,
+            "y": 4
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_2_roof",
+        "mapgen_update_id": "cf_church_upgrade_8_b"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_REP_6",
+  "type": "mission_definition",
+  "name": {
+    "str": "来自叛徒伯劳的安全研究"
+  },
+  "description": "找到一个怀疑是猩红教派的分裂派别，他们可能有研究和情报带回索非亚。把他们所有的独特研究都带回来。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 4,
+  "value": 30000,
+  "has_generic_rewards": false,
+  "item": "sanguine_mission_notes",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_REP_7",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "sanguine_holdout_2",
+      "om_special": "sanguine_holdout_shrikes",
+      "om_terrain_replace": "forest",
+      "reveal_radius": 3,
+      "random": true,
+      "search_range": 180,
+      "min_distance": 20
+    },
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_2",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_7_a"
+            ],
+            "x": 2,
+            "y": 4
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_2_roof",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_7_b"
+            ],
+            "x": 2,
+            "y": 3
+          }
+        ]
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "奥丁，牵着我的手…",
+    "offer": "这个可能风险更大一些。Johnathan的情报证实了在猩红教派内部存在分裂的嫌疑，特别是在他们的屠猎者中。他们是猎人的猎人，当我们对他们的藏身处进行突袭时，他们是我们最大的威胁。我们已经分离出一个叛徒分子的位置，这个叛徒分子的行为与其他分裂集团不一致。我希望你调查，并确保他们可能获得的任何研究。即使它被证明对我们来说不安全，最好防止它落入坏人之手。",
+    "accepted": "非常感谢。小心点，他们似乎积极参与了反对正规的血腥教派的敌对行动，但我们不知道他们有多分歧。他们可能仍然对我们怀有敌意。如果可以的话，试着劝说他们和平合作，但是要有一场战斗。",
+    "rejected": "如果你改变主意，找我谈谈。我不愿意和乐观主义者打交道，因为我们不知道他们是否还在敌对行动中，但是保护他们发现的一切对我们是有用的。",
+    "advice": "小心。他们很可能在你见到他们之前就知道你要来了，准备好对抗，或者更糟的是一次伏击。",
+    "inquire": "你有吗？",
+    "success": "我会小心的。其中一些可能有助于我们自己的研究，但一般的经验法则是避免大量的工作与任何发展需要血液魔术或空间变化的功能。我希望我没有让你陷入太大的危险，让你去追他们。",
+    "success_lie": "你觉得你想拉什么？",
+    "failure": "但是如何…"
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 12
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_2",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_8_a"
+            ],
+            "x": 8,
+            "y": 4
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_2_roof",
+        "mapgen_update_id": "cf_church_upgrade_8_b"
+      }
+    ]
+  }
+}
+```
+

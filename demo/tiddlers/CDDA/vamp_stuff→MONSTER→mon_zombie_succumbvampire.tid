@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_zombie_succumbvampire
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_succumbvampire|http://cdda.aloxaf.cn/search?q=mon_zombie_succumbvampire]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Zombies/Vampire.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_succumbvampire",
+  "type": "MONSTER",
+  "name": {
+    "str": "succumbed vampire"
+  },
+  "description": "This glorious entity has been engulfed by black, oozing liquid on its eye. Still walks in passion, its thirst for blood has been replaced with fresh meat.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "bodytype": "human",
+  "hp": 555,
+  "speed": 150,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "V",
+  "color": "light_gray_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 6,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 5,
+  "harvest": "exempt",
+  "armor_bash": 2,
+  "armor_cut": 12,
+  "armor_bullet": 8,
+  "vision_day": 50,
+  "vision_night": 20,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 7
+    },
+    [
+      "GRAB",
+      7
+    ]
+  ],
+  "death_drops": "succumbvampire",
+  "death_function": {
+    "message": "The %s disappears.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "CAN_OPEN_DOORS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_succumbvampire",
+  "type": "MONSTER",
+  "name": {
+    "str": "屈从的吸血鬼"
+  },
+  "description": "这个高贵的生物已经被它眼睛上渗出的黑色液体吞没了。依然行走在激情之中，它对鲜血的渴望已经被鲜肉所取代。现在，噩梦的全能力量变成了毁灭的容器。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "bodytype": "human",
+  "hp": 555,
+  "speed": 150,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "V",
+  "color": "light_gray_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 6,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 5,
+  "harvest": "exempt",
+  "armor_bash": 2,
+  "armor_cut": 12,
+  "armor_bullet": 8,
+  "vision_day": 50,
+  "vision_night": 20,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 7
+    },
+    [
+      "GRAB",
+      7
+    ]
+  ],
+  "death_drops": "succumbvampire",
+  "death_function": {
+    "message": "The %s disappears.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "CAN_OPEN_DOORS"
+  ]
+}
+```
+

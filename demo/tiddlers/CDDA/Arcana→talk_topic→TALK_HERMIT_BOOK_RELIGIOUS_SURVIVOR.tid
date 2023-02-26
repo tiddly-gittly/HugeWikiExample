@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_BOOK_RELIGIOUS_SURVIVOR
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_BOOK_RELIGIOUS_SURVIVOR|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_BOOK_RELIGIOUS_SURVIVOR]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS_SURVIVOR",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "We have both strayed from our paths, it seems.  I, though giving up my vows in the face of despair.  And you, marked by blood magic.  Perhaps there is hope for us yet.  I may have a task that will give us both purpose once more.",
+    "no": "As am I, these days.  Perhaps we can work together and find new purpose once more, Hunter.  If you wish, I may have an offer for you."
+  },
+  "responses": [
+    {
+      "text": "Very well then.  We shall see…",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS_SURVIVOR",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "我们俩似乎都偏离了自己的道路。一、 尽管在绝望面前放弃了我的誓言。而你，以血魔法为标志。也许我们还有希望。我可能有一项任务，将再次赋予我们两个目标。",
+    "no": "我也是，这些天。也许我们可以一起努力，再次找到新的目标，亨特。如果你愿意，我可以给你一个提议。"
+  },
+  "responses": [
+    {
+      "text": "那好吧。我们会看到…",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

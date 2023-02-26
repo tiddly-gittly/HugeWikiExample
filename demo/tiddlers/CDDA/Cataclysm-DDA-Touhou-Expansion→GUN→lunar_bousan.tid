@@ -1,0 +1,201 @@
+creator: 林一二
+revision: 0
+tags: GUN Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUN→lunar_bousan
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lunar_bousan|http://cdda.aloxaf.cn/search?q=lunar_bousan]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gun/thex_lunar_gun.json
+
+
+!! 原文
+
+```json
+{
+  "id": "lunar_bousan",
+  "type": "GUN",
+  "name": "lunar riot shotgun (vacuum mode)",
+  "copy-from": "shotgun_base",
+  "description": "The \"Boudou Sandanjou\" is an revolving LDC auto shotgun.  This belongs to an intermediate tier between old human weapons adapted with Lunarian technology and Lunarian tech proper weaponized, as noted by the extremely wide barrel.  Alongside the normal shotgun operation, the weapon is capable of generating vacuum in the action mechanism to release short, powerful blasts after pulling the trigger.  Switching between modes is done by activating a button in the thumbhole.",
+  "volume": "3400 ml",
+  "weight": "3000 g",
+  "longest_side": "900 mm",
+  "price_postapoc": 4500,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "none",
+    "length": "short",
+    "surface": "line"
+  },
+  "bashing": 12,
+  "material": [
+    "plastic",
+    "steel"
+  ],
+  "symbol": "(",
+  "looks_like": "streetsweeper",
+  "color": "white",
+  "ammo_effects": [
+    "BEANBAG",
+    "NEVER_MISFIRES",
+    "NOGIB",
+    "SHOT"
+  ],
+  "clip_size": 6,
+  "dispersion": 650,
+  "durability": 8,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ]
+  ],
+  "min_cycle_recoil": 800,
+  "ranged_damage": {
+    "damage_type": "bash",
+    "amount": 45,
+    "armor_penetration": 15
+  },
+  "reload": 100,
+  "reload_noise_volume": 6,
+  "skill": "shotgun",
+  "use_action": {
+    "type": "transform",
+    "menu_text": "Switch mode: Ammo",
+    "msg": "You switch between modes, allowing your weapon to shoot.",
+    "target": "lunar_bousan2"
+  },
+  "valid_mod_locations": [
+    [
+      "rail",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true
+    }
+  ],
+  "flags": [
+    "FIRE_TWOHAND",
+    "NEEDS_NO_LUBE",
+    "NEVER_JAMS",
+    "NON_FOULING",
+    "PUMP_ACTION",
+    "RELOAD_ONE",
+    "STURDY",
+    "TRADER_AVOID",
+    "WATERPROOF_GUN"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "lunar_bousan",
+  "type": "GUN",
+  "name": "lunar riot shotgun (vacuum mode)",
+  "copy-from": "shotgun_base",
+  "description": "The \"Boudou Sandanjou\" is an revolving LDC auto shotgun.  This belongs to an intermediate tier between old human weapons adapted with Lunarian technology and Lunarian tech proper weaponized, as noted by the extremely wide barrel.  Alongside the normal shotgun operation, the weapon is capable of generating vacuum in the action mechanism to release short, powerful blasts after pulling the trigger.  Switching between modes is done by activating a button in the thumbhole.",
+  "volume": "3400 ml",
+  "weight": "3000 g",
+  "longest_side": "900 mm",
+  "price_postapoc": 4500,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "none",
+    "length": "short",
+    "surface": "line"
+  },
+  "bashing": 12,
+  "material": [
+    "plastic",
+    "steel"
+  ],
+  "symbol": "(",
+  "looks_like": "streetsweeper",
+  "color": "white",
+  "ammo_effects": [
+    "BEANBAG",
+    "NEVER_MISFIRES",
+    "NOGIB",
+    "SHOT"
+  ],
+  "clip_size": 6,
+  "dispersion": 650,
+  "durability": 8,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ]
+  ],
+  "min_cycle_recoil": 800,
+  "ranged_damage": {
+    "damage_type": "bash",
+    "amount": 45,
+    "armor_penetration": 15
+  },
+  "reload": 100,
+  "reload_noise_volume": 6,
+  "skill": "shotgun",
+  "use_action": {
+    "type": "transform",
+    "menu_text": "Switch mode: Ammo",
+    "msg": "You switch between modes, allowing your weapon to shoot.",
+    "target": "lunar_bousan2"
+  },
+  "valid_mod_locations": [
+    [
+      "rail",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true
+    }
+  ],
+  "flags": [
+    "FIRE_TWOHAND",
+    "NEEDS_NO_LUBE",
+    "NEVER_JAMS",
+    "NON_FOULING",
+    "PUMP_ACTION",
+    "RELOAD_ONE",
+    "STURDY",
+    "TRADER_AVOID",
+    "WATERPROOF_GUN"
+  ]
+}
+```
+

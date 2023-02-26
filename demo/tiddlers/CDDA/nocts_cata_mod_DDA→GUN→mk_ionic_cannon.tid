@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: GUN nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→GUN→mk_ionic_cannon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mk_ionic_cannon|http://cdda.aloxaf.cn/search?q=mk_ionic_cannon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Weapons/c_ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mk_ionic_cannon",
+  "type": "GUN",
+  "looks_like": "laser_cannon",
+  "symbol": "(",
+  "color": "dark_gray",
+  "name": {
+    "str": "MK-2 ionic cannon"
+  },
+  "description": "It appears to be a launcher that uses a charge of plasma, and a high charge delivered by its UPS connection, to create a powerful pulse of energy.  You hope you never run into anything big enough to need this kind of firepower.",
+  "price": "20000 USD",
+  "price_postapoc": "90 USD",
+  "material": [
+    "superalloy",
+    "steel"
+  ],
+  "ammo_effects": [
+    "PLASMA",
+    "EXPLOSIVE_HUGE",
+    "STREAM_BIG",
+    "INCENDIARY",
+    "WIDE",
+    "EMP",
+    "FLASHBANG"
+  ],
+  "flags": [
+    "ALWAYS_TWOHAND",
+    "NEVER_JAMS",
+    "NON_FOULING",
+    "NEEDS_NO_LUBE",
+    "RELOAD_ONE"
+  ],
+  "ups_charges": 150,
+  "skill": "launcher",
+  "ammo": [
+    "plasma"
+  ],
+  "weight": "8280 g",
+  "volume": "3 L",
+  "bashing": 8,
+  "to_hit": -2,
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 250
+  },
+  "range": 50,
+  "recoil": 300,
+  "loudness": 25,
+  "durability": 10,
+  "clip_size": 5,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "plasma": 5
+      }
+    }
+  ],
+  "reload": 1000,
+  "valid_mod_locations": [
+    [
+      "accessories",
+      2
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock",
+      1
+    ]
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mk_ionic_cannon",
+  "type": "GUN",
+  "looks_like": "laser_cannon",
+  "symbol": "(",
+  "color": "dark_gray",
+  "name": {
+    "str": "MK-II 实验性等离子炮"
+  },
+  "description": "利用UPS充电发射等离子电荷，从而产生强大的能量脉冲。希望你永远不会遇到任何强大到需要这种火力对付的东西。",
+  "price": "20000 USD",
+  "price_postapoc": "90 USD",
+  "material": [
+    "superalloy",
+    "steel"
+  ],
+  "ammo_effects": [
+    "PLASMA",
+    "EXPLOSIVE_HUGE",
+    "STREAM_BIG",
+    "INCENDIARY",
+    "WIDE",
+    "EMP",
+    "FLASHBANG"
+  ],
+  "flags": [
+    "ALWAYS_TWOHAND",
+    "NEVER_JAMS",
+    "NON_FOULING",
+    "NEEDS_NO_LUBE",
+    "RELOAD_ONE"
+  ],
+  "ups_charges": 150,
+  "skill": "launcher",
+  "ammo": [
+    "plasma"
+  ],
+  "weight": "8280 g",
+  "volume": "3 L",
+  "bashing": 8,
+  "to_hit": -2,
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 250
+  },
+  "range": 50,
+  "recoil": 300,
+  "loudness": 25,
+  "durability": 10,
+  "clip_size": 5,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "plasma": 5
+      }
+    }
+  ],
+  "reload": 1000,
+  "valid_mod_locations": [
+    [
+      "accessories",
+      2
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock",
+      1
+    ]
+  ]
+}
+```
+

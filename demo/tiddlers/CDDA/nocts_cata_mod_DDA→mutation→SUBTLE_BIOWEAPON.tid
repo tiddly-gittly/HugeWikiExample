@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SUBTLE_BIOWEAPON
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SUBTLE_BIOWEAPON|http://cdda.aloxaf.cn/search?q=SUBTLE_BIOWEAPON]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SUBTLE_BIOWEAPON",
+  "name": {
+    "str": "Subtlety"
+  },
+  "points": 0,
+  "description": "Your innate conditioning makes it much easier to slip past undetected and manipulate others.  You're harder to spot and your movement is more quiet, plus it's much easier to persuade and lie to NPCs.",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "cancels": [
+    "LIGHTSTEP",
+    "CLUMSY"
+  ],
+  "stealth_modifier": 30,
+  "noise_modifier": 0.5,
+  "social_modifiers": {
+    "persuade": 25,
+    "lie": 50
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SUBTLE_BIOWEAPON",
+  "name": {
+    "str": "阴险"
+  },
+  "points": 0,
+  "description": "你的特性使你更容易潜行或者言语操纵他人。你更难被发现并且移动也更安静，而且更容易说服和欺骗他人。",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "cancels": [
+    "LIGHTSTEP",
+    "CLUMSY"
+  ],
+  "stealth_modifier": 30,
+  "noise_modifier": 0.5,
+  "social_modifiers": {
+    "persuade": 25,
+    "lie": 50
+  }
+}
+```
+

@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_4|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_4",
+  "dynamic_line": "I've no more tasks I can offer you.  Your path is your own, though under the guidance of He From Beyond The Veil.  However, if you have questions that remain, I will help as best as I can.",
+  "responses": [
+    {
+      "text": "I worry for what my brethren will think…",
+      "topic": "TALK_HERMIT_DISCUSS_4_FLAME",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "How amusing it is, a blood mage as one of your order's Chosen.",
+      "topic": "TALK_HERMIT_DISCUSS_4_SANGUINE",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "I can hear whispers in the back of my mind, strange fragments of dreams I can't recall clearly.",
+      "topic": "TALK_HERMIT_DISCUSS_4_DREAMS"
+    },
+    {
+      "text": "What remains of the Keepers of The Oath?",
+      "topic": "TALK_HERMIT_DISCUSS_4_KEEPERS"
+    },
+    {
+      "text": "Why did the blood mages betray you, anyway?",
+      "topic": "TALK_HERMIT_DISCUSS_4_BETRAYAL"
+    },
+    {
+      "text": "Will sealing these portals really ensure humanity's survival?",
+      "topic": "TALK_HERMIT_DISCUSS_4_SURVIVAL"
+    },
+    {
+      "text": "Never mind.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_4",
+  "dynamic_line": "我不能再给你更多的任务了。你的道路是你自己的，尽管在帷幕彼端古神的指引下。不过，如果你还有问题，我会尽我所能帮助你。",
+  "responses": [
+    {
+      "text": "我担心我的兄弟们会怎么想…",
+      "topic": "TALK_HERMIT_DISCUSS_4_FLAME",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "多有趣啊，你选了一个血法师。",
+      "topic": "TALK_HERMIT_DISCUSS_4_SANGUINE",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "我可以听到在我的脑海中低语，奇怪的梦的碎片，我记不清了。",
+      "topic": "TALK_HERMIT_DISCUSS_4_DREAMS"
+    },
+    {
+      "text": "守誓者还剩下多少？",
+      "topic": "TALK_HERMIT_DISCUSS_4_KEEPERS"
+    },
+    {
+      "text": "为什么血法师背叛了你？",
+      "topic": "TALK_HERMIT_DISCUSS_4_BETRAYAL"
+    },
+    {
+      "text": "封闭这些传送门真的能保证人类的生存吗？",
+      "topic": "TALK_HERMIT_DISCUSS_4_SURVIVAL"
+    },
+    {
+      "text": "算了。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

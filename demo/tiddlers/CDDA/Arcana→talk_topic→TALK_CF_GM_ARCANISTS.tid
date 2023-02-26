@@ -1,0 +1,59 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_ARCANISTS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_ARCANISTS|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_ARCANISTS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_ARCANISTS",
+  "type": "talk_topic",
+  "//": "It can be presumed that Johnathan can sense the difference between a member of the Sanguine Order and a non-Order Dragonblood, so only refers to them as sanguinists in the generic sense.",
+  "dynamic_line": {
+    "u_has_trait": "PROF_SANGUINE",
+    "yes": "A few scattered signs of your order, despite our conflict almost wiping us both out.  The Keepers of the Oath seem to be just about extinct too, largely thanks to your fellows.  That just leaves various cults and handfuls of independent practitioners, as far as I'm aware.  I can only pray that they don't make things worse, with no one left to guide them.",
+    "no": "The Sanguine Order, as far as I've been able to discern, has been almost wiped out.  Thank the gods for that.  I've heard barely anything of the Keepers, possibly for the best given we weren't often on speaking terms with each other.  Handful of cults here and there no doubt, but I'm not aware of any others to get tangled up in the bickering and squabbling of the old days.  Likely individuals out there surely, still dabbling in potentially dangerous magic with no one to guide them."
+  },
+  "responses": [
+    {
+      "text": "I see.",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_ARCANISTS",
+  "type": "talk_topic",
+  "//": "It can be presumed that Johnathan can sense the difference between a member of the Sanguine Order and a non-Order Dragonblood, so only refers to them as sanguinists in the generic sense.",
+  "dynamic_line": {
+    "u_has_trait": "PROF_SANGUINE",
+    "yes": "尽管我们的冲突几乎把我们俩都消灭了，但还是有一些零星的迹象表现了你的命令。守誓者似乎也即将灭绝，这在很大程度上要感谢你们。据我所知，这只剩下各种各样的邪教徒和许多独立的从业者。我只能祈祷他们不要让事情变得更糟，没有人来领导他们。",
+    "no": "据我所知，猩红教派几乎已被消灭。感谢上帝。我几乎听不到守门员的任何消息，可能是最好的消息，因为我们之间不经常交谈。毫无疑问，这里和那里有少数的邪教，但我不知道有任何其他人会纠结在过去的争吵和争吵中。有可能的人肯定在那里，仍然涉猎潜在的危险魔法，没有人指导他们。"
+  },
+  "responses": [
+    {
+      "text": "我懂了。",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+

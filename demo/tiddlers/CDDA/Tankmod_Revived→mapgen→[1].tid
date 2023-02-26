@@ -1,0 +1,401 @@
+creator: 林一二
+revision: 0
+tags: mapgen Tankmod_Revived
+title: Tankmod_Revived→mapgen→[1]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/mapgen.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_garage"
+  ],
+  "weight": 100,
+  "object": {
+    "fill_ter": "t_thconc_floor",
+    "rows": [
+      "     EEEEEEE  EEEEEEE   ",
+      "     EEEEEEE  EEEEEEE   ",
+      "     EEEEEEE  EEEEEEE   ",
+      "     EEEEEEE  EEEEEEE   ",
+      "    eEEEEEEE eEEEEEEEEEE",
+      " ----=======--_______--E",
+      " |S.eM#MMM#M.eM#MMM#M.|E",
+      " |S..M#MMM#M..M#MMM#M.|E",
+      " |c..M#MMM#M..M#MMM#M.|E",
+      " |c..M#MMM#M..M#MMM#M.|E",
+      " |c..M#MMM#M..M#MMM#M.|E",
+      " |c..M#MMM#M..M#MMM#M.|E",
+      " |c..MMMMMMMMMMMMMMMM.|E",
+      " |....................|E",
+      " |---l...........HHHHH|E",
+      " |ts|c..........CHLLLL|E",
+      " |-+|p...........Hbbbb|E",
+      "4|...............$....+E",
+      " |^W|............Hhbbb|E",
+      " |xx|cccccSScccccH6LLL|E",
+      " |----::::--::::------|E",
+      "                  EU<UEE",
+      "                  EUEEEE",
+      "                        "
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      " ": [
+        [
+          "t_region_groundcover_urban",
+          10
+        ],
+        "t_region_shrub"
+      ],
+      "_": "t_pavement",
+      "E": "t_pavement",
+      "U": "t_pavement",
+      "$": "t_door_glass_c",
+      "+": "t_door_c",
+      "-": "t_brick_wall",
+      ".": "t_thconc_floor",
+      ":": "t_window",
+      "=": "t_door_metal_locked",
+      "A": "t_m_frame",
+      "C": "t_thconc_floor",
+      "H": "t_wall_glass",
+      "e": "t_gates_mech_control",
+      "|": "t_brick_wall",
+      "W": "t_chainfence",
+      "^": "t_chaingate_c",
+      "M": "t_metal_floor",
+      "#": "t_grate",
+      "<": "t_ladder_up"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "A": "f_air_conditioner",
+      "L": "f_locker",
+      "b": "f_bench",
+      "c": "f_counter",
+      "C": "f_crate_c",
+      "s": "f_sink",
+      "S": "f_utility_shelf",
+      "p": "f_hydraulic_press",
+      "l": "f_heavy_lathe",
+      "t": "f_toilet",
+      "x": "f_utility_shelf",
+      "h": "f_chair",
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ]
+    },
+    "items": {
+      "L": {
+        "item": "clothing_work_set",
+        "chance": 55
+      },
+      "c": {
+        "item": "mechanics",
+        "chance": 60
+      },
+      "S": {
+        "item": "mechanics",
+        "chance": 80,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "x": {
+        "item": "SUS_welding_gear",
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    },
+    "place_loot": [
+      {
+        "group": "fuel_barrel_diesel_only",
+        "x": 16,
+        "y": 14,
+        "chance": 50
+      },
+      {
+        "group": "m60_patton_ammo_rack",
+        "x": 16,
+        "y": 15,
+        "chance": 100
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "tankmod_garage_restoration",
+        "x": 16,
+        "y": [
+          5,
+          6
+        ],
+        "chance": 90,
+        "rotation": 270
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_FERROUS",
+        "x": [
+          5,
+          20
+        ],
+        "y": [
+          7,
+          15
+        ],
+        "chance": 10
+      }
+    ],
+    "place_monster": [
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          5,
+          20
+        ],
+        "y": [
+          7,
+          15
+        ],
+        "chance": 50
+      },
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          5,
+          20
+        ],
+        "y": [
+          7,
+          15
+        ],
+        "chance": 50
+      },
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          5,
+          20
+        ],
+        "y": [
+          7,
+          15
+        ],
+        "chance": 50
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_garage"
+  ],
+  "weight": 100,
+  "object": {
+    "fill_ter": "t_thconc_floor",
+    "rows": [
+      "     EEEEEEE  EEEEEEE   ",
+      "     EEEEEEE  EEEEEEE   ",
+      "     EEEEEEE  EEEEEEE   ",
+      "     EEEEEEE  EEEEEEE   ",
+      "    eEEEEEEE eEEEEEEEEEE",
+      " ----=======--_______--E",
+      " |S.eM#MMM#M.eM#MMM#M.|E",
+      " |S..M#MMM#M..M#MMM#M.|E",
+      " |c..M#MMM#M..M#MMM#M.|E",
+      " |c..M#MMM#M..M#MMM#M.|E",
+      " |c..M#MMM#M..M#MMM#M.|E",
+      " |c..M#MMM#M..M#MMM#M.|E",
+      " |c..MMMMMMMMMMMMMMMM.|E",
+      " |....................|E",
+      " |---l...........HHHHH|E",
+      " |ts|c..........CHLLLL|E",
+      " |-+|p...........Hbbbb|E",
+      "4|...............$....+E",
+      " |^W|............Hhbbb|E",
+      " |xx|cccccSScccccH6LLL|E",
+      " |----::::--::::------|E",
+      "                  EU<UEE",
+      "                  EUEEEE",
+      "                        "
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      " ": [
+        [
+          "t_region_groundcover_urban",
+          10
+        ],
+        "t_region_shrub"
+      ],
+      "_": "t_pavement",
+      "E": "t_pavement",
+      "U": "t_pavement",
+      "$": "t_door_glass_c",
+      "+": "t_door_c",
+      "-": "t_brick_wall",
+      ".": "t_thconc_floor",
+      ":": "t_window",
+      "=": "t_door_metal_locked",
+      "A": "t_m_frame",
+      "C": "t_thconc_floor",
+      "H": "t_wall_glass",
+      "e": "t_gates_mech_control",
+      "|": "t_brick_wall",
+      "W": "t_chainfence",
+      "^": "t_chaingate_c",
+      "M": "t_metal_floor",
+      "#": "t_grate",
+      "<": "t_ladder_up"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "A": "f_air_conditioner",
+      "L": "f_locker",
+      "b": "f_bench",
+      "c": "f_counter",
+      "C": "f_crate_c",
+      "s": "f_sink",
+      "S": "f_utility_shelf",
+      "p": "f_hydraulic_press",
+      "l": "f_heavy_lathe",
+      "t": "f_toilet",
+      "x": "f_utility_shelf",
+      "h": "f_chair",
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ]
+    },
+    "items": {
+      "L": {
+        "item": "clothing_work_set",
+        "chance": 55
+      },
+      "c": {
+        "item": "mechanics",
+        "chance": 60
+      },
+      "S": {
+        "item": "mechanics",
+        "chance": 80,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "x": {
+        "item": "SUS_welding_gear",
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    },
+    "place_loot": [
+      {
+        "group": "fuel_barrel_diesel_only",
+        "x": 16,
+        "y": 14,
+        "chance": 50
+      },
+      {
+        "group": "m60_patton_ammo_rack",
+        "x": 16,
+        "y": 15,
+        "chance": 100
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "tankmod_garage_restoration",
+        "x": 16,
+        "y": [
+          5,
+          6
+        ],
+        "chance": 90,
+        "rotation": 270
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_FERROUS",
+        "x": [
+          5,
+          20
+        ],
+        "y": [
+          7,
+          15
+        ],
+        "chance": 10
+      }
+    ],
+    "place_monster": [
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          5,
+          20
+        ],
+        "y": [
+          7,
+          15
+        ],
+        "chance": 50
+      },
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          5,
+          20
+        ],
+        "y": [
+          7,
+          15
+        ],
+        "chance": 50
+      },
+      {
+        "group": "GROUP_MIL_WEAK",
+        "x": [
+          5,
+          20
+        ],
+        "y": [
+          7,
+          15
+        ],
+        "chance": 50
+      }
+    ]
+  }
+}
+```
+

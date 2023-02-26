@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zedbow_axxuros
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zedbow_axxuros|http://cdda.aloxaf.cn/search?q=mon_zedbow_axxuros]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+BOWs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zedbow_axxuros",
+  "type": "MONSTER",
+  "name": {
+    "str": "axxuros"
+  },
+  "description": "A humanoid creature, partially suffering in necrotic shelling. Both of its arm merged and developed numerous bony spikes between them. It is wearing an experimental suit, denoting a state of progress.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 165,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "yellow",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 2,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "armor_fire": 2,
+  "vision_day": 20,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 4,
+          "armor_multiplier": 0.4
+        },
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "upgrades": {
+    "half_life": 10,
+    "into_group": "GROUP_BOW_AXXUROS"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "FILTHY",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zedbow_axxuros",
+  "type": "MONSTER",
+  "name": {
+    "str": "阿克苏罗斯"
+  },
+  "description": "一种人形生物，部分躯体已经腐烂。其两条胳膊已经合二为一，中间长出许多骨刺。它穿着实验服，象征着一种进化的状态。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 165,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "yellow",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 2,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "armor_fire": 2,
+  "vision_day": 20,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 4,
+          "armor_multiplier": 0.4
+        },
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "upgrades": {
+    "half_life": 10,
+    "into_group": "GROUP_BOW_AXXUROS"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "FILTHY",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+

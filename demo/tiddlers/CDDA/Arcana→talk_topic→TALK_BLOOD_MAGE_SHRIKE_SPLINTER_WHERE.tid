@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE",
+  "type": "talk_topic",
+  "dynamic_line": "An old hideout of sorts, we'd bring supplies and other materials by every so often, arrange for meetings between major sects of the Order, and all that.",
+  "responses": [
+    {
+      "text": "Is there a risk that the magi might find this place?",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_MAGI"
+    },
+    {
+      "text": "What's with the items on the shelf?",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_SHELF"
+    },
+    {
+      "text": "Oh, okay.",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE",
+  "type": "talk_topic",
+  "dynamic_line": "作为一个古老的藏身之处，我们经常会带上物资和其他物资，安排主要教派之间的会议，等等。",
+  "responses": [
+    {
+      "text": "博士们有可能找到这个地方吗？",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_MAGI"
+    },
+    {
+      "text": "架子上的东西是怎么回事？",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_SHELF"
+    },
+    {
+      "text": "哦，好的。",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+

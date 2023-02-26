@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→magnetismmage_electrolaser_electro
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：magnetismmage_electrolaser_electro|http://cdda.aloxaf.cn/search?q=magnetismmage_electrolaser_electro]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Magnetism_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "id": "magnetismmage_electrolaser_electro",
+  "type": "SPELL",
+  "name": {
+    "str": "Electrolaser electric damage"
+  },
+  "description": "Give some electric damage for Electrolaser spell.  Subspell; you aren't allowed to see it except in debug mode.",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "damage_type": "electric",
+  "min_damage": 20,
+  "max_damage": 180,
+  "damage_increment": 3.8,
+  "max_range": 31,
+  "min_aoe": 1,
+  "max_aoe": 6,
+  "aoe_increment": 0.12,
+  "max_level": 43,
+  "extra_effects": [
+    {
+      "id": "railgun_sparks"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "magnetismmage_electrolaser_electro",
+  "type": "SPELL",
+  "name": {
+    "str": "电子激光电击伤害"
+  },
+  "description": "电子激光法术所造成电击伤害。子法术；除非在调试模式下，否则不应该看到它。",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "damage_type": "electric",
+  "min_damage": 20,
+  "max_damage": 180,
+  "damage_increment": 3.8,
+  "max_range": 31,
+  "min_aoe": 1,
+  "max_aoe": 6,
+  "aoe_increment": 0.12,
+  "max_level": 43,
+  "extra_effects": [
+    {
+      "id": "railgun_sparks"
+    }
+  ]
+}
+```
+

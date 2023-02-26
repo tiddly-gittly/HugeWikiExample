@@ -1,0 +1,253 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_WASTEGUARD2_ohrelly
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_WASTEGUARD2_ohrelly|http://cdda.aloxaf.cn/search?q=TALK_VAMP_WASTEGUARD2_ohrelly]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/v_wg2_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_WASTEGUARD2_ohrelly",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "commandovampmark",
+    "yes": {
+      "u_has_trait": "undertradervampmark",
+      "yes": "I guess you're important. What is it?",
+      "no": "No..."
+    },
+    "no": "No!"
+  },
+  "responses": [
+    {
+      "text": "Who are you?",
+      "topic": "TALK_VAMP_WASTEGUARD2_whoisyou",
+      "effect": {
+        "u_add_trait": "wsg2who"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "undertradervampmark"
+          },
+          {
+            "u_has_trait": "commandovampmark"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg2who"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "The guard told me you need my help.",
+      "topic": "TALK_VAMP_WASTEGUARD2_wuthelp",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg2who"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg2hired"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Where am I?",
+      "topic": "TALK_VAMP_WASTEGUARD2_whereisme",
+      "effect": {
+        "u_add_trait": "wsg2where"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "undertradervampmark"
+          },
+          {
+            "u_has_trait": "commandovampmark"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg2where"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "How's the life here?",
+      "topic": "TALK_VAMP_WASTEGUARD2_youliving",
+      "effect": {
+        "u_add_trait": "wsg2life"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "undertradervampmark"
+          },
+          {
+            "u_has_trait": "commandovampmark"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg2life"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "has_assigned_mission",
+      "text": "About that job...",
+      "topic": "TALK_MISSION_INQUIRE"
+    },
+    {
+      "text": "Something I need to do?",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "u_has_trait": "wsg2hired"
+      }
+    },
+    {
+      "text": "I better get going...",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_WASTEGUARD2_ohrelly",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "commandovampmark",
+    "yes": {
+      "u_has_trait": "undertradervampmark",
+      "yes": "我想你很重要。 怎么了？",
+      "no": "不..."
+    },
+    "no": "不！"
+  },
+  "responses": [
+    {
+      "text": "你是谁？",
+      "topic": "TALK_VAMP_WASTEGUARD2_whoisyou",
+      "effect": {
+        "u_add_trait": "wsg2who"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "undertradervampmark"
+          },
+          {
+            "u_has_trait": "commandovampmark"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg2who"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "那个守卫告诉我你需要帮助",
+      "topic": "TALK_VAMP_WASTEGUARD2_wuthelp",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg2who"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg2hired"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "我现在在哪里？",
+      "topic": "TALK_VAMP_WASTEGUARD2_whereisme",
+      "effect": {
+        "u_add_trait": "wsg2where"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "undertradervampmark"
+          },
+          {
+            "u_has_trait": "commandovampmark"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg2where"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "这里的生活怎么样？",
+      "topic": "TALK_VAMP_WASTEGUARD2_youliving",
+      "effect": {
+        "u_add_trait": "wsg2life"
+      },
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "undertradervampmark"
+          },
+          {
+            "u_has_trait": "commandovampmark"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg2life"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "has_assigned_mission",
+      "text": "关于那个任务……",
+      "topic": "TALK_MISSION_INQUIRE"
+    },
+    {
+      "text": "我需要做点什么？",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "u_has_trait": "wsg2hired"
+      }
+    },
+    {
+      "text": "我得走了...",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

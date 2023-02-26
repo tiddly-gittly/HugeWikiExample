@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_meiling_qi_burst
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_meiling_qi_burst|http://cdda.aloxaf.cn/search?q=tec_meiling_qi_burst]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_meiling_qi_burst",
+  "type": "technique",
+  "name": "Qi burst",
+  "messages": [
+    "You thrust your palms forward, and release qi through %s!",
+    "<npcname> thrusts their hands forward, and release qi through %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    }
+  ],
+  "required_buffs_all": [
+    "buff_meiling_onpause"
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "crit_tec": true,
+  "aoe": "impale",
+  "attack_override": true,
+  "weighting": -2,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "per",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "dex",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "int",
+      "scale": 2.25
+    }
+  ],
+  "//": "This is one of those techniques, like tec_mokou_talons , that would look better if they could display a small aoe when procced"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_meiling_qi_burst",
+  "type": "technique",
+  "name": "Qi burst",
+  "messages": [
+    "You thrust your palms forward, and release qi through %s!",
+    "<npcname> thrusts their hands forward, and release qi through %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    }
+  ],
+  "required_buffs_all": [
+    "buff_meiling_onpause"
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "crit_tec": true,
+  "aoe": "impale",
+  "attack_override": true,
+  "weighting": -2,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "per",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "dex",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "int",
+      "scale": 2.25
+    }
+  ],
+  "//": "This is one of those techniques, like tec_mokou_talons , that would look better if they could display a small aoe when procced"
+}
+```
+

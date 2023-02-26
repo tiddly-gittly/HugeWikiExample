@@ -1,0 +1,187 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_moruboru
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_moruboru|http://cdda.aloxaf.cn/search?q=mon_moruboru]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_moruboru",
+  "type": "MONSTER",
+  "name": {
+    "str": "moruboru",
+    "str_pl": "moruboru"
+  },
+  "description": "A large plantlike creature with a gaping, toothy maw and numerous vines.  A hideous smell permeates the air around it.",
+  "default_faction": "moruboru",
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ABERRATION"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "diff": 30,
+  "hp": 1000,
+  "speed": 90,
+  "material": [
+    "veggy"
+  ],
+  "symbol": "M",
+  "looks_like": "mon_triffid_queen",
+  "color": "green",
+  "aggression": 100,
+  "morale": 200,
+  "melee_skill": 8,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 15,
+  "armor_cut": 10,
+  "armor_stab": 5,
+  "armor_bullet": 5,
+  "armor_acid": 5,
+  "vision_day": 20,
+  "vision_night": 20,
+  "emit_fields": [
+    "emit_toxic_leak"
+  ],
+  "harvest": "moruboru_harvest",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "TENTACLE",
+      5
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_moruboru_fetid_exhalation"
+      },
+      "cooldown": 50,
+      "monster_message": "A strange vapor emanates from the moruboru."
+    }
+  ],
+  "death_drops": "mon_moruboru_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "NOHEAD",
+    "POISON",
+    "NO_BREATHE",
+    "PARALYZEVENOM",
+    "PATH_AVOID_DANGER_2",
+    "PRIORITIZE_TARGETS"
+  ],
+  "//": "Boss-level essence and an item"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_moruboru",
+  "type": "MONSTER",
+  "name": {
+    "str": "魔界花",
+    "str_pl": "魔界花"
+  },
+  "description": "一种巨大的类似植物的生物，有一个张开的牙齿状的胃和许多藤蔓。一股难闻的气味弥漫在它周围的空气中。",
+  "default_faction": "moruboru",
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ABERRATION"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "diff": 30,
+  "hp": 1000,
+  "speed": 90,
+  "material": [
+    "veggy"
+  ],
+  "symbol": "M",
+  "looks_like": "mon_triffid_queen",
+  "color": "green",
+  "aggression": 100,
+  "morale": 200,
+  "melee_skill": 8,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 15,
+  "armor_cut": 10,
+  "armor_stab": 5,
+  "armor_bullet": 5,
+  "armor_acid": 5,
+  "vision_day": 20,
+  "vision_night": 20,
+  "emit_fields": [
+    "emit_toxic_leak"
+  ],
+  "harvest": "moruboru_harvest",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "TENTACLE",
+      5
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_moruboru_fetid_exhalation"
+      },
+      "cooldown": 50,
+      "monster_message": "一种奇怪的蒸汽从莫鲁伯鲁散发出来。"
+    }
+  ],
+  "death_drops": "mon_moruboru_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "NOHEAD",
+    "POISON",
+    "NO_BREATHE",
+    "PARALYZEVENOM",
+    "PATH_AVOID_DANGER_2",
+    "PRIORITIZE_TARGETS"
+  ],
+  "//": "Boss-level essence and an item"
+}
+```
+

@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_iku_slap_elec
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_iku_slap_elec|http://cdda.aloxaf.cn/search?q=tec_iku_slap_elec]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_iku_slap_elec",
+  "type": "technique",
+  "name": "Ionic whip",
+  "messages": [
+    "You charge your weapon and use it to whip %s!",
+    "<npcname> electrifies their weapon and strikes %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "required_buffs_all": [
+    "buff_celestial_brawling_iku_onmove",
+    "buff_celestial_brawling_iku_onpause"
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": false,
+  "weighting": -1,
+  "attack_override": true,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "str",
+      "scale": 1.2
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "dex",
+      "scale": 1.2
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "int",
+      "scale": 1.2
+    }
+  ],
+  "//": "Needs more chuu2 for the name (?)",
+  "//2": "Should instead do 1.2 times the weapon's total damage in electric type"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_iku_slap_elec",
+  "type": "technique",
+  "name": "Ionic whip",
+  "messages": [
+    "You charge your weapon and use it to whip %s!",
+    "<npcname> electrifies their weapon and strikes %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "required_buffs_all": [
+    "buff_celestial_brawling_iku_onmove",
+    "buff_celestial_brawling_iku_onpause"
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": false,
+  "weighting": -1,
+  "attack_override": true,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "str",
+      "scale": 1.2
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "dex",
+      "scale": 1.2
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "int",
+      "scale": 1.2
+    }
+  ],
+  "//": "Needs more chuu2 for the name (?)",
+  "//2": "Should instead do 1.2 times the weapon's total damage in electric type"
+}
+```
+

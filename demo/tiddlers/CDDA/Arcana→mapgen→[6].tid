@@ -1,0 +1,229 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[6]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "church_1"
+  ],
+  "weight": 300,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "ssssssssssssssssssssssss",
+      "s WWWWW    ss    WWWWW s",
+      "s WT''W^^WWssWW^^W6]]W s",
+      "s W'''WWWWW++WWWWW.]]W s",
+      "s W'''X..........X..LW s",
+      "s WS''Wll.y..y.llW..<W s",
+      "s WWWWW----gg----WWWWW s",
+      "s    V####,,,,####B    s",
+      "s ^ WW,,,,,,,,,,,,WW ^ s",
+      "s ^ WW#####,,#####WW ^ s",
+      "s ^  B,,,,,,,,,,,,G  ^ s",
+      "s ^  G#####,,#####V  ^ s",
+      "s ^ WW,,,,,,,,,,,,WW ^ s",
+      "s   WW#####,,#####WW   s",
+      "ssss V,,,,,,,,,,,,B ssss",
+      " WW+WW#####,,#####WW+WW ",
+      "WW#,,,,,,,,,,,,,,,,,,#WW",
+      " V#,#,RRRRR,,RRRRR,#,#B ",
+      " G#,#,R,,,,,,,,,,R,#,#V ",
+      "WW#,#,R,b,,cc,,b,R,#,#WW",
+      " WWVWWR,,,,,,,,,,RWWBWW ",
+      "     W,,h,cccc,h,,W     ",
+      " ^^  WWWWGVBBVGWWWW  ^^ ",
+      " ^^    W        W    ^^ "
+    ],
+    "palettes": [
+      "church"
+    ],
+    "terrain": {
+      "6": "t_floor",
+      ",": "t_rock_floor",
+      "B": "t_window_stained_blue",
+      "G": "t_window_stained_green",
+      "V": "t_window_stained_red",
+      "R": "t_railing",
+      "X": "t_door_locked_interior",
+      "-": "t_wall_wood",
+      "W": "t_rock_wall",
+      "g": "t_door_glass_c",
+      "l": "t_floor",
+      "L": "t_floor",
+      "t": "t_floor",
+      "y": "t_floor"
+    },
+    "furniture": {
+      "]": "f_counter"
+    },
+    "place_nested": [
+      {
+        "chunks": [
+          [
+            "arcana_church_goth_1",
+            80
+          ],
+          [
+            "arcana_church_goth_2",
+            20
+          ]
+        ],
+        "x": 18,
+        "y": 2
+      }
+    ],
+    "items": {
+      "c": {
+        "item": "church",
+        "chance": 40
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "cf_church_upgrade_2_b",
+  "object": {
+    "mapgensize": [
+      20,
+      20
+    ],
+    "rows": [
+      "||||||||||||||||||||",
+      "|__________________|",
+      "|__________________|",
+      "|__________________|",
+      "|__________________|",
+      "|__________________|",
+      "|__________________|",
+      "|__________________|",
+      "|__________________|",
+      "||||||||||||||||||||",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    "
+    ],
+    "terrain": {
+      "|": "t_wall_log_half",
+      "_": "t_thatch_roof"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "church_1"
+  ],
+  "weight": 300,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "ssssssssssssssssssssssss",
+      "s WWWWW    ss    WWWWW s",
+      "s WT''W^^WWssWW^^W6]]W s",
+      "s W'''WWWWW++WWWWW.]]W s",
+      "s W'''X..........X..LW s",
+      "s WS''Wll.y..y.llW..<W s",
+      "s WWWWW----gg----WWWWW s",
+      "s    V####,,,,####B    s",
+      "s ^ WW,,,,,,,,,,,,WW ^ s",
+      "s ^ WW#####,,#####WW ^ s",
+      "s ^  B,,,,,,,,,,,,G  ^ s",
+      "s ^  G#####,,#####V  ^ s",
+      "s ^ WW,,,,,,,,,,,,WW ^ s",
+      "s   WW#####,,#####WW   s",
+      "ssss V,,,,,,,,,,,,B ssss",
+      " WW+WW#####,,#####WW+WW ",
+      "WW#,,,,,,,,,,,,,,,,,,#WW",
+      " V#,#,RRRRR,,RRRRR,#,#B ",
+      " G#,#,R,,,,,,,,,,R,#,#V ",
+      "WW#,#,R,b,,cc,,b,R,#,#WW",
+      " WWVWWR,,,,,,,,,,RWWBWW ",
+      "     W,,h,cccc,h,,W     ",
+      " ^^  WWWWGVBBVGWWWW  ^^ ",
+      " ^^    W        W    ^^ "
+    ],
+    "palettes": [
+      "church"
+    ],
+    "terrain": {
+      "6": "t_floor",
+      ",": "t_rock_floor",
+      "B": "t_window_stained_blue",
+      "G": "t_window_stained_green",
+      "V": "t_window_stained_red",
+      "R": "t_railing",
+      "X": "t_door_locked_interior",
+      "-": "t_wall_wood",
+      "W": "t_rock_wall",
+      "g": "t_door_glass_c",
+      "l": "t_floor",
+      "L": "t_floor",
+      "t": "t_floor",
+      "y": "t_floor"
+    },
+    "furniture": {
+      "]": "f_counter"
+    },
+    "place_nested": [
+      {
+        "chunks": [
+          [
+            "arcana_church_goth_1",
+            80
+          ],
+          [
+            "arcana_church_goth_2",
+            20
+          ]
+        ],
+        "x": 18,
+        "y": 2
+      }
+    ],
+    "items": {
+      "c": {
+        "item": "church",
+        "chance": 40
+      }
+    }
+  }
+}
+```
+

@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_SCALYTAIL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_SCALYTAIL|http://cdda.aloxaf.cn/search?q=ARCANA_SCALYTAIL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_SCALYTAIL",
+  "name": {
+    "str": "Scaly Tail"
+  },
+  "points": 1,
+  "visibility": 6,
+  "ugliness": 2,
+  "description": "You have a long, thin, lizardlike tail.  It's flexible enough to help with balance a bit, and makes a serviceable whip.  Prevents wearing non-fabric pants.",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_SCALYPATCHES",
+    "ARCANA_DRAGONSCALES",
+    "ARCANA_PLATES"
+  ],
+  "changes_to": [
+    "ARCANA_DRAGONTAIL"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "TAIL"
+  ],
+  "restricts_gear": [
+    "leg_l",
+    "leg_r"
+  ],
+  "allow_soft_gear": true,
+  "attacks": {
+    "attack_text_u": "You whip %s with your tail",
+    "attack_text_npc": "%1$s whips %2$s with their tail",
+    "chance": 20,
+    "base_damage": {
+      "damage_type": "bash",
+      "amount": 1
+    }
+  },
+  "dodge_modifier": 2,
+  "flags": [
+    "ARCANA_DRAGONBLOOD_MARKER_TAIL"
+  ],
+  "allowed_items": [
+    "ALLOWS_TAIL"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_SCALYTAIL",
+  "name": {
+    "str": "鳞尾"
+  },
+  "points": 1,
+  "visibility": 6,
+  "ugliness": 2,
+  "description": "你的尾巴又长又细，像蜥蜴。它足够灵活，有助于平衡一点，并使一个有用的鞭子。防止穿非织物裤子。",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_SCALYPATCHES",
+    "ARCANA_DRAGONSCALES",
+    "ARCANA_PLATES"
+  ],
+  "changes_to": [
+    "ARCANA_DRAGONTAIL"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "TAIL"
+  ],
+  "restricts_gear": [
+    "leg_l",
+    "leg_r"
+  ],
+  "allow_soft_gear": true,
+  "attacks": {
+    "attack_text_u": "你用尾巴抽打%s",
+    "attack_text_npc": "%1$s 用尾巴鞭打 %2$s",
+    "chance": 20,
+    "base_damage": {
+      "damage_type": "bash",
+      "amount": 1
+    }
+  },
+  "dodge_modifier": 2,
+  "flags": [
+    "ARCANA_DRAGONBLOOD_MARKER_TAIL"
+  ],
+  "allowed_items": [
+    "ALLOWS_TAIL"
+  ]
+}
+```
+

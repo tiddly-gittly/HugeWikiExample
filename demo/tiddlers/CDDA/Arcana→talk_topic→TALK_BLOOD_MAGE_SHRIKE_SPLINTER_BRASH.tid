@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH",
+  "type": "talk_topic",
+  "dynamic_line": "I'm not foolish enough to believe you.  We have our ways.  We will not prey upon others as the Order has before, but we will not concede anything to you.  Leave in peace, while that is still an option.",
+  "speaker_effect": {
+    "effect": {
+      "npc_add_var": "elena_failed",
+      "type": "flag",
+      "context": "shrike",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "…",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH",
+  "type": "talk_topic",
+  "dynamic_line": "我还没傻到相信你。我们有自己的方式。我们不会像以前那样掠夺别人，但我们不会向你们让步。和平地离开，尽管这仍然是一个选择。",
+  "speaker_effect": {
+    "effect": {
+      "npc_add_var": "elena_failed",
+      "type": "flag",
+      "context": "shrike",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "…",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,183 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_boomer_huge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_boomer_huge|http://cdda.aloxaf.cn/search?q=mon_sflesh_boomer_huge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_boomer_huge",
+  "type": "MONSTER",
+  "name": {
+    "str": "huge boomer"
+  },
+  "description": "This boomer, normally swollen and ready to burst, has strengthened and solidified.  The bile dribbling from its mouth also appears to have changed.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 5,
+  "volume": "92500 ml",
+  "weight": "120 kg",
+  "hp": 138,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "pink_white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "BOOMER_GLOW",
+      20
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_items",
+  "death_function": {
+    "effect": {
+      "id": "death_boomer_glow",
+      "hit_self": true,
+      "min_level": 1
+    },
+    "message": "A %s explode!"
+  },
+  "burn_into": "mon_boomer_huge",
+  "flags": [
+    "SEES",
+    "GOODHEARING",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "BILE_BLOOD",
+    "PUSH_MON",
+    "PATH_AVOID_DANGER_1",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_boomer_huge",
+  "type": "MONSTER",
+  "name": {
+    "str": "巨型爆汁丧尸"
+  },
+  "description": "和一般的爆汁丧尸不同，这只爆汁丧尸的表皮已经变异得更加坚硬，嘴中溢出的胆汁颜色似乎也产生了变化。\n膜状的血管覆盖了它绝大部分的表皮，并不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 5,
+  "volume": "92500 ml",
+  "weight": "120 kg",
+  "hp": 138,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "pink_white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "BOOMER_GLOW",
+      20
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_items",
+  "death_function": {
+    "effect": {
+      "id": "death_boomer_glow",
+      "hit_self": true,
+      "min_level": 1
+    },
+    "message": "A %s explode!"
+  },
+  "burn_into": "mon_boomer_huge",
+  "flags": [
+    "SEES",
+    "GOODHEARING",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "BILE_BLOOD",
+    "PUSH_MON",
+    "PATH_AVOID_DANGER_1",
+    "FILTHY"
+  ]
+}
+```
+

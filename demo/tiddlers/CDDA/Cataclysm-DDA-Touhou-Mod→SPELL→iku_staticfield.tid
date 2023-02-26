@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→iku_staticfield
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：iku_staticfield|http://cdda.aloxaf.cn/search?q=iku_staticfield]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_iku.json
+
+
+!! 原文
+
+```json
+{
+  "id": "iku_staticfield",
+  "type": "SPELL",
+  "name": "Static field",
+  "description": "Reverse the electric flow in the affected area.  This causes a small amount of debilitating damage to any creature that relies on electricity, and may cripple some enemies.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ally",
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "iku_staticfield2"
+    }
+  ],
+  "shape": "cone",
+  "damage_type": "electric",
+  "min_damage": 0,
+  "max_damage": 10,
+  "damage_increment": 1,
+  "min_range": 6,
+  "max_range": 24,
+  "range_increment": 1.8,
+  "min_aoe": 90,
+  "max_aoe": 90,
+  "field_id": "fd_electricity",
+  "field_chance": 4,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 150,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "PERCENTAGE_DAMAGE",
+    "SOMATIC"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "iku_staticfield",
+  "type": "SPELL",
+  "name": "Static field",
+  "description": "逆转目标区域的电流。对依赖电力的生物造成少量伤害，并眩晕部分敌人。",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ally",
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "iku_staticfield2"
+    }
+  ],
+  "shape": "cone",
+  "damage_type": "electric",
+  "min_damage": 0,
+  "max_damage": 10,
+  "damage_increment": 1,
+  "min_range": 6,
+  "max_range": 24,
+  "range_increment": 1.8,
+  "min_aoe": 90,
+  "max_aoe": 90,
+  "field_id": "fd_electricity",
+  "field_chance": 4,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 150,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "PERCENTAGE_DAMAGE",
+    "SOMATIC"
+  ]
+}
+```
+

@@ -1,0 +1,67 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BHUNTER_MISSION_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BHUNTER_MISSION_2|http://cdda.aloxaf.cn/search?q=TALK_BHUNTER_MISSION_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BHUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BHUNTER_MISSION_2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "Well there's a surprise.  I was searching for exactly that, to see if anyone was left that might know more about this project.  So they're not only still around but have some help, based on the badge you're wearing.  I'd be willing to assist them with intel if you'd let me tag along.",
+    "no": "I was searching for exactly that, to see if anyone was left that might know more about this project.  Glad to hear they're still alive out there.  I'd be willing to assist them with intel if you'd let me tag along."
+  },
+  "responses": [
+    {
+      "text": "Alright, I'll lead the way.",
+      "topic": "TALK_BHUNTER_MISSION_3",
+      "effect": "assign_mission"
+    },
+    {
+      "text": "I'd like to ask you some other questions first.",
+      "topic": "TALK_BHUNTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BHUNTER_MISSION_2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "这真是个惊喜。我就是在找这个，看看是否还有人知道更多关于这个项目的信息。所以他们不仅仍然活着，而且根据你佩戴的徽章，他们还提供了一些帮助。如果你让我跟着，我愿意协助他们并提供情报。",
+    "no": "我就是在找这个，看看是否还有人知道更多关于这个项目的信息。很高兴听到他们还活着。如果你让我跟着，我愿意协助他们并提供情报。"
+  },
+  "responses": [
+    {
+      "text": "好的，我来带路。",
+      "topic": "TALK_BHUNTER_MISSION_3",
+      "effect": "assign_mission"
+    },
+    {
+      "text": "我想先问你一些其他问题。",
+      "topic": "TALK_BHUNTER"
+    }
+  ]
+}
+```
+

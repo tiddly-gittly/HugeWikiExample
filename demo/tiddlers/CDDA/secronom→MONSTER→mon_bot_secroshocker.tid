@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_bot_secroshocker
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_bot_secroshocker|http://cdda.aloxaf.cn/search?q=mon_bot_secroshocker]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Bots/SecronomDragon_spawns.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_bot_secroshocker",
+  "type": "MONSTER",
+  "name": {
+    "str": "shocker"
+  },
+  "description": "A gyrocoptic ball, enveloped in electrical discharges. Deadly sawblades rotate beneath its metallic body.",
+  "default_faction": "bot",
+  "species": [
+    "ROBOT"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "emit_fields": [
+    "emit_shockerbot_crakle"
+  ],
+  "hp": 35,
+  "speed": 90,
+  "material": [
+    "steel"
+  ],
+  "symbol": "o",
+  "harvest": "exempt",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 4
+    },
+    {
+      "damage_type": "cut",
+      "amount": 12
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    30
+  ],
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "armor_bash": 3,
+  "armor_stab": 5,
+  "armor_acid": 8,
+  "armor_fire": 10,
+  "luminance": 2,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        1
+      ]
+    ]
+  },
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "FLIES",
+    "ELECTRONIC",
+    "ELECTRIC",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "POISON",
+    "PRIORITIZE_TARGETS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_bot_secroshocker",
+  "type": "MONSTER",
+  "name": {
+    "str": "放电机器人"
+  },
+  "description": "一种陀螺球，被噼啪作响的放电包围，金属身体下连着一圈致命的锯片。",
+  "default_faction": "bot",
+  "species": [
+    "ROBOT"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "emit_fields": [
+    "emit_shockerbot_crakle"
+  ],
+  "hp": 35,
+  "speed": 90,
+  "material": [
+    "steel"
+  ],
+  "symbol": "o",
+  "harvest": "exempt",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 4
+    },
+    {
+      "damage_type": "cut",
+      "amount": 12
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    30
+  ],
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "armor_bash": 3,
+  "armor_stab": 5,
+  "armor_acid": 8,
+  "armor_fire": 10,
+  "luminance": 2,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        1
+      ]
+    ]
+  },
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "FLIES",
+    "ELECTRONIC",
+    "ELECTRIC",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "POISON",
+    "PRIORITIZE_TARGETS"
+  ]
+}
+```
+

@@ -1,0 +1,207 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_insect_bloodsurgeleech
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_bloodsurgeleech|http://cdda.aloxaf.cn/search?q=mon_insect_bloodsurgeleech]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Insects/+Leech.json
+
+
+!! 原文
+
+```json
+{
+  "aggression": 25,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 10,
+  "armor_cut": 7,
+  "armor_bullet": 5,
+  "bodytype": "snake",
+  "color": "red_cyan",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "A man-sized, monoeye leech with a bubbling blood residue under its mouth and a saggy skin lies under it. If left unnoticed, it can shoot with pressurize power!",
+  "diff": 26,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SEES",
+    "PRIORITIZE_TARGETS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_2"
+  ],
+  "harvest": "meatslug",
+  "hp": 114,
+  "id": "mon_insect_bloodsurgeleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 5,
+  "melee_skill": 3,
+  "morale": 100,
+  "name": {
+    "str": "blood surge leech"
+  },
+  "path_settings": {
+    "max_dist": 4
+  },
+  "special_attacks": [
+    {
+      "cooldown": 3,
+      "description": "The blood surge leech showers its blood!",
+      "fake_dex": 8,
+      "fake_per": 10,
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "smg",
+          2
+        ]
+      ],
+      "fake_str": 12,
+      "gun_type": "bloodsurgeleechmouth",
+      "move_cost": 255,
+      "ranges": [
+        [
+          1,
+          3,
+          "DEFAULT"
+        ]
+      ],
+      "targeting_cost": 100,
+      "targeting_sound": "bubbling liquid",
+      "targeting_volume": 25,
+      "type": "gun"
+    }
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 90,
+  "symbol": "$",
+  "type": "MONSTER",
+  "vision_day": 25
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "aggression": 25,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 10,
+  "armor_cut": 7,
+  "armor_bullet": 5,
+  "bodytype": "snake",
+  "color": "red_cyan",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "一种人大小的单眼水蛭，嘴下有起泡的血迹，下面有下垂的皮肤。如果不被注意，它可以用加压的力量射击！",
+  "diff": 26,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SEES",
+    "PRIORITIZE_TARGETS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_2"
+  ],
+  "harvest": "meatslug",
+  "hp": 114,
+  "id": "mon_insect_bloodsurgeleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 5,
+  "melee_skill": 3,
+  "morale": 100,
+  "name": {
+    "str": "血潮水蛭"
+  },
+  "path_settings": {
+    "max_dist": 4
+  },
+  "special_attacks": [
+    {
+      "cooldown": 3,
+      "description": "血脉汹涌的水蛭在喷血！",
+      "fake_dex": 8,
+      "fake_per": 10,
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "smg",
+          2
+        ]
+      ],
+      "fake_str": 12,
+      "gun_type": "bloodsurgeleechmouth",
+      "move_cost": 255,
+      "ranges": [
+        [
+          1,
+          3,
+          "DEFAULT"
+        ]
+      ],
+      "targeting_cost": 100,
+      "targeting_sound": "bubbling liquid",
+      "targeting_volume": 25,
+      "type": "gun"
+    }
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 90,
+  "symbol": "$",
+  "type": "MONSTER",
+  "vision_day": 25
+}
+```
+

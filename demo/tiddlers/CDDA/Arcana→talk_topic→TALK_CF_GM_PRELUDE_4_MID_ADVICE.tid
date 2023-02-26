@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_PRELUDE_4_MID_ADVICE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_PRELUDE_4_MID_ADVICE|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_PRELUDE_4_MID_ADVICE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_MID_ADVICE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_mission": "MISSION_CF_GM_4_PRELUDE",
+    "yes": "Whatever killed most of the survivors is still in the area, and we know they're more dangerous at night.  Try not approach during the day.  Look for anything that seems out of place and bring it here.  If I can't figure anything out of it, I'll recommend you to Sofia.",
+    "no": {
+      "u_has_var": "johnathan_prelude_penultimate",
+      "type": "mission",
+      "context": "rural_church",
+      "value": "yes",
+      "no": "Visit the center first and foremost, but any contact that has extensive involvement with traders and explorers might know something.  Get at least five confirmed locations and we should have a better understanding of where the epicenter might be.",
+      "yes": "Bring what you found to Sofia, she should be able to help.  I'll look into consulting with the others as well, until you come back with anything."
+    }
+  },
+  "responses": [
+    {
+      "text": "…",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_MID_ADVICE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_mission": "MISSION_CF_GM_4_PRELUDE",
+    "yes": "不管是什么东西杀死了大部分幸存者，现在还在这个地区，我们知道他们在晚上更危险。白天不要靠近。找些不合适的东西带过来。如果我想不出什么办法，我就把你推荐给索菲亚。",
+    "no": {
+      "u_has_var": "johnathan_prelude_penultimate",
+      "type": "mission",
+      "context": "rural_church",
+      "value": "yes",
+      "no": "首先参观中心，但是任何与商人和探险家有广泛联系的人都可能知道一些事情。得到至少五个确定的地点，我们应该对震中可能在哪里有一个更好的了解。",
+      "yes": "把你找到的东西交给索菲亚，她会帮上忙的。我也会考虑和其他人商量，直到你拿了什么回来。"
+    }
+  },
+  "responses": [
+    {
+      "text": "…",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+

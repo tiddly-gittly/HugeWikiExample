@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→somen_clairvoyance_xl
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：somen_clairvoyance_xl|http://cdda.aloxaf.cn/search?q=somen_clairvoyance_xl]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "somen_clairvoyance_xl",
+  "repairs_like": "somen_clairvoyance",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "hunter's visor"
+  },
+  "description": "A half-mask covering the top half of the face, made of iron decorated with other metal.  Loose-fitting and designed with mutant anatomy in mind, and to be worn over other items.  Fueling it with consecrated essence will grant the wearer clairvoyance within a limited range and protection from bright flashes, but blind you to anything beyond its effect.",
+  "weight": "500 g",
+  "volume": "750 ml",
+  "price": "210 USD",
+  "price_postapoc": "40 USD",
+  "material": [
+    "iron",
+    "copper",
+    "leather"
+  ],
+  "symbol": "[",
+  "looks_like": "mask_bal",
+  "color": "light_red",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 24
+      }
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "essence_dull_type",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "mutations": [
+          "ARCANA_MASK_INSIGHT_EFFECT"
+        ],
+        "values": [
+          {
+            "value": "BONUS_DODGE",
+            "add": 2
+          }
+        ],
+        "ench_effects": [
+          {
+            "effect": "mask_blind_immunity",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": {
+    "target": "somen_clairvoyance_xl_on",
+    "msg": "The visor's surface shifts subtly, the eyeholes momentarily seeming to glow as a strange perception replaces your natural vision.",
+    "active": true,
+    "need_worn": true,
+    "need_charges": 1,
+    "need_charges_msg": "Fuel the visor with consecrated essence, to open your eyes.",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "OVERSIZE",
+    "OUTER"
+  ],
+  "material_thickness": 3,
+  "environmental_protection": 1,
+  "armor": [
+    {
+      "encumbrance": 8,
+      "coverage": 100,
+      "covers": [
+        "eyes"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "somen_clairvoyance_xl",
+  "repairs_like": "somen_clairvoyance",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "猎手面罩"
+  },
+  "description": "一种覆盖脸部上半部的半面罩，由铁制成，用其他金属装饰。宽松合身，设计时考虑到变异解剖学，可穿在其他物品上。用神圣的精髓为它加油会使佩戴者在有限的范围内获得千里眼，并保护你免受闪光的伤害，但会使你对任何超出其效果的东西视而不见。",
+  "weight": "500 g",
+  "volume": "750 ml",
+  "price": "210 USD",
+  "price_postapoc": "40 USD",
+  "material": [
+    "iron",
+    "copper",
+    "leather"
+  ],
+  "symbol": "[",
+  "looks_like": "mask_bal",
+  "color": "light_red",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 24
+      }
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "essence_dull_type",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "mutations": [
+          "ARCANA_MASK_INSIGHT_EFFECT"
+        ],
+        "values": [
+          {
+            "value": "BONUS_DODGE",
+            "add": 2
+          }
+        ],
+        "ench_effects": [
+          {
+            "effect": "mask_blind_immunity",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": {
+    "target": "somen_clairvoyance_xl_on",
+    "msg": "遮阳板的表面会发生微妙的变化，当一种奇怪的感觉取代你的自然视觉时，眼孔会瞬间发光。",
+    "active": true,
+    "need_worn": true,
+    "need_charges": 1,
+    "need_charges_msg": "用神圣的精华给面甲加油，让你睁开眼睛。",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "OVERSIZE",
+    "OUTER"
+  ],
+  "material_thickness": 3,
+  "environmental_protection": 1,
+  "armor": [
+    {
+      "encumbrance": 8,
+      "coverage": 100,
+      "covers": [
+        "eyes"
+      ]
+    }
+  ]
+}
+```
+

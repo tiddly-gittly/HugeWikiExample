@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_mark_summon_jabberwock
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mark_summon_jabberwock|http://cdda.aloxaf.cn/search?q=arcana_mark_summon_jabberwock]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_sanguine_marks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_mark_summon_jabberwock",
+  "type": "SPELL",
+  "name": {
+    "str": "Mark: Summon Jabberwock"
+  },
+  "description": "Sanguine Mark\nUsing this spell will summon a golem woven of flesh.  Whether it will obey you is completely up to chance.",
+  "message": "The ground warps at your command, a host of rotting bodies emerging from the disturbance, forms fusing together into an abomination.  %s!",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "HOSTILE_50",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_6",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_jabberwock_summoned",
+  "energy_source": "HP",
+  "difficulty": 60,
+  "skill": "magic",
+  "max_level": 5,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 4,
+  "max_range": 7,
+  "range_increment": 0.6,
+  "base_casting_time": 210,
+  "final_casting_time": 105,
+  "casting_time_increment": -21,
+  "base_energy_cost": 28,
+  "final_energy_cost": 14,
+  "energy_increment": -2.8,
+  "min_duration": 720000,
+  "max_duration": 1800000,
+  "duration_increment": 216000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_mark_summon_jabberwock",
+  "type": "SPELL",
+  "name": {
+    "str": "印记：召唤贾伯沃克"
+  },
+  "description": "猩红印记\n使用这个法术将召唤一个肉身的傀儡。它是否会服从你完全取决于机会。",
+  "message": "大地在你的命令下扭曲，一大群腐烂的尸体从混乱中出现，融合在一起变成了一个可憎的东西。%s ！",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_HANDS",
+    "HOSTILE_50",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_sanguine_mark_burnout_6",
+      "hit_self": true,
+      "max_level": 5
+    }
+  ],
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_jabberwock_summoned",
+  "energy_source": "HP",
+  "difficulty": 60,
+  "skill": "magic",
+  "max_level": 5,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 4,
+  "max_range": 7,
+  "range_increment": 0.6,
+  "base_casting_time": 210,
+  "final_casting_time": 105,
+  "casting_time_increment": -21,
+  "base_energy_cost": 28,
+  "final_energy_cost": 14,
+  "energy_increment": -2.8,
+  "min_duration": 720000,
+  "max_duration": 1800000,
+  "duration_increment": 216000
+}
+```
+

@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_camp_turret_tendril_slam
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_camp_turret_tendril_slam|http://cdda.aloxaf.cn/search?q=mon_sflesh_camp_turret_tendril_slam]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_camp_turret_tendril_slam",
+  "type": "SPELL",
+  "name": {
+    "str": "Tendril Slam"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster slams at the target, dealing high bashing damage and applying stun to all affected creatures in a small radius.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_TARGET"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "stunned",
+  "min_damage": 12,
+  "max_damage": 24,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "min_range": 4,
+  "max_range": 4,
+  "damage_type": "bash",
+  "min_duration": 125,
+  "max_duration": 125
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_camp_turret_tendril_slam",
+  "type": "SPELL",
+  "name": {
+    "str": "触手猛击"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者猛击目标，造成高打击伤害，并对小范围内所有受影响的生物造成眩晕。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_TARGET"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "stunned",
+  "min_damage": 12,
+  "max_damage": 24,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "min_range": 4,
+  "max_range": 4,
+  "damage_type": "bash",
+  "min_duration": 125,
+  "max_duration": 125
+}
+```
+

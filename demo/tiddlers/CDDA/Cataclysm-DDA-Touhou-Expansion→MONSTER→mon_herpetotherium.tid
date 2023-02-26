@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_herpetotherium
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_herpetotherium|http://cdda.aloxaf.cn/search?q=mon_herpetotherium]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_mammal.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_herpetotherium",
+  "type": "MONSTER",
+  "name": {
+    "str": "herpetotherium"
+  },
+  "copy-from": "mon_opossum",
+  "description": "A small rodent-like animal.  It resembles your average opossum, except with a reddish coat, and mouse sized.",
+  "volume": "90 ml",
+  "weight": "80 g",
+  "hp": 2,
+  "speed": 110,
+  "symbol": "ṗ",
+  "looks_like": "mon_opossum",
+  "color": "red",
+  "aggression": -5,
+  "morale": 5,
+  "melee_skill": 3,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 0
+    }
+  ],
+  "vision_night": 15,
+  "anger_triggers": [
+    "FRIEND_ATTACKED"
+  ],
+  "fear_triggers": [
+    "HURT",
+    "PLAYER_CLOSE"
+  ],
+  "reproduction": {
+    "baby_monster": "mon_herpetotherium_cub",
+    "baby_count": 4,
+    "baby_timer": 135
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      50
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "CLIMBS",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ],
+  "//": "Tried to use Herpetotherium sp. as reference, but there's basically no data, so it's mostly copied from mon_opossum and mon_black_rat . No reproductive data"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_herpetotherium",
+  "type": "MONSTER",
+  "name": {
+    "str": "herpetotherium"
+  },
+  "copy-from": "mon_opossum",
+  "description": "A small rodent-like animal.  It resembles your average opossum, except with a reddish coat, and mouse sized.",
+  "volume": "90 ml",
+  "weight": "80 g",
+  "hp": 2,
+  "speed": 110,
+  "symbol": "ṗ",
+  "looks_like": "mon_opossum",
+  "color": "red",
+  "aggression": -5,
+  "morale": 5,
+  "melee_skill": 3,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 0
+    }
+  ],
+  "vision_night": 15,
+  "anger_triggers": [
+    "FRIEND_ATTACKED"
+  ],
+  "fear_triggers": [
+    "HURT",
+    "PLAYER_CLOSE"
+  ],
+  "reproduction": {
+    "baby_monster": "mon_herpetotherium_cub",
+    "baby_count": 4,
+    "baby_timer": 135
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      50
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "CLIMBS",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ],
+  "//": "Tried to use Herpetotherium sp. as reference, but there's basically no data, so it's mostly copied from mon_opossum and mon_black_rat . No reproductive data"
+}
+```
+

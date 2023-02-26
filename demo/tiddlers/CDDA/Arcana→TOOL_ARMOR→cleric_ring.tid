@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→cleric_ring
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cleric_ring|http://cdda.aloxaf.cn/search?q=cleric_ring]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "cleric_ring",
+  "type": "TOOL_ARMOR",
+  "copy-from": "ruby_silver_ring",
+  "repairs_like": "orb_veil",
+  "name": {
+    "str": "ring of the fallen angel",
+    "str_pl": "rings of the fallen angel"
+  },
+  "description": "A simple silver ring, adorned with a small red gem and a wing motif.  Activating it channels a powerful protective spell, guarding against many forms of supernatural harm.",
+  "//": "While unassuming, those who knew what rituals it was useful for would value it highly.  Those people are probably now dead.",
+  "price": "3600 USD",
+  "price_postapoc": "150 USD",
+  "material": [
+    "silver",
+    "essencemat"
+  ],
+  "color": "white",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 10
+      }
+    }
+  ],
+  "ammo": "essence_type",
+  "use_action": {
+    "target": "cleric_ring_on",
+    "msg": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
+    "active": true,
+    "need_worn": true,
+    "need_charges": 1,
+    "need_charges_msg": "Provide essence, and the fallen angel shall spread its wings.",
+    "menu_text": "Activate ward against evil",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "armor": [
+    {
+      "encumbrance": 0,
+      "coverage": 0,
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "specifically_covers": [
+        "hand_fingers_l",
+        "hand_fingers_r"
+      ],
+      "rigid_layer_only": true
+    }
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "ench_effects": [
+          {
+            "effect": "cleric_warding",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE",
+      "TRADER_KEEP_EQUIPPED",
+      "PSYSHIELD_PARTIAL"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "cleric_ring",
+  "type": "TOOL_ARMOR",
+  "copy-from": "ruby_silver_ring",
+  "repairs_like": "orb_veil",
+  "name": {
+    "str": "堕落天使之戒",
+    "str_pl": "堕落天使之戒"
+  },
+  "description": "A simple silver ring, adorned with a small red gem and a wing motif.  Activating it channels a powerful protective spell, guarding against many forms of supernatural harm.",
+  "//": "While unassuming, those who knew what rituals it was useful for would value it highly.  Those people are probably now dead.",
+  "price": "3600 USD",
+  "price_postapoc": "150 USD",
+  "material": [
+    "silver",
+    "essencemat"
+  ],
+  "color": "white",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 10
+      }
+    }
+  ],
+  "ammo": "essence_type",
+  "use_action": {
+    "target": "cleric_ring_on",
+    "msg": "一种奇怪的能量从戒指的宝石中散发出来，使你觉得内心平静。",
+    "active": true,
+    "need_worn": true,
+    "need_charges": 1,
+    "need_charges_msg": "提供精华，堕落的天使将展开翅膀。",
+    "menu_text": "激活辟邪结界",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "armor": [
+    {
+      "encumbrance": 0,
+      "coverage": 0,
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "specifically_covers": [
+        "hand_fingers_l",
+        "hand_fingers_r"
+      ],
+      "rigid_layer_only": true
+    }
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "ench_effects": [
+          {
+            "effect": "cleric_warding",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE",
+      "TRADER_KEEP_EQUIPPED",
+      "PSYSHIELD_PARTIAL"
+    ]
+  }
+}
+```
+

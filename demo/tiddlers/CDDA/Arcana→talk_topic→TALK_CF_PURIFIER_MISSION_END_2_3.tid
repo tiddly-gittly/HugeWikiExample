@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_MISSION_END_2_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_MISSION_END_2_3|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_MISSION_END_2_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_MISSION_END_2_3",
+  "type": "talk_topic",
+  "dynamic_line": "There's a whole web of shipments concerning the sort of technologies that would be useful for this sort of project, and over ninety percent of the relevant anomalous materials on this manifest end up in a single research facility.  This is exactly what I was hoping to find, a buildup of materials that briefly continued even into the last few shipments that made it out when this all boiled over.  When you're ready, I'll have a briefing prepared for you.",
+  "speaker_effect": [
+    {
+      "effect": [
+        {
+          "npc_add_var": "nicholas_mission_3_ready",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "text": "Alright.",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_MISSION_END_2_3",
+  "type": "talk_topic",
+  "dynamic_line": "这里有一个关于这些科技的完整的运输网络，它对于这些项目来说非常有用，这个清单上超过90%的相关异常材料最终都出现在了同一个研究设施中。这正是我所希望找到的，在大灾变发生前的几次装运中，造出的原料只临时堆放了很短的时间。当你做好准备后，我会为你准备一份简报。",
+  "speaker_effect": [
+    {
+      "effect": [
+        {
+          "npc_add_var": "nicholas_mission_3_ready",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "text": "好吧。",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+

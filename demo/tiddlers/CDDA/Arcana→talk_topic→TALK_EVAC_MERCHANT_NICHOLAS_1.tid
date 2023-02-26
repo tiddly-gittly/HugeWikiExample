@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_EVAC_MERCHANT_NICHOLAS_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_EVAC_MERCHANT_NICHOLAS_1|http://cdda.aloxaf.cn/search?q=TALK_EVAC_MERCHANT_NICHOLAS_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_EVAC_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_EVAC_MERCHANT_NICHOLAS_1",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_marshal",
+    "yes": "I don't know how much help I'll be with that, Marshal.  The Old Guard would likely know more, especially given how you've helped them out before.  However, I did hear something recently that might lead in the right direction, if you'd like to hear it",
+    "no": "I don't know how much help I'll be with that.  The doctor over there might be able to help, not sure.  However, I did hear something recently that might lead in the right direction, if you'd like to hear it."
+  },
+  "responses": [
+    {
+      "text": "Worth a shot, what'd you find out?",
+      "topic": "TALK_EVAC_MERCHANT_NICHOLAS_2"
+    },
+    {
+      "text": "I'll ask around.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_EVAC_MERCHANT_NICHOLAS_1",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_marshal",
+    "yes": "我不知道我能帮上多少忙，警长。永生守卫人可能知道得更多，尤其是考虑到你以前是如何帮助他们的。然而，我最近确实听到了一些可能指向正确方向的东西，如果你想听的话。",
+    "no": "我不知道我能帮多少忙。那边的医生也许能帮忙，不确定。不过，如果你愿意的话，我最近确实听到了一些可能朝着正确方向发展的建议。"
+  },
+  "responses": [
+    {
+      "text": "值得一试，你发现了什么？",
+      "topic": "TALK_EVAC_MERCHANT_NICHOLAS_2"
+    },
+    {
+      "text": "我四处问问。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

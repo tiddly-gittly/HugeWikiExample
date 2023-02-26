@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: furniture MST_Extra
+title: MST_Extra→furniture→f_rack_wood_makeshift
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_rack_wood_makeshift|http://cdda.aloxaf.cn/search?q=f_rack_wood_makeshift]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_rack_wood_makeshift",
+  "looks_like": "f_rack_wood",
+  "name": "makeshift wooden rack",
+  "symbol": "{",
+  "description": "A simple wooden rack, made using rudimentary joinery and adhesive.  Display your items on it.",
+  "color": "brown",
+  "move_cost_mod": -1,
+  "coverage": 70,
+  "required_str": 8,
+  "flags": [
+    "FLAMMABLE",
+    "PLACE_ITEM",
+    "ORGANIC",
+    "BLOCKSDOOR",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 12
+      }
+    ]
+  },
+  "max_volume": "6000 L",
+  "bash": {
+    "str_min": 5,
+    "str_max": 38,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 12
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_rack_wood_makeshift",
+  "looks_like": "f_rack_wood",
+  "name": "简易木架",
+  "symbol": "{",
+  "description": "一种简单的手工木架,用粗加工的细木工板和黏合剂制成.“把你的东西摆在上面秀一秀”.",
+  "color": "brown",
+  "move_cost_mod": -1,
+  "coverage": 70,
+  "required_str": 8,
+  "flags": [
+    "FLAMMABLE",
+    "PLACE_ITEM",
+    "ORGANIC",
+    "BLOCKSDOOR",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 12
+      }
+    ]
+  },
+  "max_volume": "6000 L",
+  "bash": {
+    "str_min": 5,
+    "str_max": 38,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 12
+      }
+    ]
+  }
+}
+```
+

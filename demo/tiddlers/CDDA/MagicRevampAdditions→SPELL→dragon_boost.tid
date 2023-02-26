@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→dragon_boost
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dragon_boost|http://cdda.aloxaf.cn/search?q=dragon_boost]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/black_dragon.json
+
+
+!! 原文
+
+```json
+{
+  "id": "dragon_boost",
+  "type": "SPELL",
+  "name": {
+    "str": "Dragon Boost"
+  },
+  "description": "You let out a mighty roar as you infuse yourself with the power of Dragons.",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "effect_str": "dragon_boost",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "health_recovery",
+      "hit_self": true
+    },
+    {
+      "id": "stamina_recovery",
+      "hit_self": true
+    }
+  ],
+  "max_level": 7,
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 2000,
+  "max_duration": 14000,
+  "duration_increment": 2000,
+  "base_casting_time": 100,
+  "base_energy_cost": 150,
+  "energy_source": "MANA",
+  "difficulty": 0,
+  "flags": [
+    "LOUD",
+    "NO_HANDS",
+    "NO_LEGS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "dragon_boost",
+  "type": "SPELL",
+  "name": {
+    "str": "巨龙注能"
+  },
+  "description": "伴随着一声刺耳的咆哮，你把龙族魔力灌注进自己体内。",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "effect_str": "dragon_boost",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "health_recovery",
+      "hit_self": true
+    },
+    {
+      "id": "stamina_recovery",
+      "hit_self": true
+    }
+  ],
+  "max_level": 7,
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 2000,
+  "max_duration": 14000,
+  "duration_increment": 2000,
+  "base_casting_time": 100,
+  "base_energy_cost": 150,
+  "energy_source": "MANA",
+  "difficulty": 0,
+  "flags": [
+    "LOUD",
+    "NO_HANDS",
+    "NO_LEGS"
+  ]
+}
+```
+

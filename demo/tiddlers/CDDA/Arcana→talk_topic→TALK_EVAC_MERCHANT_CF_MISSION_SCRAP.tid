@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_EVAC_MERCHANT_CF_MISSION_SCRAP
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_EVAC_MERCHANT_CF_MISSION_SCRAP|http://cdda.aloxaf.cn/search?q=TALK_EVAC_MERCHANT_CF_MISSION_SCRAP]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_EVAC_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_EVAC_MERCHANT_CF_MISSION_SCRAP",
+  "type": "talk_topic",
+  "dynamic_line": "Afraid I can't.  The main reason I'm willing to honor their deal is because those things they use are reliable.  25 grams of three-nines-fine gold, edge reeding, the works.  I doubt they have the means to make any more, but for now they're more useful for trade than any old melted jewelry.",
+  "responses": [
+    {
+      "text": "Okay, here are the coins.",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 20
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "cf_rep_trade_arrangement"
+        },
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "text": "They'll be even more valuable if their outpost has time to grow.  Might be worth it to cut them some slack, say about 15 instead?",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 15
+        }
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 10
+      },
+      "success": {
+        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL_VALUE",
+        "effect": [
+          {
+            "u_consume_item": "cf_rep_trade_arrangement"
+          },
+          {
+            "u_consume_item": "CF_golden_scale",
+            "count": 15
+          }
+        ]
+      },
+      "failure": {
+        "opinion": {
+          "value": -1
+        },
+        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL"
+      }
+    },
+    {
+      "text": "What about cash?",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_CASH"
+    },
+    {
+      "text": "Nevermind.  I'll come back later.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_EVAC_MERCHANT_CF_MISSION_SCRAP",
+  "type": "talk_topic",
+  "dynamic_line": "恐怕不行。我愿意遵守他们的协议的主要原因是他们使用的东西是可靠的。25克三九精金，棱纹，作品。我怀疑他们是否有能力制造更多的珠宝，但就目前而言，它们在贸易上比任何旧的熔化的珠宝都有用。",
+  "responses": [
+    {
+      "text": "好的，这是硬币。",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 20
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "cf_rep_trade_arrangement"
+        },
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "text": "如果他们的前哨有时间发展，他们将更有价值。也许值得让他们放松一下，比如说15岁左右？",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 15
+        }
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 10
+      },
+      "success": {
+        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL_VALUE",
+        "effect": [
+          {
+            "u_consume_item": "cf_rep_trade_arrangement"
+          },
+          {
+            "u_consume_item": "CF_golden_scale",
+            "count": 15
+          }
+        ]
+      },
+      "failure": {
+        "opinion": {
+          "value": -1
+        },
+        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL"
+      }
+    },
+    {
+      "text": "现金呢？",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_CASH"
+    },
+    {
+      "text": "没有关系。我晚点再来。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

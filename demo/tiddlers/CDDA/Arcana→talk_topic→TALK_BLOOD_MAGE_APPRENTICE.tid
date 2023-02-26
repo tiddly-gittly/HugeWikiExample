@@ -1,0 +1,225 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_APPRENTICE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_APPRENTICE|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_APPRENTICE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_APPRENTICE.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BLOOD_MAGE_APPRENTICE",
+  "dynamic_line": "What the hell?  What are you doing here?",
+  "responses": [
+    {
+      "text": "\"The moonlit sky anoints the worthy, who seek The Path home.\"",
+      "condition": {
+        "u_has_var": "horace_password_known",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes"
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_PASSWORD"
+    },
+    {
+      "text": "Who are you?",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2",
+            "PROF_SANGUINE"
+          ]
+        }
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_GET_OUT"
+    },
+    {
+      "text": "What can you tell me about this place?",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2",
+            "PROF_SANGUINE"
+          ]
+        }
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_GET_OUT"
+    },
+    {
+      "text": "You are not alone in following The Path.",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_SANGUINE"
+    },
+    {
+      "text": "Ecce, sanguinem magum!  Impium profligatum!",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 75
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_INTIMIDATE",
+        "opinion": {
+          "anger": 1,
+          "fear": 2
+        }
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "anger": 1
+        },
+        "effect": [
+          {
+            "u_faction_rep": -30
+          },
+          "insult_combat"
+        ]
+      }
+    },
+    {
+      "text": "[ATTACK] I'm here to kill you.",
+      "effect": "insult_combat",
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "Er, I'll just be going.",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ]
+        }
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_NICE_TRY"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BLOOD_MAGE_APPRENTICE",
+  "dynamic_line": "我勒个去？你在这里干什么？",
+  "responses": [
+    {
+      "text": "\"月夜的天空涂油给那些寻找回家之路的人.\"",
+      "condition": {
+        "u_has_var": "horace_password_known",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes"
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_PASSWORD"
+    },
+    {
+      "text": "你是谁？",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2",
+            "PROF_SANGUINE"
+          ]
+        }
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_GET_OUT"
+    },
+    {
+      "text": "你能告诉我这是个什么地方？",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2",
+            "PROF_SANGUINE"
+          ]
+        }
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_GET_OUT"
+    },
+    {
+      "text": "走这条路的并不是你一个人。",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_SANGUINE"
+    },
+    {
+      "text": "幼儿保育和教育，圣洁的玛格姆！挥金如土！",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 75
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_INTIMIDATE",
+        "opinion": {
+          "anger": 1,
+          "fear": 2
+        }
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "anger": 1
+        },
+        "effect": [
+          {
+            "u_faction_rep": -30
+          },
+          "insult_combat"
+        ]
+      }
+    },
+    {
+      "text": "[攻击]我是来杀你的。",
+      "effect": "insult_combat",
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "呃，我要走了。",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ]
+        }
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_NICE_TRY"
+    }
+  ]
+}
+```
+

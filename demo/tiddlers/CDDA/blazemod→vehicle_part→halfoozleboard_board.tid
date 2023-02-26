@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→halfoozleboard_board
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：halfoozleboard_board|http://cdda.aloxaf.cn/search?q=halfoozleboard_board]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_boards.json
+
+
+!! 原文
+
+```json
+{
+  "id": "halfoozleboard_board",
+  "type": "vehicle_part",
+  "name": {
+    "str": "ooze screen"
+  },
+  "item": "oozle",
+  "location": "center",
+  "standard_symbols": true,
+  "color": "green",
+  "broken_color": "green",
+  "durability": 500,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "description": "A living blob, formed into a half-height vehicle wall.  Keeps zombies outside the vehicle but allows people to see over it.",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "OBSTACLE",
+    "HALF_BOARD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "halfoozleboard_board",
+  "type": "vehicle_part",
+  "name": {
+    "str": "软泥屏风"
+  },
+  "item": "oozle",
+  "location": "center",
+  "standard_symbols": true,
+  "color": "green",
+  "broken_color": "green",
+  "durability": 500,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "description": "一只活的变形怪变成的半高隔板。能够阻挡丧尸但是无法阻挡其他人的视线。",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "OBSTACLE",
+    "HALF_BOARD"
+  ]
+}
+```
+

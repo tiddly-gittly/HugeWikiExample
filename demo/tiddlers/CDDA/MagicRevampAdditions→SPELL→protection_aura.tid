@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→protection_aura
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：protection_aura|http://cdda.aloxaf.cn/search?q=protection_aura]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/classless.json
+
+
+!! 原文
+
+```json
+{
+  "id": "protection_aura",
+  "type": "SPELL",
+  "name": {
+    "str": "Aura of Protection"
+  },
+  "description": "Encases your whole body in a magical aura that protects you from the environment.",
+  "valid_targets": [
+    "self"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "spawn_item",
+  "effect_str": "protect_env",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "difficulty": 1,
+  "max_level": 30,
+  "flags": [
+    "CONCENTRATE",
+    "VERBAL",
+    "NO_LEGS"
+  ],
+  "base_casting_time": 350,
+  "base_energy_cost": 375,
+  "min_duration": 10000,
+  "max_duration": 75000,
+  "duration_increment": 3000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "protection_aura",
+  "type": "SPELL",
+  "name": {
+    "str": "保护光环"
+  },
+  "description": "把你的整个身体包裹在一个神奇的光环里，保护你免受环境伤害。",
+  "valid_targets": [
+    "self"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "spawn_item",
+  "effect_str": "protect_env",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "difficulty": 1,
+  "max_level": 30,
+  "flags": [
+    "CONCENTRATE",
+    "VERBAL",
+    "NO_LEGS"
+  ],
+  "base_casting_time": 350,
+  "base_energy_cost": 375,
+  "min_duration": 10000,
+  "max_duration": 75000,
+  "duration_increment": 3000
+}
+```
+

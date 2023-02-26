@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_mawy_web
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_mawy_web|http://cdda.aloxaf.cn/search?q=fd_mawy_web]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_mawy_web",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "flesh strands",
+      "sym": "}",
+      "color": "pink",
+      "effects": [
+        {
+          "effect_id": "secro_mawy_web",
+          "body_part": "torso",
+          "min_duration": "5 seconds",
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    },
+    {
+      "name": "flesh webs",
+      "color": "light_red",
+      "effects": [
+        {
+          "effect_id": "secro_mawy_web",
+          "body_part": "torso",
+          "min_duration": "10 seconds",
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    },
+    {
+      "name": "thick flesh webs",
+      "transparent": false,
+      "color": "red",
+      "effects": [
+        {
+          "effect_id": "secro_mawy_web",
+          "body_part": "torso",
+          "min_duration": "20 seconds",
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    }
+  ],
+  "priority": 2,
+  "immune_mtypes": [
+    "mon_zombieworm_mawy"
+  ],
+  "half_life": "30 seconds",
+  "bash": {
+    "str_min": 5,
+    "str_max": 15,
+    "sound_vol": 2,
+    "sound_fail_vol": 2,
+    "sound": "splash!",
+    "msg_success": "You brush aside some fleshy webbings."
+  },
+  "decrease_intensity_on_contact": true,
+  "phase": "solid",
+  "display_items": false,
+  "display_field": true
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_mawy_web",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "flesh strands",
+      "sym": "}",
+      "color": "pink",
+      "effects": [
+        {
+          "effect_id": "secro_mawy_web",
+          "body_part": "torso",
+          "min_duration": "5 seconds",
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    },
+    {
+      "name": "flesh webs",
+      "color": "light_red",
+      "effects": [
+        {
+          "effect_id": "secro_mawy_web",
+          "body_part": "torso",
+          "min_duration": "10 seconds",
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    },
+    {
+      "name": "thick flesh webs",
+      "transparent": false,
+      "color": "red",
+      "effects": [
+        {
+          "effect_id": "secro_mawy_web",
+          "body_part": "torso",
+          "min_duration": "20 seconds",
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    }
+  ],
+  "priority": 2,
+  "immune_mtypes": [
+    "mon_zombieworm_mawy"
+  ],
+  "half_life": "30 seconds",
+  "bash": {
+    "str_min": 5,
+    "str_max": 15,
+    "sound_vol": 2,
+    "sound_fail_vol": 2,
+    "sound": "splash!",
+    "msg_success": "You brush aside some fleshy webbings."
+  },
+  "decrease_intensity_on_contact": true,
+  "phase": "solid",
+  "display_items": false,
+  "display_field": true
+}
+```
+

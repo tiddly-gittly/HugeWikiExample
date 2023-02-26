@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom
+title: secronom→effect_on_condition→eoc_secro_mon_ayenel_lockon_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_mon_ayenel_lockon_check|http://cdda.aloxaf.cn/search?q=eoc_secro_mon_ayenel_lockon_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_ayenel_lockon_check",
+  "condition": {
+    "compare_int": [
+      {
+        "distance": [
+          "u",
+          "npc"
+        ]
+      },
+      ">=",
+      {
+        "const": 5
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_add_effect": "blind",
+      "duration": "6 seconds"
+    },
+    {
+      "u_add_effect": "glowing",
+      "duration": "60 seconds"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_ayenel_lockon_check",
+  "condition": {
+    "compare_int": [
+      {
+        "distance": [
+          "u",
+          "npc"
+        ]
+      },
+      ">=",
+      {
+        "const": 5
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_add_effect": "blind",
+      "duration": "6 seconds"
+    },
+    {
+      "u_add_effect": "glowing",
+      "duration": "60 seconds"
+    }
+  ]
+}
+```
+

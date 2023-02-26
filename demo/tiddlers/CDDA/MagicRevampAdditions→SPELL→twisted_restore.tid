@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→twisted_restore
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：twisted_restore|http://cdda.aloxaf.cn/search?q=twisted_restore]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/item_only.json
+
+
+!! 原文
+
+```json
+{
+  "id": "twisted_restore",
+  "type": "SPELL",
+  "name": {
+    "str": "Twisted Restoration"
+  },
+  "//": "Used for potion of Twisted Restoration, not castable",
+  "description": "This spell overclocks your heart, generating new flesh and muscle.  It is unwise to use this in immediate danger, and may be fatal if done in critical condition.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_LEGS",
+    "NO_HANDS",
+    "NO_PROJECTILE"
+  ],
+  "max_level": 1,
+  "min_damage": 10,
+  "max_damage": 10,
+  "damage_increment": 0,
+  "damage_type": "biological",
+  "difficulty": 0,
+  "spell_class": "NONE",
+  "effect": "attack",
+  "shape": "blast",
+  "energy_source": "HP",
+  "base_casting_time": 30000,
+  "base_energy_cost": 2,
+  "extra_effects": [
+    {
+      "id": "light_healing"
+    },
+    {
+      "id": "pain_damage"
+    },
+    {
+      "id": "pain_damage"
+    },
+    {
+      "id": "stamina_damage"
+    },
+    {
+      "id": "stamina_damage"
+    },
+    {
+      "id": "stamina_damage"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "twisted_restore",
+  "type": "SPELL",
+  "name": {
+    "str": "扭曲恢复"
+  },
+  "//": "Used for potion of Twisted Restoration, not castable",
+  "description": "这个法术会超载加速你的心脏，以再生皮肤和肌肉。这个法术不应在危险来临时使用，否则可能会造成致命性后果。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_LEGS",
+    "NO_HANDS",
+    "NO_PROJECTILE"
+  ],
+  "max_level": 1,
+  "min_damage": 10,
+  "max_damage": 10,
+  "damage_increment": 0,
+  "damage_type": "biological",
+  "difficulty": 0,
+  "spell_class": "NONE",
+  "effect": "attack",
+  "shape": "blast",
+  "energy_source": "HP",
+  "base_casting_time": 30000,
+  "base_energy_cost": 2,
+  "extra_effects": [
+    {
+      "id": "light_healing"
+    },
+    {
+      "id": "pain_damage"
+    },
+    {
+      "id": "pain_damage"
+    },
+    {
+      "id": "stamina_damage"
+    },
+    {
+      "id": "stamina_damage"
+    },
+    {
+      "id": "stamina_damage"
+    }
+  ]
+}
+```
+

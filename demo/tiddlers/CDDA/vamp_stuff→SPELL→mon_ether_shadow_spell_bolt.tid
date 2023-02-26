@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→mon_ether_shadow_spell_bolt
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_ether_shadow_spell_bolt|http://cdda.aloxaf.cn/search?q=mon_ether_shadow_spell_bolt]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_monspell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_ether_shadow_spell_bolt",
+  "type": "SPELL",
+  "name": {
+    "str": "Dark Bolt"
+  },
+  "description": "A magical burst of profane mana strikes at your foe, dealing <color_light_gray>pure damage</color>.\n\nThis is a <color_light_gray>tier 1</color> spell.",
+  "message": "The etherean silhouette casts Dark Bolt!",
+  "valid_targets": [
+    "hostile"
+  ],
+  "extra_effects": [
+    {
+      "id": "v_sacrifice_spell",
+      "hit_self": true
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 10,
+  "max_damage": 40,
+  "max_range": 10,
+  "flags": [
+    "RANDOM_DAMAGE"
+  ],
+  "damage_type": "pure"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_ether_shadow_spell_bolt",
+  "type": "SPELL",
+  "name": {
+    "str": "黑暗法球"
+  },
+  "description": "一道魔法般的世俗法力冲击你的敌人，造成<color_light_gray>点纯伤害</color>。\n\n这是一个<color_light_gray>一阶</color>法术。",
+  "message": "以太的轮廓投射出黑暗的闪电！",
+  "valid_targets": [
+    "hostile"
+  ],
+  "extra_effects": [
+    {
+      "id": "v_sacrifice_spell",
+      "hit_self": true
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 10,
+  "max_damage": 40,
+  "max_range": 10,
+  "flags": [
+    "RANDOM_DAMAGE"
+  ],
+  "damage_type": "pure"
+}
+```
+

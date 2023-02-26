@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→railgun
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：railgun|http://cdda.aloxaf.cn/search?q=railgun]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Magnetism_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "id": "railgun",
+  "type": "SPELL",
+  "name": {
+    "str": "Railgun"
+  },
+  "description": "Magnetize a bullet, and fire it at supersonic speeds by applying an opposite magnetic force to the bullet.  Leaves a trail of sparks",
+  "flags": [
+    "LOUD",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "spell_class": "MAGNETISM_MAGE",
+  "energy_source": "MANA",
+  "damage_type": "bullet",
+  "effect": "attack",
+  "shape": "blast",
+  "max_level": 43,
+  "min_damage": 100,
+  "max_damage": 530,
+  "damage_increment": 10,
+  "components": "railgun_bullet",
+  "min_range": 20,
+  "max_range": 20,
+  "base_casting_time": 400,
+  "base_energy_cost": 600,
+  "extra_effects": [
+    {
+      "id": "railgun_sparks"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "railgun",
+  "type": "SPELL",
+  "name": {
+    "str": "轨道炮"
+  },
+  "description": "将子弹磁化后通过一个反向磁场将子弹以超声速发射，并留下一道闪光的尾迹。",
+  "flags": [
+    "LOUD",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "spell_class": "MAGNETISM_MAGE",
+  "energy_source": "MANA",
+  "damage_type": "bullet",
+  "effect": "attack",
+  "shape": "blast",
+  "max_level": 43,
+  "min_damage": 100,
+  "max_damage": 530,
+  "damage_increment": 10,
+  "components": "railgun_bullet",
+  "min_range": 20,
+  "max_range": 20,
+  "base_casting_time": 400,
+  "base_energy_cost": 600,
+  "extra_effects": [
+    {
+      "id": "railgun_sparks"
+    }
+  ]
+}
+```
+

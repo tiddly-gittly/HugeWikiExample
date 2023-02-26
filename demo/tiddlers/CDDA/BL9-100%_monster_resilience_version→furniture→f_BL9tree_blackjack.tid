@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9tree_blackjack
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9tree_blackjack|http://cdda.aloxaf.cn/search?q=f_BL9tree_blackjack]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_blackjack",
+  "name": "blackjack oak",
+  "description": "A deciduous tree of the genus 'Quercus', with bark cracked into rectangular black plates split by narrow orange fissures.  You could peel off the bark sections if you examined the tree more closely.  You could cut it down with the right tools.",
+  "symbol": "7",
+  "color": "brown",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn",
+  "looks_like": "t_tree_blackjack",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "id": "blackjack_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_blackjack",
+  "name": "马利兰德栎树",
+  "description": "一种栎属落叶乔木，树皮裂成长方形的黑色板，中间有狭窄的橙色裂缝。如果你仔细观察这棵树，你可以把树皮剥下来。你可以用合适的工具把它砍倒。",
+  "symbol": "7",
+  "color": "brown",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn",
+  "looks_like": "t_tree_blackjack",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "id": "blackjack_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_stray_w_acid_stro3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_acid_stro3|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_acid_stro3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_stray_w_acid_stro3",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "stray zombie"
+  },
+  "description": "This corrosive stray, has finally ascended and developed an even and produces more lethal bodily fluid from aging, visibly gurgling on its bloated green-ish veins under the elastic, transparent skin.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 225,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_magenta",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "acid",
+      "amount": 10
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 12,
+  "armor_bullet": 12,
+  "armor_stab": 12,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ],
+    [
+      "ACID_BARF",
+      25
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_stray_w_acid_stro3_arain"
+      },
+      "cooldown": 69,
+      "monster_message": "%1$s sends a massive glob of acid above %3$s, then explodes violently!"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY",
+    "ACID_BLOOD",
+    "ACIDPROOF",
+    "PLASTIC"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_stray_w_acid_stro3",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "酸液离群丧尸"
+  },
+  "description": "这具腐蚀性的流浪者，终于提升并发展出一种平衡，并因老化而产生更致命的体液，在其富有弹性、透明的皮肤下肿胀的绿色静脉上明显地咯咯作响。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 225,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_magenta",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "acid",
+      "amount": 10
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 12,
+  "armor_bullet": 12,
+  "armor_stab": 12,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ],
+    [
+      "ACID_BARF",
+      25
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_stray_w_acid_stro3_arain"
+      },
+      "cooldown": 69,
+      "monster_message": "%1$s往%3$s上方发出一个巨大的酸液球，然后剧烈爆炸！"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY",
+    "ACID_BLOOD",
+    "ACIDPROOF",
+    "PLASTIC"
+  ]
+}
+```
+

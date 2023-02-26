@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_CHOSEN
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_CHOSEN|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_CHOSEN]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_CHOSEN",
+  "dynamic_line": "I see.  However you accomplished that, I'm impressed.  I hope that you have learned caution and temperance regarding powers from the Beyond.  I can offer any guidance I can, if you accept it.",
+  "responses": [
+    {
+      "text": "We'll see.",
+      "effect": {
+        "u_add_effect": "sofia_motive_explained",
+        "duration": "PERMANENT"
+      },
+      "opinion": {
+        "value": 1
+      },
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_CHOSEN",
+  "dynamic_line": "我懂了。不管你怎么做到的，我都印象深刻。我希望你已经学会了谨慎和节制对于来自外部的力量。如果你接受的话，我可以提供我能提供的任何指导。",
+  "responses": [
+    {
+      "text": "我们拭目以待。",
+      "effect": {
+        "u_add_effect": "sofia_motive_explained",
+        "duration": "PERMANENT"
+      },
+      "opinion": {
+        "value": 1
+      },
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,301 @@
+creator: 林一二
+revision: 0
+tags: MONSTER nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→MONSTER→mon_zombie_bio_knight_lmg
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_bio_knight_lmg|http://cdda.aloxaf.cn/search?q=mon_zombie_bio_knight_lmg]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_bio_knight_lmg",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie_bio_knight",
+  "name": {
+    "str": "zombie augmented juggernaut"
+  },
+  "description": "An advanced, well-equipped member of the military that still succumbed to the cataclysm.  This one is relatively well-armored, wielding some sort of LMG as though it recalls how to use it.",
+  "default_faction": "super_soldat",
+  "species": [
+    "ZOMBIE"
+  ],
+  "diff": 20,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_cyan",
+  "aggression": 0,
+  "morale": 100,
+  "melee_skill": 7,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    },
+    {
+      "damage_type": "electric",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 15,
+  "armor_cut": 30,
+  "armor_stab": 30,
+  "armor_bullet": 45,
+  "armor_acid": 5,
+  "armor_fire": 30,
+  "vision_day": 40,
+  "vision_night": 3,
+  "luminance": 2,
+  "regenerates": 3,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -2
+    ],
+    [
+      "corroding",
+      -2
+    ]
+  ],
+  "regen_morale": true,
+  "starting_ammo": {
+    "battery": 200
+  },
+  "harvest": "CBM_SOLDAT_KNIGHT_ZOMBIE",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 350,
+      "gun_type": "krx_laser_lmg_monster",
+      "ammo_type": "battery",
+      "fake_str": 4,
+      "fake_dex": 3,
+      "fake_per": 3,
+      "max_ammo": 200,
+      "ranges": [
+        [
+          10,
+          25,
+          "DEFAULT"
+        ],
+        [
+          10,
+          25,
+          "BURST"
+        ],
+        [
+          10,
+          25,
+          "AUTO"
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "targeting_cost": 200,
+      "targeting_sound": "swoosh…click!",
+      "targeting_volume": 20,
+      "description": "The super soldier fires its LMG!",
+      "no_ammo_sound": "beep-beep-beep!"
+    },
+    [
+      "GRAB_DRAG",
+      10
+    ],
+    [
+      "SMASH",
+      30
+    ],
+    {
+      "id": "slam"
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    60
+  ],
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "HURT",
+    "PLAYER_CLOSE",
+    "STALK"
+  ],
+  "death_drops": "wild_bio_knight_lmg",
+  "zombify_into": "mon_zombie_bio_reanimated",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "BASHES",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "PATH_AVOID_FIRE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_bio_knight_lmg",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie_bio_knight",
+  "name": {
+    "str": "超级主宰丧尸"
+  },
+  "description": "一个装备精良的特种军人，但仍在大灾变中加入了无尽的丧尸大军。它手中仍出于本能的紧握住生前的特殊实验性激光轻机枪，更恐怖的是看上去他还知道如何使用它......",
+  "default_faction": "super_soldat",
+  "species": [
+    "ZOMBIE"
+  ],
+  "diff": 20,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_cyan",
+  "aggression": 0,
+  "morale": 100,
+  "melee_skill": 7,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    },
+    {
+      "damage_type": "electric",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 15,
+  "armor_cut": 30,
+  "armor_stab": 30,
+  "armor_bullet": 45,
+  "armor_acid": 5,
+  "armor_fire": 30,
+  "vision_day": 40,
+  "vision_night": 3,
+  "luminance": 2,
+  "regenerates": 3,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -2
+    ],
+    [
+      "corroding",
+      -2
+    ]
+  ],
+  "regen_morale": true,
+  "starting_ammo": {
+    "battery": 200
+  },
+  "harvest": "CBM_SOLDAT_KNIGHT_ZOMBIE",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 350,
+      "gun_type": "krx_laser_lmg_monster",
+      "ammo_type": "battery",
+      "fake_str": 4,
+      "fake_dex": 3,
+      "fake_per": 3,
+      "max_ammo": 200,
+      "ranges": [
+        [
+          10,
+          25,
+          "DEFAULT"
+        ],
+        [
+          10,
+          25,
+          "BURST"
+        ],
+        [
+          10,
+          25,
+          "AUTO"
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "targeting_cost": 200,
+      "targeting_sound": "swoosh…click!",
+      "targeting_volume": 20,
+      "description": "超级主宰丧尸的激光轻机枪开火了。",
+      "no_ammo_sound": "哔-哔-哔！"
+    },
+    [
+      "GRAB_DRAG",
+      10
+    ],
+    [
+      "SMASH",
+      30
+    ],
+    {
+      "id": "slam"
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    60
+  ],
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "HURT",
+    "PLAYER_CLOSE",
+    "STALK"
+  ],
+  "death_drops": "wild_bio_knight_lmg",
+  "zombify_into": "mon_zombie_bio_reanimated",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "BASHES",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "PATH_AVOID_FIRE"
+  ]
+}
+```
+

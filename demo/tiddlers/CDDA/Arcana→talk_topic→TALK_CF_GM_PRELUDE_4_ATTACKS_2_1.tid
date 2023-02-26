@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_PRELUDE_4_ATTACKS_2_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_PRELUDE_4_ATTACKS_2_1|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_PRELUDE_4_ATTACKS_2_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1",
+  "type": "talk_topic",
+  "dynamic_line": "That's possible.  And I know that tracking down an incident like that would be difficult.  You might be able to make some sense out of one of the most recent attacks I have information on.",
+  "responses": [
+    {
+      "text": "I think I might be able to help track the cause down, actually.",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_VEIL"
+    },
+    {
+      "text": "Alright, tell me what you have in mind.",
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_1"
+    },
+    {
+      "text": "Maybe another time.",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1",
+  "type": "talk_topic",
+  "dynamic_line": "这是可能的。我知道追查这样的事件是很困难的。你也许能从我所掌握的最近的一次攻击中了解一些道理。",
+  "responses": [
+    {
+      "text": "实际上，我想我可以帮你找出原因。",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_VEIL"
+    },
+    {
+      "text": "好吧，告诉我你的想法。",
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_1"
+    },
+    {
+      "text": "也许下次吧。",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+

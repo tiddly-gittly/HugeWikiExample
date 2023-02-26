@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→frostie_wheel
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：frostie_wheel|http://cdda.aloxaf.cn/search?q=frostie_wheel]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_wheel.json
+
+
+!! 原文
+
+```json
+{
+  "id": "frostie_wheel",
+  "type": "vehicle_part",
+  "name": {
+    "str": "snow slider"
+  },
+  "item": "frostie_wheel",
+  "location": "under",
+  "symbol": "|",
+  "broken_symbol": "x",
+  "color": "light_blue",
+  "broken_color": "light_blue",
+  "durability": 500,
+  "damage_modifier": 200,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "frostiegrow"
+    }
+  ],
+  "description": "A living blob, existing in a super-cooled state.  It acts as a wheel.",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "rolling_resistance": 1.5,
+  "wheel_type": "standard",
+  "contact_area": 153,
+  "flags": [
+    "WHEEL",
+    "UNSTABLE_WHEEL",
+    "EXTRA_DRAG",
+    "SHARP",
+    "TRACKED"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "frostie_wheel",
+  "type": "vehicle_part",
+  "name": {
+    "str": "变形怪冰川滑板"
+  },
+  "item": "frostie_wheel",
+  "location": "under",
+  "symbol": "|",
+  "broken_symbol": "x",
+  "color": "light_blue",
+  "broken_color": "light_blue",
+  "durability": 500,
+  "damage_modifier": 200,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "frostiegrow"
+    }
+  ],
+  "description": "一只活的处于极寒状态的变形怪变成的车轮。",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "rolling_resistance": 1.5,
+  "wheel_type": "standard",
+  "contact_area": 153,
+  "flags": [
+    "WHEEL",
+    "UNSTABLE_WHEEL",
+    "EXTRA_DRAG",
+    "SHARP",
+    "TRACKED"
+  ]
+}
+```
+

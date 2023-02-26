@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→speed_potion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：speed_potion|http://cdda.aloxaf.cn/search?q=speed_potion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "speed_potion",
+  "type": "COMESTIBLE",
+  "comestible_type": "DRINK",
+  "category": "drugs",
+  "name": {
+    "str": "yellow potion",
+    "str_pl": "yellow potion"
+  },
+  "description": "A strange yellow liquid with an intoxicating smell to it.  The third step towards creating the elixir of life, allegedly.  Drinking this will enhance your speed, dexterity, and perception.  In exchange it will lower strength and intelligence, and intermittently drain stamina.",
+  "weight": "150 g",
+  "volume": "250 ml",
+  "price": "400 USD",
+  "price_postapoc": "80 USD",
+  "phase": "liquid",
+  "container": "flask_glass",
+  "looks_like": "poppy_pain",
+  "symbol": "~",
+  "color": "dark_gray",
+  "charges": 2,
+  "healthy": 2,
+  "fun": 2,
+  "freezing_point": -150,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "You drink the potion and feel a sudden tension spread through your body.",
+    "effects": [
+      {
+        "id": "potion_speed",
+        "duration": 900
+      }
+    ]
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "speed_potion",
+  "type": "COMESTIBLE",
+  "comestible_type": "DRINK",
+  "category": "drugs",
+  "name": {
+    "str": "黄色药水",
+    "str_pl": "黄色药水"
+  },
+  "description": "A strange yellow liquid with an intoxicating smell to it.  The third step towards creating the elixir of life, allegedly.  Drinking this will enhance your speed, dexterity, and perception.  In exchange it will lower strength and intelligence, and intermittently drain stamina.",
+  "weight": "150 g",
+  "volume": "250 ml",
+  "price": "400 USD",
+  "price_postapoc": "80 USD",
+  "phase": "liquid",
+  "container": "flask_glass",
+  "looks_like": "poppy_pain",
+  "symbol": "~",
+  "color": "dark_gray",
+  "charges": 2,
+  "healthy": 2,
+  "fun": 2,
+  "freezing_point": -150,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "你喝了药水，感到一种僵硬感在你的身体里蔓延开来。",
+    "effects": [
+      {
+        "id": "potion_speed",
+        "duration": 900
+      }
+    ]
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+

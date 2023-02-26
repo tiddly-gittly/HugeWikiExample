@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_CAUSE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_CAUSE|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_CAUSE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_CAUSE",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "An interesting question, from one of my kin.  We have not strayed from our goal of protecting the innocent against the dangers of the Beyond.",
+    "no": "Before all this boiled over, who would believe us?  With the dead rising, and strange powers decaying the very fabric of reality, we can afford to be more open about our nature.  We seek to protect people from dangerous magic and otherworldly monsters.  The first signs of these threats were isolated, forbidden knowledge slipping through the cracks, minor symptoms of whatever caused this.  Now it is more than any one group can handle, I fear."
+  },
+  "responses": [
+    {
+      "text": "Magic?  I'm still not sure I can believe that.",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_ARCANIST",
+            "PROF_ARCANIST2",
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2",
+            "PROF_SANGUINE",
+            "PROF_CHALICE",
+            "PROF_CHALICE2",
+            "THRESH_VEIL",
+            "THRESH_DRAGONBLOOD"
+          ]
+        }
+      },
+      "topic": "TALK_CF_REP_MAGIC"
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_CAUSE",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "一个有趣的问题，来自我的一个亲戚。我们没有偏离我们保护无辜者免受外界危险的目标。",
+    "no": "在这一切都结束之前，谁会相信我们呢？随着死亡的增加，奇异的力量正在腐朽现实的结构，我们可以释放更多自己的本性。我们寻求保护人们免受危险的魔法和超自然的怪物的伤害。这些威胁的最初迹象是孤立的，直到那些禁忌的生物穿过裂缝，我们都没有意识到那些轻微的现象会导致这种后果。我担心，现在任何一个组织都无法应对这件事。"
+  },
+  "responses": [
+    {
+      "text": "魔法？我还是不敢相信。",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_ARCANIST",
+            "PROF_ARCANIST2",
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2",
+            "PROF_SANGUINE",
+            "PROF_CHALICE",
+            "PROF_CHALICE2",
+            "THRESH_VEIL",
+            "THRESH_DRAGONBLOOD"
+          ]
+        }
+      },
+      "topic": "TALK_CF_REP_MAGIC"
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

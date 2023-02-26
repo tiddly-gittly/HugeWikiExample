@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: npc_class vamp_stuff
+title: vamp_stuff→npc_class→H_JUNKSHOP
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：H_JUNKSHOP|http://cdda.aloxaf.cn/search?q=H_JUNKSHOP]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_classes.json
+
+
+!! 原文
+
+```json
+{
+  "type": "npc_class",
+  "id": "H_JUNKSHOP",
+  "name": {
+    "str": "Shopkeep"
+  },
+  "job_description": "I trade at wastelands.",
+  "common": false,
+  "bonus_per": {
+    "one_in": 4
+  },
+  "shopkeeper_item_group": "HUMAN_JUNKSHOP_sell",
+  "worn_override": "HUMAN_JUNKSHOP_worn",
+  "skills": [
+    {
+      "skill": "ALL",
+      "level": {
+        "mul": [
+          {
+            "one_in": 3
+          },
+          {
+            "sum": [
+              {
+                "dice": [
+                  2,
+                  2
+                ]
+              },
+              {
+                "constant": -2
+              },
+              {
+                "one_in": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "skill": "speech",
+      "bonus": {
+        "rng": [
+          1,
+          4
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "npc_class",
+  "id": "H_JUNKSHOP",
+  "name": {
+    "str": "Shopkeep"
+  },
+  "job_description": "I trade at wastelands.",
+  "common": false,
+  "bonus_per": {
+    "one_in": 4
+  },
+  "shopkeeper_item_group": "HUMAN_JUNKSHOP_sell",
+  "worn_override": "HUMAN_JUNKSHOP_worn",
+  "skills": [
+    {
+      "skill": "ALL",
+      "level": {
+        "mul": [
+          {
+            "one_in": 3
+          },
+          {
+            "sum": [
+              {
+                "dice": [
+                  2,
+                  2
+                ]
+              },
+              {
+                "constant": -2
+              },
+              {
+                "one_in": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "skill": "speech",
+      "bonus": {
+        "rng": [
+          1,
+          4
+        ]
+      }
+    }
+  ]
+}
+```
+

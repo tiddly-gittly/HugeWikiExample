@@ -1,0 +1,171 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_taken_potent
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_taken_potent|http://cdda.aloxaf.cn/search?q=mon_sflesh_taken_potent]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_spawns.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_taken_potent",
+  "type": "MONSTER",
+  "name": {
+    "str": "taken"
+  },
+  "description": "A membranous pod of flesh, filled with putrid yellow-ish fluid. Sprouting from the flesh, a creature seems to be trapped inside, but unknown to what it is.",
+  "default_faction": "secro_flesh",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 35,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚱",
+  "emit_fields": [
+    "emit_flesh_taken_potent_blind"
+  ],
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 20,
+  "armor_cut": 8,
+  "armor_bullet": 6,
+  "armor_stab": 17,
+  "vision_day": 22,
+  "vision_night": 22,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_taken_target"
+      },
+      "cooldown": 5,
+      "monster_message": "<color_light_red>The taken bursts, letting loose of its content!</color>"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away.",
+    "effect": {
+      "id": "mon_sflesh_taken_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "NOHEAD",
+    "IMMOBILE",
+    "PACIFIST"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_taken_potent",
+  "type": "MONSTER",
+  "name": {
+    "str": "肉荚"
+  },
+  "description": "一种膜状的血肉荚，里面充满了腐烂的黄色液体。有一只不明生物似乎被困在了里面，正从血肉中冒了出来。",
+  "default_faction": "secro_flesh",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 35,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚱",
+  "emit_fields": [
+    "emit_flesh_taken_potent_blind"
+  ],
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 20,
+  "armor_cut": 8,
+  "armor_bullet": 6,
+  "armor_stab": 17,
+  "vision_day": 22,
+  "vision_night": 22,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_taken_target"
+      },
+      "cooldown": 5,
+      "monster_message": "<color_light_red>它被撑到爆炸，其内容物被释放出来了！</color>"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away.",
+    "effect": {
+      "id": "mon_sflesh_taken_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "NOHEAD",
+    "IMMOBILE",
+    "PACIFIST"
+  ]
+}
+```
+

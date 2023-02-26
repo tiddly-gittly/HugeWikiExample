@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→secro_power_armor_flesh_give_target
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_flesh_give_target|http://cdda.aloxaf.cn/search?q=secro_power_armor_flesh_give_target]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_magic.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "secro_power_armor_flesh_give_target",
+  "name": {
+    "str": "a spell"
+  },
+  "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+  "message": "",
+  "extra_effects": [
+    {
+      "id": "secro_power_armor_flesh_give",
+      "hit_self": true
+    },
+    {
+      "id": "secro_power_armor_flesh_bor_give",
+      "hit_self": true
+    },
+    {
+      "id": "secro_power_armor_flesh_check_give",
+      "hit_self": true
+    },
+    {
+      "id": "secro_power_armor_flesh_proof_give",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "none"
+  ],
+  "effect": "attack",
+  "shape": "blast"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "secro_power_armor_flesh_give_target",
+  "name": {
+    "str": "咒语"
+  },
+  "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
+  "message": "",
+  "extra_effects": [
+    {
+      "id": "secro_power_armor_flesh_give",
+      "hit_self": true
+    },
+    {
+      "id": "secro_power_armor_flesh_bor_give",
+      "hit_self": true
+    },
+    {
+      "id": "secro_power_armor_flesh_check_give",
+      "hit_self": true
+    },
+    {
+      "id": "secro_power_armor_flesh_proof_give",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "none"
+  ],
+  "effect": "attack",
+  "shape": "blast"
+}
+```
+

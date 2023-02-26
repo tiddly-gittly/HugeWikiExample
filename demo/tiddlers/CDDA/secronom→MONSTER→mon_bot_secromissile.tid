@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_bot_secromissile
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_bot_secromissile|http://cdda.aloxaf.cn/search?q=mon_bot_secromissile]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Bots/SecronomDragon_spawns.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_bot_secromissile",
+  "type": "MONSTER",
+  "name": {
+    "str": "homing missile"
+  },
+  "description": "A heat-seeking missile, about to explode on its hapless target.",
+  "default_faction": "bot",
+  "species": [
+    "ROBOT"
+  ],
+  "volume": "750 ml",
+  "weight": "1000 g",
+  "hp": 10,
+  "speed": 500,
+  "material": [
+    "steel"
+  ],
+  "emit_fields": [
+    "emit_secromissile_stream"
+  ],
+  "symbol": "!",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "harvest": "exempt",
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "dodge": 5,
+  "vision_day": 69,
+  "starting_ammo": {
+    "SSimpactgrenade": 1
+  },
+  "special_attacks": [
+    [
+      "KAMIKAZE",
+      0
+    ]
+  ],
+  "death_function": {
+    "message": "The %s disintegrates!",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "FLIES",
+    "NOHEAD",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "POISON",
+    "PRIORITIZE_TARGETS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_bot_secromissile",
+  "type": "MONSTER",
+  "name": {
+    "str": "寻的导弹"
+  },
+  "description": "一枚热寻的导弹，快要炸上它那不幸的目标了。",
+  "default_faction": "bot",
+  "species": [
+    "ROBOT"
+  ],
+  "volume": "750 ml",
+  "weight": "1000 g",
+  "hp": 10,
+  "speed": 500,
+  "material": [
+    "steel"
+  ],
+  "emit_fields": [
+    "emit_secromissile_stream"
+  ],
+  "symbol": "!",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "harvest": "exempt",
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "dodge": 5,
+  "vision_day": 69,
+  "starting_ammo": {
+    "SSimpactgrenade": 1
+  },
+  "special_attacks": [
+    [
+      "KAMIKAZE",
+      0
+    ]
+  ],
+  "death_function": {
+    "message": "The %s disintegrates!",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "FLIES",
+    "NOHEAD",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "POISON",
+    "PRIORITIZE_TARGETS"
+  ]
+}
+```
+

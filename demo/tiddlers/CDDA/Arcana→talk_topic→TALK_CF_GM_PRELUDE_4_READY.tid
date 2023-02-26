@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_PRELUDE_4_READY
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_PRELUDE_4_READY|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_PRELUDE_4_READY]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_READY",
+  "type": "talk_topic",
+  "dynamic_line": "Good.  I've taken the time to speak with the others, pass the word around, and study our maps.  I think between what you've brought in and what the other scouts were able to find out, we have a fix on the source of this anomaly.  I want to take some time to prepare yourself, then see me when you're ready.  This may prove to be a difficult fight.",
+  "responses": [
+    {
+      "text": "Alright.",
+      "effect": [
+        {
+          "npc_add_var": "johnathan_prelude_ended",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "u_add_var": "johnathan_prelude_ended",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "mapgen_update": "cf_church_upgrade_GM_4_prelude_a",
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church"
+        },
+        {
+          "mapgen_update": "cf_church_upgrade_GM_4_prelude_b",
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church"
+        },
+        {
+          "mapgen_update": "cf_church_upgrade_GM_4_prelude_c",
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church"
+        },
+        {
+          "mapgen_update": "cf_church_upgrade_GM_4_prelude_d",
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church"
+        }
+      ],
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_READY",
+  "type": "talk_topic",
+  "dynamic_line": "很好。我花时间和其他人交谈，传递信息，研究我们的地图。我想从你带来的和其他侦察员发现的情况来看，我们已经找到了异常的来源。我想花点时间准备一下，等你准备好了再见我。这可能是一场艰难的战斗。",
+  "responses": [
+    {
+      "text": "好吧。",
+      "effect": [
+        {
+          "npc_add_var": "johnathan_prelude_ended",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "u_add_var": "johnathan_prelude_ended",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "mapgen_update": "cf_church_upgrade_GM_4_prelude_a",
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church"
+        },
+        {
+          "mapgen_update": "cf_church_upgrade_GM_4_prelude_b",
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church"
+        },
+        {
+          "mapgen_update": "cf_church_upgrade_GM_4_prelude_c",
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church"
+        },
+        {
+          "mapgen_update": "cf_church_upgrade_GM_4_prelude_d",
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church"
+        }
+      ],
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

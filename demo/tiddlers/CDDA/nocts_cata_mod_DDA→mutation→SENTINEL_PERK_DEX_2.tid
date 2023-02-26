@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_PERK_DEX_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_PERK_DEX_2|http://cdda.aloxaf.cn/search?q=SENTINEL_PERK_DEX_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_DEX_2",
+  "name": {
+    "str": "Sentinel Reflexes II"
+  },
+  "points": 2,
+  "description": "Targeted mutagenic treatment has sharpened your reflexes.  You can move and attack faster, and your dodging is improved.  In exchange, you need more rest than normal, and are more sensitive to electrical discharges.",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "types": [
+    "SLEEP",
+    "RUNNING"
+  ],
+  "cancels": [
+    "BADKNEES"
+  ],
+  "changes_to": [
+    "SENTINEL_PERK_DEX_3"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_DEX"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "movecost_modifier": 0.75,
+  "attackcost_modifier": 0.875,
+  "dodge_modifier": 2,
+  "fatigue_modifier": 0.5,
+  "armor": [
+    {
+      "parts": "ALL",
+      "electric": -2
+    }
+  ],
+  "flags": [
+    "C_SENTINEL_MARKER_2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_DEX_2",
+  "name": {
+    "str": "哨兵反应 II"
+  },
+  "points": 2,
+  "description": "靶向诱变治疗提高了你的反应速度。提升了你的行动速度与闪避能力。但你需要比平时更多的休息，而且对放电更敏感。",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "types": [
+    "SLEEP",
+    "RUNNING"
+  ],
+  "cancels": [
+    "BADKNEES"
+  ],
+  "changes_to": [
+    "SENTINEL_PERK_DEX_3"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_DEX"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "movecost_modifier": 0.75,
+  "attackcost_modifier": 0.875,
+  "dodge_modifier": 2,
+  "fatigue_modifier": 0.5,
+  "armor": [
+    {
+      "parts": "ALL",
+      "electric": -2
+    }
+  ],
+  "flags": [
+    "C_SENTINEL_MARKER_2"
+  ]
+}
+```
+

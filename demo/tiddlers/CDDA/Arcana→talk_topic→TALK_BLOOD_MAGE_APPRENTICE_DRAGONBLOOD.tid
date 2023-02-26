@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_APPRENTICE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD",
+  "type": "talk_topic",
+  "dynamic_line": "So you found what we seek?  My masters would be pleased to make use of your work, and your blood might make a useful sacrifice.",
+  "responses": [
+    {
+      "text": "If you turn me over to your master, what promise do you have that they'll share what they learn with you?",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 25
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_PROMISE"
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "anger": 1,
+          "trust": -1
+        },
+        "effect": "insult_combat"
+      }
+    },
+    {
+      "text": "Consider your words more carefully.  You really think you can take me?",
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 25
+      },
+      "success": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "fear": 2
+        },
+        "effect": "flee"
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "anger": 1
+        },
+        "effect": [
+          {
+            "u_faction_rep": -30
+          },
+          "insult_combat"
+        ]
+      }
+    },
+    {
+      "text": "…",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD",
+  "type": "talk_topic",
+  "dynamic_line": "你找到我们要找的东西了？我的主人会很乐意利用你的工作，你的血可能会成为一个有用的牺牲。",
+  "responses": [
+    {
+      "text": "如果你把我交给你的主人，你能保证他们会和你分享他们学到的东西吗？",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 25
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_PROMISE"
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "anger": 1,
+          "trust": -1
+        },
+        "effect": "insult_combat"
+      }
+    },
+    {
+      "text": "仔细考虑你的话。你真的认为你能带走我吗？",
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 25
+      },
+      "success": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "fear": 2
+        },
+        "effect": "flee"
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "anger": 1
+        },
+        "effect": [
+          {
+            "u_faction_rep": -30
+          },
+          "insult_combat"
+        ]
+      }
+    },
+    {
+      "text": "…",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

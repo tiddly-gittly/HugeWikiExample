@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Nonperishable_Overhaul
+title: Nonperishable_Overhaul→COMESTIBLE→potted_meat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：potted_meat|http://cdda.aloxaf.cn/search?q=potted_meat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Nonperishable_Overhaul/misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "potted_meat",
+  "//": "Depending on mod load order, MST Extra's potted meat may fail to inherit the changes to pemmican, so this redundant entry is needed to ensure the desired interaction between the two mods",
+  "copy-from": "pemmican",
+  "type": "COMESTIBLE",
+  "name": {
+    "str_sp": "potted meat"
+  },
+  "conditional_names": [
+    {
+      "type": "FLAG",
+      "condition": "CANNIBALISM",
+      "name": {
+        "str_sp": "potted person"
+      }
+    },
+    {
+      "type": "COMPONENT_ID",
+      "condition": "mutant",
+      "name": {
+        "str_sp": "potted freak"
+      }
+    }
+  ],
+  "weight": "155 g",
+  "container": "can_medium",
+  "calories": 452,
+  "charges": 2,
+  "description": "Meat cooked and preserved in butter or melted fat, a form of food preservation from the days before canning.  Also known as confit.  Rich and fattening, it will last for a long time.",
+  "price": "12 USD",
+  "price_postapoc": "4 USD",
+  "material": [
+    "flesh"
+  ],
+  "vitamins": [
+    [
+      "vitA",
+      7
+    ],
+    [
+      "vitC",
+      16
+    ],
+    [
+      "calcium",
+      2
+    ],
+    [
+      "iron",
+      69
+    ],
+    [
+      "vitB",
+      781
+    ]
+  ],
+  "fun": 1,
+  "extend": {
+    "flags": [
+      "EATEN_HOT"
+    ]
+  },
+  "spoils_in": 0
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "potted_meat",
+  "//": "Depending on mod load order, MST Extra's potted meat may fail to inherit the changes to pemmican, so this redundant entry is needed to ensure the desired interaction between the two mods",
+  "copy-from": "pemmican",
+  "type": "COMESTIBLE",
+  "name": {
+    "str_sp": "罐装肉"
+  },
+  "conditional_names": [
+    {
+      "type": "FLAG",
+      "condition": "CANNIBALISM",
+      "name": {
+        "str_sp": "potted person"
+      }
+    },
+    {
+      "type": "COMPONENT_ID",
+      "condition": "mutant",
+      "name": {
+        "str_sp": "potted freak"
+      }
+    }
+  ],
+  "weight": "155 g",
+  "container": "can_medium",
+  "calories": 452,
+  "charges": 2,
+  "description": "将肉类烹调煮熟,浸没在黄油或融化的脂肪中进行保存,这是种在罐装技术出现之前的一种食品保存形式.也被称为油封肉.味道浓郁且富含脂肪,可以保存很长时间.",
+  "price": "12 USD",
+  "price_postapoc": "4 USD",
+  "material": [
+    "flesh"
+  ],
+  "vitamins": [
+    [
+      "vitA",
+      7
+    ],
+    [
+      "vitC",
+      16
+    ],
+    [
+      "calcium",
+      2
+    ],
+    [
+      "iron",
+      69
+    ],
+    [
+      "vitB",
+      781
+    ]
+  ],
+  "fun": 1,
+  "extend": {
+    "flags": [
+      "EATEN_HOT"
+    ]
+  },
+  "spoils_in": 0
+}
+```
+

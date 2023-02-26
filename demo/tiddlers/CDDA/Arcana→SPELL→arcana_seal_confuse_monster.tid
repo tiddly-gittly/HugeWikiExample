@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_seal_confuse_monster
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_seal_confuse_monster|http://cdda.aloxaf.cn/search?q=arcana_seal_confuse_monster]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_seals.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_seal_confuse_monster",
+  "type": "SPELL",
+  "name": {
+    "str": "Seal: Confuse Monster"
+  },
+  "description": "Magic Seal\nUsing this spell will stun all hostiles in the area around you.",
+  "message": "\"No blade may mark me, if the hand cannot strike true…\"  You cast %s!",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "SILENT",
+    "RANDOM_DURATION"
+  ],
+  "effect_str": "stunned",
+  "sound_description": "a faint rush of air",
+  "min_aoe": 5,
+  "max_aoe": 25,
+  "aoe_increment": 2,
+  "max_level": 10,
+  "skill": "magic",
+  "base_casting_time": 80,
+  "final_casting_time": 80,
+  "min_duration": 9000,
+  "max_duration": 12000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_seal_confuse_monster",
+  "type": "SPELL",
+  "name": {
+    "str": "魔印：迷惑怪物"
+  },
+  "description": "法术魔印\n使用该咒语会使周围区域的所有敌对生物昏迷。",
+  "message": "“如果手不能击中真的，没有刀锋可以标记我……”你施放了 %s！",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "SILENT",
+    "RANDOM_DURATION"
+  ],
+  "effect_str": "stunned",
+  "sound_description": "a faint rush of air",
+  "min_aoe": 5,
+  "max_aoe": 25,
+  "aoe_increment": 2,
+  "max_level": 10,
+  "skill": "magic",
+  "base_casting_time": 80,
+  "final_casting_time": 80,
+  "min_duration": 9000,
+  "max_duration": 12000
+}
+```
+

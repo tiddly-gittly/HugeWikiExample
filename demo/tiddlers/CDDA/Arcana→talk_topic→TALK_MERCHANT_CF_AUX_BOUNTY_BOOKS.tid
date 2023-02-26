@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS|http://cdda.aloxaf.cn/search?q=TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MERCHANT_CF_AUX.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS",
+  "type": "talk_topic",
+  "dynamic_line": "Only got a couple on their wishlist, paying out a good sum for each one.  One's called Sanguine Codex, another's Oaths to The Chalice, and then there's To Master The Unknown.  What do ya got?",
+  "responses": [
+    {
+      "text": "Sanguine Codex?  They just want to have it burnt, don't they?",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_SANGUINE"
+    },
+    {
+      "text": "For what purpose are they after Oaths to The Chalice?",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_CHALICE"
+    },
+    {
+      "text": "I can hand over a copy of Sanguine Codex.",
+      "condition": {
+        "u_has_item": "book_bloodmagic"
+      },
+      "effect": [
+        {
+          "u_consume_item": "book_bloodmagic"
+        },
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 12
+        }
+      ],
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+    },
+    {
+      "text": "I can hand over a copy of Oaths to The Chalice.",
+      "condition": {
+        "u_has_item": "book_sacrifice"
+      },
+      "effect": [
+        {
+          "u_consume_item": "book_sacrifice"
+        },
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 16
+        }
+      ],
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+    },
+    {
+      "text": "I can hand over a copy of To Master The Unknown.",
+      "condition": {
+        "u_has_item": "book_summoning"
+      },
+      "effect": [
+        {
+          "u_consume_item": "book_summoning"
+        },
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 20
+        }
+      ],
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+    },
+    {
+      "text": "Nevermind, maybe another time.",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "Nevermind, that should be all for now.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS",
+  "type": "talk_topic",
+  "dynamic_line": "只有一对夫妇在他们的心愿单上，为每一个付了一大笔钱。一个叫“血法典”，另一个叫圣杯誓言，然后是掌握未知。你有什么发现？",
+  "responses": [
+    {
+      "text": "猩红法典？他们只是想把它烧掉，不是吗？",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_SANGUINE"
+    },
+    {
+      "text": "他们向圣杯誓言是为了什么？",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_CHALICE"
+    },
+    {
+      "text": "我可以给你一份血法典。",
+      "condition": {
+        "u_has_item": "book_bloodmagic"
+      },
+      "effect": [
+        {
+          "u_consume_item": "book_bloodmagic"
+        },
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 12
+        }
+      ],
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+    },
+    {
+      "text": "我可以把一份圣杯誓言交给你。",
+      "condition": {
+        "u_has_item": "book_sacrifice"
+      },
+      "effect": [
+        {
+          "u_consume_item": "book_sacrifice"
+        },
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 16
+        }
+      ],
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+    },
+    {
+      "text": "我可以把一本交给《未知之主》。",
+      "condition": {
+        "u_has_item": "book_summoning"
+      },
+      "effect": [
+        {
+          "u_consume_item": "book_summoning"
+        },
+        {
+          "u_spawn_item": "CF_golden_scale",
+          "count": 20
+        }
+      ],
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+    },
+    {
+      "text": "别担心，也许下次吧。",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "别担心，现在应该就这些了。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

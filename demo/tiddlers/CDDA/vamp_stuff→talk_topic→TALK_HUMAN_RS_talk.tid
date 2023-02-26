@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_HUMAN_RS_talk
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HUMAN_RS_talk|http://cdda.aloxaf.cn/search?q=TALK_HUMAN_RS_talk]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/h_wrs_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_HUMAN_RS_talk",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "wrsgo",
+    "yes": {
+      "u_has_trait": "wrsgoing",
+      "yes": {
+        "u_has_trait": "wrsdone",
+        "yes": "Bye now...",
+        "no": "Don't waste your time talking to me at this point, just focus on the road!"
+      },
+      "no": "Are you going to bring me there now?"
+    },
+    "no": "Well hi there? Its been a while since I see a living human walking in this damned world!"
+  },
+  "responses": [
+    {
+      "text": "We need your help in operating a radio tower.",
+      "topic": "TALK_HUMAN_RS_talked",
+      "condition": {
+        "not": {
+          "u_has_trait": "wrsgo"
+        }
+      }
+    },
+    {
+      "text": "Yes. I will.",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wrsgo"
+          },
+          {
+            "not": {
+              "u_has_trait": "wrsgoing"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "wrsdone"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Okay! I'll do it!",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wrsgoing"
+          },
+          {
+            "not": {
+              "u_has_trait": "wrsdone"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Bye.",
+      "topic": "TALK_DONE",
+      "effect": {
+        "npc_change_class": "HUMAN_RADIOSPEC_WORKING"
+      },
+      "condition": {
+        "u_has_trait": "wrsdone"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_HUMAN_RS_talk",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "wrsgo",
+    "yes": {
+      "u_has_trait": "wrsgoing",
+      "yes": {
+        "u_has_trait": "wrsdone",
+        "yes": "再见...",
+        "no": "别浪费时间和我说话了，把注意力集中在路上！"
+      },
+      "no": "你现在要带我去那里吗？"
+    },
+    "no": "嗨，你好吗？我好久没看见一个活人在这个该死的世界上行走了！"
+  },
+  "responses": [
+    {
+      "text": "我们需要你帮忙操作无线电塔。",
+      "topic": "TALK_HUMAN_RS_talked",
+      "condition": {
+        "not": {
+          "u_has_trait": "wrsgo"
+        }
+      }
+    },
+    {
+      "text": "好，我来吧。",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wrsgo"
+          },
+          {
+            "not": {
+              "u_has_trait": "wrsgoing"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "wrsdone"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "好，我会去做的！",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wrsgoing"
+          },
+          {
+            "not": {
+              "u_has_trait": "wrsdone"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "再见。",
+      "topic": "TALK_DONE",
+      "effect": {
+        "npc_change_class": "HUMAN_RADIOSPEC_WORKING"
+      },
+      "condition": {
+        "u_has_trait": "wrsdone"
+      }
+    }
+  ]
+}
+```
+

@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_AUX_E
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_AUX_E|http://cdda.aloxaf.cn/search?q=MISSION_CF_AUX_E]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_AUX_E",
+  "type": "mission_definition",
+  "name": {
+    "str": "Investigate anomalous ambush"
+  },
+  "description": "Put down the cause of a recent attack on a caravan, then report back to the shopkeep.",
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 1,
+  "value": 15000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "new_anomaly_w",
+      "om_terrain_replace": "field",
+      "random": true,
+      "search_range": 60,
+      "min_distance": 10
+    },
+    "update_mapgen": [
+      {
+        "om_terrain": "new_anomaly_w",
+        "place_monster": [
+          {
+            "monster": "mon_alpha_razorclaw",
+            "x": 12,
+            "y": 20,
+            "target": true
+          }
+        ]
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "I've been working on getting some equipment set up here, to expand the kinds of things we can make.  I have a guy bringing in supplies and we can get it set up ourselves.  Problem is, I had to get in touch with a new transport team because the last one up and vanished.  Word from the other scavengers gave me an estimate of what happened, and it doesn't sound good.  I'd like you to go scope it out, and put down whoever or whatever caused this.",
+    "accepted": "Thanks.  You can keep anything from the caravan you can salvage, I'm more interested in taking care of whatever ambushed them.",
+    "rejected": "Alright.  I want you to come see me if you change your mind, though.",
+    "advice": "I don't know what to expect out there, intel suggests some kinda rock formation that wasn't on the local route maps, might be a hideout, staging area, lair or who knows what.  Could be some kinda anomaly.",
+    "inquire": "Got 'em yet?",
+    "success": "Good.  Those people I worked with were friends of mine.  From what little I understand of what happened out there and what you saw out there, seems like a dogshit way to go out.  Lil payback at least keeps those things from threatening other scavs.  Anyway, things should be just about set up by now.",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 8
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_aux_e_1"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_aux_e_2"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_AUX_E",
+  "type": "mission_definition",
+  "name": {
+    "str": "调查异常伏击"
+  },
+  "description": "记下最近一次商队遭袭的原因，然后向店主汇报。",
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 1,
+  "value": 15000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "new_anomaly_w",
+      "om_terrain_replace": "field",
+      "random": true,
+      "search_range": 60,
+      "min_distance": 10
+    },
+    "update_mapgen": [
+      {
+        "om_terrain": "new_anomaly_w",
+        "place_monster": [
+          {
+            "monster": "mon_alpha_razorclaw",
+            "x": 12,
+            "y": 20,
+            "target": true
+          }
+        ]
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "我一直在准备一些设备来扩大我们的生产范围。我的人带了些补给品，我们可以自己安排。问题是，我不得不和一个新的运输队取得联系，因为最后一个运输队失踪了。从其他拾荒者那里传来的消息让我估计了发生了什么，但听起来不太好。我想让你去调查一下，找出是谁造成的。",
+    "accepted": "谢谢。你可以从大篷车里截获任何东西，我更感兴趣的是处理伏击他们的任何东西。",
+    "rejected": "好吧。不过，如果你改变主意，我希望你能来看我。",
+    "advice": "我不知道在那里会发生什么，情报显示，一些不在当地路线图上的岩层，可能是一个藏身处、集结地、巢穴或是谁知道的。可能有点反常。",
+    "inquire": "找到了吗？",
+    "success": "很好。和我一起工作的那些人是我的朋友。从我对外面发生的事情和你看到的情况的了解来看，这似乎是一种狗屎的外出方式。Lil的回报至少能防止这些东西威胁到其他骗子。不管怎样，事情现在应该已经准备好了。",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 8
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_aux_e_1"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_aux_e_2"
+      }
+    ]
+  }
+}
+```
+

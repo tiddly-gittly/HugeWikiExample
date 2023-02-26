@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→wiring
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：wiring|http://cdda.aloxaf.cn/search?q=wiring]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blaze_other_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "wiring",
+  "type": "vehicle_part",
+  "name": {
+    "str": "wiring"
+  },
+  "item": "wire",
+  "location": "structure",
+  "symbol": ".",
+  "broken_symbol": "#",
+  "categories": [
+    "hull",
+    "energy"
+  ],
+  "color": "white",
+  "broken_color": "white",
+  "durability": 10,
+  "description": "A length of heavy duty copper wire, useful for routing power from one part of a vehicle to another part.",
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "wire",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "60 s"
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "30 s"
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "60 s"
+    }
+  },
+  "flags": [
+    "INITIAL_PART",
+    "AISLE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "wiring",
+  "type": "vehicle_part",
+  "name": {
+    "str": "电线"
+  },
+  "item": "wire",
+  "location": "structure",
+  "symbol": ".",
+  "broken_symbol": "#",
+  "categories": [
+    "hull",
+    "energy"
+  ],
+  "color": "white",
+  "broken_color": "white",
+  "durability": 10,
+  "description": "一条重型铜制电缆的一段，可以在载具不同部件间传输电力。",
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "wire",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "60 s"
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "30 s"
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "60 s"
+    }
+  },
+  "flags": [
+    "INITIAL_PART",
+    "AISLE"
+  ]
+}
+```
+

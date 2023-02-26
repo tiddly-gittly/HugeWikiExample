@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_MERCHANT_MOTIVE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_MERCHANT_MOTIVE|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_MERCHANT_MOTIVE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_MERCHANT_MOTIVE",
+  "dynamic_line": {
+    "u_has_trait": "PROF_SANGUINE",
+    "yes": "And yet you came here, knowing the potential danger.  Or did you think us extinct?  Perhaps that means you can be trusted.  If your intent remains honest, we need not be enemies.  But we shall see.",
+    "no": "Then hopefully this means we need not be enemies.  The gods ensured that mortal means would lead us to meet.  Remind us of our shared humanity, perhaps.  We shall see if this holds true."
+  },
+  "responses": [
+    {
+      "text": "We'll see.",
+      "effect": {
+        "u_add_effect": "sofia_motive_explained",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_MERCHANT_MOTIVE",
+  "dynamic_line": {
+    "u_has_trait": "PROF_SANGUINE",
+    "yes": "但你来到这里，知道潜在的危险。或者你认为我们灭绝了？也许这意味着你可以信任。如果你的意图是诚实的，我们就不必成为敌人。但我们要拭目以待。",
+    "no": "希望这意味着我们不必成为敌人。众神确保凡人的手段会引导我们相遇。让我们想起我们共同的人性。我们看看这是否成立。"
+  },
+  "responses": [
+    {
+      "text": "我们拭目以待。",
+      "effect": {
+        "u_add_effect": "sofia_motive_explained",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

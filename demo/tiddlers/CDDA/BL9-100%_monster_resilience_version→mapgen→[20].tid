@@ -1,0 +1,971 @@
+creator: 林一二
+revision: 0
+tags: mapgen BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→mapgen→[20]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Locations/Island_part1.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    "BL9_Island_OutsideCamp2"
+  ],
+  "method": "json",
+  "weight": 100,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "%%%%%%%%%%%%%%%%%%%%%%%%",
+      "%..e..e.b.b.e.b.b.b.e..%",
+      "%......................%",
+      ".....sssss.ssss.sssss..%",
+      "%....s..es.s..s.se..s..%",
+      "%....sb..s.s..s.s..bs..%",
+      "%....sssss.ssss.sssss..%",
+      "%a.....................%",
+      "%a.............yvvvvvy.%",
+      "%jjjjjjjjj.....yvvvvvy.%",
+      "%.m.nYt.bj......y.y.y..%",
+      "%b.......j.............%",
+      "%e.......?...jjjjj?jjjj%",
+      "%e.......j...j.aa.....t%",
+      "%........jsssje.......b%",
+      "%bnamYt.aj...je...t...e%",
+      "%jjjjjjjjj...jb.......b%",
+      "%............j........e%",
+      "%..ssssss....j.nnYmmt..%",
+      "%..se.b.s....jjjjjjjjjj%",
+      "%..s....s..............L",
+      "%..sb..es..............i",
+      "%..ssssss......e.b.e.b.%",
+      "%%%%%%%%%%%%%%%%%%%%%%%%"
+    ],
+    "terrain": {
+      " ": "t_dirt",
+      ".": "t_BL9uniqmazing_fl_azureblue",
+      "!": "t_column_halfway",
+      "W": "t_fence_wire",
+      "%": "t_BL9_rockblue",
+      ">": "t_stairs_down",
+      "<": "t_stairs_up",
+      "`": "t_water_dp",
+      "?": [
+        "t_door_metal_c",
+        "t_door_metal_c",
+        "t_door_metal_c",
+        "t_door_metal_c",
+        "t_door_metal_o"
+      ],
+      "i": "t_card_industrial",
+      "L": "t_door_metal_locked",
+      "j": "t_concrete_wall",
+      "q": "t_guardrail_bg_dp"
+    },
+    "furniture": {
+      "e": "f_crate_c",
+      "c": "f_filing_cabinet",
+      "$": "f_server",
+      "l": "f_locker",
+      "v": "f_table",
+      "y": "f_chair",
+      "t": "f_BL9_long_torch",
+      "o": "f_wreckage",
+      "a": "f_air_conditioner",
+      "s": "f_sandbag_half",
+      "b": "f_30gal_firebarrel",
+      "n": "f_machinery_electronic",
+      "m": "f_machinery_heavy",
+      "T": "f_console",
+      "Y": "f_console_broken"
+    },
+    "items": {
+      "e": {
+        "item": "BL9_treasure_search2",
+        "chance": 100,
+        "repeat": [
+          1,
+          1
+        ]
+      }
+    },
+    "place_item": [
+      {
+        "item": "id_industrial",
+        "x": 22,
+        "y": 19
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_BL9_military_cut",
+        "x": 6,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_military_stab",
+        "x": 7,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_mutant_evo_1",
+        "x": 8,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_military_crossbow",
+        "x": 11,
+        "y": 17
+      },
+      {
+        "monster": "mon_BL9_military_bash",
+        "x": 12,
+        "y": 17
+      },
+      {
+        "monster": "mon_BL9_military_cut",
+        "x": 13,
+        "y": 17
+      },
+      {
+        "monster": "mon_BL9_military_behemoth",
+        "x": 4,
+        "y": 13
+      },
+      {
+        "monster": "mon_BL9_military_crossbow",
+        "x": 5,
+        "y": 14
+      },
+      {
+        "monster": "mon_BL9_military_stab",
+        "x": 4,
+        "y": 14
+      },
+      {
+        "monster": "mon_BL9_military_bash",
+        "x": 18,
+        "y": 18
+      },
+      {
+        "monster": "mon_BL9_military_behemoth",
+        "x": 19,
+        "y": 18
+      },
+      {
+        "monster": "mon_BL9_mutant_evo_1",
+        "x": 20,
+        "y": 18
+      },
+      {
+        "monster": "mon_BL9_military_bash",
+        "x": 21,
+        "y": 18
+      },
+      {
+        "monster": "mon_BL9_military_cut",
+        "x": 4,
+        "y": 8
+      },
+      {
+        "monster": "mon_BL9_military_behemoth_minigun",
+        "x": 5,
+        "y": 8
+      },
+      {
+        "monster": "mon_BL9_military_cut",
+        "x": 13,
+        "y": 5
+      },
+      {
+        "monster": "mon_BL9_military_shockrod",
+        "x": 14,
+        "y": 5
+      },
+      {
+        "monster": "mon_BL9_military_cut",
+        "x": 18,
+        "y": 6
+      },
+      {
+        "monster": "mon_BL9_military_shockrod",
+        "x": 19,
+        "y": 6
+      },
+      {
+        "monster": "mon_BL9_military_shockrod",
+        "x": 20,
+        "y": 5
+      },
+      {
+        "monster": "mon_BL9_military_shockrod",
+        "x": 11,
+        "y": 13
+      },
+      {
+        "monster": "mon_BL9_military_behemoth_minigun",
+        "x": 12,
+        "y": 13
+      },
+      {
+        "monster": "mon_BL9_military_shockrod",
+        "x": 12,
+        "y": 14
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    "hive_caves8_castle"
+  ],
+  "method": "json",
+  "weight": 100,
+  "object": {
+    "fill_ter": "t_BL9uniqmazing_fl_purple",
+    "rows": [
+      "qqqqqq1qqqqqqqqqqqqqqqqq",
+      "qfQQbQQQcQQQfq11cf1fc11q",
+      "qbQQQQQQQQQQcqf1111111fq",
+      "q1QQQQQQQQQQ1qb1111111cq",
+      "qcQQQQQQQQQQ1q11111111fq",
+      "q1QQQQQQQQQQ1?11111111cq",
+      "qbQQQQQQQQQQ1q111111111q",
+      "q11fccf1fcbf1q1fb111bf1q",
+      "qqqqqqqqqqqqqqqqqq?qqqqq",
+      "q11ff11q1fbfc1q1f111f11q",
+      "qb11111q1QQQQQqc111111bq",
+      "q111111?1QQQQQq1111111cq",
+      "qf11111q1QQQQQ?1111111fq",
+      "qc1111fq1QQQQQq1111111fq",
+      "qf1111bq1QQQQQq11111111q",
+      "q111111q1ffbffq11cfbfc1q",
+      "qqq?qqqqqqqqqqqqqqqqqqqq",
+      "q11111bfb1q11c1b1b1f1f1q",
+      "qc11111111q1QQQQQQQQQQcq",
+      "qb11111111?1QQQQQQQQQQfq",
+      "qc11111111q1QQQQQQQQQQcq",
+      "q111111111q1QQQQQQQQQQQq",
+      "q1fbf1bcf1qcf11bcf11fb1q",
+      "qqqqqqqqqqqqqqqqqqLiqqqq"
+    ],
+    "palettes": [
+      "BL9_biomes_palette"
+    ],
+    "furniture": {
+      "b": "f_alien_pod",
+      "c": "f_alien_pod_organ",
+      "f": "f_BL9_glowing_tendril"
+    },
+    "items": {
+      "b": {
+        "item": "BL9_treasure_search1",
+        "chance": 100,
+        "repeat": [
+          1,
+          1
+        ]
+      },
+      "c": {
+        "item": "BL9_treasure_search1",
+        "chance": 100,
+        "repeat": [
+          1,
+          1
+        ]
+      }
+    },
+    "place_item": [
+      {
+        "item": "id_industrial",
+        "x": 19,
+        "y": 21
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_BL9_scrawler_evo",
+        "x": 5,
+        "y": 4
+      },
+      {
+        "monster": "mon_BL9_scrawler_evo",
+        "x": 10,
+        "y": 4
+      },
+      {
+        "monster": "mon_BL9_mutant_1",
+        "x": 5,
+        "y": 7
+      },
+      {
+        "monster": "mon_BL9_mutant_2",
+        "x": 11,
+        "y": 7
+      },
+      {
+        "monster": "mon_BL9_mutant_3",
+        "x": 21,
+        "y": 4
+      },
+      {
+        "monster": "mon_BL9_scrawler",
+        "x": 22,
+        "y": 7
+      },
+      {
+        "monster": "mon_BL9_mutant_2",
+        "x": 17,
+        "y": 4
+      },
+      {
+        "monster": "mon_blind_clawer",
+        "x": 20,
+        "y": 12
+      },
+      {
+        "monster": "mon_BL9_mutant_3",
+        "x": 20,
+        "y": 15
+      },
+      {
+        "monster": "mon_BL9_mutant_1",
+        "x": 17,
+        "y": 16
+      },
+      {
+        "monster": "mon_BL9_scrawler_evo",
+        "x": 11,
+        "y": 15
+      },
+      {
+        "monster": "mon_BL9_mutant_2",
+        "x": 12,
+        "y": 11
+      },
+      {
+        "monster": "mon_BL9_mutant_3",
+        "x": 3,
+        "y": 10
+      },
+      {
+        "monster": "mon_BL9_cultist_cut",
+        "x": 5,
+        "y": 15
+      },
+      {
+        "monster": "mon_BL9_mutant_1",
+        "x": 8,
+        "y": 20
+      },
+      {
+        "monster": "mon_BL9_mutant_2",
+        "x": 4,
+        "y": 22
+      },
+      {
+        "monster": "mon_BL9_mutant_1",
+        "x": 2,
+        "y": 23
+      },
+      {
+        "monster": "mon_blind_clawer",
+        "x": 8,
+        "y": 22
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    "castlelan_castle_roadtothrone_bridge2"
+  ],
+  "method": "json",
+  "weight": 100,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "%%%%%%%%%%%%%%%%%%%%%%%%",
+      "%```````````````````````",
+      "%```````````````````````",
+      "%```````````````````````",
+      "%```````````````````````",
+      "%```````````````````````",
+      "%```````````````````````",
+      "%```````````````````````",
+      "%```````````````````````",
+      "%```````````````````````",
+      "%```````````````````````",
+      "#```````````````````````",
+      "#```````````````````````",
+      "#```````````````````````",
+      "#```````````````````````",
+      "#```````````````````````",
+      "#```````````````````````",
+      "$$$$$$$$$$$$$$$$$$$$$$$$",
+      "$!$$!$$!$$!$$!$$!$$!$$$$",
+      "$t$$$$$$$$$$t$$$$$$$$t$$",
+      "$!$$!$$!$$!$$!$$!$$!$$$$",
+      "$$$$$$$$$$$$$$$$$$$$$$$$",
+      "````````````````````````",
+      "````````````````````````"
+    ],
+    "palettes": [
+      "BL9_castle_palette"
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_blind_clawer",
+        "x": 10,
+        "y": 19
+      },
+      {
+        "monster": "mon_BL9_cultist_stab",
+        "x": 10,
+        "y": 20
+      },
+      {
+        "monster": "mon_BL9_mutant_2",
+        "x": 10,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_cultist_crossbow",
+        "x": 9,
+        "y": 19
+      },
+      {
+        "monster": "mon_BL9_cultist_bash",
+        "x": 9,
+        "y": 20
+      },
+      {
+        "monster": "mon_BL9_cultist_crossbow",
+        "x": 9,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_mutant_1",
+        "x": 15,
+        "y": 19
+      },
+      {
+        "monster": "mon_BL9_cultist_crossbow",
+        "x": 15,
+        "y": 20
+      },
+      {
+        "monster": "mon_BL9_cultist_stab",
+        "x": 15,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_cultist_bash",
+        "x": 16,
+        "y": 19
+      },
+      {
+        "monster": "mon_blind_clawer",
+        "x": 16,
+        "y": 20
+      },
+      {
+        "monster": "mon_BL9_mutant_1",
+        "x": 16,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_cultist_bash",
+        "x": 19,
+        "y": 19
+      },
+      {
+        "monster": "mon_BL9_cultist_cut",
+        "x": 19,
+        "y": 20
+      },
+      {
+        "monster": "mon_BL9_cultist_crossbow",
+        "x": 19,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_cultist_cut",
+        "x": 22,
+        "y": 19
+      },
+      {
+        "monster": "mon_BL9_mutant_2",
+        "x": 22,
+        "y": 20
+      },
+      {
+        "monster": "mon_BL9_cultist_cut",
+        "x": 22,
+        "y": 21
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    "BL9_anomaly_tavrav1"
+  ],
+  "method": "json",
+  "weight": 100,
+  "object": {
+    "fill_ter": "t_BL9uniqmazing_liq_cyan",
+    "rows": [
+      "UUUUUUUUUUUUUUUUUUUUUUUU",
+      "UUdfsUUUasfUUUsfdUUUafsU",
+      "UUUsaUUUfaUUdaUUfdUUasUU",
+      "UsaUUUsUUUaUUUUaUUUsafUU",
+      "UasUadsUUUfsUdUfUUsfaUUU",
+      "UUUUfasUdUUUsUUUasdUfUUU",
+      "UUdfaUUfdaUUfsaUUfsdUUUU",
+      "UfsdUUsdaUUdfaUUafsUUsdU",
+      "UUUUsUUUaUUafdUUdUUUaUUU",
+      "UUdafUUsafUUUUfsaUUdsaUU",
+      "UUUfaUUUadfUUUsaUUfsdUUU",
+      "UUUasUUUsdUUafUUfUUUsUUU",
+      "UadUsdUUaUUfsdUUdUdaUdsU",
+      "UUdUUfUUsUUUssUUaUUaaUUU",
+      "UUUffUUUdUUUsUUUsUUUaUUU",
+      "UasUUsaUUUaUUafUUUfdUsfU",
+      "UUUsfdUUUdfaUUUsafUUUUUU",
+      "UUUasUUUfdUUaaUUUsddUUUU",
+      "UUadfUUsafUUdafUUasfUfaU",
+      "UUUUafdUUUdaUdsfUUasdUUU",
+      "UUUssUUUffUUUddUUUaaUUUU",
+      "UUUaUUdUsUUaUUaUfUUfUsfU",
+      "UUUaUUUUaUUUUUsUUUUfUUUU",
+      "UUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    "palettes": [
+      "BL9_biomes_palette"
+    ],
+    "furniture": {
+      "a": [
+        [
+          "f_BL9_glowing_tendril",
+          20
+        ],
+        [
+          "f_BL9_alien_anemone",
+          20
+        ],
+        [
+          "f_BL9shrub_blueberry",
+          10
+        ],
+        [
+          "f_BL9shrub_strawberry",
+          10
+        ],
+        [
+          "f_BL9shrub_blackberry",
+          10
+        ],
+        [
+          "f_BL9_alien_gasper",
+          20
+        ],
+        [
+          "f_BL9shrub_raspberry",
+          10
+        ],
+        [
+          "f_BL9tree_pine",
+          10
+        ],
+        [
+          "f_BL9tree_juniper",
+          10
+        ]
+      ],
+      "s": [
+        [
+          "f_BL9shrub_grape",
+          10
+        ],
+        [
+          "f_alien_pod",
+          10
+        ],
+        [
+          "f_alien_pod_organ",
+          10
+        ],
+        [
+          "f_BL9_glowing_tendril",
+          10
+        ],
+        [
+          "f_BL9_alien_anemone",
+          10
+        ],
+        [
+          "f_BL9_alien_gasper",
+          10
+        ]
+      ],
+      "f": [
+        [
+          "f_BL9shrub_hydrangea",
+          10
+        ],
+        [
+          "f_alien_pod",
+          10
+        ],
+        [
+          "f_alien_pod_organ",
+          10
+        ],
+        [
+          "f_BL9_glowing_tendril",
+          10
+        ],
+        [
+          "f_BL9_alien_anemone",
+          10
+        ],
+        [
+          "f_BL9_alien_gasper",
+          10
+        ]
+      ],
+      "d": [
+        [
+          "f_BL9shrub_lilac",
+          10
+        ],
+        [
+          "f_alien_pod",
+          10
+        ],
+        [
+          "f_alien_pod_organ",
+          10
+        ],
+        [
+          "f_BL9_glowing_tendril",
+          10
+        ],
+        [
+          "f_BL9_alien_anemone",
+          10
+        ],
+        [
+          "f_BL9_alien_gasper",
+          10
+        ]
+      ]
+    },
+    "place_monster": [
+      {
+        "monster": "mon_BL9_tavrav_1",
+        "x": 9,
+        "y": 5
+      },
+      {
+        "monster": "mon_BL9_tavrav_2",
+        "x": 20,
+        "y": 3
+      },
+      {
+        "monster": "mon_BL9_tavrav_1",
+        "x": 14,
+        "y": 6
+      },
+      {
+        "monster": "mon_BL9_tavrav_2",
+        "x": 6,
+        "y": 9
+      },
+      {
+        "monster": "mon_BL9_tavrav_4",
+        "x": 21,
+        "y": 8
+      },
+      {
+        "monster": "mon_BL9_tavrav_3",
+        "x": 13,
+        "y": 11
+      },
+      {
+        "monster": "mon_BL9_tavrav_4",
+        "x": 6,
+        "y": 15
+      },
+      {
+        "monster": "mon_BL9_tavrav_1",
+        "x": 11,
+        "y": 18
+      },
+      {
+        "monster": "mon_BL9_tavrav_2",
+        "x": 17,
+        "y": 20
+      },
+      {
+        "monster": "mon_BL9_tavrav_1",
+        "x": 19,
+        "y": 22
+      },
+      {
+        "monster": "mon_BL9_tavrav_2",
+        "x": 7,
+        "y": 21
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    "BL9_Island_OutsideCamp2"
+  ],
+  "method": "json",
+  "weight": 100,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "%%%%%%%%%%%%%%%%%%%%%%%%",
+      "%..e..e.b.b.e.b.b.b.e..%",
+      "%......................%",
+      ".....sssss.ssss.sssss..%",
+      "%....s..es.s..s.se..s..%",
+      "%....sb..s.s..s.s..bs..%",
+      "%....sssss.ssss.sssss..%",
+      "%a.....................%",
+      "%a.............yvvvvvy.%",
+      "%jjjjjjjjj.....yvvvvvy.%",
+      "%.m.nYt.bj......y.y.y..%",
+      "%b.......j.............%",
+      "%e.......?...jjjjj?jjjj%",
+      "%e.......j...j.aa.....t%",
+      "%........jsssje.......b%",
+      "%bnamYt.aj...je...t...e%",
+      "%jjjjjjjjj...jb.......b%",
+      "%............j........e%",
+      "%..ssssss....j.nnYmmt..%",
+      "%..se.b.s....jjjjjjjjjj%",
+      "%..s....s..............L",
+      "%..sb..es..............i",
+      "%..ssssss......e.b.e.b.%",
+      "%%%%%%%%%%%%%%%%%%%%%%%%"
+    ],
+    "terrain": {
+      " ": "t_dirt",
+      ".": "t_BL9uniqmazing_fl_azureblue",
+      "!": "t_column_halfway",
+      "W": "t_fence_wire",
+      "%": "t_BL9_rockblue",
+      ">": "t_stairs_down",
+      "<": "t_stairs_up",
+      "`": "t_water_dp",
+      "?": [
+        "t_door_metal_c",
+        "t_door_metal_c",
+        "t_door_metal_c",
+        "t_door_metal_c",
+        "t_door_metal_o"
+      ],
+      "i": "t_card_industrial",
+      "L": "t_door_metal_locked",
+      "j": "t_concrete_wall",
+      "q": "t_guardrail_bg_dp"
+    },
+    "furniture": {
+      "e": "f_crate_c",
+      "c": "f_filing_cabinet",
+      "$": "f_server",
+      "l": "f_locker",
+      "v": "f_table",
+      "y": "f_chair",
+      "t": "f_BL9_long_torch",
+      "o": "f_wreckage",
+      "a": "f_air_conditioner",
+      "s": "f_sandbag_half",
+      "b": "f_30gal_firebarrel",
+      "n": "f_machinery_electronic",
+      "m": "f_machinery_heavy",
+      "T": "f_console",
+      "Y": "f_console_broken"
+    },
+    "items": {
+      "e": {
+        "item": "BL9_treasure_search2",
+        "chance": 100,
+        "repeat": [
+          1,
+          1
+        ]
+      }
+    },
+    "place_item": [
+      {
+        "item": "id_industrial",
+        "x": 22,
+        "y": 19
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_BL9_military_cut",
+        "x": 6,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_military_stab",
+        "x": 7,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_mutant_evo_1",
+        "x": 8,
+        "y": 21
+      },
+      {
+        "monster": "mon_BL9_military_crossbow",
+        "x": 11,
+        "y": 17
+      },
+      {
+        "monster": "mon_BL9_military_bash",
+        "x": 12,
+        "y": 17
+      },
+      {
+        "monster": "mon_BL9_military_cut",
+        "x": 13,
+        "y": 17
+      },
+      {
+        "monster": "mon_BL9_military_behemoth",
+        "x": 4,
+        "y": 13
+      },
+      {
+        "monster": "mon_BL9_military_crossbow",
+        "x": 5,
+        "y": 14
+      },
+      {
+        "monster": "mon_BL9_military_stab",
+        "x": 4,
+        "y": 14
+      },
+      {
+        "monster": "mon_BL9_military_bash",
+        "x": 18,
+        "y": 18
+      },
+      {
+        "monster": "mon_BL9_military_behemoth",
+        "x": 19,
+        "y": 18
+      },
+      {
+        "monster": "mon_BL9_mutant_evo_1",
+        "x": 20,
+        "y": 18
+      },
+      {
+        "monster": "mon_BL9_military_bash",
+        "x": 21,
+        "y": 18
+      },
+      {
+        "monster": "mon_BL9_military_cut",
+        "x": 4,
+        "y": 8
+      },
+      {
+        "monster": "mon_BL9_military_behemoth_minigun",
+        "x": 5,
+        "y": 8
+      },
+      {
+        "monster": "mon_BL9_military_cut",
+        "x": 13,
+        "y": 5
+      },
+      {
+        "monster": "mon_BL9_military_shockrod",
+        "x": 14,
+        "y": 5
+      },
+      {
+        "monster": "mon_BL9_military_cut",
+        "x": 18,
+        "y": 6
+      },
+      {
+        "monster": "mon_BL9_military_shockrod",
+        "x": 19,
+        "y": 6
+      },
+      {
+        "monster": "mon_BL9_military_shockrod",
+        "x": 20,
+        "y": 5
+      },
+      {
+        "monster": "mon_BL9_military_shockrod",
+        "x": 11,
+        "y": 13
+      },
+      {
+        "monster": "mon_BL9_military_behemoth_minigun",
+        "x": 12,
+        "y": 13
+      },
+      {
+        "monster": "mon_BL9_military_shockrod",
+        "x": 12,
+        "y": 14
+      }
+    ]
+  }
+}
+```
+

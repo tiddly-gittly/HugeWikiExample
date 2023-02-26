@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: TOOL blazemod
+title: blazemod→TOOL→cluttergrow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cluttergrow|http://cdda.aloxaf.cn/search?q=cluttergrow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/tools/blob_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "cluttergrow",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "growing beaded mass"
+  },
+  "description": "Not quite fully grown, this blob requires nourishment to fully develop.",
+  "weight": "5410 g",
+  "volume": "2500 ml",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "magenta",
+  "use_action": {
+    "target": "clutter",
+    "msg": "The blob balloons to full size.",
+    "type": "delayed_transform",
+    "transform_age": 2400,
+    "not_ready_msg": "Whatever it's doing, it's not done yet."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "cluttergrow",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "珠状变形怪（生长中）"
+  },
+  "description": "还没有完全长成，这只变形怪需要更多营养成分才能完全成长。",
+  "weight": "5410 g",
+  "volume": "2500 ml",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "magenta",
+  "use_action": {
+    "target": "clutter",
+    "msg": "变形怪长大到完整大小。",
+    "type": "delayed_transform",
+    "transform_age": 2400,
+    "not_ready_msg": "Whatever it's doing, it's not done yet."
+  }
+}
+```
+

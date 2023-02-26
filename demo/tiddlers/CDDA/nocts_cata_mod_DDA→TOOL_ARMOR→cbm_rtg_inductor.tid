@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL_ARMOR→cbm_rtg_inductor
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cbm_rtg_inductor|http://cdda.aloxaf.cn/search?q=cbm_rtg_inductor]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "cbm_rtg_inductor",
+  "type": "TOOL_ARMOR",
+  "category": "tools",
+  "symbol": ";",
+  "color": "light_green",
+  "looks_like": "adv_UPS_off",
+  "name": {
+    "str": "inductive CBM charger"
+  },
+  "description": "A prototype device giving off noticeable heat, housing a compact radioisotope thermoelectric generator.  It does not seem to accept batteries or even provide a UPS hookup, instead housing an inductive charging system designed specifically for CBM power storage.  Being an unfinished design, the only way to dump power into the inductor without electrocuting yourself requires opening up part of the mechanism, exposing you to radiation.",
+  "price": "12000 USD",
+  "price_postapoc": "60 USD",
+  "material": [
+    "plastic",
+    "aluminum"
+  ],
+  "flags": [
+    "LEAK_DAM",
+    "RADIOACTIVE",
+    "BELTED",
+    "OVERSIZE",
+    "NO_RELOAD",
+    "NO_UNLOAD"
+  ],
+  "weight": "2200 g",
+  "volume": "3 L",
+  "bashing": 4,
+  "warmth": 20,
+  "ammo": [
+    "battery"
+  ],
+  "charges_per_use": 1,
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "1 h",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 25
+      }
+    }
+  ],
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "c_cbm_rtg_induction",
+    "no_fail": true,
+    "level": 0
+  },
+  "armor": [
+    {
+      "encumbrance": 5,
+      "coverage": 25,
+      "covers": [
+        "torso"
+      ],
+      "specifically_covers": [
+        "torso_waist"
+      ],
+      "material": [
+        "plastic",
+        "aluminum"
+      ],
+      "material_thickness": 2
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "cbm_rtg_inductor",
+  "type": "TOOL_ARMOR",
+  "category": "tools",
+  "symbol": ";",
+  "color": "light_green",
+  "looks_like": "adv_UPS_off",
+  "name": {
+    "str": "便携式聚变CBM充能器"
+  },
+  "description": "一个正发出明显热量的原型装置，其内部容纳了一个紧凑型放射性同位素热能发电机。 它似乎没有电池槽，甚至不提供UPS连接，而是内置了一个专为CBM储能系统设计的感应式充电系统。 然而其作为一个未完成的原型装置，使用它向你的CBM系统传输电力而不触电的唯一方法是：打开部分外壳结构，但这会使你暴露于辐射中。",
+  "price": "12000 USD",
+  "price_postapoc": "60 USD",
+  "material": [
+    "plastic",
+    "aluminum"
+  ],
+  "flags": [
+    "LEAK_DAM",
+    "RADIOACTIVE",
+    "BELTED",
+    "OVERSIZE",
+    "NO_RELOAD",
+    "NO_UNLOAD"
+  ],
+  "weight": "2200 g",
+  "volume": "3 L",
+  "bashing": 4,
+  "warmth": 20,
+  "ammo": [
+    "battery"
+  ],
+  "charges_per_use": 1,
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "1 h",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 25
+      }
+    }
+  ],
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "c_cbm_rtg_induction",
+    "no_fail": true,
+    "level": 0
+  },
+  "armor": [
+    {
+      "encumbrance": 5,
+      "coverage": 25,
+      "covers": [
+        "torso"
+      ],
+      "specifically_covers": [
+        "torso_waist"
+      ],
+      "material": [
+        "plastic",
+        "aluminum"
+      ],
+      "material_thickness": 2
+    }
+  ]
+}
+```
+

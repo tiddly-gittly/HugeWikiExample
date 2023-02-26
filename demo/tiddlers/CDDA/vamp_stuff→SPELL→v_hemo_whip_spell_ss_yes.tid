@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→v_hemo_whip_spell_ss_yes
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_hemo_whip_spell_ss_yes|http://cdda.aloxaf.cn/search?q=v_hemo_whip_spell_ss_yes]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_hit_time.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Notify the player about the casted on-hit spell.",
+  "type": "SPELL",
+  "id": "v_hemo_whip_spell_ss_yes",
+  "name": {
+    "str": "Sweeping Strike!"
+  },
+  "description": "Does the Sweeping Strike.",
+  "valid_targets": [
+    "none"
+  ],
+  "message": "The leech's whip strikes a wide arc!",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "extra_effects": [
+    {
+      "id": "v_hemo_whip_spell_ss"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Notify the player about the casted on-hit spell.",
+  "type": "SPELL",
+  "id": "v_hemo_whip_spell_ss_yes",
+  "name": {
+    "str": "大罢工！"
+  },
+  "description": "扫荡罢工。",
+  "valid_targets": [
+    "none"
+  ],
+  "message": "水蛭的鞭子打了一个大弧线！",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "extra_effects": [
+    {
+      "id": "v_hemo_whip_spell_ss"
+    }
+  ]
+}
+```
+

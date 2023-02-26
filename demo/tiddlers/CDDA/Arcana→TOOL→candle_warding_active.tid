@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→candle_warding_active
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：candle_warding_active|http://cdda.aloxaf.cn/search?q=candle_warding_active]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "candle_warding_active",
+  "type": "TOOL",
+  "name": {
+    "str": "candle of warding (on)",
+    "str_pl": "candles of warding (on)"
+  },
+  "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  Its wick is lit with a ghostly blue flame, projecting light without heat.  It can also be used to place a tough magical barrier, also providing a source of fire.  Examining the barrier will let you retrieve the candle.",
+  "weight": "100 g",
+  "volume": "250 ml",
+  "price": "80 USD",
+  "price_postapoc": "40 USD",
+  "material": [
+    "essencemat"
+  ],
+  "looks_like": "candle_lit",
+  "repairs_like": "candle_warding",
+  "symbol": ",",
+  "color": "white",
+  "use_action": [
+    {
+      "target": "candle_warding",
+      "msg": "The candle's wick is extinguished.",
+      "menu_text": "Extinguish candle of warding",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    {
+      "type": "firestarter",
+      "moves": 100
+    },
+    {
+      "type": "deploy_furn",
+      "furn_type": "f_candle_barrier_playermade"
+    }
+  ],
+  "flags": [
+    "NO_SALVAGE",
+    "LIGHT_12",
+    "FIRESTARTER"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "candle_warding_active",
+  "type": "TOOL",
+  "name": {
+    "str": "守护蜡烛（开）",
+    "str_pl": "守护蜡烛（开）"
+  },
+  "description": "一种半透明的蜡烛，不含任何杂质，带有舒缓的气氛。它的灯芯被一种幽灵般的蓝色火焰点燃，发出的光没有热量。这个物品制造的屏障很坚固并且可以提供火源。检查屏障可以让你取回蜡烛。",
+  "weight": "100 g",
+  "volume": "250 ml",
+  "price": "80 USD",
+  "price_postapoc": "40 USD",
+  "material": [
+    "essencemat"
+  ],
+  "looks_like": "candle_lit",
+  "repairs_like": "candle_warding",
+  "symbol": ",",
+  "color": "white",
+  "use_action": [
+    {
+      "target": "candle_warding",
+      "msg": "蜡烛芯熄灭了。",
+      "menu_text": "熄灭守护之烛",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    {
+      "type": "firestarter",
+      "moves": 100
+    },
+    {
+      "type": "deploy_furn",
+      "furn_type": "f_candle_barrier_playermade"
+    }
+  ],
+  "flags": [
+    "NO_SALVAGE",
+    "LIGHT_12",
+    "FIRESTARTER"
+  ]
+}
+```
+

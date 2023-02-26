@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_flesh_starter_act
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_flesh_starter_act|http://cdda.aloxaf.cn/search?q=secro_power_armor_flesh_starter_act]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armor_flesh.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_flesh_starter_act",
+  "copy-from": "secro_power_armor_flesh_starter",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "flesh vessel"
+  },
+  "description": "It is currently not merged with anything. Activate to permanently merge with it.\n\nA complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
+  "looks_like": "power_armor_light",
+  "color": "red",
+  "countdown_interval": 1,
+  "countdown_destroy": true,
+  "countdown_action": {
+    "type": "cast_spell",
+    "spell_id": "secro_power_armor_flesh_give_target",
+    "no_fail": true,
+    "level": 0
+  },
+  "flags": [
+    "TRADER_AVOID",
+    "TRADER_KEEP",
+    "NO_TAKEOFF",
+    "WATERPROOF",
+    "STURDY",
+    "NO_UNLOAD",
+    "PARTIAL_DEAF",
+    "FIX_FARSIGHT",
+    "FIX_NEARSIGHT",
+    "SUN_GLASSES",
+    "OVERSIZE"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "values": [
+          {
+            "value": "CLIMATE_CONTROL_HEAT",
+            "add": 50
+          },
+          {
+            "value": "CLIMATE_CONTROL_CHILL",
+            "add": 50
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_flesh_starter_act",
+  "copy-from": "secro_power_armor_flesh_starter",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "脉管装甲"
+  },
+  "description": "它当前未与任何内容合并。激活以与它永久合并。\n\n一套复杂的战斗服采用了最新的技术进步。Secronom外骨骼类型的“血管”利用了肌肉的适应性细胞结构及其从大脑作出反应的能力。",
+  "looks_like": "power_armor_light",
+  "color": "red",
+  "countdown_interval": 1,
+  "countdown_destroy": true,
+  "countdown_action": {
+    "type": "cast_spell",
+    "spell_id": "secro_power_armor_flesh_give_target",
+    "no_fail": true,
+    "level": 0
+  },
+  "flags": [
+    "TRADER_AVOID",
+    "TRADER_KEEP",
+    "NO_TAKEOFF",
+    "WATERPROOF",
+    "STURDY",
+    "NO_UNLOAD",
+    "PARTIAL_DEAF",
+    "FIX_FARSIGHT",
+    "FIX_NEARSIGHT",
+    "SUN_GLASSES",
+    "OVERSIZE"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "values": [
+          {
+            "value": "CLIMATE_CONTROL_HEAT",
+            "add": 50
+          },
+          {
+            "value": "CLIMATE_CONTROL_CHILL",
+            "add": 50
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+

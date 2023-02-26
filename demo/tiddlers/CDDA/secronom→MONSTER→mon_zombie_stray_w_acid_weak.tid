@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_stray_w_acid_weak
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_acid_weak|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_acid_weak]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Stray with acid element.",
+  "id": "mon_zombie_stray_w_acid_weak",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "stray zombie"
+  },
+  "description": "A zombie, nothing more special about it. Yet it is just a normal day walker, it is considered a lone wolf, shuffling its way into nothingness. A green-ish vein by its arm faintly glows.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 75,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "vision_night": 3,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 26,
+    "into": "mon_zombie_stray_w_acid_mode"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Stray with acid element.",
+  "id": "mon_zombie_stray_w_acid_weak",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "酸液离群丧尸"
+  },
+  "description": "一个丧尸，没什么特别的。然而，它只是一个普通的日行者，它被认为是一只孤独的狼，拖着脚步走向虚无。手臂上一条绿色的静脉隐约发光。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 75,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "vision_night": 3,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 26,
+    "into": "mon_zombie_stray_w_acid_mode"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

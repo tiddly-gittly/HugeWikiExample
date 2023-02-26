@@ -1,0 +1,305 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_BACKDOOR
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_BACKDOOR|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_BACKDOOR]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR",
+  "dynamic_line": {
+    "u_has_item": "veilblade",
+    "yes": "I am glad that you are prepared to help me with this.  The relic you now possess represents the legacy of those who have come before you.  I fear I am not long for this world, but you still have a chance.  I will guide you as best as I can.",
+    "no": {
+      "u_has_effect": "hermit_stage_3_backdoor",
+      "yes": "I am glad that you are prepared to help me with this.  The relic you now possess represents the legacy of those who have come before you.  I fear I am not long for this world, but you still have a chance.  I will guide you as best as I can.",
+      "no": {
+        "npc_has_item": "veilblade",
+        "yes": "There was another who sought to help me, but ultimately could not finish the life's work of my order.  They entrusted this relic to me, the last of our holy weapons as far as I am aware.  It may help you, if you are willing to take good care of it.",
+        "no": "I am thankful for your offer.  There was another who came by here, once.  I guided them as best as I could, to help me with some unfinished business before I can allow myself to rest, but we have failed once more.  There was a sword, one of our order's holy weapons.  A greatsword with sacred runes engraved along the blade.  If you ever find it again, I will fill you in on what this unfinished business entails."
+      }
+    }
+  },
+  "responses": [
+    {
+      "switch": true,
+      "text": "Tell me what needs to be done with this sword.",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_SWORD",
+      "condition": {
+        "or": [
+          {
+            "u_has_item": "veilblade"
+          },
+          {
+            "u_has_effect": "hermit_stage_3_backdoor"
+          }
+        ]
+      }
+    },
+    {
+      "text": "This is very dangerous magic under your care.  Are you certain this is wise?",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WISE",
+      "condition": {
+        "and": [
+          {
+            "npc_has_item": "veilblade"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CLEANSINGFLAME",
+              "PROF_CLEANSINGFLAME2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "text": "You are asking me to join your cult, Keeper.",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_CULT",
+      "condition": {
+        "and": [
+          {
+            "npc_has_item": "veilblade"
+          },
+          {
+            "u_has_trait": "PROF_SANGUINE"
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "I accept.  What needs to be done?",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_OFFER",
+      "effect": [
+        {
+          "u_add_effect": "hermit_stage_3_backdoor",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "veilblade"
+        },
+        {
+          "npc_remove_item_with": "veilblade"
+        }
+      ],
+      "condition": {
+        "npc_has_item": "veilblade"
+      }
+    },
+    {
+      "text": "Your order's work?  What was that?",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK",
+      "condition": {
+        "and": [
+          {
+            "npc_has_item": "veilblade"
+          },
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "So there is hope for us yet.  Anything else?",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE",
+      "condition": {
+        "and": [
+          {
+            "npc_has_item": "veilblade"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CHALICE"
+            ]
+          },
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "Unfinished business?",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_BUSINESS"
+    },
+    {
+      "text": "I will need time to think about this.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR",
+  "dynamic_line": {
+    "u_has_item": "veilblade",
+    "yes": "我很高兴你愿意帮助我。你现在拥有的遗迹代表了那些在你之前的人的遗产。我怕我对这个世界的渴望不长，但你还有机会。我会尽我所能地引导你。",
+    "no": {
+      "u_has_effect": "hermit_stage_3_backdoor",
+      "yes": "我很高兴你愿意帮助我。你现在拥有的遗迹代表了那些在你之前的人的遗产。我怕我对这个世界的渴望不长，但你还有机会。我会尽我所能地引导你。",
+      "no": {
+        "npc_has_item": "veilblade",
+        "yes": "还有一个人想帮助我，但最终还是无法完成我的使命。他们把这个遗物交给了我，据我所知，这是我们最后的神圣武器。如果你愿意好好照顾它，它可能会对你有帮助。",
+        "no": "我很感谢你的提议。还有一个来过这里的人，有一次。我尽我所能地引导他们，在我能让自己休息之前帮助我完成一些未完成的工作，但我们又一次失败了。有一把剑，我们教团的神圣武器之一。一把刻有神圣符文的大刀。如果你再找到它，我会告诉你这项未完成的事业需要什么。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "switch": true,
+      "text": "告诉我这把剑需要做什么。",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_SWORD",
+      "condition": {
+        "or": [
+          {
+            "u_has_item": "veilblade"
+          },
+          {
+            "u_has_effect": "hermit_stage_3_backdoor"
+          }
+        ]
+      }
+    },
+    {
+      "text": "在你的照料下，这是非常危险的魔法。你确定这是明智的吗？",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WISE",
+      "condition": {
+        "and": [
+          {
+            "npc_has_item": "veilblade"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CLEANSINGFLAME",
+              "PROF_CLEANSINGFLAME2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "text": "你要我加入你的邪教，守护者。",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_CULT",
+      "condition": {
+        "and": [
+          {
+            "npc_has_item": "veilblade"
+          },
+          {
+            "u_has_trait": "PROF_SANGUINE"
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "我接受。需要做什么？",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_OFFER",
+      "effect": [
+        {
+          "u_add_effect": "hermit_stage_3_backdoor",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "veilblade"
+        },
+        {
+          "npc_remove_item_with": "veilblade"
+        }
+      ],
+      "condition": {
+        "npc_has_item": "veilblade"
+      }
+    },
+    {
+      "text": "你的命令有效吗？那是什么？",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK",
+      "condition": {
+        "and": [
+          {
+            "npc_has_item": "veilblade"
+          },
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "所以我们还有希望。还有别的吗？",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE",
+      "condition": {
+        "and": [
+          {
+            "npc_has_item": "veilblade"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CHALICE"
+            ]
+          },
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "未完成的任务？",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_BUSINESS"
+    },
+    {
+      "text": "我需要时间考虑一下。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

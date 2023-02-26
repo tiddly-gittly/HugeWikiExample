@@ -1,0 +1,975 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[20]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/Flesh/flesh_city.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Hardware Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 375,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "*W^^^WW|-=--:---:---:-|*",
+      "*w~~~%~|..............|*",
+      "*w~~~v~|..............|*",
+      "*w~~~v~|..l%..l%..l%..|*",
+      "*w~~~~~|...#...#...#..|*",
+      "*w~~~~~|...#...#...#..|*",
+      "*w~~~~~|..............|*",
+      "*w~~~~~:..............|*",
+      "*w~~~~~:..............|*",
+      "*w~~~~~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*w~~~~~|..............|*",
+      "*wr~~r~|..............|*",
+      "*wr~~r~|.###..]..]..].|*",
+      "*wr~~r~+..l#..]..]..].|*",
+      "*wr~~r~|---|..]..]..].|*",
+      "*wr~~r~|tsu|..]..]..].|*",
+      "*w~~~~~|...+..........|4",
+      "*WWWWWW|---|----------|*",
+      "************************"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "%": "t_secro_console_broken_flesh",
+      "*": "t_secro_grass_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_wall_w_flesh",
+      ".": "t_secro_floor_flesh",
+      ":": "t_secro_door_glass_flesh",
+      "=": "t_secro_wall_g_flesh",
+      "W": "t_secro_chainfence_flesh",
+      "^": "t_secro_chaingate_c_flesh",
+      "r": "t_secro_sidewalk_flesh",
+      "v": "t_secro_sidewalk_flesh",
+      "w": "t_secro_chainfence_flesh",
+      "|": "t_secro_wall_w_flesh",
+      "~": "t_secro_sidewalk_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "]": "f_rack",
+      "l": "f_stool",
+      "r": "f_rack",
+      "s": "f_sink",
+      "u": "f_trashcan",
+      "v": "f_counter"
+    },
+    "place_vendingmachines": [
+      {
+        "x": 8,
+        "y": 2
+      },
+      {
+        "x": 8,
+        "y": 3
+      }
+    ],
+    "toilets": {
+      "t": {}
+    },
+    "place_items": [
+      {
+        "item": "hardware_bulk",
+        "x": 2,
+        "y": [
+          2,
+          7
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "tools_carpentry",
+        "x": 20,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "paint",
+        "x": 17,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "hardware",
+        "x": 14,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "cleaning",
+        "x": 11,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "hardware",
+        "x": 20,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "tools_construction",
+        "x": 17,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "construction_worker",
+        "x": 14,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "farming_seeds",
+        "x": 2,
+        "y": [
+          11,
+          14
+        ],
+        "chance": 90,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "tools_earthworking",
+        "x": 2,
+        "y": [
+          16,
+          20
+        ],
+        "chance": 55,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "farming_seeds",
+        "x": 5,
+        "y": [
+          11,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "supplies_farming",
+        "x": 5,
+        "y": [
+          16,
+          20
+        ],
+        "chance": 65,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "trash",
+        "x": 10,
+        "y": 20,
+        "chance": 75
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "wheelbarrow",
+        "x": [
+          3,
+          4
+        ],
+        "y": [
+          5,
+          9
+        ],
+        "chance": 40
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          21,
+          22
+        ],
+        "y": [
+          3,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          18,
+          19
+        ],
+        "y": [
+          7,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          15,
+          16
+        ],
+        "y": [
+          7,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          12,
+          13
+        ],
+        "y": [
+          7,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          8,
+          10
+        ],
+        "y": [
+          5,
+          16
+        ],
+        "chance": 25
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Hardware Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 375,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "*W^^^WW|-=--:---:---:-|*",
+      "*w~~~%~|..............|*",
+      "*w~~~v~|..............|*",
+      "*w~~~v~|..l%..l%..l%..|*",
+      "*w~~~~~|...#...#...#..|*",
+      "*w~~~~~|...#...#...#..|*",
+      "*w~~~~~|..............|*",
+      "*w~~~~~:..............|*",
+      "*w~~~~~:..............|*",
+      "*w~~~~~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*w~~~~~|..............|*",
+      "*wr~~r~|..............|*",
+      "*wr~~r~|.###..]..]..].|*",
+      "*wr~~r~+..l#..]..]..].|*",
+      "*wr~~r~|---|..]..]..].|*",
+      "*wr~~r~|tsu|..]..]..].|*",
+      "*w~~~~~|...+..........|4",
+      "*WWWWWW|---|----------|*",
+      "************************"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "%": "t_secro_console_broken_flesh",
+      "*": "t_secro_grass_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_wall_w_flesh",
+      ".": "t_secro_floor_flesh",
+      ":": "t_secro_door_glass_flesh",
+      "=": "t_secro_wall_g_flesh",
+      "W": "t_secro_chainfence_flesh",
+      "^": "t_secro_chaingate_c_flesh",
+      "r": "t_secro_sidewalk_flesh",
+      "v": "t_secro_sidewalk_flesh",
+      "w": "t_secro_chainfence_flesh",
+      "|": "t_secro_wall_w_flesh",
+      "~": "t_secro_sidewalk_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "]": "f_rack",
+      "l": "f_stool",
+      "r": "f_rack",
+      "s": "f_sink",
+      "u": "f_trashcan",
+      "v": "f_counter"
+    },
+    "place_vendingmachines": [
+      {
+        "x": 8,
+        "y": 2
+      },
+      {
+        "x": 8,
+        "y": 3
+      }
+    ],
+    "toilets": {
+      "t": {}
+    },
+    "place_items": [
+      {
+        "item": "hardware_bulk",
+        "x": 2,
+        "y": [
+          2,
+          7
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "tools_carpentry",
+        "x": 20,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "paint",
+        "x": 17,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "hardware",
+        "x": 14,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "cleaning",
+        "x": 11,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "hardware",
+        "x": 20,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "tools_construction",
+        "x": 17,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "construction_worker",
+        "x": 14,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "farming_seeds",
+        "x": 2,
+        "y": [
+          11,
+          14
+        ],
+        "chance": 90,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "tools_earthworking",
+        "x": 2,
+        "y": [
+          16,
+          20
+        ],
+        "chance": 55,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "farming_seeds",
+        "x": 5,
+        "y": [
+          11,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "supplies_farming",
+        "x": 5,
+        "y": [
+          16,
+          20
+        ],
+        "chance": 65,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "trash",
+        "x": 10,
+        "y": 20,
+        "chance": 75
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "wheelbarrow",
+        "x": [
+          3,
+          4
+        ],
+        "y": [
+          5,
+          9
+        ],
+        "chance": 40
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          21,
+          22
+        ],
+        "y": [
+          3,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          18,
+          19
+        ],
+        "y": [
+          7,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          15,
+          16
+        ],
+        "y": [
+          7,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          12,
+          13
+        ],
+        "y": [
+          7,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          8,
+          10
+        ],
+        "y": [
+          5,
+          16
+        ],
+        "chance": 25
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Hardware Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 375,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "*W^^^WW|-=--:---:---:-|*",
+      "*w~~~%~|..............|*",
+      "*w~~~v~|..............|*",
+      "*w~~~v~|..l%..l%..l%..|*",
+      "*w~~~~~|...#...#...#..|*",
+      "*w~~~~~|...#...#...#..|*",
+      "*w~~~~~|..............|*",
+      "*w~~~~~:..............|*",
+      "*w~~~~~:..............|*",
+      "*w~~~~~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*wr~~r~|...]..]..]..].|*",
+      "*w~~~~~|..............|*",
+      "*wr~~r~|..............|*",
+      "*wr~~r~|.###..]..]..].|*",
+      "*wr~~r~+..l#..]..]..].|*",
+      "*wr~~r~|---|..]..]..].|*",
+      "*wr~~r~|tsu|..]..]..].|*",
+      "*w~~~~~|...+..........|4",
+      "*WWWWWW|---|----------|*",
+      "************************"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "%": "t_secro_console_broken_flesh",
+      "*": "t_secro_grass_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_wall_w_flesh",
+      ".": "t_secro_floor_flesh",
+      ":": "t_secro_door_glass_flesh",
+      "=": "t_secro_wall_g_flesh",
+      "W": "t_secro_chainfence_flesh",
+      "^": "t_secro_chaingate_c_flesh",
+      "r": "t_secro_sidewalk_flesh",
+      "v": "t_secro_sidewalk_flesh",
+      "w": "t_secro_chainfence_flesh",
+      "|": "t_secro_wall_w_flesh",
+      "~": "t_secro_sidewalk_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "]": "f_rack",
+      "l": "f_stool",
+      "r": "f_rack",
+      "s": "f_sink",
+      "u": "f_trashcan",
+      "v": "f_counter"
+    },
+    "place_vendingmachines": [
+      {
+        "x": 8,
+        "y": 2
+      },
+      {
+        "x": 8,
+        "y": 3
+      }
+    ],
+    "toilets": {
+      "t": {}
+    },
+    "place_items": [
+      {
+        "item": "hardware_bulk",
+        "x": 2,
+        "y": [
+          2,
+          7
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "tools_carpentry",
+        "x": 20,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "paint",
+        "x": 17,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "hardware",
+        "x": 14,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "cleaning",
+        "x": 11,
+        "y": [
+          10,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "hardware",
+        "x": 20,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "tools_construction",
+        "x": 17,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "construction_worker",
+        "x": 14,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 80,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "farming_seeds",
+        "x": 2,
+        "y": [
+          11,
+          14
+        ],
+        "chance": 90,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "tools_earthworking",
+        "x": 2,
+        "y": [
+          16,
+          20
+        ],
+        "chance": 55,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "farming_seeds",
+        "x": 5,
+        "y": [
+          11,
+          14
+        ],
+        "chance": 80,
+        "repeat": [
+          4,
+          16
+        ]
+      },
+      {
+        "item": "supplies_farming",
+        "x": 5,
+        "y": [
+          16,
+          20
+        ],
+        "chance": 65,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      {
+        "item": "trash",
+        "x": 10,
+        "y": 20,
+        "chance": 75
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "wheelbarrow",
+        "x": [
+          3,
+          4
+        ],
+        "y": [
+          5,
+          9
+        ],
+        "chance": 40
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          21,
+          22
+        ],
+        "y": [
+          3,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          18,
+          19
+        ],
+        "y": [
+          7,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          15,
+          16
+        ],
+        "y": [
+          7,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          12,
+          13
+        ],
+        "y": [
+          7,
+          22
+        ],
+        "chance": 25
+      },
+      {
+        "vehicle": "shopping_cart",
+        "x": [
+          8,
+          10
+        ],
+        "y": [
+          5,
+          16
+        ],
+        "chance": 25
+      }
+    ]
+  }
+}
+```
+

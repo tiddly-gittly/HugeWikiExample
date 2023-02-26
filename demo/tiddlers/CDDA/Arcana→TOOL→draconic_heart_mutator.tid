@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→draconic_heart_mutator
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：draconic_heart_mutator|http://cdda.aloxaf.cn/search?q=draconic_heart_mutator]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "draconic_heart_mutator",
+  "type": "TOOL",
+  "name": {
+    "str": "sacramental heart"
+  },
+  "description": "A vibrant red chunk of petrified flesh, purified and set in an ornamental mounting like a morbid brooch.  It resonates with unnatural power, as though imbued with the essence of the creature it was cut away from.  Channeling blood essence through it will start you down the path to becoming something …else.  A path you can't return from.",
+  "weight": "2500 g",
+  "volume": "1 L",
+  "//": "The dracolich was summoned during that nebulous window of time when The Veil was wide enough to allow things to be yanked through, but before Zero Day.  Actually completing what they wanted to do with is a post-cataclysm development, but as with the ritual blades we're still reflecting the value of its original form.",
+  "price": "80000 USD",
+  "price_postapoc": "120 USD",
+  "to_hit": -2,
+  "bashing": 3,
+  "material": [
+    "stone",
+    "essencemat"
+  ],
+  "symbol": "*",
+  "looks_like": "petrified_eye",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 10
+      }
+    }
+  ],
+  "charges_per_use": 10,
+  "ammo": "essence_blood_type",
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "You fuel the heart with blood essence, and feel its power resonate through you…",
+    "effects": [
+      {
+        "id": "arcana_dragonblood_sacramental_heart_effect",
+        "duration": 5
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "draconic_heart_mutator",
+  "type": "TOOL",
+  "name": {
+    "str": "圣心"
+  },
+  "description": "一块充满活力的红色石化肉，经过净化，镶嵌在装饰性支架上，像一枚病态的胸针。它与非自然的力量产生共鸣，仿佛浸透了它被切断的生物的本质。通过它引导精血，你将开始走向另一条道路。一条你无法返回的路径。",
+  "weight": "2500 g",
+  "volume": "1 L",
+  "//": "The dracolich was summoned during that nebulous window of time when The Veil was wide enough to allow things to be yanked through, but before Zero Day.  Actually completing what they wanted to do with is a post-cataclysm development, but as with the ritual blades we're still reflecting the value of its original form.",
+  "price": "80000 USD",
+  "price_postapoc": "120 USD",
+  "to_hit": -2,
+  "bashing": 3,
+  "material": [
+    "stone",
+    "essencemat"
+  ],
+  "symbol": "*",
+  "looks_like": "petrified_eye",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 10
+      }
+    }
+  ],
+  "charges_per_use": 10,
+  "ammo": "essence_blood_type",
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "你用精血为心脏注入能量，感受到它的力量通过你产生共鸣…",
+    "effects": [
+      {
+        "id": "arcana_dragonblood_sacramental_heart_effect",
+        "duration": 5
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→robe_shadow_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：robe_shadow_on|http://cdda.aloxaf.cn/search?q=robe_shadow_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "robe_shadow_on",
+  "copy-from": "robe_shadow",
+  "repairs_like": "robe_shadow",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "mantle of shadows (on)",
+    "str_pl": "mantles of shadows (on)"
+  },
+  "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders.  The air wavers around it, barely noticeable to you.",
+  "turns_per_charge": 300,
+  "revert_to": "robe_shadow",
+  "revert_msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
+  "use_action": [
+    {
+      "target": "robe_shadow",
+      "msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
+      "menu_text": "Turn off",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "robe_shadow_on",
+  "copy-from": "robe_shadow",
+  "repairs_like": "robe_shadow",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "阴影之幔（开）",
+    "str_pl": "阴影之幔（开）"
+  },
+  "description": "某种宽松的长袍，肩部有装饰物。空气在它周围扭曲，你几乎看不到它。",
+  "turns_per_charge": 300,
+  "revert_to": "robe_shadow",
+  "revert_msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
+  "use_action": [
+    {
+      "target": "robe_shadow",
+      "msg": "长袍的面料恢复到正常的灰色，消除了之前的幻像。",
+      "menu_text": "关闭",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+

@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_gevaudan
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_gevaudan|http://cdda.aloxaf.cn/search?q=mon_gevaudan]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_youkai.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_gevaudan",
+  "type": "MONSTER",
+  "name": {
+    "str": "Beast of Gévaudan",
+    "str_pl": "Beasts of Gévaudan"
+  },
+  "description": "A HUGE black wolf, around the size of a cow.  The fur is mostly black with almost unnoticeable tawny streaks.  The frame is tall, with each limb being thick compared to a canid of equivalent size, the tail much longer than it should be and ends in a tuft or saber shape.  The red eyes  seem to shine in the darkness, full of hatred against humanity.",
+  "volume": "680 L",
+  "weight": "680 kg",
+  "default_faction": "touhou_youkai_hostile",
+  "bodytype": "dog",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_fur",
+  "hp": 350,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "W",
+  "looks_like": "mon_wolf_mutant_huge",
+  "color": "black",
+  "aggression": 85,
+  "morale": 99,
+  "regen_morale": true,
+  "regenerates": 1,
+  "melee_skill": 10,
+  "melee_dice": 7,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 6,
+      "armor_penetration": 4
+    }
+  ],
+  "dodge": 3,
+  "vision_day": 25,
+  "vision_night": 35,
+  "path_settings": {
+    "max_dist": 25
+  },
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "armor_bash": 8,
+  "armor_cut": 8,
+  "armor_stab": 0,
+  "armor_bullet": 0,
+  "armor_fire": 8,
+  "bleed_rate": 166,
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      85
+    ],
+    [
+      "LUNGE",
+      16
+    ],
+    [
+      "bite_neck_6d4",
+      5
+    ]
+  ],
+  "flags": [
+    "BASHES",
+    "CLIMBS",
+    "HEARS",
+    "KEENNOSE",
+    "PATH_AVOID_DANGER_2",
+    "SEES",
+    "WARM"
+  ],
+  "//3": "Should be weaker-than-normal to stab and bullet damage. Should be weaker-than-normal against soul damage. Also anything with silver should do x2-x4 damage"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_gevaudan",
+  "type": "MONSTER",
+  "name": {
+    "str": "Beast of Gévaudan",
+    "str_pl": "Beasts of Gévaudan"
+  },
+  "description": "一种巨大的黑狼，大约有一头牛那么大，皮毛大多是黑色的，带有几乎看不见的黄褐色条纹。它的骨架很高，每一条腿都比同等大小的犬科动物粗，尾巴比正常长度要长得多，末端呈簇状或军刀状，红色的眼睛似乎在会在黑暗中闪闪发光，充满了对人类的仇恨",
+  "volume": "680 L",
+  "weight": "680 kg",
+  "default_faction": "touhou_youkai_hostile",
+  "bodytype": "dog",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_fur",
+  "hp": 350,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "W",
+  "looks_like": "mon_wolf_mutant_huge",
+  "color": "black",
+  "aggression": 85,
+  "morale": 99,
+  "regen_morale": true,
+  "regenerates": 1,
+  "melee_skill": 10,
+  "melee_dice": 7,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 6,
+      "armor_penetration": 4
+    }
+  ],
+  "dodge": 3,
+  "vision_day": 25,
+  "vision_night": 35,
+  "path_settings": {
+    "max_dist": 25
+  },
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "armor_bash": 8,
+  "armor_cut": 8,
+  "armor_stab": 0,
+  "armor_bullet": 0,
+  "armor_fire": 8,
+  "bleed_rate": 166,
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      85
+    ],
+    [
+      "LUNGE",
+      16
+    ],
+    [
+      "bite_neck_6d4",
+      5
+    ]
+  ],
+  "flags": [
+    "BASHES",
+    "CLIMBS",
+    "HEARS",
+    "KEENNOSE",
+    "PATH_AVOID_DANGER_2",
+    "SEES",
+    "WARM"
+  ],
+  "//3": "Should be weaker-than-normal to stab and bullet damage. Should be weaker-than-normal against soul damage. Also anything with silver should do x2-x4 damage"
+}
+```
+

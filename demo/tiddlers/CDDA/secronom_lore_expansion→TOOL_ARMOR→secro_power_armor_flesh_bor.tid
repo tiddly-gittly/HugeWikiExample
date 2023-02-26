@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_flesh_bor
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_flesh_bor|http://cdda.aloxaf.cn/search?q=secro_power_armor_flesh_bor]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armor_flesh_addons.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_flesh_bor",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "bio-organic reconstructors"
+  },
+  "description": "Located on your hands are flesh weavers allowing you to manipulate organic materials at will.",
+  "weight": "1 g",
+  "volume": "1 ml",
+  "price": "0 cent",
+  "price_postapoc": "0 cent",
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "%",
+  "color": "light_red",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 250
+      }
+    }
+  ],
+  "charges_per_use": 5,
+  "use_action": [
+    {
+      "type": "repair_item",
+      "item_action_type": "repair_fabric",
+      "materials": [
+        "secro_flesh_artificial"
+      ],
+      "skill": "secro_flesh_craft",
+      "tool_quality": 2,
+      "cost_scaling": 0,
+      "move_cost": 425
+    },
+    {
+      "type": "sew_advanced",
+      "materials": [
+        "flesh",
+        "secro_flesh_artificial"
+      ],
+      "skill": "secro_flesh_craft",
+      "clothing_mods": [
+        "secro_flesh_reinforced_coat"
+      ]
+    }
+  ],
+  "material_thickness": 0.02,
+  "flags": [
+    "PERSONAL",
+    "SEMITANGIBLE",
+    "OVERSIZE",
+    "ONLY_ONE",
+    "TRADER_AVOID",
+    "NO_TAKEOFF"
+  ],
+  "qualities": [
+    [
+      "SECRO_FLESH_WEAVING",
+      1
+    ],
+    [
+      "SECRO_FLESH_RECONSTRUCTION",
+      1
+    ]
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 0,
+      "coverage": 0,
+      "material": [
+        "secro_flesh_reinforced"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_flesh_bor",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "生物有机重构器"
+  },
+  "description": "有一个血肉织工在你的双手上，允许你以你的意愿操纵有机材料。",
+  "weight": "1 g",
+  "volume": "1 ml",
+  "price": "0 cent",
+  "price_postapoc": "0 cent",
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "%",
+  "color": "light_red",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 250
+      }
+    }
+  ],
+  "charges_per_use": 5,
+  "use_action": [
+    {
+      "type": "repair_item",
+      "item_action_type": "repair_fabric",
+      "materials": [
+        "secro_flesh_artificial"
+      ],
+      "skill": "secro_flesh_craft",
+      "tool_quality": 2,
+      "cost_scaling": 0,
+      "move_cost": 425
+    },
+    {
+      "type": "sew_advanced",
+      "materials": [
+        "flesh",
+        "secro_flesh_artificial"
+      ],
+      "skill": "secro_flesh_craft",
+      "clothing_mods": [
+        "secro_flesh_reinforced_coat"
+      ]
+    }
+  ],
+  "material_thickness": 0.02,
+  "flags": [
+    "PERSONAL",
+    "SEMITANGIBLE",
+    "OVERSIZE",
+    "ONLY_ONE",
+    "TRADER_AVOID",
+    "NO_TAKEOFF"
+  ],
+  "qualities": [
+    [
+      "SECRO_FLESH_WEAVING",
+      1
+    ],
+    [
+      "SECRO_FLESH_RECONSTRUCTION",
+      1
+    ]
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 0,
+      "coverage": 0,
+      "material": [
+        "secro_flesh_reinforced"
+      ]
+    }
+  ]
+}
+```
+

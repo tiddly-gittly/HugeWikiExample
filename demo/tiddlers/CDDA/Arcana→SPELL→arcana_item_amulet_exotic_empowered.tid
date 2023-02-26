@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_amulet_exotic_empowered
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_amulet_exotic_empowered|http://cdda.aloxaf.cn/search?q=arcana_item_amulet_exotic_empowered]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_amulet_exotic_empowered",
+  "name": {
+    "str": "Hidden Aura"
+  },
+  "description": "Spawns the item needed to make the effects work.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "A strange pulse from the amulet courses through your body!",
+  "effect": "spawn_item",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "effect_str": "halo_amulet_effect",
+  "extra_effects": [
+    {
+      "id": "arcana_item_amulet_exotic_empowered_fatigue",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 349200,
+  "max_duration": 349200
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_amulet_exotic_empowered",
+  "name": {
+    "str": "隐蔽光环"
+  },
+  "description": "Spawns the item needed to make the effects work.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "一道奇怪的脉冲从护身符中缓缓流过你的身体！",
+  "effect": "spawn_item",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "effect_str": "halo_amulet_effect",
+  "extra_effects": [
+    {
+      "id": "arcana_item_amulet_exotic_empowered_fatigue",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 349200,
+  "max_duration": 349200
+}
+```
+

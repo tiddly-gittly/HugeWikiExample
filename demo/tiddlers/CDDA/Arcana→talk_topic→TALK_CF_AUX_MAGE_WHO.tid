@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_AUX_MAGE_WHO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_AUX_MAGE_WHO|http://cdda.aloxaf.cn/search?q=TALK_CF_AUX_MAGE_WHO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_AUX_MAGE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_AUX_MAGE_WHO",
+  "type": "talk_topic",
+  "dynamic_line": "A student, basically.  Of the same sort of phenomena that the people here have studied.  I would prefer such knowledge be shared rather than hoarded, though.",
+  "responses": [
+    {
+      "text": "What sorts of phenomena are you familiar with?",
+      "topic": "TALK_CF_AUX_MAGE_PHENOMENA"
+    },
+    {
+      "switch": true,
+      "text": "What do you mean, we hoard knowledge?",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_CF_AUX_MAGE_HOARD"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "The people here hoard knowledge?",
+      "topic": "TALK_CF_AUX_MAGE_HOARD"
+    },
+    {
+      "text": "Can you teach me any spells?",
+      "topic": "TALK_CF_AUX_MAGE_SPELL_MENU",
+      "condition": {
+        "not": {
+          "u_has_var": "celine_all_spells_known",
+          "type": "flag",
+          "context": "knowledge",
+          "value": "yes"
+        }
+      }
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_CF_AUX_MAGE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_AUX_MAGE_WHO",
+  "type": "talk_topic",
+  "dynamic_line": "基本上是个学生。和这里的人们研究过的现象一样。不过，我更愿意分享这些知识，而不是囤积起来。",
+  "responses": [
+    {
+      "text": "你熟悉什么样的现象？",
+      "topic": "TALK_CF_AUX_MAGE_PHENOMENA"
+    },
+    {
+      "switch": true,
+      "text": "你说我们囤积知识是什么意思？",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_CF_AUX_MAGE_HOARD"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "这里的人囤积知识？",
+      "topic": "TALK_CF_AUX_MAGE_HOARD"
+    },
+    {
+      "text": "Can you teach me any spells？",
+      "topic": "TALK_CF_AUX_MAGE_SPELL_MENU",
+      "condition": {
+        "not": {
+          "u_has_var": "celine_all_spells_known",
+          "type": "flag",
+          "context": "knowledge",
+          "value": "yes"
+        }
+      }
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_CF_AUX_MAGE"
+    }
+  ]
+}
+```
+

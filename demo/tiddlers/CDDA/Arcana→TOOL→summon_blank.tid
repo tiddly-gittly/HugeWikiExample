@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_blank
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_blank|http://cdda.aloxaf.cn/search?q=summon_blank]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_blank",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of the root",
+    "str_pl": "glyphs of the root"
+  },
+  "//": "ID retained to prevent tileset breakage, monster summoned was changed due to blank bodies being outright useless.",
+  "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.  It is easy to control.",
+  "price": "1500 USD",
+  "price_postapoc": "20 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_triffid_summoned",
+    "friendly_msg": "The movement of the plant creature is hard to read, but you suspect it is either friendly, or doesn't regard you as a threat.",
+    "hostile_msg": "Even without words or recognizable body language, it quickly becomes apparent that the plant monster is hostile.",
+    "difficulty": 2,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_blank",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：树根",
+    "str_pl": "雕文：树根"
+  },
+  "//": "ID retained to prevent tileset breakage, monster summoned was changed due to blank bodies being outright useless.",
+  "description": "一个奇怪的银色徽章，上面刻着一种来自外星的植物。使用它会召唤出一个三尖树，并将其绑定到你的意志上。如果成功的话。这个工具很容易控制。",
+  "price": "1500 USD",
+  "price_postapoc": "20 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_triffid_summoned",
+    "friendly_msg": "这个移动的植物生物很难理解，但你怀疑它要么是友好的，要么不把你视作威胁。",
+    "hostile_msg": "即使没有任何语言或可辨认的肢体语言，你很快感觉到这个植物怪物是敌对的。",
+    "difficulty": 2,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+

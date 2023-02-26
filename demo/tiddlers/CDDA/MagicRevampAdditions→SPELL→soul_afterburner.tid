@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→soul_afterburner
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：soul_afterburner|http://cdda.aloxaf.cn/search?q=soul_afterburner]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Soulfire.json
+
+
+!! 原文
+
+```json
+{
+  "id": "soul_afterburner",
+  "type": "SPELL",
+  "name": {
+    "str": "Soul Afterburner"
+  },
+  "description": "You burn a small portion of your soul to gain a large burst of speed.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "VERBAL",
+    "SILENT"
+  ],
+  "effect": "mod_moves",
+  "shape": "blast",
+  "min_damage": 750,
+  "damage_increment": 50,
+  "max_damage": 2900,
+  "max_level": 43,
+  "difficulty": 6,
+  "base_casting_time": 5,
+  "spell_class": "SOULFIRE",
+  "energy_source": "HP",
+  "base_energy_cost": 30,
+  "extra_effects": [
+    {
+      "id": "soul_afterburner_effect_1",
+      "hit_self": true
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "soul_afterburner",
+  "type": "SPELL",
+  "name": {
+    "str": "灵魂助推"
+  },
+  "description": "你燃烧自身一小部分灵魂，获得巨大的速度增益。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "VERBAL",
+    "SILENT"
+  ],
+  "effect": "mod_moves",
+  "shape": "blast",
+  "min_damage": 750,
+  "damage_increment": 50,
+  "max_damage": 2900,
+  "max_level": 43,
+  "difficulty": 6,
+  "base_casting_time": 5,
+  "spell_class": "SOULFIRE",
+  "energy_source": "HP",
+  "base_energy_cost": 30,
+  "extra_effects": [
+    {
+      "id": "soul_afterburner_effect_1",
+      "hit_self": true
+    }
+  ]
+}
+```
+

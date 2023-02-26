@@ -1,0 +1,237 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_blind_clawer
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_blind_clawer|http://cdda.aloxaf.cn/search?q=mon_blind_clawer]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/pecurial_bastards.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_blind_clawer",
+  "looks_like": "mon_zombie_predator",
+  "type": "MONSTER",
+  "name": {
+    "str": "Blind Clawer"
+  },
+  "description": "Tall augmented human host of the BL9, they call it 'The Clawer' due to it being armed with razor sharp mechanical claws that it's capable of activating at will, in order to constrain indiscriminate killing power, it's eyelids were stitched together, though it's loss of sight led to increased hearing making them formidable opponents even when blind",
+  "default_faction": "BL9_cultists",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 235,
+  "speed": 100,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_penetration": 8
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "brown_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "dodge": 3,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "vision_day": 45,
+  "vision_night": 15,
+  "harvest": "zombie",
+  "emit_fields": [
+    "emit_clawer_blind"
+  ],
+  "path_settings": {
+    "max_dist": 5
+  },
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_clawer_charge_target_random"
+      },
+      "cooldown": 17,
+      "monster_message": "<color_red>%1$s charges at %3$s!</color>"
+    },
+    {
+      "id": "impale"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 100,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 14,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's claws at you!",
+      "hit_dmg_npc": "The %1$s swings it's claws at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's claws at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swings it's claws at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's claws at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's claws at <npcname>, but they dodge!"
+    }
+  ],
+  "death_drops": "BL9_Drops_Clawer",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_blind_clawer",
+  "looks_like": "mon_zombie_predator",
+  "type": "MONSTER",
+  "name": {
+    "str": "盲爪"
+  },
+  "description": "BL9是一种体型高大的人类宿主，他们称它为“爪子”，因为它装备了锋利的机械爪子，可以随意激活，为了限制滥杀滥伤的能力，它的眼睑被缝合在一起，虽然它的视力下降导致听力增强，这使得它们即使失明也成为令人生畏的对手",
+  "default_faction": "BL9_cultists",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 235,
+  "speed": 100,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_penetration": 8
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "brown_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "dodge": 3,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "vision_day": 45,
+  "vision_night": 15,
+  "harvest": "zombie",
+  "emit_fields": [
+    "emit_clawer_blind"
+  ],
+  "path_settings": {
+    "max_dist": 5
+  },
+  "special_attacks": [
+    [
+      "PARROT",
+      5
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_clawer_charge_target_random"
+      },
+      "cooldown": 17,
+      "monster_message": "<color_red>%1$s冲向了%3$s！</color>"
+    },
+    {
+      "id": "impale"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 100,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 14,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's claws at you!",
+      "hit_dmg_npc": "The %1$s swings it's claws at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's claws at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swings it's claws at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's claws at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's claws at <npcname>, but they dodge!"
+    }
+  ],
+  "death_drops": "BL9_Drops_Clawer",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

@@ -1,0 +1,205 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_giant
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_giant|http://cdda.aloxaf.cn/search?q=mon_BL9_giant]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/pecurial_bastards.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_giant",
+  "looks_like": "mon_zombie_hulk",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9 Giant"
+  },
+  "description": "A result of one of many horrible inhumane and devilish experiments conducted by 'THEM' - 23 feet tall giant buff humanoid that has basically lost all of it's intelligence and was so unsafe and violent that the cult had to isolate them and keep them locked up in some distant inaccessible areas in giant cages",
+  "default_faction": "BL9_cultists",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 5,
+  "volume": "1875 L",
+  "weight": "400 kg",
+  "hp": 430,
+  "speed": 70,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 5,
+      "armor_penetration": 7
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "white_magenta",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "dodge": 2,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "vision_day": 50,
+  "vision_night": 4,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "id": "crushing_blow"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_giant_random"
+      },
+      "cooldown": 17,
+      "monster_message": "<color_red>%1$s is going wild at %3$s!</color>"
+    },
+    [
+      "SMASH",
+      17
+    ],
+    [
+      "BIO_OP_TAKEDOWN",
+      22
+    ]
+  ],
+  "death_drops": "mon_zombie_hulk_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "DESTROYS",
+    "POISON",
+    "ATTACKMON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_giant",
+  "looks_like": "mon_zombie_hulk",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9巨人"
+  },
+  "description": "这是“他们”所做的许多可怕的、不人道和邪恶的实验中的一个结果——23英尺高的巨型浅黄色人形生物基本上失去了所有的智力，而且非常不安全和暴力，邪教不得不将他们隔离起来，关在一些遥远的难以接近的地方，关在巨大的笼子里",
+  "default_faction": "BL9_cultists",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 5,
+  "volume": "1875 L",
+  "weight": "400 kg",
+  "hp": 430,
+  "speed": 70,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 5,
+      "armor_penetration": 7
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "white_magenta",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "dodge": 2,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "vision_day": 50,
+  "vision_night": 4,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "id": "crushing_blow"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_giant_random"
+      },
+      "cooldown": 17,
+      "monster_message": "<color_red>%1$s如野兽般扑向%3$s！</color>"
+    },
+    [
+      "SMASH",
+      17
+    ],
+    [
+      "BIO_OP_TAKEDOWN",
+      22
+    ]
+  ],
+  "death_drops": "mon_zombie_hulk_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "DESTROYS",
+    "POISON",
+    "ATTACKMON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "FILTHY"
+  ]
+}
+```
+

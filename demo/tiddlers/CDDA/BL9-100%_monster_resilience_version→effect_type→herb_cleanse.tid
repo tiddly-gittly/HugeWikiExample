@@ -1,0 +1,171 @@
+creator: 林一二
+revision: 0
+tags: effect_type BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→effect_type→herb_cleanse
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：herb_cleanse|http://cdda.aloxaf.cn/search?q=herb_cleanse]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "herb_cleanse",
+  "removes_effects": [
+    "fungus",
+    "flu",
+    "dermatik",
+    "bloodworms",
+    "paincysts",
+    "brainworms",
+    "tapeworm",
+    "bleed",
+    "hypovolemia",
+    "blind",
+    "poison",
+    "stung",
+    "badpoison",
+    "foodpoison",
+    "paralyzepoison",
+    "tetanus",
+    "infected",
+    "asthma",
+    "common_cold"
+  ],
+  "name": [
+    "Herb Cleansing"
+  ],
+  "desc": [
+    "You have taken some healing herbs.  It appears to have panacea-like effects along with radioation cleansing properties slowly cleansing your body of radiation; if you take more of it, you'll be able to speed up the process."
+  ],
+  "max_intensity": 1,
+  "base_mods": {
+    "rad_chance": [
+      180
+    ],
+    "rad_min": [
+      -4
+    ],
+    "rad_max": [
+      -3
+    ],
+    "h_mod_chance": [
+      1000
+    ],
+    "vomit_chance": [
+      10000
+    ]
+  },
+  "scaling_mods": {
+    "h_mod_min": [
+      0
+    ],
+    "h_mod_max": [
+      2
+    ],
+    "h_mod_chance": [
+      100
+    ],
+    "vomit_chance": [
+      -1000
+    ],
+    "rad_chance": [
+      180
+    ],
+    "rad_min": [
+      -0.7
+    ],
+    "rad_max": [
+      -0.9
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "herb_cleanse",
+  "removes_effects": [
+    "fungus",
+    "flu",
+    "dermatik",
+    "bloodworms",
+    "paincysts",
+    "brainworms",
+    "tapeworm",
+    "bleed",
+    "hypovolemia",
+    "blind",
+    "poison",
+    "stung",
+    "badpoison",
+    "foodpoison",
+    "paralyzepoison",
+    "tetanus",
+    "infected",
+    "asthma",
+    "common_cold"
+  ],
+  "name": [
+    "药草清洁"
+  ],
+  "desc": [
+    "你吃了一些草药。它似乎有灵丹妙药般的效果，同时具有辐射净化的特性，可以慢慢清除体内的辐射；如果你服用更多，你就能加快这个过程。"
+  ],
+  "max_intensity": 1,
+  "base_mods": {
+    "rad_chance": [
+      180
+    ],
+    "rad_min": [
+      -4
+    ],
+    "rad_max": [
+      -3
+    ],
+    "h_mod_chance": [
+      1000
+    ],
+    "vomit_chance": [
+      10000
+    ]
+  },
+  "scaling_mods": {
+    "h_mod_min": [
+      0
+    ],
+    "h_mod_max": [
+      2
+    ],
+    "h_mod_chance": [
+      100
+    ],
+    "vomit_chance": [
+      -1000
+    ],
+    "rad_chance": [
+      180
+    ],
+    "rad_min": [
+      -0.7
+    ],
+    "rad_max": [
+      -0.9
+    ]
+  }
+}
+```
+

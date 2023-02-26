@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→alchemist_make_potion_bomb
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：alchemist_make_potion_bomb|http://cdda.aloxaf.cn/search?q=alchemist_make_potion_bomb]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Alchemist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "alchemist_make_potion_bomb",
+  "type": "SPELL",
+  "name": {
+    "str": "Manafusion bomb"
+  },
+  "description": "Oversaturates potion starter with mana to create a deadly mana explosion.",
+  "valid_targets": [
+    "none"
+  ],
+  "flags": [
+    "SOMATIC",
+    "WONDER"
+  ],
+  "effect": "recover_energy",
+  "effect_str": "STAMINA",
+  "//": "I almost forgot how i make this spell, so: you cast spell, main one give you a little of stamina, and call secondary spell that create bomb. I make it like that to avoid bug with activated items and timer mechanic incompability and fact that PERMANENT flag works only on max lvl spell.",
+  "components": "spell_components_manabomb",
+  "shape": "blast",
+  "min_damage": 1,
+  "max_damage": 4,
+  "damage_increment": 0.07,
+  "max_level": 43,
+  "spell_class": "ALCHEMIST",
+  "energy_source": "MANA",
+  "base_casting_time": 180000,
+  "final_casting_time": 12000,
+  "casting_time_increment": -5000,
+  "base_energy_cost": 400,
+  "final_energy_cost": 700,
+  "energy_increment": 12,
+  "extra_effects": [
+    {
+      "id": "alchemist_make_potion_bomb_create"
+    }
+  ],
+  "difficulty": 8
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "alchemist_make_potion_bomb",
+  "type": "SPELL",
+  "name": {
+    "str": "魔能聚变炸弹"
+  },
+  "description": "使基础药剂的法力过饱和，造成致命的魔能爆炸。",
+  "valid_targets": [
+    "none"
+  ],
+  "flags": [
+    "SOMATIC",
+    "WONDER"
+  ],
+  "effect": "recover_energy",
+  "effect_str": "STAMINA",
+  "//": "I almost forgot how i make this spell, so: you cast spell, main one give you a little of stamina, and call secondary spell that create bomb. I make it like that to avoid bug with activated items and timer mechanic incompability and fact that PERMANENT flag works only on max lvl spell.",
+  "components": "spell_components_manabomb",
+  "shape": "blast",
+  "min_damage": 1,
+  "max_damage": 4,
+  "damage_increment": 0.07,
+  "max_level": 43,
+  "spell_class": "ALCHEMIST",
+  "energy_source": "MANA",
+  "base_casting_time": 180000,
+  "final_casting_time": 12000,
+  "casting_time_increment": -5000,
+  "base_energy_cost": 400,
+  "final_energy_cost": 700,
+  "energy_increment": 12,
+  "extra_effects": [
+    {
+      "id": "alchemist_make_potion_bomb_create"
+    }
+  ],
+  "difficulty": 8
+}
+```
+

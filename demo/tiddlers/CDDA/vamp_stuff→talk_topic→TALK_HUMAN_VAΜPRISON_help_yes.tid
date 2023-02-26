@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_HUMAN_VAΜPRISON_help_yes
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HUMAN_VA%u039CPRISON_help_yes|http://cdda.aloxaf.cn/search?q=TALK_HUMAN_VA%u039CPRISON_help_yes]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Vampirus/h_prison_cell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_HUMAN_VAΜPRISON_help_yes",
+  "type": "talk_topic",
+  "dynamic_line": "Thank you so much!... But where do we go?",
+  "responses": [
+    {
+      "text": "To the wasteland outskirts.",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_yes_lead",
+      "condition": {
+        "u_has_trait": "wsg2vampirushelp"
+      },
+      "effect": {
+        "add_mission": "VAMP_UNDERSEEKER_quest_vampirus1"
+      }
+    },
+    {
+      "text": "I don't know, but stick with me and you'll be safe.",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_yes_come"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_HUMAN_VAΜPRISON_help_yes",
+  "type": "talk_topic",
+  "dynamic_line": "太感谢了！... 不过现在我们去哪里？",
+  "responses": [
+    {
+      "text": "去荒地郊区。",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_yes_lead",
+      "condition": {
+        "u_has_trait": "wsg2vampirushelp"
+      },
+      "effect": {
+        "add_mission": "VAMP_UNDERSEEKER_quest_vampirus1"
+      }
+    },
+    {
+      "text": "我不知道，但跟着我你会安全的。",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_yes_come"
+    }
+  ]
+}
+```
+

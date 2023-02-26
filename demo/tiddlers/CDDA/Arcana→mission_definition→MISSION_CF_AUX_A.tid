@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_AUX_A
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_AUX_A|http://cdda.aloxaf.cn/search?q=MISSION_CF_AUX_A]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_AUX_A",
+  "type": "mission_definition",
+  "name": {
+    "str": "Bring 5 Blank Scrolls"
+  },
+  "description": "Find or make 5 blank scrolls for the scavengers operating out of the rural church.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 2,
+  "item": "scroll_blank",
+  "count": 5,
+  "value": 12500,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 5
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_aux_a"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "Some of the scavenger team has taken an interest in the sort of strange stuff the locals here deal with.  I talked it out with Ms. McKinnon and she said she can help with teaching, and we've decided to focus on scrolls.  They provide us with a relatively reusable way to deal with trouble while on a scouting run.  If you can get about five blanks for us, we'll be able to figure things out from there.",
+    "accepted": "Thanks.  They seem to know their stuff well enough to assist in teaching us the basics, so once we have some blank scrolls we'll be able to make a couple of the safer ones for our scouts to use.",
+    "rejected": "Alright.  Come see me if you change your mind.",
+    "advice": "They mentioned that the book that teaches you how to use these items is called The Six Pillars.  If you can't find any suitable scrolls out there, that book might be useful for getting the specifications needed to make one.",
+    "inquire": "Any luck so far?",
+    "success": "Thank you, and here's enough of these Scales to hopefully make up for the hassle.  Least I can do.  According to Sofia, they turn blank after you activate the effects put into them.  So we'll be able to make these last a while, as long as the scavengers aren't too rough on the paper.",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_AUX_A",
+  "type": "mission_definition",
+  "name": {
+    "str": "带5张空白卷轴"
+  },
+  "description": "为乡村教堂外的拾荒者寻找或制作5个空白卷轴。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 2,
+  "item": "scroll_blank",
+  "count": 5,
+  "value": 12500,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 5
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_aux_a"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug.",
+    "offer": "一些拾荒者团队对当地人处理的奇怪的东西产生了兴趣。我和麦金农女士谈过了，她说她可以帮助教学，我们决定把重点放在卷轴上。它们为我们提供了一个相对可重用的方法来处理侦察过程中的麻烦。如果你能给我们大约5个空格，我们就可以从那里找到答案。",
+    "accepted": "谢谢。他们似乎对自己的东西了如指掌，有助于教我们基础知识，所以一旦我们有了一些空白卷轴，我们就可以制作一些更安全的卷轴给我们的侦察兵使用。",
+    "rejected": "好吧。如果你改变主意，就来看我。",
+    "advice": "他们提到教你如何使用这些物品的书叫做六大支柱。如果你找不到合适的卷轴，那本书可能有助于获得制作卷轴所需的规范。",
+    "inquire": "到目前为止有什么进展吗？",
+    "success": "谢谢，这里有足够的天平，希望能弥补这些麻烦。至少我能做到。根据索菲亚的说法，当你激活它们的效果后，它们就会变成空白。所以我们可以让这些持续一段时间，只要清道夫不是太粗糙的纸。",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  }
+}
+```
+

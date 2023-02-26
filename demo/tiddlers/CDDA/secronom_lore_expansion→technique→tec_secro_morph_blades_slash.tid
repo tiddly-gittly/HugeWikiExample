@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: technique secronom_lore_expansion
+title: secronom_lore_expansion→technique→tec_secro_morph_blades_slash
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_secro_morph_blades_slash|http://cdda.aloxaf.cn/search?q=tec_secro_morph_blades_slash]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_blades_slash",
+  "name": "Slash",
+  "messages": [
+    "You slashed %s",
+    "<npcname> slashes %s"
+  ],
+  "melee_allowed": true,
+  "weighting": -1,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 1
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.03
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.1
+    }
+  ],
+  "description": "+10% cut, +3% movecost",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_blades_slash",
+  "name": "斜线",
+  "messages": [
+    "你砍了%s",
+    "<npcname> 斩击 %s"
+  ],
+  "melee_allowed": true,
+  "weighting": -1,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 1
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.03
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.1
+    }
+  ],
+  "description": "+10%斩击，+3% 移动耗时",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+

@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: effect_type nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→effect_type→hazard_shield_effect
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：hazard_shield_effect|http://cdda.aloxaf.cn/search?q=hazard_shield_effect]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_bionics.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "hazard_shield_effect",
+  "name": [
+    "Hazard Stabilization"
+  ],
+  "desc": [
+    "Immunity to acid and biological damage.  Prevents, but does not cure, exposure to contact and injected hazards, such as venom.  Food poisoning and toxic gas will still affect you, but you will not take damage-over-time from them."
+  ],
+  "blocks_effects": [
+    "stung",
+    "poison",
+    "badpoison",
+    "venom_dmg",
+    "venom_weaken",
+    "bite",
+    "spores",
+    "paralyzepoison",
+    "dermatik",
+    "tetanus",
+    "corroding"
+  ],
+  "flags": [
+    "EFFECT_ACID_IMMUNE",
+    "EFFECT_BIO_IMMUNE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "hazard_shield_effect",
+  "name": [
+    "危害稳定剂"
+  ],
+  "desc": [
+    "对酸和生物伤害产生免疫力。预防但不能治愈接触和注射危害(如毒液)的影响。食物中毒和有毒气体仍然会影响你，但你不会从它们那里得到长期的损害。"
+  ],
+  "blocks_effects": [
+    "stung",
+    "poison",
+    "badpoison",
+    "venom_dmg",
+    "venom_weaken",
+    "bite",
+    "spores",
+    "paralyzepoison",
+    "dermatik",
+    "tetanus",
+    "corroding"
+  ],
+  "flags": [
+    "EFFECT_ACID_IMMUNE",
+    "EFFECT_BIO_IMMUNE"
+  ]
+}
+```
+

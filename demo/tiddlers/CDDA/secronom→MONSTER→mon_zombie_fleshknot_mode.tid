@@ -1,0 +1,267 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_fleshknot_mode
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_fleshknot_mode|http://cdda.aloxaf.cn/search?q=mon_zombie_fleshknot_mode]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_fleshknot_mode",
+  "type": "MONSTER",
+  "name": {
+    "str": "fleshknot"
+  },
+  "description": "A giant amalgamation of flesh is cemented firmly into the floor and ceiling, preceded by the horrid miasma of putrid stenches emanating from the growth. The majority of the flesh binds into a central, knot-like growth that rhythmically pumps and undulates; similar to that of the heart of a horribly mutated creature.",
+  "default_faction": "zombie",
+  "volume": "1800 L",
+  "weight": "465000 g",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "ABERRATION"
+  ],
+  "diff": 100,
+  "hp": 1215,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☣",
+  "color": "light_red",
+  "emit_fields": [
+    "emit_fleshknot_tents_med"
+  ],
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 6,
+  "melee_dice_sides": 8,
+  "vision_day": 30,
+  "vision_night": 30,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "FLESH_TENDRIL",
+      1
+    ],
+    {
+      "type": "gun",
+      "cooldown": 23,
+      "move_cost": 500,
+      "gun_type": "fleshknot_tent_cluster",
+      "fake_skills": [
+        [
+          "gun",
+          2
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "description": "The fleshknot sends out a cluster of tendrils!",
+      "ranges": [
+        [
+          2,
+          6,
+          "N"
+        ],
+        [
+          7,
+          15,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false
+    },
+    {
+      "type": "gun",
+      "cooldown": 14,
+      "move_cost": 100,
+      "gun_type": "fleshknot_tent_striker",
+      "fake_skills": [
+        [
+          "gun",
+          2
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "description": "The fleshknot thrusts its tentacles!",
+      "ranges": [
+        [
+          1,
+          4,
+          "N"
+        ],
+        [
+          5,
+          11,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false
+    }
+  ],
+  "upgrades": {
+    "half_life": 15,
+    "into": "mon_zombie_fleshknot_stro"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "IMMOBILE",
+    "WARM",
+    "POISON",
+    "IMMOBILE",
+    "NOHEAD",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_fleshknot_mode",
+  "type": "MONSTER",
+  "name": {
+    "str": "血肉疣"
+  },
+  "description": "一大堆肉被牢牢地粘在地板和天花板上，在此之前，生长过程中散发出可怕的恶臭。大部分的肉结合成一个中心的、结状的生长，有节奏地跳动和波动；类似于可怕变异生物的心脏。",
+  "default_faction": "zombie",
+  "volume": "1800 L",
+  "weight": "465000 g",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "ABERRATION"
+  ],
+  "diff": 100,
+  "hp": 1215,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☣",
+  "color": "light_red",
+  "emit_fields": [
+    "emit_fleshknot_tents_med"
+  ],
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 6,
+  "melee_dice_sides": 8,
+  "vision_day": 30,
+  "vision_night": 30,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "FLESH_TENDRIL",
+      1
+    ],
+    {
+      "type": "gun",
+      "cooldown": 23,
+      "move_cost": 500,
+      "gun_type": "fleshknot_tent_cluster",
+      "fake_skills": [
+        [
+          "gun",
+          2
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "description": "血肉疣伸出了一团触手！",
+      "ranges": [
+        [
+          2,
+          6,
+          "N"
+        ],
+        [
+          7,
+          15,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false
+    },
+    {
+      "type": "gun",
+      "cooldown": 14,
+      "move_cost": 100,
+      "gun_type": "fleshknot_tent_striker",
+      "fake_skills": [
+        [
+          "gun",
+          2
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "description": "血肉疣刺出了它的触手！",
+      "ranges": [
+        [
+          1,
+          4,
+          "N"
+        ],
+        [
+          5,
+          11,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false
+    }
+  ],
+  "upgrades": {
+    "half_life": 15,
+    "into": "mon_zombie_fleshknot_stro"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "IMMOBILE",
+    "WARM",
+    "POISON",
+    "IMMOBILE",
+    "NOHEAD",
+    "NO_BREATHE"
+  ]
+}
+```
+

@@ -1,0 +1,581 @@
+creator: 林一二
+revision: 0
+tags: item_group nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→item_group→mon_zombie_bio_unarmed_generic
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_bio_unarmed_generic|http://cdda.aloxaf.cn/search?q=mon_zombie_bio_unarmed_generic]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_monster_drops.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_bio_unarmed_generic",
+  "type": "item_group",
+  "//": "This makes unarmed super soldiers pick gear lists based on the standard versions, but minus the ranged weapon, with the knife always spawning, and with reduced chance of spawning their unique ammo or tools.",
+  "subtype": "collection",
+  "entries": [
+    {
+      "group": "mon_zombie_bio_common"
+    },
+    {
+      "distribution": [
+        {
+          "collection": [
+            {
+              "item": "mil_armor",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "mil_helm",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "vest",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "item": "medium_atomic_battery_cell_rechargeable",
+              "damage": [
+                0,
+                1
+              ],
+              "charges": [
+                0,
+                5000
+              ],
+              "prob": 20
+            }
+          ],
+          "prob": 40
+        },
+        {
+          "collection": [
+            {
+              "item": "hmil_armor",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "hmil_helm",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "vest",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "item": "dump_pouch",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "distribution": [
+                {
+                  "item": "heavy_atomic_battery_cell_rechargeable",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    10000
+                  ],
+                  "prob": 15
+                },
+                {
+                  "item": "plasma",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    1,
+                    2
+                  ],
+                  "prob": 5
+                }
+              ],
+              "prob": 20
+            }
+          ],
+          "prob": 20
+        },
+        {
+          "collection": [
+            {
+              "item": "lmil_armor",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "lmil_helm",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "rucksack",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "item": "dump_pouch",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "item": "medium_atomic_battery_cell_rechargeable",
+              "damage": [
+                0,
+                1
+              ],
+              "charges": [
+                0,
+                5000
+              ],
+              "prob": 20
+            },
+            {
+              "item": "e_tool",
+              "damage": [
+                0,
+                3
+              ],
+              "prob": 50
+            },
+            {
+              "item": "mre_beef_box",
+              "damage": [
+                0,
+                3
+              ],
+              "prob": 75
+            },
+            {
+              "item": "large_tent_kit",
+              "damage": [
+                0,
+                3
+              ],
+              "prob": 25
+            },
+            {
+              "item": "rollmat",
+              "damage": [
+                0,
+                3
+              ],
+              "prob": 50
+            }
+          ],
+          "prob": 10
+        },
+        {
+          "collection": [
+            {
+              "item": "lmil_armor",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "lmil_helm",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "molle_pack",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "distribution": [
+                {
+                  "item": "light_atomic_battery_cell_rechargeable",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    500
+                  ],
+                  "prob": 20
+                },
+                {
+                  "item": "light_atomic_battery_cell_rechargeable",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    500,
+                    1000
+                  ],
+                  "prob": 10
+                }
+              ],
+              "prob": 20
+            },
+            {
+              "item": "chemistry_set",
+              "damage": [
+                0,
+                1
+              ],
+              "prob": 90
+            },
+            {
+              "item": "id_science",
+              "damage": [
+                0,
+                1
+              ],
+              "prob": 10
+            }
+          ],
+          "prob": 30
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_bio_unarmed_generic",
+  "type": "item_group",
+  "//": "This makes unarmed super soldiers pick gear lists based on the standard versions, but minus the ranged weapon, with the knife always spawning, and with reduced chance of spawning their unique ammo or tools.",
+  "subtype": "collection",
+  "entries": [
+    {
+      "group": "mon_zombie_bio_common"
+    },
+    {
+      "distribution": [
+        {
+          "collection": [
+            {
+              "item": "mil_armor",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "mil_helm",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "vest",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "item": "medium_atomic_battery_cell_rechargeable",
+              "damage": [
+                0,
+                1
+              ],
+              "charges": [
+                0,
+                5000
+              ],
+              "prob": 20
+            }
+          ],
+          "prob": 40
+        },
+        {
+          "collection": [
+            {
+              "item": "hmil_armor",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "hmil_helm",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "vest",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "item": "dump_pouch",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "distribution": [
+                {
+                  "item": "heavy_atomic_battery_cell_rechargeable",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    10000
+                  ],
+                  "prob": 15
+                },
+                {
+                  "item": "plasma",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    1,
+                    2
+                  ],
+                  "prob": 5
+                }
+              ],
+              "prob": 20
+            }
+          ],
+          "prob": 20
+        },
+        {
+          "collection": [
+            {
+              "item": "lmil_armor",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "lmil_helm",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "rucksack",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "item": "dump_pouch",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "item": "medium_atomic_battery_cell_rechargeable",
+              "damage": [
+                0,
+                1
+              ],
+              "charges": [
+                0,
+                5000
+              ],
+              "prob": 20
+            },
+            {
+              "item": "e_tool",
+              "damage": [
+                0,
+                3
+              ],
+              "prob": 50
+            },
+            {
+              "item": "mre_beef_box",
+              "damage": [
+                0,
+                3
+              ],
+              "prob": 75
+            },
+            {
+              "item": "large_tent_kit",
+              "damage": [
+                0,
+                3
+              ],
+              "prob": 25
+            },
+            {
+              "item": "rollmat",
+              "damage": [
+                0,
+                3
+              ],
+              "prob": 50
+            }
+          ],
+          "prob": 10
+        },
+        {
+          "collection": [
+            {
+              "item": "lmil_armor",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "lmil_helm",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 75
+            },
+            {
+              "item": "molle_pack",
+              "damage": [
+                1,
+                4
+              ],
+              "prob": 50
+            },
+            {
+              "distribution": [
+                {
+                  "item": "light_atomic_battery_cell_rechargeable",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    500
+                  ],
+                  "prob": 20
+                },
+                {
+                  "item": "light_atomic_battery_cell_rechargeable",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    500,
+                    1000
+                  ],
+                  "prob": 10
+                }
+              ],
+              "prob": 20
+            },
+            {
+              "item": "chemistry_set",
+              "damage": [
+                0,
+                1
+              ],
+              "prob": 90
+            },
+            {
+              "item": "id_science",
+              "damage": [
+                0,
+                1
+              ],
+              "prob": 10
+            }
+          ],
+          "prob": 30
+        }
+      ]
+    }
+  ]
+}
+```
+

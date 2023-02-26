@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_camp_turret_hravager
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_camp_turret_hravager|http://cdda.aloxaf.cn/search?q=mon_sflesh_camp_turret_hravager]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/BO Turrets.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_camp_turret_hravager",
+  "type": "MONSTER",
+  "name": {
+    "str": "ravager flesh heap"
+  },
+  "description": "A heap of conglomerated flesh infused with several cores. This hybrid turret takes advantage on the tendril's relentless assaults and the blade's formation of sharp bone outgrowths.",
+  "default_faction": "secro_flesh3",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "300 L",
+  "weight": "3125 kg",
+  "hp": 300,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⧻",
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "color": "light_red_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "harvest": "exempt",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_camp_turret_hravager_target"
+      },
+      "cooldown": 8,
+      "monster_message": "<color_yellow>%1$s writhes wildly!</color>"
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "IMMOBILE",
+    "PACIFIST"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_camp_turret_hravager",
+  "type": "MONSTER",
+  "name": {
+    "str": "掠夺者肉堆"
+  },
+  "description": "一个与多种核心相结合的混合肉堆。这种混合炮塔既可以利用其触手，也可以利用其快速生长形成的尖锐骨刀来进行攻击。",
+  "default_faction": "secro_flesh3",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "300 L",
+  "weight": "3125 kg",
+  "hp": 300,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⧻",
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "color": "light_red_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "harvest": "exempt",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_camp_turret_hravager_target"
+      },
+      "cooldown": 8,
+      "monster_message": "<color_yellow>%1$s疯狂地扭动着！</color>"
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "IMMOBILE",
+    "PACIFIST"
+  ]
+}
+```
+

@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→SPELL→death_mib
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：death_mib|http://cdda.aloxaf.cn/search?q=death_mib]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monster_special_attacks/thex_monster_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "death_mib",
+  "type": "SPELL",
+  "name": {
+    "str": "MIB death (chain component)"
+  },
+  "description": "Chance to just die, or to spawn something else on death.",
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "death_mib_none"
+    },
+    {
+      "id": "death_mib_none"
+    },
+    {
+      "id": "death_mib_shadowspawn"
+    },
+    {
+      "id": "death_mib_alienspawn"
+    },
+    {
+      "id": "death_mib_terminatorspawn"
+    }
+  ],
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "shape": "blast",
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "flags": [
+    "NO_EXPLOSION_SFX",
+    "WONDER",
+    "SILENT"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "death_mib",
+  "type": "SPELL",
+  "name": {
+    "str": "MIB death (chain component)"
+  },
+  "description": "Chance to just die, or to spawn something else on death.",
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "death_mib_none"
+    },
+    {
+      "id": "death_mib_none"
+    },
+    {
+      "id": "death_mib_shadowspawn"
+    },
+    {
+      "id": "death_mib_alienspawn"
+    },
+    {
+      "id": "death_mib_terminatorspawn"
+    }
+  ],
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "shape": "blast",
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "flags": [
+    "NO_EXPLOSION_SFX",
+    "WONDER",
+    "SILENT"
+  ]
+}
+```
+

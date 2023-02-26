@@ -1,0 +1,165 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→secro_flesh_splicer_target
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_splicer_target|http://cdda.aloxaf.cn/search?q=secro_flesh_splicer_target]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_magic.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "secro_flesh_splicer_target",
+  "name": {
+    "str": "a spell"
+  },
+  "description": "Target spell casted by an item. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+  "message": "<color_dark_gray>The bio-organic splicer's tentacles start to writhe violently...\n<color_light_green>The bio-organic splicer rakes %3$s!",
+  "extra_effects": [
+    {
+      "id": "secro_flesh_splicer_zombie_blade"
+    },
+    {
+      "id": "secro_flesh_splicer_zombie_WALKINGPOTATO"
+    },
+    {
+      "id": "secro_flesh_splicer_zombie_mouth"
+    },
+    {
+      "id": "secro_flesh_splicer_zombie_tendril"
+    },
+    {
+      "id": "secro_flesh_splicer_zombie_titan"
+    },
+    {
+      "id": "secro_flesh_splicer_zombie_unify"
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_zombie_blade",
+    "mon_zombie_sharpblade",
+    "mon_zombie_serratedblade",
+    "mon_zombie_razor",
+    "mon_zombie_WALKINGPOTATO",
+    "mon_zombie_zawk",
+    "mon_zombie_zoth",
+    "mon_zombie_nightwail",
+    "mon_zombie_mouth",
+    "mon_zombie_bellymouth",
+    "mon_zombie_omouth",
+    "mon_zombie_suctionmouth",
+    "mon_zombie_tendrils",
+    "mon_zombie_thicktendrils",
+    "mon_zombie_tendricles",
+    "mon_zombie_tentawraith",
+    "mon_zombie_titan",
+    "mon_zombie_blacktitan",
+    "mon_zombie_unify",
+    "mon_zombie_unity",
+    "mon_zombie_hemo"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_magic_target",
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "secro_flesh_splicer_target",
+  "name": {
+    "str": "咒语"
+  },
+  "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
+  "message": "<color_dark_gray>生物有机剪接器的触手开始剧烈扭动…\n<color_light_green>生物有机剪接器扫过了%3$s！",
+  "extra_effects": [
+    {
+      "id": "secro_flesh_splicer_zombie_blade"
+    },
+    {
+      "id": "secro_flesh_splicer_zombie_WALKINGPOTATO"
+    },
+    {
+      "id": "secro_flesh_splicer_zombie_mouth"
+    },
+    {
+      "id": "secro_flesh_splicer_zombie_tendril"
+    },
+    {
+      "id": "secro_flesh_splicer_zombie_titan"
+    },
+    {
+      "id": "secro_flesh_splicer_zombie_unify"
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_zombie_blade",
+    "mon_zombie_sharpblade",
+    "mon_zombie_serratedblade",
+    "mon_zombie_razor",
+    "mon_zombie_WALKINGPOTATO",
+    "mon_zombie_zawk",
+    "mon_zombie_zoth",
+    "mon_zombie_nightwail",
+    "mon_zombie_mouth",
+    "mon_zombie_bellymouth",
+    "mon_zombie_omouth",
+    "mon_zombie_suctionmouth",
+    "mon_zombie_tendrils",
+    "mon_zombie_thicktendrils",
+    "mon_zombie_tendricles",
+    "mon_zombie_tentawraith",
+    "mon_zombie_titan",
+    "mon_zombie_blacktitan",
+    "mon_zombie_unify",
+    "mon_zombie_unity",
+    "mon_zombie_hemo"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_magic_target",
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+

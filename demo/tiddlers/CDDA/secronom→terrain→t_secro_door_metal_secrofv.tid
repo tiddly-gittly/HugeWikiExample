@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_door_metal_secrofv
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_door_metal_secrofv|http://cdda.aloxaf.cn/search?q=t_secro_door_metal_secrofv]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_door_metal_secrofv",
+  "name": "biohazard metal door",
+  "description": "A galvanized steel door, forged to withstand punishment and impede anyone or anything. Typically used in conjunction with automated electronic locking mechanisms that require an external source to unlock. It has a biohazard symbol depicting something unearthly on the other side... as the flesh fibers crawl out of the edges. A card reader is embedded to the door, and it requires a special key card for it to open.",
+  "//": "Actually locked, as in, LOCKED",
+  "symbol": "+",
+  "looks_like": "t_door_metal_c",
+  "color": "cyan",
+  "move_cost": 0,
+  "coverage": 95,
+  "roof": "t_flat_roof",
+  "flags": [
+    "NOITEM",
+    "REDUCE_SCENT",
+    "CONNECT_TO_WALL",
+    "LOCKED",
+    "MINEABLE",
+    "BLOCK_WIND"
+  ],
+  "bash": {
+    "str_min": 120,
+    "str_max": 350,
+    "sound": "metal screeching!",
+    "sound_fail": "clang!",
+    "ter_set": "t_mdoor_frame",
+    "items": [
+      {
+        "item": "scrap",
+        "count": [
+          15,
+          30
+        ]
+      },
+      {
+        "item": "steel_plate",
+        "prob": 80
+      },
+      {
+        "item": "hinge",
+        "count": [
+          1,
+          4
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_door_metal_secrofv",
+  "name": "金属门 <生物危害>",
+  "description": "一个镀锌钢门，能够阻挡任何人或事物对其进行的破坏。它通常与需要外部电源解锁的自动电子锁定机结合使用。门的上面有一个生物危害标记，这说明门的另一边有一些异常的东西，比如正从门的边缘向外缓慢爬出的血肉纤维... 门上嵌着一个读卡器，需要一个特殊的钥匙卡才能打开。",
+  "//": "Actually locked, as in, LOCKED",
+  "symbol": "+",
+  "looks_like": "t_door_metal_c",
+  "color": "cyan",
+  "move_cost": 0,
+  "coverage": 95,
+  "roof": "t_flat_roof",
+  "flags": [
+    "NOITEM",
+    "REDUCE_SCENT",
+    "CONNECT_TO_WALL",
+    "LOCKED",
+    "MINEABLE",
+    "BLOCK_WIND"
+  ],
+  "bash": {
+    "str_min": 120,
+    "str_max": 350,
+    "sound": "metal screeching!",
+    "sound_fail": "clang!",
+    "ter_set": "t_mdoor_frame",
+    "items": [
+      {
+        "item": "scrap",
+        "count": [
+          15,
+          30
+        ]
+      },
+      {
+        "item": "steel_plate",
+        "prob": 80
+      },
+      {
+        "item": "hinge",
+        "count": [
+          1,
+          4
+        ]
+      }
+    ]
+  }
+}
+```
+

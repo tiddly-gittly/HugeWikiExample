@@ -1,0 +1,299 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[28]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "//": "9x9 workstation with sealed storage for magic stuff.",
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "lab_room_9x9_rare",
+  "object": {
+    "mapgensize": [
+      9,
+      9
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      ".........",
+      ".|||||||.",
+      ".|.rrrr|.",
+      ".L..y..|.",
+      ".|...tt|.",
+      ".||ggg||.",
+      "...xcc...",
+      "....h....",
+      "........."
+    ],
+    "palettes": [
+      "lab_palette"
+    ],
+    "terrain": {
+      "y": "t_thconc_floor_olight"
+    },
+    "mapping": {
+      "c": {
+        "items": [
+          {
+            "item": "office",
+            "chance": 50
+          },
+          {
+            "item": "textbooks",
+            "chance": 25
+          },
+          {
+            "item": "science",
+            "chance": 10
+          }
+        ]
+      },
+      "r": {
+        "item": [
+          {
+            "item": "recipe_lab_arcana",
+            "chance": 10
+          }
+        ],
+        "items": [
+          {
+            "item": "lab_misc_anomalous_items",
+            "chance": 90
+          },
+          {
+            "item": "magic_books_postapoc",
+            "chance": 25
+          },
+          {
+            "item": "arcana_hunt_random",
+            "chance": 50
+          },
+          {
+            "item": "lab_magitech_general",
+            "chance": 25
+          },
+          {
+            "item": "autodoc_installation_magitech",
+            "chance": 5
+          }
+        ]
+      },
+      "t": {
+        "item": [
+          {
+            "item": "bag_body_bag",
+            "chance": 50
+          }
+        ],
+        "items": [
+          {
+            "item": "dissection",
+            "chance": 50
+          },
+          {
+            "item": "dissection",
+            "chance": 25
+          }
+        ]
+      }
+    },
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_thorny",
+          "mon_zombie_brute_ninja",
+          "mon_homunculus",
+          "mon_flesh_angel",
+          "mon_zombie_master",
+          "mon_zombie_necro",
+          "mon_zombie_necro_boomer"
+        ],
+        "x": [
+          3,
+          4
+        ],
+        "y": [
+          3,
+          4
+        ],
+        "chance": 90
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "cf_church_upgrade_4_d",
+  "object": {
+    "mapgensize": [
+      10,
+      10
+    ],
+    "rows": [
+      "... .. ...",
+      "...+..+...",
+      "...+..+...",
+      "... .. ...",
+      "    ..    ",
+      "... .. ...",
+      "...+..+...",
+      "          ",
+      "          ",
+      "          "
+    ],
+    "terrain": {
+      ".": "t_floor_primitive",
+      "+": "t_door_c"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "9x9 workstation with sealed storage for magic stuff.",
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "lab_room_9x9_rare",
+  "object": {
+    "mapgensize": [
+      9,
+      9
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      ".........",
+      ".|||||||.",
+      ".|.rrrr|.",
+      ".L..y..|.",
+      ".|...tt|.",
+      ".||ggg||.",
+      "...xcc...",
+      "....h....",
+      "........."
+    ],
+    "palettes": [
+      "lab_palette"
+    ],
+    "terrain": {
+      "y": "t_thconc_floor_olight"
+    },
+    "mapping": {
+      "c": {
+        "items": [
+          {
+            "item": "office",
+            "chance": 50
+          },
+          {
+            "item": "textbooks",
+            "chance": 25
+          },
+          {
+            "item": "science",
+            "chance": 10
+          }
+        ]
+      },
+      "r": {
+        "item": [
+          {
+            "item": "recipe_lab_arcana",
+            "chance": 10
+          }
+        ],
+        "items": [
+          {
+            "item": "lab_misc_anomalous_items",
+            "chance": 90
+          },
+          {
+            "item": "magic_books_postapoc",
+            "chance": 25
+          },
+          {
+            "item": "arcana_hunt_random",
+            "chance": 50
+          },
+          {
+            "item": "lab_magitech_general",
+            "chance": 25
+          },
+          {
+            "item": "autodoc_installation_magitech",
+            "chance": 5
+          }
+        ]
+      },
+      "t": {
+        "item": [
+          {
+            "item": "bag_body_bag",
+            "chance": 50
+          }
+        ],
+        "items": [
+          {
+            "item": "dissection",
+            "chance": 50
+          },
+          {
+            "item": "dissection",
+            "chance": 25
+          }
+        ]
+      }
+    },
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_thorny",
+          "mon_zombie_brute_ninja",
+          "mon_homunculus",
+          "mon_flesh_angel",
+          "mon_zombie_master",
+          "mon_zombie_necro",
+          "mon_zombie_necro_boomer"
+        ],
+        "x": [
+          3,
+          4
+        ],
+        "y": [
+          3,
+          4
+        ],
+        "chance": 90
+      }
+    ]
+  }
+}
+```
+

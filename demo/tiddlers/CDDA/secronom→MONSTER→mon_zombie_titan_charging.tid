@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_titan_charging
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_titan_charging|http://cdda.aloxaf.cn/search?q=mon_zombie_titan_charging]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Titan.json
+
+
+!! 原文
+
+```json
+{
+  "//": "20+ bash res, 10+ cut/bullet res. Bonus res are doubled for black titan.",
+  "id": "mon_zombie_titan_charging",
+  "copy-from": "mon_zombie_titan",
+  "type": "MONSTER",
+  "name": {
+    "str": "titan"
+  },
+  "description": "A swollen body covered in thick exoskeleton plates and protruding bones lay under its bulging muscles. Its hands are crossed together.",
+  "speed": 55,
+  "armor_bash": 30,
+  "armor_cut": 26,
+  "armor_bullet": 20,
+  "symbol": "⩞",
+  "color": "red_magenta",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_titan_charging_target"
+      },
+      "cooldown": 6,
+      "monster_message": "<color_yellow>%1$s charges at %3$s!</color>"
+    },
+    [
+      "SMASH",
+      9999
+    ]
+  ],
+  "extend": {
+    "flags": [
+      "PACIFIST"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "20+ bash res, 10+ cut/bullet res. Bonus res are doubled for black titan.",
+  "id": "mon_zombie_titan_charging",
+  "copy-from": "mon_zombie_titan",
+  "type": "MONSTER",
+  "name": {
+    "str": "泰坦丧尸"
+  },
+  "description": "一个肿胀的身体覆盖着厚厚的外骨骼板和突出的骨头躺在它隆起的肌肉下面。它的双手交叉在一起。",
+  "speed": 55,
+  "armor_bash": 30,
+  "armor_cut": 26,
+  "armor_bullet": 20,
+  "symbol": "⩞",
+  "color": "red_magenta",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_titan_charging_target"
+      },
+      "cooldown": 6,
+      "monster_message": "<color_yellow> %1$s收费%3$s！</color>"
+    },
+    [
+      "SMASH",
+      9999
+    ]
+  ],
+  "extend": {
+    "flags": [
+      "PACIFIST"
+    ]
+  }
+}
+```
+

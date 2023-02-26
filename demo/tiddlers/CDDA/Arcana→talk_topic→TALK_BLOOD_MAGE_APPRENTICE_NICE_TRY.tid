@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_APPRENTICE_NICE_TRY
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_APPRENTICE_NICE_TRY|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_APPRENTICE_NICE_TRY]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_APPRENTICE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_NICE_TRY",
+  "type": "talk_topic",
+  "dynamic_line": "You don't just barge in here and expect to walk out without explaining yourself.  Why should I let you leave?",
+  "responses": [
+    {
+      "text": "I am a servant of He From Beyond The Veil.  There is no need for quarrel.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_VEIL"
+    },
+    {
+      "text": "I am just a student of the arcane, seeking further knowledge.  I'll leave peacefully, honest.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_MISTAKE"
+    },
+    {
+      "text": "Look at me.  I'm like you, there's no need for us to fight.",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD"
+    },
+    {
+      "text": "I didn't mean to intrude.  Sorry.  I'll just be going.",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 5
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_BEGONE"
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_PATHETIC"
+      }
+    },
+    {
+      "text": "[ATTACK] Fuck you, I do what I want.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_NICE_TRY",
+  "type": "talk_topic",
+  "dynamic_line": "你不只是闯进这里，希望自己不做解释就走了。我为什么要让你离开？",
+  "responses": [
+    {
+      "text": "我是帷幕彼端古神的仆人。没有必要争吵。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_VEIL"
+    },
+    {
+      "text": "我只是一个神秘的学生，寻求更多的知识。我会平静地，诚实地离开。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_MISTAKE"
+    },
+    {
+      "text": "看看我。我和你一样，我们没必要打架。",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD"
+    },
+    {
+      "text": "我不是故意打扰的。对不起的。我就走。",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 5
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_BEGONE"
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_PATHETIC"
+      }
+    },
+    {
+      "text": "[攻击]去你妈的，我做我想做的。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,163 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_charger_spike
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_charger_spike|http://cdda.aloxaf.cn/search?q=mon_zombie_charger_spike]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Charger.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_charger_spike",
+  "type": "MONSTER",
+  "name": "charger zombie",
+  "description": "A once stout zombie, now covered by protruding bone spikes under its skin.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "132500 ml",
+  "weight": "173000 g",
+  "harvest": "zombie",
+  "hp": 235,
+  "speed": 70,
+  "diff": 20,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "➡",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 350,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 18,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "armor_stab": 2,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_charger_spike_charge_target_random"
+      },
+      "cooldown": 180,
+      "monster_message": "<color_yellow>%1$s is charging towards %3$s!</color>"
+    },
+    [
+      "charger_spike_tackle",
+      6
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "WARM",
+    "STUN_IMMUNE",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_charger_spike",
+  "type": "MONSTER",
+  "name": "冲锋者丧尸",
+  "description": "A once stout zombie, now covered by protruding bone spikes under its skin.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "132500 ml",
+  "weight": "173000 g",
+  "harvest": "zombie",
+  "hp": 235,
+  "speed": 70,
+  "diff": 20,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "➡",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 350,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 18,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "armor_stab": 2,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_charger_spike_charge_target_random"
+      },
+      "cooldown": 180,
+      "monster_message": "<color_yellow>%1$s is charging towards %3$s！</color>"
+    },
+    [
+      "charger_spike_tackle",
+      6
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "WARM",
+    "STUN_IMMUNE",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

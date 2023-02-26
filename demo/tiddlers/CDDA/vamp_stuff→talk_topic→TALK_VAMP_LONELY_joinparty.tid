@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_LONELY_joinparty
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_LONELY_joinparty|http://cdda.aloxaf.cn/search?q=TALK_VAMP_LONELY_joinparty]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Isolated/v_lo_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_LONELY_joinparty",
+  "type": "talk_topic",
+  "//": "You can immediately put any isolated vampires you meet into your roster if you've done all the quest by one of them.",
+  "dynamic_line": "You sure about that?",
+  "responses": [
+    {
+      "text": "Yes, I do.",
+      "effect": "follow",
+      "topic": "TALK_DONE",
+      "opinion": {
+        "trust": 5,
+        "fear": -2,
+        "value": 3,
+        "anger": -2
+      }
+    },
+    {
+      "text": "I take back what I've said...",
+      "topic": "TALK_VAMP_LONELY"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_LONELY_joinparty",
+  "type": "talk_topic",
+  "//": "You can immediately put any isolated vampires you meet into your roster if you've done all the quest by one of them.",
+  "dynamic_line": "你确定吗？",
+  "responses": [
+    {
+      "text": "是的。",
+      "effect": "follow",
+      "topic": "TALK_DONE",
+      "opinion": {
+        "trust": 5,
+        "fear": -2,
+        "value": 3,
+        "anger": -2
+      }
+    },
+    {
+      "text": "我收回之前我说的话",
+      "topic": "TALK_VAMP_LONELY"
+    }
+  ]
+}
+```
+

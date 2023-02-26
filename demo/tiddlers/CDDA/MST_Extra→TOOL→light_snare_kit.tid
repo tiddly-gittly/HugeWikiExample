@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: TOOL MST_Extra
+title: MST_Extra→TOOL→light_snare_kit
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：light_snare_kit|http://cdda.aloxaf.cn/search?q=light_snare_kit]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "light_snare_kit",
+  "type": "TOOL",
+  "name": {
+    "str": "light snare kit"
+  },
+  "description": "This is a kit for a simple trap consisting of a string noose and a snare trigger.  It requires a young tree nearby.  It is effective at trapping and killing some small animals.",
+  "weight": "886 g",
+  "volume": "250 ml",
+  "price": 100,
+  "cutting": 6,
+  "material": [
+    "wood"
+  ],
+  "symbol": ";",
+  "color": "brown",
+  "use_action": {
+    "type": "place_trap",
+    "needs_neighbor_terrain": "t_tree_young",
+    "trap": "tr_light_snare",
+    "moves": 150,
+    "practice": 2,
+    "done_message": "You set the snare trap."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "light_snare_kit",
+  "type": "TOOL",
+  "name": {
+    "str": "小型捕猎陷阱"
+  },
+  "description": "这是由细绳与有活结的套索组成的一个简单的陷阱。需要附近有颗小树，用来诱捕可怜且美味的小动物。",
+  "weight": "886 g",
+  "volume": "250 ml",
+  "price": 100,
+  "cutting": 6,
+  "material": [
+    "wood"
+  ],
+  "symbol": ";",
+  "color": "brown",
+  "use_action": {
+    "type": "place_trap",
+    "needs_neighbor_terrain": "t_tree_young",
+    "trap": "tr_light_snare",
+    "moves": 150,
+    "practice": 2,
+    "done_message": "You set the snare trap."
+  }
+}
+```
+

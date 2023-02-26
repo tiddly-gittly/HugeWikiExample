@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→ice_shield
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ice_shield|http://cdda.aloxaf.cn/search?q=ice_shield]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/kelvinist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "ice_shield",
+  "type": "SPELL",
+  "name": {
+    "str": "Ice Shield"
+  },
+  "description": "Creates a magical shield of ice on your arm, you can defend yourself with it in melee combat and use it to bash.",
+  "valid_targets": [
+    "none"
+  ],
+  "flags": [
+    "NO_LEGS",
+    "CONCENTRATE",
+    "VERBAL"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "spawn_item",
+  "effect_str": "shield_ice",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "spell_class": "KELVINIST",
+  "difficulty": 2,
+  "max_level": 30,
+  "base_casting_time": 150,
+  "base_energy_cost": 100,
+  "min_duration": 10000,
+  "max_duration": 75000,
+  "duration_increment": 3000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "ice_shield",
+  "type": "SPELL",
+  "name": {
+    "str": "冰盾"
+  },
+  "description": "在你的手臂上制造一个魔法冰盾，你可以用它在近战中保护自己，并使用它来攻击。",
+  "valid_targets": [
+    "none"
+  ],
+  "flags": [
+    "NO_LEGS",
+    "CONCENTRATE",
+    "VERBAL"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "spawn_item",
+  "effect_str": "shield_ice",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "spell_class": "KELVINIST",
+  "difficulty": 2,
+  "max_level": 30,
+  "base_casting_time": 150,
+  "base_energy_cost": 100,
+  "min_duration": 10000,
+  "max_duration": 75000,
+  "duration_increment": 3000
+}
+```
+

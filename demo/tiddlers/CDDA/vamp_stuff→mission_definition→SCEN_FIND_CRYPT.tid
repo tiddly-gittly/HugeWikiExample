@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→SCEN_FIND_CRYPT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SCEN_FIND_CRYPT|http://cdda.aloxaf.cn/search?q=SCEN_FIND_CRYPT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Missions obtained from starting with the 'Vampire Wannabe' scenario.",
+  "id": "SCEN_FIND_CRYPT",
+  "type": "mission_definition",
+  "name": {
+    "str": "Reach a memorial crypt"
+  },
+  "description": "Travel to a <color_light_blue>memorial crypt</color> then inspect its surroundings.",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "destination": "crypt1_b1",
+  "difficulty": 1,
+  "value": 0,
+  "origins": [
+    "ORIGIN_GAME_START"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "crypt1",
+      "om_special": "Memorial Crypt",
+      "reveal_radius": 2,
+      "search_range": 90,
+      "z": 0
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Missions obtained from starting with the 'Vampire Wannabe' scenario.",
+  "id": "SCEN_FIND_CRYPT",
+  "type": "mission_definition",
+  "name": {
+    "str": "到达纪念墓穴"
+  },
+  "description": "前往<color_light_blue>纪念地穴</color>，然后检查其周围环境。",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "destination": "crypt1_b1",
+  "difficulty": 1,
+  "value": 0,
+  "origins": [
+    "ORIGIN_GAME_START"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "crypt1",
+      "om_special": "Memorial Crypt",
+      "reveal_radius": 2,
+      "search_range": 90,
+      "z": 0
+    }
+  }
+}
+```
+

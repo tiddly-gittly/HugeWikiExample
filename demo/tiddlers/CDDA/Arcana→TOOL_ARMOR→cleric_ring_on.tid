@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→cleric_ring_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cleric_ring_on|http://cdda.aloxaf.cn/search?q=cleric_ring_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "cleric_ring_on",
+  "type": "TOOL_ARMOR",
+  "copy-from": "cleric_ring",
+  "repairs_like": "cleric_ring",
+  "name": {
+    "str": "ring of the fallen angel (on)",
+    "str_pl": "rings of the fallen angel (on)"
+  },
+  "description": "A simple silver ring, adorned with a small red gem and a wing motif.  The wings encircle the gem and shimmer with an eerie pale glow, its protective magic protecting against various anomalous influences.",
+  "turns_per_charge": 450,
+  "revert_to": "cleric_ring",
+  "use_action": {
+    "target": "cleric_ring",
+    "msg": "The ring's energy fades, returning to normal.",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "DIMENSIONAL_ANCHOR",
+      "PORTAL_PROOF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "cleric_ring_on",
+  "type": "TOOL_ARMOR",
+  "copy-from": "cleric_ring",
+  "repairs_like": "cleric_ring",
+  "name": {
+    "str": "堕落天使之戒（激活）",
+    "str_pl": "堕落天使之戒（激活）"
+  },
+  "description": "一枚简单的银戒指，饰以红色小宝石和翅膀图案。翅膀环绕着宝石，闪烁着诡异的苍白光芒，它的保护魔法可以抵御各种异常的影响。",
+  "turns_per_charge": 450,
+  "revert_to": "cleric_ring",
+  "use_action": {
+    "target": "cleric_ring",
+    "msg": "戒指的能量消失，恢复正常。",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "DIMENSIONAL_ANCHOR",
+      "PORTAL_PROOF"
+    ]
+  }
+}
+```
+

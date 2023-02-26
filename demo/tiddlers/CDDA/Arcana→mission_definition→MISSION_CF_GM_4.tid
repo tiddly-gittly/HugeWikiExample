@@ -1,0 +1,231 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_GM_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_GM_4|http://cdda.aloxaf.cn/search?q=MISSION_CF_GM_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_GM_4",
+  "type": "mission_definition",
+  "name": {
+    "str": "Cleanse The Anomaly"
+  },
+  "description": "Seek out an anomalous structure that has recently forced its way into our world.  Kill whatever abomination lies at its heart.",
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 8,
+  "value": 50000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "arcana_structure_anomalous_entrance",
+      "om_special": "arcana_anomaly_resurgence",
+      "om_terrain_replace": "field",
+      "reveal_radius": 5,
+      "random": true,
+      "search_range": 180,
+      "min_distance": 20
+    },
+    "update_mapgen": [
+      {
+        "om_terrain": "arcana_structure_anomalous_finale",
+        "place_monster": [
+          {
+            "monster": "mon_seraphic_shade",
+            "x": 20,
+            "y": 5,
+            "target": true
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_GM_4_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_GM_4_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_GM_4_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_GM_4_d"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Grant us strength…",
+    "offer": "The time has come.  We have discussed the nature of this anomaly, confirmed the source.  There is something there, subtle but becoming more detectable by the day.  Whatever disruption lies within, it must be cleansed.  I trust you with this task, if you accept it.",
+    "accepted": "God and gods willing, return safe and sound.  I will once more authorize you to request the aid of one of our hunters if you require it.  Furthermore, if you did not already seek their aid last time, you may still do so.  We can afford that much at least, for a mission this important.",
+    "rejected": "We're stretched thin as it is, please return as soon as you're able to accept this task.  I worry that things will only worsen if this threat is left unchecked.",
+    "advice": "Reports suggest it is a warped, ruined remnant of some unholy alien structure, similar to what those chitinous abominations build.  I have no doubt that there are greater anomalies and hazards within.  Exercise extreme caution, bring any firepower as well as physical and magical protection that you can obtain.",
+    "inquire": "Have you destroyed the threat?",
+    "success": "Good.  Seeing you walk in here alive, I could almost sense that the deed was done.  I do not know the cause of this, nor what the future holds.  Only that we have bought ourselves much-needed time, to pursue any research that might prevent further catastrophes in the future.  There are no further tasks I can offer you, nor any greater reward I can spare.  We, perhaps all of humanity in the long term, are in your debt.",
+    "success_lie": "What idiocy is this?",
+    "failure": "But how?"
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_var": "johnathan_mission_finale",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 20
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_GM_5_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_GM_5_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_GM_5_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_GM_5_d"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_GM_4",
+  "type": "mission_definition",
+  "name": {
+    "str": "清除异常"
+  },
+  "description": "寻找一个最近强行进入我们世界的反常结构。杀掉心中所有可憎的东西。",
+  "goal": "MGOAL_KILL_MONSTER",
+  "difficulty": 8,
+  "value": 50000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "arcana_structure_anomalous_entrance",
+      "om_special": "arcana_anomaly_resurgence",
+      "om_terrain_replace": "field",
+      "reveal_radius": 5,
+      "random": true,
+      "search_range": 180,
+      "min_distance": 20
+    },
+    "update_mapgen": [
+      {
+        "om_terrain": "arcana_structure_anomalous_finale",
+        "place_monster": [
+          {
+            "monster": "mon_seraphic_shade",
+            "x": 20,
+            "y": 5,
+            "target": true
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_GM_4_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_GM_4_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_GM_4_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_GM_4_d"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "赐予我们力量……",
+    "offer": "时间到了。我们已经讨论了这种异常的性质，确认了来源。有一些东西，很微妙，但一天比一天更容易察觉。无论内部有什么破坏，都必须加以清理。如果你接受这项任务，我相信你。",
+    "accepted": "上帝和上帝愿意，平安归来。如果你需要的话，我将再次授权你请求我们的一个猎人的帮助。此外，如果你上次没有寻求他们的帮助，你仍然可以这样做。我们至少能负担得起这么重要的任务。",
+    "rejected": "我们已经精疲力竭了，请你一接受这个任务就回来。我担心，如果这种威胁得不到遏制，情况只会恶化。",
+    "advice": "报告指出，这是一些邪恶的外星结构扭曲、毁坏的残余物，类似于那些甲壳质可憎的生物所建造的。我毫不怀疑，这里面有更大的异常和危险。要格外小心，带上你能得到的任何火力以及物理和魔法保护。",
+    "inquire": "你摧毁了威胁吗？",
+    "success": "很好。看到你活着走进来，我几乎能感觉到事情已经完成了。我不知道原因，也不知道未来会怎样。只是我们为自己赢得了急需的时间，去从事任何可能防止未来发生更大灾难的研究。我不能再给你更多的任务，也不能给你更多的奖励。我们，也许从长远来看，全人类都欠你们的债。",
+    "success_lie": "这是什么白痴的行为？",
+    "failure": "但是怎么做呢？"
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_var": "johnathan_mission_finale",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 20
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_GM_5_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_GM_5_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_GM_5_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_GM_5_d"
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MERCHANT_CF_AUX_DO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MERCHANT_CF_AUX_DO|http://cdda.aloxaf.cn/search?q=TALK_MERCHANT_CF_AUX_DO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MERCHANT_CF_AUX.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_DO",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "CF_AUX_MARKER_3",
+    "yes": "For now, I help keep people in good health and manage the arrangement between my superiors and the locals here.  I can arrange for trade from our supply shipments if you need me to.",
+    "no": {
+      "npc_has_any_trait": [
+        "CF_AUX_MARKER_4",
+        "CF_AUX_MARKER_5"
+      ],
+      "yes": "I arrange hunts and scavenging runs mainly, along with keeping the other folks sent here running around, staying busy.  If you need something, I can offer you a good deal from our cut of the hunt.",
+      "no": {
+        "npc_has_any_trait": [
+          "CF_AUX_MARKER_2",
+          "CF_AUX_MARKER_7"
+        ],
+        "yes": "Mostly help run extra security for the patrols, though these guys don't really need much help with that.  Shoot monsters, get ammo out of the deal, use that to shoot more monsters… cycle of life ain't it?  Or the cycle of death.  Can sell you some if ya want.",
+        "no": "Mostly just help out around, organize the scavenging runs and manage trade.  Lot of stuff we bring in either goes to the locals or back to the center, but I can make do."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Let's trade, then.",
+      "effect": "start_trade",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_DO",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "CF_AUX_MARKER_3",
+    "yes": "现在，我帮助人们保持健康，并管理好上级和当地人之间的安排。如果你需要的话，我可以从我们的供应货物中安排贸易。",
+    "no": {
+      "npc_has_any_trait": [
+        "CF_AUX_MARKER_4",
+        "CF_AUX_MARKER_5"
+      ],
+      "yes": "我主要安排狩猎和拾荒者跑步，同时让其他被派来的人四处奔波，保持忙碌。如果你需要什么，我可以从我们的狩猎中给你一笔好价钱。",
+      "no": {
+        "npc_has_any_trait": [
+          "CF_AUX_MARKER_2",
+          "CF_AUX_MARKER_7"
+        ],
+        "yes": "主要是帮助巡逻队加强安全，虽然这些人不需要太多的帮助。射杀怪物，从交易中取出弹药，用它来射杀更多的怪物…生命周期不是吗？或者死亡循环。如果你愿意可以卖给你一些。",
+        "no": "大部分只是帮忙，组织清理工作和管理贸易。我们带来的很多东西要么给当地人，要么回到中心，但我可以勉强应付。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "那我们交换吧。",
+      "effect": "start_trade",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    }
+  ]
+}
+```
+

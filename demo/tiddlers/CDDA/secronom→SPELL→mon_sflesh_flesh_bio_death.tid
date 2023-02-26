@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_flesh_bio_death
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_flesh_bio_death|http://cdda.aloxaf.cn/search?q=mon_sflesh_flesh_bio_death]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_ondeath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_flesh_bio_death",
+  "type": "SPELL",
+  "name": {
+    "str": "Fleshed Collapse"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's death causes all traps to neutralize, becoming inactive and out of view.'",
+  "message": "<color_light_green>As the flesh melts away, the surrounding biohazards has reverted back to normal...</color>\n<color_dark_gray>The flesh is alive, but its prevalent domination hampers to a great extent.</color>",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "sflesh_flesh_biohazard_dead",
+  "min_aoe": 50,
+  "max_aoe": 50,
+  "base_casting_time": -1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_flesh_bio_death",
+  "type": "SPELL",
+  "name": {
+    "str": "肉质崩塌"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者之死导致所有陷阱失效，变得不活跃和看不见。”",
+  "message": "<color_light_green>随着血肉的融化，附近的生物危害已经恢复正常……</color>\n<color_dark_gray>血肉还活着，但它的控制力受到了很大的限制。</color>",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "sflesh_flesh_biohazard_dead",
+  "min_aoe": 50,
+  "max_aoe": 50,
+  "base_casting_time": -1
+}
+```
+

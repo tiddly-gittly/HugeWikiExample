@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BIO_1_U_BIO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BIO_1_U_BIO|http://cdda.aloxaf.cn/search?q=TALK_BIO_1_U_BIO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BIO_1.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_1_U_BIO",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "Yeah, same augmentation project your badge labels you as, assuming that belongs to you.  Router found me passed out and told me about everything.  I don't remember anything before that.  Guess I just have to trust him for now.",
+    "no": "That's what the label says, it's a sorta augmentation project.  You seem to know your stuff, guess one doesn't simply find this place by accident.  Router told me what I am.  I am stuck here until further notice."
+  },
+  "responses": [
+    {
+      "text": "I'm in the same boat, it seems.",
+      "topic": "TALK_BIO_1_IAM_BIO",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      }
+    },
+    {
+      "text": "I'm one of the super soldiers, in fact.",
+      "topic": "TALK_BIO_1_IAM_SOLDAT",
+      "condition": {
+        "u_has_trait": "SUPER_SOLDIER_MARKER"
+      }
+    },
+    {
+      "text": "Well, damn.",
+      "topic": "TALK_BIO_1"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_1_U_BIO",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "是的，和你的徽章上的标签一样，假设那是属于你的。露特尔发现我昏倒了，把一切都告诉了我。在那之前我什么都不记得了。我现在只能相信他了。",
+    "no": "标签上是这么写的，这是一个人体增强计划。你看起来很懂行，看来不是偶然找到这里的。露特尔告诉我我是什么。我待在这里等待进一步通知。"
+  },
+  "responses": [
+    {
+      "text": "看起来我们处境相同。",
+      "topic": "TALK_BIO_1_IAM_BIO",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      }
+    },
+    {
+      "text": "事实上，我是超级战士之一。",
+      "topic": "TALK_BIO_1_IAM_SOLDAT",
+      "condition": {
+        "u_has_trait": "SUPER_SOLDIER_MARKER"
+      }
+    },
+    {
+      "text": "好吧，该死。",
+      "topic": "TALK_BIO_1"
+    }
+  ]
+}
+```
+

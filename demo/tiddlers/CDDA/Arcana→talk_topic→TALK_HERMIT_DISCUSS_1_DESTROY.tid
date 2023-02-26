@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_1_DESTROY
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_1_DESTROY|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_1_DESTROY]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_DESTROY",
+  "dynamic_line": "What?  Please, you can't!  I know that this corruption is dangerous, and it will take great effort to fix it, but it can do so much good if it is restored… I can't allow that.",
+  "responses": [
+    {
+      "text": "Fine.  Tell me what I need to do to fix it.",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "We shall see.",
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[ATTACK] My duty demands it, this is far too dangerous to risk.  Try and stop me, old man.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_DESTROY",
+  "dynamic_line": "什么？拜托，你不能！我知道这种腐败是危险的，要想解决它需要很大的努力，但如果它能恢复的话，它能起到很大的作用……我不能允许这样。",
+  "responses": [
+    {
+      "text": "好吧。告诉我我需要做什么来修复它。",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "我们会看到的。",
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[攻击]这是我的职责，这太危险了，不能冒险。试着阻止我，老头子。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

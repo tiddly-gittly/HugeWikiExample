@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_SUCCESS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_SUCCESS|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_SUCCESS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_SUCCESS",
+  "type": "talk_topic",
+  "dynamic_line": "So be it, then.  I will trust you on this.  Safe's in the back room, I'll let them know to have it open for you.  Take what you need, then be on your way.",
+  "speaker_effect": {
+    "effect": [
+      {
+        "npc_add_var": "elena_convinced",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes"
+      },
+      {
+        "mapgen_update": "arcana_shrikes_unlock_safe",
+        "om_terrain": "sanguine_holdout_2",
+        "om_special": "sanguine_holdout_shrikes"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "Thank you.  One more thing before I go…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "Thank you, and goodbye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_SUCCESS",
+  "type": "talk_topic",
+  "dynamic_line": "那么就这样吧。我会相信你的。保险箱在后面的房间，我会通知他们为你打开的。带上你需要的，然后上路。",
+  "speaker_effect": {
+    "effect": [
+      {
+        "npc_add_var": "elena_convinced",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes"
+      },
+      {
+        "mapgen_update": "arcana_shrikes_unlock_safe",
+        "om_terrain": "sanguine_holdout_2",
+        "om_special": "sanguine_holdout_shrikes"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "非常感谢。在我走之前还有一件事…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "谢谢，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

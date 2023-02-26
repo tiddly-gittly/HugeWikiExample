@@ -1,0 +1,209 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_equinox
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_equinox|http://cdda.aloxaf.cn/search?q=mon_zombie_equinox]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Summoner-type monster that excels at quickly sending out agile minions. One of the true end-game monsters.",
+  "id": "mon_zombie_equinox",
+  "type": "MONSTER",
+  "name": {
+    "str": "equinox"
+  },
+  "description": "An overwhelming mass of flesh resembling a brain, constantly emitting vaporized poison gas originating from its protruding shroom-like outgrowths. Large, hollow gaps reveal nothing but shady gloom.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_ULTIMATE",
+    "ABERRATION"
+  ],
+  "bodytype": "blob",
+  "diff": 100,
+  "volume": "5940 L",
+  "weight": "3228500 g",
+  "hp": 3475,
+  "speed": 50,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "❄",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_down_immunity",
+    "emit_equinox_toxic_weak",
+    "emit_equinox_toxic_normal",
+    "emit_equinox_toxic_strong",
+    "emit_equinox_para"
+  ],
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "armor_bash": 22,
+  "armor_stab": 2,
+  "armor_cut": 3,
+  "armor_bullet": 2,
+  "vision_day": 40,
+  "vision_night": 12,
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 66,
+      "move_cost": 1000,
+      "gun_type": "equinox_hole",
+      "fake_skills": [
+        [
+          "gun",
+          7
+        ],
+        [
+          "rifle",
+          1
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          40,
+          "N"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "Necrotic flesh spreads from the equinox!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_equinox_summon_check_target_random"
+      },
+      "cooldown": 33,
+      "monster_message": "<color_yellow>Twisted abominations crawl out of %1$s!</color>"
+    }
+  ],
+  "harvest": "zombie",
+  "flags": [
+    "SEES",
+    "WARM",
+    "IMMOBILE",
+    "NOHEAD",
+    "POISON",
+    "STUN_IMMUNE",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Summoner-type monster that excels at quickly sending out agile minions. One of the true end-game monsters.",
+  "id": "mon_zombie_equinox",
+  "type": "MONSTER",
+  "name": {
+    "str": "探界者"
+  },
+  "description": "一块巨大的、类似于大脑的肉，不断地从其突出的、像shroom一样的突起物中释放出汽化的毒气。巨大、中空的缝隙只露出阴暗的阴影。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_ULTIMATE",
+    "ABERRATION"
+  ],
+  "bodytype": "blob",
+  "diff": 100,
+  "volume": "5940 L",
+  "weight": "3228500 g",
+  "hp": 3475,
+  "speed": 50,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "❄",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_down_immunity",
+    "emit_equinox_toxic_weak",
+    "emit_equinox_toxic_normal",
+    "emit_equinox_toxic_strong",
+    "emit_equinox_para"
+  ],
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "armor_bash": 22,
+  "armor_stab": 2,
+  "armor_cut": 3,
+  "armor_bullet": 2,
+  "vision_day": 40,
+  "vision_night": 12,
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 66,
+      "move_cost": 1000,
+      "gun_type": "equinox_hole",
+      "fake_skills": [
+        [
+          "gun",
+          7
+        ],
+        [
+          "rifle",
+          1
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          40,
+          "N"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "死肉从春分开始蔓延！"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_equinox_summon_check_target_random"
+      },
+      "cooldown": 33,
+      "monster_message": "<color_yellow>个扭曲的可憎生物爬出%1$s！</color>"
+    }
+  ],
+  "harvest": "zombie",
+  "flags": [
+    "SEES",
+    "WARM",
+    "IMMOBILE",
+    "NOHEAD",
+    "POISON",
+    "STUN_IMMUNE",
+    "NO_BREATHE"
+  ]
+}
+```
+

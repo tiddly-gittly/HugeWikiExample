@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→SPELL_SUMMONCULUS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SPELL_SUMMONCULUS|http://cdda.aloxaf.cn/search?q=SPELL_SUMMONCULUS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_paragon.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_SUMMONCULUS",
+  "name": {
+    "str": "Sign of Summoning III"
+  },
+  "points": 3,
+  "description": "\"You will witness other interlopers, promising different paths to your world's survival.  They are false omens.\"\nUnknowable forces have given you a third gift, that can summon a homunculus.  (( Remember to bind the \"spellcasting\" key! ))",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_SUMMONSKEL"
+  ],
+  "changes_to": [
+    "SPELL_SUMMONTHING"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "threshreq": [
+    "THRESH_VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 300,
+  "spells_learned": [
+    [
+      "arcana_blessing_summon_skeletal_dog",
+      1
+    ],
+    [
+      "arcana_blessing_summon_skeleton",
+      1
+    ],
+    [
+      "arcana_blessing_summon_homunculus",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_SUMMONCULUS",
+  "name": {
+    "str": "召唤标志III"
+  },
+  "points": 3,
+  "description": "“还有巫婆携苹果邀汝食之，但且铭记，只有我为汝带来真正启示。”\n不可知的力量赠予你第三份礼物，召唤何蒙库鲁兹。（（记住绑定“施法”键！））",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_SUMMONSKEL"
+  ],
+  "changes_to": [
+    "SPELL_SUMMONTHING"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "threshreq": [
+    "THRESH_VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 300,
+  "spells_learned": [
+    [
+      "arcana_blessing_summon_skeletal_dog",
+      1
+    ],
+    [
+      "arcana_blessing_summon_skeleton",
+      1
+    ],
+    [
+      "arcana_blessing_summon_homunculus",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil"
+  ]
+}
+```
+

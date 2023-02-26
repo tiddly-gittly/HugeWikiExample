@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: item_group Arcana
+title: Arcana→item_group→feral_diver_death_drops_knife
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：feral_diver_death_drops_knife|http://cdda.aloxaf.cn/search?q=feral_diver_death_drops_knife]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monster_drops.json
+
+
+!! 原文
+
+```json
+{
+  "id": "feral_diver_death_drops_knife",
+  "copy-from": "feral_diver_death_drops_knife",
+  "type": "item_group",
+  "//": "Adds items since we're referencing an existing itemgroup.",
+  "subtype": "collection",
+  "extend": {
+    "entries": [
+      {
+        "item": "essence_blood",
+        "prob": 25,
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "group": "arcana_hunt_random",
+        "prob": 10
+      },
+      {
+        "group": "magic_books_postapoc",
+        "prob": 5
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "feral_diver_death_drops_knife",
+  "copy-from": "feral_diver_death_drops_knife",
+  "type": "item_group",
+  "//": "Adds items since we're referencing an existing itemgroup.",
+  "subtype": "collection",
+  "extend": {
+    "entries": [
+      {
+        "item": "essence_blood",
+        "prob": 25,
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "group": "arcana_hunt_random",
+        "prob": 10
+      },
+      {
+        "group": "magic_books_postapoc",
+        "prob": 5
+      }
+    ]
+  }
+}
+```
+

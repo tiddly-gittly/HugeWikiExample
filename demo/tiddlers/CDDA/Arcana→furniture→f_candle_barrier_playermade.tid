@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: furniture Arcana
+title: Arcana→furniture→f_candle_barrier_playermade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_candle_barrier_playermade|http://cdda.aloxaf.cn/search?q=f_candle_barrier_playermade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "id": "f_candle_barrier_playermade",
+  "type": "furniture",
+  "name": "flickering candle",
+  "description": "A single candle, wick emanating a ghostly flame and projecting a glowing barrier.  Examine it to disperse the barrier, sufficient force may also collapse it.",
+  "symbol": ",",
+  "looks_like": "candle_lit",
+  "bgcolor": [
+    "magenta"
+  ],
+  "move_cost_mod": -2,
+  "light_emitted": 12,
+  "required_str": -1,
+  "crafting_pseudo_item": "candle_warding_active",
+  "flags": [
+    "TRANSPARENT",
+    "USABLE_FIRE"
+  ],
+  "deployed_item": "candle_warding",
+  "examine_action": "deployed_furniture",
+  "bash": {
+    "str_min": 40,
+    "str_max": 210,
+    "sound": "crash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "candle_warding",
+        "count": [
+          0,
+          1
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "f_candle_barrier_playermade",
+  "type": "furniture",
+  "name": "闪烁的蜡烛",
+  "description": "一支蜡烛，灯芯散发出幽灵般的火焰，并投射出一道发光的屏障。调查它以消除屏障，如果力气足够大的话也可以攻击屏障直至崩塌。",
+  "symbol": ",",
+  "looks_like": "candle_lit",
+  "bgcolor": [
+    "magenta"
+  ],
+  "move_cost_mod": -2,
+  "light_emitted": 12,
+  "required_str": -1,
+  "crafting_pseudo_item": "candle_warding_active",
+  "flags": [
+    "TRANSPARENT",
+    "USABLE_FIRE"
+  ],
+  "deployed_item": "candle_warding",
+  "examine_action": "deployed_furniture",
+  "bash": {
+    "str_min": 40,
+    "str_max": 210,
+    "sound": "crash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "candle_warding",
+        "count": [
+          0,
+          1
+        ]
+      }
+    ]
+  }
+}
+```
+

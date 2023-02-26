@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: ARMOR nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→ARMOR→hmil_armor
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：hmil_armor|http://cdda.aloxaf.cn/search?q=hmil_armor]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "hmil_armor",
+  "type": "ARMOR",
+  "category": "armor",
+  "name": {
+    "str_sp": "heavy military armor"
+  },
+  "description": "A heavy-duty full-body suit of gray ballistic armor, one size fits most, with separate helmet.  Made from heavy-duty lining with advanced plating, it protects the body rather well against most rifle rounds, but may be too cumbersome for most situations.  It also has two pouches for various sizes of medium and large magazines.",
+  "weight": "20250 g",
+  "volume": "13500 ml",
+  "price": "2000 USD",
+  "price_postapoc": "20 USD",
+  "to_hit": -3,
+  "bashing": 5,
+  "material": [
+    "c_superalloy_composite_heavy",
+    "steel"
+  ],
+  "symbol": "[",
+  "color": "dark_gray",
+  "looks_like": "power_armor_heavy",
+  "warmth": 30,
+  "material_thickness": 1,
+  "environmental_protection": 5,
+  "//": "Designed to be able to hold military medium and heavy atomic cells.",
+  "pocket_data": [
+    {
+      "moves": 40,
+      "min_volume": "525 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "holster": true,
+      "flag_restriction": [
+        "MAG_COMPACT",
+        "MAG_BULKY"
+      ],
+      "item_restriction": [
+        "medium_atomic_battery_cell",
+        "heavy_atomic_battery_cell"
+      ]
+    },
+    {
+      "moves": 40,
+      "min_volume": "525 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "holster": true,
+      "flag_restriction": [
+        "MAG_COMPACT",
+        "MAG_BULKY"
+      ],
+      "item_restriction": [
+        "medium_atomic_battery_cell",
+        "heavy_atomic_battery_cell"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Stash magazine",
+    "holster_msg": "You stash your %s"
+  },
+  "flags": [
+    "STURDY",
+    "NONCONDUCTIVE",
+    "NO_SALVAGE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 36,
+      "coverage": 100,
+      "covers": [
+        "leg_l",
+        "leg_r",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "foot_l",
+        "foot_r"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "hmil_armor",
+  "type": "ARMOR",
+  "category": "armor",
+  "name": {
+    "str_sp": "重型作战装甲"
+  },
+  "description": "一套尺寸适合大多数人的灰色重型连身防弹装甲，有额外配套的头盔。由重型衬里和高级防弹板制成，可以很好地保护身体免受大多数步枪子弹的攻击，但在大多数情况下可能过于笨重。它有两个可以放入中大型弹匣的口袋。",
+  "weight": "20250 g",
+  "volume": "13500 ml",
+  "price": "2000 USD",
+  "price_postapoc": "20 USD",
+  "to_hit": -3,
+  "bashing": 5,
+  "material": [
+    "c_superalloy_composite_heavy",
+    "steel"
+  ],
+  "symbol": "[",
+  "color": "dark_gray",
+  "looks_like": "power_armor_heavy",
+  "warmth": 30,
+  "material_thickness": 1,
+  "environmental_protection": 5,
+  "//": "Designed to be able to hold military medium and heavy atomic cells.",
+  "pocket_data": [
+    {
+      "moves": 40,
+      "min_volume": "525 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "holster": true,
+      "flag_restriction": [
+        "MAG_COMPACT",
+        "MAG_BULKY"
+      ],
+      "item_restriction": [
+        "medium_atomic_battery_cell",
+        "heavy_atomic_battery_cell"
+      ]
+    },
+    {
+      "moves": 40,
+      "min_volume": "525 ml",
+      "max_contains_volume": "1500 ml",
+      "max_contains_weight": "5 kg",
+      "holster": true,
+      "flag_restriction": [
+        "MAG_COMPACT",
+        "MAG_BULKY"
+      ],
+      "item_restriction": [
+        "medium_atomic_battery_cell",
+        "heavy_atomic_battery_cell"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "存入弹匣",
+    "holster_msg": "你收好了%s。"
+  },
+  "flags": [
+    "STURDY",
+    "NONCONDUCTIVE",
+    "NO_SALVAGE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 36,
+      "coverage": 100,
+      "covers": [
+        "leg_l",
+        "leg_r",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "foot_l",
+        "foot_r"
+      ]
+    }
+  ]
+}
+```
+

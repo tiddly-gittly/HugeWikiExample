@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_oni
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_oni|http://cdda.aloxaf.cn/search?q=mon_oni]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_oni.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_oni",
+  "type": "MONSTER",
+  "name": {
+    "str": "oni (template)"
+  },
+  "description": "A Japanese goblin, ogre version with a touch of devil plus a dash of chtonic, vampiric prison guard.",
+  "volume": "80 L",
+  "weight": "90 kg",
+  "default_faction": "touhou_oni",
+  "bodytype": "human",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "ONI_TOUHOU"
+  ],
+  "harvest": "oni_harvest",
+  "hp": 120,
+  "speed": 135,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ō",
+  "looks_like": "human",
+  "color": "red",
+  "aggression": 15,
+  "morale": 20,
+  "melee_skill": 2,
+  "melee_dice": 5,
+  "melee_dice_sides": 6,
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_stab": 2,
+  "armor_bullet": 2,
+  "vision_day": 25,
+  "vision_night": 25,
+  "path_settings": {
+    "max_dist": 25
+  },
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED"
+  ],
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      51
+    ],
+    [
+      "GRAB",
+      27
+    ],
+    [
+      "oni_smash_9d4",
+      13
+    ]
+  ],
+  "death_drops": [
+    {
+      "group": "oni_drops",
+      "prob": 100
+    }
+  ],
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ],
+  "//": "Template only"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_oni",
+  "type": "MONSTER",
+  "name": {
+    "str": "oni (template)"
+  },
+  "description": "一种日本哥布林",
+  "volume": "80 L",
+  "weight": "90 kg",
+  "default_faction": "touhou_oni",
+  "bodytype": "human",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "ONI_TOUHOU"
+  ],
+  "harvest": "oni_harvest",
+  "hp": 120,
+  "speed": 135,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ō",
+  "looks_like": "human",
+  "color": "red",
+  "aggression": 15,
+  "morale": 20,
+  "melee_skill": 2,
+  "melee_dice": 5,
+  "melee_dice_sides": 6,
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_stab": 2,
+  "armor_bullet": 2,
+  "vision_day": 25,
+  "vision_night": 25,
+  "path_settings": {
+    "max_dist": 25
+  },
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED"
+  ],
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      51
+    ],
+    [
+      "GRAB",
+      27
+    ],
+    [
+      "oni_smash_9d4",
+      13
+    ]
+  ],
+  "death_drops": [
+    {
+      "group": "oni_drops",
+      "prob": 100
+    }
+  ],
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ],
+  "//": "Template only"
+}
+```
+

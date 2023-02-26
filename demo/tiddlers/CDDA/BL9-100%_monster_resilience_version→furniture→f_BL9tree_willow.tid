@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9tree_willow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9tree_willow|http://cdda.aloxaf.cn/search?q=f_BL9tree_willow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_willow",
+  "name": "willow tree",
+  "looks_like": "t_tree_willow",
+  "description": "A tall, wide deciduous tree of the 'Salix' genus, with long thin leafy branches that hang down like curtains.  You could tear off some bark.  You could cut it down with the right tools.",
+  "symbol": "4",
+  "color": [
+    "light_green",
+    "light_green",
+    "light_green",
+    "brown"
+  ],
+  "//": "barren in winter, harvestable all year round",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "id": "willow_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_willow",
+  "name": "柳树",
+  "looks_like": "t_tree_willow",
+  "description": "又高又壮的柳属落叶树，叶子长而薄，如窗帘一般垂下。可以撕下一些树皮。也可以用合适的工具砍倒它。",
+  "symbol": "4",
+  "color": [
+    "light_green",
+    "light_green",
+    "light_green",
+    "brown"
+  ],
+  "//": "barren in winter, harvestable all year round",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "id": "willow_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+

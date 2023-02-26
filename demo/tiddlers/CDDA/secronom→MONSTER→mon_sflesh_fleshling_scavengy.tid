@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_fleshling_scavengy
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_scavengy|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_scavengy]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Amalgam.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_fleshling_scavengy",
+  "type": "MONSTER",
+  "name": {
+    "str": "amalgam scavenger"
+  },
+  "description": "A fleshed amalgamation consists mostly of thin and slender appendages, with a throbbing core on its thorax. It glows ominously. Docile and cautious, in contrast to its horrifying figure.",
+  "default_faction": "secro_flesh3",
+  "bodytype": "dog",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "30045 ml",
+  "weight": "22350 g",
+  "hp": 70,
+  "speed": 90,
+  "emit_fields": [
+    "emit_sflesh_fleshling_scavengy_forms"
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "♮",
+  "color": "light_red",
+  "aggression": 5,
+  "morale": 20,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 3,
+  "harvest": "exempt",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_fleshling_scavengy_flee_target"
+      },
+      "cooldown": 3,
+      "monster_message": "<color_light_red>%1$s flees from %3$s!</color>"
+    },
+    [
+      "ABSORB_ITEMS",
+      0
+    ]
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "absorb_ml_per_hp": 250,
+  "absorb_move_cost_per_ml": 0,
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_fleshling_scavengy",
+  "type": "MONSTER",
+  "name": {
+    "str": "食腐混合怪"
+  },
+  "description": "一个主要是由纤细的附属物组合而成的血肉混合体，其胸腔的核心在搏动着。它散发着不详的光。它温顺而又谨慎，与其可怕的躯体形成鲜明对比。",
+  "default_faction": "secro_flesh3",
+  "bodytype": "dog",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "30045 ml",
+  "weight": "22350 g",
+  "hp": 70,
+  "speed": 90,
+  "emit_fields": [
+    "emit_sflesh_fleshling_scavengy_forms"
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "♮",
+  "color": "light_red",
+  "aggression": 5,
+  "morale": 20,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5
+    }
+  ],
+  "armor_bash": 12,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 3,
+  "harvest": "exempt",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_fleshling_scavengy_flee_target"
+      },
+      "cooldown": 3,
+      "monster_message": "<color_light_red>%1$s从%3$s身边逃走了！</color>"
+    },
+    [
+      "ABSORB_ITEMS",
+      0
+    ]
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "absorb_ml_per_hp": 250,
+  "absorb_move_cost_per_ml": 0,
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON"
+  ]
+}
+```
+

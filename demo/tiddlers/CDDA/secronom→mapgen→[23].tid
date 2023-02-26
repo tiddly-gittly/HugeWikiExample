@@ -1,0 +1,633 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[23]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/Flesh/flesh_city.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Electronics Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 325,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "          xxxxxxx     9 ",
+      "    9    xxxpJpxxx  9   ",
+      "        xxxxxxxxxxxxxxxx",
+      "   ------:::-+--:::--- x",
+      " 9 |{{{{{y.......#..Y| x",
+      "   |{............#S..| x",
+      "   |{..{{..{{....#...| x",
+      "   |{..{{..{{....###.| x",
+      "   |{..{{..{{........| x",
+      "   |{...........HH..#:px",
+      "   |{..{{..{{.......#:px",
+      "   |{..{{..{{...HH..#:px",
+      "   |{..{{..{{...tt..#:px",
+      "   |{................|px",
+      "   |#####.########..y|4x",
+      "   |-----+---:::---+-|px",
+      "   |@@@t|.|FttGtt.|..:px",
+      "   |....|.|...S..Y|s&| x",
+      "   :t...+.+.....{{|--| x",
+      "   |....|.|I..M..{|.&| x",
+      "   |LLyF|Y|Ih.....+.s| x",
+      "   ------:-----+------ x",
+      "        xxU<UUxxxxxxxxxx",
+      "         xUUxxxxxxx     "
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "9": "t_secro_tree_flesh",
+      " ": [
+        "t_secro_grass_flesh",
+        "t_secro_grass_flesh",
+        "t_secro_grass_flesh",
+        "t_secro_dirt_flesh"
+      ],
+      ".": "t_secro_floor_flesh",
+      "p": "t_secro_grass_flesh",
+      "J": "t_secro_grass_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_brick_wall_flesh",
+      ":": "t_secro_window_flesh",
+      "|": "t_secro_brick_wall_flesh",
+      "U": "t_secro_sidewalk_flesh",
+      "x": "t_secro_sidewalk_flesh",
+      "<": "t_secro_ladder_broken_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "{": "f_rack",
+      "S": "f_stool",
+      "s": "f_sink",
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ],
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ],
+      "M": [
+        "f_crate_c",
+        "f_cardboard_box"
+      ],
+      "t": "f_table",
+      "Y": "f_trashcan",
+      "H": "f_displaycase",
+      "h": "f_chair",
+      "L": "f_locker",
+      "J": "f_birdbath",
+      "I": "f_desk",
+      "F": "f_filing_cabinet",
+      "@": "f_sofa",
+      "G": "f_workbench",
+      "p": [
+        "f_datura",
+        "f_bluebell",
+        "f_mutpoppy",
+        "f_dahlia",
+        "f_flower_tulip",
+        "f_chamomile",
+        "f_flower_spurge",
+        "f_lily"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "items": {
+      "I": {
+        "item": "office",
+        "chance": 30
+      },
+      "F": {
+        "item": "office_paper",
+        "chance": 30
+      },
+      "Y": {
+        "item": "trash",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "M": {
+        "item": "consumer_electronics",
+        "chance": 70,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "#": {
+        "item": "consumer_electronics",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "{": {
+        "item": "consumer_electronics",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "H": {
+        "item": "elecsto_persele",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "G": {
+        "item": "elecsto_diy",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "t": {
+        "item": "elecsto_homapl",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "L": [
+        {
+          "item": "jackets",
+          "chance": 10
+        },
+        {
+          "item": "bags",
+          "chance": 10
+        }
+      ],
+      "U": {
+        "item": "trash",
+        "chance": 25,
+        "repeat": [
+          1,
+          4
+        ]
+      }
+    },
+    "place_monsters": [
+      {
+        "monster": "GROUP_FLESH_CITY",
+        "x": [
+          0,
+          0
+        ],
+        "y": [
+          23,
+          23
+        ],
+        "chance": 2,
+        "repeat": [
+          2,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Electronics Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 325,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "          xxxxxxx     9 ",
+      "    9    xxxpJpxxx  9   ",
+      "        xxxxxxxxxxxxxxxx",
+      "   ------:::-+--:::--- x",
+      " 9 |{{{{{y.......#..Y| x",
+      "   |{............#S..| x",
+      "   |{..{{..{{....#...| x",
+      "   |{..{{..{{....###.| x",
+      "   |{..{{..{{........| x",
+      "   |{...........HH..#:px",
+      "   |{..{{..{{.......#:px",
+      "   |{..{{..{{...HH..#:px",
+      "   |{..{{..{{...tt..#:px",
+      "   |{................|px",
+      "   |#####.########..y|4x",
+      "   |-----+---:::---+-|px",
+      "   |@@@t|.|FttGtt.|..:px",
+      "   |....|.|...S..Y|s&| x",
+      "   :t...+.+.....{{|--| x",
+      "   |....|.|I..M..{|.&| x",
+      "   |LLyF|Y|Ih.....+.s| x",
+      "   ------:-----+------ x",
+      "        xxU<UUxxxxxxxxxx",
+      "         xUUxxxxxxx     "
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "9": "t_secro_tree_flesh",
+      " ": [
+        "t_secro_grass_flesh",
+        "t_secro_grass_flesh",
+        "t_secro_grass_flesh",
+        "t_secro_dirt_flesh"
+      ],
+      ".": "t_secro_floor_flesh",
+      "p": "t_secro_grass_flesh",
+      "J": "t_secro_grass_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_brick_wall_flesh",
+      ":": "t_secro_window_flesh",
+      "|": "t_secro_brick_wall_flesh",
+      "U": "t_secro_sidewalk_flesh",
+      "x": "t_secro_sidewalk_flesh",
+      "<": "t_secro_ladder_broken_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "{": "f_rack",
+      "S": "f_stool",
+      "s": "f_sink",
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ],
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ],
+      "M": [
+        "f_crate_c",
+        "f_cardboard_box"
+      ],
+      "t": "f_table",
+      "Y": "f_trashcan",
+      "H": "f_displaycase",
+      "h": "f_chair",
+      "L": "f_locker",
+      "J": "f_birdbath",
+      "I": "f_desk",
+      "F": "f_filing_cabinet",
+      "@": "f_sofa",
+      "G": "f_workbench",
+      "p": [
+        "f_datura",
+        "f_bluebell",
+        "f_mutpoppy",
+        "f_dahlia",
+        "f_flower_tulip",
+        "f_chamomile",
+        "f_flower_spurge",
+        "f_lily"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "items": {
+      "I": {
+        "item": "office",
+        "chance": 30
+      },
+      "F": {
+        "item": "office_paper",
+        "chance": 30
+      },
+      "Y": {
+        "item": "trash",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "M": {
+        "item": "consumer_electronics",
+        "chance": 70,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "#": {
+        "item": "consumer_electronics",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "{": {
+        "item": "consumer_electronics",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "H": {
+        "item": "elecsto_persele",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "G": {
+        "item": "elecsto_diy",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "t": {
+        "item": "elecsto_homapl",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "L": [
+        {
+          "item": "jackets",
+          "chance": 10
+        },
+        {
+          "item": "bags",
+          "chance": 10
+        }
+      ],
+      "U": {
+        "item": "trash",
+        "chance": 25,
+        "repeat": [
+          1,
+          4
+        ]
+      }
+    },
+    "place_monsters": [
+      {
+        "monster": "GROUP_ELECTRO",
+        "x": [
+          0,
+          0
+        ],
+        "y": [
+          23,
+          23
+        ],
+        "chance": 2,
+        "repeat": [
+          2,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Electronics Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 325,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "          xxxxxxx     9 ",
+      "    9    xxxpJpxxx  9   ",
+      "        xxxxxxxxxxxxxxxx",
+      "   ------:::-+--:::--- x",
+      " 9 |{{{{{y.......#..Y| x",
+      "   |{............#S..| x",
+      "   |{..{{..{{....#...| x",
+      "   |{..{{..{{....###.| x",
+      "   |{..{{..{{........| x",
+      "   |{...........HH..#:px",
+      "   |{..{{..{{.......#:px",
+      "   |{..{{..{{...HH..#:px",
+      "   |{..{{..{{...tt..#:px",
+      "   |{................|px",
+      "   |#####.########..y|4x",
+      "   |-----+---:::---+-|px",
+      "   |@@@t|.|FttGtt.|..:px",
+      "   |....|.|...S..Y|s&| x",
+      "   :t...+.+.....{{|--| x",
+      "   |....|.|I..M..{|.&| x",
+      "   |LLyF|Y|Ih.....+.s| x",
+      "   ------:-----+------ x",
+      "        xxU<UUxxxxxxxxxx",
+      "         xUUxxxxxxx     "
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "9": "t_secro_tree_flesh",
+      " ": [
+        "t_secro_grass_flesh",
+        "t_secro_grass_flesh",
+        "t_secro_grass_flesh",
+        "t_secro_dirt_flesh"
+      ],
+      ".": "t_secro_floor_flesh",
+      "p": "t_secro_grass_flesh",
+      "J": "t_secro_grass_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_brick_wall_flesh",
+      ":": "t_secro_window_flesh",
+      "|": "t_secro_brick_wall_flesh",
+      "U": "t_secro_sidewalk_flesh",
+      "x": "t_secro_sidewalk_flesh",
+      "<": "t_secro_ladder_broken_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "{": "f_rack",
+      "S": "f_stool",
+      "s": "f_sink",
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ],
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ],
+      "M": [
+        "f_crate_c",
+        "f_cardboard_box"
+      ],
+      "t": "f_table",
+      "Y": "f_trashcan",
+      "H": "f_displaycase",
+      "h": "f_chair",
+      "L": "f_locker",
+      "J": "f_birdbath",
+      "I": "f_desk",
+      "F": "f_filing_cabinet",
+      "@": "f_sofa",
+      "G": "f_workbench",
+      "p": [
+        "f_datura",
+        "f_bluebell",
+        "f_mutpoppy",
+        "f_dahlia",
+        "f_flower_tulip",
+        "f_chamomile",
+        "f_flower_spurge",
+        "f_lily"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "items": {
+      "I": {
+        "item": "office",
+        "chance": 30
+      },
+      "F": {
+        "item": "office_paper",
+        "chance": 30
+      },
+      "Y": {
+        "item": "trash",
+        "chance": 20,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      "M": {
+        "item": "consumer_electronics",
+        "chance": 70,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "#": {
+        "item": "consumer_electronics",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "{": {
+        "item": "consumer_electronics",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "H": {
+        "item": "elecsto_persele",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "G": {
+        "item": "elecsto_diy",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "t": {
+        "item": "elecsto_homapl",
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "L": [
+        {
+          "item": "jackets",
+          "chance": 10
+        },
+        {
+          "item": "bags",
+          "chance": 10
+        }
+      ],
+      "U": {
+        "item": "trash",
+        "chance": 25,
+        "repeat": [
+          1,
+          4
+        ]
+      }
+    },
+    "place_monsters": [
+      {
+        "monster": "GROUP_FLESH_CITY",
+        "x": [
+          0,
+          0
+        ],
+        "y": [
+          23,
+          23
+        ],
+        "chance": 2,
+        "repeat": [
+          2,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+

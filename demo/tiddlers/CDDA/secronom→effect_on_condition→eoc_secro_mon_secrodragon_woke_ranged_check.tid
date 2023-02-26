@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom
+title: secronom→effect_on_condition→eoc_secro_mon_secrodragon_woke_ranged_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_mon_secrodragon_woke_ranged_check|http://cdda.aloxaf.cn/search?q=eoc_secro_mon_secrodragon_woke_ranged_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_secrodragon_woke_ranged_check",
+  "condition": {
+    "not": {
+      "one_in_chance": 3
+    }
+  },
+  "effect": [
+    {
+      "u_message": "Electric discharges arc from the secronom dragon!",
+      "type": "warning"
+    },
+    {
+      "npc_cast_spell": {
+        "id": "mon_secrodragon_edischarge_target_random",
+        "hit_self": true
+      }
+    },
+    {
+      "npc_make_sound": "Fzzzztt.",
+      "volume": 125,
+      "type": "combat"
+    }
+  ],
+  "false_effect": [
+    {
+      "u_message": "The secronom dragon accumulates electricity.",
+      "type": "warning"
+    },
+    {
+      "npc_make_sound": "hummm.",
+      "volume": 40,
+      "type": "alert"
+    },
+    {
+      "npc_add_effect": "controlled",
+      "duration": "7 seconds"
+    },
+    {
+      "u_location_variable": {
+        "global_val": "secro_cyberdragon_dirsho"
+      }
+    },
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_mon_secrodragon_woke_directshock_check",
+          "effect": [
+            {
+              "u_make_sound": "Brrrrzzt.",
+              "volume": 150,
+              "type": "combat",
+              "target_var": {
+                "global_val": "secro_cyberdragon_dirsho"
+              }
+            },
+            {
+              "u_set_field": "fd_electricity",
+              "target_var": {
+                "global_val": "secro_cyberdragon_dirsho"
+              },
+              "radius": 1,
+              "intensity": 2
+            },
+            {
+              "u_set_field": "fd_electricity",
+              "target_var": {
+                "global_val": "secro_cyberdragon_dirsho"
+              },
+              "radius": 3,
+              "intensity": 1
+            }
+          ]
+        }
+      ],
+      "time_in_future": [
+        "5 seconds",
+        "5 seconds"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_secrodragon_woke_ranged_check",
+  "condition": {
+    "not": {
+      "one_in_chance": 3
+    }
+  },
+  "effect": [
+    {
+      "u_message": "Electric discharges arc from the secronom dragon!",
+      "type": "warning"
+    },
+    {
+      "npc_cast_spell": {
+        "id": "mon_secrodragon_edischarge_target_random",
+        "hit_self": true
+      }
+    },
+    {
+      "npc_make_sound": "Fzzzztt.",
+      "volume": 125,
+      "type": "combat"
+    }
+  ],
+  "false_effect": [
+    {
+      "u_message": "The secronom dragon accumulates electricity.",
+      "type": "warning"
+    },
+    {
+      "npc_make_sound": "hummm.",
+      "volume": 40,
+      "type": "alert"
+    },
+    {
+      "npc_add_effect": "controlled",
+      "duration": "7 seconds"
+    },
+    {
+      "u_location_variable": {
+        "global_val": "secro_cyberdragon_dirsho"
+      }
+    },
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_mon_secrodragon_woke_directshock_check",
+          "effect": [
+            {
+              "u_make_sound": "Brrrrzzt.",
+              "volume": 150,
+              "type": "combat",
+              "target_var": {
+                "global_val": "secro_cyberdragon_dirsho"
+              }
+            },
+            {
+              "u_set_field": "fd_electricity",
+              "target_var": {
+                "global_val": "secro_cyberdragon_dirsho"
+              },
+              "radius": 1,
+              "intensity": 2
+            },
+            {
+              "u_set_field": "fd_electricity",
+              "target_var": {
+                "global_val": "secro_cyberdragon_dirsho"
+              },
+              "radius": 3,
+              "intensity": 1
+            }
+          ]
+        }
+      ],
+      "time_in_future": [
+        "5 seconds",
+        "5 seconds"
+      ]
+    }
+  ]
+}
+```
+

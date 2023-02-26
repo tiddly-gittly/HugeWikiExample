@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_scientist
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_scientist|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_scientist]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_scientist",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie scientist"
+  },
+  "description": "Apart from the jet-black eyes, this zombie looks less decomposed and inhuman than most.  Clad in a tattered lab coat, it seems to have a glimmer of awareness - not a human awareness, but something more sinister.  As you watch it, its movements look almost marionette-like.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "white_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 3,
+      "damage_type": "cut"
+    }
+  ],
+  "armor_bash": 3,
+  "dodge": 1,
+  "vision_day": 50,
+  "vision_night": 3,
+  "harvest": "CBM_SCI",
+  "path_settings": {
+    "max_dist": 5
+  },
+  "special_attacks": [
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "mon_zombie_scientist_death_drops",
+  "burn_into": "mon_zombie_scientist",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "ACIDPROOF",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "PATH_AVOID_DANGER_1",
+    "CAN_OPEN_DOORS",
+    "PRIORITIZE_TARGETS",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_scientist",
+  "type": "MONSTER",
+  "name": {
+    "str": "研究员丧尸"
+  },
+  "description": "除了乌黑的眼睛，这只丧尸看起来不像其他丧尸那样腐臭和非人。它穿着破烂的实验服，似乎还有一丝意识——不是人类的意识，而是更险恶的东西。当你看着它的时候，它的动作看起来就像是木偶。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "white_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 3,
+      "damage_type": "cut"
+    }
+  ],
+  "armor_bash": 3,
+  "dodge": 1,
+  "vision_day": 50,
+  "vision_night": 3,
+  "harvest": "CBM_SCI",
+  "path_settings": {
+    "max_dist": 5
+  },
+  "special_attacks": [
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "mon_zombie_scientist_death_drops",
+  "burn_into": "mon_zombie_scientist",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "ACIDPROOF",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "PATH_AVOID_DANGER_1",
+    "CAN_OPEN_DOORS",
+    "PRIORITIZE_TARGETS",
+    "FILTHY"
+  ]
+}
+```
+

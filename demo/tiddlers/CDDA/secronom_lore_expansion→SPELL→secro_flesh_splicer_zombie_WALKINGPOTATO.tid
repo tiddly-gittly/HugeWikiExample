@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→secro_flesh_splicer_zombie_WALKINGPOTATO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_splicer_zombie_WALKINGPOTATO|http://cdda.aloxaf.cn/search?q=secro_flesh_splicer_zombie_WALKINGPOTATO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_splicer_zombie_WALKINGPOTATO",
+  "type": "SPELL",
+  "name": {
+    "str": "Scan"
+  },
+  "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'Item scans the target...'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_zombie_WALKINGPOTATO",
+    "mon_zombie_zawk",
+    "mon_zombie_zoth",
+    "mon_zombie_nightwail"
+  ],
+  "extra_effects": [
+    {
+      "id": "secro_flesh_splicer_zombie_WALKINGPOTATO_yeah"
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 5,
+  "max_damage": 10
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_splicer_zombie_WALKINGPOTATO",
+  "type": "SPELL",
+  "name": {
+    "str": "扫描"
+  },
+  "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目扫描目标…'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_zombie_WALKINGPOTATO",
+    "mon_zombie_zawk",
+    "mon_zombie_zoth",
+    "mon_zombie_nightwail"
+  ],
+  "extra_effects": [
+    {
+      "id": "secro_flesh_splicer_zombie_WALKINGPOTATO_yeah"
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 5,
+  "max_damage": 10
+}
+```
+

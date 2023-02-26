@@ -1,0 +1,431 @@
+creator: 林一二
+revision: 0
+tags: talk_topic secronom_lore_expansion
+title: secronom_lore_expansion→talk_topic→TALK_SECRO_RESEARCHER_main
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SECRO_RESEARCHER_main|http://cdda.aloxaf.cn/search?q=TALK_SECRO_RESEARCHER_main]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/Dialogues/secro_researcher.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_RESEARCHER_main",
+  "dynamic_line": {
+    "u_has_effect": "secro_scientist_mission1_progress",
+    "no": "You are not authorized to this area.",
+    "yes": {
+      "u_has_effect": "secro_researcher_mission1_help",
+      "no": "What is it?",
+      "yes": {
+        "u_has_effect": "secro_scientist_partake_mission1",
+        "no": "You better get going.",
+        "yes": {
+          "u_has_effect": "secro_researcher_mission1_help_done",
+          "no": "Great job, survivor. I never expect an outsider help us with our dilemma, yet here you are.",
+          "yes": "What do you want?"
+        }
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "We need to go.",
+      "topic": "TALK_SECRO_RESEARCHER_mission1_progress",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_mission1_help"
+            }
+          },
+          {
+            "u_has_effect": "secro_scientist_mission1_progress"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Yeah, and I want to know more about your plans.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_mission1_help_done"
+            }
+          },
+          {
+            "u_has_effect": "secro_scientist_partake_mission1"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "duration": "PERMANENT",
+          "u_add_effect": "secro_researcher_mission1_help_done"
+        },
+        "stop_following"
+      ]
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_effect": "secro_guard_mission1_gonnastart"
+        },
+        "true": "The guard told me you need assistance.",
+        "false": "What's your plan?"
+      },
+      "topic": "TALK_SECRO_RESEARCHER_guard_mission1_gonnastart",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_startnow"
+            }
+          },
+          {
+            "u_has_effect": "secro_researcher_mission1_help_done"
+          }
+        ]
+      },
+      "effect": {
+        "duration": 2880,
+        "npc_add_effect": "secro_researcher_searching_shapeshifter"
+      }
+    },
+    {
+      "text": "We've clear the enigma chamber.",
+      "topic": "TALK_SECRO_RESEARCHER_guard_mission1_done",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_guard_mission1_done"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_backfrom_mission1"
+          }
+        ]
+      },
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_researcher_guard_mission1_done"
+      }
+    },
+    {
+      "text": "Anything else I can do?",
+      "topic": "TALK_SECRO_RESEARCHER_mission1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_mission1_gonnastart"
+            }
+          },
+          {
+            "u_has_effect": "secro_researcher_guard_mission1_done"
+          },
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_mission1_progress"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "How's the search for specimen?",
+      "topic": "TALK_SECRO_RESEARCHER_mission1_notyet",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "secro_researcher_searching_shapeshifter"
+          },
+          {
+            "u_has_effect": "secro_researcher_mission1_gonnastart"
+          },
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_mission1_progress"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "How's the search for specimen?",
+      "topic": "TALK_SECRO_RESEARCHER_mission1_start",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_searching_shapeshifter"
+            }
+          },
+          {
+            "u_has_effect": "secro_researcher_mission1_gonnastart"
+          }
+        ]
+      }
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_effect": "secro_scientist_mission1_progress"
+        },
+        "true": "Nothing.",
+        "false": "Bye then..."
+      },
+      "topic": "TALK_DONE",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_researcher_mission1_help"
+        }
+      }
+    },
+    {
+      "text": "I am.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_scientist_partake_mission1"
+            }
+          },
+          {
+            "u_has_effect": "secro_researcher_mission1_help"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Nothing.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_effect": "secro_researcher_mission1_help_done"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_RESEARCHER_main",
+  "dynamic_line": {
+    "u_has_effect": "secro_scientist_mission1_progress",
+    "no": "你无权进入这个区域。",
+    "yes": {
+      "u_has_effect": "secro_researcher_mission1_help",
+      "no": "干什么？",
+      "yes": {
+        "u_has_effect": "secro_scientist_partake_mission1",
+        "no": "你最好得走了。",
+        "yes": {
+          "u_has_effect": "secro_researcher_mission1_help_done",
+          "no": "干得好，幸存者。我从不指望外人帮我们解决困境，但你来了。",
+          "yes": "你想要什么？"
+        }
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "我们得走了。",
+      "topic": "TALK_SECRO_RESEARCHER_mission1_progress",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_mission1_help"
+            }
+          },
+          {
+            "u_has_effect": "secro_scientist_mission1_progress"
+          }
+        ]
+      }
+    },
+    {
+      "text": "是的，我想了解更多关于你的计划。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_mission1_help_done"
+            }
+          },
+          {
+            "u_has_effect": "secro_scientist_partake_mission1"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "duration": "PERMANENT",
+          "u_add_effect": "secro_researcher_mission1_help_done"
+        },
+        "stop_following"
+      ]
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_effect": "secro_guard_mission1_gonnastart"
+        },
+        "true": "The guard told me you need assistance.",
+        "false": "What's your plan?"
+      },
+      "topic": "TALK_SECRO_RESEARCHER_guard_mission1_gonnastart",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_startnow"
+            }
+          },
+          {
+            "u_has_effect": "secro_researcher_mission1_help_done"
+          }
+        ]
+      },
+      "effect": {
+        "duration": 2880,
+        "npc_add_effect": "secro_researcher_searching_shapeshifter"
+      }
+    },
+    {
+      "text": "我们已经清理了神秘密室。",
+      "topic": "TALK_SECRO_RESEARCHER_guard_mission1_done",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_guard_mission1_done"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_backfrom_mission1"
+          }
+        ]
+      },
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_researcher_guard_mission1_done"
+      }
+    },
+    {
+      "text": "我还能做什么？",
+      "topic": "TALK_SECRO_RESEARCHER_mission1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_mission1_gonnastart"
+            }
+          },
+          {
+            "u_has_effect": "secro_researcher_guard_mission1_done"
+          },
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_mission1_progress"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "标本搜寻得怎么样了？",
+      "topic": "TALK_SECRO_RESEARCHER_mission1_notyet",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "secro_researcher_searching_shapeshifter"
+          },
+          {
+            "u_has_effect": "secro_researcher_mission1_gonnastart"
+          },
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_mission1_progress"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "标本搜寻得怎么样了？",
+      "topic": "TALK_SECRO_RESEARCHER_mission1_start",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_researcher_searching_shapeshifter"
+            }
+          },
+          {
+            "u_has_effect": "secro_researcher_mission1_gonnastart"
+          }
+        ]
+      }
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_effect": "secro_scientist_mission1_progress"
+        },
+        "true": "Nothing.",
+        "false": "Bye then..."
+      },
+      "topic": "TALK_DONE",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_researcher_mission1_help"
+        }
+      }
+    },
+    {
+      "text": "我是。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_scientist_partake_mission1"
+            }
+          },
+          {
+            "u_has_effect": "secro_researcher_mission1_help"
+          }
+        ]
+      }
+    },
+    {
+      "text": "没有什么。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_effect": "secro_researcher_mission1_help_done"
+      }
+    }
+  ]
+}
+```
+

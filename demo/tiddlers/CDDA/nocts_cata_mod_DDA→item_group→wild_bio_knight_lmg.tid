@@ -1,0 +1,341 @@
+creator: 林一二
+revision: 0
+tags: item_group nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→item_group→wild_bio_knight_lmg
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：wild_bio_knight_lmg|http://cdda.aloxaf.cn/search?q=wild_bio_knight_lmg]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_monster_drops.json
+
+
+!! 原文
+
+```json
+{
+  "id": "wild_bio_knight_lmg",
+  "type": "item_group",
+  "//": "items of the super juggernaut",
+  "subtype": "collection",
+  "ammo": 100,
+  "entries": [
+    {
+      "group": "mon_zombie_bio_common"
+    },
+    {
+      "item": "hmil_armor",
+      "damage": [
+        1,
+        4
+      ],
+      "prob": 75
+    },
+    {
+      "item": "hmil_helm",
+      "damage": [
+        1,
+        4
+      ],
+      "prob": 75
+    },
+    {
+      "item": "vest",
+      "damage": [
+        1,
+        4
+      ],
+      "prob": 50
+    },
+    {
+      "item": "dump_pouch",
+      "damage": [
+        1,
+        4
+      ],
+      "prob": 50
+    },
+    {
+      "distribution": [
+        {
+          "item": "sheath",
+          "contents-item": "knife_combat",
+          "damage": [
+            0,
+            3
+          ],
+          "prob": 75
+        },
+        {
+          "item": "sheath",
+          "contents-item": "knife_rm42",
+          "damage": [
+            0,
+            3
+          ],
+          "prob": 25
+        }
+      ],
+      "prob": 80
+    },
+    {
+      "distribution": [
+        {
+          "collection": [
+            {
+              "item": "krx_laser_lmg",
+              "damage": [
+                0,
+                3
+              ],
+              "charges": [
+                0,
+                5000
+              ]
+            },
+            {
+              "distribution": [
+                {
+                  "item": "heavy_atomic_battery_cell_rechargeable",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    10000
+                  ],
+                  "prob": 50
+                },
+                {
+                  "item": "heavy_atomic_battery_cell",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    10000
+                  ],
+                  "prob": 50
+                }
+              ],
+              "prob": 25
+            }
+          ],
+          "prob": 95
+        },
+        {
+          "collection": [
+            {
+              "item": "krx_laser_lmg_ups",
+              "damage": [
+                0,
+                3
+              ]
+            },
+            {
+              "distribution": [
+                {
+                  "item": "UPS_off",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    1250
+                  ],
+                  "prob": 50
+                },
+                {
+                  "item": "adv_UPS_off",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    2500
+                  ],
+                  "prob": 50
+                }
+              ],
+              "prob": 10
+            }
+          ],
+          "prob": 5
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "wild_bio_knight_lmg",
+  "type": "item_group",
+  "//": "items of the super juggernaut",
+  "subtype": "collection",
+  "ammo": 100,
+  "entries": [
+    {
+      "group": "mon_zombie_bio_common"
+    },
+    {
+      "item": "hmil_armor",
+      "damage": [
+        1,
+        4
+      ],
+      "prob": 75
+    },
+    {
+      "item": "hmil_helm",
+      "damage": [
+        1,
+        4
+      ],
+      "prob": 75
+    },
+    {
+      "item": "vest",
+      "damage": [
+        1,
+        4
+      ],
+      "prob": 50
+    },
+    {
+      "item": "dump_pouch",
+      "damage": [
+        1,
+        4
+      ],
+      "prob": 50
+    },
+    {
+      "distribution": [
+        {
+          "item": "sheath",
+          "contents-item": "knife_combat",
+          "damage": [
+            0,
+            3
+          ],
+          "prob": 75
+        },
+        {
+          "item": "sheath",
+          "contents-item": "knife_rm42",
+          "damage": [
+            0,
+            3
+          ],
+          "prob": 25
+        }
+      ],
+      "prob": 80
+    },
+    {
+      "distribution": [
+        {
+          "collection": [
+            {
+              "item": "krx_laser_lmg",
+              "damage": [
+                0,
+                3
+              ],
+              "charges": [
+                0,
+                5000
+              ]
+            },
+            {
+              "distribution": [
+                {
+                  "item": "heavy_atomic_battery_cell_rechargeable",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    10000
+                  ],
+                  "prob": 50
+                },
+                {
+                  "item": "heavy_atomic_battery_cell",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    10000
+                  ],
+                  "prob": 50
+                }
+              ],
+              "prob": 25
+            }
+          ],
+          "prob": 95
+        },
+        {
+          "collection": [
+            {
+              "item": "krx_laser_lmg_ups",
+              "damage": [
+                0,
+                3
+              ]
+            },
+            {
+              "distribution": [
+                {
+                  "item": "UPS_off",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    1250
+                  ],
+                  "prob": 50
+                },
+                {
+                  "item": "adv_UPS_off",
+                  "damage": [
+                    0,
+                    1
+                  ],
+                  "charges": [
+                    0,
+                    2500
+                  ],
+                  "prob": 50
+                }
+              ],
+              "prob": 10
+            }
+          ],
+          "prob": 5
+        }
+      ]
+    }
+  ]
+}
+```
+

@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Arcana
+title: Arcana→ARMOR→halo_phase_shield
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：halo_phase_shield|http://cdda.aloxaf.cn/search?q=halo_phase_shield]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "halo_phase_shield",
+  "copy-from": "spell_base",
+  "type": "ARMOR",
+  "name": {
+    "str": "sunstone halo"
+  },
+  "description": "A strange radiance permeating your body, repelling nearby attackers away from you.",
+  "color": "dark_gray",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_phase_shield",
+            "once_in": 10,
+            "message": "%2$s is suddenly forced back!",
+            "npc_message": "%2$s is suddenly forced away from %1$s!"
+          }
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "ONLY_ONE",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "halo_phase_shield",
+  "copy-from": "spell_base",
+  "type": "ARMOR",
+  "name": {
+    "str": "光环：日光石"
+  },
+  "description": "A strange radiance permeating your body, repelling nearby attackers away from you.",
+  "color": "dark_gray",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_phase_shield",
+            "once_in": 10,
+            "message": "%2$s is suddenly forced back!",
+            "npc_message": "%2$s is suddenly forced away from %1$s!"
+          }
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "ONLY_ONE",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+

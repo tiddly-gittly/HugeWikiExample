@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: terrain Dorf_Life
+title: Dorf_Life→terrain→t_breach_concrete_fake_c
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_breach_concrete_fake_c|http://cdda.aloxaf.cn/search?q=t_breach_concrete_fake_c]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/cave_terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_breach_concrete_fake_c",
+  "name": "reinforced concrete wall?",
+  "description": "An extremely resilient wall, filled with concrete and rebar.  Something seems suspicious here...",
+  "looks_like": "t_strconc_wall",
+  "symbol": "LINE_OXOX",
+  "color": "light_gray",
+  "move_cost": 0,
+  "flags": [
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "DOOR",
+    "WALL",
+    "AUTO_WALL_SYMBOL",
+    "MINEABLE",
+    "BLOCK_WIND"
+  ],
+  "open": "t_breach_concrete_fake_o",
+  "connects_to": "WALL",
+  "bash": {
+    "str_min": 120,
+    "str_max": 460,
+    "sound": "scrrrash!",
+    "sound_fail": "a hollow-sounding whump!",
+    "ter_set": "t_reb_cage",
+    "items": [
+      {
+        "item": "rock",
+        "count": [
+          10,
+          22
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_breach_concrete_fake_c",
+  "name": "钢筋混凝土墙？",
+  "description": "充满混凝土和钢筋的极有弹性的墙。这里看起来似乎有些可疑…",
+  "looks_like": "t_strconc_wall",
+  "symbol": "LINE_OXOX",
+  "color": "light_gray",
+  "move_cost": 0,
+  "flags": [
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "DOOR",
+    "WALL",
+    "AUTO_WALL_SYMBOL",
+    "MINEABLE",
+    "BLOCK_WIND"
+  ],
+  "open": "t_breach_concrete_fake_o",
+  "connects_to": "WALL",
+  "bash": {
+    "str_min": 120,
+    "str_max": 460,
+    "sound": "scrrrash!",
+    "sound_fail": "a hollow-sounding whump!",
+    "ter_set": "t_reb_cage",
+    "items": [
+      {
+        "item": "rock",
+        "count": [
+          10,
+          22
+        ]
+      }
+    ]
+  }
+}
+```
+

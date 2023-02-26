@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→clairvoyance
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：clairvoyance|http://cdda.aloxaf.cn/search?q=clairvoyance]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/earthshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "clairvoyance",
+  "type": "SPELL",
+  "name": {
+    "str": "Clairvoyance"
+  },
+  "description": "You close your eyes and the earth surrenders its secrets to you.",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "max_level": 30,
+  "min_aoe": 4,
+  "max_aoe": 19,
+  "aoe_increment": 0.5,
+  "spell_class": "EARTHSHAPER",
+  "base_casting_time": 350,
+  "base_energy_cost": 750,
+  "energy_source": "MANA",
+  "difficulty": 4,
+  "field_id": "fd_clairvoyant",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "clairvoyance",
+  "type": "SPELL",
+  "name": {
+    "str": "透视"
+  },
+  "description": "你闭上双眼，大地随即向你透露了它的秘密。",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "max_level": 30,
+  "min_aoe": 4,
+  "max_aoe": 19,
+  "aoe_increment": 0.5,
+  "spell_class": "EARTHSHAPER",
+  "base_casting_time": 350,
+  "base_energy_cost": 750,
+  "energy_source": "MANA",
+  "difficulty": 4,
+  "field_id": "fd_clairvoyant",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1
+}
+```
+

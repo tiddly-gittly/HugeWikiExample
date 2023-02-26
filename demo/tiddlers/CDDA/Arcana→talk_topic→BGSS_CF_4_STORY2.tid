@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→BGSS_CF_4_STORY2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BGSS_CF_4_STORY2|http://cdda.aloxaf.cn/search?q=BGSS_CF_4_STORY2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MAGE_HUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BGSS_CF_4_STORY2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "PROF_SANGUINE",
+    "yes": "Yeshua's palms, you'd think you'd know what to expect from your kin.  Human sacrifice for arcane power.",
+    "no": "Abductions, human sacrifice, cannibalism.  All the usual gods-damned things those profligates get into."
+  },
+  "responses": [
+    {
+      "text": "So what happened?",
+      "topic": "BGSS_CF_4_STORY3"
+    },
+    {
+      "text": "<done_conversation_section>",
+      "topic": "TALK_FRIEND"
+    },
+    {
+      "text": "<end_talking>",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BGSS_CF_4_STORY2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "PROF_SANGUINE",
+    "yes": "叶舒的手掌，你会以为你知道你会从你的亲戚那里得到什么。人类为神秘力量而牺牲。",
+    "no": "绑架，献祭，吃人。那些挥霍无度的人所做的一切都是上帝诅咒的。"
+  },
+  "responses": [
+    {
+      "text": "怎么了？",
+      "topic": "BGSS_CF_4_STORY3"
+    },
+    {
+      "text": "<done_conversation_section>",
+      "topic": "TALK_FRIEND"
+    },
+    {
+      "text": "<end_talking>",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

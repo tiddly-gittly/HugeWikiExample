@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_secrozombie_rot
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_secrozombie_rot|http://cdda.aloxaf.cn/search?q=mon_secrozombie_rot]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Zombie.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Normal zombies but with modified attributes/abilities. Some shares similarities to other secronom zed mutants.",
+  "id": "mon_secrozombie_rot",
+  "copy-from": "mon_zombie",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie"
+  },
+  "description": "A human body, swaying as it moves, an unstoppable rage visible in its oily black eyes. It is heavily accompanied by a strong stench.",
+  "emit_fields": [
+    {
+      "emit_id": "emit_secrozombie_rot",
+      "delay": "1 s"
+    }
+  ],
+  "relative": {
+    "hp": 15,
+    "speed": -5
+  },
+  "symbol": "Ƶ",
+  "color": "light_green_yellow",
+  "harvest": "zombie",
+  "upgrades": {}
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Normal zombies but with modified attributes/abilities. Some shares similarities to other secronom zed mutants.",
+  "id": "mon_secrozombie_rot",
+  "copy-from": "mon_zombie",
+  "type": "MONSTER",
+  "name": {
+    "str": "丧尸"
+  },
+  "description": "一个人类的身体，随着它的移动而摇摆，在它油亮的黑眼睛中可以看到一种不可阻挡的愤怒。它散发着强烈的臭味。",
+  "emit_fields": [
+    {
+      "emit_id": "emit_secrozombie_rot",
+      "delay": "1 s"
+    }
+  ],
+  "relative": {
+    "hp": 15,
+    "speed": -5
+  },
+  "symbol": "Ƶ",
+  "color": "light_green_yellow",
+  "harvest": "zombie",
+  "upgrades": {}
+}
+```
+

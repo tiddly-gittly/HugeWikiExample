@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_platyoposaurus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_platyoposaurus|http://cdda.aloxaf.cn/search?q=mon_platyoposaurus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_amphibian.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_platyoposaurus",
+  "type": "MONSTER",
+  "name": {
+    "str": "platyoposaurus",
+    "str_pl": "platyoposaurus"
+  },
+  "description": "An alligator-looking beast.  The head is triangular, prepared to catch fish.  The large amphibian body looks as if it was reinforced with the concept of crocodilians.  The animal lurks and waits for prey to get closer.",
+  "volume": "265 L",
+  "weight": "250 kg",
+  "default_faction": "touhou_amphibianancient_large",
+  "bodytype": "gator",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "AMPHIBIAN"
+  ],
+  "harvest": "reptile_terrestrial_large_leather",
+  "hp": 300,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "p",
+  "looks_like": "mon_gator",
+  "color": "dark_gray_green",
+  "aggression": 20,
+  "morale": 50,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 3,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "reproduction": {
+    "baby_egg": "egg_platyoposaurus",
+    "baby_count": 16,
+    "baby_timer": 32
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      65
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Based on Platyoposaurus sp. I couldn't find almost anything other than the size at 2.5 m average so most data are estimates",
+  "//2": "Add 'grasping bite' attack",
+  "//3": "Should have no movement speed demerit while in water"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_platyoposaurus",
+  "type": "MONSTER",
+  "name": {
+    "str": "platyoposaurus",
+    "str_pl": "platyoposaurus"
+  },
+  "description": "An alligator-looking beast.  The head is triangular, prepared to catch fish.  The large amphibian body looks as if it was reinforced with the concept of crocodilians.  The animal lurks and waits for prey to get closer.",
+  "volume": "265 L",
+  "weight": "250 kg",
+  "default_faction": "touhou_amphibianancient_large",
+  "bodytype": "gator",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "AMPHIBIAN"
+  ],
+  "harvest": "reptile_terrestrial_large_leather",
+  "hp": 300,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "p",
+  "looks_like": "mon_gator",
+  "color": "dark_gray_green",
+  "aggression": 20,
+  "morale": 50,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 3,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "reproduction": {
+    "baby_egg": "egg_platyoposaurus",
+    "baby_count": 16,
+    "baby_timer": 32
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      65
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Based on Platyoposaurus sp. I couldn't find almost anything other than the size at 2.5 m average so most data are estimates",
+  "//2": "Add 'grasping bite' attack",
+  "//3": "Should have no movement speed demerit while in water"
+}
+```
+

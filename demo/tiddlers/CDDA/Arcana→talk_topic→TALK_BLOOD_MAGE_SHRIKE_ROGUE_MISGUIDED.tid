@@ -1,0 +1,205 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_ROGUE_MISGUIDED
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_ROGUE_MISGUIDED|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_ROGUE_MISGUIDED]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_ROGUE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_MISGUIDED",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "Funny to hear, when you've clearly been sticking your nose in the exact same bad idea the magus is dabbling in.",
+    "no": {
+      "u_has_trait": "THRESH_VEIL",
+      "yes": "I think I see the problem.  Let me guess, quit the Order, found religion, and now the Keepers' little friend is pulling your strings?  \"No god, no demon, no spirit can be trusted with power over you.\"  You've compromised your principles, friend.",
+      "no": "I have my duties.  They may be idiots but they're my idiots.  If you were interested in not dragging the order to extinction, then you should've left well enough alone while you had the chance."
+    }
+  },
+  "responses": [
+    {
+      "text": "This isn't about that.  We can't continue down the path we're following, or they'll be nothing left for us.",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true,
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 30
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE",
+        "opinion": {
+          "trust": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE",
+        "opinion": {
+          "anger": 1,
+          "trust": -1
+        }
+      }
+    },
+    {
+      "text": "I am not ruled by Him.  I have made my choice.  We must adapt, and in this case it requires an end to the old ways.",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      },
+      "switch": true,
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 10
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE"
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE",
+        "opinion": {
+          "anger": 1,
+          "trust": -3,
+          "value": -2
+        }
+      }
+    },
+    {
+      "text": "We can't keep backstabbing everyone we meet, we must be measured in our practice.",
+      "switch": true,
+      "default": true,
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 20
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE",
+        "opinion": {
+          "trust": 1,
+          "value": 1,
+          "anger": -1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE",
+        "opinion": {
+          "value": -1
+        }
+      }
+    },
+    {
+      "text": "[ATTACK] I've heard enough.  Die.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_MISGUIDED",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "有趣的是，当你明显地把你的鼻子伸进了法师正在涉足的同一个坏主意里。",
+    "no": {
+      "u_has_trait": "THRESH_VEIL",
+      "yes": "我想我看到了问题所在。让我猜猜，退出秩序，找到了宗教信仰，现在看守者的小朋友在牵线搭桥？”没有上帝，没有恶魔，没有灵魂可以信任你。“你已经妥协了你的原则，朋友。",
+      "no": "我有我的职责。他们可能是白痴，但他们是我的白痴。如果你不想把这个秩序拖到灭绝的地步，那么在你有机会的时候，你应该保持足够的孤独。"
+    }
+  },
+  "responses": [
+    {
+      "text": "不是因为这个。我们不能继续沿着我们要走的路走下去，否则他们就什么都没有了。",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true,
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 30
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE",
+        "opinion": {
+          "trust": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE",
+        "opinion": {
+          "anger": 1,
+          "trust": -1
+        }
+      }
+    },
+    {
+      "text": "我不受他支配。我做了我的选择。我们必须适应，在这种情况下，它需要结束旧的方式。",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      },
+      "switch": true,
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 10
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE"
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE",
+        "opinion": {
+          "anger": 1,
+          "trust": -3,
+          "value": -2
+        }
+      }
+    },
+    {
+      "text": "我们不能老是背着我们遇到的每个人，我们必须在实践中有分寸。",
+      "switch": true,
+      "default": true,
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 20
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE",
+        "opinion": {
+          "trust": 1,
+          "value": 1,
+          "anger": -1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE",
+        "opinion": {
+          "value": -1
+        }
+      }
+    },
+    {
+      "text": "[攻击]我听够了。死吧。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

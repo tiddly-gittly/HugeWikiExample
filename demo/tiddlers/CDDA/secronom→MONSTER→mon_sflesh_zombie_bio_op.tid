@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_bio_op
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_bio_op|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_bio_op]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_bio_op",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie bio-operator"
+  },
+  "description": "This armored and augmented soldier's bionics crackle with energy.  Worse, it appears to remember its training.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 5,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 7,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 4
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 13,
+  "armor_cut": 18,
+  "armor_bullet": 12,
+  "vision_day": 50,
+  "vision_night": 3,
+  "luminance": 4,
+  "harvest": "CBM_OP",
+  "special_attacks": [
+    [
+      "BIO_OP_TAKEDOWN",
+      20
+    ]
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    75
+  ],
+  "death_drops": "mon_zombie_bio_op_death_drops",
+  "burn_into": "mon_zombie_bio_op",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "ACIDPROOF",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_bio_op",
+  "type": "MONSTER",
+  "name": {
+    "str": "生化战士丧尸"
+  },
+  "description": "一个身着增强装甲并发出生化能量噼啪声的人类士兵尸体，更糟的是，它显然仍记得战斗与杀人技巧。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 5,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 7,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 4
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 13,
+  "armor_cut": 18,
+  "armor_bullet": 12,
+  "vision_day": 50,
+  "vision_night": 3,
+  "luminance": 4,
+  "harvest": "CBM_OP",
+  "special_attacks": [
+    [
+      "BIO_OP_TAKEDOWN",
+      20
+    ]
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    75
+  ],
+  "death_drops": "mon_zombie_bio_op_death_drops",
+  "burn_into": "mon_zombie_bio_op",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "ACIDPROOF",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

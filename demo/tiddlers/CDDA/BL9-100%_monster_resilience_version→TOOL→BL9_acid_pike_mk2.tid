@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: TOOL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→TOOL→BL9_acid_pike_mk2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_acid_pike_mk2|http://cdda.aloxaf.cn/search?q=BL9_acid_pike_mk2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Items/melee_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_acid_pike_mk2",
+  "looks_like": "ji",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9 experimental acid pike MK ii"
+  },
+  "description": "A refined and upgraded highly experimental futuristic pike with a unique design that uses BL9 capable of changing it's physical and chemical structure to cause various offensive effects, in this case, extremely corrosive stream of BL9",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 2,
+  "cutting": 34,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_acid_melee_mk2_effect",
+            "message": "As you stab with the pike it emits extremely corrosive stream of BL9 at %2$s wildly!",
+            "npc_message": "As %1$s stabs with the pike it emits extremely corrosive stream of BL9 at %2$s wildly!"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "IMPALE",
+    "tec_brawl_trip",
+    "niten_water_cut",
+    "niten_feint",
+    "tec_medievalpole_highround",
+    "tec_medievalpole_execute"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "SPEAR",
+    "REACH_ATTACK",
+    "STAB"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_acid_pike_mk2",
+  "looks_like": "ji",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9实验酸梭鱼MK ii"
+  },
+  "description": "一个精致升级的高度实验性未来长枪，采用独特的设计，使用BL9能够改变其物理和化学结构，造成各种令人不快的效果，在这种情况下，BL9的腐蚀性极强",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 2,
+  "cutting": 34,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_acid_melee_mk2_effect",
+            "message": "当你用长矛刺的时候，它会在%2$s处释放出极具腐蚀性的BL9流！",
+            "npc_message": "当%1$s用长矛刺入时，它在%2$s处释放出极具腐蚀性的BL9流！"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "IMPALE",
+    "tec_brawl_trip",
+    "niten_water_cut",
+    "niten_feint",
+    "tec_medievalpole_highround",
+    "tec_medievalpole_execute"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "SPEAR",
+    "REACH_ATTACK",
+    "STAB"
+  ]
+}
+```
+

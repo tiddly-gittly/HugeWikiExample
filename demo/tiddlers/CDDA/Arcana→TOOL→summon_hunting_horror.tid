@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_hunting_horror
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_hunting_horror|http://cdda.aloxaf.cn/search?q=summon_hunting_horror]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_hunting_horror",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of Crawling Chaos",
+    "str_pl": "glyphs of Crawling Chaos"
+  },
+  "//": "Explanation: In Lovecraft's work, The Crawling Chaos is one of Nyarlathotep's names, and hunting horrors are associated with him.  The success and failure messages below spell it out rather plainly.",
+  "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  It is somewhat easy to control.",
+  "price": "1500 USD",
+  "price_postapoc": "40 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_hunting_horror_summoned",
+    "friendly_msg": "The hunting horror is at your beck and call.  A gift from the Stalker among the Stars?",
+    "hostile_msg": "You feel the gaze of Nyarlathotep upon you.  How foolish of you, to steal the harrier of the Faceless God!",
+    "difficulty": 4,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_hunting_horror",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：爬行混沌",
+    "str_pl": "雕文：爬行混沌"
+  },
+  "//": "Explanation: In Lovecraft's work, The Crawling Chaos is one of Nyarlathotep's names, and hunting horrors are associated with him.  The success and failure messages below spell it out rather plainly.",
+  "description": "奇怪的银徽章，不规则地刻着难以辨认的符文。使用它会将一个狩猎恐惧与你的意志捆绑在一起。如果成功的话。它有点容易控制。",
+  "price": "1500 USD",
+  "price_postapoc": "40 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_hunting_horror_summoned",
+    "friendly_msg": "狩猎恐惧随时听候你的吩咐。也许是星间潜行者的恩赐？",
+    "hostile_msg": "你能感觉到奈亚拉托提普的目光停在你身上。你真愚蠢，试图偷走无名古神的鹞！",
+    "difficulty": 4,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+

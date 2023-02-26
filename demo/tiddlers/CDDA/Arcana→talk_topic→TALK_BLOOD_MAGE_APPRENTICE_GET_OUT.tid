@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_APPRENTICE_GET_OUT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_APPRENTICE_GET_OUT|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_APPRENTICE_GET_OUT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_APPRENTICE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_GET_OUT",
+  "type": "talk_topic",
+  "dynamic_line": "You must be either lost or crazy.  This place isn't safe, and you're not welcome here.  Leave, and forget this place even exists.",
+  "responses": [
+    {
+      "text": "I am a servant of He From Beyond The Veil.  We are not enemies.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_VEIL"
+    },
+    {
+      "text": "You would not welcome a student of the arcane?",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_MISTAKE"
+    },
+    {
+      "text": "I can see you dabble in what I have already achieved.",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD"
+    },
+    {
+      "text": "[ATTACK] Try and stop me.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    },
+    {
+      "text": "Okay, I'm going.",
+      "topic": "TALK_DONE",
+      "effect": "player_leaving",
+      "opinion": {
+        "fear": -1
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_GET_OUT",
+  "type": "talk_topic",
+  "dynamic_line": "你要么迷路了，要么疯了。这地方不安全，你不受欢迎。离开，忘了这个地方的存在。",
+  "responses": [
+    {
+      "text": "我是帷幕彼端古神的仆人。我们不是敌人。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_VEIL"
+    },
+    {
+      "text": "你不欢迎学奥术的学生吗？",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_MISTAKE"
+    },
+    {
+      "text": "我可以看到你涉足我已经取得的成就。",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD"
+    },
+    {
+      "text": "[攻击]试着阻止我吧。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    },
+    {
+      "text": "好好，我现在就走。",
+      "topic": "TALK_DONE",
+      "effect": "player_leaving",
+      "opinion": {
+        "fear": -1
+      }
+    }
+  ]
+}
+```
+

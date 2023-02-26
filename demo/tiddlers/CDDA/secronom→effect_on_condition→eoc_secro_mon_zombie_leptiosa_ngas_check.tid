@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom
+title: secronom→effect_on_condition→eoc_secro_mon_zombie_leptiosa_ngas_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_mon_zombie_leptiosa_ngas_check|http://cdda.aloxaf.cn/search?q=eoc_secro_mon_zombie_leptiosa_ngas_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_leptiosa_ngas_check",
+  "effect": [
+    {
+      "npc_add_effect": "controlled",
+      "duration": "8 seconds"
+    },
+    {
+      "npc_location_variable": {
+        "global_val": "secro_leptiosa_noxiousgas"
+      }
+    },
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_mon_zombie_leptiosa_ngas_checked",
+          "effect": [
+            {
+              "u_set_field": "fd_secro_lepotiosa_ngas",
+              "target_var": {
+                "global_val": "secro_leptiosa_noxiousgas"
+              },
+              "radius": 3,
+              "intensity": 3
+            }
+          ]
+        }
+      ],
+      "time_in_future": [
+        "6 seconds",
+        "6 seconds"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_leptiosa_ngas_check",
+  "effect": [
+    {
+      "npc_add_effect": "controlled",
+      "duration": "8 seconds"
+    },
+    {
+      "npc_location_variable": {
+        "global_val": "secro_leptiosa_noxiousgas"
+      }
+    },
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_mon_zombie_leptiosa_ngas_checked",
+          "effect": [
+            {
+              "u_set_field": "fd_secro_lepotiosa_ngas",
+              "target_var": {
+                "global_val": "secro_leptiosa_noxiousgas"
+              },
+              "radius": 3,
+              "intensity": 3
+            }
+          ]
+        }
+      ],
+      "time_in_future": [
+        "6 seconds",
+        "6 seconds"
+      ]
+    }
+  ]
+}
+```
+

@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→cleansingflame_hermes_heal
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cleansingflame_hermes_heal|http://cdda.aloxaf.cn/search?q=cleansingflame_hermes_heal]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Cleansing_Flame.json
+
+
+!! 原文
+
+```json
+{
+  "id": "cleansingflame_hermes_heal",
+  "type": "SPELL",
+  "spell_class": "CLEANSING_FLAME",
+  "name": {
+    "str": "Hermes Reborn"
+  },
+  "description": "In the sea without lees\nStandeth the bird of Hermes\nEating his wings variable\nAnd maketh himself yet full stable",
+  "//": "Well thats too edgy now, need to replase it.",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 350,
+  "base_energy_cost": 800,
+  "energy_source": "MANA",
+  "difficulty": 10,
+  "min_damage": -20,
+  "max_damage": -144,
+  "damage_increment": -2.9,
+  "max_level": 43,
+  "extra_effects": [
+    {
+      "id": "cleansingflame_hermes_burn"
+    },
+    {
+      "id": "pain_split"
+    }
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "CONCENTRATE",
+    "LOUD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "cleansingflame_hermes_heal",
+  "type": "SPELL",
+  "spell_class": "CLEANSING_FLAME",
+  "name": {
+    "str": "赫尔墨斯复生"
+  },
+  "description": "在无背风处的海中\n站立着赫耳墨斯之鸟\n吃着自己多变的翅膀\n使自己变得完全稳定（注：《黎普列卷轴》）",
+  "//": "Well thats too edgy now, need to replase it.",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 350,
+  "base_energy_cost": 800,
+  "energy_source": "MANA",
+  "difficulty": 10,
+  "min_damage": -20,
+  "max_damage": -144,
+  "damage_increment": -2.9,
+  "max_level": 43,
+  "extra_effects": [
+    {
+      "id": "cleansingflame_hermes_burn"
+    },
+    {
+      "id": "pain_split"
+    }
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "CONCENTRATE",
+    "LOUD"
+  ]
+}
+```
+

@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_divine_seal
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_divine_seal|http://cdda.aloxaf.cn/search?q=arcana_item_divine_seal]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_divine_seal",
+  "name": {
+    "str": "Divine Seal"
+  },
+  "description": "Powerful AoE healing, also acts like Consecrate and transforms dead plant life.",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "message": "Dimensional energy pulses through the charm, radiating outwards in a wave of holy light!",
+  "extra_effects": [
+    {
+      "id": "arcana_item_divine_seal_heal_aoe",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_divine_seal_consecrate",
+      "hit_self": false
+    }
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_plant_renewal",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT",
+    "IGNORE_WALLS"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_aoe": 32,
+  "max_aoe": 32
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_divine_seal",
+  "name": {
+    "str": "神圣魔印"
+  },
+  "description": "强大的AoE治疗，也像奉献和转化死亡的植物生命。",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "message": "维度能量在魅力中脉动，在圣光波中向外辐射！",
+  "extra_effects": [
+    {
+      "id": "arcana_item_divine_seal_heal_aoe",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_divine_seal_consecrate",
+      "hit_self": false
+    }
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_plant_renewal",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT",
+    "IGNORE_WALLS"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_aoe": 32,
+  "max_aoe": 32
+}
+```
+

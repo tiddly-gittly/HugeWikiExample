@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_react_shadowy_shield
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_react_shadowy_shield|http://cdda.aloxaf.cn/search?q=arcana_react_shadowy_shield]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_react.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_react_shadowy_shield",
+  "type": "SPELL",
+  "name": {
+    "str": "Shadowy Shield Effect"
+  },
+  "description": "This creates the effect that strikes your attackers blind.",
+  "message": "Wavering shadows lash out at your attacker!",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "blind",
+  "damage_type": "cold",
+  "min_damage": 1,
+  "max_damage": 3,
+  "flags": [
+    "RANDOM_DURATION",
+    "RANDOM_DAMAGE"
+  ],
+  "sound_type": "combat",
+  "sound_description": "a strange rush of wind!",
+  "min_range": 5,
+  "max_range": 5,
+  "min_duration": 500,
+  "max_duration": 1000,
+  "field_id": "fd_veil_darkness",
+  "field_chance": 1,
+  "min_field_intensity": 2,
+  "max_field_intensity": 2
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_react_shadowy_shield",
+  "type": "SPELL",
+  "name": {
+    "str": "Shadowy Shield Effect"
+  },
+  "description": "This creates the effect that strikes your attackers blind.",
+  "message": "摇曳的影子向你的攻击者猛击！",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "blind",
+  "damage_type": "cold",
+  "min_damage": 1,
+  "max_damage": 3,
+  "flags": [
+    "RANDOM_DURATION",
+    "RANDOM_DAMAGE"
+  ],
+  "sound_type": "combat",
+  "sound_description": "a strange rush of wind!",
+  "min_range": 5,
+  "max_range": 5,
+  "min_duration": 500,
+  "max_duration": 1000,
+  "field_id": "fd_veil_darkness",
+  "field_chance": 1,
+  "min_field_intensity": 2,
+  "max_field_intensity": 2
+}
+```
+

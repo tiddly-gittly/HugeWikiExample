@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_BLADE_L_SHARP
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_BLADE_L_SHARP|http://cdda.aloxaf.cn/search?q=SECRO_BLADE_L_SHARP]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_BLADE_L_SHARP",
+  "name": {
+    "str": "Sharpened Bone Blade"
+  },
+  "points": -6,
+  "visibility": 8,
+  "ugliness": 3,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "Your bone blade became lighter, thinner and has a sharpened edge, like that of a sword. Instead of impact damage, it cuts through flesh with ease.",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l"
+  ],
+  "prereqs": [
+    "SECRO_BLADE_L"
+  ],
+  "leads_to": [
+    "SECRO_BLADE_SHARP_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      100
+    ]
+  ],
+  "rand_cut_bonus": {
+    "min": 4,
+    "max": 12
+  },
+  "armor": [
+    {
+      "parts": "arm_l",
+      "bash": 6,
+      "cut": 6,
+      "stab": 6
+    }
+  ],
+  "attackcost_modifier": 0.9,
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_BLADE_L_SHARP",
+  "name": {
+    "str": "刃骨刀"
+  },
+  "points": -6,
+  "visibility": 8,
+  "ugliness": 3,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "你的骨刀变得更轻，更薄，有一个锋利的边缘，就像一把剑。而不是冲击伤害，它切割肉容易。",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l"
+  ],
+  "prereqs": [
+    "SECRO_BLADE_L"
+  ],
+  "leads_to": [
+    "SECRO_BLADE_SHARP_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      100
+    ]
+  ],
+  "rand_cut_bonus": {
+    "min": 4,
+    "max": 12
+  },
+  "armor": [
+    {
+      "parts": "arm_l",
+      "bash": 6,
+      "cut": 6,
+      "stab": 6
+    }
+  ],
+  "attackcost_modifier": 0.9,
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

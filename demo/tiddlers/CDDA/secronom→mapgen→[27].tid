@@ -1,0 +1,633 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[27]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/Flesh/flesh_city.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Gun Shop",
+  "method": "json",
+  "om_terrain": "s_shop_flesh",
+  "type": "mapgen",
+  "weight": 125,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "....d...d....dss..dd.d..",
+      ".......d......ss........",
+      "d.............ssd.d.....",
+      "..d....d..d.dssss......d",
+      "....dwWeaWwwWaffaWwwa...",
+      "d....W{_Cc__^____DDDWu..",
+      "d....ar__D_________Dw...",
+      ".d...|r__D_________D|u.d",
+      "...u4|__cc_________D|u..",
+      "d.||||______DDD__||||...",
+      ".u|{_|||||_______+_C|u.d",
+      ".u|{_+______||+|||_t|...",
+      "d.|{_|___|&_|;_N|i_H|...",
+      "..|||||e|||g|||||||||...",
+      ".u-___________tt_tt_-u..",
+      "du-_________________-u..",
+      "..-b#-bdSSSSbS.SS-Sb-...",
+      "..-ddd..........dddd-..d",
+      "du-ddddd.d.....ddddd-u..",
+      "..-ddddddddddddddddd-..d",
+      ".u-ddddddddddddddddd-..d",
+      "d.-#dTdddddTdddddTd#-u..",
+      "..-#################-...",
+      ".d-------------------.d."
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "#": "t_secro_dirt_flesh",
+      "+": "t_secro_door_metal_locked_flesh",
+      "-": "t_secro_brick_wall_flesh",
+      ".": "t_secro_grass_flesh",
+      "S": "t_secro_grass_flesh",
+      "T": "t_secro_dirt_flesh",
+      "W": "t_secro_wall_w_flesh",
+      "_": "t_secro_floor_flesh",
+      "a": "t_secro_wall_r_flesh",
+      "b": "t_secro_dirt_flesh",
+      "d": "t_secro_dirt_flesh",
+      "e": "t_secro_window_flesh",
+      "f": "t_secro_door_flesh",
+      "g": "t_secro_door_flesh",
+      "s": "t_secro_sidewalk_flesh",
+      "u": "t_secro_shrub_flesh",
+      "w": "t_secro_wall_b_flesh",
+      "|": "t_secro_wall_w_flesh"
+    },
+    "toilets": {
+      ";": {}
+    },
+    "place_item": [
+      {
+        "item": "corpse",
+        "repeat": 1,
+        "x": 19,
+        "y": 12
+      }
+    ],
+    "furniture": {
+      "#": "f_sandbag_wall",
+      "&": "f_trashcan",
+      "C": "f_chair",
+      "D": "f_displaycase",
+      "H": "f_armchair",
+      "S": "f_sandbag_half",
+      "T": "f_table",
+      "^": "f_indoor_plant_y",
+      "b": "f_sandbag_half",
+      "c": "f_counter",
+      "i": "f_indoor_plant",
+      "r": "f_rack",
+      "t": "f_table",
+      "N": "f_sink",
+      "{": "f_locker"
+    },
+    "place_items": [
+      {
+        "chance": 99,
+        "item": "corpse_male",
+        "x": 19,
+        "y": 12
+      },
+      {
+        "chance": 75,
+        "item": "ammo_casings_bulk",
+        "x": [
+          14,
+          15
+        ],
+        "y": 14
+      },
+      {
+        "chance": 65,
+        "item": "guns_pistol_common",
+        "x": 19,
+        "y": 8
+      },
+      {
+        "chance": 75,
+        "item": "guns_common",
+        "x": 3,
+        "y": 10
+      },
+      {
+        "chance": 40,
+        "item": "gunmod_rare",
+        "x": 3,
+        "y": 12
+      },
+      {
+        "chance": 85,
+        "item": "book_gunmags",
+        "x": 9,
+        "y": 8
+      },
+      {
+        "chance": 5,
+        "item": "guns_pistol_rare",
+        "x": 3,
+        "y": 11
+      },
+      {
+        "chance": 75,
+        "item": "ammo_rifle_common",
+        "x": 18,
+        "y": 14
+      },
+      {
+        "chance": 75,
+        "item": "ammo_rifle_common",
+        "x": 6,
+        "y": 7
+      },
+      {
+        "chance": 60,
+        "item": "gunmod_common",
+        "x": [
+          12,
+          14
+        ],
+        "y": 9
+      },
+      {
+        "chance": 95,
+        "item": "ammo_common",
+        "x": 6,
+        "y": [
+          5,
+          6
+        ]
+      },
+      {
+        "chance": 85,
+        "item": "guns_rifle_common",
+        "x": [
+          17,
+          18
+        ],
+        "y": 5
+      },
+      {
+        "chance": 95,
+        "item": "guns_common",
+        "x": 9,
+        "y": [
+          6,
+          7
+        ]
+      },
+      {
+        "chance": 95,
+        "item": "guns_common",
+        "x": 19,
+        "y": [
+          5,
+          7
+        ]
+      },
+      {
+        "chance": 45,
+        "item": "trash",
+        "x": 13,
+        "y": 12
+      },
+      {
+        "chance": 45,
+        "item": "trash",
+        "x": 10,
+        "y": 12
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Gun Shop",
+  "method": "json",
+  "om_terrain": "s_shop_flesh",
+  "type": "mapgen",
+  "weight": 125,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "....d...d....dss..dd.d..",
+      ".......d......ss........",
+      "d.............ssd.d.....",
+      "..d....d..d.dssss......d",
+      "....dwWeaWwwWaffaWwwa...",
+      "d....W{_Cc__^____DDDWu..",
+      "d....ar__D_________Dw...",
+      ".d...|r__D_________D|u.d",
+      "...u4|__cc_________D|u..",
+      "d.||||______DDD__||||...",
+      ".u|{_|||||_______+_C|u.d",
+      ".u|{_+______||+|||_t|...",
+      "d.|{_|___|&_|;_N|i_H|...",
+      "..|||||e|||g|||||||||...",
+      ".u-___________tt_tt_-u..",
+      "du-_________________-u..",
+      "..-b#-bdSSSSbS.SS-Sb-...",
+      "..-ddd..........dddd-..d",
+      "du-ddddd.d.....ddddd-u..",
+      "..-ddddddddddddddddd-..d",
+      ".u-ddddddddddddddddd-..d",
+      "d.-#dTdddddTdddddTd#-u..",
+      "..-#################-...",
+      ".d-------------------.d."
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "#": "t_secro_dirt_flesh",
+      "+": "t_secro_door_metal_locked_flesh",
+      "-": "t_secro_brick_wall_flesh",
+      ".": "t_secro_grass_flesh",
+      "S": "t_secro_grass_flesh",
+      "T": "t_secro_dirt_flesh",
+      "W": "t_secro_wall_w_flesh",
+      "_": "t_secro_floor_flesh",
+      "a": "t_secro_wall_r_flesh",
+      "b": "t_secro_dirt_flesh",
+      "d": "t_secro_dirt_flesh",
+      "e": "t_secro_window_flesh",
+      "f": "t_secro_door_flesh",
+      "g": "t_secro_door_flesh",
+      "s": "t_secro_sidewalk_flesh",
+      "u": "t_secro_shrub_flesh",
+      "w": "t_secro_wall_b_flesh",
+      "|": "t_secro_wall_w_flesh"
+    },
+    "toilets": {
+      ";": {}
+    },
+    "place_item": [
+      {
+        "item": "corpse",
+        "repeat": 1,
+        "x": 19,
+        "y": 12
+      }
+    ],
+    "furniture": {
+      "#": "f_sandbag_wall",
+      "&": "f_trashcan",
+      "C": "f_chair",
+      "D": "f_displaycase",
+      "H": "f_armchair",
+      "S": "f_sandbag_half",
+      "T": "f_table",
+      "^": "f_indoor_plant_y",
+      "b": "f_sandbag_half",
+      "c": "f_counter",
+      "i": "f_indoor_plant",
+      "r": "f_rack",
+      "t": "f_table",
+      "N": "f_sink",
+      "{": "f_locker"
+    },
+    "place_items": [
+      {
+        "chance": 99,
+        "item": "corpse_male",
+        "x": 19,
+        "y": 12
+      },
+      {
+        "chance": 75,
+        "item": "ammo_casings_bulk",
+        "x": [
+          14,
+          15
+        ],
+        "y": 14
+      },
+      {
+        "chance": 65,
+        "item": "guns_pistol_common",
+        "x": 19,
+        "y": 8
+      },
+      {
+        "chance": 75,
+        "item": "guns_common",
+        "x": 3,
+        "y": 10
+      },
+      {
+        "chance": 40,
+        "item": "gunmod_rare",
+        "x": 3,
+        "y": 12
+      },
+      {
+        "chance": 85,
+        "item": "book_gunmags",
+        "x": 9,
+        "y": 8
+      },
+      {
+        "chance": 5,
+        "item": "guns_pistol_rare",
+        "x": 3,
+        "y": 11
+      },
+      {
+        "chance": 75,
+        "item": "ammo_rifle_common",
+        "x": 18,
+        "y": 14
+      },
+      {
+        "chance": 75,
+        "item": "ammo_rifle_common",
+        "x": 6,
+        "y": 7
+      },
+      {
+        "chance": 60,
+        "item": "gunmod_common",
+        "x": [
+          12,
+          14
+        ],
+        "y": 9
+      },
+      {
+        "chance": 95,
+        "item": "ammo_common",
+        "x": 6,
+        "y": [
+          5,
+          6
+        ]
+      },
+      {
+        "chance": 85,
+        "item": "guns_rifle_common",
+        "x": [
+          17,
+          18
+        ],
+        "y": 5
+      },
+      {
+        "chance": 95,
+        "item": "guns_common",
+        "x": 9,
+        "y": [
+          6,
+          7
+        ]
+      },
+      {
+        "chance": 95,
+        "item": "guns_common",
+        "x": 19,
+        "y": [
+          5,
+          7
+        ]
+      },
+      {
+        "chance": 45,
+        "item": "trash",
+        "x": 13,
+        "y": 12
+      },
+      {
+        "chance": 45,
+        "item": "trash",
+        "x": 10,
+        "y": 12
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Gun Shop",
+  "method": "json",
+  "om_terrain": "s_shop_flesh",
+  "type": "mapgen",
+  "weight": 125,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "....d...d....dss..dd.d..",
+      ".......d......ss........",
+      "d.............ssd.d.....",
+      "..d....d..d.dssss......d",
+      "....dwWeaWwwWaffaWwwa...",
+      "d....W{_Cc__^____DDDWu..",
+      "d....ar__D_________Dw...",
+      ".d...|r__D_________D|u.d",
+      "...u4|__cc_________D|u..",
+      "d.||||______DDD__||||...",
+      ".u|{_|||||_______+_C|u.d",
+      ".u|{_+______||+|||_t|...",
+      "d.|{_|___|&_|;_N|i_H|...",
+      "..|||||e|||g|||||||||...",
+      ".u-___________tt_tt_-u..",
+      "du-_________________-u..",
+      "..-b#-bdSSSSbS.SS-Sb-...",
+      "..-ddd..........dddd-..d",
+      "du-ddddd.d.....ddddd-u..",
+      "..-ddddddddddddddddd-..d",
+      ".u-ddddddddddddddddd-..d",
+      "d.-#dTdddddTdddddTd#-u..",
+      "..-#################-...",
+      ".d-------------------.d."
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "#": "t_secro_dirt_flesh",
+      "+": "t_secro_door_metal_locked_flesh",
+      "-": "t_secro_brick_wall_flesh",
+      ".": "t_secro_grass_flesh",
+      "S": "t_secro_grass_flesh",
+      "T": "t_secro_dirt_flesh",
+      "W": "t_secro_wall_w_flesh",
+      "_": "t_secro_floor_flesh",
+      "a": "t_secro_wall_r_flesh",
+      "b": "t_secro_dirt_flesh",
+      "d": "t_secro_dirt_flesh",
+      "e": "t_secro_window_flesh",
+      "f": "t_secro_door_flesh",
+      "g": "t_secro_door_flesh",
+      "s": "t_secro_sidewalk_flesh",
+      "u": "t_secro_shrub_flesh",
+      "w": "t_secro_wall_b_flesh",
+      "|": "t_secro_wall_w_flesh"
+    },
+    "toilets": {
+      ";": {}
+    },
+    "place_item": [
+      {
+        "item": "corpse",
+        "repeat": 1,
+        "x": 19,
+        "y": 12
+      }
+    ],
+    "furniture": {
+      "#": "f_sandbag_wall",
+      "&": "f_trashcan",
+      "C": "f_chair",
+      "D": "f_displaycase",
+      "H": "f_armchair",
+      "S": "f_sandbag_half",
+      "T": "f_table",
+      "^": "f_indoor_plant_y",
+      "b": "f_sandbag_half",
+      "c": "f_counter",
+      "i": "f_indoor_plant",
+      "r": "f_rack",
+      "t": "f_table",
+      "N": "f_sink",
+      "{": "f_locker"
+    },
+    "place_items": [
+      {
+        "chance": 99,
+        "item": "corpse_male",
+        "x": 19,
+        "y": 12
+      },
+      {
+        "chance": 75,
+        "item": "ammo_casings_bulk",
+        "x": [
+          14,
+          15
+        ],
+        "y": 14
+      },
+      {
+        "chance": 65,
+        "item": "guns_pistol_common",
+        "x": 19,
+        "y": 8
+      },
+      {
+        "chance": 75,
+        "item": "guns_common",
+        "x": 3,
+        "y": 10
+      },
+      {
+        "chance": 40,
+        "item": "gunmod_rare",
+        "x": 3,
+        "y": 12
+      },
+      {
+        "chance": 85,
+        "item": "book_gunmags",
+        "x": 9,
+        "y": 8
+      },
+      {
+        "chance": 5,
+        "item": "guns_pistol_rare",
+        "x": 3,
+        "y": 11
+      },
+      {
+        "chance": 75,
+        "item": "ammo_rifle_common",
+        "x": 18,
+        "y": 14
+      },
+      {
+        "chance": 75,
+        "item": "ammo_rifle_common",
+        "x": 6,
+        "y": 7
+      },
+      {
+        "chance": 60,
+        "item": "gunmod_common",
+        "x": [
+          12,
+          14
+        ],
+        "y": 9
+      },
+      {
+        "chance": 95,
+        "item": "ammo_common",
+        "x": 6,
+        "y": [
+          5,
+          6
+        ]
+      },
+      {
+        "chance": 85,
+        "item": "guns_rifle_common",
+        "x": [
+          17,
+          18
+        ],
+        "y": 5
+      },
+      {
+        "chance": 95,
+        "item": "guns_common",
+        "x": 9,
+        "y": [
+          6,
+          7
+        ]
+      },
+      {
+        "chance": 95,
+        "item": "guns_common",
+        "x": 19,
+        "y": [
+          5,
+          7
+        ]
+      },
+      {
+        "chance": 45,
+        "item": "trash",
+        "x": 13,
+        "y": 12
+      },
+      {
+        "chance": 45,
+        "item": "trash",
+        "x": 10,
+        "y": 12
+      }
+    ]
+  }
+}
+```
+

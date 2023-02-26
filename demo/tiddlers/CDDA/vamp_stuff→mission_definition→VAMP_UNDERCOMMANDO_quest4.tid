@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_UNDERCOMMANDO_quest4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_UNDERCOMMANDO_quest4|http://cdda.aloxaf.cn/search?q=VAMP_UNDERCOMMANDO_quest4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_UNDERCOMMANDO_quest4",
+  "type": "mission_definition",
+  "name": {
+    "str": "Kill 200 zombies"
+  },
+  "description": "Kill <color_light_red>200 zombies</color> then talk to the commando after completion.",
+  "goal": "MGOAL_KILL_MONSTER_SPEC",
+  "difficulty": 5,
+  "value": 400000,
+  "monster_species": "ZOMBIE",
+  "monster_kill_goal": 200,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "end": {
+    "effect": {
+      "npc_add_trait": "commandotestdone"
+    }
+  },
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "This is the final test I can give you... Still want to try?",
+    "offer": "I've heard that these \"blobs\" was the cause of all troubles and horrifying events worldwide. As my command, eliminate 200 of these walking corpses to succeed... Later on, I will tell you something after this.",
+    "accepted": "Prepare yourself before jumping into this mess.",
+    "rejected": "Just prepare yourself for this job.",
+    "advice": "Visit some heavily crowded areas.",
+    "inquire": "How is the hunt going?",
+    "success": "Hmm... HE appreciates your doings, my comrade. I thank you for your assistance and giving your precious time dealing with these requests I have made for you...",
+    "success_lie": "What good does this do us?",
+    "failure": "It was a lost cause anyways..."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_UNDERCOMMANDO_quest4",
+  "type": "mission_definition",
+  "name": {
+    "str": "杀死200个丧尸"
+  },
+  "description": "杀死<color_light_red>200个丧尸</color>，完成后与突击队交谈。",
+  "goal": "MGOAL_KILL_MONSTER_SPEC",
+  "difficulty": 5,
+  "value": 400000,
+  "monster_species": "ZOMBIE",
+  "monster_kill_goal": 200,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "end": {
+    "effect": {
+      "npc_add_trait": "commandotestdone"
+    }
+  },
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "这是我能给你的最后一个测试…还想试试吗？",
+    "offer": "我听说这些“斑点”是全世界所有麻烦和恐怖事件的起因。按照我的命令，消灭200具行尸走肉…稍后，我会告诉你一些事情。",
+    "accepted": "在跳进这个烂摊子之前做好准备。",
+    "rejected": "为这份工作做好准备。",
+    "advice": "参观一些拥挤的地区。",
+    "inquire": "狩猎进行的怎么样了？",
+    "success": "隐马尔可夫模型…他很欣赏你的所作所为，我的同志。我感谢你的帮助，并给予你宝贵的时间来处理这些要求，我已经为你…",
+    "success_lie": "你这样做对我们有什么好处？",
+    "failure": "反正是注定要失败的……"
+  }
+}
+```
+

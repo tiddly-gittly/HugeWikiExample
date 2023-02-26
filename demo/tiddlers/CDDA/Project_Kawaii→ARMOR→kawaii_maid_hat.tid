@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Project_Kawaii
+title: Project_Kawaii→ARMOR→kawaii_maid_hat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kawaii_maid_hat|http://cdda.aloxaf.cn/search?q=kawaii_maid_hat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Project_Kawaii/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kawaii_maid_hat",
+  "type": "ARMOR",
+  "name": {
+    "str": "Cute Maid headdress"
+  },
+  "description": "One of the most important parts of the maid uniform. It is forbidden for maids to take it off, regardless of weather. Trained maids can channel their spirit into it to keep their heads warm during winter. (Toggle to change warmth)",
+  "weight": "10 g",
+  "volume": "250 ml",
+  "price": 2500,
+  "price_postapoc": 50,
+  "material": [
+    "cotton"
+  ],
+  "material_thickness": 1,
+  "symbol": "[",
+  "color": "white",
+  "warmth": 0,
+  "flags": [
+    "VARSIZE",
+    "FANCY",
+    "WATERPROOF",
+    "RAINPROOF"
+  ],
+  "use_action": {
+    "type": "transform",
+    "msg": "Your pride as a maid prevents the cold from bothering your head.",
+    "target": "kawaii_maid_hat_kiai",
+    "menu_text": "Channel spirit"
+  },
+  "armor": [
+    {
+      "encumbrance": 3,
+      "coverage": 25,
+      "covers": [
+        "head"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kawaii_maid_hat",
+  "type": "ARMOR",
+  "name": {
+    "str": "女仆头饰"
+  },
+  "description": "女仆装中最重要的部分之一。无论是什么样的天气，女佣都不能把它脱下来。训练有素的女仆可以将她们的意志传入其中，使她们的头部在冬天保持温暖。（切换以更改温度）",
+  "weight": "10 g",
+  "volume": "250 ml",
+  "price": 2500,
+  "price_postapoc": 50,
+  "material": [
+    "cotton"
+  ],
+  "material_thickness": 1,
+  "symbol": "[",
+  "color": "white",
+  "warmth": 0,
+  "flags": [
+    "VARSIZE",
+    "FANCY",
+    "WATERPROOF",
+    "RAINPROOF"
+  ],
+  "use_action": {
+    "type": "transform",
+    "msg": "身为女仆的骄傲可以防止寒冷困扰你的头部。",
+    "target": "kawaii_maid_hat_kiai",
+    "menu_text": "意志注入"
+  },
+  "armor": [
+    {
+      "encumbrance": 3,
+      "coverage": 25,
+      "covers": [
+        "head"
+      ]
+    }
+  ]
+}
+```
+

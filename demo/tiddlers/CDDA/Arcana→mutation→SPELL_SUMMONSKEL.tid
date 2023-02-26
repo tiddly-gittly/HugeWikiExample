@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→SPELL_SUMMONSKEL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SPELL_SUMMONSKEL|http://cdda.aloxaf.cn/search?q=SPELL_SUMMONSKEL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_paragon.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_SUMMONSKEL",
+  "name": {
+    "str": "Sign of Summoning II"
+  },
+  "points": 2,
+  "description": "\"You will witness more dire omens, foretelling your fate.  Do not fear them.\"\nUnknowable forces have given you a second gift, that can summon a skeleton.  (( Remember to bind the \"spellcasting\" key! ))",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_SUMMONDOG2"
+  ],
+  "changes_to": [
+    "SPELL_SUMMONCULUS"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 200,
+  "spells_learned": [
+    [
+      "arcana_blessing_summon_skeletal_dog",
+      1
+    ],
+    [
+      "arcana_blessing_summon_skeleton",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil",
+    "ARCANA_VEIL_MARKER_SUMMONING"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_SUMMONSKEL",
+  "name": {
+    "str": "召唤标志II"
+  },
+  "points": 2,
+  "description": "“汝将所视更多噩兆，水晶球中沉浮着你的命运。但无需恐惧。”\n不可知的力量赠予你第二个礼物，可以召唤骷髅。（（记住绑定“施法”键！））",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_SUMMONDOG2"
+  ],
+  "changes_to": [
+    "SPELL_SUMMONCULUS"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 200,
+  "spells_learned": [
+    [
+      "arcana_blessing_summon_skeletal_dog",
+      1
+    ],
+    [
+      "arcana_blessing_summon_skeleton",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil",
+    "ARCANA_VEIL_MARKER_SUMMONING"
+  ]
+}
+```
+

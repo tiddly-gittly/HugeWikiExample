@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_1_HAPPENED
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_1_HAPPENED|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_1_HAPPENED]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_HAPPENED",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "You did not know of this, bearing the Sanguine Order's transformations?  They recovered it by some means and returned it during a time of mutual need, when they were on the brink of self-destruction.  But it was sabotaged, an attempt to undermine us for their own gain, only for the consequences to break both of our orders in the process.",
+    "no": "The Sanguine Order happened.  They recovered it by some means and returned it during a time of mutual need, when their order was on the brink of self-destruction.  But it was sabotaged, an attempt to undermine us for their own gain, only for the consequences to break both of our orders in the process."
+  },
+  "responses": [
+    {
+      "text": "I'm sorry.  Is there any way to atone for this?",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "opinion": {
+        "trust": 1,
+        "anger": -1
+      },
+      "topic": "TALK_HERMIT_DISCUSS_1_SANGUINE_1"
+    },
+    {
+      "text": "This was not my doing.  They were fools to unleash something they couldn't control.",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "opinion": {
+        "trust": -1,
+        "anger": 1
+      },
+      "topic": "TALK_HERMIT_DISCUSS_1_SANGUINE_2"
+    },
+    {
+      "text": "I may have followed the same path as them, but I was not one of them.",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "PROF_SANGUINE"
+            }
+          },
+          {
+            "u_has_trait": "THRESH_DRAGONBLOOD"
+          }
+        ]
+      },
+      "topic": "TALK_HERMIT_DISCUSS_1_DRAGONBLOOD"
+    },
+    {
+      "text": "Treachery like that is why the Cleansing Flame was founded, united in opposition to what those vermin did to people.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_HERMIT_DISCUSS_1_FLAME"
+    },
+    {
+      "text": "What if I would prefer to destroy this relic?",
+      "topic": "TALK_HERMIT_DISCUSS_1_DESTROY"
+    },
+    {
+      "switch": true,
+      "text": "That's all I need to know for now.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "What do we do, then?",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_HAPPENED",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "你不知道这一点，承受着乐观秩序的转变？他们通过某种方式找回了它，并在相互需要的时候归还了它，当时他们正处于自我毁灭的边缘。但它遭到了破坏，企图破坏我们以谋取自身利益，结果却破坏了我们在这一过程中的两项命令。",
+    "no": "是猩红教派。他们通过某种手段找回了它，并在他们的秩序濒临自我毁灭的时候归还了它。但这其实是蓄意的谋划，他们企图为了他们自己的利益而破坏我们的组织，结果却在这个过程中同时破坏了我们的两个组织秩序。"
+  },
+  "responses": [
+    {
+      "text": "我很抱歉。有什么办法弥补吗？",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "opinion": {
+        "trust": 1,
+        "anger": -1
+      },
+      "topic": "TALK_HERMIT_DISCUSS_1_SANGUINE_1"
+    },
+    {
+      "text": "这不是我干的。他们愚蠢地释放出他们无法控制的东西。",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "opinion": {
+        "trust": -1,
+        "anger": 1
+      },
+      "topic": "TALK_HERMIT_DISCUSS_1_SANGUINE_2"
+    },
+    {
+      "text": "我可能和他们走的是同一条路，但我不是他们中的一员。",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "PROF_SANGUINE"
+            }
+          },
+          {
+            "u_has_trait": "THRESH_DRAGONBLOOD"
+          }
+        ]
+      },
+      "topic": "TALK_HERMIT_DISCUSS_1_DRAGONBLOOD"
+    },
+    {
+      "text": "这样的背叛就是为什么净化圣火被建立，团结起来反对那些害虫对人民的所作所为。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_HERMIT_DISCUSS_1_FLAME"
+    },
+    {
+      "text": "如果我想毁掉这件遗物呢？",
+      "topic": "TALK_HERMIT_DISCUSS_1_DESTROY"
+    },
+    {
+      "switch": true,
+      "text": "这就是我现在需要知道的。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "那我们该怎么办？",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

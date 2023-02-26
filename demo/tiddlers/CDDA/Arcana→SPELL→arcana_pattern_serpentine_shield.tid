@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_pattern_serpentine_shield
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_pattern_serpentine_shield|http://cdda.aloxaf.cn/search?q=arcana_pattern_serpentine_shield]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_pattern_scrolls.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_serpentine_shield",
+  "name": {
+    "str": "Pattern: Serpentine Shield"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_SHADOWSNAKES",
+  "description": "This grants a specific spell mutation.",
+  "message": "You gaze deep into the strange patterns, coiled serpentine lines winding into endless ouroboros motifs…",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_serpentine_shield",
+  "name": {
+    "str": "图案：蛇形盾"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_SHADOWSNAKES",
+  "description": "这赋予了特定的咒语突变。",
+  "message": "你凝视着奇怪的图案，盘绕的蛇形线条蜿蜒成无尽的大毒蛇图案……",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+

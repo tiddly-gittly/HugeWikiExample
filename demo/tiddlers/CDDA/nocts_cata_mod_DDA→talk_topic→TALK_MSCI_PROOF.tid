@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_MSCI_PROOF
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MSCI_PROOF|http://cdda.aloxaf.cn/search?q=TALK_MSCI_PROOF]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_MSCI.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MSCI_PROOF",
+  "type": "talk_topic",
+  "dynamic_line": "There's a lot to deal with, first I'd like for you to go scout out a small lab installation, associated what they called the Bio-Weapon Project.  Recently there was a security breach logged on what's left of the laboratory network, and I have reason to believe that a number of renegade former experiments, what locals have come to label augmented abominations, might be responsible.  I'd like to ask you to investigate.",
+  "responses": [
+    {
+      "text": "Security breach at a Bio-Weapon lab… that might've been Evelynn actually, not just the creatures that were there.",
+      "switch": true,
+      "condition": {
+        "u_has_var": "searching_for_msci",
+        "type": "dialogue",
+        "context": "evelynn",
+        "value": "yes"
+      },
+      "topic": "TALK_MSCI_PROOF_EVY"
+    },
+    {
+      "text": "Like the place I woke up in?  Some members of the Super Soldier project had been there, then the place came under attack by the renegades you mentioned.",
+      "switch": true,
+      "condition": {
+        "u_has_flag": "BIO_WEAPON_SCEN"
+      },
+      "topic": "TALK_MSCI_PROOF_SCEN"
+    },
+    {
+      "text": "I found an item like that already, is this what you're talking about?",
+      "switch": true,
+      "condition": {
+        "u_has_item": "badge_bio_weapon_evy"
+      },
+      "effect": {
+        "u_sell_item": "badge_bio_weapon_evy"
+      },
+      "topic": "TALK_MSCI_PROOF_ITEM"
+    },
+    {
+      "text": "I'll do it.  What am I looking for?",
+      "switch": true,
+      "default": true,
+      "effect": {
+        "add_mission": "MISSION_LOOT_BIO_LAB"
+      },
+      "topic": "TALK_MSCI_PROOF_TRY_ACCEPT"
+    },
+    {
+      "text": "Er, maybe another time.",
+      "topic": "TALK_MSCI"
+    },
+    {
+      "text": "Maybe another time.  Bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MSCI_PROOF",
+  "type": "talk_topic",
+  "dynamic_line": "有很多事情要处理，首先我想让你去寻找一个小型实验室设施，它与制造这些生物武器的计划有关。最近实验室网络的防御部分出现了安全漏洞，我有理由相信那些失败的生物武器可能与此有关。我想请你调查一下。",
+  "responses": [
+    {
+      "text": "生物武器实验室的安全漏洞……实际上可能是伊芙琳，而不仅仅是那里的生物武器。",
+      "switch": true,
+      "condition": {
+        "u_has_var": "searching_for_msci",
+        "type": "dialogue",
+        "context": "evelynn",
+        "value": "yes"
+      },
+      "topic": "TALK_MSCI_PROOF_EVY"
+    },
+    {
+      "text": "就像我醒来的地方吗?一些超级战士计划的成员曾在那里，然后那个地方就遭到了你提到的叛徒的袭击。",
+      "switch": true,
+      "condition": {
+        "u_has_flag": "BIO_WEAPON_SCEN"
+      },
+      "topic": "TALK_MSCI_PROOF_SCEN"
+    },
+    {
+      "text": "我已经找到一件这样的东西了，你说的是这个吗?",
+      "switch": true,
+      "condition": {
+        "u_has_item": "badge_bio_weapon_evy"
+      },
+      "effect": {
+        "u_sell_item": "badge_bio_weapon_evy"
+      },
+      "topic": "TALK_MSCI_PROOF_ITEM"
+    },
+    {
+      "text": "我会做的。我需要找什么？",
+      "switch": true,
+      "default": true,
+      "effect": {
+        "add_mission": "MISSION_LOOT_BIO_LAB"
+      },
+      "topic": "TALK_MSCI_PROOF_TRY_ACCEPT"
+    },
+    {
+      "text": "呃，也许下次吧。",
+      "topic": "TALK_MSCI"
+    },
+    {
+      "text": "也许下次吧。再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

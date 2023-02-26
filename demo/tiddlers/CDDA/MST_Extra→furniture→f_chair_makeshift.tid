@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: furniture MST_Extra
+title: MST_Extra→furniture→f_chair_makeshift
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_chair_makeshift|http://cdda.aloxaf.cn/search?q=f_chair_makeshift]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_chair_makeshift",
+  "looks_like": "f_chair",
+  "name": "makeshift chair",
+  "symbol": "#",
+  "description": "Sit down, have a drink.  It probably won't fall apart if you do, the joinery looks sturdy enough.",
+  "color": "brown",
+  "move_cost_mod": 1,
+  "coverage": 40,
+  "comfort": 1,
+  "floor_bedding_warmth": -1500,
+  "bonus_fire_warmth_feet": 1000,
+  "required_str": 5,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "ORGANIC",
+    "MOUNTABLE",
+    "CAN_SIT",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 3
+      }
+    ]
+  },
+  "max_volume": "4000 L",
+  "bash": {
+    "str_min": 5,
+    "str_max": 18,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          0,
+          2
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 1
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_chair_makeshift",
+  "looks_like": "f_chair",
+  "name": "简易转椅",
+  "symbol": "#",
+  "description": "坐下,享受一杯茶.你坐在上面它不会散架的,细木工板看起来足够结实,应该吧.",
+  "color": "brown",
+  "move_cost_mod": 1,
+  "coverage": 40,
+  "comfort": 1,
+  "floor_bedding_warmth": -1500,
+  "bonus_fire_warmth_feet": 1000,
+  "required_str": 5,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "ORGANIC",
+    "MOUNTABLE",
+    "CAN_SIT",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 3
+      }
+    ]
+  },
+  "max_volume": "4000 L",
+  "bash": {
+    "str_min": 5,
+    "str_max": 18,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          0,
+          2
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 1
+      }
+    ]
+  }
+}
+```
+

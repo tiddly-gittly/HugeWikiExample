@@ -1,0 +1,345 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_questinquire_ihave_monstertear
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_questinquire_ihave_monstertear|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_questinquire_ihave_monstertear]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_itemprocess.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_questinquire_ihave_monstertear",
+  "type": "talk_topic",
+  "dynamic_line": "It fits in my collection. Want to sell these to me?",
+  "responses": [
+    {
+      "text": "Yes! Here's your one crystallized tear!",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_monstertear",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "monster_tear"
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekerrewardingcollabitems"
+            }
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekerrewardingcollabmoney"
+            }
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekernorewardcollab"
+            }
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_sell_item": "monster_tear"
+        },
+        {
+          "u_spend_cash": -5000
+        }
+      ]
+    },
+    {
+      "text": "Yes! Here's your one crystallized tear!",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_monstertear",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "monster_tear"
+          },
+          {
+            "npc_has_trait": "vaseekerrewardingcollabitems"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_sell_item": "monster_tear"
+        }
+      ]
+    },
+    {
+      "text": "Yes! Here's your one crystallized tear!",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_monstertear",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "monster_tear"
+          },
+          {
+            "npc_has_trait": "vaseekerrewardingcollabmoney"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_sell_item": "monster_tear"
+        },
+        {
+          "u_spend_cash": -40000
+        }
+      ]
+    },
+    {
+      "text": "Yes! Here's your one crystallized tear!",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_monstertear",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "monster_tear"
+          },
+          {
+            "npc_has_trait": "vaseekernorewardcollab"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_sell_item": "monster_tear"
+        },
+        {
+          "u_spend_cash": -11000
+        }
+      ]
+    },
+    {
+      "text": "I got no more...",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "not": {
+          "u_has_item": "monster_tear"
+        }
+      }
+    },
+    {
+      "text": "I have to collect more...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "not": {
+          "u_has_item": "monster_tear"
+        }
+      }
+    },
+    {
+      "text": "I want to sell something else...",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "u_has_item": "monster_tear"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_questinquire_ihave_monstertear",
+  "type": "talk_topic",
+  "dynamic_line": "它适合我的收藏。想把这些卖给我吗？",
+  "responses": [
+    {
+      "text": "好！这是一颗蓝色晶泪！",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_monstertear",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "monster_tear"
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekerrewardingcollabitems"
+            }
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekerrewardingcollabmoney"
+            }
+          },
+          {
+            "not": {
+              "npc_has_trait": "vaseekernorewardcollab"
+            }
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_sell_item": "monster_tear"
+        },
+        {
+          "u_spend_cash": -5000
+        }
+      ]
+    },
+    {
+      "text": "好！这是一颗蓝色晶泪！",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_monstertear",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "monster_tear"
+          },
+          {
+            "npc_has_trait": "vaseekerrewardingcollabitems"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_spawn_item": "arcanetoken"
+        },
+        {
+          "u_sell_item": "monster_tear"
+        }
+      ]
+    },
+    {
+      "text": "好！这是一颗蓝色晶泪！",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_monstertear",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "monster_tear"
+          },
+          {
+            "npc_has_trait": "vaseekerrewardingcollabmoney"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_sell_item": "monster_tear"
+        },
+        {
+          "u_spend_cash": -40000
+        }
+      ]
+    },
+    {
+      "text": "好！这是一颗蓝色晶泪！",
+      "topic": "VAMP_ASEEKER_questinquire_ihave_monstertear",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "monster_tear"
+          },
+          {
+            "npc_has_trait": "vaseekernorewardcollab"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "u_sell_item": "monster_tear"
+        },
+        {
+          "u_spend_cash": -11000
+        }
+      ]
+    },
+    {
+      "text": "我没有更多…",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "not": {
+          "u_has_item": "monster_tear"
+        }
+      }
+    },
+    {
+      "text": "我需要收集更多…",
+      "topic": "TALK_DONE",
+      "condition": {
+        "not": {
+          "u_has_item": "monster_tear"
+        }
+      }
+    },
+    {
+      "text": "我想卖点别的…",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "u_has_item": "monster_tear"
+      }
+    }
+  ]
+}
+```
+

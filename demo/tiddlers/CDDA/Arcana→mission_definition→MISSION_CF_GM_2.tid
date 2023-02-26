@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_GM_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_GM_2|http://cdda.aloxaf.cn/search?q=MISSION_CF_GM_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_GM_2",
+  "type": "mission_definition",
+  "name": {
+    "str": "Retrieve Demon Claw"
+  },
+  "description": "Retrieve the demon claw from the curious structure, and bring it to Johnathan.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 5,
+  "item": "hand_of_armok",
+  "value": 20000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_GM_3",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "curious_structure_2",
+      "om_special": "Curious Structure",
+      "reveal_radius": 3,
+      "search_range": 360,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 8
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_GM_2_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_GM_2_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_GM_2_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_GM_2_d"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Grant us strength…",
+    "offer": "I believe I can now trust you with a more dangerous, yet also more vital, task.  In the past we had few dedicated safehouses, most of us were hosted in the rural homes and churches of our brethren and those they could trust.  Only one place was truly built by our hand, and it suffered the same strange occurrences so many other places suffered during zero hour.  The handful of survivors to flee brought with them tales of living fire and otherworldly horror, warping the very stones underneath the sanctum.  If you believe yourself ready, I would like you to lead a hunt to cleanse it, and take the demon's claws as proof of the hunt.",
+    "accepted": "By Thor and The God In Three Persons both, may you be victorious.  The evil lurking there was described as wielding a clawed weapon that warped The Veil itself with hellfire, until it was struck from its fiery grasp by a lucky strike.  They were able to seal it behind a barrier with one of our swords as the keystone, and you will need to undo the seal to confront it.  If you can retrieve that infernal weapon in your hunt, we will be able to destroy it safely.  I would commit a full hunting party if only we could spare anyone.  Dii vult!",
+    "rejected": "Understood.  This task is dangerous, and the seal they set up shouldn't be undone unless you're prepared to see it through to the end.  Speak with me when you see fit.",
+    "advice": "Bring any assistance you can, and expect all manner of abominations to have followed that thing through the wounds in The Veil.  Be prepared for infernal fire, any magic or equipment that would safeguard against flame would help.  Do as best as you can to assemble a proper hunting party, but sadly we are stretched thin as it is.",
+    "inquire": "How goes the hunt?",
+    "success": "Gods above and below, to think this thing caused one of our holiest places to fall to ruin.  I doubt it will be safe to reclaim that place anytime soon.  Anything you found down their is yours to use as you see fit.  I hope that those who fell holding that thing back are are peace.  Speak with me when you see fit.",
+    "success_lie": "What idiocy is this?",
+    "failure": "But how?"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_GM_2",
+  "type": "mission_definition",
+  "name": {
+    "str": "找回魔爪"
+  },
+  "description": "从奇妙的建筑中找回恶魔爪，并把它带给约翰纳森。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 5,
+  "item": "hand_of_armok",
+  "value": 20000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_GM_3",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "curious_structure_2",
+      "om_special": "Curious Structure",
+      "reveal_radius": 3,
+      "search_range": 360,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 8
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "mapgen_update_id": "cf_church_upgrade_GM_2_a"
+      },
+      {
+        "om_terrain": "cf_church_2",
+        "mapgen_update_id": "cf_church_upgrade_GM_2_b"
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_GM_2_c"
+      },
+      {
+        "om_terrain": "cf_church_4",
+        "mapgen_update_id": "cf_church_upgrade_GM_2_d"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "赐予我们力量……",
+    "offer": "我相信我现在可以信任你，让你承担一项更危险、更重要的任务。在过去，我们很少有专门的安全屋，我们中的大多数人都住在农村家庭和兄弟会的教堂里，以及他们可以信任的地方。只有一个地方是真正由我们亲手建造的，它经历了许多其他地方在零小时内所经历的同样的奇怪事件。为数不多的逃难幸存者带来了活生生的火焰和超凡恐怖的故事，扭曲了圣所下面的石头。如果你相信自己准备好了，我希望你带领一场狩猎来净化它，并用恶魔的爪子作为狩猎的证据。",
+    "accepted": "托尔和上帝在三个人身上，祝你胜利。潜伏在那里的邪恶被描述为挥舞着利爪的武器，用地狱之火扭曲了帷幕，直到它被一次幸运的一击从它炽热的手中击中。他们能够用我们的一把剑作为基石把它封住，你需要解开封印来对抗它。如果你能在狩猎中找回那凶器，我们就能安全地摧毁它。如果我们能放过任何一个人，我会安排一个完整的狩猎队。迪伊·瓦特！",
+    "rejected": "理解。这项任务很危险，他们设立的封印不应该被撤销，除非你准备好坚持到底。当你认为合适的时候跟我说。",
+    "advice": "带上你能提供的任何帮助，并期待着各种各样的可憎之物伴随着它穿过帷幕上的伤口。为地狱之火做好准备，任何能抵御火焰的魔法或装备都会有所帮助。尽你所能组建一个合适的狩猎队，但遗憾的是，我们现在已经精疲力尽了。",
+    "inquire": "打猎怎么样？",
+    "success": "上上下下的诸神，想想这件事导致了我们最神圣的地方之一的毁灭。我怀疑很快收回那个地方是否安全。你从他们那里找到的任何东西都是你的，只要你觉得合适就可以使用。我希望那些阻止这件事的人是和平的。你觉得合适的时候跟我说。",
+    "success_lie": "这是什么白痴的行为？",
+    "failure": "但是怎么做呢？"
+  }
+}
+```
+

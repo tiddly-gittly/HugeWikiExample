@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Medieval_Mod_Reborn
+title: Medieval_Mod_Reborn→ARMOR→helmet_closehelm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：helmet_closehelm|http://cdda.aloxaf.cn/search?q=helmet_closehelm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Medieval_Mod_Reborn/obsolete.json
+
+
+!! 原文
+
+```json
+{
+  "id": "helmet_closehelm",
+  "type": "ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "close helmet"
+  },
+  "description": "A late medieval helmet that completely encloses the head, with a visor and bevor that can be lifted up.  Activate it to lift the visor, exposing your face.",
+  "weight": "1175 g",
+  "volume": "2500 ml",
+  "price": 30000,
+  "price_postapoc": 4000,
+  "bashing": 10,
+  "material": [
+    "steel",
+    "leather"
+  ],
+  "symbol": "[",
+  "looks_like": "helmet_plate",
+  "color": "light_gray",
+  "warmth": 10,
+  "material_thickness": 4,
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "flags": [
+    "VARSIZE",
+    "STURDY"
+  ],
+  "use_action": {
+    "menu_text": "Raise",
+    "type": "transform",
+    "target": "helmet_closehelm_raised",
+    "msg": "You lift the visor of your helmet."
+  },
+  "armor": [
+    {
+      "encumbrance": 35,
+      "coverage": 100,
+      "covers": [
+        "head",
+        "eyes",
+        "mouth"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "helmet_closehelm",
+  "type": "ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "闭合盔"
+  },
+  "description": "一种中世纪晚期的封闭式头盔，有一个可以抬起的面罩。激活它以抬起面罩，露出您的脸。",
+  "weight": "1175 g",
+  "volume": "2500 ml",
+  "price": 30000,
+  "price_postapoc": 4000,
+  "bashing": 10,
+  "material": [
+    "steel",
+    "leather"
+  ],
+  "symbol": "[",
+  "looks_like": "helmet_plate",
+  "color": "light_gray",
+  "warmth": 10,
+  "material_thickness": 4,
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "flags": [
+    "VARSIZE",
+    "STURDY"
+  ],
+  "use_action": {
+    "menu_text": "升起面罩",
+    "type": "transform",
+    "target": "helmet_closehelm_raised",
+    "msg": "你抬起头盔的面罩。"
+  },
+  "armor": [
+    {
+      "encumbrance": 35,
+      "coverage": 100,
+      "covers": [
+        "head",
+        "eyes",
+        "mouth"
+      ]
+    }
+  ]
+}
+```
+

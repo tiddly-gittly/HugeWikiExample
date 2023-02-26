@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_leptiosa
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_leptiosa|http://cdda.aloxaf.cn/search?q=mon_zombie_leptiosa]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Scourge.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_leptiosa",
+  "type": "MONSTER",
+  "name": {
+    "str": "lepotitsa"
+  },
+  "description": "A corpse of swollen ichor, as its whole body is embraced in necrotic tissue. Aside from its huge hump lying on its back, its skin is full of fleshy holes, each emits a subtle gas.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 330,
+  "speed": 65,
+  "diff": 15,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚵",
+  "color": "red_yellow",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 10,
+  "armor_cut": 18,
+  "armor_bullet": 12,
+  "armor_acid": 10,
+  "vision_day": 25,
+  "vision_night": 6,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "GRAB",
+      10
+    ],
+    {
+      "type": "bite",
+      "infection_chance": 100,
+      "cooldown": 15
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_leptiosa_ngas_check"
+      },
+      "cooldown": 44,
+      "monster_message": "<color_yellow>%1$s is accumulating noxious gas!</color>"
+    }
+  ],
+  "death_function": {
+    "effect": {
+      "id": "mon_zombie_leptiosa_death",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE",
+    "message": "A %s explodes!"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "ACIDPROOF",
+    "ACID_BLOOD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_leptiosa",
+  "type": "MONSTER",
+  "name": {
+    "str": "美人兽"
+  },
+  "description": "一具肿胀的鱼鳞的尸体，因为它的整个身体被坏死的组织包裹。除了仰卧着的巨大驼峰，它的皮肤上布满了肉质的小孔，每一个都散发出一种微妙的气体。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 330,
+  "speed": 65,
+  "diff": 15,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚵",
+  "color": "red_yellow",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 10,
+  "armor_cut": 18,
+  "armor_bullet": 12,
+  "armor_acid": 10,
+  "vision_day": 25,
+  "vision_night": 6,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "GRAB",
+      10
+    ],
+    {
+      "type": "bite",
+      "infection_chance": 100,
+      "cooldown": 15
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_leptiosa_ngas_check"
+      },
+      "cooldown": 44,
+      "monster_message": "<color_yellow>%1$s正在积聚有害气体！</color>"
+    }
+  ],
+  "death_function": {
+    "effect": {
+      "id": "mon_zombie_leptiosa_death",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE",
+    "message": "A %s explodes!"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "ACIDPROOF",
+    "ACID_BLOOD"
+  ]
+}
+```
+

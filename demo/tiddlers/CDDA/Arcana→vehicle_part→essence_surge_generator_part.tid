@@ -1,0 +1,279 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part Arcana
+title: Arcana→vehicle_part→essence_surge_generator_part
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：essence_surge_generator_part|http://cdda.aloxaf.cn/search?q=essence_surge_generator_part]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "essence_surge_generator_part",
+  "name": {
+    "str": "essence surge generator"
+  },
+  "symbol": "O",
+  "color": "light_blue",
+  "broken_symbol": "#",
+  "broken_color": "dark_gray",
+  "damage_modifier": 60,
+  "durability": 200,
+  "description": "An exotic reactor designed to be charged with essence, broken down in a reaction that increases its potential output.  Unnaturally efficient and reliable, though limited by how precious a fuel source such otherworldly energies are.",
+  "power": 200,
+  "epower": 240000,
+  "fuel_type": "essence",
+  "item": "essence_surge_generator_item",
+  "location": "fuel_source",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ],
+        [
+          "electronics",
+          4
+        ],
+        [
+          "magic",
+          6
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ],
+        [
+          "electronics",
+          3
+        ],
+        [
+          "magic",
+          5
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_weld_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ],
+        [
+          "electronics",
+          5
+        ],
+        [
+          "magic",
+          7
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "REACTOR"
+  ],
+  "breaks_into": [
+    {
+      "item": "scrap",
+      "count": [
+        1,
+        4
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        1,
+        3
+      ]
+    },
+    {
+      "item": "cable",
+      "charges": [
+        3,
+        6
+      ]
+    },
+    {
+      "item": "essence_dull",
+      "count": [
+        25,
+        50
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 10
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "essence_surge_generator_part",
+  "name": {
+    "str": "源质浪涌反应堆"
+  },
+  "symbol": "O",
+  "color": "light_blue",
+  "broken_symbol": "#",
+  "broken_color": "dark_gray",
+  "damage_modifier": 60,
+  "durability": 200,
+  "description": "一种奇特的反应堆，被设计用来充注香精，在一次反应中被破坏，从而增加了它的潜在产量。不自然的高效和可靠，尽管受到燃料来源的限制，这种超现实的能量是多么的珍贵。",
+  "power": 200,
+  "epower": 240000,
+  "fuel_type": "essence",
+  "item": "essence_surge_generator_item",
+  "location": "fuel_source",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ],
+        [
+          "electronics",
+          4
+        ],
+        [
+          "magic",
+          6
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ],
+        [
+          "electronics",
+          3
+        ],
+        [
+          "magic",
+          5
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_weld_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ],
+        [
+          "electronics",
+          5
+        ],
+        [
+          "magic",
+          7
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "REACTOR"
+  ],
+  "breaks_into": [
+    {
+      "item": "scrap",
+      "count": [
+        1,
+        4
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        1,
+        3
+      ]
+    },
+    {
+      "item": "cable",
+      "charges": [
+        3,
+        6
+      ]
+    },
+    {
+      "item": "essence_dull",
+      "count": [
+        25,
+        50
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 10
+  }
+}
+```
+

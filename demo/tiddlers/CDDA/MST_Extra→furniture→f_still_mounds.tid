@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: furniture MST_Extra
+title: MST_Extra→furniture→f_still_mounds
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_still_mounds|http://cdda.aloxaf.cn/search?q=f_still_mounds]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_still_mounds",
+  "name": "makeshift still",
+  "symbol": "#",
+  "looks_like": "bottle_glass",
+  "description": "A pair of glass bottles insulated with dirt or sand.  With careful alignment, it serves as a crude alembic by boiling away liquid in the first container, condensing into the second.",
+  "color": "brown",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "crafting_pseudo_item": "mound_distillation",
+  "flags": [
+    "PLACE_ITEM",
+    "TRANSPARENT",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "bottle_glass",
+        "count": 2
+      }
+    ]
+  },
+  "max_volume": "3000 L",
+  "bash": {
+    "str_min": 12,
+    "str_max": 40,
+    "sound": "crunch!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "glass_shard",
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_still_mounds",
+  "name": "简易蒸馏器",
+  "symbol": "#",
+  "looks_like": "bottle_glass",
+  "description": "一对用沙土进行隔热的玻璃瓶,通过排序后的第一个瓶子加热煮沸液体后,水蒸气在第二个瓶子中冷凝,相当于一个简易的蒸馏器",
+  "color": "brown",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "crafting_pseudo_item": "mound_distillation",
+  "flags": [
+    "PLACE_ITEM",
+    "TRANSPARENT",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "bottle_glass",
+        "count": 2
+      }
+    ]
+  },
+  "max_volume": "3000 L",
+  "bash": {
+    "str_min": 12,
+    "str_max": 40,
+    "sound": "crunch!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "glass_shard",
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

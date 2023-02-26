@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: GUN secronom
+title: secronom→GUN→fleshknot_tent_striker
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fleshknot_tent_striker|http://cdda.aloxaf.cn/search?q=fleshknot_tent_striker]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_gun_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fleshknot_tent_striker",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "fleshknot tentacle"
+  },
+  "description": "A single tentacle thrust performed by the fleshknot.",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "NO_PENETRATE_OBSTACLES",
+    "SECRO_FLESHKNOT_TENT"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 20,
+  "modes": [
+    [
+      "N",
+      "near",
+      4
+    ],
+    [
+      "M",
+      "mid",
+      2
+    ]
+  ],
+  "dispersion": 1000,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 8,
+    "armor_multiplier": 0.5
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fleshknot_tent_striker",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "血肉疣触手"
+  },
+  "description": "由血肉疣驱动的一只触手",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES",
+    "NO_PENETRATE_OBSTACLES",
+    "SECRO_FLESHKNOT_TENT"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 20,
+  "modes": [
+    [
+      "N",
+      "near",
+      4
+    ],
+    [
+      "M",
+      "mid",
+      2
+    ]
+  ],
+  "dispersion": 1000,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 8,
+    "armor_multiplier": 0.5
+  }
+}
+```
+

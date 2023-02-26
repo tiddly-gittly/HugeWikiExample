@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_thylacine
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_thylacine|http://cdda.aloxaf.cn/search?q=mon_thylacine]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_mammal.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_thylacine",
+  "type": "MONSTER",
+  "name": {
+    "str": "thylacine"
+  },
+  "description": "Also known as Tasmanian wolf, or Coorinna, among several other aboriginal names.  Not actually a member of the Canidae family, but a marsupial like roos and opossums, this gray, long and short dog-looking animal has a bunch of characteristic black stripes on the back.  Considered to be the apex predator of some Oceanic regions, not much is known about the behavior of this nocturnal animal.",
+  "volume": "16000 ml",
+  "weight": "16 kg",
+  "default_faction": "touhou_thylacine",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_fur",
+  "hp": 30,
+  "speed": 115,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "t",
+  "color": "light_gray",
+  "aggression": -10,
+  "morale": 15,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 4,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "reproduction": {
+    "baby_monster": "mon_thylacine_pup",
+    "baby_count": 3,
+    "baby_timer": 90
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "biosignature": {
+    "biosig_item": "feces_thylacine",
+    "biosig_timer": 8
+  },
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "PLAYER_NEAR_BABY"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      100
+    ],
+    [
+      "PARROT",
+      4
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "GROUP_MORALE",
+    "HEARS",
+    "KEENNOSE",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SWARMS",
+    "WARM"
+  ],
+  "//": " Previously extinct in the Outside world, they were passively transferred to Gensokyo at some point in the past. ",
+  "//2": "These technically should have zombie versions, but I don't like that idea"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_thylacine",
+  "type": "MONSTER",
+  "name": {
+    "str": "thylacine"
+  },
+  "description": "Also known as Tasmanian wolf, or Coorinna, among several other aboriginal names.  Not actually a member of the Canidae family, but a marsupial like roos and opossums, this gray, long and short dog-looking animal has a bunch of characteristic black stripes on the back.  Considered to be the apex predator of some Oceanic regions, not much is known about the behavior of this nocturnal animal.",
+  "volume": "16000 ml",
+  "weight": "16 kg",
+  "default_faction": "touhou_thylacine",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_fur",
+  "hp": 30,
+  "speed": 115,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "t",
+  "color": "light_gray",
+  "aggression": -10,
+  "morale": 15,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 4,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "reproduction": {
+    "baby_monster": "mon_thylacine_pup",
+    "baby_count": 3,
+    "baby_timer": 90
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "biosignature": {
+    "biosig_item": "feces_thylacine",
+    "biosig_timer": 8
+  },
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "PLAYER_NEAR_BABY"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      100
+    ],
+    [
+      "PARROT",
+      4
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "GROUP_MORALE",
+    "HEARS",
+    "KEENNOSE",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SWARMS",
+    "WARM"
+  ],
+  "//": " Previously extinct in the Outside world, they were passively transferred to Gensokyo at some point in the past. ",
+  "//2": "These technically should have zombie versions, but I don't like that idea"
+}
+```
+

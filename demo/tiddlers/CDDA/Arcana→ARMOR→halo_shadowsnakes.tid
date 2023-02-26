@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Arcana
+title: Arcana→ARMOR→halo_shadowsnakes
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：halo_shadowsnakes|http://cdda.aloxaf.cn/search?q=halo_shadowsnakes]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "halo_shadowsnakes",
+  "//": "ID retained for simplicity.",
+  "copy-from": "spell_base",
+  "type": "ARMOR",
+  "name": {
+    "str": "obsidian halo"
+  },
+  "description": "A strange radiance permeating your body, blinding attackers with otherworldly magic.",
+  "color": "dark_gray",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_shadowy_shield",
+            "message": "Wisps of shadow lash out at %2$s",
+            "npc_message": "Wisps of shadow jump from %1$s to %2$s."
+          }
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "ONLY_ONE",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "halo_shadowsnakes",
+  "//": "ID retained for simplicity.",
+  "copy-from": "spell_base",
+  "type": "ARMOR",
+  "name": {
+    "str": "光环：黑曜石"
+  },
+  "description": "一种奇异的光芒渗透你的身体，用超自然的魔法蒙蔽攻击者。",
+  "color": "dark_gray",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_shadowy_shield",
+            "message": "在 %2$s 有一缕阴影突然出现",
+            "npc_message": "一缕影子从 %1$s 跳到 %2$s。"
+          }
+        ]
+      }
+    ]
+  },
+  "extend": {
+    "flags": [
+      "ONLY_ONE",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+

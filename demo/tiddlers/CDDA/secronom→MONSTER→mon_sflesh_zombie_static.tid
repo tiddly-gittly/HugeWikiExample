@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_static
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_static|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_static]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_static",
+  "type": "MONSTER",
+  "name": {
+    "str": "zapper zombie"
+  },
+  "description": "A very pale dead body with the worst case of static hair you have ever seen.  Sometimes, you can see sparks of electricity around it.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 4
+    },
+    {
+      "damage_type": "bash",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 3,
+  "dodge": 2,
+  "luminance": 4,
+  "harvest": "zombie",
+  "special_when_hit": [
+    "ZAPBACK",
+    100
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_static",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_static",
+  "type": "MONSTER",
+  "name": {
+    "str": "静电丧尸"
+  },
+  "description": "一具非常苍白的尸体，长着你所见过的最糟糕的带电头发。偶尔你可以看到它四周的电火花。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 4
+    },
+    {
+      "damage_type": "bash",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 3,
+  "dodge": 2,
+  "luminance": 4,
+  "harvest": "zombie",
+  "special_when_hit": [
+    "ZAPBACK",
+    100
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_static",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

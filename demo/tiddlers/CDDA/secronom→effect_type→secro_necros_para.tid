@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: effect_type secronom
+title: secronom→effect_type→secro_necros_para
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_necros_para|http://cdda.aloxaf.cn/search?q=secro_necros_para]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "secro_necros_para",
+  "name": [
+    "Neural Disorder",
+    "Neural Disorder",
+    "Neural Disorder",
+    "Neural Disorder",
+    "Neural Disorder",
+    "Neural Paralysis",
+    "Neural Paralysis",
+    "Neural Paralysis",
+    "Neural Paralysis",
+    "Neural Collapse"
+  ],
+  "desc": [
+    "You're suffering from a neurotoxin!"
+  ],
+  "show_in_info": true,
+  "apply_message": "Your skin felt numb all of a sudden...",
+  "miss_messages": [
+    [
+      "You feel very stiff...",
+      3
+    ]
+  ],
+  "remove_message": "The effect of the paralysing toxin leaves your body.",
+  "removes_effects": [
+    "paralyzepoison"
+  ],
+  "blocks_effects": [
+    "paralyzepoison"
+  ],
+  "rating": "bad",
+  "int_add_val": 1,
+  "int_dur_factor": "30 seconds",
+  "max_intensity": 10,
+  "int_decay_step": -3,
+  "int_decay_tick": 50,
+  "max_duration": 330,
+  "base_mods": {
+    "speed_mod": [
+      -7.5
+    ],
+    "dex_mod": [
+      -1
+    ]
+  },
+  "scaling_mods": {
+    "speed_mod": [
+      -7.5
+    ],
+    "dex_mod": [
+      -1
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "secro_necros_para",
+  "name": [
+    "神经紊乱",
+    "神经紊乱",
+    "神经紊乱",
+    "神经紊乱",
+    "神经紊乱",
+    "神经麻痹",
+    "神经麻痹",
+    "神经麻痹",
+    "神经麻痹",
+    "神经崩溃"
+  ],
+  "desc": [
+    "你中了神经毒素！"
+  ],
+  "show_in_info": true,
+  "apply_message": "你的皮肤突然感到麻木...",
+  "miss_messages": [
+    [
+      "你感到非常僵硬...",
+      3
+    ]
+  ],
+  "remove_message": "麻痹毒素的作用会离开你的身体。",
+  "removes_effects": [
+    "paralyzepoison"
+  ],
+  "blocks_effects": [
+    "paralyzepoison"
+  ],
+  "rating": "bad",
+  "int_add_val": 1,
+  "int_dur_factor": "30 seconds",
+  "max_intensity": 10,
+  "int_decay_step": -3,
+  "int_decay_tick": 50,
+  "max_duration": 330,
+  "base_mods": {
+    "speed_mod": [
+      -7.5
+    ],
+    "dex_mod": [
+      -1
+    ]
+  },
+  "scaling_mods": {
+    "speed_mod": [
+      -7.5
+    ],
+    "dex_mod": [
+      -1
+    ]
+  }
+}
+```
+

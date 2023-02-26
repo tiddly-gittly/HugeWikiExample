@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE",
+  "dynamic_line": "There is always hope, young one.  As the mage hunters would put it, so long as the Sun shines upon the Earth.  I entrust you with the last of the seven relics.  May He From Beyond The Veil guard and guide you, that you be anointed His Chosen.",
+  "responses": [
+    {
+      "text": "Thank you.",
+      "effect": [
+        {
+          "u_add_effect": "hermit_stage_3_backdoor",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "veilblade"
+        },
+        {
+          "npc_remove_item_with": "veilblade"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE",
+  "dynamic_line": "希望总是有的，年轻人。正如法师猎人所说，只要太阳照耀大地。我把七件遗物中的最后一件委托给你。愿帷幕彼端古神指引你，使你蒙膏他所拣选的。",
+  "responses": [
+    {
+      "text": "谢谢你。",
+      "effect": [
+        {
+          "u_add_effect": "hermit_stage_3_backdoor",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "veilblade"
+        },
+        {
+          "npc_remove_item_with": "veilblade"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

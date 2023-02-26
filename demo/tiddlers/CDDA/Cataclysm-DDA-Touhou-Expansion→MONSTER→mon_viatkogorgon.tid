@@ -1,0 +1,195 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_viatkogorgon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_viatkogorgon|http://cdda.aloxaf.cn/search?q=mon_viatkogorgon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_theriodontia.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_viatkogorgon",
+  "type": "MONSTER",
+  "name": {
+    "str": "viatkogorgon",
+    "str_pl": "viatkogorgon"
+  },
+  "description": "A dog-looking… beast, this animal takes after man's best friend, maybe a saber-tooth cat, and perhaps a crocodile.  The gait seem inefficient, almost reptilian.  The tail is thick and short, the limbs end in clawed paws.  The robust, relatively big, trapezoidal head, features a pair of big eyes.",
+  "volume": "30 L",
+  "weight": "35 kg",
+  "default_faction": "touhou_viatkogorgon",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_leather",
+  "hp": 40,
+  "speed": 155,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "g",
+  "color": "brown",
+  "morale": 35,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 4
+    }
+  ],
+  "dodge": 4,
+  "vision_day": 20,
+  "vision_night": 30,
+  "path_settings": {
+    "max_dist": 30
+  },
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_bullet": 2,
+  "armor_stab": 1,
+  "anger_triggers": [
+    "PLAYER_WEAK"
+  ],
+  "fear_triggers": [
+    "HURT"
+  ],
+  "special_attacks": [
+    [
+      "bite_5d3",
+      8
+    ],
+    [
+      "EAT_FOOD",
+      65
+    ]
+  ],
+  "reproduction": {
+    "baby_egg": "egg_viatkogorgon",
+    "baby_count": 4,
+    "baby_timer": 32
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWARMS",
+    "WARM"
+  ],
+  "//": "Based on Viatkogorgon sp. and mon_coyote . No reproductive data, I'm assuming these laid eggs. Less than more the size of a coyote"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_viatkogorgon",
+  "type": "MONSTER",
+  "name": {
+    "str": "viatkogorgon",
+    "str_pl": "viatkogorgon"
+  },
+  "description": "A dog-looking… beast, this animal takes after man's best friend, maybe a saber-tooth cat, and perhaps a crocodile.  The gait seem inefficient, almost reptilian.  The tail is thick and short, the limbs end in clawed paws.  The robust, relatively big, trapezoidal head, features a pair of big eyes.",
+  "volume": "30 L",
+  "weight": "35 kg",
+  "default_faction": "touhou_viatkogorgon",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_leather",
+  "hp": 40,
+  "speed": 155,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "g",
+  "color": "brown",
+  "morale": 35,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 4
+    }
+  ],
+  "dodge": 4,
+  "vision_day": 20,
+  "vision_night": 30,
+  "path_settings": {
+    "max_dist": 30
+  },
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_bullet": 2,
+  "armor_stab": 1,
+  "anger_triggers": [
+    "PLAYER_WEAK"
+  ],
+  "fear_triggers": [
+    "HURT"
+  ],
+  "special_attacks": [
+    [
+      "bite_5d3",
+      8
+    ],
+    [
+      "EAT_FOOD",
+      65
+    ]
+  ],
+  "reproduction": {
+    "baby_egg": "egg_viatkogorgon",
+    "baby_count": 4,
+    "baby_timer": 32
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWARMS",
+    "WARM"
+  ],
+  "//": "Based on Viatkogorgon sp. and mon_coyote . No reproductive data, I'm assuming these laid eggs. Less than more the size of a coyote"
+}
+```
+

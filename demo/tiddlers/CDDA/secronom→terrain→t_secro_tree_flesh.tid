@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_tree_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_tree_flesh|http://cdda.aloxaf.cn/search?q=t_secro_tree_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_tree_flesh",
+  "name": "fleshed tree",
+  "description": "A fully grown tree, standing tall even though its already been overwhelmed by the flesh.",
+  "symbol": "7",
+  "color": [
+    "red",
+    "light_red",
+    "red",
+    "red"
+  ],
+  "move_cost": 0,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "REDUCE_SCENT",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_tree"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_tree_flesh",
+  "name": "血肉树",
+  "description": "一棵完全长成的树，尽管它已经被血肉覆盖了，却依然挺立着。",
+  "symbol": "7",
+  "color": [
+    "red",
+    "light_red",
+    "red",
+    "red"
+  ],
+  "move_cost": 0,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "REDUCE_SCENT",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_tree"
+  }
+}
+```
+

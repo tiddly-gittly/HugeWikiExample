@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: technique vamp_stuff
+title: vamp_stuff→technique→UPRIGHT_BASH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：UPRIGHT_BASH|http://cdda.aloxaf.cn/search?q=UPRIGHT_BASH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Others/v_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "UPRIGHT_BASH",
+  "name": "Upright Slash",
+  "description": "Sends enemy into the air, knockback 8, down 4, stun 3, crit only",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "stun_dur": 3,
+  "knockback_dist": 8,
+  "down_dur": 4,
+  "weighting": -5,
+  "messages": [
+    "The upward bash brought %s into the air",
+    "%s were sent into the air!",
+    "You bash %s upwards, and fell down"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 1.66
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 0.66
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 1.33
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "UPRIGHT_BASH",
+  "name": "升龙斩",
+  "description": "将敌人击向空中，击退8格，击倒4回合，击晕3回合，仅暴击",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "stun_dur": 3,
+  "knockback_dist": 8,
+  "down_dur": 4,
+  "weighting": -5,
+  "messages": [
+    "T向上猛击将%s带到空中。",
+    "%s被送上了天空！",
+    "你把%s击到天空，然后掉下来了。"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 1.66
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 0.66
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 1.33
+    }
+  ]
+}
+```
+

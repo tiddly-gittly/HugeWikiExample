@@ -1,0 +1,871 @@
+creator: 林一二
+revision: 0
+tags: mapgen nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mapgen→[3]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Terrain/Unknown_Lab.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Unknown_Lab_4"
+  ],
+  "weight": 1000,
+  "object": {
+    "rows": [
+      "#      7      #   7    f",
+      "   7#     7 7  #7  #   f",
+      " 7#   # 7 # # 7   #7 # f",
+      "  7     7  7   7      #f",
+      " 7  #        #      7  f",
+      " #     7   #    #    # f",
+      "   7                #  f",
+      "7       ########    # 7f",
+      "   #   ##||||||##      f",
+      "     # #||m12m||# 7   #f",
+      "........Cmmccmm|#    7 f",
+      "........+mmmmm>|#   # 7f",
+      "........+mmmmm>|#      f",
+      "........|mccccm|#    7#f",
+      "  #    #||6666||#  7# 7f",
+      "    #  ##||||||##  # 7 f",
+      "        ########      #f",
+      "7 #  #                 f",
+      " #         7      #  # f",
+      " 7     7 #  # #     #  f",
+      " # 7#            ## 7  f",
+      "      #  7 7#  7     7 f",
+      "  # # 7#  # 7   # 7 #  f",
+      "------------------------"
+    ],
+    "terrain": {
+      "1": "t_radio_controls",
+      "2": "t_radio_tower",
+      "6": "t_metal_floor",
+      "7": [
+        "t_tree",
+        "t_tree_dead",
+        "t_tree_deadpine",
+        "t_tree_hickory_dead",
+        "t_tree_cottonwood",
+        "t_tree_young",
+        "t_grass"
+      ],
+      " ": [
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_dirt"
+      ],
+      "#": [
+        "t_shrub",
+        "t_underbrush",
+        "t_grass"
+      ],
+      "+": "t_door_metal_c",
+      "-": "t_chainfence_h",
+      ".": "t_dirt",
+      ">": "t_stairs_down",
+      "C": "t_card_reader_broken",
+      "_": "t_grass",
+      "c": "t_metal_floor",
+      "f": "t_chainfence_v",
+      "m": "t_metal_floor",
+      "|": "t_wall_metal"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "c": "f_chair"
+    },
+    "place_loot": [
+      {
+        "group": "map_extra_science",
+        "x": 10,
+        "y": 13,
+        "chance": 75
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": 10,
+        "y": 13
+      },
+      {
+        "field": "fd_blood",
+        "x": 11,
+        "y": 14
+      },
+      {
+        "field": "fd_blood",
+        "x": 12,
+        "y": 14
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_crows_m240",
+        "x": 22,
+        "y": 22
+      },
+      {
+        "monster": "mon_turret_rifle",
+        "x": 1,
+        "y": 21
+      },
+      {
+        "monster": "mon_turret_rifle",
+        "x": 21,
+        "y": 1
+      },
+      {
+        "monster": "mon_laserturret",
+        "x": 7,
+        "y": 7
+      },
+      {
+        "monster": "mon_laserturret",
+        "x": 7,
+        "y": 16
+      },
+      {
+        "monster": "mon_zombie_bio_tool_pistol",
+        "x": 13,
+        "y": 12
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "sketchy_cabin_b2"
+  ],
+  "weight": 1000,
+  "object": {
+    "rows": [
+      "                        ",
+      "||||             |||||| ",
+      "B.T|             |T..s| ",
+      "B..|||||||||||   |t..s| ",
+      "-=-|______+__|   ||++|| ",
+      "___u______+__|   |V..V| ",
+      "______|||||++|||||....| ",
+      "-|____|urr____rruW....| ",
+      ".|____|__________W.b.b| ",
+      "T|----|__________W.b.b| ",
+      "-|....W__________W.b.b| ",
+      "_+...6W__________W....| ",
+      "_+..h6W__________W....| ",
+      "-|..ddW__________W.b.b| ",
+      "T|----|__________W.b.b| ",
+      ".|____|__________W.b.b| ",
+      "-|____|urr____rruW....| ",
+      "______|||||++|||||....| ",
+      "___u______+__|   |t...| ",
+      "-=-|______+__|   |||..| ",
+      "B..|||||||||||     |<<| ",
+      "B.T|               |<<| ",
+      "||||               |||| ",
+      "                        "
+    ],
+    "terrain": {
+      "6": "t_floor",
+      " ": "t_soil",
+      ".": "t_floor",
+      "_": "t_thconc_floor",
+      "|": "t_concrete_wall",
+      "=": "t_door_bar_o",
+      "+": "t_door_metal_c",
+      "-": "t_bars",
+      "]": "t_thconc_floor",
+      "<": "t_stairs_up",
+      "B": "t_floor",
+      "S": "t_floor",
+      "T": "t_floor",
+      "V": "t_floor",
+      "W": "t_thconc_glass_port",
+      "b": "t_floor",
+      "d": "t_floor",
+      "h": "t_floor",
+      "r": "t_thconc_floor",
+      "s": "t_floor",
+      "t": "t_floor",
+      "u": "t_thconc_floor_olight"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "B": "f_bed",
+      "F": "f_fridge",
+      "T": "f_toilet",
+      "V": "f_vending_o",
+      "b": "f_bench",
+      "d": "f_desk",
+      "h": "f_chair",
+      "r": "f_rack",
+      "s": "f_sink",
+      "t": "f_trashcan"
+    },
+    "mapping": {
+      "B": {
+        "items": [
+          {
+            "item": "bed",
+            "chance": 75
+          }
+        ]
+      },
+      "r": {
+        "items": [
+          {
+            "item": "sketchy_cabin_weapons",
+            "chance": 50
+          },
+          {
+            "item": "sketchy_cabin_weapons",
+            "chance": 50
+          }
+        ]
+      }
+    },
+    "place_toilets": [
+      {
+        "x": 2,
+        "y": 2
+      },
+      {
+        "x": 18,
+        "y": 2
+      },
+      {
+        "x": 0,
+        "y": 9
+      },
+      {
+        "x": 0,
+        "y": 14
+      },
+      {
+        "x": 2,
+        "y": 21
+      }
+    ],
+    "place_loot": [
+      {
+        "item": "note_sketchy_cabin",
+        "x": 4,
+        "y": 13
+      },
+      {
+        "group": "sketchy_cabin_guard_weapons",
+        "x": 5,
+        "y": 13,
+        "chance": 60
+      },
+      {
+        "group": "trash",
+        "x": 18,
+        "y": 18,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "vending_food_items",
+        "x": 18,
+        "y": 5,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "vending_drink_items",
+        "x": 21,
+        "y": 5,
+        "chance": 50,
+        "repeat": 10
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "slave_fight_ally",
+        "x": 10,
+        "y": 15
+      },
+      {
+        "class": "slave_fight_ally",
+        "x": 12,
+        "y": 16
+      },
+      {
+        "class": "slave_fight_ally",
+        "x": 8,
+        "y": 14
+      },
+      {
+        "class": "slave_fight_ally",
+        "x": 15,
+        "y": 13
+      },
+      {
+        "class": "slave_fight",
+        "x": 4,
+        "y": 4
+      },
+      {
+        "class": "slave_fight",
+        "x": 11,
+        "y": 8
+      },
+      {
+        "class": "slave_fight",
+        "x": 14,
+        "y": 10
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Survivor_Encampment"
+  ],
+  "//": "Variant four, zombie takeover.  Incomplete version based off the original design, implies they were struggling with an outbreak while still under construction.",
+  "weight": 1000,
+  "object": {
+    "rows": [
+      ".........&..............",
+      "##########====##########",
+      "#........&,,,,.........#",
+      "#.||w|w||.,,,,.||w|w||.#",
+      "#.|BBDBB|.,,,,.|F_vCC|.#",
+      "#.|D____+.,,,,.+__u_h|.#",
+      "#.|BBDBB|.,,,,.|_}}}_|.#",
+      "#.||w|w||.,,,,.||w|w||.#",
+      "#.........,,,,.........#",
+      "#.||w|w||.,,,,.||w|w||.#",
+      "#.|bbbbb|.,,,,.|}}}_a|.#",
+      "#.|__u__+.,,,,.+____f|.#",
+      "#.|ht_ht|.,,,,.|}}}_k|.#",
+      "#.||w|w||.,,,,.||w|w||.#",
+      "#.........,,,,.........#",
+      "#-------..,.,,.P.111...#",
+      "#-~~~~~--..,.,...231...#",
+      "#~m~M~m~--,,.,...111.^.#",
+      "#~~~~~~~~--.,........^.#",
+      "#~M~m~M~M~-......111.^.#",
+      "#~~~~~~~~~-......231...#",
+      "#~m~M~M~m~-......111...#",
+      "#~~~~~~~~--............#",
+      "########################"
+    ],
+    "terrain": {
+      "1": "t_dirt",
+      "2": "t_dirt",
+      "3": "t_dirt",
+      ".": [
+        [
+          "t_grass",
+          4
+        ],
+        [
+          "t_grass_long",
+          2
+        ],
+        [
+          "t_dirt",
+          1
+        ]
+      ],
+      ",": "t_dirt",
+      "#": "t_palisade",
+      "|": "t_wall_log",
+      "+": "t_rdoor_c",
+      "_": "t_rock_floor",
+      "=": "t_palisade_gate",
+      "&": "t_palisade_pulley",
+      "}": "t_rock_floor",
+      "^": "t_dirt",
+      "-": "t_dirt",
+      "~": "t_dirt",
+      "B": "t_rock_floor",
+      "C": "t_rock_floor",
+      "D": "t_rock_floor",
+      "F": "t_rock_floor",
+      "M": "t_pit_shallow",
+      "T": "t_rock_floor",
+      "O": "t_dirt",
+      "P": "t_covered_well",
+      "a": "t_rock_floor",
+      "b": "t_rock_floor",
+      "f": "t_rock_floor",
+      "h": "t_rock_floor",
+      "k": "t_rock_floor",
+      "m": "t_grave_new",
+      "t": "t_rock_floor",
+      "u": "t_utility_light",
+      "v": "t_rock_floor",
+      "w": "t_window_enhanced"
+    },
+    "furniture": {
+      "1": "f_canvas_wall",
+      "2": "f_canvas_door",
+      "3": "f_canvas_floor",
+      "}": "f_locker",
+      "-": "f_earthbag_half",
+      "^": "f_solar_unit",
+      "B": "f_makeshift_bed",
+      "C": "f_counter",
+      "D": "f_dresser",
+      "F": "f_fridge",
+      "a": "f_anvil",
+      "b": "f_bookcase",
+      "f": "f_forge_rock",
+      "h": "f_chair",
+      "k": "f_kiln_empty",
+      "t": "f_table",
+      "v": "f_woodstove"
+    },
+    "set": [
+      {
+        "point": "trap",
+        "id": "tr_rollmat",
+        "x": 18,
+        "y": 16
+      },
+      {
+        "point": "trap",
+        "id": "tr_rollmat",
+        "x": 18,
+        "y": 20
+      }
+    ],
+    "mapping": {
+      "~": {
+        "item": [
+          {
+            "item": "ash",
+            "chance": 30,
+            "amount": [
+              25,
+              50
+            ]
+          },
+          {
+            "item": "bone_human",
+            "chance": 10
+          }
+        ]
+      },
+      "B": {
+        "items": {
+          "item": "bed",
+          "chance": 75
+        }
+      },
+      "C": {
+        "items": [
+          {
+            "item": "oven",
+            "chance": 50
+          }
+        ]
+      },
+      "D": {
+        "items": [
+          {
+            "item": "dresser",
+            "chance": 90
+          },
+          {
+            "item": "survival_armor",
+            "chance": 75
+          },
+          {
+            "item": "survival_armor",
+            "chance": 50
+          }
+        ]
+      },
+      "b": {
+        "items": {
+          "item": "mansion_bookcase",
+          "chance": 100
+        }
+      },
+      "m": {
+        "item": {
+          "item": "bone_human",
+          "chance": 25,
+          "amount": [
+            12,
+            24
+          ]
+        }
+      }
+    },
+    "place_loot": [
+      {
+        "group": "power_tools",
+        "x": [
+          17,
+          19
+        ],
+        "y": 6,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "supplies_reagents_lab",
+        "x": [
+          17,
+          19
+        ],
+        "y": 6,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "tools_gunsmith",
+        "x": [
+          16,
+          18
+        ],
+        "y": 10,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "gunmod_common",
+        "x": [
+          16,
+          18
+        ],
+        "y": 10,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "gunmod_rare",
+        "x": [
+          16,
+          18
+        ],
+        "y": 10,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "tools_blacksmith",
+        "x": [
+          16,
+          18
+        ],
+        "y": 12,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "supplies_metal",
+        "x": [
+          16,
+          18
+        ],
+        "y": 12,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "group": "supplies_mechanics",
+        "x": [
+          16,
+          18
+        ],
+        "y": 12,
+        "chance": 75,
+        "repeat": 3
+      },
+      {
+        "item": "ash",
+        "x": [
+          1,
+          7
+        ],
+        "y": [
+          17,
+          22
+        ],
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "item": "flamethrower",
+        "x": 11,
+        "y": [
+          19,
+          20
+        ],
+        "chance": 90
+      },
+      {
+        "item": "recipe_surv",
+        "x": 7,
+        "y": 12
+      }
+    ],
+    "place_vehicles": [
+      {
+        "vehicle": "bicycle_electric",
+        "x": 13,
+        "y": 18,
+        "chance": 75,
+        "fuel": 25,
+        "status": -1,
+        "rotation": 210
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_zombie_scorched",
+        "x": [
+          3,
+          19
+        ],
+        "y": [
+          3,
+          19
+        ],
+        "repeat": [
+          3,
+          6
+        ]
+      },
+      {
+        "monster": "mon_zombie_fiend",
+        "x": [
+          3,
+          19
+        ],
+        "y": [
+          3,
+          19
+        ],
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "monster": "mon_zombie_survivor",
+        "x": [
+          3,
+          19
+        ],
+        "y": [
+          3,
+          19
+        ],
+        "repeat": 4
+      },
+      {
+        "monster": "mon_zombie_necro",
+        "x": [
+          3,
+          19
+        ],
+        "y": [
+          3,
+          19
+        ],
+        "repeat": 2
+      },
+      {
+        "monster": "mon_zombie_bio_tool_pistol",
+        "x": [
+          3,
+          19
+        ],
+        "y": [
+          3,
+          19
+        ]
+      },
+      {
+        "monster": "mon_zombie_electric",
+        "x": [
+          3,
+          19
+        ],
+        "y": [
+          3,
+          19
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Unknown_Lab_4"
+  ],
+  "weight": 1000,
+  "object": {
+    "rows": [
+      "#      7      #   7    f",
+      "   7#     7 7  #7  #   f",
+      " 7#   # 7 # # 7   #7 # f",
+      "  7     7  7   7      #f",
+      " 7  #        #      7  f",
+      " #     7   #    #    # f",
+      "   7                #  f",
+      "7       ########    # 7f",
+      "   #   ##||||||##      f",
+      "     # #||m12m||# 7   #f",
+      "........Cmmccmm|#    7 f",
+      "........+mmmmm>|#   # 7f",
+      "........+mmmmm>|#      f",
+      "........|mccccm|#    7#f",
+      "  #    #||6666||#  7# 7f",
+      "    #  ##||||||##  # 7 f",
+      "        ########      #f",
+      "7 #  #                 f",
+      " #         7      #  # f",
+      " 7     7 #  # #     #  f",
+      " # 7#            ## 7  f",
+      "      #  7 7#  7     7 f",
+      "  # # 7#  # 7   # 7 #  f",
+      "------------------------"
+    ],
+    "terrain": {
+      "1": "t_radio_controls",
+      "2": "t_radio_tower",
+      "6": "t_metal_floor",
+      "7": [
+        "t_tree",
+        "t_tree_dead",
+        "t_tree_deadpine",
+        "t_tree_hickory_dead",
+        "t_tree_cottonwood",
+        "t_tree_young",
+        "t_grass"
+      ],
+      " ": [
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_dirt"
+      ],
+      "#": [
+        "t_shrub",
+        "t_underbrush",
+        "t_grass"
+      ],
+      "+": "t_door_metal_c",
+      "-": "t_chainfence_h",
+      ".": "t_dirt",
+      ">": "t_stairs_down",
+      "C": "t_card_reader_broken",
+      "_": "t_grass",
+      "c": "t_metal_floor",
+      "f": "t_chainfence_v",
+      "m": "t_metal_floor",
+      "|": "t_wall_metal"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "c": "f_chair"
+    },
+    "place_loot": [
+      {
+        "group": "map_extra_science",
+        "x": 10,
+        "y": 13,
+        "chance": 75
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": 10,
+        "y": 13
+      },
+      {
+        "field": "fd_blood",
+        "x": 11,
+        "y": 14
+      },
+      {
+        "field": "fd_blood",
+        "x": 12,
+        "y": 14
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_crows_m240",
+        "x": 22,
+        "y": 22
+      },
+      {
+        "monster": "mon_turret_rifle",
+        "x": 1,
+        "y": 21
+      },
+      {
+        "monster": "mon_turret_rifle",
+        "x": 21,
+        "y": 1
+      },
+      {
+        "monster": "mon_laserturret",
+        "x": 7,
+        "y": 7
+      },
+      {
+        "monster": "mon_laserturret",
+        "x": 7,
+        "y": 16
+      },
+      {
+        "monster": "mon_zombie_bio_tool_pistol",
+        "x": 13,
+        "y": 12
+      }
+    ]
+  }
+}
+```
+

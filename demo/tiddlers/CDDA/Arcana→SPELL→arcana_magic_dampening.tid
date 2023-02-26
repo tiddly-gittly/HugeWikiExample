@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_dampening
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_dampening|http://cdda.aloxaf.cn/search?q=arcana_magic_dampening]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_dampening",
+  "//": "ID retained for save compatibility.",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Displacement"
+  },
+  "description": "Magic Sign\nUsing this spell will swap your position with a hostile target of your choosing, leaving your victim dazed and creating a blast of fog ahead of the area you emerge from.",
+  "message": "\"If it is known, it can be attained…\"  You cast %s!",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL",
+    "SWAP_POS"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_magic_dampening_aoe",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_3",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "dazed",
+  "energy_source": "STAMINA",
+  "difficulty": 30,
+  "skill": "magic",
+  "max_level": 10,
+  "min_range": 20,
+  "max_range": 40,
+  "range_increment": 2,
+  "base_casting_time": 160,
+  "final_casting_time": 80,
+  "casting_time_increment": -8,
+  "base_energy_cost": 2000,
+  "final_energy_cost": 1000,
+  "energy_increment": -100,
+  "min_duration": 1800,
+  "max_duration": 3600,
+  "duration_increment": 180,
+  "field_id": "fd_fog",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5,
+  "spell_class": "SPELL_DAMPENING"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_dampening",
+  "//": "ID retained for save compatibility.",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：移形换影"
+  },
+  "description": "魔法符号\n使用此咒语将为你涂上珊瑚光环，从烈火中汲取能量并从你的身体吸收辐射。",
+  "message": "“如果已知，就可以获得……”你施放了 %s！",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL",
+    "SWAP_POS"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_magic_dampening_aoe",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_3",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "dazed",
+  "energy_source": "STAMINA",
+  "difficulty": 30,
+  "skill": "magic",
+  "max_level": 10,
+  "min_range": 20,
+  "max_range": 40,
+  "range_increment": 2,
+  "base_casting_time": 160,
+  "final_casting_time": 80,
+  "casting_time_increment": -8,
+  "base_energy_cost": 2000,
+  "final_energy_cost": 1000,
+  "energy_increment": -100,
+  "min_duration": 1800,
+  "max_duration": 3600,
+  "duration_increment": 180,
+  "field_id": "fd_fog",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5,
+  "spell_class": "SPELL_DAMPENING"
+}
+```
+

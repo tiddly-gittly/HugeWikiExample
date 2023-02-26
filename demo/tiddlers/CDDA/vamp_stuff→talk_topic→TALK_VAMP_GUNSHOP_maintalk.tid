@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_GUNSHOP_maintalk
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_GUNSHOP_maintalk|http://cdda.aloxaf.cn/search?q=TALK_VAMP_GUNSHOP_maintalk]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/v_vgs_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_GUNSHOP_maintalk",
+  "type": "talk_topic",
+  "dynamic_line": "Now, you want something from me?",
+  "responses": [
+    {
+      "text": "Who are you?",
+      "topic": "TALK_VAMP_GUNSHOP_whoisme"
+    },
+    {
+      "text": "Where did these guns came from?",
+      "topic": "TALK_VAMP_GUNSHOP_gunthere"
+    },
+    {
+      "text": "I want to buy.",
+      "effect": "start_trade",
+      "topic": "TALK_VAMP_GUNSHOP_maintalk"
+    },
+    {
+      "text": "Maybe later.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_GUNSHOP_maintalk",
+  "type": "talk_topic",
+  "dynamic_line": "现在，你想从我这里得到什么？",
+  "responses": [
+    {
+      "text": "你是谁？",
+      "topic": "TALK_VAMP_GUNSHOP_whoisme"
+    },
+    {
+      "text": "这些枪都是从哪里来的？",
+      "topic": "TALK_VAMP_GUNSHOP_gunthere"
+    },
+    {
+      "text": "我想交易",
+      "effect": "start_trade",
+      "topic": "TALK_VAMP_GUNSHOP_maintalk"
+    },
+    {
+      "text": "下次再说吧。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_iku_earthen_crescent
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_iku_earthen_crescent|http://cdda.aloxaf.cn/search?q=tec_iku_earthen_crescent]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_iku_earthen_crescent",
+  "type": "technique",
+  "name": "Earthen crescent",
+  "messages": [
+    "You swing a low wide arc at %s, knocking them back!",
+    "<npcname> swings a low wide arc at %s, knocking them back!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 4
+    }
+  ],
+  "required_buffs_all": [
+    "buff_iku_onhit"
+  ],
+  "melee_allowed": true,
+  "unarmed_allowed": false,
+  "knockback_dist": 1,
+  "aoe": "wide",
+  "weighting": 1,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.1
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 1
+    }
+  ],
+  "//": "Only difference is that Iku requires a previous hit, to emulate a combo"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_iku_earthen_crescent",
+  "type": "technique",
+  "name": "Earthen crescent",
+  "messages": [
+    "You swing a low wide arc at %s，knocking them back！",
+    "<npcname> swings a low wide arc at %s，knocking them back！"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 4
+    }
+  ],
+  "required_buffs_all": [
+    "buff_iku_onhit"
+  ],
+  "melee_allowed": true,
+  "unarmed_allowed": false,
+  "knockback_dist": 1,
+  "aoe": "wide",
+  "weighting": 1,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.1
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 1
+    }
+  ],
+  "//": "Only difference is that Iku requires a previous hit, to emulate a combo"
+}
+```
+

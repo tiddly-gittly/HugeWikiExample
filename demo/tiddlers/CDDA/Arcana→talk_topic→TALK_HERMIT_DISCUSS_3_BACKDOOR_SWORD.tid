@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_BACKDOOR_SWORD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_BACKDOOR_SWORD|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_BACKDOOR_SWORD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_SWORD",
+  "dynamic_line": "It has the power to draw upon the energy lingering in holes in reality, the portals that remain.  The damage has already been done, but this is one step that may enable us to regain some degree of control, and ensure the continued existence of our world, not to mention the survival of humanity.  Use the power that this act grants you, and you will see for yourself what follows.  You will know when the full fruit of this effort has been rewarded, seek me out when this has occurred.",
+  "responses": [
+    {
+      "text": "Gods and demons enslaving us are what caused this mess, you old fool.",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_GODLESS",
+      "opinion": {
+        "anger": 1,
+        "value": -1
+      },
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "switch": true,
+      "text": "We will not fail.  As is His will.",
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "text": "This power is dangerous.  Why should we trust that salvation lay with yet another interloper?",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_DANGER",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "I still have my concerns, but we shall see what can be done.",
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "I'll see what I can do.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_SWORD",
+  "dynamic_line": "它有能力利用在现实中的空洞中挥之不去的能量，那就是仍然存在的门户。损害已经造成了，但这是一个步骤，可以使我们重新获得某种程度的控制，并确保我们的世界继续存在，更不用说人类的生存了。运用这一行动赋予你的力量，你将亲眼看到接下来的一切。你会知道当这个努力的成果得到回报的时候，当这一切发生的时候找我。",
+  "responses": [
+    {
+      "text": "上帝和恶魔奴役我们是造成这场混乱的原因，你这个老傻瓜。",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_GODLESS",
+      "opinion": {
+        "anger": 1,
+        "value": -1
+      },
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "switch": true,
+      "text": "我们不会失败的。因为这是他的意愿。",
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "text": "这种力量是危险的。为什么我们要相信另一个闯入者会得救呢？",
+      "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_DANGER",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "我仍然有我的担心，但我们要看看能做些什么。",
+      "topic": "TALK_HERMIT",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "我看看能做些什么。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

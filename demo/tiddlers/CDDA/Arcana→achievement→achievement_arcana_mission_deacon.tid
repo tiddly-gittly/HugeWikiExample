@@ -1,0 +1,67 @@
+creator: 林一二
+revision: 0
+tags: achievement Arcana
+title: Arcana→achievement→achievement_arcana_mission_deacon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：achievement_arcana_mission_deacon|http://cdda.aloxaf.cn/search?q=achievement_arcana_mission_deacon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/achievements.json
+
+
+!! 原文
+
+```json
+{
+  "id": "achievement_arcana_mission_deacon",
+  "type": "achievement",
+  "name": {
+    "str": "<color_cyan>(Arcana)</color> Distant Faith"
+  },
+  "description": "Learn of another settlement surviving out there.",
+  "//": "Achievement is fully hidden until you reveal it.",
+  "hidden_by": [
+    "achievement_arcana_mission_deacon"
+  ],
+  "requirements": [
+    {
+      "event_statistic": "num_avatar_arcana_mission_deacon",
+      "is": ">=",
+      "target": 1,
+      "visible": "never"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "achievement_arcana_mission_deacon",
+  "type": "achievement",
+  "name": {
+    "str": "<color_cyan>（Arcana）</color> 遥远的信仰"
+  },
+  "description": "听说在那边有另一个定居点幸存着。",
+  "//": "Achievement is fully hidden until you reveal it.",
+  "hidden_by": [
+    "achievement_arcana_mission_deacon"
+  ],
+  "requirements": [
+    {
+      "event_statistic": "num_avatar_arcana_mission_deacon",
+      "is": ">=",
+      "target": 1,
+      "visible": "never"
+    }
+  ]
+}
+```
+

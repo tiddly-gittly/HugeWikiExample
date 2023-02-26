@@ -1,0 +1,320 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[43]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    [
+      "microlab_arcana_server_room"
+    ]
+  ],
+  "method": "json",
+  "object": {
+    "fill_ter": "t_strconc_floor",
+    "rows": [
+      " cc c|c  c|  | cc |     ",
+      " ||||||||||  |||||||||r ",
+      " |Y          |666 %%%|r ",
+      " |           | h  8%%|r ",
+      " |  ||||||||||    88 |  ",
+      "||  |                |||",
+      " |  ||2|| 777 777 tth|c ",
+      " 2  |c  ( 777 777 tt |  ",
+      " |  |c  (          hY|  ",
+      " |  ||2|||((((||||||||r ",
+      "||  |   S     B|YYRFF|||",
+      "    (         B|     |^ ",
+      "    (   hh     | ci  |^ ",
+      "||  (  htth  hd| cc  ||2",
+      " |  |  htth   d| cc  |c ",
+      " 2  2   hh   |||     |6 ",
+      " 2  2        h6|    R|6 ",
+      " |  |Y        6|    O|c ",
+      "||  |||||||||||||2((||||",
+      "F|                   |cc",
+      "c|Y                 Y2  ",
+      "||2((||||||  |||||||||  ",
+      "    c|cccc|  |h66h|cc   ",
+      "    c|    |  |    |     "
+    ],
+    "palettes": [
+      "microlab"
+    ],
+    "terrain": {
+      "7": "t_strconc_floor",
+      "8": "t_strconc_floor",
+      "%": "t_strconc_floor"
+    },
+    "furniture": {
+      "7": "f_server",
+      "8": "f_filing_cabinet",
+      "%": "f_wreckage"
+    },
+    "signs": {
+      "S": {
+        "signage": "Caution:\nConfined space.  Hazardous gases may be released in the event of fire or other damage to server infrastructure.  If alarm sounds, evacuate server room immediately, do not re-enter until ventilation is restored."
+      }
+    },
+    "place_fields": [
+      {
+        "x": 20,
+        "y": 2,
+        "field": "fd_gas_vent",
+        "intensity": 1
+      }
+    ],
+    "mapping": {
+      "%": {
+        "item": [
+          {
+            "item": "scrap",
+            "count": [
+              5,
+              10
+            ]
+          }
+        ]
+      },
+      "c": {
+        "items": [
+          {
+            "item": "tools_electronics",
+            "chance": 50,
+            "repeat": 2
+          }
+        ]
+      }
+    },
+    "place_loot": [
+      {
+        "group": "file_room",
+        "x": [
+          18,
+          19
+        ],
+        "y": [
+          3,
+          4
+        ],
+        "chance": 50,
+        "repeat": 20
+      },
+      {
+        "item": "arcane_purifier_intel_2",
+        "x": [
+          18,
+          19
+        ],
+        "y": [
+          6,
+          7
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_zombie_technician",
+        "x": [
+          10,
+          13
+        ],
+        "y": [
+          10,
+          12
+        ],
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "monster": "mon_hazmatbot",
+        "x": 13,
+        "y": 5
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_hermit_tablet_unlock",
+  "object": {
+    "set": [
+      {
+        "point": "furniture",
+        "id": "f_safe_o",
+        "x": 11,
+        "y": 9
+      }
+    ],
+    "faction_owner": [
+      {
+        "id": "your_followers",
+        "x": 11,
+        "y": 9
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": [
+    [
+      "microlab_arcana_server_room"
+    ]
+  ],
+  "method": "json",
+  "object": {
+    "fill_ter": "t_strconc_floor",
+    "rows": [
+      " cc c|c  c|  | cc |     ",
+      " ||||||||||  |||||||||r ",
+      " |Y          |666 %%%|r ",
+      " |           | h  8%%|r ",
+      " |  ||||||||||    88 |  ",
+      "||  |                |||",
+      " |  ||2|| 777 777 tth|c ",
+      " 2  |c  ( 777 777 tt |  ",
+      " |  |c  (          hY|  ",
+      " |  ||2|||((((||||||||r ",
+      "||  |   S     B|YYRFF|||",
+      "    (         B|     |^ ",
+      "    (   hh     | ci  |^ ",
+      "||  (  htth  hd| cc  ||2",
+      " |  |  htth   d| cc  |c ",
+      " 2  2   hh   |||     |6 ",
+      " 2  2        h6|    R|6 ",
+      " |  |Y        6|    O|c ",
+      "||  |||||||||||||2((||||",
+      "F|                   |cc",
+      "c|Y                 Y2  ",
+      "||2((||||||  |||||||||  ",
+      "    c|cccc|  |h66h|cc   ",
+      "    c|    |  |    |     "
+    ],
+    "palettes": [
+      "microlab"
+    ],
+    "terrain": {
+      "7": "t_strconc_floor",
+      "8": "t_strconc_floor",
+      "%": "t_strconc_floor"
+    },
+    "furniture": {
+      "7": "f_server",
+      "8": "f_filing_cabinet",
+      "%": "f_wreckage"
+    },
+    "signs": {
+      "S": {
+        "signage": "Caution:\nConfined space.  Hazardous gases may be released in the event of fire or other damage to server infrastructure.  If alarm sounds, evacuate server room immediately, do not re-enter until ventilation is restored."
+      }
+    },
+    "place_fields": [
+      {
+        "x": 20,
+        "y": 2,
+        "field": "fd_gas_vent",
+        "intensity": 1
+      }
+    ],
+    "mapping": {
+      "%": {
+        "item": [
+          {
+            "item": "scrap",
+            "count": [
+              5,
+              10
+            ]
+          }
+        ]
+      },
+      "c": {
+        "items": [
+          {
+            "item": "tools_electronics",
+            "chance": 50,
+            "repeat": 2
+          }
+        ]
+      }
+    },
+    "place_loot": [
+      {
+        "group": "file_room",
+        "x": [
+          18,
+          19
+        ],
+        "y": [
+          3,
+          4
+        ],
+        "chance": 50,
+        "repeat": 20
+      },
+      {
+        "item": "arcane_purifier_intel_2",
+        "x": [
+          18,
+          19
+        ],
+        "y": [
+          6,
+          7
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_zombie_technician",
+        "x": [
+          10,
+          13
+        ],
+        "y": [
+          10,
+          12
+        ],
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "monster": "mon_hazmatbot",
+        "x": 13,
+        "y": 5
+      }
+    ]
+  }
+}
+```
+

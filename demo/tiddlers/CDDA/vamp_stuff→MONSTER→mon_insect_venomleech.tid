@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_insect_venomleech
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_venomleech|http://cdda.aloxaf.cn/search?q=mon_insect_venomleech]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Insects/+Leech.json
+
+
+!! 原文
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 3,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "bodytype": "snake",
+  "color": "light_green_magenta",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "A larger, darker abominable leech with wider mouth and drips highly concentrated toxin as it sway.",
+  "diff": 15,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "VENOM",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "zombie_meatslug",
+  "hp": 85,
+  "id": "mon_insect_venomleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 2,
+  "melee_skill": 4,
+  "morale": 100,
+  "name": {
+    "str": "venomous leech"
+  },
+  "special_attacks": [
+    [
+      "leechvenomousinject",
+      10
+    ]
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 100,
+  "symbol": "~",
+  "type": "MONSTER"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 3,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "bodytype": "snake",
+  "color": "light_green_magenta",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "一种更大、更黑的可恶水蛭，有着更宽的嘴，摇摆时会滴下高浓度的毒液。",
+  "diff": 15,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "VENOM",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "zombie_meatslug",
+  "hp": 85,
+  "id": "mon_insect_venomleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 2,
+  "melee_skill": 4,
+  "morale": 100,
+  "name": {
+    "str": "剧毒水蛭"
+  },
+  "special_attacks": [
+    [
+      "leechvenomousinject",
+      10
+    ]
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 100,
+  "symbol": "~",
+  "type": "MONSTER"
+}
+```
+

@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_translucent
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_translucent|http://cdda.aloxaf.cn/search?q=mon_zombie_translucent]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Translucent.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_translucent",
+  "type": "MONSTER",
+  "name": {
+    "str": "translucent zombie"
+  },
+  "description": "With acid covering its whole body, this raging corpse sways in every step, vomiting filthy waste as its green, tinted eyes stare submissively out of nowhere.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 70,
+  "diff": 1,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩀",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "luminance": 2,
+  "harvest": "zombie",
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "acid",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_fire": 1,
+  "special_attacks": [
+    [
+      "ACID_BARF",
+      30
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 14,
+    "into": "mon_zombie_pellucid"
+  },
+  "anger_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "ACIDPROOF",
+    "ACID_BLOOD",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_translucent",
+  "type": "MONSTER",
+  "name": {
+    "str": "半透明丧尸"
+  },
+  "description": "这具狂暴的尸体浑身都是酸液，每走一步都摇摆不定，喷吐着和它身体一样绿的肮脏废渣，淡色的眼睛不知从哪里顺从地凝视着你。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 70,
+  "diff": 1,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩀",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "luminance": 2,
+  "harvest": "zombie",
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "acid",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_fire": 1,
+  "special_attacks": [
+    [
+      "ACID_BARF",
+      30
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 14,
+    "into": "mon_zombie_pellucid"
+  },
+  "anger_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "ACIDPROOF",
+    "ACID_BLOOD",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→shortwave
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：shortwave|http://cdda.aloxaf.cn/search?q=shortwave]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Radiation_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "id": "shortwave",
+  "type": "SPELL",
+  "name": {
+    "str": "Shortwave"
+  },
+  "description": "Cook nearby monsters (and yourself to an extent)",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "self"
+  ],
+  "flags": [
+    "SOMATIC"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "pure",
+  "min_damage": 20,
+  "max_damage": 20,
+  "min_range": 3,
+  "max_range": 3,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "base_energy_cost": 200,
+  "spell_class": "RADIATION_MAGE",
+  "difficulty": 5,
+  "max_level": 35,
+  "base_casting_time": 120,
+  "energy_source": "MANA",
+  "extra_effects": [
+    {
+      "id": "shortwave_2"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "shortwave",
+  "type": "SPELL",
+  "name": {
+    "str": "短波术"
+  },
+  "description": "烤熟附近的怪物（还包括你自己）",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "self"
+  ],
+  "flags": [
+    "SOMATIC"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "pure",
+  "min_damage": 20,
+  "max_damage": 20,
+  "min_range": 3,
+  "max_range": 3,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "base_energy_cost": 200,
+  "spell_class": "RADIATION_MAGE",
+  "difficulty": 5,
+  "max_level": 35,
+  "base_casting_time": 120,
+  "energy_source": "MANA",
+  "extra_effects": [
+    {
+      "id": "shortwave_2"
+    }
+  ]
+}
+```
+

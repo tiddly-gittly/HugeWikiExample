@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9tree_chestnut
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9tree_chestnut|http://cdda.aloxaf.cn/search?q=f_BL9tree_chestnut]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_chestnut",
+  "name": "chestnut tree",
+  "description": "A massive tree belonging to the 'Castanea' genus.  If you look closely you can see some unharvested chestnuts.  You could cut it down with the right tools.",
+  "symbol": "7",
+  "color": [
+    "green",
+    "green",
+    "green_yellow",
+    "brown"
+  ],
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn",
+  "looks_like": "t_tree_chestnut",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "autumn"
+      ],
+      "id": "chestnut_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_chestnut",
+  "name": "栗树",
+  "description": "一棵巨大的树木，分类学上属于栗属。靠近看时可以发现一些还没被摘掉的栗子。你可以用合适的工具砍倒它。",
+  "symbol": "7",
+  "color": [
+    "green",
+    "green",
+    "green_yellow",
+    "brown"
+  ],
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn",
+  "looks_like": "t_tree_chestnut",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "autumn"
+      ],
+      "id": "chestnut_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+

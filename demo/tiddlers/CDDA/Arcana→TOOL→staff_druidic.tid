@@ -1,0 +1,205 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→staff_druidic
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：staff_druidic|http://cdda.aloxaf.cn/search?q=staff_druidic]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "staff_druidic",
+  "type": "TOOL",
+  "name": {
+    "str": "druidic staff",
+    "str_pl": "druidic staves"
+  },
+  "description": "A short wooden staff decorated with engraved silver, depicting a mixture of exotic natural scenes and various holy symbols.  It is said to represent the instincts deep within the heart, tempered by restraint and reason.  Using it can repair and fortify items made of various plant or animal products and stone, but not more refined materials like metal or glass.",
+  "weight": "1310 g",
+  "volume": "2 L",
+  "longest_side": "60 cm",
+  "price": "800 USD",
+  "price_postapoc": "90 USD",
+  "bashing": 12,
+  "material": [
+    "wood",
+    "silver"
+  ],
+  "symbol": "/",
+  "looks_like": "cudgel",
+  "color": "light_gray",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 300
+      }
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "essence_dull_type",
+  "use_action": [
+    {
+      "type": "repair_item",
+      "item_action_type": "repair_metal",
+      "materials": [
+        "alien_resin",
+        "bone",
+        "chitin",
+        "acidchitin",
+        "clay",
+        "cotton",
+        "fur",
+        "leather",
+        "wyrmskin",
+        "gutskin",
+        "stone",
+        "wood",
+        "wool"
+      ],
+      "skill": "magic",
+      "tool_quality": 20,
+      "cost_scaling": 0,
+      "move_cost": 1000
+    },
+    {
+      "type": "sew_advanced",
+      "materials": [
+        "alien_resin",
+        "bone",
+        "chitin",
+        "acidchitin",
+        "clay",
+        "cotton",
+        "dry_plant",
+        "fur",
+        "leather",
+        "wyrmskin",
+        "gutskin",
+        "stone",
+        "wood",
+        "wool"
+      ],
+      "skill": "magic",
+      "clothing_mods": [
+        "arcana_birchbark_weave",
+        "arcana_tanbark_weave",
+        "arcana_willowbark_weave"
+      ]
+    }
+  ],
+  "flags": [
+    "NO_SALVAGE",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED",
+    "SHEATH_SPEAR"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "staff_druidic",
+  "type": "TOOL",
+  "name": {
+    "str": "德鲁伊法杖",
+    "str_pl": "德鲁伊法杖"
+  },
+  "description": "一根用錾银装饰的短木棍，上面描绘着奇异的景象和各种神圣的符号。据说它代表内心深处的本能，经过克制和理性的磨练。使用它可以修复和加固各种动植物材料和石头制成的物品，但不能修复金属或玻璃等精加工材料制成的物品。",
+  "weight": "1310 g",
+  "volume": "2 L",
+  "longest_side": "60 cm",
+  "price": "800 USD",
+  "price_postapoc": "90 USD",
+  "bashing": 12,
+  "material": [
+    "wood",
+    "silver"
+  ],
+  "symbol": "/",
+  "looks_like": "cudgel",
+  "color": "light_gray",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 300
+      }
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "essence_dull_type",
+  "use_action": [
+    {
+      "type": "repair_item",
+      "item_action_type": "repair_metal",
+      "materials": [
+        "alien_resin",
+        "bone",
+        "chitin",
+        "acidchitin",
+        "clay",
+        "cotton",
+        "fur",
+        "leather",
+        "wyrmskin",
+        "gutskin",
+        "stone",
+        "wood",
+        "wool"
+      ],
+      "skill": "magic",
+      "tool_quality": 20,
+      "cost_scaling": 0,
+      "move_cost": 1000
+    },
+    {
+      "type": "sew_advanced",
+      "materials": [
+        "alien_resin",
+        "bone",
+        "chitin",
+        "acidchitin",
+        "clay",
+        "cotton",
+        "dry_plant",
+        "fur",
+        "leather",
+        "wyrmskin",
+        "gutskin",
+        "stone",
+        "wood",
+        "wool"
+      ],
+      "skill": "magic",
+      "clothing_mods": [
+        "arcana_birchbark_weave",
+        "arcana_tanbark_weave",
+        "arcana_willowbark_weave"
+      ]
+    }
+  ],
+  "flags": [
+    "NO_SALVAGE",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED",
+    "SHEATH_SPEAR"
+  ]
+}
+```
+

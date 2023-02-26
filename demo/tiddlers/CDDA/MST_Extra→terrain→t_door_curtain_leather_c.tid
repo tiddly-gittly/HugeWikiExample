@@ -1,0 +1,171 @@
+creator: 林一二
+revision: 0
+tags: terrain MST_Extra
+title: MST_Extra→terrain→t_door_curtain_leather_c
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_door_curtain_leather_c|http://cdda.aloxaf.cn/search?q=t_door_curtain_leather_c]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_door_curtain_leather_c",
+  "name": "closed leather door curtain",
+  "description": "Hides from an animal hung up as a door.  Could be easily taken down for supplies or placed somewhere else.",
+  "symbol": "+",
+  "looks_like": "t_door_curtain_c",
+  "color": "dark_gray",
+  "move_cost": 0,
+  "roof": "t_flat_roof",
+  "flags": [
+    "FLAMMABLE_HARD",
+    "DOOR",
+    "NOITEM",
+    "CONNECT_TO_WALL",
+    "EASY_DECONSTRUCT"
+  ],
+  "open": "t_door_curtain_leather_o",
+  "deconstruct": {
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "stick",
+        "count": 1
+      },
+      {
+        "item": "leather_tarp",
+        "count": 1
+      },
+      {
+        "item": "withered",
+        "count": 12
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 1,
+    "str_max": 8,
+    "sound": "rrrrip!",
+    "sound_fail": "slap!",
+    "sound_vol": 8,
+    "sound_fail_vol": 2,
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "sheet",
+        "count": [
+          0,
+          1
+        ]
+      },
+      {
+        "item": "leather",
+        "count": [
+          4,
+          10
+        ]
+      },
+      {
+        "item": "stick",
+        "count": 1
+      },
+      {
+        "item": "withered",
+        "count": [
+          2,
+          12
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_door_curtain_leather_c",
+  "name": "皮革门帘（关）",
+  "description": "可以躲在这个皮门帘后面.可以很容易地取下来或者重新放置在其他地方.",
+  "symbol": "+",
+  "looks_like": "t_door_curtain_c",
+  "color": "dark_gray",
+  "move_cost": 0,
+  "roof": "t_flat_roof",
+  "flags": [
+    "FLAMMABLE_HARD",
+    "DOOR",
+    "NOITEM",
+    "CONNECT_TO_WALL",
+    "EASY_DECONSTRUCT"
+  ],
+  "open": "t_door_curtain_leather_o",
+  "deconstruct": {
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "stick",
+        "count": 1
+      },
+      {
+        "item": "leather_tarp",
+        "count": 1
+      },
+      {
+        "item": "withered",
+        "count": 12
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 1,
+    "str_max": 8,
+    "sound": "rrrrip!",
+    "sound_fail": "slap!",
+    "sound_vol": 8,
+    "sound_fail_vol": 2,
+    "ter_set": "t_dirt",
+    "items": [
+      {
+        "item": "sheet",
+        "count": [
+          0,
+          1
+        ]
+      },
+      {
+        "item": "leather",
+        "count": [
+          4,
+          10
+        ]
+      },
+      {
+        "item": "stick",
+        "count": 1
+      },
+      {
+        "item": "withered",
+        "count": [
+          2,
+          12
+        ]
+      }
+    ]
+  }
+}
+```
+

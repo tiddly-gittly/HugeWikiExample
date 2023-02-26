@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: ARMOR nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→ARMOR→lmil_armor
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lmil_armor|http://cdda.aloxaf.cn/search?q=lmil_armor]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "lmil_armor",
+  "type": "ARMOR",
+  "category": "armor",
+  "name": {
+    "str_sp": "light military armor"
+  },
+  "description": "A fairly light full-body suit of gray ballistic armor, one size fits most, with separate helmet.  Made from a fabric bodysuit with advanced composite plates, it is relatively easy to move in but protection is minimal, only rated for pistol-caliber rounds and fragmentation.  It also has two pouches for various sizes of small and medium magazines.",
+  "weight": "9045 g",
+  "volume": "10250 ml",
+  "price": "1600 USD",
+  "price_postapoc": "16 USD",
+  "to_hit": -3,
+  "bashing": 5,
+  "material": [
+    "c_superalloy_composite",
+    "cotton"
+  ],
+  "symbol": "[",
+  "color": "dark_gray",
+  "looks_like": "power_armor_light",
+  "warmth": 30,
+  "material_thickness": 1,
+  "environmental_protection": 5,
+  "//": "Designed to be able to hold military light and medium atomic cells.",
+  "pocket_data": [
+    {
+      "moves": 40,
+      "min_volume": "35 ml",
+      "max_contains_volume": "525 ml",
+      "max_contains_weight": "5 kg",
+      "holster": true,
+      "flag_restriction": [
+        "MAG_COMPACT"
+      ],
+      "item_restriction": [
+        "light_atomic_battery_cell",
+        "medium_atomic_battery_cell"
+      ]
+    },
+    {
+      "moves": 40,
+      "min_volume": "35 ml",
+      "max_contains_volume": "525 ml",
+      "max_contains_weight": "5 kg",
+      "holster": true,
+      "flag_restriction": [
+        "MAG_COMPACT"
+      ],
+      "item_restriction": [
+        "light_atomic_battery_cell",
+        "medium_atomic_battery_cell"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Stash magazine",
+    "holster_msg": "You stash your %s"
+  },
+  "flags": [
+    "STURDY",
+    "NO_SALVAGE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 12,
+      "coverage": 100,
+      "covers": [
+        "leg_l",
+        "leg_r",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "foot_l",
+        "foot_r"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "lmil_armor",
+  "type": "ARMOR",
+  "category": "armor",
+  "name": {
+    "str_sp": "轻型作战装甲"
+  },
+  "description": "一套尺寸适合大多数人的灰色轻型连身防弹装甲，有额外配套的头盔。由织物连体衣和高级复合板制成，相对容易移动，但防护作用很小，仅能抵挡手枪口径的子弹和弹片。 它有两个可以放入中小型弹匣的口袋。",
+  "weight": "9045 g",
+  "volume": "10250 ml",
+  "price": "1600 USD",
+  "price_postapoc": "16 USD",
+  "to_hit": -3,
+  "bashing": 5,
+  "material": [
+    "c_superalloy_composite",
+    "cotton"
+  ],
+  "symbol": "[",
+  "color": "dark_gray",
+  "looks_like": "power_armor_light",
+  "warmth": 30,
+  "material_thickness": 1,
+  "environmental_protection": 5,
+  "//": "Designed to be able to hold military light and medium atomic cells.",
+  "pocket_data": [
+    {
+      "moves": 40,
+      "min_volume": "35 ml",
+      "max_contains_volume": "525 ml",
+      "max_contains_weight": "5 kg",
+      "holster": true,
+      "flag_restriction": [
+        "MAG_COMPACT"
+      ],
+      "item_restriction": [
+        "light_atomic_battery_cell",
+        "medium_atomic_battery_cell"
+      ]
+    },
+    {
+      "moves": 40,
+      "min_volume": "35 ml",
+      "max_contains_volume": "525 ml",
+      "max_contains_weight": "5 kg",
+      "holster": true,
+      "flag_restriction": [
+        "MAG_COMPACT"
+      ],
+      "item_restriction": [
+        "light_atomic_battery_cell",
+        "medium_atomic_battery_cell"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "存入弹匣",
+    "holster_msg": "你收好了%s。"
+  },
+  "flags": [
+    "STURDY",
+    "NO_SALVAGE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 12,
+      "coverage": 100,
+      "covers": [
+        "leg_l",
+        "leg_r",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "foot_l",
+        "foot_r"
+      ]
+    }
+  ]
+}
+```
+

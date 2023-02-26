@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→v_hemo_whip_spell_d_yes
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_hemo_whip_spell_d_yes|http://cdda.aloxaf.cn/search?q=v_hemo_whip_spell_d_yes]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_hit_time.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "v_hemo_whip_spell_d_yes",
+  "name": {
+    "str": "Drain!"
+  },
+  "description": "Does the Drain Damage and Drain Heal.",
+  "valid_targets": [
+    "none"
+  ],
+  "message": "The leech's whip absorbs the life force from a nearby creature!",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "extra_effects": [
+    {
+      "id": "v_hemo_whip_spell_d_dmg"
+    },
+    {
+      "id": "v_hemo_whip_spell_d_heal",
+      "hit_self": true
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "v_hemo_whip_spell_d_yes",
+  "name": {
+    "str": "排水管！"
+  },
+  "description": "造成吸取伤害和吸取治疗。",
+  "valid_targets": [
+    "none"
+  ],
+  "message": "水蛭的鞭子吸收附近生物的生命力！",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "extra_effects": [
+    {
+      "id": "v_hemo_whip_spell_d_dmg"
+    },
+    {
+      "id": "v_hemo_whip_spell_d_heal",
+      "hit_self": true
+    }
+  ]
+}
+```
+

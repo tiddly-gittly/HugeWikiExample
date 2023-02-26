@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→revenant_hunger
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：revenant_hunger|http://cdda.aloxaf.cn/search?q=revenant_hunger]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "revenant_hunger",
+  "name": [
+    "Revenant Hunger"
+  ],
+  "desc": [
+    "Immunity to food poisoning and parasites, increased hunger gain.  Does not purge pre-existing conditions."
+  ],
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "remove_message": "Your craving for rotten food subsides.",
+  "blocks_effects": [
+    "poison",
+    "badpoison",
+    "foodpoison",
+    "paralyzepoison",
+    "bloodworms",
+    "paincysts",
+    "brainworms",
+    "tapeworm"
+  ],
+  "removes_effects": [
+    "hunger_full",
+    "hunger_engorged"
+  ],
+  "decay_messages": [
+    [
+      "Your craving for rotten food is starting to wane.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "30 m",
+  "max_intensity": 30,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "hunger_min": [
+      1
+    ],
+    "hunger_chance": [
+      18,
+      36
+    ],
+    "fatigue_min": [
+      1
+    ],
+    "fatigue_chance": [
+      36,
+      72
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "revenant_hunger",
+  "name": [
+    "报应饥饿"
+  ],
+  "desc": [
+    "对食物中毒和寄生虫有免疫力，增加饥饿感。不会清除预先存在的状况。"
+  ],
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "remove_message": "你对腐烂食物的渴望消退了。",
+  "blocks_effects": [
+    "poison",
+    "badpoison",
+    "foodpoison",
+    "paralyzepoison",
+    "bloodworms",
+    "paincysts",
+    "brainworms",
+    "tapeworm"
+  ],
+  "removes_effects": [
+    "hunger_full",
+    "hunger_engorged"
+  ],
+  "decay_messages": [
+    [
+      "你对腐烂食物的渴望开始减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "30 m",
+  "max_intensity": 30,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "hunger_min": [
+      1
+    ],
+    "hunger_chance": [
+      18,
+      36
+    ],
+    "fatigue_min": [
+      1
+    ],
+    "fatigue_chance": [
+      36,
+      72
+    ]
+  }
+}
+```
+

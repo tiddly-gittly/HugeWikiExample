@@ -1,0 +1,521 @@
+creator: 林一二
+revision: 0
+tags: mapgen nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mapgen→[6]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Terrain/Unknown_Lab.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Unknown_Lab_b3"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_soil",
+    "rows": [
+      " |v.........|f......+..|",
+      " |v.........|.......+..|",
+      " |v.........|...v..c||||",
+      " |v.........+..Cj...|rr|",
+      " |v.........+..Ci6..+..|",
+      " |v.........|.......+..|",
+      " |v.........|.......|..|",
+      " |v.c.......|rrrro{{|..+",
+      " |P666P||++||||||||||..+",
+      " |||||||....|||S__S||rr|",
+      "  |_.ss|....||......||||",
+      "  |....|....+........+..",
+      "  |....+....+........+..",
+      "  |t..T|....||......||II",
+      "  ||||||....|||bbbb||...",
+      "  |_.ss|....|||||||||...",
+      "  |....|............|...",
+      "  |....+............+..c",
+      "  |t..T|............+..c",
+      "  ||||||............|...",
+      "       ||||||||||||||V..",
+      "                    |V..",
+      "                    ||||",
+      "                        "
+    ],
+    "terrain": {
+      "6": "t_metal_floor",
+      "|": "t_wall_metal",
+      "+": "t_door_metal_c",
+      ".": "t_metal_floor",
+      "_": "t_utility_light",
+      "{": "t_metal_floor",
+      "C": "t_metal_floor",
+      "I": "t_reinforced_glass",
+      "P": "t_metal_floor",
+      "S": "t_metal_floor",
+      "T": "t_metal_floor",
+      "V": "t_metal_floor",
+      "b": "t_metal_floor",
+      "c": "t_metal_floor",
+      "f": "t_metal_floor",
+      "i": "t_metal_floor",
+      "j": "t_metal_floor",
+      "o": "t_metal_floor",
+      "r": "t_metal_floor",
+      "s": "t_metal_floor",
+      "t": "t_metal_floor",
+      "v": "t_vat"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "{": "f_locker",
+      "C": "f_counter",
+      "P": "f_compact_ASRG_containment",
+      "S": "f_statue",
+      "T": "f_trashcan",
+      "V": "f_vending_o",
+      "b": "f_bench",
+      "c": "f_chair",
+      "f": "f_centrifuge",
+      "i": "f_autodoc",
+      "j": "f_autodoc_couch",
+      "o": "f_oven",
+      "r": "f_rack",
+      "s": "f_sink",
+      "t": "f_toilet"
+    },
+    "toilets": {
+      "t": {}
+    },
+    "place_loot": [
+      {
+        "item": "flesh_knife",
+        "x": 15,
+        "y": [
+          3,
+          4
+        ]
+      },
+      {
+        "item": "jumpsuit_xl",
+        "x": [
+          18,
+          19
+        ],
+        "y": 7,
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "surgery",
+        "x": [
+          13,
+          16
+        ],
+        "y": 7,
+        "chance": 50,
+        "repeat": 8
+      },
+      {
+        "group": "oven",
+        "x": 17,
+        "y": 7,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "group": "tools_home",
+        "x": [
+          21,
+          22
+        ],
+        "y": 3,
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "group": "cleaning",
+        "x": [
+          21,
+          22
+        ],
+        "y": 9,
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "group": "trash_cart",
+        "x": 6,
+        "y": 13,
+        "chance": 25,
+        "repeat": 3
+      },
+      {
+        "group": "trash_cart",
+        "x": 6,
+        "y": 18,
+        "chance": 25,
+        "repeat": 3
+      },
+      {
+        "group": "vending_food_items",
+        "x": 21,
+        "y": 20,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "vending_drink_items",
+        "x": 21,
+        "y": 21,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "map_extra_science",
+        "x": 15,
+        "y": 0,
+        "chance": 75
+      },
+      {
+        "group": "map_extra_science",
+        "x": 5,
+        "y": 6,
+        "chance": 75
+      },
+      {
+        "group": "map_extra_science",
+        "x": 19,
+        "y": 11,
+        "chance": 75
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": 15,
+        "y": 0
+      },
+      {
+        "field": "fd_blood",
+        "x": 5,
+        "y": 6
+      },
+      {
+        "field": "fd_blood",
+        "x": 4,
+        "y": 5
+      },
+      {
+        "field": "fd_blood",
+        "x": 3,
+        "y": 5
+      },
+      {
+        "field": "fd_blood",
+        "x": 19,
+        "y": 11
+      },
+      {
+        "field": "fd_blood",
+        "x": 18,
+        "y": 11
+      },
+      {
+        "field": "fd_blood",
+        "x": 17,
+        "y": 11
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_failed_weapon",
+        "x": 4,
+        "y": 5
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 3,
+        "y": 17
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 9,
+        "y": 10
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 15,
+        "y": 12
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 13,
+        "y": 19
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "Unknown_Lab_b3"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_soil",
+    "rows": [
+      " |v.........|f......+..|",
+      " |v.........|.......+..|",
+      " |v.........|...v..c||||",
+      " |v.........+..Cj...|rr|",
+      " |v.........+..Ci6..+..|",
+      " |v.........|.......+..|",
+      " |v.........|.......|..|",
+      " |v.c.......|rrrro{{|..+",
+      " |P666P||++||||||||||..+",
+      " |||||||....|||S__S||rr|",
+      "  |_.ss|....||......||||",
+      "  |....|....+........+..",
+      "  |....+....+........+..",
+      "  |t..T|....||......||II",
+      "  ||||||....|||bbbb||...",
+      "  |_.ss|....|||||||||...",
+      "  |....|............|...",
+      "  |....+............+..c",
+      "  |t..T|............+..c",
+      "  ||||||............|...",
+      "       ||||||||||||||V..",
+      "                    |V..",
+      "                    ||||",
+      "                        "
+    ],
+    "terrain": {
+      "6": "t_metal_floor",
+      "|": "t_wall_metal",
+      "+": "t_door_metal_c",
+      ".": "t_metal_floor",
+      "_": "t_utility_light",
+      "{": "t_metal_floor",
+      "C": "t_metal_floor",
+      "I": "t_reinforced_glass",
+      "P": "t_metal_floor",
+      "S": "t_metal_floor",
+      "T": "t_metal_floor",
+      "V": "t_metal_floor",
+      "b": "t_metal_floor",
+      "c": "t_metal_floor",
+      "f": "t_metal_floor",
+      "i": "t_metal_floor",
+      "j": "t_metal_floor",
+      "o": "t_metal_floor",
+      "r": "t_metal_floor",
+      "s": "t_metal_floor",
+      "t": "t_metal_floor",
+      "v": "t_vat"
+    },
+    "furniture": {
+      "6": "f_console_broken",
+      "{": "f_locker",
+      "C": "f_counter",
+      "P": "f_compact_ASRG_containment",
+      "S": "f_statue",
+      "T": "f_trashcan",
+      "V": "f_vending_o",
+      "b": "f_bench",
+      "c": "f_chair",
+      "f": "f_centrifuge",
+      "i": "f_autodoc",
+      "j": "f_autodoc_couch",
+      "o": "f_oven",
+      "r": "f_rack",
+      "s": "f_sink",
+      "t": "f_toilet"
+    },
+    "toilets": {
+      "t": {}
+    },
+    "place_loot": [
+      {
+        "item": "flesh_knife",
+        "x": 15,
+        "y": [
+          3,
+          4
+        ]
+      },
+      {
+        "item": "jumpsuit_xl",
+        "x": [
+          18,
+          19
+        ],
+        "y": 7,
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "surgery",
+        "x": [
+          13,
+          16
+        ],
+        "y": 7,
+        "chance": 50,
+        "repeat": 8
+      },
+      {
+        "group": "oven",
+        "x": 17,
+        "y": 7,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "group": "tools_home",
+        "x": [
+          21,
+          22
+        ],
+        "y": 3,
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "group": "cleaning",
+        "x": [
+          21,
+          22
+        ],
+        "y": 9,
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "group": "trash_cart",
+        "x": 6,
+        "y": 13,
+        "chance": 25,
+        "repeat": 3
+      },
+      {
+        "group": "trash_cart",
+        "x": 6,
+        "y": 18,
+        "chance": 25,
+        "repeat": 3
+      },
+      {
+        "group": "vending_food_items",
+        "x": 21,
+        "y": 20,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "vending_drink_items",
+        "x": 21,
+        "y": 21,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "map_extra_science",
+        "x": 15,
+        "y": 0,
+        "chance": 75
+      },
+      {
+        "group": "map_extra_science",
+        "x": 5,
+        "y": 6,
+        "chance": 75
+      },
+      {
+        "group": "map_extra_science",
+        "x": 19,
+        "y": 11,
+        "chance": 75
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": 15,
+        "y": 0
+      },
+      {
+        "field": "fd_blood",
+        "x": 5,
+        "y": 6
+      },
+      {
+        "field": "fd_blood",
+        "x": 4,
+        "y": 5
+      },
+      {
+        "field": "fd_blood",
+        "x": 3,
+        "y": 5
+      },
+      {
+        "field": "fd_blood",
+        "x": 19,
+        "y": 11
+      },
+      {
+        "field": "fd_blood",
+        "x": 18,
+        "y": 11
+      },
+      {
+        "field": "fd_blood",
+        "x": 17,
+        "y": 11
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_failed_weapon",
+        "x": 4,
+        "y": 5
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 3,
+        "y": 17
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 9,
+        "y": 10
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 15,
+        "y": 12
+      },
+      {
+        "monster": "mon_failed_weapon",
+        "x": 13,
+        "y": 19
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→spiderbodyhug
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：spiderbodyhug|http://cdda.aloxaf.cn/search?q=spiderbodyhug]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "spiderbodyhug",
+  "cooldown": 35,
+  "move_cost": 300,
+  "accuracy": 7,
+  "blockable": false,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 3,
+      "armor_penetration": 999
+    }
+  ],
+  "effects": [
+    {
+      "id": "downed",
+      "duration": 3
+    },
+    {
+      "id": "grabbed",
+      "duration": 10,
+      "bp": "torso"
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "hit_dmg_u": "%1$s grasps you widely with its arms!",
+  "hit_dmg_npc": "%1$s grasps <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to hug you, but fails to take effect!",
+  "no_dmg_msg_npc": "%1$s tries to hug <npcname>, but fails to take effect!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "spiderbodyhug",
+  "cooldown": 35,
+  "move_cost": 300,
+  "accuracy": 7,
+  "blockable": false,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 3,
+      "armor_penetration": 999
+    }
+  ],
+  "effects": [
+    {
+      "id": "downed",
+      "duration": 3
+    },
+    {
+      "id": "grabbed",
+      "duration": 10,
+      "bp": "torso"
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "hit_dmg_u": "%1$s grasps you widely with its arms!",
+  "hit_dmg_npc": "%1$s grasps <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to hug you, but fails to take effect!",
+  "no_dmg_msg_npc": "%1$s tries to hug <npcname>, but fails to take effect!"
+}
+```
+

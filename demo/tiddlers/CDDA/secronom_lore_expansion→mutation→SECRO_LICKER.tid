@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_LICKER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_LICKER|http://cdda.aloxaf.cn/search?q=SECRO_LICKER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_LICKER",
+  "name": {
+    "str": "Lushen Tongue"
+  },
+  "points": 4,
+  "visibility": 4,
+  "ugliness": 4,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "Your tongue have become long and slender that stretches and retracts at your will. It somewhat helps you in sensing scents and movements.",
+  "types": [
+    "MUZZLE"
+  ],
+  "changes_to": [
+    "SECRO_LICKER_DEF",
+    "SECRO_LICKER_ATK"
+  ],
+  "cancels": [
+    "MOUTH_TENTACLES",
+    "MOUTH_FLAPS",
+    "SECRO_LICKER_ATK_THRESHOLD"
+  ],
+  "dodge_modifier": 0.05,
+  "hearing_modifier": 0.1,
+  "attacks": [
+    {
+      "attack_text_u": "You lick %s",
+      "attack_text_npc": "%1$s licks %2$s",
+      "body_part": "mouth",
+      "chance": 30,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.3
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_LICKER",
+  "name": {
+    "str": "芦笙舌"
+  },
+  "points": 4,
+  "visibility": 4,
+  "ugliness": 4,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "你的舌头变得又长又细，可以随意伸缩。它在一定程度上帮助你感知气味和运动。",
+  "types": [
+    "MUZZLE"
+  ],
+  "changes_to": [
+    "SECRO_LICKER_DEF",
+    "SECRO_LICKER_ATK"
+  ],
+  "cancels": [
+    "MOUTH_TENTACLES",
+    "MOUTH_FLAPS",
+    "SECRO_LICKER_ATK_THRESHOLD"
+  ],
+  "dodge_modifier": 0.05,
+  "hearing_modifier": 0.1,
+  "attacks": [
+    {
+      "attack_text_u": "You lick %s",
+      "attack_text_npc": "%1$s licks %2$s",
+      "body_part": "mouth",
+      "chance": 30,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.3
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

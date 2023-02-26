@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_mokou_sommersault_kick
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_mokou_sommersault_kick|http://cdda.aloxaf.cn/search?q=tec_mokou_sommersault_kick]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_mokou_sommersault_kick",
+  "type": "technique",
+  "name": "Sommersault kick",
+  "messages": [
+    "You jump and kick %s",
+    "<npcname> jumps and kicks %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "unarmed",
+      "level": 5
+    }
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "crit_ok": true,
+  "down_dur": 2,
+  "weighting": 1,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.15
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.667
+    },
+    {
+      "stat": "damage",
+      "type": "heat",
+      "scaling-stat": "str",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "heat",
+      "scaling-stat": "dex",
+      "scale": 0.75
+    }
+  ],
+  "//": "Should ignite the target"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_mokou_sommersault_kick",
+  "type": "technique",
+  "name": "Sommersault kick",
+  "messages": [
+    "You jump and kick %s",
+    "<npcname> jumps and kicks %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "unarmed",
+      "level": 5
+    }
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "crit_ok": true,
+  "down_dur": 2,
+  "weighting": 1,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.15
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.667
+    },
+    {
+      "stat": "damage",
+      "type": "heat",
+      "scaling-stat": "str",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "heat",
+      "scaling-stat": "dex",
+      "scale": 0.75
+    }
+  ],
+  "//": "Should ignite the target"
+}
+```
+

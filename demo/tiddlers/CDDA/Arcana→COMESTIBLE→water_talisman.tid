@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→water_talisman
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：water_talisman|http://cdda.aloxaf.cn/search?q=water_talisman]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "water_talisman",
+  "type": "COMESTIBLE",
+  "comestible_type": "MED",
+  "category": "other",
+  "name": {
+    "str": "water talisman"
+  },
+  "description": "A crude paper talisman marked with strange patterns, and anointed with a hunter's sacrifice.  It can be used to mend minor wounds, along with providing limited resistance to certain alchemical effects.",
+  "price_postapoc": 600,
+  "weight": "150 g",
+  "volume": "100 ml",
+  "material": [
+    "paper"
+  ],
+  "looks_like": "birchbark",
+  "symbol": ",",
+  "color": "cyan",
+  "use_action": {
+    "type": "heal",
+    "limb_power": 10,
+    "head_power": 10,
+    "torso_power": 10,
+    "limb_scaling": 1,
+    "head_scaling": 1,
+    "torso_scaling": 1,
+    "bleed": 15,
+    "bite": 0.5,
+    "move_cost": 25,
+    "effects": [
+      {
+        "id": "talisman_warding",
+        "duration": 600
+      }
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "NO_INGEST",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "water_talisman",
+  "type": "COMESTIBLE",
+  "comestible_type": "MED",
+  "category": "other",
+  "name": {
+    "str": "水系护身符"
+  },
+  "description": "一种粗糙的纸护身符，上面有奇怪的图案，上面涂有猎人的祭品。它可以用来治疗小伤口，同时对某些炼金术效果提供有限的抵抗力。",
+  "price_postapoc": 600,
+  "weight": "150 g",
+  "volume": "100 ml",
+  "material": [
+    "paper"
+  ],
+  "looks_like": "birchbark",
+  "symbol": ",",
+  "color": "cyan",
+  "use_action": {
+    "type": "heal",
+    "limb_power": 10,
+    "head_power": 10,
+    "torso_power": 10,
+    "limb_scaling": 1,
+    "head_scaling": 1,
+    "torso_scaling": 1,
+    "bleed": 15,
+    "bite": 0.5,
+    "move_cost": 25,
+    "effects": [
+      {
+        "id": "talisman_warding",
+        "duration": 600
+      }
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "NO_INGEST",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+

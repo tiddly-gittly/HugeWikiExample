@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_feed_item
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_feed_item|http://cdda.aloxaf.cn/search?q=secro_power_armor_feed_item]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armors.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_feed_item",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "<color_red>[FEED]</color> consume flesh"
+  },
+  "description": "Activate this to command the flesh vessel to consume your flesh. Failing to do so won't revoke flesh consumption.",
+  "weight": "250 g",
+  "volume": "250 ml",
+  "price": "0 cent",
+  "price_postapoc": "0 cent",
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "%",
+  "color": "red",
+  "power_armor": true,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "secro_power_armor_feed",
+    "no_fail": true,
+    "need_worn": true,
+    "level": 0
+  },
+  "flags": [
+    "NO_TAKEOFF",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 0,
+      "coverage": 0,
+      "material": [
+        "secro_null"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_feed_item",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "<color_red>[喂食]</color>消耗血肉"
+  },
+  "description": "激活它来命令肉身血管消耗你的肉。如果不这样做，将不会取消肉类消费。",
+  "weight": "250 g",
+  "volume": "250 ml",
+  "price": "0 cent",
+  "price_postapoc": "0 cent",
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "%",
+  "color": "red",
+  "power_armor": true,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "secro_power_armor_feed",
+    "no_fail": true,
+    "need_worn": true,
+    "level": 0
+  },
+  "flags": [
+    "NO_TAKEOFF",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 0,
+      "coverage": 0,
+      "material": [
+        "secro_null"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

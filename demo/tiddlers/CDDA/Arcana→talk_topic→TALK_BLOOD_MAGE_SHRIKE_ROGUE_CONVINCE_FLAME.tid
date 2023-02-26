@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE_FLAME
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE_FLAME|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE_FLAME]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_ROGUE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE_FLAME",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "True.  Our purpose is to protect these idiots, but maybe it's time for a shift in priorities.  I'm willing to see where this goes.",
+    "no": "Perhaps you're right.  There are better ways to use what we've learned.  I suppose I'll trust you, hunter.  Might be interesting to see where this goes."
+  },
+  "responses": [
+    {
+      "text": "Then come with me.",
+      "topic": "TALK_AGREE_FOLLOW",
+      "effect": "follow"
+    },
+    {
+      "text": "[ATTACK] I have a better idea.  Die.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE_FLAME",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "对。我们的目的是保护这些白痴，但也许是时候改变重点了。我很乐意看到这一切。",
+    "no": "也许你是对的。有更好的方法来利用我们所学的知识。我想我会信任你的，亨特。看看这是怎么回事可能会很有趣。"
+  },
+  "responses": [
+    {
+      "text": "那就跟我来。",
+      "topic": "TALK_AGREE_FOLLOW",
+      "effect": "follow"
+    },
+    {
+      "text": "我有一个更好的主意。去死吧。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: TOOL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→TOOL→BL9_electric_blade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_electric_blade|http://cdda.aloxaf.cn/search?q=BL9_electric_blade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Items/melee_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_electric_blade",
+  "looks_like": "jian",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9 experimental electric blade"
+  },
+  "description": "A highly experimental futuristic blade with a unique design that uses BL9 capable of changing it's physical and chemical structure to cause various offensive effects, in this case, electrified arcs of BL9",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 4,
+  "cutting": 20,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_electric_melee_effect",
+            "message": "As you strike with the blade it emits electrified arcs of BL9 at %2$s wildly!",
+            "npc_message": "As %1$s strikes with the blade it emits electrified arcs of BL9 at %2$s wildly!"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "SWEEP",
+    "BRUTAL",
+    "tec_brawl_feint_melee",
+    "tec_swordsmanship_ringen",
+    "tec_swordsmanship_feint"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "SHEATH_SWORD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_electric_blade",
+  "looks_like": "jian",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9实验电动叶片"
+  },
+  "description": "一个高度实验性的未来派叶片，具有独特的设计，使用BL9能够改变其物理和化学结构，以引起各种攻击性的效果，在这种情况下，BL9的带电电弧",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 4,
+  "cutting": 20,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_electric_melee_effect",
+            "message": "当你用刀锋打击时，它会在%2$s点发出BL9的带电弧线！",
+            "npc_message": "当%1$s用刀刃撞击时，它会在%2$s发出BL9的带电弧线！"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "SWEEP",
+    "BRUTAL",
+    "tec_brawl_feint_melee",
+    "tec_swordsmanship_ringen",
+    "tec_swordsmanship_feint"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "SHEATH_SWORD"
+  ]
+}
+```
+

@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[3]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "church"
+  ],
+  "weight": 200,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "     ^^    ss    ^^   s ",
+      "     ^^    ss    ^^   s ",
+      "         O ss O       s ",
+      "      |||||++|||||    s ",
+      "     ^|....,,.+''|^   s ",
+      "    ^^|ll|<,,y|ST|^^  s ",
+      "  ^||w|||||,,|||||w||^s ",
+      "  ^|y......,,......y|^s ",
+      "  ^|.######,,######.|^s ",
+      "  ^w.......,,.......w^s ",
+      "  ^|.######,,######.|^s ",
+      "  ^w.......,,.......w^s ",
+      "  ^|.######,,######.|^s ",
+      "  ^w.......,,.......w^s ",
+      "  ^|.######,,######.|^s ",
+      "  ^w.......,,.......w^s ",
+      "  ^|......,,,,......|^s ",
+      "  ^wp...b.,tt,.b....w^s ",
+      "  ^||yy...,,,,...yy||^s ",
+      "  ^^|||+||||||||||||^^s ",
+      "    |D...X.....htt.-sss ",
+      "    ||dhy|.6ooo.tt||    ",
+      "     ||||||||||||||     ",
+      "         ^^^^^^         "
+    ],
+    "palettes": [
+      "church"
+    ],
+    "terrain": {
+      "X": "t_door_locked_interior",
+      "t": "t_carpet_red",
+      ",": "t_carpet_red"
+    },
+    "place_nested": [
+      {
+        "chunks": [
+          [
+            "arcana_church_ne_1",
+            80
+          ],
+          [
+            "arcana_church_ne_2",
+            20
+          ]
+        ],
+        "x": 15,
+        "y": 20
+      }
+    ],
+    "items": {
+      "d": {
+        "item": "SUS_office_desk",
+        "chance": 60
+      },
+      "o": {
+        "item": "religious_books",
+        "chance": 40,
+        "repeat": [
+          1,
+          4
+        ]
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_1_b",
+  "object": {
+    "set": [
+      {
+        "line": "terrain",
+        "id": "t_rdoor_c",
+        "x": 22,
+        "x2": 22,
+        "y": 9,
+        "y2": 10
+      },
+      {
+        "point": "terrain",
+        "id": "t_pit",
+        "x": 20,
+        "y": 3
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "church"
+  ],
+  "weight": 200,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "     ^^    ss    ^^   s ",
+      "     ^^    ss    ^^   s ",
+      "         O ss O       s ",
+      "      |||||++|||||    s ",
+      "     ^|....,,.+''|^   s ",
+      "    ^^|ll|<,,y|ST|^^  s ",
+      "  ^||w|||||,,|||||w||^s ",
+      "  ^|y......,,......y|^s ",
+      "  ^|.######,,######.|^s ",
+      "  ^w.......,,.......w^s ",
+      "  ^|.######,,######.|^s ",
+      "  ^w.......,,.......w^s ",
+      "  ^|.######,,######.|^s ",
+      "  ^w.......,,.......w^s ",
+      "  ^|.######,,######.|^s ",
+      "  ^w.......,,.......w^s ",
+      "  ^|......,,,,......|^s ",
+      "  ^wp...b.,tt,.b....w^s ",
+      "  ^||yy...,,,,...yy||^s ",
+      "  ^^|||+||||||||||||^^s ",
+      "    |D...X.....htt.-sss ",
+      "    ||dhy|.6ooo.tt||    ",
+      "     ||||||||||||||     ",
+      "         ^^^^^^         "
+    ],
+    "palettes": [
+      "church"
+    ],
+    "terrain": {
+      "X": "t_door_locked_interior",
+      "t": "t_carpet_red",
+      ",": "t_carpet_red"
+    },
+    "place_nested": [
+      {
+        "chunks": [
+          [
+            "arcana_church_ne_1",
+            80
+          ],
+          [
+            "arcana_church_ne_2",
+            20
+          ]
+        ],
+        "x": 15,
+        "y": 20
+      }
+    ],
+    "items": {
+      "d": {
+        "item": "SUS_office_desk",
+        "chance": 60
+      },
+      "o": {
+        "item": "religious_books",
+        "chance": 40,
+        "repeat": [
+          1,
+          4
+        ]
+      }
+    }
+  }
+}
+```
+

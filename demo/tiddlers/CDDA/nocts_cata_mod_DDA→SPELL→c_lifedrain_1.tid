@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: SPELL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→SPELL→c_lifedrain_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_lifedrain_1|http://cdda.aloxaf.cn/search?q=c_lifedrain_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_spells.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "c_lifedrain_1",
+  "name": {
+    "str": "Life Drain Shell"
+  },
+  "description": "This exists only to trigger on-self effects from an on-hit action.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "message": "",
+  "min_range": 1,
+  "max_range": 1,
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT"
+  ],
+  "extra_effects": [
+    {
+      "id": "c_lifedrain_2",
+      "hit_self": true
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "c_lifedrain_1",
+  "name": {
+    "str": "生命汲取护盾"
+  },
+  "description": "这只会在on-hit行动的on-self效果中触发。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "message": "",
+  "min_range": 1,
+  "max_range": 1,
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT"
+  ],
+  "extra_effects": [
+    {
+      "id": "c_lifedrain_2",
+      "hit_self": true
+    }
+  ]
+}
+```
+

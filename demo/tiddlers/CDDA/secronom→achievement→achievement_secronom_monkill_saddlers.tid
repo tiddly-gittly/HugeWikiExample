@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: achievement secronom
+title: secronom→achievement→achievement_secronom_monkill_saddlers
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：achievement_secronom_monkill_saddlers|http://cdda.aloxaf.cn/search?q=achievement_secronom_monkill_saddlers]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Others/secro_achievements.json
+
+
+!! 原文
+
+```json
+{
+  "id": "achievement_secronom_monkill_saddlers",
+  "type": "achievement",
+  "name": "<color_light_red>(Secronom)</color> Head Crabs",
+  "hidden_by": [
+    "achievement_secronom_monkill_saddlers"
+  ],
+  "description": "Slay a saddler and its \"riding\" counterparts.\n",
+  "requirements": [
+    {
+      "event_statistic": "num_avatar_secronom_saddler_kills",
+      "is": ">=",
+      "target": 1
+    },
+    {
+      "event_statistic": "num_avatar_secronom_zombie_saddler_infected_kills",
+      "is": ">=",
+      "target": 1
+    },
+    {
+      "event_statistic": "num_avatar_secronom_saddler_infected_kills",
+      "is": ">=",
+      "target": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "achievement_secronom_monkill_saddlers",
+  "type": "achievement",
+  "name": "<color_light_red>（Secronom）</color>头蟹",
+  "hidden_by": [
+    "achievement_secronom_monkill_saddlers"
+  ],
+  "description": "杀死萨德勒以及它们的宿体。\n",
+  "requirements": [
+    {
+      "event_statistic": "num_avatar_secronom_saddler_kills",
+      "is": ">=",
+      "target": 1
+    },
+    {
+      "event_statistic": "num_avatar_secronom_zombie_saddler_infected_kills",
+      "is": ">=",
+      "target": 1
+    },
+    {
+      "event_statistic": "num_avatar_secronom_saddler_infected_kills",
+      "is": ">=",
+      "target": 1
+    }
+  ]
+}
+```
+

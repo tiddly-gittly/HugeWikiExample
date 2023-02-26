@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_SCALYWINGS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_SCALYWINGS|http://cdda.aloxaf.cn/search?q=ARCANA_SCALYWINGS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_SCALYWINGS",
+  "name": {
+    "str": "Scaly Wings"
+  },
+  "points": 1,
+  "mixed_effect": true,
+  "visibility": 4,
+  "ugliness": 2,
+  "description": "You have a pair of large, scale-covered wings.  Your body is too heavy to be able to fly, they mostly just get in the way, preventing you from wearing any torso gear not made of fabric.  Your back muscles are however improved by this growth, increasing strength and stamina a bit at the expense of dexterity.",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_SCALYPATCHES",
+    "ARCANA_DRAGONSCALES"
+  ],
+  "changes_to": [
+    "ARCANA_DRAGONWINGS"
+  ],
+  "encumbrance_always": [
+    [
+      "torso",
+      5
+    ]
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "WINGS"
+  ],
+  "cardio_multiplier": 1.1,
+  "restricts_gear": [
+    "torso"
+  ],
+  "allow_soft_gear": true,
+  "allowed_items": [
+    "BELTED"
+  ],
+  "dodge_modifier": -1,
+  "passive_mods": {
+    "str_mod": 2,
+    "dex_mod": -1
+  },
+  "flags": [
+    "ARCANA_DRAGONBLOOD_MARKER_WINGS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_SCALYWINGS",
+  "name": {
+    "str": "鳞翼"
+  },
+  "points": 1,
+  "mixed_effect": true,
+  "visibility": 4,
+  "ugliness": 2,
+  "description": "你有一对巨大的翅膀。你的身体太重，无法飞行，它们大多只是阻碍了你的飞行，阻止你穿任何非织物制成的躯干装备。然而，你的背部肌肉通过这种生长得到了改善，增加了力量和耐力，但牺牲了灵活性。",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_SCALYPATCHES",
+    "ARCANA_DRAGONSCALES"
+  ],
+  "changes_to": [
+    "ARCANA_DRAGONWINGS"
+  ],
+  "encumbrance_always": [
+    [
+      "torso",
+      5
+    ]
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "WINGS"
+  ],
+  "cardio_multiplier": 1.1,
+  "restricts_gear": [
+    "torso"
+  ],
+  "allow_soft_gear": true,
+  "allowed_items": [
+    "BELTED"
+  ],
+  "dodge_modifier": -1,
+  "passive_mods": {
+    "str_mod": 2,
+    "dex_mod": -1
+  },
+  "flags": [
+    "ARCANA_DRAGONBLOOD_MARKER_WINGS"
+  ]
+}
+```
+

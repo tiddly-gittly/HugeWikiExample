@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→frozen_winds
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：frozen_winds|http://cdda.aloxaf.cn/search?q=frozen_winds]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Glacier_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "id": "frozen_winds",
+  "type": "SPELL",
+  "name": {
+    "str": "Frozen Winds"
+  },
+  "description": "A gust of wind, colder than any Earthly mountaintop, spirals from your fingers, damaging and pushing anything in its path.",
+  "effect": "attack",
+  "shape": "line",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS",
+    "LOUD",
+    "MUST_HAVE_CLASS_TO_LEARN"
+  ],
+  "extra_effects": [
+    {
+      "id": "frozen_winds_push"
+    }
+  ],
+  "max_level": 43,
+  "min_damage": 25,
+  "max_damage": 116,
+  "damage_increment": 2,
+  "min_aoe": 3,
+  "max_aoe": 7,
+  "aoe_increment": 0.1,
+  "min_range": 12,
+  "max_range": 28,
+  "range_increment": 0.5,
+  "base_casting_time": 230,
+  "base_energy_cost": 285,
+  "spell_class": "GLACIER_MAGE",
+  "energy_source": "MANA",
+  "difficulty": 3,
+  "sound_description": "a whoosh",
+  "damage_type": "cold"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "frozen_winds",
+  "type": "SPELL",
+  "name": {
+    "str": "凛冽狂风"
+  },
+  "description": "一阵比大地上任何山顶的都冷的风，从你指间盘旋而出，破坏、推动着途径的一切。",
+  "effect": "attack",
+  "shape": "line",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_LEGS",
+    "LOUD",
+    "MUST_HAVE_CLASS_TO_LEARN"
+  ],
+  "extra_effects": [
+    {
+      "id": "frozen_winds_push"
+    }
+  ],
+  "max_level": 43,
+  "min_damage": 25,
+  "max_damage": 116,
+  "damage_increment": 2,
+  "min_aoe": 3,
+  "max_aoe": 7,
+  "aoe_increment": 0.1,
+  "min_range": 12,
+  "max_range": 28,
+  "range_increment": 0.5,
+  "base_casting_time": 230,
+  "base_energy_cost": 285,
+  "spell_class": "GLACIER_MAGE",
+  "energy_source": "MANA",
+  "difficulty": 3,
+  "sound_description": "a whoosh",
+  "damage_type": "cold"
+}
+```
+

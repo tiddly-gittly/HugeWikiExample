@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: monster_attack vamp_stuff
+title: vamp_stuff→monster_attack→spinbite
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：spinbite|http://cdda.aloxaf.cn/search?q=spinbite]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "spinbite",
+  "cooldown": 50,
+  "move_cost": 500,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 15,
+      "armor_penetration": 30,
+      "armor_multiplier": 0.8
+    }
+  ],
+  "hit_dmg_u": "The %1$s drills your flesh!",
+  "hit_dmg_npc": "The %1$s drilled <npcname>'s flesh!",
+  "no_dmg_msg_u": "The %1$s drilled you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "The %1$s drilled <npcname>, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "spinbite",
+  "cooldown": 50,
+  "move_cost": 500,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 15,
+      "armor_penetration": 30,
+      "armor_multiplier": 0.8
+    }
+  ],
+  "hit_dmg_u": "%1$s钻了你的肉！",
+  "hit_dmg_npc": "%1$s钻了<npcname>的肉！",
+  "no_dmg_msg_u": "%1$s钻了你，但是没有穿透你的护甲！",
+  "no_dmg_msg_npc": "%1$s钻了<npcname>，但是没有穿透护甲！"
+}
+```
+

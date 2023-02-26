@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_aftermath_elemental_burst_wind
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_aftermath_elemental_burst_wind|http://cdda.aloxaf.cn/search?q=arcana_aftermath_elemental_burst_wind]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_aftermath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_aftermath_elemental_burst_wind",
+  "type": "SPELL",
+  "name": {
+    "str": "Elemental Burst Wind"
+  },
+  "description": "Creates lightning and zaps victims.",
+  "message": "",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_lightning_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_elemental_noise_wind",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_elemental_burst_line_wind",
+      "hit_self": false,
+      "max_level": 10
+    }
+  ],
+  "flags": [
+    "SILENT"
+  ],
+  "effect_str": "zapped",
+  "min_range": 8,
+  "max_range": 16,
+  "range_increment": 0.8,
+  "min_aoe": 10,
+  "max_aoe": 20,
+  "aoe_increment": 1,
+  "max_level": 10,
+  "min_duration": 1400,
+  "max_duration": 2800,
+  "duration_increment": 140,
+  "field_id": "fd_electricity",
+  "field_chance": 8,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_aftermath_elemental_burst_wind",
+  "type": "SPELL",
+  "name": {
+    "str": "Elemental Burst Wind"
+  },
+  "description": "Creates lightning and zaps victims.",
+  "message": "",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_lightning_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_elemental_noise_wind",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_elemental_burst_line_wind",
+      "hit_self": false,
+      "max_level": 10
+    }
+  ],
+  "flags": [
+    "SILENT"
+  ],
+  "effect_str": "zapped",
+  "min_range": 8,
+  "max_range": 16,
+  "range_increment": 0.8,
+  "min_aoe": 10,
+  "max_aoe": 20,
+  "aoe_increment": 1,
+  "max_level": 10,
+  "min_duration": 1400,
+  "max_duration": 2800,
+  "duration_increment": 140,
+  "field_id": "fd_electricity",
+  "field_chance": 8,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+

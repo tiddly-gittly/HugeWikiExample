@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→soulrend
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：soulrend|http://cdda.aloxaf.cn/search?q=soulrend]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/animist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "soulrend",
+  "type": "SPELL",
+  "name": {
+    "str": "Soulrend"
+  },
+  "description": "Violently tears the spirit from the body, and bounds the resulting shade to your will.",
+  "valid_targets": [
+    "hostile",
+    "ally"
+  ],
+  "flags": [
+    "NO_LEGS",
+    "LOUD",
+    "SOMATIC",
+    "POLYMORPH_GROUP",
+    "FRIENDLY_POLY"
+  ],
+  "effect": "targeted_polymorph",
+  "effect_str": "GROUP_POLYMORPH_SHADOW",
+  "shape": "blast",
+  "spell_class": "ANIMIST",
+  "energy_source": "MANA",
+  "difficulty": 15,
+  "min_damage": 40,
+  "max_damage": 140,
+  "damage_increment": 2.5,
+  "max_level": 60,
+  "base_casting_time": 300,
+  "casting_time_increment": -2,
+  "final_casting_time": 80,
+  "base_energy_cost": 200,
+  "min_range": 5,
+  "max_range": 45,
+  "range_increment": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "soulrend",
+  "type": "SPELL",
+  "name": {
+    "str": "裂魂术"
+  },
+  "description": "用暴力将灵魂与躯体撕裂开，并强迫所生成的暗影遵照你的意志行动。",
+  "valid_targets": [
+    "hostile",
+    "ally"
+  ],
+  "flags": [
+    "NO_LEGS",
+    "LOUD",
+    "SOMATIC",
+    "POLYMORPH_GROUP",
+    "FRIENDLY_POLY"
+  ],
+  "effect": "targeted_polymorph",
+  "effect_str": "GROUP_POLYMORPH_SHADOW",
+  "shape": "blast",
+  "spell_class": "ANIMIST",
+  "energy_source": "MANA",
+  "difficulty": 15,
+  "min_damage": 40,
+  "max_damage": 140,
+  "damage_increment": 2.5,
+  "max_level": 60,
+  "base_casting_time": 300,
+  "casting_time_increment": -2,
+  "final_casting_time": 80,
+  "base_energy_cost": 200,
+  "min_range": 5,
+  "max_range": 45,
+  "range_increment": 1
+}
+```
+

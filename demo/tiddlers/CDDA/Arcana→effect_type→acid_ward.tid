@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→acid_ward
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：acid_ward|http://cdda.aloxaf.cn/search?q=acid_ward]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "acid_ward",
+  "name": [
+    "Ward Against Corrosion"
+  ],
+  "desc": [
+    "Protection against lingering acid effects.  Direct contact will still harm you."
+  ],
+  "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
+  "removes_effects": [
+    "corroding"
+  ],
+  "decay_messages": [
+    [
+      "Your ward against corrosion is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "acid_ward",
+  "name": [
+    "防腐蚀结界"
+  ],
+  "desc": [
+    "防止持续的酸影响。直接接触仍然会伤害你。"
+  ],
+  "remove_message": "当保护魔法消退时，你会感觉到皮肤上有刺痛感。",
+  "removes_effects": [
+    "corroding"
+  ],
+  "decay_messages": [
+    [
+      "增强你的防腐蚀防护结界的魔力正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+

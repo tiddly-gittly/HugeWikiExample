@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_shoggoth_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_shoggoth_summoned|http://cdda.aloxaf.cn/search?q=mon_shoggoth_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_shoggoth_summoned",
+  "copy-from": "mon_shoggoth",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned shoggoth"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "speed": 200,
+  "vision_night": 40,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 5,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -5
+    ]
+  ],
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_shoggoth_bound",
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "special_attacks": [
+    {
+      "id": "slam",
+      "cooldown": 25,
+      "damage_max_instance": [
+        {
+          "damage_type": "acid",
+          "amount": 35
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_shoggoth_summoned",
+  "copy-from": "mon_shoggoth",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤修格斯"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "speed": 200,
+  "vision_night": 40,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 5,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -5
+    ]
+  ],
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_shoggoth_bound",
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "special_attacks": [
+    {
+      "id": "slam",
+      "cooldown": 25,
+      "damage_max_instance": [
+        {
+          "damage_type": "acid",
+          "amount": 35
+        }
+      ]
+    }
+  ]
+}
+```
+

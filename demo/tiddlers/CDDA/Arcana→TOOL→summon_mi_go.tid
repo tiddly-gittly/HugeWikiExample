@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_mi_go
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_mi_go|http://cdda.aloxaf.cn/search?q=summon_mi_go]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_mi_go",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of Yuggoth",
+    "str_pl": "glyphs of Yuggoth"
+  },
+  "//": "Explanation: Yuggoth is a fictional planet from Lovecraft's work, stated to have been colonized by the mi-go.",
+  "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
+  "price": "1500 USD",
+  "price_postapoc": "60 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_mi_go_summoned",
+    "friendly_msg": "You recite an incantation, and the mi-go's response is a quiet murmur in some unknown language.  It seems to be friendly.",
+    "hostile_msg": "You begin to recite an incantation, only for the mi-go to parrot your words, mocking your effort to control it!",
+    "difficulty": 6,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_mi_go",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：尤格斯",
+    "str_pl": "雕文：尤格斯"
+  },
+  "//": "Explanation: Yuggoth is a fictional planet from Lovecraft's work, stated to have been colonized by the mi-go.",
+  "description": "一种奇怪的银徽章，上面刻有奇怪的几丁质实体。使用它会将一个米·戈与你的意志绑定在一起。如果成功的话。这有点难以控制。",
+  "price": "1500 USD",
+  "price_postapoc": "60 USD",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_mi_go_summoned",
+    "friendly_msg": "你念诵咒语，米-戈用某种未知的语言轻声回应你。感觉它很友好。",
+    "hostile_msg": "你开始念诵咒语，当米·戈听到你的声音时，它开始嘲笑你努力控制它！",
+    "difficulty": 6,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "SINGLE_USE"
+  ]
+}
+```
+

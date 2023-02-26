@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_item_bonetwisted
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_item_bonetwisted|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_item_bonetwisted]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_itemvalidation.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_bonetwisted",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "I will give you 3 tokens for each twisted bone you bring to me.",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "I will give you 195$ for each twisted bone you bring to me.",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "I will give you 85$ for each twisted bone you bring to me.",
+        "no": "I will give you 25$ and 3 tokens for each twisted bone you bring to me."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Okay...",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeribonetwistedval"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_bonetwisted",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "你带给我的每一根扭曲的骨头，我都会给你3个代币。",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "我会给你195美元买你带给我的每根扭曲的骨头。",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "你带给我的每一根扭曲的骨头我给你85美元。",
+        "no": "我会给你25美元和3个代币，你给我的每一个扭曲的骨头。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "好吧……",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeribonetwistedval"
+      }
+    }
+  ]
+}
+```
+

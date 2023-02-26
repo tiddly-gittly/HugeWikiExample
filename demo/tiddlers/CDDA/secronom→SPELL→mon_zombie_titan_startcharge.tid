@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_titan_startcharge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_titan_startcharge|http://cdda.aloxaf.cn/search?q=mon_zombie_titan_startcharge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_zombie_titan_startcharge",
+  "name": {
+    "str": "Charging"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster blocks with both hands, gaining bonus defense but can't perform basic attacks and has their speed greatly reduced.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "min_damage": 999999,
+  "max_damage": 999999,
+  "effect": "targeted_polymorph",
+  "shape": "blast",
+  "effect_str": "mon_zombie_titan_charging"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_zombie_titan_startcharge",
+  "name": {
+    "str": "冲锋"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者双手阻挡，获得额外防御，但不能进行基本攻击，速度大大降低。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "min_damage": 999999,
+  "max_damage": 999999,
+  "effect": "targeted_polymorph",
+  "shape": "blast",
+  "effect_str": "mon_zombie_titan_charging"
+}
+```
+

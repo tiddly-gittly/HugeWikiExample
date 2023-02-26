@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_skeleton_brute
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_skeleton_brute|http://cdda.aloxaf.cn/search?q=mon_sflesh_skeleton_brute]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_skeleton_brute",
+  "type": "MONSTER",
+  "name": {
+    "str": "skeletal brute"
+  },
+  "description": "Distorted outgrowths of calcified bone plates cover this zombie's rotten skin.  Joints and cracks around its body ooze with black goo.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "volume": "92500 ml",
+  "weight": "120 kg",
+  "hp": 219,
+  "speed": 60,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "Z",
+  "color": "white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 12
+    }
+  ],
+  "dodge": 1,
+  "armor_cut": 30,
+  "armor_bullet": 25,
+  "armor_bash": 15,
+  "armor_acid": 1,
+  "vision_day": 35,
+  "vision_night": 3,
+  "harvest": "mr_bones",
+  "special_attacks": [
+    [
+      "SMASH",
+      45
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 15,
+          "armor_multiplier": 0.6
+        }
+      ]
+    }
+  ],
+  "death_drops": "default_zombie_clothes",
+  "burn_into": "mon_skeleton_brute",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "HARDTOSHOOT",
+    "REVIVES",
+    "NO_BREATHE",
+    "POISON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_skeleton_brute",
+  "type": "MONSTER",
+  "name": {
+    "str": "骸骨丧尸兽"
+  },
+  "description": "扭曲生长的钙化骨板覆盖了这个丧尸的腐烂皮肤，关节和遍及全身的裂缝渗出黑色粘液。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "volume": "92500 ml",
+  "weight": "120 kg",
+  "hp": 219,
+  "speed": 60,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "Z",
+  "color": "white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 12
+    }
+  ],
+  "dodge": 1,
+  "armor_cut": 30,
+  "armor_bullet": 25,
+  "armor_bash": 15,
+  "armor_acid": 1,
+  "vision_day": 35,
+  "vision_night": 3,
+  "harvest": "mr_bones",
+  "special_attacks": [
+    [
+      "SMASH",
+      45
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 15,
+          "armor_multiplier": 0.6
+        }
+      ]
+    }
+  ],
+  "death_drops": "default_zombie_clothes",
+  "burn_into": "mon_skeleton_brute",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "HARDTOSHOOT",
+    "REVIVES",
+    "NO_BREATHE",
+    "POISON",
+    "FILTHY"
+  ]
+}
+```
+

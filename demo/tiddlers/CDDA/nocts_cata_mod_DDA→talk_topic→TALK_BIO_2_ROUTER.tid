@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BIO_2_ROUTER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BIO_2_ROUTER|http://cdda.aloxaf.cn/search?q=TALK_BIO_2_ROUTER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BIO_2.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_2_ROUTER",
+  "dynamic_line": "I appreciate the thought, but there's not much to say.  Things are stable at least, if a bit boring.  I'd like to find some way to put my skills to good use, but I'm not sure what.",
+  "responses": [
+    {
+      "text": "We're Bio-Weapons.  We're meant to be out there, kicking ass, taking names, and saving the world.  Why not come along and do exactly that?",
+      "topic": "TALK_BIO_2_RECRUIT_BIO",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA"
+        ]
+      }
+    },
+    {
+      "text": "I found a purpose out there, bionic reject or not.  It'd be better than doing nothing… if you want to come with?",
+      "topic": "TALK_BIO_2_RECRUIT_FAILED",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED"
+        ]
+      }
+    },
+    {
+      "text": "You're one of the original models.  Wouldn't mind having you on the team.",
+      "topic": "TALK_BIO_2_RECRUIT_SOLDIER",
+      "condition": {
+        "u_has_any_trait": [
+          "SUPER_SOLDIER_MARKER"
+        ]
+      }
+    },
+    {
+      "text": "Why not join me?",
+      "condition": {
+        "not": {
+          "u_has_effect": "lambda_asked_recently"
+        }
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 2
+      },
+      "success": {
+        "topic": "TALK_BIO_2_RECRUIT_SUCCESS"
+      },
+      "failure": {
+        "topic": "TALK_BIO_2_RECRUIT_FAILURE",
+        "effect": {
+          "u_add_effect": "lambda_asked_recently",
+          "duration": 1800
+        }
+      }
+    },
+    {
+      "text": "Why not join me?",
+      "condition": {
+        "u_has_effect": "lambda_asked_recently"
+      },
+      "topic": "TALK_BIO_2_RECRUIT_DELAY"
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_BIO_2"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_2_ROUTER",
+  "dynamic_line": "谢谢你的想法，但没什么好说的。待在这里虽然无聊但至少安全。我想找个办法好好利用我的技能，但我不知道该怎么做。",
+  "responses": [
+    {
+      "text": "我们是生物武器。我们注定要在外面，大干一场，名垂青史，拯救世界。为什么不一起去做呢？",
+      "topic": "TALK_BIO_2_RECRUIT_BIO",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA"
+        ]
+      }
+    },
+    {
+      "text": "我找到了一个目标，不管是不是生物武器。总比什么都不做要好……你想一起去吗?",
+      "topic": "TALK_BIO_2_RECRUIT_FAILED",
+      "condition": {
+        "u_has_any_trait": [
+          "BIO_WEAPON_FAILED"
+        ]
+      }
+    },
+    {
+      "text": "你是最早的原型之一。我不介意你加入队伍。",
+      "topic": "TALK_BIO_2_RECRUIT_SOLDIER",
+      "condition": {
+        "u_has_any_trait": [
+          "SUPER_SOLDIER_MARKER"
+        ]
+      }
+    },
+    {
+      "text": "你为什么不加入我？",
+      "condition": {
+        "not": {
+          "u_has_effect": "lambda_asked_recently"
+        }
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 2
+      },
+      "success": {
+        "topic": "TALK_BIO_2_RECRUIT_SUCCESS"
+      },
+      "failure": {
+        "topic": "TALK_BIO_2_RECRUIT_FAILURE",
+        "effect": {
+          "u_add_effect": "lambda_asked_recently",
+          "duration": 1800
+        }
+      }
+    },
+    {
+      "text": "你为什么不加入我？",
+      "condition": {
+        "u_has_effect": "lambda_asked_recently"
+      },
+      "topic": "TALK_BIO_2_RECRUIT_DELAY"
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_BIO_2"
+    }
+  ]
+}
+```
+

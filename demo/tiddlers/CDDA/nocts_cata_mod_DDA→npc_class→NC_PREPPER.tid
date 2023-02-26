@@ -1,0 +1,305 @@
+creator: 林一二
+revision: 0
+tags: npc_class nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→npc_class→NC_PREPPER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：NC_PREPPER|http://cdda.aloxaf.cn/search?q=NC_PREPPER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/c_classes.json
+
+
+!! 原文
+
+```json
+{
+  "type": "npc_class",
+  "id": "NC_PREPPER",
+  "name": "Prepper",
+  "job_description": "Just surviving, as usual.",
+  "common": false,
+  "bonus_str": {
+    "rng": [
+      -1,
+      1
+    ]
+  },
+  "bonus_int": {
+    "rng": [
+      -1,
+      1
+    ]
+  },
+  "bonus_dex": {
+    "rng": [
+      -1,
+      2
+    ]
+  },
+  "bonus_per": {
+    "rng": [
+      -1,
+      2
+    ]
+  },
+  "skills": [
+    {
+      "skill": "ALL",
+      "level": {
+        "sum": [
+          {
+            "dice": [
+              3,
+              2
+            ]
+          },
+          {
+            "constant": -3
+          }
+        ]
+      }
+    },
+    {
+      "skill": "survival",
+      "bonus": {
+        "rng": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "skill": "gun",
+      "bonus": {
+        "rng": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "skill": "pistol",
+      "bonus": {
+        "rng": [
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "rifle",
+      "bonus": {
+        "rng": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "archery",
+      "bonus": {
+        "rng": [
+          0,
+          3
+        ]
+      }
+    }
+  ],
+  "worn_override": "NC_PREPPER_worn",
+  "carry_override": "NC_PREPPER_carry",
+  "weapon_override": "EMPTY_GROUP",
+  "traits": [
+    {
+      "group": "Appearance_demographics"
+    },
+    {
+      "group": "NPC_starting_traits"
+    },
+    {
+      "group": "BG_survival_story_RURAL"
+    }
+  ],
+  "//": "Uses the CBMs available to bionic prepper profession that count as NPC-usable, with a smattering of NPC-usable civilian, industrial, and misc bionics to add variety.",
+  "bionics": [
+    {
+      "id": "bio_metabolics",
+      "chance": 75
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 75
+    },
+    {
+      "id": "bio_tools",
+      "chance": 50
+    },
+    {
+      "id": "bio_sunglasses",
+      "chance": 25
+    },
+    {
+      "id": "bio_weight",
+      "chance": 25
+    },
+    {
+      "id": "bio_painkiller",
+      "chance": 10
+    },
+    {
+      "id": "bio_purifier",
+      "chance": 10
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "npc_class",
+  "id": "NC_PREPPER",
+  "name": "Prepper",
+  "job_description": "Just surviving, as usual.",
+  "common": false,
+  "bonus_str": {
+    "rng": [
+      -1,
+      1
+    ]
+  },
+  "bonus_int": {
+    "rng": [
+      -1,
+      1
+    ]
+  },
+  "bonus_dex": {
+    "rng": [
+      -1,
+      2
+    ]
+  },
+  "bonus_per": {
+    "rng": [
+      -1,
+      2
+    ]
+  },
+  "skills": [
+    {
+      "skill": "ALL",
+      "level": {
+        "sum": [
+          {
+            "dice": [
+              3,
+              2
+            ]
+          },
+          {
+            "constant": -3
+          }
+        ]
+      }
+    },
+    {
+      "skill": "survival",
+      "bonus": {
+        "rng": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "skill": "gun",
+      "bonus": {
+        "rng": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "skill": "pistol",
+      "bonus": {
+        "rng": [
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "rifle",
+      "bonus": {
+        "rng": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "archery",
+      "bonus": {
+        "rng": [
+          0,
+          3
+        ]
+      }
+    }
+  ],
+  "worn_override": "NC_PREPPER_worn",
+  "carry_override": "NC_PREPPER_carry",
+  "weapon_override": "EMPTY_GROUP",
+  "traits": [
+    {
+      "group": "Appearance_demographics"
+    },
+    {
+      "group": "NPC_starting_traits"
+    },
+    {
+      "group": "BG_survival_story_RURAL"
+    }
+  ],
+  "//": "Uses the CBMs available to bionic prepper profession that count as NPC-usable, with a smattering of NPC-usable civilian, industrial, and misc bionics to add variety.",
+  "bionics": [
+    {
+      "id": "bio_metabolics",
+      "chance": 75
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 75
+    },
+    {
+      "id": "bio_tools",
+      "chance": 50
+    },
+    {
+      "id": "bio_sunglasses",
+      "chance": 25
+    },
+    {
+      "id": "bio_weight",
+      "chance": 25
+    },
+    {
+      "id": "bio_painkiller",
+      "chance": 10
+    },
+    {
+      "id": "bio_purifier",
+      "chance": 10
+    }
+  ]
+}
+```
+

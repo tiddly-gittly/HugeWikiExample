@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_hammerzeit_greater
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_hammerzeit_greater|http://cdda.aloxaf.cn/search?q=arcana_item_hammerzeit_greater]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_hammerzeit_greater",
+  "name": {
+    "str": "Luminous Wrath"
+  },
+  "description": "Flashbang on user, blinding anyone nearby, and bonus damage to anyone else in AoE.",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground",
+    "self"
+  ],
+  "message": "\"Ave martello!\"  With a thunderous blast, a searing light erupts from the hammer!",
+  "extra_effects": [
+    {
+      "id": "arcana_item_hammerzeit_greater_attack_1",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_hammerzeit_greater_attack_2",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_hammerzeit_dazzle",
+      "hit_self": false
+    }
+  ],
+  "effect": "flashbang",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_damage": 40,
+  "max_damage": 40,
+  "min_aoe": 6,
+  "max_aoe": 6
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_hammerzeit_greater",
+  "name": {
+    "str": "明亮的愤怒"
+  },
+  "description": "闪击用户，使附近任何人失明，并对AoE中的任何其他人造成额外伤害。",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground",
+    "self"
+  ],
+  "message": "“马泰罗万岁！”伴随着雷鸣般的爆炸，铁锤发出灼热的光芒！",
+  "extra_effects": [
+    {
+      "id": "arcana_item_hammerzeit_greater_attack_1",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_hammerzeit_greater_attack_2",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_hammerzeit_dazzle",
+      "hit_self": false
+    }
+  ],
+  "effect": "flashbang",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_damage": 40,
+  "max_damage": 40,
+  "min_aoe": 6,
+  "max_aoe": 6
+}
+```
+

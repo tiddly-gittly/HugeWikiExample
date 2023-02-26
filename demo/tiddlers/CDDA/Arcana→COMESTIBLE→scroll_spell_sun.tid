@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→scroll_spell_sun
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：scroll_spell_sun|http://cdda.aloxaf.cn/search?q=scroll_spell_sun]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "scroll_spell_sun",
+  "copy-from": "scroll_magic_base",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "Pattern Scroll (Consecrate)",
+    "str_pl": "Pattern Scrolls (Consecrate)"
+  },
+  "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
+  "//": "Pattern scrolls were extremely rare pre-cataclysm as spell development was in its infancy, but now they're all quite useful in various ways.  Divine pattern scrolls especially were almost non-existent.",
+  "price_postapoc": "110 USD",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_pattern_consecrate",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "scroll_spell_sun",
+  "copy-from": "scroll_magic_base",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "彩纹绘卷（祝福）",
+    "str_pl": "彩纹绘卷（祝福）"
+  },
+  "description": "这是一幅画着华丽图案的卷轴，纸上用不自然的顺序描绘出奇怪的几何图案。激活它以探索其中的秘密。（记得绑定“施法”键！）\n“这个法术将驱除各种折磨大地的异界侵蚀，并眩晕少数来自彼端的生物。”",
+  "//": "Pattern scrolls were extremely rare pre-cataclysm as spell development was in its infancy, but now they're all quite useful in various ways.  Divine pattern scrolls especially were almost non-existent.",
+  "price_postapoc": "110 USD",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_pattern_consecrate",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+

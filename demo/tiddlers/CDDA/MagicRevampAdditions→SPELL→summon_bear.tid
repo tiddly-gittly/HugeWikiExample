@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→summon_bear
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_bear|http://cdda.aloxaf.cn/search?q=summon_bear]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/druid.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_bear",
+  "type": "SPELL",
+  "name": {
+    "str": "Cause Bear"
+  },
+  "description": "This spell appears to be very smudged.  You're fairly sure the name should be Cause Fear, but you're also fairly sure it won't have the desired effect because the instructions are hardly legible.  No time like the Cataclysm to find out, though!",
+  "valid_targets": [
+    "ground"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 3,
+  "max_range": 8,
+  "spell_class": "DRUID",
+  "base_casting_time": 500,
+  "energy_source": "MANA",
+  "max_level": 35,
+  "difficulty": 10,
+  "min_duration": 6000,
+  "max_duration": 45000,
+  "base_energy_cost": 675,
+  "final_energy_cost": 425,
+  "energy_increment": -5,
+  "flags": [
+    "HOSTILE_50",
+    "CONCENTRATE",
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS"
+  ],
+  "shape": "blast",
+  "effect": "summon",
+  "effect_str": "mon_bear"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_bear",
+  "type": "SPELL",
+  "name": {
+    "str": "恐怖威熊"
+  },
+  "description": "这个法术看上去已被严重污染，你十分确定这法术的名字应该是“恐怖威能”，但是你也十分确定施放它不能造成恐怖，因为它的施放步骤脏到难以辨认。不过，现在是大灾变，没时间搞清楚了！",
+  "valid_targets": [
+    "ground"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 3,
+  "max_range": 8,
+  "spell_class": "DRUID",
+  "base_casting_time": 500,
+  "energy_source": "MANA",
+  "max_level": 35,
+  "difficulty": 10,
+  "min_duration": 6000,
+  "max_duration": 45000,
+  "base_energy_cost": 675,
+  "final_energy_cost": 425,
+  "energy_increment": -5,
+  "flags": [
+    "HOSTILE_50",
+    "CONCENTRATE",
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS"
+  ],
+  "shape": "blast",
+  "effect": "summon",
+  "effect_str": "mon_bear"
+}
+```
+

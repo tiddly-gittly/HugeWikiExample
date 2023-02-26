@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→seismic_stomp
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：seismic_stomp|http://cdda.aloxaf.cn/search?q=seismic_stomp]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/earthshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "seismic_stomp",
+  "type": "SPELL",
+  "name": {
+    "str": "Seismic Stomp"
+  },
+  "description": "Focusing mana into your leg, you stomp your foot and send out a shockwave, knocking enemies around you onto the ground.",
+  "effect": "attack",
+  "effect_str": "downed",
+  "shape": "blast",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "none"
+  ],
+  "flags": [
+    "SOMATIC",
+    "LOUD",
+    "NO_PROJECTILE"
+  ],
+  "max_level": 15,
+  "min_damage": 2,
+  "max_damage": 15,
+  "damage_increment": 0.8,
+  "min_aoe": 3,
+  "max_aoe": 18,
+  "aoe_increment": 1,
+  "min_duration": 1000,
+  "max_duration": 9000,
+  "duration_increment": 500,
+  "spell_class": "EARTHSHAPER",
+  "base_casting_time": 100,
+  "base_energy_cost": 250,
+  "energy_source": "MANA",
+  "difficulty": 2,
+  "damage_type": "bash"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "seismic_stomp",
+  "type": "SPELL",
+  "name": {
+    "str": "战争践踏"
+  },
+  "description": "聚集魔力进入你的腿，重重跺脚，发出冲击波，把周围的敌人击倒在地。",
+  "effect": "attack",
+  "effect_str": "downed",
+  "shape": "blast",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "none"
+  ],
+  "flags": [
+    "SOMATIC",
+    "LOUD",
+    "NO_PROJECTILE"
+  ],
+  "max_level": 15,
+  "min_damage": 2,
+  "max_damage": 15,
+  "damage_increment": 0.8,
+  "min_aoe": 3,
+  "max_aoe": 18,
+  "aoe_increment": 1,
+  "min_duration": 1000,
+  "max_duration": 9000,
+  "duration_increment": 500,
+  "spell_class": "EARTHSHAPER",
+  "base_casting_time": 100,
+  "base_energy_cost": 250,
+  "energy_source": "MANA",
+  "difficulty": 2,
+  "damage_type": "bash"
+}
+```
+

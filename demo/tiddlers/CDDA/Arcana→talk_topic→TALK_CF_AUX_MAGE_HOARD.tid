@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_AUX_MAGE_HOARD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_AUX_MAGE_HOARD|http://cdda.aloxaf.cn/search?q=TALK_CF_AUX_MAGE_HOARD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_AUX_MAGE.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_AUX_MAGE_HOARD",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "I mean no offense by that.  The people here have been welcoming to an extent far beyond any other arcanist sect I have run into in the past.  It's only just, well, Jonathan and the others still seem rather reluctant to bring the others together, and help teach them.",
+    "no": "That is the reputation the Cleansing Flame has developed among some scholars.  Their approach towards the arcane was so variable, so unpredictable.  The community gathered here is the most welcoming I've seen in a long time, but even they keep their knowledge close to their heart.  It doesn't feel like the best way."
+  },
+  "responses": [
+    {
+      "text": "I understand your fear.  We must ensure that future generations are not left blind to what challenges await them.",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME"
+      },
+      "topic": "TALK_CF_AUX_MAGE_HOARD_ASSURANCE"
+    },
+    {
+      "text": "Knowledge is both a valuable tool, and potentially a weapon if misused.  I will do what I can to ensure what we learn isn't lost.",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME2"
+      },
+      "topic": "TALK_CF_AUX_MAGE_HOARD_ASSURANCE"
+    },
+    {
+      "text": "I'll see what I can do to help.  We can't afford to lose such valuable information.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL",
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2",
+          "LOVES_BOOKS"
+        ]
+      },
+      "topic": "TALK_CF_AUX_MAGE_HOARD_ASSURANCE"
+    },
+    {
+      "text": "We'll have to see how things go, I guess.",
+      "topic": "TALK_CF_AUX_MAGE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_AUX_MAGE_HOARD",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "我没有冒犯的意思。这里的人们对我的欢迎程度远远超过了我过去遇到的任何其他神秘教派。只是，好吧，乔纳森和其他人似乎仍然不愿意把其他人召集起来，帮助他们学习。",
+    "no": "That is the reputation the Cleansing Flame has developed among some scholars.  Their approach towards the arcane was so variable, so unpredictable.  The community gathered here is the most welcoming I've seen in a long time, but even they keep their knowledge close to their heart.  It doesn't feel like the best way."
+  },
+  "responses": [
+    {
+      "text": "我理解你的恐惧。我们必须确保后代不会对等待他们的挑战视而不见。",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME"
+      },
+      "topic": "TALK_CF_AUX_MAGE_HOARD_ASSURANCE"
+    },
+    {
+      "text": "知识既是一种有价值的工具，如果被滥用，它也可能是一种武器。我会尽我所能确保我们学到的东西不会丢失。",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME2"
+      },
+      "topic": "TALK_CF_AUX_MAGE_HOARD_ASSURANCE"
+    },
+    {
+      "text": "我看看能帮上什么忙。我们不能失去这样有价值的信息。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL",
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2",
+          "LOVES_BOOKS"
+        ]
+      },
+      "topic": "TALK_CF_AUX_MAGE_HOARD_ASSURANCE"
+    },
+    {
+      "text": "我想我们得看看情况如何。",
+      "topic": "TALK_CF_AUX_MAGE"
+    }
+  ]
+}
+```
+

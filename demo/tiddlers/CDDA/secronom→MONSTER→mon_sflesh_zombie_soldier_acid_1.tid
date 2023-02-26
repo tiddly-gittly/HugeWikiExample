@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_soldier_acid_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_soldier_acid_1|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_soldier_acid_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_soldier_acid_1",
+  "type": "MONSTER",
+  "name": {
+    "str": "acid-sniper zombie"
+  },
+  "description": "This staggering soldier wears a burnt gasmask, now fused to its face.  Through the melted, bile-encrusted ruination of the mask comes some sort of hardened fleshy proboscis, with steaming corrosive fluid leaking from the end.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "copy-from": "mon_sflesh_zombie_soldier",
+  "diff": 20,
+  "relative": {
+    "hp": 50,
+    "speed": 10,
+    "melee_skill": 1,
+    "vision_day": 10,
+    "vision_night": 10
+  },
+  "extend": {
+    "special_attacks": [
+      [
+        "ACID_BARF",
+        10
+      ],
+      {
+        "type": "gun",
+        "cooldown": 15,
+        "move_cost": 90,
+        "gun_type": "acid_sniper",
+        "fake_skills": [
+          [
+            "gun",
+            4
+          ],
+          [
+            "rifle",
+            4
+          ]
+        ],
+        "fake_dex": 8,
+        "fake_per": 8,
+        "require_targeting_player": false,
+        "description": "The acid-sniper zombie launches a corrosive dart!",
+        "ranges": [
+          [
+            2,
+            20,
+            "DEFAULT"
+          ]
+        ]
+      }
+    ],
+    "death_function": {
+      "message": "The %s's body dissolves into acid.",
+      "effect": {
+        "id": "death_acid",
+        "hit_self": true
+      },
+      "corpse_type": "NO_CORPSE"
+    },
+    "flags": [
+      "ACIDPROOF",
+      "ACID_BLOOD"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_soldier_acid_1",
+  "type": "MONSTER",
+  "name": {
+    "str": "酸液狙击兵丧尸"
+  },
+  "description": "这个摇摇晃晃的士兵戴着一个燃烧过的防毒面具，现在已经粘在脸上了。通过融化的，胆汁结痂的口罩的破坏来某种硬化肉质的长鼻，与蒸汽腐蚀性液体泄漏的结束。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+  "copy-from": "mon_sflesh_zombie_soldier",
+  "diff": 20,
+  "relative": {
+    "hp": 50,
+    "speed": 10,
+    "melee_skill": 1,
+    "vision_day": 10,
+    "vision_night": 10
+  },
+  "extend": {
+    "special_attacks": [
+      [
+        "ACID_BARF",
+        10
+      ],
+      {
+        "type": "gun",
+        "cooldown": 15,
+        "move_cost": 90,
+        "gun_type": "acid_sniper",
+        "fake_skills": [
+          [
+            "gun",
+            4
+          ],
+          [
+            "rifle",
+            4
+          ]
+        ],
+        "fake_dex": 8,
+        "fake_per": 8,
+        "require_targeting_player": false,
+        "description": "The acid-sniper zombie launches a corrosive dart!",
+        "ranges": [
+          [
+            2,
+            20,
+            "DEFAULT"
+          ]
+        ]
+      }
+    ],
+    "death_function": {
+      "message": "The %s's body dissolves into acid.",
+      "effect": {
+        "id": "death_acid",
+        "hit_self": true
+      },
+      "corpse_type": "NO_CORPSE"
+    },
+    "flags": [
+      "ACIDPROOF",
+      "ACID_BLOOD"
+    ]
+  }
+}
+```
+

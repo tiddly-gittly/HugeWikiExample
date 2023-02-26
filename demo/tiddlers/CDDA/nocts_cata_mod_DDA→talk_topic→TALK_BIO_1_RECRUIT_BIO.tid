@@ -1,0 +1,59 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BIO_1_RECRUIT_BIO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BIO_1_RECRUIT_BIO|http://cdda.aloxaf.cn/search?q=TALK_BIO_1_RECRUIT_BIO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BIO_1.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_1_RECRUIT_BIO",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "You know, I like the sound of that.  This is what we were made for.  Lead the way.",
+    "no": "Heh, badge or no badge, I can tell in your voice you're one of them.  Just like me.  Got that same fighting spirit too.  Alright, take the lead."
+  },
+  "responses": [
+    {
+      "text": "Let's go.",
+      "topic": "TALK_DONE",
+      "effect": "follow"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BIO_1_RECRUIT_BIO",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "你知道吗，我喜欢你这么说。这就是我们的使命。带路吧。",
+    "no": "嘿，不管有没有徽章，我都能从你的声音听出来你是他们中的一员。就像我一样。也有同样的斗志。好吧，带路吧。"
+  },
+  "responses": [
+    {
+      "text": "一起走吧。",
+      "topic": "TALK_DONE",
+      "effect": "follow"
+    }
+  ]
+}
+```
+

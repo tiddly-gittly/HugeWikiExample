@@ -1,0 +1,149 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→NEURO_BAD_BIOWEAPON
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：NEURO_BAD_BIOWEAPON|http://cdda.aloxaf.cn/search?q=NEURO_BAD_BIOWEAPON]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "NEURO_BAD_BIOWEAPON",
+  "name": {
+    "str": "Neural Degeneration"
+  },
+  "points": 0,
+  "description": "You suffer from a form of artificially-induced atavism.  Reading is much slower, and crafting is more difficult.  Persuading NPCs will be more difficult, but threatening them will be easier.",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "cancels": [
+    "NEURO_GOOD_BIOWEAPON",
+    "FASTREADER",
+    "SLOWREADER"
+  ],
+  "reading_speed_multiplier": 1.5,
+  "craft_skill_bonus": [
+    [
+      "electronics",
+      -2
+    ],
+    [
+      "tailor",
+      -2
+    ],
+    [
+      "mechanics",
+      -2
+    ],
+    [
+      "firstaid",
+      -2
+    ],
+    [
+      "computer",
+      -2
+    ],
+    [
+      "traps",
+      -2
+    ],
+    [
+      "fabrication",
+      -2
+    ],
+    [
+      "cooking",
+      -2
+    ],
+    [
+      "survival",
+      -2
+    ]
+  ],
+  "social_modifiers": {
+    "persuade": -40,
+    "lie": -20,
+    "intimidate": 15
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "NEURO_BAD_BIOWEAPON",
+  "name": {
+    "str": "神经退化"
+  },
+  "points": 0,
+  "description": "你患有一种人为诱发的返祖症。你的阅读速度很慢，而且更难制造物品。说服他人会更难，但威胁他们会更容易。",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "cancels": [
+    "NEURO_GOOD_BIOWEAPON",
+    "FASTREADER",
+    "SLOWREADER"
+  ],
+  "reading_speed_multiplier": 1.5,
+  "craft_skill_bonus": [
+    [
+      "electronics",
+      -2
+    ],
+    [
+      "tailor",
+      -2
+    ],
+    [
+      "mechanics",
+      -2
+    ],
+    [
+      "firstaid",
+      -2
+    ],
+    [
+      "computer",
+      -2
+    ],
+    [
+      "traps",
+      -2
+    ],
+    [
+      "fabrication",
+      -2
+    ],
+    [
+      "cooking",
+      -2
+    ],
+    [
+      "survival",
+      -2
+    ]
+  ],
+  "social_modifiers": {
+    "persuade": -40,
+    "lie": -20,
+    "intimidate": 15
+  }
+}
+```
+

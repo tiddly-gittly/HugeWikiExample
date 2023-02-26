@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_flesh_angel_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_flesh_angel_summoned|http://cdda.aloxaf.cn/search?q=mon_flesh_angel_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_flesh_angel_summoned",
+  "copy-from": "mon_flesh_angel",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned flesh angel"
+  },
+  "vision_night": 10,
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "dodge": 4,
+  "armor_bash": 3,
+  "armor_cut": 3,
+  "armor_stab": 5,
+  "armor_bullet": 5,
+  "mountable_weight_ratio": 0.9,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": {},
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    50
+  ],
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "ATTACKMON"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_flesh_angel_summoned",
+  "copy-from": "mon_flesh_angel",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤血肉天使"
+  },
+  "vision_night": 10,
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "dodge": 4,
+  "armor_bash": 3,
+  "armor_cut": 3,
+  "armor_stab": 5,
+  "armor_bullet": 5,
+  "mountable_weight_ratio": 0.9,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": {},
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    50
+  ],
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "ATTACKMON"
+    ]
+  }
+}
+```
+

@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→COMESTIBLE→iv_mutagen_super_soldier
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：iv_mutagen_super_soldier|http://cdda.aloxaf.cn/search?q=iv_mutagen_super_soldier]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "iv_mutagen_super_soldier",
+  "copy-from": "iv_mutagen_flavor",
+  "type": "COMESTIBLE",
+  "name": {
+    "str_sp": "nano-mutagenic serum"
+  },
+  "description": "A experimental, super-concentrated cocktail of mutagen and nanomachines.  Vanishingly rare and potentially quite potent in effect.  You need a syringe to inject it… if you really want to?",
+  "price": "20000 USD",
+  "price_postapoc": "30 USD",
+  "color": "red",
+  "charges": 2,
+  "stack_size": 1,
+  "healthy": -2,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "You inject the nano-mutagenic serum.",
+    "tools_needed": {
+      "syringe": -1
+    },
+    "effects": [
+      {
+        "id": "c_nano_mutagen_trigger",
+        "duration": 5
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "iv_mutagen_super_soldier",
+  "copy-from": "iv_mutagen_flavor",
+  "type": "COMESTIBLE",
+  "name": {
+    "str_sp": "纳米诱变血清"
+  },
+  "description": "一种实验性的、超浓缩的诱变剂与纳米机器的混合物。极为罕见而且可能相当有效。你需要一根针管来注射它……如果你真的想用的话。",
+  "price": "20000 USD",
+  "price_postapoc": "30 USD",
+  "color": "red",
+  "charges": 2,
+  "stack_size": 1,
+  "healthy": -2,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "你注射了纳米诱变血清。",
+    "tools_needed": {
+      "syringe": -1
+    },
+    "effects": [
+      {
+        "id": "c_nano_mutagen_trigger",
+        "duration": 5
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_BOOK_HUNTER_PEACE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_BOOK_HUNTER_PEACE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_BOOK_HUNTER_PEACE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_HUNTER_PEACE",
+  "dynamic_line": "I see.  I apologize then.  All I have seen, it's hard not to be wary.  Well young one, if you will tolerate an old Keeper and his ramblings, perhaps you can help with something.",
+  "responses": [
+    {
+      "text": "We shall see.",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_HUNTER_PEACE",
+  "dynamic_line": "我懂了。那我道歉。我所看到的，很难不小心。如果你能容忍一个年轻的看门人和一个年老的看门人一起闲逛，也许你能容忍。",
+  "responses": [
+    {
+      "text": "我们会看到的。",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

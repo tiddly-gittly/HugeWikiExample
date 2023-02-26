@@ -1,0 +1,226 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[8]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "arcana_church_goth_2",
+  "object": {
+    "mapgensize": [
+      4,
+      4
+    ],
+    "place_loot": [
+      {
+        "group": "chalice_cult_books",
+        "x": [
+          1,
+          2
+        ],
+        "y": [
+          0,
+          1
+        ],
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "chalice_cult_consumables",
+        "x": [
+          1,
+          2
+        ],
+        "y": [
+          0,
+          1
+        ],
+        "chance": 25,
+        "repeat": 5
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_zombie_master",
+        "x": 0,
+        "y": 1
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "cf_church_upgrade_3_a",
+  "object": {
+    "mapgensize": [
+      20,
+      20
+    ],
+    "rows": [
+      "|||||^^^^^uuuuu     ",
+      "|                   ",
+      "|                   ",
+      "|  BD BD BD BD      ",
+      "|  B  B  B  B    hh ",
+      "^               heeh",
+      "^               heeh",
+      "^                hh ",
+      "^                   ",
+      "^  B  B  B  B       ",
+      "u  BD BD BD BD      ",
+      "u                   ",
+      "u                   ",
+      "u                   ",
+      "u                   ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    "
+    ],
+    "terrain": {
+      "|": "t_palisade",
+      "^": "t_pit",
+      "u": "t_pit_shallow"
+    },
+    "furniture": {
+      "B": "f_bed",
+      "D": "f_dresser",
+      "e": "f_table",
+      "h": "f_chair"
+    },
+    "place_npcs": [
+      {
+        "class": "cleansing_flame_grandmaster",
+        "x": 19,
+        "y": 8
+      },
+      {
+        "class": "mage_hunter_guard",
+        "x": 3,
+        "y": 6,
+        "add_trait": "BGSS_CF_FILTER"
+      },
+      {
+        "class": "mage_hunter_guard",
+        "x": 17,
+        "y": 4,
+        "add_trait": "BGSS_CF_FILTER"
+      },
+      {
+        "class": "mage_hunter_guard",
+        "x": 6,
+        "y": 10,
+        "add_trait": "BGSS_CF_FILTER"
+      }
+    ],
+    "mapping": {
+      "B": {
+        "items": [
+          {
+            "item": "bed",
+            "chance": 50
+          }
+        ]
+      },
+      "D": {
+        "items": [
+          {
+            "item": "clothing_outdoor_torso",
+            "chance": 50
+          },
+          {
+            "item": "clothing_outdoor_pants",
+            "chance": 50
+          }
+        ]
+      }
+    },
+    "faction_owner": [
+      {
+        "id": "cleansing_flame",
+        "x": [
+          3,
+          13
+        ],
+        "y": [
+          3,
+          10
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "arcana_church_goth_2",
+  "object": {
+    "mapgensize": [
+      4,
+      4
+    ],
+    "place_loot": [
+      {
+        "group": "chalice_cult_books",
+        "x": [
+          1,
+          2
+        ],
+        "y": [
+          0,
+          1
+        ],
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "chalice_cult_consumables",
+        "x": [
+          1,
+          2
+        ],
+        "y": [
+          0,
+          1
+        ],
+        "chance": 25,
+        "repeat": 5
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_zombie_master",
+        "x": 0,
+        "y": 1
+      }
+    ]
+  }
+}
+```
+

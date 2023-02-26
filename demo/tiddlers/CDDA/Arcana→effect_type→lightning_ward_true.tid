@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→lightning_ward_true
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lightning_ward_true|http://cdda.aloxaf.cn/search?q=lightning_ward_true]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "lightning_ward_true",
+  "name": [
+    "Greater Lightning Ward"
+  ],
+  "desc": [
+    "Complete immunity to lightning."
+  ],
+  "remove_message": "You feel an electric tingle as your protective magic fades.",
+  "removes_effects": [
+    "zapped"
+  ],
+  "decay_messages": [
+    [
+      "The greater ward against lightning is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "flags": [
+    "ELECTRIC_IMMUNE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "lightning_ward_true",
+  "name": [
+    "大抗电结界"
+  ],
+  "desc": [
+    "完全抗闪电。"
+  ],
+  "remove_message": "当你的保护魔法消退时，你会感到一阵电刺痛。",
+  "removes_effects": [
+    "zapped"
+  ],
+  "decay_messages": [
+    [
+      "更大的抗电结界正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "flags": [
+    "ELECTRIC_IMMUNE"
+  ]
+}
+```
+

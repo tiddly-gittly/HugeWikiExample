@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_secrodragon_woke_armed_deploy
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_secrodragon_woke_armed_deploy|http://cdda.aloxaf.cn/search?q=mon_secrodragon_woke_armed_deploy]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_secrodragon_woke_armed_deploy",
+  "name": {
+    "str": "Deploy"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster deploys its reinforcer bots into the field, which will support them in combat. One time use.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "min_damage": 999999,
+  "max_damage": 999999,
+  "effect": "targeted_polymorph",
+  "shape": "blast",
+  "effect_str": "mon_secrodragon_woke"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_secrodragon_woke_armed_deploy",
+  "name": {
+    "str": "部署"
+  },
+  "description": "由怪物施放的咒语。如果你看到了这个，那就读读这个：\n的施法者将它的强化机器人部署到战场上，这将在战斗中支持他们。“一次性使用，”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "min_damage": 999999,
+  "max_damage": 999999,
+  "effect": "targeted_polymorph",
+  "shape": "blast",
+  "effect_str": "mon_secrodragon_woke"
+}
+```
+

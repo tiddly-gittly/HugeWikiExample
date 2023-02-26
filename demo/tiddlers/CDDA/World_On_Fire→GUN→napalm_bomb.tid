@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: GUN World_On_Fire
+title: World_On_Fire→GUN→napalm_bomb
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：napalm_bomb|http://cdda.aloxaf.cn/search?q=napalm_bomb]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "napalm_bomb",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "napalm bomb"
+  },
+  "description": "Fake gun that fires napalm.",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "modes": [
+    [
+      "DEFAULT",
+      "auto",
+      3
+    ]
+  ],
+  "ammo_effects": [
+    "NAPALM",
+    "NEVER_MISFIRES",
+    "STREAM_BIG",
+    "NO_DAMAGE_SCALING"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 10,
+  "dispersion": 90,
+  "ranged_damage": [
+    {
+      "damage_type": "heat",
+      "amount": 3
+    },
+    {
+      "damage_type": "stab",
+      "amount": 8,
+      "armor_multiplier": 0.8
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "napalm_bomb",
+  "type": "GUN",
+  "copy-from": "fake_item",
+  "name": {
+    "str": "凝固汽油炸弹"
+  },
+  "description": "Fake gun that fires napalm.",
+  "flags": [
+    "NEVER_JAMS"
+  ],
+  "modes": [
+    [
+      "DEFAULT",
+      "auto",
+      3
+    ]
+  ],
+  "ammo_effects": [
+    "NAPALM",
+    "NEVER_MISFIRES",
+    "STREAM_BIG",
+    "NO_DAMAGE_SCALING"
+  ],
+  "skill": "rifle",
+  "durability": 10,
+  "range": 10,
+  "dispersion": 90,
+  "ranged_damage": [
+    {
+      "damage_type": "heat",
+      "amount": 3
+    },
+    {
+      "damage_type": "stab",
+      "amount": 8,
+      "armor_multiplier": 0.8
+    }
+  ]
+}
+```
+

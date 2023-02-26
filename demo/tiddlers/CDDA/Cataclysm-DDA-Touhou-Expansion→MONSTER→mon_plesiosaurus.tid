@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_plesiosaurus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_plesiosaurus|http://cdda.aloxaf.cn/search?q=mon_plesiosaurus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_reptile.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_plesiosaurus",
+  "type": "MONSTER",
+  "name": {
+    "str": "plesiosaurus",
+    "str_pl": "plesiosaurus"
+  },
+  "description": "An animal that looks like certain Scottish cryptid.  It has a characteristic long neck with a small head.  The animal paddles through water as it moves its head side to side to catch fish.  The overall aspect and size are somewhat disappointing.",
+  "volume": "150 L",
+  "weight": "150 kg",
+  "default_faction": "touhou_reptile_marine_large",
+  "bodytype": "fish",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "REPTILE"
+  ],
+  "harvest": "reptile_marine_harvest",
+  "hp": 145,
+  "speed": 175,
+  "material": [
+    "flesh"
+  ],
+  "color": "light_gray",
+  "symbol": "J",
+  "aggression": 5,
+  "morale": 20,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 7,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 3,
+  "armor_stab": 2,
+  "reproduction": {
+    "baby_monster": "mon_plesiosaurus_baby",
+    "baby_count": 1,
+    "baby_timer": 20
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_NEAR_BABY"
+  ],
+  "fear_triggers": [
+    "FRIEND_DIED"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      35
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "AQUATIC",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Plesiosaurus dolichodeirus used as reference, Plesiosaurus is a wastebasket taxon"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_plesiosaurus",
+  "type": "MONSTER",
+  "name": {
+    "str": "plesiosaurus",
+    "str_pl": "plesiosaurus"
+  },
+  "description": "An animal that looks like certain Scottish cryptid.  It has a characteristic long neck with a small head.  The animal paddles through water as it moves its head side to side to catch fish.  The overall aspect and size are somewhat disappointing.",
+  "volume": "150 L",
+  "weight": "150 kg",
+  "default_faction": "touhou_reptile_marine_large",
+  "bodytype": "fish",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "REPTILE"
+  ],
+  "harvest": "reptile_marine_harvest",
+  "hp": 145,
+  "speed": 175,
+  "material": [
+    "flesh"
+  ],
+  "color": "light_gray",
+  "symbol": "J",
+  "aggression": 5,
+  "morale": 20,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 7,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 3,
+  "armor_stab": 2,
+  "reproduction": {
+    "baby_monster": "mon_plesiosaurus_baby",
+    "baby_count": 1,
+    "baby_timer": 20
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_NEAR_BABY"
+  ],
+  "fear_triggers": [
+    "FRIEND_DIED"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      35
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "AQUATIC",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Plesiosaurus dolichodeirus used as reference, Plesiosaurus is a wastebasket taxon"
+}
+```
+

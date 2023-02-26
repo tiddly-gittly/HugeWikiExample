@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_secro_electurret_elecshock
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_secro_electurret_elecshock|http://cdda.aloxaf.cn/search?q=mon_secro_electurret_elecshock]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_secro_electurret_elecshock",
+  "type": "SPELL",
+  "name": {
+    "str": "Electroshock"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster discharges a high electric current, shocking all nearby creatures.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 2,
+  "max_damage": 6,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "damage_type": "electric",
+  "field_id": "fd_electricity",
+  "min_field_intensity": 2,
+  "max_field_intensity": 2
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_secro_electurret_elecshock",
+  "type": "SPELL",
+  "name": {
+    "str": "电击"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者释放出一个高电流，震惊了附近所有的生物。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 2,
+  "max_damage": 6,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "damage_type": "electric",
+  "field_id": "fd_electricity",
+  "min_field_intensity": 2,
+  "max_field_intensity": 2
+}
+```
+

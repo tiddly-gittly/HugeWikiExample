@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: effect_type Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→effect_type→aura_reflectionslash
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：aura_reflectionslash|http://cdda.aloxaf.cn/search?q=aura_reflectionslash]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/effects/touhou_effects_aura.json
+
+
+!! 原文
+
+```json
+{
+  "id": "aura_reflectionslash",
+  "type": "effect_type",
+  "name": [
+    "Reflection slash (aura)"
+  ],
+  "desc": [
+    "A barrier created by cutting air.  It looks refracted, very cool."
+  ],
+  "max_intensity": 1,
+  "max_effective_intensity": 1,
+  "rating": "good",
+  "apply_message": "You cut the air around yourself, stopping incoming fast-moving proyectiles.",
+  "remove_message": "The air around you is restored.",
+  "enchantments": [
+    {
+      "values": [
+        {
+          "value": "ARMOR_BULLET",
+          "multiply": -1
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "aura_reflectionslash",
+  "type": "effect_type",
+  "name": [
+    "Reflection slash (aura)"
+  ],
+  "desc": [
+    "A barrier created by cutting air.  It looks refracted, very cool."
+  ],
+  "max_intensity": 1,
+  "max_effective_intensity": 1,
+  "rating": "good",
+  "apply_message": "You cut the air around yourself，stopping incoming fast-moving proyectiles.",
+  "remove_message": "你周围的空气恢复了。",
+  "enchantments": [
+    {
+      "values": [
+        {
+          "value": "ARMOR_BULLET",
+          "multiply": -1
+        }
+      ]
+    }
+  ]
+}
+```
+

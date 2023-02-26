@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_BOOK_HUNTER_EXCUSE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_BOOK_HUNTER_EXCUSE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_BOOK_HUNTER_EXCUSE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_HUNTER_EXCUSE",
+  "dynamic_line": "I have little love left for the Sanguine Order either, but such excuses do not justify all that your brethren have done.  If you seek to keep dangerous magic out of the wrong hands, I can help you with such a thing, but you won't find what you seek through senseless violence.",
+  "responses": [
+    {
+      "text": "If you insist.  Tell me what you have to offer, and we'll see where to go from there.",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[ATTACK] I can figure it out myself.  I will not trust you to lead me further astray, Keeper.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_HUNTER_EXCUSE",
+  "dynamic_line": "我也不太喜欢猩红教派，但这样的借口并不能证明你的兄弟们所做的一切。如果你想把危险的魔法从坏人手中夺走，我可以帮你做这件事，但你不能通过无谓的暴力找到你想要的东西。",
+  "responses": [
+    {
+      "text": "如果你坚持的话。告诉我你能提供什么，我们看看该怎么办。",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[攻击]我自己能搞定。我不相信你会把我引向歧途，守护者。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

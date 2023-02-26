@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_GLADIATOR
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_GLADIATOR|http://cdda.aloxaf.cn/search?q=TALK_GLADIATOR]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_GLADIATOR.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_GLADIATOR",
+  "dynamic_line": {
+    "u_has_trait": "PROF_GLADIATOR",
+    "yes": [
+      "Huh, where'd the guard go…",
+      "Grab a weapon, we might have a chance to bust out of here.",
+      "Not a good time for this, fresh meat.  What's wrong?",
+      "You sure we have time to talk?  What is it?",
+      "I don't know what's going on, but we might be able to get out of here."
+    ],
+    "no": [
+      "I don't know what you're here for, but you've got good timing.",
+      "Hey you!  You've got to help us, please…",
+      "You're not one of the guards, don't look like one of their so-called clients either.  What are you here for?",
+      "Hey, you're not one of them …can you help us?",
+      "You've got to get us out of here!"
+    ]
+  },
+  "responses": [
+    {
+      "text": "What's going on?",
+      "topic": "TALK_GLADIATOR_SITUATION"
+    },
+    {
+      "text": "Why are the others attacking us?",
+      "topic": "TALK_GLADIATOR_HOSTILE"
+    },
+    {
+      "text": "Follow my lead, I'll get us out of here.",
+      "condition": {
+        "u_has_trait": "PROF_GLADIATOR"
+      },
+      "switch": true,
+      "topic": "TALK_GLADIATOR_RECRUIT"
+    },
+    {
+      "text": "I'll help get you out of here.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_GLADIATOR_RECRUIT"
+    },
+    {
+      "text": "Bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_GLADIATOR",
+  "dynamic_line": {
+    "u_has_trait": "PROF_GLADIATOR",
+    "yes": [
+      "呃，警卫去哪了……",
+      "拿起武器，我们也许有机会逃出去。",
+      "现在不是时候，新人。出什么事了？",
+      "你确定我们有时间谈谈吗?是什么?",
+      "我不知道发生了什么，但我们也许能离开这里。"
+    ],
+    "no": [
+      "我不知道你来这里是为了什么，但你来的正好。",
+      "嘿，你！你一定要帮助我们，求你了……",
+      "你不是警卫，也不像他们所谓的客户。你来这里干什么？",
+      "嘿，你不是他们中的一员……你能帮助我们吗？",
+      "你一定要带我们离开这里啊！"
+    ]
+  },
+  "responses": [
+    {
+      "text": "发生什么事？",
+      "topic": "TALK_GLADIATOR_SITUATION"
+    },
+    {
+      "text": "为什么其他人要攻击我们？",
+      "topic": "TALK_GLADIATOR_HOSTILE"
+    },
+    {
+      "text": "听从我的指挥，我会带大家离开这里。",
+      "condition": {
+        "u_has_trait": "PROF_GLADIATOR"
+      },
+      "switch": true,
+      "topic": "TALK_GLADIATOR_RECRUIT"
+    },
+    {
+      "text": "我会帮你离开这里的。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_GLADIATOR_RECRUIT"
+    },
+    {
+      "text": "再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

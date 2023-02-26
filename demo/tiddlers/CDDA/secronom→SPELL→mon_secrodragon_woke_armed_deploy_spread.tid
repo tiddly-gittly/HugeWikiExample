@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_secrodragon_woke_armed_deploy_spread
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_secrodragon_woke_armed_deploy_spread|http://cdda.aloxaf.cn/search?q=mon_secrodragon_woke_armed_deploy_spread]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_secrodragon_woke_armed_deploy_spread",
+  "type": "SPELL",
+  "name": {
+    "str": "Spread"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster commands all reinforcer bots to take distance.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_bot_secroinforcer"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "run",
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "min_duration": 1200,
+  "max_duration": 1200
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_secrodragon_woke_armed_deploy_spread",
+  "type": "SPELL",
+  "name": {
+    "str": "散布"
+  },
+  "description": "由怪物施放的咒语。如果你看到了这个，那就改读这个：\n“施法者命令所有强化机器人保持距离。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "targeted_monster_ids": [
+    "mon_bot_secroinforcer"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "run",
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "min_duration": 1200,
+  "max_duration": 1200
+}
+```
+

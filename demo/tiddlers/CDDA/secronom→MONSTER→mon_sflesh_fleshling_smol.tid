@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_fleshling_smol
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_smol|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_smol]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Fleshlings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_fleshling_smol",
+  "type": "MONSTER",
+  "name": {
+    "str": "small flesh blob"
+  },
+  "description": "A small slab of meat that's larger than a basketball. Will try to devour anything nearby.",
+  "default_faction": "secro_flesh2",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "1250 ml",
+  "weight": "170 g",
+  "hp": 20,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "◈",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_fleshling_smol_devour"
+      },
+      "cooldown": 75,
+      "monster_message": "<color_magenta>%1$s devours %3$s...</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "PACIFIST"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_fleshling_smol",
+  "type": "MONSTER",
+  "name": {
+    "str": "小肉块"
+  },
+  "description": "一个比篮球还大的一小块厚肉块。它会尝试吞噬附近的任何东西。",
+  "default_faction": "secro_flesh2",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "1250 ml",
+  "weight": "170 g",
+  "hp": 20,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "◈",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_fleshling_smol_devour"
+      },
+      "cooldown": 75,
+      "monster_message": "<color_magenta>%1$s吞噬%3$s…</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "PACIFIST"
+  ]
+}
+```
+

@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MERCHANT_CF_AUX_WHO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MERCHANT_CF_AUX_WHO|http://cdda.aloxaf.cn/search?q=TALK_MERCHANT_CF_AUX_WHO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MERCHANT_CF_AUX.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_WHO",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "CF_AUX_MARKER_3",
+    "yes": "Just a doctor that got called up into providing medical assistance for 'Old Guard' operations.",
+    "no": {
+      "npc_has_any_trait": [
+        "CF_AUX_MARKER_4",
+        "CF_AUX_MARKER_5"
+      ],
+      "yes": "Just a local hunter.  Outdoors experience came in handy when it all went to shit, so I guess there's that.",
+      "no": {
+        "npc_has_any_trait": [
+          "CF_AUX_MARKER_2",
+          "CF_AUX_MARKER_7"
+        ],
+        "yes": "Used to be a soldier, 'bout a decade ago.  Rest of my boys probably would've turned raider if I hadn't been around to knock some sense into 'em.  Now we make a living cleaning up the mess the guys still in service weren't able to unfuck.",
+        "no": "These days, just a scavenger I guess.  Don't have any family left that I know of, so not like my old life doing odd jobs matters much.  Rather not talk about it."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Oh, okay.",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_WHO",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "CF_AUX_MARKER_3",
+    "yes": "只是一个被召来为“老兵”行动提供医疗援助的医生。",
+    "no": {
+      "npc_has_any_trait": [
+        "CF_AUX_MARKER_4",
+        "CF_AUX_MARKER_5"
+      ],
+      "yes": "只是一个当地的猎人。当一切都变得一团糟的时候，户外生存经验就派上了用场，所以我想是这样的。",
+      "no": {
+        "npc_has_any_trait": [
+          "CF_AUX_MARKER_2",
+          "CF_AUX_MARKER_7"
+        ],
+        "yes": "十年前曾是个军人。如果不是我在身边给他们点感觉的话，我其他的孩子们可能会变成袭击者。现在我们靠清理那些还在服役的人无法解开的烂摊子为生。",
+        "no": "这些天来，我想只是个拾荒者。据我所知，没有一个家庭离开，所以不像我以前那样做零工很重要。而不是谈论它。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "哦，好的。",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    }
+  ]
+}
+```
+

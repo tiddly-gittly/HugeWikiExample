@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→taze
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：taze|http://cdda.aloxaf.cn/search?q=taze]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/technomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "taze",
+  "type": "SPELL",
+  "name": {
+    "str": "Taze"
+  },
+  "description": "This spell creates a very short range bolt of electricity to shock your foes.",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "ally"
+  ],
+  "flags": [
+    "NO_LEGS",
+    "LOUD",
+    "SOMATIC"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "spell_class": "TECHNOMANCER",
+  "energy_source": "BIONIC",
+  "difficulty": 1,
+  "base_casting_time": 100,
+  "casting_time_increment": -1,
+  "final_casting_time": 70,
+  "base_energy_cost": 50,
+  "energy_increment": -1,
+  "final_energy_cost": 20,
+  "max_level": 30,
+  "damage_type": "electric",
+  "min_damage": 10,
+  "max_damage": 45,
+  "damage_increment": 1,
+  "min_range": 1,
+  "max_range": 6,
+  "range_increment": 0.2
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "taze",
+  "type": "SPELL",
+  "name": {
+    "str": "电击术"
+  },
+  "description": "这个法术产生一个非常短的闪电来电击你的敌人。",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "ally"
+  ],
+  "flags": [
+    "NO_LEGS",
+    "LOUD",
+    "SOMATIC"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "spell_class": "TECHNOMANCER",
+  "energy_source": "BIONIC",
+  "difficulty": 1,
+  "base_casting_time": 100,
+  "casting_time_increment": -1,
+  "final_casting_time": 70,
+  "base_energy_cost": 50,
+  "energy_increment": -1,
+  "final_energy_cost": 20,
+  "max_level": 30,
+  "damage_type": "electric",
+  "min_damage": 10,
+  "max_damage": 45,
+  "damage_increment": 1,
+  "min_range": 1,
+  "max_range": 6,
+  "range_increment": 0.2
+}
+```
+

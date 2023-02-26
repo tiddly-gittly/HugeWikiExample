@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→burn_at_both_ends
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：burn_at_both_ends|http://cdda.aloxaf.cn/search?q=burn_at_both_ends]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Soulfire.json
+
+
+!! 原文
+
+```json
+{
+  "id": "burn_at_both_ends",
+  "type": "SPELL",
+  "name": {
+    "str": "Burn at Both Ends"
+  },
+  "description": "A candle burns the most brightly at both ends, and yet it burns twice as fast.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "SOMATIC",
+    "NO_PROJECTILE"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 30,
+  "damage_increment": 10,
+  "max_damage": 460,
+  "min_range": 3,
+  "range_increment": 0.1,
+  "max_range": 7,
+  "min_duration": 0,
+  "duration_increment": 100,
+  "max_duration": 4500,
+  "min_dot": 10,
+  "max_dot": 10,
+  "base_energy_cost": 200,
+  "spell_class": "SOULFIRE",
+  "difficulty": 8,
+  "max_level": 43,
+  "base_casting_time": 225,
+  "sound_description": "skin crackling",
+  "sound_id": "fire_spell",
+  "sound_variant": "strong",
+  "energy_source": "MANA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "burn_at_both_ends",
+  "type": "SPELL",
+  "name": {
+    "str": "两头烧"
+  },
+  "description": "一根蜡烛在两头烧时最明亮，但燃烧速度却是原来的两倍。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "SOMATIC",
+    "NO_PROJECTILE"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 30,
+  "damage_increment": 10,
+  "max_damage": 460,
+  "min_range": 3,
+  "range_increment": 0.1,
+  "max_range": 7,
+  "min_duration": 0,
+  "duration_increment": 100,
+  "max_duration": 4500,
+  "min_dot": 10,
+  "max_dot": 10,
+  "base_energy_cost": 200,
+  "spell_class": "SOULFIRE",
+  "difficulty": 8,
+  "max_level": 43,
+  "base_casting_time": 225,
+  "sound_description": "skin crackling",
+  "sound_id": "fire_spell",
+  "sound_variant": "strong",
+  "energy_source": "MANA"
+}
+```
+

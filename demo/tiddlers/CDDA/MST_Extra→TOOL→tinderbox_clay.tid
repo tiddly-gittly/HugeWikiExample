@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: TOOL MST_Extra
+title: MST_Extra→TOOL→tinderbox_clay
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tinderbox_clay|http://cdda.aloxaf.cn/search?q=tinderbox_clay]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tinderbox_clay",
+  "copy-from": "tinderbox",
+  "sub": "tinderbox",
+  "type": "TOOL",
+  "name": {
+    "str": "clay ember carrier"
+  },
+  "description": "This is a small ceramic fire pot, with a lid and small holes for controlled airflow.  It can nurture a smoldering ember for a long time, to start fires without modern tools.",
+  "material": "clay",
+  "color": "brown",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "tinder": 100
+      }
+    }
+  ],
+  "use_action": {
+    "target": "tinderbox_clay_on",
+    "msg": "You light the tinder.",
+    "active": true,
+    "need_fire": 1,
+    "need_fire_msg": "You need a lighter or fire to light this.",
+    "need_charges": 1,
+    "need_charges_msg": "The ember carrier is out of tinder.",
+    "type": "transform"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tinderbox_clay",
+  "copy-from": "tinderbox",
+  "sub": "tinderbox",
+  "type": "TOOL",
+  "name": {
+    "str": "陶制火种罐"
+  },
+  "description": "一个用来保存火种的小陶土罐子,带有盖子和通气口,能够让余火保持一段时间,缺乏现代工具时可以用于生火.",
+  "material": "clay",
+  "color": "brown",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "tinder": 100
+      }
+    }
+  ],
+  "use_action": {
+    "target": "tinderbox_clay_on",
+    "msg": "你点燃了引火物。",
+    "active": true,
+    "need_fire": 1,
+    "need_fire_msg": "You need a lighter or fire to light this.",
+    "need_charges": 1,
+    "need_charges_msg": "火种罐中已经没有火绒了。",
+    "type": "transform"
+  }
+}
+```
+

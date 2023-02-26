@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part MST_Extra
+title: MST_Extra→vehicle_part→door_log_frame
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：door_log_frame|http://cdda.aloxaf.cn/search?q=door_log_frame]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/vehicles/vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "door_log_frame",
+  "name": {
+    "str": "log frame door"
+  },
+  "symbol": "+",
+  "looks_like": "door_wood",
+  "color": "brown",
+  "broken_symbol": "&",
+  "broken_color": "brown",
+  "damage_modifier": 75,
+  "durability": 340,
+  "description": "A heavy door made from a log frame.  Solid construction means you can't see through it when closed.",
+  "item": "log_frame_item",
+  "location": "center",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_log_frame",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "15 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "survival",
+          3
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "adhesive",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "OBSTACLE",
+    "OPENABLE",
+    "BOARDABLE",
+    "OPAQUE",
+    "AISLE"
+  ],
+  "breaks_into": [
+    {
+      "item": "splinter",
+      "count": [
+        20,
+        30
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 24
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "door_log_frame",
+  "name": {
+    "str": "原木车门"
+  },
+  "symbol": "+",
+  "looks_like": "door_wood",
+  "color": "brown",
+  "broken_symbol": "&",
+  "broken_color": "brown",
+  "damage_modifier": 75,
+  "durability": 340,
+  "description": "一扇原木框架做成的车门.它是实心的,所以关上门时你不能透过它来观察.",
+  "item": "log_frame_item",
+  "location": "center",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_log_frame",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "15 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "survival",
+          3
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "adhesive",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "OBSTACLE",
+    "OPENABLE",
+    "BOARDABLE",
+    "OPAQUE",
+    "AISLE"
+  ],
+  "breaks_into": [
+    {
+      "item": "splinter",
+      "count": [
+        20,
+        30
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 24
+  }
+}
+```
+

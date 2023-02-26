@@ -1,0 +1,289 @@
+creator: 林一二
+revision: 0
+tags: MONSTER nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→MONSTER→hulk_weapon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：hulk_weapon|http://cdda.aloxaf.cn/search?q=hulk_weapon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "hulk_weapon",
+  "type": "MONSTER",
+  "name": {
+    "str": "Bio-Weapon Apophis"
+  },
+  "description": "The ultimate bionic mutant.  Only God knows why it exists.  With incredible power, armor and bionics on its side, victory won't come easy.",
+  "default_faction": "fbio_weapon",
+  "species": [
+    "BIO-WEAPON"
+  ],
+  "diff": 50,
+  "volume": "875000 ml",
+  "weight": "200 kg",
+  "hp": 5000,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "A",
+  "color": "red_cyan",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 8,
+  "melee_dice_sides": 10,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 20
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 30,
+  "armor_cut": 40,
+  "armor_stab": 20,
+  "armor_bullet": 60,
+  "armor_acid": 35,
+  "armor_fire": 20,
+  "vision_day": 50,
+  "vision_night": 30,
+  "path_settings": {
+    "max_dist": 50
+  },
+  "luminance": 30,
+  "regenerates": 10,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -5
+    ]
+  ],
+  "starting_ammo": {
+    "generic_no_ammo": 1000
+  },
+  "harvest": "CBM_APOPHIS",
+  "special_attacks": [
+    [
+      "SHOCKSTORM",
+      15
+    ],
+    [
+      "TAZER",
+      15
+    ],
+    [
+      "PARROT",
+      80
+    ],
+    [
+      "SMASH",
+      20
+    ],
+    [
+      "BIO_OP_TAKEDOWN",
+      10
+    ],
+    {
+      "type": "gun",
+      "cooldown": 10,
+      "move_cost": 100,
+      "gun_type": "bio_laser_minigun_monster",
+      "fake_str": 8,
+      "fake_dex": 10,
+      "fake_per": 10,
+      "max_ammo": 1000,
+      "ranges": [
+        [
+          3,
+          20,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "targeting_cost": 50,
+      "targeting_sound": "swoosh…click!",
+      "targeting_volume": 20,
+      "description": "Apophis fires its gatling laser!",
+      "no_ammo_sound": "clickclickclick!"
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    75
+  ],
+  "death_drops": "apophis_bio_weapom_item",
+  "death_function": {
+    "message": "%s leaks acid and explodes!",
+    "effect": {
+      "id": "c_death_explosion_hulk_weapon",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "WARM",
+    "HUMAN",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "ELECTRIC",
+    "GRABS",
+    "BASHES",
+    "PATH_AVOID_DANGER_1",
+    "PRIORITIZE_TARGETS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "hulk_weapon",
+  "type": "MONSTER",
+  "name": {
+    "str": "生物武器-阿波菲斯"
+  },
+  "description": "终极的仿生突变体，超级士兵计划所赐的最强产物，只有天知道他的由来。在它的不可思议的力量与近乎完美的再生装甲皮肤和生化插件的加成下，胜利变得来之不易。",
+  "default_faction": "fbio_weapon",
+  "species": [
+    "BIO-WEAPON"
+  ],
+  "diff": 50,
+  "volume": "875000 ml",
+  "weight": "200 kg",
+  "hp": 5000,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "A",
+  "color": "red_cyan",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 8,
+  "melee_dice_sides": 10,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 20
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 30,
+  "armor_cut": 40,
+  "armor_stab": 20,
+  "armor_bullet": 60,
+  "armor_acid": 35,
+  "armor_fire": 20,
+  "vision_day": 50,
+  "vision_night": 30,
+  "path_settings": {
+    "max_dist": 50
+  },
+  "luminance": 30,
+  "regenerates": 10,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -5
+    ]
+  ],
+  "starting_ammo": {
+    "generic_no_ammo": 1000
+  },
+  "harvest": "CBM_APOPHIS",
+  "special_attacks": [
+    [
+      "SHOCKSTORM",
+      15
+    ],
+    [
+      "TAZER",
+      15
+    ],
+    [
+      "PARROT",
+      80
+    ],
+    [
+      "SMASH",
+      20
+    ],
+    [
+      "BIO_OP_TAKEDOWN",
+      10
+    ],
+    {
+      "type": "gun",
+      "cooldown": 10,
+      "move_cost": 100,
+      "gun_type": "bio_laser_minigun_monster",
+      "fake_str": 8,
+      "fake_dex": 10,
+      "fake_per": 10,
+      "max_ammo": 1000,
+      "ranges": [
+        [
+          3,
+          20,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "targeting_cost": 50,
+      "targeting_sound": "swoosh…click!",
+      "targeting_volume": 20,
+      "description": "阿波菲斯发射了加特林激光！",
+      "no_ammo_sound": "咔嚓咔嚓！"
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    75
+  ],
+  "death_drops": "apophis_bio_weapom_item",
+  "death_function": {
+    "message": "%s leaks acid and explodes!",
+    "effect": {
+      "id": "c_death_explosion_hulk_weapon",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "WARM",
+    "HUMAN",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "ELECTRIC",
+    "GRABS",
+    "BASHES",
+    "PATH_AVOID_DANGER_1",
+    "PRIORITIZE_TARGETS"
+  ]
+}
+```
+

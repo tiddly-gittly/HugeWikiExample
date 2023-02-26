@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_jolt
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_jolt|http://cdda.aloxaf.cn/search?q=mon_zombie_jolt]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Summoner-type electric zed. Uses an aura to spawn minions.",
+  "id": "mon_zombie_jolt",
+  "type": "MONSTER",
+  "name": {
+    "str": "jolt"
+  },
+  "description": "A pale corpse, obscure to its appearance. Flowing through its body is an immensive electric current.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 185,
+  "speed": 30,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⛤",
+  "color": "cyan_white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 5
+    }
+  ],
+  "vision_night": 2,
+  "luminance": 20,
+  "harvest": "zombie",
+  "emit_fields": [
+    "emit_jolt_ing",
+    "emit_jolt_blanket"
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    100
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "WARM",
+    "POISON",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "REVIVES",
+    "ELECTRIC_FIELD",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Summoner-type electric zed. Uses an aura to spawn minions.",
+  "id": "mon_zombie_jolt",
+  "type": "MONSTER",
+  "name": {
+    "str": "雷电丧尸"
+  },
+  "description": "苍白的尸体，外表模糊。流经它身体的是一股巨大的电流。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 185,
+  "speed": 30,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⛤",
+  "color": "cyan_white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 5
+    }
+  ],
+  "vision_night": 2,
+  "luminance": 20,
+  "harvest": "zombie",
+  "emit_fields": [
+    "emit_jolt_ing",
+    "emit_jolt_blanket"
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    100
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "WARM",
+    "POISON",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "REVIVES",
+    "ELECTRIC_FIELD",
+    "FILTHY"
+  ]
+}
+```
+

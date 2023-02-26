@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→PROF_SANGUINE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：PROF_SANGUINE|http://cdda.aloxaf.cn/search?q=PROF_SANGUINE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_other.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "PROF_SANGUINE",
+  "name": {
+    "str": "Sanguinist"
+  },
+  "points": 0,
+  "description": "You were sworn into an order known as the Sanguine Order.  Infamous and feared as you were among those who studied in secret, your past may still be useful in the future.",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "//": "This prevents blood mages from picking spells considered potentially too altruistic in nature, or from choosing a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
+  "cancels": [
+    "ILLITERATE",
+    "SPIRITUAL",
+    "PACIFIST",
+    "SPELL_HEAL",
+    "SPELL_CLERIC",
+    "MARTIAL_ARTS_CF"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "PROF_SANGUINE",
+  "name": {
+    "str": "猩红教徒"
+  },
+  "points": 0,
+  "description": "你宣誓加入了一个被称为“猩红教派”的组织。尽管你是那些秘密学习的人中的一员，但你的过去在未来可能仍然有用。",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "//": "This prevents blood mages from picking spells considered potentially too altruistic in nature, or from choosing a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
+  "cancels": [
+    "ILLITERATE",
+    "SPIRITUAL",
+    "PACIFIST",
+    "SPELL_HEAL",
+    "SPELL_CLERIC",
+    "MARTIAL_ARTS_CF"
+  ]
+}
+```
+

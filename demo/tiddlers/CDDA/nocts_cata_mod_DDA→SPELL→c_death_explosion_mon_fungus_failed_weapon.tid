@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→SPELL→c_death_explosion_mon_fungus_failed_weapon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_death_explosion_mon_fungus_failed_weapon|http://cdda.aloxaf.cn/search?q=c_death_explosion_mon_fungus_failed_weapon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_death_explosion_mon_fungus_failed_weapon",
+  "type": "SPELL",
+  "name": {
+    "str": "Pouf plus Acid Effect"
+  },
+  "description": "Fungal pouf plus acid effect, used by fungal augmented abominations.",
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "effect": "fungalize",
+  "flags": [
+    "SILENT"
+  ],
+  "min_damage": 2500,
+  "max_damage": 2500,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "death_pouf",
+      "hit_self": true
+    },
+    {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_death_explosion_mon_fungus_failed_weapon",
+  "type": "SPELL",
+  "name": {
+    "str": "孢子酸液效果"
+  },
+  "description": "喷出真菌和酸液效果，真菌生物武器使用。",
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "effect": "fungalize",
+  "flags": [
+    "SILENT"
+  ],
+  "min_damage": 2500,
+  "max_damage": 2500,
+  "min_aoe": 1,
+  "max_aoe": 1,
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "death_pouf",
+      "hit_self": true
+    },
+    {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  ]
+}
+```
+

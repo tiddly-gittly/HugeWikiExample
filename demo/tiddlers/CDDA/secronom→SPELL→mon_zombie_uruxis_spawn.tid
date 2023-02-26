@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_uruxis_spawn
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_uruxis_spawn|http://cdda.aloxaf.cn/search?q=mon_zombie_uruxis_spawn]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_zombie_uruxis_spawn",
+  "name": {
+    "str": "Cursed Lands"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself, creating a lingering curse that calls zeds in its area while enshrouds the caster with the black mist to heal and protect.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_uruxis_shroud",
+  "min_damage": -25,
+  "max_damage": -35,
+  "min_aoe": 3,
+  "max_aoe": 6,
+  "field_id": "fd_uruxis_combat",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "min_duration": 1100,
+  "max_duration": 3300
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_zombie_uruxis_spawn",
+  "name": {
+    "str": "被诅咒的土地"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者通道本身，制造了一个挥之不去的诅咒，在它的区域召唤宙斯，同时用黑雾笼罩施法者来治疗和保护。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_uruxis_shroud",
+  "min_damage": -25,
+  "max_damage": -35,
+  "min_aoe": 3,
+  "max_aoe": 6,
+  "field_id": "fd_uruxis_combat",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "min_duration": 1100,
+  "max_duration": 3300
+}
+```
+

@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_SPELL_MENU_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_SPELL_MENU_2|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_SPELL_MENU_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_SPELL_MENU_2",
+  "dynamic_line": "It's a warding spell that lashes out against those who strike you, similar to the more well-known Shadowy Shield.  Rather than harming your attacker directly, it shunts them a short distance away from you.  It does the same to any other threats close enough, when it activates.  If you bring me 1 crystallized essence, I can imprint this knowledge upon you.",
+  "responses": [
+    {
+      "text": "Sure, here you go.",
+      "condition": {
+        "u_has_item": "essence_pure"
+      },
+      "effect": [
+        {
+          "u_consume_item": "essence_pure"
+        },
+        {
+          "u_add_trait": "SPELL_PHASESHIELD"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need to obtain one.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_item": "essence_pure"
+        }
+      },
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "Let me think about it.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_SPELL_MENU_2",
+  "dynamic_line": "It's a warding spell that lashes out against those who strike you, similar to the more well-known Shadowy Shield.  Rather than harming your attacker directly, it shunts them a short distance away from you.  It does the same to any other threats close enough, when it activates.  If you bring me 1 crystallized essence, I can imprint this knowledge upon you.",
+  "responses": [
+    {
+      "text": "Sure，here you go.",
+      "condition": {
+        "u_has_item": "essence_pure"
+      },
+      "effect": [
+        {
+          "u_consume_item": "essence_pure"
+        },
+        {
+          "u_add_trait": "SPELL_PHASESHIELD"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need to obtain one.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_item": "essence_pure"
+        }
+      },
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "让我想想。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

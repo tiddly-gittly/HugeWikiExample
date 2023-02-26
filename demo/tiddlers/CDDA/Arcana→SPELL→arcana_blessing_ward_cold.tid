@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_ward_cold
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_ward_cold|http://cdda.aloxaf.cn/search?q=arcana_blessing_ward_cold]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_ward_cold",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Ward (Cold)"
+  },
+  "description": "Arcane Blessing\nUsing this spell will protect against the cold, and certain forms of supernatural harm.  It can be used on yourself or an ally.",
+  "message": "You channel a protective aura, the air gaining a soothing warmth to it.",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "cold_ward_true",
+  "energy_source": "MANA",
+  "difficulty": 60,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 350,
+  "final_casting_time": 175,
+  "casting_time_increment": -8.75,
+  "base_energy_cost": 420,
+  "final_energy_cost": 210,
+  "energy_increment": -10.5,
+  "min_duration": 36000,
+  "max_duration": 180000,
+  "duration_increment": 7200
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_ward_cold",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：结界（寒冷）"
+  },
+  "description": "奥术祝福\n使用该法术可以防止寒冷和某些形式的超自然伤害。它可以在自己或盟友身上使用。",
+  "message": "你引导了一个保护光环，空气为其带来了舒缓的温暖。",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "cold_ward_true",
+  "energy_source": "MANA",
+  "difficulty": 60,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 350,
+  "final_casting_time": 175,
+  "casting_time_increment": -8.75,
+  "base_energy_cost": 420,
+  "final_energy_cost": 210,
+  "energy_increment": -10.5,
+  "min_duration": 36000,
+  "max_duration": 180000,
+  "duration_increment": 7200
+}
+```
+

@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_nix
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_nix|http://cdda.aloxaf.cn/search?q=mon_zombie_nix]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Support-type zed that uses an aura to cause fear to the targets.",
+  "id": "mon_zombie_nix",
+  "type": "MONSTER",
+  "name": {
+    "str": "nix"
+  },
+  "description": "A hollow corpse, suffering from severe deterioration of flesh that made it appear completely skeletal. Its ghastly visage is uncomfortable to the sight, and being near it is the worst than most.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 50,
+  "diff": 10,
+  "speed": 45,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⚲",
+  "color": "dark_gray_yellow",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 0,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 3,
+  "armor_cut": 23,
+  "armor_bullet": 15,
+  "vision_day": 20,
+  "vision_night": 3,
+  "harvest": "mr_bones",
+  "emit_fields": [
+    "emit_nix_pressence"
+  ],
+  "special_attacks": [
+    [
+      "FEAR_PARALYZE",
+      12
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "HARDTOSHOOT",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Support-type zed that uses an aura to cause fear to the targets.",
+  "id": "mon_zombie_nix",
+  "type": "MONSTER",
+  "name": {
+    "str": "中空丧尸"
+  },
+  "description": "一具中空的尸体，由于肉的严重退化而显得完全骨瘦如柴。它可怕的面容让人看了不舒服，靠近它是最糟糕的。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 50,
+  "diff": 10,
+  "speed": 45,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⚲",
+  "color": "dark_gray_yellow",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 0,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 3,
+  "armor_cut": 23,
+  "armor_bullet": 15,
+  "vision_day": 20,
+  "vision_night": 3,
+  "harvest": "mr_bones",
+  "emit_fields": [
+    "emit_nix_pressence"
+  ],
+  "special_attacks": [
+    [
+      "FEAR_PARALYZE",
+      12
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "HARDTOSHOOT",
+    "FILTHY"
+  ]
+}
+```
+

@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_LICKER_ATK
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_LICKER_ATK|http://cdda.aloxaf.cn/search?q=SECRO_LICKER_ATK]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_LICKER_ATK",
+  "name": {
+    "str": "Succulent Tongue"
+  },
+  "points": 4,
+  "visibility": 4,
+  "ugliness": 6,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "Your tongue has slightly become thinner and longer, which further improves your senses and combat capabilities.",
+  "types": [
+    "MUZZLE"
+  ],
+  "prereqs": [
+    "SECRO_LICKER"
+  ],
+  "changes_to": [
+    "SECRO_LICKER_ATK_OK",
+    "SECRO_LICKER_NOTOK"
+  ],
+  "dodge_modifier": 0.075,
+  "hearing_modifier": 0.11,
+  "attacks": [
+    {
+      "attack_text_u": "You lick %s",
+      "attack_text_npc": "%1$s licks %2$s",
+      "body_part": "mouth",
+      "chance": 20,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.3
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_LICKER_ATK",
+  "name": {
+    "str": "多汁舌"
+  },
+  "points": 4,
+  "visibility": 4,
+  "ugliness": 6,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "你的舌头稍微变细变长，这进一步提高了你的感官和战斗能力。",
+  "types": [
+    "MUZZLE"
+  ],
+  "prereqs": [
+    "SECRO_LICKER"
+  ],
+  "changes_to": [
+    "SECRO_LICKER_ATK_OK",
+    "SECRO_LICKER_NOTOK"
+  ],
+  "dodge_modifier": 0.075,
+  "hearing_modifier": 0.11,
+  "attacks": [
+    {
+      "attack_text_u": "You lick %s",
+      "attack_text_npc": "%1$s licks %2$s",
+      "body_part": "mouth",
+      "chance": 20,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.3
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

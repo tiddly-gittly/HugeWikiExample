@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: TOOL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→TOOL→BL9_repair_soldering
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_repair_soldering|http://cdda.aloxaf.cn/search?q=BL9_repair_soldering]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Items/melee_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_repair_soldering",
+  "looks_like": "soldering_iron",
+  "type": "TOOL",
+  "name": {
+    "str": "BL9-infused soldering iron"
+  },
+  "description": "A soldering iron that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look, ",
+  "weight": "281 g",
+  "volume": "785 ml",
+  "price": "10 USD",
+  "price_postapoc": 100,
+  "bashing": 2,
+  "cutting": 6,
+  "material": [
+    "iron",
+    "BL9"
+  ],
+  "symbol": "%",
+  "color": "light_gray",
+  "ammo": [
+    "battery"
+  ],
+  "charges_per_use": 1,
+  "use_action": [
+    {
+      "type": "repair_item",
+      "item_action_type": "repair_metal",
+      "materials": [
+        "BL9",
+        "BL9_mk2",
+        "BL9_mk2_mid1",
+        "BL9_mk2_mid2",
+        "BL9_mid1",
+        "BL9_mid2",
+        "steel",
+        "plastic"
+      ],
+      "skill": "fabrication",
+      "cost_scaling": 0.15,
+      "move_cost": 845
+    }
+  ],
+  "flags": [
+    "SPEAR",
+    "BELT_CLIP",
+    "ALLOWS_REMOTE_USE"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "light_minus_battery_cell",
+        "light_battery_cell",
+        "light_plus_battery_cell",
+        "light_atomic_battery_cell",
+        "light_minus_atomic_battery_cell",
+        "light_minus_disposable_cell",
+        "light_disposable_cell"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_repair_soldering",
+  "looks_like": "soldering_iron",
+  "type": "TOOL",
+  "name": {
+    "str": "BL9灌注 电烙铁"
+  },
+  "description": "一个烙铁，以某种方式注入了完全有知觉的BL9，以某种方式在精神上与你交流，它被覆盖和完全加强它的厚组织与多个尖刺几乎不明显的振动突出，给它一个更吓人的，有活力的外观，",
+  "weight": "281 g",
+  "volume": "785 ml",
+  "price": "10 USD",
+  "price_postapoc": 100,
+  "bashing": 2,
+  "cutting": 6,
+  "material": [
+    "iron",
+    "BL9"
+  ],
+  "symbol": "%",
+  "color": "light_gray",
+  "ammo": [
+    "battery"
+  ],
+  "charges_per_use": 1,
+  "use_action": [
+    {
+      "type": "repair_item",
+      "item_action_type": "repair_metal",
+      "materials": [
+        "BL9",
+        "BL9_mk2",
+        "BL9_mk2_mid1",
+        "BL9_mk2_mid2",
+        "BL9_mid1",
+        "BL9_mid2",
+        "steel",
+        "plastic"
+      ],
+      "skill": "fabrication",
+      "cost_scaling": 0.15,
+      "move_cost": 845
+    }
+  ],
+  "flags": [
+    "SPEAR",
+    "BELT_CLIP",
+    "ALLOWS_REMOTE_USE"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "light_minus_battery_cell",
+        "light_battery_cell",
+        "light_plus_battery_cell",
+        "light_atomic_battery_cell",
+        "light_minus_atomic_battery_cell",
+        "light_minus_disposable_cell",
+        "light_disposable_cell"
+      ]
+    }
+  ]
+}
+```
+

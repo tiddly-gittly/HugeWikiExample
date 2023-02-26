@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_pacify_monsters
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_pacify_monsters|http://cdda.aloxaf.cn/search?q=arcana_blessing_pacify_monsters]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_pacify_monsters",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Pacify Monsters"
+  },
+  "description": "Arcane Blessing\nUsing this spell will momentarily sway monsters to your side.  It only works on monsters that have been sufficiently weakened, but the effectiveness increases with spell level.",
+  "message": "You focus, channeling a soothing aura through your hands.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "NO_FAIL"
+  ],
+  "effect": "charm_monster",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "difficulty": 70,
+  "skill": "magic",
+  "max_level": 20,
+  "min_damage": 70,
+  "max_damage": 350,
+  "damage_increment": 14,
+  "min_range": 12,
+  "max_range": 24,
+  "range_increment": 0.6,
+  "min_aoe": 0,
+  "max_aoe": 4,
+  "aoe_increment": 0.2,
+  "//": "Duration is balanced as a standard buff spell, despite arguably being a debuff.",
+  "min_duration": 42000,
+  "max_duration": 210000,
+  "duration_increment": 8400,
+  "base_casting_time": 400,
+  "final_casting_time": 200,
+  "casting_time_increment": -10,
+  "base_energy_cost": 480,
+  "final_energy_cost": 240,
+  "energy_increment": -12
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_pacify_monsters",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：安抚怪物"
+  },
+  "description": "奥术祝福\n使用这个法术会暂时将怪物摆到你的身边。它仅适用于已被充分削弱的怪物，但其效果会随着法术等级的提高而提高。",
+  "message": "你专注，通过你的手引导舒缓的光环。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "NO_FAIL"
+  ],
+  "effect": "charm_monster",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "difficulty": 70,
+  "skill": "magic",
+  "max_level": 20,
+  "min_damage": 70,
+  "max_damage": 350,
+  "damage_increment": 14,
+  "min_range": 12,
+  "max_range": 24,
+  "range_increment": 0.6,
+  "min_aoe": 0,
+  "max_aoe": 4,
+  "aoe_increment": 0.2,
+  "//": "Duration is balanced as a standard buff spell, despite arguably being a debuff.",
+  "min_duration": 42000,
+  "max_duration": 210000,
+  "duration_increment": 8400,
+  "base_casting_time": 400,
+  "final_casting_time": 200,
+  "casting_time_increment": -10,
+  "base_energy_cost": 480,
+  "final_energy_cost": 240,
+  "energy_increment": -12
+}
+```
+

@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→meteoric_talisman_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：meteoric_talisman_on|http://cdda.aloxaf.cn/search?q=meteoric_talisman_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "meteoric_talisman_on",
+  "type": "TOOL_ARMOR",
+  "copy-from": "meteoric_talisman",
+  "repairs_like": "meteoric_talisman",
+  "name": {
+    "str": "meteoric talisman (on)",
+    "str_pl": "meteoric talismans (on)"
+  },
+  "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  It is currently activate, insulating you against electrical attacks but also slowing you down a bit.",
+  "turns_per_charge": 15,
+  "revert_to": "meteoric_talisman",
+  "use_action": {
+    "target": "meteoric_talisman",
+    "msg": "The insulated feeling fades as the talisman deactivates.",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "TRADER_AVOID",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "meteoric_talisman_on",
+  "type": "TOOL_ARMOR",
+  "copy-from": "meteoric_talisman",
+  "repairs_like": "meteoric_talisman",
+  "name": {
+    "str": "流星护身符（激活）",
+    "str_pl": "流星护身符（激活）"
+  },
+  "description": "一种华丽的项链，有一个类似圆形盾牌的小饰物，由坚硬的彩虹色金属制成。它目前处于激活状态，使你免受电攻击，但也会使你的速度减慢一点。",
+  "turns_per_charge": 15,
+  "revert_to": "meteoric_talisman",
+  "use_action": {
+    "target": "meteoric_talisman",
+    "msg": "当护身符失效时，绝缘的感觉逐渐消失。",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "TRADER_AVOID",
+      "NO_TAKEOFF"
+    ]
+  }
+}
+```
+

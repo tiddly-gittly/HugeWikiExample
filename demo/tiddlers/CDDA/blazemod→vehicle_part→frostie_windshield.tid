@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→frostie_windshield
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：frostie_windshield|http://cdda.aloxaf.cn/search?q=frostie_windshield]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "frostie_windshield",
+  "type": "vehicle_part",
+  "name": {
+    "str": "icy windshield"
+  },
+  "item": "frostie",
+  "location": "center",
+  "symbol": "\"",
+  "broken_symbol": "0",
+  "color": "light_blue",
+  "broken_color": "light_blue",
+  "durability": 500,
+  "damage_modifier": 80,
+  "folded_volume": "1000 ml",
+  "breaks_into": [
+    {
+      "item": "frostiegrow"
+    }
+  ],
+  "description": "A living blob, existing in a super-cooled state.  It is transparent, and can be used to see out of the vehicle.",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "OVER",
+    "WINDSHIELD",
+    "OBSTACLE",
+    "WINDOW"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "frostie_windshield",
+  "type": "vehicle_part",
+  "name": {
+    "str": "变形怪冰川挡风玻璃"
+  },
+  "item": "frostie",
+  "location": "center",
+  "symbol": "\"",
+  "broken_symbol": "0",
+  "color": "light_blue",
+  "broken_color": "light_blue",
+  "durability": 500,
+  "damage_modifier": 80,
+  "folded_volume": "1000 ml",
+  "breaks_into": [
+    {
+      "item": "frostiegrow"
+    }
+  ],
+  "description": "一只活的处于极寒状态的变形怪变成的载具部件。它全身透明，能够透过它看到车外。",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "OVER",
+    "WINDSHIELD",
+    "OBSTACLE",
+    "WINDOW"
+  ]
+}
+```
+

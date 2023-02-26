@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→mutation→TSUCHIGUMO_SPECIES
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TSUCHIGUMO_SPECIES|http://cdda.aloxaf.cn/search?q=TSUCHIGUMO_SPECIES]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TSUCHIGUMO_SPECIES",
+  "type": "mutation",
+  "name": "Tsuchigumo (human form)",
+  "description": "You're a spider youkai originating from caves and dark places in the Earth.  Currently, you're posing as a human.  Activate the mutation to switch forms.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "active": true,
+  "armor": [
+    {
+      "parts": "ALL",
+      "acid": 6
+    }
+  ],
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "mutations": [
+        "WEB_WALKER"
+      ]
+    }
+  ],
+  "transform": {
+    "target": "TSUCHIGUMO_SPECIES_active",
+    "active": false,
+    "moves": 100
+  },
+  "flags": [
+    "BIO_IMMUNE",
+    "NO_DISEASE",
+    "PARAIMMUNE"
+  ],
+  "//": "Also, add some kind of social bonus for enemies with the YOUKAI trait or plus ARACHNID. In fact I should probably check all social interactions of Youkai in general at some point",
+  "//2": "This needs some sort of small bonus over the active form below, so she has a reason to switch forms at all"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TSUCHIGUMO_SPECIES",
+  "type": "mutation",
+  "name": "Tsuchigumo (human form)",
+  "description": "You're a spider youkai originating from caves and dark places in the Earth.  Currently, you're posing as a human.  Activate the mutation to switch forms.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "active": true,
+  "armor": [
+    {
+      "parts": "ALL",
+      "acid": 6
+    }
+  ],
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "mutations": [
+        "WEB_WALKER"
+      ]
+    }
+  ],
+  "transform": {
+    "target": "TSUCHIGUMO_SPECIES_active",
+    "active": false,
+    "moves": 100
+  },
+  "flags": [
+    "BIO_IMMUNE",
+    "NO_DISEASE",
+    "PARAIMMUNE"
+  ],
+  "//": "Also, add some kind of social bonus for enemies with the YOUKAI trait or plus ARACHNID. In fact I should probably check all social interactions of Youkai in general at some point",
+  "//2": "This needs some sort of small bonus over the active form below, so she has a reason to switch forms at all"
+}
+```
+

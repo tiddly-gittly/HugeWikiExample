@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_vector_haze
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_vector_haze|http://cdda.aloxaf.cn/search?q=fd_vector_haze]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_vector_haze",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "hazy cloud",
+      "sym": ".",
+      "color": "cyan",
+      "dangerous": true,
+      "light_emitted": 1,
+      "translucency": 1,
+      "effects": [
+        {
+          "effect_id": "vector_infect",
+          "body_part": "torso",
+          "min_duration": "5 seconds",
+          "max_duration": "15 seconds"
+        }
+      ]
+    },
+    {
+      "translucency": 2,
+      "name": "vector haze"
+    },
+    {
+      "name": "thick vector haze",
+      "transparent": false,
+      "color": "light_blue",
+      "light_emitted": 2,
+      "translucency": 3,
+      "effects": [
+        {
+          "effect_id": "vector_infect",
+          "body_part": "torso",
+          "min_duration": "15 seconds",
+          "max_duration": "30 seconds"
+        }
+      ]
+    }
+  ],
+  "decay_amount_factor": 20,
+  "gas_absorption_factor": 10,
+  "percent_spread": 10,
+  "outdoor_age_speedup": "10 turns",
+  "dirty_transparency_cache": true,
+  "has_fume": true,
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        15
+      ]
+    ]
+  },
+  "priority": 7,
+  "half_life": "4 minutes",
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_vector_haze",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "hazy cloud",
+      "sym": ".",
+      "color": "cyan",
+      "dangerous": true,
+      "light_emitted": 1,
+      "translucency": 1,
+      "effects": [
+        {
+          "effect_id": "vector_infect",
+          "body_part": "torso",
+          "min_duration": "5 seconds",
+          "max_duration": "15 seconds"
+        }
+      ]
+    },
+    {
+      "translucency": 2,
+      "name": "vector haze"
+    },
+    {
+      "name": "thick vector haze",
+      "transparent": false,
+      "color": "light_blue",
+      "light_emitted": 2,
+      "translucency": 3,
+      "effects": [
+        {
+          "effect_id": "vector_infect",
+          "body_part": "torso",
+          "min_duration": "15 seconds",
+          "max_duration": "30 seconds"
+        }
+      ]
+    }
+  ],
+  "decay_amount_factor": 20,
+  "gas_absorption_factor": 10,
+  "percent_spread": 10,
+  "outdoor_age_speedup": "10 turns",
+  "dirty_transparency_cache": true,
+  "has_fume": true,
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        15
+      ]
+    ]
+  },
+  "priority": 7,
+  "half_life": "4 minutes",
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true
+}
+```
+

@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_FAIL_OPTIONS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_FAIL_OPTIONS|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_FAIL_OPTIONS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_FAIL_OPTIONS",
+  "dynamic_line": "There are others, perhaps in time they will come here.  If you were to go forth, foster our faith, we may yet be able to find someone suitable.  I will reward you as best as I can, if you are willing to leave the blade in my care.",
+  "responses": [
+    {
+      "text": "Very well then.  Here you go.",
+      "condition": {
+        "u_has_item": "veilblade"
+      },
+      "effect": [
+        {
+          "u_sell_item": "veilblade"
+        },
+        {
+          "u_lose_effect": "hermit_stage_3_backdoor"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "I don't have it at the moment, but I can bring it back to you another time.",
+      "condition": {
+        "not": {
+          "u_has_item": "veilblade"
+        }
+      },
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "I will find another solution.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_FAIL_OPTIONS",
+  "dynamic_line": "还有其他人，也许他们迟早会来这里的。如果你能走出去，培养我们的信仰，我们也许还能找到合适的人选。如果你愿意把刀锋交给我，我会尽我所能报答你。",
+  "responses": [
+    {
+      "text": "那好吧。干得好。",
+      "condition": {
+        "u_has_item": "veilblade"
+      },
+      "effect": [
+        {
+          "u_sell_item": "veilblade"
+        },
+        {
+          "u_lose_effect": "hermit_stage_3_backdoor"
+        }
+      ],
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "我现在没有，但我可以改天再给你拿回来。",
+      "condition": {
+        "not": {
+          "u_has_item": "veilblade"
+        }
+      },
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "我会找到另一个解决办法。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

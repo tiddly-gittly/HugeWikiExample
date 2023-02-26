@@ -1,0 +1,59 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_BACKDOOR_DANGER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_BACKDOOR_DANGER|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_BACKDOOR_DANGER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_DANGER",
+  "dynamic_line": "You are faithful to all the gods, young one.  You will see that this relic, if used with care, is safe now that the damage to it has been healed.  We are not enemies, Hunter.  I will trust you to do the right thing.",
+  "responses": [
+    {
+      "text": "We shall see then, Keeper.",
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[ATTACK] I cannot allow this to continue.  It must be destroyed.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_DANGER",
+  "dynamic_line": "你对所有的神都很忠诚，年轻人。你会发现，这件文物，如果小心使用，是安全的，因为它的损伤已经愈合。我们不是敌人，亨特。我相信你会做正确的事。",
+  "responses": [
+    {
+      "text": "到时候我们会看到的，守护者。",
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "[攻击]我不能让这种情况继续下去。它必须被摧毁。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

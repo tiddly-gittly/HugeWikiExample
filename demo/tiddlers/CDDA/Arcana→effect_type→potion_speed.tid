@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→potion_speed
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：potion_speed|http://cdda.aloxaf.cn/search?q=potion_speed]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "potion_speed",
+  "name": [
+    "Speedy"
+  ],
+  "desc": [
+    "Your heart feels like it's beating dangerously fast, you can't even think about rest."
+  ],
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "remove_message": "Your heartbeat slows back down to a normal pace.",
+  "//": "Hinders relaxing, but paralysis and similar effects are too strong to prevent.",
+  "removes_effects": [
+    "relax_gas",
+    "lack_sleep",
+    "sleep"
+  ],
+  "decay_messages": [
+    [
+      "The quickening effect of your potion is starting to fade.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "30 m",
+  "max_intensity": 30,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "str_mod": [
+      -2,
+      -1
+    ],
+    "dex_mod": [
+      2
+    ],
+    "int_mod": [
+      -2,
+      -1
+    ],
+    "per_mod": [
+      2
+    ],
+    "speed_mod": [
+      50
+    ],
+    "stamina_min": [
+      -25
+    ],
+    "stamina_tick": [
+      30
+    ],
+    "stamina_chance": [
+      6,
+      12
+    ],
+    "fatigue_min": [
+      -1
+    ],
+    "fatigue_chance": [
+      12
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "potion_speed",
+  "name": [
+    "迅捷"
+  ],
+  "desc": [
+    "你感觉你的心脏跳动的速度快得十分危险，你甚至不能考虑休息。"
+  ],
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "remove_message": "你的心跳减慢到正常速度。",
+  "//": "Hinders relaxing, but paralysis and similar effects are too strong to prevent.",
+  "removes_effects": [
+    "relax_gas",
+    "lack_sleep",
+    "sleep"
+  ],
+  "decay_messages": [
+    [
+      "你的药剂的加速效果开始消退了。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "30 m",
+  "max_intensity": 30,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "str_mod": [
+      -2,
+      -1
+    ],
+    "dex_mod": [
+      2
+    ],
+    "int_mod": [
+      -2,
+      -1
+    ],
+    "per_mod": [
+      2
+    ],
+    "speed_mod": [
+      50
+    ],
+    "stamina_min": [
+      -25
+    ],
+    "stamina_tick": [
+      30
+    ],
+    "stamina_chance": [
+      6,
+      12
+    ],
+    "fatigue_min": [
+      -1
+    ],
+    "fatigue_chance": [
+      12
+    ]
+  }
+}
+```
+

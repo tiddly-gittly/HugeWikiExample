@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_LICKER_NOTOK
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_LICKER_NOTOK|http://cdda.aloxaf.cn/search?q=SECRO_LICKER_NOTOK]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_LICKER_NOTOK",
+  "name": {
+    "str": "Malformed Tongue"
+  },
+  "points": -6,
+  "visibility": 6,
+  "ugliness": 10,
+  "valid": false,
+  "description": "Your tongue has deformed into a large, unpleasant tendril-like flesh strand. It greatly hampers your breathing, reducing your stamina by 30% and is useless when it comes to sensing nearby creatures.",
+  "types": [
+    "MUZZLE"
+  ],
+  "prereqs": [
+    "SECRO_LICKER_ATK",
+    "SECRO_LICKER_DEF"
+  ],
+  "social_modifiers": {
+    "persuade": -15,
+    "lie": -15
+  },
+  "cardio_multiplier": 0.7,
+  "attacks": [
+    {
+      "attack_text_u": "You lick %s",
+      "attack_text_npc": "%1$s licks %2$s",
+      "body_part": "mouth",
+      "chance": 75,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.5
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_LICKER_NOTOK",
+  "name": {
+    "str": "畸形舌头"
+  },
+  "points": -6,
+  "visibility": 6,
+  "ugliness": 10,
+  "valid": false,
+  "description": "你的舌头变成了一条大卷须。它极大地阻碍了你的呼吸，降低了你30%的耐力，而且当你感觉到附近的生物时，它是无用的。",
+  "types": [
+    "MUZZLE"
+  ],
+  "prereqs": [
+    "SECRO_LICKER_ATK",
+    "SECRO_LICKER_DEF"
+  ],
+  "social_modifiers": {
+    "persuade": -15,
+    "lie": -15
+  },
+  "cardio_multiplier": 0.7,
+  "attacks": [
+    {
+      "attack_text_u": "You lick %s",
+      "attack_text_npc": "%1$s licks %2$s",
+      "body_part": "mouth",
+      "chance": 75,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.5
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

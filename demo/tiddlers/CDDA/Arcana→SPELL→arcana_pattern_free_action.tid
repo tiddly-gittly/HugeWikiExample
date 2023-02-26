@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_pattern_free_action
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_pattern_free_action|http://cdda.aloxaf.cn/search?q=arcana_pattern_free_action]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_pattern_scrolls.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_free_action",
+  "name": {
+    "str": "Pattern: Free Action"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_FREEACTION",
+  "description": "This grants a specific spell mutation.",
+  "message": "You gaze deep into the strange patterns, intricate lines giving a three-dimensional impression…",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_free_action",
+  "name": {
+    "str": "图案：挣脱束缚"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_FREEACTION",
+  "description": "这赋予了特定的咒语突变。",
+  "message": "你凝视着奇怪的图案，复杂的线条，给人一种三维的印象……",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+

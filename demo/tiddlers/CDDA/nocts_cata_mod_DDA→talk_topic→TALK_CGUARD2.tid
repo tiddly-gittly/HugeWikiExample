@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_CGUARD2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CGUARD2|http://cdda.aloxaf.cn/search?q=TALK_CGUARD2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_CGUARD2.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CGUARD2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "Hello there, hotshot, try not to break anything, ok?",
+    "no": "Welcome.  Try not to cause any trouble and things will be just fine."
+  },
+  "responses": [
+    {
+      "text": "What is this place?",
+      "topic": "TALK_CGUARD2_ASK_PLACE"
+    },
+    {
+      "text": "Can I have some directions?",
+      "topic": "TALK_CGUARD2_DIR"
+    },
+    {
+      "text": "How are things here?",
+      "topic": "TALK_CGUARD2_ASK_HOWRU"
+    },
+    {
+      "text": "Can I stay here?",
+      "topic": "TALK_CGUARD2_ASK_STAY"
+    },
+    {
+      "text": "Bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CGUARD2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "欢迎光临我们的寒舍，请别弄坏东西，好吗？",
+    "no": "欢迎光临。别惹麻烦，你会没事的。"
+  },
+  "responses": [
+    {
+      "text": "这是哪里？",
+      "topic": "TALK_CGUARD2_ASK_PLACE"
+    },
+    {
+      "text": "能告诉我怎么走吗？",
+      "topic": "TALK_CGUARD2_DIR"
+    },
+    {
+      "text": "这里怎么样？",
+      "topic": "TALK_CGUARD2_ASK_HOWRU"
+    },
+    {
+      "text": "我能待在这儿吗？",
+      "topic": "TALK_CGUARD2_ASK_STAY"
+    },
+    {
+      "text": "再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

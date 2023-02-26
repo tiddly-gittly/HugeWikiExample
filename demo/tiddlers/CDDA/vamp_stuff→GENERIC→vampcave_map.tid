@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: GENERIC vamp_stuff
+title: vamp_stuff→GENERIC→vampcave_map
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：vampcave_map|http://cdda.aloxaf.cn/search?q=vampcave_map]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Locations/-Essentials/v_locationmap.json
+
+
+!! 原文
+
+```json
+{
+  "id": "vampcave_map",
+  "type": "GENERIC",
+  "category": "maps",
+  "name": {
+    "str": "cove map"
+  },
+  "description": "This odd, hand drawn map only points the vampire cove. There's no actual road going there, but it's an enough information for you.",
+  "weight": "50 g",
+  "volume": "250 ml",
+  "price": "0 cent",
+  "to_hit": -1,
+  "material": [
+    "paper"
+  ],
+  "symbol": "#",
+  "color": "red",
+  "use_action": {
+    "type": "reveal_map",
+    "radius": 180,
+    "terrain": [
+      "vampcave_entrance"
+    ],
+    "message": "You add the Vampire Cove to your map."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "vampcave_map",
+  "type": "GENERIC",
+  "category": "maps",
+  "name": {
+    "str": "海湾地图"
+  },
+  "description": "这张奇怪的手绘地图只指向吸血鬼湾。那里没有真正的道路，但这对你来说已经足够了。",
+  "weight": "50 g",
+  "volume": "250 ml",
+  "price": "0 cent",
+  "to_hit": -1,
+  "material": [
+    "paper"
+  ],
+  "symbol": "#",
+  "color": "red",
+  "use_action": {
+    "type": "reveal_map",
+    "radius": 180,
+    "terrain": [
+      "vampcave_entrance"
+    ],
+    "message": "你把吸血鬼湾的地址添加到地图中。"
+  }
+}
+```
+

@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→lightning_blast
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lightning_blast|http://cdda.aloxaf.cn/search?q=lightning_blast]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/stormshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "lightning_blast",
+  "type": "SPELL",
+  "name": {
+    "str": "Lightning Blast"
+  },
+  "description": "You fire a small concentrated ball of lightning at the target.  The electricity diffuses quickly, so it doesn't do much damage, but you're able to fire off several quick ones in a row.",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "LOUD",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "min_aoe": 1,
+  "max_aoe": 3,
+  "aoe_increment": 0.05,
+  "max_level": 50,
+  "min_damage": 4,
+  "max_damage": 150,
+  "min_range": 6,
+  "max_range": 18,
+  "range_increment": 0.2,
+  "damage_increment": 3,
+  "difficulty": 10,
+  "spell_class": "STORMSHAPER",
+  "energy_source": "MANA",
+  "base_casting_time": 120,
+  "final_casting_time": 25,
+  "casting_time_increment": -5,
+  "base_energy_cost": 55,
+  "damage_type": "electric",
+  "sound_description": "a crackle",
+  "shape": "blast",
+  "effect": "attack"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "lightning_blast",
+  "type": "SPELL",
+  "name": {
+    "str": "闪电冲击"
+  },
+  "description": "你向目标发射一个小闪电球。电流扩散很快，所以不会造成太大的伤害，但你可以连续发射几个。",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "LOUD",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "min_aoe": 1,
+  "max_aoe": 3,
+  "aoe_increment": 0.05,
+  "max_level": 50,
+  "min_damage": 4,
+  "max_damage": 150,
+  "min_range": 6,
+  "max_range": 18,
+  "range_increment": 0.2,
+  "damage_increment": 3,
+  "difficulty": 10,
+  "spell_class": "STORMSHAPER",
+  "energy_source": "MANA",
+  "base_casting_time": 120,
+  "final_casting_time": 25,
+  "casting_time_increment": -5,
+  "base_energy_cost": 55,
+  "damage_type": "electric",
+  "sound_description": "a crackle",
+  "shape": "blast",
+  "effect": "attack"
+}
+```
+

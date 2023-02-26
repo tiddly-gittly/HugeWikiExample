@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_insect_parasiteworm_move
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_parasiteworm_move|http://cdda.aloxaf.cn/search?q=mon_insect_parasiteworm_move]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/ZombieParasiteWorms.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_insect_parasiteworm_move",
+  "type": "MONSTER",
+  "name": {
+    "str": "parasitic swarm"
+  },
+  "description": "Slithering parasite worms of unknown origin, still coated in fresh zombie blood.",
+  "default_faction": "zombie",
+  "species": [
+    "INSECT",
+    "ZOMBIE"
+  ],
+  "volume": "750 ml",
+  "weight": "1000 g",
+  "hp": 10,
+  "speed": 75,
+  "material": [
+    "iflesh"
+  ],
+  "bleed_rate": 0,
+  "symbol": "~",
+  "color": "yellow_green",
+  "harvest": "exempt",
+  "emit_fields": [
+    "emit_grubbyzed_worm_limit"
+  ],
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "attack_effs": [
+    {
+      "id": "parasiteworm_move",
+      "duration": 300,
+      "chance": 25
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "HARDTOSHOOT",
+    "POISON",
+    "NO_BREATHE",
+    "PATH_AVOID_DANGER_1"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_insect_parasiteworm_move",
+  "type": "MONSTER",
+  "name": {
+    "str": "血腥寄生群"
+  },
+  "description": "来源不明的蠕动寄生蠕虫，仍覆盖着新鲜的丧尸血液。不管这些东西是什么，你可能需要马上处理掉。",
+  "default_faction": "zombie",
+  "species": [
+    "INSECT",
+    "ZOMBIE"
+  ],
+  "volume": "750 ml",
+  "weight": "1000 g",
+  "hp": 10,
+  "speed": 75,
+  "material": [
+    "iflesh"
+  ],
+  "bleed_rate": 0,
+  "symbol": "~",
+  "color": "yellow_green",
+  "harvest": "exempt",
+  "emit_fields": [
+    "emit_grubbyzed_worm_limit"
+  ],
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "attack_effs": [
+    {
+      "id": "parasiteworm_move",
+      "duration": 300,
+      "chance": 25
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "HARDTOSHOOT",
+    "POISON",
+    "NO_BREATHE",
+    "PATH_AVOID_DANGER_1"
+  ]
+}
+```
+

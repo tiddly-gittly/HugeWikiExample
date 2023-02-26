@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: TOOL Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→TOOL→gap_generator2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gap_generator2|http://cdda.aloxaf.cn/search?q=gap_generator2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/magic/gap_generator.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gap_generator2",
+  "type": "TOOL",
+  "name": {
+    "str": "gap generator",
+    "str_pl": "gap generators"
+  },
+  "description": "A… black blob that seems to bend light around it.  You feel weirder by having it around.",
+  "volume": "900 ml",
+  "weight": "900 g",
+  "longest_side": "6 cm",
+  "price_postapoc": 25000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "none",
+    "length": "hand",
+    "surface": "any"
+  },
+  "bashing": 1,
+  "material": [
+    "steel"
+  ],
+  "symbol": "/",
+  "looks_like": "slime_scrap",
+  "color": "black",
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 3
+      }
+    }
+  ],
+  "relic_data": {
+    "charge_info": {
+      "regenerate_ammo": true,
+      "recharge_type": "periodic",
+      "time": "15 m"
+    }
+  },
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "gap_move",
+      "no_fail": true,
+      "level": 1
+    },
+    {
+      "target": "gap_generator",
+      "type": "transform",
+      "msg": "You turn the gap generator outside in.",
+      "menu_text": "Turn outside in",
+      "active": true
+    }
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NO_RELOAD",
+    "NO_UNLOAD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gap_generator2",
+  "type": "TOOL",
+  "name": {
+    "str": "gap generator",
+    "str_pl": "gap generators"
+  },
+  "description": "A… black blob that seems to bend light around it.  You feel weirder by having it around.",
+  "volume": "900 ml",
+  "weight": "900 g",
+  "longest_side": "6 cm",
+  "price_postapoc": 25000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "none",
+    "length": "hand",
+    "surface": "any"
+  },
+  "bashing": 1,
+  "material": [
+    "steel"
+  ],
+  "symbol": "/",
+  "looks_like": "slime_scrap",
+  "color": "black",
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 3
+      }
+    }
+  ],
+  "relic_data": {
+    "charge_info": {
+      "regenerate_ammo": true,
+      "recharge_type": "periodic",
+      "time": "15 m"
+    }
+  },
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "gap_move",
+      "no_fail": true,
+      "level": 1
+    },
+    {
+      "target": "gap_generator",
+      "type": "transform",
+      "msg": "You turn the gap generator outside in.",
+      "menu_text": "Turn outside in",
+      "active": true
+    }
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NO_RELOAD",
+    "NO_UNLOAD"
+  ]
+}
+```
+

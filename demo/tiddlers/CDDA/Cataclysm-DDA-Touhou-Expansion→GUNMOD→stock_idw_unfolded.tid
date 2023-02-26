@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: GUNMOD Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUNMOD→stock_idw_unfolded
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：stock_idw_unfolded|http://cdda.aloxaf.cn/search?q=stock_idw_unfolded]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gunmod/thex_stock.json
+
+
+!! 原文
+
+```json
+{
+  "id": "stock_idw_unfolded",
+  "type": "GUNMOD",
+  "name": {
+    "str": "IDW stock"
+  },
+  "description": "A retractable stock, tailored for the IDW but also usable for other small weapons.  Due the IDW's length, or rather its diminute, this stock increases the overall handling.",
+  "//": "This should give the following bonuses to the IDW and reduced bonuses to other weapons",
+  "volume": "250 ml",
+  "weight": "250 g",
+  "integral_volume": "200 ml",
+  "integral_weight": "0 g",
+  "price": 30000,
+  "price_postapoc": 250,
+  "material": [
+    "steel"
+  ],
+  "symbol": ":",
+  "color": "dark_gray",
+  "aim_speed_modifier": 4,
+  "dispersion_modifier": -10,
+  "handling_modifier": 2,
+  "install_time": "15 m",
+  "location": "stock",
+  "mod_targets": [
+    "pistol",
+    "smg"
+  ],
+  "min_skills": [
+    [
+      "weapon",
+      2
+    ]
+  ],
+  "use_action": {
+    "target": "stock_idw_folded",
+    "type": "transform",
+    "msg": "You unfold the stock.",
+    "menu_text": "Unfold",
+    "moves": 120
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "stock_idw_unfolded",
+  "type": "GUNMOD",
+  "name": {
+    "str": "IDW stock"
+  },
+  "description": "A retractable stock, tailored for the IDW but also usable for other small weapons.  Due the IDW's length, or rather its diminute, this stock increases the overall handling.",
+  "//": "This should give the following bonuses to the IDW and reduced bonuses to other weapons",
+  "volume": "250 ml",
+  "weight": "250 g",
+  "integral_volume": "200 ml",
+  "integral_weight": "0 g",
+  "price": 30000,
+  "price_postapoc": 250,
+  "material": [
+    "steel"
+  ],
+  "symbol": ":",
+  "color": "dark_gray",
+  "aim_speed_modifier": 4,
+  "dispersion_modifier": -10,
+  "handling_modifier": 2,
+  "install_time": "15 m",
+  "location": "stock",
+  "mod_targets": [
+    "pistol",
+    "smg"
+  ],
+  "min_skills": [
+    [
+      "weapon",
+      2
+    ]
+  ],
+  "use_action": {
+    "target": "stock_idw_folded",
+    "type": "transform",
+    "msg": "You unfold the stock.",
+    "menu_text": "摊开",
+    "moves": 120
+  }
+}
+```
+

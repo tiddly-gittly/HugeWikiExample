@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom
+title: secronom→effect_on_condition→eoc_secro_mon_zombie_gorepit_spawnmorer_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_mon_zombie_gorepit_spawnmorer_check|http://cdda.aloxaf.cn/search?q=eoc_secro_mon_zombie_gorepit_spawnmorer_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_gorepit_spawnmorer_check",
+  "condition": {
+    "or": [
+      {
+        "one_in_chance": 2
+      },
+      {
+        "npc_has_effect": "secro_gorepit_absorb"
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "The ground trembles underneath you!",
+      "type": "bad"
+    },
+    {
+      "u_spawn_monster": "mon_zombie_gorepit_tent",
+      "real_count": 1,
+      "min_radius": 2,
+      "max_radius": 4,
+      "outdoor_only": true
+    },
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_mon_zombie_gorepit_spawnfurthermore_check",
+          "condition": {
+            "not": {
+              "u_has_effect": "eff_zombie_gorepit_spawnmore_stop"
+            }
+          },
+          "effect": [
+            {
+              "u_spawn_monster": "mon_zombie_gorepit_tent",
+              "target_var": {
+                "global_val": "secro_gorepit_spawn"
+              },
+              "real_count": 1,
+              "min_radius": 2,
+              "max_radius": 4,
+              "outdoor_only": true
+            }
+          ]
+        }
+      ],
+      "time_in_future": [
+        "9 seconds",
+        "12 seconds"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_gorepit_spawnmorer_check",
+  "condition": {
+    "or": [
+      {
+        "one_in_chance": 2
+      },
+      {
+        "npc_has_effect": "secro_gorepit_absorb"
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "The ground trembles underneath you！",
+      "type": "bad"
+    },
+    {
+      "u_spawn_monster": "mon_zombie_gorepit_tent",
+      "real_count": 1,
+      "min_radius": 2,
+      "max_radius": 4,
+      "outdoor_only": true
+    },
+    {
+      "queue_eocs": [
+        {
+          "id": "eoc_secro_mon_zombie_gorepit_spawnfurthermore_check",
+          "condition": {
+            "not": {
+              "u_has_effect": "eff_zombie_gorepit_spawnmore_stop"
+            }
+          },
+          "effect": [
+            {
+              "u_spawn_monster": "mon_zombie_gorepit_tent",
+              "target_var": {
+                "global_val": "secro_gorepit_spawn"
+              },
+              "real_count": 1,
+              "min_radius": 2,
+              "max_radius": 4,
+              "outdoor_only": true
+            }
+          ]
+        }
+      ],
+      "time_in_future": [
+        "9 seconds",
+        "12 seconds"
+      ]
+    }
+  ]
+}
+```
+

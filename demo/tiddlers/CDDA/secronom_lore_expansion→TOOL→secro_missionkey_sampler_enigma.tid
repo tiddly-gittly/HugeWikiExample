@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: TOOL secronom_lore_expansion
+title: secronom_lore_expansion→TOOL→secro_missionkey_sampler_enigma
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_missionkey_sampler_enigma|http://cdda.aloxaf.cn/search?q=secro_missionkey_sampler_enigma]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/secro_mission_items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_missionkey_sampler_enigma",
+  "type": "TOOL",
+  "name": {
+    "str": "SS sampler kit - enigma"
+  },
+  "description": "A small, chip-like device with a built-in scanner that checks for \"enigma\" specimens. Activate to scan and obtain a sample from the target.",
+  "weight": "990 g",
+  "volume": "320 ml",
+  "price": 500,
+  "to_hit": -3,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "symbol": ":",
+  "color": "white",
+  "ammo": [
+    "battery"
+  ],
+  "charges_per_use": 50,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "secro_missionkey_sampler_enigma_target",
+    "no_fail": true,
+    "level": 0
+  },
+  "flags": [
+    "NONCONDUCTIVE"
+  ],
+  "pocket_data": [
+    {
+      "magazine_well": "250 ml",
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "light_minus_disposable_cell",
+        "light_disposable_cell",
+        "light_minus_battery_cell",
+        "light_battery_cell",
+        "light_plus_battery_cell",
+        "light_atomic_battery_cell",
+        "light_minus_atomic_battery_cell"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_missionkey_sampler_enigma",
+  "type": "TOOL",
+  "name": {
+    "str": "SS采样器套件-enigma"
+  },
+  "description": "一种类似芯片的小型设备，内置扫描仪，用于检查“谜”标本。激活扫描并从目标获取样本。",
+  "weight": "990 g",
+  "volume": "320 ml",
+  "price": 500,
+  "to_hit": -3,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "symbol": ":",
+  "color": "white",
+  "ammo": [
+    "battery"
+  ],
+  "charges_per_use": 50,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "secro_missionkey_sampler_enigma_target",
+    "no_fail": true,
+    "level": 0
+  },
+  "flags": [
+    "NONCONDUCTIVE"
+  ],
+  "pocket_data": [
+    {
+      "magazine_well": "250 ml",
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "light_minus_disposable_cell",
+        "light_disposable_cell",
+        "light_minus_battery_cell",
+        "light_battery_cell",
+        "light_plus_battery_cell",
+        "light_atomic_battery_cell",
+        "light_minus_atomic_battery_cell"
+      ]
+    }
+  ]
+}
+```
+

@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_eusarcana
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_eusarcana|http://cdda.aloxaf.cn/search?q=mon_eusarcana]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_arthropod.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_eusarcana",
+  "type": "MONSTER",
+  "name": {
+    "str": "eusarcana",
+    "str_pl": "eusarcana"
+  },
+  "description": "A huge lobster-looking arachnid with a bunch of barbed claws and a very menacing spiked tail.  The torax seems fat, with a small head having a pair of compound eyes on top.  In contrast with other Eurypterids, the legs are relatively shorter.  The tail features a stinger, like your average land scorpion, only about ten times bigger.",
+  "volume": "15000 ml",
+  "weight": "17500 g",
+  "default_faction": "touhou_arthropod_aquatic_medium",
+  "bodytype": "crab",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "ARTHROPOD"
+  ],
+  "harvest": "arthropod_big_harvest",
+  "hp": 35,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "color": "light_gray",
+  "symbol": "ᛉ",
+  "aggression": 20,
+  "morale": 25,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_stab": 2,
+  "vision_day": 35,
+  "vision_night": 15,
+  "path_settings": {
+    "max_dist": 8
+  },
+  "reproduction": {
+    "baby_egg": "egg_eurypterid",
+    "baby_count": 8,
+    "baby_timer": 12
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      35
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "AQUATIC",
+    "ARTHROPOD_BLOOD",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Based on Eusarcana scorpionis. This one's venomous",
+  "//2": "ADD VENOM ATTACK !!!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_eusarcana",
+  "type": "MONSTER",
+  "name": {
+    "str": "eusarcana",
+    "str_pl": "eusarcana"
+  },
+  "description": "A huge lobster-looking arachnid with a bunch of barbed claws and a very menacing spiked tail.  The torax seems fat, with a small head having a pair of compound eyes on top.  In contrast with other Eurypterids, the legs are relatively shorter.  The tail features a stinger, like your average land scorpion, only about ten times bigger.",
+  "volume": "15000 ml",
+  "weight": "17500 g",
+  "default_faction": "touhou_arthropod_aquatic_medium",
+  "bodytype": "crab",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "ARTHROPOD"
+  ],
+  "harvest": "arthropod_big_harvest",
+  "hp": 35,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "color": "light_gray",
+  "symbol": "ᛉ",
+  "aggression": 20,
+  "morale": 25,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_stab": 2,
+  "vision_day": 35,
+  "vision_night": 15,
+  "path_settings": {
+    "max_dist": 8
+  },
+  "reproduction": {
+    "baby_egg": "egg_eurypterid",
+    "baby_count": 8,
+    "baby_timer": 12
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      35
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "AQUATIC",
+    "ARTHROPOD_BLOOD",
+    "SEES",
+    "SMELLS",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ],
+  "//": "Based on Eusarcana scorpionis. This one's venomous",
+  "//2": "ADD VENOM ATTACK !!!"
+}
+```
+

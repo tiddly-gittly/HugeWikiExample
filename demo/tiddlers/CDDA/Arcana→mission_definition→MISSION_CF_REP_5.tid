@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_REP_5
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_REP_5|http://cdda.aloxaf.cn/search?q=MISSION_CF_REP_5]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_REP_5",
+  "type": "mission_definition",
+  "name": {
+    "str": "Bring back research from the Keepers of The Oath"
+  },
+  "description": "Find a suspected remnant of the Keepers, who may have research and intel to bring back to Sofia.  Sofia advised that the information being sought might be preserved on something more durable than a book.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 4,
+  "value": 25000,
+  "has_generic_rewards": false,
+  "item": "offering_mission_notes",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_REP_6",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "arcana_hermitage_1",
+      "om_special": "Hermit Cabin",
+      "reveal_radius": 1,
+      "search_range": 360
+    },
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_2",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_5"
+            ],
+            "x": 2,
+            "y": 3
+          }
+        ]
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Odin, guide my hand…",
+    "offer": "Now that we have a few more helping hands around here, we can dedicate more time to following up on some leads Johnathan's notes have provided us.  They point to evidence of a survivor among the Keepers of The Oath, who had close contact with members of their high priesthood.  I would like you to find out anything you can from them, any research or assistance they may be able to provide.",
+    "accepted": "Thank you, I'll show you where he is suspected to be.  My main interest is in any research notes that may have survived, anything beyond the regular content of their holy text.  Knowing the Keepers, any new research will likely first be preserved in a format more permanent than paper.  If they still have any other contacts, any other assistance they can offer, see what can be done.  Now is the time to make amends and fight together, I hope.",
+    "rejected": "I see.  Well, if you'd like, just ask me when you're ready.  I worry that we may lose this lead before long.",
+    "advice": "I don't know for certain how this person will react to being asked to provide information to the Cleansing Flame.  Johnathan might be able to provide more information, but I suspect he would rather see the Keepers extinguished.  As for what to look for, they used to preserve sacred tenets and writing in stone carvings, clay tablets, or such for posterity before they started hand-copying and printing their works.  Even more traditionalist than us in some ways, otherworldly god or not…",
+    "inquire": "Have you found what we seek?",
+    "success": "Thank you.  I hope that things went well in your pursuit of this knowledge, without undue violence.  This is a peculiar thing indeed, but it will enable some valuable research.  It seems to primarily concern some of the more dangerous interlopers threatening what's left of humanity, I'm hopeful this will bear fruit.",
+    "success_lie": "What do you think you're trying to pull?",
+    "failure": "But how…"
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_var": "sofia_mission_5_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 10
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_2",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_6"
+            ],
+            "x": 2,
+            "y": 3
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_REP_5",
+  "type": "mission_definition",
+  "name": {
+    "str": "从守誓者那里带回研究结果"
+  },
+  "description": "找到一个疑似的饲养员残余，他们可能有研究和情报带回索非亚。索菲亚建议说，正在寻找的信息可以保存在比书更耐用的东西上。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 4,
+  "value": 25000,
+  "has_generic_rewards": false,
+  "item": "offering_mission_notes",
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_REP_6",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "arcana_hermitage_1",
+      "om_special": "Hermit Cabin",
+      "reveal_radius": 1,
+      "search_range": 360
+    },
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_2",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_5"
+            ],
+            "x": 2,
+            "y": 3
+          }
+        ]
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "奥丁，牵着我的手…",
+    "offer": "现在我们有更多的帮手在这里，我们可以花更多的时间来跟进Johnathan的笔记提供给我们的一些线索。他们指出，在守誓者中有一名幸存者，与他们的高级祭司有密切接触。我希望你能从他们那里找到任何你能得到的东西，他们可能提供的任何研究或帮助。",
+    "accepted": "谢谢，我带你去看看他被怀疑在哪里。我的主要兴趣是任何可能幸存下来的研究笔记，任何超出其神圣文本常规内容的东西。知道了保管人，任何新的研究都可能首先以比纸张更持久的形式保存下来。如果他们还有其他联系方式，他们可以提供任何其他帮助，看看能做些什么。我希望，现在是弥补和一起战斗的时候了。",
+    "rejected": "我懂了。好吧，如果你愿意的话，你准备好了就问我。我担心不久我们就会失去这一领先优势。",
+    "advice": "我不确定这个人在被要求向净化圣火提供信息时会有什么反应。约翰纳森也许能提供更多的信息，但我怀疑他宁愿看到守门员被扑灭。至于要找什么，他们在开始手工临摹和印刷作品之前，都会把神圣的信条保存下来，并用石刻、泥版等书写给后人。在某些方面甚至比我们更传统，不管是不是神…",
+    "inquire": "你找到我们要找的东西了吗？",
+    "success": "非常感谢。我希望你在追求这个知识的过程中一切顺利，没有过度的暴力。这确实是一件奇怪的事，但它将使一些有价值的研究成为可能。它似乎主要是关于一些更危险的闯入者威胁人类的残余，我希望这将产生成果。",
+    "success_lie": "你觉得你想拉什么？",
+    "failure": "但是如何…"
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_var": "sofia_mission_5_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 10
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_2",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_6"
+            ],
+            "x": 2,
+            "y": 3
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+

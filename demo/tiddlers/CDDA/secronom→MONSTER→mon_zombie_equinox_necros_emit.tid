@@ -1,0 +1,163 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_equinox_necros_emit
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_equinox_necros_emit|http://cdda.aloxaf.cn/search?q=mon_zombie_equinox_necros_emit]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_equinox_necros_emit",
+  "type": "MONSTER",
+  "name": {
+    "str": "necros pollutant"
+  },
+  "description": "A mutated lump of necrotic flesh, horribly twisted into a spindy creature. Larger in its size, its excessive production of toxin has become its source in emitting a condensed fog, yet a cause to its unstable body.",
+  "default_faction": "zombie",
+  "bodytype": "spider",
+  "diff": 20,
+  "species": [
+    "ZOMBIE",
+    "ABERRATION"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 25,
+  "speed": 50,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "ⓧ",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_equinox_necros_emit_weak_para",
+    "emit_equinox_necros_emit_mode_para",
+    "emit_equinox_necros_emit_stro_para"
+  ],
+  "attack_effs": [
+    {
+      "id": "secro_necros_para",
+      "duration": 30,
+      "bp": "torso"
+    }
+  ],
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "vision_day": 24,
+  "vision_night": 3,
+  "dodge": 1,
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "CLIMBS",
+    "WARM",
+    "STUMBLES",
+    "NOHEAD",
+    "POISON",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_equinox_necros_emit",
+  "type": "MONSTER",
+  "name": {
+    "str": "腐坏污染怪"
+  },
+  "description": "一块变异的坏死的肉，可怕地扭曲成一个多刺的生物。它的体型更大，产生的毒素过多，已经成为它散发浓雾的源头，但同时也是它身体不稳定的原因。",
+  "default_faction": "zombie",
+  "bodytype": "spider",
+  "diff": 20,
+  "species": [
+    "ZOMBIE",
+    "ABERRATION"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 25,
+  "speed": 50,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "ⓧ",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_equinox_necros_emit_weak_para",
+    "emit_equinox_necros_emit_mode_para",
+    "emit_equinox_necros_emit_stro_para"
+  ],
+  "attack_effs": [
+    {
+      "id": "secro_necros_para",
+      "duration": 30,
+      "bp": "torso"
+    }
+  ],
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "vision_day": 24,
+  "vision_night": 3,
+  "dodge": 1,
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "CLIMBS",
+    "WARM",
+    "STUMBLES",
+    "NOHEAD",
+    "POISON",
+    "NO_BREATHE"
+  ]
+}
+```
+

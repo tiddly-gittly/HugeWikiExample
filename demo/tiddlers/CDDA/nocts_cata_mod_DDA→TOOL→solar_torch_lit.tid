@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: TOOL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL→solar_torch_lit
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：solar_torch_lit|http://cdda.aloxaf.cn/search?q=solar_torch_lit]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "solar_torch_lit",
+  "type": "TOOL",
+  "sub": "torch_lit",
+  "symbol": "/",
+  "color": "brown",
+  "looks_like": "torch_lit",
+  "name": {
+    "str": "solar torch (lit)",
+    "str_pl": "solar torches (lit)"
+  },
+  "description": "A mysterious torch that uses the power of the sun (and blob goo) to light itself.  Somehow, the gasoline synthesized goo produces gasoline when in the sun continuously soaking the rag making it \"rechargeable\" in a sense.  It is burning, producing plenty of light until it runs out of fuel.",
+  "material": [
+    "wood"
+  ],
+  "flags": [
+    "FIRE",
+    "LIGHT_310",
+    "CHARGEDIM",
+    "FLAMING",
+    "NO_UNLOAD",
+    "NO_RELOAD"
+  ],
+  "weight": "942 g",
+  "volume": "1 L",
+  "bashing": 8,
+  "to_hit": 1,
+  "ammo": [
+    "gasoline"
+  ],
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "solar_sunny",
+      "time": "10 m",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "watertight": true,
+      "ammo_restriction": {
+        "gasoline": 25
+      }
+    }
+  ],
+  "turns_per_charge": 60,
+  "revert_to": "solar_torch",
+  "revert_msg": "The torch is extinguished.",
+  "use_action": [
+    {
+      "type": "transform",
+      "menu_text": "Extinguish",
+      "msg": "The torch is extinguished.",
+      "target": "solar_torch",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "solar_torch_lit",
+  "type": "TOOL",
+  "sub": "torch_lit",
+  "symbol": "/",
+  "color": "brown",
+  "looks_like": "torch_lit",
+  "name": {
+    "str": "太阳能火把（点燃）",
+    "str_pl": "太阳能火把（点燃）"
+  },
+  "description": "一种利用太阳的能量（和变形怪糊）来点燃的神秘的火把。不知何故，汽油变形怪糊会在阳光下不断产生汽油并浸泡抹布，从某种意义上说，抹布是“可充电的”。正在燃烧，光芒四射直到燃料耗尽。",
+  "material": [
+    "wood"
+  ],
+  "flags": [
+    "FIRE",
+    "LIGHT_310",
+    "CHARGEDIM",
+    "FLAMING",
+    "NO_UNLOAD",
+    "NO_RELOAD"
+  ],
+  "weight": "942 g",
+  "volume": "1 L",
+  "bashing": 8,
+  "to_hit": 1,
+  "ammo": [
+    "gasoline"
+  ],
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "solar_sunny",
+      "time": "10 m",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "watertight": true,
+      "ammo_restriction": {
+        "gasoline": 25
+      }
+    }
+  ],
+  "turns_per_charge": 60,
+  "revert_to": "solar_torch",
+  "revert_msg": "The torch is extinguished.",
+  "use_action": [
+    {
+      "type": "transform",
+      "menu_text": "熄灭",
+      "msg": "火把熄灭了。",
+      "target": "solar_torch",
+      "ammo_scale": 0
+    }
+  ]
+}
+```
+

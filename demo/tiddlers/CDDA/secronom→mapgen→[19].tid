@@ -1,0 +1,684 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[19]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/Flesh/flesh_city.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Hardware Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 375,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "ppppp~~~~~~~~~~~~~~~~~~~",
+      "ppppp###---##++##---###~",
+      "ppppp#b.........v....P#'",
+      "ppppp#b.b.b.r..r.o.o.P#'",
+      "ppppp#b.b.b.c..c.o.o.P#'",
+      "ppppp#..v.........v..P#'",
+      "ppppp#l.lllll..hhhhh.P#'",
+      "ppppp##=##...........P#'",
+      "ppppp#S.&#lll..hhhhhvP#'",
+      "ppppp########++########'",
+      "ppppp#HHHHHHH__HHHHHHH#4",
+      "pVppp#_____T_____T____#'",
+      "ppppp#HHHHHHH__HHHHHHH#'",
+      "ppppp#__T________T____#'",
+      "ppppp#HHHH#HHT_HH#HHHH#'",
+      "pppppwppppppppppppppppw'",
+      "pppppwHHHHHHHppHHHHHHHw'",
+      "ppppp|ppppppppppppppppw'",
+      "ppppp|pppppppppHpHpHpHw'",
+      "pppppw1p2p3pMppHpHpHpHw'",
+      "pppppw1p2p3pMppHpHpHpHw'",
+      "'D'D'w1p2p3pMppHpHpHpHw'",
+      "'''''WWWWWWWWWWWWWWWWWW'",
+      "''''''''''''''''''''''''"
+    ],
+    "terrain": {
+      "1": "t_secro_pavement_flesh",
+      "2": "t_secro_pavement_flesh",
+      "3": "t_secro_pavement_flesh",
+      "4": "t_secro_gutter_downspout_flesh",
+      "#": "t_secro_wall_w_flesh",
+      "'": [
+        "t_secro_grass_flesh",
+        "t_secro_grass_flesh",
+        "t_secro_dirt_flesh"
+      ],
+      "+": "t_secro_door_glass_flesh",
+      "-": "t_secro_wall_g_flesh",
+      ".": "t_secro_floor_flesh",
+      "D": "t_secro_dirt_flesh",
+      "=": "t_secro_door_flesh",
+      "H": "t_secro_pavement_flesh",
+      "M": "t_secro_pavement_flesh",
+      "V": "t_secro_pavement_flesh",
+      "U": "t_secro_pavement_flesh",
+      "W": "t_secro_chainfence_flesh",
+      "_": "t_secro_floor_flesh",
+      "p": "t_secro_pavement_flesh",
+      "r": "t_secro_console_broken_flesh",
+      "w": "t_secro_chainfence_flesh",
+      "|": "t_secro_chaingate_c_flesh",
+      "~": "t_secro_sidewalk_flesh"
+    },
+    "sealed_item": {
+      "1": {
+        "item": {
+          "item": "seed_cabbage"
+        },
+        "furniture": "f_planter_harvest"
+      },
+      "2": {
+        "item": {
+          "item": "seed_tomato"
+        },
+        "furniture": "f_planter_harvest"
+      },
+      "3": {
+        "item": {
+          "item": "seed_zucchini"
+        },
+        "furniture": "f_planter_harvest"
+      },
+      "M": {
+        "item": {
+          "item": "seed_flower"
+        },
+        "furniture": "f_planter_harvest"
+      }
+    },
+    "furniture": {
+      "D": "f_dumpster",
+      "H": "f_rack",
+      "P": "f_rack",
+      "b": "f_rack",
+      "c": "f_counter",
+      "h": "f_rack",
+      "l": "f_rack",
+      "o": "f_rack",
+      "S": "f_sink",
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ],
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "items": {
+      "D": [
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        }
+      ],
+      "H": {
+        "item": "hardware_bulk",
+        "chance": 85,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "P": {
+        "item": "paint",
+        "chance": 85,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      "b": {
+        "item": "tools_construction",
+        "chance": 65,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "h": {
+        "item": "hardware",
+        "chance": 65,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "l": {
+        "item": "cleaning",
+        "chance": 65,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "o": {
+        "item": "home_hw",
+        "chance": 45,
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    },
+    "item": {
+      "M": {
+        "item": "lawnmower",
+        "chance": 5
+      }
+    },
+    "vehicles": {
+      "T": {
+        "vehicle": "handjack",
+        "chance": 2,
+        "status": 1
+      },
+      "V": {
+        "vehicle": "flatbed_truck",
+        "chance": 50,
+        "status": 1,
+        "rotation": 270
+      },
+      "v": {
+        "vehicle": "shopping_cart",
+        "chance": 10,
+        "status": 1
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Hardware Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 375,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "ppppp~~~~~~~~~~~~~~~~~~~",
+      "ppppp###---##++##---###~",
+      "ppppp#b.........v....P#'",
+      "ppppp#b.b.b.r..r.o.o.P#'",
+      "ppppp#b.b.b.c..c.o.o.P#'",
+      "ppppp#..v.........v..P#'",
+      "ppppp#l.lllll..hhhhh.P#'",
+      "ppppp##=##...........P#'",
+      "ppppp#S.&#lll..hhhhhvP#'",
+      "ppppp########++########'",
+      "ppppp#HHHHHHH__HHHHHHH#4",
+      "pVppp#_____T_____T____#'",
+      "ppppp#HHHHHHH__HHHHHHH#'",
+      "ppppp#__T________T____#'",
+      "ppppp#HHHH#HHT_HH#HHHH#'",
+      "pppppwppppppppppppppppw'",
+      "pppppwHHHHHHHppHHHHHHHw'",
+      "ppppp|ppppppppppppppppw'",
+      "ppppp|pppppppppHpHpHpHw'",
+      "pppppw1p2p3pMppHpHpHpHw'",
+      "pppppw1p2p3pMppHpHpHpHw'",
+      "'D'D'w1p2p3pMppHpHpHpHw'",
+      "'''''WWWWWWWWWWWWWWWWWW'",
+      "''''''''''''''''''''''''"
+    ],
+    "terrain": {
+      "1": "t_secro_pavement_flesh",
+      "2": "t_secro_pavement_flesh",
+      "3": "t_secro_pavement_flesh",
+      "4": "t_secro_gutter_downspout_flesh",
+      "#": "t_secro_wall_w_flesh",
+      "'": [
+        "t_secro_grass_flesh",
+        "t_secro_grass_flesh",
+        "t_secro_dirt_flesh"
+      ],
+      "+": "t_secro_door_glass_flesh",
+      "-": "t_secro_wall_g_flesh",
+      ".": "t_secro_floor_flesh",
+      "D": "t_secro_dirt_flesh",
+      "=": "t_secro_door_flesh",
+      "H": "t_secro_pavement_flesh",
+      "M": "t_secro_pavement_flesh",
+      "V": "t_secro_pavement_flesh",
+      "U": "t_secro_pavement_flesh",
+      "W": "t_secro_chainfence_flesh",
+      "_": "t_secro_floor_flesh",
+      "p": "t_secro_pavement_flesh",
+      "r": "t_secro_console_broken_flesh",
+      "w": "t_secro_chainfence_flesh",
+      "|": "t_secro_chaingate_c_flesh",
+      "~": "t_secro_sidewalk_flesh"
+    },
+    "sealed_item": {
+      "1": {
+        "item": {
+          "item": "seed_cabbage"
+        },
+        "furniture": "f_planter_harvest"
+      },
+      "2": {
+        "item": {
+          "item": "seed_tomato"
+        },
+        "furniture": "f_planter_harvest"
+      },
+      "3": {
+        "item": {
+          "item": "seed_zucchini"
+        },
+        "furniture": "f_planter_harvest"
+      },
+      "M": {
+        "item": {
+          "item": "seed_flower"
+        },
+        "furniture": "f_planter_harvest"
+      }
+    },
+    "furniture": {
+      "D": "f_dumpster",
+      "H": "f_rack",
+      "P": "f_rack",
+      "b": "f_rack",
+      "c": "f_counter",
+      "h": "f_rack",
+      "l": "f_rack",
+      "o": "f_rack",
+      "S": "f_sink",
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ],
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "items": {
+      "D": [
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        }
+      ],
+      "H": {
+        "item": "hardware_bulk",
+        "chance": 85,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "P": {
+        "item": "paint",
+        "chance": 85,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      "b": {
+        "item": "tools_construction",
+        "chance": 65,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "h": {
+        "item": "hardware",
+        "chance": 65,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "l": {
+        "item": "cleaning",
+        "chance": 65,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "o": {
+        "item": "home_hw",
+        "chance": 45,
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    },
+    "item": {
+      "M": {
+        "item": "lawnmower",
+        "chance": 5
+      }
+    },
+    "vehicles": {
+      "T": {
+        "vehicle": "handjack",
+        "chance": 2,
+        "status": 1
+      },
+      "V": {
+        "vehicle": "flatbed_truck",
+        "chance": 50,
+        "status": 1,
+        "rotation": 270
+      },
+      "v": {
+        "vehicle": "shopping_cart",
+        "chance": 10,
+        "status": 1
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Hardware Shop",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 375,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "ppppp~~~~~~~~~~~~~~~~~~~",
+      "ppppp###---##++##---###~",
+      "ppppp#b.........v....P#'",
+      "ppppp#b.b.b.r..r.o.o.P#'",
+      "ppppp#b.b.b.c..c.o.o.P#'",
+      "ppppp#..v.........v..P#'",
+      "ppppp#l.lllll..hhhhh.P#'",
+      "ppppp##=##...........P#'",
+      "ppppp#S.&#lll..hhhhhvP#'",
+      "ppppp########++########'",
+      "ppppp#HHHHHHH__HHHHHHH#4",
+      "pVppp#_____T_____T____#'",
+      "ppppp#HHHHHHH__HHHHHHH#'",
+      "ppppp#__T________T____#'",
+      "ppppp#HHHH#HHT_HH#HHHH#'",
+      "pppppwppppppppppppppppw'",
+      "pppppwHHHHHHHppHHHHHHHw'",
+      "ppppp|ppppppppppppppppw'",
+      "ppppp|pppppppppHpHpHpHw'",
+      "pppppw1p2p3pMppHpHpHpHw'",
+      "pppppw1p2p3pMppHpHpHpHw'",
+      "'D'D'w1p2p3pMppHpHpHpHw'",
+      "'''''WWWWWWWWWWWWWWWWWW'",
+      "''''''''''''''''''''''''"
+    ],
+    "terrain": {
+      "1": "t_secro_pavement_flesh",
+      "2": "t_secro_pavement_flesh",
+      "3": "t_secro_pavement_flesh",
+      "4": "t_secro_gutter_downspout_flesh",
+      "#": "t_secro_wall_w_flesh",
+      "'": [
+        "t_secro_grass_flesh",
+        "t_secro_grass_flesh",
+        "t_secro_dirt_flesh"
+      ],
+      "+": "t_secro_door_glass_flesh",
+      "-": "t_secro_wall_g_flesh",
+      ".": "t_secro_floor_flesh",
+      "D": "t_secro_dirt_flesh",
+      "=": "t_secro_door_flesh",
+      "H": "t_secro_pavement_flesh",
+      "M": "t_secro_pavement_flesh",
+      "V": "t_secro_pavement_flesh",
+      "U": "t_secro_pavement_flesh",
+      "W": "t_secro_chainfence_flesh",
+      "_": "t_secro_floor_flesh",
+      "p": "t_secro_pavement_flesh",
+      "r": "t_secro_console_broken_flesh",
+      "w": "t_secro_chainfence_flesh",
+      "|": "t_secro_chaingate_c_flesh",
+      "~": "t_secro_sidewalk_flesh"
+    },
+    "sealed_item": {
+      "1": {
+        "item": {
+          "item": "seed_cabbage"
+        },
+        "furniture": "f_planter_harvest"
+      },
+      "2": {
+        "item": {
+          "item": "seed_tomato"
+        },
+        "furniture": "f_planter_harvest"
+      },
+      "3": {
+        "item": {
+          "item": "seed_zucchini"
+        },
+        "furniture": "f_planter_harvest"
+      },
+      "M": {
+        "item": {
+          "item": "seed_flower"
+        },
+        "furniture": "f_planter_harvest"
+      }
+    },
+    "furniture": {
+      "D": "f_dumpster",
+      "H": "f_rack",
+      "P": "f_rack",
+      "b": "f_rack",
+      "c": "f_counter",
+      "h": "f_rack",
+      "l": "f_rack",
+      "o": "f_rack",
+      "S": "f_sink",
+      "U": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ],
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "items": {
+      "D": [
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        },
+        {
+          "item": "trash",
+          "chance": 50
+        }
+      ],
+      "H": {
+        "item": "hardware_bulk",
+        "chance": 85,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      "P": {
+        "item": "paint",
+        "chance": 85,
+        "repeat": [
+          1,
+          8
+        ]
+      },
+      "b": {
+        "item": "tools_construction",
+        "chance": 65,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "h": {
+        "item": "hardware",
+        "chance": 65,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "l": {
+        "item": "cleaning",
+        "chance": 65,
+        "repeat": [
+          1,
+          4
+        ]
+      },
+      "o": {
+        "item": "home_hw",
+        "chance": 45,
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    },
+    "item": {
+      "M": {
+        "item": "lawnmower",
+        "chance": 5
+      }
+    },
+    "vehicles": {
+      "T": {
+        "vehicle": "handjack",
+        "chance": 2,
+        "status": 1
+      },
+      "V": {
+        "vehicle": "flatbed_truck",
+        "chance": 50,
+        "status": 1,
+        "rotation": 270
+      },
+      "v": {
+        "vehicle": "shopping_cart",
+        "chance": 10,
+        "status": 1
+      }
+    }
+  }
+}
+```
+

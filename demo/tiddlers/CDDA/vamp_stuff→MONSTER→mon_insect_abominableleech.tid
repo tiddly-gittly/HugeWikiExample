@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_insect_abominableleech
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_abominableleech|http://cdda.aloxaf.cn/search?q=mon_insect_abominableleech]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Insects/+Leech.json
+
+
+!! 原文
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 4,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "bodytype": "snake",
+  "color": "light_green",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "A leech with green and yellow segmented colors, it drips concentrated toxin as it slither along the way.",
+  "diff": 15,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "zombie_meatslug",
+  "hp": 60,
+  "id": "mon_insect_abominableleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_skill": 2,
+  "morale": 100,
+  "name": {
+    "str": "abominable leech"
+  },
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 95,
+  "symbol": "~",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_LEECH_ABOMIUPGRADE"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 4,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "bodytype": "snake",
+  "color": "light_green",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "一只黄绿条纹的水蛭，蠕动时经过的地方会留下浓缩的毒素。",
+  "diff": 15,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "zombie_meatslug",
+  "hp": 60,
+  "id": "mon_insect_abominableleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_skill": 2,
+  "morale": 100,
+  "name": {
+    "str": "可恶水蛭"
+  },
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 95,
+  "symbol": "~",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_LEECH_ABOMIUPGRADE"
+  }
+}
+```
+

@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MAGE_HUNTER_OTHERWORLDLY
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MAGE_HUNTER_OTHERWORLDLY|http://cdda.aloxaf.cn/search?q=TALK_MAGE_HUNTER_OTHERWORLDLY]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MAGE_HUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_OTHERWORLDLY",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": [
+      "Your body bears the scars of blood magic.  Why should I trust your intentions?",
+      "Then tell me, why you've been afflicted by something that only powerful blood magic can produce.",
+      "You bear the mark of magic that we've only ever seen in association with the Sanguine Order.  Explain yourself."
+    ],
+    "no": [
+      "The magic I sense pervading you is not of this world.  What is it?",
+      "My apologies.  I can sense some manner of strange power about you, which is rarely a good sign.  Would you please explain the cause of this?",
+      "There is a touch of the otherworldly about you.  We have seen countless reasons to be wary of such things.  What is the cause?"
+    ]
+  },
+  "responses": [
+    {
+      "text": "I'm not one of them, I can assure you.",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true,
+      "effect": {
+        "u_add_effect": "cf_hunter_motive",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_DRAGONBLOOD"
+    },
+    {
+      "text": "I have been chosen by He From Beyond The Veil.",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      },
+      "effect": {
+        "u_add_effect": "cf_hunter_motive",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_VEIL"
+    },
+    {
+      "text": "I was a student of an arcanist, trained in the art of summoning.",
+      "condition": {
+        "u_has_trait": "PROF_ARCANIST2"
+      },
+      "switch": true,
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_ARCANIST"
+    },
+    {
+      "text": "I don't need to explain anything to you.",
+      "opinion": {
+        "value": -1,
+        "trust": -1
+      },
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_SECRETS"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MAGE_HUNTER_OTHERWORLDLY",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": [
+      "你的身体上有血魔法留下的伤痕。我为什么要相信你？",
+      "那么告诉我，为什么你会受到只有强大的血魔法才能产生的东西的折磨。",
+      "你身上的魔法印记我们只在“猩红教派”所见过。请解释一下。"
+    ],
+    "no": [
+      "我感受到你蕴含的魔力并不属于这个世界。那是什么？",
+      "我很抱歉。我能感觉到你身上有某种奇怪的力量，这可不是什么好兆头。你能解释一下原因吗?",
+      "你有一种超凡脱俗的感觉。我们有无数个对此类事情保持警惕的理由。这是什么原因？"
+    ]
+  },
+  "responses": [
+    {
+      "text": "我可以向你保证，我不是他们中的一员。",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true,
+      "effect": {
+        "u_add_effect": "cf_hunter_motive",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_DRAGONBLOOD"
+    },
+    {
+      "text": "我被帷幕彼端古神选中了。",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      },
+      "effect": {
+        "u_add_effect": "cf_hunter_motive",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_VEIL"
+    },
+    {
+      "text": "我是一个神秘主义者的学生，受过召唤术的训练。",
+      "condition": {
+        "u_has_trait": "PROF_ARCANIST2"
+      },
+      "switch": true,
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_ARCANIST"
+    },
+    {
+      "text": "我不需要向你解释任何事情。",
+      "opinion": {
+        "value": -1,
+        "trust": -1
+      },
+      "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_SECRETS"
+    }
+  ]
+}
+```
+

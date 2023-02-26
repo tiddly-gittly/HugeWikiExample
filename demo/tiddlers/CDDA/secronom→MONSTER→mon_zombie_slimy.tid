@@ -1,0 +1,223 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_slimy
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_slimy|http://cdda.aloxaf.cn/search?q=mon_zombie_slimy]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Grubby.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_slimy",
+  "type": "MONSTER",
+  "name": {
+    "str": "slimy zombie"
+  },
+  "description": "Fortified by blobs and worms infused inside its skinless body, this zombie can barely walk on its feet. With slimy liquid dripping from its holes, the parasites can \"swim\" faster through it.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "harvest": "zombie",
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 40,
+  "diff": 15,
+  "material": [
+    "flesh"
+  ],
+  "emit_fields": [
+    "emit_grubbyzed_goo_smol",
+    "emit_grubbyzed_goo_med"
+  ],
+  "symbol": "Q",
+  "color": "cyan_yellow",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 2,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "armor_bash": 5,
+  "armor_stab": 4,
+  "vision_day": 22,
+  "path_settings": {
+    "max_dist": 20
+  },
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 17,
+      "move_cost": 225,
+      "gun_type": "grubbyzed_spit",
+      "fake_skills": [
+        [
+          "gun",
+          4
+        ],
+        [
+          "rifle",
+          4
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          5,
+          "N"
+        ],
+        [
+          6,
+          22,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "The slimy zombie spits globs of tainted goo!"
+    }
+  ],
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_GRUBBY_UPGRADEX"
+  },
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s dies!",
+    "effect": {
+      "id": "mon_zombie_grubby_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_slimy",
+  "type": "MONSTER",
+  "name": {
+    "str": "粘稠丧尸"
+  },
+  "description": "在无皮的身体里注入了斑点和蠕虫，这只丧尸几乎不能用脚行走。当粘液从洞里滴下时，寄生虫可以“游”得更快。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "harvest": "zombie",
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 40,
+  "diff": 15,
+  "material": [
+    "flesh"
+  ],
+  "emit_fields": [
+    "emit_grubbyzed_goo_smol",
+    "emit_grubbyzed_goo_med"
+  ],
+  "symbol": "Q",
+  "color": "cyan_yellow",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 2,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "armor_bash": 5,
+  "armor_stab": 4,
+  "vision_day": 22,
+  "path_settings": {
+    "max_dist": 20
+  },
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 17,
+      "move_cost": 225,
+      "gun_type": "grubbyzed_spit",
+      "fake_skills": [
+        [
+          "gun",
+          4
+        ],
+        [
+          "rifle",
+          4
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          5,
+          "N"
+        ],
+        [
+          6,
+          22,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "黏糊糊的丧尸吐出一团团受污染的黏液！"
+    }
+  ],
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_GRUBBY_UPGRADEX"
+  },
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s dies!",
+    "effect": {
+      "id": "mon_zombie_grubby_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY"
+  ]
+}
+```
+

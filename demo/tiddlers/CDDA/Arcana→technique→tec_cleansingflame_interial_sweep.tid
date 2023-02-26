@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: technique Arcana
+title: Arcana→technique→tec_cleansingflame_interial_sweep
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_cleansingflame_interial_sweep|http://cdda.aloxaf.cn/search?q=tec_cleansingflame_interial_sweep]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_cleansingflame_interial_sweep",
+  "name": "Inertial Sweep",
+  "messages": [
+    "You drive your weapon's momentum into a sweeping strike at %s",
+    "<npcname> delivers a sweeping strike to %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "bashing",
+      "level": 4
+    }
+  ],
+  "weapon_damage_requirements": [
+    {
+      "type": "bash",
+      "min": 20
+    }
+  ],
+  "melee_allowed": true,
+  "required_buffs_all": [
+    "buff_cleansingflame_onattack"
+  ],
+  "aoe": "wide",
+  "crit_tec": true,
+  "weighting": 3,
+  "down_dur": 2,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.8
+    }
+  ],
+  "attack_vectors": [
+    "WEAPON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_cleansingflame_interial_sweep",
+  "name": "惯性扫频",
+  "messages": [
+    "你将武器的动量推向%s的横扫",
+    "<npcname>向%s提供了全面的打击"
+  ],
+  "skill_requirements": [
+    {
+      "name": "bashing",
+      "level": 4
+    }
+  ],
+  "weapon_damage_requirements": [
+    {
+      "type": "bash",
+      "min": 20
+    }
+  ],
+  "melee_allowed": true,
+  "required_buffs_all": [
+    "buff_cleansingflame_onattack"
+  ],
+  "aoe": "wide",
+  "crit_tec": true,
+  "weighting": 3,
+  "down_dur": 2,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.8
+    }
+  ],
+  "attack_vectors": [
+    "WEAPON"
+  ]
+}
+```
+

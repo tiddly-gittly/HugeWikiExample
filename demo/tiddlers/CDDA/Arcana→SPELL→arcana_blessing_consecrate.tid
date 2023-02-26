@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_consecrate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_consecrate|http://cdda.aloxaf.cn/search?q=arcana_blessing_consecrate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_consecrate",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Consecrate"
+  },
+  "description": "Arcane Blessing\nUsing this spell will alter the terrain, driving off various signs of otherworldly corruption afflicting the land, along with disrupting most intruders from Beyond, with hostile summoned creatures taking double damage.",
+  "message": "You channel the will of He From Beyond The Veil, to bring order to this unearthly intrusion.",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "NO_FAIL"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_consecrate",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_consecrate_dispel_summons",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_consecrate_daze_intruders",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "energy_source": "MANA",
+  "difficulty": 80,
+  "skill": "magic",
+  "max_level": 20,
+  "min_damage": 4,
+  "max_damage": 1,
+  "damage_increment": -0.15,
+  "min_aoe": 6,
+  "max_aoe": 18,
+  "aoe_increment": 0.6,
+  "min_range": 10,
+  "max_range": 24,
+  "range_increment": 0.7,
+  "base_casting_time": 450,
+  "final_casting_time": 225,
+  "casting_time_increment": -11.25,
+  "base_energy_cost": 540,
+  "final_energy_cost": 270,
+  "energy_increment": -13.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_consecrate",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：祝圣"
+  },
+  "description": "奥术祝福\n使用该法术会改变地形，驱散各种折磨着土地的超凡脱俗的迹象，并消除敌对的召唤并使大多数来自远方的入侵者生病。",
+  "message": "你引导了帷幕彼端古神的意志，为这场突如其来的入侵带来秩序。",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "NO_FAIL"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_consecrate",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_consecrate_dispel_summons",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_consecrate_daze_intruders",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "energy_source": "MANA",
+  "difficulty": 80,
+  "skill": "magic",
+  "max_level": 20,
+  "min_damage": 4,
+  "max_damage": 1,
+  "damage_increment": -0.15,
+  "min_aoe": 6,
+  "max_aoe": 18,
+  "aoe_increment": 0.6,
+  "min_range": 10,
+  "max_range": 24,
+  "range_increment": 0.7,
+  "base_casting_time": 450,
+  "final_casting_time": 225,
+  "casting_time_increment": -11.25,
+  "base_energy_cost": 540,
+  "final_energy_cost": 270,
+  "energy_increment": -13.5
+}
+```
+

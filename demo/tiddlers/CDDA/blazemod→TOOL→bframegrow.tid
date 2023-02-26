@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: TOOL blazemod
+title: blazemod→TOOL→bframegrow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bframegrow|http://cdda.aloxaf.cn/search?q=bframegrow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/tools/blob_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bframegrow",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str": "growing blob frame"
+  },
+  "description": "A growing vehicle frame made of bone.  It's coated in a thick layer of ooze, though there's greater amounts on the bindings.  It's not quite tough enough to use.",
+  "weight": "3662 g",
+  "volume": "10 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "bone",
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "green",
+  "use_action": {
+    "target": "gloople",
+    "msg": "You test the frame; It wiggles, and then collapses into an lump of goo.",
+    "type": "delayed_transform",
+    "transform_age": 36000,
+    "not_ready_msg": "You test the frame; it gives easily, it's still not sturdy enough"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bframegrow",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str": "凝胶变形怪车架（生长中）"
+  },
+  "description": "骨制成的闪光车架。整个车架上，特别是连接处上，都渗出了一层厚厚的糊状粘稠物在表面。它还不够结实，无法使用。",
+  "weight": "3662 g",
+  "volume": "10 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "bone",
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "green",
+  "use_action": {
+    "target": "gloople",
+    "msg": "你试了试车架；它晃了晃，然后碎成一滩粘液。",
+    "type": "delayed_transform",
+    "transform_age": 36000,
+    "not_ready_msg": "You test the frame; it gives easily, it's still not sturdy enough"
+  }
+}
+```
+

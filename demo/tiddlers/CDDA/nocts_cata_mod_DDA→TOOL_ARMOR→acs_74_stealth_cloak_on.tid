@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL_ARMOR→acs_74_stealth_cloak_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：acs_74_stealth_cloak_on|http://cdda.aloxaf.cn/search?q=acs_74_stealth_cloak_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "acs_74_stealth_cloak_on",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "ACS-74 stealth cloak"
+  },
+  "description": "An experimental cloak that uses a highly sophisticated network of cameras and LEDs to render the user fully invisible.  It is powered by built-in torsion ratchets.  Due to particularities of its construction, it is very difficult to move in, hampering wearer's strength, dexterity and movement speed.",
+  "weight": "1556 g",
+  "volume": "3 L",
+  "price": "84000 USD",
+  "price_postapoc": "84 USD",
+  "to_hit": -1,
+  "phase": "solid",
+  "material": [
+    "superalloy",
+    "plastic"
+  ],
+  "symbol": "[",
+  "looks_like": "optical_cloak",
+  "color": "light_gray",
+  "warmth": 15,
+  "material_thickness": 1,
+  "environmental_protection": 4,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "SPEED",
+            "add": -20
+          },
+          {
+            "value": "STRENGTH",
+            "add": -4
+          },
+          {
+            "value": "DEXTERITY",
+            "add": -4
+          }
+        ],
+        "ench_effects": [
+          {
+            "effect": "invisibility",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "OVERSIZE",
+    "HOOD",
+    "WATERPROOF",
+    "OUTER",
+    "VARSIZE",
+    "PADDED"
+  ],
+  "armor": [
+    {
+      "encumbrance": 15,
+      "coverage": 75,
+      "covers": [
+        "leg_l",
+        "leg_r",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "head"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "acs_74_stealth_cloak_on",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "ACS-74 隐形斗篷"
+  },
+  "description": "一个实验性的斗篷，其使用了高度复杂的摄像头和LED网络，让使用者完全隐形。 它由其内置的扭力棘轮提供动力。 由于其特殊的结构，让它非常难以穿上，同时也阻碍了佩戴者的力量、敏捷和移动速度。",
+  "weight": "1556 g",
+  "volume": "3 L",
+  "price": "84000 USD",
+  "price_postapoc": "84 USD",
+  "to_hit": -1,
+  "phase": "solid",
+  "material": [
+    "superalloy",
+    "plastic"
+  ],
+  "symbol": "[",
+  "looks_like": "optical_cloak",
+  "color": "light_gray",
+  "warmth": 15,
+  "material_thickness": 1,
+  "environmental_protection": 4,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "SPEED",
+            "add": -20
+          },
+          {
+            "value": "STRENGTH",
+            "add": -4
+          },
+          {
+            "value": "DEXTERITY",
+            "add": -4
+          }
+        ],
+        "ench_effects": [
+          {
+            "effect": "invisibility",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "OVERSIZE",
+    "HOOD",
+    "WATERPROOF",
+    "OUTER",
+    "VARSIZE",
+    "PADDED"
+  ],
+  "armor": [
+    {
+      "encumbrance": 15,
+      "coverage": 75,
+      "covers": [
+        "leg_l",
+        "leg_r",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "head"
+      ]
+    }
+  ]
+}
+```
+

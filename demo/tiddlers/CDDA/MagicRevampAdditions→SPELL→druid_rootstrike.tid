@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→druid_rootstrike
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：druid_rootstrike|http://cdda.aloxaf.cn/search?q=druid_rootstrike]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/druid.json
+
+
+!! 原文
+
+```json
+{
+  "id": "druid_rootstrike",
+  "type": "SPELL",
+  "name": {
+    "str": "Root Strike"
+  },
+  "description": "This spell causes roots to spear out the ground and stab into your foes in an arc, impaling them.",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "LOUD",
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS"
+  ],
+  "effect": "attack",
+  "effect_str": "root_impale",
+  "shape": "cone",
+  "spell_class": "DRUID",
+  "base_casting_time": 100,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "difficulty": 4,
+  "max_level": 30,
+  "min_damage": 15,
+  "max_damage": 90,
+  "damage_increment": 2.5,
+  "min_aoe": 25,
+  "max_aoe": 65,
+  "aoe_increment": 1,
+  "min_range": 4,
+  "max_range": 15,
+  "range_increment": 0.5,
+  "min_dot": 1,
+  "max_dot": 3,
+  "dot_increment": 0.1,
+  "min_duration": 1000,
+  "max_duration": 15000,
+  "duration_increment": 500,
+  "min_pierce": 10,
+  "max_pierce": 30,
+  "pierce_increment": 0.5,
+  "damage_type": "stab"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "druid_rootstrike",
+  "type": "SPELL",
+  "name": {
+    "str": "树根穿刺"
+  },
+  "description": "这个法术使树根刺穿地面，以弧形刺入你的敌人，刺穿他们。",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "LOUD",
+    "SOMATIC",
+    "VERBAL",
+    "NO_LEGS"
+  ],
+  "effect": "attack",
+  "effect_str": "root_impale",
+  "shape": "cone",
+  "spell_class": "DRUID",
+  "base_casting_time": 100,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "difficulty": 4,
+  "max_level": 30,
+  "min_damage": 15,
+  "max_damage": 90,
+  "damage_increment": 2.5,
+  "min_aoe": 25,
+  "max_aoe": 65,
+  "aoe_increment": 1,
+  "min_range": 4,
+  "max_range": 15,
+  "range_increment": 0.5,
+  "min_dot": 1,
+  "max_dot": 3,
+  "dot_increment": 0.1,
+  "min_duration": 1000,
+  "max_duration": 15000,
+  "duration_increment": 500,
+  "min_pierce": 10,
+  "max_pierce": 30,
+  "pierce_increment": 0.5,
+  "damage_type": "stab"
+}
+```
+

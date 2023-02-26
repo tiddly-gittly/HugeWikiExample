@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_stray_w_leaf_mode
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_leaf_mode|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_leaf_mode]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_mode",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "stray zombie"
+  },
+  "description": "Heaps of vibrant vines and stems cover this stray's body, holding its rotten flesh in place. Nearly immobile, it is a peculiar sight to behold for one's curious mind.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 155,
+  "speed": 25,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "armor_bash": 14,
+  "armor_cut": 4,
+  "armor_bullet": 6,
+  "armor_stab": 6,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 22,
+    "into": "mon_zombie_stray_w_leaf_stro1"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_mode",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "酸液离群丧尸"
+  },
+  "description": "成堆的充满活力的藤蔓和茎覆盖着这只流浪狗的身体，把它腐烂的肉固定住。它几乎是静止不动的，对于一个好奇的人来说，这是一种奇特的景象。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 155,
+  "speed": 25,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "armor_bash": 14,
+  "armor_cut": 4,
+  "armor_bullet": 6,
+  "armor_stab": 6,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 22,
+    "into": "mon_zombie_stray_w_leaf_stro1"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

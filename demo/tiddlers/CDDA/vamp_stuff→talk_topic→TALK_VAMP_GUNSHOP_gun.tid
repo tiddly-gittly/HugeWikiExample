@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_GUNSHOP_gun
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_GUNSHOP_gun|http://cdda.aloxaf.cn/search?q=TALK_VAMP_GUNSHOP_gun]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/v_vgs_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_GUNSHOP_gun",
+  "type": "talk_topic",
+  "//": "Totally a trashy handgun with very low damage output.",
+  "dynamic_line": "Umm... I could give you the oldest prototype of vampiric guns I got here:\nThe blood slinger.",
+  "responses": [
+    {
+      "text": "Seems legit. I'll take it!",
+      "topic": "TALK_VAMP_GUNSHOP_givesupplies",
+      "effect": [
+        {
+          "u_spawn_item": "blood_slinger"
+        },
+        {
+          "u_add_trait": "wvgsgun"
+        }
+      ]
+    },
+    {
+      "text": "I guess not... Its like a garbaged project you vampires been doing for these days.",
+      "topic": "TALK_VAMP_GUNSHOP_givesupplies",
+      "opinion": {
+        "fear": -1,
+        "anger": 5
+      },
+      "effect": {
+        "u_add_trait": "wvgsgun"
+      }
+    },
+    {
+      "text": "I guess not...",
+      "topic": "TALK_VAMP_GUNSHOP_givesupplies",
+      "effect": {
+        "u_add_trait": "wvgsgun"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_GUNSHOP_gun",
+  "type": "talk_topic",
+  "//": "Totally a trashy handgun with very low damage output.",
+  "dynamic_line": "嗯...我可以给你我在这里得到的最古老的吸血鬼枪的原型。",
+  "responses": [
+    {
+      "text": "挺合理，我要了！",
+      "topic": "TALK_VAMP_GUNSHOP_givesupplies",
+      "effect": [
+        {
+          "u_spawn_item": "blood_slinger"
+        },
+        {
+          "u_add_trait": "wvgsgun"
+        }
+      ]
+    },
+    {
+      "text": "不...这玩意儿就像你们这些吸血鬼这些天一直在做的某一个垃圾工程",
+      "topic": "TALK_VAMP_GUNSHOP_givesupplies",
+      "opinion": {
+        "fear": -1,
+        "anger": 5
+      },
+      "effect": {
+        "u_add_trait": "wvgsgun"
+      }
+    },
+    {
+      "text": "不，还是算了...",
+      "topic": "TALK_VAMP_GUNSHOP_givesupplies",
+      "effect": {
+        "u_add_trait": "wvgsgun"
+      }
+    }
+  ]
+}
+```
+

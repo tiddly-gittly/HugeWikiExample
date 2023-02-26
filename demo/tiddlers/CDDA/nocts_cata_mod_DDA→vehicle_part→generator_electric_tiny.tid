@@ -1,0 +1,195 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→vehicle_part→generator_electric_tiny
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：generator_electric_tiny|http://cdda.aloxaf.cn/search?q=generator_electric_tiny]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Vehicles/c_vehicle_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "generator_electric_tiny",
+  "copy-from": "vehicle_alternator",
+  "type": "vehicle_part",
+  "name": "tiny electric dynamo",
+  "description": "An electric motor improvised to serve as an electric generator, to be attached to an internal combustion engine.  Much less efficient compared to its normal application as a motor.",
+  "item": "motor_tiny",
+  "folded_volume": 1,
+  "durability": 80,
+  "power": -800,
+  "epower": 320,
+  "//": "All improvised electric dynamos set to use input matching their motor counterpart's power output, and an output offering half their normal efficiency.",
+  "damage_modifier": 80,
+  "breaks_into": [
+    {
+      "item": "plastic_chunk",
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "cable",
+      "charges": [
+        1,
+        3
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_screw",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_screw",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "adhesive",
+          1
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "generator_electric_tiny",
+  "copy-from": "vehicle_alternator",
+  "type": "vehicle_part",
+  "name": "微型发电机",
+  "description": "由电动机临时改装的发电机，安装在引擎上。与正常的发电机相比，效率降低了。",
+  "item": "motor_tiny",
+  "folded_volume": 1,
+  "durability": 80,
+  "power": -800,
+  "epower": 320,
+  "//": "All improvised electric dynamos set to use input matching their motor counterpart's power output, and an output offering half their normal efficiency.",
+  "damage_modifier": 80,
+  "breaks_into": [
+    {
+      "item": "plastic_chunk",
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "cable",
+      "charges": [
+        1,
+        3
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_screw",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_screw",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "adhesive",
+          1
+        ]
+      ]
+    }
+  }
+}
+```
+

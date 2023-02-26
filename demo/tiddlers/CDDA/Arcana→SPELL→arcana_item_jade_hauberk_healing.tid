@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_jade_hauberk_healing
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_jade_hauberk_healing|http://cdda.aloxaf.cn/search?q=arcana_item_jade_hauberk_healing]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_jade_hauberk_healing",
+  "type": "SPELL",
+  "name": {
+    "str": "Hauberk Mending"
+  },
+  "description": "Weaker healing than gilded aegis, but less pain.",
+  "message": "Your armor's mantle shimmers with an odd light, sending the dull ache of healing magic through your body.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_jade_hauberk_healing_fatigue",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_jade_hauberk_pain",
+      "hit_self": true
+    }
+  ],
+  "effect_str": "arcana_aegis_mending",
+  "min_damage": -4,
+  "max_damage": -6,
+  "effect": "attack",
+  "shape": "blast",
+  "min_duration": 100,
+  "max_duration": 100
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_jade_hauberk_healing",
+  "type": "SPELL",
+  "name": {
+    "str": "锁甲之治愈"
+  },
+  "description": "Weaker healing than gilded aegis, but less pain.",
+  "message": "你盔甲的披风闪烁着奇怪的光芒，将治愈魔法的隐痛穿透你的身体。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_jade_hauberk_healing_fatigue",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_jade_hauberk_pain",
+      "hit_self": true
+    }
+  ],
+  "effect_str": "arcana_aegis_mending",
+  "min_damage": -4,
+  "max_damage": -6,
+  "effect": "attack",
+  "shape": "blast",
+  "min_duration": 100,
+  "max_duration": 100
+}
+```
+

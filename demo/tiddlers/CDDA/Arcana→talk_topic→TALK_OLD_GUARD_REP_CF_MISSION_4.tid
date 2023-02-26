@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_OLD_GUARD_REP_CF_MISSION_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_OLD_GUARD_REP_CF_MISSION_4|http://cdda.aloxaf.cn/search?q=TALK_OLD_GUARD_REP_CF_MISSION_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_OLD_GUARD_REP.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_OLD_GUARD_REP_CF_MISSION_4",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "PROF_FED",
+    "yes": "We're stretched thin as it is.  However, hou've done a lot of good work for us, maybe I could try to talk the higher-ups into working something out.  I'll be honest with you, it's not going to be easy to convince them, and I'm worried such arrangements might turn sour if they find something they need.  I'll need to know more about the community you're requesting assistance for.",
+    "no": "I wish we could spare the people for every settlement out there, but we're stretched dangerously thin as it is.  Not to mention, that's for the higher-ups to decide.  If things weren't so hectic in this region, I might be able talk them into committing more personnel, but I'm not sure how easy it'll be."
+  },
+  "responses": [
+    {
+      "text": "It's a group converting a rural church into a small outpost, who have been trading with the Free Merchants.",
+      "condition": {
+        "u_has_trait": "PROF_FED"
+      },
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_CHURCH"
+    },
+    {
+      "text": "I'll look into other options, just in case.  Thank you though.",
+      "switch": true,
+      "condition": {
+        "u_has_trait": "PROF_FED"
+      },
+      "topic": "TALK_OLD_GUARD_REP"
+    },
+    {
+      "text": "Oh, okay.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_OLD_GUARD_REP_CF_MISSION_4",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "PROF_FED",
+    "yes": "We're stretched thin as it is.  However, hou've done a lot of good work for us, maybe I could try to talk the higher-ups into working something out.  I'll be honest with you, it's not going to be easy to convince them, and I'm worried such arrangements might turn sour if they find something they need.  I'll need to know more about the community you're requesting assistance for.",
+    "no": "我希望我们能在那里的每一个定居点都不伤害人民，但我们现在已经很危险了。更不用说，那是由上级决定的。如果这个地区的情况不那么紧张，我也许可以说服他们投入更多的人员，但我不确定这有多容易。"
+  },
+  "responses": [
+    {
+      "text": "It's a group converting a rural church into a small outpost, who have been trading with the Free Merchants.",
+      "condition": {
+        "u_has_trait": "PROF_FED"
+      },
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_CHURCH"
+    },
+    {
+      "text": "我会考虑其他的选择，以防万一。不过还是谢谢你。",
+      "switch": true,
+      "condition": {
+        "u_has_trait": "PROF_FED"
+      },
+      "topic": "TALK_OLD_GUARD_REP"
+    },
+    {
+      "text": "哦，好的。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

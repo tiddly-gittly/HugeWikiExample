@@ -1,0 +1,301 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_fleshysnaky
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_fleshysnaky|http://cdda.aloxaf.cn/search?q=mon_zombie_fleshysnaky]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Aggro-type zed aberration, extremely tough, durable and full of deadly ranged capabilities, unique to its drastic movement speed gain as long as it sees a target. One of the true end-game monsters.",
+  "id": "mon_zombie_fleshysnaky",
+  "type": "MONSTER",
+  "name": {
+    "str": "flesilisk"
+  },
+  "description": "A massive conglomeration of thick, gangrenous flesh, forming a snake-like figurine with its head resembling a dragon. Terrifyingly disastrous, its entire body is covered in bony scales and lies under it are spikes of similar material.",
+  "default_faction": "zombie",
+  "bodytype": "snake",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_ULTIMATE",
+    "ABERRATION"
+  ],
+  "volume": "2680 L",
+  "weight": "3300500 g",
+  "hp": 2160,
+  "speed": 40,
+  "diff": 100,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⚶",
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "color": "magenta",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 675,
+  "melee_skill": 10,
+  "melee_dice": 8,
+  "melee_dice_sides": 10,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 30,
+  "armor_cut": 34,
+  "armor_bullet": 27,
+  "armor_stab": 26,
+  "vision_day": 23,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "weakpoints": [
+    {
+      "name": "the head",
+      "armor_mult": {
+        "bash": 0.8,
+        "cut": 1.1,
+        "stab": 1.1,
+        "bullet": 1.1
+      },
+      "difficulty": {
+        "melee": 3,
+        "ranged": 3
+      },
+      "coverage": 5,
+      "damage_mult": {
+        "all": 1.15
+      }
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_fleshysnaky_devastate_check"
+      },
+      "cooldown": 101,
+      "monster_message": "<color_yellow>%1$s slams at %3$s!</color>"
+    },
+    {
+      "type": "gun",
+      "cooldown": 101,
+      "move_cost": 400,
+      "gun_type": "fleshysnaky_bn_shower",
+      "fake_skills": [
+        [
+          "gun",
+          1
+        ],
+        [
+          "rifle",
+          1
+        ]
+      ],
+      "ranges": [
+        [
+          3,
+          4,
+          "N"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "The flesilisk coils and releases itself afterwards, flinging hundreds of bone needles!"
+    },
+    {
+      "cooldown": 31,
+      "damage_max_instance": [
+        {
+          "amount": 32,
+          "armor_penetration": 5,
+          "damage_type": "bash"
+        },
+        {
+          "amount": 16,
+          "armor_penetration": 30,
+          "damage_type": "stab"
+        }
+      ],
+      "type": "bite"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "LOUDMOVES",
+    "NOHEAD",
+    "DESTROYS",
+    "PUSH_MON",
+    "ATTACKMON",
+    "PUSH_VEH",
+    "STUN_IMMUNE",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Aggro-type zed aberration, extremely tough, durable and full of deadly ranged capabilities, unique to its drastic movement speed gain as long as it sees a target. One of the true end-game monsters.",
+  "id": "mon_zombie_fleshysnaky",
+  "type": "MONSTER",
+  "name": {
+    "str": "蛇形肉像"
+  },
+  "description": "巨蟒一种由厚而腐烂的肉组成的巨大团块，形成一个蛇形的雕像，其头部类似于龙。可怕的灾难是，它的整个身体覆盖着骨鳞，下面是类似材料的刺。",
+  "default_faction": "zombie",
+  "bodytype": "snake",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_ULTIMATE",
+    "ABERRATION"
+  ],
+  "volume": "2680 L",
+  "weight": "3300500 g",
+  "hp": 2160,
+  "speed": 40,
+  "diff": 100,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⚶",
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "color": "magenta",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 675,
+  "melee_skill": 10,
+  "melee_dice": 8,
+  "melee_dice_sides": 10,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 30,
+  "armor_cut": 34,
+  "armor_bullet": 27,
+  "armor_stab": 26,
+  "vision_day": 23,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "weakpoints": [
+    {
+      "name": "the head",
+      "armor_mult": {
+        "bash": 0.8,
+        "cut": 1.1,
+        "stab": 1.1,
+        "bullet": 1.1
+      },
+      "difficulty": {
+        "melee": 3,
+        "ranged": 3
+      },
+      "coverage": 5,
+      "damage_mult": {
+        "all": 1.15
+      }
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_fleshysnaky_devastate_check"
+      },
+      "cooldown": 101,
+      "monster_message": "<color_yellow>%1$s猛击%3$s！</color>"
+    },
+    {
+      "type": "gun",
+      "cooldown": 101,
+      "move_cost": 400,
+      "gun_type": "fleshysnaky_bn_shower",
+      "fake_skills": [
+        [
+          "gun",
+          1
+        ],
+        [
+          "rifle",
+          1
+        ]
+      ],
+      "ranges": [
+        [
+          3,
+          4,
+          "N"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "Flesilik盘绕并随后释放，投掷数百根骨针！"
+    },
+    {
+      "cooldown": 31,
+      "damage_max_instance": [
+        {
+          "amount": 32,
+          "armor_penetration": 5,
+          "damage_type": "bash"
+        },
+        {
+          "amount": 16,
+          "armor_penetration": 30,
+          "damage_type": "stab"
+        }
+      ],
+      "type": "bite"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "LOUDMOVES",
+    "NOHEAD",
+    "DESTROYS",
+    "PUSH_MON",
+    "ATTACKMON",
+    "PUSH_VEH",
+    "STUN_IMMUNE",
+    "REVIVES"
+  ]
+}
+```
+

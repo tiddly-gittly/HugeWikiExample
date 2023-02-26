@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→tendrilstab
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tendrilstab|http://cdda.aloxaf.cn/search?q=tendrilstab]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "tendrilstab",
+  "cooldown": 27,
+  "move_cost": 200,
+  "accuracy": 7,
+  "blockable": true,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 19
+    }
+  ],
+  "effects": [
+    {
+      "id": "stunned",
+      "duration": 1
+    },
+    {
+      "id": "bleed",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "hit_dmg_u": "%1$s stabbed you with its tendril!",
+  "hit_dmg_npc": "%1$s tendril stabbed <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to stab you, but fails to penetrate armor!",
+  "no_dmg_msg_npc": "%1$s tries to stab <npcname>, but fails to penetrate armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "tendrilstab",
+  "cooldown": 27,
+  "move_cost": 200,
+  "accuracy": 7,
+  "blockable": true,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 19
+    }
+  ],
+  "effects": [
+    {
+      "id": "stunned",
+      "duration": 1
+    },
+    {
+      "id": "bleed",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "hit_dmg_u": "%1$s stabbed you with its tendril!",
+  "hit_dmg_npc": "%1$s tendril stabbed <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to stab you, but fails to penetrate armor!",
+  "no_dmg_msg_npc": "%1$s tries to stab <npcname>, but fails to penetrate armor!"
+}
+```
+

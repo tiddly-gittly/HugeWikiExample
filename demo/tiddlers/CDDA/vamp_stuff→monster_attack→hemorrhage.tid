@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: monster_attack vamp_stuff
+title: vamp_stuff→monster_attack→hemorrhage
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：hemorrhage|http://cdda.aloxaf.cn/search?q=hemorrhage]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "hemorrhage",
+  "cooldown": 30,
+  "move_cost": 100,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 3,
+      "armor_penetration": 20,
+      "armor_multiplier": 0.5
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "effects": [
+    {
+      "id": "bleed",
+      "duration": 50000,
+      "bp": "torso"
+    }
+  ],
+  "hit_dmg_u": "The %1$s bit your torso with hemorrhage!",
+  "hit_dmg_npc": "The %1$s bit <npcname>'s torso with hemorrhage!",
+  "no_dmg_msg_u": "The %1$s tries to bite your torso, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "The %1$s tries to bite <npcname>'s torso, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "hemorrhage",
+  "cooldown": 30,
+  "move_cost": 100,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 3,
+      "armor_penetration": 20,
+      "armor_multiplier": 0.5
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "effects": [
+    {
+      "id": "bleed",
+      "duration": 50000,
+      "bp": "torso"
+    }
+  ],
+  "hit_dmg_u": "%1$s把你咬出血了！",
+  "hit_dmg_npc": "%1$s把<npcname>咬出血了！",
+  "no_dmg_msg_u": "%1$s尝试去咬你的躯体，但是没有穿透你的护甲！",
+  "no_dmg_msg_npc": "%1$s尝试去咬<npcname>的躯体，但是没有穿透护甲！"
+}
+```
+

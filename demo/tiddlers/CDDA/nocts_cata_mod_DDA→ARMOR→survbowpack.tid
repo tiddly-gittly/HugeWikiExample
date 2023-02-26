@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: ARMOR nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→ARMOR→survbowpack
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：survbowpack|http://cdda.aloxaf.cn/search?q=survbowpack]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "survbowpack",
+  "type": "ARMOR",
+  "name": {
+    "str": "survivor's archer backpack"
+  },
+  "//": "This adds the quiver function.",
+  "description": "A custom-built backpack modified further to be an archer's best friend.  Lots of storage, manageable encumbrance and a built in quiver.",
+  "weight": "1200 g",
+  "volume": "3 L",
+  "price": "360 USD",
+  "price_postapoc": "36 USD",
+  "phase": "solid",
+  "material": [
+    "leather",
+    "cotton"
+  ],
+  "symbol": "[",
+  "looks_like": "survivor_pack",
+  "color": "brown",
+  "pocket_data": [
+    {
+      "ammo_restriction": {
+        "arrow": 50,
+        "bolt": 50
+      },
+      "moves": 20
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "16 L",
+      "max_contains_weight": "32 kg",
+      "moves": 300
+    }
+  ],
+  "warmth": 10,
+  "material_thickness": 2,
+  "flags": [
+    "WATER_FRIENDLY",
+    "STURDY",
+    "BELTED"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        4,
+        16
+      ],
+      "coverage": 35,
+      "covers": [
+        "torso"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "survbowpack",
+  "type": "ARMOR",
+  "name": {
+    "str": "幸存者弓箭手背包"
+  },
+  "//": "This adds the quiver function.",
+  "description": "一件自制的弓箭手背包。储存空间大，累赘小还配有内置箭袋。",
+  "weight": "1200 g",
+  "volume": "3 L",
+  "price": "360 USD",
+  "price_postapoc": "36 USD",
+  "phase": "solid",
+  "material": [
+    "leather",
+    "cotton"
+  ],
+  "symbol": "[",
+  "looks_like": "survivor_pack",
+  "color": "brown",
+  "pocket_data": [
+    {
+      "ammo_restriction": {
+        "arrow": 50,
+        "bolt": 50
+      },
+      "moves": 20
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "16 L",
+      "max_contains_weight": "32 kg",
+      "moves": 300
+    }
+  ],
+  "warmth": 10,
+  "material_thickness": 2,
+  "flags": [
+    "WATER_FRIENDLY",
+    "STURDY",
+    "BELTED"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        4,
+        16
+      ],
+      "coverage": 35,
+      "covers": [
+        "torso"
+      ]
+    }
+  ]
+}
+```
+

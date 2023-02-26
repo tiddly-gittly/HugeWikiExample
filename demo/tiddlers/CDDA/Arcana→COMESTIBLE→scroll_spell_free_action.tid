@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→scroll_spell_free_action
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：scroll_spell_free_action|http://cdda.aloxaf.cn/search?q=scroll_spell_free_action]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "scroll_spell_free_action",
+  "copy-from": "scroll_magic_base",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "Pattern Scroll (Free Action)",
+    "str_pl": "Pattern Scrolls (Free Action)"
+  },
+  "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against paralytic effects and other hindrances, along with briefly freezing time.\"",
+  "price": "3000 USD",
+  "price_postapoc": "80 USD",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_pattern_free_action",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "scroll_spell_free_action",
+  "copy-from": "scroll_magic_base",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "彩纹绘卷（挣脱束缚）",
+    "str_pl": "彩纹绘卷（挣脱束缚）"
+  },
+  "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against paralytic effects and other hindrances, along with briefly freezing time.\"",
+  "price": "3000 USD",
+  "price_postapoc": "80 USD",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_pattern_free_action",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+

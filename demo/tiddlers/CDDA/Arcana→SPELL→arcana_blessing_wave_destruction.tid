@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_wave_destruction
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_wave_destruction|http://cdda.aloxaf.cn/search?q=arcana_blessing_wave_destruction]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_wave_destruction",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Wave of Destruction"
+  },
+  "description": "Arcane Blessing\nUsing this spell will unleash a devastating, destructive blast of force, scouring the very land itself.  Anything close enough will take double damage.  Overuse will fatigue the user's body and mind.",
+  "message": "The very air wavers as an otherworldly roar resounds, blasting everything around you with the lightning of an unnatural storm.",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_lightning_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_wave_destruction_spike",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_wave_destruction_pulse",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_wave_destruction_side_effects",
+      "hit_self": true,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_wave_destruction_noise",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "stunned",
+  "min_damage": 50,
+  "max_damage": 250,
+  "damage_increment": 10,
+  "damage_type": "pure",
+  "min_aoe": 8,
+  "max_aoe": 24,
+  "aoe_increment": 1.4,
+  "max_level": 20,
+  "difficulty": 100,
+  "skill": "magic",
+  "base_casting_time": 550,
+  "final_casting_time": 275,
+  "casting_time_increment": -13.75,
+  "energy_source": "MANA",
+  "base_energy_cost": 660,
+  "final_energy_cost": 330,
+  "energy_increment": -16.5,
+  "min_duration": 3000,
+  "max_duration": 15000,
+  "duration_increment": 600,
+  "field_id": "fd_electricity",
+  "field_chance": 3,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_wave_destruction",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：毁灭浪潮"
+  },
+  "description": "奥术祝福\n使用该法术将释放出毁灭性的破坏性力量，掠夺整个土地本身。",
+  "message": "超乎寻常的轰鸣声响彻了超凡脱俗的轰鸣，用不自然的风暴闪电轰炸了你周围的一切。",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_lightning_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_wave_destruction_spike",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_wave_destruction_pulse",
+      "hit_self": false,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_wave_destruction_side_effects",
+      "hit_self": true,
+      "max_level": 20
+    },
+    {
+      "id": "arcana_aftermath_wave_destruction_noise",
+      "hit_self": false,
+      "max_level": 20
+    }
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "stunned",
+  "min_damage": 50,
+  "max_damage": 250,
+  "damage_increment": 10,
+  "damage_type": "pure",
+  "min_aoe": 8,
+  "max_aoe": 24,
+  "aoe_increment": 1.4,
+  "max_level": 20,
+  "difficulty": 100,
+  "skill": "magic",
+  "base_casting_time": 550,
+  "final_casting_time": 275,
+  "casting_time_increment": -13.75,
+  "energy_source": "MANA",
+  "base_energy_cost": 660,
+  "final_energy_cost": 330,
+  "energy_increment": -16.5,
+  "min_duration": 3000,
+  "max_duration": 15000,
+  "duration_increment": 600,
+  "field_id": "fd_electricity",
+  "field_chance": 3,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+

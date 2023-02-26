@@ -1,0 +1,249 @@
+creator: 林一二
+revision: 0
+tags: martial_art secronom_lore_expansion
+title: secronom_lore_expansion→martial_art→secro_style_biomorph
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_style_biomorph|http://cdda.aloxaf.cn/search?q=secro_style_biomorph]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "martial_art",
+  "id": "secro_style_biomorph",
+  "name": {
+    "str": "Biomorph"
+  },
+  "description": "An innate knowledge gained by those who harness the power of bio-organic exoskeleton \"Flesh Vessel\". This style specializes at controlling hybrid weaponry called armaments and use them at their full potential thanks to your power armor's own consciousness.",
+  "initiate": [
+    "Your suit trembles as you take a defensive stance.",
+    "%s takes on a defensive stance."
+  ],
+  "learn_difficulty": 10,
+  "primary_skill": "secro_flesh_combat",
+  "static_buffs": [
+    {
+      "id": "buff_secro_biomorph_biomass_static",
+      "name": "Biomass Protection",
+      "description": "Your suit will always try to minimize the damage dealt to you by increasing the mass to the parts you're about to get hit.\n\nIncoming physical damage decreased by 2 and an additional 10% of Strength.",
+      "forbidden_buffs_all": [
+        "buff_secro_biomorph_augment_onpause"
+      ],
+      "melee_allowed": true,
+      "unarmed_allowed": true,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scaling-stat": "str",
+          "scale": 0.1
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scaling-stat": "str",
+          "scale": 0.1
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scaling-stat": "str",
+          "scale": 0.1
+        },
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": 2
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": 2
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": 2
+        }
+      ]
+    }
+  ],
+  "onpause_buffs": [
+    {
+      "id": "buff_secro_biomorph_augment_onpause",
+      "name": "Augmenting Distribution",
+      "description": "You channel your suit to enhance your armament. Disables suit's defensive capabilities as a cost.\n\nLasts for 10 turns",
+      "buff_duration": 10,
+      "melee_allowed": true
+    }
+  ],
+  "onhit_buffs": [
+    {
+      "id": "buff_secro_biomorph_augment_tent_onhit",
+      "name": "Augment: Twisted Vein",
+      "description": "Your twisted veins armament increases in numbers as you land a hit.\n\nBash damage increased by 2 for each stack. Physical resistance decreases by 1 every 3 stacks. Lasts for 4 turns. Stacks 6 times.",
+      "buff_duration": 4,
+      "max_stacks": 6,
+      "melee_allowed": true,
+      "required_buffs_all": [
+        "buff_secro_biomorph_augment_onpause"
+      ],
+      "weapon_categories_allowed": [
+        "SECRO_BOW_MELEE_TV"
+      ],
+      "flat_bonuses": [
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scale": 2
+        },
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": -0.33
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": -0.33
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": -0.33
+        }
+      ]
+    }
+  ],
+  "weapon_category": [
+    "SECRO_BOW"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "martial_art",
+  "id": "secro_style_biomorph",
+  "name": {
+    "str": "肉机建模"
+  },
+  "description": "利用生物有机外骨骼“肉血管”力量的人获得的先天知识。这种风格专门用于控制称为武器的混合武器，并凭借你的力量装甲自身的意识充分发挥其潜力。",
+  "initiate": [
+    "当你采取防御姿态时，你的衣服会颤抖。",
+    "%s采取防御姿态。"
+  ],
+  "learn_difficulty": 10,
+  "primary_skill": "secro_flesh_combat",
+  "static_buffs": [
+    {
+      "id": "buff_secro_biomorph_biomass_static",
+      "name": "生物量保护",
+      "description": "你的西装总是试图通过增加你将要被击中的部位的质量来尽量减少对你造成的伤害。\n\n点来袭物理伤害减少2点，强度增加10%。",
+      "forbidden_buffs_all": [
+        "buff_secro_biomorph_augment_onpause"
+      ],
+      "melee_allowed": true,
+      "unarmed_allowed": true,
+      "flat_bonuses": [
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scaling-stat": "str",
+          "scale": 0.1
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scaling-stat": "str",
+          "scale": 0.1
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scaling-stat": "str",
+          "scale": 0.1
+        },
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": 2
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": 2
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": 2
+        }
+      ]
+    }
+  ],
+  "onpause_buffs": [
+    {
+      "id": "buff_secro_biomorph_augment_onpause",
+      "name": "Augmenting Distribution",
+      "description": "You channel your suit to enhance your armament. Disables suit's defensive capabilities as a cost.\n\nLasts for 10 turns",
+      "buff_duration": 10,
+      "melee_allowed": true
+    }
+  ],
+  "onhit_buffs": [
+    {
+      "id": "buff_secro_biomorph_augment_tent_onhit",
+      "name": "增强：扭曲静脉",
+      "description": "当你命中目标时，你的武器数量会增加。\n\n钝击伤害每层增加 2 点。物理防护每 3 层降低 1 点。持续 4 回合。可叠加 6 次。",
+      "buff_duration": 4,
+      "max_stacks": 6,
+      "melee_allowed": true,
+      "required_buffs_all": [
+        "buff_secro_biomorph_augment_onpause"
+      ],
+      "weapon_categories_allowed": [
+        "SECRO_BOW_MELEE_TV"
+      ],
+      "flat_bonuses": [
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scale": 2
+        },
+        {
+          "stat": "armor",
+          "type": "bash",
+          "scale": -0.33
+        },
+        {
+          "stat": "armor",
+          "type": "cut",
+          "scale": -0.33
+        },
+        {
+          "stat": "armor",
+          "type": "stab",
+          "scale": -0.33
+        }
+      ]
+    }
+  ],
+  "weapon_category": [
+    "SECRO_BOW"
+  ]
+}
+```
+

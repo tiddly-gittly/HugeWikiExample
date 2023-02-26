@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: MONSTER nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→MONSTER→mon_zombie_bio_knife
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_bio_knife|http://cdda.aloxaf.cn/search?q=mon_zombie_bio_knife]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_bio_knife",
+  "type": "MONSTER",
+  "copy-from": "mon_zombie_bio_dormant_unarmed",
+  "looks_like": "mon_zombie_bio_op2",
+  "name": {
+    "str": "zombie augmented prowler"
+  },
+  "description": "An advanced, well-equipped member of the military that still succumbed to the cataclysm.  This one moves with purpose and clarity, knife in hand as though it still remembers how to use it.",
+  "speed": 100,
+  "dodge": 4,
+  "melee_skill": 5,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 10
+    }
+  ],
+  "path_settings": {
+    "max_dist": 20
+  },
+  "vision_night": 20,
+  "special_attacks": [
+    [
+      "GRAB",
+      10
+    ],
+    [
+      "BIO_OP_TAKEDOWN",
+      30
+    ],
+    [
+      "LUNGE",
+      20
+    ]
+  ],
+  "death_drops": "mon_zombie_bio_knife_death_drops",
+  "zombify_into": "mon_zombie_bio_reanimated",
+  "flags": [
+    "HARDTOSHOOT",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "delete": {
+    "upgrades": {
+      "half_life": 28,
+      "into": "mon_zombie_bio_knife"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_bio_knife",
+  "type": "MONSTER",
+  "copy-from": "mon_zombie_bio_dormant_unarmed",
+  "looks_like": "mon_zombie_bio_op2",
+  "name": {
+    "str": "超级巡游者丧尸"
+  },
+  "description": "一个装备精良的特种军人，但仍在大灾变中加入了无尽丧尸大军。正以诡异的步伐快速突进，它的手中仍出于本能紧握着生前想自我了结的军用匕首;当现在却在灵巧的把弄着，更恐怖的是看上去他还知道如何使用它.......",
+  "speed": 100,
+  "dodge": 4,
+  "melee_skill": 5,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 10
+    }
+  ],
+  "path_settings": {
+    "max_dist": 20
+  },
+  "vision_night": 20,
+  "special_attacks": [
+    [
+      "GRAB",
+      10
+    ],
+    [
+      "BIO_OP_TAKEDOWN",
+      30
+    ],
+    [
+      "LUNGE",
+      20
+    ]
+  ],
+  "death_drops": "mon_zombie_bio_knife_death_drops",
+  "zombify_into": "mon_zombie_bio_reanimated",
+  "flags": [
+    "HARDTOSHOOT",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "delete": {
+    "upgrades": {
+      "half_life": 28,
+      "into": "mon_zombie_bio_knife"
+    }
+  }
+}
+```
+

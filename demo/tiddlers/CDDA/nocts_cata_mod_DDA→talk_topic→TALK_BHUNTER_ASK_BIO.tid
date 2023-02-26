@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BHUNTER_ASK_BIO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BHUNTER_ASK_BIO|http://cdda.aloxaf.cn/search?q=TALK_BHUNTER_ASK_BIO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BHUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BHUNTER_ASK_BIO",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "You're kidding, right?  You really don't know?  Is that badge actually yours…? Maybe that mindwipe rumor was true after all…",
+    "no": "So you don't know about them, huh?  Maybe I'm wasting my time… but you did find this place, so you probably know what you're doing."
+  },
+  "responses": [
+    {
+      "text": "Could you explain it to me?",
+      "trial": {
+        "type": "NONE"
+      },
+      "success": {
+        "opinion": {
+          "trust": 1,
+          "fear": 0,
+          "value": 1,
+          "anger": 0
+        },
+        "topic": "TALK_BHUNTER_EXPLAIN_BIO"
+      }
+    },
+    {
+      "text": "Whatever it is, I really don't care.",
+      "trial": {
+        "type": "NONE"
+      },
+      "success": {
+        "opinion": {
+          "trust": 0,
+          "fear": 0,
+          "value": -1,
+          "anger": -2
+        },
+        "topic": "TALK_BHUNTER_NOCARE"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BHUNTER_ASK_BIO",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "你没开玩笑吧？你真的不知道？那个徽章真的是你的吗…？也许抹去记忆的传言是真的……",
+    "no": "所以你不知道他们，嗯？也许我是在浪费时间…但你确实找到了这个地方，所以你可能知道你在做什么。"
+  },
+  "responses": [
+    {
+      "text": "你能给我解释一下吗？",
+      "trial": {
+        "type": "NONE"
+      },
+      "success": {
+        "opinion": {
+          "trust": 1,
+          "fear": 0,
+          "value": 1,
+          "anger": 0
+        },
+        "topic": "TALK_BHUNTER_EXPLAIN_BIO"
+      }
+    },
+    {
+      "text": "不管那是什么，我真的不在乎。",
+      "trial": {
+        "type": "NONE"
+      },
+      "success": {
+        "opinion": {
+          "trust": 0,
+          "fear": 0,
+          "value": -1,
+          "anger": -2
+        },
+        "topic": "TALK_BHUNTER_NOCARE"
+      }
+    }
+  ]
+}
+```
+

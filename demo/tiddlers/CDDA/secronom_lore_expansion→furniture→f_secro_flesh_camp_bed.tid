@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: furniture secronom_lore_expansion
+title: secronom_lore_expansion→furniture→f_secro_flesh_camp_bed
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_secro_flesh_camp_bed|http://cdda.aloxaf.cn/search?q=f_secro_flesh_camp_bed]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Maps/-Essentials/flesh_ter_furn_camp.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_secro_flesh_camp_bed",
+  "name": "flesh bed",
+  "symbol": "#",
+  "description": "A lump of flesh carefully molded into a bed. Although it may be sticky, it'll keep you warm.",
+  "color": "red",
+  "move_cost_mod": 5,
+  "coverage": 60,
+  "comfort": 4,
+  "floor_bedding_warmth": 700,
+  "required_str": -1,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_HARD",
+    "PLACE_ITEM",
+    "MOUNTABLE",
+    "CAN_SIT",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 15,
+    "str_max": 50,
+    "sound": "splook!",
+    "sound_fail": "splat.",
+    "items": [
+      {
+        "item": "secro_flesh",
+        "count": [
+          2,
+          4
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_secro_flesh_camp_bed",
+  "name": "血肉床",
+  "symbol": "#",
+  "description": "被肉块覆盖的床，尽管很粘，但是能够保证温暖",
+  "color": "red",
+  "move_cost_mod": 5,
+  "coverage": 60,
+  "comfort": 4,
+  "floor_bedding_warmth": 700,
+  "required_str": -1,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_HARD",
+    "PLACE_ITEM",
+    "MOUNTABLE",
+    "CAN_SIT",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 15,
+    "str_max": 50,
+    "sound": "splook!",
+    "sound_fail": "splat.",
+    "items": [
+      {
+        "item": "secro_flesh",
+        "count": [
+          2,
+          4
+        ]
+      }
+    ]
+  }
+}
+```
+

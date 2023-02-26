@@ -1,0 +1,235 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_ivy_brute
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_ivy_brute|http://cdda.aloxaf.cn/search?q=mon_BL9_ivy_brute]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/wild_flora_fauna.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_ivy_brute",
+  "looks_like": "mon_zombie_thorny",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9 ivy zombie brute"
+  },
+  "description": "A corpse with huge swollen muscles severely infested by the plant of unknown variety. Although it's movement is very stiff, it's mouth has altered to an extent, it occupies the entirety of it's face that's lined with razor-sharp teeth.",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 305,
+  "speed": 60,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 3,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    },
+    {
+      "damage_type": "stab",
+      "amount": 11
+    },
+    {
+      "damage_type": "bash",
+      "amount": 3
+    }
+  ],
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Clawer",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 12,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "armor_penetration": 14,
+          "armor_multiplier": 1.1
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 15,
+      "move_cost": 200,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 24,
+          "armor_penetration": 17
+        },
+        {
+          "damage_type": "stab",
+          "amount": 20,
+          "armor_penetration": 15
+        }
+      ],
+      "hit_dmg_u": "The %1$s crunches at you!",
+      "hit_dmg_npc": "The %1$s crunches at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to viciously bite you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s crunches at you, but you step aside!",
+      "miss_msg_npc": "The %s crunches <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_ivy_brute",
+  "looks_like": "mon_zombie_thorny",
+  "type": "MONSTER",
+  "name": {
+    "str": "BL9常春藤丧尸畜生"
+  },
+  "description": "一具肌肉肿胀的尸体，严重感染了未知种类的植物。虽然它的动作非常僵硬，但它的嘴已经发生了一定程度的变化，它占据了整个脸，脸上布满了锋利的牙齿。",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 305,
+  "speed": 60,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 3,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    },
+    {
+      "damage_type": "stab",
+      "amount": 11
+    },
+    {
+      "damage_type": "bash",
+      "amount": 3
+    }
+  ],
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Clawer",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 12,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "armor_penetration": 14,
+          "armor_multiplier": 1.1
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 15,
+      "move_cost": 200,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 24,
+          "armor_penetration": 17
+        },
+        {
+          "damage_type": "stab",
+          "amount": 20,
+          "armor_penetration": 15
+        }
+      ],
+      "hit_dmg_u": "The %1$s crunches at you!",
+      "hit_dmg_npc": "The %1$s crunches at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to viciously bite you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s crunches at you, but you step aside!",
+      "miss_msg_npc": "The %s crunches <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

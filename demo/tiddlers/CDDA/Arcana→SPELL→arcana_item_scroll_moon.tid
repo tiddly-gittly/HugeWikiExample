@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_scroll_moon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_scroll_moon|http://cdda.aloxaf.cn/search?q=arcana_item_scroll_moon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_scroll_moon",
+  "type": "SPELL",
+  "name": {
+    "str": "Sightless Sanctuary"
+  },
+  "description": "Overwhelming darkness, both in field and event form, blinds monsters.",
+  "message": "\"Do not fear the unknown.\"  A shadowy mist spreads out in all directions, wisps of living dark trailing upwards to blot out everything in its wake!",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_moon_blind",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_moon_event",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_aoe": 24,
+  "max_aoe": 24,
+  "field_id": "fd_veil_darkness",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "min_duration": 240000,
+  "max_duration": 480000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_scroll_moon",
+  "type": "SPELL",
+  "name": {
+    "str": "暗影屏障"
+  },
+  "description": "Overwhelming darkness, both in field and event form, blinds monsters.",
+  "message": "“不要害怕未知。”一团朦胧的薄雾向四面八方散开，鲜活的黑暗向上蔓延，遮蔽了一切！",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_moon_blind",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_moon_event",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_aoe": 24,
+  "max_aoe": 24,
+  "field_id": "fd_veil_darkness",
+  "field_chance": 1,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "min_duration": 240000,
+  "max_duration": 480000
+}
+```
+

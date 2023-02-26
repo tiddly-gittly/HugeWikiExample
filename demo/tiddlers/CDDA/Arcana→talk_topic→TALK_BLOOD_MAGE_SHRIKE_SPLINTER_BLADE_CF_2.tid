@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_2|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_2",
+  "type": "talk_topic",
+  "dynamic_line": "Yes, you will.  I suppose I can afford to lend you one for that purpose.  I will trust you to take good care of it, understood?",
+  "responses": [
+    {
+      "text": "There is no need.  I already have one.",
+      "switch": true,
+      "condition": {
+        "u_has_item": "book_bloodmagic"
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_3"
+    },
+    {
+      "text": "Understood.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX"
+    },
+    {
+      "text": "I'll see about this another time.",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_2",
+  "type": "talk_topic",
+  "dynamic_line": "是的，你会的。我想我可以借给你一个。我相信你会好好照顾的，明白吗？",
+  "responses": [
+    {
+      "text": "没有必要。我已经有一个了。",
+      "switch": true,
+      "condition": {
+        "u_has_item": "book_bloodmagic"
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_3"
+    },
+    {
+      "text": "了解。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX"
+    },
+    {
+      "text": "我下次再考虑。",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+

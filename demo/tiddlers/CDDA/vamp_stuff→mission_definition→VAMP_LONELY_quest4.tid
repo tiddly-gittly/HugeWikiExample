@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_LONELY_quest4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_LONELY_quest4|http://cdda.aloxaf.cn/search?q=VAMP_LONELY_quest4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_LONELY_quest4",
+  "type": "mission_definition",
+  "name": {
+    "str": "Take Vampire to the Cove"
+  },
+  "description": "Escort the vampire to the <color_light_blue>vampire cove</color>.",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 2,
+  "value": 500000,
+  "destination": "vampcave_corridor1",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "vampcave_entrance",
+      "om_special": "Vampire Cove",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    },
+    "effect": [
+      "follow_only"
+    ]
+  },
+  "end": {
+    "effect": [
+      "stop_following",
+      {
+        "npc_add_trait": "isolatedtestsdone"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "This is the last job, you want to do it?",
+    "offer": "Since you've been helping me for a while, I will need you to travel with me to the vampire cove. Being isolated for centuries is a great experience, but seeing a living community of my kind alleviates my frozen body the most.",
+    "accepted": "Good, those tests proved yourself a good descendant. As a reward, I'll protect you along the way.",
+    "rejected": "Just okay, get back later...",
+    "advice": "This may be a long journey. You know I'm a night creature, so you'll have to take care of me in daytime.",
+    "inquire": "What?",
+    "success": "I see my kindred seems alright. Well, it does matter to me, and you've been the key to this. Thank you, descendant.",
+    "success_lie": "Just thanks...",
+    "failure": "*smirks*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_LONELY_quest4",
+  "type": "mission_definition",
+  "name": {
+    "str": "带吸血鬼去洞窟"
+  },
+  "description": "护送吸血鬼到<color_light_blue>吸血鬼湾</color>。",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 2,
+  "value": 500000,
+  "destination": "vampcave_corridor1",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "vampcave_entrance",
+      "om_special": "Vampire Cove",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    },
+    "effect": [
+      "follow_only"
+    ]
+  },
+  "end": {
+    "effect": [
+      "stop_following",
+      {
+        "npc_add_trait": "isolatedtestsdone"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "这是最后一份工作，你想做吗？",
+    "offer": "既然你帮了我一段时间，我需要你陪我去吸血鬼湾。被孤立了几个世纪是一个伟大的经历，但看到一个像我这样的生活社区最能减轻我僵硬的身体。",
+    "accepted": "很好，那些测试证明你是个好后代。作为回报，我会一路保护你。",
+    "rejected": "好吧，晚点回来…",
+    "advice": "这可能是一个漫长的旅程。你知道我是个夜猫子，所以白天你得照顾我。",
+    "inquire": "什么？",
+    "success": "我看我的亲戚似乎没事。嗯，这对我来说很重要，而你是这件事的关键。谢谢你，后人。",
+    "success_lie": "谢谢你…",
+    "failure": "*傻笑*"
+  }
+}
+```
+

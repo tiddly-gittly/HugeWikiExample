@@ -1,0 +1,241 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_tendricles
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_tendricles|http://cdda.aloxaf.cn/search?q=mon_zombie_tendricles]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Tendrils.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_tendricles",
+  "type": "MONSTER",
+  "name": "tendril zombie",
+  "description": "A frail-looking corpse with raging long tentacles covering its rotten skin.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 105,
+  "speed": 105,
+  "diff": 5,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨏",
+  "color": "light_gray",
+  "aggression": 100,
+  "morale": 100,
+  "harvest": "zombie",
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "dodge": 1,
+  "grab_strength": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    },
+    {
+      "damage_type": "bash",
+      "amount": 1
+    },
+    {
+      "damage_type": "stab",
+      "amount": 3
+    }
+  ],
+  "armor_bash": 6,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "armor_acid": 1,
+  "armor_fire": 1,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_tendrils_sprint_check"
+      },
+      "cooldown": 422,
+      "monster_message": "<color_yellow>%1$s twitches.</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 6,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "armor_penetration": 10
+        }
+      ]
+    },
+    [
+      "tendrilswing",
+      4
+    ],
+    [
+      "tendrilslam",
+      22
+    ],
+    [
+      "tendrilgrip",
+      15
+    ],
+    [
+      "tendrilstab",
+      32
+    ],
+    [
+      "GRAB_DRAG",
+      10
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 16,
+    "into_group": "GROUP_TENDRILS_UPGRADEX"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_tendricles",
+  "type": "MONSTER",
+  "name": "触手丧尸",
+  "description": "一具体弱的尸体，腐烂的皮肤上覆盖着愤怒的长触手。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 105,
+  "speed": 105,
+  "diff": 5,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨏",
+  "color": "light_gray",
+  "aggression": 100,
+  "morale": 100,
+  "harvest": "zombie",
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "dodge": 1,
+  "grab_strength": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    },
+    {
+      "damage_type": "bash",
+      "amount": 1
+    },
+    {
+      "damage_type": "stab",
+      "amount": 3
+    }
+  ],
+  "armor_bash": 6,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "armor_acid": 1,
+  "armor_fire": 1,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_tendrils_sprint_check"
+      },
+      "cooldown": 422,
+      "monster_message": "<color_yellow>%1$s次抽搐。</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 6,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "armor_penetration": 10
+        }
+      ]
+    },
+    [
+      "tendrilswing",
+      4
+    ],
+    [
+      "tendrilslam",
+      22
+    ],
+    [
+      "tendrilgrip",
+      15
+    ],
+    [
+      "tendrilstab",
+      32
+    ],
+    [
+      "GRAB_DRAG",
+      10
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "upgrades": {
+    "half_life": 16,
+    "into_group": "GROUP_TENDRILS_UPGRADEX"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "PUSH_MON"
+  ]
+}
+```
+

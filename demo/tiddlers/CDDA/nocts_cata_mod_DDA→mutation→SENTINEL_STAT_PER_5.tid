@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_STAT_PER_5
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_STAT_PER_5|http://cdda.aloxaf.cn/search?q=SENTINEL_STAT_PER_5]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_STAT_PER_5",
+  "name": {
+    "str": "Sentinel Perception V"
+  },
+  "points": 5,
+  "description": "Your perception has been massively increased by your mental alterations, relative to your natural alertness.  Perception +10.",
+  "valid": false,
+  "purifiable": false,
+  "cancels": [
+    "PER_UP",
+    "PER_UP_2",
+    "PER_UP_3",
+    "PER_UP_4",
+    "PER_ALPHA"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_PER_3"
+  ],
+  "prereqs2": [
+    "SENTINEL_STAT_PER_4"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "passive_mods": {
+    "per_mod": 10
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_STAT_PER_5",
+  "name": {
+    "str": "哨兵感知 V"
+  },
+  "points": 5,
+  "description": "相对于你天生的感知而言，你的身体变化极大地增强了你的感知。感知+10。",
+  "valid": false,
+  "purifiable": false,
+  "cancels": [
+    "PER_UP",
+    "PER_UP_2",
+    "PER_UP_3",
+    "PER_UP_4",
+    "PER_ALPHA"
+  ],
+  "prereqs": [
+    "SENTINEL_PERK_PER_3"
+  ],
+  "prereqs2": [
+    "SENTINEL_STAT_PER_4"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "passive_mods": {
+    "per_mod": 10
+  }
+}
+```
+

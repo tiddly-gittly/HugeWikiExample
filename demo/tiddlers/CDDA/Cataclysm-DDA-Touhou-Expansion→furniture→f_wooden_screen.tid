@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: furniture Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→furniture→f_wooden_screen
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_wooden_screen|http://cdda.aloxaf.cn/search?q=f_wooden_screen]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/terrain_furniture/thex_furniture.json
+
+
+!! 原文
+
+```json
+{
+  "id": "f_wooden_screen",
+  "type": "furniture",
+  "name": "wooden screen",
+  "description": "An Oriental-style folding screen, made from wood and paper.  It features different elaborated designs.",
+  "symbol": "#",
+  "looks_like": "t_tree_cherry",
+  "color": "yellow",
+  "move_cost_mod": 0,
+  "coverage": 75,
+  "deployed_item": "wooden_screen_folded",
+  "examine_action": "portable_structure",
+  "required_str": 3,
+  "deconstruct": {
+    "items": [
+      {
+        "item": "nail",
+        "charges": [
+          4,
+          12
+        ]
+      },
+      {
+        "item": "stick",
+        "count": [
+          4,
+          8
+        ]
+      },
+      {
+        "item": "paper",
+        "count": [
+          8,
+          24
+        ]
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 2,
+    "str_max": 6,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "nail",
+        "charges": [
+          1,
+          5
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "paper",
+        "count": [
+          4,
+          12
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "BLOCK_WIND",
+    "FLAMMABLE_ASH",
+    "PERMEABLE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "f_wooden_screen",
+  "type": "furniture",
+  "name": "wooden screen",
+  "description": "An Oriental-style folding screen, made from wood and paper.  It features different elaborated designs.",
+  "symbol": "#",
+  "looks_like": "t_tree_cherry",
+  "color": "yellow",
+  "move_cost_mod": 0,
+  "coverage": 75,
+  "deployed_item": "wooden_screen_folded",
+  "examine_action": "portable_structure",
+  "required_str": 3,
+  "deconstruct": {
+    "items": [
+      {
+        "item": "nail",
+        "charges": [
+          4,
+          12
+        ]
+      },
+      {
+        "item": "stick",
+        "count": [
+          4,
+          8
+        ]
+      },
+      {
+        "item": "paper",
+        "count": [
+          8,
+          24
+        ]
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 2,
+    "str_max": 6,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "nail",
+        "charges": [
+          1,
+          5
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          2,
+          6
+        ]
+      },
+      {
+        "item": "paper",
+        "count": [
+          4,
+          12
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "BLOCK_WIND",
+    "FLAMMABLE_ASH",
+    "PERMEABLE"
+  ]
+}
+```
+

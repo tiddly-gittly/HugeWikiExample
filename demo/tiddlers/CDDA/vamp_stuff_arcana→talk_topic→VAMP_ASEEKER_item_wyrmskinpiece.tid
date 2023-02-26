@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_item_wyrmskinpiece
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_item_wyrmskinpiece|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_item_wyrmskinpiece]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_itemvalidation.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_wyrmskinpiece",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "I will give you 3 tokens for each wyrmskin fragment you bring to me.",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "I will give you 170$ for each wyrmskin fragment you bring to me.",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "I will give you 70$ for each wyrmskin fragment you bring to me.",
+        "no": "I will give you 20$ and 3 tokens for each wyrmskin fragment you bring to me."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Okay...",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeriwyrmskinpieceval"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_item_wyrmskinpiece",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "vaseekerrewardingcollabitems",
+    "yes": "你给我带来的每一块wyrmskin碎片我会给你3个代币。",
+    "no": {
+      "npc_has_trait": "vaseekerrewardingcollabmoney",
+      "yes": "你带给我的每一块wyrmskin碎片我会给你170美元。",
+      "no": {
+        "npc_has_trait": "vaseekernorewardcollab",
+        "yes": "你带给我的每一块wyrmskin碎片我给你70美元。",
+        "no": "我会给你20美元和3个代币，每wyrmskin碎片你带来给我。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "好吧……",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "effect": {
+        "npc_add_trait": "vaseekeriwyrmskinpieceval"
+      }
+    }
+  ]
+}
+```
+

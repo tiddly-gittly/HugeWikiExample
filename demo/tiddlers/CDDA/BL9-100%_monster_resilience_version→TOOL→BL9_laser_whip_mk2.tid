@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: TOOL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→TOOL→BL9_laser_whip_mk2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_laser_whip_mk2|http://cdda.aloxaf.cn/search?q=BL9_laser_whip_mk2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Items/melee_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_laser_whip_mk2",
+  "looks_like": "bullwhip_razor",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9 experimental laser whip MK ii"
+  },
+  "description": "A refined and upgraded highly experimental futuristic whip with a unique design that uses BL9 capable of changing it's physical and chemical structure to cause various offensive effects, in this case, concentrated rays of vaporized BL9",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 9,
+  "cutting": 27,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_laser_melee_mk2_effect",
+            "message": "As you strike with the whip it emits concentrated rays of vaporized BL9 at %2$s wildly!",
+            "npc_message": "As %1$s strikes with the whip it emits concentrated rays of vaporized BL9 at %2$s wildly!"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "SWEEP",
+    "BRUTAL",
+    "tec_brawl_feint_melee",
+    "tec_silat_hamstring",
+    "tec_silat_brutal",
+    "tec_medievalpole_hook",
+    "tec_medievalpole_highround"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "REACH_ATTACK",
+    "WHIP",
+    "NONCONDUCTIVE",
+    "STAB"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_laser_whip_mk2",
+  "looks_like": "bullwhip_razor",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9实验激光鞭MK ii"
+  },
+  "description": "这是一款经过改进和升级的高度实验性的未来鞭，采用独特的设计，使用BL9能够改变其物理和化学结构，从而产生各种令人不快的效果，在这种情况下，是蒸发的BL9的浓缩射线",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 9,
+  "cutting": 27,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_laser_melee_mk2_effect",
+            "message": "当你用鞭子抽打时，它会在%2$s疯狂地发射出浓缩的汽化BL9射线！",
+            "npc_message": "当%1$s用鞭子抽打时，它在%2$s疯狂地发射出浓缩的汽化BL9射线！"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "SWEEP",
+    "BRUTAL",
+    "tec_brawl_feint_melee",
+    "tec_silat_hamstring",
+    "tec_silat_brutal",
+    "tec_medievalpole_hook",
+    "tec_medievalpole_highround"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "REACH_ATTACK",
+    "WHIP",
+    "NONCONDUCTIVE",
+    "STAB"
+  ]
+}
+```
+

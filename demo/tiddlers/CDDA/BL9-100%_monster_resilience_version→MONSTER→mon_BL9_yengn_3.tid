@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_yengn_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_yengn_3|http://cdda.aloxaf.cn/search?q=mon_BL9_yengn_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_yengn_3",
+  "looks_like": "mon_skittering_plague",
+  "type": "MONSTER",
+  "name": {
+    "str": "Yengnutrium Evolved Mutant"
+  },
+  "description": "A yellow alien insectoid - it's head resembles a mix of a mantis' and fly's head - it's shape is a strange curved rhombus with multiple strangely placed rapidly blinking eyes, what's left of it's human body is distorted - slightly vertically elongated with 2 wings protruding from it's back, 2 serrated curved claws in the place of the arms, and 2 thin far apart insect legs",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 175,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_penetration": 10
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 7,
+  "armor_cut": 7,
+  "armor_bullet": 7,
+  "death_drops": "BL9_Drops_Evolved_Aliens",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 14
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously claws you!",
+      "hit_dmg_npc": "The %1$s ferociously claws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to claw you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to claw <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's knifelike claw at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's knifelike claw at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_yengn_3",
+  "looks_like": "mon_skittering_plague",
+  "type": "MONSTER",
+  "name": {
+    "str": "英努特里姆进化突变体"
+  },
+  "description": "一种黄色的外星昆虫-它的头像螳螂和苍蝇的头混合体-它的形状是一个奇怪的弯曲菱形，有多个奇怪的快速眨眼的眼睛，它的人体残存部分扭曲-略微垂直拉长，背部突出2个翅膀，手臂处有2个锯齿状弯曲的爪子，还有两条细而远的昆虫腿",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 175,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_penetration": 10
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 7,
+  "armor_cut": 7,
+  "armor_bullet": 7,
+  "death_drops": "BL9_Drops_Evolved_Aliens",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 14
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously claws you!",
+      "hit_dmg_npc": "The %1$s ferociously claws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to claw you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to claw <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's knifelike claw at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's knifelike claw at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

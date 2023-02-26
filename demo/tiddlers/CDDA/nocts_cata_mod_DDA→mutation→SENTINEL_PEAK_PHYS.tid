@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_PEAK_PHYS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_PEAK_PHYS|http://cdda.aloxaf.cn/search?q=SENTINEL_PEAK_PHYS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PEAK_PHYS",
+  "name": {
+    "str": "Sentinel Conditioning: Physical"
+  },
+  "points": 8,
+  "visibility": 2,
+  "description": "Your physical genetic conditioning has reached its peak, beyond all human limits.  Your body is hardened against physical damage slightly and your figure is more intimidating, but you've also developed an immunity to most toxins, as well as depressant and painkilling drugs.  Your metabolism also processes radioactive contaminants faster, and you recover from pain quickly.",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "cancels": [
+    "THICKSKIN",
+    "THINSKIN"
+  ],
+  "prereqs": [
+    "SENTINEL_STAT_STR_5"
+  ],
+  "prereqs2": [
+    "SENTINEL_STAT_DEX_5"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "armor": [
+    {
+      "parts": [
+        "torso",
+        "head",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r",
+        "mouth",
+        "eyes"
+      ],
+      "cut": 3,
+      "bash": 3
+    }
+  ],
+  "social_modifiers": {
+    "intimidate": 30
+  },
+  "enchantments": [
+    "C_MEP_SENTINEL_PHYS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PEAK_PHYS",
+  "name": {
+    "str": "哨兵状态：肉体"
+  },
+  "points": 8,
+  "visibility": 2,
+  "description": "你的肉体基因改造已经达到了顶峰，超越人类的极限。你的身体对物理伤害有轻微的抵抗力并且你的体形更有威慑力，而且你也对大多数毒素以及镇静剂和止痛药产生了免疫力。你的新陈代谢会更快地处理放射性污染物，并且能很快从疼痛中恢复。",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "cancels": [
+    "THICKSKIN",
+    "THINSKIN"
+  ],
+  "prereqs": [
+    "SENTINEL_STAT_STR_5"
+  ],
+  "prereqs2": [
+    "SENTINEL_STAT_DEX_5"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "threshreq": [
+    "THRESH_SUPER_SOLDIER"
+  ],
+  "armor": [
+    {
+      "parts": [
+        "torso",
+        "head",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r",
+        "mouth",
+        "eyes"
+      ],
+      "cut": 3,
+      "bash": 3
+    }
+  ],
+  "social_modifiers": {
+    "intimidate": 30
+  },
+  "enchantments": [
+    "C_MEP_SENTINEL_PHYS"
+  ]
+}
+```
+

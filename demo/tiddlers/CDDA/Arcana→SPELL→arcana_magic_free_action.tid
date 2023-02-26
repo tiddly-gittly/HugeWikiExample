@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_free_action
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_free_action|http://cdda.aloxaf.cn/search?q=arcana_magic_free_action]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_free_action",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Free Action"
+  },
+  "description": "Magic Sign\nUsing this spell will grant protection against paralytic effects, grabs, and other hindrances, along with freezing time briefly to allow an escape.  It can be used on yourself or an ally.",
+  "message": "\"Let there be no fetter that can bind me…\"  You cast %s!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_free_action_timestop",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_3",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "free_action",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "energy_source": "STAMINA",
+  "difficulty": 30,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 160,
+  "final_casting_time": 80,
+  "casting_time_increment": -8,
+  "base_energy_cost": 2000,
+  "final_energy_cost": 1000,
+  "energy_increment": -100,
+  "min_duration": 36000,
+  "max_duration": 72000,
+  "duration_increment": 3600
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_free_action",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：挣脱束缚"
+  },
+  "description": "魔法符号\n使用这个法术将提供对麻痹效果、抓取和其他障碍的保护，以及短暂的冻结时间以允许逃跑。可以用在自己身上，也可以用在盟友身上。",
+  "message": "“让没有束缚我的枷锁……”你施放了 %s！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_free_action_timestop",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_3",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "free_action",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "energy_source": "STAMINA",
+  "difficulty": 30,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 160,
+  "final_casting_time": 80,
+  "casting_time_increment": -8,
+  "base_energy_cost": 2000,
+  "final_energy_cost": 1000,
+  "energy_increment": -100,
+  "min_duration": 36000,
+  "max_duration": 72000,
+  "duration_increment": 3600
+}
+```
+

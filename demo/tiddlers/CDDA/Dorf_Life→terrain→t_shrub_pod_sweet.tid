@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: terrain Dorf_Life
+title: Dorf_Life→terrain→t_shrub_pod_sweet
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_shrub_pod_sweet|http://cdda.aloxaf.cn/search?q=t_shrub_pod_sweet]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/cave_terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_shrub_pod_sweet",
+  "name": "patch of vibrant bulbs",
+  "description": "A patch of bright red plants resembling onions.",
+  "looks_like": "t_underbrush",
+  "symbol": "#",
+  "color": [
+    "red_green",
+    "red_green",
+    "brown_green",
+    "brown_green"
+  ],
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT"
+  ],
+  "transforms_into": "t_shrub_pod_sweet_harvested",
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "id": "pod_sweet_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "ter_set": "t_moss_underground",
+    "items": [
+      {
+        "item": "withered",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_shrub_pod_sweet",
+  "name": "一片活力鳞茎从",
+  "description": "一片类似洋葱的鲜红色植物。",
+  "looks_like": "t_underbrush",
+  "symbol": "#",
+  "color": [
+    "red_green",
+    "red_green",
+    "brown_green",
+    "brown_green"
+  ],
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT"
+  ],
+  "transforms_into": "t_shrub_pod_sweet_harvested",
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "id": "pod_sweet_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "ter_set": "t_moss_underground",
+    "items": [
+      {
+        "item": "withered",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

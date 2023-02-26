@@ -1,0 +1,205 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_skinwalker_wendigo
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_skinwalker_wendigo|http://cdda.aloxaf.cn/search?q=mon_skinwalker_wendigo]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_youkai_skinwalker.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_skinwalker_wendigo",
+  "type": "MONSTER",
+  "name": {
+    "str": "wendigo",
+    "str_pl": "wendigos"
+  },
+  "description": "A half-man, half-deer being.  Standing taller than an adult human, the… entity walks upright, sometimes using the unnaturally long arms as front legs.  The mishappen antlers are as bloody as the carnivorous, bloody smile, which randomly mimicks human laugh and broken speech.  You notice the thorax lacks protective tissue, displaying the bony ribs on the upper side, and spilt guts beneath.",
+  "volume": "95000 ml",
+  "weight": "85000 g",
+  "default_faction": "touhou_youkai_skinwalker",
+  "bodytype": "human",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_SKINWALKER_TOUHOU"
+  ],
+  "harvest": "mammal_leather",
+  "hp": 105,
+  "speed": 150,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ğ",
+  "color": "brown",
+  "aggression": 99,
+  "morale": 35,
+  "melee_skill": 5,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "dodge": 2,
+  "path_settings": {
+    "max_dist": 30
+  },
+  "tracking_distance": 25,
+  "vision_night": 35,
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK"
+  ],
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 6,
+  "armor_stab": 2,
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      35
+    ],
+    [
+      "longswipe",
+      19
+    ],
+    [
+      "PARROT",
+      17
+    ],
+    [
+      "slash_3d3",
+      7
+    ],
+    {
+      "spell_data": {
+        "id": "skinwalker_scream_6d3"
+      },
+      "type": "spell",
+      "cooldown": 19
+    }
+  ],
+  "flags": [
+    "CAN_OPEN_DOORS",
+    "CLIMBS",
+    "GOODHEARING",
+    "KEENNOSE",
+    "KEEP_DISTANCE",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "STUMBLES",
+    "WARM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_skinwalker_wendigo",
+  "type": "MONSTER",
+  "name": {
+    "str": "wendigo",
+    "str_pl": "wendigos"
+  },
+  "description": "A half-man, half-deer being.  Standing taller than an adult human, the… entity walks upright, sometimes using the unnaturally long arms as front legs.  The mishappen antlers are as bloody as the carnivorous, bloody smile, which randomly mimicks human laugh and broken speech.  You notice the thorax lacks protective tissue, displaying the bony ribs on the upper side, and spilt guts beneath.",
+  "volume": "95000 ml",
+  "weight": "85000 g",
+  "default_faction": "touhou_youkai_skinwalker",
+  "bodytype": "human",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_SKINWALKER_TOUHOU"
+  ],
+  "harvest": "mammal_leather",
+  "hp": 105,
+  "speed": 150,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ğ",
+  "color": "brown",
+  "aggression": 99,
+  "morale": 35,
+  "melee_skill": 5,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "dodge": 2,
+  "path_settings": {
+    "max_dist": 30
+  },
+  "tracking_distance": 25,
+  "vision_night": 35,
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK"
+  ],
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 6,
+  "armor_stab": 2,
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      35
+    ],
+    [
+      "longswipe",
+      19
+    ],
+    [
+      "PARROT",
+      17
+    ],
+    [
+      "slash_3d3",
+      7
+    ],
+    {
+      "spell_data": {
+        "id": "skinwalker_scream_6d3"
+      },
+      "type": "spell",
+      "cooldown": 19
+    }
+  ],
+  "flags": [
+    "CAN_OPEN_DOORS",
+    "CLIMBS",
+    "GOODHEARING",
+    "KEENNOSE",
+    "KEEP_DISTANCE",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "STUMBLES",
+    "WARM"
+  ]
+}
+```
+

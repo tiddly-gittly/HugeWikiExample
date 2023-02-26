@@ -1,0 +1,187 @@
+creator: 林一二
+revision: 0
+tags: profession Tankmod_Revived
+title: Tankmod_Revived→profession→tankmod_commander
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tankmod_commander|http://cdda.aloxaf.cn/search?q=tankmod_commander]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/professions.json
+
+
+!! 原文
+
+```json
+{
+  "type": "profession",
+  "id": "tankmod_commander",
+  "name": "Tank Commander",
+  "description": "Your role was to coordinate the tank crew's actions and spot targets, a job made significantly harder by everyone else being either dead or MIA.",
+  "points": 5,
+  "skills": [
+    {
+      "level": 3,
+      "name": "survival"
+    },
+    {
+      "level": 2,
+      "name": "firstaid"
+    },
+    {
+      "level": 1,
+      "name": "driving"
+    },
+    {
+      "level": 2,
+      "name": "gun"
+    },
+    {
+      "level": 3,
+      "name": "pistol"
+    }
+  ],
+  "items": {
+    "both": {
+      "items": [
+        "pants_army",
+        "socks",
+        "boots_combat",
+        "wristwatch",
+        "gloves_tactical",
+        "helmet_army",
+        "jacket_army",
+        "webbing_belt",
+        "binoculars",
+        "militarymap"
+      ],
+      "entries": [
+        {
+          "group": "charged_two_way_radio"
+        },
+        {
+          "item": "legpouch_large",
+          "contents-group": "tankmod_army_mags_m9"
+        },
+        {
+          "item": "ear_plugs",
+          "custom-flags": [
+            "no_auto_equip"
+          ]
+        },
+        {
+          "item": "knife_combat",
+          "container-item": "sheath"
+        },
+        {
+          "item": "m9",
+          "ammo-item": "9mm",
+          "charges": 15,
+          "container-item": "holster"
+        }
+      ]
+    },
+    "male": [
+      "boxer_shorts"
+    ],
+    "female": [
+      "sports_bra",
+      "boxer_shorts"
+    ]
+  },
+  "flags": [
+    "SCEN_ONLY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "profession",
+  "id": "tankmod_commander",
+  "name": "坦克车长",
+  "description": "你的任务是协调坦克乘员的行动和发现目标，其他人要么死了，要么失踪，这项工作就变得非常困难。",
+  "points": 5,
+  "skills": [
+    {
+      "level": 3,
+      "name": "survival"
+    },
+    {
+      "level": 2,
+      "name": "firstaid"
+    },
+    {
+      "level": 1,
+      "name": "driving"
+    },
+    {
+      "level": 2,
+      "name": "gun"
+    },
+    {
+      "level": 3,
+      "name": "pistol"
+    }
+  ],
+  "items": {
+    "both": {
+      "items": [
+        "pants_army",
+        "socks",
+        "boots_combat",
+        "wristwatch",
+        "gloves_tactical",
+        "helmet_army",
+        "jacket_army",
+        "webbing_belt",
+        "binoculars",
+        "militarymap"
+      ],
+      "entries": [
+        {
+          "group": "charged_two_way_radio"
+        },
+        {
+          "item": "legpouch_large",
+          "contents-group": "tankmod_army_mags_m9"
+        },
+        {
+          "item": "ear_plugs",
+          "custom-flags": [
+            "no_auto_equip"
+          ]
+        },
+        {
+          "item": "knife_combat",
+          "container-item": "sheath"
+        },
+        {
+          "item": "m9",
+          "ammo-item": "9mm",
+          "charges": 15,
+          "container-item": "holster"
+        }
+      ]
+    },
+    "male": [
+      "boxer_shorts"
+    ],
+    "female": [
+      "sports_bra",
+      "boxer_shorts"
+    ]
+  },
+  "flags": [
+    "SCEN_ONLY"
+  ]
+}
+```
+

@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_flametank
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_flametank|http://cdda.aloxaf.cn/search?q=mon_flametank]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_flametank",
+  "type": "MONSTER",
+  "name": {
+    "str": "exterminator tank"
+  },
+  "description": "The Northrop Exterminator FT-X was a prototype series of flamethrower exterminator tanks. Clearly engineered by a someone who found a nest of unspeakable critters that drove that person to convert the F-4's into overkill Flamethrower tanks also armed with vulcan napalm bomb launchers.",
+  "default_faction": "military",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 25,
+  "volume": "655000 ml",
+  "weight": "175000 g",
+  "hp": 200,
+  "speed": 70,
+  "material": [
+    "steel"
+  ],
+  "symbol": "R",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "armor_bash": 14,
+  "armor_cut": 14,
+  "armor_bullet": 14,
+  "vision_day": 50,
+  "revert_to_itype": "bot_flametank",
+  "special_attacks": [
+    [
+      "FLAMETHROWER",
+      12
+    ],
+    {
+      "type": "gun",
+      "cooldown": 25,
+      "move_cost": 150,
+      "gun_type": "napalm_bomb",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "ranges": [
+        [
+          2,
+          10,
+          "DEFAULT"
+        ]
+      ],
+      "description": "Tank discharges a massive napalm bomb!"
+    }
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        4
+      ]
+    ]
+  },
+  "death_function": {
+    "effect": {
+      "id": "death_conflagration",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE",
+    "message": "A %s explodes!"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "BASHES",
+    "ELECTRONIC",
+    "DESTROYS",
+    "GOODHEARING",
+    "NO_BREATHE",
+    "PATH_AVOID_DANGER_1",
+    "LOUDMOVES",
+    "FIREPROOF"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_flametank",
+  "type": "MONSTER",
+  "name": {
+    "str": "炽虫者坦克"
+  },
+  "description": "诺斯罗普格鲁曼公司生产的歼灭者FT-X喷火坦克原型。显然是因为设计者发现了巨大的动物巢穴，才驱使他把F-4改装成了杀伤力超强的喷火坦克，还装备了火神凝固汽油弹发射器。",
+  "default_faction": "military",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 25,
+  "volume": "655000 ml",
+  "weight": "175000 g",
+  "hp": 200,
+  "speed": 70,
+  "material": [
+    "steel"
+  ],
+  "symbol": "R",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "armor_bash": 14,
+  "armor_cut": 14,
+  "armor_bullet": 14,
+  "vision_day": 50,
+  "revert_to_itype": "bot_flametank",
+  "special_attacks": [
+    [
+      "FLAMETHROWER",
+      12
+    ],
+    {
+      "type": "gun",
+      "cooldown": 25,
+      "move_cost": 150,
+      "gun_type": "napalm_bomb",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "ranges": [
+        [
+          2,
+          10,
+          "DEFAULT"
+        ]
+      ],
+      "description": "坦克发射了一枚巨大的凝固汽油弹！"
+    }
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        4
+      ]
+    ]
+  },
+  "death_function": {
+    "effect": {
+      "id": "death_conflagration",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE",
+    "message": "A %s explodes!"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "BASHES",
+    "ELECTRONIC",
+    "DESTROYS",
+    "GOODHEARING",
+    "NO_BREATHE",
+    "PATH_AVOID_DANGER_1",
+    "LOUDMOVES",
+    "FIREPROOF"
+  ]
+}
+```
+

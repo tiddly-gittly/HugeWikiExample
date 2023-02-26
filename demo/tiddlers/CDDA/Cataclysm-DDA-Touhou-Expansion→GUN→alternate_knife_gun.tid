@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: GUN Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUN→alternate_knife_gun
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：alternate_knife_gun|http://cdda.aloxaf.cn/search?q=alternate_knife_gun]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monster_special_attacks/thex_monster_gun.json
+
+
+!! 原文
+
+```json
+{
+  "id": "alternate_knife_gun",
+  "type": "GUN",
+  "name": {
+    "str": "Alternate knives"
+  },
+  "description": "Alternate timeline knifing.",
+  "weight": "400 g",
+  "volume": "200 ml",
+  "longest_side": "20 cm",
+  "to_hit": {
+    "balance": "good",
+    "grip": "weapon",
+    "length": "hand",
+    "surface": "point"
+  },
+  "material": [
+    "steel"
+  ],
+  "symbol": ";",
+  "looks_like": "throwing_knife",
+  "color": "light_gray",
+  "ammo": [
+    "alternate_knife"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES"
+  ],
+  "bashing": 2,
+  "clip_size": 12,
+  "dispersion": 0,
+  "durability": 8,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ]
+  ],
+  "range": 24,
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": 8,
+    "armor_penetration": 6
+  },
+  "skill": "throw",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "alternate_knife": 12
+      }
+    }
+  ],
+  "flags": [
+    "NEVER_JAMS",
+    "NONCONDUCTIVE",
+    "NO_REPAIR",
+    "WATERPROOF_GUN",
+    "NO_SALVAGE",
+    "NO_UNLOAD"
+  ],
+  "//": "These Sakuya's leave their knives after disappearing, so I'm setting alternate_knife_knife damage equal to silver_knife and increasing the total damage here"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "alternate_knife_gun",
+  "type": "GUN",
+  "name": {
+    "str": "Alternate knives"
+  },
+  "description": "Alternate timeline knifing.",
+  "weight": "400 g",
+  "volume": "200 ml",
+  "longest_side": "20 cm",
+  "to_hit": {
+    "balance": "good",
+    "grip": "weapon",
+    "length": "hand",
+    "surface": "point"
+  },
+  "material": [
+    "steel"
+  ],
+  "symbol": ";",
+  "looks_like": "throwing_knife",
+  "color": "light_gray",
+  "ammo": [
+    "alternate_knife"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES"
+  ],
+  "bashing": 2,
+  "clip_size": 12,
+  "dispersion": 0,
+  "durability": 8,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ]
+  ],
+  "range": 24,
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": 8,
+    "armor_penetration": 6
+  },
+  "skill": "throw",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "alternate_knife": 12
+      }
+    }
+  ],
+  "flags": [
+    "NEVER_JAMS",
+    "NONCONDUCTIVE",
+    "NO_REPAIR",
+    "WATERPROOF_GUN",
+    "NO_SALVAGE",
+    "NO_UNLOAD"
+  ],
+  "//": "These Sakuya's leave their knives after disappearing, so I'm setting alternate_knife_knife damage equal to silver_knife and increasing the total damage here"
+}
+```
+

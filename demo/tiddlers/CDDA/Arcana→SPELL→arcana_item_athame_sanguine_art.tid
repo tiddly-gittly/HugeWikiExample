@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_athame_sanguine_art
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_athame_sanguine_art|http://cdda.aloxaf.cn/search?q=arcana_item_athame_sanguine_art]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_athame_sanguine_art",
+  "type": "SPELL",
+  "name": {
+    "str": "Sanguine Art"
+  },
+  "description": "Prepares a ritual to turn part of your life force into a usable form of essence.  Doing so will take 5 minutes, inflicting blood loss and damage at the end, as well as potential consequences if overused…",
+  "message": "You work a ritual to draw power from your own blood, instinct guiding your hand as you trace patterns across your skin with the dull blade.  As you work the last rune, the only one to actually break the skin, wounds open elsewhere on your body!",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_athame_sanguine_art_fatigue",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_athame_sanguine_art_corruption",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_generate_blood_essence",
+      "hit_self": true
+    }
+  ],
+  "affected_body_parts": [
+    "torso"
+  ],
+  "effect_str": "bleed",
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 60000,
+  "final_casting_time": 60000,
+  "min_damage": 1,
+  "max_damage": 3,
+  "damage_type": "pure",
+  "min_duration": 30000,
+  "max_duration": 30000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_athame_sanguine_art",
+  "type": "SPELL",
+  "name": {
+    "str": "血色艺术"
+  },
+  "description": "准备一个仪式，将你的生命力的一部分转化为可用的本质形式。这样做需要5分钟，最后会造成失血和伤害，如果过度使用，还会造成潜在后果…",
+  "message": "你按照惯例从自己的血液中汲取力量，当你用钝刃在皮肤上描绘图案时，本能会引导你的手。当你刻下最后一个符文——唯一一个将割裂皮肤的符文——之时，伤口会在你身体的其他地方裂开！",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_athame_sanguine_art_fatigue",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_athame_sanguine_art_corruption",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_generate_blood_essence",
+      "hit_self": true
+    }
+  ],
+  "affected_body_parts": [
+    "torso"
+  ],
+  "effect_str": "bleed",
+  "effect": "attack",
+  "shape": "blast",
+  "base_casting_time": 60000,
+  "final_casting_time": 60000,
+  "min_damage": 1,
+  "max_damage": 3,
+  "damage_type": "pure",
+  "min_duration": 30000,
+  "max_duration": 30000
+}
+```
+

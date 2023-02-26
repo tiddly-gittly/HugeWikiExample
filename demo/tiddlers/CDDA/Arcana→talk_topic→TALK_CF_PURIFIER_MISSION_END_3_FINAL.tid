@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_MISSION_END_3_FINAL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_MISSION_END_3_FINAL|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_MISSION_END_3_FINAL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_MISSION_END_3_FINAL",
+  "type": "talk_topic",
+  "dynamic_line": "If we're going to get any real use out of it, it needs to be actually used in the field.  I've documented everything I can about the components that went into this, and some day we might be able to replicate the results without bespoke anomalous materials from facilities that don't exist anymore.  I'd like you to make use of it, it's risky having our only working example out there but I'm willing to take that risk if it'll do some good.",
+  "responses": [
+    {
+      "text": "I'll give it a try then.",
+      "effect": [
+        {
+          "u_add_effect": "cf_purifier_kairos",
+          "duration": "PERMANENT"
+        },
+        {
+          "npc_add_var": "nicholas_final_completed",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "divine_sealing_charm"
+        }
+      ],
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_ACCEPT"
+    },
+    {
+      "text": "Keep it for now, maybe another time.",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_MISSION_END_3_FINAL",
+  "type": "talk_topic",
+  "dynamic_line": "如果我们想从中得到任何真正的用途，就需要在现场实际使用它。我已经记录了我所能记录的关于这些组件的所有信息，有一天，我们可能能够复制结果，而不需要从不再存在的设施中定制异常材料。我希望你们能利用它，有我们唯一可行的例子是有风险的，但如果它有好处的话，我愿意冒这个风险。",
+  "responses": [
+    {
+      "text": "那我试试看。",
+      "effect": [
+        {
+          "u_add_effect": "cf_purifier_kairos",
+          "duration": "PERMANENT"
+        },
+        {
+          "npc_add_var": "nicholas_final_completed",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "u_spawn_item": "essence_pure",
+          "count": 0,
+          "container": "divine_sealing_charm"
+        }
+      ],
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3_ACCEPT"
+    },
+    {
+      "text": "暂时留着，也许下次吧。",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+

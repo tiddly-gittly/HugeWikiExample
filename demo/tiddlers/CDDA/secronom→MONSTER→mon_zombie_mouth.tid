@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_mouth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_mouth|http://cdda.aloxaf.cn/search?q=mon_zombie_mouth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Mouth.json
+
+
+!! 原文
+
+```json
+{
+  "aggression": 100,
+  "armor_acid": 1,
+  "armor_bash": 3,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_fire": 1,
+  "attack_cost": 125,
+  "color": "light_green",
+  "death_drops": "default_zombie_death_drops",
+  "default_faction": "zombie",
+  "description": "A human body, distinct to its big, thick and morbidly deformed jaws, dribbling in black ooze.",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ],
+  "harvest": "zombie",
+  "hp": 70,
+  "diff": 1,
+  "id": "mon_zombie_mouth",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_skill": 4,
+  "morale": 100,
+  "name": {
+    "str": "mouthswell zombie"
+  },
+  "special_attacks": [
+    {
+      "cooldown": 10,
+      "damage_max_instance": [
+        {
+          "amount": 8,
+          "armor_multiplier": 0.7,
+          "damage_type": "stab"
+        }
+      ],
+      "type": "bite"
+    }
+  ],
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "speed": 80,
+  "symbol": "<",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into": "mon_zombie_bellymouth"
+  },
+  "volume": "62500 ml",
+  "weight": "81500 g"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "aggression": 100,
+  "armor_acid": 1,
+  "armor_bash": 3,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_fire": 1,
+  "attack_cost": 125,
+  "color": "light_green",
+  "death_drops": "default_zombie_death_drops",
+  "default_faction": "zombie",
+  "description": "一个人形躯体。它那肥大，厚重且严重变形的下颚正在滴着黑色的泥水。",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ],
+  "harvest": "zombie",
+  "hp": 70,
+  "diff": 1,
+  "id": "mon_zombie_mouth",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_skill": 4,
+  "morale": 100,
+  "name": {
+    "str": "肿口丧尸"
+  },
+  "special_attacks": [
+    {
+      "cooldown": 10,
+      "damage_max_instance": [
+        {
+          "amount": 8,
+          "armor_multiplier": 0.7,
+          "damage_type": "stab"
+        }
+      ],
+      "type": "bite"
+    }
+  ],
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "speed": 80,
+  "symbol": "<",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into": "mon_zombie_bellymouth"
+  },
+  "volume": "62500 ml",
+  "weight": "81500 g"
+}
+```
+

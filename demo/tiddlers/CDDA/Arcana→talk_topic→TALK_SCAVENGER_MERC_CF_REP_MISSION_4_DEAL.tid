@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_SCAVENGER_MERC_CF_REP_MISSION_4_DEAL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SCAVENGER_MERC_CF_REP_MISSION_4_DEAL|http://cdda.aloxaf.cn/search?q=TALK_SCAVENGER_MERC_CF_REP_MISSION_4_DEAL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_SCAVENGER_MERC.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_SCAVENGER_MERC_CF_REP_MISSION_4_DEAL",
+  "type": "talk_topic",
+  "dynamic_line": "Alright, just tell me about the location and I'll get them on it.  Suppose it's handy to direct them towards steady work instead of competing over small-time jobs.",
+  "responses": [
+    {
+      "text": "Small community built out of a fortified church on the roadside, not too far from here.",
+      "effect": [
+        {
+          "u_add_var": "sofia_allies_secured",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "mapgen_update": "arcana_cf_4_wasteland_scavengers_1b",
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_wasteland_scavengers_2b",
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_roof_1",
+          "om_terrain": "cf_church_1_roof",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_roof_2",
+          "om_terrain": "cf_church_3_roof",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        }
+      ],
+      "topic": "TALK_SCAVENGER_MERC_CF_REP_MISSION_4_END"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_SCAVENGER_MERC_CF_REP_MISSION_4_DEAL",
+  "type": "talk_topic",
+  "dynamic_line": "好吧，告诉我地点，我会通知他们的。假设引导他们从事稳定的工作，而不是在小时间的工作上竞争会很方便。",
+  "responses": [
+    {
+      "text": "在路边的一座坚固的教堂里建了一个小社区，离这里不远。",
+      "effect": [
+        {
+          "u_add_var": "sofia_allies_secured",
+          "type": "mission",
+          "context": "rural_church",
+          "value": "yes"
+        },
+        {
+          "mapgen_update": "arcana_cf_4_wasteland_scavengers_1b",
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_wasteland_scavengers_2b",
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_roof_1",
+          "om_terrain": "cf_church_1_roof",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        },
+        {
+          "mapgen_update": "arcana_cf_4_roof_2",
+          "om_terrain": "cf_church_3_roof",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        }
+      ],
+      "topic": "TALK_SCAVENGER_MERC_CF_REP_MISSION_4_END"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_flat_roof_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_flat_roof_flesh|http://cdda.aloxaf.cn/search?q=t_secro_flat_roof_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_flat_roof_flesh",
+  "name": "fleshed flat roof",
+  "description": "A flat, rooftop, covered in gorey flesh.",
+  "symbol": ".",
+  "color": "red",
+  "//": "Flesh version of terrains has +3 move cost.",
+  "move_cost": 5,
+  "flags": [
+    "TRANSPARENT",
+    "FLAT",
+    "S_FLESH"
+  ],
+  "bash": {
+    "//": "Flesh terrains' str_min and _max has +5 bash resistance.",
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_flat_roof",
+    "bash_below": true
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_flat_roof_flesh",
+  "name": "血肉平面屋顶",
+  "description": "一个平坦的屋顶，被厚厚的血肉覆盖着。",
+  "symbol": ".",
+  "color": "red",
+  "//": "Flesh version of terrains has +3 move cost.",
+  "move_cost": 5,
+  "flags": [
+    "TRANSPARENT",
+    "FLAT",
+    "S_FLESH"
+  ],
+  "bash": {
+    "//": "Flesh terrains' str_min and _max has +5 bash resistance.",
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_flat_roof",
+    "bash_below": true
+  }
+}
+```
+

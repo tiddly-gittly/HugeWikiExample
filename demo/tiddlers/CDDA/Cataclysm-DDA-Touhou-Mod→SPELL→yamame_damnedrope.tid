@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→yamame_damnedrope
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：yamame_damnedrope|http://cdda.aloxaf.cn/search?q=yamame_damnedrope]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_wip_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "yamame_damnedrope",
+  "type": "SPELL",
+  "name": "Damned's rope",
+  "description": "Entangle a target and pull it towards your position, stunning it for a short time.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "effect": "pull_target",
+  "extra_effects": [
+    {
+      "id": "yamame_damnedrope2"
+    },
+    {
+      "id": "yamame_damnedrope3"
+    }
+  ],
+  "shape": "line",
+  "min_damage": 70,
+  "max_damage": 270,
+  "damage_increment": 20,
+  "min_range": 11,
+  "max_range": 24,
+  "range_increment": 1.3,
+  "field_id": "fd_web2",
+  "field_chance": 1,
+  "min_field_intensity": 2,
+  "max_field_intensity": 3,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 66,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "See yamame_damnedrope2 "
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "yamame_damnedrope",
+  "type": "SPELL",
+  "name": "Damned's rope",
+  "description": "Entangle a target and pull it towards your position, stunning it for a short time.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "effect": "pull_target",
+  "extra_effects": [
+    {
+      "id": "yamame_damnedrope2"
+    },
+    {
+      "id": "yamame_damnedrope3"
+    }
+  ],
+  "shape": "line",
+  "min_damage": 70,
+  "max_damage": 270,
+  "damage_increment": 20,
+  "min_range": 11,
+  "max_range": 24,
+  "range_increment": 1.3,
+  "field_id": "fd_web2",
+  "field_chance": 1,
+  "min_field_intensity": 2,
+  "max_field_intensity": 3,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 66,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "See yamame_damnedrope2 "
+}
+```
+

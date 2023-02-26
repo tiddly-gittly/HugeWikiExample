@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→nova_flare
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：nova_flare|http://cdda.aloxaf.cn/search?q=nova_flare]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/kelvinist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "nova_flare",
+  "type": "SPELL",
+  "name": "Nova Flare",
+  "description": "Causes an intense heat at the location, greatly damaging the target.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "SOMATIC",
+    "LOUD",
+    "NO_PROJECTILE"
+  ],
+  "components": "spell_components_nova_flare",
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 45,
+  "damage_increment": 6,
+  "max_damage": 201,
+  "min_range": 3,
+  "range_increment": 0.5,
+  "max_range": 14,
+  "base_energy_cost": 80,
+  "spell_class": "KELVINIST",
+  "difficulty": 8,
+  "max_level": 24,
+  "base_casting_time": 300,
+  "energy_source": "MANA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "nova_flare",
+  "type": "SPELL",
+  "name": "超新星炎爆",
+  "description": "在目标位置产生巨大热量，对目标造成极大伤害。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "SOMATIC",
+    "LOUD",
+    "NO_PROJECTILE"
+  ],
+  "components": "spell_components_nova_flare",
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 45,
+  "damage_increment": 6,
+  "max_damage": 201,
+  "min_range": 3,
+  "range_increment": 0.5,
+  "max_range": 14,
+  "base_energy_cost": 80,
+  "spell_class": "KELVINIST",
+  "difficulty": 8,
+  "max_level": 24,
+  "base_casting_time": 300,
+  "energy_source": "MANA"
+}
+```
+

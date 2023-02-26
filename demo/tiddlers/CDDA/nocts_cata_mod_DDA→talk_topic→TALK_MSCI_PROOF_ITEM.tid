@@ -1,0 +1,61 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_MSCI_PROOF_ITEM
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MSCI_PROOF_ITEM|http://cdda.aloxaf.cn/search?q=TALK_MSCI_PROOF_ITEM]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_MSCI.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MSCI_PROOF_ITEM",
+  "type": "talk_topic",
+  "dynamic_line": "How the hell… well that's good luck on our part I suppose.  You survived whatever was there at least, let me see.  So I was right, the Super Soldier project made it at least past Zero Day.  I hope there were other survivors there.  In any case, come see me when you're ready, there's much to be done.",
+  "responses": [
+    {
+      "text": "We'll see.",
+      "topic": "TALK_MSCI",
+      "effect": {
+        "u_add_var": "proven_worthy",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MSCI_PROOF_ITEM",
+  "type": "talk_topic",
+  "dynamic_line": "见鬼……我想这对我们来说是好运。不管发生了什么，至少你都活了下来，让我想想。所以我是对的，超级战士项目至少度过了零日漏洞。我希望那里还有其他幸存者。无论如何，准备好了就来看我，还有很多事情要做。",
+  "responses": [
+    {
+      "text": "我们拭目以待。",
+      "topic": "TALK_MSCI",
+      "effect": {
+        "u_add_var": "proven_worthy",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      }
+    }
+  ]
+}
+```
+

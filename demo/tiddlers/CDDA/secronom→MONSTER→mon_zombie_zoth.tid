@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_zoth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_zoth|http://cdda.aloxaf.cn/search?q=mon_zombie_zoth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Lying.json
+
+
+!! 原文
+
+```json
+{
+  "//": "much like a gasbag.",
+  "id": "mon_zombie_zoth",
+  "type": "MONSTER",
+  "name": {
+    "str": "zoth"
+  },
+  "description": "A putrid corpse that slowly hovers mid-air with its dusty wings, spreading toxin in every flap it takes.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 60,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "diff": 5,
+  "symbol": "♅",
+  "emit_fields": [
+    "secro_zoth"
+  ],
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 3,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 35,
+  "vision_night": 20,
+  "upgrades": {
+    "half_life": 16,
+    "into_group": "GROUP_LYING_UPGRADEX"
+  },
+  "harvest": "zombie",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "FLIES",
+    "GRABS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "much like a gasbag.",
+  "id": "mon_zombie_zoth",
+  "type": "MONSTER",
+  "name": {
+    "str": "毒素散播丧尸"
+  },
+  "description": "一具腐烂的尸体，用满是灰尘的翅膀缓慢地在半空中盘旋，把毒素散播到每一个地点上",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 60,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "diff": 5,
+  "symbol": "♅",
+  "emit_fields": [
+    "secro_zoth"
+  ],
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 3,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 35,
+  "vision_night": 20,
+  "upgrades": {
+    "half_life": 16,
+    "into_group": "GROUP_LYING_UPGRADEX"
+  },
+  "harvest": "zombie",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "FLIES",
+    "GRABS"
+  ]
+}
+```
+

@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→MONSTER→mon_youmumyon2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_youmumyon2|http://cdda.aloxaf.cn/search?q=mon_youmumyon2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/monsters/touhou_summoned.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_youmumyon2",
+  "type": "MONSTER",
+  "name": {
+    "str": "Myon"
+  },
+  "description": "Your half-phantom half.",
+  "volume": "6250 ml",
+  "weight": "8150 g",
+  "default_faction": "touhou_summon",
+  "bodytype": "blob",
+  "species": [
+    "UNKNOWN"
+  ],
+  "harvest": "exempt",
+  "hp": 50,
+  "speed": 100,
+  "symbol": "@",
+  "color": "white",
+  "aggression": 66,
+  "morale": 99,
+  "luminance": 2,
+  "dodge": 6,
+  "path_settings": {
+    "max_dist": 4
+  },
+  "starting_ammo": {
+    "myon_bullet_bullet": 20
+  },
+  "special_attacks": [
+    {
+      "gun_type": "myon_gun",
+      "type": "gun",
+      "description": "",
+      "ammo_type": "myon_bullet_bullet",
+      "cooldown": 2,
+      "fake_dex": 11,
+      "fake_skills": [
+        [
+          "gun",
+          6
+        ]
+      ],
+      "max_ammo": 12,
+      "move_cost": 90,
+      "targeting_cost": 5,
+      "require_targeting_monster": true,
+      "no_ammo_sound": "",
+      "ranges": [
+        [
+          1,
+          24,
+          "DEFAULT"
+        ]
+      ]
+    }
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT"
+  ],
+  "fear_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "CLIMBS",
+    "FLIES",
+    "HARDTOSHOOT",
+    "NO_BREATHE",
+    "NOHEAD",
+    "PACIFIST",
+    "PATH_AVOID_DANGER_2",
+    "PET_WONT_FOLLOW",
+    "PLASTIC",
+    "RANGED_ATTACKER",
+    "SEES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_youmumyon2",
+  "type": "MONSTER",
+  "name": {
+    "str": "Myon"
+  },
+  "description": "Your half-phantom half.",
+  "volume": "6250 ml",
+  "weight": "8150 g",
+  "default_faction": "touhou_summon",
+  "bodytype": "blob",
+  "species": [
+    "UNKNOWN"
+  ],
+  "harvest": "exempt",
+  "hp": 50,
+  "speed": 100,
+  "symbol": "@",
+  "color": "white",
+  "aggression": 66,
+  "morale": 99,
+  "luminance": 2,
+  "dodge": 6,
+  "path_settings": {
+    "max_dist": 4
+  },
+  "starting_ammo": {
+    "myon_bullet_bullet": 20
+  },
+  "special_attacks": [
+    {
+      "gun_type": "myon_gun",
+      "type": "gun",
+      "description": "",
+      "ammo_type": "myon_bullet_bullet",
+      "cooldown": 2,
+      "fake_dex": 11,
+      "fake_skills": [
+        [
+          "gun",
+          6
+        ]
+      ],
+      "max_ammo": 12,
+      "move_cost": 90,
+      "targeting_cost": 5,
+      "require_targeting_monster": true,
+      "no_ammo_sound": "",
+      "ranges": [
+        [
+          1,
+          24,
+          "DEFAULT"
+        ]
+      ]
+    }
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT"
+  ],
+  "fear_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "CLIMBS",
+    "FLIES",
+    "HARDTOSHOOT",
+    "NO_BREATHE",
+    "NOHEAD",
+    "PACIFIST",
+    "PATH_AVOID_DANGER_2",
+    "PET_WONT_FOLLOW",
+    "PLASTIC",
+    "RANGED_ATTACKER",
+    "SEES"
+  ]
+}
+```
+

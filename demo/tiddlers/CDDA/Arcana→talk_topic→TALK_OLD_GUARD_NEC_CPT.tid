@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_OLD_GUARD_NEC_CPT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_OLD_GUARD_NEC_CPT|http://cdda.aloxaf.cn/search?q=TALK_OLD_GUARD_NEC_CPT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_OLD_GUARD_NEC_CPT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_CPT",
+  "responses": [
+    {
+      "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
+      "topic": "TALK_OLD_GUARD_NEC_CPT_NICHOLAS_1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "nicholas_mission_2_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "necro_comms_permission",
+              "type": "flag",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_PURIFIER_1_2"
+          },
+          {
+            "u_is_wearing": "badge_marshal"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_CPT",
+  "responses": [
+    {
+      "text": "[任务]我被要求寻找可能处理异常情况的实验室之间货物的信息。你能帮我吗？",
+      "topic": "TALK_OLD_GUARD_NEC_CPT_NICHOLAS_1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "nicholas_mission_2_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "necro_comms_permission",
+              "type": "flag",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_PURIFIER_1_2"
+          },
+          {
+            "u_is_wearing": "badge_marshal"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+

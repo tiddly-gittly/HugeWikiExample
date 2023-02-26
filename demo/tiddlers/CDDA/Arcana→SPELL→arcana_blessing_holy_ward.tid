@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_blessing_holy_ward
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_blessing_holy_ward|http://cdda.aloxaf.cn/search?q=arcana_blessing_holy_ward]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_arcane_blessings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_blessing_holy_ward",
+  "type": "SPELL",
+  "name": {
+    "str": "Blessing: Holy Ward"
+  },
+  "description": "Arcane Blessing\nUsing this spell will create an aura protecting against blades, and guard against various anomalous hazards.  It can be used on yourself or an ally.",
+  "message": "You feel the threads of reality pulled taut, as a powerful protective spell is channeled through you.",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "cleric_warding_true",
+  "energy_source": "MANA",
+  "difficulty": 100,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 550,
+  "final_casting_time": 275,
+  "casting_time_increment": -13.75,
+  "base_energy_cost": 660,
+  "final_energy_cost": 330,
+  "energy_increment": -16.5,
+  "min_duration": 60000,
+  "max_duration": 300000,
+  "duration_increment": 12000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_blessing_holy_ward",
+  "type": "SPELL",
+  "name": {
+    "str": "祝福：神圣结界"
+  },
+  "description": "奥术祝福\n使用该法术会产生保护光环，使其免受剑刃伤害，并防止各种异常危险。它可以在自己或盟友身上使用。",
+  "message": "随着强大的保护性咒语通过你，你会感受到现实的张力拉紧了。",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_FAIL"
+  ],
+  "min_range": 0,
+  "max_range": 15,
+  "range_increment": 0.75,
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "cleric_warding_true",
+  "energy_source": "MANA",
+  "difficulty": 100,
+  "skill": "magic",
+  "max_level": 20,
+  "base_casting_time": 550,
+  "final_casting_time": 275,
+  "casting_time_increment": -13.75,
+  "base_energy_cost": 660,
+  "final_energy_cost": 330,
+  "energy_increment": -16.5,
+  "min_duration": 60000,
+  "max_duration": 300000,
+  "duration_increment": 12000
+}
+```
+

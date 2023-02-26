@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→SPELL_SUMMONTHING
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SPELL_SUMMONTHING|http://cdda.aloxaf.cn/search?q=SPELL_SUMMONTHING]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_paragon.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_SUMMONTHING",
+  "name": {
+    "str": "Sign of Summoning IV"
+  },
+  "points": 4,
+  "description": "\"With caution you will learn to read these signs, and call forth beings to answer their false promises.\"\nUnknowable forces have given you a fourth gift, that can summon a horrifying thing.  (( Remember to bind the \"spellcasting\" key! ))",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_SUMMONCULUS"
+  ],
+  "changes_to": [
+    "SPELL_BUGS"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "threshreq": [
+    "THRESH_VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 400,
+  "spells_learned": [
+    [
+      "arcana_blessing_summon_skeletal_dog",
+      1
+    ],
+    [
+      "arcana_blessing_summon_skeleton",
+      1
+    ],
+    [
+      "arcana_blessing_summon_homunculus",
+      1
+    ],
+    [
+      "arcana_blessing_summon_thing",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_SUMMONTHING",
+  "name": {
+    "str": "召唤标志IV"
+  },
+  "points": 4,
+  "description": "“小心地研究，你将学会阅读这些迹象，并召唤众生去回应他们的虚假承诺。”\n不可知力量给了你第四个礼物，它可以召唤出一个可怕的东西。（记住绑定“施法”键！）",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_SUMMONCULUS"
+  ],
+  "changes_to": [
+    "SPELL_BUGS"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "threshreq": [
+    "THRESH_VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 400,
+  "spells_learned": [
+    [
+      "arcana_blessing_summon_skeletal_dog",
+      1
+    ],
+    [
+      "arcana_blessing_summon_skeleton",
+      1
+    ],
+    [
+      "arcana_blessing_summon_homunculus",
+      1
+    ],
+    [
+      "arcana_blessing_summon_thing",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil"
+  ]
+}
+```
+

@@ -1,0 +1,233 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→stormbringer_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：stormbringer_on|http://cdda.aloxaf.cn/search?q=stormbringer_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "stormbringer_on",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "cursed blade (on)",
+    "str_pl": "cursed blades (on)"
+  },
+  "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
+  "description": "A two-handed sword, blade made of a dark metal, engraved with unfamiliar symbols.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 9
+      }
+    }
+  ],
+  "turns_per_charge": 200,
+  "ammo": "essence_blood_type",
+  "revert_to": "stormbringer",
+  "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
+  "weight": "2267 g",
+  "volume": "3 L",
+  "longest_side": "140 cm",
+  "price": "45000 USD",
+  "price_postapoc": "120 USD",
+  "to_hit": 2,
+  "bashing": 15,
+  "cutting": 51,
+  "material": [
+    "qt_steel",
+    "essencemat"
+  ],
+  "symbol": "/",
+  "looks_like": "stormbringer",
+  "repairs_like": "stormbringer",
+  "color": "dark_gray",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ACTIVE",
+        "mutations": [
+          "ARCANA_BERSERK_EFFECT"
+        ],
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 4
+          },
+          {
+            "value": "DEXTERITY",
+            "add": 2
+          }
+        ],
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life_improved"
+          }
+        ],
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "3 minutes",
+              "spell_effects": [
+                {
+                  "id": "arcana_react_evil_mimic"
+                }
+              ]
+            }
+          ]
+        },
+        "ench_effects": [
+          {
+            "effect": "arcana_evil_mimic_active",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "techniques": [
+    "WBLOCK_1",
+    "WIDE",
+    "BRUTAL",
+    "SWEEP",
+    "tec_weapon_stormbringer_slash"
+  ],
+  "flags": [
+    "UNBREAKABLE_MELEE",
+    "NO_SALVAGE",
+    "NO_UNWIELD",
+    "NO_UNLOAD",
+    "NO_RELOAD",
+    "TRADER_KEEP_EQUIPPED"
+  ],
+  "weapon_category": [
+    "MEDIEVAL_SWORDS",
+    "GREAT_SWORDS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "stormbringer_on",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "诅咒之刃（开）",
+    "str_pl": "诅咒之刃（开）"
+  },
+  "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
+  "description": "一种双手剑，由黑色金属制成的刀刃，上面刻有不熟悉的符号。你觉得刀锋渴望鲜血，不肯离开你的手，直到它吃饱为止。",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 9
+      }
+    }
+  ],
+  "turns_per_charge": 200,
+  "ammo": "essence_blood_type",
+  "revert_to": "stormbringer",
+  "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
+  "weight": "2267 g",
+  "volume": "3 L",
+  "longest_side": "140 cm",
+  "price": "45000 USD",
+  "price_postapoc": "120 USD",
+  "to_hit": 2,
+  "bashing": 15,
+  "cutting": 51,
+  "material": [
+    "qt_steel",
+    "essencemat"
+  ],
+  "symbol": "/",
+  "looks_like": "stormbringer",
+  "repairs_like": "stormbringer",
+  "color": "dark_gray",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ACTIVE",
+        "mutations": [
+          "ARCANA_BERSERK_EFFECT"
+        ],
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 4
+          },
+          {
+            "value": "DEXTERITY",
+            "add": 2
+          }
+        ],
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life_improved"
+          }
+        ],
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "3 minutes",
+              "spell_effects": [
+                {
+                  "id": "arcana_react_evil_mimic"
+                }
+              ]
+            }
+          ]
+        },
+        "ench_effects": [
+          {
+            "effect": "arcana_evil_mimic_active",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "techniques": [
+    "WBLOCK_1",
+    "WIDE",
+    "BRUTAL",
+    "SWEEP",
+    "tec_weapon_stormbringer_slash"
+  ],
+  "flags": [
+    "UNBREAKABLE_MELEE",
+    "NO_SALVAGE",
+    "NO_UNWIELD",
+    "NO_UNLOAD",
+    "NO_RELOAD",
+    "TRADER_KEEP_EQUIPPED"
+  ],
+  "weapon_category": [
+    "MEDIEVAL_SWORDS",
+    "GREAT_SWORDS"
+  ]
+}
+```
+

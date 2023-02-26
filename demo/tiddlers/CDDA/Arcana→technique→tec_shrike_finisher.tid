@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: technique Arcana
+title: Arcana→technique→tec_shrike_finisher
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_shrike_finisher|http://cdda.aloxaf.cn/search?q=tec_shrike_finisher]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_shrike_finisher",
+  "name": "Sundering Talons",
+  "messages": [
+    "You lash out at %s with a vicious strike",
+    "<npcname> lashes out at %s with a vicious strike"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    },
+    {
+      "name": "magic",
+      "level": 4
+    }
+  ],
+  "melee_allowed": true,
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "required_buffs_all": [
+    "buff_shrike_oncrit"
+  ],
+  "stunned_target": true,
+  "crit_ok": true,
+  "weighting": 3,
+  "flat_bonuses": [
+    {
+      "stat": "arpen",
+      "type": "cut",
+      "scaling-stat": "dex",
+      "scale": 1
+    },
+    {
+      "stat": "arpen",
+      "type": "stab",
+      "scaling-stat": "dex",
+      "scale": 1
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.5
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 1.5
+    }
+  ],
+  "attack_vectors": [
+    "WEAPON",
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_shrike_finisher",
+  "name": "撕裂爪击",
+  "messages": [
+    "你以恶毒的一击猛击%s",
+    "<npcname>以恶毒的罢工猛烈抨击%s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    },
+    {
+      "name": "magic",
+      "level": 4
+    }
+  ],
+  "melee_allowed": true,
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "required_buffs_all": [
+    "buff_shrike_oncrit"
+  ],
+  "stunned_target": true,
+  "crit_ok": true,
+  "weighting": 3,
+  "flat_bonuses": [
+    {
+      "stat": "arpen",
+      "type": "cut",
+      "scaling-stat": "dex",
+      "scale": 1
+    },
+    {
+      "stat": "arpen",
+      "type": "stab",
+      "scaling-stat": "dex",
+      "scale": 1
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.5
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 1.5
+    }
+  ],
+  "attack_vectors": [
+    "WEAPON",
+    "HAND"
+  ]
+}
+```
+

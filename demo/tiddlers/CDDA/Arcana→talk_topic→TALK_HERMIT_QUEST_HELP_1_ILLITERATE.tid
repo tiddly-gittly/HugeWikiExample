@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_QUEST_HELP_1_ILLITERATE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_QUEST_HELP_1_ILLITERATE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_QUEST_HELP_1_ILLITERATE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_QUEST_HELP_1_ILLITERATE",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_ARCANIST",
+      "PROF_ARCANIST2",
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2",
+      "PROF_SANGUINE",
+      "PROF_CHALICE",
+      "PROF_CHALICE2"
+    ],
+    "yes": "I'm astounded that you've made it this far in your studies.  What am I going to do with you?  If this is the destined fate He has set us on, it seems I'll need to guide you through this.  Speak with me when you're ready, and I suppose I'll see what can be done.",
+    "no": "He From Beyond The Veil, grant me strength …if strange fortune has set us on this path, then I suppose we must see it through.  Speak with me when you're ready, and I'll see what I can do."
+  },
+  "responses": [
+    {
+      "text": "Sorry…",
+      "effect": {
+        "u_add_effect": "hermit_quest_backdoor",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_QUEST_HELP_1_ILLITERATE",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_ARCANIST",
+      "PROF_ARCANIST2",
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2",
+      "PROF_SANGUINE",
+      "PROF_CHALICE",
+      "PROF_CHALICE2"
+    ],
+    "yes": "我很惊讶你在学习上取得了这么大的成绩。我要拿你怎么办？如果这就是他给我们带来的命中注定的命运，看来我需要引导你度过这一切。你准备好了再和我谈谈，我想我会看看能做些什么。",
+    "no": "帷幕彼端古神，赐予我力量……如果是奇怪的命运让我们走上了这条路，那么我想我们必须坚持到底。你准备好了再跟我谈谈，我看看我能做些什么。"
+  },
+  "responses": [
+    {
+      "text": "对不起…",
+      "effect": {
+        "u_add_effect": "hermit_quest_backdoor",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: GUNMOD Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUNMOD→stock_mib_smg_7_folded
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：stock_mib_smg_7_folded|http://cdda.aloxaf.cn/search?q=stock_mib_smg_7_folded]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gunmod/thex_stock.json
+
+
+!! 原文
+
+```json
+{
+  "id": "stock_mib_smg_7_folded",
+  "type": "GUNMOD",
+  "name": {
+    "str": "series 7 de-scatterer stock (folded)",
+    "str_pl": "series 7 de-scatterer stocks (folded)"
+  },
+  "copy-from": "stock_mib_smg_7_unfolded",
+  "description": "A folding stock for the series 7 de-scatterer.  Currently folded, reducing the size, at the cost of also reducing handling.",
+  "use_action": {
+    "target": "stock_mib_smg_7_unfolded",
+    "type": "transform",
+    "msg": "You unfold the stock.",
+    "menu_text": "Unfold",
+    "moves": 133
+  },
+  "handling_modifier": -8,
+  "flags": [
+    "FOLDED_STOCK"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "stock_mib_smg_7_folded",
+  "type": "GUNMOD",
+  "name": {
+    "str": "series 7 de-scatterer stock (folded)",
+    "str_pl": "series 7 de-scatterer stocks (folded)"
+  },
+  "copy-from": "stock_mib_smg_7_unfolded",
+  "description": "A folding stock for the series 7 de-scatterer.  Currently folded, reducing the size, at the cost of also reducing handling.",
+  "use_action": {
+    "target": "stock_mib_smg_7_unfolded",
+    "type": "transform",
+    "msg": "You unfold the stock.",
+    "menu_text": "摊开",
+    "moves": 133
+  },
+  "handling_modifier": -8,
+  "flags": [
+    "FOLDED_STOCK"
+  ]
+}
+```
+

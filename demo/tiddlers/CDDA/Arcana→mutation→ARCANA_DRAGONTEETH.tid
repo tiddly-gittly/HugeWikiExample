@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_DRAGONTEETH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_DRAGONTEETH|http://cdda.aloxaf.cn/search?q=ARCANA_DRAGONTEETH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONTEETH",
+  "name": {
+    "str": "Pointed Teeth"
+  },
+  "points": 1,
+  "visibility": 2,
+  "ugliness": 2,
+  "description": "Your teeth have changed into an assortment of pointed mimicries of human teeth, allowing you to make an extra attack when conditions favor it.",
+  "valid": false,
+  "purifiable": false,
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "changes_to": [
+    "ARCANA_DRAGONMUZZLE"
+  ],
+  "types": [
+    "TEETH"
+  ],
+  "attacks": {
+    "attack_text_u": "You sink your teeth into %s",
+    "attack_text_npc": "%1$s sinks their teeth into %2$s",
+    "body_part": "mouth",
+    "chance": 18,
+    "base_damage": {
+      "damage_type": "stab",
+      "amount": 4
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONTEETH",
+  "name": {
+    "str": "尖牙"
+  },
+  "points": 1,
+  "visibility": 2,
+  "ugliness": 2,
+  "description": "你的牙齿已经变成了各种各样尖尖的模仿人类牙齿的形状，当条件允许的时候，你可以进行额外的攻击。",
+  "valid": false,
+  "purifiable": false,
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "changes_to": [
+    "ARCANA_DRAGONMUZZLE"
+  ],
+  "types": [
+    "TEETH"
+  ],
+  "attacks": {
+    "attack_text_u": "你把牙齿扎入%s",
+    "attack_text_npc": "%1$s把牙齿刺进%2$s",
+    "body_part": "mouth",
+    "chance": 18,
+    "base_damage": {
+      "damage_type": "stab",
+      "amount": 4
+    }
+  }
+}
+```
+

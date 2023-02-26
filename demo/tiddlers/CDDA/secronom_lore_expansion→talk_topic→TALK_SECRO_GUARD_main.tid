@@ -1,0 +1,597 @@
+creator: 林一二
+revision: 0
+tags: talk_topic secronom_lore_expansion
+title: secronom_lore_expansion→talk_topic→TALK_SECRO_GUARD_main
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SECRO_GUARD_main|http://cdda.aloxaf.cn/search?q=TALK_SECRO_GUARD_main]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/Dialogues/secro_guard.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_GUARD_main",
+  "dynamic_line": {
+    "u_has_effect": "secro_scientist_mission1_progress",
+    "no": "You are not suppose to be in here, survivor.",
+    "yes": {
+      "u_has_effect": "secro_guard_mission1_help",
+      "no": "I heard it. We will protect these people from the mutant hordes.",
+      "yes": {
+        "u_has_effect": "secro_scientist_partake_mission1",
+        "no": "Focus on our path! There's no time for chit-chats!",
+        "yes": {
+          "u_has_effect": "secro_guard_mission1_help_done",
+          "no": "You're skilled more than what I've expected from you. Good job!",
+          "yes": {
+            "u_has_effect": "secro_guard_mission1_progress",
+            "no": "What is it, survivor?",
+            "yes": {
+              "u_has_effect": "secro_guard_partake_mission1",
+              "no": "We've got to go to the enigma chamber.",
+              "yes": {
+                "u_has_effect": "secro_guard_partake_mission2",
+                "no": "You need something, survivor?",
+                "yes": {
+                  "u_has_effect": "secro_guard_backfrom_mission2",
+                  "no": "We seem to find nothing...\nWe should go back.",
+                  "yes": "What do you want?"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Okay. Follow my lead.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_help"
+            }
+          },
+          {
+            "u_has_effect": "secro_scientist_mission1_progress"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "duration": "PERMANENT",
+          "u_add_effect": "secro_guard_mission1_help"
+        },
+        "follow_only"
+      ]
+    },
+    {
+      "text": "I know, now stand still and be a real guard.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_help_done"
+            }
+          },
+          {
+            "u_has_effect": "secro_scientist_partake_mission1"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "duration": "PERMANENT",
+          "u_add_effect": "secro_guard_mission1_help_done"
+        },
+        "stop_following"
+      ]
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_effect": "secro_scientist_mission1_progress"
+        },
+        "true": "No, you're staying here.",
+        "false": "..."
+      },
+      "topic": "TALK_DONE",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_guard_mission1_help"
+        }
+      }
+    },
+    {
+      "text": "Do you need help?",
+      "topic": "TALK_SECRO_GUARD_jobs",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_gonnastart"
+            }
+          },
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_startnow"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_mission1_help_done"
+          }
+        ]
+      }
+    },
+    {
+      "text": "I need to go to enigma chamber.",
+      "topic": "TALK_MISSION_OFFER",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_progress"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_mission1_startnow"
+          }
+        ]
+      }
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "npc_at_om_location": "SecronomSSLab_bowspecs"
+        },
+        "true": "We're here now.",
+        "false": "Do you need help?"
+      },
+      "topic": "TALK_SECRO_GUARD_backfrom_mission1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_backfrom_mission1"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_partake_mission1"
+          }
+        ]
+      }
+    },
+    {
+      "text": "About the coordinates...",
+      "topic": "TALK_MISSION_OFFER",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission2_progress"
+            }
+          },
+          {
+            "u_has_effect": "secro_researcher_mission1_progress"
+          }
+        ]
+      }
+    },
+    {
+      "text": "We're here...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_backfrom_mission2"
+            }
+          },
+          {
+            "npc_at_om_location": "SecronomSSLab_bowspecs"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "duration": "PERMANENT",
+          "u_add_effect": "secro_guard_backfrom_mission2"
+        },
+        "stop_following"
+      ]
+    },
+    {
+      "text": "Okay then...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_help_done"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_mission1_help"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Nothing...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_progress"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_mission1_help_done"
+          }
+        ]
+      }
+    },
+    {
+      "text": "We better go...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_partake_mission1"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_mission1_progress"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Nope. Bye.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_partake_mission2"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_partake_mission1"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Not yet.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_backfrom_mission2"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_partake_mission2"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Nothing.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_effect": "secro_guard_backfrom_mission2"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_GUARD_main",
+  "dynamic_line": {
+    "u_has_effect": "secro_scientist_mission1_progress",
+    "no": "你不应该在这里，幸存者。",
+    "yes": {
+      "u_has_effect": "secro_guard_mission1_help",
+      "no": "我听到了。我们会保护这些人不受变种人的攻击。",
+      "yes": {
+        "u_has_effect": "secro_scientist_partake_mission1",
+        "no": "专注于我们的道路！没时间闲聊了！",
+        "yes": {
+          "u_has_effect": "secro_guard_mission1_help_done",
+          "no": "你的技术比我期望的要高得多。干得好！",
+          "yes": {
+            "u_has_effect": "secro_guard_mission1_progress",
+            "no": "怎么了，幸存者？",
+            "yes": {
+              "u_has_effect": "secro_guard_partake_mission1",
+              "no": "我们得去神秘密室。",
+              "yes": {
+                "u_has_effect": "secro_guard_partake_mission2",
+                "no": "你需要什么吗，幸存者？",
+                "yes": {
+                  "u_has_effect": "secro_guard_backfrom_mission2",
+                  "no": "我们似乎什么也没找到…\n我们应该返回了。",
+                  "yes": "你想要什么？"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "可以。跟着我。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_help"
+            }
+          },
+          {
+            "u_has_effect": "secro_scientist_mission1_progress"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "duration": "PERMANENT",
+          "u_add_effect": "secro_guard_mission1_help"
+        },
+        "follow_only"
+      ]
+    },
+    {
+      "text": "我知道，现在站着别动，做个真正的守卫。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_help_done"
+            }
+          },
+          {
+            "u_has_effect": "secro_scientist_partake_mission1"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "duration": "PERMANENT",
+          "u_add_effect": "secro_guard_mission1_help_done"
+        },
+        "stop_following"
+      ]
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_effect": "secro_scientist_mission1_progress"
+        },
+        "true": "No, you're staying here.",
+        "false": "..."
+      },
+      "topic": "TALK_DONE",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_guard_mission1_help"
+        }
+      }
+    },
+    {
+      "text": "你需要帮助吗？",
+      "topic": "TALK_SECRO_GUARD_jobs",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_gonnastart"
+            }
+          },
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_startnow"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_mission1_help_done"
+          }
+        ]
+      }
+    },
+    {
+      "text": "我要去密室。",
+      "topic": "TALK_MISSION_OFFER",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_progress"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_mission1_startnow"
+          }
+        ]
+      }
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "npc_at_om_location": "SecronomSSLab_bowspecs"
+        },
+        "true": "We're here now.",
+        "false": "Do you need help?"
+      },
+      "topic": "TALK_SECRO_GUARD_backfrom_mission1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_backfrom_mission1"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_partake_mission1"
+          }
+        ]
+      }
+    },
+    {
+      "text": "关于坐标…",
+      "topic": "TALK_MISSION_OFFER",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission2_progress"
+            }
+          },
+          {
+            "u_has_effect": "secro_researcher_mission1_progress"
+          }
+        ]
+      }
+    },
+    {
+      "text": "我们到了…",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_backfrom_mission2"
+            }
+          },
+          {
+            "npc_at_om_location": "SecronomSSLab_bowspecs"
+          }
+        ]
+      },
+      "effect": [
+        {
+          "duration": "PERMANENT",
+          "u_add_effect": "secro_guard_backfrom_mission2"
+        },
+        "stop_following"
+      ]
+    },
+    {
+      "text": "好吧，那么…",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_help_done"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_mission1_help"
+          }
+        ]
+      }
+    },
+    {
+      "text": "没有什么…",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_mission1_progress"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_mission1_help_done"
+          }
+        ]
+      }
+    },
+    {
+      "text": "我们该出发了…",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_partake_mission1"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_mission1_progress"
+          }
+        ]
+      }
+    },
+    {
+      "text": "不。再见。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_partake_mission2"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_partake_mission1"
+          }
+        ]
+      }
+    },
+    {
+      "text": "还没有。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "secro_guard_backfrom_mission2"
+            }
+          },
+          {
+            "u_has_effect": "secro_guard_partake_mission2"
+          }
+        ]
+      }
+    },
+    {
+      "text": "没有什么。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_effect": "secro_guard_backfrom_mission2"
+      }
+    }
+  ]
+}
+```
+

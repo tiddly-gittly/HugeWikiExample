@@ -1,0 +1,131 @@
+creator: 林一二
+revision: 0
+tags: furniture MST_Extra
+title: MST_Extra→furniture→f_bench_makeshift
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_bench_makeshift|http://cdda.aloxaf.cn/search?q=f_bench_makeshift]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_bench_makeshift",
+  "looks_like": "f_bench",
+  "name": "makeshift bench",
+  "symbol": "#",
+  "description": "More a bed for woodsmen than hobos, or maybe guests at a feast hall.  Put together with nothing but wood joints and some glue.",
+  "color": "brown",
+  "move_cost_mod": 1,
+  "coverage": 35,
+  "comfort": 1,
+  "floor_bedding_warmth": -1500,
+  "bonus_fire_warmth_feet": 1000,
+  "required_str": 9,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "ORGANIC",
+    "MOUNTABLE",
+    "SHORT",
+    "CAN_SIT",
+    "EASY_DECONSTRUCT"
+  ],
+  "max_volume": "4000 L",
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 3
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 11,
+    "str_max": 38,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          0,
+          2
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 1
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_bench_makeshift",
+  "looks_like": "f_bench",
+  "name": "简易长凳",
+  "symbol": "#",
+  "description": "与其说是流浪汉,不如说是樵夫的床,或者是宴会厅的客人的床.除了木条和一些胶水拼在一起外啥也没有.",
+  "color": "brown",
+  "move_cost_mod": 1,
+  "coverage": 35,
+  "comfort": 1,
+  "floor_bedding_warmth": -1500,
+  "bonus_fire_warmth_feet": 1000,
+  "required_str": 9,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "ORGANIC",
+    "MOUNTABLE",
+    "SHORT",
+    "CAN_SIT",
+    "EASY_DECONSTRUCT"
+  ],
+  "max_volume": "4000 L",
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 3
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 11,
+    "str_max": 38,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          0,
+          2
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 1
+      }
+    ]
+  }
+}
+```
+

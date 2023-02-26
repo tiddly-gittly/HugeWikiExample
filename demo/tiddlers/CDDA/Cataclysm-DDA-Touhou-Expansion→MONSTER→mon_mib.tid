@@ -1,0 +1,253 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_mib
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_mib|http://cdda.aloxaf.cn/search?q=mon_mib]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_MIB.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_mib",
+  "type": "MONSTER",
+  "name": {
+    "str": "Man in Black",
+    "str_pl": "Men in Black"
+  },
+  "description": "A taller than average person, wearing a black suit, with some individuals wearing hats, others black glasses.  Some seem to lack body hair such as eyelashes, what little skin can be seen is very pale skin tone, almost white.  Their very weird body movements creep you out, some seem to be overly stoic, others look as if they memorized how humans should move.  They seem to be on the look for something.",
+  "volume": "95000 ml",
+  "weight": "95000 g",
+  "default_faction": "touhou_mib",
+  "bodytype": "human",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_PSEUDO"
+  ],
+  "harvest": "human",
+  "hp": 120,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "color": "black",
+  "aggression": 10,
+  "morale": 65,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "dodge": 4,
+  "vision_day": 50,
+  "vision_night": 15,
+  "path_settings": {
+    "max_dist": 35
+  },
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT"
+  ],
+  "fear_triggers": [
+    "FRIEND_DIED"
+  ],
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 5,
+  "armor_stab": 2,
+  "luminance": 1,
+  "starting_ammo": {
+    "9mmfmj": 20
+  },
+  "special_attacks": [
+    {
+      "gun_type": "glock_17",
+      "type": "gun",
+      "description": "The %s shoots!",
+      "ammo_type": "9mmfmj",
+      "cooldown": 3,
+      "fake_dex": 10,
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "pistol",
+          4
+        ]
+      ],
+      "max_ammo": 21,
+      "move_cost": 120,
+      "targeting_cost": 105,
+      "require_targeting_player": true,
+      "ranges": [
+        [
+          2,
+          12,
+          "BURST"
+        ],
+        [
+          13,
+          18,
+          "SEMI_AUTO"
+        ]
+      ]
+    },
+    [
+      "PARROT_AT_DANGER",
+      16
+    ]
+  ],
+  "death_drops": "mib_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_mib_none",
+      "hit_self": true
+    },
+    "message": "The %s dies!"
+  },
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "DROPS_AMMO",
+    "HEARS",
+    "PATH_AVOID_DANGER_2",
+    "SEES",
+    "WARM"
+  ],
+  "//": "Base (human) MIB",
+  "//2": "Add 'weird' harvest",
+  "//3": "Each death spawning something should print a message, telling the player (defaults are kept below), but I'm not sure how to do that."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_mib",
+  "type": "MONSTER",
+  "name": {
+    "str": "Man in Black",
+    "str_pl": "Men in Black"
+  },
+  "description": "A taller than average person, wearing a black suit, with some individuals wearing hats, others black glasses.  Some seem to lack body hair such as eyelashes, what little skin can be seen is very pale skin tone, almost white.  Their very weird body movements creep you out, some seem to be overly stoic, others look as if they memorized how humans should move.  They seem to be on the look for something.",
+  "volume": "95000 ml",
+  "weight": "95000 g",
+  "default_faction": "touhou_mib",
+  "bodytype": "human",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_PSEUDO"
+  ],
+  "harvest": "human",
+  "hp": 120,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "color": "black",
+  "aggression": 10,
+  "morale": 65,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "dodge": 4,
+  "vision_day": 50,
+  "vision_night": 15,
+  "path_settings": {
+    "max_dist": 35
+  },
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT"
+  ],
+  "fear_triggers": [
+    "FRIEND_DIED"
+  ],
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 5,
+  "armor_stab": 2,
+  "luminance": 1,
+  "starting_ammo": {
+    "9mmfmj": 20
+  },
+  "special_attacks": [
+    {
+      "gun_type": "glock_17",
+      "type": "gun",
+      "description": "The %s shoots！",
+      "ammo_type": "9mmfmj",
+      "cooldown": 3,
+      "fake_dex": 10,
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "pistol",
+          4
+        ]
+      ],
+      "max_ammo": 21,
+      "move_cost": 120,
+      "targeting_cost": 105,
+      "require_targeting_player": true,
+      "ranges": [
+        [
+          2,
+          12,
+          "BURST"
+        ],
+        [
+          13,
+          18,
+          "SEMI_AUTO"
+        ]
+      ]
+    },
+    [
+      "PARROT_AT_DANGER",
+      16
+    ]
+  ],
+  "death_drops": "mib_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_mib_none",
+      "hit_self": true
+    },
+    "message": "The %s dies!"
+  },
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "DROPS_AMMO",
+    "HEARS",
+    "PATH_AVOID_DANGER_2",
+    "SEES",
+    "WARM"
+  ],
+  "//": "Base (human) MIB",
+  "//2": "Add 'weird' harvest",
+  "//3": "Each death spawning something should print a message, telling the player (defaults are kept below), but I'm not sure how to do that."
+}
+```
+

@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: technique secronom_lore_expansion
+title: secronom_lore_expansion→technique→tec_secro_morph_fleshpound_quake
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_secro_morph_fleshpound_quake|http://cdda.aloxaf.cn/search?q=tec_secro_morph_fleshpound_quake]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_fleshpound_quake",
+  "name": "Quake",
+  "messages": [
+    "You thrash %s into the ground with tremendous power.",
+    "<npcname> thrashed %s into the ground with tremendous power."
+  ],
+  "melee_allowed": true,
+  "weighting": -20,
+  "down_dur": 6,
+  "crit_tec": true,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 5
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 2.99
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 3.66
+    }
+  ],
+  "eocs": [
+    {
+      "id": "eoc_tec_secro_morph_fleshpound_quake",
+      "effect": [
+        {
+          "u_make_sound": "a tremor.",
+          "volume": 100,
+          "type": "combat"
+        },
+        {
+          "u_cast_spell": {
+            "id": "tec_secro_morph_fleshpound_quake_push"
+          }
+        }
+      ]
+    }
+  ],
+  "description": "+266% bash, +199% movecost, down 6 turns, knocks adjacent, crit only",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_fleshpound_quake",
+  "name": "地震术",
+  "messages": [
+    "你用巨大的力量将%s击倒在地。",
+    "<npcname>用巨大的力量将%s击倒在地。"
+  ],
+  "melee_allowed": true,
+  "weighting": -20,
+  "down_dur": 6,
+  "crit_tec": true,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 5
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 2.99
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 3.66
+    }
+  ],
+  "eocs": [
+    {
+      "id": "eoc_tec_secro_morph_fleshpound_quake",
+      "effect": [
+        {
+          "u_make_sound": "a tremor.",
+          "volume": 100,
+          "type": "combat"
+        },
+        {
+          "u_cast_spell": {
+            "id": "tec_secro_morph_fleshpound_quake_push"
+          }
+        }
+      ]
+    }
+  ],
+  "description": "+266%钝击，+199%移动消耗，击倒2回合，击倒相邻，仅暴击",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+

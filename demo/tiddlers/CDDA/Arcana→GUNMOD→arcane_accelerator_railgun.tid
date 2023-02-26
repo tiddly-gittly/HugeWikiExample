@@ -1,0 +1,153 @@
+creator: 林一二
+revision: 0
+tags: GUNMOD Arcana
+title: Arcana→GUNMOD→arcane_accelerator_railgun
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcane_accelerator_railgun|http://cdda.aloxaf.cn/search?q=arcane_accelerator_railgun]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/gunmods.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcane_accelerator_railgun",
+  "type": "GUNMOD",
+  "name": {
+    "str": "diamagnetic anomaly inlay"
+  },
+  "description": "Several strips of silver inlaid along the length of a firearm's barrel, and a peculiar device wired to each inlay.  When catalyzed by charge from a UPS, the anomalous energies conducted through the inlay imbue bullets with abnormal effects.  Can't be installed on a sawed-down barrel.\nThis device manipulates diamagnetic effects to exert force on the non-ferrous materials present in each bullet, accelerating it at greater speeds much like a railgun, generating a cascade of electric sparks due to the electromagnetic anomaly created.  Increases damage and range, at the expense of accuracy and recoil.",
+  "weight": "540 g",
+  "volume": "1500 ml",
+  "integral_volume": "150 ml",
+  "price": "900 USD",
+  "price_postapoc": "90 USD",
+  "material": [
+    "silver",
+    "steel"
+  ],
+  "looks_like": "high_density_capacitor",
+  "symbol": ":",
+  "color": "light_gray",
+  "location": "barrel",
+  "blacklist_mod": "emitter",
+  "mod_targets": [
+    "smg",
+    "rifle",
+    "shotgun",
+    "pistol",
+    "launcher"
+  ],
+  "install_time": "45 m",
+  "handling_modifier": -5,
+  "range_modifier": 15,
+  "dispersion_modifier": 50,
+  "loudness_modifier": 15,
+  "damage_modifier": {
+    "damage_type": "bullet",
+    "amount": 20
+  },
+  "ups_charges_modifier": 25,
+  "ammo_effects": [
+    "AMMO_ANOMALY_RAILGUN"
+  ],
+  "min_skills": [
+    [
+      "weapon",
+      4
+    ],
+    [
+      "fabrication",
+      6
+    ],
+    [
+      "electronics",
+      4
+    ],
+    [
+      "magic",
+      5
+    ]
+  ],
+  "flags": [
+    "MAGIC_FOCUS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcane_accelerator_railgun",
+  "type": "GUNMOD",
+  "name": {
+    "str": "反磁性嵌条枪管"
+  },
+  "description": "沿着枪管的长度镶嵌了几条银条，每个镶嵌物上都有一个特殊的装置。在UPS电荷的催化下，通过嵌体传导的异常能量会给子弹注入异常效应。不能安装在锯下的桶上。\n该装置操纵抗磁效应，对每颗子弹中的有色金属材料施加作用力，以更高的速度加速，就像轨道炮一样，由于产生的电磁异常，产生一连串电火花。增加伤害和射程，以牺牲精度和反冲为代价。",
+  "weight": "540 g",
+  "volume": "1500 ml",
+  "integral_volume": "150 ml",
+  "price": "900 USD",
+  "price_postapoc": "90 USD",
+  "material": [
+    "silver",
+    "steel"
+  ],
+  "looks_like": "high_density_capacitor",
+  "symbol": ":",
+  "color": "light_gray",
+  "location": "barrel",
+  "blacklist_mod": "emitter",
+  "mod_targets": [
+    "smg",
+    "rifle",
+    "shotgun",
+    "pistol",
+    "launcher"
+  ],
+  "install_time": "45 m",
+  "handling_modifier": -5,
+  "range_modifier": 15,
+  "dispersion_modifier": 50,
+  "loudness_modifier": 15,
+  "damage_modifier": {
+    "damage_type": "bullet",
+    "amount": 20
+  },
+  "ups_charges_modifier": 25,
+  "ammo_effects": [
+    "AMMO_ANOMALY_RAILGUN"
+  ],
+  "min_skills": [
+    [
+      "weapon",
+      4
+    ],
+    [
+      "fabrication",
+      6
+    ],
+    [
+      "electronics",
+      4
+    ],
+    [
+      "magic",
+      5
+    ]
+  ],
+  "flags": [
+    "MAGIC_FOCUS"
+  ]
+}
+```
+

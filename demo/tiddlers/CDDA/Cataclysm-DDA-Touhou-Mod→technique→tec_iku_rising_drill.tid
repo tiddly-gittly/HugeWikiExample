@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_iku_rising_drill
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_iku_rising_drill|http://cdda.aloxaf.cn/search?q=tec_iku_rising_drill]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_iku_rising_drill",
+  "type": "technique",
+  "name": "Rising drill",
+  "messages": [
+    "You charge your weapon with static, and drill upwards through %s!",
+    "<npcname> drills upwards through %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 6
+    }
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": false,
+  "crit_tec": true,
+  "stun_dur": 2,
+  "weighting": -3,
+  "attack_override": true,
+  "flat_bonuses": [
+    {
+      "stat": "arpen",
+      "type": "stab",
+      "scaling-stat": "dex",
+      "scale": 2
+    },
+    {
+      "stat": "arpen",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "dex",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 2
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.1
+    }
+  ],
+  "//": "Should transform bash and cutting stats into into stab instead, this should do (?)"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_iku_rising_drill",
+  "type": "technique",
+  "name": "Rising drill",
+  "messages": [
+    "You charge your weapon with static, and drill upwards through %s!",
+    "<npcname> drills upwards through %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 6
+    }
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": false,
+  "crit_tec": true,
+  "stun_dur": 2,
+  "weighting": -3,
+  "attack_override": true,
+  "flat_bonuses": [
+    {
+      "stat": "arpen",
+      "type": "stab",
+      "scaling-stat": "dex",
+      "scale": 2
+    },
+    {
+      "stat": "arpen",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "dex",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 2
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.1
+    }
+  ],
+  "//": "Should transform bash and cutting stats into into stab instead, this should do (?)"
+}
+```
+

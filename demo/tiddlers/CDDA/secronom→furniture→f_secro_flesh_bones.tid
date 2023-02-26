@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: furniture secronom
+title: secronom→furniture→f_secro_flesh_bones
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_secro_flesh_bones|http://cdda.aloxaf.cn/search?q=f_secro_flesh_bones]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_secro_flesh_bones",
+  "name": "bony outgrowths",
+  "description": "A mound of flesh full of prickly sharp bones, emerging from underneath, so watch where you step!",
+  "symbol": "^",
+  "color": "white",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "emissions": [
+    "emit_flesh_bones"
+  ],
+  "flags": [
+    "FLAMMABLE",
+    "TRANSPARENT",
+    "S_FLESH",
+    "ROUGH",
+    "EMITTER",
+    "FF_BIOHAZARD"
+  ],
+  "bash": {
+    "str_min": 10,
+    "str_max": 20,
+    "sound": "splash!",
+    "sound_fail": "splook!"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_secro_flesh_bones",
+  "name": "骨生长物",
+  "description": "一大坨堆满了带刺骨头的肉，从下面冒出来，所以走路的时候请小心！",
+  "symbol": "^",
+  "color": "white",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "emissions": [
+    "emit_flesh_bones"
+  ],
+  "flags": [
+    "FLAMMABLE",
+    "TRANSPARENT",
+    "S_FLESH",
+    "ROUGH",
+    "EMITTER",
+    "FF_BIOHAZARD"
+  ],
+  "bash": {
+    "str_min": 10,
+    "str_max": 20,
+    "sound": "splash!",
+    "sound_fail": "splook!"
+  }
+}
+```
+

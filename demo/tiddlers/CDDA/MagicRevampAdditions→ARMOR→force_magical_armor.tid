@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: ARMOR MagicRevampAdditions
+title: MagicRevampAdditions→ARMOR→force_magical_armor
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：force_magical_armor|http://cdda.aloxaf.cn/search?q=force_magical_armor]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Force_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "id": "force_magical_armor",
+  "type": "ARMOR",
+  "name": {
+    "str_sp": "Force Shield"
+  },
+  "description": "A shield of pure force that protects you from most types of physical damage.",
+  "weight": "1 g",
+  "volume": "1 ml",
+  "to_hit": -10,
+  "symbol": "[",
+  "color": "brown",
+  "material": [
+    "magical_material"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "ARMOR_BASH",
+            "multiply": -0.3
+          },
+          {
+            "value": "ARMOR_CUT",
+            "multiply": -0.3
+          },
+          {
+            "value": "ARMOR_STAB",
+            "multiply": -0.3
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "multiply": -0.3
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "WATERPROOF",
+    "TRADER_AVOID",
+    "SEMITANGIBLE",
+    "ONLY_ONE",
+    "OVERSIZE",
+    "AURA"
+  ],
+  "armor": [
+    {
+      "encumbrance": 0,
+      "coverage": 100,
+      "covers": [
+        "leg_l",
+        "leg_r",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "head",
+        "foot_l",
+        "foot_r",
+        "mouth",
+        "eyes"
+      ],
+      "material": [
+        "magical_material"
+      ],
+      "environmental_protection": 2
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "force_magical_armor",
+  "type": "ARMOR",
+  "name": {
+    "str_sp": "力场护盾"
+  },
+  "description": "由纯粹的力场形成的护盾，能够保护你不受大多数的物理伤害。",
+  "weight": "1 g",
+  "volume": "1 ml",
+  "to_hit": -10,
+  "symbol": "[",
+  "color": "brown",
+  "material": [
+    "magical_material"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "ARMOR_BASH",
+            "multiply": -0.3
+          },
+          {
+            "value": "ARMOR_CUT",
+            "multiply": -0.3
+          },
+          {
+            "value": "ARMOR_STAB",
+            "multiply": -0.3
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "multiply": -0.3
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "WATERPROOF",
+    "TRADER_AVOID",
+    "SEMITANGIBLE",
+    "ONLY_ONE",
+    "OVERSIZE",
+    "AURA"
+  ],
+  "armor": [
+    {
+      "encumbrance": 0,
+      "coverage": 100,
+      "covers": [
+        "leg_l",
+        "leg_r",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "head",
+        "foot_l",
+        "foot_r",
+        "mouth",
+        "eyes"
+      ],
+      "material": [
+        "magical_material"
+      ],
+      "environmental_protection": 2
+    }
+  ]
+}
+```
+

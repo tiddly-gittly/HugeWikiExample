@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→mon_idol_vex_calamity_combo
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_idol_vex_calamity_combo|http://cdda.aloxaf.cn/search?q=mon_idol_vex_calamity_combo]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_monspell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_idol_vex_calamity_combo",
+  "type": "SPELL",
+  "name": {
+    "str": "Calamity Combo"
+  },
+  "description": "Combines all essential spells.",
+  "valid_targets": [
+    "none"
+  ],
+  "flags": [
+    "NO_PROJECTILE"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "message": "The Vex casts Calamity!\nExplosions of profane magic errupts from beneath the earth!",
+  "extra_effects": [
+    {
+      "id": "mon_idol_vex_calamity"
+    },
+    {
+      "id": "mon_idol_vex_spell_car",
+      "hit_self": true
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_idol_vex_calamity_combo",
+  "type": "SPELL",
+  "name": {
+    "str": "灾祸连击"
+  },
+  "description": "结合所有基本法术。",
+  "valid_targets": [
+    "none"
+  ],
+  "flags": [
+    "NO_PROJECTILE"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "message": "烦恼带来灾难！\n世俗魔法的爆炸从地下爆发！",
+  "extra_effects": [
+    {
+      "id": "mon_idol_vex_calamity"
+    },
+    {
+      "id": "mon_idol_vex_spell_car",
+      "hit_self": true
+    }
+  ]
+}
+```
+

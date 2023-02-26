@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→dash_utsuho
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dash_utsuho|http://cdda.aloxaf.cn/search?q=dash_utsuho]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_dashes.json
+
+
+!! 原文
+
+```json
+{
+  "id": "dash_utsuho",
+  "type": "SPELL",
+  "name": "Fission dive",
+  "description": "Dash towards a point, causing damage to the target.  You're invulnerable during the dash.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "dash",
+  "extra_effects": [
+    {
+      "id": "dash_utsuho2"
+    },
+    {
+      "id": "dash_basic_levitate"
+    }
+  ],
+  "shape": "line",
+  "damage_type": "bash",
+  "min_damage": 30,
+  "max_damage": 150,
+  "damage_increment": 12,
+  "min_range": 10,
+  "max_range": 10,
+  "//": "Ideally, this dash should have a fixed minimum travel distance of 8 and a fixed maximum of 12",
+  "difficulty": -20,
+  "max_level": 10,
+  "base_casting_time": 80,
+  "base_energy_cost": 2500,
+  "energy_source": "STAMINA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "//2": "How long is the travel time for dashes?"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "dash_utsuho",
+  "type": "SPELL",
+  "name": "Fission dive",
+  "description": "Dash towards a point, causing damage to the target.  You're invulnerable during the dash.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "dash",
+  "extra_effects": [
+    {
+      "id": "dash_utsuho2"
+    },
+    {
+      "id": "dash_basic_levitate"
+    }
+  ],
+  "shape": "line",
+  "damage_type": "bash",
+  "min_damage": 30,
+  "max_damage": 150,
+  "damage_increment": 12,
+  "min_range": 10,
+  "max_range": 10,
+  "//": "Ideally, this dash should have a fixed minimum travel distance of 8 and a fixed maximum of 12",
+  "difficulty": -20,
+  "max_level": 10,
+  "base_casting_time": 80,
+  "base_energy_cost": 2500,
+  "energy_source": "STAMINA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "//2": "How long is the travel time for dashes?"
+}
+```
+

@@ -1,0 +1,249 @@
+creator: 林一二
+revision: 0
+tags: GUN Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUN→sig550
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sig550|http://cdda.aloxaf.cn/search?q=sig550]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gun/thex_generic_gun.json
+
+
+!! 原文
+
+```json
+{
+  "id": "sig550",
+  "type": "GUN",
+  "name": {
+    "str": "SIG 550",
+    "str_pl": "SIGs 550"
+  },
+  "copy-from": "rifle_auto",
+  "description": "Also known as SG 550, this weapon is a selective fire automatic rifle designed for the Swiss military.  This is an old iteration of the 550 series, heavier and bulkier.",
+  "volume": "3200 ml",
+  "weight": "4100 g",
+  "longest_side": "998 mm",
+  "price": 320000,
+  "price_postapoc": 6000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "solid",
+    "length": "long",
+    "surface": "point"
+  },
+  "bashing": 11,
+  "material": [
+    "plastic",
+    "steel"
+  ],
+  "looks_like": "ar15",
+  "ammo": [
+    "223"
+  ],
+  "built_in_mods": [
+    "folding_stock"
+  ],
+  "dispersion": 155,
+  "//2": "I don't understand where these dispersion values come from. For reference, M16 has 10 shot group dispersion of 32 cm @ 300 m (calculated ~3.84 moa), AK-47 has 10 shot dispersion of 44 cm @ 300 m (calculated ~5.28 moa)), AK-74 has a R50 of 24 cm @ 300 m ( 24*2*0.937 ≈ 45 cm = 5.4 moa). But, both M16 and AK-74 have 150 dispersion in C:DDA. To make things worse (for me), SIG 550 has a R50 of 14 cm @ 300 m ( 14*2*0.937 ≈ 26.2 cm = 3.14 moa), which is LOWER than M16 but dispersion for the SIG 553 is 180 in C:DDA. M4A1 has a 24 in grouping at 300 yards = 8 moa, but 180 dispersion in C:DDA too",
+  "//3": "1 moa = 3 in @ 300 yd = 7.62 cm in @ 274.3 m = 8.33 cm @ 300 m ",
+  "//4": "I'm assuming *total* 3.5 moa = 210, 3 moa = 180, 2.5 moa = 150, 2 moa = 120, 1.5 moa = 90, 1 moa = 60. For most cases, anyways.",
+  "durability": 9,
+  "min_cycle_recoil": 1350,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "BURST",
+      "3 rd.",
+      3
+    ],
+    [
+      "AUTO",
+      "auto",
+      5
+    ]
+  ],
+  "reload": 420,
+  "reload_noise_volume": 10,
+  "valid_mod_locations": [
+    [
+      "muzzle",
+      1
+    ],
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock",
+      1
+    ],
+    [
+      "stock mount",
+      1
+    ],
+    [
+      "underbarrel mount",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "item_restriction": [
+        "sig550mag5",
+        "sig550mag10",
+        "sig550mag20",
+        "sig550mag30",
+        "stanag5",
+        "stanag10",
+        "stanag20",
+        "stanag30",
+        "stanag40",
+        "stanag50",
+        "stanag60",
+        "survivor223mag"
+      ]
+    }
+  ],
+  "weapon_category": [
+    "AUTOMATIC_RIFLES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "sig550",
+  "type": "GUN",
+  "name": {
+    "str": "SIG 550",
+    "str_pl": "SIGs 550"
+  },
+  "copy-from": "rifle_auto",
+  "description": "Also known as SG 550, this weapon is a selective fire automatic rifle designed for the Swiss military.  This is an old iteration of the 550 series, heavier and bulkier.",
+  "volume": "3200 ml",
+  "weight": "4100 g",
+  "longest_side": "998 mm",
+  "price": 320000,
+  "price_postapoc": 6000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "solid",
+    "length": "long",
+    "surface": "point"
+  },
+  "bashing": 11,
+  "material": [
+    "plastic",
+    "steel"
+  ],
+  "looks_like": "ar15",
+  "ammo": [
+    "223"
+  ],
+  "built_in_mods": [
+    "folding_stock"
+  ],
+  "dispersion": 155,
+  "//2": "I don't understand where these dispersion values come from. For reference, M16 has 10 shot group dispersion of 32 cm @ 300 m (calculated ~3.84 moa), AK-47 has 10 shot dispersion of 44 cm @ 300 m (calculated ~5.28 moa)), AK-74 has a R50 of 24 cm @ 300 m ( 24*2*0.937 ≈ 45 cm = 5.4 moa). But, both M16 and AK-74 have 150 dispersion in C:DDA. To make things worse (for me), SIG 550 has a R50 of 14 cm @ 300 m ( 14*2*0.937 ≈ 26.2 cm = 3.14 moa), which is LOWER than M16 but dispersion for the SIG 553 is 180 in C:DDA. M4A1 has a 24 in grouping at 300 yards = 8 moa, but 180 dispersion in C:DDA too",
+  "//3": "1 moa = 3 in @ 300 yd = 7.62 cm in @ 274.3 m = 8.33 cm @ 300 m ",
+  "//4": "I'm assuming *total* 3.5 moa = 210, 3 moa = 180, 2.5 moa = 150, 2 moa = 120, 1.5 moa = 90, 1 moa = 60. For most cases, anyways.",
+  "durability": 9,
+  "min_cycle_recoil": 1350,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "BURST",
+      "3 rd.",
+      3
+    ],
+    [
+      "AUTO",
+      "auto",
+      5
+    ]
+  ],
+  "reload": 420,
+  "reload_noise_volume": 10,
+  "valid_mod_locations": [
+    [
+      "muzzle",
+      1
+    ],
+    [
+      "rail mount",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock",
+      1
+    ],
+    [
+      "stock mount",
+      1
+    ],
+    [
+      "underbarrel mount",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "item_restriction": [
+        "sig550mag5",
+        "sig550mag10",
+        "sig550mag20",
+        "sig550mag30",
+        "stanag5",
+        "stanag10",
+        "stanag20",
+        "stanag30",
+        "stanag40",
+        "stanag50",
+        "stanag60",
+        "survivor223mag"
+      ]
+    }
+  ],
+  "weapon_category": [
+    "AUTOMATIC_RIFLES"
+  ]
+}
+```
+

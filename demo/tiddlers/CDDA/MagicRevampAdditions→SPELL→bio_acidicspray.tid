@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→bio_acidicspray
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bio_acidicspray|http://cdda.aloxaf.cn/search?q=bio_acidicspray]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/biomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bio_acidicspray",
+  "type": "SPELL",
+  "name": {
+    "str": "Acidic Spray"
+  },
+  "description": "When cast, the mage opens his mouth and sprays acid in a wide cone to dissolve his foes into goo.  Just imagine what he'll do with the goo.",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "effect_str": "bio_acidburn",
+  "shape": "cone",
+  "base_casting_time": 200,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "spell_class": "BIOMANCER",
+  "difficulty": 2,
+  "max_level": 30,
+  "min_damage": 8,
+  "max_damage": 97,
+  "damage_increment": 4,
+  "damage_type": "acid",
+  "min_range": 3,
+  "max_range": 8,
+  "flags": [
+    "VERBAL",
+    "NO_HANDS"
+  ],
+  "range_increment": 0.25,
+  "min_aoe": 25,
+  "max_aoe": 90,
+  "aoe_increment": 5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bio_acidicspray",
+  "type": "SPELL",
+  "name": {
+    "str": "酸液喷射"
+  },
+  "description": "当施法时，法师张开他的嘴，向前方扇形范围内的敌人喷射腐蚀性酸液，将它们溶解成粘液。想象一下他该怎么处理这些粘糊糊的玩意。",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "effect_str": "bio_acidburn",
+  "shape": "cone",
+  "base_casting_time": 200,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "spell_class": "BIOMANCER",
+  "difficulty": 2,
+  "max_level": 30,
+  "min_damage": 8,
+  "max_damage": 97,
+  "damage_increment": 4,
+  "damage_type": "acid",
+  "min_range": 3,
+  "max_range": 8,
+  "flags": [
+    "VERBAL",
+    "NO_HANDS"
+  ],
+  "range_increment": 0.25,
+  "min_aoe": 25,
+  "max_aoe": 90,
+  "aoe_increment": 5
+}
+```
+

@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_1|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_1",
+  "type": "talk_topic",
+  "dynamic_line": "I'm aware of that.  Old habits aside, it's good to have a chance to work towards a common goal.  Guessing you'll need a copy of the Codex, then?  I'll trust you with one, if needed for the ritual.",
+  "responses": [
+    {
+      "text": "I already have one.  Thank you, though.",
+      "switch": true,
+      "condition": {
+        "u_has_item": "book_bloodmagic"
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_3"
+    },
+    {
+      "text": "That would be appreciated, yes.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX"
+    },
+    {
+      "text": "I'll figure something out myself.",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_1",
+  "type": "talk_topic",
+  "dynamic_line": "我知道。抛开过去的习惯，有一个好的机会朝着这个目标努力。我猜你需要一份抄本？如果仪式需要的话，我会相信你的。",
+  "responses": [
+    {
+      "text": "我已经有一个了。不过，谢谢你。",
+      "switch": true,
+      "condition": {
+        "u_has_item": "book_bloodmagic"
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_3"
+    },
+    {
+      "text": "谢谢，是的。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX"
+    },
+    {
+      "text": "我自己会想办法的。",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: furniture MST_Extra
+title: MST_Extra→furniture→f_counter_makeshift
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_counter_makeshift|http://cdda.aloxaf.cn/search?q=f_counter_makeshift]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_counter_makeshift",
+  "looks_like": "f_counter",
+  "name": "makeshift counter",
+  "description": "A bit rustic for most kitchens, made from simple joinery and wood glue.",
+  "symbol": "#",
+  "color": "blue",
+  "move_cost_mod": 2,
+  "coverage": 60,
+  "required_str": 11,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE",
+    "ORGANIC",
+    "MOUNTABLE",
+    "SHORT",
+    "FLAT_SURF",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 6
+      }
+    ]
+  },
+  "max_volume": "4000 L",
+  "bash": {
+    "str_min": 11,
+    "str_max": 38,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          2,
+          5
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 3
+      }
+    ]
+  },
+  "examine_action": "workbench",
+  "workbench": {
+    "multiplier": 1.1,
+    "mass": 200000,
+    "volume": "75L"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_counter_makeshift",
+  "looks_like": "f_counter",
+  "name": "简易柜台",
+  "description": "对于大多数厨房来说有点土气，是由简单的细木工和木胶制成的。",
+  "symbol": "#",
+  "color": "blue",
+  "move_cost_mod": 2,
+  "coverage": 60,
+  "required_str": 11,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE",
+    "ORGANIC",
+    "MOUNTABLE",
+    "SHORT",
+    "FLAT_SURF",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 6
+      }
+    ]
+  },
+  "max_volume": "4000 L",
+  "bash": {
+    "str_min": 11,
+    "str_max": 38,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          2,
+          5
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 3
+      }
+    ]
+  },
+  "examine_action": "workbench",
+  "workbench": {
+    "multiplier": 1.1,
+    "mass": 200000,
+    "volume": "75L"
+  }
+}
+```
+

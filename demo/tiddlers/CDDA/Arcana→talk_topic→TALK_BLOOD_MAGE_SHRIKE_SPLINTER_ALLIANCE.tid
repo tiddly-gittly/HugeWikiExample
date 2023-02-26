@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_ALLIANCE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_ALLIANCE|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_ALLIANCE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_ALLIANCE",
+  "type": "talk_topic",
+  "dynamic_line": "Fine then.  Don't disappoint me.  Safe's in the back, I'll have it opened up, get what you need.  I suppose I can also send someone to check things out at the place you're from.  We'll see if this cooperation actually pans out.",
+  "speaker_effect": {
+    "effect": [
+      {
+        "npc_add_var": "elena_convinced",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes"
+      },
+      {
+        "mapgen_update": "arcana_shrikes_unlock_safe",
+        "om_terrain": "sanguine_holdout_2",
+        "om_special": "sanguine_holdout_shrikes"
+      },
+      {
+        "mapgen_update": "arcana_shrikes_send_ally",
+        "om_terrain": "cf_church_2",
+        "om_special": "cf_rural_church",
+        "must_see": true
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "Thank you.  One more thing before I go…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "Thank you, and goodbye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_ALLIANCE",
+  "type": "talk_topic",
+  "dynamic_line": "好吧。别让我失望。保险箱在后面，我把它打开，拿到你需要的东西。我想我也可以派人去你住的地方检查一下。我们要看看这次合作是否能成功。",
+  "speaker_effect": {
+    "effect": [
+      {
+        "npc_add_var": "elena_convinced",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes"
+      },
+      {
+        "mapgen_update": "arcana_shrikes_unlock_safe",
+        "om_terrain": "sanguine_holdout_2",
+        "om_special": "sanguine_holdout_shrikes"
+      },
+      {
+        "mapgen_update": "arcana_shrikes_send_ally",
+        "om_terrain": "cf_church_2",
+        "om_special": "cf_rural_church",
+        "must_see": true
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "非常感谢。在我走之前还有一件事…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "谢谢，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_1_SEVEN
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_1_SEVEN|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_1_SEVEN]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_SEVEN",
+  "dynamic_line": "Indeed there were.  Seven sacrifices, seven gifts from He From Beyond The Veil… left in the care of seven high priests.  They were to use these to serve His will, to prevent the wounds in The Veil from worsening.  We failed in that.",
+  "responses": [
+    {
+      "text": "What happened to the other six",
+      "topic": "TALK_HERMIT_DISCUSS_1_SIX"
+    },
+    {
+      "text": "What happened to this one?",
+      "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED"
+    },
+    {
+      "text": "What if I would prefer to destroy this relic?",
+      "topic": "TALK_HERMIT_DISCUSS_1_DESTROY"
+    },
+    {
+      "switch": true,
+      "text": "I see.  That's all for now.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "I see.  So what now?",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_SEVEN",
+  "dynamic_line": "确实有。七个祭物，七个来自帷幕彼端古神的恩赐，交给七个大祭司。他们要用这些来服侍他的意志，防止帷幕上的伤口恶化。我们失败了。",
+  "responses": [
+    {
+      "text": "其他六件怎么了",
+      "topic": "TALK_HERMIT_DISCUSS_1_SIX"
+    },
+    {
+      "text": "这一件怎么了？",
+      "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED"
+    },
+    {
+      "text": "如果我想毁掉这件遗物呢？",
+      "topic": "TALK_HERMIT_DISCUSS_1_DESTROY"
+    },
+    {
+      "switch": true,
+      "text": "我懂了。现在到此为止。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "我懂了。那现在怎么办？",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

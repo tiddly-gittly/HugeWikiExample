@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→HUNGER_BIOWEAPON
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：HUNGER_BIOWEAPON|http://cdda.aloxaf.cn/search?q=HUNGER_BIOWEAPON]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "HUNGER_BIOWEAPON",
+  "name": {
+    "str": "Metabolic Instability"
+  },
+  "points": 0,
+  "mixed_effect": true,
+  "description": "Your body requires more resources than normal, burning calories and requiring more food in exchange for warming you up more easily.  You can also better tolerate mutant toxins.",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "types": [
+    "METABOLISM"
+  ],
+  "cancels": [
+    "THIRST"
+  ],
+  "bodytemp_modifiers": [
+    0,
+    2000
+  ],
+  "metabolism_modifier": 1.25,
+  "thirst_modifier": 0.75,
+  "vitamins_absorb_multi": [
+    [
+      "all",
+      [
+        [
+          "mutant_toxin",
+          0.25
+        ]
+      ]
+    ]
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "HUNGER_BIOWEAPON",
+  "name": {
+    "str": "代谢失稳"
+  },
+  "points": 0,
+  "mixed_effect": true,
+  "description": "你消耗比众人更多的资源，增多的食物与卡路里消耗使你更容易暖和起来。你还可以更好地耐受突变毒素。",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "types": [
+    "METABOLISM"
+  ],
+  "cancels": [
+    "THIRST"
+  ],
+  "bodytemp_modifiers": [
+    0,
+    2000
+  ],
+  "metabolism_modifier": 1.25,
+  "thirst_modifier": 0.75,
+  "vitamins_absorb_multi": [
+    [
+      "all",
+      [
+        [
+          "mutant_toxin",
+          0.25
+        ]
+      ]
+    ]
+  ]
+}
+```
+

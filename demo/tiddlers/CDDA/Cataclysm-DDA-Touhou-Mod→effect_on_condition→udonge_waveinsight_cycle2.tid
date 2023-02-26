@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→effect_on_condition→udonge_waveinsight_cycle2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：udonge_waveinsight_cycle2|http://cdda.aloxaf.cn/search?q=udonge_waveinsight_cycle2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spell_eocs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "udonge_waveinsight_cycle2",
+  "type": "effect_on_condition",
+  "condition": {
+    "and": [
+      {
+        "compare_int": [
+          {
+            "u_val": "mana"
+          },
+          ">=",
+          {
+            "const": 50
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "u_val": "var",
+            "var_name": "var_waveinsight"
+          },
+          ">",
+          {
+            "const": 0
+          }
+        ]
+      }
+    ]
+  },
+  "effect": [
+    {
+      "arithmetic": [
+        {
+          "u_val": "mana"
+        },
+        "-=",
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "u_add_effect": "udonge_insight",
+      "duration": "3 s"
+    },
+    {
+      "queue_eocs": [
+        "udonge_waveinsight_cycle1"
+      ],
+      "time_in_future": "2 s"
+    }
+  ],
+  "false_effect": {
+    "run_eocs": "udonge_wave_oom"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "udonge_waveinsight_cycle2",
+  "type": "effect_on_condition",
+  "condition": {
+    "and": [
+      {
+        "compare_int": [
+          {
+            "u_val": "mana"
+          },
+          ">=",
+          {
+            "const": 50
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "u_val": "var",
+            "var_name": "var_waveinsight"
+          },
+          ">",
+          {
+            "const": 0
+          }
+        ]
+      }
+    ]
+  },
+  "effect": [
+    {
+      "arithmetic": [
+        {
+          "u_val": "mana"
+        },
+        "-=",
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "u_add_effect": "udonge_insight",
+      "duration": "3 s"
+    },
+    {
+      "queue_eocs": [
+        "udonge_waveinsight_cycle1"
+      ],
+      "time_in_future": "2 s"
+    }
+  ],
+  "false_effect": {
+    "run_eocs": "udonge_wave_oom"
+  }
+}
+```
+

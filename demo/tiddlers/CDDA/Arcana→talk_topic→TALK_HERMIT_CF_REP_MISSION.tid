@@ -1,0 +1,259 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_CF_REP_MISSION
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_CF_REP_MISSION|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_CF_REP_MISSION]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_CF_REP_MISSION",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_VEIL",
+    "yes": {
+      "npc_has_effect": "hermit_stage_4",
+      "yes": "So you, Chosen, have allied with the hunters.  The oath may be immortal, but I am hardly fit to be called a servant of He From Beyond The Veil, not anymore.  What can you tell me of their intentions?",
+      "no": "I was not expecting they would find me so easily.  My days as a Keeper are long gone, I have nothing left in my name but old books and what nature offers us all.  For what purpose do they hunt an old man?"
+    },
+    "no": {
+      "u_has_trait": "THRESH_DRAGONBLOOD",
+      "yes": "You bear the indelible mark of the Sanguine Order's transhuman dabbling, and yet it was the Cleaning Flame that sent you on this quest?  Whether you were one of the blood mages or merely stumbled into their work, this is unusual.  What do they seek from me?",
+      "no": "I was not expecting they would find me so easily.  My days as a Keeper are long gone, I have nothing left in my name but old books and what nature offers us all.  For what purpose do they hunt an old man?"
+    }
+  },
+  "responses": [
+    {
+      "switch": true,
+      "text": "They seek to learn from the ways of the Chosen who have come before me.",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_CHOSEN",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      }
+    },
+    {
+      "switch": true,
+      "text": "We are both bound by immortal oath.  I chose to come to their aid.",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_CHALICE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "We are not here as hunters, but to make amends and secure knowledge.",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_CLEANSINGFLAME",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "I was one of their enemies.  What does that tell you?",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_SANGUINE",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "They're interested in seeking out allies and intel.",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES",
+      "condition": {
+        "or": [
+          {
+            "u_has_any_trait": [
+              "THRESH_DRAGONBLOOD",
+              "PROF_ARCANIST",
+              "PROF_ARCANIST2"
+            ]
+          },
+          {
+            "u_has_effect": "hermit_earned_trust_2"
+          }
+        ]
+      }
+    },
+    {
+      "text": "They're interested in any research into the Beyond you may be willing to offer them.",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 30
+      },
+      "success": {
+        "topic": "TALK_HERMIT_CF_REP_MISSION_KNOWLEDGE"
+      },
+      "failure": {
+        "topic": "TALK_HERMIT_CF_REP_MISSION_BASIC",
+        "opinion": {
+          "value": -1,
+          "trust": -1
+        }
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "They are not the ones hunting you.  Hand over the research, or else.",
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 10
+      },
+      "success": {
+        "topic": "TALK_HERMIT_CF_REP_MISSION_INTIMIDATE",
+        "opinion": {
+          "fear": 1,
+          "trust": -1
+        }
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "anger": 3,
+          "value": -3
+        },
+        "effect": "insult_combat"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_CF_REP_MISSION",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_VEIL",
+    "yes": {
+      "npc_has_effect": "hermit_stage_4",
+      "yes": "所以你，被选中的，和猎人结盟了。誓言也许是不朽的，但我再也不适合被称为帷幕彼端古神的仆人了。你能告诉我他们的意图吗？",
+      "no": "我没想到他们会这么容易找到我。我当饲养员的日子一去不复返了，我的名下除了旧书和大自然给我们的一切，什么都没有了。他们猎杀老人的目的是什么？"
+    },
+    "no": {
+      "u_has_trait": "THRESH_DRAGONBLOOD",
+      "yes": "你身上有着猩红教派跨人类涉猎的不可磨灭的印记，然而正是清洁之火把你送上了这项任务？无论你是一个血法师，还是仅仅是偶然进入他们的工作，这是不寻常的。他们向我寻求什么？",
+      "no": "我没想到他们会这么容易找到我。我当饲养员的日子一去不复返了，我的名下除了旧书和大自然给我们的一切，什么都没有了。他们猎杀老人的目的是什么？"
+    }
+  },
+  "responses": [
+    {
+      "switch": true,
+      "text": "他们寻求学习在我面前被拣选者的道路。",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_CHOSEN",
+      "condition": {
+        "u_has_trait": "THRESH_VEIL"
+      }
+    },
+    {
+      "switch": true,
+      "text": "我们都被不朽的誓言所束缚。我选择帮助他们。",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_CHALICE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "我们来这里不是为了狩猎，而是为了弥补损失和获得知识。",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_CLEANSINGFLAME",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "我是他们的敌人之一。这说明了什么？",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_SANGUINE",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "他们对寻找盟友和情报感兴趣。",
+      "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES",
+      "condition": {
+        "or": [
+          {
+            "u_has_any_trait": [
+              "THRESH_DRAGONBLOOD",
+              "PROF_ARCANIST",
+              "PROF_ARCANIST2"
+            ]
+          },
+          {
+            "u_has_effect": "hermit_earned_trust_2"
+          }
+        ]
+      }
+    },
+    {
+      "text": "他们对你愿意提供给他们的超越感兴趣。",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 30
+      },
+      "success": {
+        "topic": "TALK_HERMIT_CF_REP_MISSION_KNOWLEDGE"
+      },
+      "failure": {
+        "topic": "TALK_HERMIT_CF_REP_MISSION_BASIC",
+        "opinion": {
+          "value": -1,
+          "trust": -1
+        }
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "不是他们在追捕你。交出研究报告，否则。",
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 10
+      },
+      "success": {
+        "topic": "TALK_HERMIT_CF_REP_MISSION_INTIMIDATE",
+        "opinion": {
+          "fear": 1,
+          "trust": -1
+        }
+      },
+      "failure": {
+        "topic": "TALK_DONE",
+        "opinion": {
+          "anger": 3,
+          "value": -3
+        },
+        "effect": "insult_combat"
+      }
+    }
+  ]
+}
+```
+

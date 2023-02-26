@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→sflesh_flesh_city_fturmoil
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sflesh_flesh_city_fturmoil|http://cdda.aloxaf.cn/search?q=sflesh_flesh_city_fturmoil]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "sflesh_flesh_city_fturmoil",
+  "accuracy": 10,
+  "move_cost": 500,
+  "blockable": false,
+  "dodgeable": false,
+  "attack_chance": 1,
+  "range": 4,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 40
+    }
+  ],
+  "min_mul": 0.8,
+  "effects": [
+    {
+      "id": "stunned",
+      "duration": 3
+    }
+  ],
+  "hit_dmg_u": "The surrounding tentacles slam into you at once!",
+  "hit_dmg_npc": "%1$s crushes <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to crush you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to crush <npcname>, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "sflesh_flesh_city_fturmoil",
+  "accuracy": 10,
+  "move_cost": 500,
+  "blockable": false,
+  "dodgeable": false,
+  "attack_chance": 1,
+  "range": 4,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 40
+    }
+  ],
+  "min_mul": 0.8,
+  "effects": [
+    {
+      "id": "stunned",
+      "duration": 3
+    }
+  ],
+  "hit_dmg_u": "周围的触手立刻向你猛击！",
+  "hit_dmg_npc": "%1$s crushes <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to crush you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to crush <npcname>, but fails to penetrate their armor!"
+}
+```
+

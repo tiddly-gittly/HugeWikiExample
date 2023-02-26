@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: technique secronom_lore_expansion
+title: secronom_lore_expansion→technique→tec_secro_morph_fleshpound_slam
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_secro_morph_fleshpound_slam|http://cdda.aloxaf.cn/search?q=tec_secro_morph_fleshpound_slam]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_fleshpound_slam",
+  "name": "Slam",
+  "messages": [
+    "You slam %s with your arms",
+    "<npcname> slams %s with their arms"
+  ],
+  "melee_allowed": true,
+  "weighting": 0,
+  "stun_dur": 1,
+  "crit_tec": true,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 1
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.4
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.3
+    }
+  ],
+  "description": "+30% bash, +40% movecost, stun 1 turn, crit only",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_fleshpound_slam",
+  "name": "猛击",
+  "messages": [
+    "你用手臂猛击%s",
+    "<npcname>用双臂猛击%s"
+  ],
+  "melee_allowed": true,
+  "weighting": 0,
+  "stun_dur": 1,
+  "crit_tec": true,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 1
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.4
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.3
+    }
+  ],
+  "description": "+30% 钝击，+40% 移动耗时，击晕 1 回合，仅暴击",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+

@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→numbness_potion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：numbness_potion|http://cdda.aloxaf.cn/search?q=numbness_potion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "numbness_potion",
+  "type": "COMESTIBLE",
+  "comestible_type": "DRINK",
+  "category": "drugs",
+  "name": {
+    "str": "black potion",
+    "str_pl": "black potion"
+  },
+  "description": "A strange black liquid that smells like death itself.  The first step towards creating the elixir of life, allegedly.  Drinking this will rapidly recover pain, at the expense of temporary sluggishness.",
+  "weight": "150 g",
+  "volume": "250 ml",
+  "//": "Uncommon but still producible, medical items generally shot up in value post-cataclysm.",
+  "price": "200 USD",
+  "price_postapoc": "40 USD",
+  "phase": "liquid",
+  "container": "flask_glass",
+  "looks_like": "poppy_pain",
+  "symbol": "~",
+  "color": "dark_gray",
+  "charges": 2,
+  "healthy": -4,
+  "fun": -4,
+  "freezing_point": -150,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "You drink the potion and feel a strange numbness spread through your body.",
+    "effects": [
+      {
+        "id": "potion_numbness",
+        "duration": 900
+      }
+    ]
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "numbness_potion",
+  "type": "COMESTIBLE",
+  "comestible_type": "DRINK",
+  "category": "drugs",
+  "name": {
+    "str": "黑色药水",
+    "str_pl": "黑色药水"
+  },
+  "description": "一种奇怪的黑色液体，闻起来像死亡本身。据称，这是创造长生不老药的第一步。喝这种饮料会很快恢复疼痛，但代价是暂时的懒散。",
+  "weight": "150 g",
+  "volume": "250 ml",
+  "//": "Uncommon but still producible, medical items generally shot up in value post-cataclysm.",
+  "price": "200 USD",
+  "price_postapoc": "40 USD",
+  "phase": "liquid",
+  "container": "flask_glass",
+  "looks_like": "poppy_pain",
+  "symbol": "~",
+  "color": "dark_gray",
+  "charges": 2,
+  "healthy": -4,
+  "fun": -4,
+  "freezing_point": -150,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "你喝了药水，感到一种奇怪的麻木感蔓延到全身。",
+    "effects": [
+      {
+        "id": "potion_numbness",
+        "duration": 900
+      }
+    ]
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+

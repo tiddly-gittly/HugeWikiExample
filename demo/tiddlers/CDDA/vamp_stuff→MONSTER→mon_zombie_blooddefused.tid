@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_zombie_blooddefused
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_blooddefused|http://cdda.aloxaf.cn/search?q=mon_zombie_blooddefused]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Zombies/Graveyard.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_blooddefused",
+  "type": "MONSTER",
+  "name": {
+    "str": "blood defused zombie"
+  },
+  "description": "This hollowed zombie's blood melts away and cause a minor mutation, such as long claws and immensive fangs. Lackness of weight provides swiftness and good reflexes, but in most cases, its fragility makes it easy to take down.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "ELDERZED"
+  ],
+  "bodytype": "human",
+  "hp": 85,
+  "speed": 135,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "B",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 6,
+  "armor_bullet": 4,
+  "dodge": 3,
+  "vision_day": 35,
+  "harvest": "zombie",
+  "vision_night": 5,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 6
+    },
+    [
+      "GRAB",
+      9
+    ]
+  ],
+  "death_drops": "elderzombie",
+  "upgrades": {
+    "half_life": 6,
+    "into_group": "GROUP_CRYPTIES_DEFUSEDUPGRADE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_blooddefused",
+  "type": "MONSTER",
+  "name": {
+    "str": "中空丧尸"
+  },
+  "description": "这个被挖空的丧尸的液会融化并导致一些小规模的变异。比如长长的爪子和巨大的尖牙。较轻的体重提供了快速和良好的反应，但在大多数情况下，它很脆弱，所以很容易干掉。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "ELDERZED"
+  ],
+  "bodytype": "human",
+  "hp": 85,
+  "speed": 135,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "B",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 6,
+  "armor_bullet": 4,
+  "dodge": 3,
+  "vision_day": 35,
+  "harvest": "zombie",
+  "vision_night": 5,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 6
+    },
+    [
+      "GRAB",
+      9
+    ]
+  ],
+  "death_drops": "elderzombie",
+  "upgrades": {
+    "half_life": 6,
+    "into_group": "GROUP_CRYPTIES_DEFUSEDUPGRADE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+

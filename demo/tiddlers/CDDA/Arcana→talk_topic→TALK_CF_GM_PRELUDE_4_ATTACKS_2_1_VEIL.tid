@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_VEIL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_VEIL|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_VEIL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_VEIL",
+  "type": "talk_topic",
+  "dynamic_line": "If you're certain.  You're one of the Keepers Chosen, aren't you?  Whatever strange magic is at work might be something you can make use of.  I have a rough area mapped out, if you have one of their artifacts at hand?",
+  "responses": [
+    {
+      "text": "I do.  Show me what I need to do for this to work.",
+      "switch": true,
+      "condition": {
+        "u_has_item": "veilblade"
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_RITUAL"
+    },
+    {
+      "text": "Nevermind, let's start from the beginning.",
+      "topic": "TALK_CF_GM_PRELUDE_4"
+    },
+    {
+      "text": "I'll need to retrieve the artifact first.  I'll be back later.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_VEIL",
+  "type": "talk_topic",
+  "dynamic_line": "如果你确定的话。你是被选中的守门员之一，不是吗？不管是什么奇怪的魔法在起作用，你都可以利用它。我有一个粗略的区域，如果你手头有他们的文物？",
+  "responses": [
+    {
+      "text": "我愿意。告诉我我需要做些什么才能让它生效。",
+      "switch": true,
+      "condition": {
+        "u_has_item": "veilblade"
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1_RITUAL"
+    },
+    {
+      "text": "别担心，让我们从头开始。",
+      "topic": "TALK_CF_GM_PRELUDE_4"
+    },
+    {
+      "text": "我需要先找回神器。我一会儿回来。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

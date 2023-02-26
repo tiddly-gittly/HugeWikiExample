@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_APPRENTICE_CONVINCE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_APPRENTICE_CONVINCE|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_APPRENTICE_CONVINCE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_APPRENTICE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_CONVINCE",
+  "type": "talk_topic",
+  "dynamic_line": "You're right.  This isn't the right way to follow The Path.  Would you take me in as an apprentice?",
+  "responses": [
+    {
+      "text": "Yes, join me.",
+      "topic": "TALK_AGREE_FOLLOW",
+      "effect": "follow",
+      "opinion": {
+        "trust": 2,
+        "fear": -1,
+        "value": 1,
+        "anger": -3
+      }
+    },
+    {
+      "text": "[ATTACK] No.  You will face the same judgment as your master.",
+      "topic": "TALK_DONE",
+      "effect": "flee"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_CONVINCE",
+  "type": "talk_topic",
+  "dynamic_line": "你说得对。这行不通。你愿意收留我当学徒吗？",
+  "responses": [
+    {
+      "text": "是的，跟我来。",
+      "topic": "TALK_AGREE_FOLLOW",
+      "effect": "follow",
+      "opinion": {
+        "trust": 2,
+        "fear": -1,
+        "value": 1,
+        "anger": -3
+      }
+    },
+    {
+      "text": "[攻击]不，你将面临和你主人一样的审判。",
+      "topic": "TALK_DONE",
+      "effect": "flee"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_nightwail_shadow_enshroud
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_nightwail_shadow_enshroud|http://cdda.aloxaf.cn/search?q=mon_zombie_nightwail_shadow_enshroud]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_nightwail_shadow_enshroud",
+  "type": "SPELL",
+  "name": {
+    "str": "Shadow Enshroud"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'The caster splits in every direction, covering nearby hostile targets with thicc shadows.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "nightwail_shadow",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_nightwail_shadow_enshroud_blind",
+      "hit_self": true
+    }
+  ],
+  "min_aoe": 4,
+  "max_aoe": 4,
+  "min_duration": 1500,
+  "max_duration": 4500
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_nightwail_shadow_enshroud",
+  "type": "SPELL",
+  "name": {
+    "str": "阴影掩蔽"
+  },
+  "description": "怪物施放的咒语。如果你看到了这个，那么读读这个:\n“施法者向各个方向分裂，用伦理阴影覆盖附近的敌对目标。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "nightwail_shadow",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_nightwail_shadow_enshroud_blind",
+      "hit_self": true
+    }
+  ],
+  "min_aoe": 4,
+  "max_aoe": 4,
+  "min_duration": 1500,
+  "max_duration": 4500
+}
+```
+

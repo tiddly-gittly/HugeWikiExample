@@ -1,0 +1,183 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_module_optics_act
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_module_optics_act|http://cdda.aloxaf.cn/search?q=secro_power_armor_module_optics_act]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armor_modules.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_module_optics_act",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom module implant \"Optics\""
+  },
+  "description": "A set of power armor modules that installs various advanced targeting systems to the eyes. Module implant type \"Optics\" significantly increases perception. Uses a built-in UPS.\n\nModule implant type \"Optics\" provides:\n<color_white>Perception: <color_light_green>+6</color>\nSight range: <color_light_green>+4</color></color>",
+  "weight": "4225 g",
+  "volume": "3 L",
+  "price": "7300 USD",
+  "price_postapoc": "730 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_frame",
+  "color": "dark_gray_white",
+  "power_armor": true,
+  "turns_per_charge": 1,
+  "charges_per_use": 1,
+  "revert_to": "secro_power_armor_module_optics",
+  "use_action": {
+    "target": "secro_power_armor_module_optics",
+    "msg": "\"Optics\" module - <color_red>offline",
+    "type": "transform",
+    "menu_text": "Deactivate \"Optics\" module"
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "PERCEPTION",
+            "add": 3
+          }
+        ]
+      }
+    ]
+  },
+  "ammo": "battery",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 500
+      }
+    }
+  ],
+  "flags": [
+    "WATERPROOF",
+    "OUTER",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "NO_TAKEOFF",
+    "RECHARGE",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 10,
+      "coverage": 10,
+      "material": [
+        "superalloy"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_module_optics_act",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom模块植入“光学”"
+  },
+  "description": "A set of power armor modules that installs various advanced targeting systems to the eyes. Module implant type \"Optics\" significantly increases perception. Uses a built-in UPS.\n\nModule implant type \"Optics\" provides:\n<color_white>Perception: <color_light_green>+6</color>\nSight range: <color_light_green>+4</color></color>",
+  "weight": "4225 g",
+  "volume": "3 L",
+  "price": "7300 USD",
+  "price_postapoc": "730 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_frame",
+  "color": "dark_gray_white",
+  "power_armor": true,
+  "turns_per_charge": 1,
+  "charges_per_use": 1,
+  "revert_to": "secro_power_armor_module_optics",
+  "use_action": {
+    "target": "secro_power_armor_module_optics",
+    "msg": "“光学”模块 - <color_red>离线",
+    "type": "transform",
+    "menu_text": "关闭“光学”模块"
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "PERCEPTION",
+            "add": 3
+          }
+        ]
+      }
+    ]
+  },
+  "ammo": "battery",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 500
+      }
+    }
+  ],
+  "flags": [
+    "WATERPROOF",
+    "OUTER",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "NO_TAKEOFF",
+    "RECHARGE",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 10,
+      "coverage": 10,
+      "material": [
+        "superalloy"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

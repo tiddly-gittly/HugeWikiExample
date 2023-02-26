@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MERCHANT_CF_AUX_SITUATION
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MERCHANT_CF_AUX_SITUATION|http://cdda.aloxaf.cn/search?q=TALK_MERCHANT_CF_AUX_SITUATION]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MERCHANT_CF_AUX.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_SITUATION",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "CF_AUX_MARKER_3",
+    "yes": "I'll be honest, I'm not sure what to make of this place.  My superiors seem to have their own concerns, too.  Top brass knows something I don't, and that worries me.  Just keep this between you and me, okay?",
+    "no": {
+      "npc_has_any_trait": [
+        "CF_AUX_MARKER_4",
+        "CF_AUX_MARKER_5"
+      ],
+      "yes": "Strange folk, but I don't mind.  They're friendly at least, and know the area fairly well.  Makes hunting in the area a lot less stressful.",
+      "no": {
+        "npc_has_any_trait": [
+          "CF_AUX_MARKER_2",
+          "CF_AUX_MARKER_7"
+        ],
+        "yes": "They've got fight in 'em, I can tell that much.  Not the mercenary type or like raiders either, more like the crusadin' type.  Better at drinkin' than I figured them to be, at least.",
+        "no": "They have my men working fairly hard to keep the place in good working order, that's for sure.  But they work pretty damn hard right along with us.  Odd choice of equipment on them I suppose, but it seems to do well enough."
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Alright…",
+      "condition": {
+        "npc_has_trait": "CF_AUX_MARKER_3"
+      },
+      "switch": true,
+      "effect": {
+        "u_add_var": "cf_aux_opinion_given",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "Good to hear, I guess.",
+      "switch": true,
+      "default": true,
+      "effect": {
+        "u_add_var": "cf_aux_opinion_given",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_MERCHANT_CF_AUX"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX_SITUATION",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "CF_AUX_MARKER_3",
+    "yes": "老实说，我不知道该怎么办。我的上级似乎也有自己的顾虑。高层知道一些我不知道的事情，这让我很担心。你和我之间不要说这个，好吗？",
+    "no": {
+      "npc_has_any_trait": [
+        "CF_AUX_MARKER_4",
+        "CF_AUX_MARKER_5"
+      ],
+      "yes": "奇怪的人，但我不介意。他们至少很友好，对这个地区也很了解。在狩猎区的压力会小很多。",
+      "no": {
+        "npc_has_any_trait": [
+          "CF_AUX_MARKER_2",
+          "CF_AUX_MARKER_7"
+        ],
+        "yes": "他们有战斗力，我能告诉你很多。不是雇佣兵或者类似的突袭者，更像是克鲁萨丁式的。至少比我想象的要好。",
+        "no": "他们让我的人非常努力地工作，以保持这个地方良好的工作秩序，这是肯定的。但他们和我们一起努力工作。我想他们的设备选择很奇怪，但似乎做得很好。"
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "好吧……",
+      "condition": {
+        "npc_has_trait": "CF_AUX_MARKER_3"
+      },
+      "switch": true,
+      "effect": {
+        "u_add_var": "cf_aux_opinion_given",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "很高兴听到，我想。",
+      "switch": true,
+      "default": true,
+      "effect": {
+        "u_add_var": "cf_aux_opinion_given",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_MERCHANT_CF_AUX"
+    }
+  ]
+}
+```
+

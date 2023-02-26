@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: mutation BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→mutation→BL9_DEX_DEFTNESS1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_DEX_DEFTNESS1|http://cdda.aloxaf.cn/search?q=BL9_DEX_DEFTNESS1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "BL9_DEX_DEFTNESS1",
+  "name": {
+    "str": "BL9 Deftness"
+  },
+  "points": 3,
+  "description": "You feel that you've become quicker and more deft (+1 to dodge, +35% to action points) while wearing this particular artifact, it feels not as if you're controlled but guided by an entity or so you think...",
+  "cancels": [
+    "BL9_DEX_ENERGETICNESS1",
+    "BL9_DEX_ENERGETICNESS2",
+    "BL9_DEX_ENERGETICNESS3",
+    "BL9_DEX_AGILITY1",
+    "BL9_DEX_AGILITY2",
+    "BL9_DEX_AGILITY3",
+    "BL9_DEX_DEFTNESS2",
+    "BL9_DEX_DEFTNESS3"
+  ],
+  "valid": false,
+  "purifiable": false,
+  "dodge_modifier": 1,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "values": [
+        {
+          "value": "SPEED",
+          "multiply": 0.35
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "BL9_DEX_DEFTNESS1",
+  "name": {
+    "str": "BL9 灵巧"
+  },
+  "points": 3,
+  "description": "你觉得你已经变得更快更灵巧（+1闪避，+35%行动点）而穿着这个特殊的神器，它感觉你不是被控制，而是由一个实体或你认为…",
+  "cancels": [
+    "BL9_DEX_ENERGETICNESS1",
+    "BL9_DEX_ENERGETICNESS2",
+    "BL9_DEX_ENERGETICNESS3",
+    "BL9_DEX_AGILITY1",
+    "BL9_DEX_AGILITY2",
+    "BL9_DEX_AGILITY3",
+    "BL9_DEX_DEFTNESS2",
+    "BL9_DEX_DEFTNESS3"
+  ],
+  "valid": false,
+  "purifiable": false,
+  "dodge_modifier": 1,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "values": [
+        {
+          "value": "SPEED",
+          "multiply": 0.35
+        }
+      ]
+    }
+  ]
+}
+```
+

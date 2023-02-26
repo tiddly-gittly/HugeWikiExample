@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3",
+  "dynamic_line": "Indeed.  Hopefully you have seen for yourself what this relic can do, even in the poor state it's in.  With it, another can at least continue to fulfill our oath.  To do all we can to ensure this world is not cast into the abyss, and others with it.  If you believe yourself ready…",
+  "responses": [
+    {
+      "text": "Our oath?",
+      "topic": "TALK_HERMIT_DISCUSS_3_OATH",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Why another?  Why can't you do this?",
+      "topic": "TALK_HERMIT_DISCUSS_3_ANOTHER"
+    },
+    {
+      "text": "Abyss?",
+      "topic": "TALK_HERMIT_DISCUSS_3_ABYSS"
+    },
+    {
+      "switch": true,
+      "text": "I've no further questions for now.  We'll see what I can do.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "I am ready.",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3",
+  "dynamic_line": "的确。希望你亲眼看到这个遗迹能做些什么，即使是在它所处的贫困状态下。有了它，另一个人至少可以继续履行我们的誓言。尽我们所能确保这个世界不会被抛入深渊，其他人也不会因此而陷入深渊。如果你相信自己准备好了…",
+  "responses": [
+    {
+      "text": "我们的誓言？",
+      "topic": "TALK_HERMIT_DISCUSS_3_OATH",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "为什么是另一个？你为什么不能这么做？",
+      "topic": "TALK_HERMIT_DISCUSS_3_ANOTHER"
+    },
+    {
+      "text": "深渊？",
+      "topic": "TALK_HERMIT_DISCUSS_3_ABYSS"
+    },
+    {
+      "switch": true,
+      "text": "我现在没有更多的问题了。我们看看我能做些什么。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "我准备好了。",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

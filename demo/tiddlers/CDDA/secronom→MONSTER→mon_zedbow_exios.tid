@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zedbow_exios
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zedbow_exios|http://cdda.aloxaf.cn/search?q=mon_zedbow_exios]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+BOWs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zedbow_exios",
+  "type": "MONSTER",
+  "name": {
+    "str": "exios"
+  },
+  "description": "A humanoid creature, with head and tail featuring a canine appearance. One of its hand altered into heaps of tentacle tipped with awkward bony blades. It is wearing an experimental suit, denoting a state of progress.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 120,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "armor_fire": 2,
+  "vision_day": 30,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "STRETCH_ATTACK",
+      10
+    ],
+    {
+      "type": "bite",
+      "cooldown": 15,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 10,
+          "armor_multiplier": 0.4
+        },
+        {
+          "damage_type": "stab",
+          "amount": 14,
+          "armor_multiplier": 0.6
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "upgrades": {
+    "half_life": 10,
+    "into_group": "GROUP_BOW_EXIOS"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "FILTHY",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zedbow_exios",
+  "type": "MONSTER",
+  "name": {
+    "str": "艾克西斯"
+  },
+  "description": "一种人形生物，头部和尾部都有犬科动物的特征。它的一只手变成了成堆的触角，顶端有着笨拙的骨性刀片。它穿着一套实验服，象征着一种进化的状态。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 120,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "armor_fire": 2,
+  "vision_day": 30,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "STRETCH_ATTACK",
+      10
+    ],
+    {
+      "type": "bite",
+      "cooldown": 15,
+      "damage_max_instance": [
+        {
+          "damage_type": "bash",
+          "amount": 10,
+          "armor_multiplier": 0.4
+        },
+        {
+          "damage_type": "stab",
+          "amount": 14,
+          "armor_multiplier": 0.6
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "upgrades": {
+    "half_life": 10,
+    "into_group": "GROUP_BOW_EXIOS"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "FILTHY",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+

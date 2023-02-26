@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_flaming_eye_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_flaming_eye_on|http://cdda.aloxaf.cn/search?q=summon_flaming_eye_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/obsolete.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_flaming_eye_on",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of Gehenna (active)",
+    "str_pl": "glyphs of Gehenna (active)"
+  },
+  "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.",
+  "price": "1500 USD",
+  "price_postapoc": "30 USD",
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "turns_per_charge": 1,
+  "revert_to": "silver_glyph",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_flesh_angel_summoned_glyph",
+    "friendly_msg": "A twisted mimicry of the divine is called forth, bound to your will.",
+    "hostile_msg": "The flesh angel levels a wicked gaze upon you, ignoring your commands.",
+    "difficulty": 3,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_flaming_eye_on",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：欣嫩谷（激活）",
+    "str_pl": "雕文：欣嫩谷（激活）"
+  },
+  "description": "一枚奇怪的银制徽章，上面刻着扭曲的天使形象。使用它会召唤出一个血肉天使，并绑定在你的意志上。希望如此。",
+  "price": "1500 USD",
+  "price_postapoc": "30 USD",
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "turns_per_charge": 1,
+  "revert_to": "silver_glyph",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_flesh_angel_summoned_glyph",
+    "friendly_msg": "一个扭曲的神使的模仿物被召唤出来，并被你的意志所束缚。",
+    "hostile_msg": "血肉天使邪恶地注视着你，无视你的命令。",
+    "difficulty": 3,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  }
+}
+```
+

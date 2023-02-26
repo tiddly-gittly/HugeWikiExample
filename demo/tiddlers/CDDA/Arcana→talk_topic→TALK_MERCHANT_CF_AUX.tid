@@ -1,0 +1,299 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_MERCHANT_CF_AUX
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MERCHANT_CF_AUX|http://cdda.aloxaf.cn/search?q=TALK_MERCHANT_CF_AUX]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_MERCHANT_CF_AUX.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "CF_AUX_MARKER_3",
+    "yes": {
+      "u_is_wearing": "badge_marshal",
+      "yes": "Welcome, Marshal.  What can I do for you?",
+      "no": "Welcome, what can I do for you?"
+    },
+    "no": {
+      "npc_has_any_trait": [
+        "CF_AUX_MARKER_4",
+        "CF_AUX_MARKER_5"
+      ],
+      "yes": "Howdy, what can I get for you?",
+      "no": "Anything you need?"
+    }
+  },
+  "responses": [
+    {
+      "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_GM_PRELUDE"
+    },
+    {
+      "text": "So, how are you getting along with the others here?",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "cf_aux_opinion_given",
+              "type": "flag",
+              "context": "knowledge",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_var": "sofia_mission_4_end",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          }
+        ]
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_SITUATION"
+    },
+    {
+      "text": "Who are you?",
+      "topic": "TALK_MERCHANT_CF_AUX_WHO"
+    },
+    {
+      "text": "What do you do around here?",
+      "topic": "TALK_MERCHANT_CF_AUX_DO"
+    },
+    {
+      "text": "Got anything to trade?",
+      "effect": "start_trade",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "I'd like to ask about turning in a bounty.",
+      "condition": {
+        "u_has_var": "cf_aux_bounty_learned",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK"
+    },
+    {
+      "text": "Can I do anything to help?",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "cf_aux_bounty_learned",
+              "type": "flag",
+              "context": "knowledge",
+              "value": "yes"
+            }
+          },
+          {
+            "npc_has_any_trait": [
+              "CF_AUX_MARKER_2",
+              "CF_AUX_MARKER_7"
+            ]
+          }
+        ]
+      },
+      "effect": {
+        "u_add_var": "cf_aux_bounty_learned",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_INTRO"
+    },
+    {
+      "text": "Can I do anything to help?",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "Well, bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MERCHANT_CF_AUX",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "CF_AUX_MARKER_3",
+    "yes": {
+      "u_is_wearing": "badge_marshal",
+      "yes": "欢迎，元帅。我能为你做什么？",
+      "no": "欢迎光临，有什么事吗？"
+    },
+    "no": {
+      "npc_has_any_trait": [
+        "CF_AUX_MARKER_4",
+        "CF_AUX_MARKER_5"
+      ],
+      "yes": "你好，我能为你买些什么？",
+      "no": "你需要什么吗？"
+    }
+  },
+  "responses": [
+    {
+      "text": "我被派去询问最近有什么异常生物袭击幸存者。知道吗？",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_GM_PRELUDE"
+    },
+    {
+      "text": "那么，你和这里的其他人相处得怎么样？",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "cf_aux_opinion_given",
+              "type": "flag",
+              "context": "knowledge",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_var": "sofia_mission_4_end",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          }
+        ]
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_SITUATION"
+    },
+    {
+      "text": "你是谁？",
+      "topic": "TALK_MERCHANT_CF_AUX_WHO"
+    },
+    {
+      "text": "你在这里干什么？",
+      "topic": "TALK_MERCHANT_CF_AUX_DO"
+    },
+    {
+      "text": "有什么要交易的吗？",
+      "effect": "start_trade",
+      "topic": "TALK_MERCHANT_CF_AUX"
+    },
+    {
+      "text": "I'd like to ask about turning in a bounty.",
+      "condition": {
+        "u_has_var": "cf_aux_bounty_learned",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK"
+    },
+    {
+      "text": "我能帮忙吗？",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "cf_aux_bounty_learned",
+              "type": "flag",
+              "context": "knowledge",
+              "value": "yes"
+            }
+          },
+          {
+            "npc_has_any_trait": [
+              "CF_AUX_MARKER_2",
+              "CF_AUX_MARKER_7"
+            ]
+          }
+        ]
+      },
+      "effect": {
+        "u_add_var": "cf_aux_bounty_learned",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_INTRO"
+    },
+    {
+      "text": "我能帮忙吗？",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "好的，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

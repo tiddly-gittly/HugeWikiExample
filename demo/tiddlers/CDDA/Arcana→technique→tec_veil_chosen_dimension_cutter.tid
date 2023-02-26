@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: technique Arcana
+title: Arcana→technique→tec_veil_chosen_dimension_cutter
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_veil_chosen_dimension_cutter|http://cdda.aloxaf.cn/search?q=tec_veil_chosen_dimension_cutter]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_veil_chosen_dimension_cutter",
+  "name": "Dimension-Cutter",
+  "weapon_damage_requirements": [
+    {
+      "type": "bash",
+      "min": 15
+    },
+    {
+      "type": "cut",
+      "min": 35
+    }
+  ],
+  "melee_allowed": true,
+  "required_buffs_all": [
+    "buff_veil_chosen_ondodge"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.75
+    }
+  ],
+  "flat_bonuses": [
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "per",
+      "scale": 1
+    },
+    {
+      "stat": "arpen",
+      "type": "cut",
+      "scaling-stat": "per",
+      "scale": 0.75
+    }
+  ],
+  "crit_tec": true,
+  "weighting": 2,
+  "down_dur": 2,
+  "messages": [
+    "Your blade flickers and sunders through %s",
+    "<npcname>'s blade flickers and sunders through %s"
+  ],
+  "attack_vectors": [
+    "WEAPON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_veil_chosen_dimension_cutter",
+  "name": "Dimension-Cutter",
+  "weapon_damage_requirements": [
+    {
+      "type": "bash",
+      "min": 15
+    },
+    {
+      "type": "cut",
+      "min": 35
+    }
+  ],
+  "melee_allowed": true,
+  "required_buffs_all": [
+    "buff_veil_chosen_ondodge"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.75
+    }
+  ],
+  "flat_bonuses": [
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "per",
+      "scale": 1
+    },
+    {
+      "stat": "arpen",
+      "type": "cut",
+      "scaling-stat": "per",
+      "scale": 0.75
+    }
+  ],
+  "crit_tec": true,
+  "weighting": 2,
+  "down_dur": 2,
+  "messages": [
+    "Your blade flickers and sunders through %s",
+    "<npcname>'s blade flickers and sunders through %s"
+  ],
+  "attack_vectors": [
+    "WEAPON"
+  ]
+}
+```
+

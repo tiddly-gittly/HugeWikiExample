@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: TOOL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL→elc_blds
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：elc_blds|http://cdda.aloxaf.cn/search?q=elc_blds]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "elc_blds",
+  "type": "TOOL",
+  "symbol": ";",
+  "color": "dark_gray",
+  "name": {
+    "str_sp": "survivor's tazer dual blades"
+  },
+  "description": "Two makeshift blades with knuckle guards that double as a tazer.  Has a wrap on the handle to prevent self shock.",
+  "price": "360 USD",
+  "price_postapoc": "36 USD",
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "flags": [
+    "STAB",
+    "DURABLE_MELEE"
+  ],
+  "weight": "1276 g",
+  "volume": "2500 ml",
+  "bashing": 16,
+  "cutting": 12,
+  "to_hit": -1,
+  "//": "Tazer use action can't really be tweaked to justify power consumption changing, since no dual-tazing.  Plus, battery amounts mean keeping it an even 100 is sanest.",
+  "charges_per_use": 100,
+  "ammo": [
+    "battery"
+  ],
+  "category": "weapons",
+  "use_action": "TAZER",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "rigid": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "medium_battery_cell",
+        "medium_plus_battery_cell",
+        "medium_atomic_battery_cell",
+        "medium_disposable_cell"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "elc_blds",
+  "type": "TOOL",
+  "symbol": ";",
+  "color": "dark_gray",
+  "name": {
+    "str_sp": "幸存者电击双刀"
+  },
+  "description": "两把带有护指的自制刀，兼作电击枪。手柄上的胶带能防止触电。",
+  "price": "360 USD",
+  "price_postapoc": "36 USD",
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "flags": [
+    "STAB",
+    "DURABLE_MELEE"
+  ],
+  "weight": "1276 g",
+  "volume": "2500 ml",
+  "bashing": 16,
+  "cutting": 12,
+  "to_hit": -1,
+  "//": "Tazer use action can't really be tweaked to justify power consumption changing, since no dual-tazing.  Plus, battery amounts mean keeping it an even 100 is sanest.",
+  "charges_per_use": 100,
+  "ammo": [
+    "battery"
+  ],
+  "category": "weapons",
+  "use_action": "TAZER",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "rigid": true,
+      "max_contains_volume": "20 L",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "medium_battery_cell",
+        "medium_plus_battery_cell",
+        "medium_atomic_battery_cell",
+        "medium_disposable_cell"
+      ]
+    }
+  ]
+}
+```
+

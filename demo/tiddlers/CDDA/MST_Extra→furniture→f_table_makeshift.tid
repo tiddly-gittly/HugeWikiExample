@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: furniture MST_Extra
+title: MST_Extra→furniture→f_table_makeshift
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_table_makeshift|http://cdda.aloxaf.cn/search?q=f_table_makeshift]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_table_makeshift",
+  "looks_like": "f_table",
+  "name": "makeshift table",
+  "description": "Sit down when you eat!  At least the legs seem to be joined up properly, so it probably won't fall apart if you eat off it.",
+  "symbol": "#",
+  "color": "red",
+  "move_cost_mod": 2,
+  "coverage": 50,
+  "required_str": 6,
+  "max_volume": "4000 L",
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE",
+    "ORGANIC",
+    "MOUNTABLE",
+    "SHORT",
+    "FLAT_SURF",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 6
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 12,
+    "str_max": 50,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 3
+      }
+    ]
+  },
+  "examine_action": "workbench",
+  "workbench": {
+    "multiplier": 1.1,
+    "mass": 200000,
+    "volume": "75L"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_table_makeshift",
+  "looks_like": "f_table",
+  "name": "简易桌子",
+  "description": "你是个开化的文明人,坐下再吃！桌腿看起来很牢固,至少不会你吃饭的时候散架.",
+  "symbol": "#",
+  "color": "red",
+  "move_cost_mod": 2,
+  "coverage": 50,
+  "required_str": 6,
+  "max_volume": "4000 L",
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE",
+    "ORGANIC",
+    "MOUNTABLE",
+    "SHORT",
+    "FLAT_SURF",
+    "EASY_DECONSTRUCT"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 6
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 12,
+    "str_max": 50,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 3
+      }
+    ]
+  },
+  "examine_action": "workbench",
+  "workbench": {
+    "multiplier": 1.1,
+    "mass": 200000,
+    "volume": "75L"
+  }
+}
+```
+

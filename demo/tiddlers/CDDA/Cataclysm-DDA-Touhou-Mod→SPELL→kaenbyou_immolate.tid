@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→kaenbyou_immolate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kaenbyou_immolate|http://cdda.aloxaf.cn/search?q=kaenbyou_immolate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_kaenbyou.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kaenbyou_immolate",
+  "type": "SPELL",
+  "name": "Immolate",
+  "description": "Light the target with hellish fire, instantly dealing a small amount of damage and much more over time.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "effect_str": "immolate_light",
+  "extra_effects": [
+    {
+      "id": "kaenbyou_immolate2"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 10,
+  "max_damage": 20,
+  "damage_increment": 1,
+  "min_range": 12,
+  "max_range": 12,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "learn_spells": {
+    "kaenbyou_blazingwheel": 6
+  },
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "This (and yamame_unconstrainedfever ) should tag the target with an effect, which enables secondary effects from different effects, but that's using EOCs"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kaenbyou_immolate",
+  "type": "SPELL",
+  "name": "焚祭",
+  "description": "Light the target with hellish fire, instantly dealing a small amount of damage and much more over time.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "effect_str": "immolate_light",
+  "extra_effects": [
+    {
+      "id": "kaenbyou_immolate2"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 10,
+  "max_damage": 20,
+  "damage_increment": 1,
+  "min_range": 12,
+  "max_range": 12,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "learn_spells": {
+    "kaenbyou_blazingwheel": 6
+  },
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "This (and yamame_unconstrainedfever ) should tag the target with an effect, which enables secondary effects from different effects, but that's using EOCs"
+}
+```
+

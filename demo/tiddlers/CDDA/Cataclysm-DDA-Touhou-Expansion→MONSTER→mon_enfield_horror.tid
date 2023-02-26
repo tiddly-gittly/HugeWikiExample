@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_enfield_horror
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_enfield_horror|http://cdda.aloxaf.cn/search?q=mon_enfield_horror]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_youkai.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_enfield_horror",
+  "type": "MONSTER",
+  "name": {
+    "str": "Enfield horror",
+    "str_pl": "Enfield horrors"
+  },
+  "description": "A mishappen beast, walking on two muscular legs with a third atrophied leg unable to fullfil its function, coming out of where the tail would be.  The skin is white, wrinkled, with patches that look like bruises, almost scaly at parts.  A pair of small, weak arms come out from the lower abdomen, pointed towards the front.  The face is somewhat ape-like, with the open mouth showing tusks, the big red eyes glowing in the darkness.",
+  "volume": "100 L",
+  "weight": "110 kg",
+  "default_faction": "touhou_youkai_hostile",
+  "bodytype": "dog",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_HOSTILE_TOUHOU"
+  ],
+  "harvest": "mammal_noleather_harvest",
+  "hp": 122,
+  "speed": 220,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ε",
+  "color": "white",
+  "aggression": 15,
+  "morale": 25,
+  "regen_morale": true,
+  "regenerates": 2,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 4,
+  "vision_day": 25,
+  "vision_night": 35,
+  "path_settings": {
+    "max_dist": 25
+  },
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_stab": 2,
+  "armor_bullet": 8,
+  "bleed_rate": 125,
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      65
+    ],
+    [
+      "bite_5d3",
+      8
+    ],
+    {
+      "spell_data": {
+        "id": "bodyslam"
+      },
+      "type": "spell",
+      "cooldown": 20
+    }
+  ],
+  "flags": [
+    "BASHES",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_enfield_horror",
+  "type": "MONSTER",
+  "name": {
+    "str": "Enfield horror",
+    "str_pl": "Enfield horrors"
+  },
+  "description": "A mishappen beast, walking on two muscular legs with a third atrophied leg unable to fullfil its function, coming out of where the tail would be.  The skin is white, wrinkled, with patches that look like bruises, almost scaly at parts.  A pair of small, weak arms come out from the lower abdomen, pointed towards the front.  The face is somewhat ape-like, with the open mouth showing tusks, the big red eyes glowing in the darkness.",
+  "volume": "100 L",
+  "weight": "110 kg",
+  "default_faction": "touhou_youkai_hostile",
+  "bodytype": "dog",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_HOSTILE_TOUHOU"
+  ],
+  "harvest": "mammal_noleather_harvest",
+  "hp": 122,
+  "speed": 220,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ε",
+  "color": "white",
+  "aggression": 15,
+  "morale": 25,
+  "regen_morale": true,
+  "regenerates": 2,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 4,
+  "vision_day": 25,
+  "vision_night": 35,
+  "path_settings": {
+    "max_dist": 25
+  },
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_stab": 2,
+  "armor_bullet": 8,
+  "bleed_rate": 125,
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      65
+    ],
+    [
+      "bite_5d3",
+      8
+    ],
+    {
+      "spell_data": {
+        "id": "bodyslam"
+      },
+      "type": "spell",
+      "cooldown": 20
+    }
+  ],
+  "flags": [
+    "BASHES",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ]
+}
+```
+

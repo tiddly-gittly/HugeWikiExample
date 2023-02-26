@@ -1,0 +1,131 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→lichhook
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lichhook|http://cdda.aloxaf.cn/search?q=lichhook]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "lichhook",
+  "copy-from": "khopesh",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "lichhook"
+  },
+  "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Zombies and other creatures immune to poison will not suffer damage from it.  It can also place a rune that will trigger the same effect over a small area when something steps into it.",
+  "longest_side": "70 cm",
+  "price": "720 USD",
+  "price_postapoc": "45 USD",
+  "bashing": 9,
+  "cutting": 29,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 8
+      }
+    }
+  ],
+  "charges_per_use": 2,
+  "ammo": "essence_blood_type",
+  "relative": {
+    "weight": 230
+  },
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_lichhook",
+      "moves": 90,
+      "practice": 0,
+      "done_message": "You focus a fragment of the lichhook's energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_lichhook",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  ],
+  "extend": {
+    "flags": [
+      "NO_SALVAGE",
+      "SHEATH_SWORD"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "lichhook",
+  "copy-from": "khopesh",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "巫妖弯钩"
+  },
+  "description": "一种弯曲的青铜刀片，用银装饰并打磨成不自然的锋利边缘。使用它将引导血液精华进入毒气触手中诱捕附近的敌人，使其中毒并瞬间冻结。僵尸和其他对毒药免疫的生物不会受到毒药的伤害。它还可以放置一个符文，当有东西进入它时，它会在一个小范围内触发同样的效果。",
+  "longest_side": "70 cm",
+  "price": "720 USD",
+  "price_postapoc": "45 USD",
+  "bashing": 9,
+  "cutting": 29,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 8
+      }
+    }
+  ],
+  "charges_per_use": 2,
+  "ammo": "essence_blood_type",
+  "relative": {
+    "weight": 230
+  },
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_lichhook",
+      "moves": 90,
+      "practice": 0,
+      "done_message": "You focus a fragment of the lichhook's energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_lichhook",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  ],
+  "extend": {
+    "flags": [
+      "NO_SALVAGE",
+      "SHEATH_SWORD"
+    ]
+  }
+}
+```
+

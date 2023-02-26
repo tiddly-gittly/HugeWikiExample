@@ -1,0 +1,223 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_wanzel_6
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_wanzel_6|http://cdda.aloxaf.cn/search?q=mon_BL9_wanzel_6]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens_dominators.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_wanzel_6",
+  "looks_like": "mon_thing",
+  "type": "MONSTER",
+  "name": {
+    "str": "Wanzeltium Amalgamation"
+  },
+  "description": "A horrifying mass of BL9 tentacles, emitting bright green crystalline light, infused with what seems to be remains of Wanzeltium's head in the center of this amalgamation, eyesockets and mouth glowing with bright vile green light",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 2200,
+  "speed": 60,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 21,
+      "armor_penetration": 23
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 20,
+  "armor_cut": 20,
+  "armor_bullet": 20,
+  "death_drops": "BL9_Drops_Aliens_Dominators_Amalgamations",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 27,
+          "armor_penetration": 28
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously swings it's long tentacles at you!",
+      "hit_dmg_npc": "The %1$s ferociously swings it's long tentacles at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to ferociously swing it's long tentacles at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to ferociously swing it's long tentacles at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s ferociously swings it's long tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s ferociously swings it's long tentacles at <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "wanzel_amalg_orb"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s conjures a bright enormous green violently exploding orb at %3$s!</color>"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "wanzel_amalg_lasers"
+      },
+      "cooldown": 17,
+      "monster_message": "<color_light_red>%1$s conjures bright green rays of strange lasers at %3$s!</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_wanzel_6",
+  "looks_like": "mon_thing",
+  "type": "MONSTER",
+  "name": {
+    "str": "万泽尔提姆融合"
+  },
+  "description": "令人毛骨悚然的BL9触须散发着明亮的绿色水晶光，在融合的中心注入了宛泽尔提姆头部的残余物，眼眶和嘴上闪烁着明亮邪恶的绿光",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 2200,
+  "speed": 60,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 21,
+      "armor_penetration": 23
+    }
+  ],
+  "dodge": 2,
+  "armor_bash": 20,
+  "armor_cut": 20,
+  "armor_bullet": 20,
+  "death_drops": "BL9_Drops_Aliens_Dominators_Amalgamations",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 27,
+          "armor_penetration": 28
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously swings it's long tentacles at you!",
+      "hit_dmg_npc": "The %1$s ferociously swings it's long tentacles at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to ferociously swing it's long tentacles at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to ferociously swing it's long tentacles at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s ferociously swings it's long tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s ferociously swings it's long tentacles at <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "wanzel_amalg_orb"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s召唤出一个即将剧烈爆炸的明亮的巨大绿色球体，并将其射向%3$s！ </color>"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "wanzel_amalg_lasers"
+      },
+      "cooldown": 17,
+      "monster_message": "<color_light_red>%1$s召唤出一束诡异的亮绿色光束射向%3$s！</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

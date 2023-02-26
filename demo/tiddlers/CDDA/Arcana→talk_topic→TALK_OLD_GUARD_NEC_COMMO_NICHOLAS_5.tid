@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5|http://cdda.aloxaf.cn/search?q=TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_OLD_GUARD_NEC_COMMO.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5",
+  "dynamic_line": "Where the hell did you get all this?  This lists several classified sites, movement between them… god damn, it even lists coordinates for this place!  Who'd you get this from?",
+  "responses": [
+    {
+      "text": "I can vouch for the people who found this information, we were tracking very dangerous threats to humanity.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_1"
+    },
+    {
+      "text": "An organization that had been monitoring anomalous activity.",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_2"
+    },
+    {
+      "text": "A local researcher trying to fix this mess.",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_3"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5",
+  "dynamic_line": "你从哪儿弄来的？这里列出了几个机密地点，它们之间的联系…该死的，它甚至列出了这个地方的坐标！你从谁那里弄来的？",
+  "responses": [
+    {
+      "text": "我可以为发现这些信息的人担保，我们正在追踪对人类非常危险的威胁。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_1"
+    },
+    {
+      "text": "一个一直在监视异常活动的组织。",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_2"
+    },
+    {
+      "text": "一位当地的研究员试图解决这个问题。",
+      "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_3"
+    }
+  ]
+}
+```
+

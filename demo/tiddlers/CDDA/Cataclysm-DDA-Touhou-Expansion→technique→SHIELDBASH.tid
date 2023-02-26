@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→technique→SHIELDBASH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SHIELDBASH|http://cdda.aloxaf.cn/search?q=SHIELDBASH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/thex_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "SHIELDBASH",
+  "type": "technique",
+  "name": "Shield bash",
+  "description": "Slam an enemy with your shield, dealing increased damage and stunning it for a short time.",
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "crit_ok": true,
+  "crit_tec": false,
+  "melee_allowed": true,
+  "messages": [
+    "You bash %s with your shield",
+    "<npcname> bashes %s with their shield"
+  ],
+  "stun_dur": 1,
+  "unarmed_weapons_allowed": true,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 2
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "SHIELDBASH",
+  "type": "technique",
+  "name": "Shield bash",
+  "description": "Slam an enemy with your shield, dealing increased damage and stunning it for a short time.",
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "crit_ok": true,
+  "crit_tec": false,
+  "melee_allowed": true,
+  "messages": [
+    "You bash %s with your shield",
+    "<npcname> 使用他们的盾狠狠地击打了%s"
+  ],
+  "stun_dur": 1,
+  "unarmed_weapons_allowed": true,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 2
+    }
+  ]
+}
+```
+

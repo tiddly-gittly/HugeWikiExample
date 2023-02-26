@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: TOOL secronom
+title: secronom→TOOL→hatchingsaddleregg
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：hatchingsaddleregg|http://cdda.aloxaf.cn/search?q=hatchingsaddleregg]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Items/eggs.json
+
+
+!! 原文
+
+```json
+{
+  "type": "TOOL",
+  "id": "hatchingsaddleregg",
+  "name": {
+    "str": "cracked saddler egg"
+  },
+  "weight": "110 g",
+  "color": "green",
+  "symbol": "o",
+  "description": "Dreadful hairy egg. Use to break it.",
+  "price": "0 cent",
+  "material": [
+    "egg"
+  ],
+  "volume": "250 ml",
+  "flags": [
+    "NO_DROP"
+  ],
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_insect_saddler_baby",
+    "difficulty": 2,
+    "friendly_msg": "A baby saddler skitters!",
+    "hostile_msg": "Turns out to be a bad egg!",
+    "place_randomly": true,
+    "skills": [
+      "survival",
+      "melee"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "TOOL",
+  "id": "hatchingsaddleregg",
+  "name": {
+    "str": "有裂纹的萨德勒卵"
+  },
+  "weight": "110 g",
+  "color": "green",
+  "symbol": "o",
+  "description": "一个恐怖的卵，激活以来打破它。",
+  "price": "0 cent",
+  "material": [
+    "egg"
+  ],
+  "volume": "250 ml",
+  "flags": [
+    "NO_DROP"
+  ],
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_insect_saddler_baby",
+    "difficulty": 2,
+    "friendly_msg": "一个萨德勒幼崽在轻快地移动！",
+    "hostile_msg": "原来是个坏蛋！",
+    "place_randomly": true,
+    "skills": [
+      "survival",
+      "melee"
+    ]
+  }
+}
+```
+

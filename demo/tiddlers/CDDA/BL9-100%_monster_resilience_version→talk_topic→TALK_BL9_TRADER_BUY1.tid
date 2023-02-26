@@ -1,0 +1,2105 @@
+creator: 林一二
+revision: 0
+tags: talk_topic BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→talk_topic→TALK_BL9_TRADER_BUY1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BL9_TRADER_BUY1|http://cdda.aloxaf.cn/search?q=TALK_BL9_TRADER_BUY1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/NPC/BL9_trader.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BL9_TRADER_BUY1",
+  "type": "talk_topic",
+  "dynamic_line": "What are you buying?",
+  "responses": [
+    {
+      "text": "[FREE] *BL9-infused pistol*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_pistol"
+        }
+      },
+      "topic": "BL9_trader_ty",
+      "effect": [
+        {
+          "u_spawn_item": "BL9_pistol",
+          "count": 1
+        },
+        {
+          "u_spawn_item": "9mmBL9mag",
+          "count": 3
+        },
+        {
+          "u_spawn_item": "BL9_repair_soldering",
+          "count": 1
+        },
+        {
+          "u_add_var": "BL9_pistol",
+          "type": "bought",
+          "context": "cash",
+          "value": "yes"
+        }
+      ]
+    },
+    {
+      "text": "[52Pcomb] *BL9-infused pistol MKii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_pistol"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_pistol_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 52
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "9mmBL9mk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 52
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 52
+          },
+          {
+            "u_spawn_item": "BL9_pistol_mk2",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[43Gcomb] *BL9-infused submachine gun*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_smg"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 43
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "9mmBL9smgmag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 43
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 43
+          },
+          {
+            "u_spawn_item": "BL9_smg",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[78Pcomb] *BL9-infused submachine gun MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_smg"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_smg_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 78
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_smg_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "9mmBL9smgmk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 78
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 78
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[74Gcomb] *BL9-infused sniper rifle*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_sniper"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 74
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "308BL9mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 74
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 74
+          },
+          {
+            "u_spawn_item": "BL9_sniper",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[145Pcomb] *BL9-infused sniper rifle MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_sniper"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_sniper_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 145
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_sniper_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "308BL9mk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 145
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 145
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[66Gcomb] *BL9-infused automatic rifle*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_auto"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 66
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "556223BL9mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 66
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 66
+          },
+          {
+            "u_spawn_item": "BL9_auto",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[131Pcomb] *BL9-infused automatic rifle MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_auto"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_auto_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 131
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_auto_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "556223BL9mk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 131
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 131
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[54Gcomb] *BL9-infused shotgun*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_shotgun"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 54
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 54
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 54
+          },
+          {
+            "u_spawn_item": "BL9_shotgun",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[104Pcomb] *BL9-infused shotgun MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_shotgun"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_shotgun_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 104
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_shotgun_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 104
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 104
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[68Gcomb] *BL9-infused magnum*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_magnum"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 68
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 68
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 68
+          },
+          {
+            "u_spawn_item": "BL9_magnum",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[136Pcomb] *BL9-infused magnum MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_magnum"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_magnum_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 136
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_magnum_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 136
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 136
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[101Gcomb] *BL9-infused sprayer*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_sprayer"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 101
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 101
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 101
+          },
+          {
+            "u_spawn_item": "tank_BL9",
+            "count": 3
+          },
+          {
+            "u_spawn_item": "BL9_sprayer",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[193Pcomb] *BL9-infused sprayer MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_sprayer"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_sprayer_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 193
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_sprayer_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "tank_BL9_mk2",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 193
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 193
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[101Gcomb] *BL9-infused melting sprayer*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_melting_sprayer"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 101
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 101
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 101
+          },
+          {
+            "u_spawn_item": "tankm_BL9",
+            "count": 3
+          },
+          {
+            "u_spawn_item": "BL9_melting_sprayer",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[193Pcomb] *BL9-infused melting sprayer MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_melting_sprayer"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_melting_sprayer_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 193
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_melting_sprayer_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "tankm_BL9_mk2",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 193
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 193
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[125Gcomb] *BL9-infused railgun*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_railgun"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 125
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "railBL9mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 125
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 125
+          },
+          {
+            "u_spawn_item": "BL9_railgun",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[215Pcomb] *BL9-infused railgun MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_railgun"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_railgun_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 215
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_railgun_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "railBL9mk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 215
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 215
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[74Gcomb] *BL9-infused launcher*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_launcher"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 74
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 74
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 74
+          },
+          {
+            "u_spawn_item": "40BL9mag",
+            "count": 3
+          },
+          {
+            "u_spawn_item": "BL9_launcher",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[156Pcomb] *BL9-infused launcher MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_launcher"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_launcher_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 156
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_launcher_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "40_BL9mk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 156
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 156
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[48Gcomb] *BL9-infused bow*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_bow"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 48
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 48
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 48
+          },
+          {
+            "u_spawn_item": "BL9_bow",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[93Pcomb] *BL9-infused bow MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_bow"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_bow_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 93
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_bow_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 93
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 93
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[60Gcomb] *BL9-infused crossbow*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_crossbow"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 60
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 60
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 60
+          },
+          {
+            "u_spawn_item": "BL9_crossbow",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[114Pcomb] *BL9-infused crossbow MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_crossbow"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_crossbow_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 114
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_crossbow_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 114
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 114
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[BUY ARMOR]",
+      "topic": "TALK_BL9_TRADER_BUY2"
+    },
+    {
+      "text": "[GOODBYE]",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BL9_TRADER_BUY1",
+  "type": "talk_topic",
+  "dynamic_line": "你买什么？",
+  "responses": [
+    {
+      "text": "[免费]*BL9灌注 手枪*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_pistol"
+        }
+      },
+      "topic": "BL9_trader_ty",
+      "effect": [
+        {
+          "u_spawn_item": "BL9_pistol",
+          "count": 1
+        },
+        {
+          "u_spawn_item": "9mmBL9mag",
+          "count": 3
+        },
+        {
+          "u_spawn_item": "BL9_repair_soldering",
+          "count": 1
+        },
+        {
+          "u_add_var": "BL9_pistol",
+          "type": "bought",
+          "context": "cash",
+          "value": "yes"
+        }
+      ]
+    },
+    {
+      "text": "[52梳子]* BL9-注入手枪MKii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_pistol"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_pistol_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 52
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "9mmBL9mk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 52
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 52
+          },
+          {
+            "u_spawn_item": "BL9_pistol_mk2",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[43Gcomb]*BL9冲锋枪*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_smg"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 43
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "9mmBL9smgmag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 43
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 43
+          },
+          {
+            "u_spawn_item": "BL9_smg",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[78Pcomb] *BL9注入式冲锋枪MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_smg"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_smg_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 78
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_smg_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "9mmBL9smgmk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 78
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 78
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[74Gcomb] *BL9注入式狙击步枪*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_sniper"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 74
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "308BL9mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 74
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 74
+          },
+          {
+            "u_spawn_item": "BL9_sniper",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[145 comb]* BL9注入式狙击步枪MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_sniper"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_sniper_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 145
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_sniper_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "308BL9mk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 145
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 145
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[66Gcomb] *BL9注入式自动步枪*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_auto"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 66
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "556223BL9mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 66
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 66
+          },
+          {
+            "u_spawn_item": "BL9_auto",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[131 comb]* BL9注入自动步枪MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_auto"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_auto_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 131
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_auto_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "556223BL9mk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 131
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 131
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[54Gcomb]*BL9注入式猎枪*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_shotgun"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 54
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 54
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 54
+          },
+          {
+            "u_spawn_item": "BL9_shotgun",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[104 comb]* BL9注入式霰弹枪MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_shotgun"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_shotgun_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 104
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_shotgun_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 104
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 104
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[68金币组合]*BL9灌注 马格南 左轮手枪*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_magnum"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 68
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 68
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 68
+          },
+          {
+            "u_spawn_item": "BL9_magnum",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[136 Pcomb]*注入BL9的magnum MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_magnum"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_magnum_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 136
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_magnum_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 136
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 136
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[101 Gcomb]* BL9-注入喷雾器*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_sprayer"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 101
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 101
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 101
+          },
+          {
+            "u_spawn_item": "tank_BL9",
+            "count": 3
+          },
+          {
+            "u_spawn_item": "BL9_sprayer",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[193梳子] *BL9注入式喷雾器MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_sprayer"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_sprayer_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 193
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_sprayer_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "tank_BL9_mk2",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 193
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 193
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[101Gcomb]*BL9熔喷器*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_melting_sprayer"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 101
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 101
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 101
+          },
+          {
+            "u_spawn_item": "tankm_BL9",
+            "count": 3
+          },
+          {
+            "u_spawn_item": "BL9_melting_sprayer",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[193 comb]* BL9注入熔化喷雾器MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_melting_sprayer"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_melting_sprayer_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 193
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_melting_sprayer_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "tankm_BL9_mk2",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 193
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 193
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[125 Gcomb]* BL9-注入轨道炮*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_railgun"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 125
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "railBL9mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 125
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 125
+          },
+          {
+            "u_spawn_item": "BL9_railgun",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[215梳子]* BL9-注入轨道炮MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_railgun"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_railgun_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 215
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_railgun_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "railBL9mk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 215
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 215
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[74Gcomb] *BL9注入发射器*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_launcher"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 74
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 74
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 74
+          },
+          {
+            "u_spawn_item": "40BL9mag",
+            "count": 3
+          },
+          {
+            "u_spawn_item": "BL9_launcher",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[156Pcomb]*BL9注入式发射器MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_launcher"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_launcher_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 156
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_launcher_mk2",
+            "count": 1
+          },
+          {
+            "u_spawn_item": "40_BL9mk2mag",
+            "count": 3
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 156
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 156
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[48梳子]* BL9-注入弓*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_bow"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 48
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 48
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 48
+          },
+          {
+            "u_spawn_item": "BL9_bow",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[93梳子]* BL9-注入弓MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_bow"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_bow_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 93
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_bow_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 93
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 93
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[60Gcomb] *BL9灌注弩*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_crossbow"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 60
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 60
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 60
+          },
+          {
+            "u_spawn_item": "BL9_crossbow",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[114梳子]* BL9-注入弩MK ii*",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "BL9_crossbow"
+          },
+          {
+            "not": {
+              "u_has_item": "BL9_crossbow_mk2"
+            }
+          }
+        ]
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 114
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_spawn_item": "BL9_crossbow_mk2",
+            "count": 1
+          },
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 114
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 114
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[买盔甲]",
+      "topic": "TALK_BL9_TRADER_BUY2"
+    },
+    {
+      "text": "[再见]",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

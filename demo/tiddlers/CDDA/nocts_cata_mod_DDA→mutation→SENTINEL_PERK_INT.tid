@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_PERK_INT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_PERK_INT|http://cdda.aloxaf.cn/search?q=SENTINEL_PERK_INT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_INT",
+  "name": {
+    "str": "Sentinel Synapse I"
+  },
+  "points": 1,
+  "description": "Targeted mutagenic treatment has altered your neurology.  You find it a bit easier to handle the death of your enemies, combat skills develop somewhat faster, and you find technical skills slightly easier.  In exchange, you find learning from books a bit slower, and it is slightly harder to persuade or deceive others.",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "cancels": [
+    "LIAR",
+    "FASTREADER",
+    "SLOWREADER",
+    "PSYCHOPATH",
+    "KILLER",
+    "PRED1",
+    "PRED2",
+    "PRED3",
+    "PRED4",
+    "PACIFIST"
+  ],
+  "changes_to": [
+    "SENTINEL_PERK_INT_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "social_modifiers": {
+    "lie": -10
+  },
+  "craft_skill_bonus": [
+    [
+      "electronics",
+      1
+    ],
+    [
+      "mechanics",
+      1
+    ],
+    [
+      "firstaid",
+      1
+    ],
+    [
+      "computer",
+      1
+    ],
+    [
+      "fabrication",
+      1
+    ]
+  ],
+  "reading_speed_multiplier": 1.25,
+  "flags": [
+    "PRED2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_INT",
+  "name": {
+    "str": "哨兵神经 I"
+  },
+  "points": 1,
+  "description": "靶向诱变治疗改变了你的神经系统。你比较容易面对敌人的死亡，战斗和工艺技能提升速度稍微加快。但阅读速度稍微减慢，说服或欺骗别人稍微困难一点。",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "cancels": [
+    "LIAR",
+    "FASTREADER",
+    "SLOWREADER",
+    "PSYCHOPATH",
+    "KILLER",
+    "PRED1",
+    "PRED2",
+    "PRED3",
+    "PRED4",
+    "PACIFIST"
+  ],
+  "changes_to": [
+    "SENTINEL_PERK_INT_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "social_modifiers": {
+    "lie": -10
+  },
+  "craft_skill_bonus": [
+    [
+      "electronics",
+      1
+    ],
+    [
+      "mechanics",
+      1
+    ],
+    [
+      "firstaid",
+      1
+    ],
+    [
+      "computer",
+      1
+    ],
+    [
+      "fabrication",
+      1
+    ]
+  ],
+  "reading_speed_multiplier": 1.25,
+  "flags": [
+    "PRED2"
+  ]
+}
+```
+

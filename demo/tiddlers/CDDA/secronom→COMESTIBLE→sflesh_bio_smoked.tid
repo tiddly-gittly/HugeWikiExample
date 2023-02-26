@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE secronom
+title: secronom→COMESTIBLE→sflesh_bio_smoked
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sflesh_bio_smoked|http://cdda.aloxaf.cn/search?q=sflesh_bio_smoked]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_monitem.json
+
+
+!! 原文
+
+```json
+{
+  "id": "sflesh_bio_smoked",
+  "copy-from": "sflesh_bio_cooked",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "smoked flesh chunk"
+  },
+  "description": "A disgusting chunk of flesh that has been smoked for preservation.",
+  "symbol": "%",
+  "color": "red",
+  "spoils_in": "20 days",
+  "quench": -1,
+  "fun": -30,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "<color_light_green>As you chomp down the flesh, your body feels refreshed.</color>",
+    "effects": [
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "leg_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_r"
+      },
+      {
+        "id": "cureall",
+        "duration": 1
+      }
+    ]
+  },
+  "flags": [
+    "EATEN_HOT",
+    "SMOKED"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "sflesh_bio_smoked",
+  "copy-from": "sflesh_bio_cooked",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "烟熏块状血肉"
+  },
+  "description": "这是一块为了保存而烟熏过的令人恶心的肉块。",
+  "symbol": "%",
+  "color": "red",
+  "spoils_in": "20 days",
+  "quench": -1,
+  "fun": -30,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "<color_light_green>当你咬下肉的时候，你的身体会感到精神振奋。</color>",
+    "effects": [
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "leg_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_r"
+      },
+      {
+        "id": "cureall",
+        "duration": 1
+      }
+    ]
+  },
+  "flags": [
+    "EATEN_HOT",
+    "SMOKED"
+  ]
+}
+```
+

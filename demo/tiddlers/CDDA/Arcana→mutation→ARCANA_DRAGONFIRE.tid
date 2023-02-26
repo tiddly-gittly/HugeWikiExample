@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_DRAGONFIRE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_DRAGONFIRE|http://cdda.aloxaf.cn/search?q=ARCANA_DRAGONFIRE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONFIRE",
+  "name": {
+    "str": "Dragonfire"
+  },
+  "points": 3,
+  "mixed_effect": true,
+  "bodytemp_modifiers": [
+    0,
+    1500
+  ],
+  "bodytemp_sleep": 750,
+  "description": "Your body has adapted further, exploiting the strange power that fuels your body.  You still need more food and water than normal, but the benefits are more pronounced relative to the drawbacks.  Activate to breathe short-ranged bursts of flame.",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_INNERFIRE"
+  ],
+  "leads_to": [
+    "ARCANA_FIREAFFINITY",
+    "ARCANA_TOXINIMMUNE"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "METABOLISM"
+  ],
+  "metabolism_modifier": 0.75,
+  "stomach_size_multiplier": 2.25,
+  "thirst_modifier": 0.375,
+  "healing_awake": 2.5,
+  "healing_resting": 1.25,
+  "mending_modifier": 2.5,
+  "stamina_regen_modifier": 0.75,
+  "social_modifiers": {
+    "persuade": -25,
+    "intimidate": 25
+  },
+  "active": true,
+  "cost": 500,
+  "kcal": true,
+  "ranged_mutation": {
+    "type": "mut_dragonfire",
+    "message": "You loose a tongue of flame from your mouth."
+  },
+  "vitamin_rates": [
+    [
+      "blood",
+      -1
+    ],
+    [
+      "redcells",
+      -1
+    ]
+  ],
+  "flags": [
+    "ARCANE_FOG_IMMUNE",
+    "PRED3"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONFIRE",
+  "name": {
+    "str": "龙炎"
+  },
+  "points": 3,
+  "mixed_effect": true,
+  "bodytemp_modifiers": [
+    0,
+    1500
+  ],
+  "bodytemp_sleep": 750,
+  "description": "你的身体已经进一步适应了，利用了刺激你身体的奇异能量。你仍然需要比平常更多的食物和水，但是相对于缺点，好处更明显。激活呼吸短程火焰。",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_INNERFIRE"
+  ],
+  "leads_to": [
+    "ARCANA_FIREAFFINITY",
+    "ARCANA_TOXINIMMUNE"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "METABOLISM"
+  ],
+  "metabolism_modifier": 0.75,
+  "stomach_size_multiplier": 2.25,
+  "thirst_modifier": 0.375,
+  "healing_awake": 2.5,
+  "healing_resting": 1.25,
+  "mending_modifier": 2.5,
+  "stamina_regen_modifier": 0.75,
+  "social_modifiers": {
+    "persuade": -25,
+    "intimidate": 25
+  },
+  "active": true,
+  "cost": 500,
+  "kcal": true,
+  "ranged_mutation": {
+    "type": "mut_dragonfire",
+    "message": "You loose a tongue of flame from your mouth."
+  },
+  "vitamin_rates": [
+    [
+      "blood",
+      -1
+    ],
+    [
+      "redcells",
+      -1
+    ]
+  ],
+  "flags": [
+    "ARCANE_FOG_IMMUNE",
+    "PRED3"
+  ]
+}
+```
+

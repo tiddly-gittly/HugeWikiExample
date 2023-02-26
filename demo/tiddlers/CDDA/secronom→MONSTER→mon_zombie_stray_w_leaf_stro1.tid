@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_stray_w_leaf_stro1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_leaf_stro1|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_leaf_stro1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_stro1",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "stray zombie"
+  },
+  "description": "Bound to the nature's grace, this stray has become one with the plant. Skin hardened like a bark, vines guides the undead's clumsy movements, but in search for flesh, the stray manipulates.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN",
+    "PLANT"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie_thorny",
+  "hp": 240,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "armor_bash": 22,
+  "armor_cut": 16,
+  "armor_bullet": 10,
+  "armor_stab": 10,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_stray_w_leaf_stro1_razorl"
+      },
+      "cooldown": 24,
+      "monster_message": "%1$s slashes %3$s with its razor sharp leaves!"
+    }
+  ],
+  "upgrades": {
+    "half_life": 18,
+    "into": "mon_zombie_stray_w_leaf_stro2"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY",
+    "SWIMS",
+    "PARALYZEVENOM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_stro1",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "酸液离群丧尸"
+  },
+  "description": "在大自然的恩典下，这个流浪汉与植物合而为一。皮肤像树皮一样坚硬，藤蔓引导着不死生物笨拙的行动，但为了寻找肉，流浪者操纵着。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN",
+    "PLANT"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie_thorny",
+  "hp": 240,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "armor_bash": 22,
+  "armor_cut": 16,
+  "armor_bullet": 10,
+  "armor_stab": 10,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_stray_w_leaf_stro1_razorl"
+      },
+      "cooldown": 24,
+      "monster_message": "%1$s用它的锋利的叶刀刮向%3$s！"
+    }
+  ],
+  "upgrades": {
+    "half_life": 18,
+    "into": "mon_zombie_stray_w_leaf_stro2"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY",
+    "SWIMS",
+    "PARALYZEVENOM"
+  ]
+}
+```
+

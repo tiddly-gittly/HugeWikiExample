@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_coalescent_offering
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_coalescent_offering|http://cdda.aloxaf.cn/search?q=arcana_item_coalescent_offering]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_coalescent_offering",
+  "type": "SPELL",
+  "name": {
+    "str": "Coalescent Offering"
+  },
+  "description": "Prepares a ritual to obtain crystallized essence.  Doing so will take 15 minutes, inflicting harm upon your body at the end, as well as dire consequences if overused…",
+  "message": "You work a ritual to draw power from within, drawn by instinct to whisper words in an unfamiliar language.  The verses complete, you raise the chalice up high, a blinding flash resounding as a sliver of magical energy solidifies within the chalice!",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "PERMANENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_coalescent_offering_fatigue",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_coalescent_conversion_sound",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_coalescent_conversion_side_effects",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_chalice_offering_winding",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_chalice_offering_corruption",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_wave_destruction_side_effects",
+      "hit_self": true
+    }
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "essence_pure",
+  "base_casting_time": 90000,
+  "final_casting_time": 90000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_coalescent_offering",
+  "type": "SPELL",
+  "name": {
+    "str": "聚结献祭"
+  },
+  "description": "准备仪式以获得结晶的精华。这样做需要15分钟，最终会对你的身体造成伤害，如果过度使用也会造成可怕的后果…",
+  "message": "你通过一种仪式从内心汲取力量，本能地用一种陌生的语言低语。诗句完成后，你把圣杯举得很高，一道耀眼的闪光在圣杯中凝固成一条神奇的能量！",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "PERMANENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_coalescent_offering_fatigue",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_coalescent_conversion_sound",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_coalescent_conversion_side_effects",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_chalice_offering_winding",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_item_chalice_offering_corruption",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_wave_destruction_side_effects",
+      "hit_self": true
+    }
+  ],
+  "effect": "spawn_item",
+  "shape": "blast",
+  "effect_str": "essence_pure",
+  "base_casting_time": 90000,
+  "final_casting_time": 90000
+}
+```
+

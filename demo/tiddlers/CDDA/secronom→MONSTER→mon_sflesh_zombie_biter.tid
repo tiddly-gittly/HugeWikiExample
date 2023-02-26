@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_biter
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_biter|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_biter]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_biter",
+  "type": "MONSTER",
+  "name": {
+    "str": "slavering biter"
+  },
+  "description": "A distorted and swollen human body.  Its jaws have elongated into a crocodile like snout, dripping with foul smelling saliva.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "speed": 110,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "cyan_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 5,
+      "damage_type": "cut"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 8,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 15,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 4,
+      "accuracy": 5,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 10,
+          "armor_multiplier": 0.3
+        },
+        {
+          "damage_type": "bash",
+          "amount": 10,
+          "armor_multiplier": 0.3
+        }
+      ]
+    },
+    [
+      "GRAB",
+      4
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_biter",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "KEENNOSE",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "GRABS",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_biter",
+  "type": "MONSTER",
+  "name": {
+    "str": "流涎啃蚀者"
+  },
+  "description": "一个扭曲而膨胀的人体。它的颌已经延长的如同鳄鱼的长吻一般，滴落着恶臭的唾液。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "speed": 110,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "cyan_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 5,
+      "damage_type": "cut"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 8,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 15,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 4,
+      "accuracy": 5,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 10,
+          "armor_multiplier": 0.3
+        },
+        {
+          "damage_type": "bash",
+          "amount": 10,
+          "armor_multiplier": 0.3
+        }
+      ]
+    },
+    [
+      "GRAB",
+      4
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_biter",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "KEENNOSE",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "GRABS",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

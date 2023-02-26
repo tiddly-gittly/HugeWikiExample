@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: technique nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→technique→tec_surv_com_counter_block
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_surv_com_counter_block|http://cdda.aloxaf.cn/search?q=tec_surv_com_counter_block]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_surv_com_counter_block",
+  "name": "Counter Strike",
+  "messages": [
+    "You catch %s's attack, and send them staggering back",
+    "<npcname> catches %s, and knocks them back"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 6
+    }
+  ],
+  "unarmed_allowed": true,
+  "melee_allowed": true,
+  "block_counter": true,
+  "crit_ok": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 0.5
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 0.5
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 0.5
+    }
+  ],
+  "knockback_dist": 1,
+  "stun_dur": 1,
+  "attack_vectors": [
+    "WEAPON",
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_surv_com_counter_block",
+  "name": "反击",
+  "messages": [
+    "你控制住了%s的攻击，并猛力打退",
+    "<npcname>  控制住了%s的攻击，并还击击退了%s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 6
+    }
+  ],
+  "unarmed_allowed": true,
+  "melee_allowed": true,
+  "block_counter": true,
+  "crit_ok": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 0.5
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 0.5
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 0.5
+    }
+  ],
+  "knockback_dist": 1,
+  "stun_dur": 1,
+  "attack_vectors": [
+    "WEAPON",
+    "HAND"
+  ]
+}
+```
+

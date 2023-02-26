@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→dragonblood_mutagen
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dragonblood_mutagen|http://cdda.aloxaf.cn/search?q=dragonblood_mutagen]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "dragonblood_mutagen",
+  "type": "COMESTIBLE",
+  "comestible_type": "DRINK",
+  "category": "drugs",
+  "name": {
+    "str": "blood effigy",
+    "str_pl": "blood effigy"
+  },
+  "looks_like": "blood",
+  "description": "A congealed liquid vaguely resembling blood, seemingly pulsing and stirring with a life of its own.  The work of incomplete research into exploiting an otherworldly creature, it can permanently change the body and mind.  Without the original source of this power however, it can only go so far.",
+  "weight": "250 g",
+  "volume": "250 ml",
+  "price": "120 USD",
+  "price_postapoc": "30 USD",
+  "phase": "liquid",
+  "container": "flask_glass",
+  "symbol": "~",
+  "color": "red",
+  "healthy": -6,
+  "fun": -8,
+  "freezing_point": -10,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "You drink the blood effigy.",
+    "effects": [
+      {
+        "id": "arcana_dragonblood_blood_effigy_effect",
+        "duration": 5
+      }
+    ]
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "dragonblood_mutagen",
+  "type": "COMESTIBLE",
+  "comestible_type": "DRINK",
+  "category": "drugs",
+  "name": {
+    "str": "血相",
+    "str_pl": "血相"
+  },
+  "looks_like": "blood",
+  "description": "一种凝固的液体，有点像血，似乎有自己的生命在跳动。目前开发超凡生物的研究工作表明，它可以永久地改变身体和思想。然而，如果没有这种力量的原始来源，它走不了多远。",
+  "weight": "250 g",
+  "volume": "250 ml",
+  "price": "120 USD",
+  "price_postapoc": "30 USD",
+  "phase": "liquid",
+  "container": "flask_glass",
+  "symbol": "~",
+  "color": "red",
+  "healthy": -6,
+  "fun": -8,
+  "freezing_point": -10,
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "你喝下了血相。",
+    "effects": [
+      {
+        "id": "arcana_dragonblood_blood_effigy_effect",
+        "duration": 5
+      }
+    ]
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+

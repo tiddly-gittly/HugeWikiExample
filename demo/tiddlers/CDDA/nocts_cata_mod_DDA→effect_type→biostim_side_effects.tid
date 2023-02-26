@@ -1,0 +1,231 @@
+creator: 林一二
+revision: 0
+tags: effect_type nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→effect_type→biostim_side_effects
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：biostim_side_effects|http://cdda.aloxaf.cn/search?q=biostim_side_effects]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "biostim_side_effects",
+  "name": [
+    "Biostim",
+    "Biostim Overdose"
+  ],
+  "desc": [
+    "Your muscles feel abnormally tense and it's hard to sit still.",
+    "Your heart feels like it's going a mile a minute, and every muscle in your body is sore."
+  ],
+  "apply_message": "You feel your muscles tensing up with a surge of abnormal energy!",
+  "remove_message": "The tension in your body finally fades back to some degree of normalcy.",
+  "decay_messages": [
+    [
+      "The pain in your muscles goes back to just a dull tension.",
+      "good"
+    ]
+  ],
+  "max_duration": "3 h",
+  "max_intensity": 2,
+  "int_dur_factor": "121 m",
+  "base_mods": {
+    "speed_mod": [
+      10
+    ],
+    "str_mod": [
+      1
+    ],
+    "dex_mod": [
+      1
+    ],
+    "int_mod": [
+      -1
+    ],
+    "per_mod": [
+      1
+    ],
+    "stamina_min": [
+      5
+    ],
+    "stim_tick": [
+      25
+    ],
+    "stim_chance": [
+      10
+    ],
+    "stim_min": [
+      1
+    ]
+  },
+  "scaling_mods": {
+    "speed_mod": [
+      -5
+    ],
+    "str_mod": [
+      -1
+    ],
+    "dex_mod": [
+      -2
+    ],
+    "int_mod": [
+      -3
+    ],
+    "per_mod": [
+      -3
+    ],
+    "stamina_min": [
+      -3
+    ],
+    "stim_chance": [
+      -6
+    ],
+    "pain_chance": [
+      100
+    ],
+    "pain_min": [
+      1
+    ],
+    "pain_max": [
+      3
+    ],
+    "hurt_chance": [
+      300
+    ],
+    "hurt_min": [
+      1
+    ],
+    "hurt_max": [
+      3
+    ],
+    "vomit_chance": [
+      600
+    ],
+    "fatigue_chance": [
+      250
+    ],
+    "fatigue_min": [
+      1
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "biostim_side_effects",
+  "name": [
+    "生化物质注射",
+    "生化物质注射过量"
+  ],
+  "desc": [
+    "你的肌肉感觉异常紧绷而且很难坐着不动。",
+    "你感觉你的心脏跳动速度像每分钟走一英里，而且每一块肌肉都酸痛起来了。"
+  ],
+  "apply_message": "你感觉到你的肌肉因异常能量的激增而绷紧！",
+  "remove_message": "你体内的紧绷感最终会消退到一定程度的正常状态。",
+  "decay_messages": [
+    [
+      "你肌肉的疼痛又回到了隐隐的紧绷状态。",
+      "good"
+    ]
+  ],
+  "max_duration": "3 h",
+  "max_intensity": 2,
+  "int_dur_factor": "121 m",
+  "base_mods": {
+    "speed_mod": [
+      10
+    ],
+    "str_mod": [
+      1
+    ],
+    "dex_mod": [
+      1
+    ],
+    "int_mod": [
+      -1
+    ],
+    "per_mod": [
+      1
+    ],
+    "stamina_min": [
+      5
+    ],
+    "stim_tick": [
+      25
+    ],
+    "stim_chance": [
+      10
+    ],
+    "stim_min": [
+      1
+    ]
+  },
+  "scaling_mods": {
+    "speed_mod": [
+      -5
+    ],
+    "str_mod": [
+      -1
+    ],
+    "dex_mod": [
+      -2
+    ],
+    "int_mod": [
+      -3
+    ],
+    "per_mod": [
+      -3
+    ],
+    "stamina_min": [
+      -3
+    ],
+    "stim_chance": [
+      -6
+    ],
+    "pain_chance": [
+      100
+    ],
+    "pain_min": [
+      1
+    ],
+    "pain_max": [
+      3
+    ],
+    "hurt_chance": [
+      300
+    ],
+    "hurt_min": [
+      1
+    ],
+    "hurt_max": [
+      3
+    ],
+    "vomit_chance": [
+      600
+    ],
+    "fatigue_chance": [
+      250
+    ],
+    "fatigue_min": [
+      1
+    ]
+  }
+}
+```
+

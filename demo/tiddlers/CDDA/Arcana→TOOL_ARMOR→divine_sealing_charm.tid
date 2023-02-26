@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→divine_sealing_charm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：divine_sealing_charm|http://cdda.aloxaf.cn/search?q=divine_sealing_charm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "divine_sealing_charm",
+  "looks_like": "small_relic",
+  "type": "TOOL_ARMOR",
+  "category": "tools",
+  "name": {
+    "str": "divine sealing charm"
+  },
+  "description": "A silver and gold relic encircling and framing a pitch-black gem.  All across the metal are holy symbols and engraved text mixing archaic Latin, Old Norse runes, and symbols that don't seem to match any writing humans have devised.  Combining dimensional fatigue research with the knowledge of multiple arcane orders, it was made to serve the same purpose as the Keepers' relics and Project Kairos.\n\nLinger near a portal to collapse it into a form you can harvest crystallized essence from, then fuel it with crystallized essence.  Channeling this energy will create a powerful healing effect affecting you and nearby allies, remove alien influence on your surroundings, as well as restore dead plant life nearby.  Note that essence loaded into it cannot be unloaded.",
+  "weight": "1200 g",
+  "volume": "750 ml",
+  "price_postapoc": "150 USD",
+  "material": [
+    "silver",
+    "gold",
+    "essencemat"
+  ],
+  "symbol": "[",
+  "color": "yellow",
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 10
+      }
+    }
+  ],
+  "ammo": "essence_pure_type",
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_divine_seal",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    }
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "3 minutes",
+              "spell_effects": [
+                {
+                  "id": "arcana_react_veilblade"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "NO_UNLOAD",
+    "DIMENSIONAL_ANCHOR",
+    "PSYSHIELD_PARTIAL",
+    "PORTAL_PROOF"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "divine_sealing_charm",
+  "looks_like": "small_relic",
+  "type": "TOOL_ARMOR",
+  "category": "tools",
+  "name": {
+    "str": "神圣封闭护符"
+  },
+  "description": "一种银和金的文物，环绕并装裱着一颗漆黑的宝石。整个金属上都是神圣的符号和雕刻的文字，混合了古拉丁语、古挪威语符文，以及似乎与人类设计的任何文字都不匹配的符号。将空间疲劳研究与多个奥术阶的知识相结合，使其与守护者的遗物和凯罗斯项目的目的相同。\n\n徘徊在一个入口附近，将其折叠成一种形式，你可以从中获取结晶精华，然后用结晶精华为其提供燃料。引导这种能量将产生一种强大的治疗效果，影响你和附近的盟友，消除外星对你周围环境的影响，以及恢复附近死亡的植物生命。请注意，无法卸载加载到其中的精华。",
+  "weight": "1200 g",
+  "volume": "750 ml",
+  "price_postapoc": "150 USD",
+  "material": [
+    "silver",
+    "gold",
+    "essencemat"
+  ],
+  "symbol": "[",
+  "color": "yellow",
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 10
+      }
+    }
+  ],
+  "ammo": "essence_pure_type",
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_divine_seal",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    }
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "3 minutes",
+              "spell_effects": [
+                {
+                  "id": "arcana_react_veilblade"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "NO_UNLOAD",
+    "DIMENSIONAL_ANCHOR",
+    "PSYSHIELD_PARTIAL",
+    "PORTAL_PROOF"
+  ]
+}
+```
+

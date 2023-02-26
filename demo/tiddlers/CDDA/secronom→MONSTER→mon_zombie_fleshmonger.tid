@@ -1,0 +1,183 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_fleshmonger
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_fleshmonger|http://cdda.aloxaf.cn/search?q=mon_zombie_fleshmonger]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Support-type zed aberration that heals nearby allies. It uses its own health to perform its healing ability.",
+  "id": "mon_zombie_fleshmonger",
+  "type": "MONSTER",
+  "name": {
+    "str": "fleshmonger"
+  },
+  "description": "A gigantic mound of putrid flesh, with assortments of limbs and writhing tendrils reemerging back and forth. Dark, oozing pus constantly erupts from its swollen body.",
+  "default_faction": "zombie",
+  "bodytype": "migo",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "ABERRATION"
+  ],
+  "volume": "1320 L",
+  "weight": "2430000 g",
+  "hp": 2120,
+  "speed": 40,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "♺",
+  "color": "magenta_yellow",
+  "attack_cost": 1000,
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 8,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "armor_bash": 30,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 22,
+  "vision_night": 12,
+  "harvest": "zombie",
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "tracking_distance": 3,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_fleshmonger_reflesh_check"
+      },
+      "cooldown": 18,
+      "monster_message": "<color_magenta>%1$s is trembling…</color>"
+    }
+  ],
+  "regenerates": 10,
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "SWARMS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "LOUDMOVES",
+    "NOHEAD",
+    "DESTROYS",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "PLASTIC",
+    "STUN_IMMUNE",
+    "RANGED_ATTACKER",
+    "KEEP_DISTANCE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Support-type zed aberration that heals nearby allies. It uses its own health to perform its healing ability.",
+  "id": "mon_zombie_fleshmonger",
+  "type": "MONSTER",
+  "name": {
+    "str": "血肉蒙哥"
+  },
+  "description": "A gigantic mound of putrid flesh, with assortments of limbs and writhing tendrils reemerging back and forth. Dark, oozing pus constantly erupts from its swollen body.",
+  "default_faction": "zombie",
+  "bodytype": "migo",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "ABERRATION"
+  ],
+  "volume": "1320 L",
+  "weight": "2430000 g",
+  "hp": 2120,
+  "speed": 40,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "♺",
+  "color": "magenta_yellow",
+  "attack_cost": 1000,
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 8,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "armor_bash": 30,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 22,
+  "vision_night": 12,
+  "harvest": "zombie",
+  "emit_fields": [
+    "emit_down_immunity"
+  ],
+  "tracking_distance": 3,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_fleshmonger_reflesh_check"
+      },
+      "cooldown": 18,
+      "monster_message": "<color_magenta>%1$s is trembling…</color>"
+    }
+  ],
+  "regenerates": 10,
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "SWARMS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "LOUDMOVES",
+    "NOHEAD",
+    "DESTROYS",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "PLASTIC",
+    "STUN_IMMUNE",
+    "RANGED_ATTACKER",
+    "KEEP_DISTANCE"
+  ]
+}
+```
+

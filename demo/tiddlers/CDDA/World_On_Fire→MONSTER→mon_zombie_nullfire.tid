@@ -1,0 +1,153 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_zombie_nullfire
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_nullfire|http://cdda.aloxaf.cn/search?q=mon_zombie_nullfire]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_nullfire",
+  "type": "MONSTER",
+  "name": {
+    "str": "inferno husk"
+  },
+  "description": "This once-human is visible only as a glowing crimson silhouette that you have to squint to see, cloaked in a  field of flames that flicker intensely. It walks slowly and deliberately, the raging inferno around it dances wildly.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 200,
+  "speed": 50,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "i_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "//": "melee damage is quite weak since the shockfield around it is its most dangerous function",
+  "vision_night": 3,
+  "luminance": 16,
+  "harvest": "CBM_SUBS",
+  "special_attacks": [
+    {
+      "id": "spark"
+    },
+    [
+      "SHOCKSTORM",
+      15
+    ],
+    [
+      "TAZER",
+      9
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "WARM",
+    "POISON",
+    "FIREY",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_nullfire",
+  "type": "MONSTER",
+  "name": {
+    "str": "烈火躯壳"
+  },
+  "description": "这个丧尸如今只剩下一个发光的红色轮廓，你必须眯着眼睛才能透过那燃烧的火焰看见它的身影。它慢悠悠地走着，身体四周的火焰狂舞着。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 200,
+  "speed": 50,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "i_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "//": "melee damage is quite weak since the shockfield around it is its most dangerous function",
+  "vision_night": 3,
+  "luminance": 16,
+  "harvest": "CBM_SUBS",
+  "special_attacks": [
+    {
+      "id": "spark"
+    },
+    [
+      "SHOCKSTORM",
+      15
+    ],
+    [
+      "TAZER",
+      9
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "WARM",
+    "POISON",
+    "FIREY",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

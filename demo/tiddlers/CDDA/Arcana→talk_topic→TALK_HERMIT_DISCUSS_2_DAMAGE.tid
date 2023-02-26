@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_2_DAMAGE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_2_DAMAGE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_2_DAMAGE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_2_DAMAGE",
+  "dynamic_line": "In its original state, it could manipulate and control the instabilities that now linger in this realm, not just seal them.  There were many rituals this could be used for, but even if this was an option, they require years of training to practice safely.  We shall have to make do with what remains of the purpose it can serve.",
+  "responses": [
+    {
+      "text": "And what is the sword's purpose?",
+      "topic": "TALK_HERMIT_DISCUSS_2_PURPOSE"
+    },
+    {
+      "switch": true,
+      "text": "That's all I need for now, then.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "What shall I do, then?",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_2_DAMAGE",
+  "dynamic_line": "在它最初的状态下，它可以操纵和控制目前在这个领域徘徊的不稳定性，而不仅仅是封闭它们。有很多仪式可以使用，但即使这是一个选择，他们需要多年的训练，以安全地练习。我们将不得不勉强维持它所能达到的目的。",
+  "responses": [
+    {
+      "text": "这把剑的用途是什么？",
+      "topic": "TALK_HERMIT_DISCUSS_2_PURPOSE"
+    },
+    {
+      "switch": true,
+      "text": "那我现在只需要这些了。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "那我该怎么办？",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,309 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→afs_cooking_rig
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：afs_cooking_rig|http://cdda.aloxaf.cn/search?q=afs_cooking_rig]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blaze_other_parts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "afs_cooking_rig",
+  "name": {
+    "str": "cooking rig"
+  },
+  "symbol": "&",
+  "categories": [
+    "utility"
+  ],
+  "color": "blue",
+  "broken_symbol": "x",
+  "broken_color": "blue",
+  "looks_like": "kitchen_unit",
+  "damage_modifier": 10,
+  "durability": 125,
+  "description": "An all-in-one kitchen unit and chemistry lab.  'e'xamine it to use its hotplate to heat up food or drinks.",
+  "size": 200,
+  "item": "afs_cooking_rig",
+  "location": "center",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "CARGO",
+    "OBSTACLE",
+    "COVERED",
+    "FLAT_SURF"
+  ],
+  "pseudo_tools": [
+    {
+      "id": "water_faucet"
+    },
+    {
+      "id": "hotplate",
+      "hotkey": "h"
+    },
+    {
+      "id": "pot"
+    },
+    {
+      "id": "pan"
+    },
+    {
+      "id": "chemistry_set"
+    },
+    {
+      "id": "electrolysis_kit"
+    }
+  ],
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        6,
+        9
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        6,
+        9
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        6,
+        9
+      ]
+    },
+    {
+      "item": "pot",
+      "prob": 50
+    },
+    {
+      "item": "pan",
+      "prob": 50
+    },
+    {
+      "item": "chemistry_set",
+      "charges": 0,
+      "prob": 50
+    },
+    {
+      "item": "electrolysis_kit",
+      "charges": 0,
+      "prob": 50
+    },
+    {
+      "item": "hotplate",
+      "charges": 0,
+      "prob": 50
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "afs_cooking_rig",
+  "name": {
+    "str": "厨化机"
+  },
+  "symbol": "&",
+  "categories": [
+    "utility"
+  ],
+  "color": "blue",
+  "broken_symbol": "x",
+  "broken_color": "blue",
+  "looks_like": "kitchen_unit",
+  "damage_modifier": 10,
+  "durability": 125,
+  "description": "一个一体化厨房和化学实验室，按“E”可使用电炉加热食物或饮料。",
+  "size": 200,
+  "item": "afs_cooking_rig",
+  "location": "center",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "CARGO",
+    "OBSTACLE",
+    "COVERED",
+    "FLAT_SURF"
+  ],
+  "pseudo_tools": [
+    {
+      "id": "water_faucet"
+    },
+    {
+      "id": "hotplate",
+      "hotkey": "h"
+    },
+    {
+      "id": "pot"
+    },
+    {
+      "id": "pan"
+    },
+    {
+      "id": "chemistry_set"
+    },
+    {
+      "id": "electrolysis_kit"
+    }
+  ],
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        6,
+        9
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        6,
+        9
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        6,
+        9
+      ]
+    },
+    {
+      "item": "pot",
+      "prob": 50
+    },
+    {
+      "item": "pan",
+      "prob": 50
+    },
+    {
+      "item": "chemistry_set",
+      "charges": 0,
+      "prob": 50
+    },
+    {
+      "item": "electrolysis_kit",
+      "charges": 0,
+      "prob": 50
+    },
+    {
+      "item": "hotplate",
+      "charges": 0,
+      "prob": 50
+    }
+  ]
+}
+```
+

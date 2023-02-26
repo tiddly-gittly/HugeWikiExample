@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_HEATHEN
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_HEATHEN|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_HEATHEN]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_HEATHEN",
+  "dynamic_line": "Our order was composed of people from various religions.  Not only Abrahamic ones of various sorts, but those that would be considered pagan.  Asatruan, in my case.  Over time our practices mingled, a shared influence affecting our approach to the arcane.",
+  "responses": [
+    {
+      "text": "And what approach is that?",
+      "condition": {
+        "or": [
+          {
+            "u_has_any_trait": [
+              "PROF_ARCANIST",
+              "PROF_ARCANIST2",
+              "PROF_SANGUINE",
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL",
+              "THRESH_DRAGONBLOOD"
+            ]
+          },
+          {
+            "u_has_skill": {
+              "skill": "magic",
+              "level": 1
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_CF_REP_ARCANE_2"
+    },
+    {
+      "text": "What do you mean, arcane?",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP_ARCANE_2"
+    },
+    {
+      "text": "…",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_HEATHEN",
+  "dynamic_line": "我们的秩序是由不同宗教的人组成的。不仅是各种各样的亚伯拉罕人，还有那些被认为是异教徒的人。Asatruan，在我的情况下。随着时间的推移，我们的实践融合在一起，共同的影响影响着我们接近奥术。",
+  "responses": [
+    {
+      "text": "那是什么方法？",
+      "condition": {
+        "or": [
+          {
+            "u_has_any_trait": [
+              "PROF_ARCANIST",
+              "PROF_ARCANIST2",
+              "PROF_SANGUINE",
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL",
+              "THRESH_DRAGONBLOOD"
+            ]
+          },
+          {
+            "u_has_skill": {
+              "skill": "magic",
+              "level": 1
+            }
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_CF_REP_ARCANE_2"
+    },
+    {
+      "text": "你什么意思，奥术？",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP_ARCANE_2"
+    },
+    {
+      "text": "…",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

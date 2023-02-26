@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_REFUGEE_Boris_CF_REP_MISSION_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_REFUGEE_Boris_CF_REP_MISSION_4|http://cdda.aloxaf.cn/search?q=TALK_REFUGEE_Boris_CF_REP_MISSION_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_REFUGEE_Boris_1.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_REFUGEE_Boris_CF_REP_MISSION_4",
+  "dynamic_line": {
+    "u_has_var": "tacoma_started",
+    "type": "knowledge",
+    "context": "flag",
+    "value": "yes",
+    "yes": "If you mean the commune they're started up, I appreciate the suggestion.  But I don't think I would be cut out for another long trip, with all those things out there.  Plus, there are people who need me already, and I wouldn't be able to live with myself if they got hurt or killed trying to move with me.",
+    "no": "I'll work something out.  Anything is better than braving the ungodly horrors out there, and I have people here who I don't want to risk losing if we ventured out to some unknown settlement."
+  },
+  "responses": [
+    {
+      "text": "It's a different community actually.  Smaller, but fortified and starting to become self-sufficient.",
+      "topic": "TALK_REFUGEE_Boris_CF_REP_MISSION_4_UNKNOWN",
+      "condition": {
+        "u_has_var": "tacoma_started",
+        "type": "knowledge",
+        "context": "flag",
+        "value": "yes"
+      }
+    },
+    {
+      "text": "Understandable.  Know anyone else who might be able to make the trip?",
+      "topic": "TALK_REFUGEE_Boris_CF_REP_MISSION_4_HELP"
+    },
+    {
+      "text": "Oh, okay.  Never mind then.",
+      "topic": "TALK_REFUGEE_Boris_1"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_REFUGEE_Boris_CF_REP_MISSION_4",
+  "dynamic_line": {
+    "u_has_var": "tacoma_started",
+    "type": "knowledge",
+    "context": "flag",
+    "value": "yes",
+    "yes": "如果你是说他们已经建立了公社，我很欣赏这个建议。但是，我不认为我会再去长途旅行，因为所有这些东西都在那里。另外，有些人已经需要我了，如果他们试图和我一起移动而受伤或丧命，我将无法与自己生活在一起。",
+    "no": "我会努力解决的。有什么比冒着那不敬虔的恐怖还要好，而且我这里有一些人，如果我们冒险去某个未知的解决方案，我不想冒险输掉。"
+  },
+  "responses": [
+    {
+      "text": "实际上这是一个不同的社区。规模较小，但是却很坚固，并开始变得自给自足。",
+      "topic": "TALK_REFUGEE_Boris_CF_REP_MISSION_4_UNKNOWN",
+      "condition": {
+        "u_has_var": "tacoma_started",
+        "type": "knowledge",
+        "context": "flag",
+        "value": "yes"
+      }
+    },
+    {
+      "text": "难以理解。认识其他可能会旅行的人吗？",
+      "topic": "TALK_REFUGEE_Boris_CF_REP_MISSION_4_HELP"
+    },
+    {
+      "text": "哦好的。没关系。",
+      "topic": "TALK_REFUGEE_Boris_1"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→cleric_warding
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cleric_warding|http://cdda.aloxaf.cn/search?q=cleric_warding]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "cleric_warding",
+  "name": [
+    "Ward Against Evil"
+  ],
+  "desc": [
+    "Protects against various anomalous effects."
+  ],
+  "remove_message": "The magical protection fades.",
+  "removes_effects": [
+    "darkness",
+    "rat",
+    "evil",
+    "arcana_evil_mimic",
+    "attention",
+    "teleglow",
+    "amigara",
+    "taint",
+    "tindrift"
+  ],
+  "decay_messages": [
+    [
+      "Your ward against evil is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "cleric_warding",
+  "name": [
+    "辟邪结界"
+  ],
+  "desc": [
+    "防止各种异常影响。"
+  ],
+  "remove_message": "魔法保护消失了。",
+  "removes_effects": [
+    "darkness",
+    "rat",
+    "evil",
+    "arcana_evil_mimic",
+    "attention",
+    "teleglow",
+    "amigara",
+    "taint",
+    "tindrift"
+  ],
+  "decay_messages": [
+    [
+      "增强你抗邪防护结界的魔力正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m"
+}
+```
+

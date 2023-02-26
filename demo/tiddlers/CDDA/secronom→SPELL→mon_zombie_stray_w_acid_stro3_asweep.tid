@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_stray_w_acid_stro3_asweep
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_acid_stro3_asweep|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_acid_stro3_asweep]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_stray_w_acid_stro3_asweep",
+  "type": "SPELL",
+  "name": {
+    "str": "Sweepidic"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'If the target is nearby, caster sweeps some of the excess fluids in a small cone, dealing small damage to all creatures.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "min_damage": 3,
+  "max_damage": 6,
+  "min_range": 4,
+  "max_range": 4,
+  "min_aoe": 15,
+  "max_aoe": 45,
+  "field_id": "fd_acid",
+  "field_chance": 20,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "acid"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_stray_w_acid_stro3_asweep",
+  "type": "SPELL",
+  "name": {
+    "str": "扫掠的"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“如果目标在附近，施法者会在一个小圆锥体中清扫一些多余的液体，对所有生物造成很小的伤害。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "min_damage": 3,
+  "max_damage": 6,
+  "min_range": 4,
+  "max_range": 4,
+  "min_aoe": 15,
+  "max_aoe": 45,
+  "field_id": "fd_acid",
+  "field_chance": 20,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "acid"
+}
+```
+

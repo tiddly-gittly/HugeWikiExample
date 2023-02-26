@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_ARCANE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_ARCANE|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_ARCANE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_ARCANE",
+  "dynamic_line": {
+    "u_has_effect": "cf_sofia_notes_given",
+    "yes": "Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  There is a logic to it, and I hope if you attempt to understand it yourself you'll be cautious in your efforts.",
+    "no": "We've taken to referring to certain supernatural events as such, and the methods some have found to exploit these effects.  Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  Given things like strange monsters being called from gods-know-where, cultists fueling rituals with blood, and the like, it's hard not to refer to such as magical, even if there is some manner of logic to it.  Here.  This may help you make sense of what we've had to deal with, to some extent."
+  },
+  "responses": [
+    {
+      "text": "I see.  I think…",
+      "switch": true,
+      "topic": "TALK_CF_REP",
+      "condition": {
+        "u_has_effect": "cf_sofia_notes_given"
+      }
+    },
+    {
+      "text": "O …kay.  I see.  I think…",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP",
+      "effect": [
+        {
+          "u_spawn_item": "book_magicfordummies"
+        },
+        {
+          "u_add_effect": "cf_sofia_notes_given",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_ARCANE",
+  "dynamic_line": {
+    "u_has_effect": "cf_sofia_notes_given",
+    "yes": "事情可能在最近才达到沸点，但在这之前，破坏性较小的事件在这里和那里已经发生了一段时间。这是有逻辑的，我希望如果你自己去理解它，你会谨慎行事。",
+    "no": "我们提到了某些超自然事件，以及一些人发现的利用这些效应的方法。事情可能在最近才达到沸点，但在这之前，破坏性较小的事件在这里和那里已经发生了一段时间。考虑到一些事情，比如说从神灵那里召唤怪兽，邪教者用鲜血为仪式加油等等，很难不提及魔法，即使有某种逻辑。在这里。在某种程度上，这可能有助于你理解我们必须处理的事情。"
+  },
+  "responses": [
+    {
+      "text": "我懂了。我想…",
+      "switch": true,
+      "topic": "TALK_CF_REP",
+      "condition": {
+        "u_has_effect": "cf_sofia_notes_given"
+      }
+    },
+    {
+      "text": "哦…凯。我懂了。我想…",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_REP",
+      "effect": [
+        {
+          "u_spawn_item": "book_magicfordummies"
+        },
+        {
+          "u_add_effect": "cf_sofia_notes_given",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+

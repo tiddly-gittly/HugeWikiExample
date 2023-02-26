@@ -1,0 +1,365 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_BOOK_QUERY
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_BOOK_QUERY|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_BOOK_QUERY]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_QUERY",
+  "dynamic_line": "A strange question.  Why do you seek such a thing, and why from me?",
+  "responses": [
+    {
+      "text": "I felt an instinctive pull.  That of the Shrouded King, perhaps.",
+      "opinion": {
+        "trust": 1,
+        "value": 1
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_HERMIT_BOOK_OUST",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ]
+    },
+    {
+      "text": "I have seen what the arcane can lead to.  Great things, but also great danger.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2",
+          "PROF_SANGUINE",
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2",
+          "THRESH_DRAGONBLOOD"
+        ]
+      },
+      "topic": "TALK_HERMIT_BOOK_REVEAL",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_1",
+        "duration": "PERMANENT"
+      }
+    },
+    {
+      "text": "Your aura is alight with hidden magic and concealed artifacts, I can see it through my mask.",
+      "opinion": {
+        "fear": 1,
+        "value": 1
+      },
+      "condition": {
+        "or": [
+          {
+            "u_is_wearing": "somen_clairvoyance"
+          },
+          {
+            "u_is_wearing": "somen_clairvoyance_on"
+          },
+          {
+            "u_is_wearing": "somen_clairvoyance_xl"
+          },
+          {
+            "u_is_wearing": "somen_clairvoyance_xl_on"
+          }
+        ]
+      },
+      "topic": "TALK_HERMIT_MASK_REVEAL"
+    },
+    {
+      "switch": true,
+      "text": "You seem like you might have experience in such things.",
+      "topic": "TALK_HERMIT_BOOK_ASKED",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              {
+                "u_has_intelligence": 10
+              },
+              {
+                "u_has_perception": 10
+              }
+            ]
+          },
+          {
+            "u_has_effect": "hermit_inquire_denied"
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "Call it a hunch.",
+      "topic": "TALK_HERMIT_BOOK_ASKED",
+      "condition": {
+        "u_has_effect": "hermit_inquire_denied"
+      }
+    },
+    {
+      "switch": true,
+      "text": "You seem like you might have experience in such things.",
+      "condition": {
+        "or": [
+          {
+            "u_has_intelligence": 10
+          },
+          {
+            "u_has_perception": 10
+          }
+        ]
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 30
+      },
+      "success": {
+        "topic": "TALK_HERMIT_BOOK_ADMISSION",
+        "opinion": {
+          "trust": 1
+        },
+        "effect": {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_HERMIT_BOOK_DENIAL",
+        "effect": {
+          "u_add_effect": "hermit_inquire_denied",
+          "duration": 10800
+        }
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "Call it a hunch.",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 15
+      },
+      "success": {
+        "topic": "TALK_HERMIT_BOOK_ADMISSION",
+        "opinion": {
+          "trust": 1
+        },
+        "effect": {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_HERMIT_BOOK_DENIAL",
+        "effect": {
+          "u_add_effect": "hermit_inquire_denied",
+          "duration": 10800
+        }
+      }
+    },
+    {
+      "text": "It's nothing.  Never mind.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_QUERY",
+  "dynamic_line": "一个奇怪的问题。你为什么要找这样的东西，为什么要找我？",
+  "responses": [
+    {
+      "text": "我感觉到一种本能的拉力。也许是被裹尸布的国王。",
+      "opinion": {
+        "trust": 1,
+        "value": 1
+      },
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_HERMIT_BOOK_OUST",
+      "effect": [
+        {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "hermit_earned_trust_2",
+          "duration": "PERMANENT"
+        }
+      ]
+    },
+    {
+      "text": "我已经看到了奥术能带来什么。伟大的事情，也有巨大的危险。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2",
+          "PROF_SANGUINE",
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2",
+          "THRESH_DRAGONBLOOD"
+        ]
+      },
+      "topic": "TALK_HERMIT_BOOK_REVEAL",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_1",
+        "duration": "PERMANENT"
+      }
+    },
+    {
+      "text": "你的光环被隐藏的魔法和隐藏的物品照亮，我可以透过我的面具看到它。",
+      "opinion": {
+        "fear": 1,
+        "value": 1
+      },
+      "condition": {
+        "or": [
+          {
+            "u_is_wearing": "somen_clairvoyance"
+          },
+          {
+            "u_is_wearing": "somen_clairvoyance_on"
+          },
+          {
+            "u_is_wearing": "somen_clairvoyance_xl"
+          },
+          {
+            "u_is_wearing": "somen_clairvoyance_xl_on"
+          }
+        ]
+      },
+      "topic": "TALK_HERMIT_MASK_REVEAL"
+    },
+    {
+      "switch": true,
+      "text": "你似乎在这方面有经验。",
+      "topic": "TALK_HERMIT_BOOK_ASKED",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              {
+                "u_has_intelligence": 10
+              },
+              {
+                "u_has_perception": 10
+              }
+            ]
+          },
+          {
+            "u_has_effect": "hermit_inquire_denied"
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "称之为预感。",
+      "topic": "TALK_HERMIT_BOOK_ASKED",
+      "condition": {
+        "u_has_effect": "hermit_inquire_denied"
+      }
+    },
+    {
+      "switch": true,
+      "text": "你似乎在这方面有经验。",
+      "condition": {
+        "or": [
+          {
+            "u_has_intelligence": 10
+          },
+          {
+            "u_has_perception": 10
+          }
+        ]
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 30
+      },
+      "success": {
+        "topic": "TALK_HERMIT_BOOK_ADMISSION",
+        "opinion": {
+          "trust": 1
+        },
+        "effect": {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_HERMIT_BOOK_DENIAL",
+        "effect": {
+          "u_add_effect": "hermit_inquire_denied",
+          "duration": 10800
+        }
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "称之为预感。",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 15
+      },
+      "success": {
+        "topic": "TALK_HERMIT_BOOK_ADMISSION",
+        "opinion": {
+          "trust": 1
+        },
+        "effect": {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_HERMIT_BOOK_DENIAL",
+        "effect": {
+          "u_add_effect": "hermit_inquire_denied",
+          "duration": 10800
+        }
+      }
+    },
+    {
+      "text": "没什么。不要介意。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

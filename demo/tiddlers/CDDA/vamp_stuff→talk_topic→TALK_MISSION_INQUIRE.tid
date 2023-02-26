@@ -1,0 +1,225 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_MISSION_INQUIRE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MISSION_INQUIRE|http://cdda.aloxaf.cn/search?q=TALK_MISSION_INQUIRE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Underrefugee/v_ut_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MISSION_INQUIRE",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "Here's your corrupted bloodrune stones.",
+      "topic": "TALK_MISSION_SUCCESS",
+      "effect": [
+        "mission_success",
+        {
+          "u_consume_item": "corruptbloodrune",
+          "count": 2
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "corruptbloodrune",
+              "count": 2
+            }
+          },
+          {
+            "u_has_mission": "VAMP_UNDERTRADER_quest"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MISSION_INQUIRE",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "这是你要的腐化的血符文石。",
+      "topic": "TALK_MISSION_SUCCESS",
+      "effect": [
+        "mission_success",
+        {
+          "u_consume_item": "corruptbloodrune",
+          "count": 2
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "corruptbloodrune",
+              "count": 2
+            }
+          },
+          {
+            "u_has_mission": "VAMP_UNDERTRADER_quest"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MISSION_INQUIRE",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "这是你要的血液",
+      "topic": "TALK_MISSION_SUCCESS",
+      "effect": [
+        "mission_success",
+        {
+          "u_consume_item": "blood",
+          "count": 15
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "blood",
+              "count": 15
+            }
+          },
+          {
+            "u_has_mission": "VAMP_LONELY_quest1"
+          }
+        ]
+      }
+    },
+    {
+      "text": "这是你要的血符文石。",
+      "topic": "TALK_MISSION_SUCCESS",
+      "effect": [
+        "mission_success",
+        {
+          "u_consume_item": "bloodrune"
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "bloodrune"
+          },
+          {
+            "u_has_mission": "VAMP_LONELY_quest3"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MISSION_INQUIRE",
+  "responses": [
+    {
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "blood",
+              "count": 30
+            }
+          },
+          {
+            "u_has_mission": "VAMP_UNDERCOMMANDO_quest1"
+          }
+        ]
+      },
+      "effect": [
+        "mission_success",
+        {
+          "u_consume_item": "blood",
+          "count": 30
+        }
+      ],
+      "text": "这是你要的血液",
+      "topic": "TALK_MISSION_SUCCESS"
+    },
+    {
+      "condition": {
+        "and": [
+          {
+            "u_has_items": {
+              "item": "smallleechteeth",
+              "count": 15
+            }
+          },
+          {
+            "u_has_mission": "VAMP_UNDERCOMMANDO_quest2"
+          }
+        ]
+      },
+      "effect": [
+        "mission_success",
+        {
+          "u_consume_item": "smallleechteeth",
+          "count": 15
+        }
+      ],
+      "text": "这是你要的小吸血牙",
+      "topic": "TALK_MISSION_SUCCESS"
+    },
+    {
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "bloodsac"
+          },
+          {
+            "u_has_mission": "VAMP_UNDERCOMMANDO_quest3"
+          }
+        ]
+      },
+      "effect": [
+        "mission_success",
+        {
+          "u_consume_item": "bloodsac"
+        }
+      ],
+      "text": "这是你要的血囊。",
+      "topic": "TALK_MISSION_SUCCESS"
+    }
+  ],
+  "type": "talk_topic"
+}
+```
+

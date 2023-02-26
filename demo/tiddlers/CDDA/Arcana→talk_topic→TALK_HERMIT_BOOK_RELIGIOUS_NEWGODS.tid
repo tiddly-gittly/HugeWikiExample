@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_BOOK_RELIGIOUS_NEWGODS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_BOOK_RELIGIOUS_NEWGODS|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_BOOK_RELIGIOUS_NEWGODS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS_NEWGODS",
+  "dynamic_line": "Esoteric studies and such, much of it the ramblings of madmen in a world gone mad.  Every so often some glimmer of insight shines through however, and it is at least interesting to study.",
+  "responses": [
+    {
+      "text": "Perhaps you could teach me some of that insight?",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_1",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_HERMIT_NEWGODS_INSIGHT"
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_BOOK_RELIGIOUS_NEWGODS",
+  "dynamic_line": "深奥的研究和诸如此类的，大部分都是疯子在一个疯狂的世界里漫无目的的胡言乱语。然而，偶尔也会有一些洞察的曙光闪现出来，研究它至少是有趣的。",
+  "responses": [
+    {
+      "text": "也许你能教我一些见识？",
+      "effect": {
+        "u_add_effect": "hermit_earned_trust_1",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_HERMIT_NEWGODS_INSIGHT"
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

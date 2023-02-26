@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: TOOL MST_Extra
+title: MST_Extra→TOOL→heavy_snare_kit
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：heavy_snare_kit|http://cdda.aloxaf.cn/search?q=heavy_snare_kit]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "heavy_snare_kit",
+  "type": "TOOL",
+  "name": {
+    "str": "heavy snare kit"
+  },
+  "description": "This is a kit for a simple trap consisting of a rope noose and a snare trigger.  It requires a tree nearby.  It is effective at trapping monsters.",
+  "weight": "1066 g",
+  "volume": "250 ml",
+  "price": 250,
+  "cutting": 10,
+  "material": [
+    "wood"
+  ],
+  "symbol": ";",
+  "color": "brown",
+  "use_action": {
+    "type": "place_trap",
+    "needs_neighbor_terrain": "t_tree",
+    "trap": "tr_heavy_snare",
+    "moves": 200,
+    "practice": 4,
+    "done_message": "You set the snare trap."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "heavy_snare_kit",
+  "type": "TOOL",
+  "name": {
+    "str": "大型捕猎陷阱"
+  },
+  "description": "这是由粗绳与有活结的套索组成的一个简单的陷阱，需要附近有一棵树，猎物掉到其中就会被网住。",
+  "weight": "1066 g",
+  "volume": "250 ml",
+  "price": 250,
+  "cutting": 10,
+  "material": [
+    "wood"
+  ],
+  "symbol": ";",
+  "color": "brown",
+  "use_action": {
+    "type": "place_trap",
+    "needs_neighbor_terrain": "t_tree",
+    "trap": "tr_heavy_snare",
+    "moves": 200,
+    "practice": 4,
+    "done_message": "You set the snare trap."
+  }
+}
+```
+

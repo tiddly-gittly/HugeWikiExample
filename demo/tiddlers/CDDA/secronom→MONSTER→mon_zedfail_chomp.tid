@@ -1,0 +1,167 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zedfail_chomp
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zedfail_chomp|http://cdda.aloxaf.cn/search?q=mon_zedfail_chomp]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Failed.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zedfail_chomp",
+  "type": "MONSTER",
+  "name": {
+    "str": "chomper"
+  },
+  "description": "Headless humanoid monster, with its rib ruptured into a torsal eyed mouth. The arms are gone, yet it is a threat not to be misjudged.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 90,
+  "diff": 5,
+  "harvest": "zombie",
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⪝",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 0,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10,
+      "min_mul": 0.5,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 3,
+          "armor_multiplier": 0.6
+        },
+        {
+          "damage_type": "stab",
+          "amount": 14,
+          "armor_multiplier": 0.5
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES",
+    "NOHEAD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zedfail_chomp",
+  "type": "MONSTER",
+  "name": {
+    "str": "食人花"
+  },
+  "description": "一只无头的人形怪物，肋骨裂成一个圆眼睛的嘴。它没有胳膊，但这绝对是一个不可小觑的威胁。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 90,
+  "diff": 5,
+  "harvest": "zombie",
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⪝",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 0,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 2,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10,
+      "min_mul": 0.5,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 3,
+          "armor_multiplier": 0.6
+        },
+        {
+          "damage_type": "stab",
+          "amount": 14,
+          "armor_multiplier": 0.5
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES",
+    "NOHEAD"
+  ]
+}
+```
+

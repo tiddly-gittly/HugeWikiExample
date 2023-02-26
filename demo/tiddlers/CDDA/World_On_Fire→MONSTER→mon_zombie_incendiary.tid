@@ -1,0 +1,225 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_zombie_incendiary
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_incendiary|http://cdda.aloxaf.cn/search?q=mon_zombie_incendiary]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_incendiary",
+  "type": "MONSTER",
+  "name": {
+    "str": "incendiary zombie"
+  },
+  "description": "This body has swollen to immense proportions, but still manages to hold itself together with semi-congealed colorless liquid all over its bloated body.  It clumsily moves around, but somehow attacks with a large reserve of highly flammable liquid.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 15,
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 140,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "armor_bash": 10,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 12,
+  "vision_night": 3,
+  "luminance": 0,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 10,
+      "move_cost": 150,
+      "gun_type": "napalm_spit",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "ranges": [
+        [
+          2,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "description": "Incendiary zombie spits a wad of fire!"
+    },
+    {
+      "type": "gun",
+      "cooldown": 15,
+      "move_cost": 150,
+      "gun_type": "napalm_gob",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "ranges": [
+        [
+          2,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "description": "Incendiary zombie vomits up a glob of flamming spit!"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "burn_into": "mon_zombie_scorched",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "FIREPROOF",
+    "FLAMMABLE",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_incendiary",
+  "type": "MONSTER",
+  "name": {
+    "str": "纵火丧尸"
+  },
+  "description": "一只全身大部分都浮肿的丧尸，但是在他臃肿的身体里由于一些半凝固的易燃液体，仍然能够保持着大概的轮廓。它很笨拙地走动，但是会喷出一大滩的易燃液体来攻击。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 15,
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 140,
+  "speed": 75,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "armor_bash": 10,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 12,
+  "vision_night": 3,
+  "luminance": 0,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 10,
+      "move_cost": 150,
+      "gun_type": "napalm_spit",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "ranges": [
+        [
+          2,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "description": "纵火丧尸吐出一团火！"
+    },
+    {
+      "type": "gun",
+      "cooldown": 15,
+      "move_cost": 150,
+      "gun_type": "napalm_gob",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "ranges": [
+        [
+          2,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "description": "纵火丧尸吐出一团燃烧的唾沫！"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "burn_into": "mon_zombie_scorched",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "FIREPROOF",
+    "FLAMMABLE",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

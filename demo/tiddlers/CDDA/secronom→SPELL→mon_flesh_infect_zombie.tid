@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_flesh_infect_zombie
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_flesh_infect_zombie|http://cdda.aloxaf.cn/search?q=mon_flesh_infect_zombie]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_trans.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Note that we are replacing the target, and in this process, we'll need to kill them... then they'll drop their loots (corpse included). There's no spell to prevent that, so flesh variants got a special flag that absorbs items (which then clears dropped items immediately after the infection). Also, the worst result is the unscaled health points of the converted creature, like how the code said: '250 ml' = +1 hp. Average zombie corpse has '62500 ml'. If the converted creature eats a regular corpse, they get 250 bonus health in addition to all dropped items (clothes, misc items, etc.).",
+  "id": "mon_flesh_infect_zombie",
+  "type": "SPELL",
+  "name": {
+    "str": "Infect"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
+  "flags": [
+    "SILENT",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "targeted_monster_ids": [
+    "mon_zombie",
+    "mon_beekeeper",
+    "mon_zombie_cop",
+    "mon_zombie_fireman",
+    "mon_zombie_hazmat",
+    "mon_zombie_resort_dancer",
+    "mon_zombie_resort_bouncer",
+    "mon_zombie_resort_staff",
+    "mon_zombie_rot",
+    "mon_zombie_prisoner",
+    "mon_zombie_grabber",
+    "mon_zombie_runner",
+    "mon_zombie_shady",
+    "mon_zombie_shrieker",
+    "mon_zombie_swimmer",
+    "mon_zombie_technician",
+    "mon_zombie_labsecurity",
+    "mon_zombie_swat"
+  ],
+  "extra_effects": [
+    {
+      "id": "mon_flesh_infect_zombie_yes"
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 5,
+  "max_damage": 25,
+  "damage_type": "biological"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Note that we are replacing the target, and in this process, we'll need to kill them... then they'll drop their loots (corpse included). There's no spell to prevent that, so flesh variants got a special flag that absorbs items (which then clears dropped items immediately after the infection). Also, the worst result is the unscaled health points of the converted creature, like how the code said: '250 ml' = +1 hp. Average zombie corpse has '62500 ml'. If the converted creature eats a regular corpse, they get 250 bonus health in addition to all dropped items (clothes, misc items, etc.).",
+  "id": "mon_flesh_infect_zombie",
+  "type": "SPELL",
+  "name": {
+    "str": "感染"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者将试图通过造成5到25点生物伤害来感染目标。如果目标死了，他们就会屈服于肉体",
+  "flags": [
+    "SILENT",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "targeted_monster_ids": [
+    "mon_zombie",
+    "mon_beekeeper",
+    "mon_zombie_cop",
+    "mon_zombie_fireman",
+    "mon_zombie_hazmat",
+    "mon_zombie_resort_dancer",
+    "mon_zombie_resort_bouncer",
+    "mon_zombie_resort_staff",
+    "mon_zombie_rot",
+    "mon_zombie_prisoner",
+    "mon_zombie_grabber",
+    "mon_zombie_runner",
+    "mon_zombie_shady",
+    "mon_zombie_shrieker",
+    "mon_zombie_swimmer",
+    "mon_zombie_technician",
+    "mon_zombie_labsecurity",
+    "mon_zombie_swat"
+  ],
+  "extra_effects": [
+    {
+      "id": "mon_flesh_infect_zombie_yes"
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 5,
+  "max_damage": 25,
+  "damage_type": "biological"
+}
+```
+

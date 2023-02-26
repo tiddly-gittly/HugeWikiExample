@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: GENERIC secronom_lore_expansion
+title: secronom_lore_expansion→GENERIC→secro_power_armor_flesh_morphed_gun_bonelance
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_flesh_morphed_gun_bonelance|http://cdda.aloxaf.cn/search?q=secro_power_armor_flesh_morphed_gun_bonelance]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Weapons/secro_BOW_armaments_ranged.json
+
+
+!! 原文
+
+```json
+{
+  "type": "GENERIC",
+  "id": "secro_power_armor_flesh_morphed_gun_bonelance",
+  "name": {
+    "str": "<color_light_blue>gunner armament</color> - bone lancer"
+  },
+  "description": "One of your arms have swollen into a mass of flesh, with half of its proportion imitates that of a gun barrel. If fed, lines of strangely-shaped teeth quickly grows from it. Consumes a large amount of flesh to prepare a shot and some bionic power to fire.",
+  "color": "red",
+  "symbol": "(",
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "volume": "1111 ml",
+  "flags": [
+    "BIONIC_WEAPON",
+    "UNBREAKABLE_MELEE",
+    "TRADER_AVOID",
+    "ZERO_WEIGHT"
+  ],
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "secro_pafv_morphed_gun_bonelance_shoot_check",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "GENERIC",
+  "id": "secro_power_armor_flesh_morphed_gun_bonelance",
+  "name": {
+    "str": "<color_light_blue>神枪手武装</color>-骨枪"
+  },
+  "description": "你的一只胳膊已经被一团肉覆盖，其前面一半的部分模仿成了一只枪管。如果你用血肉块喂食它的话，一排奇形怪状的牙齿会在其内部长出。消耗大量的肉来准备射击和一些生化能量来开火。",
+  "color": "red",
+  "symbol": "(",
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "volume": "1111 ml",
+  "flags": [
+    "BIONIC_WEAPON",
+    "UNBREAKABLE_MELEE",
+    "TRADER_AVOID",
+    "ZERO_WEIGHT"
+  ],
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "secro_pafv_morphed_gun_bonelance_shoot_check",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+

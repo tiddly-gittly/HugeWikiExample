@@ -1,0 +1,451 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[57]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "cabin_1"
+  ],
+  "weight": 200,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "........................",
+      "........................",
+      "...%....................",
+      "..######w##++#########..",
+      "..#R  d#sT#  #A DBBD #..",
+      "..#R  c#  #  #A  BB  w..",
+      "..wR   #  =  =       w..",
+      "..wR   #~~#  #########..",
+      "..#R   ####  X  [[[dc#..",
+      "..#R   L##A  #     d #..",
+      "..####=####  #6]]    #..",
+      "..#ttb  uu#  #########..",
+      "..wttb   u#  #a OOO  w..",
+      "..wbb     =  =    rrrw..",
+      "..#      u#  #    rSr#..",
+      "..#1F5V234#  #a   rrr#..",
+      "..###ww####++####ww###..",
+      "..o bbbb             o..",
+      "..-                  -..",
+      "..-                  -..",
+      "..o-------oGGo-------o..",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "cabin_palette"
+    ],
+    "terrain": {
+      "6": "t_floor",
+      "[": "t_floor",
+      "]": "t_floor",
+      "X": "t_door_boarded"
+    },
+    "furniture": {
+      "6": "f_statue",
+      "[": "f_bookcase",
+      "]": "f_counter"
+    },
+    "place_rubble": [
+      {
+        "x": 20,
+        "y": 17,
+        "items": true
+      },
+      {
+        "x": 19,
+        "y": 18,
+        "items": true
+      },
+      {
+        "x": 20,
+        "y": 18,
+        "items": true
+      },
+      {
+        "x": 18,
+        "y": 19,
+        "items": true
+      },
+      {
+        "x": 19,
+        "y": 19,
+        "items": true
+      },
+      {
+        "x": 20,
+        "y": 19,
+        "items": true
+      },
+      {
+        "x": 19,
+        "y": 3,
+        "items": true
+      },
+      {
+        "x": 20,
+        "y": 3,
+        "items": true
+      },
+      {
+        "x": 21,
+        "y": 3,
+        "items": true
+      },
+      {
+        "x": 20,
+        "y": 4,
+        "items": true
+      },
+      {
+        "x": 21,
+        "y": 4,
+        "items": true
+      },
+      {
+        "x": 21,
+        "y": 5,
+        "items": true
+      }
+    ],
+    "items": {
+      "[": {
+        "item": "cleansing_flame_books_postapoc",
+        "chance": 50,
+        "repeat": 3
+      }
+    },
+    "place_loot": [
+      {
+        "group": "homeguns",
+        "x": 7,
+        "y": 9,
+        "chance": 30,
+        "ammo": 90,
+        "magazine": 100
+      },
+      {
+        "item": "note_flame_hint",
+        "x": 15,
+        "y": 10
+      },
+      {
+        "item": "holy_symbol",
+        "x": 15,
+        "y": 10,
+        "chance": 75
+      },
+      {
+        "item": "water_talisman",
+        "x": 15,
+        "y": 10,
+        "chance": 75
+      },
+      {
+        "item": "book_magicfordummies",
+        "x": 16,
+        "y": 10
+      },
+      {
+        "item": "arcanemap",
+        "x": 16,
+        "y": 10
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_ZOMBIE",
+        "x": 11,
+        "y": 12
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_10_b",
+  "object": {
+    "set": [
+      {
+        "point": "terrain",
+        "id": "t_drystone_wall",
+        "x": 3,
+        "y": 16
+      },
+      {
+        "point": "terrain",
+        "id": "t_drystone_wall",
+        "x": 3,
+        "y": 21
+      },
+      {
+        "point": "furniture",
+        "id": "f_arcane_candlestick_lit",
+        "x": 1,
+        "y": 17
+      },
+      {
+        "point": "furniture",
+        "id": "f_arcane_candlestick_lit",
+        "x": 1,
+        "y": 20
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "rural_church_start_scales",
+        "x": 6,
+        "y": 8
+      },
+      {
+        "group": "tools_science",
+        "x": 3,
+        "y": 8,
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "supplies_reagents_lab",
+        "x": 6,
+        "y": 8,
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "bionics",
+        "x": 3,
+        "y": 8,
+        "chance": 25,
+        "repeat": 5
+      },
+      {
+        "group": "metal_workshop",
+        "x": 6,
+        "y": 8,
+        "chance": 75,
+        "repeat": 10
+      }
+    ],
+    "faction_owner": [
+      {
+        "id": "cleansing_flame",
+        "x": 3,
+        "y": 8
+      },
+      {
+        "id": "cleansing_flame",
+        "x": 6,
+        "y": 8
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "cleansing_flame_purifier_merchant",
+        "x": 5,
+        "y": 8
+      },
+      {
+        "class": "cleansing_flame_purifier_rep",
+        "x": 12,
+        "y": 5,
+        "add_trait": "FIX_CF_GM"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "cabin_1"
+  ],
+  "weight": 200,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "........................",
+      "........................",
+      "...%....................",
+      "..######w##++#########..",
+      "..#R  d#sT#  #A DBBD #..",
+      "..#R  c#  #  #A  BB  w..",
+      "..wR   #  =  =       w..",
+      "..wR   #~~#  #########..",
+      "..#R   ####  X  [[[dc#..",
+      "..#R   L##A  #     d #..",
+      "..####=####  #6]]    #..",
+      "..#ttb  uu#  #########..",
+      "..wttb   u#  #a OOO  w..",
+      "..wbb     =  =    rrrw..",
+      "..#      u#  #    rSr#..",
+      "..#1F5V234#  #a   rrr#..",
+      "..###ww####++####ww###..",
+      "..o bbbb             o..",
+      "..-                  -..",
+      "..-                  -..",
+      "..o-------oGGo-------o..",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "cabin_palette"
+    ],
+    "terrain": {
+      "6": "t_floor",
+      "[": "t_floor",
+      "]": "t_floor",
+      "X": "t_door_boarded"
+    },
+    "furniture": {
+      "6": "f_statue",
+      "[": "f_bookcase",
+      "]": "f_counter"
+    },
+    "place_rubble": [
+      {
+        "x": 20,
+        "y": 17,
+        "items": true
+      },
+      {
+        "x": 19,
+        "y": 18,
+        "items": true
+      },
+      {
+        "x": 20,
+        "y": 18,
+        "items": true
+      },
+      {
+        "x": 18,
+        "y": 19,
+        "items": true
+      },
+      {
+        "x": 19,
+        "y": 19,
+        "items": true
+      },
+      {
+        "x": 20,
+        "y": 19,
+        "items": true
+      },
+      {
+        "x": 19,
+        "y": 3,
+        "items": true
+      },
+      {
+        "x": 20,
+        "y": 3,
+        "items": true
+      },
+      {
+        "x": 21,
+        "y": 3,
+        "items": true
+      },
+      {
+        "x": 20,
+        "y": 4,
+        "items": true
+      },
+      {
+        "x": 21,
+        "y": 4,
+        "items": true
+      },
+      {
+        "x": 21,
+        "y": 5,
+        "items": true
+      }
+    ],
+    "items": {
+      "[": {
+        "item": "cleansing_flame_books_postapoc",
+        "chance": 50,
+        "repeat": 3
+      }
+    },
+    "place_loot": [
+      {
+        "group": "homeguns",
+        "x": 7,
+        "y": 9,
+        "chance": 30,
+        "ammo": 90,
+        "magazine": 100
+      },
+      {
+        "item": "note_flame_hint",
+        "x": 15,
+        "y": 10
+      },
+      {
+        "item": "holy_symbol",
+        "x": 15,
+        "y": 10,
+        "chance": 75
+      },
+      {
+        "item": "water_talisman",
+        "x": 15,
+        "y": 10,
+        "chance": 75
+      },
+      {
+        "item": "book_magicfordummies",
+        "x": 16,
+        "y": 10
+      },
+      {
+        "item": "arcanemap",
+        "x": 16,
+        "y": 10
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_ZOMBIE",
+        "x": 11,
+        "y": 12
+      }
+    ]
+  }
+}
+```
+

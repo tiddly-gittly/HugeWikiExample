@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→recover_fatigue
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：recover_fatigue|http://cdda.aloxaf.cn/search?q=recover_fatigue]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/druid.json
+
+
+!! 原文
+
+```json
+{
+  "id": "recover_fatigue",
+  "type": "SPELL",
+  "name": {
+    "str": "Nature's Trance"
+  },
+  "description": "Your connection to living things allows you to go into a magical trance.  This allows you to recover fatige quickly in exchange for mana.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "SILENT",
+    "NO_HANDS"
+  ],
+  "spell_class": "DRUID",
+  "energy_source": "MANA",
+  "effect": "recover_energy",
+  "effect_str": "FATIGUE",
+  "shape": "blast",
+  "base_casting_time": 10000,
+  "min_damage": 50,
+  "damage_increment": 10,
+  "max_damage": 450,
+  "max_level": 35,
+  "base_energy_cost": 500,
+  "energy_increment": 25,
+  "final_energy_cost": 1685,
+  "difficulty": 4
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "recover_fatigue",
+  "type": "SPELL",
+  "name": {
+    "str": "自然冥想"
+  },
+  "description": "你与其它生命的连接允许你进入一种魔法冥想状态。在这种状态下你会消耗魔法，加速疲劳恢复。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "SILENT",
+    "NO_HANDS"
+  ],
+  "spell_class": "DRUID",
+  "energy_source": "MANA",
+  "effect": "recover_energy",
+  "effect_str": "FATIGUE",
+  "shape": "blast",
+  "base_casting_time": 10000,
+  "min_damage": 50,
+  "damage_increment": 10,
+  "max_damage": 450,
+  "max_level": 35,
+  "base_energy_cost": 500,
+  "energy_increment": 25,
+  "final_energy_cost": 1685,
+  "difficulty": 4
+}
+```
+

@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_jolt_bolt_smol
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_jolt_bolt_smol|http://cdda.aloxaf.cn/search?q=mon_zombie_jolt_bolt_smol]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_jolt_bolt_smol",
+  "type": "MONSTER",
+  "name": {
+    "str": "bolt"
+  },
+  "description": "An electric crackling ball, floating freely in the air.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "3 ml",
+  "weight": "3 g",
+  "hp": 4,
+  "speed": 105,
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "○",
+  "color": "cyan",
+  "aggression": 100,
+  "morale": 100,
+  "phase": "GAS",
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "vision_night": 11,
+  "dodge": 6,
+  "vision_day": 11,
+  "luminance": 4,
+  "emit_fields": [
+    "emit_bolt_crackle_smol"
+  ],
+  "special_attacks": [
+    [
+      "DISAPPEAR",
+      75
+    ]
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    20
+  ],
+  "death_function": {
+    "message": "The %s disintegrates!",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "PACIFIST",
+    "ACIDPROOF",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "FLIES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_jolt_bolt_smol",
+  "type": "MONSTER",
+  "name": {
+    "str": "巨型雷电球"
+  },
+  "description": "一个电的噼啪作响的球，在空中自由漂浮。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "3 ml",
+  "weight": "3 g",
+  "hp": 4,
+  "speed": 105,
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "○",
+  "color": "cyan",
+  "aggression": 100,
+  "morale": 100,
+  "phase": "GAS",
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "vision_night": 11,
+  "dodge": 6,
+  "vision_day": 11,
+  "luminance": 4,
+  "emit_fields": [
+    "emit_bolt_crackle_smol"
+  ],
+  "special_attacks": [
+    [
+      "DISAPPEAR",
+      75
+    ]
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    20
+  ],
+  "death_function": {
+    "message": "The %s disintegrates!",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "PACIFIST",
+    "ACIDPROOF",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "FLIES"
+  ]
+}
+```
+

@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_summon_nightwail_shadow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_summon_nightwail_shadow|http://cdda.aloxaf.cn/search?q=mon_summon_nightwail_shadow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_summon_nightwail_shadow",
+  "name": {
+    "str": "Summon Shadow"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster then split chunks of its shadow that chases down targets.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "HOSTILE_SUMMON",
+    "RANDOM_DURATION",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "min_damage": 2,
+  "max_damage": 3,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_zombie_nightwail_shadow",
+  "min_duration": 1800,
+  "max_duration": 3600
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_summon_nightwail_shadow",
+  "name": {
+    "str": "召唤幽影"
+  },
+  "description": "怪物施放的咒语。如果你看到了这个，那就读读这个吧:\n“施法者然后分裂它的大块阴影，追逐目标。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "HOSTILE_SUMMON",
+    "RANDOM_DURATION",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "min_damage": 2,
+  "max_damage": 3,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_zombie_nightwail_shadow",
+  "min_duration": 1800,
+  "max_duration": 3600
+}
+```
+

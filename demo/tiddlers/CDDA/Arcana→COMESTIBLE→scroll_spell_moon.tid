@@ -1,0 +1,61 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→scroll_spell_moon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：scroll_spell_moon|http://cdda.aloxaf.cn/search?q=scroll_spell_moon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "scroll_spell_moon",
+  "copy-from": "scroll_magic_base",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "Pattern Scroll (Cold Ward)",
+    "str_pl": "Pattern Scrolls (Cold Ward)"
+  },
+  "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will protect against the cold, and all its side effects.\"",
+  "price_postapoc": "100 USD",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_pattern_frost_armor",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "scroll_spell_moon",
+  "copy-from": "scroll_magic_base",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "Pattern Scroll (Cold Ward)",
+    "str_pl": "Pattern Scrolls (Cold Ward)"
+  },
+  "description": "这是一幅写在纸上的华丽图案的卷轴，用不自然的顺序描绘出奇怪的几何图案。激活它来探索它的秘密。（记住绑定“施法”键！）\n“此咒语可以抵御寒冷及其所有副作用。”",
+  "price_postapoc": "100 USD",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_pattern_frost_armor",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+

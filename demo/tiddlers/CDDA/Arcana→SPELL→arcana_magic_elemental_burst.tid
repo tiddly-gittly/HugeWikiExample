@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_elemental_burst
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_elemental_burst|http://cdda.aloxaf.cn/search?q=arcana_magic_elemental_burst]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_elemental_burst",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Elemental Burst"
+  },
+  "description": "Magic Sign\nUsing this spell will blast a cone-shaped area with elemental force, leaving random side effects in its wake.  Creatures caught in the center line will take double damage.  Beware the risk of friendly fire!",
+  "message": "\"I am that which resides in all living things, the order hidden within chaos…\"  You cast %s!",
+  "effect": "attack",
+  "shape": "cone",
+  "extra_effects": [
+    {
+      "id": "arcana_magic_elemental_burst_wonder",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_7",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "min_damage": 70,
+  "max_damage": 140,
+  "damage_increment": 7,
+  "damage_type": "pure",
+  "min_range": 8,
+  "max_range": 16,
+  "range_increment": 0.8,
+  "min_aoe": 15,
+  "max_aoe": 30,
+  "aoe_increment": 1.5,
+  "max_level": 10,
+  "difficulty": 70,
+  "skill": "magic",
+  "base_casting_time": 320,
+  "final_casting_time": 160,
+  "casting_time_increment": -16,
+  "energy_source": "STAMINA",
+  "base_energy_cost": 4000,
+  "final_energy_cost": 2000,
+  "energy_increment": -200
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_elemental_burst",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：元素爆发"
+  },
+  "description": "魔法符号\n使用此咒语将爆炸具有随机元素效果的锥形区域。",
+  "message": "“我是存在于所有生物中的，隐藏在混乱中的秩序……”你施放了 %s！",
+  "effect": "attack",
+  "shape": "cone",
+  "extra_effects": [
+    {
+      "id": "arcana_magic_elemental_burst_wonder",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_7",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "min_damage": 70,
+  "max_damage": 140,
+  "damage_increment": 7,
+  "damage_type": "pure",
+  "min_range": 8,
+  "max_range": 16,
+  "range_increment": 0.8,
+  "min_aoe": 15,
+  "max_aoe": 30,
+  "aoe_increment": 1.5,
+  "max_level": 10,
+  "difficulty": 70,
+  "skill": "magic",
+  "base_casting_time": 320,
+  "final_casting_time": 160,
+  "casting_time_increment": -16,
+  "energy_source": "STAMINA",
+  "base_energy_cost": 4000,
+  "final_energy_cost": 2000,
+  "energy_increment": -200
+}
+```
+

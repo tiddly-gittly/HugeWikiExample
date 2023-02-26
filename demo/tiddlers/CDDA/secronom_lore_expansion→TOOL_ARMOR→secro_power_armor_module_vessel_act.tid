@@ -1,0 +1,195 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_module_vessel_act
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_module_vessel_act|http://cdda.aloxaf.cn/search?q=secro_power_armor_module_vessel_act]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armor_modules.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_module_vessel_act",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom module implant \"Vessel\""
+  },
+  "description": "A set of power armor modules that installs a transmission device located on the back of the wearer's head stretching down through the spine. Module implant type \"Vessel\" prevent the user from succumbing to the flesh by using a neural link to unify the suit and its wearer. Uses a built-in UPS.",
+  "weight": "1900 g",
+  "volume": "790 ml",
+  "price": "6200 USD",
+  "price_postapoc": "620 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_frame",
+  "color": "red_white",
+  "power_armor": true,
+  "turns_per_charge": 1,
+  "charges_per_use": 1,
+  "revert_to": "secro_power_armor_module_vessel",
+  "use_action": {
+    "target": "secro_power_armor_module_vessel",
+    "msg": "\"Vessel\" module - <color_red>offline",
+    "type": "transform",
+    "menu_text": "Deactivate \"Vessel\" module"
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "5 seconds",
+              "spell_effects": [
+                {
+                  "id": "secro_power_armor_module_vessel_act_link"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "ammo": "battery",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 500
+      }
+    }
+  ],
+  "flags": [
+    "WATERPROOF",
+    "OUTER",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "NO_TAKEOFF",
+    "RECHARGE",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 10,
+      "coverage": 10,
+      "material": [
+        "superalloy"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_module_vessel_act",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom模块植入“血管”"
+  },
+  "description": "一套动力装甲模块，在佩戴者的后脑勺安装一个传动装置，通过脊柱向下延伸。模块植入式“血管”通过使用神经链接来统一服装及其穿着者，从而防止使用者屈服于肌肉。使用内置不间断电源。",
+  "weight": "1900 g",
+  "volume": "790 ml",
+  "price": "6200 USD",
+  "price_postapoc": "620 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_frame",
+  "color": "red_white",
+  "power_armor": true,
+  "turns_per_charge": 1,
+  "charges_per_use": 1,
+  "revert_to": "secro_power_armor_module_vessel",
+  "use_action": {
+    "target": "secro_power_armor_module_vessel",
+    "msg": "“船只”模块- <color_red>离线",
+    "type": "transform",
+    "menu_text": "停用“容器”模块"
+  },
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "5 seconds",
+              "spell_effects": [
+                {
+                  "id": "secro_power_armor_module_vessel_act_link"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "ammo": "battery",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 500
+      }
+    }
+  ],
+  "flags": [
+    "WATERPROOF",
+    "OUTER",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "NO_TAKEOFF",
+    "RECHARGE",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 10,
+      "coverage": 10,
+      "material": [
+        "superalloy"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

@@ -1,0 +1,131 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_oni_humanoid
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_oni_humanoid|http://cdda.aloxaf.cn/search?q=mon_oni_humanoid]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_oni.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_oni_humanoid",
+  "type": "MONSTER",
+  "name": {
+    "str": "oni"
+  },
+  "copy-from": "mon_oni",
+  "description": "A big, muscular creature in the shape of a human.  Horned, red-skinned and bruttish-looking, you really don't want to get in their path.",
+  "volume": "75 L",
+  "weight": "80 kg",
+  "hp": 105,
+  "speed": 145,
+  "aggression": 5,
+  "morale": 25,
+  "melee_skill": 4,
+  "melee_dice": 5,
+  "melee_dice_sides": 5,
+  "dodge": 2,
+  "anger_triggers": [
+    "HURT"
+  ],
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      67
+    ],
+    [
+      "GRAB",
+      19
+    ],
+    [
+      "oni_smash_9d4",
+      17
+    ]
+  ],
+  "death_drops": [
+    {
+      "group": "oni_humanoid_drops",
+      "prob": 100
+    }
+  ],
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "HEARS",
+    "PATH_AVOID_DANGER_2",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ],
+  "//": "Human-oni hybrid"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_oni_humanoid",
+  "type": "MONSTER",
+  "name": {
+    "str": "oni"
+  },
+  "copy-from": "mon_oni",
+  "description": "一种有角且庞大魁梧的红皮人型生物，看上去很粗犷，你不会想招惹到他们的",
+  "volume": "75 L",
+  "weight": "80 kg",
+  "hp": 105,
+  "speed": 145,
+  "aggression": 5,
+  "morale": 25,
+  "melee_skill": 4,
+  "melee_dice": 5,
+  "melee_dice_sides": 5,
+  "dodge": 2,
+  "anger_triggers": [
+    "HURT"
+  ],
+  "special_attacks": [
+    [
+      "ABSORB_MEAT",
+      67
+    ],
+    [
+      "GRAB",
+      19
+    ],
+    [
+      "oni_smash_9d4",
+      17
+    ]
+  ],
+  "death_drops": [
+    {
+      "group": "oni_humanoid_drops",
+      "prob": 100
+    }
+  ],
+  "flags": [
+    "BASHES",
+    "CAN_OPEN_DOORS",
+    "HEARS",
+    "PATH_AVOID_DANGER_2",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ],
+  "//": "Human-oni hybrid"
+}
+```
+

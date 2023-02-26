@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_MSCI_NOWWHAT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MSCI_NOWWHAT|http://cdda.aloxaf.cn/search?q=TALK_MSCI_NOWWHAT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_MSCI.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MSCI_NOWWHAT",
+  "type": "talk_topic",
+  "//": "This line will now only show up if you've actually turned in the mission, so Router can be fairly certain you haven't somehow beefed it.",
+  "dynamic_line": "Survival, and eventually research.  We'll manage given time.  Keep an eye on Sigma and Lambda while you're at it… talk to them maybe?  I've been busy working on repairs almost constantly, and they're both likely to go stir-crazy if they have nothing to do but sit around all day.  Might help them figure out for themselves what to do.",
+  "responses": [
+    {
+      "text": "We'll see what I can do.",
+      "topic": "TALK_MSCI",
+      "effect": [
+        {
+          "u_add_effect": "router_suggestion",
+          "duration": "PERMANENT"
+        },
+        {
+          "npc_add_effect": "router_suggestion",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MSCI_NOWWHAT",
+  "type": "talk_topic",
+  "//": "This line will now only show up if you've actually turned in the mission, so Router can be fairly certain you haven't somehow beefed it.",
+  "dynamic_line": "生存及最终的研究，我们会安排好时间的。你或许可以与西格玛和兰姆达谈谈？我几乎一直在忙着修理东西，如果他们整天无所事事，就很可能会发疯。也许你能帮助他们自己想出该怎么做。",
+  "responses": [
+    {
+      "text": "我们看看能做些什么。",
+      "topic": "TALK_MSCI",
+      "effect": [
+        {
+          "u_add_effect": "router_suggestion",
+          "duration": "PERMANENT"
+        },
+        {
+          "npc_add_effect": "router_suggestion",
+          "duration": "PERMANENT"
+        }
+      ]
+    }
+  ]
+}
+```
+

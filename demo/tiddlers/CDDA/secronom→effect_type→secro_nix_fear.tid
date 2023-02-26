@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: effect_type secronom
+title: secronom→effect_type→secro_nix_fear
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_nix_fear|http://cdda.aloxaf.cn/search?q=secro_nix_fear]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "secro_nix_fear",
+  "name": [
+    "Afraid",
+    "Scared",
+    "Frightened",
+    "Terrified",
+    "Horrified"
+  ],
+  "desc": [
+    "The dreadful pressence of the nix leaves your body shaking."
+  ],
+  "apply_message": "The nix eats away your mental stability!",
+  "remove_message": "You withdraw from fear.",
+  "int_add_val": 1,
+  "int_dur_factor": "12 seconds",
+  "max_intensity": 5,
+  "int_decay_step": -1,
+  "int_decay_tick": 24,
+  "max_duration": 120,
+  "rating": "bad",
+  "scaling_mods": {
+    "per_mod": [
+      -0.5
+    ],
+    "dex_mod": [
+      -0.25
+    ],
+    "speed_mod": [
+      -1.5
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "secro_nix_fear",
+  "name": [
+    "畏惧",
+    "惊恐",
+    "受惊",
+    "十分惊恐",
+    "惊骇"
+  ],
+  "desc": [
+    "尼克斯可怕的压力使你的身体颤抖。"
+  ],
+  "apply_message": "尼克斯侵蚀了你的精神稳定性！",
+  "remove_message": "你恐惧消退了。",
+  "int_add_val": 1,
+  "int_dur_factor": "12 seconds",
+  "max_intensity": 5,
+  "int_decay_step": -1,
+  "int_decay_tick": 24,
+  "max_duration": 120,
+  "rating": "bad",
+  "scaling_mods": {
+    "per_mod": [
+      -0.5
+    ],
+    "dex_mod": [
+      -0.25
+    ],
+    "speed_mod": [
+      -1.5
+    ]
+  }
+}
+```
+

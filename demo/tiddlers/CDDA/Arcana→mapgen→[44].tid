@@ -1,0 +1,434 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[44]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "arcana_warehouse_lab"
+  ],
+  "weight": 500,
+  "object": {
+    "fill_ter": "t_thconc_floor",
+    "rows": [
+      "FFFFFFFFFFFffffffffFFFFF",
+      "F,,,,,,,,,,________,,,,F",
+      "F,_________________,,,,F",
+      "F,_-WWW----========--,,F",
+      "F,_Wd  |  &        C|,,F",
+      "F,_Wdh +            |3,F",
+      "F,_W6d |           C|,,F",
+      "F,_-WWW--          C|,,F",
+      "F,_|   t|           |,,F",
+      "F,_+    +          C|,,F",
+      "F,,|    |          C|,,F",
+      "F,,|b  b|CC        C|,,F",
+      "F,,|b  b|CC         |,,F",
+      "F,,|c  c|         CC|,,F",
+      "F,,-------CC     CCC|,,F",
+      "F,,|T + s|CCC    CCC|,,F",
+      "F,,---- t-----++-----,,F",
+      "F,,|]]   | ll       |,,F",
+      "F,,|     +         l|,,F",
+      "F,,|SSS  |  cccccc l|,,F",
+      "F,,------------------,,F",
+      "F,,,,,,,,,,,,,,,,,,,,,,F",
+      "F,,,,,,,,,,,,,,,,,,,,,,F",
+      "FFFFFFFFFFFFFFFFFFFFFFFF"
+    ],
+    "terrain": {
+      "3": "t_gutter_downspout",
+      "6": "t_console_broken",
+      " ": "t_thconc_floor",
+      ",": "t_region_groundcover",
+      "_": "t_sidewalk",
+      "-": "t_concrete_wall",
+      "|": "t_concrete_wall",
+      "=": "t_door_metal_locked",
+      "+": "t_door_glass_frosted_lab_c",
+      "&": "t_gates_mech_control",
+      "F": "t_chainfence",
+      "W": "t_reinforced_glass",
+      "f": "t_chaingate_l"
+    },
+    "furniture": {
+      "]": "f_bookcase",
+      "C": [
+        "f_crate_c",
+        "f_cardboard_box"
+      ],
+      "S": "f_sofa",
+      "b": "f_bench",
+      "c": "f_counter",
+      "d": "f_desk",
+      "h": "f_chair",
+      "l": "f_locker",
+      "s": "f_sink",
+      "t": "f_trashcan"
+    },
+    "toilets": {
+      "T": {}
+    },
+    "items": {
+      "C": [
+        {
+          "item": "supplies_reagents_lab",
+          "chance": 50,
+          "repeat": 3
+        },
+        {
+          "item": "lab_magitech_general",
+          "chance": 10
+        }
+      ],
+      "d": {
+        "item": "office",
+        "chance": 75,
+        "repeat": 2
+      },
+      "l": [
+        {
+          "item": "tools_robotics",
+          "chance": 25,
+          "repeat": 3
+        },
+        {
+          "item": "robots",
+          "chance": 10,
+          "repeat": 2
+        },
+        {
+          "item": "supplies_electronics",
+          "chance": 50,
+          "repeat": 3
+        }
+      ],
+      "t": {
+        "item": "trash",
+        "chance": 75,
+        "repeat": 3
+      }
+    },
+    "place_loot": [
+      {
+        "group": "magazines",
+        "x": 4,
+        "y": 13,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "group": "magazines",
+        "x": 7,
+        "y": 13,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "item": "arcane_purifier_intel_2",
+        "x": [
+          12,
+          14
+        ],
+        "y": 19
+      },
+      {
+        "item": "sample_t_substrate",
+        "x": [
+          15,
+          17
+        ],
+        "y": 19
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_turret_rifle",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "monster": "mon_crows_m240",
+        "x": 1,
+        "y": 22
+      },
+      {
+        "monster": "mon_turret_rifle",
+        "x": 22,
+        "y": 22
+      },
+      {
+        "monster": "mon_crows_m240",
+        "x": 22,
+        "y": 1
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_hermit_spawn_npcs",
+  "object": {
+    "place_loot": [
+      {
+        "group": "homeguns",
+        "x": 18,
+        "y": [
+          6,
+          7
+        ],
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "group": "traveler",
+        "x": 18,
+        "y": [
+          6,
+          7
+        ],
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "mansion_books",
+        "x": 18,
+        "y": [
+          6,
+          7
+        ],
+        "chance": 50,
+        "repeat": 4
+      },
+      {
+        "group": "magic_crafting",
+        "x": 18,
+        "y": [
+          6,
+          7
+        ],
+        "chance": 50,
+        "repeat": 6
+      },
+      {
+        "group": "rural_church_start_scales",
+        "x": 18,
+        "y": 7
+      }
+    ],
+    "faction_owner": [
+      {
+        "id": "cleansing_flame",
+        "x": 18,
+        "y": [
+          6,
+          7
+        ]
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "cf_auxillery_mercenary",
+        "x": 14,
+        "y": 12
+      },
+      {
+        "class": "cf_auxillery_mage",
+        "x": 17,
+        "y": 7
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "arcana_warehouse_lab"
+  ],
+  "weight": 500,
+  "object": {
+    "fill_ter": "t_thconc_floor",
+    "rows": [
+      "FFFFFFFFFFFffffffffFFFFF",
+      "F,,,,,,,,,,________,,,,F",
+      "F,_________________,,,,F",
+      "F,_-WWW----========--,,F",
+      "F,_Wd  |  &        C|,,F",
+      "F,_Wdh +            |3,F",
+      "F,_W6d |           C|,,F",
+      "F,_-WWW--          C|,,F",
+      "F,_|   t|           |,,F",
+      "F,_+    +          C|,,F",
+      "F,,|    |          C|,,F",
+      "F,,|b  b|CC        C|,,F",
+      "F,,|b  b|CC         |,,F",
+      "F,,|c  c|         CC|,,F",
+      "F,,-------CC     CCC|,,F",
+      "F,,|T + s|CCC    CCC|,,F",
+      "F,,---- t-----++-----,,F",
+      "F,,|]]   | ll       |,,F",
+      "F,,|     +         l|,,F",
+      "F,,|SSS  |  cccccc l|,,F",
+      "F,,------------------,,F",
+      "F,,,,,,,,,,,,,,,,,,,,,,F",
+      "F,,,,,,,,,,,,,,,,,,,,,,F",
+      "FFFFFFFFFFFFFFFFFFFFFFFF"
+    ],
+    "terrain": {
+      "3": "t_gutter_downspout",
+      "6": "t_console_broken",
+      " ": "t_thconc_floor",
+      ",": "t_region_groundcover",
+      "_": "t_sidewalk",
+      "-": "t_concrete_wall",
+      "|": "t_concrete_wall",
+      "=": "t_door_metal_locked",
+      "+": "t_door_glass_frosted_lab_c",
+      "&": "t_gates_mech_control",
+      "F": "t_chainfence",
+      "W": "t_reinforced_glass",
+      "f": "t_chaingate_l"
+    },
+    "furniture": {
+      "]": "f_bookcase",
+      "C": [
+        "f_crate_c",
+        "f_cardboard_box"
+      ],
+      "S": "f_sofa",
+      "b": "f_bench",
+      "c": "f_counter",
+      "d": "f_desk",
+      "h": "f_chair",
+      "l": "f_locker",
+      "s": "f_sink",
+      "t": "f_trashcan"
+    },
+    "toilets": {
+      "T": {}
+    },
+    "items": {
+      "C": [
+        {
+          "item": "supplies_reagents_lab",
+          "chance": 50,
+          "repeat": 3
+        },
+        {
+          "item": "lab_magitech_general",
+          "chance": 10
+        }
+      ],
+      "d": {
+        "item": "office",
+        "chance": 75,
+        "repeat": 2
+      },
+      "l": [
+        {
+          "item": "tools_robotics",
+          "chance": 25,
+          "repeat": 3
+        },
+        {
+          "item": "robots",
+          "chance": 10,
+          "repeat": 2
+        },
+        {
+          "item": "supplies_electronics",
+          "chance": 50,
+          "repeat": 3
+        }
+      ],
+      "t": {
+        "item": "trash",
+        "chance": 75,
+        "repeat": 3
+      }
+    },
+    "place_loot": [
+      {
+        "group": "magazines",
+        "x": 4,
+        "y": 13,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "group": "magazines",
+        "x": 7,
+        "y": 13,
+        "chance": 50,
+        "repeat": 3
+      },
+      {
+        "item": "arcane_purifier_intel_2",
+        "x": [
+          12,
+          14
+        ],
+        "y": 19
+      },
+      {
+        "item": "sample_t_substrate",
+        "x": [
+          15,
+          17
+        ],
+        "y": 19
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_turret_rifle",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "monster": "mon_crows_m240",
+        "x": 1,
+        "y": 22
+      },
+      {
+        "monster": "mon_turret_rifle",
+        "x": 22,
+        "y": 22
+      },
+      {
+        "monster": "mon_crows_m240",
+        "x": 22,
+        "y": 1
+      }
+    ]
+  }
+}
+```
+

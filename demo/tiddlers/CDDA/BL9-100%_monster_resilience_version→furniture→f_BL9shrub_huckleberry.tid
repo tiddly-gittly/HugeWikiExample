@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9shrub_huckleberry
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9shrub_huckleberry|http://cdda.aloxaf.cn/search?q=f_BL9shrub_huckleberry]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9shrub_huckleberry",
+  "name": "huckleberry bush",
+  "description": "A small bush of huckleberries, often mistaken as blueberries.",
+  "symbol": "#",
+  "color": "light_blue_green",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "coverage": 40,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT"
+  ],
+  "examine_action": "harvest_furn_nectar",
+  "looks_like": "t_shrub_huckleberry",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "summer"
+      ],
+      "id": "shrub_huckleberry_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "items": [
+      {
+        "item": "withered",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9shrub_huckleberry",
+  "name": "越橘丛",
+  "description": "一小丛长着香甜越橘的灌木丛。经常被误认为蓝莓。",
+  "symbol": "#",
+  "color": "light_blue_green",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "coverage": 40,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT"
+  ],
+  "examine_action": "harvest_furn_nectar",
+  "looks_like": "t_shrub_huckleberry",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "summer"
+      ],
+      "id": "shrub_huckleberry_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "items": [
+      {
+        "item": "withered",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

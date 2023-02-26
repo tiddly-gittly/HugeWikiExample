@@ -1,0 +1,1600 @@
+creator: 林一二
+revision: 0
+tags: mapgen vamp_stuff
+title: vamp_stuff→mapgen→[2]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Locations/VampireCove.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "vampcave_corridor2",
+  "weight": 2000,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "######''lcrrrrcl''######",
+      "#####'''''rrrr'''#######",
+      "#####'{/}''rr''#########",
+      "#####'   ''++'#''''''###",
+      "###''''+'''rr'''>+ c'###",
+      "###'^'' 'c rr4c''' ''###",
+      "''''+'' +  rr  +   '####",
+      "'V - c' '  rr  '''+''###",
+      "'  ?  + '  rr  ''uuu'###",
+      "'V - c'5'  rr  ''''''###",
+      "'''''''''  rr  '''######",
+      "####''';   rr   ;'''####",
+      "###''c     rr     c''###",
+      "###'       rr       '###",
+      "##''     6b]]b      ''##",
+      "##'gggggggc==cggggggg'##",
+      "##'gggggggc==cggggggg'##",
+      "##''      b]]b      ''##",
+      "###'       gg       '###",
+      "###''c     gg     c''###",
+      "####'''    gg    '''####",
+      "######'''  gg  '''######",
+      "########'''gg'''########",
+      "##########''''##########"
+    ],
+    "mapping": {
+      "c": {
+        "item": {
+          "item": "2x4"
+        },
+        "furniture": "f_woodstove",
+        "fields": {
+          "field": "fd_fire"
+        }
+      }
+    },
+    "items": {
+      "/": {
+        "item": "vampupgrade",
+        "chance": 50
+      },
+      "{": {
+        "item": "vampfashion",
+        "chance": 25
+      },
+      "}": {
+        "item": "vampgunner",
+        "chance": 25
+      },
+      "u": {
+        "item": "bloodset",
+        "chance": 25
+      }
+    },
+    "terrain": {
+      "8": "t_carpet_red",
+      "9": "t_carpet_red",
+      "#": "t_rock",
+      " ": "t_rock_floor",
+      ">": "t_stairs_down",
+      "<": "t_stairs_up",
+      "l": "t_column",
+      "'": "t_rock_smooth",
+      "+": "t_door_c",
+      "&": "t_door_metal_locked",
+      "r": "t_carpet_red",
+      "b": "t_carpet_purple",
+      "g": "t_carpet_green",
+      "-": "t_bars",
+      "?": "t_door_bar_locked"
+    },
+    "furniture": {
+      ";": "f_statue",
+      "=": "f_slab",
+      "^": "f_grave_monument",
+      "{": "f_bookcase",
+      "}": "f_bookcase",
+      "/": "f_bookcase",
+      "u": "f_locker",
+      "]": "f_counter"
+    },
+    "monster": {
+      "V": {
+        "monster": "mon_zombie_succumbvampire"
+      }
+    },
+    "npcs": {
+      "4": {
+        "class": "VAMP_UNDERSEEKER"
+      },
+      "5": {
+        "class": "VAMP_UNDERGUARD3"
+      },
+      "6": {
+        "class": "VAMP_UNDERCOMMANDO"
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "crypt2"
+  ],
+  "object": {
+    "rows": [
+      "                        ",
+      "      h          h      ",
+      "      d   h  h   d      ",
+      "    h     d  d     h    ",
+      "    d   h      h   d    ",
+      "        d      d        ",
+      "   h                h   ",
+      "   d   h        h   d   ",
+      "       d        d       ",
+      "  h      aaccaa      h  ",
+      "  d   h  abbbba  h   d  ",
+      "      d  abbbba  d      ",
+      "         gbkkbg         ",
+      "      d  abbbba  d      ",
+      "  d   h  abbbba  h   d  ",
+      "  h      aaggaa      h  ",
+      "       d        d       ",
+      "   d   h        h   d   ",
+      "   h                h   ",
+      "        d      d        ",
+      "    d   h      h   d    ",
+      "    h     d  d     h    ",
+      "      d   h  h   d      ",
+      "      h          h      "
+    ],
+    "terrain": {
+      " ": [
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_grass_long",
+        "t_grass_long",
+        "t_grass_long"
+      ],
+      "a": "t_rock",
+      "b": "t_rock_floor",
+      "c": "t_door_c",
+      "d": "t_grass",
+      "e": "t_rock_floor",
+      "f": "t_rock_floor",
+      "g": [
+        "t_window",
+        "t_window",
+        "t_window",
+        "t_window_frame"
+      ],
+      "h": "t_dirtmound",
+      "i": "t_grass",
+      "j": "t_rock_floor",
+      "k": "t_stairs_down",
+      "l": "t_rock_floor",
+      "m": "t_rock_floor"
+    },
+    "furniture": {
+      "d": [
+        "f_grave_monument",
+        "f_grave_stone",
+        "f_grave_head"
+      ],
+      "e": "f_statue",
+      "f": "f_coffin_o",
+      "j": "f_crate_c",
+      "l": "f_table",
+      "m": "f_chair",
+      "b": [
+        "f_null",
+        "f_null",
+        "f_null",
+        "f_null",
+        "f_null",
+        "f_rubble_rock"
+      ]
+    },
+    "place_loot": [
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          10,
+          10
+        ],
+        "y": [
+          2,
+          2
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          13,
+          13
+        ],
+        "y": [
+          2,
+          2
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          8,
+          8
+        ],
+        "y": [
+          4,
+          4
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          15,
+          15
+        ],
+        "y": [
+          4,
+          4
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          7,
+          7
+        ],
+        "y": [
+          7,
+          7
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          16,
+          16
+        ],
+        "y": [
+          7,
+          7
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          17,
+          17
+        ],
+        "y": [
+          10,
+          10
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          6,
+          6
+        ],
+        "y": [
+          10,
+          10
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          6,
+          6
+        ],
+        "y": [
+          14,
+          14
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          17,
+          17
+        ],
+        "y": [
+          14,
+          14
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          7,
+          7
+        ],
+        "y": [
+          17,
+          17
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          8,
+          8
+        ],
+        "y": [
+          20,
+          20
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          10,
+          10
+        ],
+        "y": [
+          22,
+          22
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          13,
+          13
+        ],
+        "y": [
+          22,
+          22
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          15,
+          15
+        ],
+        "y": [
+          20,
+          20
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          16,
+          16
+        ],
+        "y": [
+          17,
+          17
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          6,
+          6
+        ],
+        "y": [
+          1,
+          1
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          4,
+          4
+        ],
+        "y": [
+          3,
+          3
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          3,
+          3
+        ],
+        "y": [
+          6,
+          6
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          2,
+          2
+        ],
+        "y": [
+          9,
+          9
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          2,
+          2
+        ],
+        "y": [
+          15,
+          15
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          3,
+          3
+        ],
+        "y": [
+          18,
+          18
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          4,
+          4
+        ],
+        "y": [
+          21,
+          21
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          6,
+          6
+        ],
+        "y": [
+          23,
+          23
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          17,
+          17
+        ],
+        "y": [
+          23,
+          23
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          19,
+          19
+        ],
+        "y": [
+          21,
+          21
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          20,
+          20
+        ],
+        "y": [
+          18,
+          18
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          21,
+          21
+        ],
+        "y": [
+          15,
+          15
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          21,
+          21
+        ],
+        "y": [
+          9,
+          9
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          20,
+          20
+        ],
+        "y": [
+          6,
+          6
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          19,
+          19
+        ],
+        "y": [
+          3,
+          3
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 10,
+        "repeat": [
+          1
+        ],
+        "x": [
+          17,
+          17
+        ],
+        "y": [
+          1,
+          1
+        ]
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_CRYPTIES",
+        "density": 0.12,
+        "x": [
+          2,
+          21
+        ],
+        "y": [
+          1,
+          23
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "crypt1"
+  ],
+  "object": {
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "      aaaaaagaaaaaaa    ",
+      "      ajjaffbfballla    ",
+      "      ajbabbbbfabmlg    ",
+      "      ajbcbbkbbabbba    ",
+      "      aaaabbbbbaacaa    ",
+      "         abebeba        ",
+      "         agacaga        ",
+      "                        ",
+      "    h h h h   h h h h   ",
+      "    d d d d   d d d d   ",
+      "                        ",
+      "    h h h h   h h h h   ",
+      "    d d d d   d d d d   ",
+      "                        ",
+      "    h h h h   h h h h   ",
+      "    d d d d   d d d d   ",
+      "                        ",
+      "    h h h h   h h h h   ",
+      "    d d d d   d d d d   ",
+      "                        ",
+      "                        "
+    ],
+    "terrain": {
+      " ": [
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_dirt",
+        "t_grass_long",
+        "t_grass_long",
+        "t_grass_long"
+      ],
+      "a": "t_rock",
+      "b": "t_rock_floor",
+      "c": "t_door_c",
+      "d": "t_grass",
+      "e": "t_rock_floor",
+      "f": "t_rock_floor",
+      "g": [
+        "t_window",
+        "t_window",
+        "t_window",
+        "t_window_frame"
+      ],
+      "h": "t_dirtmound",
+      "i": "t_grass",
+      "j": "t_rock_floor",
+      "k": "t_stairs_down",
+      "l": "t_rock_floor",
+      "m": "t_rock_floor"
+    },
+    "furniture": {
+      "d": [
+        "f_grave_monument",
+        "f_grave_stone",
+        "f_grave_head"
+      ],
+      "e": "f_statue",
+      "f": "f_coffin_o",
+      "j": "f_crate_c",
+      "l": "f_table",
+      "m": "f_chair"
+    },
+    "place_loot": [
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          4,
+          4
+        ],
+        "y": [
+          11,
+          11
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          6,
+          6
+        ],
+        "y": [
+          11,
+          11
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          8,
+          8
+        ],
+        "y": [
+          11,
+          11
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          10,
+          10
+        ],
+        "y": [
+          11,
+          11
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          14,
+          14
+        ],
+        "y": [
+          11,
+          11
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          16,
+          16
+        ],
+        "y": [
+          11,
+          11
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          18,
+          18
+        ],
+        "y": [
+          11,
+          11
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          20,
+          20
+        ],
+        "y": [
+          11,
+          11
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          4,
+          4
+        ],
+        "y": [
+          14,
+          14
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          6,
+          6
+        ],
+        "y": [
+          14,
+          14
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          8,
+          8
+        ],
+        "y": [
+          14,
+          14
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          10,
+          10
+        ],
+        "y": [
+          14,
+          14
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          14,
+          14
+        ],
+        "y": [
+          14,
+          14
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          16,
+          16
+        ],
+        "y": [
+          14,
+          14
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          18,
+          18
+        ],
+        "y": [
+          14,
+          14
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          20,
+          20
+        ],
+        "y": [
+          14,
+          14
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          20,
+          20
+        ],
+        "y": [
+          17,
+          17
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          18,
+          18
+        ],
+        "y": [
+          17,
+          17
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          16,
+          16
+        ],
+        "y": [
+          17,
+          17
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          14,
+          14
+        ],
+        "y": [
+          17,
+          17
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          10,
+          10
+        ],
+        "y": [
+          17,
+          17
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          8,
+          8
+        ],
+        "y": [
+          17,
+          17
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          6,
+          6
+        ],
+        "y": [
+          17,
+          17
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          4,
+          4
+        ],
+        "y": [
+          17,
+          17
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          20,
+          20
+        ],
+        "y": [
+          20,
+          20
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          18,
+          18
+        ],
+        "y": [
+          20,
+          20
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          16,
+          16
+        ],
+        "y": [
+          20,
+          20
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          14,
+          14
+        ],
+        "y": [
+          20,
+          20
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          10,
+          10
+        ],
+        "y": [
+          20,
+          20
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          8,
+          8
+        ],
+        "y": [
+          20,
+          20
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          6,
+          6
+        ],
+        "y": [
+          20,
+          20
+        ]
+      },
+      {
+        "group": "grave_memories",
+        "chance": 5,
+        "repeat": [
+          1
+        ],
+        "x": [
+          4,
+          4
+        ],
+        "y": [
+          20,
+          20
+        ]
+      },
+      {
+        "group": "coffin_bones",
+        "chance": 25,
+        "repeat": [
+          1
+        ],
+        "x": [
+          10,
+          11
+        ],
+        "y": [
+          4,
+          4
+        ]
+      },
+      {
+        "group": "coffin_bones",
+        "chance": 25,
+        "repeat": [
+          1
+        ],
+        "x": [
+          13,
+          13
+        ],
+        "y": [
+          4,
+          4
+        ]
+      },
+      {
+        "group": "coffin_bones",
+        "chance": 25,
+        "repeat": [
+          1
+        ],
+        "x": [
+          14,
+          14
+        ],
+        "y": [
+          5,
+          5
+        ]
+      },
+      {
+        "group": "hand_tools",
+        "chance": 50,
+        "repeat": [
+          1
+        ],
+        "x": [
+          18,
+          18
+        ],
+        "y": [
+          5,
+          5
+        ]
+      },
+      {
+        "group": "coffin_bones",
+        "chance": 50,
+        "repeat": [
+          1
+        ],
+        "x": [
+          16,
+          18
+        ],
+        "y": [
+          4,
+          4
+        ]
+      },
+      {
+        "group": "hand_tools",
+        "chance": 25,
+        "repeat": [
+          1
+        ],
+        "x": [
+          7,
+          7
+        ],
+        "y": [
+          4,
+          6
+        ]
+      },
+      {
+        "group": "hand_tools",
+        "chance": 50,
+        "repeat": [
+          1
+        ],
+        "x": [
+          8,
+          8
+        ],
+        "y": [
+          4,
+          4
+        ]
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_CRYPTIES",
+        "density": 0.12,
+        "x": [
+          4,
+          20
+        ],
+        "y": [
+          11,
+          21
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "vampcave_corridor2",
+  "weight": 2000,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "######''lcrrrrcl''######",
+      "#####'''''rrrr'''#######",
+      "#####'{/}''rr''#########",
+      "#####'   ''++'#''''''###",
+      "###''''+'''rr'''>+ c'###",
+      "###'^'' 'c rr4c''' ''###",
+      "''''+'' +  rr  +   '####",
+      "'V - c' '  rr  '''+''###",
+      "'  ?  + '  rr  ''uuu'###",
+      "'V - c'5'  rr  ''''''###",
+      "'''''''''  rr  '''######",
+      "####''';   rr   ;'''####",
+      "###''c     rr     c''###",
+      "###'       rr       '###",
+      "##''     6b]]b      ''##",
+      "##'gggggggc==cggggggg'##",
+      "##'gggggggc==cggggggg'##",
+      "##''      b]]b      ''##",
+      "###'       gg       '###",
+      "###''c     gg     c''###",
+      "####'''    gg    '''####",
+      "######'''  gg  '''######",
+      "########'''gg'''########",
+      "##########''''##########"
+    ],
+    "mapping": {
+      "c": {
+        "item": {
+          "item": "2x4"
+        },
+        "furniture": "f_woodstove",
+        "fields": {
+          "field": "fd_fire"
+        }
+      }
+    },
+    "items": {
+      "/": {
+        "item": "vampupgrade",
+        "chance": 50
+      },
+      "{": {
+        "item": "vampfashion",
+        "chance": 25
+      },
+      "}": {
+        "item": "vampgunner",
+        "chance": 25
+      },
+      "u": {
+        "item": "bloodset",
+        "chance": 25
+      }
+    },
+    "terrain": {
+      "8": "t_carpet_red",
+      "9": "t_carpet_red",
+      "#": "t_rock",
+      " ": "t_rock_floor",
+      ">": "t_stairs_down",
+      "<": "t_stairs_up",
+      "l": "t_column",
+      "'": "t_rock_smooth",
+      "+": "t_door_c",
+      "&": "t_door_metal_locked",
+      "r": "t_carpet_red",
+      "b": "t_carpet_purple",
+      "g": "t_carpet_green",
+      "-": "t_bars",
+      "?": "t_door_bar_locked"
+    },
+    "furniture": {
+      ";": "f_statue",
+      "=": "f_slab",
+      "^": "f_grave_monument",
+      "{": "f_bookcase",
+      "}": "f_bookcase",
+      "/": "f_bookcase",
+      "u": "f_locker",
+      "]": "f_counter"
+    },
+    "monster": {
+      "V": {
+        "monster": "mon_zombie_succumbvampire"
+      }
+    },
+    "npcs": {
+      "4": {
+        "class": "VAMP_UNDERSEEKER"
+      },
+      "5": {
+        "class": "VAMP_UNDERGUARD3"
+      },
+      "6": {
+        "class": "VAMP_UNDERCOMMANDO"
+      }
+    }
+  }
+}
+```
+

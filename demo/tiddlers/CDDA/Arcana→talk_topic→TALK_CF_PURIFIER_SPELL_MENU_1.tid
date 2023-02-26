@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_SPELL_MENU_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_SPELL_MENU_1|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_SPELL_MENU_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_PURIFIER_SPELL_MENU_1",
+  "dynamic_line": "A specialty of the Cleansing Flame's associates and allies who dealt with bionics.  It dumps the energy it calls up directly into power storage, so it's only useful if you have any capacity for bionic power set up.  Not good to use in a fight either, doesn't hurt or anything but your muscles freeze up when it activates.  I'll need 4 Golden Scales to cover everything that a proper ritual will require.",
+  "responses": [
+    {
+      "text": "[GS4] You have a deal, then.",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 4
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 4
+        },
+        {
+          "u_add_trait": "SPELL_CAPACITANCE"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need more Scales for that.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "CF_golden_scale",
+            "count": 4
+          }
+        }
+      },
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "Not right now.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_PURIFIER_SPELL_MENU_1",
+  "dynamic_line": "A specialty of the Cleansing Flame's associates and allies who dealt with bionics.  It dumps the energy it calls up directly into power storage, so it's only useful if you have any capacity for bionic power set up.  Not good to use in a fight either, doesn't hurt or anything but your muscles freeze up when it activates.  I'll need 4 Golden Scales to cover everything that a proper ritual will require.",
+  "responses": [
+    {
+      "text": "[GS4] You have a deal，then.",
+      "condition": {
+        "u_has_items": {
+          "item": "CF_golden_scale",
+          "count": 4
+        }
+      },
+      "effect": [
+        {
+          "u_consume_item": "CF_golden_scale",
+          "count": 4
+        },
+        {
+          "u_add_trait": "SPELL_CAPACITANCE"
+        }
+      ],
+      "topic": "TALK_DONE"
+    },
+    {
+      "text": "I'll need more Scales for that.  Maybe later.",
+      "switch": true,
+      "condition": {
+        "not": {
+          "u_has_items": {
+            "item": "CF_golden_scale",
+            "count": 4
+          }
+        }
+      },
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "Not right now.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+

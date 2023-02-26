@@ -1,0 +1,1416 @@
+creator: 林一二
+revision: 0
+tags: monstergroup Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→monstergroup→[0]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monstergroups/wilderness.json
+
+
+!! 原文
+
+```json
+{
+  "name": "GROUP_CAVE",
+  "type": "monstergroup",
+  "is_animal": true,
+  "monsters": [
+    {
+      "monster": "mon_null",
+      "weight": 15
+    },
+    {
+      "monster": "mon_bat",
+      "weight": 600,
+      "cost_multiplier": 5,
+      "pack_size": [
+        6,
+        32
+      ]
+    },
+    {
+      "monster": "mon_bear",
+      "weight": 100,
+      "cost_multiplier": 10,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_cougar",
+      "weight": 100,
+      "cost_multiplier": 20,
+      "pack_size": [
+        1,
+        2
+      ]
+    },
+    {
+      "monster": "mon_mutant_experimental",
+      "weight": 25,
+      "cost_multiplier": 3
+    },
+    {
+      "monster": "mon_nakedmolerat_giant",
+      "weight": 100,
+      "cost_multiplier": 3
+    },
+    {
+      "monster": "mon_mole_cricket",
+      "weight": 60,
+      "cost_multiplier": 3
+    },
+    {
+      "monster": "mon_woodlouse",
+      "weight": 60,
+      "cost_multiplier": 3,
+      "pack_size": [
+        2,
+        4
+      ]
+    },
+    {
+      "monster": "mon_stag_beetle_larva",
+      "weight": 40,
+      "cost_multiplier": 5
+    },
+    {
+      "group": "GROUP_WILDLIFE_CAVE",
+      "weight": 135,
+      "cost_multiplier": 2,
+      "starts": "2 days"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_EGG_BIRD_WILD",
+  "type": "monstergroup",
+  "default": "mon_grouse_chick",
+  "monsters": [
+    {
+      "monster": "mon_bluejay_chick",
+      "weight": 15
+    },
+    {
+      "monster": "mon_cardinal_chick",
+      "weight": 15
+    },
+    {
+      "monster": "mon_chicken_chick",
+      "weight": 100
+    },
+    {
+      "monster": "mon_crow_chick",
+      "weight": 40
+    },
+    {
+      "monster": "mon_duck_chick",
+      "weight": 150
+    },
+    {
+      "monster": "mon_goose_canadian_chick",
+      "weight": 100
+    },
+    {
+      "monster": "mon_grouse_chick",
+      "weight": 50
+    },
+    {
+      "monster": "mon_icadyptes_chick",
+      "weight": 100
+    },
+    {
+      "monster": "mon_pheasant_chick",
+      "weight": 250
+    },
+    {
+      "monster": "mon_rattlesnake",
+      "weight": 65
+    },
+    {
+      "monster": "mon_raven_chick",
+      "weight": 40
+    },
+    {
+      "monster": "mon_sparrow_chick",
+      "weight": 15
+    },
+    {
+      "monster": "mon_turkey_chick",
+      "weight": 250
+    },
+    {
+      "monster": "mon_dodo_chick",
+      "weight": 100
+    },
+    {
+      "monster": "mon_ectopistes_chick",
+      "weight": 100
+    },
+    {
+      "monster": "mon_weigeltisaurus_baby",
+      "weight": 200
+    }
+  ],
+  "//": "Same as GROUP_EGG_BIRD_WILD but adds Ectopistes and Weigeltisaurus spawns, seems like the extend field is not yet implemented"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_FISH",
+  "type": "monstergroup",
+  "default": "mon_fish_whitefish",
+  "is_animal": true,
+  "monsters": [
+    {
+      "monster": "mon_fish_eel",
+      "weight": 25,
+      "cost_multiplier": 3,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_eel",
+      "weight": 50,
+      "cost_multiplier": 3,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_bowfin",
+      "weight": 25,
+      "cost_multiplier": 3,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_bowfin",
+      "weight": 50,
+      "cost_multiplier": 3,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_bullhead",
+      "weight": 25,
+      "cost_multiplier": 3,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_bullhead",
+      "weight": 50,
+      "cost_multiplier": 3,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_trout",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_trout",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_carp",
+      "weight": 10,
+      "cost_multiplier": 10,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_carp",
+      "weight": 15,
+      "cost_multiplier": 10,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_pike",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_pike",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_sbass",
+      "weight": 25,
+      "cost_multiplier": 3,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_sbass",
+      "weight": 50,
+      "cost_multiplier": 3,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_perch",
+      "weight": 30,
+      "cost_multiplier": 3,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_perch",
+      "weight": 55,
+      "cost_multiplier": 3,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_salmon",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        4,
+        6
+      ]
+    },
+    {
+      "monster": "mon_fish_salmon",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        4,
+        6
+      ]
+    },
+    {
+      "monster": "mon_fish_brown_trout",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_brown_trout",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_brook_trout",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_brook_trout",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_lake_trout",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_lake_trout",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_rainbow_trout",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_rainbow_trout",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_steelhead_trout",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_steelhead_trout",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_kokanee_salmon",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_kokanee_salmon",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_chinook_salmon",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_chinook_salmon",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_coho_salmon",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_coho_salmon",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_white_bass",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_white_bass",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_walleye",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_walleye",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_pumpkinseed",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_pumpkinseed",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_redbreast",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_redbreast",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_green_sunfish",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_green_sunfish",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_longear_sunfish",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_longear_sunfish",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_redear_sunfish",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_redear_sunfish",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_rock_bass",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_rock_bass",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_calico_bass",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_calico_bass",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_warmouth",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_warmouth",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_channel_catfish",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_channel_catfish",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_white_catfish",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_white_catfish",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_muskellunge",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_muskellunge",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_white_sucker",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_white_sucker",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_grass_carp",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_grass_carp",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_fallfish",
+      "weight": 15,
+      "cost_multiplier": 8,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_fallfish",
+      "weight": 20,
+      "cost_multiplier": 8,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_lbass",
+      "weight": 25,
+      "cost_multiplier": 3,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_lbass",
+      "weight": 50,
+      "cost_multiplier": 3,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_pbass",
+      "weight": 25,
+      "cost_multiplier": 3,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_pbass",
+      "weight": 50,
+      "cost_multiplier": 3,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_bluegill",
+      "weight": 25,
+      "cost_multiplier": 3,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_bluegill",
+      "weight": 50,
+      "cost_multiplier": 3,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_whitefish",
+      "weight": 30,
+      "cost_multiplier": 2,
+      "pack_size": [
+        4,
+        6
+      ]
+    },
+    {
+      "monster": "mon_fish_whitefish",
+      "weight": 55,
+      "cost_multiplier": 2,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        4,
+        6
+      ]
+    },
+    {
+      "monster": "mon_fish_pickerel",
+      "weight": 15,
+      "cost_multiplier": 10,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_pickerel",
+      "weight": 20,
+      "cost_multiplier": 10,
+      "conditions": [
+        "DAWN",
+        "DUSK"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_fish_blinky",
+      "weight": 5,
+      "cost_multiplier": 3,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_dragonfly_naiad",
+      "weight": 10,
+      "cost_multiplier": 3,
+      "ends": "3 days",
+      "conditions": [
+        "SPRING",
+        "SUMMER"
+      ],
+      "pack_size": [
+        1,
+        2
+      ]
+    },
+    {
+      "monster": "mon_dragonfly_naiad",
+      "weight": 30,
+      "cost_multiplier": 3,
+      "conditions": [
+        "SPRING",
+        "SUMMER"
+      ],
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_strider_small",
+      "weight": 35,
+      "cost_multiplier": 3,
+      "pack_size": [
+        3,
+        6
+      ]
+    },
+    {
+      "group": "GROUP_WILDLIFE_AQUATIC_FISHABLE",
+      "weight": 350,
+      "cost_multiplier": 1,
+      "pack_size": [
+        1,
+        2
+      ]
+    },
+    {
+      "group": "GROUP_WILDLIFE_AQUATIC_DANGER",
+      "weight": 35,
+      "cost_multiplier": 1,
+      "pack_size": [
+        1,
+        1
+      ]
+    }
+  ],
+  "//": "Same as GROUP_FISH but adds spawning for the last monsters, seems like the extend field is not yet implemented"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_COWS",
+  "type": "monstergroup",
+  "is_safe": true,
+  "monsters": [
+    {
+      "monster": "mon_null",
+      "weight": 700
+    },
+    {
+      "monster": "mon_cow",
+      "weight": 100,
+      "cost_multiplier": 10,
+      "ends": "7 days"
+    },
+    {
+      "monster": "mon_cow",
+      "weight": 50,
+      "cost_multiplier": 5,
+      "starts": "7 days"
+    },
+    {
+      "monster": "mon_cotylorhynchus",
+      "weight": 75,
+      "cost_multiplier": 4,
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_scutosaurus",
+      "weight": 75,
+      "cost_multiplier": 4,
+      "starts": "2 days"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "DUMP_ANIMALS",
+  "type": "monstergroup",
+  "monsters": [
+    {
+      "monster": "mon_null",
+      "weight": 230
+    },
+    {
+      "monster": "mon_fly",
+      "weight": 100
+    },
+    {
+      "monster": "mon_crow",
+      "weight": 75
+    },
+    {
+      "monster": "mon_raven",
+      "weight": 75
+    },
+    {
+      "monster": "mon_pigeon",
+      "weight": 100,
+      "conditions": [
+        "DAWN",
+        "DUSK",
+        "DAY",
+        "SPRING",
+        "SUMMER",
+        "AUTUMN"
+      ]
+    },
+    {
+      "monster": "mon_pigeon",
+      "weight": 50,
+      "conditions": [
+        "DAWN",
+        "DUSK",
+        "DAY",
+        "WINTER"
+      ]
+    },
+    {
+      "monster": "mon_fox_gray",
+      "weight": 15
+    },
+    {
+      "monster": "mon_fox_red",
+      "weight": 15
+    },
+    {
+      "monster": "mon_dog",
+      "weight": 15,
+      "cost_multiplier": 2
+    },
+    {
+      "monster": "mon_black_rat",
+      "weight": 100
+    },
+    {
+      "monster": "mon_opossum",
+      "weight": 15
+    },
+    {
+      "monster": "mon_raccoon",
+      "weight": 15
+    },
+    {
+      "monster": "mon_rattlesnake",
+      "weight": 10
+    },
+    {
+      "monster": "mon_rattlesnake_giant",
+      "weight": 5,
+      "cost_multiplier": 2
+    },
+    {
+      "monster": "mon_worm",
+      "weight": 20
+    },
+    {
+      "monster": "mon_wasp_small",
+      "weight": 10
+    },
+    {
+      "monster": "mon_jinmenken",
+      "weight": 150,
+      "pack_size": [
+        1,
+        3
+      ],
+      "starts": "2 days",
+      "conditions": [
+        "NIGHT",
+        "DUSK"
+      ]
+    }
+  ],
+  "//": "Same as DUMP_ANIMALS but adds spawning for the last monsters, seems like the extend field is not yet implemented"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_EGG_AEGIROCASSIS",
+  "type": "monstergroup",
+  "monsters": [
+    {
+      "monster": "mon_aegirocassis_baby"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_THERIODONTIA_LIGHT",
+  "type": "monstergroup",
+  "monsters": [
+    {
+      "monster": "mon_inostrancevia",
+      "weight": 65,
+      "pack_size": [
+        1,
+        1
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_moschorhinus",
+      "weight": 400,
+      "pack_size": [
+        2,
+        4
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_nochnitsa",
+      "weight": 600,
+      "pack_size": [
+        1,
+        4
+      ],
+      "starts": "2 days",
+      "conditions": [
+        "DUSK",
+        "NIGHT"
+      ]
+    },
+    {
+      "monster": "mon_pristerognathus",
+      "weight": 500,
+      "pack_size": [
+        1,
+        4
+      ],
+      "starts": "2 days"
+    },
+    {
+      "monster": "mon_viatkogorgon",
+      "weight": 800,
+      "pack_size": [
+        3,
+        4
+      ],
+      "starts": "2 days",
+      "conditions": [
+        "DUSK",
+        "NIGHT"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_BAR",
+  "type": "monstergroup",
+  "monsters": [
+    {
+      "monster": "mon_chupacabra_small",
+      "weight": 666,
+      "pack_size": [
+        1,
+        2
+      ],
+      "starts": "2 days"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "name": "GROUP_CAVE",
+  "type": "monstergroup",
+  "is_animal": true,
+  "monsters": [
+    {
+      "monster": "mon_null",
+      "weight": 15
+    },
+    {
+      "monster": "mon_bat",
+      "weight": 600,
+      "cost_multiplier": 5,
+      "pack_size": [
+        6,
+        32
+      ]
+    },
+    {
+      "monster": "mon_bear",
+      "weight": 100,
+      "cost_multiplier": 10,
+      "pack_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "monster": "mon_cougar",
+      "weight": 100,
+      "cost_multiplier": 20,
+      "pack_size": [
+        1,
+        2
+      ]
+    },
+    {
+      "monster": "mon_mutant_experimental",
+      "weight": 25,
+      "cost_multiplier": 3
+    },
+    {
+      "monster": "mon_nakedmolerat_giant",
+      "weight": 100,
+      "cost_multiplier": 3
+    },
+    {
+      "monster": "mon_mole_cricket",
+      "weight": 60,
+      "cost_multiplier": 3
+    },
+    {
+      "monster": "mon_woodlouse",
+      "weight": 60,
+      "cost_multiplier": 3,
+      "pack_size": [
+        2,
+        4
+      ]
+    },
+    {
+      "monster": "mon_stag_beetle_larva",
+      "weight": 40,
+      "cost_multiplier": 5
+    },
+    {
+      "group": "GROUP_WILDLIFE_CAVE",
+      "weight": 135,
+      "cost_multiplier": 2,
+      "starts": "2 days"
+    }
+  ]
+}
+```
+

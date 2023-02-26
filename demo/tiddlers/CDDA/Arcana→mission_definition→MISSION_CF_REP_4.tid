@@ -1,0 +1,273 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_REP_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_REP_4|http://cdda.aloxaf.cn/search?q=MISSION_CF_REP_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_REP_4",
+  "type": "mission_definition",
+  "name": {
+    "str": "Secure Allies For Sofia"
+  },
+  "description": "Arrange for additional allies to join Sofia's group at the rural church.  Most merchants at the refugee center, and possibly other places, might be worth talking to for assistance.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_var": "sofia_allies_secured",
+    "type": "mission",
+    "context": "rural_church",
+    "value": "yes"
+  },
+  "difficulty": 3,
+  "value": 20000,
+  "has_generic_rewards": false,
+  "start": {
+    "effect": [
+      {
+        "u_add_var": "sofia_mission_4",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_4_a"
+            ],
+            "x": 3,
+            "y": 16
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_4_b"
+            ],
+            "x": 3,
+            "y": 0
+          }
+        ]
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_REP_5",
+  "dialogue": {
+    "describe": "Odin, guide my hand…",
+    "offer": "As much work as we've put into securing this place, in time we will need much more than mere shelter.  My hope is to not only preserve the knowledge we've accumulated over the years, but use it to help others.  But for that, we need to work closely with outsiders.  We need more than just intermittent trading with the center's merchant, if we are to attract others to our cause.  Would you be able to help us with this?",
+    "accepted": "Thank you.  Your best bet is to see if there is anyone at the center, or any other communities they are in contact with, who are in need of work.  If we can arrange for merchants or workers to set up here, this gives us another point of contact to attract recruits and foster alliances.",
+    "rejected": "I see.  This is hardly as dire a matter as hunting monsters, but if you change your mind, it would be a great boon to us in the long run.",
+    "advice": "The different merchants and other people in charge of the center might have some assistance they can offer.  It will likely depend on what they seek, but any merchants or soldiers of fortune will provide us a contact to further secure our future.",
+    "inquire": "Has your search gone well?",
+    "success": "Excellent!  We've already been working hard to further build up this sanctum to be a bit more livable, and your arrangement with the others have already provided much-needed labor to help put the finishing touches on the meeting hall.  I'm hopeful that they will be a great help to us, and that working together will make it easier to further ally ourselves with other survivors out there.",
+    "success_lie": "What do you think you're trying to pull?",
+    "failure": "But how…"
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_var": "sofia_mission_4_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "npc_add_var": "sofia_mission_4_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 8
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_4_h"
+            ],
+            "x": 4,
+            "y": 17
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_4_i"
+            ],
+            "x": 4,
+            "y": 0
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_3_roof",
+        "mapgen_update_id": "cf_church_upgrade_4_j"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_REP_4",
+  "type": "mission_definition",
+  "name": {
+    "str": "保护索菲亚的盟友"
+  },
+  "description": "安排更多的盟友加入索菲亚在乡村教堂的团体。难民中心的大多数商人，可能还有其他地方，都值得和他们谈谈寻求帮助。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_var": "sofia_allies_secured",
+    "type": "mission",
+    "context": "rural_church",
+    "value": "yes"
+  },
+  "difficulty": 3,
+  "value": 20000,
+  "has_generic_rewards": false,
+  "start": {
+    "effect": [
+      {
+        "u_add_var": "sofia_mission_4",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_4_a"
+            ],
+            "x": 3,
+            "y": 16
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_4_b"
+            ],
+            "x": 3,
+            "y": 0
+          }
+        ]
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_REP_5",
+  "dialogue": {
+    "describe": "奥丁，牵着我的手…",
+    "offer": "不管我们为保护这个地方付出了多少努力，最终我们需要的不仅仅是避难所。我的希望不仅是保存我们多年积累的知识，而且要用它来帮助别人。但为此，我们需要与外界密切合作。如果我们想吸引其他人加入我们的事业，我们需要的不仅仅是与中心的商人断断续续的交易。你能帮我们吗？",
+    "accepted": "非常感谢。如果有人在你的社区工作，最好看看有谁在你的社区工作。如果我们能安排商人或工人在这里建立，这就为我们提供了另一个联系点，以吸引新兵和建立联盟。",
+    "rejected": "我懂了。这并不像猎杀怪物那么可怕，但如果你改变主意，从长远来看，这对我们是一个巨大的恩惠。",
+    "advice": "不同的商人和其他负责该中心的人可能会提供一些帮助。这可能取决于他们寻求什么，但任何商人或财富之兵都将为我们提供一个联系方式，以进一步保障我们的未来。",
+    "inquire": "你的搜索进展顺利吗？",
+    "success": "太赞了！我们已经在努力建设这个圣殿，使之更适合居住，你和其他人的安排已经提供了急需的劳动力，帮助完成会议厅的装修。我希望他们会对我们有很大的帮助，而且一起工作会使我们更容易与其他幸存者结成同盟。",
+    "success_lie": "你觉得你想拉什么？",
+    "failure": "但是如何…"
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_var": "sofia_mission_4_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "npc_add_var": "sofia_mission_4_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 8
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_4_h"
+            ],
+            "x": 4,
+            "y": 17
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_4_i"
+            ],
+            "x": 4,
+            "y": 0
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_3_roof",
+        "mapgen_update_id": "cf_church_upgrade_4_j"
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: terrain Dorf_Life
+title: Dorf_Life→terrain→t_shrub_tails_pig
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_shrub_tails_pig|http://cdda.aloxaf.cn/search?q=t_shrub_tails_pig]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/cave_terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_shrub_tails_pig",
+  "name": "patch of spiral stalks",
+  "description": "A patch of twisting, greenish stalks with short leaves.",
+  "looks_like": "t_underbrush",
+  "symbol": "#",
+  "color": [
+    "green",
+    "light_green",
+    "light_green",
+    "green"
+  ],
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT"
+  ],
+  "transforms_into": "t_shrub_tails_pig_harvested",
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "id": "tail_pig_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "ter_set": "t_moss_underground",
+    "items": [
+      {
+        "item": "plant_fibre",
+        "count": [
+          1,
+          4
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_shrub_tails_pig",
+  "name": "一片螺旋蘑菇丛",
+  "description": "一片扭曲的、长着短叶的绿色菌柄。",
+  "looks_like": "t_underbrush",
+  "symbol": "#",
+  "color": [
+    "green",
+    "light_green",
+    "light_green",
+    "green"
+  ],
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT"
+  ],
+  "transforms_into": "t_shrub_tails_pig_harvested",
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "id": "tail_pig_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "ter_set": "t_moss_underground",
+    "items": [
+      {
+        "item": "plant_fibre",
+        "count": [
+          1,
+          4
+        ]
+      }
+    ]
+  }
+}
+```
+

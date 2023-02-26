@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: monster_attack vamp_stuff
+title: vamp_stuff→monster_attack→sucking
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sucking|http://cdda.aloxaf.cn/search?q=sucking]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "sucking",
+  "cooldown": 25,
+  "move_cost": 1000,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 3,
+      "armor_penetration": 20,
+      "armor_multiplier": 0.5
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "effects": [
+    {
+      "id": "bleed",
+      "duration": 100,
+      "bp": "torso"
+    },
+    {
+      "id": "grabbed",
+      "duration": 100,
+      "bp": "torso"
+    },
+    {
+      "id": "stunned",
+      "duration": 5
+    }
+  ],
+  "hit_dmg_u": "The %1$s is sucking your torso!",
+  "hit_dmg_npc": "The %1$s is sucking <npcname>'s torso!",
+  "no_dmg_msg_u": "The %1$s tries to suck your torso, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "The %1$s tries to suck <npcname>'s torso, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "sucking",
+  "cooldown": 25,
+  "move_cost": 1000,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 3,
+      "armor_penetration": 20,
+      "armor_multiplier": 0.5
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "effects": [
+    {
+      "id": "bleed",
+      "duration": 100,
+      "bp": "torso"
+    },
+    {
+      "id": "grabbed",
+      "duration": 100,
+      "bp": "torso"
+    },
+    {
+      "id": "stunned",
+      "duration": 5
+    }
+  ],
+  "hit_dmg_u": "%1$s正在吮吸你的躯干！",
+  "hit_dmg_npc": "%1$s正在吮吸<npcname>的躯干！",
+  "no_dmg_msg_u": "%1$s尝试吮吸你的躯干！，但是没有穿透你的护甲！",
+  "no_dmg_msg_npc": "%1$s尝试吮吸<npcname>的躯干！，但是没有穿透护甲！"
+}
+```
+

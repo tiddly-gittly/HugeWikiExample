@@ -1,0 +1,694 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[2]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/saddler_extras.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "mx_secro_saddler_infest",
+  "object": {
+    "place_monsters": [
+      {
+        "monster": "GROUP_SADDLER",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          0,
+          23
+        ],
+        "density": 0.12,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "GROUP_SADDLER_CONTROLLED",
+        "x": [
+          8,
+          16
+        ],
+        "y": [
+          8,
+          16
+        ],
+        "density": 0.04,
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_insect_saddler_brood",
+        "x": [
+          10,
+          14
+        ],
+        "y": [
+          10,
+          14
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "object": {
+    "rows": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "......pppp..............",
+      ".....pllllp.............",
+      "...ppllllllp............",
+      "..pOllppppllp...........",
+      "...ppp...plllp..........",
+      "..........plllp.....p...",
+      "..........plolp....plp..",
+      "..........pllllp....plp.",
+      "...........ppllpp..pllp.",
+      ".............plllpplllp.",
+      "..............pllllllp..",
+      "...............pplllp...",
+      ".................ppp....",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "terrain": {
+      "l": [
+        [
+          "t_secro_rock_floor_flesh",
+          2
+        ],
+        "t_rock_floor"
+      ],
+      "p": [
+        [
+          "t_secro_rock_floor_flesh",
+          2
+        ],
+        "t_rock_floor",
+        "t_rock"
+      ],
+      "o": "t_secro_flesh_cave_entrance_up",
+      "O": "t_secro_flesh_inside_down",
+      ".": [
+        "t_rock",
+        [
+          "t_secro_rock_wall_flesh",
+          2
+        ]
+      ]
+    }
+  },
+  "om_terrain": [
+    "flesh_cavern_bot"
+  ],
+  "type": "mapgen",
+  "weight": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "object": {
+    "fill_ter": "t_dirt",
+    "rows": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "terrain": {
+      ".": [
+        [
+          "t_secro_dirt_flesh",
+          250
+        ],
+        [
+          "t_dirt",
+          375
+        ],
+        [
+          "t_secro_grass_flesh",
+          150
+        ],
+        [
+          "t_grass",
+          225
+        ],
+        [
+          "t_secro_grass_long_flesh",
+          75
+        ],
+        [
+          "t_grass_long",
+          113
+        ],
+        [
+          "t_secro_grass_tall_flesh",
+          25
+        ],
+        [
+          "t_grass_tall",
+          38
+        ],
+        [
+          "t_secro_shrub_flesh",
+          10
+        ],
+        [
+          "t_shrub",
+          15
+        ],
+        [
+          "t_secro_tree_young_flesh",
+          5
+        ],
+        [
+          "t_tree_young",
+          8
+        ],
+        [
+          "t_secro_tree_flesh",
+          2
+        ],
+        [
+          "t_tree",
+          3
+        ],
+        [
+          "t_tree_walnut",
+          3
+        ],
+        [
+          "t_tree_blackjack",
+          3
+        ],
+        [
+          "t_tree_chestnut",
+          3
+        ],
+        [
+          "t_tree_beech",
+          3
+        ],
+        [
+          "t_tree_hazelnut",
+          3
+        ],
+        [
+          "t_tree_cottonwood",
+          3
+        ],
+        [
+          "t_tree_elm",
+          3
+        ],
+        [
+          "t_tree_apple",
+          3
+        ],
+        [
+          "t_tree_pear",
+          3
+        ],
+        [
+          "t_tree_coffee",
+          3
+        ],
+        [
+          "t_tree_cherry",
+          3
+        ],
+        [
+          "t_tree_juniper",
+          3
+        ],
+        [
+          "t_tree_peach",
+          3
+        ],
+        [
+          "t_tree_apricot",
+          3
+        ],
+        [
+          "t_tree_plum",
+          3
+        ],
+        [
+          "t_tree_mulberry",
+          3
+        ],
+        [
+          "t_tree_elderberry",
+          3
+        ],
+        [
+          "t_tree_pine",
+          3
+        ],
+        [
+          "t_tree_birch",
+          3
+        ],
+        [
+          "t_tree_willow",
+          3
+        ],
+        [
+          "t_tree_maple",
+          3
+        ],
+        [
+          "t_tree_hickory",
+          3
+        ]
+      ]
+    },
+    "furniture": {
+      ".": [
+        [
+          "f_null",
+          3500
+        ],
+        [
+          "f_secro_flower_flesh",
+          50
+        ],
+        [
+          "f_secro_veinstalk",
+          25
+        ],
+        [
+          "f_dandelion",
+          75
+        ],
+        [
+          "f_chamomile",
+          75
+        ],
+        [
+          "f_flower_tulip",
+          75
+        ],
+        [
+          "f_flower_spurge",
+          75
+        ],
+        [
+          "f_black_eyed_susan",
+          75
+        ],
+        [
+          "f_lily",
+          75
+        ],
+        [
+          "f_bluebell",
+          75
+        ],
+        [
+          "f_dahlia",
+          75
+        ],
+        [
+          "f_datura",
+          75
+        ],
+        [
+          "f_secro_flesh_gas_emitter",
+          6
+        ],
+        [
+          "f_secro_boulder_small_flesh",
+          5
+        ],
+        [
+          "f_boulder_small",
+          8
+        ],
+        [
+          "f_secro_boulder_medium_flesh",
+          2
+        ],
+        [
+          "f_boulder_medium",
+          3
+        ],
+        [
+          "f_secro_tree_flesh_atk",
+          25
+        ],
+        "f_secro_boulder_large_flesh",
+        [
+          "f_boulder_large",
+          2
+        ]
+      ]
+    }
+  },
+  "om_terrain": [
+    "flesh_forest_far"
+  ],
+  "type": "mapgen",
+  "weight": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "object": {
+    "fill_ter": "t_dirt",
+    "rows": [
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~____~~__~",
+      "___~~~~~~~~~~~__________",
+      "_______~~~______________",
+      "________________________",
+      "_______________....__.._",
+      "...___________..........",
+      ".......___..............",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "flesh_island_edge"
+    ]
+  },
+  "om_terrain": [
+    "flesh_island_vfaraway_straight"
+  ],
+  "type": "mapgen",
+  "weight": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "mx_flesh_biome_extra",
+  "object": {
+    "place_nested": [
+      {
+        "chunks": [
+          "mx_flesh_biome_extra_nested"
+        ],
+        "x": 0,
+        "y": 0
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "type": "mapgen",
+  "update_mapgen_id": "mx_secro_carrion_massacre",
+  "object": {
+    "place_monster": [
+      {
+        "monster": "mon_carrion",
+        "x": [
+          6,
+          17
+        ],
+        "y": [
+          6,
+          17
+        ],
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_carrion_dismantler",
+        "x": [
+          6,
+          17
+        ],
+        "y": [
+          6,
+          17
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "monster": "mon_carrion_orifice",
+        "x": [
+          6,
+          17
+        ],
+        "y": [
+          6,
+          17
+        ],
+        "repeat": [
+          0,
+          2
+        ]
+      },
+      {
+        "monster": "mon_carrion_alpha",
+        "x": [
+          6,
+          17
+        ],
+        "y": [
+          6,
+          17
+        ]
+      },
+      {
+        "monster": "mon_zombie",
+        "x": [
+          6,
+          17
+        ],
+        "y": [
+          6,
+          17
+        ],
+        "repeat": [
+          2,
+          5
+        ]
+      }
+    ],
+    "place_item": [
+      {
+        "item": "corpse_generic_human",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ],
+        "repeat": [
+          4,
+          8
+        ]
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ],
+        "repeat": [
+          30,
+          60
+        ]
+      },
+      {
+        "field": "fd_gibs_flesh",
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          9,
+          14
+        ],
+        "repeat": [
+          16,
+          38
+        ]
+      },
+      {
+        "field": "fd_blood",
+        "x": [
+          5,
+          18
+        ],
+        "y": [
+          5,
+          18
+        ],
+        "repeat": [
+          20,
+          40
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "mx_secro_saddler_infest",
+  "object": {
+    "place_monsters": [
+      {
+        "monster": "GROUP_SADDLER",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          0,
+          23
+        ],
+        "density": 0.12,
+        "repeat": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "GROUP_SADDLER_CONTROLLED",
+        "x": [
+          8,
+          16
+        ],
+        "y": [
+          8,
+          16
+        ],
+        "density": 0.04,
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_insect_saddler_brood",
+        "x": [
+          10,
+          14
+        ],
+        "y": [
+          10,
+          14
+        ]
+      }
+    ]
+  }
+}
+```
+

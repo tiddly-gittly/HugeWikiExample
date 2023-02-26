@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_heat_ward
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_heat_ward|http://cdda.aloxaf.cn/search?q=arcana_magic_heat_ward]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_heat_ward",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Heat Ward"
+  },
+  "description": "Magic Sign\nUsing this spell will grant temporary resistance to heat and smoke.  Direct contact with flame will still cause harm, however.  It can be used on yourself or an ally.",
+  "message": "\"The steel does not fear the flame that tempers it…\"  You cast %s!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_5",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "heat_ward",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "energy_source": "STAMINA",
+  "difficulty": 50,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 240,
+  "final_casting_time": 120,
+  "casting_time_increment": -12,
+  "base_energy_cost": 3000,
+  "final_energy_cost": 1500,
+  "energy_increment": -150,
+  "min_duration": 60000,
+  "max_duration": 120000,
+  "duration_increment": 6000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_heat_ward",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：避热"
+  },
+  "description": "魔法符号\n使用此魔法会暂时抵抗高温和烟雾。但是，直接接触火焰仍会造成伤害。它可以用于你自己或盟友。",
+  "message": "“钢铁不怕燃烧它的火焰……”你施放了 %s！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_5",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "heat_ward",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "energy_source": "STAMINA",
+  "difficulty": 50,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 240,
+  "final_casting_time": 120,
+  "casting_time_increment": -12,
+  "base_energy_cost": 3000,
+  "final_energy_cost": 1500,
+  "energy_increment": -150,
+  "min_duration": 60000,
+  "max_duration": 120000,
+  "duration_increment": 6000
+}
+```
+

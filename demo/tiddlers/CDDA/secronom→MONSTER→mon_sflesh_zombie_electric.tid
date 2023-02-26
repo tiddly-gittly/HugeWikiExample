@@ -1,0 +1,171 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_electric
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_electric|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_electric]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_electric",
+  "type": "MONSTER",
+  "name": {
+    "str": "shocker zombie"
+  },
+  "description": "A human body with pale blue flesh, crackling with electrical energy.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 10,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 106,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 8
+    },
+    {
+      "damage_type": "bash",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 3,
+  "dodge": 2,
+  "luminance": 8,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "SHOCKSTORM",
+      25
+    ]
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    100
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_electric",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_electric",
+  "type": "MONSTER",
+  "name": {
+    "str": "放电丧尸"
+  },
+  "description": "一具身体呈现淡蓝色的丧尸，由于生化插件的异常放电，其周围不断有噼啪的电流环绕。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 10,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 106,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 8
+    },
+    {
+      "damage_type": "bash",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 3,
+  "dodge": 2,
+  "luminance": 8,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "SHOCKSTORM",
+      25
+    ]
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    100
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_electric",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

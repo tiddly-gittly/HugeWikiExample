@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_saddler_infected
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_saddler_infected|http://cdda.aloxaf.cn/search?q=mon_zombie_saddler_infected]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Saddler.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_saddler_infected",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie saddler"
+  },
+  "description": "A corpse with large, skinny head dripping in black goo and a pair of intimidating sharp claws. Unknown to how the saddler managed to manipulate this undead's mind, but surely its senses are duller and the body alterations were amplified unlike the living's.",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "harvest": "zombie",
+  "speed": 55,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 4,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "armor_stab": 2,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      40
+    ],
+    [
+      "scratch",
+      32
+    ]
+  ],
+  "vision_day": 10,
+  "vision_night": 2,
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s dies!\n<color_light_red>The saddler pops off from its host!</color>",
+    "effect": {
+      "id": "mon_saddler_infected_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "GRABS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_saddler_infected",
+  "type": "MONSTER",
+  "name": {
+    "str": "丧尸萨德勒"
+  },
+  "description": "一具大而瘦的头上滴着黑色黏液的尸体，还有一双可怕的利爪。不知道马鞍者是如何操纵这个不死生物的思想的，但它的感官肯定是迟钝的，身体的变化被放大了，不像活人",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 125,
+  "harvest": "zombie",
+  "speed": 55,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 4,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "armor_stab": 2,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      40
+    ],
+    [
+      "scratch",
+      32
+    ]
+  ],
+  "vision_day": 10,
+  "vision_night": 2,
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s dies!\n<color_light_red>The saddler pops off from its host!</color>",
+    "effect": {
+      "id": "mon_saddler_infected_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "GRABS"
+  ]
+}
+```
+

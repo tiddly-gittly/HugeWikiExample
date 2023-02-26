@@ -1,0 +1,219 @@
+creator: 林一二
+revision: 0
+tags: GENERIC Project_Kawaii
+title: Project_Kawaii→GENERIC→kawaii_shelia_off
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kawaii_shelia_off|http://cdda.aloxaf.cn/search?q=kawaii_shelia_off]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Project_Kawaii/weapon.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kawaii_shelia_off",
+  "type": "GENERIC",
+  "symbol": "(",
+  "color": "yellow",
+  "name": {
+    "str": "Cute Shelia (blade form)"
+  },
+  "description": "This device is a complex transforming weapon capable of becoming either a bladed melee weapon, or a powerful bow. This is the first release in the [Cute Combat] series of of stylish protective equipment by the world's leading maid fashion brand Alice & Maria. The weapon itself proved to be quite desirable, as it could transform for engaging foes at both long range and in close combat. However, it ended up earning the nickname 'Nighmarish Shelia' due to its overly complex design making it too expensive for the mass market, and bankrupting its designer.",
+  "price": "99 USD",
+  "material": [
+    "kawaii_amsteel"
+  ],
+  "flags": [
+    "BELTED",
+    "FANCY"
+  ],
+  "techniques": [
+    "WBLOCK_2",
+    "DEF_DISARM"
+  ],
+  "min_strength": 99,
+  "weight": "250 g",
+  "volume": "500 ml",
+  "longest_side": "100 cm",
+  "bashing": 15,
+  "cutting": 35,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "arrow": 1
+      }
+    }
+  ],
+  "to_hit": 5,
+  "weapon_category": [
+    "MEDIUM_SWORDS",
+    "FENCING_WEAPONRY"
+  ],
+  "gun_data": {
+    "skill": "archery",
+    "ammo": [
+      "arrow"
+    ],
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": -12
+    },
+    "range": 0,
+    "clip_size": 1,
+    "valid_mod_locations": [
+      [
+        "underbarrel",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "accessories",
+        2
+      ],
+      [
+        "limbs",
+        1
+      ],
+      [
+        "string",
+        1
+      ],
+      [
+        "riser",
+        1
+      ],
+      [
+        "stabilizer",
+        1
+      ],
+      [
+        "dampening",
+        1
+      ]
+    ]
+  },
+  "use_action": {
+    "ammo_scale": 0,
+    "type": "transform",
+    "msg": "The Shelia expands into its bow form.",
+    "target": "kawaii_shelia_on",
+    "active": false,
+    "moves": 200,
+    "menu_text": "Transform weapon"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kawaii_shelia_off",
+  "type": "GENERIC",
+  "symbol": "(",
+  "color": "yellow",
+  "name": {
+    "str": "特制长弓-谢莉亚 （刀形态）"
+  },
+  "description": "这是一个复杂的变型武器，可以变型为一个刀刃型的近战武器，也可以变型为一把强大的弓。这是世界著名女仆时尚品牌Alice&Maria推出的[可爱·战斗]系列时尚防护装备的首次公开亮相。事实证明，这种武器非常理想，因为它可以在远距离和近距离战斗中按照需求切换成适合与敌人交战的武器。然而，由于其过于复杂的设计使得它的价格极为昂贵, 不适合大众市场，最终得到了一个“Nighmarish Shelia”的绰号，并使其设计师破产了。",
+  "price": "99 USD",
+  "material": [
+    "kawaii_amsteel"
+  ],
+  "flags": [
+    "BELTED",
+    "FANCY"
+  ],
+  "techniques": [
+    "WBLOCK_2",
+    "DEF_DISARM"
+  ],
+  "min_strength": 99,
+  "weight": "250 g",
+  "volume": "500 ml",
+  "longest_side": "100 cm",
+  "bashing": 15,
+  "cutting": 35,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "arrow": 1
+      }
+    }
+  ],
+  "to_hit": 5,
+  "weapon_category": [
+    "MEDIUM_SWORDS",
+    "FENCING_WEAPONRY"
+  ],
+  "gun_data": {
+    "skill": "archery",
+    "ammo": [
+      "arrow"
+    ],
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": -12
+    },
+    "range": 0,
+    "clip_size": 1,
+    "valid_mod_locations": [
+      [
+        "underbarrel",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "accessories",
+        2
+      ],
+      [
+        "limbs",
+        1
+      ],
+      [
+        "string",
+        1
+      ],
+      [
+        "riser",
+        1
+      ],
+      [
+        "stabilizer",
+        1
+      ],
+      [
+        "dampening",
+        1
+      ]
+    ]
+  },
+  "use_action": {
+    "ammo_scale": 0,
+    "type": "transform",
+    "msg": "谢莉亚展开成弓形态。",
+    "target": "kawaii_shelia_on",
+    "active": false,
+    "moves": 200,
+    "menu_text": "变换武器"
+  }
+}
+```
+

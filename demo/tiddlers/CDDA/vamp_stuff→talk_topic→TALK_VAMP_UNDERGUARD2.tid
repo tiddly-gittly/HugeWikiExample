@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_UNDERGUARD2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_UNDERGUARD2|http://cdda.aloxaf.cn/search?q=TALK_VAMP_UNDERGUARD2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Underrefugee/v_ug_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_UNDERGUARD2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "blood_necklace",
+    "yes": "Damn, you managed to wear that.",
+    "no": "Mortal, You look dazzled?"
+  },
+  "responses": [
+    {
+      "text": "Tell me who you are.",
+      "topic": "TALK_VAMP_UNDERGUARD2_introduce",
+      "condition": {
+        "not": {
+          "npc_has_trait": "underguard2talkedcommand"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "underguard2talkedcommand"
+      }
+    },
+    {
+      "text": "Where am I?",
+      "topic": "TALK_VAMP_UNDERGUARD2_direction",
+      "condition": {
+        "not": {
+          "npc_has_trait": "underguard2talkedcata"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "underguard2talkedcata"
+      }
+    },
+    {
+      "text": "I'm vacant for jobs.",
+      "topic": "TALK_VAMP_UNDERGUARD2_job",
+      "condition": {
+        "not": {
+          "npc_has_trait": "underguard2talkedjob"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "underguard2talkedjob"
+      }
+    },
+    {
+      "text": "Bye...",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_UNDERGUARD2",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "blood_necklace",
+    "yes": "该死，你居然穿上了。",
+    "no": "凡人，你看起来眼花缭乱？"
+  },
+  "responses": [
+    {
+      "text": "告诉我你是谁？",
+      "topic": "TALK_VAMP_UNDERGUARD2_introduce",
+      "condition": {
+        "not": {
+          "npc_has_trait": "underguard2talkedcommand"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "underguard2talkedcommand"
+      }
+    },
+    {
+      "text": "我现在在哪里？",
+      "topic": "TALK_VAMP_UNDERGUARD2_direction",
+      "condition": {
+        "not": {
+          "npc_has_trait": "underguard2talkedcata"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "underguard2talkedcata"
+      }
+    },
+    {
+      "text": "我现在没有活干。",
+      "topic": "TALK_VAMP_UNDERGUARD2_job",
+      "condition": {
+        "not": {
+          "npc_has_trait": "underguard2talkedjob"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "underguard2talkedjob"
+      }
+    },
+    {
+      "text": "拜拜。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

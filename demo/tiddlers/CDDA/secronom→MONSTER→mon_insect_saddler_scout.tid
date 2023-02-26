@@ -1,0 +1,153 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_insect_saddler_scout
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_saddler_scout|http://cdda.aloxaf.cn/search?q=mon_insect_saddler_scout]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Saddler.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_insect_saddler_scout",
+  "type": "MONSTER",
+  "name": {
+    "str": "saddler scout"
+  },
+  "description": "A thin, slender saddler, drooling foul substance as it travel in its sharp limbs. Frail, it excels in sprinting all the way to its desired target.",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER"
+  ],
+  "volume": "4750 ml",
+  "weight": "4750 g",
+  "harvest": "zombie",
+  "hp": 30,
+  "speed": 110,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "h",
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "color": "red",
+  "aggression": 50,
+  "morale": 25,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 5,
+  "vision_day": 15,
+  "armor_bash": 1,
+  "special_attacks": [
+    {
+      "type": "leap",
+      "cooldown": 30,
+      "max_range": 4
+    },
+    {
+      "type": "leap",
+      "cooldown": 15,
+      "max_range": 3,
+      "min_range": 2,
+      "allow_no_target": true
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "NO_BREATHE",
+    "CLIMBS",
+    "BASHES",
+    "POISON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_insect_saddler_scout",
+  "type": "MONSTER",
+  "name": {
+    "str": "迅捷异形萨德勒"
+  },
+  "description": "一种纤细的鞍形物，在它锋利的四肢上游动时流着口水。体弱多病，擅长一路冲刺，达到目标。",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER"
+  ],
+  "volume": "4750 ml",
+  "weight": "4750 g",
+  "harvest": "zombie",
+  "hp": 30,
+  "speed": 110,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "h",
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "color": "red",
+  "aggression": 50,
+  "morale": 25,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 5,
+  "vision_day": 15,
+  "armor_bash": 1,
+  "special_attacks": [
+    {
+      "type": "leap",
+      "cooldown": 30,
+      "max_range": 4
+    },
+    {
+      "type": "leap",
+      "cooldown": 15,
+      "max_range": 3,
+      "min_range": 2,
+      "allow_no_target": true
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "NO_BREATHE",
+    "CLIMBS",
+    "BASHES",
+    "POISON"
+  ]
+}
+```
+

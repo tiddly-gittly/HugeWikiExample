@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→archon_gaze_effect
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：archon_gaze_effect|http://cdda.aloxaf.cn/search?q=archon_gaze_effect]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "archon_gaze_effect",
+  "//": "Regular Ward Against Evil will only protect you a bit, you need Holy Ward to actually stop the effect.  This will be relevant once I add an encounter you can access after restoring the ritual blade.",
+  "resist_effects": [
+    "cleric_warding"
+  ],
+  "name": [
+    "Glimpse of The Beyond"
+  ],
+  "desc": [
+    "You caught the attention of something that doesn't belong in this world…"
+  ],
+  "apply_message": "You feel cold inside…",
+  "remove_message": "You feel a faint sense of relief wash over you.",
+  "miss_messages": [
+    [
+      "Afterimages on the edge of your vision distract you.",
+      10
+    ]
+  ],
+  "rating": "bad",
+  "max_duration": "250 m",
+  "max_intensity": 10,
+  "int_dur_factor": "25 m",
+  "base_mods": {
+    "int_mod": [
+      -1.5
+    ],
+    "per_mod": [
+      -1.5
+    ],
+    "vomit_chance": [
+      800
+    ],
+    "health_min": [
+      -6,
+      -5
+    ],
+    "health_chance": [
+      400
+    ],
+    "h_mod_min": [
+      -6,
+      -5
+    ],
+    "h_mod_chance": [
+      400
+    ],
+    "rad_min": [
+      5,
+      4
+    ],
+    "rad_chance": [
+      1000
+    ]
+  },
+  "scaling_mods": {
+    "int_mod": [
+      -0.75,
+      -0.6
+    ],
+    "per_mod": [
+      -0.75,
+      -0.6
+    ],
+    "speed_mod": [
+      -4,
+      -3
+    ],
+    "vomit_chance": [
+      -120,
+      -115
+    ],
+    "health_chance": [
+      -40,
+      -35
+    ],
+    "h_mod_chance": [
+      -40,
+      -35
+    ],
+    "rad_chance": [
+      -100,
+      -95
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "archon_gaze_effect",
+  "//": "Regular Ward Against Evil will only protect you a bit, you need Holy Ward to actually stop the effect.  This will be relevant once I add an encounter you can access after restoring the ritual blade.",
+  "resist_effects": [
+    "cleric_warding"
+  ],
+  "name": [
+    "来自彼端的一瞥"
+  ],
+  "desc": [
+    "你引起了不属于这个世界的东西的注意…"
+  ],
+  "apply_message": "你觉得体内很冷…",
+  "remove_message": "你感到一种淡淡的解脱感笼罩着你。",
+  "miss_messages": [
+    [
+      "你视觉边缘的余像会分散你的注意力。",
+      10
+    ]
+  ],
+  "rating": "bad",
+  "max_duration": "250 m",
+  "max_intensity": 10,
+  "int_dur_factor": "25 m",
+  "base_mods": {
+    "int_mod": [
+      -1.5
+    ],
+    "per_mod": [
+      -1.5
+    ],
+    "vomit_chance": [
+      800
+    ],
+    "health_min": [
+      -6,
+      -5
+    ],
+    "health_chance": [
+      400
+    ],
+    "h_mod_min": [
+      -6,
+      -5
+    ],
+    "h_mod_chance": [
+      400
+    ],
+    "rad_min": [
+      5,
+      4
+    ],
+    "rad_chance": [
+      1000
+    ]
+  },
+  "scaling_mods": {
+    "int_mod": [
+      -0.75,
+      -0.6
+    ],
+    "per_mod": [
+      -0.75,
+      -0.6
+    ],
+    "speed_mod": [
+      -4,
+      -3
+    ],
+    "vomit_chance": [
+      -120,
+      -115
+    ],
+    "health_chance": [
+      -40,
+      -35
+    ],
+    "h_mod_chance": [
+      -40,
+      -35
+    ],
+    "rad_chance": [
+      -100,
+      -95
+    ]
+  }
+}
+```
+

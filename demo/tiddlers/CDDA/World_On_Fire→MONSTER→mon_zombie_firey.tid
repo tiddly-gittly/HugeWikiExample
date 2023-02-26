@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_zombie_firey
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_firey|http://cdda.aloxaf.cn/search?q=mon_zombie_firey]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_firey",
+  "type": "MONSTER",
+  "name": {
+    "str": "volatile zombie"
+  },
+  "description": "A sickly-looking dead one.  Its skin looks especially thin, with a peculiar, colorless fluid flowing through the clearly visible veins.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 5,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 65,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_gray_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "dodge": 1,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 25,
+      "move_cost": 150,
+      "gun_type": "napalm_spit",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "ranges": [
+        [
+          2,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "description": "Volatile zombie ejects firey spit!"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "burn_into": "mon_zombie_scorched",
+  "upgrades": {
+    "half_life": 10,
+    "into": "mon_zombie_fspitter"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "FLAMMABLE",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_firey",
+  "type": "MONSTER",
+  "name": {
+    "str": "脆弱丧尸"
+  },
+  "description": "一个病态的亡灵。它的皮肤看起来特别薄，一种特殊的无色液体流过清晰可见的静脉。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 5,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 65,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_gray_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "dodge": 1,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 25,
+      "move_cost": 150,
+      "gun_type": "napalm_spit",
+      "fake_str": 5,
+      "fake_dex": 4,
+      "fake_per": 6,
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "ranges": [
+        [
+          2,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "description": "易变丧尸喷出火焰般的唾沫！"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "burn_into": "mon_zombie_scorched",
+  "upgrades": {
+    "half_life": 10,
+    "into": "mon_zombie_fspitter"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "FLAMMABLE",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

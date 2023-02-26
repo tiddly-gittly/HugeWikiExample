@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: GUN MST_Extra
+title: MST_Extra→GUN→crossbow_makeshift
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：crossbow_makeshift|http://cdda.aloxaf.cn/search?q=crossbow_makeshift]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/items/ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "crossbow_makeshift",
+  "type": "GUN",
+  "name": {
+    "str": "makeshift crossbow"
+  },
+  "description": "A simple, handmade crossbow of the Skane style, with a wooden peg that is pushed up from underneath to loose the bowstring.  Not as powerful as other crossbow designs, but it is easier to draw the bow back.  Bolts fired from this weapon have a good chance of remaining intact for re-use.",
+  "weight": "2185 g",
+  "volume": "1 L",
+  "price": 1500,
+  "price_postapoc": 1000,
+  "bashing": 7,
+  "material": [
+    "wood"
+  ],
+  "symbol": "(",
+  "color": "green",
+  "ammo": "bolt",
+  "skill": "rifle",
+  "range": 6,
+  "loudness": 8,
+  "//": "What the green fuck have they done to crossbows in DDA?",
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 3
+  },
+  "dispersion": 500,
+  "durability": 5,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "bolt": 1
+      }
+    }
+  ],
+  "reload": 300,
+  "valid_mod_locations": [
+    [
+      "underbarrel",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "accessories",
+      2
+    ]
+  ],
+  "flags": [
+    "WATERPROOF_GUN",
+    "NEVER_JAMS",
+    "PRIMITIVE_RANGED_WEAPON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "crossbow_makeshift",
+  "type": "GUN",
+  "name": {
+    "str": "简易弩"
+  },
+  "description": "一把自制简易弩，可以看出是依据瑞典斯科讷风格自制而成的。有一个木制的弦钮，从下往上拉让弓弦射出。没有其它的弩威力大，但是更容易把弓拉回来。这把弩射出来的箭很高概率会保持完好，可以再次使用。",
+  "weight": "2185 g",
+  "volume": "1 L",
+  "price": 1500,
+  "price_postapoc": 1000,
+  "bashing": 7,
+  "material": [
+    "wood"
+  ],
+  "symbol": "(",
+  "color": "green",
+  "ammo": "bolt",
+  "skill": "rifle",
+  "range": 6,
+  "loudness": 8,
+  "//": "What the green fuck have they done to crossbows in DDA?",
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 3
+  },
+  "dispersion": 500,
+  "durability": 5,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "bolt": 1
+      }
+    }
+  ],
+  "reload": 300,
+  "valid_mod_locations": [
+    [
+      "underbarrel",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "accessories",
+      2
+    ]
+  ],
+  "flags": [
+    "WATERPROOF_GUN",
+    "NEVER_JAMS",
+    "PRIMITIVE_RANGED_WEAPON"
+  ]
+}
+```
+

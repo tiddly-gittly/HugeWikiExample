@@ -1,0 +1,149 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_sheath
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_sheath|http://cdda.aloxaf.cn/search?q=secro_flesh_sheath]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_sheath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_sheath",
+  "type": "ARMOR",
+  "name": {
+    "str": "sheath",
+    "str_pl": "sheathes"
+  },
+  "description": "A fleshy sheath for holding knives and other small blades.  It is easy to use without much practice.  Activate to sheathe/draw a weapon.",
+  "weight": "250 g",
+  "volume": "500 ml",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "|",
+  "looks_like": "scabbard",
+  "color": "red",
+  "sided": true,
+  "pocket_data": [
+    {
+      "magazine_well": "350 ml",
+      "holster": true,
+      "max_contains_volume": "750 ml",
+      "max_contains_weight": "2 kg",
+      "max_item_length": "70 cm",
+      "moves": 20,
+      "flag_restriction": [
+        "SHEATH_KNIFE"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Sheath knife",
+    "holster_msg": "You sheath your %s"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "WATER_FRIENDLY"
+  ],
+  "armor": [
+    {
+      "coverage": 5,
+      "covers": [
+        "leg_l",
+        "leg_r"
+      ],
+      "encumbrance": [
+        0,
+        1
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_sheath",
+  "type": "ARMOR",
+  "name": {
+    "str": "小刀鞘（腰）",
+    "str_pl": "小刀鞘（腰）"
+  },
+  "description": "一个肉质小刀鞘，大小足够容纳匕首，或是类似的小型刀具。它很容易使用，不需要太多练习。使用它来收拔武器。",
+  "weight": "250 g",
+  "volume": "500 ml",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "|",
+  "looks_like": "scabbard",
+  "color": "red",
+  "sided": true,
+  "pocket_data": [
+    {
+      "magazine_well": "350 ml",
+      "holster": true,
+      "max_contains_volume": "750 ml",
+      "max_contains_weight": "2 kg",
+      "max_item_length": "70 cm",
+      "moves": 20,
+      "flag_restriction": [
+        "SHEATH_KNIFE"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "插入刀鞘",
+    "holster_msg": "你将%s收鞘"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "WATER_FRIENDLY"
+  ],
+  "armor": [
+    {
+      "coverage": 5,
+      "covers": [
+        "leg_l",
+        "leg_r"
+      ],
+      "encumbrance": [
+        0,
+        1
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

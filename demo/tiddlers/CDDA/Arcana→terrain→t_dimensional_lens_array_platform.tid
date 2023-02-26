@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: terrain Arcana
+title: Arcana→terrain→t_dimensional_lens_array_platform
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_dimensional_lens_array_platform|http://cdda.aloxaf.cn/search?q=t_dimensional_lens_array_platform]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/furniture_and_terrain/terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_dimensional_lens_array_platform",
+  "looks_like": "t_rad_platform",
+  "name": "dimensional lens array platform",
+  "description": "A slightly-elevated panel overlooking the exotic machinery attached to it, with a ruined control panel hanging from the ceiling.  A faint glow permeates it, as though charged with otherworldly energy left bottled up and unreleased.  There might still be away to activate it, whatever it does.  Or just take it apart and hopefully salvage the reason for coming here.",
+  "symbol": "0",
+  "color": "light_blue",
+  "move_cost": 2,
+  "light_emitted": 5,
+  "trap": "tr_arcane_lab_map_regen_2",
+  "flags": [
+    "TRANSPARENT",
+    "INDOORS",
+    "FLAT"
+  ],
+  "deconstruct": {
+    "ter_set": "t_strconc_floor",
+    "items": [
+      {
+        "item": "dimensional_focus_lens",
+        "count": 1
+      },
+      {
+        "item": "cable",
+        "charges": [
+          8,
+          16
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          8,
+          16
+        ]
+      },
+      {
+        "item": "sheet_metal",
+        "count": [
+          5,
+          10
+        ]
+      },
+      {
+        "item": "alloy_sheet",
+        "count": [
+          12,
+          18
+        ]
+      },
+      {
+        "item": "large_lcd_screen",
+        "count": 1
+      },
+      {
+        "item": "e_scrap",
+        "count": [
+          10,
+          16
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_dimensional_lens_array_platform",
+  "looks_like": "t_rad_platform",
+  "name": "空间聚焦透镜阵列平台",
+  "description": "一个稍高的面板俯视着连接在上面的奇异机器，一个毁坏的控制面板悬挂在天花板上。一种微弱的光芒弥漫其中，仿佛充满了被压抑和释放的超凡脱俗的能量。不管它做什么，都有可能被激活。或者干脆把它拆开，希望能挽回来这里的理由。",
+  "symbol": "0",
+  "color": "light_blue",
+  "move_cost": 2,
+  "light_emitted": 5,
+  "trap": "tr_arcane_lab_map_regen_2",
+  "flags": [
+    "TRANSPARENT",
+    "INDOORS",
+    "FLAT"
+  ],
+  "deconstruct": {
+    "ter_set": "t_strconc_floor",
+    "items": [
+      {
+        "item": "dimensional_focus_lens",
+        "count": 1
+      },
+      {
+        "item": "cable",
+        "charges": [
+          8,
+          16
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          8,
+          16
+        ]
+      },
+      {
+        "item": "sheet_metal",
+        "count": [
+          5,
+          10
+        ]
+      },
+      {
+        "item": "alloy_sheet",
+        "count": [
+          12,
+          18
+        ]
+      },
+      {
+        "item": "large_lcd_screen",
+        "count": 1
+      },
+      {
+        "item": "e_scrap",
+        "count": [
+          10,
+          16
+        ]
+      }
+    ]
+  }
+}
+```
+

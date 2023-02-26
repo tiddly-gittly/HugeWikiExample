@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_nightwail_shadow_enshroud_blind
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_nightwail_shadow_enshroud_blind|http://cdda.aloxaf.cn/search?q=mon_zombie_nightwail_shadow_enshroud_blind]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_nightwail_shadow_enshroud_blind",
+  "type": "SPELL",
+  "name": {
+    "str": "Shadow Enshroud: Blind"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Blinds target for few turns as well.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "nightwail_shadow",
+  "min_aoe": 4,
+  "max_aoe": 4,
+  "min_duration": 100,
+  "max_duration": 200
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_nightwail_shadow_enshroud_blind",
+  "type": "SPELL",
+  "name": {
+    "str": "暗影掩体：盲人"
+  },
+  "description": "怪物施放的咒语。如果你看到了这个，那就读读这个:\n'使目标也失明几个回合'。",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "nightwail_shadow",
+  "min_aoe": 4,
+  "max_aoe": 4,
+  "min_duration": 100,
+  "max_duration": 200
+}
+```
+

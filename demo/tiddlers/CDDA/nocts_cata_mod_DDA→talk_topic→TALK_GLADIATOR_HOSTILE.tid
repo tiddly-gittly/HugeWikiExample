@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_GLADIATOR_HOSTILE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_GLADIATOR_HOSTILE|http://cdda.aloxaf.cn/search?q=TALK_GLADIATOR_HOSTILE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_GLADIATOR.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_GLADIATOR_HOSTILE",
+  "dynamic_line": {
+    "u_has_trait": "PROF_GLADIATOR",
+    "yes": [
+      "That's why you should be glad you're fresh meat.  They move you to Red Team if you survive long enough, and the shit they do to you afterward turns you into an animal.",
+      "They're little better than animals, after all the shit they do to people survive enough fights.",
+      "They stage these fights pitting one cell block against the other, eventually the ones that snap get used to trying to kill anyone else not on their side…"
+    ],
+    "no": [
+      "They're the ones that have been held captive long enough to get used to being a fucking pit dog.",
+      "They're the other team in the fucking death matches these assholes would stage for their amusement.  They're the ones that've been here long enough to actually get into it…",
+      "They've been running this blood sport long enough that some of us can't even remember the surface."
+    ]
+  },
+  "responses": [
+    {
+      "text": "Oh.",
+      "topic": "TALK_GLADIATOR"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_GLADIATOR_HOSTILE",
+  "dynamic_line": {
+    "u_has_trait": "PROF_GLADIATOR",
+    "yes": [
+      "这就是为什么你应该庆幸自己是新人。如果你活得足够长，他们会把你转移到红队，然后他们对你做的那些事会把你变成动物。",
+      "他们比动物好不到哪里去，毕竟他们对人做了那么多坏事使得在战斗中幸存下来。",
+      "他们让牢房的人进行角斗，最终那些崩溃的人会习惯于试图杀死任何不站在他们一边的人......"
+    ],
+    "no": [
+      "他们被囚禁了足够长的时间，已经习惯了做一只该死的舔狗。",
+      "他们是这场该死的死亡竞赛中的另一支队伍，这些混蛋会为他们的娱乐而表演。他们在这里待了很长时间，能够真正进入状态……",
+      "他们进行这项血腥的运动已经很久了，以至于我们中的一些人甚至忘记了地表的模样。"
+    ]
+  },
+  "responses": [
+    {
+      "text": "哦。",
+      "topic": "TALK_GLADIATOR"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,107 @@
+creator: 林一二
+revision: 0
+tags: weather_type Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→weather_type→night_parade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：night_parade|http://cdda.aloxaf.cn/search?q=night_parade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/thex_weather_type.json
+
+
+!! 原文
+
+```json
+{
+  "id": "night_parade",
+  "type": "weather_type",
+  "name": "Misty",
+  "color": "red",
+  "map_color": "h_red",
+  "sym": "x",
+  "ranged_penalty": 0,
+  "sight_penalty": 1,
+  "light_modifier": -10,
+  "sound_attn": 0,
+  "dangerous": true,
+  "precip": "none",
+  "rains": false,
+  "acidic": false,
+  "duration_min": "8 h",
+  "duration_max": "10 h",
+  "required_weathers": [
+    "sunny"
+  ],
+  "condition": {
+    "and": [
+      "is_night",
+      {
+        "compare_int": [
+          {
+            "u_val": "var",
+            "var_name": "night_parade_proc"
+          },
+          "<",
+          {
+            "const": 4
+          }
+        ]
+      }
+    ]
+  },
+  "//": "Should happen ONLY at night !!!",
+  "//2": "Super WIP: this should spawn lots of hostile youkai enemies, probably a mid-endgame weather or triggered event"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "night_parade",
+  "type": "weather_type",
+  "name": "薄雾",
+  "color": "red",
+  "map_color": "h_red",
+  "sym": "x",
+  "ranged_penalty": 0,
+  "sight_penalty": 1,
+  "light_modifier": -10,
+  "sound_attn": 0,
+  "dangerous": true,
+  "precip": "none",
+  "rains": false,
+  "acidic": false,
+  "duration_min": "8 h",
+  "duration_max": "10 h",
+  "required_weathers": [
+    "sunny"
+  ],
+  "condition": {
+    "and": [
+      "is_night",
+      {
+        "compare_int": [
+          {
+            "u_val": "var",
+            "var_name": "night_parade_proc"
+          },
+          "<",
+          {
+            "const": 4
+          }
+        ]
+      }
+    ]
+  },
+  "//": "Should happen ONLY at night !!!",
+  "//2": "Super WIP: this should spawn lots of hostile youkai enemies, probably a mid-endgame weather or triggered event"
+}
+```
+

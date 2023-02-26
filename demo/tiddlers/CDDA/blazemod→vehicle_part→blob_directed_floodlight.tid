@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→blob_directed_floodlight
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：blob_directed_floodlight|http://cdda.aloxaf.cn/search?q=blob_directed_floodlight]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_lights.json
+
+
+!! 原文
+
+```json
+{
+  "id": "blob_directed_floodlight",
+  "type": "vehicle_part",
+  "name": {
+    "str": "gel directed floodlight"
+  },
+  "copy-from": "blob_floodlight",
+  "looks_like": "blob_floodlight",
+  "description": "A very bright, directed light that illuminates a half-circular area outside the vehicle when turned on.  During installation, you can choose what direction to point the light.",
+  "//": "8000lm 100W LED floodlight",
+  "epower": -200,
+  "extend": {
+    "flags": [
+      "HALF_CIRCLE_LIGHT"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "CIRCLE_LIGHT"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "blob_directed_floodlight",
+  "type": "vehicle_part",
+  "name": {
+    "str": "凝胶定向泛光灯"
+  },
+  "copy-from": "blob_floodlight",
+  "looks_like": "blob_floodlight",
+  "description": "一盏十分明亮的定向泛光灯，开启时照亮车外大片半圆形区域。安装时可以选择车灯的方向。",
+  "//": "8000lm 100W LED floodlight",
+  "epower": -200,
+  "extend": {
+    "flags": [
+      "HALF_CIRCLE_LIGHT"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "CIRCLE_LIGHT"
+    ]
+  }
+}
+```
+

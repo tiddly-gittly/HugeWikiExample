@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part MST_Extra
+title: MST_Extra→vehicle_part→log_frame_part
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：log_frame_part|http://cdda.aloxaf.cn/search?q=log_frame_part]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/vehicles/vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "log_frame_part",
+  "looks_like": "frame_wood_cover",
+  "type": "vehicle_part",
+  "name": "log frame",
+  "item": "log_frame_item",
+  "location": "structure",
+  "symbol": "j",
+  "color": "brown",
+  "broken_color": "brown",
+  "durability": 300,
+  "description": "A heavy section of frame carved from a log, serving as a foundation or to keep a raft afloat.  Other vehicle components can be mounted on it.  If all the frames and components of a vehicle are foldable, the vehicle can be folded into a small package and picked up as a normal item.",
+  "folded_volume": 35,
+  "breaks_into": [
+    {
+      "item": "splinter",
+      "count": [
+        20,
+        30
+      ]
+    }
+  ],
+  "flags": [
+    "INITIAL_PART",
+    "FLOATS",
+    "STABLE",
+    "MOUNTABLE",
+    "BOARDABLE"
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_log_frame",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "15 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "survival",
+          2
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "adhesive",
+          1
+        ]
+      ]
+    }
+  },
+  "damage_reduction": {
+    "all": 52
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "log_frame_part",
+  "looks_like": "frame_wood_cover",
+  "type": "vehicle_part",
+  "name": "木架",
+  "item": "log_frame_item",
+  "location": "structure",
+  "symbol": "j",
+  "color": "brown",
+  "broken_color": "brown",
+  "durability": 300,
+  "description": "一个由原木雕刻而成的重型木筏框架，使木筏漂浮。其他载具部件能够安装在它上面。如果构成载具的所有框架和部件都可折叠，那么这辆载具能够被打包折叠并可像普通物品一样被拾取带走。",
+  "folded_volume": 35,
+  "breaks_into": [
+    {
+      "item": "splinter",
+      "count": [
+        20,
+        30
+      ]
+    }
+  ],
+  "flags": [
+    "INITIAL_PART",
+    "FLOATS",
+    "STABLE",
+    "MOUNTABLE",
+    "BOARDABLE"
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_log_frame",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "survival",
+          1
+        ]
+      ],
+      "time": "15 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "survival",
+          2
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "adhesive",
+          1
+        ]
+      ]
+    }
+  },
+  "damage_reduction": {
+    "all": 52
+  }
+}
+```
+

@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_swarmer_segway
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_swarmer_segway|http://cdda.aloxaf.cn/search?q=mon_zombie_swarmer_segway]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Swarmer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_swarmer_segway",
+  "copy-from": "mon_zombie_swarmer",
+  "type": "MONSTER",
+  "name": "swarmer",
+  "description": "A normal humanoid body, almost in its decaying state.",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      3
+    ],
+    [
+      "scratch",
+      32
+    ],
+    [
+      "swarmerzed_bite_weak",
+      10
+    ],
+    [
+      "GRAB_DRAG",
+      40
+    ]
+  ],
+  "upgrades": {
+    "half_life": 1,
+    "into_group": "GROUP_SWARMERSEGWAY_UPGRADE",
+    "//": "Quickly branches out into a better secrozed mutant (evolves after four days by default)"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_swarmer_segway",
+  "copy-from": "mon_zombie_swarmer",
+  "type": "MONSTER",
+  "name": "集群丧尸",
+  "description": "一个正常的人形身体，几乎处于腐烂状态。",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      3
+    ],
+    [
+      "scratch",
+      32
+    ],
+    [
+      "swarmerzed_bite_weak",
+      10
+    ],
+    [
+      "GRAB_DRAG",
+      40
+    ]
+  ],
+  "upgrades": {
+    "half_life": 1,
+    "into_group": "GROUP_SWARMERSEGWAY_UPGRADE",
+    "//": "Quickly branches out into a better secrozed mutant (evolves after four days by default)"
+  }
+}
+```
+

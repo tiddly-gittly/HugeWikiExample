@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: material secronom_lore_expansion
+title: secronom_lore_expansion→material→secro_flesh_reinforced
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_reinforced|http://cdda.aloxaf.cn/search?q=secro_flesh_reinforced]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_mat.json
+
+
+!! 原文
+
+```json
+{
+  "type": "material",
+  "id": "secro_flesh_reinforced",
+  "name": "Bio-organic Flesh",
+  "copy-from": "flesh",
+  "edible": false,
+  "rotting": false,
+  "reinforces": true,
+  "soft": true,
+  "breathability": "SECOND_SKIN",
+  "bash_resist": 5,
+  "cut_resist": 3,
+  "bullet_resist": 3,
+  "acid_resist": 3,
+  "fire_resist": 1,
+  "elec_resist": 0,
+  "chip_resist": 99,
+  "repaired_with": "secro_flesh_reinforced",
+  "dmg_adj": [
+    "bruised",
+    "mutilated",
+    "badly mutilated",
+    "thoroughly mutilated"
+  ],
+  "bash_dmg_verb": "bruised",
+  "cut_dmg_verb": "sliced",
+  "//": "Make it immune to burning away.",
+  "burn_data": [
+    {
+      "immune": true
+    },
+    {
+      "immune": true
+    },
+    {
+      "immune": true
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "material",
+  "id": "secro_flesh_reinforced",
+  "name": "生物有机肉",
+  "copy-from": "flesh",
+  "edible": false,
+  "rotting": false,
+  "reinforces": true,
+  "soft": true,
+  "breathability": "SECOND_SKIN",
+  "bash_resist": 5,
+  "cut_resist": 3,
+  "bullet_resist": 3,
+  "acid_resist": 3,
+  "fire_resist": 1,
+  "elec_resist": 0,
+  "chip_resist": 99,
+  "repaired_with": "secro_flesh_reinforced",
+  "dmg_adj": [
+    "划痕",
+    "残缺",
+    "血肉模糊",
+    "彻底肢解"
+  ],
+  "bash_dmg_verb": "划痕",
+  "cut_dmg_verb": "割裂",
+  "//": "Make it immune to burning away.",
+  "burn_data": [
+    {
+      "immune": true
+    },
+    {
+      "immune": true
+    },
+    {
+      "immune": true
+    }
+  ]
+}
+```
+

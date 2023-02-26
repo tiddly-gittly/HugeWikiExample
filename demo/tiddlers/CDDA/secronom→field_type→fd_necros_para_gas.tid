@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_necros_para_gas
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_necros_para_gas|http://cdda.aloxaf.cn/search?q=fd_necros_para_gas]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_necros_para_gas",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "hazy cloud",
+      "sym": "8",
+      "dangerous": true,
+      "translucency": 1,
+      "effects": [
+        {
+          "effect_id": "secro_necros_para",
+          "body_part": "torso",
+          "min_duration": "1 seconds",
+          "max_duration": "5 seconds"
+        }
+      ]
+    },
+    {
+      "name": "neurotoxic gas",
+      "color": "light_green",
+      "transparent": false,
+      "translucency": 10,
+      "effects": [
+        {
+          "effect_id": "secro_necros_para",
+          "body_part": "torso",
+          "min_duration": "6 seconds",
+          "max_duration": "10 seconds"
+        }
+      ]
+    },
+    {
+      "name": "thick neurotoxic gas",
+      "color": "green",
+      "translucency": 0,
+      "effects": [
+        {
+          "effect_id": "secro_necros_para",
+          "body_part": "torso",
+          "min_duration": "11 seconds",
+          "max_duration": "20 seconds"
+        }
+      ]
+    }
+  ],
+  "decay_amount_factor": 5,
+  "gas_absorption_factor": 15,
+  "percent_spread": 30,
+  "outdoor_age_speedup": "5 seconds",
+  "dirty_transparency_cache": true,
+  "has_fume": true,
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        15
+      ]
+    ]
+  },
+  "priority": 8,
+  "half_life": "1 minutes",
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_necros_para_gas",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "hazy cloud",
+      "sym": "8",
+      "dangerous": true,
+      "translucency": 1,
+      "effects": [
+        {
+          "effect_id": "secro_necros_para",
+          "body_part": "torso",
+          "min_duration": "1 seconds",
+          "max_duration": "5 seconds"
+        }
+      ]
+    },
+    {
+      "name": "neurotoxic gas",
+      "color": "light_green",
+      "transparent": false,
+      "translucency": 10,
+      "effects": [
+        {
+          "effect_id": "secro_necros_para",
+          "body_part": "torso",
+          "min_duration": "6 seconds",
+          "max_duration": "10 seconds"
+        }
+      ]
+    },
+    {
+      "name": "thick neurotoxic gas",
+      "color": "green",
+      "translucency": 0,
+      "effects": [
+        {
+          "effect_id": "secro_necros_para",
+          "body_part": "torso",
+          "min_duration": "11 seconds",
+          "max_duration": "20 seconds"
+        }
+      ]
+    }
+  ],
+  "decay_amount_factor": 5,
+  "gas_absorption_factor": 15,
+  "percent_spread": 30,
+  "outdoor_age_speedup": "5 seconds",
+  "dirty_transparency_cache": true,
+  "has_fume": true,
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        15
+      ]
+    ]
+  },
+  "priority": 8,
+  "half_life": "1 minutes",
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true
+}
+```
+

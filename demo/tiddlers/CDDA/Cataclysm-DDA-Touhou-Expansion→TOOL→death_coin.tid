@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: TOOL Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→TOOL→death_coin
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：death_coin|http://cdda.aloxaf.cn/search?q=death_coin]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/magic/death_coin.json
+
+
+!! 原文
+
+```json
+{
+  "id": "death_coin",
+  "type": "TOOL",
+  "name": {
+    "str": "death coin",
+    "str_pl": "death coins"
+  },
+  "description": "A circle of metal, the size of a coin.  Touching it makes you want to procrastinate.",
+  "volume": "1 ml",
+  "weight": "8 g",
+  "longest_side": "30 cm",
+  "price_postapoc": 25000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "bad",
+    "length": "hand",
+    "surface": "any"
+  },
+  "bashing": 1,
+  "material": [
+    "brass"
+  ],
+  "symbol": "/",
+  "looks_like": "coin_dollar",
+  "color": "yellow",
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 3
+      }
+    }
+  ],
+  "relic_data": {
+    "charge_info": {
+      "regenerate_ammo": true,
+      "recharge_type": "periodic",
+      "time": "20 s"
+    },
+    "passive_effects": [
+      {
+        "has": "HELD",
+        "condition": "ALWAYS",
+        "mutations": [
+          "death_coin_mut"
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "death_blink",
+      "no_fail": true,
+      "level": 1
+    }
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NO_RELOAD",
+    "NO_UNLOAD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "death_coin",
+  "type": "TOOL",
+  "name": {
+    "str": "death coin",
+    "str_pl": "death coins"
+  },
+  "description": "一块环状的金属，与一枚硬币一般大小，戴上它会让你想要摆烂",
+  "volume": "1 ml",
+  "weight": "8 g",
+  "longest_side": "30 cm",
+  "price_postapoc": 25000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "bad",
+    "length": "hand",
+    "surface": "any"
+  },
+  "bashing": 1,
+  "material": [
+    "brass"
+  ],
+  "symbol": "/",
+  "looks_like": "coin_dollar",
+  "color": "yellow",
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 3
+      }
+    }
+  ],
+  "relic_data": {
+    "charge_info": {
+      "regenerate_ammo": true,
+      "recharge_type": "periodic",
+      "time": "20 s"
+    },
+    "passive_effects": [
+      {
+        "has": "HELD",
+        "condition": "ALWAYS",
+        "mutations": [
+          "death_coin_mut"
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "death_blink",
+      "no_fail": true,
+      "level": 1
+    }
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NO_RELOAD",
+    "NO_UNLOAD"
+  ]
+}
+```
+

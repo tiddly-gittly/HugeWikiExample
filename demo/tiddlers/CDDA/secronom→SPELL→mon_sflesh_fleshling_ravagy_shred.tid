@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_fleshling_ravagy_shred
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_ravagy_shred|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_ravagy_shred]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_fleshling_ravagy_shred",
+  "type": "SPELL",
+  "name": {
+    "str": "Shred"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's bone outgrowth stretches towards adjacent targets, dealing cutting damage.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_TARGET"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_range": 2,
+  "max_range": 2,
+  "min_damage": 4,
+  "max_damage": 8,
+  "damage_type": "cut"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_fleshling_ravagy_shred",
+  "type": "SPELL",
+  "name": {
+    "str": "切碎"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者的骨骼向邻近目标伸展，造成切割伤害。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_TARGET"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_range": 2,
+  "max_range": 2,
+  "min_damage": 4,
+  "max_damage": 8,
+  "damage_type": "cut"
+}
+```
+

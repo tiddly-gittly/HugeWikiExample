@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→oozle_seat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：oozle_seat|http://cdda.aloxaf.cn/search?q=oozle_seat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "oozle_seat",
+  "type": "vehicle_part",
+  "name": {
+    "str": "ooze seat"
+  },
+  "item": "oozle",
+  "location": "center",
+  "symbol": "#",
+  "broken_symbol": "*",
+  "color": "green",
+  "broken_color": "green",
+  "durability": 500,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "description": "A living blob, formed into a comfy couch.  You can sit here.",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "SEAT",
+    "BED",
+    "BOARDABLE",
+    "BELTABLE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "oozle_seat",
+  "type": "vehicle_part",
+  "name": {
+    "str": "软泥座椅"
+  },
+  "item": "oozle",
+  "location": "center",
+  "symbol": "#",
+  "broken_symbol": "*",
+  "color": "green",
+  "broken_color": "green",
+  "durability": 500,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "description": "一只活的变形怪变成的座椅。",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "SEAT",
+    "BED",
+    "BOARDABLE",
+    "BELTABLE"
+  ]
+}
+```
+

@@ -1,0 +1,781 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[34]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_electronics"
+  ],
+  "weight": 75,
+  "object": {
+    "fill_ter": "t_linoleum_gray",
+    "rows": [
+      "zs______,______,______sz",
+      "zs______,______,______sz",
+      "zs______,______,______sz",
+      "zs______,______,______sz",
+      "zs______,______,______sz",
+      "zs______,______,______sz",
+      "ssssssssssssssssssssssss",
+      "_--5555--5555--+--55555_",
+      "_|.CCCC..CCCC.^.^|rrrr8_",
+      "_8r.............r|L---|_",
+      "_8r..CCCCrr......x...^8_",
+      "_8r..###rr1......#q...8_",
+      "_|r..............#...r|_",
+      "_|...######......#c..r|_",
+      "_|r..######..-------I-|_",
+      "_8r..........|EEEt$..F|_",
+      "_8r..xxxwyw..|E.c...cE8_",
+      "_8r..xxxywy..I.......E8_",
+      "_|..........^|.##llll^|_",
+      "_|D---D|------L----55-|_",
+      "4|.S|S.|d<dsssssss______",
+      "_|T#|#T|_dd_____________",
+      "_-------________________",
+      "________________________"
+    ],
+    "terrain": {
+      "1": "t_column",
+      "4": "t_gutter_downspout",
+      "5": "t_window_bars_alarm",
+      "8": "t_window_bars_alarm",
+      "%": "t_region_shrub_decorative",
+      "+": "t_door_metal_pickable",
+      ",": "t_pavement_y",
+      "-": "t_wall_w",
+      ".": "t_linoleum_gray",
+      "D": "t_door_c",
+      "H": "t_window",
+      "I": "t_door_locked_interior",
+      "L": "t_door_metal_pickable",
+      "W": "t_curtains",
+      "_": "t_pavement",
+      "d": "t_pavement",
+      "s": "t_sidewalk",
+      "z": "t_region_shrub_decorative",
+      "|": "t_wall_w",
+      "<": "t_ladder_up"
+    },
+    "furniture": {
+      "$": "f_safe_l",
+      "#": "f_counter",
+      "C": "f_displaycase",
+      "E": "f_desk",
+      "F": "f_fridge",
+      "S": "f_sink",
+      "^": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ],
+      "c": "f_chair",
+      "d": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ],
+      "l": "f_locker",
+      "q": "f_stool",
+      "r": "f_rack",
+      "t": "f_trashcan",
+      "w": "f_washer",
+      "x": "f_console_broken",
+      "y": "f_dryer"
+    },
+    "toilets": {
+      "T": {}
+    },
+    "place_items": [
+      {
+        "item": "fridgesnacks",
+        "x": 21,
+        "y": 15,
+        "chance": 80,
+        "repeat": 8
+      },
+      {
+        "item": "elecsto_cameras",
+        "x": [
+          3,
+          6
+        ],
+        "y": 8,
+        "chance": 80,
+        "repeat": 2
+      },
+      {
+        "item": "bionics_common",
+        "x": [
+          9,
+          12
+        ],
+        "y": 8,
+        "chance": 60,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_lights",
+        "x": 2,
+        "y": [
+          9,
+          12
+        ],
+        "chance": 80,
+        "repeat": 3
+      },
+      {
+        "item": "elecsto_pcs",
+        "x": [
+          5,
+          8
+        ],
+        "y": 10,
+        "chance": 85,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_stor",
+        "x": [
+          9,
+          10
+        ],
+        "y": 10,
+        "chance": 75,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_entapl",
+        "x": [
+          5,
+          7
+        ],
+        "y": 11,
+        "chance": 70,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_persele",
+        "x": [
+          8,
+          9
+        ],
+        "y": 11,
+        "chance": 70,
+        "repeat": 3
+      },
+      {
+        "item": "elecsto_homapl",
+        "x": [
+          5,
+          10
+        ],
+        "y": [
+          13,
+          14
+        ],
+        "chance": 90,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_books",
+        "x": 2,
+        "y": 14,
+        "chance": 75,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_diy",
+        "x": 2,
+        "y": [
+          15,
+          17
+        ],
+        "chance": 70,
+        "repeat": 2
+      },
+      {
+        "item": "bionics_common",
+        "x": [
+          18,
+          21
+        ],
+        "y": 8,
+        "chance": 60,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_displ",
+        "x": [
+          18,
+          21
+        ],
+        "y": 8,
+        "chance": 70,
+        "repeat": 4
+      },
+      {
+        "item": "electronics",
+        "x": 21,
+        "y": [
+          16,
+          17
+        ],
+        "chance": 70,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_diy",
+        "x": [
+          15,
+          20
+        ],
+        "y": 18,
+        "chance": 65,
+        "repeat": 2
+      },
+      {
+        "item": "electronics",
+        "x": [
+          17,
+          20
+        ],
+        "y": 18,
+        "chance": 85,
+        "repeat": 2
+      },
+      {
+        "item": "electronics",
+        "x": [
+          14,
+          17
+        ],
+        "y": 14,
+        "chance": 85,
+        "repeat": 2
+      },
+      {
+        "item": "snacks",
+        "x": 16,
+        "y": 9,
+        "chance": 85
+      },
+      {
+        "item": "magazines",
+        "x": 16,
+        "y": 9,
+        "chance": 60,
+        "repeat": 4
+      },
+      {
+        "item": "electronics",
+        "x": 21,
+        "y": [
+          12,
+          13
+        ],
+        "chance": 85,
+        "repeat": 2
+      },
+      {
+        "item": "trash",
+        "x": 17,
+        "y": 15,
+        "chance": 65
+      },
+      {
+        "item": "trash",
+        "x": [
+          15,
+          17
+        ],
+        "y": [
+          20,
+          21
+        ],
+        "chance": 80
+      },
+      {
+        "item": "tools_science",
+        "x": 17,
+        "y": 15,
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "supplies_electronics",
+        "x": 17,
+        "y": 15,
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "lab_magitech_other",
+        "x": 17,
+        "y": 15,
+        "chance": 10
+      }
+    ],
+    "place_item": [
+      {
+        "item": "television",
+        "x": 16,
+        "y": 14,
+        "chance": 30
+      },
+      {
+        "item": "laptop",
+        "x": 14,
+        "y": 15,
+        "chance": 70
+      },
+      {
+        "item": "multitool",
+        "x": 21,
+        "y": 17,
+        "chance": 60
+      },
+      {
+        "item": "recipe_lab_elec",
+        "x": 17,
+        "y": 15,
+        "chance": 5
+      },
+      {
+        "item": "recipe_lab_arcana",
+        "x": 17,
+        "y": 15,
+        "chance": 5
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_electric",
+          "mon_zombie_scientist"
+        ],
+        "x": [
+          17,
+          19
+        ],
+        "y": [
+          16,
+          17
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_4_j",
+  "object": {
+    "set": [
+      {
+        "point": "furniture",
+        "id": "f_vent_pipe",
+        "x": 4,
+        "y": 4
+      },
+      {
+        "line": "furniture",
+        "id": "f_chimney",
+        "x": 8,
+        "x2": 9,
+        "y": 5,
+        "y2": 5
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_electronics"
+  ],
+  "weight": 75,
+  "object": {
+    "fill_ter": "t_linoleum_gray",
+    "rows": [
+      "zs______,______,______sz",
+      "zs______,______,______sz",
+      "zs______,______,______sz",
+      "zs______,______,______sz",
+      "zs______,______,______sz",
+      "zs______,______,______sz",
+      "ssssssssssssssssssssssss",
+      "_--5555--5555--+--55555_",
+      "_|.CCCC..CCCC.^.^|rrrr8_",
+      "_8r.............r|L---|_",
+      "_8r..CCCCrr......x...^8_",
+      "_8r..###rr1......#q...8_",
+      "_|r..............#...r|_",
+      "_|...######......#c..r|_",
+      "_|r..######..-------I-|_",
+      "_8r..........|EEEt$..F|_",
+      "_8r..xxxwyw..|E.c...cE8_",
+      "_8r..xxxywy..I.......E8_",
+      "_|..........^|.##llll^|_",
+      "_|D---D|------L----55-|_",
+      "4|.S|S.|d<dsssssss______",
+      "_|T#|#T|_dd_____________",
+      "_-------________________",
+      "________________________"
+    ],
+    "terrain": {
+      "1": "t_column",
+      "4": "t_gutter_downspout",
+      "5": "t_window_bars_alarm",
+      "8": "t_window_bars_alarm",
+      "%": "t_region_shrub_decorative",
+      "+": "t_door_metal_pickable",
+      ",": "t_pavement_y",
+      "-": "t_wall_w",
+      ".": "t_linoleum_gray",
+      "D": "t_door_c",
+      "H": "t_window",
+      "I": "t_door_locked_interior",
+      "L": "t_door_metal_pickable",
+      "W": "t_curtains",
+      "_": "t_pavement",
+      "d": "t_pavement",
+      "s": "t_sidewalk",
+      "z": "t_region_shrub_decorative",
+      "|": "t_wall_w",
+      "<": "t_ladder_up"
+    },
+    "furniture": {
+      "$": "f_safe_l",
+      "#": "f_counter",
+      "C": "f_displaycase",
+      "E": "f_desk",
+      "F": "f_fridge",
+      "S": "f_sink",
+      "^": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ],
+      "c": "f_chair",
+      "d": [
+        "f_dumpster",
+        "f_recycle_bin"
+      ],
+      "l": "f_locker",
+      "q": "f_stool",
+      "r": "f_rack",
+      "t": "f_trashcan",
+      "w": "f_washer",
+      "x": "f_console_broken",
+      "y": "f_dryer"
+    },
+    "toilets": {
+      "T": {}
+    },
+    "place_items": [
+      {
+        "item": "fridgesnacks",
+        "x": 21,
+        "y": 15,
+        "chance": 80,
+        "repeat": 8
+      },
+      {
+        "item": "elecsto_cameras",
+        "x": [
+          3,
+          6
+        ],
+        "y": 8,
+        "chance": 80,
+        "repeat": 2
+      },
+      {
+        "item": "bionics_common",
+        "x": [
+          9,
+          12
+        ],
+        "y": 8,
+        "chance": 60,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_lights",
+        "x": 2,
+        "y": [
+          9,
+          12
+        ],
+        "chance": 80,
+        "repeat": 3
+      },
+      {
+        "item": "elecsto_pcs",
+        "x": [
+          5,
+          8
+        ],
+        "y": 10,
+        "chance": 85,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_stor",
+        "x": [
+          9,
+          10
+        ],
+        "y": 10,
+        "chance": 75,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_entapl",
+        "x": [
+          5,
+          7
+        ],
+        "y": 11,
+        "chance": 70,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_persele",
+        "x": [
+          8,
+          9
+        ],
+        "y": 11,
+        "chance": 70,
+        "repeat": 3
+      },
+      {
+        "item": "elecsto_homapl",
+        "x": [
+          5,
+          10
+        ],
+        "y": [
+          13,
+          14
+        ],
+        "chance": 90,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_books",
+        "x": 2,
+        "y": 14,
+        "chance": 75,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_diy",
+        "x": 2,
+        "y": [
+          15,
+          17
+        ],
+        "chance": 70,
+        "repeat": 2
+      },
+      {
+        "item": "bionics_common",
+        "x": [
+          18,
+          21
+        ],
+        "y": 8,
+        "chance": 60,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_displ",
+        "x": [
+          18,
+          21
+        ],
+        "y": 8,
+        "chance": 70,
+        "repeat": 4
+      },
+      {
+        "item": "electronics",
+        "x": 21,
+        "y": [
+          16,
+          17
+        ],
+        "chance": 70,
+        "repeat": 2
+      },
+      {
+        "item": "elecsto_diy",
+        "x": [
+          15,
+          20
+        ],
+        "y": 18,
+        "chance": 65,
+        "repeat": 2
+      },
+      {
+        "item": "electronics",
+        "x": [
+          17,
+          20
+        ],
+        "y": 18,
+        "chance": 85,
+        "repeat": 2
+      },
+      {
+        "item": "electronics",
+        "x": [
+          14,
+          17
+        ],
+        "y": 14,
+        "chance": 85,
+        "repeat": 2
+      },
+      {
+        "item": "snacks",
+        "x": 16,
+        "y": 9,
+        "chance": 85
+      },
+      {
+        "item": "magazines",
+        "x": 16,
+        "y": 9,
+        "chance": 60,
+        "repeat": 4
+      },
+      {
+        "item": "electronics",
+        "x": 21,
+        "y": [
+          12,
+          13
+        ],
+        "chance": 85,
+        "repeat": 2
+      },
+      {
+        "item": "trash",
+        "x": 17,
+        "y": 15,
+        "chance": 65
+      },
+      {
+        "item": "trash",
+        "x": [
+          15,
+          17
+        ],
+        "y": [
+          20,
+          21
+        ],
+        "chance": 80
+      },
+      {
+        "item": "tools_science",
+        "x": 17,
+        "y": 15,
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "supplies_electronics",
+        "x": 17,
+        "y": 15,
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "lab_magitech_other",
+        "x": 17,
+        "y": 15,
+        "chance": 10
+      }
+    ],
+    "place_item": [
+      {
+        "item": "television",
+        "x": 16,
+        "y": 14,
+        "chance": 30
+      },
+      {
+        "item": "laptop",
+        "x": 14,
+        "y": 15,
+        "chance": 70
+      },
+      {
+        "item": "multitool",
+        "x": 21,
+        "y": 17,
+        "chance": 60
+      },
+      {
+        "item": "recipe_lab_elec",
+        "x": 17,
+        "y": 15,
+        "chance": 5
+      },
+      {
+        "item": "recipe_lab_arcana",
+        "x": 17,
+        "y": 15,
+        "chance": 5
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_electric",
+          "mon_zombie_scientist"
+        ],
+        "x": [
+          17,
+          19
+        ],
+        "y": [
+          16,
+          17
+        ]
+      }
+    ]
+  }
+}
+```
+

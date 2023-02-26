@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_jaw
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_jaw|http://cdda.aloxaf.cn/search?q=mon_sflesh_jaw]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_biome.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_jaw",
+  "type": "MONSTER",
+  "name": {
+    "str": "jawed flesh"
+  },
+  "description": "An oddly formed orifice that has emerged as an outgrowth of the flesh, with rows of razor-sharp bones surrounding the gap.",
+  "default_faction": "secro_flesh",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 45,
+  "speed": 80,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "☀",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 6,
+  "armor_stab": 4,
+  "special_attacks": [
+    {
+      "cooldown": 10,
+      "damage_max_instance": [
+        {
+          "amount": 9,
+          "armor_multiplier": 0.2,
+          "damage_type": "bash"
+        },
+        {
+          "amount": 3,
+          "armor_multiplier": 0.6,
+          "damage_type": "stab"
+        }
+      ],
+      "effects": [
+        {
+          "bp": "torso",
+          "duration": 1000,
+          "id": "grabbed"
+        }
+      ],
+      "type": "bite"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "NOHEAD",
+    "IMMOBILE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_jaw",
+  "type": "MONSTER",
+  "name": {
+    "str": "血肉颚兽"
+  },
+  "description": "一种形状奇特的孔口，是肉的一种生长物，周围有一排剃刀般锋利的骨头。",
+  "default_faction": "secro_flesh",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 45,
+  "speed": 80,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "☀",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 6,
+  "armor_stab": 4,
+  "special_attacks": [
+    {
+      "cooldown": 10,
+      "damage_max_instance": [
+        {
+          "amount": 9,
+          "armor_multiplier": 0.2,
+          "damage_type": "bash"
+        },
+        {
+          "amount": 3,
+          "armor_multiplier": 0.6,
+          "damage_type": "stab"
+        }
+      ],
+      "effects": [
+        {
+          "bp": "torso",
+          "duration": 1000,
+          "id": "grabbed"
+        }
+      ],
+      "type": "bite"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "NOHEAD",
+    "IMMOBILE"
+  ]
+}
+```
+

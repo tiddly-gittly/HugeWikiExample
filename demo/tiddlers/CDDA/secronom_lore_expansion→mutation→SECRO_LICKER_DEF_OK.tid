@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_LICKER_DEF_OK
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_LICKER_DEF_OK|http://cdda.aloxaf.cn/search?q=SECRO_LICKER_DEF_OK]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_LICKER_DEF_OK",
+  "name": {
+    "str": "Tongue Hypertrophy"
+  },
+  "points": 4,
+  "visibility": 6,
+  "ugliness": 8,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "Your tongue has hardened and swollen a bit. You find conversations tricky and its larger scale has greatly reduced their sensing capability, yet their resistance helps alot in blocking incoming damage.",
+  "types": [
+    "MUZZLE"
+  ],
+  "prereqs": [
+    "SECRO_LICKER_DEF"
+  ],
+  "dodge_modifier": 0.0175,
+  "hearing_modifier": 0.01,
+  "social_modifiers": {
+    "persuade": -10,
+    "lie": -10
+  },
+  "armor": [
+    {
+      "parts": "head",
+      "cut": 2,
+      "bash": 4,
+      "stab": 2
+    }
+  ],
+  "attacks": [
+    {
+      "attack_text_u": "You lick %s",
+      "attack_text_npc": "%1$s licks %2$s",
+      "body_part": "mouth",
+      "chance": 50,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.8
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_LICKER_DEF_OK",
+  "name": {
+    "str": "舌肥大"
+  },
+  "points": 4,
+  "visibility": 6,
+  "ugliness": 8,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "你的舌头有点硬，有点肿。你会发现对话很棘手，而且它更大的规模大大降低了它们的感知能力，然而它们的抵抗力有助于阻止来袭的伤害。",
+  "types": [
+    "MUZZLE"
+  ],
+  "prereqs": [
+    "SECRO_LICKER_DEF"
+  ],
+  "dodge_modifier": 0.0175,
+  "hearing_modifier": 0.01,
+  "social_modifiers": {
+    "persuade": -10,
+    "lie": -10
+  },
+  "armor": [
+    {
+      "parts": "head",
+      "cut": 2,
+      "bash": 4,
+      "stab": 2
+    }
+  ],
+  "attacks": [
+    {
+      "attack_text_u": "You lick %s",
+      "attack_text_npc": "%1$s licks %2$s",
+      "body_part": "mouth",
+      "chance": 50,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.8
+      }
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

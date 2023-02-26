@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_flesh_infect_zougar_yes
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_flesh_infect_zougar_yes|http://cdda.aloxaf.cn/search?q=mon_flesh_infect_zougar_yes]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_trans.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_flesh_infect_zougar_yes",
+  "name": {
+    "str": "Infect"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster infects the target, turning them into a crimson horror.'",
+  "flags": [
+    "SILENT",
+    "HOSTILE_SUMMON",
+    "PERMANENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 1,
+  "max_range": 1,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_sflesh_zougar"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_flesh_infect_zougar_yes",
+  "name": {
+    "str": "感染"
+  },
+  "description": "怪物施法的。如果你看到这个目标变成了一个恐怖的目标，那你就把它变成了一个恐怖的目标",
+  "flags": [
+    "SILENT",
+    "HOSTILE_SUMMON",
+    "PERMANENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_range": 1,
+  "max_range": 1,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_sflesh_zougar"
+}
+```
+

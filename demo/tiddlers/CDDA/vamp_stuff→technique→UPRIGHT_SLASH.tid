@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: technique vamp_stuff
+title: vamp_stuff→technique→UPRIGHT_SLASH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：UPRIGHT_SLASH|http://cdda.aloxaf.cn/search?q=UPRIGHT_SLASH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Others/v_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "UPRIGHT_SLASH",
+  "name": "Upright Slash",
+  "description": "Sends enemy into the air, knockback 6, down 5, stun 2, crit only",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "stun_dur": 2,
+  "knockback_dist": 6,
+  "down_dur": 5,
+  "weighting": -4,
+  "messages": [
+    "The upward slash brought %s into the air",
+    "%s were sent into the air",
+    "<npcname> striked %s upwards, and fell down"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 1.66
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 0.66
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "UPRIGHT_SLASH",
+  "name": "升龙斩",
+  "description": "将敌人击到空中，knockback 6，down 5，stun 2，crit only",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": true,
+  "stun_dur": 2,
+  "knockback_dist": 6,
+  "down_dur": 5,
+  "weighting": -4,
+  "messages": [
+    "这一记斩击将%s送上了天。",
+    "%s被送上了天",
+    "<npcname>将%s斩上了天，然后落了下来。"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 1.66
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 0.66
+    }
+  ]
+}
+```
+

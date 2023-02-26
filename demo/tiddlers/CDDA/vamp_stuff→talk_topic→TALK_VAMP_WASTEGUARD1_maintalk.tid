@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_WASTEGUARD1_maintalk
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_WASTEGUARD1_maintalk|http://cdda.aloxaf.cn/search?q=TALK_VAMP_WASTEGUARD1_maintalk]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/v_wg1_responses.json
+
+
+!! 原文
+
+```json
+{
+  "dynamic_line": {
+    "u_has_trait": "wsg1met",
+    "yes": "Talk about what?",
+    "no": "You should be safe here, so don't do anything stupid."
+  },
+  "id": "TALK_VAMP_WASTEGUARD1_maintalk",
+  "responses": [
+    {
+      "text": "Where am I?.",
+      "topic": "TALK_VAMP_WASTEGUARD1_here",
+      "effect": {
+        "u_add_trait": "wsg1here"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg1here"
+        }
+      }
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_trait": "commandovampmark"
+        },
+        "true": "The commando has sent me to this place.",
+        "false": "You know a place like this?"
+      },
+      "topic": "TALK_VAMP_WASTEGUARD1_know",
+      "effect": {
+        "u_add_trait": "wsg1know"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg1know"
+        }
+      }
+    },
+    {
+      "text": "You need a volunteer for jobs?",
+      "topic": "TALK_VAMP_WASTEGUARD1_job",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg1here"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg1hire"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Okay. Bye.",
+      "topic": "TALK_DONE",
+      "effect": {
+        "u_add_trait": "wsg1met"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg1met"
+        }
+      }
+    },
+    {
+      "text": "Nevermind. I'll be going now...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_trait": "wsg1met"
+      }
+    }
+  ],
+  "type": "talk_topic"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "dynamic_line": {
+    "u_has_trait": "wsg1met",
+    "yes": "谈些什么？",
+    "no": "你在这里是安全的，不过不要做傻事。"
+  },
+  "id": "TALK_VAMP_WASTEGUARD1_maintalk",
+  "responses": [
+    {
+      "text": "我现在在哪里？。",
+      "topic": "TALK_VAMP_WASTEGUARD1_here",
+      "effect": {
+        "u_add_trait": "wsg1here"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg1here"
+        }
+      }
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_trait": "commandovampmark"
+        },
+        "true": "The commando has sent me to this place.",
+        "false": "You know a place like this?"
+      },
+      "topic": "TALK_VAMP_WASTEGUARD1_know",
+      "effect": {
+        "u_add_trait": "wsg1know"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg1know"
+        }
+      }
+    },
+    {
+      "text": "你有工作给我吗？",
+      "topic": "TALK_VAMP_WASTEGUARD1_job",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg1here"
+          },
+          {
+            "not": {
+              "u_has_trait": "wsg1hire"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "好的，再见。",
+      "topic": "TALK_DONE",
+      "effect": {
+        "u_add_trait": "wsg1met"
+      },
+      "condition": {
+        "not": {
+          "u_has_trait": "wsg1met"
+        }
+      }
+    },
+    {
+      "text": "没什么，我得走了...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_trait": "wsg1met"
+      }
+    }
+  ],
+  "type": "talk_topic"
+}
+```
+

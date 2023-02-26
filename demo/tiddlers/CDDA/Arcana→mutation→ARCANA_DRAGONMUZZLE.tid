@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_DRAGONMUZZLE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_DRAGONMUZZLE|http://cdda.aloxaf.cn/search?q=ARCANA_DRAGONMUZZLE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONMUZZLE",
+  "name": {
+    "str": "Draconic Muzzle"
+  },
+  "points": 2,
+  "visibility": 4,
+  "ugliness": 3,
+  "mixed_effect": true,
+  "description": "Your jaw and nose have extended into a somewhat long snout, pointed yet fairly broad.  It lends itself to biting in combat and looks impressive, but prevents you from wearing mouthgear.",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_DRAGONSCALES",
+    "ARCANA_PLATES"
+  ],
+  "prereqs2": [
+    "ARCANA_DRAGONTEETH"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "TEETH",
+    "MUZZLE"
+  ],
+  "restricts_gear": [
+    "mouth"
+  ],
+  "social_modifiers": {
+    "intimidate": 20
+  },
+  "attacks": {
+    "attack_text_u": "You savagely tear into %s with your jaws",
+    "attack_text_npc": "%1$s savagely tear into %2$s with their jaws",
+    "body_part": "mouth",
+    "chance": 20,
+    "base_damage": {
+      "damage_type": "stab",
+      "amount": 25
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONMUZZLE",
+  "name": {
+    "str": "龙形口鼻"
+  },
+  "points": 2,
+  "visibility": 4,
+  "ugliness": 3,
+  "mixed_effect": true,
+  "description": "你的下巴和鼻子已经整合成了一个有点长的喙，尖尖的但却相当宽大。它可以在战斗中撕咬敌人，而且看起来令人印象非常深刻，但却妨碍了你佩戴口罩。",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_DRAGONSCALES",
+    "ARCANA_PLATES"
+  ],
+  "prereqs2": [
+    "ARCANA_DRAGONTEETH"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "TEETH",
+    "MUZZLE"
+  ],
+  "restricts_gear": [
+    "mouth"
+  ],
+  "social_modifiers": {
+    "intimidate": 20
+  },
+  "attacks": {
+    "attack_text_u": "你用你的嘴野蛮地撕碎了%s",
+    "attack_text_npc": "%1$s用他的嘴野蛮地撕碎%2$s",
+    "body_part": "mouth",
+    "chance": 20,
+    "base_damage": {
+      "damage_type": "stab",
+      "amount": 25
+    }
+  }
+}
+```
+

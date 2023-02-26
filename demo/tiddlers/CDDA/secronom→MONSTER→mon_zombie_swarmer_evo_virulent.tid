@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_swarmer_evo_virulent
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_swarmer_evo_virulent|http://cdda.aloxaf.cn/search?q=mon_zombie_swarmer_evo_virulent]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Swarmer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_swarmer_evo_virulent",
+  "copy-from": "mon_zombie_swarmer",
+  "type": "MONSTER",
+  "name": "virulent swarmer",
+  "description": "A greenish scourge with significant lust upon the living flesh. Usually docile, but seeing any living thing brings this corpse to a ferocious berserk, gnawing the air as it chase them down.",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2",
+    "HUMAN"
+  ],
+  "hp": 125,
+  "speed": 110,
+  "symbol": "⩛",
+  "color": "magenta_green",
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10
+    },
+    [
+      "scratch",
+      15
+    ],
+    [
+      "GRAB_DRAG",
+      2
+    ]
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_swarmer_evo_virulent",
+  "copy-from": "mon_zombie_swarmer",
+  "type": "MONSTER",
+  "name": "剧毒集群丧尸",
+  "description": "一种绿色的鞭子，对活着的肉体有强烈的欲望。通常是温顺的，但看到任何生物都会让这具尸体变得凶猛狂暴，在追赶他们的过程中啃咬着空气。",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2",
+    "HUMAN"
+  ],
+  "hp": 125,
+  "speed": 110,
+  "symbol": "⩛",
+  "color": "magenta_green",
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10
+    },
+    [
+      "scratch",
+      15
+    ],
+    [
+      "GRAB_DRAG",
+      2
+    ]
+  ]
+}
+```
+

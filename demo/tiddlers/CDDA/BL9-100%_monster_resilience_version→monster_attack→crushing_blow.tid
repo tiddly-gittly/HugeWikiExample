@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: monster_attack BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→monster_attack→crushing_blow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：crushing_blow|http://cdda.aloxaf.cn/search?q=crushing_blow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "crushing_blow",
+  "cooldown": 12,
+  "move_cost": 150,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 13,
+      "armor_penetration": 11
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "effects": [
+    {
+      "id": "downed",
+      "duration": 2
+    },
+    {
+      "id": "stunned",
+      "duration": 3
+    }
+  ],
+  "hit_dmg_u": "The %1$s crushes you!",
+  "hit_dmg_npc": "The %1$s crushes <npcname>!",
+  "no_dmg_msg_u": "The %1$s tries to crush you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "The %1$s tries to crush <npcname>, but fails to penetrate their armor!",
+  "miss_msg_u": "The %s tries to crush you, but you step aside!",
+  "miss_msg_npc": "The %s tries to crush <npcname>, but they dodge!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "crushing_blow",
+  "cooldown": 12,
+  "move_cost": 150,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 13,
+      "armor_penetration": 11
+    }
+  ],
+  "body_parts": [
+    [
+      "torso",
+      1
+    ]
+  ],
+  "effects": [
+    {
+      "id": "downed",
+      "duration": 2
+    },
+    {
+      "id": "stunned",
+      "duration": 3
+    }
+  ],
+  "hit_dmg_u": "%1$s碾压你！",
+  "hit_dmg_npc": "%1$s碾压<npcname>！",
+  "no_dmg_msg_u": "%1$s试图碾压你，但未能穿透你的装甲！",
+  "no_dmg_msg_npc": "%1$s试图碾压<npcname>，但未能穿透他们的装甲！",
+  "miss_msg_u": "%s想碾压你，你却闪开了！",
+  "miss_msg_npc": "%s试图碾压<npcname>，但他们躲闪！"
+}
+```
+

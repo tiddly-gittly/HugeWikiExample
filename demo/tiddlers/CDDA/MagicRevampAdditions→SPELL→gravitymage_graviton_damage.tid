@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→gravitymage_graviton_damage
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gravitymage_graviton_damage|http://cdda.aloxaf.cn/search?q=gravitymage_graviton_damage]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Gravity_Mage.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gravitymage_graviton_damage",
+  "type": "SPELL",
+  "name": {
+    "str": "Graviton Polarization Damage"
+  },
+  "description": "handles the damage part of Graviton Polarization - if you see this something went wrong",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "max_level": 43,
+  "min_damage": 25,
+  "max_damage": 71,
+  "damage_increment": 1,
+  "damage_type": "bash",
+  "min_aoe": 2,
+  "max_aoe": 8,
+  "aoe_increment": 0.2,
+  "min_range": 5,
+  "max_range": 20,
+  "range_increment": 0.5,
+  "flags": [
+    "LOUD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gravitymage_graviton_damage",
+  "type": "SPELL",
+  "name": {
+    "str": "引力子极化伤害"
+  },
+  "description": "处理引力子极化的部分伤害 - 如果你看到这个说明出了bug。",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "max_level": 43,
+  "min_damage": 25,
+  "max_damage": 71,
+  "damage_increment": 1,
+  "damage_type": "bash",
+  "min_aoe": 2,
+  "max_aoe": 8,
+  "aoe_increment": 0.2,
+  "min_range": 5,
+  "max_range": 20,
+  "range_increment": 0.5,
+  "flags": [
+    "LOUD"
+  ]
+}
+```
+

@@ -1,0 +1,183 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_bellymouth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_bellymouth|http://cdda.aloxaf.cn/search?q=mon_zombie_bellymouth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Mouth.json
+
+
+!! 原文
+
+```json
+{
+  "aggression": 100,
+  "armor_acid": 1,
+  "armor_bash": 7,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "armor_fire": 1,
+  "attack_cost": 150,
+  "color": "light_green",
+  "death_drops": "default_zombie_death_drops",
+  "default_faction": "zombie",
+  "description": "A fat zombie distinct to its gaping mouth on its ruptured belly as rows of sharp, irregular teeth protrude from it.",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ],
+  "grab_strength": 2,
+  "harvest": "zombie",
+  "hp": 125,
+  "diff": 5,
+  "id": "mon_zombie_bellymouth",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_skill": 4,
+  "morale": 100,
+  "name": {
+    "str": "bellymouth zombie"
+  },
+  "special_attacks": [
+    {
+      "cooldown": 3,
+      "damage_max_instance": [
+        {
+          "amount": 4,
+          "armor_multiplier": 0.4,
+          "damage_type": "cut"
+        },
+        {
+          "amount": 6,
+          "armor_multiplier": 0.6,
+          "damage_type": "stab"
+        }
+      ],
+      "min_mul": 0.7,
+      "type": "bite"
+    }
+  ],
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "speed": 85,
+  "symbol": "⪕",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 16,
+    "into_group": "GROUP_MOUTH_UPGRADEX"
+  },
+  "volume": "62500 ml",
+  "weight": "81500 g"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "aggression": 100,
+  "armor_acid": 1,
+  "armor_bash": 7,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "armor_fire": 1,
+  "attack_cost": 150,
+  "color": "light_green",
+  "death_drops": "default_zombie_death_drops",
+  "default_faction": "zombie",
+  "description": "一种肥胖的僵尸，当一排排锋利的、不规则的牙齿从它的肚子上伸出时，它张开的嘴与破裂的肚子截然不同。",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ],
+  "grab_strength": 2,
+  "harvest": "zombie",
+  "hp": 125,
+  "diff": 5,
+  "id": "mon_zombie_bellymouth",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_skill": 4,
+  "morale": 100,
+  "name": {
+    "str": "腹口丧尸"
+  },
+  "special_attacks": [
+    {
+      "cooldown": 3,
+      "damage_max_instance": [
+        {
+          "amount": 4,
+          "armor_multiplier": 0.4,
+          "damage_type": "cut"
+        },
+        {
+          "amount": 6,
+          "armor_multiplier": 0.6,
+          "damage_type": "stab"
+        }
+      ],
+      "min_mul": 0.7,
+      "type": "bite"
+    }
+  ],
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "speed": 85,
+  "symbol": "⪕",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 16,
+    "into_group": "GROUP_MOUTH_UPGRADEX"
+  },
+  "volume": "62500 ml",
+  "weight": "81500 g"
+}
+```
+

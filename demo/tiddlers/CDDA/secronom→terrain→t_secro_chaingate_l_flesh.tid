@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_chaingate_l_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_chaingate_l_flesh|http://cdda.aloxaf.cn/search?q=t_secro_chaingate_l_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_chaingate_l_flesh",
+  "name": "fleshed wire gate",
+  "description": "A chain gate with flesh covering most of the hole. It has a visible padlock mechanism, and opening it may require you to remove all the gore in it.",
+  "symbol": "+",
+  "color": "red",
+  "move_cost": 0,
+  "flags": [
+    "TRANSPARENT",
+    "PERMEABLE",
+    "THIN_OBSTACLE",
+    "BURROWABLE",
+    "S_FLESH"
+  ],
+  "connects_to": "CHAINFENCE",
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_chaingate_l"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_chaingate_l_flesh",
+  "name": "血肉铁丝大门",
+  "description": "一个铁丝大门，网孔已经被血肉堵住，它有一个明显的锁孔，要打开它的话，可能需要你移除上面所有的血肉。",
+  "symbol": "+",
+  "color": "red",
+  "move_cost": 0,
+  "flags": [
+    "TRANSPARENT",
+    "PERMEABLE",
+    "THIN_OBSTACLE",
+    "BURROWABLE",
+    "S_FLESH"
+  ],
+  "connects_to": "CHAINFENCE",
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_chaingate_l"
+  }
+}
+```
+

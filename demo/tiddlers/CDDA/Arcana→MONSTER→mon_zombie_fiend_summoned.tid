@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_zombie_fiend_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_fiend_summoned|http://cdda.aloxaf.cn/search?q=mon_zombie_fiend_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_fiend_summoned",
+  "copy-from": "mon_zombie_fiend",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned fiend"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "melee_damage": [
+    {
+      "damage_type": "heat",
+      "amount": 2
+    }
+  ],
+  "vision_day": 30,
+  "vision_night": 10,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": {},
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "upgrades": {
+      "half_life": 8,
+      "into": "mon_zombie_brute"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_fiend_summoned",
+  "copy-from": "mon_zombie_fiend",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤恶魔丧尸"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "melee_damage": [
+    {
+      "damage_type": "heat",
+      "amount": 2
+    }
+  ],
+  "vision_day": 30,
+  "vision_night": 10,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": {},
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "upgrades": {
+      "half_life": 8,
+      "into": "mon_zombie_brute"
+    }
+  }
+}
+```
+

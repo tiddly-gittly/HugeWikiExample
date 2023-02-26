@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_DRAGONHORNS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_DRAGONHORNS|http://cdda.aloxaf.cn/search?q=ARCANA_DRAGONHORNS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONHORNS",
+  "name": {
+    "str": "Swept-Back Horns"
+  },
+  "points": 2,
+  "visibility": 3,
+  "ugliness": 1,
+  "mixed_effect": true,
+  "description": "You have a pair of relatively short horns, sweeping and pointing backwards.  They allow you to make a strong bashing headbutt attack, but prevent wearing any headwear.",
+  "valid": false,
+  "purifiable": false,
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "HORNS"
+  ],
+  "restricts_gear": [
+    "head_crown"
+  ],
+  "allow_soft_gear": true,
+  "attacks": {
+    "attack_text_u": "You headbutt %s",
+    "attack_text_npc": "%1$s headbutts %2$s",
+    "chance": 20,
+    "base_damage": {
+      "damage_type": "bash",
+      "amount": 10
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONHORNS",
+  "name": {
+    "str": "后掠角"
+  },
+  "points": 2,
+  "visibility": 3,
+  "ugliness": 1,
+  "mixed_effect": true,
+  "description": "You have a pair of relatively short horns, sweeping and pointing backwards.  They allow you to make a strong bashing headbutt attack, but prevent wearing any headwear.",
+  "valid": false,
+  "purifiable": false,
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "HORNS"
+  ],
+  "restricts_gear": [
+    "head_crown"
+  ],
+  "allow_soft_gear": true,
+  "attacks": {
+    "attack_text_u": "你这个混蛋%s",
+    "attack_text_npc": "%1$s 头槌 %2$s",
+    "chance": 20,
+    "base_damage": {
+      "damage_type": "bash",
+      "amount": 10
+    }
+  }
+}
+```
+

@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_HERMIT_BECOME_PARAGON
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_HERMIT_BECOME_PARAGON|http://cdda.aloxaf.cn/search?q=MISSION_HERMIT_BECOME_PARAGON]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_HERMIT_BECOME_PARAGON",
+  "type": "mission_definition",
+  "name": {
+    "str": "Become A Paragon Of The Veil"
+  },
+  "description": "Continue to seek out portals or otherwise channeling power through the restored ritual blade, until receiving a clear sign of He From Beyond The Veil's favor.  Excessive mutation, becoming too strongly tied to things from Beyond, might endanger this goal.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_trait": "THRESH_VEIL"
+  },
+  "difficulty": 5,
+  "value": 250000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "new_anomaly_2",
+      "om_terrain_replace": "field",
+      "random": true,
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_effect": "hermit_stage_4",
+        "duration": "PERMANENT"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "Perhaps we shall at last atone…",
+    "offer": "This is a task that will be a long-term matter, I suspect.  You have demonstrated the potential the He From Beyond The Veil seeks.  I have told you the nature of our mission, our enduring oath.  And you have filled this feeble old heart with renewed hope.  Others may foster the survival of humanity, but what good will it do if the wounds in The Veil continue to bleed, and we are cast into the abyss?  That is our purpose, the one common ground we held with the Cleansing Flame.  But every rift sealed, every intrusion halted, pulls us away from the brink.  I ask you to continue along the path you have chosen.  Continue your work, and use your rewards with care and precision.  Will you accept this request?",
+    "accepted": "Thank you.  There is another such place that may be useful to start with, and I'll show you where it is.  Other than that, your journey may be a long one, hunting for instabilities and presenting these offerings from Beyond.  Beware becoming corrupted by mutation, as becoming too strongly tethered to the Beyond will make you unsuitable for His plans.  When you have achieved this, seek to me again if you so desire.  I will offer you what little guidance I can.",
+    "rejected": "I see.  Perhaps you are confident that The Veil will hold, seeing that it hasn't collapsed despite all that has happened.  But you have come so far, and can we be certain when the consequences are so dire?  If you change your mind, I will await you.",
+    "advice": "Be cautious in what methods you use to obtain the offering.  Use summoning rites only when it is a necessary infliction to make on The Veil, and do not let the allure of blood magic cause yourself undue harm.  As for other rifts to seal, remember every place that you have seen touched by the influence of the arcane, and of mundane hazards as well.  I have little experience in the laboratories that inflicted so much destruction, but they may hold remnants that can be mended.",
+    "inquire": "Has He anointed you as his Chosen?",
+    "success": "You have proven yourself, in ways that few have.  For each relic, only one high priest each had been anointed as you have.  I will offer whatever council I can, but I have no tasks left to offer you.  Follow as fate leads.",
+    "success_lie": "What folly is this?",
+    "failure": "I can quite plainly sense the cause of this.  His Chosen cannot be tied too strongly to the Beyond, lest pursuing His goals endanger them as well.  It seems you've done exactly that.  Unfortunate, but there may still be hope.  Come, we have things to discuss it seems…"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_HERMIT_BECOME_PARAGON",
+  "type": "mission_definition",
+  "name": {
+    "str": "成为帷幕的典范"
+  },
+  "description": "继续寻找传送门或者通过被修复的仪式刀来引导力量，直到从帷幕彼端古神的青睐中得到一个清晰的符号。过度突变，变得与彼端联系太紧密，可能会危害这一目标。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_trait": "THRESH_VEIL"
+  },
+  "difficulty": 5,
+  "value": 250000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "new_anomaly_2",
+      "om_terrain_replace": "field",
+      "random": true,
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "npc_add_effect": "hermit_stage_4",
+        "duration": "PERMANENT"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "也许我们终于可以赎罪了……",
+    "offer": "我怀疑这是一项长期的任务。你展示了帷幕彼端古神寻求的潜力。我已经告诉你们我们使命的性质，我们永恒的誓言。你让这颗苍老无力的心充满了新的希望。其他人可能会促进人类的生存，但是如果帷幕上的伤口继续流血，我们被扔进深渊，那又有什么好处呢？这就是我们的目的，是我们用净化圣火所坚持的一个共同点。但是，每一个裂痕被封闭，每一次入侵停止，都把我们从边缘拉了出来。我请你们继续沿着你们选择的道路前进。继续你的工作，小心而精确地使用你的奖励。你能接受这个要求吗？",
+    "accepted": "非常感谢。有另外一个这样的地方可能会有用，我会告诉你它在哪里。除此之外，你的旅程可能会很漫长，寻找不稳定因素，并从远处呈现这些产品。小心被突变所腐蚀，因为太强的束缚会使你不适合他的计划。当你做到了这一点，如果你想再找我。我会尽我所能给你一些指导。",
+    "rejected": "我懂了。也许你有信心帷幕会举行，因为它没有倒塌，尽管发生了一切。但是你已经走了这么远，我们能确定什么时候后果如此严重吗？如果你改变主意，我会等你的。",
+    "advice": "在你用什么方法来获得股票时要谨慎。只有在对帷幕造成必要的伤害时才使用召唤仪式，不要让血魔法的诱惑给自己造成不应有的伤害。至于其他的裂痕要封住，记住你所看到的每一个被奥术影响的地方，以及世俗的危险。我对造成如此大破坏的实验室几乎没有经验，但它们可能保存着可以修复的残余物。",
+    "inquire": "他膏你为他所拣选的吗？",
+    "success": "你已经证明了自己，很少有人能做到。每一件圣物，只有一位大祭司像你们一样受膏。我会尽我所能提供委员会，但我没有任务要给你了。跟随命运的指引。",
+    "success_lie": "这是什么愚蠢的想法？",
+    "failure": "我可以很清楚地感觉到这其中的原因。他的选择不能与外界联系太紧密，以免追求他的目标也会危及他们。看来你就是这么做的。不幸的是，但仍有希望。来吧，我们有事情要讨论似乎…"
+  }
+}
+```
+

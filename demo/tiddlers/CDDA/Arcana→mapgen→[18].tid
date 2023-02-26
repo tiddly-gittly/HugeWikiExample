@@ -1,0 +1,186 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[18]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "house_arcana_encounter_1",
+  "//": "Formerly inhabited by a non-faction arcanist, one way or another they never came back...",
+  "object": {
+    "mapgensize": [
+      24,
+      24
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_ZOMBIE",
+        "x": [
+          2,
+          21
+        ],
+        "y": [
+          2,
+          21
+        ],
+        "chance": 2
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_cf_4_old_guard_1",
+  "object": {
+    "set": [
+      {
+        "line": "furniture",
+        "id": "f_locker",
+        "x": 4,
+        "x2": 4,
+        "y": 17,
+        "y2": 20
+      },
+      {
+        "point": "furniture",
+        "id": "f_rack",
+        "x": 6,
+        "y": 20
+      }
+    ],
+    "place_nested": [
+      {
+        "chunks": [
+          "cf_church_upgrade_4_d"
+        ],
+        "x": 4,
+        "y": 17
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "swat_gear",
+        "x": 4,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "ammo_swat",
+        "x": 4,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "arcana_purifying_shot_group",
+        "x": 4,
+        "y": [
+          17,
+          20
+        ],
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "tools_gunsmith",
+        "x": 6,
+        "y": 20,
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "drugs_soldier",
+        "x": 6,
+        "y": 20,
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "rural_church_start_scales",
+        "x": 6,
+        "y": 20
+      }
+    ],
+    "faction_owner": [
+      {
+        "id": "cleansing_flame",
+        "x": [
+          4,
+          6
+        ],
+        "y": [
+          17,
+          20
+        ]
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "cf_auxillery_merchant_3",
+        "x": 5,
+        "y": 18,
+        "add_trait": "CF_AUX_MARKER_3"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "house_arcana_encounter_1",
+  "//": "Formerly inhabited by a non-faction arcanist, one way or another they never came back...",
+  "object": {
+    "mapgensize": [
+      24,
+      24
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_ZOMBIE",
+        "x": [
+          2,
+          21
+        ],
+        "y": [
+          2,
+          21
+        ],
+        "chance": 2
+      }
+    ]
+  }
+}
+```
+

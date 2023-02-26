@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_swarmer_moderate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_swarmer_moderate|http://cdda.aloxaf.cn/search?q=mon_zombie_swarmer_moderate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Swarmer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_swarmer_moderate",
+  "copy-from": "mon_zombie_swarmer",
+  "type": "MONSTER",
+  "name": "swarmer",
+  "description": "A normal humanoid body, almost in its decaying state.",
+  "hp": 65,
+  "speed": 85,
+  "melee_skill": 2,
+  "melee_dice": 3,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 23
+    },
+    [
+      "GRAB",
+      3
+    ],
+    [
+      "scratch",
+      30
+    ],
+    [
+      "swarmerzed_bite_mode",
+      10
+    ],
+    [
+      "GRAB_DRAG",
+      34
+    ]
+  ],
+  "upgrades": {
+    "half_life": 11,
+    "into": "mon_zombie_swarmer_strong"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_swarmer_moderate",
+  "copy-from": "mon_zombie_swarmer",
+  "type": "MONSTER",
+  "name": "集群丧尸",
+  "description": "一个正常的人形身体，几乎处于腐烂状态。",
+  "hp": 65,
+  "speed": 85,
+  "melee_skill": 2,
+  "melee_dice": 3,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 23
+    },
+    [
+      "GRAB",
+      3
+    ],
+    [
+      "scratch",
+      30
+    ],
+    [
+      "swarmerzed_bite_mode",
+      10
+    ],
+    [
+      "GRAB_DRAG",
+      34
+    ]
+  ],
+  "upgrades": {
+    "half_life": 11,
+    "into": "mon_zombie_swarmer_strong"
+  }
+}
+```
+

@@ -1,0 +1,199 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_lystrosaurus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_lystrosaurus|http://cdda.aloxaf.cn/search?q=mon_lystrosaurus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_stem_mammal.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_lystrosaurus",
+  "type": "MONSTER",
+  "name": {
+    "str": "lystrosaurus",
+    "str_pl": "lystrosaurus"
+  },
+  "description": "A small, short snouted, tusked animal.  It walks carefully, as if it had a complex about its appearance, looking for food and potential predators.",
+  "volume": "35000 ml",
+  "weight": "40000 g",
+  "default_faction": "herbivore",
+  "bodytype": "pig",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_leather",
+  "hp": 40,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "j",
+  "color": "light_red",
+  "aggression": 0,
+  "morale": 10,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 1
+    }
+  ],
+  "dodge": 2,
+  "armor_cut": 1,
+  "armor_stab": 1,
+  "vision_day": 25,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 20
+  },
+  "special_attacks": [
+    [
+      "EAT_CROP",
+      50
+    ],
+    {
+      "id": "headbutt_6d2",
+      "attack_upper": false,
+      "cooldown": 4
+    }
+  ],
+  "fear_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "STALK"
+  ],
+  "reproduction": {
+    "baby_egg": "egg_lystrosaurus",
+    "baby_count": 6,
+    "baby_timer": 20
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWARMS",
+    "WARM"
+  ],
+  "//": "Lystrosaurus sp. taken as reference. No reproductive data. I think these laid eggs, but I'm not sure",
+  "//2": "Should do something related to digging and burrowing their nests",
+  "//3": "Add headbutt attack"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_lystrosaurus",
+  "type": "MONSTER",
+  "name": {
+    "str": "lystrosaurus",
+    "str_pl": "lystrosaurus"
+  },
+  "description": "A small, short snouted, tusked animal.  It walks carefully, as if it had a complex about its appearance, looking for food and potential predators.",
+  "volume": "35000 ml",
+  "weight": "40000 g",
+  "default_faction": "herbivore",
+  "bodytype": "pig",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_leather",
+  "hp": 40,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "j",
+  "color": "light_red",
+  "aggression": 0,
+  "morale": 10,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 1
+    }
+  ],
+  "dodge": 2,
+  "armor_cut": 1,
+  "armor_stab": 1,
+  "vision_day": 25,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 20
+  },
+  "special_attacks": [
+    [
+      "EAT_CROP",
+      50
+    ],
+    {
+      "id": "headbutt_6d2",
+      "attack_upper": false,
+      "cooldown": 4
+    }
+  ],
+  "fear_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "STALK"
+  ],
+  "reproduction": {
+    "baby_egg": "egg_lystrosaurus",
+    "baby_count": 6,
+    "baby_timer": 20
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWARMS",
+    "WARM"
+  ],
+  "//": "Lystrosaurus sp. taken as reference. No reproductive data. I think these laid eggs, but I'm not sure",
+  "//2": "Should do something related to digging and burrowing their nests",
+  "//3": "Add headbutt attack"
+}
+```
+

@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: SPELL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→SPELL→stairs_creation
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：stairs_creation|http://cdda.aloxaf.cn/search?q=stairs_creation]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_spell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "stairs_creation",
+  "type": "SPELL",
+  "name": {
+    "str": "Stairs appears"
+  },
+  "description": "Stairs appears, HAHA!!!",
+  "message": "<color_light_green>H A H A\nStairs go<color_red>appears</color></color>",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "stairstransform",
+  "min_aoe": 30,
+  "max_aoe": 30,
+  "base_casting_time": -1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "stairs_creation",
+  "type": "SPELL",
+  "name": {
+    "str": "出现楼梯"
+  },
+  "description": "楼梯出现了，哈哈！！！",
+  "message": "<color_light_green>口合 口合\n 楼梯～楼梯～<color_red>快出现～</color></color>",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "stairstransform",
+  "min_aoe": 30,
+  "max_aoe": 30,
+  "base_casting_time": -1
+}
+```
+

@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→red_black_vulnerary
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：red_black_vulnerary|http://cdda.aloxaf.cn/search?q=red_black_vulnerary]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "red_black_vulnerary",
+  "type": "COMESTIBLE",
+  "comestible_type": "MED",
+  "category": "drugs",
+  "//": "Technically carmine is purpleish-red, not black and red.  Lower base healing than water talisman, but better results with first aid skill.",
+  "name": {
+    "str": "carmine vulnerary",
+    "str_pl": "carmine vulnerary"
+  },
+  "description": "Patches of cloth steeped in an alchemical mixture, forming a poultice that refines and focuses its effects.  Its healing effect is focused on a single limb, and can purge infected wounds before they become septic.  However, it loses its effect on deeper ailments, only staving off blood loss and spores, while providing some painkilling effect.",
+  "weight": "150 g",
+  "volume": "250 ml",
+  "price": "450 USD",
+  "price_postapoc": "90 USD",
+  "looks_like": "disinrag",
+  "symbol": "!",
+  "color": "red",
+  "charges": 2,
+  "stack_size": 9,
+  "use_action": {
+    "type": "heal",
+    "limb_power": 10,
+    "head_power": 10,
+    "torso_power": 10,
+    "limb_scaling": 2.5,
+    "head_scaling": 2.5,
+    "torso_scaling": 2.5,
+    "bleed": 30,
+    "bite": 0.95,
+    "move_cost": 200,
+    "effects": [
+      {
+        "id": "potion_vulnerary",
+        "duration": 300
+      }
+    ]
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "red_black_vulnerary",
+  "type": "COMESTIBLE",
+  "comestible_type": "MED",
+  "category": "drugs",
+  "//": "Technically carmine is purpleish-red, not black and red.  Lower base healing than water talisman, but better results with first aid skill.",
+  "name": {
+    "str": "胭脂红",
+    "str_pl": "胭脂红"
+  },
+  "description": "浸在炼金术混合物中的一块块布，形成一种能提炼和集中其效果的膏药。它的愈合效果集中在单个肢体上，并且可以在感染伤口变得脓毒性之前清除它们。然而，它对更深层次的疾病失去了作用，只能延缓失血和孢子，同时提供一些止痛效果。",
+  "weight": "150 g",
+  "volume": "250 ml",
+  "price": "450 USD",
+  "price_postapoc": "90 USD",
+  "looks_like": "disinrag",
+  "symbol": "!",
+  "color": "red",
+  "charges": 2,
+  "stack_size": 9,
+  "use_action": {
+    "type": "heal",
+    "limb_power": 10,
+    "head_power": 10,
+    "torso_power": 10,
+    "limb_scaling": 2.5,
+    "head_scaling": 2.5,
+    "torso_scaling": 2.5,
+    "bleed": 30,
+    "bite": 0.95,
+    "move_cost": 200,
+    "effects": [
+      {
+        "id": "potion_vulnerary",
+        "duration": 300
+      }
+    ]
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+

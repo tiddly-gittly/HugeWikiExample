@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_insect_hugeleech
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_hugeleech|http://cdda.aloxaf.cn/search?q=mon_insect_hugeleech]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Insects/+Leech.json
+
+
+!! 原文
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 11,
+  "armor_cut": 9,
+  "armor_bullet": 6,
+  "bodytype": "snake",
+  "color": "red",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "While it lives, the vastly accumulated blood it has sucked from anything has changed its appearance. This human sized parasite doesn't drink blood anymore... They are eaten as whole instead. Aside that, its hide can deflect almost any inferior projectiles.",
+  "diff": 20,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "meatslug",
+  "hp": 145,
+  "id": "mon_insect_hugeleech",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "melee_dice": 2,
+  "melee_dice_sides": 5,
+  "melee_skill": 3,
+  "morale": 100,
+  "name": {
+    "str": "huge leech"
+  },
+  "special_attacks": [
+    [
+      "crunch",
+      20
+    ],
+    [
+      "sucking",
+      15
+    ]
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 95,
+  "symbol": "$",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_LEECH_HUGEUPGRADE"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 11,
+  "armor_cut": 9,
+  "armor_bullet": 6,
+  "bodytype": "snake",
+  "color": "red",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "当它活着的时候，它从其他生物吸取的大量血液已经改变了它的外表。这种有着人类大小的寄生虫已不再吸血了...它们直接整个吞下去。除此之外，它的皮坚硬到几乎可以偏转任何低阶的投射物。",
+  "diff": 20,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_1"
+  ],
+  "harvest": "meatslug",
+  "hp": 145,
+  "id": "mon_insect_hugeleech",
+  "material": [
+    "flesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "melee_dice": 2,
+  "melee_dice_sides": 5,
+  "melee_skill": 3,
+  "morale": 100,
+  "name": {
+    "str": "大水蛭"
+  },
+  "special_attacks": [
+    [
+      "crunch",
+      20
+    ],
+    [
+      "sucking",
+      15
+    ]
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 95,
+  "symbol": "$",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_LEECH_HUGEUPGRADE"
+  }
+}
+```
+

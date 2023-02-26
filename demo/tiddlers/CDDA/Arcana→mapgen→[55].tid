@@ -1,0 +1,758 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[55]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "method": "json",
+  "om_terrain": "desolatebarn",
+  "type": "mapgen",
+  "weight": 100,
+  "object": {
+    "predecessor_mapgen": "forest",
+    "rows": [
+      "           d            ",
+      "                     d  ",
+      "   d        d           ",
+      "d     d          d      ",
+      "                        ",
+      "         d              ",
+      "    dd       d         d",
+      "   ddddd            d   ",
+      "  ddd&&:::::|||&&&|     ",
+      "   dd|^d_~d~_^dhh^|     ",
+      "   dd|d~__~__~_~dd+     ",
+      "  ddd&__~~~d~__~_~|  d  ",
+      " dddd&^_d~~__vvvvv|d    ",
+      "  ddd&~_~_~_dv~_^c&dd   ",
+      "  ddd|d~~~___:_d_^&dd   ",
+      "   dd|dd_hh~~v~_~C&dd   ",
+      " d  d|||||||||_~~C|d   d",
+      "     |b_TTT__|d~_C|d    ",
+      "d    |___I___B__~d|dd   ",
+      "     |_______B_dd=|ddd  ",
+      "     |{{{____|^d^=|dd   ",
+      "   d |||||||||||&&&dd   ",
+      "               ddddd    ",
+      "     d       dd  dd     "
+    ],
+    "palettes": [
+      "desolatebarn_palette"
+    ],
+    "flags": [
+      "ERASE_ALL_BEFORE_PLACING_TERRAIN"
+    ],
+    "terrain": {
+      "C": "t_dirtfloor",
+      "~": [
+        "t_swater_sh",
+        "t_dirtfloor"
+      ]
+    },
+    "items": {
+      "C": [
+        {
+          "item": "hand_tools",
+          "chance": 25,
+          "repeat": 3
+        }
+      ],
+      "{": [
+        {
+          "item": "sanguine_cult_crafting",
+          "chance": 25,
+          "repeat": 2
+        },
+        {
+          "item": "sanguine_cult_consumables",
+          "chance": 25
+        }
+      ],
+      "b": {
+        "item": "cult_sacrifice",
+        "chance": 100
+      }
+    },
+    "place_monster": [
+      {
+        "monster": "mon_blood_sacrifice",
+        "x": 6,
+        "y": 18
+      },
+      {
+        "monster": [
+          "mon_bear",
+          "mon_boar_wild",
+          "mon_cougar",
+          "mon_wolf",
+          "mon_rattlesnake_giant",
+          "mon_dragonfly_giant",
+          "mon_centipede_giant",
+          "mon_dermatik"
+        ],
+        "x": [
+          6,
+          17
+        ],
+        "y": [
+          9,
+          15
+        ],
+        "repeat": [
+          1,
+          6
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_radio_station",
+  "object": {
+    "set": [
+      {
+        "square": "furniture",
+        "id": "f_null",
+        "x": 19,
+        "x2": 21,
+        "y": 2,
+        "y2": 3
+      },
+      {
+        "point": "terrain",
+        "id": "t_window_boarded",
+        "x": 20,
+        "y": 4
+      },
+      {
+        "point": "terrain",
+        "id": "t_door_boarded",
+        "x": 18,
+        "y": 3
+      },
+      {
+        "line": "furniture",
+        "id": "f_null",
+        "x": 7,
+        "x2": 9,
+        "y": 17,
+        "y2": 17
+      },
+      {
+        "line": "terrain",
+        "id": "t_door_boarded",
+        "x": 2,
+        "x2": 2,
+        "y": 16,
+        "y2": 17
+      },
+      {
+        "square": "furniture",
+        "id": "f_null",
+        "x": 4,
+        "x2": 5,
+        "y": 20,
+        "y2": 21
+      },
+      {
+        "square": "furniture",
+        "id": "f_null",
+        "x": 7,
+        "x2": 8,
+        "y": 20,
+        "y2": 21
+      },
+      {
+        "square": "furniture",
+        "id": "f_null",
+        "x": 10,
+        "x2": 11,
+        "y": 20,
+        "y2": 21
+      },
+      {
+        "line": "terrain",
+        "id": "t_window_boarded",
+        "x": 4,
+        "x2": 6,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_window_boarded",
+        "x": 10,
+        "x2": 12,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "point": "furniture",
+        "id": "f_null",
+        "x": 20,
+        "y": 17
+      },
+      {
+        "point": "terrain",
+        "id": "t_window_boarded",
+        "x": 20,
+        "y": 19
+      },
+      {
+        "square": "furniture",
+        "id": "f_null",
+        "x": 3,
+        "x2": 4,
+        "y": 14,
+        "y2": 14
+      },
+      {
+        "point": "terrain",
+        "id": "t_window_boarded",
+        "x": 2,
+        "y": 13
+      },
+      {
+        "point": "furniture",
+        "id": "f_null",
+        "x": 8,
+        "y": 7
+      },
+      {
+        "point": "terrain",
+        "id": "t_window_boarded",
+        "x": 9,
+        "y": 6
+      },
+      {
+        "square": "furniture",
+        "id": "f_null",
+        "x": 5,
+        "x2": 7,
+        "y": 4,
+        "y2": 5
+      },
+      {
+        "point": "terrain",
+        "id": "t_rdoor_c",
+        "x": 9,
+        "y": 4
+      },
+      {
+        "line": "terrain",
+        "id": "t_dirt",
+        "x": 13,
+        "x2": 15,
+        "y": 1,
+        "y2": 1
+      },
+      {
+        "point": "terrain",
+        "id": "t_brick_wall_halfway",
+        "x": 12,
+        "y": 11
+      },
+      {
+        "line": "terrain",
+        "id": "t_dirt",
+        "x": 13,
+        "x2": 14,
+        "y": 11,
+        "y2": 11
+      },
+      {
+        "square": "furniture",
+        "id": "f_null",
+        "x": 12,
+        "x2": 14,
+        "y": 8,
+        "y2": 14
+      },
+      {
+        "point": "terrain",
+        "id": "t_floor",
+        "x": 14,
+        "y": 13
+      },
+      {
+        "line": "terrain",
+        "id": "t_window_frame",
+        "x": 15,
+        "x2": 15,
+        "y": 12,
+        "y2": 14
+      },
+      {
+        "line": "terrain",
+        "id": "t_window_empty",
+        "x": 15,
+        "x2": 15,
+        "y": 13,
+        "y2": 14
+      },
+      {
+        "line": "terrain",
+        "id": "t_door_frame",
+        "x": 15,
+        "x2": 15,
+        "y": 14,
+        "y2": 14
+      },
+      {
+        "point": "furniture",
+        "id": "f_null",
+        "x": 17,
+        "y": 13
+      }
+    ],
+    "place_loot": [
+      {
+        "item": "wire",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          2,
+          3
+        ],
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "item": "pipe",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          2,
+          3
+        ],
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "item": "scrap",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          2,
+          3
+        ],
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "item": "pipe",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          6,
+          10
+        ],
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "item": "scrap",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          6,
+          10
+        ],
+        "chance": 50,
+        "repeat": 30
+      },
+      {
+        "item": "splinter",
+        "x": [
+          12,
+          14
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "chance": 50,
+        "repeat": 30
+      },
+      {
+        "item": "e_scrap",
+        "x": [
+          12,
+          14
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "item": "scrap",
+        "x": [
+          12,
+          14
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "item": "rock",
+        "x": [
+          12,
+          14
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "chance": 50,
+        "repeat": 20
+      },
+      {
+        "item": "brick",
+        "x": [
+          12,
+          14
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "item": "glass_shard",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "chance": 50,
+        "repeat": 40
+      },
+      {
+        "item": "splinter",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "item": "splinter",
+        "x": [
+          17,
+          19
+        ],
+        "y": 14,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "item": "45_casing",
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "chance": 90,
+        "repeat": 4
+      },
+      {
+        "group": "arcane_purifier_radio_casualty",
+        "x": 21,
+        "y": 13
+      },
+      {
+        "item": "broken_eyebot",
+        "x": 10,
+        "y": 5
+      },
+      {
+        "item": "arcana_radio_relay_beacon",
+        "x": 18,
+        "y": 12
+      }
+    ],
+    "place_fields": [
+      {
+        "x": 21,
+        "y": 13,
+        "field": "fd_blood",
+        "intensity": 3
+      },
+      {
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "field": "fd_blood",
+        "intensity": 1
+      },
+      {
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "field": "fd_blood",
+        "intensity": 1
+      },
+      {
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "field": "fd_blood",
+        "intensity": 1
+      },
+      {
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "field": "fd_blood",
+        "intensity": 1
+      },
+      {
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "field": "fd_blood",
+        "intensity": 1
+      },
+      {
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "field": "fd_blood",
+        "intensity": 1
+      },
+      {
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "field": "fd_gibs_flesh",
+        "intensity": 1
+      },
+      {
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "field": "fd_gibs_flesh",
+        "intensity": 1
+      },
+      {
+        "x": [
+          20,
+          21
+        ],
+        "y": [
+          12,
+          14
+        ],
+        "field": "fd_gibs_flesh",
+        "intensity": 1
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_jabberwock",
+        "x": 20,
+        "y": 12
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "om_terrain": "desolatebarn",
+  "type": "mapgen",
+  "weight": 100,
+  "object": {
+    "predecessor_mapgen": "forest",
+    "rows": [
+      "           d            ",
+      "                     d  ",
+      "   d        d           ",
+      "d     d          d      ",
+      "                        ",
+      "         d              ",
+      "    dd       d         d",
+      "   ddddd            d   ",
+      "  ddd&&:::::|||&&&|     ",
+      "   dd|^d_~d~_^dhh^|     ",
+      "   dd|d~__~__~_~dd+     ",
+      "  ddd&__~~~d~__~_~|  d  ",
+      " dddd&^_d~~__vvvvv|d    ",
+      "  ddd&~_~_~_dv~_^c&dd   ",
+      "  ddd|d~~~___:_d_^&dd   ",
+      "   dd|dd_hh~~v~_~C&dd   ",
+      " d  d|||||||||_~~C|d   d",
+      "     |b_TTT__|d~_C|d    ",
+      "d    |___I___B__~d|dd   ",
+      "     |_______B_dd=|ddd  ",
+      "     |{{{____|^d^=|dd   ",
+      "   d |||||||||||&&&dd   ",
+      "               ddddd    ",
+      "     d       dd  dd     "
+    ],
+    "palettes": [
+      "desolatebarn_palette"
+    ],
+    "flags": [
+      "ERASE_ALL_BEFORE_PLACING_TERRAIN"
+    ],
+    "terrain": {
+      "C": "t_dirtfloor",
+      "~": [
+        "t_swater_sh",
+        "t_dirtfloor"
+      ]
+    },
+    "items": {
+      "C": [
+        {
+          "item": "hand_tools",
+          "chance": 25,
+          "repeat": 3
+        }
+      ],
+      "{": [
+        {
+          "item": "sanguine_cult_crafting",
+          "chance": 25,
+          "repeat": 2
+        },
+        {
+          "item": "sanguine_cult_consumables",
+          "chance": 25
+        }
+      ],
+      "b": {
+        "item": "cult_sacrifice",
+        "chance": 100
+      }
+    },
+    "place_monster": [
+      {
+        "monster": "mon_blood_sacrifice",
+        "x": 6,
+        "y": 18
+      },
+      {
+        "monster": [
+          "mon_bear",
+          "mon_boar_wild",
+          "mon_cougar",
+          "mon_wolf",
+          "mon_rattlesnake_giant",
+          "mon_dragonfly_giant",
+          "mon_centipede_giant",
+          "mon_dermatik"
+        ],
+        "x": [
+          6,
+          17
+        ],
+        "y": [
+          9,
+          15
+        ],
+        "repeat": [
+          1,
+          6
+        ]
+      }
+    ]
+  }
+}
+```
+

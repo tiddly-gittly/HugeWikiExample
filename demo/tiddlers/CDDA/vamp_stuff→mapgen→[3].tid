@@ -1,0 +1,362 @@
+creator: 林一二
+revision: 0
+tags: mapgen vamp_stuff
+title: vamp_stuff→mapgen→[3]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Locations/VampireCove.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "vampcave_basement",
+  "weight": 2000,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "#''''###################",
+      "''cc'''#################",
+      "']    ''##'''##''''#####",
+      "']    -''''-'''' -'#####",
+      "'=     ?         <'#####",
+      "']    -''''-'''' -'#####",
+      "']    ''##'''##''''#####",
+      "''cc'''#################",
+      "#''''###################",
+      "########################",
+      "########################"
+    ],
+    "mapping": {
+      "c": {
+        "item": {
+          "item": "corpse"
+        },
+        "terrain": "t_pit_corpsed"
+      },
+      "-": {
+        "item": {
+          "item": "2x4"
+        },
+        "furniture": "f_woodstove",
+        "fields": {
+          "field": "fd_fire"
+        }
+      }
+    },
+    "terrain": {
+      "#": "t_rock",
+      " ": "t_rock_floor",
+      "<": "t_stairs_up",
+      "'": "t_rock_smooth",
+      "?": "t_door_bar_locked"
+    },
+    "furniture": {
+      "=": "f_slab",
+      "]": "f_counter"
+    },
+    "monster": {
+      "c": {
+        "monster": "mon_insect_leech"
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "crypt2_b1",
+  "weight": 1250,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo",
+      "ooooo  i  +    koooooooo",
+      "ooooo+ooooocc ccoooooooo",
+      "oooo) aooook   koooooooo",
+      "oooo)9 oooocc ccoooooooo",
+      "oooo)  +@ook    +  ooooo",
+      "ooooooooooooo+oooo+ooooo",
+      "ooooooooooooo ook1 1kooo",
+      "ooooooooooooo oo     ooo",
+      "ooooooooooo<+ oo1 - 1ooo",
+      "ooooooooooooo+oo*$ $*ooo",
+      "ooooooooooooo oo**1**ooo",
+      "ooooooooooooo+oooooooooo",
+      "oooooooooool  l~oooooooo",
+      "ooooooooooo# l~~oooooooo",
+      "ooooooooooo#l~~~xooooooo",
+      "oooooooooooll~~~xooooooo",
+      "oooooooooooooooxxooooooo",
+      "ooooooooooooLe~~xooooooo",
+      "ooooooooooooeLoooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo"
+    ],
+    "terrain": {
+      " ": "t_rock_floor",
+      "+": "t_door_c",
+      "<": "t_stairs_up",
+      "o": "t_rock",
+      "*": "t_pit_corpsed",
+      "~": "t_water_sh",
+      "x": "t_water_dp"
+    },
+    "furniture": {
+      "1": "f_statue",
+      "c": [
+        "f_coffin_o",
+        "f_coffin_c"
+      ],
+      "&": "f_rubble_rock",
+      ")": "f_shackle",
+      "-": "f_grave_stone_old",
+      "^": "f_slab",
+      "k": "f_counter",
+      "@": "f_crate_c",
+      "#": "f_locker"
+    },
+    "items": {
+      "i": {
+        "item": "medieval",
+        "chance": 10
+      },
+      "-": {
+        "item": "bloodset",
+        "chance": 5
+      },
+      "#": {
+        "item": "survival_armor",
+        "chance": 10
+      },
+      "e": {
+        "item": "trash",
+        "chance": 15
+      },
+      "@": {
+        "item": "camping",
+        "chance": 20
+      },
+      "a": {
+        "item": "archery",
+        "chance": 10
+      },
+      "m": {
+        "item": "allclothes",
+        "chance": 25
+      },
+      "$": {
+        "item": "bloodset",
+        "chance": 5
+      }
+    },
+    "npcs": {
+      "9": {
+        "class": "VAMP_LONELY_F"
+      }
+    },
+    "monster": {
+      "l": {
+        "monster": "mon_insect_leech"
+      },
+      "L": {
+        "monster": "mon_insect_bigleech"
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "crypt1_b1",
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "oooo0000000ooooooooooooo",
+      "ooo00x~Le0oooooooooooooo",
+      "ooo0x~0000000000000ooooo",
+      "ooo0xx~~~l0)$*-*$)0ooooo",
+      "ooo00~~< l0)  9  )0ooooo",
+      "oooo0~ly l0)     )0ooooo",
+      "oooo000+00000   000ooooo",
+      "oooooo0 000000+00ooooooo",
+      "oooooo0 +      0oooooooo",
+      "oo00000+00000000oooooooo",
+      "oo0c*c   c*c0ooooooooooo",
+      "oo0cdc   cdc0ooooooooooo",
+      "oo0cd  ^  dc0ooooooooooo",
+      "oo00000000000ooooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo",
+      "oooooooooooooooooooooooo"
+    ],
+    "terrain": {
+      "0": "t_rock",
+      " ": "t_rock_floor",
+      "+": "t_door_c",
+      "<": "t_stairs_up",
+      "o": "t_rock",
+      "*": "t_pit_corpsed",
+      "x": "t_water_dp",
+      "~": "t_water_sh"
+    },
+    "furniture": {
+      "c": [
+        "f_coffin_o",
+        "f_coffin_c"
+      ],
+      ")": "f_shackle",
+      "-": "f_grave_stone_old",
+      "^": "f_slab"
+    },
+    "items": {
+      "y": {
+        "item": "medieval",
+        "chance": 10
+      },
+      "d": {
+        "item": "allclothes",
+        "chance": 20
+      },
+      "$": {
+        "item": "bloodset",
+        "chance": 5
+      },
+      "e": {
+        "item": "trash",
+        "chance": 15
+      }
+    },
+    "npcs": {
+      "9": {
+        "class": "VAMP_LONELY_M"
+      }
+    },
+    "monster": {
+      "L": {
+        "monster": "mon_insect_bigleech"
+      },
+      "l": {
+        "monster": "mon_insect_leech"
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "vampcave_basement",
+  "weight": 2000,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "########################",
+      "#''''###################",
+      "''cc'''#################",
+      "']    ''##'''##''''#####",
+      "']    -''''-'''' -'#####",
+      "'=     ?         <'#####",
+      "']    -''''-'''' -'#####",
+      "']    ''##'''##''''#####",
+      "''cc'''#################",
+      "#''''###################",
+      "########################",
+      "########################"
+    ],
+    "mapping": {
+      "c": {
+        "item": {
+          "item": "corpse"
+        },
+        "terrain": "t_pit_corpsed"
+      },
+      "-": {
+        "item": {
+          "item": "2x4"
+        },
+        "furniture": "f_woodstove",
+        "fields": {
+          "field": "fd_fire"
+        }
+      }
+    },
+    "terrain": {
+      "#": "t_rock",
+      " ": "t_rock_floor",
+      "<": "t_stairs_up",
+      "'": "t_rock_smooth",
+      "?": "t_door_bar_locked"
+    },
+    "furniture": {
+      "=": "f_slab",
+      "]": "f_counter"
+    },
+    "monster": {
+      "c": {
+        "monster": "mon_insect_leech"
+      }
+    }
+  }
+}
+```
+

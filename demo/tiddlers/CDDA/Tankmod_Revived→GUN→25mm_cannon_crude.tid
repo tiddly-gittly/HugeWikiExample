@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: GUN Tankmod_Revived
+title: Tankmod_Revived→GUN→25mm_cannon_crude
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：25mm_cannon_crude|http://cdda.aloxaf.cn/search?q=25mm_cannon_crude]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "25mm_cannon_crude",
+  "type": "GUN",
+  "reload_noise_volume": 20,
+  "symbol": "(",
+  "color": "dark_gray",
+  "name": {
+    "str_sp": "makeshift 25mm cannon"
+  },
+  "description": "A makeshift cannon crudely chambered for 25x137mm, with a short thick-walled barrel and a breechblock fashioned out of hardened steel.  Very unreliable and massively reduces performance, but simpler to install and easier to repair.  Only holds a single shot.",
+  "price": 800000,
+  "price_postapoc": 3000,
+  "material": [
+    "steel"
+  ],
+  "flags": [
+    "NO_RELOAD",
+    "MOUNTED_GUN",
+    "RELOAD_EJECT",
+    "STR_RELOAD"
+  ],
+  "skill": "launcher",
+  "ammo": "25mm",
+  "weight": "60 kg",
+  "volume": "5 L",
+  "longest_side": "160 cm",
+  "bashing": 10,
+  "to_hit": -1,
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": -5,
+    "armor_penetration": -5
+  },
+  "range": -15,
+  "dispersion": 250,
+  "recoil": 40000,
+  "durability": 4,
+  "reload": 1000,
+  "blackpowder_tolerance": 12,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "holster": true,
+      "rigid": true,
+      "ammo_restriction": {
+        "25mm": 1
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "25mm_cannon_crude",
+  "type": "GUN",
+  "reload_noise_volume": 20,
+  "symbol": "(",
+  "color": "dark_gray",
+  "name": {
+    "str_sp": "25mm 自制机炮"
+  },
+  "description": "一种简易的加农炮，有25x137毫米的炮膛，有一个短而厚的炮筒和一个由淬火钢制成的炮尾座。非常不可靠，性能大大降低，但安装更简单，维修更容易。只有一次机会。",
+  "price": 800000,
+  "price_postapoc": 3000,
+  "material": [
+    "steel"
+  ],
+  "flags": [
+    "NO_RELOAD",
+    "MOUNTED_GUN",
+    "RELOAD_EJECT",
+    "STR_RELOAD"
+  ],
+  "skill": "launcher",
+  "ammo": "25mm",
+  "weight": "60 kg",
+  "volume": "5 L",
+  "longest_side": "160 cm",
+  "bashing": 10,
+  "to_hit": -1,
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": -5,
+    "armor_penetration": -5
+  },
+  "range": -15,
+  "dispersion": 250,
+  "recoil": 40000,
+  "durability": 4,
+  "reload": 1000,
+  "blackpowder_tolerance": 12,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "holster": true,
+      "rigid": true,
+      "ammo_restriction": {
+        "25mm": 1
+      }
+    }
+  ]
+}
+```
+

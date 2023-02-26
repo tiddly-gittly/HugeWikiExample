@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_trap_lightning
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_trap_lightning|http://cdda.aloxaf.cn/search?q=arcana_trap_lightning]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_trap.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_trap_lightning",
+  "type": "SPELL",
+  "name": {
+    "str": "Trap: Lightning"
+  },
+  "description": "Blast of lightning with random damage, used by both the thunder gauntlets and meteoric verge.",
+  "message": "A bolt of lightning erupts from the ground!",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect_str": "stunned",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "sound_description": "an electric buzzing",
+  "effect": "attack",
+  "shape": "blast",
+  "min_duration": 800,
+  "max_duration": 1600,
+  "min_damage": 15,
+  "max_damage": 60,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "damage_type": "electric",
+  "field_id": "fd_electricity",
+  "field_chance": 2,
+  "min_field_intensity": 2,
+  "max_field_intensity": 2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_trap_lightning",
+  "type": "SPELL",
+  "name": {
+    "str": "Trap: Lightning"
+  },
+  "description": "随机伤害的闪电爆炸，由雷霆战锤和流星边缘使用。",
+  "message": "一道闪电从地面迸射出！",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect_str": "stunned",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "sound_description": "an electric buzzing",
+  "effect": "attack",
+  "shape": "blast",
+  "min_duration": 800,
+  "max_duration": 1600,
+  "min_damage": 15,
+  "max_damage": 60,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "damage_type": "electric",
+  "field_id": "fd_electricity",
+  "field_chance": 2,
+  "min_field_intensity": 2,
+  "max_field_intensity": 2,
+  "field_intensity_variance": 0.5
+}
+```
+

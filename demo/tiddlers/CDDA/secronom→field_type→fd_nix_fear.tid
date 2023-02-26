@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_nix_fear
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_nix_fear|http://cdda.aloxaf.cn/search?q=fd_nix_fear]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_nix_fear",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "loathful pressence",
+      "sym": "0",
+      "dangerous": true,
+      "effects": [
+        {
+          "effect_id": "secro_nix_fear",
+          "body_part": "head",
+          "min_duration": "1 seconds",
+          "max_duration": "2 seconds"
+        }
+      ]
+    }
+  ],
+  "priority": -1,
+  "decay_amount_factor": 5,
+  "gas_absorption_factor": 10,
+  "dirty_transparency_cache": true,
+  "percent_spread": 25,
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "sensor",
+        10
+      ]
+    ]
+  },
+  "immune_mtypes": [
+    "mon_zombie_nix"
+  ],
+  "half_life": "2 seconds",
+  "phase": "gas",
+  "accelerated_decay": true,
+  "display_field": false
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_nix_fear",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "loathful pressence",
+      "sym": "0",
+      "dangerous": true,
+      "effects": [
+        {
+          "effect_id": "secro_nix_fear",
+          "body_part": "head",
+          "min_duration": "1 seconds",
+          "max_duration": "2 seconds"
+        }
+      ]
+    }
+  ],
+  "priority": -1,
+  "decay_amount_factor": 5,
+  "gas_absorption_factor": 10,
+  "dirty_transparency_cache": true,
+  "percent_spread": 25,
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "sensor",
+        10
+      ]
+    ]
+  },
+  "immune_mtypes": [
+    "mon_zombie_nix"
+  ],
+  "half_life": "2 seconds",
+  "phase": "gas",
+  "accelerated_decay": true,
+  "display_field": false
+}
+```
+

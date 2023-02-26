@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: terrain Dorf_Life
+title: Dorf_Life→terrain→t_breach_stone_fake_lowered
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_breach_stone_fake_lowered|http://cdda.aloxaf.cn/search?q=t_breach_stone_fake_lowered]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/cave_terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_breach_stone_fake_lowered",
+  "name": "rock floor?",
+  "description": "A relatively flat area of rock and stone.  Wasn't there a wall here previously?",
+  "looks_like": "t_rock_floor",
+  "symbol": ".",
+  "color": "light_gray",
+  "move_cost": 2,
+  "roof": "t_flat_roof",
+  "flags": [
+    "TRANSPARENT",
+    "INDOORS",
+    "COLLAPSES",
+    "SUPPORTS_ROOF",
+    "FLAT",
+    "ROAD"
+  ],
+  "bash": {
+    "str_min": 120,
+    "str_max": 400,
+    "sound": "crash!",
+    "sound_fail": "whump!",
+    "ter_set": "t_rock_floor",
+    "items": [
+      {
+        "item": "rock",
+        "count": [
+          6,
+          12
+        ]
+      },
+      {
+        "item": "material_rocksalt",
+        "count": [
+          0,
+          1
+        ],
+        "prob": 10
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_breach_stone_fake_lowered",
+  "name": "石地板？",
+  "description": "一块相对平坦的岩石和石头。以前这里没有墙吗？",
+  "looks_like": "t_rock_floor",
+  "symbol": ".",
+  "color": "light_gray",
+  "move_cost": 2,
+  "roof": "t_flat_roof",
+  "flags": [
+    "TRANSPARENT",
+    "INDOORS",
+    "COLLAPSES",
+    "SUPPORTS_ROOF",
+    "FLAT",
+    "ROAD"
+  ],
+  "bash": {
+    "str_min": 120,
+    "str_max": 400,
+    "sound": "crash!",
+    "sound_fail": "whump!",
+    "ter_set": "t_rock_floor",
+    "items": [
+      {
+        "item": "rock",
+        "count": [
+          6,
+          12
+        ]
+      },
+      {
+        "item": "material_rocksalt",
+        "count": [
+          0,
+          1
+        ],
+        "prob": 10
+      }
+    ]
+  }
+}
+```
+

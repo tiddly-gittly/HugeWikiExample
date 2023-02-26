@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: mission_definition nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mission_definition→MISSION_LOOT_BIO_LAB
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_LOOT_BIO_LAB|http://cdda.aloxaf.cn/search?q=MISSION_LOOT_BIO_LAB]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/c_mission_def.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_LOOT_BIO_LAB",
+  "type": "mission_definition",
+  "name": "Investigate Bio-Weapon Lab",
+  "description": "Explore a Bio-Weapon Lab that suffered a recent security breach.  Either find whoever accessed the location and speak with them, or retrieve the RFID access badge that was used and bring it back to Router.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "or": [
+      {
+        "u_has_item": "badge_bio_weapon_evy"
+      },
+      {
+        "u_has_var": "searching_for_msci",
+        "type": "dialogue",
+        "context": "evelynn",
+        "value": "yes"
+      }
+    ]
+  },
+  "difficulty": 6,
+  "value": 60000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "Bio_Weapon_Lab_2",
+      "om_special": "Bio_Weapon_Lab_s",
+      "reveal_radius": 3,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": {
+      "u_add_var": "proven_worthy",
+      "type": "dialogue",
+      "context": "router",
+      "value": "yes"
+    }
+  },
+  "count": 1,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "If you see this, it's a bug!",
+    "offer": "Seeing this is probably also a bug.",
+    "accepted": "And seeing this is probably a bug too.",
+    "rejected": "Oi, cease with these shenanigans, ye debuggers!",
+    "advice": "In fact most of this dialogue is a bug if you run into it, as this mission is started purely through dialogue.",
+    "inquire": "Any luck so far?",
+    "success": "So this confirms that the Super Soldier project isn't quite dead yet.  I hope that it wasn't too harrowing an experience, but we're dealing with some extremely dangerous threats, and it's only going to get worse from there.  Keep whatever you found there, it might be useful.  Come see me when you're ready.",
+    "success_lie": "Somehow I doubt that… in fact seeing this is probably another bug, given you can't really bluff your way out of this mission.",
+    "failure": "Pretty certain seeing this is a bug too, since you'd have to die to fail this."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_LOOT_BIO_LAB",
+  "type": "mission_definition",
+  "name": "调查生物武器实验室",
+  "description": "探索最近遭遇安全漏洞的生物武器实验室。要么找到访问该位置的人并与他们交谈，要么找到使用过的RFID访问徽章并带给露特尔。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "or": [
+      {
+        "u_has_item": "badge_bio_weapon_evy"
+      },
+      {
+        "u_has_var": "searching_for_msci",
+        "type": "dialogue",
+        "context": "evelynn",
+        "value": "yes"
+      }
+    ]
+  },
+  "difficulty": 6,
+  "value": 60000,
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "Bio_Weapon_Lab_2",
+      "om_special": "Bio_Weapon_Lab_s",
+      "reveal_radius": 3,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": {
+      "u_add_var": "proven_worthy",
+      "type": "dialogue",
+      "context": "router",
+      "value": "yes"
+    }
+  },
+  "count": 1,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "如果你看见这条文字，说明出BUG了！",
+    "offer": "如果你看见这条文字，可能也是一个BUG。",
+    "accepted": "看到这个可能也是一个BUG。",
+    "rejected": "喂，别再胡闹了，你个用调试的家伙！",
+    "advice": "事实上这个大部分对话都是BUG，因为这个任务完全是通过对话开始的。",
+    "inquire": "到目前为止有什么进展吗？",
+    "success": "因此，这证实了超级战士项目还没有完全结束。我希望这不是一次太痛苦的经历，但我们正在应对一些极其危险的威胁，而且情况只会变得更糟。保留你在那里找到的任何东西，它可能会有用。准备好了就来看我。",
+    "success_lie": "我怀疑……事实上看到这个可能是另一个BUG，因为你不可能退出这个任务。",
+    "failure": "这肯定是个bug，因为你死了才能使这个任务失败。"
+  }
+}
+```
+

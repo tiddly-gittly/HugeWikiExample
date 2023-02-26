@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→mutation→KASHA_SPECIES_active
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：KASHA_SPECIES_active|http://cdda.aloxaf.cn/search?q=KASHA_SPECIES_active]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "KASHA_SPECIES_active",
+  "type": "mutation",
+  "name": "Kasha (youkai form)",
+  "copy-from": "KASHA_SPECIES",
+  "description": "You're a feline-looking youkai originating from (Former) Hell.  Currently, you're transformed into your feline-like form.  Activate the mutation to switch forms.",
+  "active": true,
+  "movecost_modifier": 0.9,
+  "social_modifiers": {
+    "persuade": -4
+  },
+  "stamina_regen_modifier": 0.2,
+  "ugliness": 0,
+  "visibility": 0,
+  "rand_cut_bonus": {
+    "min": 2,
+    "max": 4
+  },
+  "weakness_to_water": 2,
+  "weight_capacity_modifier": 0.33,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "values": [
+        {
+          "value": "FOOTSTEP_NOISE",
+          "multiply": -0.67
+        },
+        {
+          "value": "MELEE_DAMAGE",
+          "multiply": -0.5
+        },
+        {
+          "value": "METABOLISM",
+          "multiply": -0.5
+        }
+      ]
+    }
+  ],
+  "transform": {
+    "target": "KASHA_SPECIES",
+    "active": false,
+    "moves": 100
+  },
+  "extend": {
+    "flags": [
+      "SMALL"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "KASHA_SPECIES_active",
+  "type": "mutation",
+  "name": "Kasha (youkai form)",
+  "copy-from": "KASHA_SPECIES",
+  "description": "You're a feline-looking youkai originating from (Former) Hell.  Currently, you're transformed into your feline-like form.  Activate the mutation to switch forms.",
+  "active": true,
+  "movecost_modifier": 0.9,
+  "social_modifiers": {
+    "persuade": -4
+  },
+  "stamina_regen_modifier": 0.2,
+  "ugliness": 0,
+  "visibility": 0,
+  "rand_cut_bonus": {
+    "min": 2,
+    "max": 4
+  },
+  "weakness_to_water": 2,
+  "weight_capacity_modifier": 0.33,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "values": [
+        {
+          "value": "FOOTSTEP_NOISE",
+          "multiply": -0.67
+        },
+        {
+          "value": "MELEE_DAMAGE",
+          "multiply": -0.5
+        },
+        {
+          "value": "METABOLISM",
+          "multiply": -0.5
+        }
+      ]
+    }
+  ],
+  "transform": {
+    "target": "KASHA_SPECIES",
+    "active": false,
+    "moves": 100
+  },
+  "extend": {
+    "flags": [
+      "SMALL"
+    ]
+  }
+}
+```
+

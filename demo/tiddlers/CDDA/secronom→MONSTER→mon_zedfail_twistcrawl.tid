@@ -1,0 +1,183 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zedfail_twistcrawl
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zedfail_twistcrawl|http://cdda.aloxaf.cn/search?q=mon_zedfail_twistcrawl]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Failed.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zedfail_twistcrawl",
+  "type": "MONSTER",
+  "name": {
+    "str": "distorted crawler"
+  },
+  "description": "A twisted body with various attachments of human anatomy, resulting into a nightmarish agile crawler. Its head ruptured into a horrid mouth and a fiendish eye inside, constantly opens and close to survey its vicinity.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 50,
+  "speed": 120,
+  "diff": 2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚺",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 1,
+  "armor_cut": 4,
+  "armor_bullet": 3,
+  "armor_fire": 1,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "LUNGE",
+      12
+    ],
+    {
+      "type": "bite",
+      "cooldown": 13,
+      "min_mul": 0.5,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 10,
+          "armor_multiplier": 0.7,
+          "armor_penetration": 14
+        },
+        {
+          "damage_type": "stab",
+          "amount": 4,
+          "armor_multiplier": 0.5
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "FILTHY",
+    "NO_BREATHE",
+    "REVIVES",
+    "HARDTOSHOOT"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zedfail_twistcrawl",
+  "type": "MONSTER",
+  "name": {
+    "str": "扭曲爬行者"
+  },
+  "description": "一个带有各种人体器官的扭曲身躯，形成了一个噩梦般敏捷的爬虫。它的头裂成了一张可怕的嘴，里面有一只恶魔般的眼睛，不停地张开闭合着，探知着周围。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 50,
+  "speed": 120,
+  "diff": 2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚺",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 1,
+  "armor_cut": 4,
+  "armor_bullet": 3,
+  "armor_fire": 1,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "LUNGE",
+      12
+    ],
+    {
+      "type": "bite",
+      "cooldown": 13,
+      "min_mul": 0.5,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 10,
+          "armor_multiplier": 0.7,
+          "armor_penetration": 14
+        },
+        {
+          "damage_type": "stab",
+          "amount": 4,
+          "armor_multiplier": 0.5
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "FILTHY",
+    "NO_BREATHE",
+    "REVIVES",
+    "HARDTOSHOOT"
+  ]
+}
+```
+

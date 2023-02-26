@@ -1,0 +1,237 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_ezron_5
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_ezron_5|http://cdda.aloxaf.cn/search?q=mon_BL9_ezron_5]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_ezron_5",
+  "looks_like": "mon_spider_jumping_mega",
+  "type": "MONSTER",
+  "name": {
+    "str": "Ezrondium Mutant Amalgamation"
+  },
+  "description": "A creature upper part of the body of which is of a humanoid - it's head is elongated with countless glittering ruby red eyes, the torso - covered with great amount of red hair and filled with fleshy holes from which protrude multiple tentacles, swinging wildly in all directions, lower part - of a bloody red colored enormous arachnid, moving gracefully yet filled with horrifying bloodthirsty aggression",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 275,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "stab",
+      "amount": 7,
+      "armor_penetration": 15
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Aliens_Amalgamations",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 12,
+          "armor_penetration": 17
+        }
+      ],
+      "hit_dmg_u": "The %1$s pierces you with it's spiked legs!",
+      "hit_dmg_npc": "The %1$s pierces <npcname> with it's spiked legs!",
+      "no_dmg_msg_u": "The %1$s tries to pierce you with it's spiked legs, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to pierce <npcname> with it's spiked legs, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's spiked leg at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's spiked leg at <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 16,
+          "armor_penetration": 15
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings wildly at you with it's tentacles!",
+      "hit_dmg_npc": "The %1$s swings wildly at <npcname> with it's tentacles!",
+      "no_dmg_msg_u": "The %1$s tries to swing at you with it's tentacles, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swing at <npcname> with it's tentacles, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's tentacles at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_ezron_5",
+  "looks_like": "mon_spider_jumping_mega",
+  "type": "MONSTER",
+  "name": {
+    "str": "埃兹隆迪姆突变体融合"
+  },
+  "description": "一种生物，身体上部是人形的，头部被拉长，有无数闪闪发光的红宝石色眼睛，躯干上布满了大量的红发，布满了肉质的洞，从中伸出多个触角，向各个方向疯狂摆动，下部是一种血色的巨大蜘蛛纲动物，动作优雅，但充满了可怕的嗜血侵略",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 275,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "stab",
+      "amount": 7,
+      "armor_penetration": 15
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Aliens_Amalgamations",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 12,
+          "armor_penetration": 17
+        }
+      ],
+      "hit_dmg_u": "The %1$s pierces you with it's spiked legs!",
+      "hit_dmg_npc": "The %1$s pierces <npcname> with it's spiked legs!",
+      "no_dmg_msg_u": "The %1$s tries to pierce you with it's spiked legs, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to pierce <npcname> with it's spiked legs, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's spiked leg at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's spiked leg at <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 16,
+          "armor_penetration": 15
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings wildly at you with it's tentacles!",
+      "hit_dmg_npc": "The %1$s swings wildly at <npcname> with it's tentacles!",
+      "no_dmg_msg_u": "The %1$s tries to swing at you with it's tentacles, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swing at <npcname> with it's tentacles, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's tentacles at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

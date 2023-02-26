@@ -1,0 +1,493 @@
+creator: 林一二
+revision: 0
+tags: martial_art nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→martial_art→style_mut_com
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：style_mut_com|http://cdda.aloxaf.cn/search?q=style_mut_com]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_martialarts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "martial_art",
+  "id": "style_mut_com",
+  "name": {
+    "str": "Post-Human Combatives"
+  },
+  "description": "You've learned a number of tricks to take advantage of the potential that abandoning your humanity can offer.  Focused on heavy, powerful weapons or mutant limbs, a supernaturally strong post-human can use their abilities to great effect.",
+  "initiate": [
+    "Your loosen your footwork and let your instincts take over.",
+    "%s enters a loose, animalistic stance."
+  ],
+  "learn_difficulty": 7,
+  "primary_skill": "melee",
+  "static_buffs": [
+    {
+      "id": "buff_mut_com_static",
+      "name": "Large And In Charge",
+      "description": "Your stance makes better use of your might to compensate for poor footwork.\nAccuracy increased by 15% of strength, -10% move cost.",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 6
+        }
+      ],
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scaling-stat": "str",
+          "scale": 0.15
+        }
+      ],
+      "mult_bonuses": [
+        {
+          "stat": "movecost",
+          "scale": 0.9
+        }
+      ]
+    }
+  ],
+  "onpause_buffs": [
+    {
+      "id": "buff_mut_com_onpause",
+      "name": "Stored Potential",
+      "description": "Conserving your energy and focusing your mind will permit explosive bursts of action.\n\n-10% move cost.\nLasts 3 turns.",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 5
+        }
+      ],
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "buff_duration": 3,
+      "mult_bonuses": [
+        {
+          "stat": "movecost",
+          "scale": 0.9
+        }
+      ]
+    }
+  ],
+  "onattack_buffs": [
+    {
+      "id": "buff_mut_com_onattack",
+      "name": "Tension",
+      "description": "All you need to survive is to commit to the offensive.\n\n-10% move cost.\nLasts 3 turns, stacks 2 times.",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 5
+        }
+      ],
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "buff_duration": 3,
+      "max_stacks": 2,
+      "mult_bonuses": [
+        {
+          "stat": "movecost",
+          "scale": 0.9
+        }
+      ]
+    }
+  ],
+  "onmove_buffs": [
+    {
+      "id": "buff_mut_com_onmove",
+      "name": "Bull Rush",
+      "description": "When you get enough momentum going, they're going to feel it.\n\nMovement speed increased by 45% of strength, bash damage increased by 15% of strength.  Enables \"Battering Ram\" technique.\nLasts 3 turns, stacks 3 times.",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 4
+        }
+      ],
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "buff_duration": 3,
+      "max_stacks": 3,
+      "flat_bonuses": [
+        {
+          "stat": "speed",
+          "scaling-stat": "str",
+          "scale": 0.45
+        },
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scaling-stat": "str",
+          "scale": 0.15
+        }
+      ]
+    }
+  ],
+  "onhit_buffs": [
+    {
+      "id": "buff_mut_com_onhit",
+      "name": "Brutal Efficiency",
+      "description": "One powerful blow makes the follow-up that much easier.\n\n+2 Accuracy, bash armor penetration increased by 30% of strength.\nLasts 2 turns, stacks 2 times.",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 7
+        }
+      ],
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "buff_duration": 2,
+      "max_stacks": 2,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": 2
+        },
+        {
+          "stat": "arpen",
+          "type": "bash",
+          "scaling-stat": "str",
+          "scale": 0.3
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_mut_com_battering_ram",
+    "tec_mut_com_overrun",
+    "tec_mut_com_stampeding_strike",
+    "tec_mut_com_feint"
+  ],
+  "weapons": [
+    "2h_flail_steel",
+    "2h_flail_wood",
+    "ax",
+    "battleaxe",
+    "battleaxe_inferior",
+    "bronze_brush_axe",
+    "bronze_pickaxe",
+    "bronze_axe",
+    "brush_axe",
+    "ch_kriegsmesser",
+    "ch_longsword",
+    "ch_zweihander",
+    "chainsaw_off",
+    "chainsaw_on",
+    "club_wooden_large",
+    "combatsaw_off",
+    "combatsaw_on",
+    "copper_ax",
+    "e_combatsaw_off",
+    "e_combatsaw_on",
+    "elec_chainsaw_off",
+    "elec_chainsaw_on",
+    "fire_ax",
+    "glaive",
+    "greatsword_makeshift",
+    "halberd",
+    "halberd_fake",
+    "hammer_sledge",
+    "hammer_sledge_engineer",
+    "hammer_sledge_heavy",
+    "hammer_sledge_short",
+    "hc_kriegsmesser",
+    "hc_longsword",
+    "hc_zweihander",
+    "homewrecker",
+    "ji",
+    "lajatang",
+    "lc_kriegsmesser",
+    "lc_longsword",
+    "lc_zweihander",
+    "lobotomizer",
+    "longsword",
+    "longsword_fake",
+    "longsword_inferior",
+    "lucern_hammer",
+    "lucern_hammerfake",
+    "kriegsmesser",
+    "mace_pipe_large",
+    "makeshift_halberd",
+    "makeshift_scythe_war",
+    "masonrysaw_off",
+    "masonrysaw_on",
+    "mc_kriegsmesser",
+    "mc_longsword",
+    "mc_zweihander",
+    "molded_axe",
+    "naginata",
+    "naginata_fake",
+    "naginata_inferior",
+    "nodachi",
+    "nodachi_fake",
+    "nodachi_inferior",
+    "pickaxe",
+    "pike",
+    "pike_copper",
+    "pike_fake",
+    "pike_inferior",
+    "pike_wood",
+    "poleaxe",
+    "primitive_axe",
+    "qt_kriegsmesser",
+    "qt_longsword",
+    "qt_zweihander",
+    "scythe",
+    "scythe_war",
+    "spear_survivor",
+    "zweihander",
+    "zweihander_fake",
+    "zweihander_inferior"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "martial_art",
+  "id": "style_mut_com",
+  "name": {
+    "str": "后人类格斗术"
+  },
+  "description": "你已经学会了一些放弃人性所带来战斗优势的技巧。后人类格斗术注重于使用强大的重型武器或变异肢体，超自然般强大的后人类可以利用他们的能力发挥巨大的作用。",
+  "initiate": [
+    "你放松你的步法，让你的直觉来控制。",
+    "%s 摆出了一个放松的动物姿态。"
+  ],
+  "learn_difficulty": 7,
+  "primary_skill": "melee",
+  "static_buffs": [
+    {
+      "id": "buff_mut_com_static",
+      "name": "稳定站姿",
+      "description": "你的站姿可以更好地利用你的力量来弥补步法的不足。\n命中按力量的 15% 提升，移动耗时-10%。",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 6
+        }
+      ],
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scaling-stat": "str",
+          "scale": 0.15
+        }
+      ],
+      "mult_bonuses": [
+        {
+          "stat": "movecost",
+          "scale": 0.9
+        }
+      ]
+    }
+  ],
+  "onpause_buffs": [
+    {
+      "id": "buff_mut_com_onpause",
+      "name": "Stored Potential",
+      "description": "Conserving your energy and focusing your mind will permit explosive bursts of action.\n\n-10% move cost.\nLasts 3 turns.",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 5
+        }
+      ],
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "buff_duration": 3,
+      "mult_bonuses": [
+        {
+          "stat": "movecost",
+          "scale": 0.9
+        }
+      ]
+    }
+  ],
+  "onattack_buffs": [
+    {
+      "id": "buff_mut_com_onattack",
+      "name": "紧绷姿态",
+      "description": "要想生存，你只需全力进攻。\n\n-10% 移动耗时。\n持续 3 回合，可叠加 2 次。",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 5
+        }
+      ],
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "buff_duration": 3,
+      "max_stacks": 2,
+      "mult_bonuses": [
+        {
+          "stat": "movecost",
+          "scale": 0.9
+        }
+      ]
+    }
+  ],
+  "onmove_buffs": [
+    {
+      "id": "buff_mut_com_onmove",
+      "name": "猛力冲撞",
+      "description": "他们会感受到你强大的动力。\n\n移动速度按力量的 45% 提升，钝击伤害按力量的 15% 提升。启用“击槌”战技。\n持续 3 回合，可叠加 3 次。",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 4
+        }
+      ],
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "buff_duration": 3,
+      "max_stacks": 3,
+      "flat_bonuses": [
+        {
+          "stat": "speed",
+          "scaling-stat": "str",
+          "scale": 0.45
+        },
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scaling-stat": "str",
+          "scale": 0.15
+        }
+      ]
+    }
+  ],
+  "onhit_buffs": [
+    {
+      "id": "buff_mut_com_onhit",
+      "name": "有效打击",
+      "description": "一次有力的打击使后续进攻变得更加容易。\n\n命中+2，钝击护甲穿透增加30%。\n持续 2 回合，可叠加 2 次。",
+      "skill_requirements": [
+        {
+          "name": "melee",
+          "level": 7
+        }
+      ],
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "buff_duration": 2,
+      "max_stacks": 2,
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scale": 2
+        },
+        {
+          "stat": "arpen",
+          "type": "bash",
+          "scaling-stat": "str",
+          "scale": 0.3
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_mut_com_battering_ram",
+    "tec_mut_com_overrun",
+    "tec_mut_com_stampeding_strike",
+    "tec_mut_com_feint"
+  ],
+  "weapons": [
+    "2h_flail_steel",
+    "2h_flail_wood",
+    "ax",
+    "battleaxe",
+    "battleaxe_inferior",
+    "bronze_brush_axe",
+    "bronze_pickaxe",
+    "bronze_axe",
+    "brush_axe",
+    "ch_kriegsmesser",
+    "ch_longsword",
+    "ch_zweihander",
+    "chainsaw_off",
+    "chainsaw_on",
+    "club_wooden_large",
+    "combatsaw_off",
+    "combatsaw_on",
+    "copper_ax",
+    "e_combatsaw_off",
+    "e_combatsaw_on",
+    "elec_chainsaw_off",
+    "elec_chainsaw_on",
+    "fire_ax",
+    "glaive",
+    "greatsword_makeshift",
+    "halberd",
+    "halberd_fake",
+    "hammer_sledge",
+    "hammer_sledge_engineer",
+    "hammer_sledge_heavy",
+    "hammer_sledge_short",
+    "hc_kriegsmesser",
+    "hc_longsword",
+    "hc_zweihander",
+    "homewrecker",
+    "ji",
+    "lajatang",
+    "lc_kriegsmesser",
+    "lc_longsword",
+    "lc_zweihander",
+    "lobotomizer",
+    "longsword",
+    "longsword_fake",
+    "longsword_inferior",
+    "lucern_hammer",
+    "lucern_hammerfake",
+    "kriegsmesser",
+    "mace_pipe_large",
+    "makeshift_halberd",
+    "makeshift_scythe_war",
+    "masonrysaw_off",
+    "masonrysaw_on",
+    "mc_kriegsmesser",
+    "mc_longsword",
+    "mc_zweihander",
+    "molded_axe",
+    "naginata",
+    "naginata_fake",
+    "naginata_inferior",
+    "nodachi",
+    "nodachi_fake",
+    "nodachi_inferior",
+    "pickaxe",
+    "pike",
+    "pike_copper",
+    "pike_fake",
+    "pike_inferior",
+    "pike_wood",
+    "poleaxe",
+    "primitive_axe",
+    "qt_kriegsmesser",
+    "qt_longsword",
+    "qt_zweihander",
+    "scythe",
+    "scythe_war",
+    "spear_survivor",
+    "zweihander",
+    "zweihander_fake",
+    "zweihander_inferior"
+  ]
+}
+```
+

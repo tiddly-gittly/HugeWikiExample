@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_AUX_MAGE_SPELL_MENU
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_AUX_MAGE_SPELL_MENU|http://cdda.aloxaf.cn/search?q=TALK_CF_AUX_MAGE_SPELL_MENU]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_AUX_MAGE.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_AUX_MAGE_SPELL_MENU",
+  "dynamic_line": "I know a few tricks I could teach you, Magic Signs as they've been called.  The arts of Agility, Conjure Flame, and Displacement.  If you have the coin, I'll put the materials and such together to help with learning the spell pattern.  Same sort of Golden Scales the others here use.",
+  "responses": [
+    {
+      "text": "What can you tell me about Agility?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_AGILE"
+        }
+      },
+      "topic": "TALK_CF_AUX_MAGE_SPELL_MENU_1"
+    },
+    {
+      "text": "What can you tell me about Conjure Flame?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_FIRE"
+        }
+      },
+      "topic": "TALK_CF_AUX_MAGE_SPELL_MENU_2"
+    },
+    {
+      "text": "What can you tell me about Displacement?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_DAMPENING"
+        }
+      },
+      "topic": "TALK_CF_AUX_MAGE_SPELL_MENU_3"
+    },
+    {
+      "text": "I already know all of those, thanks anyway.",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "SPELL_AGILE"
+          },
+          {
+            "u_has_trait": "SPELL_FIRE"
+          },
+          {
+            "u_has_trait": "SPELL_DAMPENING"
+          }
+        ]
+      },
+      "effect": {
+        "u_add_var": "celine_all_spells_known",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_CF_AUX_MAGE"
+    },
+    {
+      "text": "Maybe another time.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_AUX_MAGE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_AUX_MAGE_SPELL_MENU",
+  "dynamic_line": "I know a few tricks I could teach you, Magic Signs as they've been called.  The arts of Agility, Conjure Flame, and Displacement.  If you have the coin, I'll put the materials and such together to help with learning the spell pattern.  Same sort of Golden Scales the others here use.",
+  "responses": [
+    {
+      "text": "What can you tell me about Agility?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_AGILE"
+        }
+      },
+      "topic": "TALK_CF_AUX_MAGE_SPELL_MENU_1"
+    },
+    {
+      "text": "What can you tell me about Conjure Flame?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_FIRE"
+        }
+      },
+      "topic": "TALK_CF_AUX_MAGE_SPELL_MENU_2"
+    },
+    {
+      "text": "What can you tell me about Displacement?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_DAMPENING"
+        }
+      },
+      "topic": "TALK_CF_AUX_MAGE_SPELL_MENU_3"
+    },
+    {
+      "text": "I already know all of those, thanks anyway.",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "SPELL_AGILE"
+          },
+          {
+            "u_has_trait": "SPELL_FIRE"
+          },
+          {
+            "u_has_trait": "SPELL_DAMPENING"
+          }
+        ]
+      },
+      "effect": {
+        "u_add_var": "celine_all_spells_known",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_CF_AUX_MAGE"
+    },
+    {
+      "text": "也许下次吧。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_AUX_MAGE"
+    }
+  ]
+}
+```
+

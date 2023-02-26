@@ -1,0 +1,243 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BFF
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BFF|http://cdda.aloxaf.cn/search?q=TALK_BFF]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BFF.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BFF",
+  "type": "talk_topic",
+  "//": "Excludes most professions, at least in vanilla and Cata++, that don't deserve friends.  :3",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CHURL",
+      "BIO_WEAPON_ALPHA",
+      "BIO_WEAPON_BETA",
+      "BIO_WEAPON_GAMMA",
+      "BIO_WEAPON_DELTA",
+      "BIO_WEAPON_FAILED"
+    ],
+    "yes": "Greetings.  Damn, I was hoping to run into somebody else… at least we're both still in one piece, I guess.",
+    "no": {
+      "u_male": true,
+      "yes": "Holy shit man, you are still alive?!  I'm glad, I thought I was going to have to deal with all this alone.  We got this place far away and are safe for now.  It's now you and me, just like old times!",
+      "no": "Holy shit girl, you are still alive?!  I'm glad, I thought I was going to have to deal with all this alone. We got this place far away and are safe for now.  It's now you and me, just like old times!"
+    }
+  },
+  "responses": [
+    {
+      "text": "Another survivor!  We should travel together.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHURL",
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      },
+      "topic": "TALK_SUGGEST_FOLLOW"
+    },
+    {
+      "text": "What are you doing?",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHURL",
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      },
+      "topic": "TALK_DESCRIBE_MISSION"
+    },
+    {
+      "text": "Care to trade?",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHURL",
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      },
+      "effect": "start_trade"
+    },
+    {
+      "text": "Glad to see you too buddy, let's go now!",
+      "trial": {
+        "type": "NONE"
+      },
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CHURL",
+            "BIO_WEAPON_ALPHA",
+            "BIO_WEAPON_BETA",
+            "BIO_WEAPON_GAMMA",
+            "BIO_WEAPON_DELTA",
+            "BIO_WEAPON_FAILED"
+          ]
+        }
+      },
+      "success": {
+        "effect": "follow",
+        "opinion": {
+          "trust": 8,
+          "fear": 0,
+          "value": 8,
+          "anger": -2
+        },
+        "topic": "TALK_DONE"
+      }
+    },
+    {
+      "text": "Bye.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHURL",
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      },
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BFF",
+  "type": "talk_topic",
+  "//": "Excludes most professions, at least in vanilla and Cata++, that don't deserve friends.  :3",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CHURL",
+      "BIO_WEAPON_ALPHA",
+      "BIO_WEAPON_BETA",
+      "BIO_WEAPON_GAMMA",
+      "BIO_WEAPON_DELTA",
+      "BIO_WEAPON_FAILED"
+    ],
+    "yes": "该死，我还希望能碰上别人呢……至少我们都还毫发无损，我猜。",
+    "no": {
+      "u_male": true,
+      "yes": "天哪，你还活着？！我很高兴，我以为我要独自处理这一切。这个地方离得比较远，现在暂时是安全的。现在就像过去一样有人作伴了！",
+      "no": "天哪，你还活着？！我很高兴，我以为我要独自处理这一切。我们到了很远的地方，现在安全了。现在是你和我，就像过去一样！"
+    }
+  },
+  "responses": [
+    {
+      "text": "[组队]另一名幸存者！让我们组队行动吧。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHURL",
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      },
+      "topic": "TALK_SUGGEST_FOLLOW"
+    },
+    {
+      "text": "[询问]你在做些什么？",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHURL",
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      },
+      "topic": "TALK_DESCRIBE_MISSION"
+    },
+    {
+      "text": "[交易]你想要交易吗？",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHURL",
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      },
+      "effect": "start_trade"
+    },
+    {
+      "text": "我也很高兴见到你，伙计，我们走吧！",
+      "trial": {
+        "type": "NONE"
+      },
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CHURL",
+            "BIO_WEAPON_ALPHA",
+            "BIO_WEAPON_BETA",
+            "BIO_WEAPON_GAMMA",
+            "BIO_WEAPON_DELTA",
+            "BIO_WEAPON_FAILED"
+          ]
+        }
+      },
+      "success": {
+        "effect": "follow",
+        "opinion": {
+          "trust": 8,
+          "fear": 0,
+          "value": 8,
+          "anger": -2
+        },
+        "topic": "TALK_DONE"
+      }
+    },
+    {
+      "text": "再见。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHURL",
+          "BIO_WEAPON_ALPHA",
+          "BIO_WEAPON_BETA",
+          "BIO_WEAPON_GAMMA",
+          "BIO_WEAPON_DELTA",
+          "BIO_WEAPON_FAILED"
+        ]
+      },
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

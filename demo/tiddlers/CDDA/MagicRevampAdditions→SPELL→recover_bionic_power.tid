@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→recover_bionic_power
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：recover_bionic_power|http://cdda.aloxaf.cn/search?q=recover_bionic_power]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/technomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "recover_bionic_power",
+  "type": "SPELL",
+  "name": {
+    "str": "Manatricity"
+  },
+  "description": "You have found a way to convert your spiritual energy into power you can use for your bionics.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_LEGS",
+    "NO_HANDS",
+    "SOMATIC",
+    "VERBAL",
+    "SILENT"
+  ],
+  "min_damage": 250,
+  "damage_increment": 50,
+  "max_damage": 22500,
+  "base_energy_cost": 250,
+  "energy_increment": 50,
+  "final_energy_cost": 22500,
+  "max_level": 37,
+  "spell_class": "TECHNOMANCER",
+  "effect": "recover_energy",
+  "effect_str": "BIONIC",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "difficulty": 6,
+  "base_casting_time": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "recover_bionic_power",
+  "type": "SPELL",
+  "name": {
+    "str": "魔能转换术"
+  },
+  "description": "你发现了一种将你的魔力转换成生化能量的方法。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_LEGS",
+    "NO_HANDS",
+    "SOMATIC",
+    "VERBAL",
+    "SILENT"
+  ],
+  "min_damage": 250,
+  "damage_increment": 50,
+  "max_damage": 22500,
+  "base_energy_cost": 250,
+  "energy_increment": 50,
+  "final_energy_cost": 22500,
+  "max_level": 37,
+  "spell_class": "TECHNOMANCER",
+  "effect": "recover_energy",
+  "effect_str": "BIONIC",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "difficulty": 6,
+  "base_casting_time": 1000
+}
+```
+

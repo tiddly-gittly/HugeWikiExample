@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: technique secronom_lore_expansion
+title: secronom_lore_expansion→technique→tec_secro_morph_fleshpound_pound
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_secro_morph_fleshpound_pound|http://cdda.aloxaf.cn/search?q=tec_secro_morph_fleshpound_pound]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_fleshpound_pound",
+  "name": "Pound",
+  "messages": [
+    "You heavily pound at %s",
+    "<npcname> heavily pounds at %s"
+  ],
+  "melee_allowed": true,
+  "weighting": -2,
+  "stun_dur": 2,
+  "crit_tec": true,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 3
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.9
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.7
+    }
+  ],
+  "description": "+70% bash, +90% movecost, stun 2 turns, crit only",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_fleshpound_pound",
+  "name": "磅",
+  "messages": [
+    "你重重的打向%s",
+    "<npcname>英镑，%s英镑"
+  ],
+  "melee_allowed": true,
+  "weighting": -2,
+  "stun_dur": 2,
+  "crit_tec": true,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 3
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.9
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.7
+    }
+  ],
+  "description": "+70%钝击，+90%移动消耗，击晕2回合，仅暴击",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+

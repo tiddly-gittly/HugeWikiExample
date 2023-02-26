@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→SENTINEL_PERK_PER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SENTINEL_PERK_PER|http://cdda.aloxaf.cn/search?q=SENTINEL_PERK_PER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation_super_soldier.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_PER",
+  "name": {
+    "str": "Sentinel Readiness I"
+  },
+  "points": 1,
+  "description": "Targeted mutagenic treatment has honed your senses.  Your sight radius on the overmap is extended, you hear a bit better, and instinctively move a bit more quietly.  In exchange, your reflexive reaction to potential threats slightly agitates wildlife and unsettles people.",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "cancels": [
+    "EAGLEEYED",
+    "UNOBSERVANT",
+    "GOODHEARING",
+    "BADHEARING",
+    "DEAF",
+    "LIGHTSTEP",
+    "CLUMSY"
+  ],
+  "changes_to": [
+    "SENTINEL_PERK_PER_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "overmap_sight": 5,
+  "hearing_modifier": 1.25,
+  "noise_modifier": 0.75,
+  "anger_relations": [
+    [
+      "MAMMAL",
+      5
+    ],
+    [
+      "BIRD",
+      5
+    ]
+  ],
+  "social_modifiers": {
+    "persuade": -5
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SENTINEL_PERK_PER",
+  "name": {
+    "str": "哨兵姿态 I"
+  },
+  "points": 1,
+  "description": "靶向诱变治疗磨练了你的感知意识。你大地图视野半径稍微扩大，听力稍微增强，移动声音稍微降低。但你对潜在威胁的反射性反应会稍微激怒野生动物并且让人不安。",
+  "valid": false,
+  "purifiable": false,
+  "mixed_effect": true,
+  "cancels": [
+    "EAGLEEYED",
+    "UNOBSERVANT",
+    "GOODHEARING",
+    "BADHEARING",
+    "DEAF",
+    "LIGHTSTEP",
+    "CLUMSY"
+  ],
+  "changes_to": [
+    "SENTINEL_PERK_PER_2"
+  ],
+  "category": [
+    "SUPER_SOLDIER"
+  ],
+  "overmap_sight": 5,
+  "hearing_modifier": 1.25,
+  "noise_modifier": 0.75,
+  "anger_relations": [
+    [
+      "MAMMAL",
+      5
+    ],
+    [
+      "BIRD",
+      5
+    ]
+  ],
+  "social_modifiers": {
+    "persuade": -5
+  }
+}
+```
+

@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→air_talisman
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：air_talisman|http://cdda.aloxaf.cn/search?q=air_talisman]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "air_talisman",
+  "type": "COMESTIBLE",
+  "comestible_type": "MED",
+  "category": "other",
+  "name": {
+    "str": "air talisman"
+  },
+  "description": "A crude paper talisman marked with strange patterns, anointed with a pure sacrifice.  Using it will heal any nearby ally, pet, or friendly creature near you, along with enhancing them temporarily.  Friendly NPCs and monsters alike will gain increased speed as well as immunities to various debuffs such as blindness, bleeding, or stunning; while friendly monsters/pets specfically will gain increased melee damage, accuracy, and dodge.",
+  "price_postapoc": "24 USD",
+  "weight": "150 g",
+  "volume": "100 ml",
+  "material": [
+    "paper"
+  ],
+  "looks_like": "birchbark",
+  "symbol": ",",
+  "color": "cyan",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_pet",
+    "no_fail": true,
+    "level": 0
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "NO_INGEST",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "air_talisman",
+  "type": "COMESTIBLE",
+  "comestible_type": "MED",
+  "category": "other",
+  "name": {
+    "str": "空气护身符"
+  },
+  "description": "A crude paper talisman marked with strange patterns, anointed with a pure sacrifice.  Using it will heal any nearby ally, pet, or friendly creature near you, along with enhancing them temporarily.  Friendly NPCs and monsters alike will gain increased speed as well as immunities to various debuffs such as blindness, bleeding, or stunning; while friendly monsters/pets specfically will gain increased melee damage, accuracy, and dodge.",
+  "price_postapoc": "24 USD",
+  "weight": "150 g",
+  "volume": "100 ml",
+  "material": [
+    "paper"
+  ],
+  "looks_like": "birchbark",
+  "symbol": ",",
+  "color": "cyan",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_pet",
+    "no_fail": true,
+    "level": 0
+  },
+  "flags": [
+    "NO_SALVAGE",
+    "NO_INGEST",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+

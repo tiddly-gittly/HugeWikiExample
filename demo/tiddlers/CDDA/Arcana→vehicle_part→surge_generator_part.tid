@@ -1,0 +1,289 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part Arcana
+title: Arcana→vehicle_part→surge_generator_part
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：surge_generator_part|http://cdda.aloxaf.cn/search?q=surge_generator_part]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "surge_generator_part",
+  "name": {
+    "str": "displacement surge motor"
+  },
+  "symbol": "*",
+  "color": "magenta",
+  "broken_symbol": "#",
+  "broken_color": "dark_gray",
+  "damage_modifier": 60,
+  "durability": 200,
+  "description": "An exotic motor, converted into a endless source of kinetic energy with even more anomalous technology.  It serves as a motor that never drains power, though less powerful than its original form.  Still cannot be equiped with an alternator, but multiple can be installed if needed.",
+  "backfire_threshold": 0.5,
+  "backfire_freq": 15,
+  "damaged_power_factor": 0.5,
+  "m2c": 90,
+  "power": 200000,
+  "energy_consumption": 0,
+  "fuel_type": "essence_fake",
+  "item": "displacement_surge_generator_item",
+  "location": "engine_block",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          7
+        ],
+        [
+          "electronics",
+          6
+        ],
+        [
+          "magic",
+          8
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ],
+        [
+          "electronics",
+          5
+        ],
+        [
+          "magic",
+          7
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_weld_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          8
+        ],
+        [
+          "electronics",
+          7
+        ],
+        [
+          "magic",
+          9
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "ENGINE",
+    "PERPETUAL"
+  ],
+  "breaks_into": [
+    {
+      "item": "scrap",
+      "count": [
+        1,
+        4
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        1,
+        3
+      ]
+    },
+    {
+      "item": "cable",
+      "charges": [
+        3,
+        6
+      ]
+    },
+    {
+      "item": "essence_dull",
+      "count": [
+        25,
+        50
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 10
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "surge_generator_part",
+  "name": {
+    "str": "位移式浪涌发生器"
+  },
+  "symbol": "*",
+  "color": "magenta",
+  "broken_symbol": "#",
+  "broken_color": "dark_gray",
+  "damage_modifier": 60,
+  "durability": 200,
+  "description": "An exotic motor, converted into a endless source of kinetic energy with even more anomalous technology.  It serves as a motor that never drains power, though less powerful than its original form.  Still cannot be equiped with an alternator, but multiple can be installed if needed.",
+  "backfire_threshold": 0.5,
+  "backfire_freq": 15,
+  "damaged_power_factor": 0.5,
+  "m2c": 90,
+  "power": 200000,
+  "energy_consumption": 0,
+  "fuel_type": "essence_fake",
+  "item": "displacement_surge_generator_item",
+  "location": "engine_block",
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          7
+        ],
+        [
+          "electronics",
+          6
+        ],
+        [
+          "magic",
+          8
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ],
+        [
+          "electronics",
+          5
+        ],
+        [
+          "magic",
+          7
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_weld_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          8
+        ],
+        [
+          "electronics",
+          7
+        ],
+        [
+          "magic",
+          9
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "ENGINE",
+    "PERPETUAL"
+  ],
+  "breaks_into": [
+    {
+      "item": "scrap",
+      "count": [
+        1,
+        4
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        1,
+        3
+      ]
+    },
+    {
+      "item": "cable",
+      "charges": [
+        3,
+        6
+      ]
+    },
+    {
+      "item": "essence_dull",
+      "count": [
+        25,
+        50
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 10
+  }
+}
+```
+

@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: GUN Arcana
+title: Arcana→GUN→electrothermal_arc_cannon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：electrothermal_arc_cannon|http://cdda.aloxaf.cn/search?q=electrothermal_arc_cannon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "electrothermal_arc_cannon",
+  "looks_like": "plasma_rifle",
+  "type": "GUN",
+  "reload_noise_volume": 10,
+  "name": {
+    "str": "electrothermal arc cannon"
+  },
+  "description": "An advanced, though somewhat bulky, energy weapon exploiting exotic phenomenon.  Fires an anomalous bolt of energy that can jump from target to target, generating an electrothermal effect that leaves burning plasma and explosive bursts of electricity in its wake.  Highly indiscriminate, but equally destructive if used in a target-rich environment.",
+  "weight": "5 kg",
+  "volume": "3500 ml",
+  "longest_side": "100 cm",
+  "price": "16000 USD",
+  "price_postapoc": "75 USD",
+  "to_hit": -1,
+  "bashing": 12,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "symbol": "(",
+  "color": "yellow",
+  "skill": "rifle",
+  "range": 45,
+  "//": "Base impact damage is only ~42%, but ammo effects include an explosion that bumps expected damage back up to the standard 50% of UPS draw.",
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 50
+  },
+  "dispersion": 60,
+  "durability": 7,
+  "loudness": 35,
+  "ups_charges": 120,
+  "reload": 0,
+  "valid_mod_locations": [
+    [
+      "accessories",
+      4
+    ],
+    [
+      "emitter",
+      1
+    ],
+    [
+      "grip",
+      1
+    ],
+    [
+      "rail",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock",
+      1
+    ],
+    [
+      "underbarrel",
+      1
+    ]
+  ],
+  "ammo_effects": [
+    "PLASMA",
+    "AMMO_ELECTROTHERMAL_LIGHTNING",
+    "AMMO_ELECTROTHERMAL_FIRE",
+    "BOUNCE"
+  ],
+  "flags": [
+    "NEVER_JAMS",
+    "NO_UNLOAD",
+    "NON-FOULING",
+    "NEEDS_NO_LUBE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "electrothermal_arc_cannon",
+  "looks_like": "plasma_rifle",
+  "type": "GUN",
+  "reload_noise_volume": 10,
+  "name": {
+    "str": "电热电弧炮"
+  },
+  "description": "An advanced, though somewhat bulky, energy weapon exploiting exotic phenomenon.  Fires an anomalous bolt of energy that can jump from target to target, generating an electrothermal effect that leaves burning plasma and explosive bursts of electricity in its wake.  Highly indiscriminate, but equally destructive if used in a target-rich environment.",
+  "weight": "5 kg",
+  "volume": "3500 ml",
+  "longest_side": "100 cm",
+  "price": "16000 USD",
+  "price_postapoc": "75 USD",
+  "to_hit": -1,
+  "bashing": 12,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "symbol": "(",
+  "color": "yellow",
+  "skill": "rifle",
+  "range": 45,
+  "//": "Base impact damage is only ~42%, but ammo effects include an explosion that bumps expected damage back up to the standard 50% of UPS draw.",
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 50
+  },
+  "dispersion": 60,
+  "durability": 7,
+  "loudness": 35,
+  "ups_charges": 120,
+  "reload": 0,
+  "valid_mod_locations": [
+    [
+      "accessories",
+      4
+    ],
+    [
+      "emitter",
+      1
+    ],
+    [
+      "grip",
+      1
+    ],
+    [
+      "rail",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock",
+      1
+    ],
+    [
+      "underbarrel",
+      1
+    ]
+  ],
+  "ammo_effects": [
+    "PLASMA",
+    "AMMO_ELECTROTHERMAL_LIGHTNING",
+    "AMMO_ELECTROTHERMAL_FIRE",
+    "BOUNCE"
+  ],
+  "flags": [
+    "NEVER_JAMS",
+    "NO_UNLOAD",
+    "NON-FOULING",
+    "NEEDS_NO_LUBE"
+  ]
+}
+```
+

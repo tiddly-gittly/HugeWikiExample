@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_WHERE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_WHERE|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_WHERE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_WHERE",
+  "dynamic_line": "Before all this started, an old parish church.  Many of our sanctums took the form of any church, hof, or other such place sympathetic to our cause.  I'd known the priest here for years, and he sheltered us many times despite the heathen nature of many of us, including myself.  This was a natural choice on realizing how dire the situation was, though we found the place abandoned at some point during the chaos.",
+  "responses": [
+    {
+      "text": "What did you mean by heathen?",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ]
+        }
+      },
+      "topic": "TALK_CF_REP_HEATHEN"
+    },
+    {
+      "text": "And what cause would that be?",
+      "topic": "TALK_CF_REP_CAUSE"
+    },
+    {
+      "text": "I see.  That is all for now.",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_WHERE",
+  "dynamic_line": "在这一切开始之前，一个古老的教区教堂。我们的许多庇护所采取的形式，任何教堂，霍夫，或其他类似的地方同情我们的事业。我在这里认识神父很多年了，他多次庇护我们，尽管我们很多人都是异教徒，包括我自己。这是一个自然的选择，意识到形势有多严峻，尽管我们发现在混乱的某个时候，这个地方被遗弃了。",
+  "responses": [
+    {
+      "text": "你说异教徒是什么意思？",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ]
+        }
+      },
+      "topic": "TALK_CF_REP_HEATHEN"
+    },
+    {
+      "text": "那会是什么原因呢？",
+      "topic": "TALK_CF_REP_CAUSE"
+    },
+    {
+      "text": "我懂了。现在到此为止。",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

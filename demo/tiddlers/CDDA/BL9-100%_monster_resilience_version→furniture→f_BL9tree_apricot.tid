@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9tree_apricot
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9tree_apricot|http://cdda.aloxaf.cn/search?q=f_BL9tree_apricot]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_apricot",
+  "name": "apricot tree",
+  "looks_like": "t_tree_apricot",
+  "description": "A transplanted species of 'Prunus armeniaca', rarely found in New England.  It produces apricots in the summer.  If you examined the spurs more closely, you could probably find some mature apricots.  You could also cut it down with the right tools.",
+  "symbol": "7",
+  "color": [
+    "light_green",
+    "light_red_green",
+    "light_green",
+    "brown"
+  ],
+  "//": "barren in winter, fruits in summer",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn_nectar",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "summer"
+      ],
+      "id": "apricot_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_apricot",
+  "name": "杏树",
+  "looks_like": "t_tree_apricot",
+  "description": "一棵在夏天能够结出杏子果实的树，分类学上属于樱桃属，移植自其他地区，很难在本地找到。如果你顺着枝干仔细观察的话，就可以找到一些成熟的杏子。你可以用合适的工具砍倒它。",
+  "symbol": "7",
+  "color": [
+    "light_green",
+    "light_red_green",
+    "light_green",
+    "brown"
+  ],
+  "//": "barren in winter, fruits in summer",
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn_nectar",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "summer"
+      ],
+      "id": "apricot_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+

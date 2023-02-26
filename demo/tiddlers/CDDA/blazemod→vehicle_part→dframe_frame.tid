@@ -1,0 +1,195 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→dframe_frame
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dframe_frame|http://cdda.aloxaf.cn/search?q=dframe_frame]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/diamond_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "dframe_frame",
+  "type": "vehicle_part",
+  "name": {
+    "str": "diamond frame"
+  },
+  "item": "diamondframe",
+  "location": "structure",
+  "standard_symbols": true,
+  "color": "white",
+  "broken_color": "white",
+  "description": "A framework of super-strong crystal.  Other vehicle components can be mounted on it, and it can be attached to other frames to increase the vehicle's size.",
+  "durability": 3000,
+  "breaks_into": [
+    {
+      "item": "spiral_matrix"
+    },
+    {
+      "item": "dshards",
+      "count": [
+        75,
+        150
+      ]
+    },
+    {
+      "item": "dcluster",
+      "count": [
+        4,
+        8
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_weld_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          7
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "MOUNTABLE",
+    "INITIAL_PART"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "dframe_frame",
+  "type": "vehicle_part",
+  "name": {
+    "str": "钻石车架"
+  },
+  "item": "diamondframe",
+  "location": "structure",
+  "standard_symbols": true,
+  "color": "white",
+  "broken_color": "white",
+  "description": "一个特别坚固的钻石结晶车辆框架。其他载具部件能够安装在它上面，在它四周增加新的车辆框架，就可以增加车辆大小。",
+  "durability": 3000,
+  "breaks_into": [
+    {
+      "item": "spiral_matrix"
+    },
+    {
+      "item": "dshards",
+      "count": [
+        75,
+        150
+      ]
+    },
+    {
+      "item": "dcluster",
+      "count": [
+        4,
+        8
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_weld_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          7
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "MOUNTABLE",
+    "INITIAL_PART"
+  ]
+}
+```
+

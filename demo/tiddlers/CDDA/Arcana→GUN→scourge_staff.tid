@@ -1,0 +1,195 @@
+creator: 林一二
+revision: 0
+tags: GUN Arcana
+title: Arcana→GUN→scourge_staff
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：scourge_staff|http://cdda.aloxaf.cn/search?q=scourge_staff]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "scourge_staff",
+  "type": "GUN",
+  "category": "weapons",
+  "name": {
+    "str": "bane staff",
+    "str_pl": "bane staves"
+  },
+  "description": "A wooden staff decorated with gold, capped with a dark blue gem.  The wood gives off a faintly acrid smell.  Firing it will produce pools of acid and toxic fumes.",
+  "weight": "2800 g",
+  "volume": "3 L",
+  "longest_side": "150 cm",
+  "//": "An out-of-context artifact, if it ever existed as a relic the Silver Enclave left behind it's become effectively unrecognizable, but more likely it was stuck in the creature that brought it here.",
+  "price_postapoc": "100 USD",
+  "to_hit": 3,
+  "bashing": 22,
+  "material": [
+    "wood",
+    "gold",
+    "essencemat"
+  ],
+  "symbol": "/",
+  "looks_like": "q_staff",
+  "repairs_like": "staff_druidic",
+  "color": "yellow",
+  "ammo": "essence_blood_type",
+  "skill": "magic",
+  "range": 40,
+  "ranged_damage": {
+    "damage_type": "acid",
+    "amount": 30,
+    "armor_penetration": 10
+  },
+  "dispersion": 250,
+  "durability": 10,
+  "loudness": 75,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 4
+      }
+    }
+  ],
+  "clip_size": 4,
+  "reload": 200,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_bane_staff_venom",
+            "message": "Sickening venom flows from your staff as you strike.",
+            "npc_message": "Sickening venom flows from %1$s's staff as they strike."
+          }
+        ]
+      }
+    ]
+  },
+  "ammo_effects": [
+    "ACIDBOMB",
+    "TOXICGAS",
+    "ARCANA_BANE_FUNG",
+    "ARCANA_BANE_NUKE",
+    "ARCANA_BANE_TEAR"
+  ],
+  "techniques": [
+    "WBLOCK_1",
+    "RAPID"
+  ],
+  "flags": [
+    "UNBREAKABLE_MELEE",
+    "NEVER_JAMS",
+    "PRIMITIVE_RANGED_WEAPON",
+    "NONCONDUCTIVE",
+    "NO_SALVAGE",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED",
+    "SHEATH_SPEAR"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "scourge_staff",
+  "type": "GUN",
+  "category": "weapons",
+  "name": {
+    "str": "毒蛇杖",
+    "str_pl": "毒蛇杖"
+  },
+  "description": "一种用金装饰的木制杖，上面有深蓝色的宝石。木头发出一种微弱的刺鼻气味。燃烧它会产生大量的酸性和有毒气体。",
+  "weight": "2800 g",
+  "volume": "3 L",
+  "longest_side": "150 cm",
+  "//": "An out-of-context artifact, if it ever existed as a relic the Silver Enclave left behind it's become effectively unrecognizable, but more likely it was stuck in the creature that brought it here.",
+  "price_postapoc": "100 USD",
+  "to_hit": 3,
+  "bashing": 22,
+  "material": [
+    "wood",
+    "gold",
+    "essencemat"
+  ],
+  "symbol": "/",
+  "looks_like": "q_staff",
+  "repairs_like": "staff_druidic",
+  "color": "yellow",
+  "ammo": "essence_blood_type",
+  "skill": "magic",
+  "range": 40,
+  "ranged_damage": {
+    "damage_type": "acid",
+    "amount": 30,
+    "armor_penetration": 10
+  },
+  "dispersion": 250,
+  "durability": 10,
+  "loudness": 75,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 4
+      }
+    }
+  ],
+  "clip_size": 4,
+  "reload": 200,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_bane_staff_venom",
+            "message": "当你攻击的时候，令人恶心的毒液从你的手杖里流出来。",
+            "npc_message": "当%1$s的法杖挥舞时，令人恶心的毒液流动出来。"
+          }
+        ]
+      }
+    ]
+  },
+  "ammo_effects": [
+    "ACIDBOMB",
+    "TOXICGAS",
+    "ARCANA_BANE_FUNG",
+    "ARCANA_BANE_NUKE",
+    "ARCANA_BANE_TEAR"
+  ],
+  "techniques": [
+    "WBLOCK_1",
+    "RAPID"
+  ],
+  "flags": [
+    "UNBREAKABLE_MELEE",
+    "NEVER_JAMS",
+    "PRIMITIVE_RANGED_WEAPON",
+    "NONCONDUCTIVE",
+    "NO_SALVAGE",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED",
+    "SHEATH_SPEAR"
+  ]
+}
+```
+

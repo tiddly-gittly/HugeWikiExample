@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: technique secronom_lore_expansion
+title: secronom_lore_expansion→technique→tec_secro_morph_tents_strike_quick
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_secro_morph_tents_strike_quick|http://cdda.aloxaf.cn/search?q=tec_secro_morph_tents_strike_quick]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_tents_strike_quick",
+  "name": "Quick Strike",
+  "messages": [
+    "Your tentacles swiftly strikes %s",
+    "<npcname>'s tentacles strike %s",
+    "Your tentacles quickly slaps at %s",
+    "<npcname>'s tentacles slap at %s",
+    "Your tentacles swiftly hit %s",
+    "<npcname>'s tentacles hit %s"
+  ],
+  "melee_allowed": true,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 1
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.5
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 0.8
+    }
+  ],
+  "description": "-33% bash, -33% movecost",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_tents_strike_quick",
+  "name": "快攻",
+  "messages": [
+    "你的触角快速击打%s",
+    "<npcname>的触须打击了%s",
+    "你的触手在快速地拍打%s",
+    "<npcname>的触须拍击了%s",
+    "你的触手快速击中%s",
+    "<npcname>的触须击中了%s"
+  ],
+  "melee_allowed": true,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 1
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.5
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 0.8
+    }
+  ],
+  "description": "-10% 钝击，-30% 移动耗时",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+

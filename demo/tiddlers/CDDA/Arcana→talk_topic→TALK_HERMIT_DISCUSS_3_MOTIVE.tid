@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_3_MOTIVE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_3_MOTIVE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_3_MOTIVE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_MOTIVE",
+  "dynamic_line": "Perhaps.  It is hard to be certain of gods, earthly or otherworldly.  No doubt other powerful beings from Beyond have no such concern, but is it because they believe there will be no such consequences, or are they ignorant of them?  Or worse, eager to see what havoc may afflict other planes of existence?  These are questions no mortal mind can answer with certainty, only that at least one of these powers has an interest in deeds that benefit us, no matter His true intent.",
+  "responses": [
+    {
+      "switch": true,
+      "text": "Alright…",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "Alright… I am ready.",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_3_MOTIVE",
+  "dynamic_line": "也许。很难确定神，无论是在地上还是在另一个世界。毫无疑问，其他来自远方的强大的生命没有这种担心，但这是因为他们相信不会有这样的后果，还是他们不知道这些后果？或者更糟的是，渴望看到什么样的灾难会折磨其他存在的层面？这些问题没有一个凡人的头脑能够肯定地回答，只是这些力量中至少有一个对有益于我们的行为有兴趣，不管他的真实意图如何。",
+  "responses": [
+    {
+      "switch": true,
+      "text": "好吧……",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "好吧…我准备好了。",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

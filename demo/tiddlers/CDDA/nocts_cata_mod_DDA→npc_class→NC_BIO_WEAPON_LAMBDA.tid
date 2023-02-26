@@ -1,0 +1,761 @@
+creator: 林一二
+revision: 0
+tags: npc_class nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→npc_class→NC_BIO_WEAPON_LAMBDA
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：NC_BIO_WEAPON_LAMBDA|http://cdda.aloxaf.cn/search?q=NC_BIO_WEAPON_LAMBDA]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/c_classes.json
+
+
+!! 原文
+
+```json
+{
+  "type": "npc_class",
+  "id": "NC_BIO_WEAPON_LAMBDA",
+  "name": "Bio-Weapon",
+  "job_description": "I am fighting towards a better tomorrow…",
+  "common": false,
+  "bonus_str": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "bonus_dex": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "bonus_int": {
+    "rng": [
+      4,
+      4
+    ]
+  },
+  "bonus_per": {
+    "rng": [
+      2,
+      2
+    ]
+  },
+  "skills": [
+    {
+      "skill": "computer",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "cooking",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "driving",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "chemistry",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "electronics",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "fabrication",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "firstaid",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "mechanics",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "traps",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "speech",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "survival",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "tailor",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "archery",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "bashing",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "cutting",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "dodge",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "gun",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "launcher",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "melee",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "stabbing",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "throw",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "unarmed",
+      "level": {
+        "rng": [
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "skill": "pistol",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "rifle",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "shotgun",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "smg",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    }
+  ],
+  "worn_override": "NC_BIO_WEAPON_worn",
+  "carry_override": "NC_BIO_WEAPON_carry",
+  "weapon_override": "NC_BIO_WEAPON_L_weapon",
+  "//": "Generic mutation and CBM setup, modeled after a mix of Alpha and Gamma.  Add red eyes if they ever become part of mainline.",
+  "traits": [
+    [
+      "hair_blond_medium",
+      100
+    ],
+    [
+      "SKIN_LIGHT",
+      100
+    ],
+    [
+      "BIO_WEAPON_GENERIC",
+      100
+    ],
+    [
+      "NIGHTVISION",
+      100
+    ],
+    [
+      "PSYCHOPATH",
+      100
+    ],
+    [
+      "PAINREC_BIOWEAPON",
+      100
+    ],
+    [
+      "SPEED_BIOWEAPON",
+      100
+    ],
+    [
+      "HUNGER_BIOWEAPON",
+      100
+    ],
+    [
+      "NEURO_GOOD_BIOWEAPON",
+      100
+    ]
+  ],
+  "bionics": [
+    {
+      "id": "bio_ethanol",
+      "chance": 100
+    },
+    {
+      "id": "bio_batteries",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_carbon",
+      "chance": 100
+    },
+    {
+      "id": "bio_heat_absorb",
+      "chance": 100
+    },
+    {
+      "id": "bio_nanobots",
+      "chance": 100
+    },
+    {
+      "id": "bio_painkiller",
+      "chance": 100
+    },
+    {
+      "id": "bio_shock",
+      "chance": 100
+    },
+    {
+      "id": "bio_sunglasses",
+      "chance": 100
+    },
+    {
+      "id": "bio_razors",
+      "chance": 100
+    },
+    {
+      "id": "bio_tools",
+      "chance": 100
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "npc_class",
+  "id": "NC_BIO_WEAPON_LAMBDA",
+  "name": "Bio-Weapon",
+  "job_description": "I am fighting towards a better tomorrow…",
+  "common": false,
+  "bonus_str": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "bonus_dex": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "bonus_int": {
+    "rng": [
+      4,
+      4
+    ]
+  },
+  "bonus_per": {
+    "rng": [
+      2,
+      2
+    ]
+  },
+  "skills": [
+    {
+      "skill": "computer",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "cooking",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "driving",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "chemistry",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "electronics",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "fabrication",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "firstaid",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "mechanics",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "traps",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "speech",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "survival",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "tailor",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "archery",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "bashing",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "cutting",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "dodge",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "gun",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "launcher",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "melee",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "stabbing",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "throw",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "unarmed",
+      "level": {
+        "rng": [
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "skill": "pistol",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "rifle",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "shotgun",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "smg",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    }
+  ],
+  "worn_override": "NC_BIO_WEAPON_worn",
+  "carry_override": "NC_BIO_WEAPON_carry",
+  "weapon_override": "NC_BIO_WEAPON_L_weapon",
+  "//": "Generic mutation and CBM setup, modeled after a mix of Alpha and Gamma.  Add red eyes if they ever become part of mainline.",
+  "traits": [
+    [
+      "hair_blond_medium",
+      100
+    ],
+    [
+      "SKIN_LIGHT",
+      100
+    ],
+    [
+      "BIO_WEAPON_GENERIC",
+      100
+    ],
+    [
+      "NIGHTVISION",
+      100
+    ],
+    [
+      "PSYCHOPATH",
+      100
+    ],
+    [
+      "PAINREC_BIOWEAPON",
+      100
+    ],
+    [
+      "SPEED_BIOWEAPON",
+      100
+    ],
+    [
+      "HUNGER_BIOWEAPON",
+      100
+    ],
+    [
+      "NEURO_GOOD_BIOWEAPON",
+      100
+    ]
+  ],
+  "bionics": [
+    {
+      "id": "bio_ethanol",
+      "chance": 100
+    },
+    {
+      "id": "bio_batteries",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_carbon",
+      "chance": 100
+    },
+    {
+      "id": "bio_heat_absorb",
+      "chance": 100
+    },
+    {
+      "id": "bio_nanobots",
+      "chance": 100
+    },
+    {
+      "id": "bio_painkiller",
+      "chance": 100
+    },
+    {
+      "id": "bio_shock",
+      "chance": 100
+    },
+    {
+      "id": "bio_sunglasses",
+      "chance": 100
+    },
+    {
+      "id": "bio_razors",
+      "chance": 100
+    },
+    {
+      "id": "bio_tools",
+      "chance": 100
+    }
+  ]
+}
+```
+

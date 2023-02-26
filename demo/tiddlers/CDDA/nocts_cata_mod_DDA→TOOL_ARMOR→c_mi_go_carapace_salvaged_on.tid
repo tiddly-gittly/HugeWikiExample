@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL_ARMOR→c_mi_go_carapace_salvaged_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_mi_go_carapace_salvaged_on|http://cdda.aloxaf.cn/search?q=c_mi_go_carapace_salvaged_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_mi_go_carapace_salvaged_on",
+  "copy-from": "c_mi_go_carapace_salvaged",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "salvaged carapace armor (on)",
+    "str_pl": "salvaged carapace armors (on)"
+  },
+  "description": "A vaguely human-shaped shell of alien sinew and steel support, covered in armor plates made of resin.  Salvaged using pre-cataclysm research into other living weaponry, it's been practically mutilated to fit a human (or mutant) wearer.  Activating it will reduce the suit's encumbrance, enhance strength and dexterity, protect the wearer from toxic gas, serve as a rebreather, enhance stamina and carry capacity, and provide some protection from outside temperature.  It seems to recharge from sunlight, and being active will also gradually fatigue the user and affect healthiness, plus render them more vulnerable to electric shocks.",
+  "turns_per_charge": 150,
+  "revert_to": "c_mi_go_carapace_salvaged",
+  "use_action": {
+    "target": "c_mi_go_carapace_salvaged",
+    "msg": "The suit's sinews go slack, releasing you from its grasp.",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "WATERPROOF",
+      "RAINPROOF",
+      "GAS_PROOF",
+      "REBREATHER",
+      "NO_TAKEOFF"
+    ]
+  },
+  "material": [
+    "alien_resin",
+    "flesh",
+    "steel"
+  ],
+  "warmth": 0,
+  "material_thickness": 4,
+  "environmental_protection": 15,
+  "armor": [
+    {
+      "encumbrance": 30,
+      "coverage": 100,
+      "covers": [
+        "head",
+        "mouth",
+        "eyes",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_mi_go_carapace_salvaged_on",
+  "copy-from": "c_mi_go_carapace_salvaged",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "改装甲壳装甲（开）",
+    "str_pl": "改装甲壳装甲（开）"
+  },
+  "description": "一个隐约看得出人形的外壳，由外星肌腱和钢支架构成，外面覆盖着树脂制成的网状装甲板。大灾变前通过对其他活体武器的研究并改装而来，它经过了大量的切割以适合人类（或变种人）穿戴。激活它可以减少装甲的累赘，增强使用者的力量和敏捷，保护穿戴者免受有毒气体的伤害，同时其可以作为一个呼吸器，增强使用者的耐力和负重能力，并提供一定程度的外界温度防护。 它似乎可以从阳光下充电，但会加快使用者疲劳并且影响其健康，而且更容易受到电击。",
+  "turns_per_charge": 150,
+  "revert_to": "c_mi_go_carapace_salvaged",
+  "use_action": {
+    "target": "c_mi_go_carapace_salvaged",
+    "msg": "甲壳装甲的肌肉松开了，你摆脱了束缚。",
+    "type": "transform",
+    "ammo_scale": 0
+  },
+  "extend": {
+    "flags": [
+      "WATERPROOF",
+      "RAINPROOF",
+      "GAS_PROOF",
+      "REBREATHER",
+      "NO_TAKEOFF"
+    ]
+  },
+  "material": [
+    "alien_resin",
+    "flesh",
+    "steel"
+  ],
+  "warmth": 0,
+  "material_thickness": 4,
+  "environmental_protection": 15,
+  "armor": [
+    {
+      "encumbrance": 30,
+      "coverage": 100,
+      "covers": [
+        "head",
+        "mouth",
+        "eyes",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r"
+      ]
+    }
+  ]
+}
+```
+

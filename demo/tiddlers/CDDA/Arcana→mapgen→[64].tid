@@ -1,0 +1,349 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[64]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": "riverside_dwelling",
+  "method": "json",
+  "weight": 100,
+  "object": {
+    "rows": [
+      "........._........_.....",
+      "..._........._.._...._..",
+      "._....#_..||D|D||_._..._",
+      "..._..____wSfffSW#_._#..",
+      "....s__._#afffffws#_....",
+      ".#.._7.||||fffff||||__._",
+      "._..___|bbbbfffbbbb|#_..",
+      "..___._|fffffffffff|_._.",
+      "....__#|bbbbfffbbbb|#7#.",
+      "..._.##|fffffffffff|_#._",
+      "_....##|bbbbfffbbbb|#_..",
+      "...#.7_afffffffffffa#.._",
+      "._#7#__wfffBcccBfffw__..",
+      ".#.##__WBfffffffffBW#7_.",
+      ".__s__#----------D--._..",
+      ".......-OfOfOfOffff-#__.",
+      "._.._7.-fffffffffff-____",
+      "....__#-OfOfOfOfOff-s__.",
+      "..._#__-------------#_..",
+      "..._.._###__#_##.#___.__",
+      "_.#...._.._#.___.__#7#__",
+      ".....__......_#._.._#...",
+      ".._..__..#.._..____#._..",
+      "................_....._."
+    ],
+    "terrain": {
+      "7": "t_region_tree",
+      "#": "t_region_shrub",
+      "-": "t_rock_wall",
+      ".": "t_region_groundcover",
+      "B": "t_floor",
+      "D": "t_door_locked_interior",
+      "O": "t_floor",
+      "S": "t_floor",
+      "W": "t_window_stained_blue",
+      "_": "t_region_groundcover_forest",
+      "a": "t_window_stained_green",
+      "b": "t_floor",
+      "c": "t_floor",
+      "f": "t_floor",
+      "s": "t_shrub",
+      "w": "t_window_stained_red",
+      "|": "t_wall_wood"
+    },
+    "furniture": {
+      "O": [
+        "f_coffin_c",
+        "f_coffin_o"
+      ],
+      "B": "f_brazier",
+      "S": "f_statue",
+      "b": "f_bench",
+      "c": "f_counter"
+    },
+    "items": {
+      "_": {
+        "item": "forest",
+        "chance": 1
+      },
+      "O": [
+        {
+          "item": "cleansing_flame_casualties",
+          "chance": 25
+        },
+        {
+          "item": "antique",
+          "chance": 25
+        }
+      ],
+      "b": {
+        "item": "church",
+        "chance": 25
+      },
+      "c": {
+        "item": "cleansing_flame_books_postapoc",
+        "chance": 50
+      }
+    },
+    "place_loot": [
+      {
+        "item": "note_flame_hint",
+        "x": [
+          12,
+          14
+        ],
+        "y": 12
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_SHRINE_FLAME",
+        "x": [
+          8,
+          18
+        ],
+        "y": [
+          6,
+          13
+        ],
+        "density": 0.075
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_GM_2_c",
+  "object": {
+    "set": [
+      {
+        "line": "terrain",
+        "id": "t_fence_barbed",
+        "x": 0,
+        "x2": 0,
+        "y": 19,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_fence_barbed",
+        "x": 0,
+        "x2": 4,
+        "y": 23,
+        "y2": 23
+      },
+      {
+        "line": "terrain",
+        "id": "t_fence_post",
+        "x": 0,
+        "x2": 0,
+        "y": 13,
+        "y2": 18
+      },
+      {
+        "line": "terrain",
+        "id": "t_fence_post",
+        "x": 5,
+        "x2": 7,
+        "y": 23,
+        "y2": 23
+      },
+      {
+        "line": "terrain",
+        "id": "t_fence_post",
+        "x": 15,
+        "x2": 16,
+        "y": 23,
+        "y2": 23
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 1,
+        "x2": 1,
+        "y": 8,
+        "y2": 21
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 1,
+        "x2": 8,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_palisade",
+        "x": 15,
+        "x2": 21,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 1,
+        "x2": 1,
+        "y": 3,
+        "y2": 7
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit",
+        "x": 22,
+        "x2": 23,
+        "y": 22,
+        "y2": 22
+      },
+      {
+        "line": "terrain",
+        "id": "t_pit_shallow",
+        "x": 1,
+        "x2": 1,
+        "y": 0,
+        "y2": 2
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "om_terrain": "riverside_dwelling",
+  "method": "json",
+  "weight": 100,
+  "object": {
+    "rows": [
+      "........._........_.....",
+      "..._........._.._...._..",
+      "._....#_..||D|D||_._..._",
+      "..._..____wSfffSW#_._#..",
+      "....s__._#afffffws#_....",
+      ".#.._7.||||fffff||||__._",
+      "._..___|bbbbfffbbbb|#_..",
+      "..___._|fffffffffff|_._.",
+      "....__#|bbbbfffbbbb|#7#.",
+      "..._.##|fffffffffff|_#._",
+      "_....##|bbbbfffbbbb|#_..",
+      "...#.7_afffffffffffa#.._",
+      "._#7#__wfffBcccBfffw__..",
+      ".#.##__WBfffffffffBW#7_.",
+      ".__s__#----------D--._..",
+      ".......-OfOfOfOffff-#__.",
+      "._.._7.-fffffffffff-____",
+      "....__#-OfOfOfOfOff-s__.",
+      "..._#__-------------#_..",
+      "..._.._###__#_##.#___.__",
+      "_.#...._.._#.___.__#7#__",
+      ".....__......_#._.._#...",
+      ".._..__..#.._..____#._..",
+      "................_....._."
+    ],
+    "terrain": {
+      "7": "t_region_tree",
+      "#": "t_region_shrub",
+      "-": "t_rock_wall",
+      ".": "t_region_groundcover",
+      "B": "t_floor",
+      "D": "t_door_locked_interior",
+      "O": "t_floor",
+      "S": "t_floor",
+      "W": "t_window_stained_blue",
+      "_": "t_region_groundcover_forest",
+      "a": "t_window_stained_green",
+      "b": "t_floor",
+      "c": "t_floor",
+      "f": "t_floor",
+      "s": "t_shrub",
+      "w": "t_window_stained_red",
+      "|": "t_wall_wood"
+    },
+    "furniture": {
+      "O": [
+        "f_coffin_c",
+        "f_coffin_o"
+      ],
+      "B": "f_brazier",
+      "S": "f_statue",
+      "b": "f_bench",
+      "c": "f_counter"
+    },
+    "items": {
+      "_": {
+        "item": "forest",
+        "chance": 1
+      },
+      "O": [
+        {
+          "item": "cleansing_flame_casualties",
+          "chance": 25
+        },
+        {
+          "item": "antique",
+          "chance": 25
+        }
+      ],
+      "b": {
+        "item": "church",
+        "chance": 25
+      },
+      "c": {
+        "item": "cleansing_flame_books_postapoc",
+        "chance": 50
+      }
+    },
+    "place_loot": [
+      {
+        "item": "note_flame_hint",
+        "x": [
+          12,
+          14
+        ],
+        "y": 12
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_SHRINE_FLAME",
+        "x": [
+          8,
+          18
+        ],
+        "y": [
+          6,
+          13
+        ],
+        "density": 0.075
+      }
+    ]
+  }
+}
+```
+

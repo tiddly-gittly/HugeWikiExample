@@ -1,0 +1,181 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_child
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_child|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_child]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_child",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie child",
+    "str_pl": "zombie children"
+  },
+  "description": "It was only a child, and little is different about it now aside from the hungry look in its eyes.  You'd be hard pressed to not feel like you were killing an actual child by putting it down.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 50,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "z",
+  "color": "light_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 3,
+      "damage_type": "cut"
+    }
+  ],
+  "armor_bash": 3,
+  "dodge": 2,
+  "vision_day": 30,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "scratch",
+      15
+    ]
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "default_zombie_children_clothes",
+        100
+      ],
+      [
+        "child_items",
+        65
+      ]
+    ]
+  },
+  "burn_into": "mon_zombie_child",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_child",
+  "type": "MONSTER",
+  "name": {
+    "str": "儿童丧尸",
+    "str_pl": "儿童丧尸"
+  },
+  "description": "一个不幸在年幼时期就被感染为丧尸的孩子，有着失神无助与痛苦饥渴的外表，情感正常的人类杀死这样的孩子通常会感到难过与悲伤。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 50,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "z",
+  "color": "light_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 3,
+      "damage_type": "cut"
+    }
+  ],
+  "armor_bash": 3,
+  "dodge": 2,
+  "vision_day": 30,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "scratch",
+      15
+    ]
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "default_zombie_children_clothes",
+        100
+      ],
+      [
+        "child_items",
+        65
+      ]
+    ]
+  },
+  "burn_into": "mon_zombie_child",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

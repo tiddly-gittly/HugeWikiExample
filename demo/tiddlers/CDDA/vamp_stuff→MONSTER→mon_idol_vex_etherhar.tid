@@ -1,0 +1,149 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_idol_vex_etherhar
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_idol_vex_etherhar|http://cdda.aloxaf.cn/search?q=mon_idol_vex_etherhar]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/+Misc/v_spell_mon.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_idol_vex_etherhar",
+  "type": "MONSTER",
+  "name": {
+    "str": "ethereal harbringer"
+  },
+  "description": "A ghastly cloud of concentrated etherean power. Seems to be volatile, and may suddenly implode when it is touched.",
+  "default_faction": "player",
+  "species": [
+    "HORROR"
+  ],
+  "diff": 20,
+  "volume": "3 ml",
+  "weight": "3 g",
+  "hp": 5,
+  "speed": 25,
+  "symbol": "0",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "dodge": 2,
+  "armor_cut": 999,
+  "armor_stab": 999,
+  "armor_bash": 999,
+  "vision_day": 10,
+  "vision_night": 10,
+  "luminance": 2,
+  "path_settings": {
+    "max_dist": 5,
+    "max_length": 20
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_idol_vex_etherhar_spell_target"
+      },
+      "cooldown": 1,
+      "monster_message": "%1$s shines vigorously!"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "HARDTOSHOOT",
+    "WEBWALK",
+    "FLIES",
+    "NO_BREATHE",
+    "NOGIB"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_idol_vex_etherhar",
+  "type": "MONSTER",
+  "name": {
+    "str": "空灵使者"
+  },
+  "description": "汇聚了以太力量的恐怖云雾。看上去很不稳定，好像一碰到就会突然内爆。",
+  "default_faction": "player",
+  "species": [
+    "HORROR"
+  ],
+  "diff": 20,
+  "volume": "3 ml",
+  "weight": "3 g",
+  "hp": 5,
+  "speed": 25,
+  "symbol": "0",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "dodge": 2,
+  "armor_cut": 999,
+  "armor_stab": 999,
+  "armor_bash": 999,
+  "vision_day": 10,
+  "vision_night": 10,
+  "luminance": 2,
+  "path_settings": {
+    "max_dist": 5,
+    "max_length": 20
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_idol_vex_etherhar_spell_target"
+      },
+      "cooldown": 1,
+      "monster_message": "%1$s 发出闪耀的光芒！"
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "HARDTOSHOOT",
+    "WEBWALK",
+    "FLIES",
+    "NO_BREATHE",
+    "NOGIB"
+  ]
+}
+```
+

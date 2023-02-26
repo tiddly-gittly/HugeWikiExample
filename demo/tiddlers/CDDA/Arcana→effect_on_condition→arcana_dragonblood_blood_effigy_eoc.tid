@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Arcana
+title: Arcana→effect_on_condition→arcana_dragonblood_blood_effigy_eoc
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_dragonblood_blood_effigy_eoc|http://cdda.aloxaf.cn/search?q=arcana_dragonblood_blood_effigy_eoc]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutation_effect_on_condition.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "arcana_dragonblood_blood_effigy_eoc",
+  "recurrence": [
+    "1 s",
+    "1 s"
+  ],
+  "condition": {
+    "u_has_effect": "arcana_dragonblood_blood_effigy_effect"
+  },
+  "effect": [
+    {
+      "u_message": "You feel unearthly life flow through your body.",
+      "type": "mixed"
+    },
+    {
+      "u_mutate_category": "DRAGONBLOOD",
+      "use_vitamins": false
+    },
+    {
+      "u_lose_effect": "arcana_dragonblood_blood_effigy_effect"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "arcana_dragonblood_blood_effigy_eoc",
+  "recurrence": [
+    "1 s",
+    "1 s"
+  ],
+  "condition": {
+    "u_has_effect": "arcana_dragonblood_blood_effigy_effect"
+  },
+  "effect": [
+    {
+      "u_message": "你感觉超然的生命正在你的身体中流通。",
+      "type": "mixed"
+    },
+    {
+      "u_mutate_category": "DRAGONBLOOD",
+      "use_vitamins": false
+    },
+    {
+      "u_lose_effect": "arcana_dragonblood_blood_effigy_effect"
+    }
+  ]
+}
+```
+

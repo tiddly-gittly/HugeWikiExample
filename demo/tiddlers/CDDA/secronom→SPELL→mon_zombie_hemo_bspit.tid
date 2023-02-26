@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_hemo_bspit
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_hemo_bspit|http://cdda.aloxaf.cn/search?q=mon_zombie_hemo_bspit]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_hemo_bspit",
+  "type": "SPELL",
+  "name": {
+    "str": "Blood Spit"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spits a glob of sticky blood onto the target, dealing low bash damage.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "unity_bloodslow",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_hemo_bcurl_check"
+    },
+    {
+      "id": "mon_zombie_hemo_bf_check"
+    },
+    {
+      "id": "mon_zombie_unity_bv_check"
+    }
+  ],
+  "min_damage": 4,
+  "max_damage": 8,
+  "min_range": 12,
+  "max_range": 12,
+  "min_duration": 800,
+  "max_duration": 1600,
+  "field_id": "fd_blood",
+  "min_field_intensity": 2,
+  "max_field_intensity": 2,
+  "damage_type": "bash"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_hemo_bspit",
+  "type": "SPELL",
+  "name": {
+    "str": "包括恐怖的大血池"
+  },
+  "description": "怪物施法的咒语。如果你看到了这一点，那么改为阅读这一条：\n“施法者向目标吐出一团粘血，造成较低的重击伤害。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "unity_bloodslow",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_hemo_bcurl_check"
+    },
+    {
+      "id": "mon_zombie_hemo_bf_check"
+    },
+    {
+      "id": "mon_zombie_unity_bv_check"
+    }
+  ],
+  "min_damage": 4,
+  "max_damage": 8,
+  "min_range": 12,
+  "max_range": 12,
+  "min_duration": 800,
+  "max_duration": 1600,
+  "field_id": "fd_blood",
+  "min_field_intensity": 2,
+  "max_field_intensity": 2,
+  "damage_type": "bash"
+}
+```
+

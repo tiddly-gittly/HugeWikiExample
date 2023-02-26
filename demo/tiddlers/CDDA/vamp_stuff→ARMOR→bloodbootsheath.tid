@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: ARMOR vamp_stuff
+title: vamp_stuff→ARMOR→bloodbootsheath
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bloodbootsheath|http://cdda.aloxaf.cn/search?q=bloodbootsheath]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Items/Armor_Set/v_bloodgear.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bloodbootsheath",
+  "type": "ARMOR",
+  "name": {
+    "str": "blood sheet ankle sheath"
+  },
+  "description": "A blood red, improvised ankle sheath, its material makes it tough and easier to wear.  Activate to sheathe/draw a knife.",
+  "weight": "180 g",
+  "volume": "500 ml",
+  "price": "0 cent",
+  "to_hit": -1,
+  "material": [
+    "compactblood"
+  ],
+  "symbol": "[",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "holster": true,
+      "min_item_volume": "0 ml",
+      "max_contains_volume": "1 L",
+      "max_contains_weight": "1 kg",
+      "max_item_length": "30 cm",
+      "moves": 5,
+      "flag_restriction": [
+        "SHEATH_KNIFE"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Sheath knife",
+    "holster_msg": "You have sheath your %s"
+  },
+  "looks_like": "sheath",
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "STURDY",
+    "ALLOWS_NATURAL_ATTACKS",
+    "WATER_FRIENDLY"
+  ],
+  "material_thickness": 1,
+  "armor": [
+    {
+      "encumbrance": 0,
+      "coverage": 10,
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bloodbootsheath",
+  "type": "ARMOR",
+  "name": {
+    "str": "鲜血刀鞘（踝）"
+  },
+  "description": "一个血红色的，临时制作的刀鞘，其材料使他坚韧且易穿着。激活它可以收刀/拔刀",
+  "weight": "180 g",
+  "volume": "500 ml",
+  "price": "0 cent",
+  "to_hit": -1,
+  "material": [
+    "compactblood"
+  ],
+  "symbol": "[",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "holster": true,
+      "min_item_volume": "0 ml",
+      "max_contains_volume": "1 L",
+      "max_contains_weight": "1 kg",
+      "max_item_length": "30 cm",
+      "moves": 5,
+      "flag_restriction": [
+        "SHEATH_KNIFE"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "插入刀鞘",
+    "holster_msg": "你有你的%s"
+  },
+  "looks_like": "sheath",
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "STURDY",
+    "ALLOWS_NATURAL_ATTACKS",
+    "WATER_FRIENDLY"
+  ],
+  "material_thickness": 1,
+  "armor": [
+    {
+      "encumbrance": 0,
+      "coverage": 10,
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ]
+    }
+  ]
+}
+```
+

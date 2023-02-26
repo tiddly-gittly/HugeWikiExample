@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_skittyweavy_dmg
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_skittyweavy_dmg|http://cdda.aloxaf.cn/search?q=mon_zombie_skittyweavy_dmg]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_skittyweavy_dmg",
+  "type": "SPELL",
+  "name": {
+    "str": "Inject"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster injects the target, dealing minor stabbing damage.",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 2,
+  "max_damage": 4,
+  "damage_type": "stab",
+  "min_range": 1,
+  "max_range": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_skittyweavy_dmg",
+  "type": "SPELL",
+  "name": {
+    "str": "注射"
+  },
+  "description": "怪物施法的。如果你看到了这个，那么读一下这个：\n'施法者注入目标，造成轻微的刺伤。",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 2,
+  "max_damage": 4,
+  "damage_type": "stab",
+  "min_range": 1,
+  "max_range": 1
+}
+```
+

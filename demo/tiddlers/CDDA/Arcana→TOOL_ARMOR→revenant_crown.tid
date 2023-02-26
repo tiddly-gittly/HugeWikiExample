@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→revenant_crown
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：revenant_crown|http://cdda.aloxaf.cn/search?q=revenant_crown]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "revenant_crown",
+  "type": "TOOL_ARMOR",
+  "category": "clothing",
+  "name": {
+    "str": "revenant crown"
+  },
+  "description": "A wicked-looking crown made of precious metal, decorated with scenes of skeletons in a \"danse macabre\" motif.  A single brilliant gem adorns it, in the center of the scene depicted.  Using it shall yield immunity to food poisoning and parasites, in exchange for increased hunger.  It will not cure existing ailments, only prevent them.",
+  "weight": "650 g",
+  "volume": "3500 ml",
+  "price": "150 USD",
+  "price_postapoc": "40 USD",
+  "to_hit": -1,
+  "material": [
+    "silver",
+    "diamond"
+  ],
+  "symbol": "[",
+  "looks_like": "crown_silver",
+  "color": "yellow",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 6
+      }
+    }
+  ],
+  "charges_per_use": 2,
+  "ammo": "essence_blood_type",
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "The gem shimmers with malevolent red light as you feel a strange hunger, a craving for rotting meat and stagnant water…",
+    "effects": [
+      {
+        "id": "revenant_hunger",
+        "duration": 1800
+      }
+    ]
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "NO_SALVAGE",
+    "ALLOWS_NATURAL_ATTACKS",
+    "TRADER_KEEP_EQUIPPED"
+  ],
+  "material_thickness": 1,
+  "armor": [
+    {
+      "coverage": 20,
+      "covers": [
+        "head"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "revenant_crown",
+  "type": "TOOL_ARMOR",
+  "category": "clothing",
+  "name": {
+    "str": "报应王冠"
+  },
+  "description": "一个装饰着“邪恶场景”的丹麦人的王冠。一颗璀璨的宝石装饰着它，在画面的中心。使用它可以产生对食物中毒和寄生虫的免疫力，以换取饥饿感的增加。它不能治愈现有的疾病，只能预防它们。",
+  "weight": "650 g",
+  "volume": "3500 ml",
+  "price": "150 USD",
+  "price_postapoc": "40 USD",
+  "to_hit": -1,
+  "material": [
+    "silver",
+    "diamond"
+  ],
+  "symbol": "[",
+  "looks_like": "crown_silver",
+  "color": "yellow",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 6
+      }
+    }
+  ],
+  "charges_per_use": 2,
+  "ammo": "essence_blood_type",
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "当你感到一种奇怪的饥饿感，对腐烂的肉和死水的渴望时，宝石闪烁着恶意的红光…",
+    "effects": [
+      {
+        "id": "revenant_hunger",
+        "duration": 1800
+      }
+    ]
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "NO_SALVAGE",
+    "ALLOWS_NATURAL_ATTACKS",
+    "TRADER_KEEP_EQUIPPED"
+  ],
+  "material_thickness": 1,
+  "armor": [
+    {
+      "coverage": 20,
+      "covers": [
+        "head"
+      ]
+    }
+  ]
+}
+```
+

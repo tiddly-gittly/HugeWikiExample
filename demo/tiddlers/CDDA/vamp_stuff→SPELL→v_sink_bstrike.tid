@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→v_sink_bstrike
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_sink_bstrike|http://cdda.aloxaf.cn/search?q=v_sink_bstrike]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "v_sink_bstrike",
+  "type": "SPELL",
+  "name": {
+    "str": "Blind Strike"
+  },
+  "description": "Caster teleports and quickly strikes the target, dealing moderate cutting damage, then turns invisible while retreating to a random spot.",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "extra_effects": [
+    {
+      "id": "v_sink_conceal",
+      "hit_self": true
+    },
+    {
+      "id": "v_sink_tp",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "min_damage": 16,
+  "max_damage": 16,
+  "min_range": 10,
+  "max_range": 10,
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "cut"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "v_sink_bstrike",
+  "type": "SPELL",
+  "name": {
+    "str": "盲目打击"
+  },
+  "description": "施法者传送并快速打击目标，造成中等的切割伤害，然后再传送到一个随机点后变为隐形。",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "extra_effects": [
+    {
+      "id": "v_sink_conceal",
+      "hit_self": true
+    },
+    {
+      "id": "v_sink_tp",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "min_damage": 16,
+  "max_damage": 16,
+  "min_range": 10,
+  "max_range": 10,
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "cut"
+}
+```
+

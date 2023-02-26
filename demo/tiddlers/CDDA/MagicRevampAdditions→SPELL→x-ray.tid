@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→x-ray
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：x-ray|http://cdda.aloxaf.cn/search?q=x-ray]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/technomancer.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "name": {
+    "str": "X-ray Vision"
+  },
+  "id": "x-ray",
+  "description": "You fire a cone of X-rays that magically allow you to see that area for a short time.",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "IGNORE_WALLS"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "field_id": "fd_clairvoyant",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "difficulty": 6,
+  "min_range": 5,
+  "max_range": 30,
+  "range_increment": 0.75,
+  "max_level": 30,
+  "min_aoe": 15,
+  "max_aoe": 90,
+  "aoe_increment": 1.5,
+  "min_duration": 0,
+  "max_duration": 1350,
+  "duration_increment": 45,
+  "base_casting_time": 175,
+  "base_energy_cost": 550,
+  "energy_source": "BIONIC",
+  "spell_class": "TECHNOMANCER"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "name": {
+    "str": "X光视觉"
+  },
+  "id": "x-ray",
+  "description": "你发射出一道X光，并通过魔法来短暂地看清X光所及区域。",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "IGNORE_WALLS"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "field_id": "fd_clairvoyant",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "difficulty": 6,
+  "min_range": 5,
+  "max_range": 30,
+  "range_increment": 0.75,
+  "max_level": 30,
+  "min_aoe": 15,
+  "max_aoe": 90,
+  "aoe_increment": 1.5,
+  "min_duration": 0,
+  "max_duration": 1350,
+  "duration_increment": 45,
+  "base_casting_time": 175,
+  "base_energy_cost": 550,
+  "energy_source": "BIONIC",
+  "spell_class": "TECHNOMANCER"
+}
+```
+

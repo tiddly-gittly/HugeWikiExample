@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: technique nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→technique→tec_surv_com_counter_dodge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_surv_com_counter_dodge|http://cdda.aloxaf.cn/search?q=tec_surv_com_counter_dodge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_surv_com_counter_dodge",
+  "name": "Counter Sweep",
+  "messages": [
+    "You dodge and send %s tumbling to the ground",
+    "<npcname> dodges and trips %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 6
+    }
+  ],
+  "unarmed_allowed": true,
+  "melee_allowed": true,
+  "dodge_counter": true,
+  "crit_ok": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 0.5
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 0.5
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 0.5
+    }
+  ],
+  "down_dur": 1,
+  "attack_vectors": [
+    "WEAPON",
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_surv_com_counter_dodge",
+  "name": "扫腿反击",
+  "messages": [
+    "你避开攻击并绊倒%s",
+    "<npcname> 避开攻击并绊倒%s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 6
+    }
+  ],
+  "unarmed_allowed": true,
+  "melee_allowed": true,
+  "dodge_counter": true,
+  "crit_ok": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 0.5
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 0.5
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scale": 0.5
+    }
+  ],
+  "down_dur": 1,
+  "attack_vectors": [
+    "WEAPON",
+    "HAND"
+  ]
+}
+```
+

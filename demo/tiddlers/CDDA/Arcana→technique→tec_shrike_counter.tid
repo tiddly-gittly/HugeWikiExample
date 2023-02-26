@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: technique Arcana
+title: Arcana→technique→tec_shrike_counter
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_shrike_counter|http://cdda.aloxaf.cn/search?q=tec_shrike_counter]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_shrike_counter",
+  "name": "Deflection",
+  "messages": [
+    "You deflect the strike and send %s to the ground with their momentum",
+    "<npcname> blocks and floors %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    }
+  ],
+  "melee_allowed": true,
+  "block_counter": true,
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "crit_ok": true,
+  "down_dur": 2,
+  "stun_dur": 2,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0
+    }
+  ],
+  "attack_vectors": [
+    "WEAPON",
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_shrike_counter",
+  "name": "偏斜格挡",
+  "messages": [
+    "你转移攻击方向，用他们的冲力将%s击落地面",
+    "<npcname>座及楼层%s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    }
+  ],
+  "melee_allowed": true,
+  "block_counter": true,
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "crit_ok": true,
+  "down_dur": 2,
+  "stun_dur": 2,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0
+    }
+  ],
+  "attack_vectors": [
+    "WEAPON",
+    "HAND"
+  ]
+}
+```
+

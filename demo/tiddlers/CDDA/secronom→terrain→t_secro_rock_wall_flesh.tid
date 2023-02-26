@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_rock_wall_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_rock_wall_flesh|http://cdda.aloxaf.cn/search?q=t_secro_rock_wall_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_rock_wall_flesh",
+  "name": "fleshed stone wall",
+  "description": "An even sturdier stone wall covered by the flesh.",
+  "symbol": "LINE_OXOX",
+  "color": "red",
+  "move_cost": 0,
+  "coverage": 100,
+  "roof": "t_secro_flat_roof_flesh",
+  "flags": [
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "S_FLESH",
+    "WALL",
+    "AUTO_WALL_SYMBOL",
+    "MINEABLE",
+    "BLOCK_WIND"
+  ],
+  "connects_to": "WALL",
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_rock_wall"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_rock_wall_flesh",
+  "name": "血肉石墙",
+  "description": "被血肉覆盖，而更坚固的石墙。",
+  "symbol": "LINE_OXOX",
+  "color": "red",
+  "move_cost": 0,
+  "coverage": 100,
+  "roof": "t_secro_flat_roof_flesh",
+  "flags": [
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "S_FLESH",
+    "WALL",
+    "AUTO_WALL_SYMBOL",
+    "MINEABLE",
+    "BLOCK_WIND"
+  ],
+  "connects_to": "WALL",
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_rock_wall"
+  }
+}
+```
+

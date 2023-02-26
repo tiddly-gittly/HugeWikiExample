@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_insect_saddler_brood
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_saddler_brood|http://cdda.aloxaf.cn/search?q=mon_insect_saddler_brood]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Saddler.json
+
+
+!! 原文
+
+```json
+{
+  "//": "This is an insect, a manipulating alien parasite similar to the half-life's head crab. Due to coding limitations, things are lot more complicated.",
+  "id": "mon_insect_saddler_brood",
+  "type": "MONSTER",
+  "name": {
+    "str": "saddler broodmother"
+  },
+  "description": "Fiendish giant saddler with numerous green, hairy spindly legs covering its entire bottom. Underneath them produces a heavy, eerie sound, much like from the baby saddlers not given birth... yet.",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 170,
+  "speed": 15,
+  "material": [
+    "flesh"
+  ],
+  "harvest": "zombie",
+  "symbol": "H",
+  "attack_cost": 200,
+  "color": "magenta_green",
+  "aggression": 5,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_insect_saddler_brood_birth_target"
+      },
+      "cooldown": 20,
+      "monster_message": "<color_yellow>The saddler broodmother gave birth to baby saddlers!</color>"
+    }
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "armor_bash": 22,
+  "armor_cut": 20,
+  "armor_bullet": 16,
+  "armor_stab": 20,
+  "vision_day": 12,
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "NO_BREATHE",
+    "CLIMBS",
+    "BASHES",
+    "POISON",
+    "QUEEN"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "This is an insect, a manipulating alien parasite similar to the half-life's head crab. Due to coding limitations, things are lot more complicated.",
+  "id": "mon_insect_saddler_brood",
+  "type": "MONSTER",
+  "name": {
+    "str": "怀孕的萨德勒"
+  },
+  "description": "恶魔般的巨大马鞍，无数绿色多毛的细腿覆盖着它的整个底部。在他们下面发出一种沉重的，可怕的声音，然而……",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 170,
+  "speed": 15,
+  "material": [
+    "flesh"
+  ],
+  "harvest": "zombie",
+  "symbol": "H",
+  "attack_cost": 200,
+  "color": "magenta_green",
+  "aggression": 5,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_insect_saddler_brood_birth_target"
+      },
+      "cooldown": 20,
+      "monster_message": "<color_yellow>怀孕的赛德勒生下了一只幼年萨德勒！</color>"
+    }
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "armor_bash": 22,
+  "armor_cut": 20,
+  "armor_bullet": 16,
+  "armor_stab": 20,
+  "vision_day": 12,
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "NO_BREATHE",
+    "CLIMBS",
+    "BASHES",
+    "POISON",
+    "QUEEN"
+  ]
+}
+```
+

@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_flesh_infect_zombie_fat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_flesh_infect_zombie_fat|http://cdda.aloxaf.cn/search?q=mon_flesh_infect_zombie_fat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_trans.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_flesh_infect_zombie_fat",
+  "type": "SPELL",
+  "name": {
+    "str": "Infect"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster will try to infect the target by dealing 5 up to 25 biological damage. If the target dies, they succumb to the flesh.'",
+  "flags": [
+    "SILENT",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "targeted_monster_ids": [
+    "mon_zombie_fat"
+  ],
+  "extra_effects": [
+    {
+      "id": "mon_flesh_infect_zombie_fat_yes"
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 5,
+  "max_damage": 25,
+  "damage_type": "biological"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_flesh_infect_zombie_fat",
+  "type": "SPELL",
+  "name": {
+    "str": "感染"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者将试图通过造成5到25点生物伤害来感染目标。如果目标死了，他们就会屈服于肉体",
+  "flags": [
+    "SILENT",
+    "RANDOM_DAMAGE",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "targeted_monster_ids": [
+    "mon_zombie_fat"
+  ],
+  "extra_effects": [
+    {
+      "id": "mon_flesh_infect_zombie_fat_yes"
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 5,
+  "max_damage": 25,
+  "damage_type": "biological"
+}
+```
+

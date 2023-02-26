@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: GUN blazemod
+title: blazemod→GUN→needler
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：needler|http://cdda.aloxaf.cn/search?q=needler]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/guns/blaze_weapons.json
+
+
+!! 原文
+
+```json
+{
+  "id": "needler",
+  "reload_noise_volume": 10,
+  "type": "GUN",
+  "name": {
+    "str": "needler"
+  },
+  "description": "This improved nailgun features a special firing mechanism that is set to fire a spread of up to 5 nails at once; sure to drop the hammer on its unfortunate targets.  However, these features render it incredibly unwieldy, and it must be mounted on a supporting frame in order to be fired.",
+  "weight": "7827 g",
+  "volume": "3750 ml",
+  "price": "1100 USD",
+  "to_hit": -1,
+  "bashing": 12,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "symbol": "(",
+  "color": "dark_gray",
+  "ammo": [
+    "nail"
+  ],
+  "skill": "rifle",
+  "range": 25,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 20,
+    "armor_penetration": 15
+  },
+  "sight_dispersion": 150,
+  "durability": 8,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "AUTO",
+      "auto",
+      5
+    ]
+  ],
+  "reload": 150,
+  "valid_mod_locations": [],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "magazine_well": "250 ml",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "nailmag"
+      ]
+    }
+  ],
+  "flags": [
+    "MOUNTED_GUN",
+    "NEVER_JAMS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "needler",
+  "reload_noise_volume": 10,
+  "type": "GUN",
+  "name": {
+    "str": "刺针枪"
+  },
+  "description": "这把改进版射钉枪的主要特点为一个可以连发5颗小钉子的发射机构，可给予被击中的目标铁锤般的重击。但是，这种武器十分难以携带，所以它必须要装载到一个炮塔底盘上才能发射。",
+  "weight": "7827 g",
+  "volume": "3750 ml",
+  "price": "1100 USD",
+  "to_hit": -1,
+  "bashing": 12,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "symbol": "(",
+  "color": "dark_gray",
+  "ammo": [
+    "nail"
+  ],
+  "skill": "rifle",
+  "range": 25,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 20,
+    "armor_penetration": 15
+  },
+  "sight_dispersion": 150,
+  "durability": 8,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "AUTO",
+      "auto",
+      5
+    ]
+  ],
+  "reload": 150,
+  "valid_mod_locations": [],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "magazine_well": "250 ml",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "nailmag"
+      ]
+    }
+  ],
+  "flags": [
+    "MOUNTED_GUN",
+    "NEVER_JAMS"
+  ]
+}
+```
+

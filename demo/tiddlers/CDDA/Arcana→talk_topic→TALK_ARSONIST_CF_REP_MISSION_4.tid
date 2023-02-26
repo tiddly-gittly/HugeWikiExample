@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_ARSONIST_CF_REP_MISSION_4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_ARSONIST_CF_REP_MISSION_4|http://cdda.aloxaf.cn/search?q=TALK_ARSONIST_CF_REP_MISSION_4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_ARSONIST.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_ARSONIST_CF_REP_MISSION_4",
+  "dynamic_line": {
+    "u_has_var": "tacoma_started",
+    "type": "knowledge",
+    "context": "flag",
+    "value": "yes",
+    "yes": "Yeah, I guess they have that ranch thing set up out there, and every so often people like me stop by.  Guessing you mean some other bunch of people though?  What're they like?",
+    "no": "Most I've seen are small groups holed up in buildings and the like.  Couple other holdouts here and there I guess.  What sort of work were you talking about, though?"
+  },
+  "responses": [
+    {
+      "text": "It's a group operating out of a rural church along the roadside, I was asked to see if I could find another trading partner for them.",
+      "switch": true,
+      "topic": "TALK_ARSONIST_CF_REP_MISSION_4_DESCRIBE",
+      "condition": {
+        "u_has_var": "tacoma_started",
+        "type": "knowledge",
+        "context": "flag",
+        "value": "yes"
+      }
+    },
+    {
+      "text": "There's a decent-sized holdout I was asked to help find another trading partner for.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_ARSONIST_CF_REP_MISSION_4_HELP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_ARSONIST_CF_REP_MISSION_4",
+  "dynamic_line": {
+    "u_has_var": "tacoma_started",
+    "type": "knowledge",
+    "context": "flag",
+    "value": "yes",
+    "yes": "是的，我想他们在那里有农场的东西，像我这样的人经常会来拜访。我猜你是说其他人吗？他们是什么样的？",
+    "no": "我见过的大多数是躲在建筑物里的小团体。我想这里还有其他一些顽固分子。你说的是什么工作？"
+  },
+  "responses": [
+    {
+      "text": "这是一个在路边的乡村教堂里运作的团体，我被要求看看是否能为他们找到另一个贸易伙伴。",
+      "switch": true,
+      "topic": "TALK_ARSONIST_CF_REP_MISSION_4_DESCRIBE",
+      "condition": {
+        "u_has_var": "tacoma_started",
+        "type": "knowledge",
+        "context": "flag",
+        "value": "yes"
+      }
+    },
+    {
+      "text": "有人请我帮他找另一个贸易伙伴。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_ARSONIST_CF_REP_MISSION_4_HELP"
+    }
+  ]
+}
+```
+

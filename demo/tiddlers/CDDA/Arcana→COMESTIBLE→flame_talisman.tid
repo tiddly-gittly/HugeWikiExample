@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→flame_talisman
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：flame_talisman|http://cdda.aloxaf.cn/search?q=flame_talisman]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "flame_talisman",
+  "type": "COMESTIBLE",
+  "comestible_type": "MED",
+  "category": "other",
+  "name": {
+    "str": "flame talisman"
+  },
+  "description": "A crude paper talisman marked with strange patterns, and anointed with a meager sacrifice.  It can be used to immolate an enemy at close range, or to rapidly spark a more controlled fire if you're desperate.",
+  "//": "Talismans are natural magic, rare to non-existent pre-cataclysm as they develop from survivors studying otherworldly phenomena and connecting it to familiar concepts.",
+  "price_postapoc": 300,
+  "weight": "150 g",
+  "volume": "100 ml",
+  "material": [
+    "paper"
+  ],
+  "looks_like": "birchbark",
+  "symbol": ",",
+  "color": "cyan",
+  "charges": 1,
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_immolate",
+      "no_fail": true,
+      "level": 0
+    },
+    {
+      "type": "firestarter",
+      "moves": 5
+    }
+  ],
+  "flags": [
+    "NO_SALVAGE",
+    "NO_INGEST",
+    "FIRESTARTER",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "flame_talisman",
+  "type": "COMESTIBLE",
+  "comestible_type": "MED",
+  "category": "other",
+  "name": {
+    "str": "火焰护身符"
+  },
+  "description": "一种粗糙的纸制护身符，上面有奇怪的图案，并涂有少量的祭品。它可以用来近距离献祭敌人，或者在你绝望的情况下迅速点燃一团更可控的火焰。",
+  "//": "Talismans are natural magic, rare to non-existent pre-cataclysm as they develop from survivors studying otherworldly phenomena and connecting it to familiar concepts.",
+  "price_postapoc": 300,
+  "weight": "150 g",
+  "volume": "100 ml",
+  "material": [
+    "paper"
+  ],
+  "looks_like": "birchbark",
+  "symbol": ",",
+  "color": "cyan",
+  "charges": 1,
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_immolate",
+      "no_fail": true,
+      "level": 0
+    },
+    {
+      "type": "firestarter",
+      "moves": 5
+    }
+  ],
+  "flags": [
+    "NO_SALVAGE",
+    "NO_INGEST",
+    "FIRESTARTER",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+

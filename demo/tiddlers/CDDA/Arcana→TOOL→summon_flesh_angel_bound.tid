@@ -1,0 +1,61 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_flesh_angel_bound
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_flesh_angel_bound|http://cdda.aloxaf.cn/search?q=summon_flesh_angel_bound]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_flesh_angel_bound",
+  "type": "TOOL",
+  "copy-from": "summon_flaming_eye",
+  "name": {
+    "str": "bound summoned flesh angel"
+  },
+  "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A flesh angel has been bound into this after a successful summon, activate to redeploy it.",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_flesh_angel_summoned_glyph",
+    "friendly_msg": "You undo the energy binding the summoned flesh angel, causing it to reappear.",
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_flesh_angel_bound",
+  "type": "TOOL",
+  "copy-from": "summon_flaming_eye",
+  "name": {
+    "str": "召唤血肉天使（已绑定）"
+  },
+  "description": "一个被幽灵般的银色符文包裹着的生命源质护符。一只血肉天使与之绑定，激活它来召唤血肉天使。",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_flesh_angel_summoned_glyph",
+    "friendly_msg": "You undo the energy binding the summoned flesh angel, causing it to reappear.",
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true
+  }
+}
+```
+

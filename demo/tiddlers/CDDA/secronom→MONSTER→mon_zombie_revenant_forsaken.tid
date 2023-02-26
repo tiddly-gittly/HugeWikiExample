@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_revenant_forsaken
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_revenant_forsaken|http://cdda.aloxaf.cn/search?q=mon_zombie_revenant_forsaken]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Revenant.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_revenant_forsaken",
+  "type": "MONSTER",
+  "name": "forsaken revenant",
+  "description": "Filled with dread and hatred, a gloomy aura enshrouds this corpse's fragile body, as its eyes glare wickedly into the void.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "diff": 15,
+  "hp": 75,
+  "speed": 45,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "♁",
+  "color": "dark_gray",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "tracking_distance": 8,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_revenant_forsaken_target"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_yellow>%1$s glares at %3$s...</color>"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "KEEP_DISTANCE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_revenant_forsaken",
+  "type": "MONSTER",
+  "name": "遗忘复仇丧尸",
+  "description": "充满了恐惧和仇恨，阴郁的光环笼罩着这具尸体脆弱的身体，因为它的眼睛邪恶地盯着虚空。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "diff": 15,
+  "hp": 75,
+  "speed": 45,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "♁",
+  "color": "dark_gray",
+  "aggression": 50,
+  "morale": 50,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "tracking_distance": 8,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_revenant_forsaken_target"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_yellow>%1$s瞪着%3$s。。。</color>"
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "KEEP_DISTANCE"
+  ]
+}
+```
+

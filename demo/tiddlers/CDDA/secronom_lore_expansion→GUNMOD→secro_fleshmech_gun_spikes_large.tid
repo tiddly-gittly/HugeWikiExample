@@ -1,0 +1,131 @@
+creator: 林一二
+revision: 0
+tags: GUNMOD secronom_lore_expansion
+title: secronom_lore_expansion→GUNMOD→secro_fleshmech_gun_spikes_large
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_fleshmech_gun_spikes_large|http://cdda.aloxaf.cn/search?q=secro_fleshmech_gun_spikes_large]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Monsters/-Essentials/secro_mech_weapons.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_fleshmech_gun_spikes_large",
+  "type": "GUNMOD",
+  "name": {
+    "str": "SPEMF bone cannon"
+  },
+  "description": "Morphs the mech's hands into bone cannons which launches and sprays bone spikes. Consumes chunks of flesh.",
+  "weight": "1 g",
+  "volume": "0 ml",
+  "mod_targets": [
+    "rifle"
+  ],
+  "price": "850 USD",
+  "price_postapoc": "0 cent",
+  "install_time": "0 s",
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "(",
+  "color": "light_red",
+  "location": "SPEMF gun morphs",
+  "gun_data": {
+    "skill": "secro_flesh_combat",
+    "range": 7,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 40
+    },
+    "dispersion": 225,
+    "durability": 10,
+    "ups_charges": 40,
+    "ammo_effects": [
+      "SHOT"
+    ],
+    "ammo": [
+      "secro_flesh_large"
+    ],
+    "clip_size": 2
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh_large": 2
+      }
+    }
+  ],
+  "flags": [
+    "IRREMOVABLE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_fleshmech_gun_spikes_large",
+  "type": "GUNMOD",
+  "name": {
+    "str": "骨炮"
+  },
+  "description": "将机械手臂变形成骨炮，发射并喷射骨钉。它消耗血肉块。",
+  "weight": "1 g",
+  "volume": "0 ml",
+  "mod_targets": [
+    "rifle"
+  ],
+  "price": "850 USD",
+  "price_postapoc": "0 cent",
+  "install_time": "0 s",
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "(",
+  "color": "light_red",
+  "location": "SPEMF gun morphs",
+  "gun_data": {
+    "skill": "secro_flesh_combat",
+    "range": 7,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 40
+    },
+    "dispersion": 225,
+    "durability": 10,
+    "ups_charges": 40,
+    "ammo_effects": [
+      "SHOT"
+    ],
+    "ammo": [
+      "secro_flesh_large"
+    ],
+    "clip_size": 2
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh_large": 2
+      }
+    }
+  ],
+  "flags": [
+    "IRREMOVABLE"
+  ]
+}
+```
+

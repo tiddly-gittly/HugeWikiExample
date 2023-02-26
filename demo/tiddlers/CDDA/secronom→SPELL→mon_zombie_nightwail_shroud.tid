@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_nightwail_shroud
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_nightwail_shroud|http://cdda.aloxaf.cn/search?q=mon_zombie_nightwail_shroud]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_nightwail_shroud",
+  "type": "SPELL",
+  "name": {
+    "str": "Enshroud"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sends off thich shadows towards the target.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "blind",
+  "extra_effects": [
+    {
+      "id": "mon_summon_nightwail_shadow",
+      "hit_self": true
+    }
+  ],
+  "min_range": 10,
+  "max_range": 10,
+  "min_duration": 250,
+  "max_duration": 450
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_nightwail_shroud",
+  "type": "SPELL",
+  "name": {
+    "str": "圈套"
+  },
+  "description": "怪物施法的咒语。如果你看到了这一点，那么改为阅读这一条：\n“施法者向目标发射thich阴影。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "blind",
+  "extra_effects": [
+    {
+      "id": "mon_summon_nightwail_shadow",
+      "hit_self": true
+    }
+  ],
+  "min_range": 10,
+  "max_range": 10,
+  "min_duration": 250,
+  "max_duration": 450
+}
+```
+

@@ -1,0 +1,297 @@
+creator: 林一二
+revision: 0
+tags: mission_definition secronom_lore_expansion
+title: secronom_lore_expansion→mission_definition→MISSION_SECRO_SCIENTIST_GET_TURRET_PARTS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_SECRO_SCIENTIST_GET_TURRET_PARTS|http://cdda.aloxaf.cn/search?q=MISSION_SECRO_SCIENTIST_GET_TURRET_PARTS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/secro_missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_SECRO_SCIENTIST_GET_TURRET_PARTS",
+  "type": "mission_definition",
+  "name": {
+    "str": "Gather materials for SDP-L1 turret"
+  },
+  "description": "Collect <color_light_green>4 chunks of steel</color>, <color_light_green>18 scrap metals</color>, <color_light_green>9 electronic scraps</color>, <color_light_green>9 power converters</color>, <color_light_green>5 copper wires</color> and <color_light_green>a broken laser beam turret</color>.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "and": [
+      {
+        "u_has_items": {
+          "item": "steel_chunk",
+          "count": 4
+        }
+      },
+      {
+        "u_has_items": {
+          "item": "scrap",
+          "count": 18
+        }
+      },
+      {
+        "u_has_items": {
+          "item": "e_scrap",
+          "count": 9
+        }
+      },
+      {
+        "u_has_items": {
+          "item": "power_supply",
+          "count": 9
+        }
+      },
+      {
+        "u_has_items": {
+          "item": "cable",
+          "count": 5
+        }
+      },
+      {
+        "u_has_item": "broken_secro_laserturret"
+      }
+    ]
+  },
+  "difficulty": 1,
+  "value": 10000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "effect": {
+      "duration": "PERMANENT",
+      "u_add_effect": "secro_scientist_mission2_progress"
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "u_sell_item": "steel_chunk",
+        "count": 4
+      },
+      {
+        "u_sell_item": "scrap",
+        "count": 18
+      },
+      {
+        "u_sell_item": "e_scrap",
+        "count": 9
+      },
+      {
+        "u_sell_item": "power_supply",
+        "count": 9
+      },
+      {
+        "u_sell_item": "cable",
+        "count": 5
+      },
+      {
+        "u_sell_item": "broken_secro_laserturret"
+      },
+      {
+        "npc_consume_item": "steel_chunk",
+        "count": 4
+      },
+      {
+        "npc_consume_item": "scrap",
+        "count": 18
+      },
+      {
+        "npc_consume_item": "e_scrap",
+        "count": 9
+      },
+      {
+        "npc_consume_item": "power_supply",
+        "count": 9
+      },
+      {
+        "npc_consume_item": "cable",
+        "count": 5
+      },
+      {
+        "npc_consume_item": "broken_secro_laserturret"
+      },
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_scientist_partake_mission2"
+      },
+      {
+        "npc_add_effect": "secro_scientist_repairing_laserturret",
+        "duration": 3700
+      },
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_scientist_repairing"
+      },
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_scientist_repair_laserturret"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "…",
+    "offer": "I'd like you to retrieve a broken SDP-L1 from the bunker and other essential parts for me to fully repair the turret.",
+    "accepted": "Then go, give them all to me afterwards.",
+    "rejected": "Well then... Lets talk about it again later.",
+    "advice": "If it's too heavy, haul it.",
+    "inquire": "We've got to get going.",
+    "success": "Good. The process may take an hour. While I'm repairing it, you should talk to others if they need your assistance.",
+    "success_lie": "...",
+    "failure": "..."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_SECRO_SCIENTIST_GET_TURRET_PARTS",
+  "type": "mission_definition",
+  "name": {
+    "str": "为SDP-L1炮台收集材料"
+  },
+  "description": "收集<color_light_green> 4块</color>号钢，<color_light_green>18个废金属，<color_light_green>9个电子废料，<color_light_green>9个电源转换器，<color_light_green>5根铜线，<color_light_green>和一个损坏的激光光束转台。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "and": [
+      {
+        "u_has_items": {
+          "item": "steel_chunk",
+          "count": 4
+        }
+      },
+      {
+        "u_has_items": {
+          "item": "scrap",
+          "count": 18
+        }
+      },
+      {
+        "u_has_items": {
+          "item": "e_scrap",
+          "count": 9
+        }
+      },
+      {
+        "u_has_items": {
+          "item": "power_supply",
+          "count": 9
+        }
+      },
+      {
+        "u_has_items": {
+          "item": "cable",
+          "count": 5
+        }
+      },
+      {
+        "u_has_item": "broken_secro_laserturret"
+      }
+    ]
+  },
+  "difficulty": 1,
+  "value": 10000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "effect": {
+      "duration": "PERMANENT",
+      "u_add_effect": "secro_scientist_mission2_progress"
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "u_sell_item": "steel_chunk",
+        "count": 4
+      },
+      {
+        "u_sell_item": "scrap",
+        "count": 18
+      },
+      {
+        "u_sell_item": "e_scrap",
+        "count": 9
+      },
+      {
+        "u_sell_item": "power_supply",
+        "count": 9
+      },
+      {
+        "u_sell_item": "cable",
+        "count": 5
+      },
+      {
+        "u_sell_item": "broken_secro_laserturret"
+      },
+      {
+        "npc_consume_item": "steel_chunk",
+        "count": 4
+      },
+      {
+        "npc_consume_item": "scrap",
+        "count": 18
+      },
+      {
+        "npc_consume_item": "e_scrap",
+        "count": 9
+      },
+      {
+        "npc_consume_item": "power_supply",
+        "count": 9
+      },
+      {
+        "npc_consume_item": "cable",
+        "count": 5
+      },
+      {
+        "npc_consume_item": "broken_secro_laserturret"
+      },
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_scientist_partake_mission2"
+      },
+      {
+        "npc_add_effect": "secro_scientist_repairing_laserturret",
+        "duration": 3700
+      },
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_scientist_repairing"
+      },
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_scientist_repair_laserturret"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "…",
+    "offer": "我想让你从地堡里取回一个坏掉的SDP-L1炮台以及一些其他必要的部件，以便我把这个炮塔修好。",
+    "accepted": "很好，出发吧，记得别忘了给我。",
+    "rejected": "好吧，以后再说吧。",
+    "advice": "如果这些东西太重了，就拖着它们走。",
+    "inquire": "我们得走了。",
+    "success": "太棒了，这大概会花我一小时的时间。我修好之后你可以问问其他人有什么需要帮忙的地方。",
+    "success_lie": "…",
+    "failure": "…"
+  }
+}
+```
+

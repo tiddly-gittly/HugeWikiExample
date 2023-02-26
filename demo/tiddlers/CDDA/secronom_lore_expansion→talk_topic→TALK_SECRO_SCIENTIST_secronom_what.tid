@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: talk_topic secronom_lore_expansion
+title: secronom_lore_expansion→talk_topic→TALK_SECRO_SCIENTIST_secronom_what
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SECRO_SCIENTIST_secronom_what|http://cdda.aloxaf.cn/search?q=TALK_SECRO_SCIENTIST_secronom_what]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/Dialogues/secro_scientist.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_SCIENTIST_secronom_what",
+  "dynamic_line": {
+    "u_has_effect": "secro_scientist_asked_secronom_spread",
+    "no": "What's on your mind?",
+    "yes": {
+      "u_has_effect": "secro_scientist_asked_secronom_wanderers",
+      "no": "I see, you're curious about our \"unexpecting\" creations...",
+      "yes": "This is science, you see? You may think we're the gruesome ones, but what we want is to open up new discoveries for us all. Yes, we messed up, but we're still here, struggling and helping each other to survive this nightmare.\nI can't change your opinion towards us, but if you want to know more about the secronom project, talk to our researcher."
+    }
+  },
+  "responses": [
+    {
+      "text": "Are those mutants in the city were the result of secronom project?",
+      "topic": "TALK_SECRO_SCIENTIST_secronom_what_cityzeds",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_scientist_asked_secronom_spread"
+        }
+      }
+    },
+    {
+      "text": "Are there some other threats this project has created that I need to be aware of?",
+      "topic": "TALK_SECRO_SCIENTIST_secronom_what_wanderers",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_scientist_asked_secronom_wanderers"
+        }
+      }
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_effect": "secro_scientist_asked_secronom_wanderers"
+        },
+        "true": "....",
+        "false": "Maybe later."
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_trait": "secro_scientist_asked_secronom_wanderers"
+        }
+      },
+      "success": {
+        "topic": "TALK_DONE",
+        "effect": {
+          "duration": "PERMANENT",
+          "u_add_effect": "secro_scientist_udisgustcoldblood"
+        }
+      },
+      "failure": {
+        "topic": "TALK_SECRO_SCIENTIST_main"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_SCIENTIST_secronom_what",
+  "dynamic_line": {
+    "u_has_effect": "secro_scientist_asked_secronom_spread",
+    "no": "你在想什么？",
+    "yes": {
+      "u_has_effect": "secro_scientist_asked_secronom_wanderers",
+      "no": "我明白了，你对我们的“意外”创造很好奇…",
+      "yes": "这就是科学，明白吗？你可能认为我们是可怕的，但我们想要的是为我们所有人打开新的发现。是的，我们搞砸了，但我们仍然在这里，努力和帮助对方度过这场噩梦。\n我不能改变你对我们的看法，但如果你想了解更多关于secronom项目的信息，请与我们的研究人员联系。"
+    }
+  },
+  "responses": [
+    {
+      "text": "城市里的那些变种人是secronom计划的结果吗？",
+      "topic": "TALK_SECRO_SCIENTIST_secronom_what_cityzeds",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_scientist_asked_secronom_spread"
+        }
+      }
+    },
+    {
+      "text": "我还需要注意这个项目造成的其他威胁吗？",
+      "topic": "TALK_SECRO_SCIENTIST_secronom_what_wanderers",
+      "condition": {
+        "not": {
+          "u_has_effect": "secro_scientist_asked_secronom_wanderers"
+        }
+      }
+    },
+    {
+      "truefalsetext": {
+        "condition": {
+          "u_has_effect": "secro_scientist_asked_secronom_wanderers"
+        },
+        "true": "....",
+        "false": "Maybe later."
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_trait": "secro_scientist_asked_secronom_wanderers"
+        }
+      },
+      "success": {
+        "topic": "TALK_DONE",
+        "effect": {
+          "duration": "PERMANENT",
+          "u_add_effect": "secro_scientist_udisgustcoldblood"
+        }
+      },
+      "failure": {
+        "topic": "TALK_SECRO_SCIENTIST_main"
+      }
+    }
+  ]
+}
+```
+

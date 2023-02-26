@@ -1,0 +1,165 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_zombie_succumbvampire_conjurer
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_succumbvampire_conjurer|http://cdda.aloxaf.cn/search?q=mon_zombie_succumbvampire_conjurer]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Zombies/Vampire.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_succumbvampire_conjurer",
+  "type": "MONSTER",
+  "name": {
+    "str": "profane conjurer"
+  },
+  "description": "A dark cultist, lays low in its deceiving blank appearance. Hands swaying slyly, it occasionally pulses in black aura, denoting a strong familiarity with ancient profane arts.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "bodytype": "human",
+  "hp": 520,
+  "speed": 120,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "V",
+  "color": "light_gray_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "harvest": "exempt",
+  "armor_bash": 2,
+  "armor_cut": 12,
+  "armor_bullet": 8,
+  "vision_day": 50,
+  "vision_night": 20,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "v_profane_fire"
+      },
+      "cooldown": 14
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "v_profane_hellfire"
+      },
+      "cooldown": 74
+    }
+  ],
+  "looks_like": "mon_zombie_succumbvampire",
+  "death_drops": "succumbvampire",
+  "death_function": {
+    "message": "The %s disappears.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "CAN_OPEN_DOORS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_succumbvampire_conjurer",
+  "type": "MONSTER",
+  "name": {
+    "str": "亵渎术士"
+  },
+  "description": "一个黑暗的邪教徒，隐藏在它那欺骗性的空白外观之后。双手狡黠地摇曳着，时不时地在黑色的光环中跳动，表现出了对于古代世俗艺术的强烈的熟悉感。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "bodytype": "human",
+  "hp": 520,
+  "speed": 120,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "V",
+  "color": "light_gray_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "harvest": "exempt",
+  "armor_bash": 2,
+  "armor_cut": 12,
+  "armor_bullet": 8,
+  "vision_day": 50,
+  "vision_night": 20,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "v_profane_fire"
+      },
+      "cooldown": 14
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "v_profane_hellfire"
+      },
+      "cooldown": 74
+    }
+  ],
+  "looks_like": "mon_zombie_succumbvampire",
+  "death_drops": "succumbvampire",
+  "death_function": {
+    "message": "The %s disappears.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "CAN_OPEN_DOORS"
+  ]
+}
+```
+

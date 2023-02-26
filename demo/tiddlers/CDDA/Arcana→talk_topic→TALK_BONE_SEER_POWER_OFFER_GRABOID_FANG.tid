@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BONE_SEER_POWER_OFFER_GRABOID_FANG
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BONE_SEER_POWER_OFFER_GRABOID_FANG|http://cdda.aloxaf.cn/search?q=TALK_BONE_SEER_POWER_OFFER_GRABOID_FANG]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BONE_SEER.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BONE_SEER_POWER_OFFER_GRABOID_FANG",
+  "dynamic_line": "How peculiar.  Normally I would consider this to be foolish, for what songs can stone sing?  But I can hear its whispers, it's like a song in another language, yet it sings like bones all the same.  I don't know how I could repay you for such a thing, but would you be willing to part with it?",
+  "responses": [
+    {
+      "text": "Go ahead.  It's yours.",
+      "effect": [
+        {
+          "u_consume_item": "graboid_fang"
+        },
+        {
+          "u_add_var": "gave_monsterpart",
+          "type": "dialogue",
+          "context": "beyond",
+          "value": "yes"
+        }
+      ],
+      "topic": "TALK_BONE_SEER_POWER_STUDY"
+    },
+    {
+      "text": "I can't part with it just yet.  I'm sorry.",
+      "topic": "TALK_BONE_SEER_POWER_REFUSAL"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BONE_SEER_POWER_OFFER_GRABOID_FANG",
+  "dynamic_line": "真是神奇。一般情况我都会觉得这是愚蠢的，会唱歌的石头？但我真的能听到它的低语，就像是用另一种语言演唱的歌曲，但这首歌听起来也跟骨头的曲调相似，我想我没办法报答这份恩情，但能请你割爱与我吗？",
+  "responses": [
+    {
+      "text": "拿着吧，你的了。",
+      "effect": [
+        {
+          "u_consume_item": "graboid_fang"
+        },
+        {
+          "u_add_var": "gave_monsterpart",
+          "type": "dialogue",
+          "context": "beyond",
+          "value": "yes"
+        }
+      ],
+      "topic": "TALK_BONE_SEER_POWER_STUDY"
+    },
+    {
+      "text": "我现在还不能与它分开。对不起。",
+      "topic": "TALK_BONE_SEER_POWER_REFUSAL"
+    }
+  ]
+}
+```
+

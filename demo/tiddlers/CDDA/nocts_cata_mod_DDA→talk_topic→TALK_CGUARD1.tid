@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_CGUARD1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CGUARD1|http://cdda.aloxaf.cn/search?q=TALK_CGUARD1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_CGUARD1.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CGUARD1",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "Heh, another one caught in this mess, huh?",
+    "no": "Hey.  Anything I can help you with, visitor?"
+  },
+  "responses": [
+    {
+      "text": "What is this place?",
+      "topic": "TALK_CGUARD1_ASK_PLACE"
+    },
+    {
+      "text": "Can I have some directions?",
+      "topic": "TALK_CGUARD1_DIR"
+    },
+    {
+      "text": "How are things here?",
+      "topic": "TALK_CGUARD1_AKS_HOWRU"
+    },
+    {
+      "text": "Can I stay here?",
+      "topic": "TALK_CGUARD1_ASK_STAY"
+    },
+    {
+      "text": "Well, bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CGUARD1",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "嘿，又有一个人被困在这个烂摊子里了，是吗？",
+    "no": "嘿。有什么需要我帮忙的吗，客人？"
+  },
+  "responses": [
+    {
+      "text": "这是哪里？",
+      "topic": "TALK_CGUARD1_ASK_PLACE"
+    },
+    {
+      "text": "能告诉我怎么走吗？",
+      "topic": "TALK_CGUARD1_DIR"
+    },
+    {
+      "text": "这里怎么样？",
+      "topic": "TALK_CGUARD1_AKS_HOWRU"
+    },
+    {
+      "text": "我能待在这儿吗？",
+      "topic": "TALK_CGUARD1_ASK_STAY"
+    },
+    {
+      "text": "好的，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

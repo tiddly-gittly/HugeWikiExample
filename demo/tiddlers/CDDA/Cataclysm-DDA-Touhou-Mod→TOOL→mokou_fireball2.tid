@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: TOOL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→TOOL→mokou_fireball2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mokou_fireball2|http://cdda.aloxaf.cn/search?q=mokou_fireball2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/items/touhou_etherealitems.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mokou_fireball2",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "Fire ball",
+    "str_pl": "Fire balls"
+  },
+  "description": "An almost transparent ball of mostly orange fire.  Cold to the touch, looks like there's layers of fire sliding on top of each other, with the brightest layer moving erratically at the center.",
+  "weight": "200 g",
+  "volume": "300 ml",
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "weapon",
+    "length": "hand",
+    "surface": "every"
+  },
+  "bashing": 2,
+  "material": [
+    "magic_fire"
+  ],
+  "symbol": "o",
+  "color": "red",
+  "//": "No orange color, RIP",
+  "initial_charges": 12,
+  "max_charges": 12,
+  "charges_per_use": 3,
+  "turns_per_charge": 1,
+  "use_action": [
+    {
+      "type": "firestarter"
+    },
+    {
+      "target": "mokou_fireball3",
+      "type": "transform",
+      "msg": "You cause the ball to go out of control.",
+      "menu_text": "Trigger sphere",
+      "need_wielding": true,
+      "target_charges": 5,
+      "active": true
+    }
+  ],
+  "flags": [
+    "LIGHT_16",
+    "TRADER_AVOID"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mokou_fireball2",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "Fire ball",
+    "str_pl": "Fire balls"
+  },
+  "description": "An almost transparent ball of mostly orange fire.  Cold to the touch, looks like there's layers of fire sliding on top of each other, with the brightest layer moving erratically at the center.",
+  "weight": "200 g",
+  "volume": "300 ml",
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "weapon",
+    "length": "hand",
+    "surface": "every"
+  },
+  "bashing": 2,
+  "material": [
+    "magic_fire"
+  ],
+  "symbol": "o",
+  "color": "red",
+  "//": "No orange color, RIP",
+  "initial_charges": 12,
+  "max_charges": 12,
+  "charges_per_use": 3,
+  "turns_per_charge": 1,
+  "use_action": [
+    {
+      "type": "firestarter"
+    },
+    {
+      "target": "mokou_fireball3",
+      "type": "transform",
+      "msg": "You cause the ball to go out of control.",
+      "menu_text": "Trigger sphere",
+      "need_wielding": true,
+      "target_charges": 5,
+      "active": true
+    }
+  ],
+  "flags": [
+    "LIGHT_16",
+    "TRADER_AVOID"
+  ]
+}
+```
+

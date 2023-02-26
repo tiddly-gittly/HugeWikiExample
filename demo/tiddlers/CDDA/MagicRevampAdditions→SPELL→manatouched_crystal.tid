@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→manatouched_crystal
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：manatouched_crystal|http://cdda.aloxaf.cn/search?q=manatouched_crystal]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/manatouched.json
+
+
+!! 原文
+
+```json
+{
+  "id": "manatouched_crystal",
+  "type": "SPELL",
+  "name": {
+    "str": "Crystallize Mana"
+  },
+  "description": "Crystallizes mana into solid form.  Your physiological changes have made this spell much more efficient and easier to cast.",
+  "valid_targets": [
+    "self"
+  ],
+  "spell_class": "MANA_CRYST_MANA",
+  "flags": [
+    "PERMANENT",
+    "NO_LEGS",
+    "CONCENTRATE",
+    "NO_HANDS"
+  ],
+  "max_level": 5,
+  "difficulty": 3,
+  "min_damage": 4,
+  "max_damage": 4,
+  "duration_increment": 1,
+  "effect": "spawn_item",
+  "effect_str": "crystallized_mana",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "base_energy_cost": 1000,
+  "final_energy_cost": 1000,
+  "base_casting_time": 600000,
+  "final_casting_time": 600000,
+  "extra_effects": [
+    {
+      "id": "mana_fatigue"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "manatouched_crystal",
+  "type": "SPELL",
+  "name": {
+    "str": "魔力结晶"
+  },
+  "description": "将魔力凝聚成固体结晶型态。你生理上的变化使这个法术效果更强大，且更容易施放。",
+  "valid_targets": [
+    "self"
+  ],
+  "spell_class": "MANA_CRYST_MANA",
+  "flags": [
+    "PERMANENT",
+    "NO_LEGS",
+    "CONCENTRATE",
+    "NO_HANDS"
+  ],
+  "max_level": 5,
+  "difficulty": 3,
+  "min_damage": 4,
+  "max_damage": 4,
+  "duration_increment": 1,
+  "effect": "spawn_item",
+  "effect_str": "crystallized_mana",
+  "shape": "blast",
+  "energy_source": "MANA",
+  "base_energy_cost": 1000,
+  "final_energy_cost": 1000,
+  "base_casting_time": 600000,
+  "final_casting_time": 600000,
+  "extra_effects": [
+    {
+      "id": "mana_fatigue"
+    }
+  ]
+}
+```
+

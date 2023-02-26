@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→SECRONOM_FLESH_BIO_spreadier_near
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRONOM_FLESH_BIO_spreadier_near|http://cdda.aloxaf.cn/search?q=SECRONOM_FLESH_BIO_spreadier_near]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "SECRONOM_FLESH_BIO_spreadier_near",
+  "type": "SPELL",
+  "name": {
+    "str": "Devour"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster guides the flesh to spread to nearby tiles.'",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "fv_flesh_spread",
+  "min_aoe": 6,
+  "max_aoe": 6
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "SECRONOM_FLESH_BIO_spreadier_near",
+  "type": "SPELL",
+  "name": {
+    "str": "吞食"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者引导肉身扩散到附近的瓷砖上。”",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "fv_flesh_spread",
+  "min_aoe": 6,
+  "max_aoe": 6
+}
+```
+

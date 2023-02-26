@@ -1,0 +1,201 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_TENDRIL_THICK
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_TENDRIL_THICK|http://cdda.aloxaf.cn/search?q=SECRO_TENDRIL_THICK]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_TENDRIL_THICK",
+  "name": {
+    "str": "Thick Tendrils"
+  },
+  "points": -5,
+  "visibility": 8,
+  "ugliness": 6,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "You've got a pair of large, thick tendrils sprouting from your arms. They decreases your dex by 2, but impacts more damage and has increased bash resistance.",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l",
+    "hand_r"
+  ],
+  "prereqs": [
+    "SECRO_TENDRIL"
+  ],
+  "leads_to": [
+    "SECRO_TENDRIL_THICK_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      45
+    ],
+    [
+      "hand_r",
+      45
+    ]
+  ],
+  "encumbrance_covered": [
+    [
+      "hand_l",
+      55
+    ],
+    [
+      "hand_r",
+      55
+    ]
+  ],
+  "rand_bash_bonus": {
+    "min": 3,
+    "max": 8
+  },
+  "attacks": [
+    {
+      "attack_text_u": "You slap %s with your thick tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their thick tendrils",
+      "body_part": "hand_l",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.7
+      }
+    },
+    {
+      "attack_text_u": "You slap %s with your thick tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their thick tendrils",
+      "body_part": "hand_r",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.7
+      }
+    }
+  ],
+  "armor": [
+    {
+      "parts": [
+        "arm_l",
+        "arm_r"
+      ],
+      "bash": 6
+    }
+  ],
+  "passive_mods": {
+    "dex_mod": -2
+  },
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_TENDRIL_THICK",
+  "name": {
+    "str": "粗壮触手"
+  },
+  "points": -5,
+  "visibility": 8,
+  "ugliness": 6,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "你的手臂上长着一对又大又粗的卷须。它们会降低你的dex 2，但是会造成更多的伤害，并且会增加暴击抗性。",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l",
+    "hand_r"
+  ],
+  "prereqs": [
+    "SECRO_TENDRIL"
+  ],
+  "leads_to": [
+    "SECRO_TENDRIL_THICK_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      45
+    ],
+    [
+      "hand_r",
+      45
+    ]
+  ],
+  "encumbrance_covered": [
+    [
+      "hand_l",
+      55
+    ],
+    [
+      "hand_r",
+      55
+    ]
+  ],
+  "rand_bash_bonus": {
+    "min": 3,
+    "max": 8
+  },
+  "attacks": [
+    {
+      "attack_text_u": "You slap %s with your thick tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their thick tendrils",
+      "body_part": "hand_l",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.7
+      }
+    },
+    {
+      "attack_text_u": "You slap %s with your thick tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their thick tendrils",
+      "body_part": "hand_r",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.7
+      }
+    }
+  ],
+  "armor": [
+    {
+      "parts": [
+        "arm_l",
+        "arm_r"
+      ],
+      "bash": 6
+    }
+  ],
+  "passive_mods": {
+    "dex_mod": -2
+  },
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

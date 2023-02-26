@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_back_holster
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_back_holster|http://cdda.aloxaf.cn/search?q=secro_flesh_back_holster]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_holster.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_back_holster",
+  "type": "ARMOR",
+  "name": {
+    "str": "back holster"
+  },
+  "description": "A holster, big enough for a rifle or other large gun.  Designed to be strapped to the back.  Whilst initially cumbersome it becomes much easier to use with practice.  Activate to holster/draw a gun.",
+  "weight": "300 g",
+  "volume": "1250 ml",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "quiver_large",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "holster": true,
+      "min_item_volume": "1500 ml",
+      "max_contains_volume": "9 L",
+      "max_contains_weight": "10 kg",
+      "max_item_length": "60 cm",
+      "moves": 150
+    }
+  ],
+  "use_action": {
+    "type": "holster"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "NO_QUICKDRAW"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        3,
+        15
+      ],
+      "coverage": 5,
+      "covers": [
+        "torso"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_back_holster",
+  "type": "ARMOR",
+  "name": {
+    "str": "枪套（背）"
+  },
+  "description": "一个枪套，大到可以容纳步枪或其他大枪。这这个枪套设计紧贴背部的样式。虽然最初很麻烦，但它实际使用的时候会变得更简单。激活它来收拔枪械。",
+  "weight": "300 g",
+  "volume": "1250 ml",
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "quiver_large",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "holster": true,
+      "min_item_volume": "1500 ml",
+      "max_contains_volume": "9 L",
+      "max_contains_weight": "10 kg",
+      "max_item_length": "60 cm",
+      "moves": 150
+    }
+  ],
+  "use_action": {
+    "type": "holster"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "NO_QUICKDRAW"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        3,
+        15
+      ],
+      "coverage": 5,
+      "covers": [
+        "torso"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

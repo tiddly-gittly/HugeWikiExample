@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_stray_w_acid_stro3_arain
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_acid_stro3_arain|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_acid_stro3_arain]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_stray_w_acid_stro3_arain",
+  "type": "SPELL",
+  "name": {
+    "str": "Acid Rain"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its whole body for a very long time to produce an extremely vast amount of corrosive bodily fluids and sends it up above the target then explodes, dealing tremendous acid damage to all creatures in the vicinity, which lingers within time.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_stray_w_acid_stro3_asweep"
+    }
+  ],
+  "min_damage": 9,
+  "max_damage": 18,
+  "min_range": 14,
+  "max_range": 14,
+  "min_dot": 3,
+  "max_dot": 3,
+  "min_aoe": 7,
+  "max_aoe": 14,
+  "min_duration": 200,
+  "max_duration": 600,
+  "field_id": "fd_acid",
+  "field_chance": 10,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "acid"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_stray_w_acid_stro3_arain",
+  "type": "SPELL",
+  "name": {
+    "str": "酸雨"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者将其全身输送很长时间，产生大量腐蚀性体液，并将其输送到目标上方，然后爆炸，对附近所有生物造成巨大的酸伤害，这种伤害会在时间内持续。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE",
+    "RANDOM_AOE",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_stray_w_acid_stro3_asweep"
+    }
+  ],
+  "min_damage": 9,
+  "max_damage": 18,
+  "min_range": 14,
+  "max_range": 14,
+  "min_dot": 3,
+  "max_dot": 3,
+  "min_aoe": 7,
+  "max_aoe": 14,
+  "min_duration": 200,
+  "max_duration": 600,
+  "field_id": "fd_acid",
+  "field_chance": 10,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "acid"
+}
+```
+

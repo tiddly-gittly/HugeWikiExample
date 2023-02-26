@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→tenko_earthquake
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tenko_earthquake|http://cdda.aloxaf.cn/search?q=tenko_earthquake]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_tenko.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tenko_earthquake",
+  "type": "SPELL",
+  "name": "Earthquake signs",
+  "description": "Drive the Sword of Hisou into the ground to trigger a miniature earthquake around you, downing enemies, leaving a rocky field that slows enemies down, while dealing some damage.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "components": "spell_components_tenkojian",
+  "effect": "attack",
+  "effect_str": "downed",
+  "shape": "blast",
+  "damage_type": "bash",
+  "min_damage": 5,
+  "max_damage": 55,
+  "damage_increment": 5,
+  "min_range": 0,
+  "max_range": 0,
+  "min_aoe": 4,
+  "max_aoe": 16,
+  "aoe_increment": 1.2,
+  "min_duration": 350,
+  "max_duration": 350,
+  "field_id": "fd_rubble",
+  "field_chance": 4,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 120,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS"
+  ],
+  "//": "Shouldn't hit flying targets or be activated without ground"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tenko_earthquake",
+  "type": "SPELL",
+  "name": "Earthquake signs",
+  "description": "Drive the Sword of Hisou into the ground to trigger a miniature earthquake around you, downing enemies, leaving a rocky field that slows enemies down, while dealing some damage.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "components": "spell_components_tenkojian",
+  "effect": "attack",
+  "effect_str": "downed",
+  "shape": "blast",
+  "damage_type": "bash",
+  "min_damage": 5,
+  "max_damage": 55,
+  "damage_increment": 5,
+  "min_range": 0,
+  "max_range": 0,
+  "min_aoe": 4,
+  "max_aoe": 16,
+  "aoe_increment": 1.2,
+  "min_duration": 350,
+  "max_duration": 350,
+  "field_id": "fd_rubble",
+  "field_chance": 4,
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 120,
+  "base_energy_cost": 200,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS"
+  ],
+  "//": "Shouldn't hit flying targets or be activated without ground"
+}
+```
+

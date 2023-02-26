@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→effect_on_condition→WINGS_HELLRAVEN_drain1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：WINGS_HELLRAVEN_drain1|http://cdda.aloxaf.cn/search?q=WINGS_HELLRAVEN_drain1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutation_eocs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "WINGS_HELLRAVEN_drain1",
+  "type": "effect_on_condition",
+  "condition": {
+    "and": [
+      {
+        "compare_int": [
+          {
+            "u_val": "stamina"
+          },
+          ">=",
+          {
+            "const": 200
+          }
+        ]
+      },
+      {
+        "u_has_effect": "utsuho_levitation"
+      }
+    ]
+  },
+  "effect": [
+    {
+      "arithmetic": [
+        {
+          "u_val": "stamina"
+        },
+        "-=",
+        {
+          "const": 200
+        }
+      ]
+    },
+    {
+      "run_eocs": "WINGS_HELLRAVEN_drain2"
+    }
+  ],
+  "false_effect": {
+    "run_eocs": "WINGS_HELLRAVEN_stop"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "WINGS_HELLRAVEN_drain1",
+  "type": "effect_on_condition",
+  "condition": {
+    "and": [
+      {
+        "compare_int": [
+          {
+            "u_val": "stamina"
+          },
+          ">=",
+          {
+            "const": 200
+          }
+        ]
+      },
+      {
+        "u_has_effect": "utsuho_levitation"
+      }
+    ]
+  },
+  "effect": [
+    {
+      "arithmetic": [
+        {
+          "u_val": "stamina"
+        },
+        "-=",
+        {
+          "const": 200
+        }
+      ]
+    },
+    {
+      "run_eocs": "WINGS_HELLRAVEN_drain2"
+    }
+  ],
+  "false_effect": {
+    "run_eocs": "WINGS_HELLRAVEN_stop"
+  }
+}
+```
+

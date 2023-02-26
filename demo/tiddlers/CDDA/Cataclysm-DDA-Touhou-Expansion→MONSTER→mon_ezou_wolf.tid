@@ -1,0 +1,163 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_ezou_wolf
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_ezou_wolf|http://cdda.aloxaf.cn/search?q=mon_ezou_wolf]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_reference.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_ezou_wolf",
+  "type": "MONSTER",
+  "name": {
+    "str": "Ezou wolf",
+    "str_pl": "Ezou wolves"
+  },
+  "copy-from": "mon_wolf",
+  "description": "A cunning pack predator, once extinct in the northern island from the Japanese archipielago. Once revered yet feared in ancient Japan, the animal suffered a directed campaign of extermination during the 19th and early 20th centuries.  Similar in size to a North American wolf, both were considered to be close cousins before the Cataclysm, if not the same species only separated by geography.",
+  "volume": "27000 ml",
+  "weight": "27000 g",
+  "default_faction": "wolf",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_fur",
+  "hp": 40,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "w",
+  "color": "light_gray",
+  "morale": 20,
+  "melee_skill": 7,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_night": 5,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT",
+    "STALK"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      100
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "KEENNOSE",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ],
+  "//": "Generic Ezou wolf. Basically a North American wolf that got stuck in Hokkaido, however these seemed to ignore humans except under arduous circumstances. Probably only the youkai version should spawn as they're a higher risk for the player"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_ezou_wolf",
+  "type": "MONSTER",
+  "name": {
+    "str": "Ezou wolf",
+    "str_pl": "Ezou wolves"
+  },
+  "copy-from": "mon_wolf",
+  "description": "A cunning pack predator, once extinct in the northern island from the Japanese archipielago. Once revered yet feared in ancient Japan, the animal suffered a directed campaign of extermination during the 19th and early 20th centuries.  Similar in size to a North American wolf, both were considered to be close cousins before the Cataclysm, if not the same species only separated by geography.",
+  "volume": "27000 ml",
+  "weight": "27000 g",
+  "default_faction": "wolf",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_fur",
+  "hp": 40,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "w",
+  "color": "light_gray",
+  "morale": 20,
+  "melee_skill": 7,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_night": 5,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT",
+    "STALK"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      100
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "KEENNOSE",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "WARM"
+  ],
+  "//": "Generic Ezou wolf. Basically a North American wolf that got stuck in Hokkaido, however these seemed to ignore humans except under arduous circumstances. Probably only the youkai version should spawn as they're a higher risk for the player"
+}
+```
+

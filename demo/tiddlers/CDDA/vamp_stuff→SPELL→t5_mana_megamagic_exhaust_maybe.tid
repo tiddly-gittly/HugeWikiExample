@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→t5_mana_megamagic_exhaust_maybe
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t5_mana_megamagic_exhaust_maybe|http://cdda.aloxaf.cn/search?q=t5_mana_megamagic_exhaust_maybe]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_combo.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "t5_mana_megamagic_exhaust_maybe",
+  "name": {
+    "str": "Megamagic Exhaust?"
+  },
+  "description": "1/4 chance to do Megamagic Exhaust.",
+  "valid_targets": [
+    "none"
+  ],
+  "message": "",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "WONDER",
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "extra_effects": [
+    {
+      "id": "v_spell_null"
+    },
+    {
+      "id": "v_spell_null"
+    },
+    {
+      "id": "v_spell_null"
+    },
+    {
+      "id": "t5_mana_megamagic_exhaust_yes"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "t5_mana_megamagic_exhaust_maybe",
+  "name": {
+    "str": "超级魔术排气？"
+  },
+  "description": "有1/4的概率被大魔法耗尽所有魔力。",
+  "valid_targets": [
+    "none"
+  ],
+  "message": "",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "WONDER",
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "extra_effects": [
+    {
+      "id": "v_spell_null"
+    },
+    {
+      "id": "v_spell_null"
+    },
+    {
+      "id": "v_spell_null"
+    },
+    {
+      "id": "t5_mana_megamagic_exhaust_yes"
+    }
+  ]
+}
+```
+

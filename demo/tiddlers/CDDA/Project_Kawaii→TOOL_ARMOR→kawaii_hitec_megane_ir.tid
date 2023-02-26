@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Project_Kawaii
+title: Project_Kawaii→TOOL_ARMOR→kawaii_hitec_megane_ir
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kawaii_hitec_megane_ir|http://cdda.aloxaf.cn/search?q=kawaii_hitec_megane_ir]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Project_Kawaii/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kawaii_hitec_megane_ir",
+  "copy-from": "kawaii_hitec_megane",
+  "repairs_like": "kawaii_hitec_megane",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "Cute High-Tech Glasses (IR)"
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "FANCY",
+    "FIX_NEARSIGHT",
+    "FIX_FARSIGHT",
+    "IR_EFFECT",
+    "TRADER_AVOID"
+  ],
+  "power_draw": "10 W",
+  "revert_to": "kawaii_hitec_megane",
+  "use_action": {
+    "ammo_scale": 0,
+    "type": "transform",
+    "menu_text": "Toggle vision mode",
+    "msg": "You switch the glasses to blinder mode.",
+    "target": "kawaii_hitec_megane_blind"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kawaii_hitec_megane_ir",
+  "copy-from": "kawaii_hitec_megane",
+  "repairs_like": "kawaii_hitec_megane",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "高科技眼镜 （红外）"
+  },
+  "flags": [
+    "WATER_FRIENDLY",
+    "FANCY",
+    "FIX_NEARSIGHT",
+    "FIX_FARSIGHT",
+    "IR_EFFECT",
+    "TRADER_AVOID"
+  ],
+  "power_draw": "10 W",
+  "revert_to": "kawaii_hitec_megane",
+  "use_action": {
+    "ammo_scale": 0,
+    "type": "transform",
+    "menu_text": "切换视觉模式",
+    "msg": "你把眼镜换成眼罩模式。",
+    "target": "kawaii_hitec_megane_blind"
+  }
+}
+```
+

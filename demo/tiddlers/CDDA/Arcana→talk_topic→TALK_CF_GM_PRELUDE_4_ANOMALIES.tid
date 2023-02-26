@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_PRELUDE_4_ANOMALIES
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_PRELUDE_4_ANOMALIES|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_PRELUDE_4_ANOMALIES]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ANOMALIES",
+  "type": "talk_topic",
+  "dynamic_line": "A few examples of intermittent anomalous hazards in the general hazard, often erratic and with no evidence of a pattern.  Moreover, the few reports of people who have lingered in the area have reported a wave of bad dreams, strange visions.  Seems to describe monsters that aren't among the usual interlopers.",
+  "responses": [
+    {
+      "text": "This seems familiar.  The Keepers have suffered a similar fate in their foremost holy site, haven't they?",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1"
+    },
+    {
+      "text": "Maybe there's a way to get a more exact location?",
+      "topic": "TALK_CF_GM_PRELUDE_4_PROGRESSION"
+    },
+    {
+      "text": "I need time to think about this.",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ANOMALIES",
+  "type": "talk_topic",
+  "dynamic_line": "在一般灾害中有一些间歇性异常的危险例子，通常不常见且没有典型的证据。此外，据在这一地区逗留者的少量报告称，他们有过一些噩梦般的奇怪的幻觉。其描述的生物似乎不属于通常的入侵者。",
+  "responses": [
+    {
+      "text": "这似乎很熟悉。饲养员在他们最重要的圣地也遭受了类似的命运，不是吗？",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1"
+    },
+    {
+      "text": "也许有办法找到更准确的地点？",
+      "topic": "TALK_CF_GM_PRELUDE_4_PROGRESSION"
+    },
+    {
+      "text": "我需要时间考虑一下。",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+

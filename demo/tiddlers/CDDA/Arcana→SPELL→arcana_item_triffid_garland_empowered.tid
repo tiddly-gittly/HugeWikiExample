@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_triffid_garland_empowered
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_triffid_garland_empowered|http://cdda.aloxaf.cn/search?q=arcana_item_triffid_garland_empowered]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_triffid_garland_empowered",
+  "name": {
+    "str": "Verdant Boost"
+  },
+  "description": "Grants the recovery effect to the user.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "A surge of energy flows through you from the garland!",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "effect_str": "triffid_garland_buff",
+  "extra_effects": [
+    {
+      "id": "arcana_item_triffid_garland_empowered_fatigue",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 234000,
+  "max_duration": 234000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_triffid_garland_empowered",
+  "name": {
+    "str": "青翠促生"
+  },
+  "description": "Grants the recovery effect to the user.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "一股能量从花环中流过你！",
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "effect_str": "triffid_garland_buff",
+  "extra_effects": [
+    {
+      "id": "arcana_item_triffid_garland_empowered_fatigue",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 234000,
+  "max_duration": 234000
+}
+```
+

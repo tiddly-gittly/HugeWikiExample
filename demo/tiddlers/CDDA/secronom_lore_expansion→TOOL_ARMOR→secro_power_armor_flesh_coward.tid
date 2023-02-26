@@ -1,0 +1,265 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_flesh_coward
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_flesh_coward|http://cdda.aloxaf.cn/search?q=secro_power_armor_flesh_coward]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armors.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_flesh_coward",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "flesh vessel \"Agile\""
+  },
+  "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel (Agile)\" is an outcome of mutagenic devolution, having thinner fibers and flesh webbings. Its greatly reduced physical protection has also made it extremely lighter than any other types; the vessel focuses on bringing the wearer's speed in order to outrun its foe. Like all other flesh vessels, it requires the wearer to feed it with flesh.\n\nSecronom exoskeleton type \"Vessel (Agile)\" provides:\n<color_white>Speed: <color_light_green>+10%</color>\nAttack speed: <color_light_green>+10%</color>\nMovecost: <color_light_green>-5%</color>\nStamina regeneration: <color_light_green>20%</color></color>",
+  "weight": "12450 g",
+  "volume": "13 L",
+  "price": "323000 USD",
+  "price_postapoc": "3000 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_light",
+  "color": "light_red_green",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 100
+      }
+    }
+  ],
+  "warmth": 30,
+  "power_armor": true,
+  "charges_per_use": 10,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "SPEED",
+            "multiply": 0.1
+          },
+          {
+            "value": "ATTACK_SPEED",
+            "multiply": 0.1
+          },
+          {
+            "value": "MOVE_COST",
+            "multiply": -0.05
+          },
+          {
+            "value": "REGEN_STAMINA",
+            "multiply": 0.2
+          }
+        ]
+      }
+    ]
+  },
+  "qualities": [
+    [
+      "GLARE",
+      1
+    ],
+    [
+      "SECRO_FLESH_MORPHING",
+      1
+    ],
+    [
+      "SECRO_FLESH_REFORMING",
+      1
+    ]
+  ],
+  "flags": [
+    "NO_TAKEOFF",
+    "WATERPROOF",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "SUN_GLASSES",
+    "OVERSIZE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 40,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r",
+        "head",
+        "eyes",
+        "mouth"
+      ],
+      "material": [
+        "secro_flesh_reinforced"
+      ],
+      "material_thickness": 5,
+      "environmental_protection": 8
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_flesh_coward",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "脉管装甲-“灵敏型”"
+  },
+  "description": "一种利用最新研究成果制造出来的合成战斗服。Secronom外骨骼型号“脉管（敏捷型）”，是诱变的成果，具有更细的纤维和血肉织带。大大减少的物理保护也使得它比任何其他型号都要轻；这种脉管专注于提高佩戴者的速度，以超越敌人。像所有其他血肉脉管一样，它需要佩戴者用血肉来喂养它。\n\n Secronom外骨骼型号“脉管（敏捷型）”提供：\n<color_white>速度：<color_light_green>+10%</color>\n攻击速度： <color_light_green>+10%</color>\n移动消耗： <color_light_green>-5%</color>\n耐力恢复： <color_light_green>20%</color></color>",
+  "weight": "12450 g",
+  "volume": "13 L",
+  "price": "323000 USD",
+  "price_postapoc": "3000 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_light",
+  "color": "light_red_green",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 L",
+      "max_contains_weight": "10 kg",
+      "moves": 85
+    },
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 100
+      }
+    }
+  ],
+  "warmth": 30,
+  "power_armor": true,
+  "charges_per_use": 10,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "SPEED",
+            "multiply": 0.1
+          },
+          {
+            "value": "ATTACK_SPEED",
+            "multiply": 0.1
+          },
+          {
+            "value": "MOVE_COST",
+            "multiply": -0.05
+          },
+          {
+            "value": "REGEN_STAMINA",
+            "multiply": 0.2
+          }
+        ]
+      }
+    ]
+  },
+  "qualities": [
+    [
+      "GLARE",
+      1
+    ],
+    [
+      "SECRO_FLESH_MORPHING",
+      1
+    ],
+    [
+      "SECRO_FLESH_REFORMING",
+      1
+    ]
+  ],
+  "flags": [
+    "NO_TAKEOFF",
+    "WATERPROOF",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "NO_UNLOAD",
+    "SUN_GLASSES",
+    "OVERSIZE"
+  ],
+  "armor": [
+    {
+      "encumbrance": 40,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r",
+        "leg_l",
+        "leg_r",
+        "foot_l",
+        "foot_r",
+        "head",
+        "eyes",
+        "mouth"
+      ],
+      "material": [
+        "secro_flesh_reinforced"
+      ],
+      "material_thickness": 5,
+      "environmental_protection": 8
+    }
+  ]
+}
+```
+

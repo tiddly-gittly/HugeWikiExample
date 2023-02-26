@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: GUNMOD Arcana
+title: Arcana→GUNMOD→arcane_accelerator_nuke
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcane_accelerator_nuke|http://cdda.aloxaf.cn/search?q=arcane_accelerator_nuke]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/gunmods.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcane_accelerator_nuke",
+  "type": "GUNMOD",
+  "name": {
+    "str": "fission anomaly inlay"
+  },
+  "description": "Several strips of silver inlaid along the length of a firearm's barrel, and a peculiar device wired to each inlay.  When catalyzed by charge from a UPS, the anomalous energies conducted through the inlay imbue bullets with abnormal effects.  Can't be installed on a sawed-down barrel.\nThis device creates a powerful spatial anomaly, forcing a tiny sliver of each projectile to undergo nuclear fission, at a penalty to accuracy and recoil.  While it's a far cry from a mininuke, the explosive force generated is complete overkill, and each spatial distortion risks tearing the fabric of reality.",
+  "weight": "540 g",
+  "volume": "1500 ml",
+  "integral_volume": "150 ml",
+  "price": "900 USD",
+  "price_postapoc": "90 USD",
+  "material": [
+    "silver",
+    "steel"
+  ],
+  "looks_like": "high_density_capacitor",
+  "symbol": ":",
+  "color": "light_gray",
+  "location": "barrel",
+  "blacklist_mod": "emitter",
+  "mod_targets": [
+    "smg",
+    "rifle",
+    "shotgun",
+    "pistol",
+    "launcher"
+  ],
+  "install_time": "45 m",
+  "handling_modifier": -20,
+  "dispersion_modifier": 200,
+  "loudness_modifier": 60,
+  "damage_modifier": {
+    "damage_type": "bullet",
+    "amount": 80
+  },
+  "ups_charges_modifier": 100,
+  "ammo_effects": [
+    "AMMO_ANOMALY_NUKE"
+  ],
+  "min_skills": [
+    [
+      "weapon",
+      4
+    ],
+    [
+      "fabrication",
+      6
+    ],
+    [
+      "electronics",
+      6
+    ],
+    [
+      "magic",
+      9
+    ]
+  ],
+  "flags": [
+    "MAGIC_FOCUS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcane_accelerator_nuke",
+  "type": "GUNMOD",
+  "name": {
+    "str": "裂变异常嵌条枪管"
+  },
+  "description": "沿着枪管的长度嵌有几条银条，每个镶嵌物上都有一个特殊的装置。当由UPS的电荷催化时，通过嵌体传导的异常能量会使子弹产生异常效果。不能安装在锯下的桶上。\n这个装置产生了一个强大的空间异常，迫使每个弹丸的一小部分发生核裂变，以精确性和反冲为代价。虽然它与小型核弹相去甚远，但产生的爆炸力完全是致命的，每一次空间扭曲都有可能撕裂现实之壁。",
+  "weight": "540 g",
+  "volume": "1500 ml",
+  "integral_volume": "150 ml",
+  "price": "900 USD",
+  "price_postapoc": "90 USD",
+  "material": [
+    "silver",
+    "steel"
+  ],
+  "looks_like": "high_density_capacitor",
+  "symbol": ":",
+  "color": "light_gray",
+  "location": "barrel",
+  "blacklist_mod": "emitter",
+  "mod_targets": [
+    "smg",
+    "rifle",
+    "shotgun",
+    "pistol",
+    "launcher"
+  ],
+  "install_time": "45 m",
+  "handling_modifier": -20,
+  "dispersion_modifier": 200,
+  "loudness_modifier": 60,
+  "damage_modifier": {
+    "damage_type": "bullet",
+    "amount": 80
+  },
+  "ups_charges_modifier": 100,
+  "ammo_effects": [
+    "AMMO_ANOMALY_NUKE"
+  ],
+  "min_skills": [
+    [
+      "weapon",
+      4
+    ],
+    [
+      "fabrication",
+      6
+    ],
+    [
+      "electronics",
+      6
+    ],
+    [
+      "magic",
+      9
+    ]
+  ],
+  "flags": [
+    "MAGIC_FOCUS"
+  ]
+}
+```
+

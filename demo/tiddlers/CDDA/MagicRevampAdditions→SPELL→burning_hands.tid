@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→burning_hands
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：burning_hands|http://cdda.aloxaf.cn/search?q=burning_hands]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/kelvinist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "burning_hands",
+  "type": "SPELL",
+  "name": {
+    "str": "Burning Hands"
+  },
+  "description": "You're pretty sure you saw this in a game somewhere.  You fire a short-range cone of fire.",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "IGNITE_FLAMMABLE"
+  ],
+  "max_level": 30,
+  "min_damage": 8,
+  "max_damage": 95,
+  "damage_increment": 4,
+  "min_range": 3,
+  "max_range": 8,
+  "range_increment": 0.25,
+  "min_aoe": 25,
+  "max_aoe": 90,
+  "aoe_increment": 5,
+  "spell_class": "KELVINIST",
+  "base_casting_time": 100,
+  "base_energy_cost": 150,
+  "energy_source": "MANA",
+  "difficulty": 2,
+  "damage_type": "heat"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "burning_hands",
+  "type": "SPELL",
+  "name": {
+    "str": "燃烧之手"
+  },
+  "description": "向一片较小的锥形区域喷射火焰。“你肯定在其他游戏中见过这个。”",
+  "effect": "attack",
+  "shape": "cone",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "IGNITE_FLAMMABLE"
+  ],
+  "max_level": 30,
+  "min_damage": 8,
+  "max_damage": 95,
+  "damage_increment": 4,
+  "min_range": 3,
+  "max_range": 8,
+  "range_increment": 0.25,
+  "min_aoe": 25,
+  "max_aoe": 90,
+  "aoe_increment": 5,
+  "spell_class": "KELVINIST",
+  "base_casting_time": 100,
+  "base_energy_cost": 150,
+  "energy_source": "MANA",
+  "difficulty": 2,
+  "damage_type": "heat"
+}
+```
+

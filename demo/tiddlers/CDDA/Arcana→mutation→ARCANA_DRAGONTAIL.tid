@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_DRAGONTAIL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_DRAGONTAIL|http://cdda.aloxaf.cn/search?q=ARCANA_DRAGONTAIL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONTAIL",
+  "name": {
+    "str": "Draconic Tail"
+  },
+  "points": 2,
+  "visibility": 6,
+  "ugliness": 2,
+  "description": "You have a long, thin, lizardlike tail, with a few nasty-looking spikes on the end of it.  It doesn't help as much with balance anymore, but still makes a serviceable whip.  Prevents wearing non-fabric pants.",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_SCALYTAIL"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "TAIL"
+  ],
+  "restricts_gear": [
+    "leg_l",
+    "leg_r"
+  ],
+  "allow_soft_gear": true,
+  "attacks": {
+    "attack_text_u": "You lash %s with your tail",
+    "attack_text_npc": "%1$s lashes %2$s with their tail",
+    "chance": 20,
+    "base_damage": {
+      "damage_type": "bash",
+      "amount": 8
+    }
+  },
+  "//": "Becoming less effective at balancing is intentional, spikes aren't as substantial as Spiked Tail but still impedes dodge bonus.",
+  "dodge_modifier": 1,
+  "flags": [
+    "ARCANA_DRAGONBLOOD_MARKER_TAIL"
+  ],
+  "allowed_items": [
+    "ALLOWS_TAIL"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_DRAGONTAIL",
+  "name": {
+    "str": "龙尾"
+  },
+  "points": 2,
+  "visibility": 6,
+  "ugliness": 2,
+  "description": "你有一条又长又细，像蜥蜴一样的尾巴，尾巴末端有一些看起来很难看的尖刺。它不再有助于平衡，但仍然是一个有用的鞭子。防止穿非织物裤子。",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_SCALYTAIL"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "types": [
+    "TAIL"
+  ],
+  "restricts_gear": [
+    "leg_l",
+    "leg_r"
+  ],
+  "allow_soft_gear": true,
+  "attacks": {
+    "attack_text_u": "你用你的尾巴鞭打%s",
+    "attack_text_npc": "%1$s 用尾巴鞭打 %2$s",
+    "chance": 20,
+    "base_damage": {
+      "damage_type": "bash",
+      "amount": 8
+    }
+  },
+  "//": "Becoming less effective at balancing is intentional, spikes aren't as substantial as Spiked Tail but still impedes dodge bonus.",
+  "dodge_modifier": 1,
+  "flags": [
+    "ARCANA_DRAGONBLOOD_MARKER_TAIL"
+  ],
+  "allowed_items": [
+    "ALLOWS_TAIL"
+  ]
+}
+```
+

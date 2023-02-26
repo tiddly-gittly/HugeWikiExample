@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: TOOL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL→stim
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：stim|http://cdda.aloxaf.cn/search?q=stim]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "stim",
+  "type": "TOOL",
+  "category": "tools",
+  "symbol": ">",
+  "color": "red",
+  "looks_like": "rx11_stimpack",
+  "name": {
+    "str": "bioinjector"
+  },
+  "description": "An odd, organic-looking auto-injector that slowly secretes some sort of red, blood-like substance.  From what you can understand from the label, it's an experimental stimulant that stabilizes minor wounds and increases performance at the cost of inflicting pain.  The label additionally warns against using it more than once every two hours.",
+  "price": "50000 USD",
+  "price_postapoc": "50 USD",
+  "material": [
+    "plastic",
+    "flesh"
+  ],
+  "weight": "150 g",
+  "volume": "250 ml",
+  "cutting": 1,
+  "to_hit": -1,
+  "flags": [
+    "NO_RELOAD",
+    "NO_UNLOAD"
+  ],
+  "ammo": [
+    "c_bioampoule_type"
+  ],
+  "charges_per_use": 1,
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "1 h",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "c_bioampoule_type": 1
+      }
+    }
+  ],
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "c_biostim",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "stim",
+  "type": "TOOL",
+  "category": "tools",
+  "symbol": ">",
+  "color": "red",
+  "looks_like": "rx11_stimpack",
+  "name": {
+    "str": "生物注射器"
+  },
+  "description": "一种奇怪的、看起来像有机物的自动注射器，能慢慢分泌出某种红色的、类似血液的物质。从标签上可以看出，这是一种实验性兴奋剂，可以稳定轻微伤口，以造成疼痛为代价提高表现。标签还提醒使用者不要在2小时内使用超过1次。 ",
+  "price": "50000 USD",
+  "price_postapoc": "50 USD",
+  "material": [
+    "plastic",
+    "flesh"
+  ],
+  "weight": "150 g",
+  "volume": "250 ml",
+  "cutting": 1,
+  "to_hit": -1,
+  "flags": [
+    "NO_RELOAD",
+    "NO_UNLOAD"
+  ],
+  "ammo": [
+    "c_bioampoule_type"
+  ],
+  "charges_per_use": 1,
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "1 h",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "c_bioampoule_type": 1
+      }
+    }
+  ],
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "c_biostim",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+

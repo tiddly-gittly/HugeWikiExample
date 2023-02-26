@@ -1,0 +1,255 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_unity
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_unity|http://cdda.aloxaf.cn/search?q=mon_zombie_unity]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Unifier.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_unity",
+  "type": "MONSTER",
+  "name": {
+    "str": "unity zombie"
+  },
+  "description": "From head down to its feet, this corpse's blood veins rapidly excretes thick blood that forms an external layer. An amalgous object around its torso resonates, in every beat, drips an oozing dark liquid.",
+  "default_faction": "zombie",
+  "harvest": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 205,
+  "speed": 75,
+  "diff": 15,
+  "material": [
+    "flesh"
+  ],
+  "attack_effs": [
+    {
+      "id": "unity_bloodslow",
+      "duration": 120,
+      "chance": 50
+    }
+  ],
+  "symbol": "☪",
+  "color": "pink",
+  "aggression": 10,
+  "morale": 50,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 2,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "armor_bash": 10,
+  "armor_stab": 5,
+  "attack_cost": 250,
+  "//": "slow attack speed, so don't worry.",
+  "death_drops": "default_zombie_death_drops",
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED"
+  ],
+  "weakpoints": [
+    {
+      "name": "the core",
+      "armor_mult": {
+        "cut": 0.5,
+        "stab": 0.5,
+        "bullet": 0.5
+      },
+      "armor_penalty": {
+        "cut": 20,
+        "stab": 20,
+        "bullet": 20
+      },
+      "coverage": 5,
+      "coverage_mult": {
+        "point": 0.5
+      },
+      "damage_mult": {
+        "all": 1.33
+      },
+      "difficulty": {
+        "melee": 5
+      },
+      "effects": [
+        {
+          "effect": "stunned",
+          "duration": [
+            1,
+            2
+          ],
+          "intensity": [
+            1,
+            1
+          ],
+          "message": "The %s took a fatal blow!"
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_unity_bv_check"
+      },
+      "cooldown": 50,
+      "monster_message": "<color_yellow>Blood vessels emerge from %1$s's core!</color>"
+    }
+  ],
+  "upgrades": {
+    "half_life": 20,
+    "into_group": "GROUP_UNIFIER_UPGRADEX"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "GROUP_MORALE",
+    "PLASTIC"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_unity",
+  "type": "MONSTER",
+  "name": {
+    "str": "变异整合体丧尸"
+  },
+  "description": "从头部到脚部，这具尸体的血脉迅速排出厚厚的血液，形成外层。一个围绕其躯干的巨大物体在每一次跳动中都会产生共鸣，滴下渗出的黑色液体。",
+  "default_faction": "zombie",
+  "harvest": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 205,
+  "speed": 75,
+  "diff": 15,
+  "material": [
+    "flesh"
+  ],
+  "attack_effs": [
+    {
+      "id": "unity_bloodslow",
+      "duration": 120,
+      "chance": 50
+    }
+  ],
+  "symbol": "☪",
+  "color": "pink",
+  "aggression": 10,
+  "morale": 50,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 2,
+  "armor_cut": 5,
+  "armor_bullet": 5,
+  "armor_bash": 10,
+  "armor_stab": 5,
+  "attack_cost": 250,
+  "//": "slow attack speed, so don't worry.",
+  "death_drops": "default_zombie_death_drops",
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED"
+  ],
+  "weakpoints": [
+    {
+      "name": "the core",
+      "armor_mult": {
+        "cut": 0.5,
+        "stab": 0.5,
+        "bullet": 0.5
+      },
+      "armor_penalty": {
+        "cut": 20,
+        "stab": 20,
+        "bullet": 20
+      },
+      "coverage": 5,
+      "coverage_mult": {
+        "point": 0.5
+      },
+      "damage_mult": {
+        "all": 1.33
+      },
+      "difficulty": {
+        "melee": 5
+      },
+      "effects": [
+        {
+          "effect": "stunned",
+          "duration": [
+            1,
+            2
+          ],
+          "intensity": [
+            1,
+            1
+          ],
+          "message": "The %s took a fatal blow!"
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_unity_bv_check"
+      },
+      "cooldown": 50,
+      "monster_message": "<color_yellow>条血管从%1$s的核心冒出！</color>"
+    }
+  ],
+  "upgrades": {
+    "half_life": 20,
+    "into_group": "GROUP_UNIFIER_UPGRADEX"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY",
+    "GROUP_MORALE",
+    "PLASTIC"
+  ]
+}
+```
+

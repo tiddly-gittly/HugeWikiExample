@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_RANCH_FOREMAN_NICHOLAS_3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_RANCH_FOREMAN_NICHOLAS_3|http://cdda.aloxaf.cn/search?q=TALK_RANCH_FOREMAN_NICHOLAS_3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_RANCH_FOREMAN.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_RANCH_FOREMAN_NICHOLAS_3",
+  "type": "talk_topic",
+  "dynamic_line": "I suppose.  But first I'm interested in something myself.  What you need this for anyway?",
+  "responses": [
+    {
+      "text": "I need more information on what was being shipped between the sites on this list.",
+      "condition": {
+        "u_has_item": "cf_purifier_project_data"
+      },
+      "topic": "TALK_RANCH_FOREMAN_NICHOLAS_4"
+    },
+    {
+      "text": "There's a specific research facility I was asked to try and find.",
+      "topic": "TALK_RANCH_FOREMAN_NICHOLAS_5"
+    },
+    {
+      "text": "Nothing important.",
+      "topic": "TALK_RANCH_FOREMAN_NICHOLAS_REFUSE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_RANCH_FOREMAN_NICHOLAS_3",
+  "type": "talk_topic",
+  "dynamic_line": "我想是的。但是首先我自己对一些东西感兴趣。你到底要这个干什么？",
+  "responses": [
+    {
+      "text": "我需要更多关于在这个列表上的站点之间运送什么的信息。",
+      "condition": {
+        "u_has_item": "cf_purifier_project_data"
+      },
+      "topic": "TALK_RANCH_FOREMAN_NICHOLAS_4"
+    },
+    {
+      "text": "我被要求去尝试寻找一个特别的研究机构。",
+      "topic": "TALK_RANCH_FOREMAN_NICHOLAS_5"
+    },
+    {
+      "text": "没什么。",
+      "topic": "TALK_RANCH_FOREMAN_NICHOLAS_REFUSE"
+    }
+  ]
+}
+```
+

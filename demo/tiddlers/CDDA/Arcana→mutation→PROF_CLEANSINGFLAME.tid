@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→PROF_CLEANSINGFLAME
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：PROF_CLEANSINGFLAME|http://cdda.aloxaf.cn/search?q=PROF_CLEANSINGFLAME]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_other.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "PROF_CLEANSINGFLAME",
+  "name": {
+    "str": "Cleansing Flame"
+  },
+  "points": 0,
+  "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renegade, wherever your loyalties now lie, your past may still be useful in the future.",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "//": "This prevents mage hunters from starting with forbidden summoning spells, along with blood magic.",
+  "cancels": [
+    "ILLITERATE",
+    "PACIFIST",
+    "SPELL_SHADOWSNAKES",
+    "SPELL_SUMMONDOG",
+    "MARTIAL_ARTS_SANGUINE",
+    "ARCANA_SCALYPATCHES",
+    "ARCANA_INNERHEAT",
+    "ARCANA_DRAGONCLAWS",
+    "ARCANA_DRAGONTEETH",
+    "ARCANA_DRAGONHORNS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "PROF_CLEANSINGFLAME",
+  "name": {
+    "str": "净火法师"
+  },
+  "points": 0,
+  "description": "你宣誓加入了一个被称为净化圣火的教派。无论你是一个尽职的猎人还是一个叛徒，无论你现在忠于谁，你的过往经历在未来可能仍然能派上用场。",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "//": "This prevents mage hunters from starting with forbidden summoning spells, along with blood magic.",
+  "cancels": [
+    "ILLITERATE",
+    "PACIFIST",
+    "SPELL_SHADOWSNAKES",
+    "SPELL_SUMMONDOG",
+    "MARTIAL_ARTS_SANGUINE",
+    "ARCANA_SCALYPATCHES",
+    "ARCANA_INNERHEAT",
+    "ARCANA_DRAGONCLAWS",
+    "ARCANA_DRAGONTEETH",
+    "ARCANA_DRAGONHORNS"
+  ]
+}
+```
+

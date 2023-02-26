@@ -1,0 +1,247 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_pellucid
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_pellucid|http://cdda.aloxaf.cn/search?q=mon_zombie_pellucid]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Translucent.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_pellucid",
+  "type": "MONSTER",
+  "name": {
+    "str": "pellucid zombie"
+  },
+  "description": "Unrecognizable face dribbles with unfriendly liquid. This zombie's skin thinned into a diversion of light, supposably an effect from producing too much acid. Within a closer look, the veins are composed mostly of green-ish glows.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 90,
+  "speed": 100,
+  "diff": 5,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩃",
+  "color": "blue_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "dodge": 1,
+  "harvest": "zombie",
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "acid",
+      "amount": 5
+    }
+  ],
+  "luminance": 1,
+  "armor_bash": 6,
+  "armor_fire": 2,
+  "special_attacks": [
+    [
+      "ACID_BARF",
+      30
+    ],
+    [
+      "ACID",
+      40
+    ],
+    {
+      "type": "gun",
+      "cooldown": 40,
+      "move_cost": 150,
+      "gun_type": "pellucid_mouth",
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "rifle",
+          6
+        ]
+      ],
+      "ranges": [
+        [
+          0,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "The pellucid zombie spits a concentrated glob of acid!"
+    }
+  ],
+  "special_when_hit": [
+    "ACIDSPLASH",
+    25
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "anger_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    },
+    "message": "The %s's body leaks acid."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "ACIDPROOF",
+    "ACID_BLOOD",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_pellucid",
+  "type": "MONSTER",
+  "name": {
+    "str": "透明丧尸"
+  },
+  "description": "无法辨认的脸上滴着不友好的液体。这只丧尸的皮肤变薄了，使得光线发生了偏移，这可能是由于时间进一步增长而产生的酸反流效应。细看之下，这些纹路主要由浅绿色的光晕组成。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 90,
+  "speed": 100,
+  "diff": 5,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩃",
+  "color": "blue_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "dodge": 1,
+  "harvest": "zombie",
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "acid",
+      "amount": 5
+    }
+  ],
+  "luminance": 1,
+  "armor_bash": 6,
+  "armor_fire": 2,
+  "special_attacks": [
+    [
+      "ACID_BARF",
+      30
+    ],
+    [
+      "ACID",
+      40
+    ],
+    {
+      "type": "gun",
+      "cooldown": 40,
+      "move_cost": 150,
+      "gun_type": "pellucid_mouth",
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "rifle",
+          6
+        ]
+      ],
+      "ranges": [
+        [
+          0,
+          8,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "透明的丧尸吐出一团浓缩的酸！"
+    }
+  ],
+  "special_when_hit": [
+    "ACIDSPLASH",
+    25
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "anger_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    },
+    "message": "The %s's body leaks acid."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "ACIDPROOF",
+    "ACID_BLOOD",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "REVIVES"
+  ]
+}
+```
+

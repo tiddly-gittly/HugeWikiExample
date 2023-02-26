@@ -1,0 +1,243 @@
+creator: 林一二
+revision: 0
+tags: ARMOR BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→ARMOR→BL9_hitech_survivorsuit_mk2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_hitech_survivorsuit_mk2|http://cdda.aloxaf.cn/search?q=BL9_hitech_survivorsuit_mk2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Items/armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_hitech_survivorsuit_mk2",
+  "looks_like": "hsurvivor_suit",
+  "repairs_like": "hsurvivor_suit",
+  "type": "ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "BL9 experimental survivor suit MK ii"
+  },
+  "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic survivor suit with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+3 str, +3 dex, +3 int, +3 per, +25% to attack speed, +25% to action points</color>) and offer better environmental protection",
+  "weight": "1500 g",
+  "volume": "4 L",
+  "price": "0 cent",
+  "to_hit": -1,
+  "material": [
+    "BL9_hitech_mk2_mid2"
+  ],
+  "symbol": "[",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5600 ml",
+      "max_contains_weight": "10 kg",
+      "moves": 35
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5600 ml",
+      "max_contains_weight": "10 kg",
+      "moves": 35
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "4400 ml",
+      "max_contains_weight": "6500 g",
+      "moves": 60
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "4400 ml",
+      "max_contains_weight": "6500 g",
+      "moves": 60
+    }
+  ],
+  "warmth": 20,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 3
+          },
+          {
+            "value": "DEXTERITY",
+            "add": 3
+          },
+          {
+            "value": "INTELLIGENCE",
+            "add": 3
+          },
+          {
+            "value": "PERCEPTION",
+            "add": 3
+          },
+          {
+            "value": "ATTACK_SPEED",
+            "multiply": 0.25
+          },
+          {
+            "value": "SPEED",
+            "multiply": 0.25
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "VARSIZE",
+    "FIT",
+    "POCKETS",
+    "HOOD",
+    "STURDY",
+    "WATERPROOF",
+    "RAINPROOF"
+  ],
+  "material_thickness": 2,
+  "environmental_protection": 3,
+  "armor": [
+    {
+      "encumbrance": [
+        10,
+        25
+      ],
+      "coverage": 90,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "leg_l",
+        "leg_r"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_hitech_survivorsuit_mk2",
+  "looks_like": "hsurvivor_suit",
+  "repairs_like": "hsurvivor_suit",
+  "type": "ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "BL9实验生还者套装MK ii"
+  },
+  "description": "这是一款经过强化和增强的技术超越了人类的可能性，极具实验性、时尚性和未来感的幸存者套装，其独特的设计融入了物理和化学结构修饰的BL9，以实现多功能性，增强用户的能力（<color_light_blue> +3 str、+3 dex、+3 int、+3 per、+25%攻击速度、+25%行动点</color>）并提供更好的环境保护",
+  "weight": "1500 g",
+  "volume": "4 L",
+  "price": "0 cent",
+  "to_hit": -1,
+  "material": [
+    "BL9_hitech_mk2_mid2"
+  ],
+  "symbol": "[",
+  "color": "red",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5600 ml",
+      "max_contains_weight": "10 kg",
+      "moves": 35
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5600 ml",
+      "max_contains_weight": "10 kg",
+      "moves": 35
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "4400 ml",
+      "max_contains_weight": "6500 g",
+      "moves": 60
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "4400 ml",
+      "max_contains_weight": "6500 g",
+      "moves": 60
+    }
+  ],
+  "warmth": 20,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 3
+          },
+          {
+            "value": "DEXTERITY",
+            "add": 3
+          },
+          {
+            "value": "INTELLIGENCE",
+            "add": 3
+          },
+          {
+            "value": "PERCEPTION",
+            "add": 3
+          },
+          {
+            "value": "ATTACK_SPEED",
+            "multiply": 0.25
+          },
+          {
+            "value": "SPEED",
+            "multiply": 0.25
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "VARSIZE",
+    "FIT",
+    "POCKETS",
+    "HOOD",
+    "STURDY",
+    "WATERPROOF",
+    "RAINPROOF"
+  ],
+  "material_thickness": 2,
+  "environmental_protection": 3,
+  "armor": [
+    {
+      "encumbrance": [
+        10,
+        25
+      ],
+      "coverage": 90,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "leg_l",
+        "leg_r"
+      ]
+    }
+  ]
+}
+```
+

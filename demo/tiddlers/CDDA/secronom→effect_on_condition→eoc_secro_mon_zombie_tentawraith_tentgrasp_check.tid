@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom
+title: secronom→effect_on_condition→eoc_secro_mon_zombie_tentawraith_tentgrasp_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_mon_zombie_tentawraith_tentgrasp_check|http://cdda.aloxaf.cn/search?q=eoc_secro_mon_zombie_tentawraith_tentgrasp_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_tentawraith_tentgrasp_check",
+  "condition": {
+    "and": [
+      {
+        "compare_int": [
+          {
+            "u_val": "skill_level",
+            "skill": "dodge"
+          },
+          ">=",
+          {
+            "const": 4
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "u_val": "dexterity"
+          },
+          ">=",
+          {
+            "const": 8
+          }
+        ]
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "A barrage of tentacles tried to grasp at you, but you dodge!",
+      "type": "good"
+    }
+  ],
+  "false_effect": [
+    {
+      "u_message": "A barrage of tentacles grasps at you!",
+      "type": "bad"
+    },
+    {
+      "u_add_effect": "stunned",
+      "duration": "3 seconds"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_tentawraith_tentgrasp_check",
+  "condition": {
+    "and": [
+      {
+        "compare_int": [
+          {
+            "u_val": "skill_level",
+            "skill": "dodge"
+          },
+          ">=",
+          {
+            "const": 4
+          }
+        ]
+      },
+      {
+        "compare_int": [
+          {
+            "u_val": "dexterity"
+          },
+          ">=",
+          {
+            "const": 8
+          }
+        ]
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "A barrage of tentacles tried to grasp at you, but you dodge!",
+      "type": "good"
+    }
+  ],
+  "false_effect": [
+    {
+      "u_message": "A barrage of tentacles grasps at you!",
+      "type": "bad"
+    },
+    {
+      "u_add_effect": "stunned",
+      "duration": "3 seconds"
+    }
+  ]
+}
+```
+

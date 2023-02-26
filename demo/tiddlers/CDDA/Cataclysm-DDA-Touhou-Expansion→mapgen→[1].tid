@@ -1,0 +1,1198 @@
+creator: 林一二
+revision: 0
+tags: mapgen Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→mapgen→[1]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/mapgen/thex_ufo_crash.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    [
+      "ufo_medium00_roof",
+      "ufo_medium10_roof"
+    ],
+    [
+      "ufo_medium01_roof",
+      "ufo_medium11_roof"
+    ]
+  ],
+  "weight": 100,
+  "object": {
+    "rows": [
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                ZZZZZZZZZZZZZ                   ",
+      "              ZZZZZZZZZZZZZZZZZZ                ",
+      "            WWWWWWWWWWWWWWWWWWWWWWW             ",
+      "          WWWWWWWWWWWWWWWWWWWWWWWWWWW           ",
+      "         WWWWWWWWWWWWWWWWWWWWWWWWWWWWW          ",
+      "        WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW         ",
+      "       YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY        ",
+      "      YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY       ",
+      "                  YYYYYYYYYYYYYYYYYYYYYYYY      ",
+      "                              YYYYYYYYYYYY      ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                "
+    ],
+    "palettes": [
+      "roof_palette"
+    ],
+    "terrain": {
+      "D": "t_concrete",
+      "X": "t_concrete",
+      "Y": "t_concrete",
+      "W": "t_concrete",
+      "Z": "t_concrete"
+    },
+    "//": "Whatever the bottom line is, it should have the RAMP_DOWN flag"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_liquor"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "               _        ",
+      "               _        ",
+      "   ||:|||||||||+||:||   ",
+      "   |#..#####....cs..|   ",
+      "   |#..##;......c...|   ",
+      "   |#Z.##..##...ccc.|   ",
+      "   |#..##..##.Z.,...|   ",
+      "   |#..##..........&|   ",
+      "   |.......#####...&|   ",
+      "   |||+|...#####...&|   ",
+      "   |S''|..,.......;&|   ",
+      "   |U''|.....;...&&&|   ",
+      "   |||||||||+||||||||   ",
+      "   _4{{{|K=====<|..L|   ",
+      "   __{{{|KK=====+..B|   ",
+      "   _____|KKK====|..L|   ",
+      "   _____|KKK====|||||   ",
+      "   _____|KK====*|{{{_   ",
+      "   _____|^^^^^^||____   ",
+      "   ____________*_____   ",
+      "   __________________   ",
+      "   __________________   ",
+      "   __________________   ",
+      "   __________________   "
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      " ": "t_region_groundcover_urban",
+      ".": "t_floor",
+      ":": [
+        [
+          "t_window_frame",
+          70
+        ],
+        [
+          "t_window_empty",
+          20
+        ],
+        [
+          "t_window",
+          5
+        ]
+      ],
+      "_": "t_concrete",
+      "{": "t_concrete",
+      "'": "t_linoleum_white",
+      "S": "t_linoleum_white",
+      "U": "t_linoleum_white",
+      "|": "t_wall_g",
+      "=": "t_thconc_floor",
+      "K": "t_thconc_floor",
+      "<": "t_ladder_up",
+      "^": "t_door_metal_locked",
+      "*": "t_gates_mech_control",
+      "+": [
+        [
+          "t_door_b",
+          20
+        ],
+        [
+          "t_door_frame",
+          10
+        ],
+        [
+          "t_door_o",
+          70
+        ],
+        [
+          "t_door_c",
+          5
+        ],
+        [
+          "t_door_locked_interior",
+          3
+        ]
+      ]
+    },
+    "furniture": {
+      "#": "f_rack",
+      "&": "f_glass_fridge",
+      "c": "f_counter",
+      "s": "f_stool",
+      "B": "f_bench",
+      "L": "f_locker",
+      "S": "f_sink",
+      "{": "f_dumpster"
+    },
+    "place_items": [
+      {
+        "item": "alcohol",
+        "x": 4,
+        "y": [
+          3,
+          7
+        ],
+        "chance": 5,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "alcohol",
+        "x": [
+          7,
+          11
+        ],
+        "y": 3,
+        "chance": 5,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "alcohol",
+        "x": [
+          7,
+          8
+        ],
+        "y": [
+          4,
+          7
+        ],
+        "chance": 5,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "alcohol",
+        "x": [
+          11,
+          15
+        ],
+        "y": [
+          8,
+          9
+        ],
+        "chance": 5,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "snacks",
+        "x": [
+          11,
+          12
+        ],
+        "y": [
+          5,
+          6
+        ],
+        "chance": 5,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "fridgesnacks",
+        "x": 19,
+        "y": [
+          7,
+          10
+        ],
+        "chance": 5,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "fridgesnacks",
+        "x": [
+          17,
+          19
+        ],
+        "y": 11,
+        "chance": 5,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "behindcounter",
+        "x": [
+          17,
+          19
+        ],
+        "y": [
+          3,
+          4
+        ],
+        "chance": 5,
+        "repeat": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "liqstore_brew",
+        "x": 16,
+        "y": [
+          3,
+          5
+        ],
+        "chance": 5,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "liqstore_brew",
+        "x": [
+          17,
+          18
+        ],
+        "y": 5,
+        "chance": 5,
+        "repeat": [
+          1,
+          12
+        ]
+      },
+      {
+        "item": "trash",
+        "x": [
+          5,
+          7
+        ],
+        "y": 14,
+        "chance": 90,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "trash",
+        "x": 18,
+        "y": [
+          15,
+          17
+        ],
+        "chance": 90,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "cash_register_random_ransacked",
+        "x": 16,
+        "y": [
+          3,
+          5
+        ],
+        "chance": 100
+      }
+    ],
+    "fields": {
+      "U": {
+        "field": "fd_bile",
+        "intensity": 1,
+        "age": 10
+      },
+      "S": {
+        "field": "fd_bile",
+        "intensity": 1,
+        "age": 10
+      }
+    },
+    "item": {
+      ".": [
+        {
+          "item": "bottle_glass",
+          "chance": 5
+        },
+        {
+          "item": "bottle_plastic",
+          "chance": 5
+        },
+        {
+          "item": "can_drink",
+          "chance": 5
+        },
+        {
+          "item": "jug_plastic",
+          "chance": 5
+        },
+        {
+          "item": "glass_shard",
+          "chance": 5
+        }
+      ]
+    },
+    "items": {
+      "K": {
+        "item": "keg_beer",
+        "chance": 50
+      },
+      "L": {
+        "item": "jackets",
+        "chance": 50
+      }
+    },
+    "liquids": {
+      ",": {
+        "liquid": "vodka",
+        "amount": [
+          1,
+          10
+        ]
+      },
+      "Z": {
+        "liquid": "wine_chardonnay",
+        "amount": [
+          1,
+          10
+        ]
+      },
+      ";": {
+        "liquid": "bum_wine",
+        "amount": [
+          1,
+          10
+        ]
+      }
+    },
+    "toilets": {
+      "U": {}
+    },
+    "place_monsters": [
+      {
+        "monster": "GROUP_ZOMBIE",
+        "x": [
+          0,
+          0
+        ],
+        "y": [
+          23,
+          23
+        ],
+        "chance": 2,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "monster": "GROUP_BAR",
+        "x": [
+          4,
+          19
+        ],
+        "y": [
+          3,
+          11
+        ],
+        "chance": 2
+      }
+    ],
+    "vehicles": {
+      ".": {
+        "vehicle": "shopping_cart",
+        "chance": 1,
+        "status": 1
+      }
+    },
+    "nested": {
+      "|": {
+        "chunks": [
+          [
+            "bile_field",
+            10
+          ],
+          [
+            "shelter_graffiti",
+            5
+          ],
+          [
+            "general_graffiti",
+            20
+          ],
+          [
+            "null",
+            75
+          ]
+        ]
+      },
+      "-": {
+        "chunks": [
+          [
+            "bile_field",
+            10
+          ],
+          [
+            "shelter_graffiti",
+            5
+          ],
+          [
+            "general_graffiti",
+            20
+          ],
+          [
+            "null",
+            75
+          ]
+        ]
+      },
+      ".": {
+        "chunks": [
+          [
+            "bile_field",
+            10
+          ],
+          [
+            "null",
+            90
+          ]
+        ]
+      },
+      "#": {
+        "chunks": [
+          [
+            "bile_field",
+            20
+          ],
+          [
+            "destroyed_furniture",
+            10
+          ],
+          [
+            "null",
+            70
+          ]
+        ]
+      },
+      "&": {
+        "chunks": [
+          [
+            "bile_field",
+            20
+          ],
+          [
+            "destroyed_furniture",
+            30
+          ],
+          [
+            "null",
+            50
+          ]
+        ]
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    [
+      "stadium_0_1",
+      "stadium_1_1",
+      "stadium_2_1",
+      "stadium_3_1"
+    ],
+    [
+      "stadium_0_2",
+      "stadium_1_2",
+      "stadium_2_2",
+      "stadium_3_2"
+    ],
+    [
+      "stadium_0_3",
+      "stadium_1_3",
+      "stadium_2_3",
+      "stadium_3_3"
+    ],
+    [
+      "stadium_0_4",
+      "stadium_1_4",
+      "stadium_2_4",
+      "stadium_3_4"
+    ]
+  ],
+  "weight": 100,
+  "object": {
+    "fill_ter": "t_thconc_floor",
+    "rows": [
+      "…ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss…",
+      "*****…………**********************…………*****ssssssssssssssss*****…………**********************…………*****",
+      "*fff*││││*ffffffffffffffffffff*││││*fff*ssssssssssssssss*fff*││││*ffffffffffffffffffff*││││*fff*",
+      "****││││││********************││││││****ssssssssssssssss****││││││********************││││││****",
+      "│││││││││││││││││││││││││││││││││││││││││ssssss││ssssss│││││││││││││││││││││││││││││││││││││││││",
+      "│T'T|?'?|T|T|T|T|''...''|T|T|T|T|......issssssssssssssssi......|T|T|T|T|''...''|T|T|T|T|T'T|?'?│",
+      "│|'|||'||'|'|'|'|'|...|'|'|'|'|'|......-ssssssssssssssss-......|'|'|'|'|'|...|'|'|'|'|'||'|||'|│",
+      "│T'T|?'?|+|+|+|+|'|...|'|+|+|+|+|.|.|..│ssssssssssssssss│..|.|.|+|+|+|+|'|...|'|+|+|+|+|T'T|?'?│",
+      "│|'|||'||'''''''''|...|'''''''''|.<.<..-ssssssssssssssss-..<.<.|'''''''''|...|'''''''''||'|||'|│",
+      "│S'S|?'?|''SSS'''a|...|a'''SSS''|......issssss$!!!ssssssi......|''SSS'''a|...|a'''SSS''|S'S|?'?│",
+      "│|+|||+||||||||||||...|||||||||||......││││││││││││││││││......|||||||||||...||||||||||||+|||+|│",
+      "│a''''''|..............................................................................|''''''a│",
+      "│''l'''l|..............................................................................|l'''l''│",
+      "│''l'B'l|..│_bbbbbbbbbbbbbb_│_bbbbbbbbbbbbbbbb││+│││+││bbbbbbbbbb_│_bbbbbbbbbbbbbbb_│..|l'B'l''│",
+      "│''l'B'l|..___________________________________│...N...│______________________________..|l'B'l''│",
+      "│''l'B'l|..b___bbbbbbbbbbbb___bbbbbbbbbbbbbbbb│h.....h│bbbbbbbbbb___bbbbbbbbbbbbb___b..|l'B'l''│",
+      "│''l'B'l|..b__________________________________│h.....h│_____________________________b..|l'B'l''│",
+      "│''l'''l|..b_b_│_bbbbbbbbbb_│_bbbbbbbbbbbbbbbb│..888..│bbbbbbbbbb_│_bbbbbbbbbbb_│_b_b..|l'''l''│",
+      "│'''''''|..b_b________________________________│......&│___________________________b_b..|'''''''│",
+      "│|+||||||..b_b_b_RRRRRRRRRRRRRRRRRRRRRRRRRRRRR│RRRRR.R│RRRRRRRRRRR-RRRRRRRRRRRR_b_b_b..||||||+|│",
+      "│..........b_b_b_R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R_b_b_b..........│",
+      "│..........b_b_b_R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R_b_b_b..........│",
+      "│||||||||..b_b_b_R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,                  ,,,,,,R_b_b_b..||||||||│",
+      "│..........b_b_b_R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,   g     g              ,,,R_b_b_b..........│",
+      "│..........b_b_b_R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,       ggggggg         ,,,  ,,,R_b_b_b..........│",
+      "│...2......b_b_b_R,,,,,,,,,,,,,,,,,,,,,                             ,,,,,, ,,,R_b_b_b.......1..│",
+      "│..........b_b_b_R,,gggggggggggggggggggggggggggggggggggggggggggggggggggg,,  ,,R_b_b_b..........│",
+      "│D......|..b_b_b_R,,                              ,,,,;,,,,,,,,,,,,,,,;g,,  ,,R_b_b_b..|......D│",
+      "│&......|..b_b_b_R,,                              ,,,,,,,            ,,g,   ,,R_b_b_b..|......&│",
+      "│F......|..b_b_b_R,,                              ,,,,,,              ,g,   ,,R_b_b_b..|......F│",
+      "│..........______R,,                              ,,,,,               ,g    ,,R______..........│",
+      "│..........│___│_R,,                              ,,,,,               ,g    ,,R_│___│....2.....│",
+      "│....1.....______R,,                              ,,,,,               ,g    ,,R______..........│",
+      "│..........b_b_b_R,,                              ,,,,,               ,g    ,,R_b_b_b..........│",
+      "│.......|..b_b_b_R,,                              ,,,,,               ,g    ,,R_b_b_b..|.......│",
+      "│..........b_b_b_R,,                               ,,,,      ,,,      ,g    ,,R_b_b_b..........│",
+      "│..|<......b_b_b_R,,                               ,,,,      ,o,      ,g    ,,R_b_b_b......<|..│",
+      "│..........b_b_b_R,,                               ,,,,      ,,,      ,g gg ,,R_b_b_b..........│",
+      "│..|<......b_b_b_R,,                               ,,,,               ,g g  ,,R_b_b_b......<|..│",
+      "│..........b_b_b_R,,                               ,,,,               ,g g  ,,R_b_b_b..........│",
+      "│RR...RR|..b_b_b_R,,                                ,,,               ,g g  ,,R_b_b_b..|y.....y│",
+      "│.......y..b_b_b_R,,                                ,,,,             ,,g g  ,,R_b_b_b..R.......│",
+      "│.888888...b_b_b_R,,                                ,,,,,           ,,,g g  ,,R_b_b_b..R.88.88.│",
+      "│.nnnnnn...b_b_b_R,,,                                ,;,,,,,,,,,,,,,,,;g gg ,,│││││││..R.nn.nn.│",
+      "│.888888...b_b_b_R,,,                                ,,,,,,,,,,,,,,,,,,g    ,,R&.hh.│..R.88.88.│",
+      "│..........b_b_b_R,,,                                  ,,,,,,,,,,,,,,,,g    ,,......+..R.......│",
+      "│..........b_b_b_R,,,                                     ,,,,,,,,,,,,,g   ,,,R.8...│..R.88.88.│",
+      "│cccc|.....b_b_b_R,,,                                          ,,,,,,,,g   ,,,R.8..N│..R.nn.nn.│",
+      "│E'''c.....b_b_b_R,,,                                                  g   ,,,R.8...│..R.88.88.│",
+      "│é'O'c.....______R,,,                                                  g  ,,,,R.....+..........│",
+      "│ß'O'c....&│___│_R,,,                                                  g  ,,,,R..hh.│..........│",
+      "│''''c.....______R,,,                                                  g  ,,,,│││││││..R.88.88.│",
+      "│Cccc|.....b_b_b_R,,,                                                  g  ,,,,R_b_b_b..R.nn.nn.│",
+      "│..........b_b_b_R,,,,                                                 g ,,,,,R_b_b_b..R.88.88.│",
+      "│..........b_b_b_R,,,,                                                 g ,,,,,R_b_b_b..R.......│",
+      "│.888888...b_b_b_R,,,,                                                 g ,,,,,R_b_b_b..R.88.88.│",
+      "│.nnnnnn...b_b_b_R,,,,                                                 g ,,,,,R_b_b_b..R.nn.nn.│",
+      "│.888888...b_b_b_R,,,,,                                                g ,,,,,R_b_b_b..R.88.88.│",
+      "│.......y..b_b_b_R,,,,,                                                g ,,,,,R_b_b_b..R.......│",
+      "│RR...RR|..b_b_b_R,,,,,                                                g ,,,,,R_b_b_b..|y.....y│",
+      "│..........b_b_b_R,,,,,,                                               g ,,,,,R_b_b_b..........│",
+      "│..|<......b_b_b_R,,,,,,                                               g,,,,,,R_b_b_b......<|..│",
+      "│..........b_b_b_R,,,,,,,                                              g,,,,,,R_b_b_b..........│",
+      "│..|<......b_b_b_R,,,,,,,                                              g,,,,,,R_b_b_b......<|..│",
+      "│..........b_b_b_R,,,,,,,,                                             g,,,,,,R_b_b_b..........│",
+      "│||||||||..b_b_b_R,,,,,,,,,                                            g,,,,,,R_b_b_b..|.......│",
+      "│d..rrrr|..b_b_b_R,,,,,,,,,                                            g,,,,,,R_b_b_b..........│",
+      "│dh.....|..b_b_b_R,,,,,,,,,,                                           g,,,,,,R_b_b_b..........│",
+      "│d..rrrr|..______R,,,,,,,,,,,                                          g,,,,,,R______..........│",
+      "│|+||||||..│___│_R,,,,,,,,,,,,                                         g,,,,,,R_│___│&.........│",
+      "│.......|..______R,,,,,,,,,,,,,                                        g,,,,,,R______..........│",
+      "│.h.c..qV..b_b_b_R,,,,,,,,,,,,,,,                                      g,,,,,,R_b_b_b..........│",
+      "│cccc..qV..b_b_b_R,,,,,,,,,,,,,,,,                                     g,,,,,,R_b_b_b..........│",
+      "│......qV..b_b_b_R,,,,,,,,,,,,,,,,,,                                   g,,,,,,R_b_b_b..........│",
+      "│.......|..b_b_b_R,,,,,,,,,,,,,,,,,,,,                                 g,,,,,,R_b_b_b..........│",
+      "│.rr.......b_b_b_R,,,,,,,,,,,,,,,,,,,,,,,                              g,,,,,,R_b_b_b..||ccccc|│",
+      "│.rr.q.....b_b_b_R,,,,,,,,,,,,,,,,,,,,,,,,,,,                          g,,,,,,R_b_b_b..|E'''''u│",
+      "│.rr.......b_b_b_R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,                g,,,,,,R_b_b_b..|E'''''u│",
+      "│.......|..b_b_b_R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R_b_b_b..|E'''''u│",
+      "│.rr.rr.V..b_b_b_R,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,R_b_b_b..|||||ß'a│",
+      "│.rr.rr.V..b_b_b_RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR_b_b_b..|eee|''O│",
+      "│.rr.rr.V..b_b____________________________________________________________________b_b..|'''+''O│",
+      "│.......|..b_b_│_bbbbbbbbbb_│_bbbbbbbbbbbbbbbb_│_bbbbbbbbbbbbbbbb_│_bbbbbbbbbbb_│_b_b..|eee|''O│",
+      "│||||||||..b________________________________________________________________________b..||||||+|│",
+      "│..........b___bbbbbbbbbbbb___bbbbbbbbbbbbbbbb___bbbbbbbbbbbbbbbb___bbbbbbbbbbbbb___b..........│",
+      "│..........__________________________________________________________________________..........│",
+      "│|~||||||..│_bbbbbbbbbbbbbb_│_bbbbbbbbbbbbbbbb_│_bbbbbbbbbbbbbbbb_│_bbbbbbbbbbbbbbb_│..||||||~|│",
+      "│X..AAA.|......................................&.......................................|.SSS...│",
+      "│...AAA.|..............................................................................|.......│",
+      "│&:::::.|||||||||||...|||||||||||.....|..................|.....|||||||||||...|||||||||||m....zz│",
+      "│.:...:&|''SSS'''a|...|a'''SSS''|.....|..............2...|.....|''SSS'''a|...|a'''SSS''|m....zz│",
+      "│&:...:.|'''''''''|...|'''''''''|.<.<.|..1...............|.<.<.|'''''''''|...|'''''''''|m.....&│",
+      "│&:...:X|+|+|+|+|'|...|'|+|+|+|+|.|.|.|..................|.|.|.|+|+|+|+|'|...|'|+|+|+|+|m......│",
+      "│.:...:X|'|'|'|'|'|...|'|'|'|'|'|.....|..................|.....|'|'|'|'|'|...|'|'|'|'|'|..&...A│",
+      "│6:...:.|T|T|T|T|''...''|T|T|T|T|.....|..................|.....|T|T|T|T|''...''|T|T|T|T|....&&A│",
+      "││#####│││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││"
+    ],
+    "palettes": [
+      "stadium_palette"
+    ],
+    "terrain": {
+      "6": "t_gates_mech_control_lab",
+      "#": "t_door_metal_locked"
+    },
+    "items": {
+      "E": {
+        "item": "softdrinks_canned",
+        "chance": 40,
+        "repeat": [
+          1,
+          20
+        ]
+      },
+      "r": {
+        "item": "baseball_souvenir",
+        "chance": 80
+      },
+      "e": {
+        "item": "fast_fridge",
+        "chance": 25,
+        "repeat": [
+          1,
+          20
+        ]
+      },
+      "u": {
+        "item": "fast_kitchen",
+        "chance": 60,
+        "repeat": [
+          1,
+          10
+        ]
+      },
+      "é": {
+        "item": "hotdog_fridge",
+        "chance": 70
+      },
+      "l": {
+        "item": "baseball_equip",
+        "chance": 30,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      "q": {
+        "item": "baseball_equip",
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    },
+    "place_item": [
+      {
+        "item": "napkin",
+        "x": 93,
+        "y": 75,
+        "chance": 70
+      },
+      {
+        "item": "napkin",
+        "x": 5,
+        "y": 48,
+        "chance": 70
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "ketchup_sealed_rng",
+        "x": 5,
+        "y": 51,
+        "chance": 60,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "mustard_sealed_rng",
+        "x": 5,
+        "y": 51,
+        "chance": 60,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "cash_register_random",
+        "x": 5,
+        "y": [
+          48,
+          50
+        ]
+      },
+      {
+        "group": "cash_register_random",
+        "x": [
+          89,
+          92
+        ],
+        "y": 75
+      },
+      {
+        "group": "cash_register_random",
+        "x": [
+          1,
+          4
+        ],
+        "y": 72
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          0,
+          23
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          24,
+          47
+        ],
+        "y": [
+          0,
+          23
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          48,
+          71
+        ],
+        "y": [
+          0,
+          23
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          72,
+          95
+        ],
+        "y": [
+          0,
+          23
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          24,
+          47
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          48,
+          71
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          0,
+          23
+        ],
+        "y": [
+          72,
+          95
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          24,
+          47
+        ],
+        "y": [
+          72,
+          95
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          48,
+          71
+        ],
+        "y": [
+          72,
+          95
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          72,
+          95
+        ],
+        "y": [
+          72,
+          95
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          72,
+          95
+        ],
+        "y": [
+          0,
+          23
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          72,
+          95
+        ],
+        "y": [
+          24,
+          47
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          72,
+          95
+        ],
+        "y": [
+          48,
+          71
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_HOUSE",
+        "x": [
+          72,
+          95
+        ],
+        "y": [
+          72,
+          95
+        ],
+        "density": 0.066
+      },
+      {
+        "monster": "GROUP_YOUKAI_CITY_DUMPSTER",
+        "x": [
+          2,
+          7
+        ],
+        "y": [
+          88,
+          95
+        ],
+        "chance": 2,
+        "density": 0.1
+      }
+    ],
+    "monsters": {
+      " ": {
+        "monster": "GROUP_YOUKAI_OPENFIELD",
+        "chance": 256
+      },
+      ",": {
+        "monster": "GROUP_YOUKAI_OPENFIELD",
+        "chance": 256
+      },
+      ".": {
+        "monster": "GROUP_BASEBALL_1",
+        "chance": 256
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "cattail",
+  "object": {
+    "rows": [
+      "i"
+    ],
+    "furniture": {
+      "i": "f_cattails"
+    },
+    "mapgensize": [
+      1,
+      1
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": "shrine_medium_1_roof",
+  "object": {
+    "fill_ter": "t_open_air",
+    "rows": [
+      "   ..................   ",
+      "   ..................   ",
+      "   ..................   ",
+      "   ..................   ",
+      "   ..................   ",
+      "   ..................   ",
+      "   ..................   ",
+      "   ..................   ",
+      "   ..................   ",
+      "   ..................   ",
+      "   ..................   ",
+      "         ......         ",
+      "         ......         ",
+      "         ......         ",
+      " ...................... ",
+      " ...................... ",
+      " ...................... ",
+      " ...................... ",
+      " ...................... ",
+      " ...................... ",
+      " ...................... ",
+      " ...................... ",
+      " ...................... ",
+      "                        "
+    ],
+    "terrain": {
+      ".": "t_shingle_flat_roof"
+    },
+    "place_monsters": [
+      {
+        "monster": "GROUP_ROOF_ANIMAL",
+        "x": [
+          4,
+          20
+        ],
+        "y": [
+          1,
+          22
+        ],
+        "repeat": [
+          1,
+          3
+        ],
+        "chance": 65
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    [
+      "ufo_medium00_roof",
+      "ufo_medium10_roof"
+    ],
+    [
+      "ufo_medium01_roof",
+      "ufo_medium11_roof"
+    ]
+  ],
+  "weight": 100,
+  "object": {
+    "rows": [
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                ZZZZZZZZZZZZZ                   ",
+      "              ZZZZZZZZZZZZZZZZZZ                ",
+      "            WWWWWWWWWWWWWWWWWWWWWWW             ",
+      "          WWWWWWWWWWWWWWWWWWWWWWWWWWW           ",
+      "         WWWWWWWWWWWWWWWWWWWWWWWWWWWWW          ",
+      "        WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW         ",
+      "       YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY        ",
+      "      YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY       ",
+      "                  YYYYYYYYYYYYYYYYYYYYYYYY      ",
+      "                              YYYYYYYYYYYY      ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                ",
+      "                                                "
+    ],
+    "palettes": [
+      "roof_palette"
+    ],
+    "terrain": {
+      "D": "t_concrete",
+      "X": "t_concrete",
+      "Y": "t_concrete",
+      "W": "t_concrete",
+      "Z": "t_concrete"
+    },
+    "//": "Whatever the bottom line is, it should have the RAMP_DOWN flag"
+  }
+}
+```
+

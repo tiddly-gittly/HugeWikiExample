@@ -1,0 +1,67 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_UNDERTRADER_himdetail
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_UNDERTRADER_himdetail|http://cdda.aloxaf.cn/search?q=TALK_VAMP_UNDERTRADER_himdetail]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Underrefugee/v_ut_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_UNDERTRADER_himdetail",
+  "type": "talk_topic",
+  "dynamic_line": "HIM is our master, the reason of our immortality and existence in this damned world.",
+  "responses": [
+    {
+      "text": "Okay...",
+      "topic": "TALK_VAMP_UNDERTRADER"
+    },
+    {
+      "text": "So, where is HE?",
+      "topic": "TALK_VAMP_UNDERTRADER_himwhere",
+      "effect": [
+        {
+          "u_add_trait": "undertradertalkedhim"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_UNDERTRADER_himdetail",
+  "type": "talk_topic",
+  "dynamic_line": "HIM是我们的大师，是让我们不朽，并存在在这个操蛋的世界上的原因。",
+  "responses": [
+    {
+      "text": "好吧……",
+      "topic": "TALK_VAMP_UNDERTRADER"
+    },
+    {
+      "text": "所以，HE在哪里？",
+      "topic": "TALK_VAMP_UNDERTRADER_himwhere",
+      "effect": [
+        {
+          "u_add_trait": "undertradertalkedhim"
+        }
+      ]
+    }
+  ]
+}
+```
+

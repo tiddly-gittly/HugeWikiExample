@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_hammerzeit
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_hammerzeit|http://cdda.aloxaf.cn/search?q=arcana_item_hammerzeit]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_hammerzeit",
+  "name": {
+    "str": "Thunderous Wrath"
+  },
+  "description": "Flashbang on user, blinding anyone nearby.",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground",
+    "self"
+  ],
+  "message": "\"Ave martello!\"  The hammer gives off a golden light, that rises to a blinding flare and resounding bang!",
+  "extra_effects": [
+    {
+      "id": "arcana_item_hammerzeit_attack",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_hammerzeit_dazzle",
+      "hit_self": false
+    }
+  ],
+  "effect": "flashbang",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_damage": 40,
+  "max_damage": 40,
+  "min_aoe": 6,
+  "max_aoe": 6
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_hammerzeit",
+  "name": {
+    "str": "雷霆之怒"
+  },
+  "description": "Flashbang on user, blinding anyone nearby.",
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground",
+    "self"
+  ],
+  "message": "“圣锤奥义！”锤子散发着金色的光芒，随后发出耀眼的闪光和响亮的巨响！",
+  "extra_effects": [
+    {
+      "id": "arcana_item_hammerzeit_attack",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_hammerzeit_dazzle",
+      "hit_self": false
+    }
+  ],
+  "effect": "flashbang",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_damage": 40,
+  "max_damage": 40,
+  "min_aoe": 6,
+  "max_aoe": 6
+}
+```
+

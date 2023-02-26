@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_skull
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_skull|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_skull]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_skull",
+  "type": "MONSTER",
+  "name": {
+    "str": "skull zombie"
+  },
+  "description": "This creature's head is a hideous gray skull, formed of human bone fragments and some sort of goo.  Jagged teeth are visible as the thing works its jaw and disturbingly human, lidless eyes stare at you from their sockets.  The thing's fleshy ears are four sizes too large and droop under their own weight.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 169,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_gray",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 8,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "vision_day": 25,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 0.7
+    },
+    [
+      "GRAB",
+      6
+    ],
+    [
+      "scratch",
+      15
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_skull",
+  "flags": [
+    "HEARS",
+    "GOODHEARING",
+    "SEES",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NOHEAD",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_skull",
+  "type": "MONSTER",
+  "name": {
+    "str": "颅骨丧尸"
+  },
+  "description": "这个生物的头是一个可怕的灰色头骨，由人类的骨头碎片和某种粘液组成。当它活动下颚时你能看到锯齿状的牙齿，相当令人不安。它的眼睛裸露在眼窝里，死死盯着你。它的肉质耳朵有正常的四倍大，在自身重量的作用下下垂。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 169,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_gray",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 8,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "vision_day": 25,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 0.7
+    },
+    [
+      "GRAB",
+      6
+    ],
+    [
+      "scratch",
+      15
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_skull",
+  "flags": [
+    "HEARS",
+    "GOODHEARING",
+    "SEES",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NOHEAD",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

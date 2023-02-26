@@ -1,0 +1,67 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_APPRENTICE_SANGUINE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_APPRENTICE_SANGUINE|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_APPRENTICE_SANGUINE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_APPRENTICE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_SANGUINE",
+  "type": "talk_topic",
+  "dynamic_line": "Maybe that's true.  But our unity under The Path has been broken.  It's survival of the strongest now, isn't it?  The magus here won't welcome another into the fold, you'll only be seen as a rival.",
+  "responses": [
+    {
+      "text": "Why are you here?",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_WHY"
+    },
+    {
+      "text": "We don't have to fight.",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_PEACE"
+    },
+    {
+      "text": "[ATTACK] Then let the strong rule.  Die.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_SANGUINE",
+  "type": "talk_topic",
+  "dynamic_line": "也许这是真的。但我们在这条道路下的团结被打破了。现在是最强者的生存，不是吗？这里的法师不会欢迎其他人加入，你只会被视为对手。",
+  "responses": [
+    {
+      "text": "你为什么在这里？",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_WHY"
+    },
+    {
+      "text": "我们不需要战斗。",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_PEACE"
+    },
+    {
+      "text": "[攻击]那就让强者统治。死吧。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

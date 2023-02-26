@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→freezing_touch
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：freezing_touch|http://cdda.aloxaf.cn/search?q=freezing_touch]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/kelvinist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "freezing_touch",
+  "type": "SPELL",
+  "name": {
+    "str": "Freezing Touch"
+  },
+  "description": "Your hands freeze anything they touch at temperatures so cold it slows down your foes.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_PROJECTILE"
+  ],
+  "components": "spell_components_freezing_touch",
+  "effect": "attack",
+  "effect_str": "cold",
+  "shape": "blast",
+  "affected_body_parts": [
+    "torso"
+  ],
+  "damage_type": "cold",
+  "min_damage": 38,
+  "damage_increment": 5,
+  "max_damage": 173,
+  "min_range": 1,
+  "max_range": 1,
+  "base_energy_cost": 85,
+  "spell_class": "KELVINIST",
+  "difficulty": 7,
+  "max_level": 27,
+  "base_casting_time": 100,
+  "energy_source": "MANA",
+  "extra_effects": [
+    {
+      "id": "freezing_touch_slow_effect"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "freezing_touch",
+  "type": "SPELL",
+  "name": {
+    "str": "极寒之触"
+  },
+  "description": "你的双手在如此寒冷的温度下能冻结接触到的任何物体，它会减慢你触碰到的敌人。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SOMATIC",
+    "NO_PROJECTILE"
+  ],
+  "components": "spell_components_freezing_touch",
+  "effect": "attack",
+  "effect_str": "cold",
+  "shape": "blast",
+  "affected_body_parts": [
+    "torso"
+  ],
+  "damage_type": "cold",
+  "min_damage": 38,
+  "damage_increment": 5,
+  "max_damage": 173,
+  "min_range": 1,
+  "max_range": 1,
+  "base_energy_cost": 85,
+  "spell_class": "KELVINIST",
+  "difficulty": 7,
+  "max_level": 27,
+  "base_casting_time": 100,
+  "energy_source": "MANA",
+  "extra_effects": [
+    {
+      "id": "freezing_touch_slow_effect"
+    }
+  ]
+}
+```
+

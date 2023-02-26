@@ -1,0 +1,255 @@
+creator: 林一二
+revision: 0
+tags: GUN secronom_lore_expansion
+title: secronom_lore_expansion→GUN→secro_fleshmech_gun_spikes
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_fleshmech_gun_spikes|http://cdda.aloxaf.cn/search?q=secro_fleshmech_gun_spikes]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Monsters/-Essentials/secro_mech_weapons.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_fleshmech_gun_spikes",
+  "looks_like": "ar15",
+  "type": "GUN",
+  "name": {
+    "str": "SPEMF bone launcher"
+  },
+  "description": "This is a rather vague integral weapon system for the Secronom Project's Experimental Mech \"Flesh\". Possesses wide variety of bio-organic guns to shoot different projectiles which consumes flesh as ammunition. Mech's hand have currently turned into a bone launcher, which volleys bone spikes at a high rate.",
+  "weight": "43220 g",
+  "volume": "15 L",
+  "to_hit": -4,
+  "bashing": 8,
+  "material": [
+    "superalloy",
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "(",
+  "color": "light_blue",
+  "skill": "secro_flesh_combat",
+  "range": 18,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 8
+  },
+  "dispersion": 100,
+  "durability": 8,
+  "loudness": 2,
+  "ammo": [
+    "secro_flesh"
+  ],
+  "clip_size": 10,
+  "ups_charges": 6,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 10
+      }
+    }
+  ],
+  "valid_mod_locations": [
+    [
+      "SPEMF accessories",
+      1
+    ],
+    [
+      "SPEMF gun morphs",
+      2
+    ]
+  ],
+  "default_mods": [
+    "secro_fleshmech_gun_acid",
+    "secro_fleshmech_gun_acid_large",
+    "secro_fleshmech_gun_spikes_large"
+  ],
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      2
+    ],
+    [
+      "AUTO",
+      "high auto",
+      5
+    ]
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "ARMOR_BASH",
+            "add": -33
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": -22
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": -24
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "add": -24
+          },
+          {
+            "value": "ARMOR_ACID",
+            "add": -8
+          }
+        ],
+        "ench_effects": [
+          {
+            "effect": "controlled",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "NO_UNLOAD",
+    "NEVER_JAMS",
+    "NO_UNWIELD",
+    "NO_SALVAGE",
+    "NO_REPAIR",
+    "UNBREAKABLE_MELEE",
+    "NON_FOULING"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_fleshmech_gun_spikes",
+  "looks_like": "ar15",
+  "type": "GUN",
+  "name": {
+    "str": "SPEMF骨骼发射器"
+  },
+  "description": "这是一个相当模糊的整体武器系统的Secronom项目的实验机械“肉”。拥有种类繁多的生物有机枪，可射击以肉为弹药的各种射弹。机甲的手现在变成了一个骨发射器，可以高速截击骨钉。",
+  "weight": "43220 g",
+  "volume": "15 L",
+  "to_hit": -4,
+  "bashing": 8,
+  "material": [
+    "superalloy",
+    "secro_flesh_reinforced"
+  ],
+  "symbol": "(",
+  "color": "light_blue",
+  "skill": "secro_flesh_combat",
+  "range": 18,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 8
+  },
+  "dispersion": 100,
+  "durability": 8,
+  "loudness": 2,
+  "ammo": [
+    "secro_flesh"
+  ],
+  "clip_size": 10,
+  "ups_charges": 6,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "secro_flesh": 10
+      }
+    }
+  ],
+  "valid_mod_locations": [
+    [
+      "SPEMF accessories",
+      1
+    ],
+    [
+      "SPEMF gun morphs",
+      2
+    ]
+  ],
+  "default_mods": [
+    "secro_fleshmech_gun_acid",
+    "secro_fleshmech_gun_acid_large",
+    "secro_fleshmech_gun_spikes_large"
+  ],
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      2
+    ],
+    [
+      "AUTO",
+      "high auto",
+      5
+    ]
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "values": [
+          {
+            "value": "ARMOR_BASH",
+            "add": -33
+          },
+          {
+            "value": "ARMOR_CUT",
+            "add": -22
+          },
+          {
+            "value": "ARMOR_STAB",
+            "add": -24
+          },
+          {
+            "value": "ARMOR_BULLET",
+            "add": -24
+          },
+          {
+            "value": "ARMOR_ACID",
+            "add": -8
+          }
+        ],
+        "ench_effects": [
+          {
+            "effect": "controlled",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "flags": [
+    "NO_UNLOAD",
+    "NEVER_JAMS",
+    "NO_UNWIELD",
+    "NO_SALVAGE",
+    "NO_REPAIR",
+    "UNBREAKABLE_MELEE",
+    "NON_FOULING"
+  ]
+}
+```
+

@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: overmap_terrain secronom
+title: secronom→overmap_terrain→[0]
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：s_gas%2Cs_gas_1%2Cs_gas_rural|http://cdda.aloxaf.cn/search?q=s_gas]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/overmap_terrain_overrides.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Overmap terrains available for saddler infestation. Usually buildings far from cities.",
+  "type": "overmap_terrain",
+  "id": [
+    "s_gas",
+    "s_gas_1",
+    "s_gas_rural"
+  ],
+  "copy-from": "generic_city_building",
+  "name": "gas station",
+  "color": "light_blue",
+  "extend": {
+    "flags": [
+      "SOURCE_FUEL",
+      "SOURCE_VEHICLES"
+    ]
+  },
+  "extras": "secro_saddler_infestation"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Overmap terrains available for saddler infestation. Usually buildings far from cities.",
+  "type": "overmap_terrain",
+  "id": [
+    "s_gas",
+    "s_gas_1",
+    "s_gas_rural"
+  ],
+  "copy-from": "generic_city_building",
+  "name": "加油站",
+  "color": "light_blue",
+  "extend": {
+    "flags": [
+      "SOURCE_FUEL",
+      "SOURCE_VEHICLES"
+    ]
+  },
+  "extras": "secro_saddler_infestation"
+}
+```
+

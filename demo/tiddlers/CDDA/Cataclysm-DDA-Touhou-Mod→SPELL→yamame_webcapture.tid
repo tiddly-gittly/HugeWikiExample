@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→yamame_webcapture
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：yamame_webcapture|http://cdda.aloxaf.cn/search?q=yamame_webcapture]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_yamame.json
+
+
+!! 原文
+
+```json
+{
+  "id": "yamame_webcapture",
+  "type": "SPELL",
+  "name": "Capture web",
+  "description": "Immediately weave spider web over the targeted area, slowing down enemies.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_range": 6,
+  "max_range": 6,
+  "min_aoe": 5,
+  "max_aoe": 8,
+  "aoe_increment": 0.3,
+  "min_duration": 3200,
+  "max_duration": 3200,
+  "field_id": "fd_web",
+  "field_chance": 2,
+  "min_field_intensity": 1,
+  "max_field_intensity": 2,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 133,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "Shouldn't hit flying targets or be activated without ground"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "yamame_webcapture",
+  "type": "SPELL",
+  "name": "Capture web",
+  "description": "Immediately weave spider web over the targeted area, slowing down enemies.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_range": 6,
+  "max_range": 6,
+  "min_aoe": 5,
+  "max_aoe": 8,
+  "aoe_increment": 0.3,
+  "min_duration": 3200,
+  "max_duration": 3200,
+  "field_id": "fd_web",
+  "field_chance": 2,
+  "min_field_intensity": 1,
+  "max_field_intensity": 2,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 133,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS",
+    "SOMATIC"
+  ],
+  "//": "Shouldn't hit flying targets or be activated without ground"
+}
+```
+

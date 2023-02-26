@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_jabberwock_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_jabberwock_on|http://cdda.aloxaf.cn/search?q=summon_jabberwock_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/obsolete.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_jabberwock_on",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of the golem (active)",
+    "str_pl": "glyphs of the golem (active)"
+  },
+  "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.",
+  "price": "1500 USD",
+  "price_postapoc": "70 USD",
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "turns_per_charge": 1,
+  "revert_to": "silver_glyph",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_jabberwock_summoned_glyph",
+    "friendly_msg": "You hear a strange burbling, the creature bound to your will.",
+    "hostile_msg": "Eyes of flame meet your gaze, the creature resists your attempt to control it!",
+    "difficulty": 7,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_jabberwock_on",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：傀儡（激活）",
+    "str_pl": "雕文：傀儡（激活）"
+  },
+  "description": "一种奇怪的银徽章，上面用一种未知的语言刻着反写。使用它会将一个伽卜沃克与你的意志捆绑在一起。如果成功的话。",
+  "price": "1500 USD",
+  "price_postapoc": "70 USD",
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "turns_per_charge": 1,
+  "revert_to": "silver_glyph",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_jabberwock_summoned_glyph",
+    "friendly_msg": "你听到一种奇怪的嗡嗡声，这种生物被你的意志所束缚。",
+    "hostile_msg": "这个生物用它那火焰般的眼睛与你对视，抗拒着你对它的控制！",
+    "difficulty": 7,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  }
+}
+```
+

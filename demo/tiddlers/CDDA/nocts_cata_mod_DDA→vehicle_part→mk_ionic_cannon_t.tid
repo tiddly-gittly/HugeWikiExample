@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→vehicle_part→mk_ionic_cannon_t
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mk_ionic_cannon_t|http://cdda.aloxaf.cn/search?q=mk_ionic_cannon_t]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Vehicles/c_vehicle_parts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "copy-from": "turret",
+  "id": "mk_ionic_cannon_t",
+  "looks_like": "laser_cannon",
+  "name": "mounted MK-2 Ionic Cannon",
+  "color": "yellow",
+  "broken_symbol": "#",
+  "broken_color": "yellow",
+  "item": "mk_ionic_cannon",
+  "breaks_into": [
+    {
+      "item": "mk_ionic_cannon",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          7
+        ],
+        [
+          "electronics",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "copy-from": "turret",
+  "id": "mk_ionic_cannon_t",
+  "looks_like": "laser_cannon",
+  "name": "车载 MK-II 实验型等离子炮",
+  "color": "yellow",
+  "broken_symbol": "#",
+  "broken_color": "yellow",
+  "item": "mk_ionic_cannon",
+  "breaks_into": [
+    {
+      "item": "mk_ionic_cannon",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          7
+        ],
+        [
+          "electronics",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+

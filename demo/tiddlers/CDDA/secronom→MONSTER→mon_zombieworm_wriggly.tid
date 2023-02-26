@@ -1,0 +1,259 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombieworm_wriggly
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombieworm_wriggly|http://cdda.aloxaf.cn/search?q=mon_zombieworm_wriggly]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Worms.json
+
+
+!! 原文
+
+```json
+{
+  "//": "More on dealing ranged damage.",
+  "id": "mon_zombieworm_wriggly",
+  "type": "MONSTER",
+  "name": {
+    "str": "writhing horror"
+  },
+  "description": "A massive worm with hundreds of tentacle outgrowths twisting incessantly from its sickly pale red skin. Under its flabby head reveals a row of sinister teeth, deeply accompanied by compact tendrils.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROWORM"
+  ],
+  "bodytype": "snake",
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "harvest": "zombie",
+  "hp": 480,
+  "speed": 20,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☤",
+  "color": "light_red",
+  "aggression": 50,
+  "morale": 50,
+  "dodge": 1,
+  "melee_skill": 10,
+  "melee_dice": 2,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "vision_day": 16,
+  "vision_night": 4,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombieworm_destroy_check"
+      },
+      "cooldown": 40,
+      "monster_message": "<color_yellow>%1$s ravages its surroundings!</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 20,
+      "accuracy": 7,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 23,
+          "armor_multiplier": 0.5
+        },
+        {
+          "damage_type": "bash",
+          "amount": 23,
+          "armor_multiplier": 0.2
+        }
+      ]
+    },
+    {
+      "type": "gun",
+      "cooldown": 25,
+      "move_cost": 300,
+      "gun_type": "wriggly_tentacle",
+      "fake_skills": [
+        [
+          "gun",
+          4
+        ],
+        [
+          "rifle",
+          4
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          3,
+          "N"
+        ],
+        [
+          4,
+          10,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "Tentacles reach out of the writhing horror!"
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "armor_stab": 1,
+  "anger_triggers": [
+    "HURT"
+  ],
+  "flags": [
+    "DIGS",
+    "CAN_DIG",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "GOODHEARING",
+    "WARM",
+    "BASHES",
+    "DESTROYS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "More on dealing ranged damage.",
+  "id": "mon_zombieworm_wriggly",
+  "type": "MONSTER",
+  "name": {
+    "str": "深渊食腐蛆"
+  },
+  "description": "一种巨大的蠕虫，有成百上千的触须，不断地从它病态的淡红色皮肤上扭来扭去。松软的头下露出一排凶恶的牙齿，深深地伴随着紧密的触手。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROWORM"
+  ],
+  "bodytype": "snake",
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "harvest": "zombie",
+  "hp": 480,
+  "speed": 20,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☤",
+  "color": "light_red",
+  "aggression": 50,
+  "morale": 50,
+  "dodge": 1,
+  "melee_skill": 10,
+  "melee_dice": 2,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "vision_day": 16,
+  "vision_night": 4,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombieworm_destroy_check"
+      },
+      "cooldown": 40,
+      "monster_message": "<color_yellow>%1$s破坏了它的周围环境！</color>"
+    },
+    {
+      "type": "bite",
+      "cooldown": 20,
+      "accuracy": 7,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 23,
+          "armor_multiplier": 0.5
+        },
+        {
+          "damage_type": "bash",
+          "amount": 23,
+          "armor_multiplier": 0.2
+        }
+      ]
+    },
+    {
+      "type": "gun",
+      "cooldown": 25,
+      "move_cost": 300,
+      "gun_type": "wriggly_tentacle",
+      "fake_skills": [
+        [
+          "gun",
+          4
+        ],
+        [
+          "rifle",
+          4
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          3,
+          "N"
+        ],
+        [
+          4,
+          10,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "触手伸出来，摆脱了扭曲的恐惧！"
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 1,
+  "armor_bullet": 1,
+  "armor_stab": 1,
+  "anger_triggers": [
+    "HURT"
+  ],
+  "flags": [
+    "DIGS",
+    "CAN_DIG",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "GOODHEARING",
+    "WARM",
+    "BASHES",
+    "DESTROYS"
+  ]
+}
+```
+

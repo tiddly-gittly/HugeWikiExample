@@ -1,0 +1,223 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_main
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_main|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_main]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/npc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_main",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "metvaseeker",
+    "yes": [
+      "We've met again, adventurer.",
+      "Now what could be your problem this time...",
+      "Well, We've met again, adventurer.",
+      "Greetings, my fellow survivor.",
+      "What brings you to my lair again?"
+    ],
+    "no": "Greetings, my fellow adventurer. What brings you to my safe haven?"
+  },
+  "responses": [
+    {
+      "text": "Who are you?",
+      "topic": "VAMP_ASEEKER_main_intro",
+      "condition": {
+        "not": {
+          "npc_has_trait": "vaseekeruaccepttherisk"
+        }
+      }
+    },
+    {
+      "text": "Who are you?",
+      "topic": "VAMP_ASEEKER_main_introduced",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "vaseekeruaccepttherisk"
+          },
+          {
+            "not": {
+              "npc_has_trait": "introducedvaseeker"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Any tips for this hunt?",
+      "topic": "VAMP_ASEEKER_main_tipsforu",
+      "condition": {
+        "npc_has_trait": "vaseekeruaccepttherisk"
+      }
+    },
+    {
+      "text": "What kind of arcane items and artifacts do you accept?",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "npc_has_trait": "vaseekerigotchaeverything"
+            }
+          },
+          {
+            "npc_has_trait": "vaseekeruaccepttherisk"
+          }
+        ]
+      }
+    },
+    {
+      "text": "I got something that would interest you.",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "npc_has_trait": "vaseekeruaccepttherisk"
+      }
+    },
+    {
+      "text": "What can I trade with these tokens?",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexc",
+      "condition": {
+        "u_has_item": "arcanetoken"
+      }
+    },
+    {
+      "text": "Bye...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "npc_has_trait": "metvaseeker"
+      }
+    },
+    {
+      "text": "Bye.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "not": {
+          "npc_has_trait": "metvaseeker"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "metvaseeker"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_main",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "npc_has_trait": "metvaseeker",
+    "yes": [
+      "我们又见面了，冒险家。",
+      "这次你的问题是什么...",
+      "嗯，我们又见面了，冒险家。",
+      "你好，我的幸存者伙伴。",
+      "什么风又把你吹来了？"
+    ],
+    "no": "你好，我的冒险伙伴。什么风把你吹来我的避风港？"
+  },
+  "responses": [
+    {
+      "text": "你是谁？",
+      "topic": "VAMP_ASEEKER_main_intro",
+      "condition": {
+        "not": {
+          "npc_has_trait": "vaseekeruaccepttherisk"
+        }
+      }
+    },
+    {
+      "text": "你是谁？",
+      "topic": "VAMP_ASEEKER_main_introduced",
+      "condition": {
+        "and": [
+          {
+            "npc_has_trait": "vaseekeruaccepttherisk"
+          },
+          {
+            "not": {
+              "npc_has_trait": "introducedvaseeker"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "有什么给这次狩猎的建议吗？",
+      "topic": "VAMP_ASEEKER_main_tipsforu",
+      "condition": {
+        "npc_has_trait": "vaseekeruaccepttherisk"
+      }
+    },
+    {
+      "text": "你接受什么样的神秘物品和神器？",
+      "topic": "VAMP_ASEEKER_questinquire",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "npc_has_trait": "vaseekerigotchaeverything"
+            }
+          },
+          {
+            "npc_has_trait": "vaseekeruaccepttherisk"
+          }
+        ]
+      }
+    },
+    {
+      "text": "我有你感兴趣的东西。",
+      "topic": "VAMP_ASEEKER_questinquire_ihave",
+      "condition": {
+        "npc_has_trait": "vaseekeruaccepttherisk"
+      }
+    },
+    {
+      "text": "我可以用这些代币做什么交易？",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexc",
+      "condition": {
+        "u_has_item": "arcanetoken"
+      }
+    },
+    {
+      "text": "拜拜。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "npc_has_trait": "metvaseeker"
+      }
+    },
+    {
+      "text": "再见。",
+      "topic": "TALK_DONE",
+      "condition": {
+        "not": {
+          "npc_has_trait": "metvaseeker"
+        }
+      },
+      "effect": {
+        "npc_add_trait": "metvaseeker"
+      }
+    }
+  ]
+}
+```
+

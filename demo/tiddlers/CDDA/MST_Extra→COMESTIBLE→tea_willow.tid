@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE MST_Extra
+title: MST_Extra→COMESTIBLE→tea_willow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tea_willow|http://cdda.aloxaf.cn/search?q=tea_willow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "type": "COMESTIBLE",
+  "id": "tea_willow",
+  "copy-from": "tea",
+  "name": {
+    "str_sp": "willow tea"
+  },
+  "container": "bottle_glass",
+  "healthy": -1,
+  "stim": 0,
+  "description": "A bitter herbal tea made from willow bark, used since ancient times as a mild painkiller.",
+  "price": 1250,
+  "fun": -3,
+  "use_action": {
+    "type": "consume_drug",
+    "effects": [
+      {
+        "id": "pkill1",
+        "duration": 90
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "COMESTIBLE",
+  "id": "tea_willow",
+  "copy-from": "tea",
+  "name": {
+    "str_sp": "柳树茶"
+  },
+  "container": "bottle_glass",
+  "healthy": -1,
+  "stim": 0,
+  "description": "柳树皮制成的苦茶，从古代就开始用作温和的止痛药了。",
+  "price": 1250,
+  "fun": -3,
+  "use_action": {
+    "type": "consume_drug",
+    "effects": [
+      {
+        "id": "pkill1",
+        "duration": 90
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→BGSS_LONEVAMP_S1_CURIOUS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BGSS_LONEVAMP_S1_CURIOUS|http://cdda.aloxaf.cn/search?q=BGSS_LONEVAMP_S1_CURIOUS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/Backgrounds/lonevamp_s1.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BGSS_LONEVAMP_S1_CURIOUS",
+  "type": "talk_topic",
+  "dynamic_line": "From my observation, she's at her mid-life, fully dressed with her bag full of supplies.",
+  "responses": [
+    {
+      "text": "What about her wound?",
+      "topic": "BGSS_LONEVAMP_S1_WOUND",
+      "effect": {
+        "npc_add_trait": "lonevamp_s1_wound"
+      },
+      "condition": {
+        "not": {
+          "npc_has_trait": "lonevamp_s1_wound"
+        }
+      }
+    },
+    {
+      "text": "<done_conversation_section>",
+      "topic": "TALK_FRIEND"
+    },
+    {
+      "text": "<end_talking>",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BGSS_LONEVAMP_S1_CURIOUS",
+  "type": "talk_topic",
+  "dynamic_line": "据我观察，她已经中年了，穿着整齐，包里装满了补给品。",
+  "responses": [
+    {
+      "text": "她的伤口是怎么回事？",
+      "topic": "BGSS_LONEVAMP_S1_WOUND",
+      "effect": {
+        "npc_add_trait": "lonevamp_s1_wound"
+      },
+      "condition": {
+        "not": {
+          "npc_has_trait": "lonevamp_s1_wound"
+        }
+      }
+    },
+    {
+      "text": "<done_conversation_section>",
+      "topic": "TALK_FRIEND"
+    },
+    {
+      "text": "<end_talking>",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

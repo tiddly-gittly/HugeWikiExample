@@ -1,0 +1,187 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→MONSTER→mon_sakuya_alternate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sakuya_alternate|http://cdda.aloxaf.cn/search?q=mon_sakuya_alternate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/monsters/touhou_summoned.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sakuya_alternate",
+  "type": "MONSTER",
+  "name": {
+    "str": "Maid of the Scarlet Devil"
+  },
+  "description": "Yourself, from another time.",
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "default_faction": "touhou_summon",
+  "bodytype": "human",
+  "species": [
+    "UNKNOWN"
+  ],
+  "harvest": "exempt",
+  "hp": 100,
+  "speed": 150,
+  "symbol": "@",
+  "color": "light_gray",
+  "aggression": 66,
+  "morale": 99,
+  "luminance": 1,
+  "dodge": 8,
+  "path_settings": {
+    "max_dist": 3
+  },
+  "starting_ammo": {
+    "alternate_knife_knife": 12
+  },
+  "special_attacks": [
+    {
+      "gun_type": "alternate_knife_gun",
+      "type": "gun",
+      "description": "Sakuya throws a knife!",
+      "ammo_type": "alternate_knife_knife",
+      "cooldown": 2,
+      "fake_dex": 11,
+      "fake_skills": [
+        [
+          "throw",
+          7
+        ]
+      ],
+      "max_ammo": 12,
+      "move_cost": 90,
+      "targeting_cost": 5,
+      "require_targeting_monster": true,
+      "no_ammo_sound": "",
+      "ranges": [
+        [
+          1,
+          24,
+          "DEFAULT"
+        ]
+      ]
+    }
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT"
+  ],
+  "fear_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "CLIMBS",
+    "FLIES",
+    "HIT_AND_RUN",
+    "NO_BREATHE",
+    "PACIFIST",
+    "PATH_AVOID_DANGER_2",
+    "PET_WONT_FOLLOW",
+    "RANGED_ATTACKER",
+    "SEES",
+    "WARM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sakuya_alternate",
+  "type": "MONSTER",
+  "name": {
+    "str": "Maid of the Scarlet Devil"
+  },
+  "description": "Yourself, from another time.",
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "default_faction": "touhou_summon",
+  "bodytype": "human",
+  "species": [
+    "UNKNOWN"
+  ],
+  "harvest": "exempt",
+  "hp": 100,
+  "speed": 150,
+  "symbol": "@",
+  "color": "light_gray",
+  "aggression": 66,
+  "morale": 99,
+  "luminance": 1,
+  "dodge": 8,
+  "path_settings": {
+    "max_dist": 3
+  },
+  "starting_ammo": {
+    "alternate_knife_knife": 12
+  },
+  "special_attacks": [
+    {
+      "gun_type": "alternate_knife_gun",
+      "type": "gun",
+      "description": "咲夜投出一把飞刀！",
+      "ammo_type": "alternate_knife_knife",
+      "cooldown": 2,
+      "fake_dex": 11,
+      "fake_skills": [
+        [
+          "throw",
+          7
+        ]
+      ],
+      "max_ammo": 12,
+      "move_cost": 90,
+      "targeting_cost": 5,
+      "require_targeting_monster": true,
+      "no_ammo_sound": "",
+      "ranges": [
+        [
+          1,
+          24,
+          "DEFAULT"
+        ]
+      ]
+    }
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "HURT"
+  ],
+  "fear_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "CLIMBS",
+    "FLIES",
+    "HIT_AND_RUN",
+    "NO_BREATHE",
+    "PACIFIST",
+    "PATH_AVOID_DANGER_2",
+    "PET_WONT_FOLLOW",
+    "RANGED_ATTACKER",
+    "SEES",
+    "WARM"
+  ]
+}
+```
+

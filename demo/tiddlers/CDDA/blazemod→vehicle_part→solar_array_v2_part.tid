@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→solar_array_v2_part
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：solar_array_v2_part|http://cdda.aloxaf.cn/search?q=solar_array_v2_part]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blaze_other_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "solar_array_v2_part",
+  "type": "vehicle_part",
+  "categories": [
+    "energy"
+  ],
+  "copy-from": "solar_array_part",
+  "name": {
+    "str": "upgraded solar array"
+  },
+  "item": "solar_array_v2",
+  "proportional": {
+    "epower": 2
+  },
+  "folded_volume": "12 L",
+  "description": "A vertical array of three upgraded solar panels set on a chassis rising above one another on a metal pole with rudimentary tracking and motors.  Due to the flimsy nature of the hydraulics and high surface area profile to maximize sunlight, they can't really be installed onto an existing vehicle.  Requires a jumper cable or similar to pull power from.",
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        2,
+        12
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        2,
+        12
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        2,
+        12
+      ]
+    },
+    {
+      "item": "solar_cell",
+      "count": [
+        4,
+        18
+      ]
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "skills": [
+        [
+          "electronics",
+          6
+        ]
+      ],
+      "time": "150 m",
+      "using": [
+        [
+          "vehicle_screw",
+          1
+        ],
+        [
+          "solar_panel_v2",
+          3
+        ],
+        [
+          "soldering_standard",
+          8
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "SOLAR_PANEL",
+    "OBSTACLE",
+    "INITIAL_PART",
+    "PROTRUSION",
+    "EXTRA_DRAG"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "solar_array_v2_part",
+  "type": "vehicle_part",
+  "categories": [
+    "energy"
+  ],
+  "copy-from": "solar_array_part",
+  "name": {
+    "str": "太阳能板阵列（高能）"
+  },
+  "item": "solar_array_v2",
+  "proportional": {
+    "epower": 2
+  },
+  "folded_volume": "12 L",
+  "description": "一个由三块高能太阳能板所组成的垂直阵列，安装在同一根金属底座上，在金属杆上依次排开，带有基础的跟踪装置和马达。由于液压系统的脆弱性和为了最大限度利用阳光所导致的高覆盖面积，它们真没法被安装在现有的载具上。需要一根跨接电缆或类似电缆才能从中导出电源。",
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        2,
+        12
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        2,
+        12
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        2,
+        12
+      ]
+    },
+    {
+      "item": "solar_cell",
+      "count": [
+        4,
+        18
+      ]
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "skills": [
+        [
+          "electronics",
+          6
+        ]
+      ],
+      "time": "150 m",
+      "using": [
+        [
+          "vehicle_screw",
+          1
+        ],
+        [
+          "solar_panel_v2",
+          3
+        ],
+        [
+          "soldering_standard",
+          8
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "SOLAR_PANEL",
+    "OBSTACLE",
+    "INITIAL_PART",
+    "PROTRUSION",
+    "EXTRA_DRAG"
+  ]
+}
+```
+

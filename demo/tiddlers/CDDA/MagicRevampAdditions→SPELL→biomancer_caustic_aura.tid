@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→biomancer_caustic_aura
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：biomancer_caustic_aura|http://cdda.aloxaf.cn/search?q=biomancer_caustic_aura]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/biomancer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "biomancer_caustic_aura",
+  "type": "SPELL",
+  "name": {
+    "str": "Caustic Aura"
+  },
+  "description": "This spell suspends acid in a layer around you, corroding melee attackers when struck and enhancing your melee damage.",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "spawn_item",
+  "effect_str": "aura_caustic",
+  "shape": "blast",
+  "flags": [
+    "SOMATIC",
+    "CONCENTRATE"
+  ],
+  "components": "spell_components_causticaura",
+  "energy_source": "MANA",
+  "spell_class": "BIOMANCER",
+  "difficulty": 4,
+  "min_damage": 1,
+  "max_damage": 1,
+  "base_casting_time": 400,
+  "final_casting_time": 400,
+  "base_energy_cost": 350,
+  "final_energy_cost": 350,
+  "max_level": 22,
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 6000,
+  "max_duration": 45000,
+  "duration_increment": 1600
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "biomancer_caustic_aura",
+  "type": "SPELL",
+  "name": {
+    "str": "腐蚀光环"
+  },
+  "description": "这个法术在你身体周围召唤出一个酸液光环，腐蚀攻击你的敌人，并增加你的近战伤害。",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "spawn_item",
+  "effect_str": "aura_caustic",
+  "shape": "blast",
+  "flags": [
+    "SOMATIC",
+    "CONCENTRATE"
+  ],
+  "components": "spell_components_causticaura",
+  "energy_source": "MANA",
+  "spell_class": "BIOMANCER",
+  "difficulty": 4,
+  "min_damage": 1,
+  "max_damage": 1,
+  "base_casting_time": 400,
+  "final_casting_time": 400,
+  "base_energy_cost": 350,
+  "final_energy_cost": 350,
+  "max_level": 22,
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 6000,
+  "max_duration": 45000,
+  "duration_increment": 1600
+}
+```
+

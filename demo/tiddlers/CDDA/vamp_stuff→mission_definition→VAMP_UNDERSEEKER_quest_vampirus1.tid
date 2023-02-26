@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_UNDERSEEKER_quest_vampirus1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_UNDERSEEKER_quest_vampirus1|http://cdda.aloxaf.cn/search?q=VAMP_UNDERSEEKER_quest_vampirus1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_UNDERSEEKER_quest_vampirus1",
+  "type": "mission_definition",
+  "name": {
+    "str": "Travel to the vampirus"
+  },
+  "description": "Along with the seeker, travel to the <color_light_blue>vampirus</color>.",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 1,
+  "value": 1000,
+  "destination": "vampirus",
+  "start": {
+    "effect": [
+      "follow_only"
+    ],
+    "assign_mission_target": {
+      "om_terrain": "vampirus",
+      "om_special": "Vampirus",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "min_distance": 30,
+      "must_see": false,
+      "z": 0
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_UNDERSEEKER_quest_vampirus2",
+  "dialogue": {
+    "describe": "Are we ready for this trip?",
+    "offer": "We are now going to the outskirts, and I know the commando told you about this place.",
+    "accepted": "Lead the trail, I'm right behind if you require my assistance.",
+    "rejected": "...",
+    "advice": "Keep an eye out for possible threats along the way.",
+    "inquire": "Are we in our destination?",
+    "success": "Now that we're here, we have to locate the entrance that leads to the depths.",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "Ummm...."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_UNDERSEEKER_quest_vampirus1",
+  "type": "mission_definition",
+  "name": {
+    "str": "前往吸血鬼聚集地"
+  },
+  "description": "和探索者一起前往<color_light_blue>吸血鬼聚集地</color>。",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 1,
+  "value": 1000,
+  "destination": "vampirus",
+  "start": {
+    "effect": [
+      "follow_only"
+    ],
+    "assign_mission_target": {
+      "om_terrain": "vampirus",
+      "om_special": "Vampirus",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "min_distance": 30,
+      "must_see": false,
+      "z": 0
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_UNDERSEEKER_quest_vampirus2",
+  "dialogue": {
+    "describe": "我们准备好这次旅行了吗？",
+    "offer": "我们现在要去郊外，我知道特种兵跟你说过这个地方。",
+    "accepted": "带路，如果你需要我的帮助，我就在后面。",
+    "rejected": "…",
+    "advice": "留意沿途可能的威胁。",
+    "inquire": "我们到达目的地了吗？",
+    "success": "现在我们到了这里，我们必须找到通向深处的入口。",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "嗯...."
+  }
+}
+```
+

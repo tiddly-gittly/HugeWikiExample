@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→SPELL→buildinggoesboomhahafunny_boom
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：buildinggoesboomhahafunny_boom|http://cdda.aloxaf.cn/search?q=buildinggoesboomhahafunny_boom]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_spell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "buildinggoesboomhahafunny_boom",
+  "type": "SPELL",
+  "name": {
+    "str": "House go boom!"
+  },
+  "description": "HAHA!!!",
+  "message": "<color_light_green>H A H A\nBuilding go<color_red>ka-boooooom!</color></color>",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "blazingtest",
+      "hit_self": false
+    },
+    {
+      "id": "stairs_creation",
+      "hit_self": false
+    }
+  ],
+  "effect_str": "boomthebuilding",
+  "min_aoe": 29,
+  "max_aoe": 29,
+  "base_casting_time": -1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "buildinggoesboomhahafunny_boom",
+  "type": "SPELL",
+  "name": {
+    "str": "加油！"
+  },
+  "description": "哈哈！！！",
+  "message": "<color_light_green>口合 口合\n建筑通通<color_red>炸！光！光！</color></color>",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "blazingtest",
+      "hit_self": false
+    },
+    {
+      "id": "stairs_creation",
+      "hit_self": false
+    }
+  ],
+  "effect_str": "boomthebuilding",
+  "min_aoe": 29,
+  "max_aoe": 29,
+  "base_casting_time": -1
+}
+```
+

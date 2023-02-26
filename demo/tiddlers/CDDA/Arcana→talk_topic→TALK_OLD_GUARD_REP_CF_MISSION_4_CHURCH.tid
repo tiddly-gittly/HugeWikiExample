@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_OLD_GUARD_REP_CF_MISSION_4_CHURCH
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_OLD_GUARD_REP_CF_MISSION_4_CHURCH|http://cdda.aloxaf.cn/search?q=TALK_OLD_GUARD_REP_CF_MISSION_4_CHURCH]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_OLD_GUARD_REP.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_OLD_GUARD_REP_CF_MISSION_4_CHURCH",
+  "type": "talk_topic",
+  "dynamic_line": "I've heard rumors about that, from people bringing in news of the outside world.  Lot of mixed messages and misinformation though.  Whatever they're up to, at least a couple people higher up the chain of command might have an interest in keeping an eye on them, but I'm not sure how well that'll turn out.  What can you tell me about them?",
+  "responses": [
+    {
+      "text": "I've been a part of their group since before things boiled over.  We were focused on hunting down and dealing with some of the anomalies that began to show up in the months leading up to this.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_CF1"
+    },
+    {
+      "text": "I'm one of then, actually.  We have a common interest, doing our best to ensure humanity's survival.  We have our ways, rooted in the otherworldly though they are.",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME2"
+      },
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_CF2"
+    },
+    {
+      "text": "They're hunters.  Monster hunters these days, in the past they fought with local occult groups and other small-scale threats, before it all boiled over.",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2",
+          "PROF_SANGUINE",
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_ARCANIST"
+    },
+    {
+      "text": "Monster hunters, primarily.  Decently equipped for their size, if a bit eccentric.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_HUNTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_OLD_GUARD_REP_CF_MISSION_4_CHURCH",
+  "type": "talk_topic",
+  "dynamic_line": "I've heard rumors about that, from people bringing in news of the outside world.  Lot of mixed messages and misinformation though.  Whatever they're up to, at least a couple people higher up the chain of command might have an interest in keeping an eye on them, but I'm not sure how well that'll turn out.  What can you tell me about them?",
+  "responses": [
+    {
+      "text": "在事情还没结束之前，我就已经是他们小组的一员了。我们专注于寻找和处理一些异常现象，这些异常现象在这之前的几个月里开始显现出来。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_CF1"
+    },
+    {
+      "text": "实际上，我也是其中之一。我们有共同的利益，尽我们最大的努力确保人类的生存。我们有自己的方式，虽然它们是根植于超自然的。",
+      "condition": {
+        "u_has_trait": "PROF_CLEANSINGFLAME2"
+      },
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_CF2"
+    },
+    {
+      "text": "他们是猎人。现在的怪物猎人们，在过去他们与当地的神秘组织和其他小规模的威胁战斗，然后一切都结束了。",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_ARCANIST",
+          "PROF_ARCANIST2",
+          "PROF_SANGUINE",
+          "PROF_CHALICE",
+          "PROF_CHALICE2"
+        ]
+      },
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_ARCANIST"
+    },
+    {
+      "text": "主要是怪物猎人。如果有点古怪的话，他们的装备也很得体。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_HUNTER"
+    }
+  ]
+}
+```
+

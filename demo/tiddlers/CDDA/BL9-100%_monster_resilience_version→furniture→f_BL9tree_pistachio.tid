@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9tree_pistachio
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9tree_pistachio|http://cdda.aloxaf.cn/search?q=f_BL9tree_pistachio]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_pistachio",
+  "name": "pistachio tree",
+  "description": "A deciduous tree of the 'Pistacia' genus.  This is a cultivated tree, and is not native to this region.  You could look for pistachio nuts if you examined the tree more closely.  You could cut it down with the right tools.",
+  "looks_like": "t_tree_pistachio",
+  "//": "Pistachio tree is not a local native and is only used in specific locations like orchards and gardens.",
+  "symbol": "7",
+  "color": [
+    "light_green",
+    "light_green",
+    "brown_green",
+    "brown"
+  ],
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "autumn"
+      ],
+      "id": "pistachio_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9tree_pistachio",
+  "name": "开心果树",
+  "description": "黄连木属的落叶树。它不是本地原生，而是人工栽培的。仔细搜索可以收获开心果。可以用合适的工具砍倒它。",
+  "looks_like": "t_tree_pistachio",
+  "//": "Pistachio tree is not a local native and is only used in specific locations like orchards and gardens.",
+  "symbol": "7",
+  "color": [
+    "light_green",
+    "light_green",
+    "brown_green",
+    "brown"
+  ],
+  "move_cost_mod": -1,
+  "required_str": -1,
+  "coverage": 80,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "REDUCE_SCENT"
+  ],
+  "examine_action": "harvest_furn",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "autumn"
+      ],
+      "id": "pistachio_harv"
+    }
+  ],
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "items": [
+      {
+        "item": "stick_long",
+        "count": [
+          3,
+          10
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          10,
+          25
+        ]
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→v_sink_conceal
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_sink_conceal|http://cdda.aloxaf.cn/search?q=v_sink_conceal]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "v_sink_conceal",
+  "type": "SPELL",
+  "name": {
+    "str": "Concealment"
+  },
+  "description": "Combined with blind strike spell.",
+  "valid_targets": [
+    "ground",
+    "ally"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "vamp_conceal",
+  "//": "5 turns, just to avert the focus of players. Also moderately enslows the caster.",
+  "min_duration": 500,
+  "max_duration": 500
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "v_sink_conceal",
+  "type": "SPELL",
+  "name": {
+    "str": "隐匿"
+  },
+  "description": "与盲目打击法术相结合",
+  "valid_targets": [
+    "ground",
+    "ally"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "vamp_conceal",
+  "//": "5 turns, just to avert the focus of players. Also moderately enslows the caster.",
+  "min_duration": 500,
+  "max_duration": 500
+}
+```
+

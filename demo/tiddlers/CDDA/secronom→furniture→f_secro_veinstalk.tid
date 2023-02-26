@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: furniture secronom
+title: secronom→furniture→f_secro_veinstalk
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_secro_veinstalk|http://cdda.aloxaf.cn/search?q=f_secro_veinstalk]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Destroy these to prevent them from spawning veinstalks.",
+  "type": "furniture",
+  "id": "f_secro_veinstalk",
+  "name": "veinbush",
+  "description": "A short, compact bush of living eyed tentacles bursting out of the ground. It stares ominously at the surroundings...",
+  "symbol": "s",
+  "color": "red",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "coverage": 10,
+  "flags": [
+    "FLAMMABLE",
+    "S_FLESH",
+    "EMITTER"
+  ],
+  "emissions": [
+    "emit_veinstalk_spawn"
+  ],
+  "bash": {
+    "str_min": 12,
+    "str_max": 22,
+    "sound": "splook!",
+    "sound_fail": "splat!"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Destroy these to prevent them from spawning veinstalks.",
+  "type": "furniture",
+  "id": "f_secro_veinstalk",
+  "name": "触手灌从",
+  "description": "从地上伸出的一种短而紧凑的触角丛，这些触手上长了满了眼睛，不祥地凝视着周围的环境…",
+  "symbol": "s",
+  "color": "red",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "coverage": 10,
+  "flags": [
+    "FLAMMABLE",
+    "S_FLESH",
+    "EMITTER"
+  ],
+  "emissions": [
+    "emit_veinstalk_spawn"
+  ],
+  "bash": {
+    "str_min": 12,
+    "str_max": 22,
+    "sound": "splook!",
+    "sound_fail": "splat!"
+  }
+}
+```
+

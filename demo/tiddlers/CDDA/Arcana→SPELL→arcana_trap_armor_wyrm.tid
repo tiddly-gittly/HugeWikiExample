@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_trap_armor_wyrm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_trap_armor_wyrm|http://cdda.aloxaf.cn/search?q=arcana_trap_armor_wyrm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_trap.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_trap_armor_wyrm",
+  "type": "SPELL",
+  "name": {
+    "str": "Trap: Wyrmskin Acid"
+  },
+  "description": "A weaker version of Wyrm's Venom.",
+  "message": "Flowing venom slithers forth!",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "sound_description": "splash",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "min_damage": 8,
+  "max_damage": 15,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "min_duration": 4500,
+  "max_duration": 13500,
+  "damage_type": "acid",
+  "field_id": "fd_acid",
+  "field_chance": 2,
+  "min_field_intensity": 2,
+  "max_field_intensity": 2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_trap_armor_wyrm",
+  "type": "SPELL",
+  "name": {
+    "str": "Trap: Wyrmskin Acid"
+  },
+  "description": "暗龙毒液的较弱版本。",
+  "message": "流动的毒液向前滑动！",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "sound_description": "splash",
+  "flags": [
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "min_damage": 8,
+  "max_damage": 15,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "min_duration": 4500,
+  "max_duration": 13500,
+  "damage_type": "acid",
+  "field_id": "fd_acid",
+  "field_chance": 2,
+  "min_field_intensity": 2,
+  "max_field_intensity": 2,
+  "field_intensity_variance": 0.5
+}
+```
+

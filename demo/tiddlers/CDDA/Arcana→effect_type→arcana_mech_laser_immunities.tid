@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→arcana_mech_laser_immunities
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mech_laser_immunities|http://cdda.aloxaf.cn/search?q=arcana_mech_laser_immunities]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "arcana_mech_laser_immunities",
+  "name": [
+    "Environmental Shielding"
+  ],
+  "desc": [
+    "A barrier projected by your mech is currently providing resistance to acid and fire, plus immunity to toxic gas.  Also shields you from being blinded, and negates falling damage."
+  ],
+  "//": "Protects against blindness since flares can dazzle targets, feather fall effect since mech is supposed to be able to fly.  Some effects of Free Action, Clarity of Blood, Ward Against Poison, Ward Against Fire, and Ward Against Acid.",
+  "blocks_effects": [
+    "blind",
+    "downed",
+    "slimed",
+    "sap",
+    "relax_gas",
+    "grabbed",
+    "onfire",
+    "smoke",
+    "corroding",
+    "spores",
+    "stung",
+    "poison",
+    "badpoison",
+    "teargas",
+    "migo_atmosphere"
+  ],
+  "flags": [
+    "FEATHER_FALL",
+    "COLD_IMMUNE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "arcana_mech_laser_immunities",
+  "name": [
+    "环境屏蔽"
+  ],
+  "desc": [
+    "一个由你的机甲投射的屏障现在提供了对酸和火的抵抗力，以及对有毒气体的免疫力。同时保护你不被蒙蔽，并抵消坠落伤害。"
+  ],
+  "//": "Protects against blindness since flares can dazzle targets, feather fall effect since mech is supposed to be able to fly.  Some effects of Free Action, Clarity of Blood, Ward Against Poison, Ward Against Fire, and Ward Against Acid.",
+  "blocks_effects": [
+    "blind",
+    "downed",
+    "slimed",
+    "sap",
+    "relax_gas",
+    "grabbed",
+    "onfire",
+    "smoke",
+    "corroding",
+    "spores",
+    "stung",
+    "poison",
+    "badpoison",
+    "teargas",
+    "migo_atmosphere"
+  ],
+  "flags": [
+    "FEATHER_FALL",
+    "COLD_IMMUNE"
+  ]
+}
+```
+

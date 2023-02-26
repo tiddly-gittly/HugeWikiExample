@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_GUNSHOP_givesupplies
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_GUNSHOP_givesupplies|http://cdda.aloxaf.cn/search?q=TALK_VAMP_GUNSHOP_givesupplies]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Wastelands_Outskirts/v_vgs_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_GUNSHOP_givesupplies",
+  "type": "talk_topic",
+  "dynamic_line": "The supplies that were stocked in here are some spare draw kits, a bag and blood powders. Will you take them?",
+  "//": "One time free supplies which are not that valuable, but atleast you've been given with something as rewards...",
+  "responses": [
+    {
+      "text": "But he told me to get some guns from you?",
+      "topic": "TALK_VAMP_GUNSHOP_gun",
+      "condition": {
+        "and": [
+          {
+            "u_is_wearing": "blood_cring"
+          },
+          {
+            "not": {
+              "u_has_trait": "wvgsgun"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "But he told me to get some guns from you?",
+      "topic": "TALK_VAMP_GUNSHOP_nogunforu",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_is_wearing": "blood_cring"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "wvgsgun"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Okay, I'll take them!",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "u_spawn_item": "vacutainer",
+          "count": 6
+        },
+        {
+          "u_spawn_item": "bloodpack"
+        },
+        {
+          "u_spawn_item": "bloodpowder",
+          "count": 44
+        },
+        {
+          "u_add_trait": "wvgssupp"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_GUNSHOP_givesupplies",
+  "type": "talk_topic",
+  "dynamic_line": "这里储备的物资有一些闲置的牵引工具、一个袋子和一些血粉。你要他们吗？",
+  "//": "One time free supplies which are not that valuable, but atleast you've been given with something as rewards...",
+  "responses": [
+    {
+      "text": "但他让我从你这儿拿把枪？",
+      "topic": "TALK_VAMP_GUNSHOP_gun",
+      "condition": {
+        "and": [
+          {
+            "u_is_wearing": "blood_cring"
+          },
+          {
+            "not": {
+              "u_has_trait": "wvgsgun"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "但他让我从你这儿拿把枪？",
+      "topic": "TALK_VAMP_GUNSHOP_nogunforu",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_is_wearing": "blood_cring"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "wvgsgun"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "好吧，我要！",
+      "topic": "TALK_DONE",
+      "effect": [
+        {
+          "u_spawn_item": "vacutainer",
+          "count": 6
+        },
+        {
+          "u_spawn_item": "bloodpack"
+        },
+        {
+          "u_spawn_item": "bloodpowder",
+          "count": 44
+        },
+        {
+          "u_add_trait": "wvgssupp"
+        }
+      ]
+    }
+  ]
+}
+```
+

@@ -1,0 +1,187 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zedfail_seeker
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zedfail_seeker|http://cdda.aloxaf.cn/search?q=mon_zedfail_seeker]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Failed.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Failed specimens. Unwanted creatures of secronom lab, now the ravaging wanderers inside.",
+  "id": "mon_zedfail_seeker",
+  "type": "MONSTER",
+  "name": {
+    "str": "seeker"
+  },
+  "description": "Alluring large skin in shape of a starfish and mouth slits nibbles near every tip. Its abdomen is infused with gigantic lizard eye, eager to seek its prey.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 95,
+  "speed": 105,
+  "diff": 1,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "✫",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 4,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_fire": 2,
+  "vision_day": 50,
+  "vision_night": 10,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "LUNGE",
+      15
+    ],
+    {
+      "type": "bite",
+      "cooldown": 6,
+      "min_mul": 0.5,
+      "max_mul": 1,
+      "infection_chance": 5,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 4,
+          "armor_multiplier": 0.6
+        },
+        {
+          "damage_type": "stab",
+          "amount": 2,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "FILTHY",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Failed specimens. Unwanted creatures of secronom lab, now the ravaging wanderers inside.",
+  "id": "mon_zedfail_seeker",
+  "type": "MONSTER",
+  "name": {
+    "str": "追寻者"
+  },
+  "description": "有着迷人的海星形状的大皮肤。嘴上的裂口在每一个尖端附近轻轻地啃咬着。它的腹部被一个巨大的蜥蜴眼装满了，渴望地寻找着猎物。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 95,
+  "speed": 105,
+  "diff": 1,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "✫",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 4,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_fire": 2,
+  "vision_day": 50,
+  "vision_night": 10,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "LUNGE",
+      15
+    ],
+    {
+      "type": "bite",
+      "cooldown": 6,
+      "min_mul": 0.5,
+      "max_mul": 1,
+      "infection_chance": 5,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 4,
+          "armor_multiplier": 0.6
+        },
+        {
+          "damage_type": "stab",
+          "amount": 2,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "FILTHY",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+

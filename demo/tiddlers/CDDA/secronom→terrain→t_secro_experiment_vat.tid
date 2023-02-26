@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_experiment_vat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_experiment_vat|http://cdda.aloxaf.cn/search?q=t_secro_experiment_vat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_experiment_vat",
+  "name": "experimental vat",
+  "description": "A large vat full of yellowish solution. Flesh seems to surround the glass tube, as if they are concealing something...",
+  "symbol": "0",
+  "color": "light_red",
+  "looks_like": "t_vat",
+  "move_cost": 0,
+  "coverage": 40,
+  "roof": "t_flat_roof",
+  "flags": [
+    "TRANSPARENT",
+    "SEALED",
+    "PLACE_ITEM",
+    "WALL"
+  ],
+  "bash": {
+    "str_min": 12,
+    "str_max": 90,
+    "sound": "splash!",
+    "sound_fail": "splat.",
+    "sound_vol": 16,
+    "sound_fail_vol": 12,
+    "ter_set": "t_floor",
+    "items": [
+      {
+        "item": "glass_shard",
+        "count": [
+          42,
+          84
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          0,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_experiment_vat",
+  "name": "实验罐",
+  "description": "一个装满了黄色溶液的大罐子。玻璃管周围似乎布满了肉，好像它们在隐藏着些什么…",
+  "symbol": "0",
+  "color": "light_red",
+  "looks_like": "t_vat",
+  "move_cost": 0,
+  "coverage": 40,
+  "roof": "t_flat_roof",
+  "flags": [
+    "TRANSPARENT",
+    "SEALED",
+    "PLACE_ITEM",
+    "WALL"
+  ],
+  "bash": {
+    "str_min": 12,
+    "str_max": 90,
+    "sound": "splash!",
+    "sound_fail": "splat.",
+    "sound_vol": 16,
+    "sound_fail_vol": 12,
+    "ter_set": "t_floor",
+    "items": [
+      {
+        "item": "glass_shard",
+        "count": [
+          42,
+          84
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          0,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_pattern_agility
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_pattern_agility|http://cdda.aloxaf.cn/search?q=arcana_pattern_agility]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_pattern_scrolls.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_agility",
+  "name": {
+    "str": "Pattern: Agility"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_AGILE",
+  "description": "This grants a specific spell mutation.",
+  "message": "You gaze deep into the strange patterns, endless spirals weaving through each other…",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_agility",
+  "name": {
+    "str": "图案：敏捷"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_AGILE",
+  "description": "这赋予了特定的咒语突变。",
+  "message": "你凝视着奇怪的图案，无尽的螺旋交织在一起……",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+

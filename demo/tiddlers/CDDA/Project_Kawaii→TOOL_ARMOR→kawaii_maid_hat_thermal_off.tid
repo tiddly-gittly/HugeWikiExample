@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Project_Kawaii
+title: Project_Kawaii→TOOL_ARMOR→kawaii_maid_hat_thermal_off
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kawaii_maid_hat_thermal_off|http://cdda.aloxaf.cn/search?q=kawaii_maid_hat_thermal_off]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Project_Kawaii/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kawaii_maid_hat_thermal_off",
+  "type": "TOOL_ARMOR",
+  "category": "clothing",
+  "name": {
+    "str": "Cute Thermal Maid headdress"
+  },
+  "description": "One of the most important parts of the maid unifrom is the headdress. This one contains an electrical thermal system powedered using batteries. It lets you feel like a maid despite how it looks.",
+  "weight": "15 g",
+  "volume": "250 ml",
+  "price": 5000,
+  "price_postapoc": 250,
+  "material": [
+    "cotton"
+  ],
+  "material_thickness": 1,
+  "symbol": "[",
+  "color": "white",
+  "looks_like": "kawaii_maid_hat",
+  "warmth": 10,
+  "flags": [
+    "VARSIZE",
+    "FANCY",
+    "WATERPROOF",
+    "RAINPROOF"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "flag_restriction": [
+        "BATTERY_LIGHT",
+        "BATTERY_ULTRA_LIGHT"
+      ],
+      "default_magazine": "light_battery_cell"
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "battery",
+  "use_action": {
+    "type": "transform",
+    "msg": "You activate the headdress' heating systems",
+    "target": "kawaii_maid_hat_thermal_on",
+    "active": true,
+    "menu_text": "Activate heater",
+    "need_charges": 1,
+    "need_charges_msg": "%s does not have enough power left."
+  },
+  "armor": [
+    {
+      "encumbrance": 3,
+      "coverage": 25,
+      "covers": [
+        "head"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kawaii_maid_hat_thermal_off",
+  "type": "TOOL_ARMOR",
+  "category": "clothing",
+  "name": {
+    "str": "保暖女仆头饰"
+  },
+  "description": "女仆头饰是女仆制服最重要的部分之一。这个头饰包含了一个用电池供电的保暖系统。不管它看起来怎么样, 戴上它会让你有个女仆的样子。",
+  "weight": "15 g",
+  "volume": "250 ml",
+  "price": 5000,
+  "price_postapoc": 250,
+  "material": [
+    "cotton"
+  ],
+  "material_thickness": 1,
+  "symbol": "[",
+  "color": "white",
+  "looks_like": "kawaii_maid_hat",
+  "warmth": 10,
+  "flags": [
+    "VARSIZE",
+    "FANCY",
+    "WATERPROOF",
+    "RAINPROOF"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "flag_restriction": [
+        "BATTERY_LIGHT",
+        "BATTERY_ULTRA_LIGHT"
+      ],
+      "default_magazine": "light_battery_cell"
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "battery",
+  "use_action": {
+    "type": "transform",
+    "msg": "你激活了头饰的加热系统",
+    "target": "kawaii_maid_hat_thermal_on",
+    "active": true,
+    "menu_text": "激活保暖系统",
+    "need_charges": 1,
+    "need_charges_msg": "%s没有足够的电源。"
+  },
+  "armor": [
+    {
+      "encumbrance": 3,
+      "coverage": 25,
+      "covers": [
+        "head"
+      ]
+    }
+  ]
+}
+```
+

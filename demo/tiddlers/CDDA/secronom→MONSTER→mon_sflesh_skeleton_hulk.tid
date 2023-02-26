@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_skeleton_hulk
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_skeleton_hulk|http://cdda.aloxaf.cn/search?q=mon_sflesh_skeleton_hulk]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_skeleton_hulk",
+  "type": "MONSTER",
+  "name": {
+    "str": "skeletal juggernaut"
+  },
+  "description": "This hideous golem of plated bones and misshapen flesh drags its heavy, pointed limbs behind it like an unwanted burden.  Formerly soft and vulnerable, bones grew around its form to protect it - only, they kept growing.  And growing.  And growing.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "diff": 5,
+  "volume": "875000 ml",
+  "weight": "200 kg",
+  "hp": 600,
+  "speed": 60,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "Z",
+  "color": "white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 17
+    }
+  ],
+  "armor_bash": 23,
+  "armor_cut": 45,
+  "armor_bullet": 35,
+  "vision_day": 50,
+  "vision_night": 4,
+  "harvest": "mr_bones",
+  "special_attacks": [
+    [
+      "SMASH",
+      20
+    ],
+    [
+      "STRETCH_ATTACK",
+      20
+    ],
+    [
+      "LONGSWIPE",
+      20
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 23,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "death_drops": "mon_zombie_hulk_death_drops",
+  "burn_into": "mon_skeleton_hulk",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "DESTROYS",
+    "POISON",
+    "ATTACKMON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "HARDTOSHOOT",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_skeleton_hulk",
+  "type": "MONSTER",
+  "name": {
+    "str": "骷髅巨兽"
+  },
+  "description": "这只丑陋的巨型怪兽浑身布满了骨板，畸形的血肉拖拽着其沉重而尖锐的四肢，如同无用的负担一般。曾经柔软脆弱的躯体长出了许多保护的骨甲。而这骨甲还在增长、增长、不断增长。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "diff": 5,
+  "volume": "875000 ml",
+  "weight": "200 kg",
+  "hp": 600,
+  "speed": 60,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "Z",
+  "color": "white",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 17
+    }
+  ],
+  "armor_bash": 23,
+  "armor_cut": 45,
+  "armor_bullet": 35,
+  "vision_day": 50,
+  "vision_night": 4,
+  "harvest": "mr_bones",
+  "special_attacks": [
+    [
+      "SMASH",
+      20
+    ],
+    [
+      "STRETCH_ATTACK",
+      20
+    ],
+    [
+      "LONGSWIPE",
+      20
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 23,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "death_drops": "mon_zombie_hulk_death_drops",
+  "burn_into": "mon_skeleton_hulk",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "DESTROYS",
+    "POISON",
+    "ATTACKMON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "HARDTOSHOOT",
+    "FILTHY"
+  ]
+}
+```
+

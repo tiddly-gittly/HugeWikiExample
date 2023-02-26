@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_revenant_allure_incite
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_revenant_allure_incite|http://cdda.aloxaf.cn/search?q=mon_zombie_revenant_allure_incite]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_revenant_allure_incite",
+  "type": "SPELL",
+  "name": {
+    "str": "Incite"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spreads its blob-stimulating goo through its fingers, causing the infected creature's blob to grow rapidly which increases the host's body mass, gaining combat bonuses, but makes them suffer from excessive growth.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_revenant_allure_induce",
+  "min_aoe": 5,
+  "max_aoe": 5,
+  "min_range": 10,
+  "max_range": 10,
+  "min_duration": 2000,
+  "max_duration": 2000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_revenant_allure_incite",
+  "type": "SPELL",
+  "name": {
+    "str": "煽动"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就读这一条：\n“施法者通过手指传播其刺激性粘液，使受感染生物的粘液迅速增长，从而增加宿主的体重，获得战斗加值，但使其遭受过度增长的痛苦。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_revenant_allure_induce",
+  "min_aoe": 5,
+  "max_aoe": 5,
+  "min_range": 10,
+  "max_range": 10,
+  "min_duration": 2000,
+  "max_duration": 2000
+}
+```
+

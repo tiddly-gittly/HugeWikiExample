@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_boomer
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_boomer|http://cdda.aloxaf.cn/search?q=mon_sflesh_boomer]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_boomer",
+  "type": "MONSTER",
+  "name": {
+    "str": "boomer"
+  },
+  "description": "A rotund human body, bloated beyond belief and layered in rolls of fat.  It emits a horrible odor, and a putrid pink sludge dribbles from its mouth.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 5,
+  "volume": "92500 ml",
+  "weight": "120 kg",
+  "hp": 50,
+  "speed": 55,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "pink",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_night": 3,
+  "harvest": "exempt",
+  "special_attacks": [
+    [
+      "BOOMER",
+      20
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_items",
+  "death_function": {
+    "effect": {
+      "id": "death_boomer",
+      "hit_self": true
+    },
+    "message": "A %s explode!"
+  },
+  "burn_into": "mon_boomer",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "BILE_BLOOD",
+    "PUSH_MON",
+    "PATH_AVOID_DANGER_1",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_boomer",
+  "type": "MONSTER",
+  "name": {
+    "str": "爆汁丧尸"
+  },
+  "description": "一个臃肿的难以相信的躯体，脂肪堆积在一起，它发出一种可怕的气味，粉红色的腐烂粘液从它口中滴下来。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 5,
+  "volume": "92500 ml",
+  "weight": "120 kg",
+  "hp": 50,
+  "speed": 55,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "pink",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_night": 3,
+  "harvest": "exempt",
+  "special_attacks": [
+    [
+      "BOOMER",
+      20
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_items",
+  "death_function": {
+    "effect": {
+      "id": "death_boomer",
+      "hit_self": true
+    },
+    "message": "A %s explode!"
+  },
+  "burn_into": "mon_boomer",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "BILE_BLOOD",
+    "PUSH_MON",
+    "PATH_AVOID_DANGER_1",
+    "FILTHY"
+  ]
+}
+```
+

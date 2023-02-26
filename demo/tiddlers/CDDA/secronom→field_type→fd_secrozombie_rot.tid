@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_secrozombie_rot
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_secrozombie_rot|http://cdda.aloxaf.cn/search?q=fd_secrozombie_rot]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_secrozombie_rot",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "rotten stench",
+      "color": "brown",
+      "effects": [
+        {
+          "effect_id": "secro_dissed",
+          "body_part": "mouth",
+          "min_duration": "2 seconds",
+          "max_duration": "4 seconds"
+        }
+      ]
+    }
+  ],
+  "priority": -1,
+  "half_life": "3 seconds",
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        5
+      ]
+    ]
+  },
+  "gas_absorption_factor": 10,
+  "percent_spread": 5,
+  "dirty_transparency_cache": true,
+  "phase": "gas",
+  "display_items": true,
+  "display_field": false
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_secrozombie_rot",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "rotten stench",
+      "color": "brown",
+      "effects": [
+        {
+          "effect_id": "secro_dissed",
+          "body_part": "mouth",
+          "min_duration": "2 seconds",
+          "max_duration": "4 seconds"
+        }
+      ]
+    }
+  ],
+  "priority": -1,
+  "half_life": "3 seconds",
+  "immunity_data": {
+    "body_part_env_resistance": [
+      [
+        "mouth",
+        5
+      ]
+    ]
+  },
+  "gas_absorption_factor": 10,
+  "percent_spread": 5,
+  "dirty_transparency_cache": true,
+  "phase": "gas",
+  "display_items": true,
+  "display_field": false
+}
+```
+

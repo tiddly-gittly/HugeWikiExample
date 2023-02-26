@@ -1,0 +1,219 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→vehicle_part→storage_corpsecart
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：storage_corpsecart|http://cdda.aloxaf.cn/search?q=storage_corpsecart]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/vehicleparts/touhou_storage.json
+
+
+!! 原文
+
+```json
+{
+  "id": "storage_corpsecart",
+  "type": "vehicle_part",
+  "categories": [
+    "cargo"
+  ],
+  "name": {
+    "str": "corpse wheelbarrow tray"
+  },
+  "description": "The inner tray of the corpse wheelbarrow, made from a strange Former Hell wood.",
+  "symbol": "o",
+  "broken_symbol": "#",
+  "looks_like": "basketsm",
+  "color": "brown",
+  "broken_color": "red",
+  "item": "storage_corpsecart",
+  "location": "center",
+  "durability": 100,
+  "damage_reduction": {
+    "all": 10
+  },
+  "cargo_weight_modifier": 5,
+  "size": "90000 ml",
+  "//4": "This should be around the size of 1 regular zombie plus allow her to push the cart by hand without issues",
+  "breaks_into": [
+    {
+      "item": "splinter",
+      "count": [
+        7,
+        9
+      ]
+    },
+    {
+      "item": "nail",
+      "charges": [
+        5,
+        10
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "450 s",
+      "using": [
+        [
+          "welding_standard",
+          2
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "450 s",
+      "using": [
+        [
+          "vehicle_weld_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ],
+        [
+          "fabrication",
+          2
+        ]
+      ],
+      "time": "350 s",
+      "using": [
+        [
+          "welding_standard",
+          2
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "CARGO",
+    "OBSTACLE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "storage_corpsecart",
+  "type": "vehicle_part",
+  "categories": [
+    "cargo"
+  ],
+  "name": {
+    "str": "corpse wheelbarrow tray"
+  },
+  "description": "The inner tray of the corpse wheelbarrow, made from a strange Former Hell wood.",
+  "symbol": "o",
+  "broken_symbol": "#",
+  "looks_like": "basketsm",
+  "color": "brown",
+  "broken_color": "red",
+  "item": "storage_corpsecart",
+  "location": "center",
+  "durability": 100,
+  "damage_reduction": {
+    "all": 10
+  },
+  "cargo_weight_modifier": 5,
+  "size": "90000 ml",
+  "//4": "This should be around the size of 1 regular zombie plus allow her to push the cart by hand without issues",
+  "breaks_into": [
+    {
+      "item": "splinter",
+      "count": [
+        7,
+        9
+      ]
+    },
+    {
+      "item": "nail",
+      "charges": [
+        5,
+        10
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "450 s",
+      "using": [
+        [
+          "welding_standard",
+          2
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "450 s",
+      "using": [
+        [
+          "vehicle_weld_removal",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ],
+        [
+          "fabrication",
+          2
+        ]
+      ],
+      "time": "350 s",
+      "using": [
+        [
+          "welding_standard",
+          2
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "CARGO",
+    "OBSTACLE"
+  ]
+}
+```
+

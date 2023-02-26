@@ -1,0 +1,67 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_DEACON_DO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_DEACON_DO|http://cdda.aloxaf.cn/search?q=TALK_CF_DEACON_DO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_DEACON.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_DEACON_DO",
+  "type": "talk_topic",
+  "dynamic_line": "Many of the people here are struggling to get by and survive, and there is little that one man can do to help that.  What I can do however is help keep their spirits up, tend to the dead and dying best as I'm able as well.  I am at their service as best as I am able, no matter their faith.",
+  "responses": [
+    {
+      "text": "Need help with anything?",
+      "condition": {
+        "not": {
+          "u_has_effect": "already_asked_deacon"
+        }
+      },
+      "topic": "TALK_CF_DEACON_HELP"
+    },
+    {
+      "text": "Oh, okay.",
+      "topic": "TALK_CF_DEACON"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_DEACON_DO",
+  "type": "talk_topic",
+  "dynamic_line": "这里的许多人都在挣扎着生存下去，而一个人却无能为力。但我能做的就是帮助他们振作起来，尽我所能照顾好死去的人。不管他们的信仰如何，我都会尽我所能为他们服务。",
+  "responses": [
+    {
+      "text": "能帮你什么忙吗？",
+      "condition": {
+        "not": {
+          "u_has_effect": "already_asked_deacon"
+        }
+      },
+      "topic": "TALK_CF_DEACON_HELP"
+    },
+    {
+      "text": "哦，好的。",
+      "topic": "TALK_CF_DEACON"
+    }
+  ]
+}
+```
+

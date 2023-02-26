@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→effect_on_condition→c_nano_mutagen_trigger
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_nano_mutagen_trigger|http://cdda.aloxaf.cn/search?q=c_nano_mutagen_trigger]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_mutagen_effect_on_condition.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "c_nano_mutagen_trigger",
+  "recurrence": [
+    "1 s",
+    "1 s"
+  ],
+  "condition": {
+    "u_has_effect": "c_nano_mutagen_trigger"
+  },
+  "effect": [
+    {
+      "u_message": "You feel your body being subtly altered, a rapid internal metamorphosis triggered by the nanites coursing through your system.",
+      "type": "mixed"
+    },
+    {
+      "run_eocs": [
+        "c_nano_mutagen_thresh_test"
+      ]
+    },
+    {
+      "u_mutate_category": "SUPER_SOLDIER",
+      "use_vitamins": false
+    },
+    {
+      "run_eocs": [
+        "c_nano_mutagen_trigger_bonus",
+        "c_nano_mutagen_trigger_bonus"
+      ]
+    },
+    {
+      "u_lose_effect": "c_nano_mutagen_trigger"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "c_nano_mutagen_trigger",
+  "recurrence": [
+    "1 s",
+    "1 s"
+  ],
+  "condition": {
+    "u_has_effect": "c_nano_mutagen_trigger"
+  },
+  "effect": [
+    {
+      "u_message": "你感到你的身体被轻微地改变了，一种由流经你身体系统的纳米机器人引发的快速内部变形。",
+      "type": "mixed"
+    },
+    {
+      "run_eocs": [
+        "c_nano_mutagen_thresh_test"
+      ]
+    },
+    {
+      "u_mutate_category": "SUPER_SOLDIER",
+      "use_vitamins": false
+    },
+    {
+      "run_eocs": [
+        "c_nano_mutagen_trigger_bonus",
+        "c_nano_mutagen_trigger_bonus"
+      ]
+    },
+    {
+      "u_lose_effect": "c_nano_mutagen_trigger"
+    }
+  ]
+}
+```
+

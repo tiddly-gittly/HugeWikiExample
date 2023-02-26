@@ -1,0 +1,1389 @@
+creator: 林一二
+revision: 0
+tags: talk_topic BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→talk_topic→TALK_BL9_TRADER_BUY3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BL9_TRADER_BUY3|http://cdda.aloxaf.cn/search?q=TALK_BL9_TRADER_BUY3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/NPC/BL9_trader.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BL9_TRADER_BUY3",
+  "type": "talk_topic",
+  "dynamic_line": "Got a selection of GOOD things on sale, stranger...",
+  "responses": [
+    {
+      "text": "[95Gcomb] *BL9 Strengthening Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_str1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Endurance Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_endurance1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_str_endurance1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Tentacle Stab Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_tentacle_stab1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_str_tentacle_stab1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Tentacle Hit Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_tentacle_hit1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_str_tentacle_hit1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Armored Skin Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_armoredskin1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_str_armoredskin1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Dexterousness Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_dex1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Energeticness Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_energeticness1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_dex_energeticness1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Deftness Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_deftness1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_dex_deftness1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Agility Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_agility1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_dex_agility1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Healthiness Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_hp1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Regeneration Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_regen1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_hp_regen1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Wakeful Mind Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_wakeful_mind1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_hp_wakeful_mind1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Amplified Metabolism Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_amplified_metabolism1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_hp_amplified_metabolism1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Insightfulness Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_per1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Elevated Sense Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per_elevatedsense1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_per_elevatedsense1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Stealth Aura Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per_stealthaura1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_per_stealthaura1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Intelligence Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_int1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_int1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb] *BL9 Aptitude Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_int_aptitude1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_int_aptitude1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[BUY ADVANCED MODIFIERS]",
+      "topic": "TALK_BL9_TRADER_BUY4"
+    },
+    {
+      "text": "[GOODBYE]",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BL9_TRADER_BUY3",
+  "type": "talk_topic",
+  "dynamic_line": "有很多好东西在打折，陌生人…",
+  "responses": [
+    {
+      "text": "[95Gcomb]*BL9力量调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_str1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9耐力调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_endurance1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_str_endurance1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9触手刺击调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_tentacle_stab1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_str_tentacle_stab1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9触手打击调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_tentacle_hit1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_str_tentacle_hit1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9甲肤调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_armoredskin1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_str_armoredskin1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9敏捷调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_dex1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9能量调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_energeticness1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_dex_energeticness1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9柔韧调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_deftness1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_dex_deftness1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9迅捷调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_agility1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_dex_agility1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9健康调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_hp1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9再生调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_regen1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_hp_regen1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9清醒心智调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_wakeful_mind1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_hp_wakeful_mind1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9代谢增强调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_amplified_metabolism1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_hp_amplified_metabolism1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9洞察调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_per1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9感知提升调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per_elevatedsense1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_per_elevatedsense1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9隐形光环调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per_stealthaura1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_per_stealthaura1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9智力调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_int1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_int1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[95Gcomb]*BL9天资调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_int_aptitude1_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "goldcoincomb",
+            "count": 95
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "npc_consume_item": "goldcoincomb",
+            "count": 95
+          },
+          {
+            "u_spawn_item": "BL9_int_aptitude1_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[购买高级调节剂]",
+      "topic": "TALK_BL9_TRADER_BUY4"
+    },
+    {
+      "text": "[再见]",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

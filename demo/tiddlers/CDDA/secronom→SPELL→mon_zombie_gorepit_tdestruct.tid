@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_gorepit_tdestruct
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_gorepit_tdestruct|http://cdda.aloxaf.cn/search?q=mon_zombie_gorepit_tdestruct]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_large.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_gorepit_tdestruct",
+  "type": "SPELL",
+  "name": {
+    "str": "Terrestrial Destruction"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster takes down adjacent terrains, destroying them which results into a deep pit.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "gorepit_pit",
+  "min_aoe": 1,
+  "max_aoe": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_gorepit_tdestruct",
+  "type": "SPELL",
+  "name": {
+    "str": "陆地破坏"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者摧毁邻近的地形，摧毁它们，导致深坑。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "gorepit_pit",
+  "min_aoe": 1,
+  "max_aoe": 1
+}
+```
+

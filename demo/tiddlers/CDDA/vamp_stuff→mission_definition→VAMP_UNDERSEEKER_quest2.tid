@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_UNDERSEEKER_quest2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_UNDERSEEKER_quest2|http://cdda.aloxaf.cn/search?q=VAMP_UNDERSEEKER_quest2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_UNDERSEEKER_quest2",
+  "type": "mission_definition",
+  "name": {
+    "str": "Go to the wasteland outskirts"
+  },
+  "description": "Along with the seeker, travel to the <color_light_blue>wasteland outskirts</color>. Talk to them again after reaching the destination.",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 2,
+  "value": 400000,
+  "destination": "wo5",
+  "start": {
+    "effect": [
+      "follow"
+    ],
+    "assign_mission_target": {
+      "om_terrain": "wo5",
+      "om_special": "Wasteland Outskirts",
+      "reveal_radius": 5,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      "leave",
+      {
+        "u_add_trait": "underseekerdone"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "Are we ready for this trip?",
+    "offer": "We are now going to the outskirts, and I know the commando told you about this place.",
+    "accepted": "Good. Now off we go, mortal.",
+    "rejected": "...",
+    "advice": "I'll give you some details about the outskirts. It is a large structure with barricaded walls and tents placed outside for human survivors. It also has a barn and farm fields that provides descent food, and shopkeepers sell various stuff there.",
+    "inquire": "What?",
+    "success": "\"What else could I do for you\" you say? Don't worry, I have no more requests for you. Ask anyone here if you're curious. When you're done, talk to me.",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "Ummm...."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_UNDERSEEKER_quest2",
+  "type": "mission_definition",
+  "name": {
+    "str": "去荒原郊外"
+  },
+  "description": "与探索者一起，前往<color_light_blue>荒地郊外</color>。到达目的地后再与他们交谈。",
+  "goal": "MGOAL_GO_TO_TYPE",
+  "difficulty": 2,
+  "value": 400000,
+  "destination": "wo5",
+  "start": {
+    "effect": [
+      "follow"
+    ],
+    "assign_mission_target": {
+      "om_terrain": "wo5",
+      "om_special": "Wasteland Outskirts",
+      "reveal_radius": 5,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      "leave",
+      {
+        "u_add_trait": "underseekerdone"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "我们准备好这次旅行了吗？",
+    "offer": "我们现在要去郊外，我知道特种兵跟你说过这个地方。",
+    "accepted": "很好。我们走吧，凡人。",
+    "rejected": "…",
+    "advice": "我会给你一些郊区的细节。这是一个巨大的建筑，外面为人类幸存者设置了路障和帐篷。它还有一个谷仓和农场，提供下种食物，店主在那里卖各种各样的东西。",
+    "inquire": "什么？",
+    "success": "你说“我还能为你做什么”？别担心，我对你没有更多要求了。问问这里你好奇的人。如果你做完了就告诉我。",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "嗯...."
+  }
+}
+```
+

@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE Arcana
+title: Arcana→COMESTIBLE→arcana_mana_potion
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_mana_potion|http://cdda.aloxaf.cn/search?q=arcana_mana_potion]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_mana_potion",
+  "type": "COMESTIBLE",
+  "comestible_type": "DRINK",
+  "category": "drugs",
+  "name": {
+    "str": "silver potion",
+    "str_pl": "silver potion"
+  },
+  "description": "A strange liquid that looks like mercury, albeit quite a bit less dense and significantly less toxic.  Drinking it will imbue you with magical energy.  Highly useful to someone who uses mana for spells, but worthless to someone limited to fatigue-draining Magic Signs.\n\nEach dose will restore 600 mana.",
+  "weight": "150 g",
+  "volume": "250 ml",
+  "price": "750 USD",
+  "price_postapoc": "750 cent",
+  "phase": "liquid",
+  "container": "flask_glass",
+  "looks_like": "poppy_pain",
+  "symbol": "~",
+  "color": "blue",
+  "charges": 2,
+  "healthy": 2,
+  "freezing_point": -150,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_mana_potion",
+    "no_fail": true,
+    "level": 0
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_mana_potion",
+  "type": "COMESTIBLE",
+  "comestible_type": "DRINK",
+  "category": "drugs",
+  "name": {
+    "str": "银色药剂",
+    "str_pl": "银色药剂"
+  },
+  "description": "这是一种奇怪的液体，看起来像水银，但密度要小一些，毒性也要小得多。喝下它会给你注入神奇的能量。对于使用法力施法的人来说非常有用，但对于仅限于消耗疲劳的魔法符号的人来说毫无价值。每剂\n\n将恢复600法力值。",
+  "weight": "150 g",
+  "volume": "250 ml",
+  "price": "750 USD",
+  "price_postapoc": "750 cent",
+  "phase": "liquid",
+  "container": "flask_glass",
+  "looks_like": "poppy_pain",
+  "symbol": "~",
+  "color": "blue",
+  "charges": 2,
+  "healthy": 2,
+  "freezing_point": -150,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_mana_potion",
+    "no_fail": true,
+    "level": 0
+  },
+  "flags": [
+    "NO_INGEST",
+    "EATEN_COLD",
+    "NPC_SAFE",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+

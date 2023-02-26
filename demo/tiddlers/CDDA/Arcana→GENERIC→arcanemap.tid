@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: GENERIC Arcana
+title: Arcana→GENERIC→arcanemap
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcanemap|http://cdda.aloxaf.cn/search?q=arcanemap]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/books.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcanemap",
+  "type": "GENERIC",
+  "category": "maps",
+  "name": {
+    "str": "strange map"
+  },
+  "description": "This is a hand-drawn map of the local area.  Whoever created this has marked several places seemingly in the middle of nowhere.  Using it will mark these strange locations on your map.",
+  "weight": "30 g",
+  "volume": "250 ml",
+  "price": "50 USD",
+  "price_postapoc": "10 USD",
+  "to_hit": -1,
+  "material": [
+    "paper"
+  ],
+  "symbol": ";",
+  "looks_like": "survivormap",
+  "color": "white",
+  "use_action": {
+    "type": "reveal_map",
+    "radius": 180,
+    "terrain": [
+      "hiway",
+      "road",
+      "bridge",
+      "curious_structure",
+      "curious_structure_2",
+      "strange_grove",
+      "impact_site",
+      "island_temple_1",
+      "cabin_strange",
+      "standing_stones",
+      "temple_stairs",
+      "shrine_anomaly",
+      "shrine_anomaly_2",
+      "shrine_anomaly_3"
+    ],
+    "message": "You add strange temples, ruined shrines, curious structures, impact sites, sanguine ruins, and strange groves to your map."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcanemap",
+  "type": "GENERIC",
+  "category": "maps",
+  "name": {
+    "str": "奇怪的地图"
+  },
+  "description": "这是当地的手绘地图。不管是谁创造了这个，他已经在几个地方做了印记，似乎是在一个偏僻的地方。使用它可以在地图上印记这些奇怪的位置。",
+  "weight": "30 g",
+  "volume": "250 ml",
+  "price": "50 USD",
+  "price_postapoc": "10 USD",
+  "to_hit": -1,
+  "material": [
+    "paper"
+  ],
+  "symbol": ";",
+  "looks_like": "survivormap",
+  "color": "white",
+  "use_action": {
+    "type": "reveal_map",
+    "radius": 180,
+    "terrain": [
+      "hiway",
+      "road",
+      "bridge",
+      "curious_structure",
+      "curious_structure_2",
+      "strange_grove",
+      "impact_site",
+      "island_temple_1",
+      "cabin_strange",
+      "standing_stones",
+      "temple_stairs",
+      "shrine_anomaly",
+      "shrine_anomaly_2",
+      "shrine_anomaly_3"
+    ],
+    "message": "你在地图上添加了奇怪的庙宇，毁坏的神龛，奇怪的建筑，撞击地点，猩红教派废墟和奇怪的小树林。"
+  }
+}
+```
+

@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_MSCI_PROOF_SCEN
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MSCI_PROOF_SCEN|http://cdda.aloxaf.cn/search?q=TALK_MSCI_PROOF_SCEN]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_MSCI.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MSCI_PROOF_SCEN",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "So that explains a lot, triggering the alarms probably caused a power failure in the systems keeping you locked up there.  I'm glad you made it out of there in one piece.  Come see me when you're ready.",
+    "no": "I see, hadn't expected that since you weren't wearing the badge.  Triggering the alarms probably caused a power failure in the systems keeping you locked up there.  I'm glad you made it out of there in one piece.  Come see me when you're ready."
+  },
+  "responses": [
+    {
+      "text": "Alright then.",
+      "topic": "TALK_MSCI",
+      "effect": {
+        "u_add_var": "proven_worthy",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MSCI_PROOF_SCEN",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "这就解释了很多，触发警报可能会导致系统断电并将你困在那里。我很高兴你完好无损地离开了那里。准备好了就来找我。",
+    "no": "我明白了，没想到你没有戴徽章。触发警报可能会导致系统断电并将您困在那里。我很高兴你完好无损地离开了。准备好了就来找我。"
+  },
+  "responses": [
+    {
+      "text": "那么好吧。",
+      "topic": "TALK_MSCI",
+      "effect": {
+        "u_add_var": "proven_worthy",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      }
+    }
+  ]
+}
+```
+

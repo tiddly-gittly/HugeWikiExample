@@ -1,0 +1,67 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_module_core_act
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_module_core_act|http://cdda.aloxaf.cn/search?q=secro_power_armor_module_core_act]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armor_modules.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_module_core_act",
+  "copy-from": "secro_power_armor_module_core",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom module implant \"Core\""
+  },
+  "description": "A set of power armor modules that installs a power core. It is linked to the suit for energy distribution, but can be detached anytime. Module implant type \"Core\" enables the user to activate/deactivate the power armor and take full control of it, only if the suit has no feature otherwise it is useless.",
+  "looks_like": "power_armor_frame",
+  "turns_per_charge": 10,
+  "revert_to": "secro_power_armor_module_core",
+  "color": "red_yellow",
+  "use_action": {
+    "target": "secro_power_armor_module_core",
+    "msg": "\"Vessel\" module - <color_red>OFFLINE",
+    "type": "transform",
+    "menu_text": "Deactivate \"Vessel\" module"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_module_core_act",
+  "copy-from": "secro_power_armor_module_core",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom模块植入“核心”"
+  },
+  "description": "安装电源核心的一组电源装甲模块。它与能量分配服相连，但可以随时拆卸。模块植入类型“核心”使用户能够激活/停用动力装甲并完全控制它，只有当套装没有功能时，否则它是无用的。",
+  "looks_like": "power_armor_frame",
+  "turns_per_charge": 10,
+  "revert_to": "secro_power_armor_module_core",
+  "color": "red_yellow",
+  "use_action": {
+    "target": "secro_power_armor_module_core",
+    "msg": "“脉管”模块- <color_red>离线",
+    "type": "transform",
+    "menu_text": "停用“容器”模块"
+  }
+}
+```
+

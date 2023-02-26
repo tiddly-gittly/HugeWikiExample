@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_INTERLUDE_MISSION
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_INTERLUDE_MISSION|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_INTERLUDE_MISSION]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_INTERLUDE_MISSION",
+  "type": "talk_topic",
+  "dynamic_line": "I see.  What information do we need to send over?  There's a lot in here after all, and we'll need to keep some of this information to ourselves until we've secured whatever we can concerning Project Kairos.",
+  "responses": [
+    {
+      "text": "The doctor at the refugee center wanted information on locations likely to have vital medical supplies.",
+      "condition": {
+        "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_1"
+      },
+      "topic": "TALK_CF_PURIFIER_INTERLUDE_MISSION_1"
+    },
+    {
+      "text": "The local scavengers wanted information on resources and threats in nearby labs.",
+      "condition": {
+        "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_2"
+      },
+      "topic": "TALK_CF_PURIFIER_INTERLUDE_MISSION_2"
+    },
+    {
+      "text": "Nevermind.",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_PURIFIER_INTERLUDE_MISSION",
+  "type": "talk_topic",
+  "dynamic_line": "我明白了。我们需要发送什么信息？毕竟这里有很多信息，我们需要保留一些信息，直到我们尽可能地保护好Kairos项目。",
+  "responses": [
+    {
+      "text": "难民中心的医生想知道可能有重要医疗用品的地点。",
+      "condition": {
+        "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_1"
+      },
+      "topic": "TALK_CF_PURIFIER_INTERLUDE_MISSION_1"
+    },
+    {
+      "text": "当地的拾荒者想知道附近实验室的资源和威胁信息。",
+      "condition": {
+        "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_2"
+      },
+      "topic": "TALK_CF_PURIFIER_INTERLUDE_MISSION_2"
+    },
+    {
+      "text": "算了。",
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+

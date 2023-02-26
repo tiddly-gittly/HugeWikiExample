@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_summon_giant_centipedes
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_summon_giant_centipedes|http://cdda.aloxaf.cn/search?q=arcana_magic_summon_giant_centipedes]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_summon_giant_centipedes",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Summon Centipedes"
+  },
+  "description": "Magic Sign\nUsing this spell will summon mutated vermin, which will be loyal but not permanent.",
+  "message": "\"I am that which is grim yet necessary, for there is no life without death…\"  You cast %s!",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_6",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_centipede_giant_summoned",
+  "energy_source": "STAMINA",
+  "max_level": 10,
+  "difficulty": 60,
+  "skill": "magic",
+  "min_damage": 1,
+  "max_damage": 3,
+  "damage_increment": 0.2,
+  "min_range": 3,
+  "max_range": 8,
+  "range_increment": 0.5,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "base_casting_time": 280,
+  "final_casting_time": 140,
+  "casting_time_increment": -14,
+  "base_energy_cost": 3500,
+  "final_energy_cost": 1750,
+  "energy_increment": -175,
+  "min_duration": 720000,
+  "max_duration": 1440000,
+  "duration_increment": 72000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_summon_giant_centipedes",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：召唤蜈蚣"
+  },
+  "description": "魔法符号\n使用该法术将召唤变异的害虫，这将是忠诚的，但不是永久的。",
+  "message": "“我是冷酷而必要的，因为没有没有没有死亡的生命……”你施放了 %s！",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_6",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_centipede_giant_summoned",
+  "energy_source": "STAMINA",
+  "max_level": 10,
+  "difficulty": 60,
+  "skill": "magic",
+  "min_damage": 1,
+  "max_damage": 3,
+  "damage_increment": 0.2,
+  "min_range": 3,
+  "max_range": 8,
+  "range_increment": 0.5,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "base_casting_time": 280,
+  "final_casting_time": 140,
+  "casting_time_increment": -14,
+  "base_energy_cost": 3500,
+  "final_energy_cost": 1750,
+  "energy_increment": -175,
+  "min_duration": 720000,
+  "max_duration": 1440000,
+  "duration_increment": 72000
+}
+```
+

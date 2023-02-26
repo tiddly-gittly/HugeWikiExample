@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→orb_veil
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：orb_veil|http://cdda.aloxaf.cn/search?q=orb_veil]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "orb_veil",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str": "orb of the veil",
+    "str_pl": "orbs of the veil"
+  },
+  "description": "A mysterious orb made of a dark, almost glassy stone.  An eye pattern is worked into it, using gold for the irises and a diamond pupil.  It is said to represent a desire to protect the old knowledge and old ways, strengthened by a yearning for further enlightenment.  Using it will show you a vision of the surrounding area, along with other random side effects, along with attracting unwanted attention from Beyond…",
+  "weight": "2000 g",
+  "volume": "1 L",
+  "price": "1200 USD",
+  "price_postapoc": "100 USD",
+  "to_hit": -2,
+  "bashing": 6,
+  "material": [
+    "stone",
+    "gold",
+    "diamond"
+  ],
+  "symbol": "*",
+  "looks_like": "diamond",
+  "color": "dark_gray",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_pure_type": 1
+      }
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "essence_pure_type",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "mutations": [
+          "ARCANA_CLAIRVOYANCE_LESSER",
+          "SCHIZOPHRENIC"
+        ],
+        "values": [
+          {
+            "value": "INTELLIGENCE",
+            "add": 4
+          },
+          {
+            "value": "PERCEPTION",
+            "add": 2
+          },
+          {
+            "value": "REGEN_MANA",
+            "multiply": 0.25
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_orb_veil_mapping",
+      "no_fail": true,
+      "level": 0
+    }
+  ],
+  "flags": [
+    "NO_SALVAGE",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "orb_veil",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str": "帷幕之珠",
+    "str_pl": "帷幕之珠"
+  },
+  "description": "一种神秘的球体，由一种黑色的、几乎是玻璃状的石头制成。一个眼睛图案被加工成它，使用黄金作为虹膜和钻石瞳孔。据说，它代表了一种保护旧知识和旧方法的愿望，并因对进一步启蒙的渴望而得到加强。使用它将向你展示周围区域的视觉，以及其他随机的副作用，同时吸引外界不必要的注意力…",
+  "weight": "2000 g",
+  "volume": "1 L",
+  "price": "1200 USD",
+  "price_postapoc": "100 USD",
+  "to_hit": -2,
+  "bashing": 6,
+  "material": [
+    "stone",
+    "gold",
+    "diamond"
+  ],
+  "symbol": "*",
+  "looks_like": "diamond",
+  "color": "dark_gray",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_pure_type": 1
+      }
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "essence_pure_type",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "mutations": [
+          "ARCANA_CLAIRVOYANCE_LESSER",
+          "SCHIZOPHRENIC"
+        ],
+        "values": [
+          {
+            "value": "INTELLIGENCE",
+            "add": 4
+          },
+          {
+            "value": "PERCEPTION",
+            "add": 2
+          },
+          {
+            "value": "REGEN_MANA",
+            "multiply": 0.25
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_orb_veil_mapping",
+      "no_fail": true,
+      "level": 0
+    }
+  ],
+  "flags": [
+    "NO_SALVAGE",
+    "MAGIC_FOCUS",
+    "TRADER_KEEP_EQUIPPED"
+  ]
+}
+```
+

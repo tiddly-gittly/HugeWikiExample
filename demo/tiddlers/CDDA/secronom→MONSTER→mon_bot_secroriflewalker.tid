@@ -1,0 +1,223 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_bot_secroriflewalker
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_bot_secroriflewalker|http://cdda.aloxaf.cn/search?q=mon_bot_secroriflewalker]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Bots/SecronomDragon_spawns.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_bot_secroriflewalker",
+  "type": "MONSTER",
+  "name": {
+    "str": "walker"
+  },
+  "description": "A four legged, riot suppressing bot with an automated MP5 mounted as its head. Its feet are tipped with tazers for close combat and/or subduing targets.",
+  "default_faction": "bot",
+  "species": [
+    "ROBOT"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 45,
+  "speed": 70,
+  "material": [
+    "steel"
+  ],
+  "symbol": "x",
+  "color": "white",
+  "aggression": 100,
+  "harvest": "exempt",
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_bash": 2,
+  "armor_stab": 3,
+  "armor_acid": 8,
+  "armor_fire": 10,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "starting_ammo": {
+    "9mm": 30
+  },
+  "special_attacks": [
+    [
+      "TAZER",
+      10
+    ],
+    {
+      "type": "gun",
+      "cooldown": 2,
+      "move_cost": 20,
+      "gun_type": "hk_mp5",
+      "ammo_type": "9mm",
+      "fake_skills": [
+        [
+          "gun",
+          5
+        ],
+        [
+          "smg",
+          5
+        ]
+      ],
+      "fake_dex": 12,
+      "ranges": [
+        [
+          0,
+          16,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "laser_lock": false,
+      "targeting_cost": 400,
+      "targeting_timeout_extend": -10,
+      "targeting_sound": "a beeping!",
+      "targeting_volume": 20,
+      "no_ammo_sound": "a chk!"
+    }
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        1
+      ]
+    ]
+  },
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "POISON",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_bot_secroriflewalker",
+  "type": "MONSTER",
+  "name": {
+    "str": "行尸"
+  },
+  "description": "一种四足防暴机器人，头部装有全自动MP5。它的脚上有电击枪，用于近距离战斗/制服目标。",
+  "default_faction": "bot",
+  "species": [
+    "ROBOT"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 45,
+  "speed": 70,
+  "material": [
+    "steel"
+  ],
+  "symbol": "x",
+  "color": "white",
+  "aggression": 100,
+  "harvest": "exempt",
+  "morale": 100,
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_bash": 2,
+  "armor_stab": 3,
+  "armor_acid": 8,
+  "armor_fire": 10,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "starting_ammo": {
+    "9mm": 30
+  },
+  "special_attacks": [
+    [
+      "TAZER",
+      10
+    ],
+    {
+      "type": "gun",
+      "cooldown": 2,
+      "move_cost": 20,
+      "gun_type": "hk_mp5",
+      "ammo_type": "9mm",
+      "fake_skills": [
+        [
+          "gun",
+          5
+        ],
+        [
+          "smg",
+          5
+        ]
+      ],
+      "fake_dex": 12,
+      "ranges": [
+        [
+          0,
+          16,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "laser_lock": false,
+      "targeting_cost": 400,
+      "targeting_timeout_extend": -10,
+      "targeting_sound": "a beeping!",
+      "targeting_volume": 20,
+      "no_ammo_sound": "叮！"
+    }
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        1
+      ]
+    ]
+  },
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "NO_BREATHE",
+    "POISON",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+

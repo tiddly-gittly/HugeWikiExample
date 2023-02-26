@@ -1,0 +1,171 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→MONSTER→mon_yoshika
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_yoshika|http://cdda.aloxaf.cn/search?q=mon_yoshika]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/monsters/touhou_summoned.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_yoshika",
+  "type": "MONSTER",
+  "name": {
+    "str": "Yoshika",
+    "str_pl": "Yoshika"
+  },
+  "description": "WIP",
+  "volume": "50000 ml",
+  "weight": "50000 g",
+  "default_faction": "touhou_summon",
+  "bodytype": "human",
+  "species": [
+    "JIANGSHI_TOUHOU"
+  ],
+  "harvest": "exempt",
+  "hp": 85,
+  "speed": 115,
+  "symbol": "Ž",
+  "color": "white",
+  "aggression": 50,
+  "morale": 99,
+  "melee_skill": 5,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 5,
+  "armor_bash": 4,
+  "armor_cut": 2,
+  "armor_stab": 6,
+  "armor_bullet": 8,
+  "bleed_rate": 33,
+  "grab_strength": 16,
+  "vision_day": 16,
+  "vision_night": 16,
+  "path_settings": {
+    "max_dist": 16
+  },
+  "special_attacks": [
+    [
+      "GRAB",
+      16
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "yoshika_nails"
+      },
+      "cooldown": 6
+    }
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s has received enough damage, she falls down and becomes unconscious."
+  },
+  "flags": [
+    "GRABS",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_yoshika",
+  "type": "MONSTER",
+  "name": {
+    "str": "宫古芳香",
+    "str_pl": "宫古芳香"
+  },
+  "description": "WIP",
+  "volume": "50000 ml",
+  "weight": "50000 g",
+  "default_faction": "touhou_summon",
+  "bodytype": "human",
+  "species": [
+    "JIANGSHI_TOUHOU"
+  ],
+  "harvest": "exempt",
+  "hp": 85,
+  "speed": 115,
+  "symbol": "Ž",
+  "color": "white",
+  "aggression": 50,
+  "morale": 99,
+  "melee_skill": 5,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "dodge": 5,
+  "armor_bash": 4,
+  "armor_cut": 2,
+  "armor_stab": 6,
+  "armor_bullet": 8,
+  "bleed_rate": 33,
+  "grab_strength": 16,
+  "vision_day": 16,
+  "vision_night": 16,
+  "path_settings": {
+    "max_dist": 16
+  },
+  "special_attacks": [
+    [
+      "GRAB",
+      16
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "yoshika_nails"
+      },
+      "cooldown": 6
+    }
+  ],
+  "anger_triggers": [
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s has received enough damage, she falls down and becomes unconscious."
+  },
+  "flags": [
+    "GRABS",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES"
+  ]
+}
+```
+

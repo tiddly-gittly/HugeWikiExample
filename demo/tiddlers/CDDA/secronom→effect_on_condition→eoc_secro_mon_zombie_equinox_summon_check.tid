@@ -1,0 +1,209 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom
+title: secronom→effect_on_condition→eoc_secro_mon_zombie_equinox_summon_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_mon_zombie_equinox_summon_check|http://cdda.aloxaf.cn/search?q=eoc_secro_mon_zombie_equinox_summon_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_equinox_summon_check",
+  "effect": [
+    {
+      "npc_location_variable": {
+        "global_val": "secro_equinox_spawn"
+      }
+    },
+    {
+      "weighted_list_eocs": [
+        [
+          {
+            "id": "eoc_secro_mon_zombie_equinox_summon_necros_check",
+            "effect": [
+              {
+                "u_spawn_monster": "mon_zombie_equinox_necros",
+                "target_var": {
+                  "global_val": "secro_equinox_spawn"
+                },
+                "real_count": 1,
+                "min_radius": 1,
+                "max_radius": 2
+              }
+            ]
+          },
+          {
+            "const": 5
+          }
+        ],
+        [
+          {
+            "id": "eoc_secro_mon_zombie_equinox_summon_necros_stab_check",
+            "effect": [
+              {
+                "u_spawn_monster": "mon_zombie_equinox_necros_stab",
+                "target_var": {
+                  "global_val": "secro_equinox_spawn"
+                },
+                "real_count": 1,
+                "min_radius": 1,
+                "max_radius": 2
+              }
+            ]
+          },
+          {
+            "const": 2
+          }
+        ],
+        [
+          {
+            "id": "eoc_secro_mon_zombie_equinox_summon_necros_cut_check",
+            "effect": [
+              {
+                "u_spawn_monster": "mon_zombie_equinox_necros_cut",
+                "target_var": {
+                  "global_val": "secro_equinox_spawn"
+                },
+                "real_count": 1,
+                "min_radius": 1,
+                "max_radius": 2
+              }
+            ]
+          },
+          {
+            "const": 2
+          }
+        ],
+        [
+          {
+            "id": "eoc_secro_mon_zombie_equinox_summon_necros_emit_check",
+            "effect": [
+              {
+                "u_spawn_monster": "mon_zombie_equinox_necros_emit",
+                "target_var": {
+                  "global_val": "secro_equinox_spawn"
+                },
+                "real_count": 1,
+                "min_radius": 1,
+                "max_radius": 2
+              }
+            ]
+          },
+          {
+            "const": 1
+          }
+        ]
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_equinox_summon_check",
+  "effect": [
+    {
+      "npc_location_variable": {
+        "global_val": "secro_equinox_spawn"
+      }
+    },
+    {
+      "weighted_list_eocs": [
+        [
+          {
+            "id": "eoc_secro_mon_zombie_equinox_summon_necros_check",
+            "effect": [
+              {
+                "u_spawn_monster": "mon_zombie_equinox_necros",
+                "target_var": {
+                  "global_val": "secro_equinox_spawn"
+                },
+                "real_count": 1,
+                "min_radius": 1,
+                "max_radius": 2
+              }
+            ]
+          },
+          {
+            "const": 5
+          }
+        ],
+        [
+          {
+            "id": "eoc_secro_mon_zombie_equinox_summon_necros_stab_check",
+            "effect": [
+              {
+                "u_spawn_monster": "mon_zombie_equinox_necros_stab",
+                "target_var": {
+                  "global_val": "secro_equinox_spawn"
+                },
+                "real_count": 1,
+                "min_radius": 1,
+                "max_radius": 2
+              }
+            ]
+          },
+          {
+            "const": 2
+          }
+        ],
+        [
+          {
+            "id": "eoc_secro_mon_zombie_equinox_summon_necros_cut_check",
+            "effect": [
+              {
+                "u_spawn_monster": "mon_zombie_equinox_necros_cut",
+                "target_var": {
+                  "global_val": "secro_equinox_spawn"
+                },
+                "real_count": 1,
+                "min_radius": 1,
+                "max_radius": 2
+              }
+            ]
+          },
+          {
+            "const": 2
+          }
+        ],
+        [
+          {
+            "id": "eoc_secro_mon_zombie_equinox_summon_necros_emit_check",
+            "effect": [
+              {
+                "u_spawn_monster": "mon_zombie_equinox_necros_emit",
+                "target_var": {
+                  "global_val": "secro_equinox_spawn"
+                },
+                "real_count": 1,
+                "min_radius": 1,
+                "max_radius": 2
+              }
+            ]
+          },
+          {
+            "const": 1
+          }
+        ]
+      ]
+    }
+  ]
+}
+```
+

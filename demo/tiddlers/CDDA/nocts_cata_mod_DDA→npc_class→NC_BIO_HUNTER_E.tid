@@ -1,0 +1,687 @@
+creator: 林一二
+revision: 0
+tags: npc_class nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→npc_class→NC_BIO_HUNTER_E
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：NC_BIO_HUNTER_E|http://cdda.aloxaf.cn/search?q=NC_BIO_HUNTER_E]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/c_classes.json
+
+
+!! 原文
+
+```json
+{
+  "type": "npc_class",
+  "id": "NC_BIO_HUNTER_E",
+  "name": "Bio-Weapon Hunter",
+  "job_description": "I am here to find answers…",
+  "common": false,
+  "bonus_str": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "bonus_dex": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "bonus_int": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "bonus_per": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "skills": [
+    {
+      "skill": "computer",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "traps",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "driving",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "fabrication",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "firstaid",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "survival",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "swimming",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "archery",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "bashing",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "cutting",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "dodge",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "gun",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "launcher",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "melee",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "stabbing",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "throw",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "unarmed",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "pistol",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "rifle",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "shotgun",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "smg",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    }
+  ],
+  "worn_override": "NC_BIO_HUNTER_E_worn",
+  "carry_override": "NC_BIO_HUNTER_E_carry",
+  "weapon_override": "NC_BIO_HUNTER_E_weapon",
+  "//": "Add green eyes if it becomes available in vanilla.  CBM setup is a balanced setup mixing Super Scout and Bio-Engineer, as much as is NPC-usable.  Also fairly broad Sentinel mutation selection, closer to an upgraded Super Soldier.",
+  "traits": [
+    [
+      "hair_red_long",
+      100
+    ],
+    [
+      "SKIN_LIGHT",
+      100
+    ],
+    [
+      "BGSS_BHunter",
+      100
+    ],
+    [
+      "SUPER_SOLDIER_MARKER",
+      100
+    ],
+    [
+      "THRESH_SUPER_SOLDIER",
+      100
+    ],
+    [
+      "SENTINEL_PERK_STR_2",
+      100
+    ],
+    [
+      "SENTINEL_PERK_DEX_2",
+      100
+    ],
+    [
+      "SENTINEL_PERK_PER_2",
+      100
+    ],
+    [
+      "SENTINEL_PERK_INT_2",
+      100
+    ],
+    [
+      "SENTINEL_STAT_STR_2",
+      100
+    ],
+    [
+      "SENTINEL_STAT_DEX_2",
+      100
+    ],
+    [
+      "SENTINEL_STAT_PER_2",
+      100
+    ],
+    [
+      "SENTINEL_STAT_INT_2",
+      100
+    ]
+  ],
+  "bionics": [
+    {
+      "id": "bio_metabolics",
+      "chance": 100
+    },
+    {
+      "id": "bio_torsionratchet",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_carbon",
+      "chance": 100
+    },
+    {
+      "id": "bio_faraday",
+      "chance": 100
+    },
+    {
+      "id": "bio_nanobots",
+      "chance": 100
+    },
+    {
+      "id": "bio_painkiller",
+      "chance": 100
+    },
+    {
+      "id": "bio_targeting",
+      "chance": 100
+    },
+    {
+      "id": "bio_tools",
+      "chance": 100
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "npc_class",
+  "id": "NC_BIO_HUNTER_E",
+  "name": "Bio-Weapon Hunter",
+  "job_description": "I am here to find answers…",
+  "common": false,
+  "bonus_str": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "bonus_dex": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "bonus_int": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "bonus_per": {
+    "rng": [
+      3,
+      3
+    ]
+  },
+  "skills": [
+    {
+      "skill": "computer",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "traps",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "driving",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "fabrication",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "firstaid",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "survival",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "swimming",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "archery",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "bashing",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "cutting",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "dodge",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "gun",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "launcher",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "melee",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "stabbing",
+      "level": {
+        "rng": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "skill": "throw",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "unarmed",
+      "level": {
+        "rng": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "skill": "pistol",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "rifle",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "shotgun",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "skill": "smg",
+      "level": {
+        "rng": [
+          5,
+          5
+        ]
+      }
+    }
+  ],
+  "worn_override": "NC_BIO_HUNTER_E_worn",
+  "carry_override": "NC_BIO_HUNTER_E_carry",
+  "weapon_override": "NC_BIO_HUNTER_E_weapon",
+  "//": "Add green eyes if it becomes available in vanilla.  CBM setup is a balanced setup mixing Super Scout and Bio-Engineer, as much as is NPC-usable.  Also fairly broad Sentinel mutation selection, closer to an upgraded Super Soldier.",
+  "traits": [
+    [
+      "hair_red_long",
+      100
+    ],
+    [
+      "SKIN_LIGHT",
+      100
+    ],
+    [
+      "BGSS_BHunter",
+      100
+    ],
+    [
+      "SUPER_SOLDIER_MARKER",
+      100
+    ],
+    [
+      "THRESH_SUPER_SOLDIER",
+      100
+    ],
+    [
+      "SENTINEL_PERK_STR_2",
+      100
+    ],
+    [
+      "SENTINEL_PERK_DEX_2",
+      100
+    ],
+    [
+      "SENTINEL_PERK_PER_2",
+      100
+    ],
+    [
+      "SENTINEL_PERK_INT_2",
+      100
+    ],
+    [
+      "SENTINEL_STAT_STR_2",
+      100
+    ],
+    [
+      "SENTINEL_STAT_DEX_2",
+      100
+    ],
+    [
+      "SENTINEL_STAT_PER_2",
+      100
+    ],
+    [
+      "SENTINEL_STAT_INT_2",
+      100
+    ]
+  ],
+  "bionics": [
+    {
+      "id": "bio_metabolics",
+      "chance": 100
+    },
+    {
+      "id": "bio_torsionratchet",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_power_storage_mkII",
+      "chance": 100
+    },
+    {
+      "id": "bio_carbon",
+      "chance": 100
+    },
+    {
+      "id": "bio_faraday",
+      "chance": 100
+    },
+    {
+      "id": "bio_nanobots",
+      "chance": 100
+    },
+    {
+      "id": "bio_painkiller",
+      "chance": 100
+    },
+    {
+      "id": "bio_targeting",
+      "chance": 100
+    },
+    {
+      "id": "bio_tools",
+      "chance": 100
+    }
+  ]
+}
+```
+

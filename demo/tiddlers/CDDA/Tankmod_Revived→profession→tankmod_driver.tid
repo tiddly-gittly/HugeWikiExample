@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: profession Tankmod_Revived
+title: Tankmod_Revived→profession→tankmod_driver
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tankmod_driver|http://cdda.aloxaf.cn/search?q=tankmod_driver]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/professions.json
+
+
+!! 原文
+
+```json
+{
+  "type": "profession",
+  "id": "tankmod_driver",
+  "name": "Tank Driver",
+  "description": "You were in charge of driving the tank, but without a commander it's a lot harder to get a clear picture of what's around you.",
+  "points": 4,
+  "skills": [
+    {
+      "level": 4,
+      "name": "driving"
+    },
+    {
+      "level": 1,
+      "name": "mechanics"
+    },
+    {
+      "level": 2,
+      "name": "gun"
+    },
+    {
+      "level": 3,
+      "name": "rifle"
+    }
+  ],
+  "items": {
+    "both": {
+      "items": [
+        "pants_army",
+        "socks",
+        "boots_combat",
+        "wristwatch",
+        "gloves_tactical",
+        "helmet_army",
+        "jacket_army",
+        "webbing_belt"
+      ],
+      "entries": [
+        {
+          "group": "charged_two_way_radio"
+        },
+        {
+          "item": "legpouch_large",
+          "contents-group": "army_mags_m4"
+        },
+        {
+          "item": "ear_plugs",
+          "custom-flags": [
+            "no_auto_equip"
+          ]
+        },
+        {
+          "item": "knife_combat",
+          "container-item": "sheath"
+        },
+        {
+          "item": "m4a1",
+          "ammo-item": "556",
+          "charges": 30,
+          "contents-item": "shoulder_strap"
+        }
+      ]
+    },
+    "male": [
+      "boxer_shorts"
+    ],
+    "female": [
+      "sports_bra",
+      "boxer_shorts"
+    ]
+  },
+  "flags": [
+    "SCEN_ONLY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "profession",
+  "id": "tankmod_driver",
+  "name": "坦克驾驶员",
+  "description": "你负责驾驶坦克，但如果没有指挥官，你很难清楚地了解周围的情况。",
+  "points": 4,
+  "skills": [
+    {
+      "level": 4,
+      "name": "driving"
+    },
+    {
+      "level": 1,
+      "name": "mechanics"
+    },
+    {
+      "level": 2,
+      "name": "gun"
+    },
+    {
+      "level": 3,
+      "name": "rifle"
+    }
+  ],
+  "items": {
+    "both": {
+      "items": [
+        "pants_army",
+        "socks",
+        "boots_combat",
+        "wristwatch",
+        "gloves_tactical",
+        "helmet_army",
+        "jacket_army",
+        "webbing_belt"
+      ],
+      "entries": [
+        {
+          "group": "charged_two_way_radio"
+        },
+        {
+          "item": "legpouch_large",
+          "contents-group": "army_mags_m4"
+        },
+        {
+          "item": "ear_plugs",
+          "custom-flags": [
+            "no_auto_equip"
+          ]
+        },
+        {
+          "item": "knife_combat",
+          "container-item": "sheath"
+        },
+        {
+          "item": "m4a1",
+          "ammo-item": "556",
+          "charges": 30,
+          "contents-item": "shoulder_strap"
+        }
+      ]
+    },
+    "male": [
+      "boxer_shorts"
+    ],
+    "female": [
+      "sports_bra",
+      "boxer_shorts"
+    ]
+  },
+  "flags": [
+    "SCEN_ONLY"
+  ]
+}
+```
+

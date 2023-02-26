@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_white_lady
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_white_lady|http://cdda.aloxaf.cn/search?q=mon_white_lady]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_ghost_female.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_white_lady",
+  "type": "MONSTER",
+  "name": {
+    "str": "white lady"
+  },
+  "description": "A woman, wearing a long, elegant white dress.  She looks somewhat sad and… ethereal?",
+  "volume": "68750 ml",
+  "weight": "73350 g",
+  "default_faction": "touhou_youkai_neutral",
+  "bodytype": "human",
+  "species": [
+    "GHOST_TOUHOU",
+    "YOUKAI_NEUTRAL_TOUHOU"
+  ],
+  "harvest": "exempt",
+  "hp": 85,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "looks_like": "human",
+  "color": "white",
+  "aggression": 0,
+  "morale": 25,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "dodge": 0,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "STALK"
+  ],
+  "vision_day": 12,
+  "vision_night": 16,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "special_attacks": [
+    {
+      "spell_data": {
+        "id": "white_lady_demoralize"
+      },
+      "type": "spell",
+      "cooldown": 5,
+      "allow_no_target": true
+    },
+    {
+      "spell_data": {
+        "id": "white_lady_transform"
+      },
+      "type": "spell",
+      "cooldown": 1
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "HEARS",
+    "NO_BREATHE",
+    "PACIFIST",
+    "SEES",
+    "STUN_IMMUNE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_white_lady",
+  "type": "MONSTER",
+  "name": {
+    "str": "white lady"
+  },
+  "description": "A woman, wearing a long, elegant white dress.  She looks somewhat sad and… ethereal?",
+  "volume": "68750 ml",
+  "weight": "73350 g",
+  "default_faction": "touhou_youkai_neutral",
+  "bodytype": "human",
+  "species": [
+    "GHOST_TOUHOU",
+    "YOUKAI_NEUTRAL_TOUHOU"
+  ],
+  "harvest": "exempt",
+  "hp": 85,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "looks_like": "human",
+  "color": "white",
+  "aggression": 0,
+  "morale": 25,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "dodge": 0,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "STALK"
+  ],
+  "vision_day": 12,
+  "vision_night": 16,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "special_attacks": [
+    {
+      "spell_data": {
+        "id": "white_lady_demoralize"
+      },
+      "type": "spell",
+      "cooldown": 5,
+      "allow_no_target": true
+    },
+    {
+      "spell_data": {
+        "id": "white_lady_transform"
+      },
+      "type": "spell",
+      "cooldown": 1
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "HEARS",
+    "NO_BREATHE",
+    "PACIFIST",
+    "SEES",
+    "STUN_IMMUNE"
+  ]
+}
+```
+

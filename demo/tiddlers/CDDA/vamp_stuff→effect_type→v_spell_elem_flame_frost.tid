@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: effect_type vamp_stuff
+title: vamp_stuff→effect_type→v_spell_elem_flame_frost
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_spell_elem_flame_frost|http://cdda.aloxaf.cn/search?q=v_spell_elem_flame_frost]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "v_spell_elem_flame_frost",
+  "name": [
+    "On Fire - Frostburn"
+  ],
+  "desc": [
+    "Your body suffers from scalding cold! OMFG!"
+  ],
+  "main_parts_only": true,
+  "show_in_info": true,
+  "max_duration": "30 s",
+  "base_mods": {
+    "hurt_min": [
+      1
+    ],
+    "hurt_max": [
+      2
+    ],
+    "speed_mod": [
+      -30
+    ],
+    "hurt_chance": [
+      2
+    ]
+  },
+  "removes_effects": [
+    "v_spell_elem_freeze",
+    "v_spell_elem_flashfreeze",
+    "onfire",
+    "v_spell_elem_flame_curse"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "v_spell_elem_flame_frost",
+  "name": [
+    "着火-霜燃"
+  ],
+  "desc": [
+    "你的身体遭受着灼热的冰寒！天哪！"
+  ],
+  "main_parts_only": true,
+  "show_in_info": true,
+  "max_duration": "30 s",
+  "base_mods": {
+    "hurt_min": [
+      1
+    ],
+    "hurt_max": [
+      2
+    ],
+    "speed_mod": [
+      -30
+    ],
+    "hurt_chance": [
+      2
+    ]
+  },
+  "removes_effects": [
+    "v_spell_elem_freeze",
+    "v_spell_elem_flashfreeze",
+    "onfire",
+    "v_spell_elem_flame_curse"
+  ]
+}
+```
+

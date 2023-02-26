@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: AMMO secronom
+title: secronom→AMMO→SSzgrenade
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SSzgrenade|http://cdda.aloxaf.cn/search?q=SSzgrenade]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_ammo_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "SSzgrenade",
+  "type": "AMMO",
+  "name": {
+    "str": "SSz grenade"
+  },
+  "description": "A round, metallic Z type grenade with digital 10 seconds timer.",
+  "weight": "400 g",
+  "volume": "500 ml",
+  "price": "650 USD",
+  "material": [
+    "plastic",
+    "powder"
+  ],
+  "symbol": "*",
+  "color": "white",
+  "count": 1,
+  "ammo_type": "SSgrenade",
+  "range": 18,
+  "damage": {
+    "damage_type": "stab",
+    "amount": 4,
+    "armor_penetration": 8
+  },
+  "effects": [
+    "NEVER_MISFIRES",
+    "COOKOFF",
+    "ACT_ON_RANGED_HIT",
+    "RECOVER_9",
+    "CUSTOM_EXPLOSION"
+  ],
+  "explode_in_fire": true,
+  "countdown_interval": 1,
+  "countdown_destroy": true,
+  "countdown_action": {
+    "target": "SSzgrenadeact",
+    "target_charges": 10,
+    "active": true,
+    "type": "transform"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "SSzgrenade",
+  "type": "AMMO",
+  "name": {
+    "str": "SSz手榴弹"
+  },
+  "description": "带数字10秒计时器的圆形金属Z型手榴弹。",
+  "weight": "400 g",
+  "volume": "500 ml",
+  "price": "650 USD",
+  "material": [
+    "plastic",
+    "powder"
+  ],
+  "symbol": "*",
+  "color": "white",
+  "count": 1,
+  "ammo_type": "SSgrenade",
+  "range": 18,
+  "damage": {
+    "damage_type": "stab",
+    "amount": 4,
+    "armor_penetration": 8
+  },
+  "effects": [
+    "NEVER_MISFIRES",
+    "COOKOFF",
+    "ACT_ON_RANGED_HIT",
+    "RECOVER_9",
+    "CUSTOM_EXPLOSION"
+  ],
+  "explode_in_fire": true,
+  "countdown_interval": 1,
+  "countdown_destroy": true,
+  "countdown_action": {
+    "target": "SSzgrenadeact",
+    "target_charges": 10,
+    "active": true,
+    "type": "transform"
+  }
+}
+```
+

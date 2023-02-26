@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic secronom_lore_expansion
+title: secronom_lore_expansion→talk_topic→TALK_SECRO_SCIENTIST_repair_laserturret
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SECRO_SCIENTIST_repair_laserturret|http://cdda.aloxaf.cn/search?q=TALK_SECRO_SCIENTIST_repair_laserturret]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/Dialogues/secro_scientist_repairs.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_SCIENTIST_repair_laserturret",
+  "dynamic_line": "It is done. I modified the turret and made it cheaper in power usage, with a built-in storage battery.",
+  "responses": [
+    {
+      "text": "I'll take it!",
+      "topic": "TALK_SECRO_SCIENTIST_repair",
+      "effect": [
+        {
+          "u_lose_effect": "secro_scientist_repair_laserturret"
+        },
+        {
+          "u_lose_effect": "secro_scientist_repairing"
+        },
+        {
+          "u_buy_monster": "mon_secro_laserturret_mod"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_SCIENTIST_repair_laserturret",
+  "dynamic_line": "已经完成了。我修改了炮塔，使它在电力使用上更便宜，内置了一个蓄电池。",
+  "responses": [
+    {
+      "text": "我要了！",
+      "topic": "TALK_SECRO_SCIENTIST_repair",
+      "effect": [
+        {
+          "u_lose_effect": "secro_scientist_repair_laserturret"
+        },
+        {
+          "u_lose_effect": "secro_scientist_repairing"
+        },
+        {
+          "u_buy_monster": "mon_secro_laserturret_mod"
+        }
+      ]
+    }
+  ]
+}
+```
+

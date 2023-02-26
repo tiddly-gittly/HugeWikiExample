@@ -1,0 +1,235 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_chimera_mutated
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_chimera_mutated|http://cdda.aloxaf.cn/search?q=mon_BL9_chimera_mutated]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/pecurial_bastards.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_chimera_mutated",
+  "looks_like": "mon_jabberwock",
+  "type": "MONSTER",
+  "name": {
+    "str": "The Mutated Chimera"
+  },
+  "description": "A horrifying chimera of human, insect, and reptile DNA fused imperfectly into a single being, itself hosting the BL9, it has mutated since it's first stages and now has a tentacle sprouting from it's back ending in a gaping mouth, lined with dozens of teeth. This tentacle also sports a heavy pair of pincers",
+  "default_faction": "BL9_military",
+  "species": [
+    "MUTANT",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 760,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☦",
+  "color": "white_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8,
+      "armor_penetration": 14
+    },
+    {
+      "damage_type": "stab",
+      "amount": 12,
+      "armor_penetration": 8
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 8,
+  "armor_cut": 11,
+  "armor_bullet": 11,
+  "death_drops": "BL9_Drops_Chimeraevo",
+  "special_attacks": [
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_multiplier": 1.15
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 75,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 38,
+          "armor_penetration": 28
+        }
+      ],
+      "hit_dmg_u": "The %1$s slices you with it's pincer!",
+      "hit_dmg_npc": "The %1$s slices <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slice you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slice <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s slices you, but you dodge!",
+      "miss_msg_npc": "The %s slices <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "chimera_mutated_pincerpinch"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s slashes %3$s with it's pincer!</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "NIGHT_INVISIBILITY",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_chimera_mutated",
+  "looks_like": "mon_jabberwock",
+  "type": "MONSTER",
+  "name": {
+    "str": "变异的嵌合体"
+  },
+  "description": "它的第一个触角已经和一个爬行动物的触角融合成了一个可怕的阶段。这只触须还带有一对很重的钳子",
+  "default_faction": "BL9_military",
+  "species": [
+    "MUTANT",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 760,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☦",
+  "color": "white_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8,
+      "armor_penetration": 14
+    },
+    {
+      "damage_type": "stab",
+      "amount": 12,
+      "armor_penetration": 8
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 8,
+  "armor_cut": 11,
+  "armor_bullet": 11,
+  "death_drops": "BL9_Drops_Chimeraevo",
+  "special_attacks": [
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_multiplier": 1.15
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 75,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 38,
+          "armor_penetration": 28
+        }
+      ],
+      "hit_dmg_u": "The %1$s slices you with it's pincer!",
+      "hit_dmg_npc": "The %1$s slices <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slice you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slice <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s slices you, but you dodge!",
+      "miss_msg_npc": "The %s slices <npcname>, but they dodge!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "chimera_mutated_pincerpinch"
+      },
+      "cooldown": 12,
+      "monster_message": "<color_light_red>%1$s用它的大钳子砍向了%3$s！</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "NIGHT_INVISIBILITY",
+    "PUSH_MON"
+  ]
+}
+```
+

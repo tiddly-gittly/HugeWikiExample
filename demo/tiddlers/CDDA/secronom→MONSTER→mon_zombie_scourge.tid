@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_scourge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_scourge|http://cdda.aloxaf.cn/search?q=mon_zombie_scourge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Scourge.json
+
+
+!! 原文
+
+```json
+{
+  "//": "This is notable for being infectious.",
+  "id": "mon_zombie_scourge",
+  "type": "MONSTER",
+  "name": {
+    "str": "scourge zombie"
+  },
+  "description": "A vessel of oozing pus staggering as it walks, dripping filthy liquid on its path.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 50,
+  "speed": 70,
+  "diff": 1,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚴",
+  "color": "yellow",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_acid": 4,
+  "vision_day": 22,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "GRAB",
+      10
+    ],
+    {
+      "type": "bite",
+      "infection_chance": 5,
+      "cooldown": 18
+    }
+  ],
+  "upgrades": {
+    "half_life": 12,
+    "into": "mon_zombie_defile"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "This is notable for being infectious.",
+  "id": "mon_zombie_scourge",
+  "type": "MONSTER",
+  "name": {
+    "str": "天灾丧尸"
+  },
+  "description": "一个渗出脓液的容器摇摇晃晃地走着，上面滴着肮脏的液体。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 50,
+  "speed": 70,
+  "diff": 1,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⚴",
+  "color": "yellow",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_acid": 4,
+  "vision_day": 22,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "GRAB",
+      10
+    ],
+    {
+      "type": "bite",
+      "infection_chance": 5,
+      "cooldown": 18
+    }
+  ],
+  "upgrades": {
+    "half_life": 12,
+    "into": "mon_zombie_defile"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "FILTHY"
+  ]
+}
+```
+

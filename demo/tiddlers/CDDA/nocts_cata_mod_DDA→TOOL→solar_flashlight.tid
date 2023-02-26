@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: TOOL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→TOOL→solar_flashlight
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：solar_flashlight|http://cdda.aloxaf.cn/search?q=solar_flashlight]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "solar_flashlight",
+  "type": "TOOL",
+  "category": "tools",
+  "symbol": ";",
+  "color": "blue",
+  "looks_like": "flashlight",
+  "name": {
+    "str": "solar flashlight (off)",
+    "str_pl": "solar flashlights (off)"
+  },
+  "description": "This is a heavy duty LED solar flashlight.  Using this flashlight will turn it on and provide light, assuming it is charged.  The battery is soldered in place, and requires sunlight or a recharging station to charge.",
+  "price": "8 USD",
+  "price_postapoc": "2 USD",
+  "material": [
+    "plastic",
+    "aluminum"
+  ],
+  "flags": [
+    "RECHARGE",
+    "NO_UNLOAD",
+    "NO_RELOAD"
+  ],
+  "weight": "400 g",
+  "volume": "500 ml",
+  "bashing": 1,
+  "to_hit": 2,
+  "ammo": [
+    "battery"
+  ],
+  "charges_per_use": 1,
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "solar_sunny",
+      "time": "10 m",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 100
+      }
+    }
+  ],
+  "use_action": {
+    "type": "transform",
+    "msg": "You turn the flashlight on.",
+    "target": "solar_flashlight_on",
+    "active": true,
+    "need_charges": 1,
+    "need_charges_msg": "The flashlight's batteries are dead."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "solar_flashlight",
+  "type": "TOOL",
+  "category": "tools",
+  "symbol": ";",
+  "color": "blue",
+  "looks_like": "flashlight",
+  "name": {
+    "str": "太阳能手电筒（关）",
+    "str_pl": "太阳能手电筒（关）"
+  },
+  "description": "这是一个耐用的太阳能LED手电筒。使用内置充电电池提供照明。需要阳光或充电站充电。",
+  "price": "8 USD",
+  "price_postapoc": "2 USD",
+  "material": [
+    "plastic",
+    "aluminum"
+  ],
+  "flags": [
+    "RECHARGE",
+    "NO_UNLOAD",
+    "NO_RELOAD"
+  ],
+  "weight": "400 g",
+  "volume": "500 ml",
+  "bashing": 1,
+  "to_hit": 2,
+  "ammo": [
+    "battery"
+  ],
+  "charges_per_use": 1,
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "solar_sunny",
+      "time": "10 m",
+      "regenerate_ammo": true
+    }
+  },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 100
+      }
+    }
+  ],
+  "use_action": {
+    "type": "transform",
+    "msg": "你打开了手电筒。",
+    "target": "solar_flashlight_on",
+    "active": true,
+    "need_charges": 1,
+    "need_charges_msg": "手电的电池耗尽了。"
+  }
+}
+```
+

@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→mounted_remington_870
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mounted_remington_870|http://cdda.aloxaf.cn/search?q=mounted_remington_870]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blaze_weapons_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mounted_remington_870",
+  "copy-from": "turret",
+  "type": "vehicle_part",
+  "name": {
+    "str": "Remington 870 turret"
+  },
+  "item": "remington_870",
+  "breaks_into": [
+    {
+      "item": "remington_870",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mounted_remington_870",
+  "copy-from": "turret",
+  "type": "vehicle_part",
+  "name": {
+    "str": "雷明顿870 霰弹枪炮塔"
+  },
+  "item": "remington_870",
+  "breaks_into": [
+    {
+      "item": "remington_870",
+      "prob": 50
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          4
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          2
+        ]
+      ],
+      "time": "45 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "25 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+

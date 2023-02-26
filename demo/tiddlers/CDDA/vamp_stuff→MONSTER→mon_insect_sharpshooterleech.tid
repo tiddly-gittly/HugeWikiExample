@@ -1,0 +1,205 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_insect_sharpshooterleech
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_sharpshooterleech|http://cdda.aloxaf.cn/search?q=mon_insect_sharpshooterleech]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Insects/+Leech.json
+
+
+!! 原文
+
+```json
+{
+  "aggression": 100,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 3,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "bodytype": "snake",
+  "color": "brown_cyan",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "Small, but deadly! The mutation in its iris has changed its presicion and shoots further with sharper teeth ammunition inside its mouth.",
+  "diff": 29,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SEES",
+    "PRIORITIZE_TARGETS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_2"
+  ],
+  "harvest": "meatslug",
+  "hp": 70,
+  "id": "mon_insect_sharpshooterleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 5,
+  "melee_skill": 1,
+  "morale": 25,
+  "name": {
+    "str": "sharpshooter leech"
+  },
+  "path_settings": {
+    "max_dist": 11
+  },
+  "special_attacks": [
+    {
+      "cooldown": 5,
+      "description": "The sharpshooter leech spew it tooth!",
+      "fake_dex": 9,
+      "fake_per": 9,
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "gun_type": "sharpshooterleechmouth",
+      "move_cost": 175,
+      "ranges": [
+        [
+          1,
+          13,
+          "DEFAULT"
+        ]
+      ],
+      "targeting_cost": 175,
+      "targeting_sound": "snapped tooth",
+      "targeting_volume": 25,
+      "type": "gun"
+    }
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 105,
+  "symbol": "~",
+  "type": "MONSTER",
+  "vision_day": 35
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "aggression": 100,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 3,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "bodytype": "snake",
+  "color": "brown_cyan",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "小，但致命！虹膜的突变改变了它的先兆，它的嘴内有着更锋利的牙齿和弹药。",
+  "diff": 29,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SEES",
+    "PRIORITIZE_TARGETS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_2"
+  ],
+  "harvest": "meatslug",
+  "hp": 70,
+  "id": "mon_insect_sharpshooterleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 5,
+  "melee_skill": 1,
+  "morale": 25,
+  "name": {
+    "str": "神枪水蛭"
+  },
+  "path_settings": {
+    "max_dist": 11
+  },
+  "special_attacks": [
+    {
+      "cooldown": 5,
+      "description": "神枪手水蛭把它吐出来了！",
+      "fake_dex": 9,
+      "fake_per": 9,
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "gun_type": "sharpshooterleechmouth",
+      "move_cost": 175,
+      "ranges": [
+        [
+          1,
+          13,
+          "DEFAULT"
+        ]
+      ],
+      "targeting_cost": 175,
+      "targeting_sound": "snapped tooth",
+      "targeting_volume": 25,
+      "type": "gun"
+    }
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 105,
+  "symbol": "~",
+  "type": "MONSTER",
+  "vision_day": 35
+}
+```
+

@@ -1,0 +1,233 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→stormbringer
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：stormbringer|http://cdda.aloxaf.cn/search?q=stormbringer]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "stormbringer",
+  "type": "TOOL",
+  "copy-from": "zweihander",
+  "name": {
+    "str": "cursed blade"
+  },
+  "description": "A two-handed sword made of a dark metal.  It is engraved with unfamiliar symbols, and a single phrase in a script you can actually read: \"neherit asheiri\"  Activating it will grant the wielder a burst of powerful, corruptive, addictive life-draining magic, but you'll be unable to let go of it until the effect wears off.",
+  "material": [
+    "qt_steel",
+    "essencemat"
+  ],
+  "//": "In this case being cursed basically halves its pre-cataclysm value, as it's no longer useful for what the Keepers used it for, and the Sanguine Order's appropriation of it had a very specific focus.",
+  "weight": "2267 g",
+  "volume": "3 L",
+  "longest_side": "140 cm",
+  "price": "45000 USD",
+  "price_postapoc": "120 USD",
+  "to_hit": 2,
+  "bashing": 15,
+  "cutting": 41,
+  "color": "dark_gray",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 9
+      }
+    }
+  ],
+  "ammo": "essence_blood_type",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ACTIVE",
+        "mutations": [
+          "ARCANA_BERSERK_EFFECT"
+        ],
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 4
+          },
+          {
+            "value": "DEXTERITY",
+            "add": 2
+          }
+        ],
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life_improved"
+          }
+        ],
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "3 minutes",
+              "spell_effects": [
+                {
+                  "id": "arcana_react_evil_mimic"
+                }
+              ]
+            }
+          ]
+        },
+        "ench_effects": [
+          {
+            "effect": "arcana_evil_mimic_active",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    {
+      "target": "stormbringer_on",
+      "msg": "The runes on the blade glow for a moment, the leather wrap of the hilt contorting into winding tendrils that envelop your hand!  You feel a strange bloodlust overtake you!",
+      "active": true,
+      "need_wielding": true,
+      "need_charges": 9,
+      "need_charges_msg": "Nine motes of blood shall awaken the blade.",
+      "menu_text": "Awaken the dark blade",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ],
+  "extend": {
+    "flags": [
+      "UNBREAKABLE_MELEE",
+      "NO_SALVAGE",
+      "TRADER_KEEP_EQUIPPED"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "DURABLE_MELEE",
+      "ALWAYS_TWOHAND"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "stormbringer",
+  "type": "TOOL",
+  "copy-from": "zweihander",
+  "name": {
+    "str": "诅咒之刃"
+  },
+  "description": "一种由黑色金属制成的双手剑。它刻有一些不熟悉的符号，你可以在一个脚本中看到一个短语：“尼赫里特·阿舍里”激活它会给持用者带来一股强大的、腐朽的、令人上瘾的吸取生命的魔法，但在效果消失之前，你将无法释怀它。",
+  "material": [
+    "qt_steel",
+    "essencemat"
+  ],
+  "//": "In this case being cursed basically halves its pre-cataclysm value, as it's no longer useful for what the Keepers used it for, and the Sanguine Order's appropriation of it had a very specific focus.",
+  "weight": "2267 g",
+  "volume": "3 L",
+  "longest_side": "140 cm",
+  "price": "45000 USD",
+  "price_postapoc": "120 USD",
+  "to_hit": 2,
+  "bashing": 15,
+  "cutting": 41,
+  "color": "dark_gray",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_blood_type": 9
+      }
+    }
+  ],
+  "ammo": "essence_blood_type",
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ACTIVE",
+        "mutations": [
+          "ARCANA_BERSERK_EFFECT"
+        ],
+        "values": [
+          {
+            "value": "STRENGTH",
+            "add": 4
+          },
+          {
+            "value": "DEXTERITY",
+            "add": 2
+          }
+        ],
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life_improved"
+          }
+        ],
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "3 minutes",
+              "spell_effects": [
+                {
+                  "id": "arcana_react_evil_mimic"
+                }
+              ]
+            }
+          ]
+        },
+        "ench_effects": [
+          {
+            "effect": "arcana_evil_mimic_active",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "use_action": [
+    {
+      "target": "stormbringer_on",
+      "msg": "刀身上的符文闪耀了片刻，刀柄的皮革包裹扭曲成缠绕的卷须，包裹着你的手！你感到一种奇怪的嗜血欲涌上心头！",
+      "active": true,
+      "need_wielding": true,
+      "need_charges": 9,
+      "need_charges_msg": "使用九个猩血源质来唤醒这把剑。",
+      "menu_text": "唤醒黑暗之刃",
+      "type": "transform",
+      "ammo_scale": 0
+    }
+  ],
+  "extend": {
+    "flags": [
+      "UNBREAKABLE_MELEE",
+      "NO_SALVAGE",
+      "TRADER_KEEP_EQUIPPED"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "DURABLE_MELEE",
+      "ALWAYS_TWOHAND"
+    ]
+  }
+}
+```
+

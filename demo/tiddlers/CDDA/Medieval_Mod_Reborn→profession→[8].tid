@@ -1,0 +1,253 @@
+creator: 林一二
+revision: 0
+tags: profession Medieval_Mod_Reborn
+title: Medieval_Mod_Reborn→profession→[8]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Medieval_Mod_Reborn/chargen/professions.json
+
+
+!! 原文
+
+```json
+{
+  "type": "profession",
+  "ident": "samurai",
+  "name": "Samurai",
+  "description": "Warrior nobility of feudal Japan.  Known originally as masters of the horse and bow, they become famous for their swordsmanship in later eras.",
+  "points": 7,
+  "skills": [
+    {
+      "level": 1,
+      "name": "survival"
+    },
+    {
+      "level": 1,
+      "name": "firstaid"
+    },
+    {
+      "level": 2,
+      "name": "speech"
+    },
+    {
+      "level": 2,
+      "name": "archery"
+    },
+    {
+      "level": 2,
+      "name": "cutting"
+    },
+    {
+      "level": 1,
+      "name": "dodge"
+    },
+    {
+      "level": 2,
+      "name": "gun"
+    },
+    {
+      "level": 2,
+      "name": "melee"
+    }
+  ],
+  "traits": [
+    "PROF_SAMURAI"
+  ],
+  "pets": [
+    {
+      "name": "mon_horse_courser",
+      "amount": 1
+    }
+  ],
+  "//": "All this work just to avoid layering oddities? Madness.",
+  "items": {
+    "male": {
+      "items": [
+        "loincloth",
+        "hakama_gi",
+        "obi_gi",
+        "armor_samurai",
+        "helmet_kabuto",
+        "tabi_dress",
+        "bastsandals",
+        "backpack",
+        "waterskin",
+        "horse_tack"
+      ],
+      "entries": [
+        {
+          "item": "katana",
+          "container-item": "scabbard"
+        },
+        {
+          "item": "compositebow",
+          "custom-flags": [
+            "auto_wield"
+          ]
+        }
+      ]
+    },
+    "female": {
+      "items": [
+        "loincloth",
+        "chestwrap",
+        "kimono",
+        "obi_gi",
+        "armor_samurai",
+        "helmet_kabuto",
+        "tabi_dress",
+        "bastsandals",
+        "backpack",
+        "waterskin",
+        "compositebow",
+        "horse_tack"
+      ],
+      "entries": [
+        {
+          "item": "naginata",
+          "custom-flags": [
+            "auto_wield"
+          ]
+        }
+      ]
+    },
+    "both": {
+      "entries": [
+        {
+          "item": "tanto",
+          "container-item": "sheath"
+        },
+        {
+          "item": "quiver",
+          "contents-group": "quiver_bow_medievalmod"
+        }
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "profession",
+  "ident": "samurai",
+  "name": "女武士",
+  "description": "日本封建时代的武士贵族。初期的武士是马术和弓术大师，到了后来以剑术闻名于世。",
+  "points": 7,
+  "skills": [
+    {
+      "level": 1,
+      "name": "survival"
+    },
+    {
+      "level": 1,
+      "name": "firstaid"
+    },
+    {
+      "level": 2,
+      "name": "speech"
+    },
+    {
+      "level": 2,
+      "name": "archery"
+    },
+    {
+      "level": 2,
+      "name": "cutting"
+    },
+    {
+      "level": 1,
+      "name": "dodge"
+    },
+    {
+      "level": 2,
+      "name": "gun"
+    },
+    {
+      "level": 2,
+      "name": "melee"
+    }
+  ],
+  "traits": [
+    "PROF_SAMURAI"
+  ],
+  "pets": [
+    {
+      "name": "mon_horse_courser",
+      "amount": 1
+    }
+  ],
+  "//": "All this work just to avoid layering oddities? Madness.",
+  "items": {
+    "male": {
+      "items": [
+        "loincloth",
+        "hakama_gi",
+        "obi_gi",
+        "armor_samurai",
+        "helmet_kabuto",
+        "tabi_dress",
+        "bastsandals",
+        "backpack",
+        "waterskin",
+        "horse_tack"
+      ],
+      "entries": [
+        {
+          "item": "katana",
+          "container-item": "scabbard"
+        },
+        {
+          "item": "compositebow",
+          "custom-flags": [
+            "auto_wield"
+          ]
+        }
+      ]
+    },
+    "female": {
+      "items": [
+        "loincloth",
+        "chestwrap",
+        "kimono",
+        "obi_gi",
+        "armor_samurai",
+        "helmet_kabuto",
+        "tabi_dress",
+        "bastsandals",
+        "backpack",
+        "waterskin",
+        "compositebow",
+        "horse_tack"
+      ],
+      "entries": [
+        {
+          "item": "naginata",
+          "custom-flags": [
+            "auto_wield"
+          ]
+        }
+      ]
+    },
+    "both": {
+      "entries": [
+        {
+          "item": "tanto",
+          "container-item": "sheath"
+        },
+        {
+          "item": "quiver",
+          "contents-group": "quiver_bow_medievalmod"
+        }
+      ]
+    }
+  }
+}
+```
+

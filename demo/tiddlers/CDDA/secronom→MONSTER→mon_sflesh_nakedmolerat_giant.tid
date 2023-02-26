@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_nakedmolerat_giant
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_nakedmolerat_giant|http://cdda.aloxaf.cn/search?q=mon_sflesh_nakedmolerat_giant]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_live.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_nakedmolerat_giant",
+  "type": "MONSTER",
+  "name": {
+    "str": "gigantic naked mole-rat"
+  },
+  "description": "A huge, rumbling mutated mass of wrinkly, nearly translucent skin that has been toughened by constant tunneling.  Its hide is riddled with giant scabs, as a pair of incisors the size of an industrial excavator's buckets gnash constantly and several car-length whiskers twitch in the air.  It regularly makes high-pitched chirps as it roams around.\nInfested by flesh, this once living creature no longer act as an animal, but a bloodthirsty fiend.",
+  "default_faction": "secro_flesh",
+  "bodytype": "pig",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "diff": 2,
+  "volume": "200000 ml",
+  "weight": "200 kg",
+  "hp": 150,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "M",
+  "color": "pink",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "dodge": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 12
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 0,
+  "vision_night": 0,
+  "harvest": "mutant_mammal_large_leather",
+  "special_attacks": [
+    [
+      "SHRIEK_ALERT",
+      10
+    ],
+    [
+      "SHRIEK_STUN",
+      1
+    ],
+    {
+      "type": "bite",
+      "cooldown": 6
+    },
+    [
+      "impale",
+      10
+    ]
+  ],
+  "regenerates": 10,
+  "regen_morale": true,
+  "flags": [
+    "ATTACKMON",
+    "BORES",
+    "CAN_DIG",
+    "HEARS",
+    "KEENNOSE",
+    "SMELLS",
+    "WARM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_nakedmolerat_giant",
+  "type": "MONSTER",
+  "name": {
+    "str": "巨型裸鼹鼠"
+  },
+  "description": "一种巨大的、遍布皱纹的变异裸鼹鼠，皮肤几乎呈半透明，通过不断的挖掘，已经变得更加坚韧。它的身体布满了巨大的疥疮，有着一架工业挖掘机般的体型与几根长如轿车的胡须。经常发出尖锐的唧唧声，它正在四处游荡觅食。\n受到血肉的侵蚀，这只往日活蹦乱跳的生灵不再是动物了，而是变成了一只嗜血的恶魔。",
+  "default_faction": "secro_flesh",
+  "bodytype": "pig",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "diff": 2,
+  "volume": "200000 ml",
+  "weight": "200 kg",
+  "hp": 150,
+  "speed": 80,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "M",
+  "color": "pink",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "dodge": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 12
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "vision_day": 0,
+  "vision_night": 0,
+  "harvest": "mutant_mammal_large_leather",
+  "special_attacks": [
+    [
+      "SHRIEK_ALERT",
+      10
+    ],
+    [
+      "SHRIEK_STUN",
+      1
+    ],
+    {
+      "type": "bite",
+      "cooldown": 6
+    },
+    [
+      "impale",
+      10
+    ]
+  ],
+  "regenerates": 10,
+  "regen_morale": true,
+  "flags": [
+    "ATTACKMON",
+    "BORES",
+    "CAN_DIG",
+    "HEARS",
+    "KEENNOSE",
+    "SMELLS",
+    "WARM"
+  ]
+}
+```
+

@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: GENERIC Arcana
+title: Arcana→GENERIC→bio_kinetic_amplifier_weapon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bio_kinetic_amplifier_weapon|http://cdda.aloxaf.cn/search?q=bio_kinetic_amplifier_weapon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/melee.json
+
+
+!! 原文
+
+```json
+{
+  "type": "GENERIC",
+  "category": "weapons",
+  "id": "bio_kinetic_amplifier_weapon",
+  "name": {
+    "str_sp": "kinetic amplifier"
+  },
+  "description": "A band of steel slid into place over your knuckles, etched with strange markings.  When used as an unarmed weapon, it can give your strikes the ability to send victims flying, with amplified damage and armor penetration.  Its impacts have a chance of letting loose a blinding flashbang effect, making this weapon a double-edged sword without protection.",
+  "color": "light_gray",
+  "symbol": "{",
+  "material": [
+    "steel"
+  ],
+  "volume": "250 ml",
+  "weight": "300 g",
+  "bashing": 24,
+  "flags": [
+    "UNARMED_WEAPON",
+    "BIONIC_WEAPON",
+    "UNBREAKABLE_MELEE",
+    "TRADER_AVOID"
+  ],
+  "qualities": [
+    [
+      "HAMMER",
+      1
+    ]
+  ],
+  "techniques": [
+    "WBLOCK_1",
+    "tec_weapon_kinetic_knockback"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_kinetic_amplifier_flashbang",
+            "once_in": 10,
+            "message": "Your kinetic resonates with a blinding flash and thunderous sound!",
+            "npc_message": "%1$s suddenly gives off a blinding flash and thunderous sound!"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "GENERIC",
+  "category": "weapons",
+  "id": "bio_kinetic_amplifier_weapon",
+  "name": {
+    "str_sp": "动能放大装置"
+  },
+  "description": "A band of steel slid into place over your knuckles, etched with strange markings.  When used as an unarmed weapon, it can give your strikes the ability to send victims flying, with amplified damage and armor penetration.  Its impacts have a chance of letting loose a blinding flashbang effect, making this weapon a double-edged sword without protection.",
+  "color": "light_gray",
+  "symbol": "{",
+  "material": [
+    "steel"
+  ],
+  "volume": "250 ml",
+  "weight": "300 g",
+  "bashing": 24,
+  "flags": [
+    "UNARMED_WEAPON",
+    "BIONIC_WEAPON",
+    "UNBREAKABLE_MELEE",
+    "TRADER_AVOID"
+  ],
+  "qualities": [
+    [
+      "HAMMER",
+      1
+    ]
+  ],
+  "techniques": [
+    "WBLOCK_1",
+    "tec_weapon_kinetic_knockback"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_kinetic_amplifier_flashbang",
+            "once_in": 10,
+            "message": "Your kinetic resonates with a blinding flash and thunderous sound!",
+            "npc_message": "%1$s suddenly gives off a blinding flash and thunderous sound!"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+

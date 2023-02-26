@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_flying_polyp_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_flying_polyp_summoned|http://cdda.aloxaf.cn/search?q=mon_flying_polyp_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_flying_polyp_summoned",
+  "copy-from": "mon_flying_polyp",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned flying polyp"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "vision_day": 50,
+  "vision_night": 50,
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_flying_polyp_bound",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 20,
+      "damage_max_instance": [
+        {
+          "damage_type": "cold",
+          "amount": 20
+        }
+      ]
+    }
+  ],
+  "extend": {
+    "flags": [
+      "SEES",
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES",
+      "ATTACKMON"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_flying_polyp_summoned",
+  "copy-from": "mon_flying_polyp",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤盲目者"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "vision_day": 50,
+  "vision_night": 50,
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_flying_polyp_bound",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 20,
+      "damage_max_instance": [
+        {
+          "damage_type": "cold",
+          "amount": 20
+        }
+      ]
+    }
+  ],
+  "extend": {
+    "flags": [
+      "SEES",
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES",
+      "ATTACKMON"
+    ]
+  }
+}
+```
+

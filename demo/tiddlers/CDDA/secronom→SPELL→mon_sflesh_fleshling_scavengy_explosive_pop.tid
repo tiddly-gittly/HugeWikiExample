@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_fleshling_scavengy_explosive_pop
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_scavengy_explosive_pop|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_scavengy_explosive_pop]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_fleshling_scavengy_explosive_pop",
+  "type": "SPELL",
+  "name": {
+    "str": "Pop"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster explodes, dealing acid damage and spreads blood acid.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 4,
+  "max_damage": 8,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "field_chance": 15,
+  "field_id": "fd_blood_acid",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "acid"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_fleshling_scavengy_explosive_pop",
+  "type": "SPELL",
+  "name": {
+    "str": "流行音乐"
+  },
+  "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者爆炸，造成酸伤害并传播血酸。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_damage": 4,
+  "max_damage": 8,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "field_chance": 15,
+  "field_id": "fd_blood_acid",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "damage_type": "acid"
+}
+```
+

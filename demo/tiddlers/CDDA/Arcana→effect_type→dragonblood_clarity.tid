@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→dragonblood_clarity
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dragonblood_clarity|http://cdda.aloxaf.cn/search?q=dragonblood_clarity]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "dragonblood_clarity",
+  "name": [
+    "Revenant Blood"
+  ],
+  "desc": [
+    "Immunity to poisons, radiation, and fungus."
+  ],
+  "remove_message": "The protective effect of your sanguine mark fades, leaving a momentary itch in your veins.",
+  "//": "Food poisoning and food parasites are already covered by Metabolic Adaptability.",
+  "removes_effects": [
+    "stung",
+    "poison",
+    "badpoison",
+    "paralyzepoison",
+    "teargas",
+    "migo_atmosphere",
+    "venom_dmg",
+    "venom_weaken",
+    "irradiated",
+    "spores",
+    "fungus",
+    "dermatik",
+    "formication",
+    "tapeworm",
+    "bloodworms",
+    "brainworms",
+    "paincysts"
+  ],
+  "decay_messages": [
+    [
+      "The protective magic flowing through your blood is starting to wane.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "rad_min": [
+      -1
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "dragonblood_clarity",
+  "name": [
+    "报应血"
+  ],
+  "desc": [
+    "对毒物、辐射和真菌的免疫力。"
+  ],
+  "remove_message": "你的血痕的保护作用会消退，在你的血管里留下短暂的瘙痒。",
+  "//": "Food poisoning and food parasites are already covered by Metabolic Adaptability.",
+  "removes_effects": [
+    "stung",
+    "poison",
+    "badpoison",
+    "paralyzepoison",
+    "teargas",
+    "migo_atmosphere",
+    "venom_dmg",
+    "venom_weaken",
+    "irradiated",
+    "spores",
+    "fungus",
+    "dermatik",
+    "formication",
+    "tapeworm",
+    "bloodworms",
+    "brainworms",
+    "paincysts"
+  ],
+  "decay_messages": [
+    [
+      "流过你血液的保护魔法开始减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "rad_min": [
+      -1
+    ]
+  }
+}
+```
+

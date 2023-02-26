@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→mana_doping
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mana_doping|http://cdda.aloxaf.cn/search?q=mana_doping]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/item_only.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mana_doping",
+  "type": "SPELL",
+  "name": {
+    "str": "Pain"
+  },
+  "description": "Increases pain",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_LEGS",
+    "NO_HANDS"
+  ],
+  "//": "Listed as a recover energy effect with a negative modifier that decreases with each level of the spell, which makes it cause damage instead.",
+  "min_damage": -25,
+  "max_damage": -335,
+  "damage_increment": -50,
+  "max_level": 15,
+  "effect": "recover_energy",
+  "effect_str": "PAIN",
+  "shape": "blast",
+  "spell_class": "NONE",
+  "message": "Your veins feel like they are on fire!\nYou start regenerating mana!",
+  "extra_effects": [
+    {
+      "id": "potion_recover_mana"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mana_doping",
+  "type": "SPELL",
+  "name": {
+    "str": "疼痛"
+  },
+  "description": "提升疼痛",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_LEGS",
+    "NO_HANDS"
+  ],
+  "//": "Listed as a recover energy effect with a negative modifier that decreases with each level of the spell, which makes it cause damage instead.",
+  "min_damage": -25,
+  "max_damage": -335,
+  "damage_increment": -50,
+  "max_level": 15,
+  "effect": "recover_energy",
+  "effect_str": "PAIN",
+  "shape": "blast",
+  "spell_class": "NONE",
+  "message": "你的血管感觉像是着火了！\n你开始恢复魔力！",
+  "extra_effects": [
+    {
+      "id": "potion_recover_mana"
+    }
+  ]
+}
+```
+

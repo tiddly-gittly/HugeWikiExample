@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_cling
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_cling|http://cdda.aloxaf.cn/search?q=mon_zombie_cling]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Support-type zed. Becomes a worn item, bringing movement debuffs that lasts until it is removed. Its ability only affects the player, and nothing else. If it does the ability on something, the item is transferred onto you, no matter how far you are.",
+  "id": "mon_zombie_cling",
+  "type": "MONSTER",
+  "name": {
+    "str": "clinger"
+  },
+  "description": "Covered in foul stench, this ambiguously dreadful 4-legged creature dangles as it moves, grasping and gnawing anything in its surroundings.",
+  "default_faction": "zombie",
+  "bodytype": "dog",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "600 ml",
+  "weight": "1300 g",
+  "hp": 10,
+  "speed": 45,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨨",
+  "color": "yellow",
+  "aggression": 0,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 3,
+  "vision_day": 16,
+  "vision_night": 6,
+  "harvest": "zombie",
+  "anger_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_cling_cling"
+      },
+      "cooldown": 111,
+      "monster_message": "<color_yellow>%1$s lunges at %3$s!</color>"
+    }
+  ],
+  "death_function": {
+    "message": "The %s disintegrates!",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "HARDTOSHOOT"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Support-type zed. Becomes a worn item, bringing movement debuffs that lasts until it is removed. Its ability only affects the player, and nothing else. If it does the ability on something, the item is transferred onto you, no matter how far you are.",
+  "id": "mon_zombie_cling",
+  "type": "MONSTER",
+  "name": {
+    "str": "克林杰"
+  },
+  "description": "浑身恶臭难闻，这只令人难以捉摸的4条腿生物在移动时摇摇晃晃，抓住并啃咬周围的任何东西。",
+  "default_faction": "zombie",
+  "bodytype": "dog",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "600 ml",
+  "weight": "1300 g",
+  "hp": 10,
+  "speed": 45,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨨",
+  "color": "yellow",
+  "aggression": 0,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 3,
+  "vision_day": 16,
+  "vision_night": 6,
+  "harvest": "zombie",
+  "anger_triggers": [
+    "PLAYER_CLOSE"
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_cling_cling"
+      },
+      "cooldown": 111,
+      "monster_message": "<color_yellow>%1$s跳向了%3$s！</color>"
+    }
+  ],
+  "death_function": {
+    "message": "The %s disintegrates!",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "HARDTOSHOOT"
+  ]
+}
+```
+

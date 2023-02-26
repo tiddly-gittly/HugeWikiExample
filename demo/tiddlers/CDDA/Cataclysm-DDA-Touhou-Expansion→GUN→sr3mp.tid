@@ -1,0 +1,237 @@
+creator: 林一二
+revision: 0
+tags: GUN Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUN→sr3mp
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sr3mp|http://cdda.aloxaf.cn/search?q=sr3mp]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gun/thex_generic_gun.json
+
+
+!! 原文
+
+```json
+{
+  "id": "sr3mp",
+  "type": "GUN",
+  "name": {
+    "str": "SR-3MP",
+    "str_pl": "SR-3MP"
+  },
+  "copy-from": "rifle_auto",
+  "description": "The SR-3MP is a gas-operated, compact, subsonic assault rifle.  Belongs to the \"spetsialnaya\" group, which includes weapons such as the VSK-94 and the VSS.  The SR-3MP was intended to serve as a compact replacement for the AS Val: shorter, without the integrated supressor and featuring a folding stock, the weapon is prepared for concealed carry and urban combat.  Uses 9x39mm ammo.",
+  "volume": "1600 ml",
+  "weight": "2100 g",
+  "longest_side": "675 mm",
+  "price": 38000,
+  "price_postapoc": 6000,
+  "to_hit": {
+    "balance": "good",
+    "grip": "solid",
+    "length": "short",
+    "surface": "point"
+  },
+  "bashing": 9,
+  "material": [
+    "plastic",
+    "steel"
+  ],
+  "looks_like": "vss",
+  "color": "black",
+  "ammo": [
+    "9x39"
+  ],
+  "built_in_mods": [
+    "stock_asval_unfolded",
+    "vertical_foregrip"
+  ],
+  "dispersion": 90,
+  "durability": 9,
+  "loudness": 22,
+  "min_cycle_recoil": 1350,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "AUTO",
+      "auto",
+      4
+    ]
+  ],
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": 2
+  },
+  "//": "9x39 damage is too low, so I'm increasing it a bit here and with the ammo",
+  "reload": 330,
+  "reload_noise_volume": 4,
+  "variant_type": "gun",
+  "variants": [
+    {
+      "id": "sr3m",
+      "name": {
+        "str": "SR-3M"
+      },
+      "description": "The SR-3M is a gas-operated, compact, subsonic assault rifle.  Belongs to the \"spetsialnaya\" group, which includes weapons such as the VSK-94 and the VSS.  The SR-3M is an older variant of the SR-3MP, lacking the extra rails.  Uses 9x39mm ammo.",
+      "weight": 1
+    }
+  ],
+  "valid_mod_locations": [
+    [
+      "muzzle",
+      1
+    ],
+    [
+      "rail",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "item_restriction": [
+        "9x39mag10",
+        "9x39mag20",
+        "9x39mag30"
+      ]
+    }
+  ],
+  "weapon_category": [
+    "AUTOMATIC_RIFLES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "sr3mp",
+  "type": "GUN",
+  "name": {
+    "str": "SR-3MP",
+    "str_pl": "SR-3MP"
+  },
+  "copy-from": "rifle_auto",
+  "description": "The SR-3MP is a gas-operated, compact, subsonic assault rifle.  Belongs to the \"spetsialnaya\" group, which includes weapons such as the VSK-94 and the VSS.  The SR-3MP was intended to serve as a compact replacement for the AS Val: shorter, without the integrated supressor and featuring a folding stock, the weapon is prepared for concealed carry and urban combat.  Uses 9x39mm ammo.",
+  "volume": "1600 ml",
+  "weight": "2100 g",
+  "longest_side": "675 mm",
+  "price": 38000,
+  "price_postapoc": 6000,
+  "to_hit": {
+    "balance": "good",
+    "grip": "solid",
+    "length": "short",
+    "surface": "point"
+  },
+  "bashing": 9,
+  "material": [
+    "plastic",
+    "steel"
+  ],
+  "looks_like": "vss",
+  "color": "black",
+  "ammo": [
+    "9x39"
+  ],
+  "built_in_mods": [
+    "stock_asval_unfolded",
+    "vertical_foregrip"
+  ],
+  "dispersion": 90,
+  "durability": 9,
+  "loudness": 22,
+  "min_cycle_recoil": 1350,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "AUTO",
+      "auto",
+      4
+    ]
+  ],
+  "ranged_damage": {
+    "damage_type": "bullet",
+    "amount": 2
+  },
+  "//": "9x39 damage is too low, so I'm increasing it a bit here and with the ammo",
+  "reload": 330,
+  "reload_noise_volume": 4,
+  "variant_type": "gun",
+  "variants": [
+    {
+      "id": "sr3m",
+      "name": {
+        "str": "SR-3M"
+      },
+      "description": "The SR-3M is a gas-operated, compact, subsonic assault rifle.  Belongs to the \"spetsialnaya\" group, which includes weapons such as the VSK-94 and the VSS.  The SR-3M is an older variant of the SR-3MP, lacking the extra rails.  Uses 9x39mm ammo.",
+      "weight": 1
+    }
+  ],
+  "valid_mod_locations": [
+    [
+      "muzzle",
+      1
+    ],
+    [
+      "rail",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "sling",
+      1
+    ],
+    [
+      "stock",
+      1
+    ]
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "item_restriction": [
+        "9x39mag10",
+        "9x39mag20",
+        "9x39mag30"
+      ]
+    }
+  ],
+  "weapon_category": [
+    "AUTOMATIC_RIFLES"
+  ]
+}
+```
+

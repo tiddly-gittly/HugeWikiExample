@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom
+title: secronom→effect_on_condition→eoc_secro_mon_zombie_bootlegsmoker_snatch_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_mon_zombie_bootlegsmoker_snatch_check|http://cdda.aloxaf.cn/search?q=eoc_secro_mon_zombie_bootlegsmoker_snatch_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_bootlegsmoker_snatch_check",
+  "condition": {
+    "compare_int": [
+      {
+        "u_val": "strength"
+      },
+      ">=",
+      {
+        "const": 10
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "You resist the snatcher zombie's tongue!",
+      "type": "good"
+    }
+  ],
+  "false_effect": [
+    {
+      "u_add_effect": "stunned",
+      "duration": "2 seconds"
+    },
+    {
+      "u_add_effect": "eff_snatcher_snatch",
+      "duration": "7 seconds"
+    },
+    {
+      "u_message": "The snatcher zombie constricted you!",
+      "type": "bad"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_mon_zombie_bootlegsmoker_snatch_check",
+  "condition": {
+    "compare_int": [
+      {
+        "u_val": "strength"
+      },
+      ">=",
+      {
+        "const": 10
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "You resist the snatcher zombie's tongue!",
+      "type": "good"
+    }
+  ],
+  "false_effect": [
+    {
+      "u_add_effect": "stunned",
+      "duration": "2 seconds"
+    },
+    {
+      "u_add_effect": "eff_snatcher_snatch",
+      "duration": "7 seconds"
+    },
+    {
+      "u_message": "The snatcher zombie constricted you!",
+      "type": "bad"
+    }
+  ]
+}
+```
+

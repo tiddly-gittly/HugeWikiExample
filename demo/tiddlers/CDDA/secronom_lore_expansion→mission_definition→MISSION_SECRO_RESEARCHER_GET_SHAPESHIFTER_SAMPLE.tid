@@ -1,0 +1,161 @@
+creator: 林一二
+revision: 0
+tags: mission_definition secronom_lore_expansion
+title: secronom_lore_expansion→mission_definition→MISSION_SECRO_RESEARCHER_GET_SHAPESHIFTER_SAMPLE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_SECRO_RESEARCHER_GET_SHAPESHIFTER_SAMPLE|http://cdda.aloxaf.cn/search?q=MISSION_SECRO_RESEARCHER_GET_SHAPESHIFTER_SAMPLE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/secro_missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_SECRO_RESEARCHER_GET_SHAPESHIFTER_SAMPLE",
+  "type": "mission_definition",
+  "name": {
+    "str": "Obtain a sample from the shapeshifter"
+  },
+  "description": "Collect a <color_light_green>desaturated resin</color> from a <color_light_red>shapeshifter</color>. Use the tool provided to obtain the required item then bring it back once you've complete the task.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "and": [
+      {
+        "u_has_item": "secro_sample_shifter"
+      },
+      {
+        "u_has_item": "secro_missionkey_sampler_enigma"
+      }
+    ]
+  },
+  "difficulty": 6,
+  "value": 10000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "effect": [
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_researcher_mission1_progress"
+      },
+      {
+        "u_spawn_item": "secro_missionkey_sampler_enigma"
+      }
+    ]
+  },
+  "end": {
+    "effect": [
+      {
+        "u_sell_item": "secro_missionkey_sampler_enigma"
+      },
+      {
+        "npc_consume_item": "secro_missionkey_sampler_enigma"
+      },
+      {
+        "u_sell_item": "secro_sample_shifter"
+      },
+      {
+        "npc_consume_item": "secro_sample_shifter"
+      },
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_researcher_partake_mission1"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "…",
+    "offer": "You must obtain a sample from that creature using a sampler kit I'm about to provide once you're ready.",
+    "accepted": "Okay, here's the kit. It is set to scan for an enigma specimen. I've sent the coordinates to our guard and talk to him about this, he'll show you the way. But remember, this creature uses deception to hide itself.",
+    "rejected": "Well then... Lets talk about it again later.",
+    "advice": "Be cautious on using the sampler kit, as it scans only the enigma, otherwise you'll waste batteries.",
+    "inquire": "How's the sample?",
+    "success": "Well done, survivor. I'll start to identify this resin, and hope it can of good use.",
+    "success_lie": "...",
+    "failure": "..."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_SECRO_RESEARCHER_GET_SHAPESHIFTER_SAMPLE",
+  "type": "mission_definition",
+  "name": {
+    "str": "从变形者那里获得一个样本"
+  },
+  "description": "从<color_light_red>变形器收集<color_light_green>去饱和树脂</color>。使用提供的工具获取所需项目，然后在完成任务后将其带回。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "and": [
+      {
+        "u_has_item": "secro_sample_shifter"
+      },
+      {
+        "u_has_item": "secro_missionkey_sampler_enigma"
+      }
+    ]
+  },
+  "difficulty": 6,
+  "value": 10000,
+  "has_generic_rewards": false,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "effect": [
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_researcher_mission1_progress"
+      },
+      {
+        "u_spawn_item": "secro_missionkey_sampler_enigma"
+      }
+    ]
+  },
+  "end": {
+    "effect": [
+      {
+        "u_sell_item": "secro_missionkey_sampler_enigma"
+      },
+      {
+        "npc_consume_item": "secro_missionkey_sampler_enigma"
+      },
+      {
+        "u_sell_item": "secro_sample_shifter"
+      },
+      {
+        "npc_consume_item": "secro_sample_shifter"
+      },
+      {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_researcher_partake_mission1"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "…",
+    "offer": "一旦你准备好了，你必须用我提供的采样器工具从那个生物身上取一个样本。",
+    "accepted": "好的，这是工具箱。它被设置为扫描一个神秘的标本。我已经把坐标发给了我们的警卫，跟他谈谈，他会给你带路的。但是记住，这个生物用欺骗来隐藏自己。",
+    "rejected": "好吧，以后再说吧。",
+    "advice": "小心使用采样器套件，因为它只扫描谜，否则你会浪费电池。",
+    "inquire": "样品怎么样？",
+    "success": "干得好，幸存者。我将开始鉴定这种树脂，希望它能有很好的用途。",
+    "success_lie": "…",
+    "failure": "…"
+  }
+}
+```
+

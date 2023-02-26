@@ -1,0 +1,229 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_ulniv_5
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_ulniv_5|http://cdda.aloxaf.cn/search?q=mon_BL9_ulniv_5]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_ulniv_5",
+  "looks_like": "mon_zombie_urchin",
+  "type": "MONSTER",
+  "name": {
+    "str": "Ulniviunite Mutant Amalgamation"
+  },
+  "description": "A sand-brown humanoid pangolin-like alien creature - it's body is entirely covered with mucousy thick and durable scales, it's head is shrinked - it's mouth has turned into a lamprey-type one with forked-tongue-like 2 long spiked tentacles hanging from it, grotesquely fleshy set of spiked tentacles emerge from 3 sides of it's back, it's hands have turned into incredibly sharp and sturdy claws, it is filled with ferocity and animal rage",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 245,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_penetration": 14
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Aliens_Amalgamations",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 17
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously claws you!",
+      "hit_dmg_npc": "The %1$s ferociously claws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to claw you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to claw <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's knifelike claw at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's knifelike claw at <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 15,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's spiked tentacle tongue at you!",
+      "hit_dmg_npc": "The %1$s swings it's spiked tentacle tongue at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's spiked tentacle tongue at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swing it's spiked tentacle tongue at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's spiked tentacle tongue at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's spiked tentacle tongue at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_ulniv_5",
+  "looks_like": "mon_zombie_urchin",
+  "type": "MONSTER",
+  "name": {
+    "str": "乌尔尼维突变体融合"
+  },
+  "description": "一种沙褐色的仿人穿山甲状的外星生物——它的身体完全覆盖着粘液状的厚而耐用的鳞片，它的头收缩了——它的嘴变成了一种七鳃鳗型，分叉的舌头像两个长尖刺的触须悬在它的背上，它的手有一组奇怪的肉质的尖刺触须变成了令人难以置信的锋利和强壮的爪子，充满了凶猛和动物的愤怒",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 245,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 7,
+      "armor_penetration": 14
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 9,
+  "armor_cut": 9,
+  "armor_bullet": 9,
+  "death_drops": "BL9_Drops_Aliens_Amalgamations",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12,
+          "armor_penetration": 17
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously claws you!",
+      "hit_dmg_npc": "The %1$s ferociously claws <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to claw you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to claw <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's knifelike claw at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's knifelike claw at <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 15,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s swings it's spiked tentacle tongue at you!",
+      "hit_dmg_npc": "The %1$s swings it's spiked tentacle tongue at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to swing it's spiked tentacle tongue at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to swing it's spiked tentacle tongue at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s swings it's spiked tentacle tongue at you, but you dodge!",
+      "miss_msg_npc": "The %s swings it's spiked tentacle tongue at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

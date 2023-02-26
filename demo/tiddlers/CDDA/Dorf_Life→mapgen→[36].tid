@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: mapgen Dorf_Life
+title: Dorf_Life→mapgen→[36]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/mapgen_overlays.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_ruins_strange",
+  "object": {
+    "mapgensize": [
+      20,
+      20
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "          ,|||||||/ ",
+      "          |___D___| ",
+      "          |_______| ",
+      "          |_______| ",
+      "          |___C___| ",
+      "          |_______| ",
+      "          |_______| ",
+      "          |___D___| ",
+      "          /|||||||| ",
+      "                    "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "|": "t_rock_wall",
+      "/": [
+        "t_rock_floor",
+        "t_rock_wall"
+      ],
+      "C": "t_reb_cage",
+      "D": "t_rock_floor"
+    },
+    "furniture": {
+      "D": "f_displaycase"
+    },
+    "place_monster": [
+      {
+        "monster": "mon_zombie",
+        "x": [
+          11,
+          17
+        ],
+        "y": [
+          11,
+          17
+        ],
+        "repeat": [
+          3,
+          6
+        ]
+      }
+    ],
+    "place_items": [
+      {
+        "item": "cavern_dungeon",
+        "x": 14,
+        "y": 11,
+        "chance": 100
+      },
+      {
+        "item": "cavern_dungeon",
+        "x": 14,
+        "y": 17,
+        "chance": 100
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_ruins_strange",
+  "object": {
+    "mapgensize": [
+      20,
+      20
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "          ,|||||||/ ",
+      "          |___D___| ",
+      "          |_______| ",
+      "          |_______| ",
+      "          |___C___| ",
+      "          |_______| ",
+      "          |_______| ",
+      "          |___D___| ",
+      "          /|||||||| ",
+      "                    "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "|": "t_rock_wall",
+      "/": [
+        "t_rock_floor",
+        "t_rock_wall"
+      ],
+      "C": "t_reb_cage",
+      "D": "t_rock_floor"
+    },
+    "furniture": {
+      "D": "f_displaycase"
+    },
+    "place_monster": [
+      {
+        "monster": "mon_zombie",
+        "x": [
+          11,
+          17
+        ],
+        "y": [
+          11,
+          17
+        ],
+        "repeat": [
+          3,
+          6
+        ]
+      }
+    ],
+    "place_items": [
+      {
+        "item": "cavern_dungeon",
+        "x": 14,
+        "y": 11,
+        "chance": 100
+      },
+      {
+        "item": "cavern_dungeon",
+        "x": 14,
+        "y": 17,
+        "chance": 100
+      }
+    ]
+  }
+}
+```
+

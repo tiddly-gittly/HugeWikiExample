@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_gas_zombie
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_gas_zombie|http://cdda.aloxaf.cn/search?q=mon_sflesh_gas_zombie]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_gas_zombie",
+  "type": "MONSTER",
+  "name": {
+    "str": "gasoline zombie"
+  },
+  "description": "A huge bloated zombie that appears to have fed upon gasoline; fumes and flames escape from its mouth and fuel leaks from its waddling form.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 5,
+  "volume": "102500 ml",
+  "weight": "160 kg",
+  "hp": 113,
+  "speed": 25,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "dark_gray_red",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_night": 3,
+  "luminance": 8,
+  "harvest": "exempt",
+  "special_attacks": [
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_items",
+  "death_function": {
+    "effect": {
+      "id": "death_conflagration",
+      "hit_self": true
+    },
+    "message": "A %s explodes!",
+    "corpse_type": "NO_CORPSE"
+  },
+  "burn_into": "mon_gas_zombie",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "DRIPS_GASOLINE",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_gas_zombie",
+  "type": "MONSTER",
+  "name": {
+    "str": "汽油丧尸"
+  },
+  "description": "一只体型巨大的爆浆丧尸，似乎以汽油为食；烟雾和火焰从它的口中喷出，燃料从它的摇摇晃晃的身体中泄漏出来。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 5,
+  "volume": "102500 ml",
+  "weight": "160 kg",
+  "hp": 113,
+  "speed": 25,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "dark_gray_red",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_night": 3,
+  "luminance": 8,
+  "harvest": "exempt",
+  "special_attacks": [
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_items",
+  "death_function": {
+    "effect": {
+      "id": "death_conflagration",
+      "hit_self": true
+    },
+    "message": "A %s explodes!",
+    "corpse_type": "NO_CORPSE"
+  },
+  "burn_into": "mon_gas_zombie",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "DRIPS_GASOLINE",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_JOHNATHAN_PRELUDE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_JOHNATHAN_PRELUDE|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_JOHNATHAN_PRELUDE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_JOHNATHAN_PRELUDE",
+  "dynamic_line": {
+    "u_has_var": "sofia_opinion_given",
+    "type": "flag",
+    "context": "knowledge",
+    "value": "yes",
+    "yes": "Ask the merchant contacts here before you leave, you might be able to get a bit out information out of them first.  Then check with the refugee center.  We've tracked area anomalies like this before, just get more info on where these attacks have taken place and we should be able to figure things out from here.",
+    "no": "I'd primarily suggest the refugee center, as they may be able to help provide more information.  What we need is simply confirming specific locations of where attacks have taken place.  We can handle it from there, afterward."
+  },
+  "responses": [
+    {
+      "text": "Okay, thanks.",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_JOHNATHAN_PRELUDE",
+  "dynamic_line": {
+    "u_has_var": "sofia_opinion_given",
+    "type": "flag",
+    "context": "knowledge",
+    "value": "yes",
+    "yes": "在你离开之前问问这里的商人联系人，你也许可以先从他们那里得到一些信息。然后去难民中心看看。我们以前跟踪过类似这样的区域异常，只要得到更多关于这些攻击发生在哪里的信息，我们就可以从这里搞清楚。",
+    "no": "我主要建议难民中心，因为他们可以提供更多的信息。我们需要的只是确认袭击发生的具体地点。我们可以在那之后处理。"
+  },
+  "responses": [
+    {
+      "text": "OK，谢谢。",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

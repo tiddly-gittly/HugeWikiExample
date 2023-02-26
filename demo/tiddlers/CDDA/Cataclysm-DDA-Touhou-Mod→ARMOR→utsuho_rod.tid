@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→ARMOR→utsuho_rod
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：utsuho_rod|http://cdda.aloxaf.cn/search?q=utsuho_rod]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/items/armor/touhou_clothing.json
+
+
+!! 原文
+
+```json
+{
+  "id": "utsuho_rod",
+  "type": "ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "third leg",
+    "str_pl": "third legs"
+  },
+  "description": "A prism shaped control rod worn on one arm, acting as the legendary 'third leg' from the Yatagarasu.  Allows the user to easily control nuclear abilities.",
+  "volume": "13300 ml",
+  "weight": "3000 g",
+  "longest_side": "60 cm",
+  "//": "60 cm hexagonal prism with 8 cm radius, it's kind of thick though",
+  "price": 16000,
+  "price_postapoc": 8000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "weapon",
+    "length": "short",
+    "surface": "any"
+  },
+  "bashing": 16,
+  "cutting": 0,
+  "material": "steel",
+  "//2": "Maybe change it to moriya_wood or something",
+  "symbol": "☢",
+  "color": "brown",
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "arm_r"
+      ],
+      "specifically_covers": [
+        "arm_lower_l"
+      ],
+      "coverage": 100,
+      "encumbrance": [
+        2,
+        4
+      ]
+    },
+    {
+      "covers": [
+        "arm_r"
+      ],
+      "specifically_covers": [
+        "arm_elbow_l"
+      ],
+      "coverage": 20,
+      "encumbrance": [
+        2,
+        4
+      ]
+    },
+    {
+      "covers": [
+        "hand_r"
+      ],
+      "coverage": 100,
+      "encumbrance": [
+        2,
+        4
+      ]
+    }
+  ],
+  "valid_mods": [
+    "rod_strap"
+  ],
+  "//3": "Should check how to add a strap so the player doesn't have to drop the rod every time Utsuho crafts something",
+  "flags": [
+    "ONLY_ONE",
+    "OUTER",
+    "RAINPROOF",
+    "RESTRICT_HANDS",
+    "STURDY",
+    "TRADER_AVOID",
+    "UNBREAKABLE_MELEE",
+    "WATERPROOF"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "utsuho_rod",
+  "type": "ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "third leg",
+    "str_pl": "third legs"
+  },
+  "description": "A prism shaped control rod worn on one arm, acting as the legendary 'third leg' from the Yatagarasu.  Allows the user to easily control nuclear abilities.",
+  "volume": "13300 ml",
+  "weight": "3000 g",
+  "longest_side": "60 cm",
+  "//": "60 cm hexagonal prism with 8 cm radius, it's kind of thick though",
+  "price": 16000,
+  "price_postapoc": 8000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "weapon",
+    "length": "short",
+    "surface": "any"
+  },
+  "bashing": 16,
+  "cutting": 0,
+  "material": "steel",
+  "//2": "Maybe change it to moriya_wood or something",
+  "symbol": "☢",
+  "color": "brown",
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "arm_r"
+      ],
+      "specifically_covers": [
+        "arm_lower_l"
+      ],
+      "coverage": 100,
+      "encumbrance": [
+        2,
+        4
+      ]
+    },
+    {
+      "covers": [
+        "arm_r"
+      ],
+      "specifically_covers": [
+        "arm_elbow_l"
+      ],
+      "coverage": 20,
+      "encumbrance": [
+        2,
+        4
+      ]
+    },
+    {
+      "covers": [
+        "hand_r"
+      ],
+      "coverage": 100,
+      "encumbrance": [
+        2,
+        4
+      ]
+    }
+  ],
+  "valid_mods": [
+    "rod_strap"
+  ],
+  "//3": "Should check how to add a strap so the player doesn't have to drop the rod every time Utsuho crafts something",
+  "flags": [
+    "ONLY_ONE",
+    "OUTER",
+    "RAINPROOF",
+    "RESTRICT_HANDS",
+    "STURDY",
+    "TRADER_AVOID",
+    "UNBREAKABLE_MELEE",
+    "WATERPROOF"
+  ]
+}
+```
+

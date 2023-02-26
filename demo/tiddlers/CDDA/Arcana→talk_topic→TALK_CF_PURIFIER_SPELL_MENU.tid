@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER_SPELL_MENU
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER_SPELL_MENU|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER_SPELL_MENU]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_PURIFIER_SPELL_MENU",
+  "dynamic_line": "With how you've helped us out, I could try to teach you a few things.  I have experience with Capacitance, Consecrate, and Opening, should you need it.  That said, I will need a few Golden Scales for the deed.  Binding a spell pattern safely takes a special touch, and the local scavengers don't part with materials easily.",
+  "responses": [
+    {
+      "text": "What can you tell me about Capacitance?",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "PROF_CLEANSINGFLAME2"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "SPELL_CAPACITANCE"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_PURIFIER_SPELL_MENU_1"
+    },
+    {
+      "text": "What can you tell me about Consecrate?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_CONSECRATELESSER"
+        }
+      },
+      "topic": "TALK_CF_PURIFIER_SPELL_MENU_2"
+    },
+    {
+      "text": "What can you tell me about Opening?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_LOCKPICK"
+        }
+      },
+      "topic": "TALK_CF_PURIFIER_SPELL_MENU_3"
+    },
+    {
+      "text": "I already know all of those, nevermind.",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "u_has_any_trait": [
+              "PROF_CLEANSINGFLAME2",
+              "SPELL_CAPACITANCE"
+            ]
+          },
+          {
+            "u_has_trait": "SPELL_CONSECRATELESSER"
+          },
+          {
+            "u_has_trait": "SPELL_LOCKPICK"
+          }
+        ]
+      },
+      "effect": {
+        "u_add_var": "nicholas_all_spells_known",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "Maybe another time.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_PURIFIER_SPELL_MENU",
+  "dynamic_line": "With how you've helped us out, I could try to teach you a few things.  I have experience with Capacitance, Consecrate, and Opening, should you need it.  That said, I will need a few Golden Scales for the deed.  Binding a spell pattern safely takes a special touch, and the local scavengers don't part with materials easily.",
+  "responses": [
+    {
+      "text": "What can you tell me about Capacitance?",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "PROF_CLEANSINGFLAME2"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "SPELL_CAPACITANCE"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_PURIFIER_SPELL_MENU_1"
+    },
+    {
+      "text": "What can you tell me about Consecrate?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_CONSECRATELESSER"
+        }
+      },
+      "topic": "TALK_CF_PURIFIER_SPELL_MENU_2"
+    },
+    {
+      "text": "What can you tell me about Opening?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_LOCKPICK"
+        }
+      },
+      "topic": "TALK_CF_PURIFIER_SPELL_MENU_3"
+    },
+    {
+      "text": "I already know all of those, nevermind.",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "u_has_any_trait": [
+              "PROF_CLEANSINGFLAME2",
+              "SPELL_CAPACITANCE"
+            ]
+          },
+          {
+            "u_has_trait": "SPELL_CONSECRATELESSER"
+          },
+          {
+            "u_has_trait": "SPELL_LOCKPICK"
+          }
+        ]
+      },
+      "effect": {
+        "u_add_var": "nicholas_all_spells_known",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "也许下次吧。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_CF_PURIFIER"
+    }
+  ]
+}
+```
+

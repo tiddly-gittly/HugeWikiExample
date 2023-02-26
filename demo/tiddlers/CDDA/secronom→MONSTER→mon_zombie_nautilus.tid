@@ -1,0 +1,313 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_nautilus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_nautilus|http://cdda.aloxaf.cn/search?q=mon_zombie_nautilus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Monsters that doesn't spawn directly in cities and has no upgrade paths (except the stray zombie). Rarely spawns in the wilds, in some parts of cities and/or other special conditions.",
+  "id": "mon_zombie_nautilus",
+  "looks_like": "mon_zombie_mancroc",
+  "type": "MONSTER",
+  "name": {
+    "str": "nautilus"
+  },
+  "description": "A morbidly large zombie heavily mutated from long exposure to irradiated waters, which altered most of its body parts into something like that of a mollusk.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 385,
+  "speed": 40,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⛣",
+  "color": "i_cyan",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 8,
+  "attack_cost": 325,
+  "harvest": "zombie",
+  "armor_bash": 14,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "armor_stab": 4,
+  "vision_day": 10,
+  "vision_night": 18,
+  "weakpoints": [
+    {
+      "name": "the head",
+      "armor_mult": {
+        "bash": 0.9,
+        "cut": 0.8,
+        "stab": 0.8
+      },
+      "armor_penalty": {
+        "bash": 10,
+        "cut": 5,
+        "stab": 5
+      },
+      "difficulty": {
+        "melee": 3,
+        "bash": 3
+      },
+      "coverage": 10,
+      "coverage_mult": {
+        "all": 0.75
+      },
+      "effects": [
+        {
+          "effect": "stunned",
+          "duration": [
+            2,
+            2
+          ],
+          "intensity": [
+            1,
+            1
+          ],
+          "damage_required": [
+            10,
+            100
+          ],
+          "message": "The %s is disorientated."
+        }
+      ]
+    },
+    {
+      "name": "underneath the belly",
+      "armor_mult": {
+        "cut": 0.5,
+        "stab": 0.5,
+        "bullet": 0.8
+      },
+      "armor_penalty": {
+        "cut": 20,
+        "stab": 20
+      },
+      "difficulty": {
+        "melee": 3,
+        "cut": 3
+      },
+      "damage_mult": {
+        "all": 1.2
+      },
+      "coverage": 20,
+      "required_effects": [
+        "stunned"
+      ],
+      "effects": [
+        {
+          "effect": "bleed",
+          "duration": [
+            10,
+            10
+          ],
+          "intensity": [
+            5,
+            5
+          ],
+          "damage_required": [
+            25,
+            100
+          ],
+          "message": "The %s is rapidly losing health."
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_nautilus_disturbance_check"
+      },
+      "cooldown": 33,
+      "monster_message": "<color_dark_gray>%1$s submerges…</color>"
+    }
+  ],
+  "flags": [
+    "HEARS",
+    "SEES",
+    "SMELLS",
+    "WARM",
+    "AQUATIC",
+    "GRABS",
+    "BASHES",
+    "REVIVES",
+    "LOUDMOVES",
+    "NOHEAD",
+    "SWIMS",
+    "STUMBLES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Monsters that doesn't spawn directly in cities and has no upgrade paths (except the stray zombie). Rarely spawns in the wilds, in some parts of cities and/or other special conditions.",
+  "id": "mon_zombie_nautilus",
+  "looks_like": "mon_zombie_mancroc",
+  "type": "MONSTER",
+  "name": {
+    "str": "螺母丧尸"
+  },
+  "description": "一种病态的大僵尸由于长时间暴露在受辐射的水中而发生了严重的变异，它的大部分身体部位都变成了类似软体动物的东西。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 385,
+  "speed": 40,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⛣",
+  "color": "i_cyan",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 8,
+  "attack_cost": 325,
+  "harvest": "zombie",
+  "armor_bash": 14,
+  "armor_cut": 4,
+  "armor_bullet": 4,
+  "armor_stab": 4,
+  "vision_day": 10,
+  "vision_night": 18,
+  "weakpoints": [
+    {
+      "name": "the head",
+      "armor_mult": {
+        "bash": 0.9,
+        "cut": 0.8,
+        "stab": 0.8
+      },
+      "armor_penalty": {
+        "bash": 10,
+        "cut": 5,
+        "stab": 5
+      },
+      "difficulty": {
+        "melee": 3,
+        "bash": 3
+      },
+      "coverage": 10,
+      "coverage_mult": {
+        "all": 0.75
+      },
+      "effects": [
+        {
+          "effect": "stunned",
+          "duration": [
+            2,
+            2
+          ],
+          "intensity": [
+            1,
+            1
+          ],
+          "damage_required": [
+            10,
+            100
+          ],
+          "message": "The %s is disorientated."
+        }
+      ]
+    },
+    {
+      "name": "underneath the belly",
+      "armor_mult": {
+        "cut": 0.5,
+        "stab": 0.5,
+        "bullet": 0.8
+      },
+      "armor_penalty": {
+        "cut": 20,
+        "stab": 20
+      },
+      "difficulty": {
+        "melee": 3,
+        "cut": 3
+      },
+      "damage_mult": {
+        "all": 1.2
+      },
+      "coverage": 20,
+      "required_effects": [
+        "stunned"
+      ],
+      "effects": [
+        {
+          "effect": "bleed",
+          "duration": [
+            10,
+            10
+          ],
+          "intensity": [
+            5,
+            5
+          ],
+          "damage_required": [
+            25,
+            100
+          ],
+          "message": "The %s is rapidly losing health."
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_nautilus_disturbance_check"
+      },
+      "cooldown": 33,
+      "monster_message": "<color_dark_gray> %1$s淹没…</color>"
+    }
+  ],
+  "flags": [
+    "HEARS",
+    "SEES",
+    "SMELLS",
+    "WARM",
+    "AQUATIC",
+    "GRABS",
+    "BASHES",
+    "REVIVES",
+    "LOUDMOVES",
+    "NOHEAD",
+    "SWIMS",
+    "STUMBLES"
+  ]
+}
+```
+

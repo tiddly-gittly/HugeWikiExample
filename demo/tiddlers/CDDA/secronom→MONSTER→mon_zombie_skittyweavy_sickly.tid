@@ -1,0 +1,141 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_skittyweavy_sickly
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_skittyweavy_sickly|http://cdda.aloxaf.cn/search?q=mon_zombie_skittyweavy_sickly]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Weaver.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_skittyweavy_sickly",
+  "type": "MONSTER",
+  "name": {
+    "str": "plague weaver"
+  },
+  "description": "A heavily mutated insect, with several spindly limbs stretching outwards from its membranous beetle shell. Deformed in every angle, a distinctive proboscis drips an intoxicating substance.",
+  "default_faction": "zombie_weaver",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "INSECT"
+  ],
+  "volume": "10000 ml",
+  "weight": "7200 g",
+  "harvest": "arachnid_tainted",
+  "hp": 55,
+  "speed": 120,
+  "material": [
+    "iflesh"
+  ],
+  "symbol": "⚚",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 275,
+  "melee_skill": 10,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "dodge": 5,
+  "armor_bash": 3,
+  "armor_cut": 12,
+  "armor_bullet": 8,
+  "armor_stab": 5,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_skittyweavy_sickly_target"
+      },
+      "cooldown": 6,
+      "monster_message": "<color_yellow>%1$s injects %3$s!</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "CLIMBS",
+    "POISON",
+    "PACIFIST",
+    "NO_BREATHE",
+    "ATTACKMON",
+    "HARDTOSHOOT",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_skittyweavy_sickly",
+  "type": "MONSTER",
+  "name": {
+    "str": "扭曲织工"
+  },
+  "description": "甲壳虫一种变异严重的昆虫，有几条细长的四肢从其膜状甲壳虫壳向外伸展。在每个角度都变形了，一个独特的长鼻滴下了一种令人陶醉的物质。",
+  "default_faction": "zombie_weaver",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "INSECT"
+  ],
+  "volume": "10000 ml",
+  "weight": "7200 g",
+  "harvest": "arachnid_tainted",
+  "hp": 55,
+  "speed": 120,
+  "material": [
+    "iflesh"
+  ],
+  "symbol": "⚚",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 275,
+  "melee_skill": 10,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "dodge": 5,
+  "armor_bash": 3,
+  "armor_cut": 12,
+  "armor_bullet": 8,
+  "armor_stab": 5,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_skittyweavy_sickly_target"
+      },
+      "cooldown": 6,
+      "monster_message": "<color_yellow>%1$s注射了%3$s！</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "CLIMBS",
+    "POISON",
+    "PACIFIST",
+    "NO_BREATHE",
+    "ATTACKMON",
+    "HARDTOSHOOT",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+

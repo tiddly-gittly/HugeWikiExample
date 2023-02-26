@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→mutation→IMPURE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：IMPURE|http://cdda.aloxaf.cn/search?q=IMPURE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/mutations/thex_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "IMPURE",
+  "type": "mutation",
+  "name": {
+    "str": "Impure"
+  },
+  "description": "Well, that's it.  You've gained impurity.  The good news is that Earthly food doesn't feel as… empty anymore.",
+  "points": 0,
+  "profession": false,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": true,
+  "triggers": [
+    [
+      {
+        "condition": {
+          "and": [
+            {
+              "u_has_trait": "LUNARDIET"
+            },
+            {
+              "compare_int": [
+                {
+                  "u_val": "vitamin",
+                  "name": "impurity"
+                },
+                ">",
+                {
+                  "const": 504
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  ],
+  "//": "Should copy and paste everything except the triggers field every time there's an update, as the extend field doesn't work with mutations"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "IMPURE",
+  "type": "mutation",
+  "name": {
+    "str": "Impure"
+  },
+  "description": "Well, that's it.  You've gained impurity.  The good news is that Earthly food doesn't feel as… empty anymore.",
+  "points": 0,
+  "profession": false,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": true,
+  "triggers": [
+    [
+      {
+        "condition": {
+          "and": [
+            {
+              "u_has_trait": "LUNARDIET"
+            },
+            {
+              "compare_int": [
+                {
+                  "u_val": "vitamin",
+                  "name": "impurity"
+                },
+                ">",
+                {
+                  "const": 504
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  ],
+  "//": "Should copy and paste everything except the triggers field every time there's an update, as the extend field doesn't work with mutations"
+}
+```
+

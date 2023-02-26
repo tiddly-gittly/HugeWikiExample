@@ -1,0 +1,137 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_disser
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_disser|http://cdda.aloxaf.cn/search?q=mon_zombie_disser]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Support-type zed that uses an aura to inflict debuffs.",
+  "id": "mon_zombie_disser",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie_shrieker",
+  "name": {
+    "str": "dissonant screamer"
+  },
+  "description": "A skinny tall zombie with swollen mouth and elongated jaws, seeping with black ooze. Its harsh, high-pitched voice makes it suprisingly dangerous.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 70,
+  "speed": 60,
+  "material": [
+    "flesh"
+  ],
+  "emit_fields": [
+    "secro_shout",
+    "secro_scream"
+  ],
+  "symbol": "♭",
+  "color": "magenta_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "armor_bash": 1,
+  "special_attacks": [
+    [
+      "SHRIEK_ALERT",
+      8
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Support-type zed that uses an aura to inflict debuffs.",
+  "id": "mon_zombie_disser",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie_shrieker",
+  "name": {
+    "str": "尖叫丧尸"
+  },
+  "description": "一种瘦高的丧尸，嘴巴肿胀，下颚拉长，渗出黑色的软泥。它刺耳、高亢的声音使它变得异常危险。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "harvest": "zombie",
+  "hp": 70,
+  "speed": 60,
+  "material": [
+    "flesh"
+  ],
+  "emit_fields": [
+    "secro_shout",
+    "secro_scream"
+  ],
+  "symbol": "♭",
+  "color": "magenta_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "armor_bash": 1,
+  "special_attacks": [
+    [
+      "SHRIEK_ALERT",
+      8
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

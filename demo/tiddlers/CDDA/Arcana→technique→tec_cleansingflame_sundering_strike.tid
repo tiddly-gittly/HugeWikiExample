@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: technique Arcana
+title: Arcana→technique→tec_cleansingflame_sundering_strike
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_cleansingflame_sundering_strike|http://cdda.aloxaf.cn/search?q=tec_cleansingflame_sundering_strike]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_cleansingflame_sundering_strike",
+  "name": "Sundering Strike",
+  "messages": [
+    "You channel your momentum into a disarming blow towards %s",
+    "<npcname> delivers a disarming blow to %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    }
+  ],
+  "melee_allowed": true,
+  "required_buffs_all": [
+    "buff_cleansingflame_onattack"
+  ],
+  "crit_ok": true,
+  "weighting": 3,
+  "stun_dur": 1,
+  "disarms": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.8
+    }
+  ],
+  "attack_vectors": [
+    "WEAPON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_cleansingflame_sundering_strike",
+  "name": "突击罢工",
+  "messages": [
+    "你将动能引导到对%s的解除武装打击中",
+    "<npcname>对%s产生了解除武装的打击"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    }
+  ],
+  "melee_allowed": true,
+  "required_buffs_all": [
+    "buff_cleansingflame_onattack"
+  ],
+  "crit_ok": true,
+  "weighting": 3,
+  "stun_dur": 1,
+  "disarms": true,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.8
+    }
+  ],
+  "attack_vectors": [
+    "WEAPON"
+  ]
+}
+```
+

@@ -1,0 +1,243 @@
+creator: 林一二
+revision: 0
+tags: GUN Arcana
+title: Arcana→GUN→hand_of_armok
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：hand_of_armok|http://cdda.aloxaf.cn/search?q=hand_of_armok]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/ranged.json
+
+
+!! 原文
+
+```json
+{
+  "id": "hand_of_armok",
+  "type": "GUN",
+  "category": "weapons",
+  "name": {
+    "str": "demon claw"
+  },
+  "description": "An ornate weapon resembling a clawed gauntlet, blades perpetually glowing red-hot.  Despite this, the weapon doesn't burn ones hand when grasped.  Firing it will smite your enemies and scour the land with wicked fire, to sate the god of blood.",
+  "weight": "360 g",
+  "volume": "750 ml",
+  "longest_side": "30 cm",
+  "price_postapoc": "120 USD",
+  "to_hit": 3,
+  "bashing": 8,
+  "cutting": 16,
+  "material": [
+    "steel",
+    "essencemat"
+  ],
+  "symbol": "/",
+  "looks_like": "bagh_nakha",
+  "repairs_like": "bloodscourge",
+  "color": "yellow",
+  "ammo": "essence_pure_type",
+  "skill": "magic",
+  "range": 50,
+  "//": "High as that amount is, remember this is equivalent to 10 essence a shot.",
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 300,
+    "armor_penetration": 25
+  },
+  "dispersion": 200,
+  "durability": 10,
+  "loudness": 500,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_pure_type": 1
+      }
+    }
+  ],
+  "clip_size": 1,
+  "reload": 200,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_sparks",
+    "no_fail": true,
+    "level": 0,
+    "need_wielding": true
+  },
+  "ammo_effects": [
+    "NAPALM_CLAW"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life",
+            "once_in": 3
+          }
+        ],
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "25 minutes",
+              "spell_effects": [
+                {
+                  "id": "arcana_react_evil_mimic"
+                }
+              ]
+            }
+          ]
+        },
+        "ench_effects": [
+          {
+            "effect": "arcana_evil_mimic_active",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "qualities": [
+    [
+      "BUTCHER",
+      12
+    ]
+  ],
+  "flags": [
+    "LIGHT_45",
+    "UNARMED_WEAPON",
+    "NEVER_JAMS",
+    "UNBREAKABLE_MELEE",
+    "FIRE",
+    "FLAMING",
+    "PRIMITIVE_RANGED_WEAPON",
+    "TRADER_KEEP_EQUIPPED"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "hand_of_armok",
+  "type": "GUN",
+  "category": "weapons",
+  "name": {
+    "str": "魔爪"
+  },
+  "description": "一种华丽的武器，类似于有爪的护手，刀锋永远炽热。尽管如此，这把武器在被抓住的时候不会烫伤你的手。烧了它，必击打你的仇敌，用恶毒的火将地洗刷，使血之神饱足。",
+  "weight": "360 g",
+  "volume": "750 ml",
+  "longest_side": "30 cm",
+  "price_postapoc": "120 USD",
+  "to_hit": 3,
+  "bashing": 8,
+  "cutting": 16,
+  "material": [
+    "steel",
+    "essencemat"
+  ],
+  "symbol": "/",
+  "looks_like": "bagh_nakha",
+  "repairs_like": "bloodscourge",
+  "color": "yellow",
+  "ammo": "essence_pure_type",
+  "skill": "magic",
+  "range": 50,
+  "//": "High as that amount is, remember this is equivalent to 10 essence a shot.",
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 300,
+    "armor_penetration": 25
+  },
+  "dispersion": 200,
+  "durability": 10,
+  "loudness": 500,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_pure_type": 1
+      }
+    }
+  ],
+  "clip_size": 1,
+  "reload": 200,
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_sparks",
+    "no_fail": true,
+    "level": 0,
+    "need_wielding": true
+  },
+  "ammo_effects": [
+    "NAPALM_CLAW"
+  ],
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_drain_life",
+            "once_in": 3
+          }
+        ],
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "25 minutes",
+              "spell_effects": [
+                {
+                  "id": "arcana_react_evil_mimic"
+                }
+              ]
+            }
+          ]
+        },
+        "ench_effects": [
+          {
+            "effect": "arcana_evil_mimic_active",
+            "intensity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "qualities": [
+    [
+      "BUTCHER",
+      12
+    ]
+  ],
+  "flags": [
+    "LIGHT_45",
+    "UNARMED_WEAPON",
+    "NEVER_JAMS",
+    "UNBREAKABLE_MELEE",
+    "FIRE",
+    "FLAMING",
+    "PRIMITIVE_RANGED_WEAPON",
+    "TRADER_KEEP_EQUIPPED"
+  ]
+}
+```
+

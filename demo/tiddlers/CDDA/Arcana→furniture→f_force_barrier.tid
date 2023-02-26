@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: furniture Arcana
+title: Arcana→furniture→f_force_barrier
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_force_barrier|http://cdda.aloxaf.cn/search?q=f_force_barrier]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/furniture_and_terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "id": "f_force_barrier",
+  "type": "furniture",
+  "name": "shimmering barrier",
+  "description": "A strange wavering distortion in the air, offering the faintest hint of illumination.  It hardens into a crackling wall of light when struck, examining it will allow you to dismiss it.",
+  "symbol": "#",
+  "looks_like": "t_reinforced_glass",
+  "bgcolor": [
+    "blue"
+  ],
+  "move_cost_mod": -2,
+  "light_emitted": 1,
+  "required_str": -1,
+  "flags": [
+    "NOITEM",
+    "TRANSPARENT"
+  ],
+  "deployed_item": "candle_barrier_aftermath",
+  "examine_action": "deployed_furniture",
+  "bash": {
+    "str_min": 100,
+    "str_max": 400,
+    "sound": "crash!",
+    "sound_fail": "whump!"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "f_force_barrier",
+  "type": "furniture",
+  "name": "闪光的屏障",
+  "description": "空气在奇怪地摇摆变形，提供了最微弱的光照。当它被击中时，它会硬化成一道爆裂的光墙，检查它会允许你把它拆除。",
+  "symbol": "#",
+  "looks_like": "t_reinforced_glass",
+  "bgcolor": [
+    "blue"
+  ],
+  "move_cost_mod": -2,
+  "light_emitted": 1,
+  "required_str": -1,
+  "flags": [
+    "NOITEM",
+    "TRANSPARENT"
+  ],
+  "deployed_item": "candle_barrier_aftermath",
+  "examine_action": "deployed_furniture",
+  "bash": {
+    "str_min": 100,
+    "str_max": 400,
+    "sound": "crash!",
+    "sound_fail": "whump!"
+  }
+}
+```
+

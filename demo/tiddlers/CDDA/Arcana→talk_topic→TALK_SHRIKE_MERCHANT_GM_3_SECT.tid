@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_SHRIKE_MERCHANT_GM_3_SECT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SHRIKE_MERCHANT_GM_3_SECT|http://cdda.aloxaf.cn/search?q=TALK_SHRIKE_MERCHANT_GM_3_SECT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_SHRIKE_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_SHRIKE_MERCHANT_GM_3_SECT",
+  "type": "talk_topic",
+  "dynamic_line": "Good, that narrows it down.  They're a division of the Order responsible for this nonsense about what they called the Dragonnblood Sacrament.  Dragged half the other magi into that tangle and cost us our best-defended safehouse.  Not many sects dabbling in mutation survived this long.  Try the phrase, \"The moonlit sky anoints the worthy, who seek The Path home.\"  It's an old pass phrase, but to my knowledge it was still in use up until they lost the hideout. That might give them pause long enough to catch them off guard.",
+  "speaker_effect": {
+    "effect": {
+      "u_add_var": "horace_password_known",
+      "type": "flag",
+      "context": "shrike",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "Thanks.  One more thing before I go.",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    },
+    {
+      "text": "Worth a shot  I'll be on my way.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_SHRIKE_MERCHANT_GM_3_SECT",
+  "type": "talk_topic",
+  "dynamic_line": "很好，这就缩小了范围。他们是圣职会的一个分支，对他们所谓的龙血圣礼负有责任。把另外一半的三博士拖进了那场混乱，我们失去了最好的安全屋。没有多少涉足变异的教派存活了这么长时间。试试这句话，“月光下的天空为有价值的人涂油，他们寻找回家的路。”这是一句古老的口头禅，但据我所知，直到他们失去了藏身之处，这句口头禅还在使用。这可能会让他们停顿足够长的时间，让他们措手不及。",
+  "speaker_effect": {
+    "effect": {
+      "u_add_var": "horace_password_known",
+      "type": "flag",
+      "context": "shrike",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "谢谢在我走之前还有一件事。",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    },
+    {
+      "text": "值得一试，我马上就来。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

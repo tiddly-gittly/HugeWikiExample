@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→tendrilheadgrip
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tendrilheadgrip|http://cdda.aloxaf.cn/search?q=tendrilheadgrip]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "tendrilheadgrip",
+  "cooldown": 50,
+  "move_cost": 250,
+  "accuracy": 4,
+  "attack_chance": 10,
+  "blockable": false,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 3,
+      "armor_penetration": 999
+    }
+  ],
+  "effects": [
+    {
+      "id": "grabbed",
+      "duration": 5,
+      "bp": "head"
+    },
+    {
+      "id": "blind",
+      "duration": 5
+    }
+  ],
+  "body_parts": [
+    [
+      "head",
+      1
+    ]
+  ],
+  "hit_dmg_u": "%1$s grips your head!",
+  "hit_dmg_npc": "%1$s grips <npcname>'s head!",
+  "no_dmg_msg_u": "%1$s tries to grip your head, but fails to take effect!",
+  "no_dmg_msg_npc": "%1$s tries to grip <npcname>'s head, but fails to take effect!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "tendrilheadgrip",
+  "cooldown": 50,
+  "move_cost": 250,
+  "accuracy": 4,
+  "attack_chance": 10,
+  "blockable": false,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 3,
+      "armor_penetration": 999
+    }
+  ],
+  "effects": [
+    {
+      "id": "grabbed",
+      "duration": 5,
+      "bp": "head"
+    },
+    {
+      "id": "blind",
+      "duration": 5
+    }
+  ],
+  "body_parts": [
+    [
+      "head",
+      1
+    ]
+  ],
+  "hit_dmg_u": "%1$s grips your head!",
+  "hit_dmg_npc": "%1$s grips <npcname>'s head!",
+  "no_dmg_msg_u": "%1$s tries to grip your head, but fails to take effect!",
+  "no_dmg_msg_npc": "%1$s tries to grip <npcname>'s head, but fails to take effect!"
+}
+```
+

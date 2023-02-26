@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→poison_ward
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：poison_ward|http://cdda.aloxaf.cn/search?q=poison_ward]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "poison_ward",
+  "name": [
+    "Ward Against Poison"
+  ],
+  "desc": [
+    "Protection against toxic gas and venom, suppresses the effect of radiation sickness while reducing accumulated radiation steadily."
+  ],
+  "remove_message": "You feel a momentary weakness as the protective magic fades.",
+  "removes_effects": [
+    "stung",
+    "poison",
+    "badpoison",
+    "paralyzepoison",
+    "teargas",
+    "migo_atmosphere",
+    "venom_dmg",
+    "venom_weaken",
+    "irradiated"
+  ],
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "rad_min": [
+      -1
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "poison_ward",
+  "name": [
+    "抗毒结界"
+  ],
+  "desc": [
+    "对有毒气体和毒液的保护，抑制辐射病的影响，同时稳定地减少累积辐射。"
+  ],
+  "remove_message": "当保护魔法消退时，你会感到暂时的虚弱。",
+  "removes_effects": [
+    "stung",
+    "poison",
+    "badpoison",
+    "paralyzepoison",
+    "teargas",
+    "migo_atmosphere",
+    "venom_dmg",
+    "venom_weaken",
+    "irradiated"
+  ],
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "rad_min": [
+      -1
+    ]
+  }
+}
+```
+

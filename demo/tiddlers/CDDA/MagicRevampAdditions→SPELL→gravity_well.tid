@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→gravity_well
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gravity_well|http://cdda.aloxaf.cn/search?q=gravity_well]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/magus.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gravity_well",
+  "type": "SPELL",
+  "name": {
+    "str": "Gravity Well"
+  },
+  "description": "Summons a well of gravity with the epicenter at the location.  Deals bashing damage to all creatures in the affected area.",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "CONCENTRATE",
+    "NO_PROJECTILE"
+  ],
+  "min_damage": 20,
+  "max_damage": 65,
+  "damage_increment": 1.2,
+  "damage_type": "bash",
+  "min_range": 5,
+  "max_range": 22,
+  "range_increment": 0.5,
+  "min_aoe": 1,
+  "max_aoe": 9,
+  "aoe_increment": 0.25,
+  "max_level": 30,
+  "difficulty": 10,
+  "spell_class": "MAGUS",
+  "base_casting_time": 600,
+  "energy_source": "MANA",
+  "base_energy_cost": 350
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gravity_well",
+  "type": "SPELL",
+  "name": {
+    "str": "重力井"
+  },
+  "description": "在指定地点召唤一口重力井。对受影响地区的所有生物造成钝击伤害。",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "CONCENTRATE",
+    "NO_PROJECTILE"
+  ],
+  "min_damage": 20,
+  "max_damage": 65,
+  "damage_increment": 1.2,
+  "damage_type": "bash",
+  "min_range": 5,
+  "max_range": 22,
+  "range_increment": 0.5,
+  "min_aoe": 1,
+  "max_aoe": 9,
+  "aoe_increment": 0.25,
+  "max_level": 30,
+  "difficulty": 10,
+  "spell_class": "MAGUS",
+  "base_casting_time": 600,
+  "energy_source": "MANA",
+  "base_energy_cost": 350
+}
+```
+

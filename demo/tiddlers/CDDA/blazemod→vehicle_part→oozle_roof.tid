@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→oozle_roof
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：oozle_roof|http://cdda.aloxaf.cn/search?q=oozle_roof]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "oozle_roof",
+  "type": "vehicle_part",
+  "name": {
+    "str": "ooze roof"
+  },
+  "item": "oozle",
+  "location": "roof",
+  "symbol": "#",
+  "broken_symbol": "#",
+  "color": "green",
+  "broken_color": "light_green",
+  "durability": 500,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "description": "A living blob, placed as roof.",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "ROOF"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "oozle_roof",
+  "type": "vehicle_part",
+  "name": {
+    "str": "软泥车顶盖"
+  },
+  "item": "oozle",
+  "location": "roof",
+  "symbol": "#",
+  "broken_symbol": "#",
+  "color": "green",
+  "broken_color": "light_green",
+  "durability": 500,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "oozlegrow"
+    }
+  ],
+  "description": "一只活的变形怪变成的车顶。",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "ROOF"
+  ]
+}
+```
+

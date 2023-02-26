@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_flying_polyp_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_flying_polyp_on|http://cdda.aloxaf.cn/search?q=summon_flying_polyp_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/obsolete.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_flying_polyp_on",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of Pnakotus (active)",
+    "str_pl": "glyphs of Pnakotus (active)"
+  },
+  "description": "A strange silver emblem, engraved with an strange pattern resembling coral.  Using it will call forth a flying polyp, and bind it to your will.  Hopefully.",
+  "price": "1500 USD",
+  "price_postapoc": "80 USD",
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "turns_per_charge": 1,
+  "revert_to": "silver_glyph",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_flying_polyp_summoned",
+    "friendly_msg": "The flying polyp twitches for a moment, before its movement steadies.  It seems to be friendly.",
+    "hostile_msg": "The flying polyp twitches erratically, reacting to your presence with apparent hostility!",
+    "difficulty": 8,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_flying_polyp_on",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：奈克特（激活）",
+    "str_pl": "雕文：奈克特（激活）"
+  },
+  "description": "一种奇怪的银徽章，上面刻着一种类似珊瑚的奇怪图案。使用它会召唤出一个盲目者，并将它绑定到你的意志上。如果成功的话。",
+  "price": "1500 USD",
+  "price_postapoc": "80 USD",
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "turns_per_charge": 1,
+  "revert_to": "silver_glyph",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_flying_polyp_summoned",
+    "friendly_msg": "盲目者抽搐了一会儿，然后它的运动才稳定下来。现在它看起来很友好。",
+    "hostile_msg": "盲目者不稳定地抽搐着，对你的出现做出明显的敌意反应！",
+    "difficulty": 8,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  }
+}
+```
+

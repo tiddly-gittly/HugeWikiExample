@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→mutation→WINGS_HELLRAVEN_spread
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：WINGS_HELLRAVEN_spread|http://cdda.aloxaf.cn/search?q=WINGS_HELLRAVEN_spread]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "WINGS_HELLRAVEN_spread",
+  "type": "mutation",
+  "name": "Hell raven wings (flight)",
+  "copy-from": "WINGS_HELLRAVEN",
+  "description": "Your wings are now prepared for flying.  Activate the mutation to fold your wings, disabling flight.",
+  "active": true,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "ench_effects": [
+        {
+          "effect": "utsuho_levitation",
+          "intensity": 1
+        }
+      ]
+    }
+  ],
+  "transform": {
+    "target": "WINGS_HELLRAVEN",
+    "active": false,
+    "moves": 100
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "WINGS_HELLRAVEN_spread",
+  "type": "mutation",
+  "name": "Hell raven wings (flight)",
+  "copy-from": "WINGS_HELLRAVEN",
+  "description": "Your wings are now prepared for flying.  Activate the mutation to fold your wings, disabling flight.",
+  "active": true,
+  "enchantments": [
+    {
+      "condition": "ALWAYS",
+      "ench_effects": [
+        {
+          "effect": "utsuho_levitation",
+          "intensity": 1
+        }
+      ]
+    }
+  ],
+  "transform": {
+    "target": "WINGS_HELLRAVEN",
+    "active": false,
+    "moves": 100
+  }
+}
+```
+

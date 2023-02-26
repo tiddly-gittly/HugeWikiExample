@@ -1,0 +1,149 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_flamebot
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_flamebot|http://cdda.aloxaf.cn/search?q=mon_flamebot]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_flamebot",
+  "type": "MONSTER",
+  "name": {
+    "str": "exterminator bot"
+  },
+  "description": "The Northrop Exterminator F-4 was a production series of flamethrower exterminator robots. Commissioned & designed for use of controlled burns, and extreme pest control, it rolls on a set of hydraulic treads and is armed with an intimidating flamethrower.",
+  "default_faction": "military",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 10,
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 80,
+  "speed": 70,
+  "material": [
+    "steel"
+  ],
+  "symbol": "R",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "armor_bash": 14,
+  "armor_cut": 14,
+  "armor_bullet": 14,
+  "vision_day": 50,
+  "revert_to_itype": "bot_flamebot",
+  "special_attacks": [
+    [
+      "FLAMETHROWER",
+      12
+    ]
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        4
+      ]
+    ]
+  },
+  "death_function": {
+    "effect": {
+      "id": "death_conflagration",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE",
+    "message": "A %s explodes!"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "BASHES",
+    "ELECTRONIC",
+    "NO_BREATHE",
+    "PATH_AVOID_DANGER_1",
+    "LOUDMOVES",
+    "FIREPROOF"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_flamebot",
+  "type": "MONSTER",
+  "name": {
+    "str": "炽虫机器人"
+  },
+  "description": "诺斯罗普格鲁曼公司生产的歼灭者F-4喷火机器人。最初设计用于可控烧伤和害虫控制，有一组液压履带，装备着一个令人生畏的喷火器。",
+  "default_faction": "military",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 10,
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 80,
+  "speed": 70,
+  "material": [
+    "steel"
+  ],
+  "symbol": "R",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "armor_bash": 14,
+  "armor_cut": 14,
+  "armor_bullet": 14,
+  "vision_day": 50,
+  "revert_to_itype": "bot_flamebot",
+  "special_attacks": [
+    [
+      "FLAMETHROWER",
+      12
+    ]
+  ],
+  "death_drops": {
+    "groups": [
+      [
+        "robots",
+        4
+      ]
+    ]
+  },
+  "death_function": {
+    "effect": {
+      "id": "death_conflagration",
+      "hit_self": true
+    },
+    "corpse_type": "NO_CORPSE",
+    "message": "A %s explodes!"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "BASHES",
+    "ELECTRONIC",
+    "NO_BREATHE",
+    "PATH_AVOID_DANGER_1",
+    "LOUDMOVES",
+    "FIREPROOF"
+  ]
+}
+```
+

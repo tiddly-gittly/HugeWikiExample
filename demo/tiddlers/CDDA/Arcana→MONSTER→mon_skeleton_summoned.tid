@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_skeleton_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_skeleton_summoned|http://cdda.aloxaf.cn/search?q=mon_skeleton_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_skeleton_summoned",
+  "copy-from": "mon_skeleton",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned skeleton"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "hp": 50,
+  "speed": 80,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "attack_effs": [
+    {
+      "id": "stunned",
+      "duration": 5,
+      "chance": 30
+    }
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": {},
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "upgrades": {
+      "half_life": 15,
+      "into": "mon_skeleton_hulk"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_skeleton_summoned",
+  "copy-from": "mon_skeleton",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤骷髅"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "hp": 50,
+  "speed": 80,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "attack_effs": [
+    {
+      "id": "stunned",
+      "duration": 5,
+      "chance": 30
+    }
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": {},
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "upgrades": {
+      "half_life": 15,
+      "into": "mon_skeleton_hulk"
+    }
+  }
+}
+```
+

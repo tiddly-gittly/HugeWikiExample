@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: TOOL MST_Extra
+title: MST_Extra→TOOL→tarp_raincatcher_leather
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tarp_raincatcher_leather|http://cdda.aloxaf.cn/search?q=tarp_raincatcher_leather]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "type": "TOOL",
+  "id": "tarp_raincatcher_leather",
+  "copy-from": "tarp_raincatcher",
+  "name": {
+    "str": "leather tarp raincatcher"
+  },
+  "description": "Some sticks and string with a leather tarp, to set up an improvised raincatcher.",
+  "weight": "4736 g",
+  "material": [
+    "wood",
+    "leather"
+  ],
+  "use_action": {
+    "type": "place_trap",
+    "allow_under_player": true,
+    "trap": "tr_raincatcher_leather",
+    "moves": 100,
+    "practice": 0,
+    "done_message": "You set up the raincatcher, waiting to collect water."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "TOOL",
+  "id": "tarp_raincatcher_leather",
+  "copy-from": "tarp_raincatcher",
+  "name": {
+    "str": "防水皮革集雨器"
+  },
+  "description": "由一些棍子和绳子加上一块防水的皮革制成的一个简易集雨器.激活以放置.",
+  "weight": "4736 g",
+  "material": [
+    "wood",
+    "leather"
+  ],
+  "use_action": {
+    "type": "place_trap",
+    "allow_under_player": true,
+    "trap": "tr_raincatcher_leather",
+    "moves": 100,
+    "practice": 0,
+    "done_message": "You set up the raincatcher, waiting to collect water."
+  }
+}
+```
+

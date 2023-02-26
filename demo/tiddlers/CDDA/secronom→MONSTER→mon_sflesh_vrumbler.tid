@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_vrumbler
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_vrumbler|http://cdda.aloxaf.cn/search?q=mon_sflesh_vrumbler]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/FleshVeins.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Vein that deals bashing damage.",
+  "id": "mon_sflesh_vrumbler",
+  "type": "MONSTER",
+  "name": {
+    "str": "rumbler"
+  },
+  "description": "A thick group of veins unified into a crawling nightmare. Large, amalgous core is visible to its predominant limb, and tendrils seemingly gathers around it.",
+  "default_faction": "secro_flesh",
+  "bodytype": "migo",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 185,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩮",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 6,
+  "melee_dice_sides": 4,
+  "armor_bash": 10,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "armor_stab": 8,
+  "vision_day": 10,
+  "vision_night": 10,
+  "weakpoints": [
+    {
+      "name": "its core",
+      "difficulty": {
+        "melee": 3
+      },
+      "coverage": 15,
+      "damage_mult": {
+        "all": 1.66
+      }
+    }
+  ],
+  "special_attacks": [
+    [
+      "flesh_vrumbler_thrash",
+      24
+    ]
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "CLIMBS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Vein that deals bashing damage.",
+  "id": "mon_sflesh_vrumbler",
+  "type": "MONSTER",
+  "name": {
+    "str": "血筒"
+  },
+  "description": "密密麻麻的一组血管组成了一个爬行的梦魇。它的优势肢可以看到巨大的、聚集的核心，卷须似乎聚集在它周围。",
+  "default_faction": "secro_flesh",
+  "bodytype": "migo",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 185,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⩮",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 6,
+  "melee_dice_sides": 4,
+  "armor_bash": 10,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "armor_stab": 8,
+  "vision_day": 10,
+  "vision_night": 10,
+  "weakpoints": [
+    {
+      "name": "its core",
+      "difficulty": {
+        "melee": 3
+      },
+      "coverage": 15,
+      "damage_mult": {
+        "all": 1.66
+      }
+    }
+  ],
+  "special_attacks": [
+    [
+      "flesh_vrumbler_thrash",
+      24
+    ]
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "CLIMBS"
+  ]
+}
+```
+

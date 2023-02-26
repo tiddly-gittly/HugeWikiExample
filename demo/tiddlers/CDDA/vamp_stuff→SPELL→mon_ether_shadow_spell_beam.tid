@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→mon_ether_shadow_spell_beam
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_ether_shadow_spell_beam|http://cdda.aloxaf.cn/search?q=mon_ether_shadow_spell_beam]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_monspell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_ether_shadow_spell_beam",
+  "type": "SPELL",
+  "name": {
+    "str": "Dark Beam"
+  },
+  "description": "A profane mana beam bursts violently, striking your foes within a line that deals <color_light_gray>pure damage</color>.\n\nThis is a <color_light_gray>tier 2</color> spell.",
+  "message": "The etherean silhouette casts Dark Beam!",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "v_sacrifice_spell",
+      "hit_self": true
+    }
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "min_damage": 10,
+  "max_damage": 40,
+  "min_range": 10,
+  "max_range": 10,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "flags": [
+    "RANDOM_DAMAGE"
+  ],
+  "damage_type": "pure"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_ether_shadow_spell_beam",
+  "type": "SPELL",
+  "name": {
+    "str": "黑暗射线"
+  },
+  "description": "一道亵渎的法力束猛烈爆发，在一条线内打击你的敌人，造成<color_light_gray>点纯伤害</color>。\n\n这是一个<color_light_gray>二阶</color>法术。",
+  "message": "以太的轮廓投射出黑暗的光芒！",
+  "valid_targets": [
+    "hostile",
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "v_sacrifice_spell",
+      "hit_self": true
+    }
+  ],
+  "effect": "attack",
+  "shape": "line",
+  "min_damage": 10,
+  "max_damage": 40,
+  "min_range": 10,
+  "max_range": 10,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "flags": [
+    "RANDOM_DAMAGE"
+  ],
+  "damage_type": "pure"
+}
+```
+

@@ -1,0 +1,199 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_survivor
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_survivor|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_survivor]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_survivor",
+  "type": "MONSTER",
+  "name": {
+    "str": "survivor zombie"
+  },
+  "description": "Still wearing the tattered remnants of improvised armor and weaponry, it is plain to see that this zombie was once a survivor like you.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_red_green",
+  "aggression": 75,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 10,
+  "armor_cut": 7,
+  "armor_bullet": 5,
+  "armor_acid": 4,
+  "vision_day": 50,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "path_settings": {
+    "max_dist": 3
+  },
+  "special_attacks": [
+    [
+      "SHRIEK",
+      20
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 1
+    },
+    [
+      "GRAB",
+      7
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 16
+        }
+      ]
+    }
+  ],
+  "death_drops": "mon_zombie_survivor_death_drops",
+  "burn_into": "mon_zombie_survivor",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_survivor",
+  "type": "MONSTER",
+  "name": {
+    "str": "幸存者丧尸"
+  },
+  "description": "一具穿着破旧的自制装甲，武器仍旧挂在身上的丧尸，看样子他曾经也是与你一样的幸存者。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_red_green",
+  "aggression": 75,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 10,
+  "armor_cut": 7,
+  "armor_bullet": 5,
+  "armor_acid": 4,
+  "vision_day": 50,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "path_settings": {
+    "max_dist": 3
+  },
+  "special_attacks": [
+    [
+      "SHRIEK",
+      20
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 1
+    },
+    [
+      "GRAB",
+      7
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 16
+        }
+      ]
+    }
+  ],
+  "death_drops": "mon_zombie_survivor_death_drops",
+  "burn_into": "mon_zombie_survivor",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

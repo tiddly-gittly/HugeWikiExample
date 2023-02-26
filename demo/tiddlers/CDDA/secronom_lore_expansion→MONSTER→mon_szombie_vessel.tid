@@ -1,0 +1,165 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom_lore_expansion
+title: secronom_lore_expansion→MONSTER→mon_szombie_vessel
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_szombie_vessel|http://cdda.aloxaf.cn/search?q=mon_szombie_vessel]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Monsters/Crimson Horrors/Flesh_experimental.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Armored zombie, but can actually hurt you, in many ways.",
+  "id": "mon_szombie_vessel",
+  "type": "MONSTER",
+  "name": {
+    "str": "vessel experimental"
+  },
+  "description": "A human who fell and succumbed to the flesh vessel exoskeleton - an experimental battle suit developed by the Secronom Project. It has completely fused with the body, and seem to have full control over it.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 70,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⒵",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "vision_night": 12,
+  "armor_bash": 32,
+  "armor_cut": 32,
+  "armor_stab": 32,
+  "armor_bullet": 32,
+  "armor_acid": 8,
+  "armor_fire": 8,
+  "harvest": "human",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_szombie_vessel_target"
+      },
+      "cooldown": 15,
+      "monster_message": "<color_magenta>%1$s aims at %3$s!</color>"
+    }
+  ],
+  "death_drops": "mon_szombie_vessel_death_drop",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON",
+    "FILTHY",
+    "ELECTRIC",
+    "STUN_IMMUNE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Armored zombie, but can actually hurt you, in many ways.",
+  "id": "mon_szombie_vessel",
+  "type": "MONSTER",
+  "name": {
+    "str": "实验容器"
+  },
+  "description": "一个倒下并屈服于脉管装甲外骨骼的人——一种由Secronom项目开发的实验性战斗服。它与这个人的身体完全融合，并看似掌握了身体的控制权。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 100,
+  "speed": 70,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⒵",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "vision_night": 12,
+  "armor_bash": 32,
+  "armor_cut": 32,
+  "armor_stab": 32,
+  "armor_bullet": 32,
+  "armor_acid": 8,
+  "armor_fire": 8,
+  "harvest": "human",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_szombie_vessel_target"
+      },
+      "cooldown": 15,
+      "monster_message": "<color_magenta>%1$s瞄准%3$s！</color>"
+    }
+  ],
+  "death_drops": "mon_szombie_vessel_death_drop",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON",
+    "FILTHY",
+    "ELECTRIC",
+    "STUN_IMMUNE"
+  ]
+}
+```
+

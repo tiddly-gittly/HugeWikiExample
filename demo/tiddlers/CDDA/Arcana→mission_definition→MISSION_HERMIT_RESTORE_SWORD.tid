@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_HERMIT_RESTORE_SWORD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_HERMIT_RESTORE_SWORD|http://cdda.aloxaf.cn/search?q=MISSION_HERMIT_RESTORE_SWORD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_HERMIT_RESTORE_SWORD",
+  "type": "mission_definition",
+  "name": {
+    "str": "Restore The Ritual Blade"
+  },
+  "description": "Learn the purification ritual from Oaths to The Chalice, restore the ritual sword to a usable condition, then show it to the hermit.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_item": "veilblade"
+  },
+  "difficulty": 5,
+  "value": 250000,
+  "end": {
+    "effect": [
+      {
+        "npc_add_effect": "hermit_stage_2",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_add_effect": "hermit_stage_2",
+        "duration": "PERMANENT"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_HERMIT_AWAKEN_POWER",
+  "dialogue": {
+    "describe": "Perhaps we shall at last atone…",
+    "offer": "I have told you some of what I know.  And that may be of use to you.  The blade may be marred by dark magic, but it can be salvaged.  You have the potential, and it may prove even more useful restored than as a sanguine-corrupted weapon.",
+    "accepted": "Wonderful.  The way forward lies within Oaths to The Chalice.  To undertake this task is to accept the responsibility that comes with it.  I will offer what advice I can, but I can't perform the purification ritual for you.  That shall be your duty.",
+    "rejected": "I understand, though I hope you have not come to favor the relic's current state for its use as a weapon.  Seek me out if you deem yourself ready.",
+    "advice": "You shall need the studies of those who have came before, certain ritual components.  You'll also need to seek out a copy of Sanguine Codex to properly counter the sanguine curse placed on it.",
+    "inquire": "Have you performed the ritual?  Let me see it…",
+    "success": "To see this, after so long… it's hard for me to put words to this.  It'll never be restored to the glory it once held, forged in fires from Beyond as one of the divine gifts, but even this gives me hope.  Come, we have much to discuss.",
+    "success_lie": "What folly is this?",
+    "failure": "As I feared…"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_HERMIT_RESTORE_SWORD",
+  "type": "mission_definition",
+  "name": {
+    "str": "修复仪式刀"
+  },
+  "description": "学习圣杯誓言的净化仪式，将仪式剑恢复到可用状态，然后展示给隐士。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_item": "veilblade"
+  },
+  "difficulty": 5,
+  "value": 250000,
+  "end": {
+    "effect": [
+      {
+        "npc_add_effect": "hermit_stage_2",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_add_effect": "hermit_stage_2",
+        "duration": "PERMANENT"
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_HERMIT_AWAKEN_POWER",
+  "dialogue": {
+    "describe": "也许我们终于可以赎罪了……",
+    "offer": "我已经告诉你我知道的一些事情。这可能对你有用。刀锋可能被黑暗魔法损坏，但它可以被打捞出来。你有潜力，它可能会被证明比作为一个血淋淋的腐蚀武器更有用。",
+    "accepted": "太好了。前进之路在《圣杯誓言》中。承担这项任务就是接受随之而来的责任。我会尽我所能提供建议，但我不能为你进行净化仪式。那是你的职责。",
+    "rejected": "我明白，不过我希望你不要因为这件文物被用作武器而偏袒它的现状。如果你认为自己准备好了就去找我。",
+    "advice": "你需要对那些以前来过的人的研究，某些仪式成分。你还需要找到一份血法典的副本，以正确地反击对它的血诅咒。",
+    "inquire": "你做过仪式吗？让我看看…",
+    "success": "看到这一点，经过这么长时间……我很难用语言来形容。它永远不会恢复到曾经拥有的荣耀，作为神圣的礼物之一，它在来自远方的火焰中锻造，但即使是这也给了我希望。来吧，我们有很多要讨论的。",
+    "success_lie": "这是什么愚蠢的想法？",
+    "failure": "正如我所担心的…"
+  }
+}
+```
+

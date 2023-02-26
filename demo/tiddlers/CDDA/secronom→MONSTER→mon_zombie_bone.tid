@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_bone
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_bone|http://cdda.aloxaf.cn/search?q=mon_zombie_bone]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Titan.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Later evolves to titan.",
+  "id": "mon_zombie_bone",
+  "type": "MONSTER",
+  "name": {
+    "str": "bone"
+  },
+  "description": "A large brute with several bone protrusions around its body. It's surprisingly quick despite the abnormal outgrowths.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN"
+  ],
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "hp": 140,
+  "speed": 90,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⩟",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "attack_cost": 200,
+  "bleed_rate": 25,
+  "dodge": 1,
+  "harvest": "zombie",
+  "vision_day": 25,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 9
+    }
+  ],
+  "armor_bash": 5,
+  "armor_cut": 9,
+  "armor_bullet": 6,
+  "armor_acid": 3,
+  "armor_fire": 5,
+  "special_attacks": [
+    [
+      "SMASH",
+      60
+    ]
+  ],
+  "death_drops": "mon_zombie_hulk_death_drops",
+  "upgrades": {
+    "half_life": 22,
+    "into": "mon_zombie_titan"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "DESTROYS",
+    "POISON",
+    "FILTHY",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Later evolves to titan.",
+  "id": "mon_zombie_bone",
+  "type": "MONSTER",
+  "name": {
+    "str": "骨头"
+  },
+  "description": "身体周围有几块突出的骨头的大型野兽。尽管有不正常的生长，它还是出奇的快。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN"
+  ],
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "hp": 140,
+  "speed": 90,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⩟",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "attack_cost": 200,
+  "bleed_rate": 25,
+  "dodge": 1,
+  "harvest": "zombie",
+  "vision_day": 25,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 9
+    }
+  ],
+  "armor_bash": 5,
+  "armor_cut": 9,
+  "armor_bullet": 6,
+  "armor_acid": 3,
+  "armor_fire": 5,
+  "special_attacks": [
+    [
+      "SMASH",
+      60
+    ]
+  ],
+  "death_drops": "mon_zombie_hulk_death_drops",
+  "upgrades": {
+    "half_life": 22,
+    "into": "mon_zombie_titan"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "DESTROYS",
+    "POISON",
+    "FILTHY",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON"
+  ]
+}
+```
+

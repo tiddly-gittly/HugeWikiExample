@@ -1,0 +1,163 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_nullfield
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_nullfield|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_nullfield]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_nullfield",
+  "type": "MONSTER",
+  "name": {
+    "str": "incandescent husk"
+  },
+  "description": "This once-human is visible only as a glowing white silhouette that you have to squint to see, cloaked in a crackling field of lightning that pulses like a beating heart.  It walks slowly and deliberately, the thunderstorm surrounding it eagerly jumping to anything conductive within its grasp.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 250,
+  "speed": 50,
+  "emit_fields": [
+    {
+      "emit_id": "emit_shock_cloud",
+      "delay": "1 s"
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "i_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 6
+    },
+    {
+      "damage_type": "bash",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 3,
+  "vision_night": 3,
+  "luminance": 16,
+  "harvest": "zombie",
+  "special_when_hit": [
+    "ZAPBACK",
+    75
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_nullfield",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "WARM",
+    "POISON",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "REVIVES",
+    "ELECTRIC_FIELD",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_nullfield",
+  "type": "MONSTER",
+  "name": {
+    "str": "电炽躯壳"
+  },
+  "description": "这个曾经的人类只能看到一个发光的白色轮廓，你必须眯着眼睛才能看到，披着一片噼啪作响的闪电场，像跳动的心脏一样跳动。它慢条斯理地走着，周围的雷雨迫不及待地跳到它能抓住的任何导电物上。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 250,
+  "speed": 50,
+  "emit_fields": [
+    {
+      "emit_id": "emit_shock_cloud",
+      "delay": "1 s"
+    }
+  ],
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "i_cyan",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "electric",
+      "amount": 6
+    },
+    {
+      "damage_type": "bash",
+      "amount": 2
+    }
+  ],
+  "armor_bash": 3,
+  "vision_night": 3,
+  "luminance": 16,
+  "harvest": "zombie",
+  "special_when_hit": [
+    "ZAPBACK",
+    75
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_nullfield",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "WARM",
+    "POISON",
+    "ELECTRIC",
+    "NO_BREATHE",
+    "REVIVES",
+    "ELECTRIC_FIELD",
+    "FILTHY"
+  ]
+}
+```
+

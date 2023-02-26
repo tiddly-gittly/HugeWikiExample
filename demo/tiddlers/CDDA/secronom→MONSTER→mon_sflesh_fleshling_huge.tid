@@ -1,0 +1,149 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_fleshling_huge
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_huge|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_huge]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Fleshlings.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_fleshling_huge",
+  "type": "MONSTER",
+  "name": {
+    "str": "flesh mound"
+  },
+  "description": "A humongous conglomeration of rotten flesh, as large as a moose. Its body has swollen and stretched out, and seem to slowly deteriorate, but its endless hunger still is apparent to its motion.",
+  "default_faction": "secro_flesh2",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "386000 ml",
+  "weight": "386 kg",
+  "hp": 160,
+  "speed": 20,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⬤",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_sflesh_fleshling_birth"
+  ],
+  "melee_skill": 8,
+  "melee_dice": 7,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_fleshling_huge_devour"
+      },
+      "cooldown": 150,
+      "monster_message": "<color_light_red>%1$s devours %3$s...</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "PACIFIST"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_fleshling_huge",
+  "type": "MONSTER",
+  "name": {
+    "str": "血肉堆"
+  },
+  "description": "腐肉一种巨大的腐肉团，大如驼鹿。它的身体已经肿胀和伸展，似乎慢慢恶化，但它无尽的饥饿仍然是明显的运动。",
+  "default_faction": "secro_flesh2",
+  "bodytype": "blob",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "386000 ml",
+  "weight": "386 kg",
+  "hp": 160,
+  "speed": 20,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⬤",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_sflesh_fleshling_birth"
+  ],
+  "melee_skill": 8,
+  "melee_dice": 7,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 8
+    }
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_sflesh_fleshling_huge_devour"
+      },
+      "cooldown": 150,
+      "monster_message": "<color_light_red>%1$s吞噬了%3$s…</color>"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "PACIFIST"
+  ]
+}
+```
+

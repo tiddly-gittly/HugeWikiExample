@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_QUERY_THINGS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_QUERY_THINGS|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_QUERY_THINGS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_QUERY_THINGS",
+  "dynamic_line": "There was a calamity that broke the back of our order.  Only a few survived and fled, and from them I heard horror stories about our sanctum alight with rifts, the high priest seized by some abomination from a failed summoning…",
+  "responses": [
+    {
+      "text": "A calamity… it was our doing, wasn't it?",
+      "topic": "TALK_HERMIT_QUERY_VEIL_SANGUINE",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "Despite our differences, this sounds like a threat to us both.",
+      "topic": "TALK_HERMIT_QUERY_VEIL_CLEANSINGFLAME",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "What sort of abomination?",
+      "topic": "TALK_HERMIT_ABOMINATION"
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_QUERY_THINGS",
+  "dynamic_line": "有一场灾难破坏了我们的秩序。只有少数人幸存并逃离了，我从他们那里听到了恐怖的故事：我们的圣所布满了裂痕，大祭司在一次失败的召唤中被某个可憎的人抓住了…",
+  "responses": [
+    {
+      "text": "一场灾难…是我们干的，不是吗？",
+      "topic": "TALK_HERMIT_QUERY_VEIL_SANGUINE",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      }
+    },
+    {
+      "text": "尽管我们有分歧，但这听起来对我们都是个威胁。",
+      "topic": "TALK_HERMIT_QUERY_VEIL_CLEANSINGFLAME",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "什么样的憎恶？",
+      "topic": "TALK_HERMIT_ABOMINATION"
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

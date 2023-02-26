@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→yamame_damnedrope2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：yamame_damnedrope2|http://cdda.aloxaf.cn/search?q=yamame_damnedrope2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_wip_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "yamame_damnedrope2",
+  "type": "SPELL",
+  "name": "Damned's rope (bonus STR)",
+  "description": "The pull_target spell effect is currently hardcoded to pull according to the caster's STR (exact values and formula are at #52155). This subspell temporarely buffs the PC with damnedrope_str so they can actually pull zombies and whatnot",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "effect_on_condition",
+  "effect_str": "yamame_damnedrope_start",
+  "shape": "blast",
+  "max_level": 1,
+  "difficulty": -20,
+  "base_casting_time": 0,
+  "base_energy_cost": 0,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_EXPLOSION_SFX",
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "//": "The mutation is not being applied before the main spell is cast, so base STR is used to pull, which is not enough due how pull_target works and it fails",
+  "//2": "The mutation itself works, either by copying it inside the profession (profession and valid fields as true!) or by testing this subspell to see if yamame_damnedrope_start works (it does). However, the EOC is activating 1 turn or so after using the spell which again makes it not work"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "yamame_damnedrope2",
+  "type": "SPELL",
+  "name": "Damned's rope (bonus STR)",
+  "description": "The pull_target spell effect is currently hardcoded to pull according to the caster's STR (exact values and formula are at #52155). This subspell temporarely buffs the PC with damnedrope_str so they can actually pull zombies and whatnot",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "effect_on_condition",
+  "effect_str": "yamame_damnedrope_start",
+  "shape": "blast",
+  "max_level": 1,
+  "difficulty": -20,
+  "base_casting_time": 0,
+  "base_energy_cost": 0,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_EXPLOSION_SFX",
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "//": "The mutation is not being applied before the main spell is cast, so base STR is used to pull, which is not enough due how pull_target works and it fails",
+  "//2": "The mutation itself works, either by copying it inside the profession (profession and valid fields as true!) or by testing this subspell to see if yamame_damnedrope_start works (it does). However, the EOC is activating 1 turn or so after using the spell which again makes it not work"
+}
+```
+

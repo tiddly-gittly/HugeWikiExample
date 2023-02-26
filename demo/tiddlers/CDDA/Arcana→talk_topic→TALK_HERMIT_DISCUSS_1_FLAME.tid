@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_1_FLAME
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_1_FLAME|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_1_FLAME]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_FLAME",
+  "dynamic_line": "This is true.  But do not let yourself be blinded by hatred.  I had known many of them, and a few sought power for less destructive reasons.  If any of them are left, they must be guided into righting the wrongs their fellows have committed.",
+  "responses": [
+    {
+      "text": "What can be done then?",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "We shall see.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_FLAME",
+  "dynamic_line": "这是真的。但不要让自己被仇恨蒙蔽双眼。我认识他们中的许多人，还有一些人为了不那么具有破坏性的理由而寻求权力。如果他们中的任何一个被留下，他们必须被引导去纠正他们的同伴所犯下的错误。",
+  "responses": [
+    {
+      "text": "那能做什么呢？",
+      "topic": "TALK_MISSION_LIST",
+      "condition": {
+        "not": "has_no_available_mission"
+      }
+    },
+    {
+      "text": "我们会看到的。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

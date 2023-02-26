@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→ARMOR→youmu_scabbard_rouka
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：youmu_scabbard_rouka|http://cdda.aloxaf.cn/search?q=youmu_scabbard_rouka]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/items/armor/touhou_clothing.json
+
+
+!! 原文
+
+```json
+{
+  "id": "youmu_scabbard_rouka",
+  "type": "ARMOR",
+  "name": {
+    "str": "Roukanken's scabbard"
+  },
+  "copy-from": "bscabbard",
+  "description": "A wooden scabbard, designed to hold Roukanken.  It's painted black and it's otherwise plain, except for two paper seals and a Netherworld flower tied at it's ending. It's prepared to be drawn from while it's strapped on the back.  Activate to sheath/draw.",
+  "volume": "2200 ml",
+  "weight": "1000 g",
+  "price": 18000,
+  "price_postapoc": 900,
+  "bashing": 4,
+  "material": [
+    "leather",
+    "wood"
+  ],
+  "material_thickness": 2,
+  "symbol": "[",
+  "looks_like": "baldric",
+  "color": "black",
+  "pocket_data": [
+    {
+      "max_contains_volume": "2050 ml",
+      "max_contains_weight": "1400 g",
+      "max_item_length": "115 cm",
+      "holster": true,
+      "moves": 30,
+      "rigid": true,
+      "flag_restriction": [
+        "SHEATH_SWORD"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Sheath sword",
+    "holster_msg": "You sheath your %s"
+  },
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "specifically_covers": [
+        "torso_hanging_back"
+      ],
+      "coverage": 10,
+      "encumbrance": [
+        4,
+        5
+      ]
+    }
+  ],
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "WATER_FRIENDLY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "youmu_scabbard_rouka",
+  "type": "ARMOR",
+  "name": {
+    "str": "楼观剑的刀鞘"
+  },
+  "copy-from": "bscabbard",
+  "description": "A wooden scabbard, designed to hold Roukanken.  It's painted black and it's otherwise plain, except for two paper seals and a Netherworld flower tied at it's ending. It's prepared to be drawn from while it's strapped on the back.  Activate to sheath/draw.",
+  "volume": "2200 ml",
+  "weight": "1000 g",
+  "price": 18000,
+  "price_postapoc": 900,
+  "bashing": 4,
+  "material": [
+    "leather",
+    "wood"
+  ],
+  "material_thickness": 2,
+  "symbol": "[",
+  "looks_like": "baldric",
+  "color": "black",
+  "pocket_data": [
+    {
+      "max_contains_volume": "2050 ml",
+      "max_contains_weight": "1400 g",
+      "max_item_length": "115 cm",
+      "holster": true,
+      "moves": 30,
+      "rigid": true,
+      "flag_restriction": [
+        "SHEATH_SWORD"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "收刀",
+    "holster_msg": "你将%s收鞘"
+  },
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "specifically_covers": [
+        "torso_hanging_back"
+      ],
+      "coverage": 10,
+      "encumbrance": [
+        4,
+        5
+      ]
+    }
+  ],
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "WATER_FRIENDLY"
+  ]
+}
+```
+

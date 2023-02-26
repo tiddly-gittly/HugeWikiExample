@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition secronom_lore_expansion
+title: secronom_lore_expansion→effect_on_condition→eoc_secro_pafv_grow2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：eoc_secro_pafv_grow2|http://cdda.aloxaf.cn/search?q=eoc_secro_pafv_grow2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_eoc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_pafv_grow2",
+  "recurrence": [
+    "2 hours",
+    "3 hours"
+  ],
+  "condition": {
+    "and": [
+      {
+        "u_has_flag": "SECRO_WEARING_FLESH_VESSEL"
+      },
+      {
+        "u_has_item": "secro_power_armor_flesh"
+      },
+      {
+        "u_compare_var": "secro_fleshvessel",
+        "type": "growth",
+        "context": "time",
+        "op": ">=",
+        "value": 7
+      },
+      {
+        "not": {
+          "u_has_item": "secro_power_armor_flesh2"
+        }
+      },
+      {
+        "u_has_items": {
+          "item": "secro_flesh_core",
+          "count": 2
+        }
+      }
+    ]
+  },
+  "deactivate_condition": {
+    "u_has_item": "secro_power_armor_flesh2"
+  },
+  "effect": [
+    {
+      "u_message": "The flesh vessel absorbed the flesh core.",
+      "type": "warning"
+    },
+    {
+      "u_consume_item": "secro_power_armor_flesh"
+    },
+    {
+      "u_consume_item": "secro_flesh_core",
+      "count": 2
+    },
+    {
+      "u_cast_spell": {
+        "id": "secro_pafv_grow2",
+        "hit_self": true
+      }
+    },
+    {
+      "u_message": "The flesh vessel has increased in mass.",
+      "type": "good"
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "secro_fleshvessel",
+          "type": "consumption",
+          "context": "bonus"
+        },
+        "+=",
+        {
+          "const": 10
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "eoc_secro_pafv_grow2",
+  "recurrence": [
+    "2 hours",
+    "3 hours"
+  ],
+  "condition": {
+    "and": [
+      {
+        "u_has_flag": "SECRO_WEARING_FLESH_VESSEL"
+      },
+      {
+        "u_has_item": "secro_power_armor_flesh"
+      },
+      {
+        "u_compare_var": "secro_fleshvessel",
+        "type": "growth",
+        "context": "time",
+        "op": ">=",
+        "value": 7
+      },
+      {
+        "not": {
+          "u_has_item": "secro_power_armor_flesh2"
+        }
+      },
+      {
+        "u_has_items": {
+          "item": "secro_flesh_core",
+          "count": 2
+        }
+      }
+    ]
+  },
+  "deactivate_condition": {
+    "u_has_item": "secro_power_armor_flesh2"
+  },
+  "effect": [
+    {
+      "u_message": "The flesh vessel absorbed the flesh core.",
+      "type": "warning"
+    },
+    {
+      "u_consume_item": "secro_power_armor_flesh"
+    },
+    {
+      "u_consume_item": "secro_flesh_core",
+      "count": 2
+    },
+    {
+      "u_cast_spell": {
+        "id": "secro_pafv_grow2",
+        "hit_self": true
+      }
+    },
+    {
+      "u_message": "The flesh vessel has increased in mass.",
+      "type": "good"
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "secro_fleshvessel",
+          "type": "consumption",
+          "context": "bonus"
+        },
+        "+=",
+        {
+          "const": 10
+        }
+      ]
+    }
+  ]
+}
+```
+

@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE MST_Extra
+title: MST_Extra→COMESTIBLE→makeshift_poultice
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：makeshift_poultice|http://cdda.aloxaf.cn/search?q=makeshift_poultice]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MST_Extra/items/comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "makeshift_poultice",
+  "type": "COMESTIBLE",
+  "comestible_type": "MED",
+  "name": {
+    "str": "makeshift poultice"
+  },
+  "description": "A primitive poultice using improvised antiseptic, held in place by a cloth or leather wrap.  Applied loosely, it is designed to stave off infection but can still help staunch bleeding.",
+  "weight": "70 g",
+  "volume": "250 ml",
+  "price": 300,
+  "material": [
+    "veggy"
+  ],
+  "symbol": "!",
+  "color": "light_gray",
+  "charges": 3,
+  "stack_size": 9,
+  "use_action": {
+    "type": "heal",
+    "bandages_power": 3,
+    "bleed": 8,
+    "bite": 0.75,
+    "move_cost": 300
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "makeshift_poultice",
+  "type": "COMESTIBLE",
+  "comestible_type": "MED",
+  "name": {
+    "str": "简易膏药"
+  },
+  "description": "一种由天然的消毒防腐剂制成的手工药膏,用布条或皮革包裹起来.这种药膏应用宽广,虽然目的是为了避免感染,但也能帮助止血.",
+  "weight": "70 g",
+  "volume": "250 ml",
+  "price": 300,
+  "material": [
+    "veggy"
+  ],
+  "symbol": "!",
+  "color": "light_gray",
+  "charges": 3,
+  "stack_size": 9,
+  "use_action": {
+    "type": "heal",
+    "bandages_power": 3,
+    "bleed": 8,
+    "bite": 0.75,
+    "move_cost": 300
+  }
+}
+```
+

@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→gloopledoor
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gloopledoor|http://cdda.aloxaf.cn/search?q=gloopledoor]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gloopledoor",
+  "type": "vehicle_part",
+  "name": {
+    "str": "gel hatch"
+  },
+  "item": "gloople",
+  "location": "center",
+  "symbol": "+",
+  "broken_symbol": "&",
+  "color": "light_green",
+  "broken_color": "light_green",
+  "durability": 250,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "glooplegrow"
+    }
+  ],
+  "description": "A living blob, acting as a door.  Has a transparent patch so you can see out of it, even when closed.",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "OBSTACLE",
+    "OPENABLE",
+    "BOARDABLE",
+    "WINDOW"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gloopledoor",
+  "type": "vehicle_part",
+  "name": {
+    "str": "凝胶舱门"
+  },
+  "item": "gloople",
+  "location": "center",
+  "symbol": "+",
+  "broken_symbol": "&",
+  "color": "light_green",
+  "broken_color": "light_green",
+  "durability": 250,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "breaks_into": [
+    {
+      "item": "glooplegrow"
+    }
+  ],
+  "description": "一只活的变形怪变成的车门。即使关上门你也可以透过其上的薄膜来观察。",
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "OBSTACLE",
+    "OPENABLE",
+    "BOARDABLE",
+    "WINDOW"
+  ]
+}
+```
+

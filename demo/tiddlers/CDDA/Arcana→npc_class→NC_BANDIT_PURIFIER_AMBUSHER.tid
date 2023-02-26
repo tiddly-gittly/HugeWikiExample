@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: npc_class Arcana
+title: Arcana→npc_class→NC_BANDIT_PURIFIER_AMBUSHER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：NC_BANDIT_PURIFIER_AMBUSHER|http://cdda.aloxaf.cn/search?q=NC_BANDIT_PURIFIER_AMBUSHER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/NC_FILES.json
+
+
+!! 原文
+
+```json
+{
+  "type": "npc_class",
+  "id": "NC_BANDIT_PURIFIER_AMBUSHER",
+  "name": {
+    "str": "Ambusher"
+  },
+  "common": false,
+  "job_description": "I kill people.  Duh.",
+  "traits": [
+    {
+      "group": "BG_survival_story_EVACUEE"
+    },
+    {
+      "group": "Arcanist_starting_traits"
+    },
+    {
+      "group": "Appearance_demographics"
+    }
+  ],
+  "bonus_str": {
+    "rng": [
+      -2,
+      3
+    ]
+  },
+  "bonus_dex": {
+    "rng": [
+      -1,
+      1
+    ]
+  },
+  "bonus_int": {
+    "rng": [
+      -1,
+      1
+    ]
+  },
+  "bonus_per": {
+    "rng": [
+      1,
+      4
+    ]
+  },
+  "skills": [
+    {
+      "skill": "ALL",
+      "level": {
+        "sum": [
+          {
+            "dice": [
+              3,
+              2
+            ]
+          },
+          {
+            "constant": -3
+          }
+        ]
+      }
+    },
+    {
+      "skill": "gun",
+      "bonus": {
+        "rng": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "skill": "shotgun",
+      "bonus": {
+        "rng": [
+          2,
+          5
+        ]
+      }
+    }
+  ],
+  "worn_override": "NC_BANDIT_PURIFIER_AMBUSHER_worn",
+  "carry_override": "NC_BANDIT_PURIFIER_AMBUSHER_misc",
+  "weapon_override": "NC_BANDIT_PURIFIER_AMBUSHER_weapon"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "npc_class",
+  "id": "NC_BANDIT_PURIFIER_AMBUSHER",
+  "name": {
+    "str": "Ambusher"
+  },
+  "common": false,
+  "job_description": "I kill people.  Duh.",
+  "traits": [
+    {
+      "group": "BG_survival_story_EVACUEE"
+    },
+    {
+      "group": "Arcanist_starting_traits"
+    },
+    {
+      "group": "Appearance_demographics"
+    }
+  ],
+  "bonus_str": {
+    "rng": [
+      -2,
+      3
+    ]
+  },
+  "bonus_dex": {
+    "rng": [
+      -1,
+      1
+    ]
+  },
+  "bonus_int": {
+    "rng": [
+      -1,
+      1
+    ]
+  },
+  "bonus_per": {
+    "rng": [
+      1,
+      4
+    ]
+  },
+  "skills": [
+    {
+      "skill": "ALL",
+      "level": {
+        "sum": [
+          {
+            "dice": [
+              3,
+              2
+            ]
+          },
+          {
+            "constant": -3
+          }
+        ]
+      }
+    },
+    {
+      "skill": "gun",
+      "bonus": {
+        "rng": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "skill": "shotgun",
+      "bonus": {
+        "rng": [
+          2,
+          5
+        ]
+      }
+    }
+  ],
+  "worn_override": "NC_BANDIT_PURIFIER_AMBUSHER_worn",
+  "carry_override": "NC_BANDIT_PURIFIER_AMBUSHER_misc",
+  "weapon_override": "NC_BANDIT_PURIFIER_AMBUSHER_weapon"
+}
+```
+

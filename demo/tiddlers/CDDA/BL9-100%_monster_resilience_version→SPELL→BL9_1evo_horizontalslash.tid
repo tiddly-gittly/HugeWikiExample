@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→SPELL→BL9_1evo_horizontalslash
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_1evo_horizontalslash|http://cdda.aloxaf.cn/search?q=BL9_1evo_horizontalslash]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_spell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_1evo_horizontalslash",
+  "type": "SPELL",
+  "name": {
+    "str": "Horizontal Slash"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster swipes it's bladed tendril to it's target in a cone, dealing cutting damage.'",
+  "affected_body_parts": [
+    "head",
+    "arm_l",
+    "arm_r",
+    "torso"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "extra_effects": [
+    {
+      "id": "BL9_1_violentwrithe"
+    }
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "min_damage": 8,
+  "max_damage": 10,
+  "min_range": 2,
+  "max_range": 2,
+  "min_aoe": 50,
+  "max_aoe": 50,
+  "damage_type": "cut"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_1evo_horizontalslash",
+  "type": "SPELL",
+  "name": {
+    "str": "水平斜杠"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'施法者将它的叶片卷须刷向圆锥体中的目标，造成切割伤害。'",
+  "affected_body_parts": [
+    "head",
+    "arm_l",
+    "arm_r",
+    "torso"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DAMAGE"
+  ],
+  "extra_effects": [
+    {
+      "id": "BL9_1_violentwrithe"
+    }
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "cone",
+  "min_damage": 8,
+  "max_damage": 10,
+  "min_range": 2,
+  "max_range": 2,
+  "min_aoe": 50,
+  "max_aoe": 50,
+  "damage_type": "cut"
+}
+```
+

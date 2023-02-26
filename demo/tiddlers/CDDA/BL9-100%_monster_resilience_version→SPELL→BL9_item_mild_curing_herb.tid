@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→SPELL→BL9_item_mild_curing_herb
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_item_mild_curing_herb|http://cdda.aloxaf.cn/search?q=BL9_item_mild_curing_herb]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_spell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_item_mild_curing_herb",
+  "type": "SPELL",
+  "name": {
+    "str": "Mild Curing Herb healing"
+  },
+  "description": "Mild healing thanks to the Mild Curing Herb",
+  "message": "You consume the herb and your wounds are slightly healed up!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "effect_str": "herb_cleanse",
+  "min_damage": -20,
+  "max_damage": -20,
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "BL9_item_herb_stun",
+      "hit_self": true
+    },
+    {
+      "id": "BL9_pain_relieve",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_item_mild_curing_herb",
+  "type": "SPELL",
+  "name": {
+    "str": "温和的草药治疗"
+  },
+  "description": "温和的治愈感谢温和的草药",
+  "message": "你吃了药草，伤口就稍微愈合了！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "effect_str": "herb_cleanse",
+  "min_damage": -20,
+  "max_damage": -20,
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "BL9_item_herb_stun",
+      "hit_self": true
+    },
+    {
+      "id": "BL9_pain_relieve",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+

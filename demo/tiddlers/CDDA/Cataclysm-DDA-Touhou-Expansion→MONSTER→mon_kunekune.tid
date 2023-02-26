@@ -1,0 +1,195 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_kunekune
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_kunekune|http://cdda.aloxaf.cn/search?q=mon_kunekune]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_youkai.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_kunekune",
+  "type": "MONSTER",
+  "name": {
+    "str": "kunekune",
+    "str_pl": "kunekune"
+  },
+  "description": "Some white, vaguely humanoid figure, if you can even call it that, as it seems to shift between having no head, having two arm, having two heads with pink eyes, having one arm… It flails, twists and wobbles around, as if it was calling for someone's attention.  Something deep inside you is telling that getting closer would be a very bad idea.",
+  "volume": "55 L",
+  "weight": "5 kg",
+  "default_faction": "touhou_youkai_hostile",
+  "bodytype": "blob",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_HOSTILE_TOUHOU"
+  ],
+  "harvest": "exempt",
+  "hp": 35,
+  "speed": 150,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ʞ",
+  "color": "white",
+  "aggression": -15,
+  "morale": 50,
+  "regen_morale": true,
+  "regenerates": 2,
+  "melee_skill": 9,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 2,
+      "armor_penetration": 2
+    }
+  ],
+  "dodge": 9,
+  "vision_day": 40,
+  "vision_night": 50,
+  "path_settings": {
+    "max_dist": 50
+  },
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "armor_bash": 6,
+  "armor_cut": 6,
+  "armor_stab": 6,
+  "armor_bullet": 6,
+  "bleed_rate": 0,
+  "special_attacks": [
+    [
+      "FEAR_PARALYZE",
+      32
+    ],
+    [
+      "STARE",
+      28
+    ],
+    {
+      "spell_data": {
+        "id": "paralyze_100"
+      },
+      "type": "spell",
+      "cooldown": 34
+    }
+  ],
+  "death_function": {
+    "message": "The %s dissipates into air.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "HEARS",
+    "IMMOBILE",
+    "KEENNOSE",
+    "SEES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_kunekune",
+  "type": "MONSTER",
+  "name": {
+    "str": "kunekune",
+    "str_pl": "kunekune"
+  },
+  "description": "Some white, vaguely humanoid figure, if you can even call it that, as it seems to shift between having no head, having two arm, having two heads with pink eyes, having one arm… It flails, twists and wobbles around, as if it was calling for someone's attention.  Something deep inside you is telling that getting closer would be a very bad idea.",
+  "volume": "55 L",
+  "weight": "5 kg",
+  "default_faction": "touhou_youkai_hostile",
+  "bodytype": "blob",
+  "categories": [
+    "NULL"
+  ],
+  "species": [
+    "YOUKAI_HOSTILE_TOUHOU"
+  ],
+  "harvest": "exempt",
+  "hp": 35,
+  "speed": 150,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ʞ",
+  "color": "white",
+  "aggression": -15,
+  "morale": 50,
+  "regen_morale": true,
+  "regenerates": 2,
+  "melee_skill": 9,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 2,
+      "armor_penetration": 2
+    }
+  ],
+  "dodge": 9,
+  "vision_day": 40,
+  "vision_night": 50,
+  "path_settings": {
+    "max_dist": 50
+  },
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "armor_bash": 6,
+  "armor_cut": 6,
+  "armor_stab": 6,
+  "armor_bullet": 6,
+  "bleed_rate": 0,
+  "special_attacks": [
+    [
+      "FEAR_PARALYZE",
+      32
+    ],
+    [
+      "STARE",
+      28
+    ],
+    {
+      "spell_data": {
+        "id": "paralyze_100"
+      },
+      "type": "spell",
+      "cooldown": 34
+    }
+  ],
+  "death_function": {
+    "message": "The %s dissipates into air.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "HEARS",
+    "IMMOBILE",
+    "KEENNOSE",
+    "SEES"
+  ]
+}
+```
+

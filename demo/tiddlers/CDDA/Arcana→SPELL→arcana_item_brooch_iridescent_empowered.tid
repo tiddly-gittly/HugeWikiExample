@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_brooch_iridescent_empowered
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_brooch_iridescent_empowered|http://cdda.aloxaf.cn/search?q=arcana_item_brooch_iridescent_empowered]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_brooch_iridescent_empowered",
+  "name": {
+    "str": "Guard And Guide"
+  },
+  "description": "Grants the recovery effect to the user.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "A burst of protective magic radiates from the brooch!",
+  "effect": "spawn_item",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "effect_str": "halo_brooch_effect",
+  "extra_effects": [
+    {
+      "id": "arcana_item_brooch_iridescent_empowered_fatigue",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 154800,
+  "max_duration": 154800
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_brooch_iridescent_empowered",
+  "name": {
+    "str": "守护与指引"
+  },
+  "description": "Grants the recovery effect to the user.",
+  "valid_targets": [
+    "self"
+  ],
+  "message": "胸针放射出保护性的魔法场！",
+  "effect": "spawn_item",
+  "shape": "blast",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "effect_str": "halo_brooch_effect",
+  "extra_effects": [
+    {
+      "id": "arcana_item_brooch_iridescent_empowered_fatigue",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 154800,
+  "max_duration": 154800
+}
+```
+

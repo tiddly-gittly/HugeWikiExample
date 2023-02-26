@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_wretched
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_wretched|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_wretched]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_wretched",
+  "type": "MONSTER",
+  "name": {
+    "str": "wretched puker"
+  },
+  "description": "A degenerate corpse, shambling as it walks.  Several junks and waste materials have unified into its skin and wounds around it reeks in black goo.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "84500 g",
+  "hp": 69,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "looks_like": "mon_zombie_acidic",
+  "color": "dark_gray_yellow",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_day": 14,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "ACID_BARF",
+      22
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "burn_into": "mon_zombie_wretched",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "ACIDPROOF",
+    "ACID_BLOOD",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_wretched",
+  "type": "MONSTER",
+  "name": {
+    "str": "可怖呕吐者"
+  },
+  "description": "一具蹒跚移动的腐化尸体。许多垃圾和废弃材料已经融入了它的皮肤，周围的伤口渗出黑色粘液并散发出臭味。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "84500 g",
+  "hp": 69,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "looks_like": "mon_zombie_acidic",
+  "color": "dark_gray_yellow",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "cut"
+    },
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_day": 14,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "ACID_BARF",
+      22
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "message": "The %s's body leaks acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  },
+  "burn_into": "mon_zombie_wretched",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "ACIDPROOF",
+    "ACID_BLOOD",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

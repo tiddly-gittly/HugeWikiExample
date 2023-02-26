@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_sflesh_fleshling_scavengy_sticky_sg
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_fleshling_scavengy_sticky_sg|http://cdda.aloxaf.cn/search?q=mon_sflesh_fleshling_scavengy_sticky_sg]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_sflesh_fleshling_scavengy_sticky_sg",
+  "name": {
+    "str": "Sticky Grasp"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sticks to the target.'",
+  "extra_effects": [
+    {
+      "id": "sacrifice_spell",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "mon_sflesh_fleshling_scavengy_sticky_stick",
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 1000,
+  "max_duration": 2000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_sflesh_fleshling_scavengy_sticky_sg",
+  "name": {
+    "str": "粘性抓握"
+  },
+  "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者粘住目标。’",
+  "extra_effects": [
+    {
+      "id": "sacrifice_spell",
+      "hit_self": true
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "mon_sflesh_fleshling_scavengy_sticky_stick",
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 1000,
+  "max_duration": 2000
+}
+```
+

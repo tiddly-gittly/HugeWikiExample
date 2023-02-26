@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_RANCH_FOREMAN
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_RANCH_FOREMAN|http://cdda.aloxaf.cn/search?q=TALK_RANCH_FOREMAN]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_RANCH_FOREMAN.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_RANCH_FOREMAN",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
+      "topic": "TALK_RANCH_FOREMAN_NICHOLAS_1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "nicholas_mission_2_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_PURIFIER_1_2"
+          }
+        ]
+      }
+    },
+    {
+      "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_RANCH_FOREMAN_GM_PRELUDE"
+    },
+    {
+      "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
+      "topic": "TALK_RANCH_CROP_OVERSEER_CF_REP_MISSION_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_RANCH_FOREMAN",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "[任务]我被要求寻找可能处理异常情况的实验室之间货物的信息。你能帮我吗？",
+      "topic": "TALK_RANCH_FOREMAN_NICHOLAS_1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "nicholas_mission_2_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_PURIFIER_1_2"
+          }
+        ]
+      }
+    },
+    {
+      "text": "我被派去询问最近有什么异常生物袭击幸存者。知道吗？",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_RANCH_FOREMAN_GM_PRELUDE"
+    },
+    {
+      "text": "[任务]我被要求帮助另一个幸存者社区吸引工作。有谁能帮上忙吗？",
+      "topic": "TALK_RANCH_CROP_OVERSEER_CF_REP_MISSION_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+

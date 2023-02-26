@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: AMMO Tankmod_Revived
+title: Tankmod_Revived→AMMO→155mm_he_reloaded
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：155mm_he_reloaded|http://cdda.aloxaf.cn/search?q=155mm_he_reloaded]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "155mm_he_reloaded",
+  "copy-from": "155mm_slug",
+  "type": "AMMO",
+  "name": {
+    "str_sp": "reloaded 155mm HE"
+  },
+  "description": "A makeshift separate-loading HE round for 155mm.  Consists of a homemade explosive shell with fuze installed, a bag of propellant, and a replacement primer.  Using it for direct-fire isn't ideal, but it should be more than enough to ruin anyone's day.",
+  "proportional": {
+    "price_postapoc": 1.25,
+    "weight": 0.9,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 0.75,
+      "armor_penetration": 0.75
+    },
+    "recoil": 0.75,
+    "dispersion": 0.75
+  },
+  "extend": {
+    "effects": [
+      "CUSTOM_EXPLOSION"
+    ]
+  },
+  "explode_in_fire": true,
+  "explosion": {
+    "power": 2500
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "155mm_he_reloaded",
+  "copy-from": "155mm_slug",
+  "type": "AMMO",
+  "name": {
+    "str_sp": "155mm 高爆弹(复装)"
+  },
+  "description": "自制的155毫米炮分体式填装弹。由一个装有引信的自制炸药外壳、一袋推进剂和一个替换过的底火组成。使用它的直接射击并不是很理想，但它应该足以毁掉任何人的一天。",
+  "proportional": {
+    "price_postapoc": 1.25,
+    "weight": 0.9,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 0.75,
+      "armor_penetration": 0.75
+    },
+    "recoil": 0.75,
+    "dispersion": 0.75
+  },
+  "extend": {
+    "effects": [
+      "CUSTOM_EXPLOSION"
+    ]
+  },
+  "explode_in_fire": true,
+  "explosion": {
+    "power": 2500
+  }
+}
+```
+

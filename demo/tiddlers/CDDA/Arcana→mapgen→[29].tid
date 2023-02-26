@@ -1,0 +1,348 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[29]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "roof_4x4_survivor",
+  "object": {
+    "mapgensize": [
+      4,
+      4
+    ],
+    "place_furniture": [
+      {
+        "furn": "f_camp_chair",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "furn": "f_makeshift_bed",
+        "x": 2,
+        "y": 0
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "cannedfood",
+        "x": 1,
+        "y": 0,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "group": "camping",
+        "x": [
+          0,
+          3
+        ],
+        "y": [
+          0,
+          3
+        ],
+        "chance": 50,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "group": "arcana_hunt_random",
+        "x": [
+          0,
+          3
+        ],
+        "y": [
+          0,
+          3
+        ],
+        "chance": 25,
+        "repeat": 2
+      },
+      {
+        "group": "survivorzed_extra",
+        "x": [
+          0,
+          3
+        ],
+        "y": [
+          0,
+          3
+        ],
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "blanket",
+        "x": 2,
+        "y": 0,
+        "chance": 50,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "can_drink",
+        "x": 1,
+        "y": 1,
+        "chance": 30,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "can_food",
+        "x": 1,
+        "y": 1,
+        "chance": 40,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "can_food",
+        "x": 1,
+        "y": 1,
+        "chance": 40,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "sleeping_bag",
+        "x": 3,
+        "y": 1,
+        "chance": 40
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_shady",
+          "mon_dementia",
+          "mon_zombie_survivor",
+          "mon_zombie_survivor",
+          "mon_zombie_survivor"
+        ],
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          2,
+          3
+        ],
+        "chance": 50
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "cf_church_upgrade_4_e",
+  "object": {
+    "mapgensize": [
+      17,
+      17
+    ],
+    "rows": [
+      "...+..+...       ",
+      "... .. ...       ",
+      "    ..           ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "..........       ",
+      "    ++           "
+    ],
+    "terrain": {
+      ".": "t_floor_primitive",
+      "+": "t_door_c"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "roof_4x4_survivor",
+  "object": {
+    "mapgensize": [
+      4,
+      4
+    ],
+    "place_furniture": [
+      {
+        "furn": "f_camp_chair",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "furn": "f_makeshift_bed",
+        "x": 2,
+        "y": 0
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "cannedfood",
+        "x": 1,
+        "y": 0,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "group": "camping",
+        "x": [
+          0,
+          3
+        ],
+        "y": [
+          0,
+          3
+        ],
+        "chance": 50,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "group": "arcana_hunt_random",
+        "x": [
+          0,
+          3
+        ],
+        "y": [
+          0,
+          3
+        ],
+        "chance": 25,
+        "repeat": 2
+      },
+      {
+        "group": "survivorzed_extra",
+        "x": [
+          0,
+          3
+        ],
+        "y": [
+          0,
+          3
+        ],
+        "chance": 50,
+        "repeat": 2
+      },
+      {
+        "item": "blanket",
+        "x": 2,
+        "y": 0,
+        "chance": 50,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "can_drink",
+        "x": 1,
+        "y": 1,
+        "chance": 30,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "can_food",
+        "x": 1,
+        "y": 1,
+        "chance": 40,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "can_food",
+        "x": 1,
+        "y": 1,
+        "chance": 40,
+        "repeat": [
+          2,
+          3
+        ]
+      },
+      {
+        "item": "sleeping_bag",
+        "x": 3,
+        "y": 1,
+        "chance": 40
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_zombie_shady",
+          "mon_dementia",
+          "mon_zombie_survivor",
+          "mon_zombie_survivor",
+          "mon_zombie_survivor"
+        ],
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          2,
+          3
+        ],
+        "chance": 50
+      }
+    ]
+  }
+}
+```
+

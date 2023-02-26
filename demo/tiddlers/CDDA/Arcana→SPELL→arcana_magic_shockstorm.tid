@@ -1,0 +1,209 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_shockstorm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_shockstorm|http://cdda.aloxaf.cn/search?q=arcana_magic_shockstorm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_shockstorm",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Shockstorm"
+  },
+  "description": "Magic Sign\nUsing this spell will call forth lightning all around you.  Anything close to you will take double damage.  Beware using it around allies.",
+  "message": "\"Let it be a thunder to split the heavens and earth…\"  You cast %s!",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_lightning_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_spike",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_noise",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_5",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "zapped",
+  "min_damage": 50,
+  "max_damage": 100,
+  "damage_increment": 5,
+  "min_aoe": 4,
+  "max_aoe": 12,
+  "aoe_increment": 0.8,
+  "max_level": 10,
+  "difficulty": 20,
+  "skill": "magic",
+  "base_casting_time": 240,
+  "final_casting_time": 120,
+  "casting_time_increment": -12,
+  "base_energy_cost": 3000,
+  "final_energy_cost": 1500,
+  "energy_increment": -150,
+  "energy_source": "STAMINA",
+  "min_duration": 1000,
+  "max_duration": 2000,
+  "duration_increment": 100,
+  "damage_type": "electric",
+  "field_id": "fd_electricity",
+  "field_chance": 10,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_shockstorm",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：冲击波"
+  },
+  "description": "使用此咒语的魔法符号\n将在你周围发出闪电。任何靠近你的东西都会受到双倍伤害。小心在盟友周围使用它。",
+  "message": "“让它成为分裂天地的雷声……”你施放了 %s！",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_lightning_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_spike",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_line",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_shockstorm_noise",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_5",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "SILENT",
+    "NO_FAIL"
+  ],
+  "effect_str": "zapped",
+  "min_damage": 50,
+  "max_damage": 100,
+  "damage_increment": 5,
+  "min_aoe": 4,
+  "max_aoe": 12,
+  "aoe_increment": 0.8,
+  "max_level": 10,
+  "difficulty": 20,
+  "skill": "magic",
+  "base_casting_time": 240,
+  "final_casting_time": 120,
+  "casting_time_increment": -12,
+  "base_energy_cost": 3000,
+  "final_energy_cost": 1500,
+  "energy_increment": -150,
+  "energy_source": "STAMINA",
+  "min_duration": 1000,
+  "max_duration": 2000,
+  "duration_increment": 100,
+  "damage_type": "electric",
+  "field_id": "fd_electricity",
+  "field_chance": 10,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+

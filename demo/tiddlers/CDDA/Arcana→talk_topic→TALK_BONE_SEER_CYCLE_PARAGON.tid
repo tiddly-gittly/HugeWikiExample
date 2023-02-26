@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BONE_SEER_CYCLE_PARAGON
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BONE_SEER_CYCLE_PARAGON|http://cdda.aloxaf.cn/search?q=TALK_BONE_SEER_CYCLE_PARAGON]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BONE_SEER.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BONE_SEER_CYCLE_PARAGON",
+  "dynamic_line": "I am not alone in this task.  No matter how many deaths my flesh endures, I will carry on my work.  As many times as it takes.  Interesting, however, that you speak as though there are things beyond mortal means, unfazed by the cycle.  The cycle is all-encompassing.  All that may live, whether or not they were ever born, is beholden to this.",
+  "responses": [
+    {
+      "text": "There is another who has assigned a task of great purpose.  Perhaps in time, our missions will align.",
+      "condition": {
+        "u_has_trait": "seer_mark"
+      },
+      "switch": true,
+      "topic": "TALK_BONE_SEER_CYCLE_PARAGON_MARKED"
+    },
+    {
+      "text": "I have a mission of my own, we'll see if it leads us down the same path.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_BONE_SEER_CYCLE_PARAGON_OTHER"
+    },
+    {
+      "text": "We shall see if this holds true.",
+      "topic": "TALK_BONE_SEER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_BONE_SEER_CYCLE_PARAGON",
+  "dynamic_line": "我在这条道路的探索并不孤独。不论我会承受多少死亡，我都要继续履行我的职责，尽可能地。然而有意思的是，你说的话中好像有些超出常人的事物丝毫不受时间的影响。但周期是包罗万象的，所有活着的人，不管他们出生于否，都被包含其中..",
+  "responses": [
+    {
+      "text": "还有更多更有意义的任务要做。也许最后我们的目标一直。",
+      "condition": {
+        "u_has_trait": "seer_mark"
+      },
+      "switch": true,
+      "topic": "TALK_BONE_SEER_CYCLE_PARAGON_MARKED"
+    },
+    {
+      "text": "我有我自己的任务，我期待着它是否会引导我们走上同一条道路。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_BONE_SEER_CYCLE_PARAGON_OTHER"
+    },
+    {
+      "text": "我们会见证其中的正理。",
+      "topic": "TALK_BONE_SEER"
+    }
+  ]
+}
+```
+

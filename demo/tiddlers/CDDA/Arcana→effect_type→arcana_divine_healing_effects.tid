@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→arcana_divine_healing_effects
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_divine_healing_effects|http://cdda.aloxaf.cn/search?q=arcana_divine_healing_effects]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "arcana_divine_healing_effects",
+  "name": [
+    "Dimensional Mending"
+  ],
+  "desc": [
+    "Steady recovery of stamina, pain, and radiation, immunity to bleeding, poison, and infections for the duration."
+  ],
+  "max_duration": "30 m",
+  "max_intensity": 30,
+  "int_dur_factor": "1 m",
+  "removes_effects": [
+    "poison",
+    "badpoison",
+    "bite",
+    "infected",
+    "fungus",
+    "bleed",
+    "common_cold",
+    "flu",
+    "tetanus"
+  ],
+  "base_mods": {
+    "stamina_min": [
+      25
+    ],
+    "pain_min": [
+      -1
+    ],
+    "pain_tick": [
+      10
+    ],
+    "rad_min": [
+      -1
+    ],
+    "rad_tick": [
+      25
+    ],
+    "health_min": [
+      1
+    ],
+    "health_tick": [
+      25
+    ],
+    "h_mod_min": [
+      1
+    ],
+    "h_mod_tick": [
+      25
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "arcana_divine_healing_effects",
+  "name": [
+    "尺寸修补"
+  ],
+  "desc": [
+    "持续稳定恢复体力、疼痛和辐射，对出血、中毒和感染具有免疫力。"
+  ],
+  "max_duration": "30 m",
+  "max_intensity": 30,
+  "int_dur_factor": "1 m",
+  "removes_effects": [
+    "poison",
+    "badpoison",
+    "bite",
+    "infected",
+    "fungus",
+    "bleed",
+    "common_cold",
+    "flu",
+    "tetanus"
+  ],
+  "base_mods": {
+    "stamina_min": [
+      25
+    ],
+    "pain_min": [
+      -1
+    ],
+    "pain_tick": [
+      10
+    ],
+    "rad_min": [
+      -1
+    ],
+    "rad_tick": [
+      25
+    ],
+    "health_min": [
+      1
+    ],
+    "health_tick": [
+      25
+    ],
+    "h_mod_min": [
+      1
+    ],
+    "h_mod_tick": [
+      25
+    ]
+  }
+}
+```
+

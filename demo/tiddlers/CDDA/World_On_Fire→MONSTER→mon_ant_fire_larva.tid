@@ -1,0 +1,115 @@
+creator: 林一二
+revision: 0
+tags: MONSTER World_On_Fire
+title: World_On_Fire→MONSTER→mon_ant_fire_larva
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_ant_fire_larva|http://cdda.aloxaf.cn/search?q=mon_ant_fire_larva]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/World_On_Fire/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_ant_fire_larva",
+  "type": "MONSTER",
+  "name": {
+    "str": "fire ant larva"
+  },
+  "description": "A squirming light-yellow grub that seems to be drippling a tanish jellified-liquid from both ends of its body.",
+  "default_faction": "ant",
+  "bodytype": "insect",
+  "species": [
+    "INSECT"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 20,
+  "speed": 15,
+  "material": [
+    "iflesh"
+  ],
+  "symbol": "a",
+  "color": "white_yellow",
+  "aggression": -1,
+  "morale": 10,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "upgrades": {
+    "age_grow": 3,
+    "into": "mon_ant_fire"
+  },
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "harvest": "arachnid_fire",
+  "flags": [
+    "FIREPROOF",
+    "LARVA",
+    "DRIPS_NAPALM",
+    "SMELLS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_ant_fire_larva",
+  "type": "MONSTER",
+  "name": {
+    "str": "火蚁幼虫"
+  },
+  "description": "一只蠕动的浅黄色幼虫，身体两端似乎正滴下棕褐色的胶状液体。",
+  "default_faction": "ant",
+  "bodytype": "insect",
+  "species": [
+    "INSECT"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 20,
+  "speed": 15,
+  "material": [
+    "iflesh"
+  ],
+  "symbol": "a",
+  "color": "white_yellow",
+  "aggression": -1,
+  "morale": 10,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "upgrades": {
+    "age_grow": 3,
+    "into": "mon_ant_fire"
+  },
+  "death_function": {
+    "effect": {
+      "id": "death_fireball",
+      "hit_self": true
+    }
+  },
+  "harvest": "arachnid_fire",
+  "flags": [
+    "FIREPROOF",
+    "LARVA",
+    "DRIPS_NAPALM",
+    "SMELLS"
+  ]
+}
+```
+

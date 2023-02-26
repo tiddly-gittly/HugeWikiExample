@@ -1,0 +1,203 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_MSCI
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_MSCI|http://cdda.aloxaf.cn/search?q=TALK_MSCI]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_MSCI.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_MSCI",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "You've got the badge, huh?  I am listening.",
+    "no": "Hey there!  Welcome to the Command Center."
+  },
+  "responses": [
+    {
+      "text": "What is this place?",
+      "topic": "TALK_MSCI_CC_EXPLAIN"
+    },
+    {
+      "text": "Who are you?",
+      "topic": "TALK_MSCI_I_AM"
+    },
+    {
+      "text": "What are you doing here?",
+      "topic": "TALK_MSCI_ASK_DOING"
+    },
+    {
+      "text": "So now what are you going to do?",
+      "condition": {
+        "and": [
+          {
+            "npc_has_var": "apophis_dead",
+            "type": "dialogue",
+            "context": "router",
+            "value": "yes"
+          },
+          {
+            "u_has_var": "apophis_dead",
+            "type": "dialogue",
+            "context": "router",
+            "value": "yes"
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_MSCI_NOWWHAT"
+    },
+    {
+      "text": "Anything I can help with?",
+      "condition": {
+        "npc_has_var": "apophis_dead",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MSCI_NOWWHAT_NEW"
+    },
+    {
+      "text": "So, what can I help you with?",
+      "condition": {
+        "u_has_var": "proven_worthy",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "Any advice for dealing with a bio-weapon?",
+      "condition": {
+        "u_has_mission": "MISSION_LOOT_BIO_LAB"
+      },
+      "switch": true,
+      "topic": "TALK_MSCI_TIPS"
+    },
+    {
+      "text": "Anything I can help with?",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_MSCI_PROOF"
+    },
+    {
+      "text": "Can I stay here?",
+      "topic": "TALK_MSCI_ASK_STAY"
+    },
+    {
+      "text": "Farewell.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_MSCI",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "你有徽章，是吗？我在听。",
+    "no": "嘿！欢迎来到指挥中心。"
+  },
+  "responses": [
+    {
+      "text": "这是哪里？",
+      "topic": "TALK_MSCI_CC_EXPLAIN"
+    },
+    {
+      "text": "你是谁？",
+      "topic": "TALK_MSCI_I_AM"
+    },
+    {
+      "text": "你在这里干什么？",
+      "topic": "TALK_MSCI_ASK_DOING"
+    },
+    {
+      "text": "现在你打算怎么办？",
+      "condition": {
+        "and": [
+          {
+            "npc_has_var": "apophis_dead",
+            "type": "dialogue",
+            "context": "router",
+            "value": "yes"
+          },
+          {
+            "u_has_var": "apophis_dead",
+            "type": "dialogue",
+            "context": "router",
+            "value": "yes"
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_MSCI_NOWWHAT"
+    },
+    {
+      "text": "我能帮上什么忙？",
+      "condition": {
+        "npc_has_var": "apophis_dead",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MSCI_NOWWHAT_NEW"
+    },
+    {
+      "text": "那么，我能帮你什么？",
+      "condition": {
+        "u_has_var": "proven_worthy",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "关于对付生物武器有什么建议吗？",
+      "condition": {
+        "u_has_mission": "MISSION_LOOT_BIO_LAB"
+      },
+      "switch": true,
+      "topic": "TALK_MSCI_TIPS"
+    },
+    {
+      "text": "我能帮上什么忙？",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_MSCI_PROOF"
+    },
+    {
+      "text": "我能待在这儿吗？",
+      "topic": "TALK_MSCI_ASK_STAY"
+    },
+    {
+      "text": "再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

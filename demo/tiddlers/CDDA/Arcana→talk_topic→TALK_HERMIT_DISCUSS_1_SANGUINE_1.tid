@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_1_SANGUINE_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_1_SANGUINE_1|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_1_SANGUINE_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_SANGUINE_1",
+  "dynamic_line": "Thank you.  You have a duty, that you have accepted by retrieving this relic.  Together we shall correct the mistakes of both our orders.",
+  "responses": [
+    {
+      "switch": true,
+      "text": "Perhaps we shall.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "What do we do then?",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_1_SANGUINE_1",
+  "dynamic_line": "非常感谢。你有责任，你已经接受了取回这个遗物。我们将共同纠正我们两个命令的错误。",
+  "responses": [
+    {
+      "switch": true,
+      "text": "也许我们可以。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "那我们该怎么办？",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

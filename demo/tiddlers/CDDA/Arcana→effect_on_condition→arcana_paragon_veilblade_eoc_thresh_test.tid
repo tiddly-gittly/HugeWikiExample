@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Arcana
+title: Arcana→effect_on_condition→arcana_paragon_veilblade_eoc_thresh_test
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_paragon_veilblade_eoc_thresh_test|http://cdda.aloxaf.cn/search?q=arcana_paragon_veilblade_eoc_thresh_test]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutation_effect_on_condition.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "arcana_paragon_veilblade_eoc_thresh_test",
+  "condition": {
+    "and": [
+      {
+        "u_has_flag": "ARCANA_VEIL_MARKER_ALTERATION"
+      },
+      {
+        "u_has_flag": "ARCANA_VEIL_MARKER_AUGMENTATION"
+      },
+      {
+        "u_has_flag": "ARCANA_VEIL_MARKER_DESTRUCTION"
+      },
+      {
+        "u_has_flag": "ARCANA_VEIL_MARKER_PROTECTION"
+      },
+      {
+        "u_has_flag": "ARCANA_VEIL_MARKER_SUMMONING"
+      },
+      {
+        "not": {
+          "u_has_flag": "MUTATION_THRESHOLD"
+        }
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "Your mind strains under the blade's resonance, and then… a powerful force flows through your very being!",
+      "type": "good"
+    },
+    {
+      "u_add_trait": "THRESH_VEIL"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "arcana_paragon_veilblade_eoc_thresh_test",
+  "condition": {
+    "and": [
+      {
+        "u_has_flag": "ARCANA_VEIL_MARKER_ALTERATION"
+      },
+      {
+        "u_has_flag": "ARCANA_VEIL_MARKER_AUGMENTATION"
+      },
+      {
+        "u_has_flag": "ARCANA_VEIL_MARKER_DESTRUCTION"
+      },
+      {
+        "u_has_flag": "ARCANA_VEIL_MARKER_PROTECTION"
+      },
+      {
+        "u_has_flag": "ARCANA_VEIL_MARKER_SUMMONING"
+      },
+      {
+        "not": {
+          "u_has_flag": "MUTATION_THRESHOLD"
+        }
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "你的心智在剑刃的共振下紧张起来，接着…一股强大的力量流过你的身体！",
+      "type": "good"
+    },
+    {
+      "u_add_trait": "THRESH_VEIL"
+    }
+  ]
+}
+```
+

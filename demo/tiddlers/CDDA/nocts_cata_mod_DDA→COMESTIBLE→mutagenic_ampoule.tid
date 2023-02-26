@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→COMESTIBLE→mutagenic_ampoule
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mutagenic_ampoule|http://cdda.aloxaf.cn/search?q=mutagenic_ampoule]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_comestibles.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mutagenic_ampoule",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "mutagenic hemoampoule"
+  },
+  "description": "A resinous capsule filled with what looks like congealed blood, mixed with mutagenic compounds.  Not as strong as mutagenic serum, but will require a syringe to use.",
+  "price": "1000 USD",
+  "price_postapoc": "50 cent",
+  "comestible_type": "MED",
+  "category": "mutagen",
+  "weight": "250 g",
+  "volume": "100 ml",
+  "symbol": "!",
+  "color": "red",
+  "healthy": -2,
+  "addiction_potential": 6,
+  "addiction_type": "mutagen",
+  "flags": [
+    "NO_INGEST"
+  ],
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "You inject the mutagenic hemoampoule's contents.",
+    "tools_needed": {
+      "syringe": -1
+    },
+    "vitamins": [
+      [
+        "mutagen",
+        450,
+        550
+      ]
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mutagenic_ampoule",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "诱变血清安瓿"
+  },
+  "description": "一种像是由树脂构成的胶囊，里面装着混合着可以造成变异的化合物的血液，现在看起来已经凝固了。其虽然没有诱变血清那么强力，但你还是需要一根针管来注射它。",
+  "price": "1000 USD",
+  "price_postapoc": "50 cent",
+  "comestible_type": "MED",
+  "category": "mutagen",
+  "weight": "250 g",
+  "volume": "100 ml",
+  "symbol": "!",
+  "color": "red",
+  "healthy": -2,
+  "addiction_potential": 6,
+  "addiction_type": "mutagen",
+  "flags": [
+    "NO_INGEST"
+  ],
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "你注射了诱变血清安瓿的内容物。",
+    "tools_needed": {
+      "syringe": -1
+    },
+    "vitamins": [
+      [
+        "mutagen",
+        450,
+        550
+      ]
+    ]
+  }
+}
+```
+

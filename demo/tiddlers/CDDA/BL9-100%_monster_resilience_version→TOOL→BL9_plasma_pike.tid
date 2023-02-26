@@ -1,0 +1,135 @@
+creator: 林一二
+revision: 0
+tags: TOOL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→TOOL→BL9_plasma_pike
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_plasma_pike|http://cdda.aloxaf.cn/search?q=BL9_plasma_pike]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Items/melee_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_plasma_pike",
+  "looks_like": "naginata",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9 experimental plasma pike"
+  },
+  "description": "A highly experimental futuristic pike with a unique design that uses BL9 capable of changing it's physical and chemical structure to cause various offensive effects, in this case, extremely heated ionized gasified BL9",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 2,
+  "cutting": 22,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_plasma_melee_effect",
+            "message": "As you stab with the pike it emits extremely heated ionized gasified BL9 at %2$s wildly!",
+            "npc_message": "As %1$s stabs with the pike it emits extremely heated ionized gasified BL9 at %2$s wildly!"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "IMPALE",
+    "tec_brawl_trip",
+    "niten_water_cut",
+    "niten_feint",
+    "tec_medievalpole_feint",
+    "tec_medievalpole_highround"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "SPEAR",
+    "REACH_ATTACK",
+    "STAB"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_plasma_pike",
+  "looks_like": "naginata",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9实验等离子体派克"
+  },
+  "description": "一种高度实验性的未来派长枪，具有独特的设计，使用BL9能够改变其物理和化学结构，以造成各种攻击性的效果，在这种情况下，极端加热电离气化BL9",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 2,
+  "cutting": 22,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_plasma_melee_effect",
+            "message": "当你用长矛刺的时候，它会在%2$s点释放出极度加热的电离气化的BL9！",
+            "npc_message": "当%1$s用长矛刺入时，它会在%2$s处释放出极热的电离气化BL9！"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "IMPALE",
+    "tec_brawl_trip",
+    "niten_water_cut",
+    "niten_feint",
+    "tec_medievalpole_feint",
+    "tec_medievalpole_highround"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "SPEAR",
+    "REACH_ATTACK",
+    "STAB"
+  ]
+}
+```
+

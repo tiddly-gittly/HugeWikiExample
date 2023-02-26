@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→potion_vulnerary
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：potion_vulnerary|http://cdda.aloxaf.cn/search?q=potion_vulnerary]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "potion_vulnerary",
+  "name": [
+    "Vulnerary"
+  ],
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "desc": [
+    "You can feel a soothing sensation lingering after applying salve to your wounds."
+  ],
+  "remove_message": "The vulnerary's after-effects fade.",
+  "removes_effects": [
+    "spores"
+  ],
+  "decay_messages": [
+    [
+      "The after-effects of the vulnerary are fading.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "20 m",
+  "max_intensity": 20,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "health_min": [
+      1
+    ],
+    "health_chance": [
+      15
+    ],
+    "h_mod_min": [
+      1
+    ],
+    "h_mod_chance": [
+      15
+    ],
+    "pain_tick": [
+      50
+    ],
+    "pain_min": [
+      -10
+    ],
+    "speed_mod": [
+      -15,
+      -10
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "potion_vulnerary",
+  "name": [
+    "脆弱的"
+  ],
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "desc": [
+    "在你的伤口涂上药膏后，你会感觉到一种舒缓的感觉挥之不去。"
+  ],
+  "remove_message": "伤者的后遗症会消失。",
+  "removes_effects": [
+    "spores"
+  ],
+  "decay_messages": [
+    [
+      "伤者的后遗症正在消退。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "20 m",
+  "max_intensity": 20,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "health_min": [
+      1
+    ],
+    "health_chance": [
+      15
+    ],
+    "h_mod_min": [
+      1
+    ],
+    "h_mod_chance": [
+      15
+    ],
+    "pain_tick": [
+      50
+    ],
+    "pain_min": [
+      -10
+    ],
+    "speed_mod": [
+      -15,
+      -10
+    ]
+  }
+}
+```
+

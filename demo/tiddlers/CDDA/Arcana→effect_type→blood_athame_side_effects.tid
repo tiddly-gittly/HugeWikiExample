@@ -1,0 +1,225 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→blood_athame_side_effects
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：blood_athame_side_effects|http://cdda.aloxaf.cn/search?q=blood_athame_side_effects]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "blood_athame_side_effects",
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "resist_traits": [
+    "PROF_SANGUINE",
+    "THRESH_DRAGONBLOOD"
+  ],
+  "//": "This won't kill you, but the health and stat penalties will make you wish it did later on down the line.",
+  "name": [
+    "",
+    "Strange Anemia",
+    "Strange Anemia",
+    "Strange Anemia",
+    "Strange Anemia",
+    "Severe Strange Anemia"
+  ],
+  "desc": [
+    "",
+    "Your muscles have been feeling more fatigued lately, and you feel faintly queasy on the inside.  Maybe overusing that athame did something to you…",
+    "The weakness in your body has worsened, and you've been having hunger pangs.  It seems blood magic has consequences if overused.",
+    "Your body feels sluggish and drained, and it seems to be getting worse the more you rely on blood magic.  Relying on it less might help ease your suffering.",
+    "It feels like your body is struggling to sustain itself, as your overuse of the athame's magic has taken its toll on you.  It might be a good idea to stop using that damn thing for a while…",
+    "Using that athame so many times was a terrible mistake, you feel like you've been drained half to death…"
+  ],
+  "rating": "bad",
+  "max_duration": "30 d",
+  "max_intensity": 6,
+  "int_dur_factor": "5 d",
+  "base_mods": {
+    "health_min": [
+      1
+    ],
+    "health_tick": [
+      3600
+    ],
+    "h_mod_min": [
+      1
+    ],
+    "h_mod_tick": [
+      3600
+    ],
+    "hunger_min": [
+      1
+    ],
+    "hunger_chance": [
+      -20
+    ],
+    "hunger_chance_bot": [
+      100
+    ],
+    "hunger_tick": [
+      300
+    ],
+    "dex_mod": [
+      0.75
+    ],
+    "thirst_min": [
+      1
+    ],
+    "thirst_chance": [
+      -120
+    ],
+    "thirst_chance_bot": [
+      100
+    ],
+    "thirst_tick": [
+      600
+    ]
+  },
+  "scaling_mods": {
+    "health_tick": [
+      -360,
+      -300
+    ],
+    "h_mod_tick": [
+      -360,
+      -300
+    ],
+    "str_mod": [
+      -0.75,
+      -0.6
+    ],
+    "hunger_chance": [
+      20,
+      15
+    ],
+    "dex_mod": [
+      -0.75,
+      -0.6
+    ],
+    "thirst_chance": [
+      40,
+      35
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "blood_athame_side_effects",
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "resist_traits": [
+    "PROF_SANGUINE",
+    "THRESH_DRAGONBLOOD"
+  ],
+  "//": "This won't kill you, but the health and stat penalties will make you wish it did later on down the line.",
+  "name": [
+    "",
+    "奇异性贫血",
+    "奇异性贫血",
+    "奇异性贫血",
+    "奇异性贫血",
+    "严重奇异性贫血"
+  ],
+  "desc": [
+    "",
+    "你感觉你的肌肉最近更疲劳了，并且你感到有点恶心。也许过度使用这个仪式刀对你产生了一些影响…",
+    "你身体的虚弱加剧了，你一直有饥饿感。看来如果过度使用血魔法会有不良后果。",
+    "你的身体会感到乏力和精疲力竭，而且你越依赖血魔法，它似乎变得越来越糟糕。少依赖它可能有助于减轻你的痛苦。",
+    "你觉得你的身体在挣扎着支撑着你的身体。暂时停止使用那个该死的东西也许是个好主意…",
+    "使用那把仪式刀这么多次是一个可怕的错误，你觉得自己已经被榨了个半死…"
+  ],
+  "rating": "bad",
+  "max_duration": "30 d",
+  "max_intensity": 6,
+  "int_dur_factor": "5 d",
+  "base_mods": {
+    "health_min": [
+      1
+    ],
+    "health_tick": [
+      3600
+    ],
+    "h_mod_min": [
+      1
+    ],
+    "h_mod_tick": [
+      3600
+    ],
+    "hunger_min": [
+      1
+    ],
+    "hunger_chance": [
+      -20
+    ],
+    "hunger_chance_bot": [
+      100
+    ],
+    "hunger_tick": [
+      300
+    ],
+    "dex_mod": [
+      0.75
+    ],
+    "thirst_min": [
+      1
+    ],
+    "thirst_chance": [
+      -120
+    ],
+    "thirst_chance_bot": [
+      100
+    ],
+    "thirst_tick": [
+      600
+    ]
+  },
+  "scaling_mods": {
+    "health_tick": [
+      -360,
+      -300
+    ],
+    "h_mod_tick": [
+      -360,
+      -300
+    ],
+    "str_mod": [
+      -0.75,
+      -0.6
+    ],
+    "hunger_chance": [
+      20,
+      15
+    ],
+    "dex_mod": [
+      -0.75,
+      -0.6
+    ],
+    "thirst_chance": [
+      40,
+      35
+    ]
+  }
+}
+```
+

@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_carrion_dismantler
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_carrion_dismantler|http://cdda.aloxaf.cn/search?q=mon_carrion_dismantler]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Unknown/Carrion.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_carrion_dismantler",
+  "copy-from": "mon_carrion",
+  "looks_like": "mon_twisted_body",
+  "type": "MONSTER",
+  "name": {
+    "str": "carrion dismantler"
+  },
+  "description": "Overgrown bone blades adore this carrion's limbs, sharp as it glimmers in the light. Stronger and tougher, but it is sluggish than the normal ones.",
+  "hp": 160,
+  "speed": 75,
+  "color": "light_red",
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 4,
+  "armor_cut": 1,
+  "armor_stab": 2,
+  "armor_bullet": 2,
+  "armor_acid": 1,
+  "special_attacks": [
+    [
+      "SHRIEK",
+      32
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 1
+    },
+    [
+      "GRAB",
+      33
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 22
+        }
+      ]
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "SWARMS",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_carrion_dismantler",
+  "copy-from": "mon_carrion",
+  "looks_like": "mon_twisted_body",
+  "type": "MONSTER",
+  "name": {
+    "str": "腐肉拆解者"
+  },
+  "description": "杂草丛生的骨刃崇拜着这具腐肉的四肢，它在阳光下闪闪发光。更强壮，更坚韧，但比正常的更迟钝。",
+  "hp": 160,
+  "speed": 75,
+  "color": "light_red",
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 4,
+  "armor_cut": 1,
+  "armor_stab": 2,
+  "armor_bullet": 2,
+  "armor_acid": 1,
+  "special_attacks": [
+    [
+      "SHRIEK",
+      32
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 1
+    },
+    [
+      "GRAB",
+      33
+    ],
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 22
+        }
+      ]
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "SWARMS",
+    "REVIVES"
+  ]
+}
+```
+

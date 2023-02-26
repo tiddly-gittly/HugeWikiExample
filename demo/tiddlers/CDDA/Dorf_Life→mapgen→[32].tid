@@ -1,0 +1,195 @@
+creator: 林一二
+revision: 0
+tags: mapgen Dorf_Life
+title: Dorf_Life→mapgen→[32]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/mapgen_overlays.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_ruins",
+  "object": {
+    "mapgensize": [
+      12,
+      12
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      " |//|       ",
+      "||,,||      ",
+      "/,,,,+      ",
+      "/,,,,+      ",
+      "||,,||      ",
+      " |//|       ",
+      "       |//| ",
+      "      ||,,||",
+      "      +,,,,/",
+      "      +,,,,/",
+      "      ||,,||",
+      "       |//| "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "|": [
+        "t_wall_log",
+        "t_wall_log_chipped"
+      ],
+      "/": [
+        "t_wall_log",
+        "t_wall_log_chipped",
+        "t_wall_log_broken",
+        "t_moss_underground"
+      ],
+      "+": [
+        "t_door_frame",
+        "t_door_b",
+        "t_door_c"
+      ]
+    },
+    "place_items": [
+      {
+        "item": "cavern_ruins",
+        "x": [
+          8,
+          9
+        ],
+        "y": [
+          7,
+          10
+        ],
+        "chance": 50,
+        "repeat": 10
+      }
+    ],
+    "place_nested": [
+      {
+        "chunks": [
+          [
+            "null",
+            60
+          ],
+          [
+            "breach_spawn_standard",
+            40
+          ]
+        ],
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          2,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_ruins",
+  "object": {
+    "mapgensize": [
+      12,
+      12
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      " |//|       ",
+      "||,,||      ",
+      "/,,,,+      ",
+      "/,,,,+      ",
+      "||,,||      ",
+      " |//|       ",
+      "       |//| ",
+      "      ||,,||",
+      "      +,,,,/",
+      "      +,,,,/",
+      "      ||,,||",
+      "       |//| "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "|": [
+        "t_wall_log",
+        "t_wall_log_chipped"
+      ],
+      "/": [
+        "t_wall_log",
+        "t_wall_log_chipped",
+        "t_wall_log_broken",
+        "t_moss_underground"
+      ],
+      "+": [
+        "t_door_frame",
+        "t_door_b",
+        "t_door_c"
+      ]
+    },
+    "place_items": [
+      {
+        "item": "cavern_ruins",
+        "x": [
+          8,
+          9
+        ],
+        "y": [
+          7,
+          10
+        ],
+        "chance": 50,
+        "repeat": 10
+      }
+    ],
+    "place_nested": [
+      {
+        "chunks": [
+          [
+            "null",
+            60
+          ],
+          [
+            "breach_spawn_standard",
+            40
+          ]
+        ],
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          2,
+          3
+        ]
+      }
+    ]
+  }
+}
+```
+

@@ -1,0 +1,213 @@
+creator: 林一二
+revision: 0
+tags: profession Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→profession→[13]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_professions.json
+
+
+!! 原文
+
+```json
+{
+  "ident": "yamame_kurodani",
+  "type": "profession",
+  "name": "Friendly Youkai of the Cave",
+  "description": "It was sales day at the nearby market, so you left home at the entrance to try that new \"coffee\" product, perhaps share it at the weekly danmaku exhibitions, or at the hotsprings.  However, seems you somehow lost yourself on the way back, not recognizing landmarks, and not meeting anyone to ask about it.",
+  "points": 4,
+  "spells": [
+    {
+      "level": 1,
+      "id": "dash_basic"
+    },
+    {
+      "level": 1,
+      "id": "yamame_curedisease"
+    },
+    {
+      "level": 1,
+      "id": "yamame_icypyrexia"
+    },
+    {
+      "level": 1,
+      "id": "yamame_miasmashot"
+    },
+    {
+      "level": 1,
+      "id": "yamame_scarletplague"
+    },
+    {
+      "level": 1,
+      "id": "yamame_unconstrainedrot"
+    },
+    {
+      "level": 1,
+      "id": "yamame_webbridge"
+    },
+    {
+      "level": 1,
+      "id": "yamame_webcapture"
+    },
+    {
+      "level": 1,
+      "id": "yamame_webrappel"
+    }
+  ],
+  "skills": [
+    {
+      "level": 2,
+      "name": "dodge"
+    },
+    {
+      "level": 2,
+      "name": "fabrication"
+    },
+    {
+      "level": 2,
+      "name": "speech"
+    },
+    {
+      "level": 2,
+      "name": "tailor"
+    }
+  ],
+  "traits": [
+    "TSUCHIGUMO_SPECIES",
+    "YOUKAI_SPECIES",
+    "PROF_YAMAME",
+    "SPIRIT_USER"
+  ],
+  "items": {
+    "both": {
+      "items": [
+        "dress_shoes",
+        "socks",
+        "yamame_dress",
+        "yamame_ribbon",
+        "yamame_shirt"
+      ]
+    },
+    "male": [
+      "boxer_shorts"
+    ],
+    "female": [
+      "bra",
+      "bloomers"
+    ]
+  },
+  "flags": [
+    "SCEN_ONLY"
+  ],
+  "//2": "WIP!!! There's a lot of fun stuff that can't be implemented, or I don't know how to. Plus she's missing at least two more spells",
+  "//3": "There's no way to check for monsters having effects, so the idea of a base dot disease + applying different effects on top of that can't be used. Worse, this also affects other effects that rely on dot spells, like kaenbyou_immolate ",
+  "//4": "Enchantments don't work on monsters either, so things like reduced attack speed can't be set at all",
+  "//5": "EOCs don't work with monsters, so a disease that causes outburst to spread to nearby enemies currently can't exist",
+  "//6": "There's an issue with the remove_field spell effect that causes it to remove 1 field in the entire aoe, so Yamame can't aoe dismiss webs from yamame_webcapture"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "ident": "yamame_kurodani",
+  "type": "profession",
+  "name": "Friendly Youkai of the Cave",
+  "description": "It was sales day at the nearby market, so you left home at the entrance to try that new \"coffee\" product, perhaps share it at the weekly danmaku exhibitions, or at the hotsprings.  However, seems you somehow lost yourself on the way back, not recognizing landmarks, and not meeting anyone to ask about it.",
+  "points": 4,
+  "spells": [
+    {
+      "level": 1,
+      "id": "dash_basic"
+    },
+    {
+      "level": 1,
+      "id": "yamame_curedisease"
+    },
+    {
+      "level": 1,
+      "id": "yamame_icypyrexia"
+    },
+    {
+      "level": 1,
+      "id": "yamame_miasmashot"
+    },
+    {
+      "level": 1,
+      "id": "yamame_scarletplague"
+    },
+    {
+      "level": 1,
+      "id": "yamame_unconstrainedrot"
+    },
+    {
+      "level": 1,
+      "id": "yamame_webbridge"
+    },
+    {
+      "level": 1,
+      "id": "yamame_webcapture"
+    },
+    {
+      "level": 1,
+      "id": "yamame_webrappel"
+    }
+  ],
+  "skills": [
+    {
+      "level": 2,
+      "name": "dodge"
+    },
+    {
+      "level": 2,
+      "name": "fabrication"
+    },
+    {
+      "level": 2,
+      "name": "speech"
+    },
+    {
+      "level": 2,
+      "name": "tailor"
+    }
+  ],
+  "traits": [
+    "TSUCHIGUMO_SPECIES",
+    "YOUKAI_SPECIES",
+    "PROF_YAMAME",
+    "SPIRIT_USER"
+  ],
+  "items": {
+    "both": {
+      "items": [
+        "dress_shoes",
+        "socks",
+        "yamame_dress",
+        "yamame_ribbon",
+        "yamame_shirt"
+      ]
+    },
+    "male": [
+      "boxer_shorts"
+    ],
+    "female": [
+      "bra",
+      "bloomers"
+    ]
+  },
+  "flags": [
+    "SCEN_ONLY"
+  ],
+  "//2": "WIP!!! There's a lot of fun stuff that can't be implemented, or I don't know how to. Plus she's missing at least two more spells",
+  "//3": "There's no way to check for monsters having effects, so the idea of a base dot disease + applying different effects on top of that can't be used. Worse, this also affects other effects that rely on dot spells, like kaenbyou_immolate ",
+  "//4": "Enchantments don't work on monsters either, so things like reduced attack speed can't be set at all",
+  "//5": "EOCs don't work with monsters, so a disease that causes outburst to spread to nearby enemies currently can't exist",
+  "//6": "There's an issue with the remove_field spell effect that causes it to remove 1 field in the entire aoe, so Yamame can't aoe dismiss webs from yamame_webcapture"
+}
+```
+

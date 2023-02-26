@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_LONELY_quest3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_LONELY_quest3|http://cdda.aloxaf.cn/search?q=VAMP_LONELY_quest3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_LONELY_quest3",
+  "type": "mission_definition",
+  "name": {
+    "str": "Bring a bloodrune"
+  },
+  "description": "Get a <color_light_red>bloodrune</color> then deliver it to the vampire.",
+  "goal": "MGOAL_NULL",
+  "difficulty": 5,
+  "value": 400000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_LONELY_quest4",
+  "//": "Locating a blended overmap in a world would take forever, so we WILL set a pedestal in random distances. RNG is your enemy here.",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "bloodrune_pedestal",
+      "om_special": "Pedestal - Bloodrune",
+      "reveal_radius": 1,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "dialogue": {
+    "describe": "This is a bit hard for you. You still want to try?",
+    "offer": "Bloodrune... The vampire's eternal soul. Merely a fact that few of us night creatures turn into an object upon death, yet most resists to that point.\nIn the dark days, bloodrunes are set in a pedestal by elder civilizations, and said that their \"god\" will accept it as a praise, which is not true. Get this rune for me, to honor its soul in a way we normally do.",
+    "accepted": "Good.",
+    "rejected": "Just do it later on.",
+    "advice": "A vampire's death is a big success to those elderly jerks. Well, it is their belief that can't be bothered in any way.",
+    "inquire": "Got it?",
+    "success": "I thank you for this rune.\n*Shatters it by hand*\n",
+    "success_lie": "Just thanks...",
+    "failure": "*smirks*"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_LONELY_quest3",
+  "type": "mission_definition",
+  "name": {
+    "str": "带来一个血符文"
+  },
+  "description": "得到一个<color_light_red>血符文</color>然后把它交给吸血鬼。",
+  "goal": "MGOAL_NULL",
+  "difficulty": 5,
+  "value": 400000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "followup": "VAMP_LONELY_quest4",
+  "//": "Locating a blended overmap in a world would take forever, so we WILL set a pedestal in random distances. RNG is your enemy here.",
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "bloodrune_pedestal",
+      "om_special": "Pedestal - Bloodrune",
+      "reveal_radius": 1,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "dialogue": {
+    "describe": "这对你来说有点难。你还想试试吗？",
+    "offer": "血符文…吸血鬼永恒的灵魂。这仅仅是一个事实，我们中很少有夜行生物会在死后变成一个物体，但大多数人都反对这一点。\n在黑暗的日子里，古老文明把血符文放在基座上，说他们的“上帝”会接受它作为赞美，这是不正确的。把这符文给我，用我们平常的方式来纪念它的灵魂。",
+    "accepted": "好。",
+    "rejected": "以后再做吧。",
+    "advice": "吸血鬼之死对那些上了年纪的混蛋来说是个巨大的成功。好吧，这是他们的信仰，不能被任何方式打扰。",
+    "inquire": "知道了？",
+    "success": "谢谢你给我这个符文。\n*手工粉碎*",
+    "success_lie": "谢谢你…",
+    "failure": "*傻笑*"
+  }
+}
+```
+

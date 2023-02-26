@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_mokou_liver_punch
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_mokou_liver_punch|http://cdda.aloxaf.cn/search?q=tec_mokou_liver_punch]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_mokou_liver_punch",
+  "type": "technique",
+  "name": "Liver punch",
+  "messages": [
+    "You punch %s's liver!",
+    "<npcname> punches %s in the liver"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": true,
+  "crit_ok": true,
+  "stun_dur": 1,
+  "weighting": -1,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.95
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "heat",
+      "scaling-stat": "str",
+      "scale": 0.75
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_mokou_liver_punch",
+  "type": "technique",
+  "name": "Liver punch",
+  "messages": [
+    "You punch %s's liver!",
+    "<npcname> punches %s in the liver"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": true,
+  "crit_ok": true,
+  "stun_dur": 1,
+  "weighting": -1,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.95
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.334
+    },
+    {
+      "stat": "damage",
+      "type": "heat",
+      "scaling-stat": "str",
+      "scale": 0.75
+    }
+  ]
+}
+```
+

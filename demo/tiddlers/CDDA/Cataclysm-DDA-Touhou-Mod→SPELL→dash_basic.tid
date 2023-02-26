@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→dash_basic
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dash_basic|http://cdda.aloxaf.cn/search?q=dash_basic]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_dashes.json
+
+
+!! 原文
+
+```json
+{
+  "id": "dash_basic",
+  "type": "SPELL",
+  "name": "Dash",
+  "description": "Move quickly towards a nearby position.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "dash",
+  "extra_effects": [
+    {
+      "id": "dash_basic_levitate"
+    }
+  ],
+  "shape": "line",
+  "min_range": 4,
+  "max_range": 4,
+  "max_level": 1,
+  "difficulty": -20,
+  "base_casting_time": 80,
+  "base_energy_cost": 2500,
+  "energy_source": "STAMINA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "//": "Stamina severely limits the usage of this spell. Another new resource should be used instead to emulate an average of 3 charges that quickly recovers over time during battle. This would allow the use of wind up and telegraph mechanics for enemies and make combat more dynamic. Different characters have different variations of the dash: Remi should have a shorter spammeable dash that automatically does damage if targeted to an enemy, while Utsuho's should be longer and spawn perpendicular danmaku so she keeps her distance. Because of the current stamina limitations, I assume a pool of 8000 stamina for each confrontation"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "dash_basic",
+  "type": "SPELL",
+  "name": "Dash",
+  "description": "Move quickly towards a nearby position.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "dash",
+  "extra_effects": [
+    {
+      "id": "dash_basic_levitate"
+    }
+  ],
+  "shape": "line",
+  "min_range": 4,
+  "max_range": 4,
+  "max_level": 1,
+  "difficulty": -20,
+  "base_casting_time": 80,
+  "base_energy_cost": 2500,
+  "energy_source": "STAMINA",
+  "flags": [
+    "EXTRA_EFFECTS_FIRST",
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT"
+  ],
+  "//": "Stamina severely limits the usage of this spell. Another new resource should be used instead to emulate an average of 3 charges that quickly recovers over time during battle. This would allow the use of wind up and telegraph mechanics for enemies and make combat more dynamic. Different characters have different variations of the dash: Remi should have a shorter spammeable dash that automatically does damage if targeted to an enemy, while Utsuho's should be longer and spawn perpendicular danmaku so she keeps her distance. Because of the current stamina limitations, I assume a pool of 8000 stamina for each confrontation"
+}
+```
+

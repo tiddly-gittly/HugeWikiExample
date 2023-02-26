@@ -1,0 +1,195 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→ARCANA_PLATES
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：ARCANA_PLATES|http://cdda.aloxaf.cn/search?q=ARCANA_PLATES]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_dragonblood.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_PLATES",
+  "name": {
+    "str": "Draconic Plating"
+  },
+  "points": 3,
+  "visibility": 10,
+  "ugliness": 3,
+  "mixed_effect": true,
+  "description": "Your scales have become a lot more dense yet thinner, increasing your protection slightly and considerably reducing bulk. Reduces wet effects a bit.",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_DRAGONSCALES"
+  ],
+  "prereqs2": [
+    "ARCANA_DRAGONWINGS"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "types": [
+    "SKIN"
+  ],
+  "stealth_modifier": -15,
+  "wet_protection": [
+    {
+      "part": "head",
+      "ignored": 5
+    },
+    {
+      "part": "leg_l",
+      "ignored": 16
+    },
+    {
+      "part": "leg_r",
+      "ignored": 16
+    },
+    {
+      "part": "foot_l",
+      "ignored": 5
+    },
+    {
+      "part": "foot_r",
+      "ignored": 5
+    },
+    {
+      "part": "arm_l",
+      "ignored": 14
+    },
+    {
+      "part": "arm_r",
+      "ignored": 14
+    },
+    {
+      "part": "hand_l",
+      "ignored": 4
+    },
+    {
+      "part": "hand_r",
+      "ignored": 4
+    },
+    {
+      "part": "torso",
+      "ignored": 30
+    }
+  ],
+  "armor": [
+    {
+      "part_types": [
+        "tail"
+      ],
+      "cut": 14,
+      "bash": 10
+    }
+  ],
+  "integrated_armor": [
+    "integrated_draconicplating"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "ARCANA_PLATES",
+  "name": {
+    "str": "龙形板甲"
+  },
+  "points": 3,
+  "visibility": 10,
+  "ugliness": 3,
+  "mixed_effect": true,
+  "description": "你的鳞片变得更密但更薄，略微增加了你的防护力并大幅减少了重量。它也稍微减轻了潮湿对你的影响。",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "ARCANA_DRAGONSCALES"
+  ],
+  "prereqs2": [
+    "ARCANA_DRAGONWINGS"
+  ],
+  "category": [
+    "DRAGONBLOOD"
+  ],
+  "threshreq": [
+    "THRESH_DRAGONBLOOD"
+  ],
+  "types": [
+    "SKIN"
+  ],
+  "stealth_modifier": -15,
+  "wet_protection": [
+    {
+      "part": "head",
+      "ignored": 5
+    },
+    {
+      "part": "leg_l",
+      "ignored": 16
+    },
+    {
+      "part": "leg_r",
+      "ignored": 16
+    },
+    {
+      "part": "foot_l",
+      "ignored": 5
+    },
+    {
+      "part": "foot_r",
+      "ignored": 5
+    },
+    {
+      "part": "arm_l",
+      "ignored": 14
+    },
+    {
+      "part": "arm_r",
+      "ignored": 14
+    },
+    {
+      "part": "hand_l",
+      "ignored": 4
+    },
+    {
+      "part": "hand_r",
+      "ignored": 4
+    },
+    {
+      "part": "torso",
+      "ignored": 30
+    }
+  ],
+  "armor": [
+    {
+      "part_types": [
+        "tail"
+      ],
+      "cut": 14,
+      "bash": 10
+    }
+  ],
+  "integrated_armor": [
+    "integrated_draconicplating"
+  ]
+}
+```
+

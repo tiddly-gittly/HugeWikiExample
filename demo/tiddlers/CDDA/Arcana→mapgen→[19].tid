@@ -1,0 +1,392 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[19]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "house_arcana_encounter_2",
+  "//": "Generic but not very friendly arcanists lived here.  This ended about as well as expected.",
+  "object": {
+    "mapgensize": [
+      24,
+      24
+    ],
+    "set": [
+      {
+        "line": "furniture",
+        "id": "f_makeshift_bed",
+        "x": 2,
+        "x2": 2,
+        "y": 2,
+        "y2": 3
+      },
+      {
+        "line": "furniture",
+        "id": "f_makeshift_bed",
+        "x": 7,
+        "x2": 8,
+        "y": 10,
+        "y2": 10
+      },
+      {
+        "line": "furniture",
+        "id": "f_makeshift_bed",
+        "x": 21,
+        "x2": 21,
+        "y": 17,
+        "y2": 18
+      },
+      {
+        "line": "furniture",
+        "id": "f_candle_barrier",
+        "x": 15,
+        "x2": 18,
+        "y": 18,
+        "y2": 18
+      },
+      {
+        "line": "furniture",
+        "id": "f_candle_barrier",
+        "x": 15,
+        "x2": 18,
+        "y": 21,
+        "y2": 21
+      },
+      {
+        "line": "furniture",
+        "id": "f_candle_barrier",
+        "x": 15,
+        "x2": 15,
+        "y": 19,
+        "y2": 20
+      },
+      {
+        "line": "furniture",
+        "id": "f_candle_barrier",
+        "x": 18,
+        "x2": 18,
+        "y": 19,
+        "y2": 20
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "cult_sacrifice",
+        "x": 21,
+        "y": 6
+      },
+      {
+        "group": "unaligned_arcanist_books_postapoc",
+        "x": [
+          9,
+          13
+        ],
+        "y": 15,
+        "chance": 30,
+        "repeat": 5
+      },
+      {
+        "group": "arcana_hunt_random",
+        "x": [
+          9,
+          13
+        ],
+        "y": 15,
+        "chance": 30,
+        "repeat": 3
+      },
+      {
+        "item": "bowl_pewter",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          19,
+          20
+        ]
+      },
+      {
+        "item": "knife_butcher",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          19,
+          20
+        ]
+      },
+      {
+        "item": "lighter",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          19,
+          20
+        ]
+      },
+      {
+        "group": "summoner_casualties_fresh",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          19,
+          20
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_dementia",
+        "x": 4,
+        "y": 6,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "monster": "mon_dementia",
+        "x": 5,
+        "y": 19,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "monster": "mon_flesh_angel",
+        "x": 17,
+        "y": 19
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_cf_4_old_guard_2",
+  "object": {
+    "place_nested": [
+      {
+        "chunks": [
+          "cf_church_upgrade_4_e"
+        ],
+        "x": 4,
+        "y": 0
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "cf_auxillery_guard_2",
+        "x": 4,
+        "y": 10,
+        "add_trait": "CF_AUX_MARKER_2"
+      },
+      {
+        "class": "cf_auxillery_guard_2",
+        "x": 10,
+        "y": 13,
+        "add_trait": "CF_AUX_MARKER_2"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "house_arcana_encounter_2",
+  "//": "Generic but not very friendly arcanists lived here.  This ended about as well as expected.",
+  "object": {
+    "mapgensize": [
+      24,
+      24
+    ],
+    "set": [
+      {
+        "line": "furniture",
+        "id": "f_makeshift_bed",
+        "x": 2,
+        "x2": 2,
+        "y": 2,
+        "y2": 3
+      },
+      {
+        "line": "furniture",
+        "id": "f_makeshift_bed",
+        "x": 7,
+        "x2": 8,
+        "y": 10,
+        "y2": 10
+      },
+      {
+        "line": "furniture",
+        "id": "f_makeshift_bed",
+        "x": 21,
+        "x2": 21,
+        "y": 17,
+        "y2": 18
+      },
+      {
+        "line": "furniture",
+        "id": "f_candle_barrier",
+        "x": 15,
+        "x2": 18,
+        "y": 18,
+        "y2": 18
+      },
+      {
+        "line": "furniture",
+        "id": "f_candle_barrier",
+        "x": 15,
+        "x2": 18,
+        "y": 21,
+        "y2": 21
+      },
+      {
+        "line": "furniture",
+        "id": "f_candle_barrier",
+        "x": 15,
+        "x2": 15,
+        "y": 19,
+        "y2": 20
+      },
+      {
+        "line": "furniture",
+        "id": "f_candle_barrier",
+        "x": 18,
+        "x2": 18,
+        "y": 19,
+        "y2": 20
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "cult_sacrifice",
+        "x": 21,
+        "y": 6
+      },
+      {
+        "group": "unaligned_arcanist_books_postapoc",
+        "x": [
+          9,
+          13
+        ],
+        "y": 15,
+        "chance": 30,
+        "repeat": 5
+      },
+      {
+        "group": "arcana_hunt_random",
+        "x": [
+          9,
+          13
+        ],
+        "y": 15,
+        "chance": 30,
+        "repeat": 3
+      },
+      {
+        "item": "bowl_pewter",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          19,
+          20
+        ]
+      },
+      {
+        "item": "knife_butcher",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          19,
+          20
+        ]
+      },
+      {
+        "item": "lighter",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          19,
+          20
+        ]
+      },
+      {
+        "group": "summoner_casualties_fresh",
+        "x": [
+          16,
+          17
+        ],
+        "y": [
+          19,
+          20
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_dementia",
+        "x": 4,
+        "y": 6,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "monster": "mon_dementia",
+        "x": 5,
+        "y": 19,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "monster": "mon_flesh_angel",
+        "x": 17,
+        "y": 19
+      }
+    ]
+  }
+}
+```
+

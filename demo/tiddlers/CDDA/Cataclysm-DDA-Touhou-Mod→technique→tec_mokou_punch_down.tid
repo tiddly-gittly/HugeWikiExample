@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_mokou_punch_down
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_mokou_punch_down|http://cdda.aloxaf.cn/search?q=tec_mokou_punch_down]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_mokou_punch_down",
+  "type": "technique",
+  "name": "Downward punch",
+  "messages": [
+    "You punch downwards at %s",
+    "<npcname> punches downwards at %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "unarmed",
+      "level": 3
+    }
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": true,
+  "crit_ok": false,
+  "weighting": -1,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.05
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.667
+    },
+    {
+      "stat": "damage",
+      "type": "heat",
+      "scaling-stat": "str",
+      "scale": 0.75
+    }
+  ],
+  "//": "Should ignite the target"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_mokou_punch_down",
+  "type": "technique",
+  "name": "Downward punch",
+  "messages": [
+    "You punch downwards at %s",
+    "<npcname> punches downwards at %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "unarmed",
+      "level": 3
+    }
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": true,
+  "crit_ok": false,
+  "weighting": -1,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.05
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 1.667
+    },
+    {
+      "stat": "damage",
+      "type": "heat",
+      "scaling-stat": "str",
+      "scale": 0.75
+    }
+  ],
+  "//": "Should ignite the target"
+}
+```
+

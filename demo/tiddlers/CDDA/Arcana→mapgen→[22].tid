@@ -1,0 +1,231 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[22]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "house_arcana_roof_2"
+  ],
+  "weight": 300,
+  "object": {
+    "fill_ter": "t_open_air",
+    "rows": [
+      "                        ",
+      "  |2222222223           ",
+      "  |.........3           ",
+      "  |.........3           ",
+      "  |.........3           ",
+      " ||.........33          ",
+      " |...........3          ",
+      " |...........3222222223 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................5 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |--------------------3 ",
+      "                        "
+    ],
+    "palettes": [
+      "roof_palette"
+    ],
+    "terrain": {
+      ".": "t_shingle_flat_roof"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_cf_4_tacoma_commune_1",
+  "object": {
+    "set": [
+      {
+        "line": "furniture",
+        "id": "f_rack",
+        "x": 4,
+        "x2": 5,
+        "y": 20,
+        "y2": 20
+      },
+      {
+        "point": "furniture",
+        "id": "f_cupboard",
+        "x": 6,
+        "y": 20
+      },
+      {
+        "line": "furniture",
+        "id": "f_counter",
+        "x": 4,
+        "x2": 5,
+        "y": 17,
+        "y2": 17
+      }
+    ],
+    "place_nested": [
+      {
+        "chunks": [
+          "cf_church_upgrade_4_d"
+        ],
+        "x": 4,
+        "y": 17
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "wood_workshop",
+        "x": [
+          4,
+          5
+        ],
+        "y": 20,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "preserved_food",
+        "x": 6,
+        "y": 20,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "tools_hunting",
+        "x": [
+          4,
+          5
+        ],
+        "y": 17,
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "ammo_reloaded",
+        "x": [
+          4,
+          5
+        ],
+        "y": 17,
+        "chance": 75,
+        "repeat": 5
+      },
+      {
+        "group": "arcana_purifying_shot_group",
+        "x": [
+          4,
+          5
+        ],
+        "y": 17,
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "rural_church_start_scales",
+        "x": 5,
+        "y": 17
+      }
+    ],
+    "faction_owner": [
+      {
+        "id": "cleansing_flame",
+        "x": [
+          4,
+          6
+        ],
+        "y": [
+          17,
+          20
+        ]
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "cf_auxillery_merchant_2",
+        "x": 5,
+        "y": 18,
+        "add_trait": "CF_AUX_MARKER_5"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "house_arcana_roof_2"
+  ],
+  "weight": 300,
+  "object": {
+    "fill_ter": "t_open_air",
+    "rows": [
+      "                        ",
+      "  |2222222223           ",
+      "  |.........3           ",
+      "  |.........3           ",
+      "  |.........3           ",
+      " ||.........33          ",
+      " |...........3          ",
+      " |...........3222222223 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |....................5 ",
+      " |....................3 ",
+      " |....................3 ",
+      " |--------------------3 ",
+      "                        "
+    ],
+    "palettes": [
+      "roof_palette"
+    ],
+    "terrain": {
+      ".": "t_shingle_flat_roof"
+    }
+  }
+}
+```
+

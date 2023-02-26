@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_carrion_alpha
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_carrion_alpha|http://cdda.aloxaf.cn/search?q=mon_carrion_alpha]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Unknown/Carrion.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_carrion_alpha",
+  "copy-from": "mon_carrion",
+  "looks_like": "mon_twisted_body",
+  "type": "MONSTER",
+  "name": {
+    "str": "carrion overseer"
+  },
+  "description": "With much more dreadful appearance and a loathsome huge body attached with various assortment of limbs and appendages, this carrion must be the pack leader. Its skin undulates in bloodshot tint as its predominant \"eye\" eagerly skims through the vicinity.",
+  "default_faction": "carrion",
+  "volume": "176000 ml",
+  "weight": "160000 g",
+  "hp": 330,
+  "speed": 45,
+  "color": "red",
+  "melee_skill": 8,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 8,
+  "armor_cut": 4,
+  "armor_stab": 3,
+  "armor_bullet": 3,
+  "armor_acid": 1,
+  "vision_day": 50,
+  "vision_night": 5,
+  "special_attacks": [
+    [
+      "SHRIEK",
+      16
+    ],
+    {
+      "type": "bite",
+      "cooldown": 4
+    },
+    [
+      "GRAB",
+      22
+    ]
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_carrion_alpha",
+  "copy-from": "mon_carrion",
+  "looks_like": "mon_twisted_body",
+  "type": "MONSTER",
+  "name": {
+    "str": "腐肉监工"
+  },
+  "description": "这具腐肉有着更可怕的外表和一具令人厌恶的巨大身体，身体上有各种各样的四肢和附属物，它一定是领头羊。当它主要的“眼睛”急切地掠过附近时，它的皮肤呈血丝色起伏。",
+  "default_faction": "carrion",
+  "volume": "176000 ml",
+  "weight": "160000 g",
+  "hp": 330,
+  "speed": 45,
+  "color": "red",
+  "melee_skill": 8,
+  "melee_dice": 3,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 8,
+  "armor_cut": 4,
+  "armor_stab": 3,
+  "armor_bullet": 3,
+  "armor_acid": 1,
+  "vision_day": 50,
+  "vision_night": 5,
+  "special_attacks": [
+    [
+      "SHRIEK",
+      16
+    ],
+    {
+      "type": "bite",
+      "cooldown": 4
+    },
+    [
+      "GRAB",
+      22
+    ]
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+

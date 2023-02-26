@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_charger_vanguard
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_charger_vanguard|http://cdda.aloxaf.cn/search?q=mon_zombie_charger_vanguard]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Charger.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_charger_vanguard",
+  "type": "MONSTER",
+  "name": "vanguard",
+  "description": "A corpse, heavily altered into a huge mass of distorted flesh, yet still retains the humanoid form. Rotten wounds lay open in its entire body, as its predominant arm has overgrown excessively from prolonged mutation.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN"
+  ],
+  "volume": "875000 ml",
+  "weight": "346500 g",
+  "harvest": "zombie",
+  "hp": 580,
+  "speed": 50,
+  "diff": 15,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "➪",
+  "color": "magenta_red",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 750,
+  "attack_effs": [
+    {
+      "id": "stunned",
+      "duration": 1,
+      "chance": 25
+    },
+    {
+      "id": "downed",
+      "duration": 1
+    }
+  ],
+  "melee_skill": 8,
+  "melee_dice": 8,
+  "melee_dice_sides": 6,
+  "armor_bash": 40,
+  "armor_cut": 10,
+  "armor_bullet": 5,
+  "armor_stab": 5,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_charger_vanguard_charge_target_random"
+      },
+      "cooldown": 180,
+      "monster_message": "<color_yellow>%1$s is charging towards %3$s!</color>"
+    },
+    [
+      "charger_vanguard_tackle",
+      6
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "WARM",
+    "STUN_IMMUNE",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_charger_vanguard",
+  "type": "MONSTER",
+  "name": "霸主冲锋者丧尸",
+  "description": "一具尸体，被深度改造成一大团扭曲的血肉，但仍然保留着人形。腐烂的伤口在它的全身敞开着，它那显眼的手臂由于长时间的变异而过度生长。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN"
+  ],
+  "volume": "875000 ml",
+  "weight": "346500 g",
+  "harvest": "zombie",
+  "hp": 580,
+  "speed": 50,
+  "diff": 15,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "➪",
+  "color": "magenta_red",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 750,
+  "attack_effs": [
+    {
+      "id": "stunned",
+      "duration": 1,
+      "chance": 25
+    },
+    {
+      "id": "downed",
+      "duration": 1
+    }
+  ],
+  "melee_skill": 8,
+  "melee_dice": 8,
+  "melee_dice_sides": 6,
+  "armor_bash": 40,
+  "armor_cut": 10,
+  "armor_bullet": 5,
+  "armor_stab": 5,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_charger_vanguard_charge_target_random"
+      },
+      "cooldown": 180,
+      "monster_message": "<color_yellow>%1$s is charging towards %3$s！</color>"
+    },
+    [
+      "charger_vanguard_tackle",
+      6
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "WARM",
+    "STUN_IMMUNE",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "FILTHY"
+  ]
+}
+```
+

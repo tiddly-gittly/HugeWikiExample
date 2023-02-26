@@ -1,0 +1,199 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_hunter
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_hunter|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_hunter]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_hunter",
+  "type": "MONSTER",
+  "name": {
+    "str": "feral hunter"
+  },
+  "description": "This once-human body is barely recognizable, scrambling about on all fours, its nails and teeth both sharpened into dangerous looking spikes.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 113,
+  "speed": 110,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "brown",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 3,
+      "damage_type": "cut"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 3,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "type": "leap",
+      "cooldown": 5,
+      "max_range": 5
+    },
+    {
+      "type": "bite",
+      "cooldown": 10,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 12,
+          "armor_multiplier": 0.7
+        }
+      ]
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_hunter",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "CLIMBS",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_hunter",
+  "type": "MONSTER",
+  "name": {
+    "str": "野性狩猎者"
+  },
+  "description": "这具曾经的人体几乎无法辨认，四肢着地四处乱爬，它的指甲和牙齿都磨成了危险的尖刺。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 113,
+  "speed": 110,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "brown",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 3,
+      "damage_type": "cut"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 3,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "type": "leap",
+      "cooldown": 5,
+      "max_range": 5
+    },
+    {
+      "type": "bite",
+      "cooldown": 10,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 12,
+          "armor_multiplier": 0.7
+        }
+      ]
+    }
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_hunter",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "CLIMBS",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

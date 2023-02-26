@@ -1,0 +1,153 @@
+creator: 林一二
+revision: 0
+tags: GUNMOD Arcana
+title: Arcana→GUNMOD→arcane_accelerator_plasma
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcane_accelerator_plasma|http://cdda.aloxaf.cn/search?q=arcane_accelerator_plasma]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/gunmods.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcane_accelerator_plasma",
+  "type": "GUNMOD",
+  "name": {
+    "str": "thermal anomaly inlay"
+  },
+  "description": "Several strips of silver inlaid along the length of a firearm's barrel, and a peculiar device wired to each inlay.  When catalyzed by charge from a UPS, the anomalous energies conducted through the inlay imbue bullets with abnormal effects.  Can't be installed on a sawed-down barrel.\nThis device amplifies and shapes the thermal energy given off by the burning powder of each shot, channeled into the bullet to create a plume of plasma.  While this adds a boost to lethality, it comes at the cost of accuracy and range, potentially rendering the weapon unusable.",
+  "weight": "540 g",
+  "volume": "1500 ml",
+  "integral_volume": "150 ml",
+  "price": "900 USD",
+  "price_postapoc": "90 USD",
+  "material": [
+    "silver",
+    "steel"
+  ],
+  "looks_like": "high_density_capacitor",
+  "symbol": ":",
+  "color": "light_gray",
+  "location": "barrel",
+  "blacklist_mod": "emitter",
+  "mod_targets": [
+    "smg",
+    "rifle",
+    "shotgun",
+    "pistol",
+    "launcher"
+  ],
+  "install_time": "45 m",
+  "handling_modifier": -10,
+  "range_modifier": -15,
+  "dispersion_modifier": 100,
+  "loudness_modifier": 30,
+  "damage_modifier": {
+    "damage_type": "bullet",
+    "amount": 40
+  },
+  "ups_charges_modifier": 50,
+  "ammo_effects": [
+    "AMMO_ANOMALY_PLASMA"
+  ],
+  "min_skills": [
+    [
+      "weapon",
+      4
+    ],
+    [
+      "fabrication",
+      6
+    ],
+    [
+      "electronics",
+      5
+    ],
+    [
+      "magic",
+      7
+    ]
+  ],
+  "flags": [
+    "MAGIC_FOCUS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcane_accelerator_plasma",
+  "type": "GUNMOD",
+  "name": {
+    "str": "热异常嵌条枪管"
+  },
+  "description": "沿着枪管的长度嵌有几条银条，每个镶嵌物上都有一个特殊的装置。当由UPS的电荷催化时，通过嵌体传导的异常能量会使子弹产生异常效果。不能安装在锯下的桶上。\n这个装置放大和塑造每一发子弹燃烧的火药所释放的热能，引导到子弹中，形成一股等离子体羽流。虽然这增加了杀伤力，但它以精度和射程为代价，有可能使武器无法使用。",
+  "weight": "540 g",
+  "volume": "1500 ml",
+  "integral_volume": "150 ml",
+  "price": "900 USD",
+  "price_postapoc": "90 USD",
+  "material": [
+    "silver",
+    "steel"
+  ],
+  "looks_like": "high_density_capacitor",
+  "symbol": ":",
+  "color": "light_gray",
+  "location": "barrel",
+  "blacklist_mod": "emitter",
+  "mod_targets": [
+    "smg",
+    "rifle",
+    "shotgun",
+    "pistol",
+    "launcher"
+  ],
+  "install_time": "45 m",
+  "handling_modifier": -10,
+  "range_modifier": -15,
+  "dispersion_modifier": 100,
+  "loudness_modifier": 30,
+  "damage_modifier": {
+    "damage_type": "bullet",
+    "amount": 40
+  },
+  "ups_charges_modifier": 50,
+  "ammo_effects": [
+    "AMMO_ANOMALY_PLASMA"
+  ],
+  "min_skills": [
+    [
+      "weapon",
+      4
+    ],
+    [
+      "fabrication",
+      6
+    ],
+    [
+      "electronics",
+      5
+    ],
+    [
+      "magic",
+      7
+    ]
+  ],
+  "flags": [
+    "MAGIC_FOCUS"
+  ]
+}
+```
+

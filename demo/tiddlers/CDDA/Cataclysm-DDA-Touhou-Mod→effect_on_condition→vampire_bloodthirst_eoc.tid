@@ -1,0 +1,463 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→effect_on_condition→vampire_bloodthirst_eoc
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：vampire_bloodthirst_eoc|http://cdda.aloxaf.cn/search?q=vampire_bloodthirst_eoc]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_eocs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "vampire_bloodthirst_eoc",
+  "type": "effect_on_condition",
+  "recurrence": "1 hour",
+  "condition": {
+    "u_has_trait": "VAMPIRE_SPECIES"
+  },
+  "effect": [
+    {
+      "run_eocs": [
+        {
+          "id": "vampire_bloodthirst_veryhigh",
+          "condition": {
+            "compare_int": [
+              {
+                "u_val": "vitamin",
+                "name": "hblood_vitamin"
+              },
+              "<",
+              {
+                "const": 144
+              }
+            ]
+          },
+          "effect": [
+            {
+              "u_lose_effect": "bloodthirst_low"
+            },
+            {
+              "u_lose_effect": "bloodthirst_medium"
+            },
+            {
+              "u_lose_effect": "bloodthirst_high"
+            },
+            {
+              "u_add_effect": "bloodthirst_veryhigh",
+              "duration": "1 hour"
+            }
+          ]
+        },
+        {
+          "id": "vampire_bloodthirst_high",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  ">=",
+                  {
+                    "const": 145
+                  }
+                ]
+              },
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  "<",
+                  {
+                    "const": 288
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "u_lose_effect": "bloodthirst_low"
+            },
+            {
+              "u_lose_effect": "bloodthirst_medium"
+            },
+            {
+              "u_lose_effect": "bloodthirst_veryhigh"
+            },
+            {
+              "u_add_effect": "bloodthirst_high",
+              "duration": "1 hour"
+            }
+          ]
+        },
+        {
+          "id": "vampire_bloodthirst_medium",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  ">=",
+                  {
+                    "const": 289
+                  }
+                ]
+              },
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  "<",
+                  {
+                    "const": 432
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "u_lose_effect": "bloodthirst_low"
+            },
+            {
+              "u_lose_effect": "bloodthirst_high"
+            },
+            {
+              "u_lose_effect": "bloodthirst_veryhigh"
+            },
+            {
+              "u_add_effect": "bloodthirst_medium",
+              "duration": "1 hour"
+            }
+          ]
+        },
+        {
+          "id": "vampire_bloodthirst_low",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  ">=",
+                  {
+                    "const": 433
+                  }
+                ]
+              },
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  "<",
+                  {
+                    "const": 576
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "u_lose_effect": "bloodthirst_medium"
+            },
+            {
+              "u_lose_effect": "bloodthirst_high"
+            },
+            {
+              "u_lose_effect": "bloodthirst_veryhigh"
+            },
+            {
+              "u_add_effect": "bloodthirst_low",
+              "duration": "1 hour"
+            }
+          ]
+        },
+        {
+          "id": "vampire_bloodthirst_verylow",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  ">=",
+                  {
+                    "const": 577
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "u_lose_effect": "bloodthirst_low"
+            },
+            {
+              "u_lose_effect": "bloodthirst_medium"
+            },
+            {
+              "u_lose_effect": "bloodthirst_high"
+            },
+            {
+              "u_lose_effect": "bloodthirst_veryhigh"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "//": "hblood_vitamin decays 1 point every 20 min, so 72 points equals 24 hours of not consuming human blood/flesh",
+  "//2": "Boundaries for each blood thirst tier are: 0 (including excess) - 24 h (no thirst), 1 - 3 days (low), 3 - 5 days (medium), 5 - 7 days (high), >7 days (veryhigh)",
+  "//3": "This means that, assuming the little vampires start at the lower boundary of day 0 (648), they can go up to 24 hours with no thirst (reach 576), and then get increased thirst every two days, peaking at one week (144) without consumption"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "vampire_bloodthirst_eoc",
+  "type": "effect_on_condition",
+  "recurrence": "1 hour",
+  "condition": {
+    "u_has_trait": "VAMPIRE_SPECIES"
+  },
+  "effect": [
+    {
+      "run_eocs": [
+        {
+          "id": "vampire_bloodthirst_veryhigh",
+          "condition": {
+            "compare_int": [
+              {
+                "u_val": "vitamin",
+                "name": "hblood_vitamin"
+              },
+              "<",
+              {
+                "const": 144
+              }
+            ]
+          },
+          "effect": [
+            {
+              "u_lose_effect": "bloodthirst_low"
+            },
+            {
+              "u_lose_effect": "bloodthirst_medium"
+            },
+            {
+              "u_lose_effect": "bloodthirst_high"
+            },
+            {
+              "u_add_effect": "bloodthirst_veryhigh",
+              "duration": "1 hour"
+            }
+          ]
+        },
+        {
+          "id": "vampire_bloodthirst_high",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  ">=",
+                  {
+                    "const": 145
+                  }
+                ]
+              },
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  "<",
+                  {
+                    "const": 288
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "u_lose_effect": "bloodthirst_low"
+            },
+            {
+              "u_lose_effect": "bloodthirst_medium"
+            },
+            {
+              "u_lose_effect": "bloodthirst_veryhigh"
+            },
+            {
+              "u_add_effect": "bloodthirst_high",
+              "duration": "1 hour"
+            }
+          ]
+        },
+        {
+          "id": "vampire_bloodthirst_medium",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  ">=",
+                  {
+                    "const": 289
+                  }
+                ]
+              },
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  "<",
+                  {
+                    "const": 432
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "u_lose_effect": "bloodthirst_low"
+            },
+            {
+              "u_lose_effect": "bloodthirst_high"
+            },
+            {
+              "u_lose_effect": "bloodthirst_veryhigh"
+            },
+            {
+              "u_add_effect": "bloodthirst_medium",
+              "duration": "1 hour"
+            }
+          ]
+        },
+        {
+          "id": "vampire_bloodthirst_low",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  ">=",
+                  {
+                    "const": 433
+                  }
+                ]
+              },
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  "<",
+                  {
+                    "const": 576
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "u_lose_effect": "bloodthirst_medium"
+            },
+            {
+              "u_lose_effect": "bloodthirst_high"
+            },
+            {
+              "u_lose_effect": "bloodthirst_veryhigh"
+            },
+            {
+              "u_add_effect": "bloodthirst_low",
+              "duration": "1 hour"
+            }
+          ]
+        },
+        {
+          "id": "vampire_bloodthirst_verylow",
+          "condition": {
+            "and": [
+              {
+                "compare_int": [
+                  {
+                    "u_val": "vitamin",
+                    "name": "hblood_vitamin"
+                  },
+                  ">=",
+                  {
+                    "const": 577
+                  }
+                ]
+              }
+            ]
+          },
+          "effect": [
+            {
+              "u_lose_effect": "bloodthirst_low"
+            },
+            {
+              "u_lose_effect": "bloodthirst_medium"
+            },
+            {
+              "u_lose_effect": "bloodthirst_high"
+            },
+            {
+              "u_lose_effect": "bloodthirst_veryhigh"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "//": "hblood_vitamin decays 1 point every 20 min, so 72 points equals 24 hours of not consuming human blood/flesh",
+  "//2": "Boundaries for each blood thirst tier are: 0 (including excess) - 24 h (no thirst), 1 - 3 days (low), 3 - 5 days (medium), 5 - 7 days (high), >7 days (veryhigh)",
+  "//3": "This means that, assuming the little vampires start at the lower boundary of day 0 (648), they can go up to 24 hours with no thirst (reach 576), and then get increased thirst every two days, peaking at one week (144) without consumption"
+}
+```
+

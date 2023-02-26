@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_APPRENTICE_WHY
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_APPRENTICE_WHY|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_APPRENTICE_WHY]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_APPRENTICE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_WHY",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "We continue our studies, in pursuit of survival.  The magus here is one of those who heard of the Dragonblood Sacrament, and decided that it was one valid option to draw power from Beyond and use it to survive.  And looking at you, it seems that method is indeed a valid one, isn't it?",
+    "no": "We continue our studies, in pursuit of survival.  There are many routes to it, and my master still believes that harnessing the power from Beyond might permit us to adapt to this world."
+  },
+  "responses": [
+    {
+      "text": "And your master wants to recreate it?  We don't have to fight.",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_QUERY_DRAGONBLOOD",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true
+    },
+    {
+      "text": "There are many ways to pursue The Path.  It doesn't have to end in us coming to blows.",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_PEACE",
+      "switch": true,
+      "default": true
+    },
+    {
+      "text": "[ATTACK] This must end, no matter our history.  Stand and fight.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_WHY",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "为了生存，我们继续学习。这里的法师是听说过龙血圣礼的人之一，并认为这是一个有效的选择，从帷幕之外汲取力量并使用它来生存。看看你，似乎这个方法确实是有效的，不是吗？",
+    "no": "为了生存，我们继续学习。通往这个世界的道路有很多，我的主人仍然相信，利用来自远方的力量也许可以让我们适应这个世界。"
+  },
+  "responses": [
+    {
+      "text": "你的主人想重现它吗？但我们不想要战斗。",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_QUERY_DRAGONBLOOD",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true
+    },
+    {
+      "text": "这条路有很多种方法。我们不一定非要以打架告终。",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_PEACE",
+      "switch": true,
+      "default": true
+    },
+    {
+      "text": "[攻击]不管我们的历史如何，这都必须结束。站起来战斗。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

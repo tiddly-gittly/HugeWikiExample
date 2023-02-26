@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_PURIFIER_1_INTERLUDE_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_PURIFIER_1_INTERLUDE_1|http://cdda.aloxaf.cn/search?q=MISSION_CF_PURIFIER_1_INTERLUDE_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_PURIFIER_1_INTERLUDE_1",
+  "type": "mission_definition",
+  "name": {
+    "str": "Investigate Laboratory Server Room"
+  },
+  "description": "Investigate a science lab and retrieve the intel Nicholas is looking for from their server room.  After bringing the shipping manifest back to Nicholas, you may return to the refugee center later to check on the Old Guard's doctor.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_var": "nicholas_info_sent",
+    "type": "mission",
+    "context": "rural_church",
+    "value": "yes"
+  },
+  "difficulty": 5,
+  "has_generic_rewards": false,
+  "value": 10000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "microlab_arcana_surface",
+      "om_special": "4x4_microlab_arcana",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    },
+    "effect": [
+      {
+        "npc_add_var": "nicholas_mission_2_mid",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
+    "offer": "Seeing this is probably a bug.",
+    "accepted": "Seeing this is probably a bug.",
+    "rejected": "Seeing this is probably a bug.",
+    "advice": "Seeing this is probably a bug.",
+    "inquire": "Did you find what you're looking for?",
+    "success": "That's good.  I've been going over the information your contact sent us, maybe some day we'll have the manpower to investigate some of these places.  I'll leave the matter of this \"Project Kairos\" to your contact to deal with, I trust they can handle whatever it is they're looking for safely.  Here's something for your trouble, the least I can do after you helped arrange this.",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "FMCNote",
+        "count": 20
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_PURIFIER_1_INTERLUDE_1",
+  "type": "mission_definition",
+  "name": {
+    "str": "调查实验室服务器室"
+  },
+  "description": "调查一个科学实验室，并从他们的服务器室取回尼古拉斯正在寻找的情报。在把运输清单带回给尼古拉斯后，你可以稍后回到难民中心去看看永生守卫的医生。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "u_has_var": "nicholas_info_sent",
+    "type": "mission",
+    "context": "rural_church",
+    "value": "yes"
+  },
+  "difficulty": 5,
+  "has_generic_rewards": false,
+  "value": 10000,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "microlab_arcana_surface",
+      "om_special": "4x4_microlab_arcana",
+      "om_terrain_replace": "field",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    },
+    "effect": [
+      {
+        "npc_add_var": "nicholas_mission_2_mid",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    ]
+  },
+  "dialogue": {
+    "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
+    "offer": "Seeing this is probably a bug.",
+    "accepted": "Seeing this is probably a bug.",
+    "rejected": "Seeing this is probably a bug.",
+    "advice": "Seeing this is probably a bug.",
+    "inquire": "你找到你要找的东西了吗？",
+    "success": "很好。我一直在查看你的联系人发给我们的信息，也许有一天我们会有足够的人手去调查其中的一些地方。我会把这个“Kairos项目”的事情留给你的联系人来处理，我相信他们可以安全地处理他们正在寻找的任何事情。这是解决你麻烦的办法，至少可以让你帮忙安排我能在那之后做点什么。",
+    "success_lie": "Seeing this is probably a bug.",
+    "failure": "Seeing this is probably a bug."
+  },
+  "end": {
+    "effect": [
+      {
+        "u_spawn_item": "FMCNote",
+        "count": 20
+      }
+    ]
+  }
+}
+```
+

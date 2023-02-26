@@ -1,0 +1,269 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff_arcana
+title: vamp_stuff_arcana→talk_topic→VAMP_ASEEKER_questinquire_tokenexct3VS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_ASEEKER_questinquire_tokenexct3VS|http://cdda.aloxaf.cn/search?q=VAMP_ASEEKER_questinquire_tokenexct3VS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff_arcana/NPCs/NPC_TALK_tokenexchange.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+  "type": "talk_topic",
+  "dynamic_line": "Just look at this list:\nfull bloodset armor for 40 tokens\nblood sipper for 20 tokens\nblood diver for 20 tokens\nhammerius for 25 tokens\nknuckle biters for 15 tokens",
+  "responses": [
+    {
+      "text": "I'll exchange 40 tokens for the full set of blood armor",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 40
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "blood_suit"
+        },
+        {
+          "u_spawn_item": "blood_hood"
+        },
+        {
+          "u_spawn_item": "blood_duster"
+        },
+        {
+          "u_spawn_item": "blood_gloves"
+        },
+        {
+          "u_spawn_item": "blood_pants"
+        },
+        {
+          "u_spawn_item": "blood_boots"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 40
+        }
+      ]
+    },
+    {
+      "text": "I'll exchange 20 tokens for the blood sipper",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 20
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "sword_sip"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "text": "I'll exchange 20 tokens for the blood diver",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 20
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "sword_dive"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "text": "I'll exchange 25 tokens for the hammerius",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 25
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "hammerius"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 25
+        }
+      ]
+    },
+    {
+      "text": "I'll exchange 15 tokens for the knuckle biters",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 15
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "punchie_bitie"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "text": "Okay...",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexc"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+  "type": "talk_topic",
+  "dynamic_line": "看看这张单子：\n全血护甲换40个代币",
+  "responses": [
+    {
+      "text": "我要用40个代币换全套血甲",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 40
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "blood_suit"
+        },
+        {
+          "u_spawn_item": "blood_hood"
+        },
+        {
+          "u_spawn_item": "blood_duster"
+        },
+        {
+          "u_spawn_item": "blood_gloves"
+        },
+        {
+          "u_spawn_item": "blood_pants"
+        },
+        {
+          "u_spawn_item": "blood_boots"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 40
+        }
+      ]
+    },
+    {
+      "text": "我要用20个代币换吸血鬼",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 20
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "sword_sip"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "text": "我要换20个代币给潜水员",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 20
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "sword_dive"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "text": "我要用25个代币换hammerius",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 25
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "hammerius"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 25
+        }
+      ]
+    },
+    {
+      "text": "我要用15个代币换那些咬指节的人",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexct3VS",
+      "condition": {
+        "u_has_items": {
+          "item": "arcanetoken",
+          "count": 15
+        }
+      },
+      "effect": [
+        {
+          "u_spawn_item": "punchie_bitie"
+        },
+        {
+          "u_sell_item": "arcanetoken",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "text": "好吧……",
+      "topic": "VAMP_ASEEKER_questinquire_tokenexc"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_pavement_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_pavement_flesh|http://cdda.aloxaf.cn/search?q=t_secro_pavement_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_pavement_flesh",
+  "name": "fleshed pavement",
+  "connects_to": "PAVEMENT",
+  "description": "A segment of asphalt, with thick veins running across the cracks.",
+  "symbol": ".",
+  "color": "red",
+  "move_cost": 5,
+  "flags": [
+    "TRANSPARENT",
+    "FLAT",
+    "ROAD",
+    "S_FLESH",
+    "NOCOLLIDE",
+    "MINEABLE"
+  ],
+  "bash": {
+    "ter_set": "t_pavement",
+    "str_min": 8,
+    "str_max": 16
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_pavement_flesh",
+  "name": "血肉路面",
+  "connects_to": "PAVEMENT",
+  "description": "一段沥青路面，裂缝上有这一层厚厚的血管。",
+  "symbol": ".",
+  "color": "red",
+  "move_cost": 5,
+  "flags": [
+    "TRANSPARENT",
+    "FLAT",
+    "ROAD",
+    "S_FLESH",
+    "NOCOLLIDE",
+    "MINEABLE"
+  ],
+  "bash": {
+    "ter_set": "t_pavement",
+    "str_min": 8,
+    "str_max": 16
+  }
+}
+```
+

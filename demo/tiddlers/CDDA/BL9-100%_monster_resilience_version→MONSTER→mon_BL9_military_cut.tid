@@ -1,0 +1,171 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_military_cut
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_military_cut|http://cdda.aloxaf.cn/search?q=mon_BL9_military_cut]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/Infantry.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_military_cut",
+  "looks_like": "mon_zombie_soldier_blackops_2",
+  "type": "MONSTER",
+  "name": {
+    "str": "Armed BL9-Mercenary - Military Knife"
+  },
+  "description": "An armored mercenary infected by the BL9. It appears to be sentient, having all characteristics of a normal person except for strangely aggressive and bothered look on it's face, seemingly faster reflexes and bloodshot eyes indicating the BL9 presence, they will do their best to stop any intruder that managed to infiltrate their compound, this one is armed with a sharp military knife and it obviously knows how to use it well",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 200,
+  "speed": 100,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 2,
+      "armor_penetration": 5
+    },
+    {
+      "damage_type": "cut",
+      "amount": 5,
+      "armor_penetration": 6
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 7,
+  "armor_cut": 7,
+  "armor_bullet": 7,
+  "special_attacks": [
+    [
+      "PARROT",
+      11
+    ]
+  ],
+  "death_drops": "BL9_Drops_Military",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_military_cut",
+  "looks_like": "mon_zombie_soldier_blackops_2",
+  "type": "MONSTER",
+  "name": {
+    "str": "武装BL9雇佣兵-军刀"
+  },
+  "description": "被BL9感染的装甲雇佣兵。它似乎是有知觉的，除了脸上奇怪的攻击性和烦躁的表情，似乎更快的反应和充血的眼睛表明了BL9的存在，他们会尽最大努力阻止任何入侵者，它武装有一把锋利的军刀，并且显然知道如何用好它。",
+  "default_faction": "BL9_military",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 200,
+  "speed": 100,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "stab",
+      "amount": 2,
+      "armor_penetration": 5
+    },
+    {
+      "damage_type": "cut",
+      "amount": 5,
+      "armor_penetration": 6
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 7,
+  "armor_cut": 7,
+  "armor_bullet": 7,
+  "special_attacks": [
+    [
+      "PARROT",
+      11
+    ]
+  ],
+  "death_drops": "BL9_Drops_Military",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

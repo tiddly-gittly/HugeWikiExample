@@ -1,0 +1,227 @@
+creator: 林一二
+revision: 0
+tags: MONSTER nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→MONSTER→mon_zombie_bio_reanimated
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_bio_reanimated|http://cdda.aloxaf.cn/search?q=mon_zombie_bio_reanimated]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Monsters/c_monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_bio_reanimated",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie_bio_dormant_unarmed",
+  "name": {
+    "str": "reanimated augmented soldier"
+  },
+  "description": "An advanced, well-equipped member of the military that still succumbed to the cataclysm.  This one has no sign of its signature weaponry and its armor is in tatters, yet it still marches on with unnerving confidence and speed.",
+  "default_faction": "super_soldat",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 90,
+  "speed": 110,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_cyan",
+  "//": "It has long since been aggro'd at this point.",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "path_settings": {
+    "max_dist": 20
+  },
+  "dodge": 5,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_stab": 5,
+  "armor_bullet": 10,
+  "armor_acid": 5,
+  "armor_fire": 5,
+  "vision_day": 40,
+  "vision_night": 15,
+  "luminance": 2,
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -1
+    ],
+    [
+      "corroding",
+      -1
+    ]
+  ],
+  "regen_morale": true,
+  "harvest": "CBM_SOLDAT_ZOMBIE_GENERIC",
+  "special_attacks": [
+    {
+      "type": "leap",
+      "cooldown": 10,
+      "max_range": 5
+    },
+    [
+      "GRAB",
+      5
+    ],
+    [
+      "BIO_OP_TAKEDOWN",
+      20
+    ],
+    [
+      "scratch",
+      15
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    60
+  ],
+  "flags": [
+    "HARDTOSHOOT",
+    "REVIVES",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "STUMBLES",
+    "BASHES",
+    "PATH_AVOID_DANGER_1"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_bio_reanimated",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie_bio_dormant_unarmed",
+  "name": {
+    "str": "复活的超级士兵"
+  },
+  "description": "一个装备精良的特种军人，但仍在大灾变中加入了无尽丧尸大军。它的手中似乎没有持有武器并且盔甲破烂不堪，但它仍然以令人不安的速度前进。",
+  "default_faction": "super_soldat",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 90,
+  "speed": 110,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "red_cyan",
+  "//": "It has long since been aggro'd at this point.",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "path_settings": {
+    "max_dist": 20
+  },
+  "dodge": 5,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_stab": 5,
+  "armor_bullet": 10,
+  "armor_acid": 5,
+  "armor_fire": 5,
+  "vision_day": 40,
+  "vision_night": 15,
+  "luminance": 2,
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "onfire",
+      -1
+    ],
+    [
+      "corroding",
+      -1
+    ]
+  ],
+  "regen_morale": true,
+  "harvest": "CBM_SOLDAT_ZOMBIE_GENERIC",
+  "special_attacks": [
+    {
+      "type": "leap",
+      "cooldown": 10,
+      "max_range": 5
+    },
+    [
+      "GRAB",
+      5
+    ],
+    [
+      "BIO_OP_TAKEDOWN",
+      20
+    ],
+    [
+      "scratch",
+      15
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "special_when_hit": [
+    "ZAPBACK",
+    60
+  ],
+  "flags": [
+    "HARDTOSHOOT",
+    "REVIVES",
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "STUMBLES",
+    "BASHES",
+    "PATH_AVOID_DANGER_1"
+  ]
+}
+```
+

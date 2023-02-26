@@ -1,0 +1,253 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_gorepit
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_gorepit|http://cdda.aloxaf.cn/search?q=mon_zombie_gorepit]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Summoner-type monster whose purpose is to send out minions. Its basically a 3-tile wide monster: the center is its hitbox and the adjacent `mouth` causes damage when a creature steps on it.",
+  "id": "mon_zombie_gorepit",
+  "type": "MONSTER",
+  "name": {
+    "str": "gorepit"
+  },
+  "description": "An eerie pit composed mostly of decaying flesh, with a distinctive huge gap revealing thousands of bones and other organic materials aligned in its wall. Thick, sinewy webbing supports a central bulbous orb that beats at a steady rate.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_ULTIMATE"
+  ],
+  "diff": 50,
+  "volume": "69420 L",
+  "weight": "6669420 g",
+  "hp": 2620,
+  "speed": 50,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "☀",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_down_immunity",
+    "emit_gorepit_edge"
+  ],
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "armor_bash": 1,
+  "armor_stab": 2,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "vision_day": 30,
+  "vision_night": 6,
+  "harvest": "exempt",
+  "bleed_rate": 0,
+  "weakpoints": [
+    {
+      "name": "the orb",
+      "armor_mult": {
+        "cut": 0,
+        "stab": 0,
+        "bullet": 0
+      },
+      "difficulty": {
+        "point": 6
+      },
+      "coverage": 30,
+      "damage_mult": {
+        "all": 1.5
+      },
+      "effects": [
+        {
+          "effect": "secro_gorepit_absorb",
+          "duration": [
+            30,
+            45
+          ],
+          "damage_required": [
+            8,
+            18
+          ],
+          "//": "Around 130 damage. Will trigger another ability if this effect is active.",
+          "message": "<color_light_red>The %s unleashes an ear-splitting screech!</color>\n<color_magenta>The %s's orb is absorbing its surrounding flesh, replenishing itself.</color>"
+        },
+        {
+          "effect": "secro_gorepit_explode",
+          "permanent": true,
+          "damage_required": [
+            19,
+            100
+          ],
+          "//": "Around 500 damage.",
+          "message": "The %s's orb exploded!"
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_gorepit_spawn_target"
+      },
+      "cooldown": 38,
+      "monster_message": "<color_red>You feel the ground shaking as it originates from %1$s!</color>\n<color_yellow>%1$s sends a defeaning screech!</color>"
+    }
+  ],
+  "death_function": {
+    "message": "The %s collapses!",
+    "corpse_type": "NO_CORPSE",
+    "effect": {
+      "id": "mon_zombie_gorepit_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "IMMOBILE",
+    "POISON",
+    "NO_BREATHE",
+    "PRIORITIZE_TARGETS",
+    "STUN_IMMUNE",
+    "FLIES",
+    "NOHEAD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Summoner-type monster whose purpose is to send out minions. Its basically a 3-tile wide monster: the center is its hitbox and the adjacent `mouth` causes damage when a creature steps on it.",
+  "id": "mon_zombie_gorepit",
+  "type": "MONSTER",
+  "name": {
+    "str": "戈雷普特"
+  },
+  "description": "一个诡异的坑，主要由腐烂的肉组成，有一个独特的巨大缺口，露出数千块骨头和其他有机材料排列在它的墙壁上。粗而有力的织带支撑着一个以稳定速度跳动的中央球状球体。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_ULTIMATE"
+  ],
+  "diff": 50,
+  "volume": "69420 L",
+  "weight": "6669420 g",
+  "hp": 2620,
+  "speed": 50,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "☀",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "emit_fields": [
+    "emit_down_immunity",
+    "emit_gorepit_edge"
+  ],
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "armor_bash": 1,
+  "armor_stab": 2,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "vision_day": 30,
+  "vision_night": 6,
+  "harvest": "exempt",
+  "bleed_rate": 0,
+  "weakpoints": [
+    {
+      "name": "the orb",
+      "armor_mult": {
+        "cut": 0,
+        "stab": 0,
+        "bullet": 0
+      },
+      "difficulty": {
+        "point": 6
+      },
+      "coverage": 30,
+      "damage_mult": {
+        "all": 1.5
+      },
+      "effects": [
+        {
+          "effect": "secro_gorepit_absorb",
+          "duration": [
+            30,
+            45
+          ],
+          "damage_required": [
+            8,
+            18
+          ],
+          "//": "Around 130 damage. Will trigger another ability if this effect is active.",
+          "message": "<color_light_red>The %s unleashes an ear-splitting screech!</color>\n<color_magenta>The %s's orb is absorbing its surrounding flesh, replenishing itself.</color>"
+        },
+        {
+          "effect": "secro_gorepit_explode",
+          "permanent": true,
+          "damage_required": [
+            19,
+            100
+          ],
+          "//": "Around 500 damage.",
+          "message": "The %s's orb exploded!"
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_gorepit_spawn_target"
+      },
+      "cooldown": 38,
+      "monster_message": "<color_red>你感到%1$s方向的地面正在不断地震动</color>\n<color_yellow>%1$s发出一声清脆的尖叫声！</color>"
+    }
+  ],
+  "death_function": {
+    "message": "The %s collapses!",
+    "corpse_type": "NO_CORPSE",
+    "effect": {
+      "id": "mon_zombie_gorepit_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "IMMOBILE",
+    "POISON",
+    "NO_BREATHE",
+    "PRIORITIZE_TARGETS",
+    "STUN_IMMUNE",
+    "FLIES",
+    "NOHEAD"
+  ]
+}
+```
+

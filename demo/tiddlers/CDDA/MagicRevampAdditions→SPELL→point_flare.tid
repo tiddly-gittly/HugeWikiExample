@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→point_flare
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：point_flare|http://cdda.aloxaf.cn/search?q=point_flare]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/kelvinist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "point_flare",
+  "type": "SPELL",
+  "name": {
+    "str": "Point Flare"
+  },
+  "description": "Causes an intense heat at the location, damaging the target.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "SOMATIC",
+    "LOUD",
+    "NO_PROJECTILE"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 16,
+  "damage_increment": 4,
+  "max_damage": 120,
+  "min_range": 3,
+  "range_increment": 0.5,
+  "max_range": 17,
+  "base_energy_cost": 75,
+  "spell_class": "KELVINIST",
+  "difficulty": 4,
+  "max_level": 22,
+  "base_casting_time": 300,
+  "energy_source": "MANA"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "point_flare",
+  "type": "SPELL",
+  "name": {
+    "str": "定点炎爆"
+  },
+  "description": "在指定地点制造强烈热能，以伤害目标。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "SOMATIC",
+    "LOUD",
+    "NO_PROJECTILE"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "heat",
+  "min_damage": 16,
+  "damage_increment": 4,
+  "max_damage": 120,
+  "min_range": 3,
+  "range_increment": 0.5,
+  "max_range": 17,
+  "base_energy_cost": 75,
+  "spell_class": "KELVINIST",
+  "difficulty": 4,
+  "max_level": 22,
+  "base_casting_time": 300,
+  "energy_source": "MANA"
+}
+```
+

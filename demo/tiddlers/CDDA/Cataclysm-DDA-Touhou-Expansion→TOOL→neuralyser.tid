@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: TOOL Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→TOOL→neuralyser
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：neuralyser|http://cdda.aloxaf.cn/search?q=neuralyser]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/tool/thex_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "neuralyser",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str": "neuralyser",
+    "str_pl": "neuralyser"
+  },
+  "description": "A cigar-shaped, metal thing.  It has two buttons, one of which seems to prepare the instrument for activation, and the second which emits a flash of light.  Maybe you shouldn't look at it.",
+  "volume": "150 ml",
+  "weight": "300 g",
+  "longest_side": "30 cm",
+  "price_postapoc": 2000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "solid",
+    "length": "hand",
+    "surface": "any"
+  },
+  "material": [
+    "aluminum"
+  ],
+  "symbol": ",",
+  "color": "light_gray",
+  "bashing": 2,
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 3
+      }
+    }
+  ],
+  "relic_data": {
+    "charge_info": {
+      "regenerate_ammo": true,
+      "recharge_type": "periodic",
+      "time": "40 s"
+    }
+  },
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "neuralyser_flash",
+      "no_fail": true,
+      "level": 1
+    }
+  ],
+  "flags": [
+    "BELT_CLIP",
+    "NO_RELOAD",
+    "NO_UNLOAD",
+    "TRADER_AVOID"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "neuralyser",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str": "neuralyser",
+    "str_pl": "neuralyser"
+  },
+  "description": "一个雪茄状的金属物，有着红蓝两按钮，按下红色便放电，按下蓝色便闪光，谁死，你定！",
+  "volume": "150 ml",
+  "weight": "300 g",
+  "longest_side": "30 cm",
+  "price_postapoc": 2000,
+  "to_hit": {
+    "balance": "neutral",
+    "grip": "solid",
+    "length": "hand",
+    "surface": "any"
+  },
+  "material": [
+    "aluminum"
+  ],
+  "symbol": ",",
+  "color": "light_gray",
+  "bashing": 2,
+  "charges_per_use": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "battery": 3
+      }
+    }
+  ],
+  "relic_data": {
+    "charge_info": {
+      "regenerate_ammo": true,
+      "recharge_type": "periodic",
+      "time": "40 s"
+    }
+  },
+  "use_action": [
+    {
+      "type": "cast_spell",
+      "spell_id": "neuralyser_flash",
+      "no_fail": true,
+      "level": 1
+    }
+  ],
+  "flags": [
+    "BELT_CLIP",
+    "NO_RELOAD",
+    "NO_UNLOAD",
+    "TRADER_AVOID"
+  ]
+}
+```
+

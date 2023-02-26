@@ -1,0 +1,487 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_PURIFIER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_PURIFIER|http://cdda.aloxaf.cn/search?q=TALK_CF_PURIFIER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_PURIFIER.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_PURIFIER",
+  "dynamic_line": {
+    "npc_has_trait": "FIX_CF_GM",
+    "yes": {
+      "u_has_effect": "cf_mission_1",
+      "yes": "Welcome back.  It is good to see you.",
+      "no": {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": "Cause no trouble sanguinist, and you will be welcome here.",
+        "no": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ],
+          "yes": {
+            "u_male": "Welcome, Brother.",
+            "no": "Welcome, Sister."
+          },
+          "no": {
+            "u_has_any_trait": [
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL"
+            ],
+            "yes": "Greetings, Keeper.",
+            "no": "Greetings."
+          }
+        }
+      }
+    },
+    "no": {
+      "u_has_any_trait": [
+        "PROF_CLEANSINGFLAME",
+        "PROF_CLEANSINGFLAME2"
+      ],
+      "yes": {
+        "u_male": "Good to see you, Brother.  What can I do for you?",
+        "no": "Good to see you, Sister.  What can I do for you?"
+      },
+      "no": "Hi there, how can I help you?"
+    }
+  },
+  "responses": [
+    {
+      "text": "Who are you?",
+      "topic": "TALK_CF_PURIFIER_WHO",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ]
+        }
+      }
+    },
+    {
+      "text": "Are you the only ones left?",
+      "topic": "TALK_CF_PURIFIER_REMAIN",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "What do you do here?",
+      "topic": "TALK_CF_PURIFIER_DO"
+    },
+    {
+      "text": "What can you tell me about this place?",
+      "topic": "TALK_CF_PURIFIER_WHERE"
+    },
+    {
+      "text": "Can you teach me any spells?",
+      "topic": "TALK_CF_PURIFIER_SPELL_MENU",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "cf_mission_1"
+          },
+          {
+            "npc_has_trait": "FIX_CF_GM"
+          },
+          {
+            "not": {
+              "u_has_var": "nicholas_all_spells_known",
+              "type": "flag",
+              "context": "knowledge",
+              "value": "yes"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Do you have anything to trade?",
+      "effect": "start_trade",
+      "condition": {
+        "not": {
+          "npc_has_trait": "FIX_CF_GM"
+        }
+      },
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "[MISSION] The people who helped me find that information were hoping for us to help them in return.",
+      "condition": {
+        "and": [
+          {
+            "npc_has_var": "nicholas_mission_2_end",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "or": [
+              {
+                "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_1"
+              },
+              {
+                "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_2"
+              }
+            ]
+          },
+          {
+            "not": {
+              "u_has_var": "nicholas_info_sent",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_PURIFIER_INTERLUDE_MISSION"
+    },
+    {
+      "text": "How's your research going?",
+      "condition": {
+        "npc_has_var": "nicholas_final_completed",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_PURIFIER_MISSION_FINAL"
+    },
+    {
+      "text": "So now what?",
+      "condition": {
+        "npc_has_var": "nicholas_mission_3_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3"
+    },
+    {
+      "text": "What's next?",
+      "condition": {
+        "npc_has_var": "nicholas_mission_3_ready",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "So, you wanted to talk about what we found?",
+      "condition": {
+        "npc_has_var": "nicholas_mission_2_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_PURIFIER_MISSION_END_2"
+    },
+    {
+      "text": "I'm ready, what do you need?",
+      "condition": {
+        "npc_has_var": "nicholas_mission_2_ready",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "So, what's next?",
+      "condition": {
+        "npc_has_var": "nicholas_mission_1_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_PURIFIER_MISSION_END_1"
+    },
+    {
+      "text": "So, what's next?",
+      "condition": {
+        "npc_has_var": "nicholas_mission_1_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "Anything I can do to help?",
+      "condition": {
+        "npc_has_trait": "FIX_CF_GM"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "Well, bye.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_PURIFIER",
+  "dynamic_line": {
+    "npc_has_trait": "FIX_CF_GM",
+    "yes": {
+      "u_has_effect": "cf_mission_1",
+      "yes": "欢迎回来。很高兴见到你。",
+      "no": {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": "不用麻烦，乐观主义者，欢迎你来这里。",
+        "no": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ],
+          "yes": {
+            "u_male": "Welcome, Brother.",
+            "no": "欢迎，姐姐。"
+          },
+          "no": {
+            "u_has_any_trait": [
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL"
+            ],
+            "yes": "你好，守卫。",
+            "no": "你好。"
+          }
+        }
+      }
+    },
+    "no": {
+      "u_has_any_trait": [
+        "PROF_CLEANSINGFLAME",
+        "PROF_CLEANSINGFLAME2"
+      ],
+      "yes": {
+        "u_male": "Good to see you, Brother.  What can I do for you?",
+        "no": "很高兴见到你，姐姐。我能为你做什么？"
+      },
+      "no": "你好，我能为你效劳吗？"
+    }
+  },
+  "responses": [
+    {
+      "text": "你是谁？",
+      "topic": "TALK_CF_PURIFIER_WHO",
+      "condition": {
+        "not": {
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2"
+          ]
+        }
+      }
+    },
+    {
+      "text": "只剩下你一个人了吗？",
+      "topic": "TALK_CF_PURIFIER_REMAIN",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      }
+    },
+    {
+      "text": "你在这里做什么？",
+      "topic": "TALK_CF_PURIFIER_DO"
+    },
+    {
+      "text": "你能告诉我这是个什么地方？",
+      "topic": "TALK_CF_PURIFIER_WHERE"
+    },
+    {
+      "text": "Can you teach me any spells？",
+      "topic": "TALK_CF_PURIFIER_SPELL_MENU",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "cf_mission_1"
+          },
+          {
+            "npc_has_trait": "FIX_CF_GM"
+          },
+          {
+            "not": {
+              "u_has_var": "nicholas_all_spells_known",
+              "type": "flag",
+              "context": "knowledge",
+              "value": "yes"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "你有什么要交易的？",
+      "effect": "start_trade",
+      "condition": {
+        "not": {
+          "npc_has_trait": "FIX_CF_GM"
+        }
+      },
+      "topic": "TALK_CF_PURIFIER"
+    },
+    {
+      "text": "[任务]帮助我找到这些信息的人希望我们能帮助他们作为回报。",
+      "condition": {
+        "and": [
+          {
+            "npc_has_var": "nicholas_mission_2_end",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "or": [
+              {
+                "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_1"
+              },
+              {
+                "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_2"
+              }
+            ]
+          },
+          {
+            "not": {
+              "u_has_var": "nicholas_info_sent",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_CF_PURIFIER_INTERLUDE_MISSION"
+    },
+    {
+      "text": "你的研究进展如何？",
+      "condition": {
+        "npc_has_var": "nicholas_final_completed",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_PURIFIER_MISSION_FINAL"
+    },
+    {
+      "text": "那现在怎么办？",
+      "condition": {
+        "npc_has_var": "nicholas_mission_3_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_PURIFIER_MISSION_END_3"
+    },
+    {
+      "text": "接下来呢？",
+      "condition": {
+        "npc_has_var": "nicholas_mission_3_ready",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "你想谈谈我们的发现吗？",
+      "condition": {
+        "npc_has_var": "nicholas_mission_2_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_PURIFIER_MISSION_END_2"
+    },
+    {
+      "text": "我准备好了，你需要什么？",
+      "condition": {
+        "npc_has_var": "nicholas_mission_2_ready",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "那么，接下来呢？",
+      "condition": {
+        "npc_has_var": "nicholas_mission_1_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_CF_PURIFIER_MISSION_END_1"
+    },
+    {
+      "text": "那么，接下来呢？",
+      "condition": {
+        "npc_has_var": "nicholas_mission_1_end",
+        "type": "mission",
+        "context": "rural_church",
+        "value": "yes"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "我能帮上什么忙吗？",
+      "condition": {
+        "npc_has_trait": "FIX_CF_GM"
+      },
+      "switch": true,
+      "topic": "TALK_MISSION_LIST"
+    },
+    {
+      "text": "好的，再见。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

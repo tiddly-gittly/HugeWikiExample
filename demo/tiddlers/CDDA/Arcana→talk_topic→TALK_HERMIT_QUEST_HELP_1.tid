@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_QUEST_HELP_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_QUEST_HELP_1|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_QUEST_HELP_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_QUEST_HELP_1",
+  "dynamic_line": "It is best to work through this for yourself, and thus I cannot do it for you.  But I can offer advice and some degree of assistance.  The main things you will need are His sacred word, Oaths to The Chalice.  You'll also need to consult Sanguine Codex to decipher the original spell.",
+  "responses": [
+    {
+      "text": "There's just one problem with consulting these books…",
+      "topic": "TALK_HERMIT_QUEST_HELP_1_PLAYER_DUN_GOOFED",
+      "condition": {
+        "u_has_trait": "ILLITERATE"
+      }
+    },
+    {
+      "text": "Do you have a copy of Oaths to The Chalice?",
+      "topic": "TALK_HERMIT_QUEST_HELP_1_CHALICE",
+      "effect": {
+        "u_spawn_item": "book_sacrifice"
+      },
+      "condition": {
+        "not": {
+          "u_has_item": "book_sacrifice"
+        }
+      }
+    },
+    {
+      "text": "Do you have a copy of Sanguine Codex?",
+      "topic": "TALK_HERMIT_QUEST_HELP_1_SANGUINE",
+      "condition": {
+        "not": {
+          "u_has_item": "book_bloodmagic"
+        }
+      }
+    },
+    {
+      "text": "What else will I need to do to restore the sword?",
+      "topic": "TALK_HERMIT_QUEST_HELP_1_GENERAL"
+    },
+    {
+      "text": "Never mind.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_QUEST_HELP_1",
+  "dynamic_line": "这件工作最好由你自己独立完成，我没法为你做些什么。但我可以提供建议和某种程度的帮助。你需要的主要东西是祂的圣言，圣杯誓言。你还需要参考血法典来破译最初的咒语。",
+  "responses": [
+    {
+      "text": "查阅这些书有一个问题…",
+      "topic": "TALK_HERMIT_QUEST_HELP_1_PLAYER_DUN_GOOFED",
+      "condition": {
+        "u_has_trait": "ILLITERATE"
+      }
+    },
+    {
+      "text": "你有圣杯誓言吗？",
+      "topic": "TALK_HERMIT_QUEST_HELP_1_CHALICE",
+      "effect": {
+        "u_spawn_item": "book_sacrifice"
+      },
+      "condition": {
+        "not": {
+          "u_has_item": "book_sacrifice"
+        }
+      }
+    },
+    {
+      "text": "你有血法典的副本吗？",
+      "topic": "TALK_HERMIT_QUEST_HELP_1_SANGUINE",
+      "condition": {
+        "not": {
+          "u_has_item": "book_bloodmagic"
+        }
+      }
+    },
+    {
+      "text": "为了修复剑我还需要做什么？",
+      "topic": "TALK_HERMIT_QUEST_HELP_1_GENERAL"
+    },
+    {
+      "text": "算了。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

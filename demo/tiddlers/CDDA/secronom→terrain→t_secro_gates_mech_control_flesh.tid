@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_gates_mech_control_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_gates_mech_control_flesh|http://cdda.aloxaf.cn/search?q=t_secro_gates_mech_control_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_gates_mech_control_flesh",
+  "name": "fleshed mechanical winch",
+  "description": "This is a gate control winch. Thich tendrils cover the handle, if removed, it may be usable.",
+  "symbol": "6",
+  "color": "red",
+  "move_cost": 0,
+  "flags": [
+    "TRANSPARENT",
+    "NOITEM",
+    "INDOORS",
+    "PERMEABLE",
+    "THIN_OBSTACLE",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_gates_mech_control"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_gates_mech_control_flesh",
+  "name": "血肉机械绞盘",
+  "description": "这是一个控制门的机械绞盘。柄的上面覆盖了触手。如果把这些触手拿掉大概就可以使用了。",
+  "symbol": "6",
+  "color": "red",
+  "move_cost": 0,
+  "flags": [
+    "TRANSPARENT",
+    "NOITEM",
+    "INDOORS",
+    "PERMEABLE",
+    "THIN_OBSTACLE",
+    "S_FLESH"
+  ],
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_gates_mech_control"
+  }
+}
+```
+

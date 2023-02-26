@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom_lore_expansion
+title: secronom_lore_expansion→MONSTER→mon_szombie_vessel_inactive
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_szombie_vessel_inactive|http://cdda.aloxaf.cn/search?q=mon_szombie_vessel_inactive]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Monsters/Crimson Horrors/Flesh_experimental.json
+
+
+!! 原文
+
+```json
+{
+  "//": "initially spawns as this, but quickly becomes mobile days later.",
+  "id": "mon_szombie_vessel_inactive",
+  "type": "MONSTER",
+  "name": {
+    "str": "vessel experimental"
+  },
+  "description": "A human who fell and succumbed to the flesh vessel exoskeleton - an experimental battle suit developed by the Secronom Project - and by the looks of it, the body has been recently devoured. Strands of flesh writhe incessantly around it.",
+  "copy-from": "mon_szombie_vessel",
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "relative": {
+    "armor_bash": -12,
+    "armor_cut": -12,
+    "armor_stab": -12,
+    "armor_bullet": -12,
+    "armor_acid": -2,
+    "armor_fire": -6,
+    "hp": -50,
+    "vision_day": -10,
+    "vision_night": -10
+  },
+  "extend": {
+    "flags": [
+      "IMMOBILE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "ELECTRIC",
+      "PUSH_MON"
+    ]
+  },
+  "death_drops": "mon_szombie_vessel_inactive_death_drop",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_szombie_vessel_range_target_random"
+      },
+      "cooldown": 35,
+      "monster_message": "<color_magenta>A gunner armament emerges from %1$s's body, aiming at %3$s!</color>"
+    }
+  ],
+  "upgrades": {
+    "half_life": 10,
+    "into": "mon_szombie_vessel"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "initially spawns as this, but quickly becomes mobile days later.",
+  "id": "mon_szombie_vessel_inactive",
+  "type": "MONSTER",
+  "name": {
+    "str": "实验容器"
+  },
+  "description": "一个肉体屈服于脉管装甲外骨骼（Secronom项目开发的一种实验性战斗服）的人类，从外表上看，尸体在近期已经被吞噬了。几缕血肉不停地在它周围扭动。",
+  "copy-from": "mon_szombie_vessel",
+  "melee_skill": 0,
+  "melee_dice": 0,
+  "melee_dice_sides": 0,
+  "relative": {
+    "armor_bash": -12,
+    "armor_cut": -12,
+    "armor_stab": -12,
+    "armor_bullet": -12,
+    "armor_acid": -2,
+    "armor_fire": -6,
+    "hp": -50,
+    "vision_day": -10,
+    "vision_night": -10
+  },
+  "extend": {
+    "flags": [
+      "IMMOBILE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "ELECTRIC",
+      "PUSH_MON"
+    ]
+  },
+  "death_drops": "mon_szombie_vessel_inactive_death_drop",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_szombie_vessel_range_target_random"
+      },
+      "cooldown": 35,
+      "monster_message": "<color_magenta>一个神枪手武装从%1$s的身体里冒出来，并对准了%3$s！</color>"
+    }
+  ],
+  "upgrades": {
+    "half_life": 10,
+    "into": "mon_szombie_vessel"
+  }
+}
+```
+

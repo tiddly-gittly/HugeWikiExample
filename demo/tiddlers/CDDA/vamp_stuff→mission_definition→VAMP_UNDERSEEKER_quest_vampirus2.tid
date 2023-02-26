@@ -1,0 +1,215 @@
+creator: 林一二
+revision: 0
+tags: mission_definition vamp_stuff
+title: vamp_stuff→mission_definition→VAMP_UNDERSEEKER_quest_vampirus2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_UNDERSEEKER_quest_vampirus2|http://cdda.aloxaf.cn/search?q=VAMP_UNDERSEEKER_quest_vampirus2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_mission.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMP_UNDERSEEKER_quest_vampirus2",
+  "type": "mission_definition",
+  "name": {
+    "str": "Unseal the entrance"
+  },
+  "description": "Protect the seeker from the <color_magenta>zeds</color> attracted to your location.",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "and": [
+      {
+        "u_has_trait": "underseekerhelpvampirusunseal"
+      },
+      {
+        "not": {
+          "npc_has_effect": "underseeker_unsealing"
+        }
+      }
+    ]
+  },
+  "difficulty": 1,
+  "value": 1000,
+  "start": {
+    "effect": [
+      "leave",
+      {
+        "u_add_trait": "underseekerhelpvampirusunseal"
+      },
+      {
+        "npc_add_effect": "underseeker_unsealing",
+        "duration": 100
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_x": 2
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_x": 1,
+        "offset_y": -2
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_x": -2
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_x": -1,
+        "offset_y": 2
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_y": 2
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_y": -2
+      }
+    ]
+  },
+  "end": {
+    "effect": [
+      "follow_only",
+      {
+        "u_add_trait": "underseekerhelpvampirus_enter"
+      },
+      {
+        "mapgen_update": "vampirus_unsealing",
+        "origin_npc": true
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "...",
+    "offer": "Yes, I can unseal it at this point.",
+    "accepted": "I do not guarantee our safety from breaking the seal, so you'll need to guard me as I break it.",
+    "rejected": "...",
+    "advice": "With the smell of blood coming out of the vampirus, zombies are attracted towards our location.",
+    "inquire": "...",
+    "success": "And now that the seal is broken, we can go through it.",
+    "success_lie": "Well, thank you. *smirks*",
+    "failure": "Ummm...."
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMP_UNDERSEEKER_quest_vampirus2",
+  "type": "mission_definition",
+  "name": {
+    "str": "解封入口"
+  },
+  "description": "保护探索者免受<color_magenta> zeds </color>吸引到你的位置。",
+  "goal": "MGOAL_CONDITION",
+  "goal_condition": {
+    "and": [
+      {
+        "u_has_trait": "underseekerhelpvampirusunseal"
+      },
+      {
+        "not": {
+          "npc_has_effect": "underseeker_unsealing"
+        }
+      }
+    ]
+  },
+  "difficulty": 1,
+  "value": 1000,
+  "start": {
+    "effect": [
+      "leave",
+      {
+        "u_add_trait": "underseekerhelpvampirusunseal"
+      },
+      {
+        "npc_add_effect": "underseeker_unsealing",
+        "duration": 100
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_x": 2
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_x": 1,
+        "offset_y": -2
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_x": -2
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_x": -1,
+        "offset_y": 2
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_y": 2
+      },
+      {
+        "mapgen_update": "vampirus_attracted",
+        "origin_npc": true,
+        "offset_y": -2
+      }
+    ]
+  },
+  "end": {
+    "effect": [
+      "follow_only",
+      {
+        "u_add_trait": "underseekerhelpvampirus_enter"
+      },
+      {
+        "mapgen_update": "vampirus_unsealing",
+        "origin_npc": true
+      }
+    ]
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "has_generic_rewards": false,
+  "dialogue": {
+    "describe": "…",
+    "offer": "是的，我现在可以解封了。",
+    "accepted": "我不能保证我们打破封印的安全，所以当我打破封印的时候你需要保护我。",
+    "rejected": "…",
+    "advice": "吸血鬼聚集地散发着鲜血的气味，丧尸们会被吸引到我们这里来。",
+    "inquire": "…",
+    "success": "现在封印被打破了，我们可以穿过它。",
+    "success_lie": "好吧，谢谢你。*傻笑*",
+    "failure": "嗯...."
+  }
+}
+```
+

@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→SPELL_CLOUD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SPELL_CLOUD|http://cdda.aloxaf.cn/search?q=SPELL_CLOUD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_paragon.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_CLOUD",
+  "name": {
+    "str": "Sign of Destruction II"
+  },
+  "points": 2,
+  "description": "\"Your enemies will suffer all the same evils they have visited upon this realm.\"\nUnknowable forces have given you a second gift, that can conjure toxic gases at a desired location.  (( Remember to bind the \"spellcasting\" key! ))",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_CONFUSE2"
+  ],
+  "changes_to": [
+    "SPELL_LIGHTNING2"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 200,
+  "spells_learned": [
+    [
+      "arcana_blessing_confuse_monster",
+      1
+    ],
+    [
+      "arcana_blessing_conjure_miasma",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil",
+    "ARCANA_VEIL_MARKER_DESTRUCTION"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_CLOUD",
+  "name": {
+    "str": "破坏标志II"
+  },
+  "points": 2,
+  "description": "“施与同罚，判以同刑！”\n不可知的力量赠予了你第二个礼物，可以在所需的位置产生有毒气体。（（记住绑定“施法”键！））",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_CONFUSE2"
+  ],
+  "changes_to": [
+    "SPELL_LIGHTNING2"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 200,
+  "spells_learned": [
+    [
+      "arcana_blessing_confuse_monster",
+      1
+    ],
+    [
+      "arcana_blessing_conjure_miasma",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil",
+    "ARCANA_VEIL_MARKER_DESTRUCTION"
+  ]
+}
+```
+

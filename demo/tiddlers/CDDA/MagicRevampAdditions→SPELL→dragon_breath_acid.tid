@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→dragon_breath_acid
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dragon_breath_acid|http://cdda.aloxaf.cn/search?q=dragon_breath_acid]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/black_dragon.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "dragon_breath_acid",
+  "name": {
+    "str": "Black Dragon Breath"
+  },
+  "description": "Spews a line of acid from your mouth.",
+  "valid_targets": [
+    "hostile",
+    "ally",
+    "ground"
+  ],
+  "damage_type": "acid",
+  "max_level": 7,
+  "min_damage": 5,
+  "max_damage": 65,
+  "damage_increment": 10,
+  "min_range": 8,
+  "max_range": 14,
+  "range_increment": 1,
+  "effect": "attack",
+  "shape": "line",
+  "field_id": "fd_acid",
+  "min_field_intensity": 1,
+  "max_field_intensity": 4,
+  "field_chance": 2,
+  "field_intensity_increment": 0.1,
+  "base_casting_time": 200,
+  "energy_source": "MANA",
+  "base_energy_cost": 200,
+  "flags": [
+    "VERBAL",
+    "NO_HANDS",
+    "NO_LEGS",
+    "LOUD"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "dragon_breath_acid",
+  "name": {
+    "str": "黑龙之息"
+  },
+  "description": "从你的口中喷出一道酸液。",
+  "valid_targets": [
+    "hostile",
+    "ally",
+    "ground"
+  ],
+  "damage_type": "acid",
+  "max_level": 7,
+  "min_damage": 5,
+  "max_damage": 65,
+  "damage_increment": 10,
+  "min_range": 8,
+  "max_range": 14,
+  "range_increment": 1,
+  "effect": "attack",
+  "shape": "line",
+  "field_id": "fd_acid",
+  "min_field_intensity": 1,
+  "max_field_intensity": 4,
+  "field_chance": 2,
+  "field_intensity_increment": 0.1,
+  "base_casting_time": 200,
+  "energy_source": "MANA",
+  "base_energy_cost": 200,
+  "flags": [
+    "VERBAL",
+    "NO_HANDS",
+    "NO_LEGS",
+    "LOUD"
+  ]
+}
+```
+

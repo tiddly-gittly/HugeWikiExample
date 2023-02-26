@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: TOOL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→TOOL→mokou_fireball3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mokou_fireball3|http://cdda.aloxaf.cn/search?q=mokou_fireball3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/items/touhou_etherealitems.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mokou_fireball3",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "Fire ball (unstable)",
+    "str_pl": "Fire balls (unstable)"
+  },
+  "copy-from": "mokou_fireball2",
+  "description": "An almost transparent ball of orange and red fire.  It's quickly getting very hot to the touch, the core layer is merging with each layer on top of it.",
+  "symbol": "◌",
+  "initial_charges": 5,
+  "max_charges": 5,
+  "turns_per_charge": 1,
+  "explode_in_fire": false,
+  "explosion": {
+    "power": 250,
+    "max_noise": 12
+  },
+  "use_action": {
+    "type": "explosion",
+    "explosion": {
+      "power": 250
+    },
+    "no_deactivate_msg": "The ball is already unstable! It's a matter of time until it explodes!"
+  },
+  "flags": [
+    "LIGHT_32",
+    "TRADER_AVOID"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mokou_fireball3",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "Fire ball (unstable)",
+    "str_pl": "Fire balls (unstable)"
+  },
+  "copy-from": "mokou_fireball2",
+  "description": "An almost transparent ball of orange and red fire.  It's quickly getting very hot to the touch, the core layer is merging with each layer on top of it.",
+  "symbol": "◌",
+  "initial_charges": 5,
+  "max_charges": 5,
+  "turns_per_charge": 1,
+  "explode_in_fire": false,
+  "explosion": {
+    "power": 250,
+    "max_noise": 12
+  },
+  "use_action": {
+    "type": "explosion",
+    "explosion": {
+      "power": 250
+    },
+    "no_deactivate_msg": "The ball is already unstable! It's a matter of time until it explodes!"
+  },
+  "flags": [
+    "LIGHT_32",
+    "TRADER_AVOID"
+  ]
+}
+```
+

@@ -1,0 +1,175 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_charger_plate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_charger_plate|http://cdda.aloxaf.cn/search?q=mon_zombie_charger_plate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Charger.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_charger_plate",
+  "type": "MONSTER",
+  "name": "charger zombie",
+  "description": "A large corpse with its skin calcified, forming a shell-like layer.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "140000 ml",
+  "weight": "182000 g",
+  "harvest": "zombie",
+  "hp": 310,
+  "speed": 55,
+  "diff": 20,
+  "material": [
+    "flesh"
+  ],
+  "attack_effs": [
+    {
+      "id": "stunned",
+      "duration": 1,
+      "chance": 10
+    },
+    {
+      "id": "downed",
+      "duration": 1,
+      "chance": 50
+    }
+  ],
+  "symbol": "➡",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 500,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "armor_bash": 28,
+  "armor_cut": 8,
+  "armor_bullet": 6,
+  "armor_stab": 6,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_charger_plate_charge_target_random"
+      },
+      "cooldown": 180,
+      "monster_message": "<color_yellow>%1$s is charging towards %3$s!</color>"
+    },
+    [
+      "charger_plate_tackle",
+      6
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "WARM",
+    "STUN_IMMUNE",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_charger_plate",
+  "type": "MONSTER",
+  "name": "冲锋者丧尸",
+  "description": "A large corpse with its skin calcified, forming a shell-like layer.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN"
+  ],
+  "volume": "140000 ml",
+  "weight": "182000 g",
+  "harvest": "zombie",
+  "hp": 310,
+  "speed": 55,
+  "diff": 20,
+  "material": [
+    "flesh"
+  ],
+  "attack_effs": [
+    {
+      "id": "stunned",
+      "duration": 1,
+      "chance": 10
+    },
+    {
+      "id": "downed",
+      "duration": 1,
+      "chance": 50
+    }
+  ],
+  "symbol": "➡",
+  "color": "green",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 500,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "armor_bash": 28,
+  "armor_cut": 8,
+  "armor_bullet": 6,
+  "armor_stab": 6,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_charger_plate_charge_target_random"
+      },
+      "cooldown": 180,
+      "monster_message": "<color_yellow>%1$s is charging towards %3$s！</color>"
+    },
+    [
+      "charger_plate_tackle",
+      6
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "HEARS",
+    "WARM",
+    "STUN_IMMUNE",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

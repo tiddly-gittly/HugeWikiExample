@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_hunting_horror_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_hunting_horror_on|http://cdda.aloxaf.cn/search?q=summon_hunting_horror_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/obsolete.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_hunting_horror_on",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "glyph of Crawling Chaos (active)",
+    "str_pl": "glyphs of Crawling Chaos (active)"
+  },
+  "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.",
+  "price": "1500 USD",
+  "price_postapoc": "40 USD",
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "turns_per_charge": 1,
+  "revert_to": "silver_glyph",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_hunting_horror_summoned",
+    "friendly_msg": "The hunting horror is at your beck and call.  A gift from the Stalker among the Stars?",
+    "hostile_msg": "You feel the gaze of Nyarlathotep upon you.  How foolish of you, to steal the harrier of the Faceless God!",
+    "difficulty": 4,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_hunting_horror_on",
+  "type": "TOOL",
+  "copy-from": "silver_glyph",
+  "name": {
+    "str": "雕文：爬行混沌（激活）",
+    "str_pl": "雕文：爬行混沌（激活）"
+  },
+  "description": "奇怪的银徽章，不规则地刻着难以辨认的符文。使用它会将一个狩猎恐惧与你的意志捆绑在一起。如果成功的话。",
+  "price": "1500 USD",
+  "price_postapoc": "40 USD",
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "turns_per_charge": 1,
+  "revert_to": "silver_glyph",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_hunting_horror_summoned",
+    "friendly_msg": "狩猎恐惧随时听候你的吩咐。也许是星间潜行者的恩赐？",
+    "hostile_msg": "你能感觉到奈亚拉托提普的目光停在你身上。你真愚蠢，试图偷走无名古神的鹞！",
+    "difficulty": 4,
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true,
+    "skills": [
+      "magic"
+    ]
+  }
+}
+```
+

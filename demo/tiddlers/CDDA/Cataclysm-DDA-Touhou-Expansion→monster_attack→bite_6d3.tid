@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: monster_attack Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→monster_attack→bite_6d3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：bite_6d3|http://cdda.aloxaf.cn/search?q=bite_6d3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monster_special_attacks/thex_monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "bite_6d3",
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "cooldown": 1,
+  "move_cost": 100,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 20,
+      "armor_penetration": 3
+    }
+  ],
+  "min_mul": 0.3,
+  "max_mul": 0.9,
+  "hitsize_min": 1,
+  "effects": [
+    {
+      "id": "bleed",
+      "duration": 2400,
+      "affect_hit_bp": true
+    }
+  ],
+  "hit_dmg_u": "The %1$s crunches your %2$s with its huge maw!",
+  "hit_dmg_npc": "The %1$s crunches <npcname>'s %2$s with its huge maw!",
+  "miss_msg_u": "The %s attempts to chomp your %2$s!  You dodge!",
+  "miss_msg_npc": "The %s tries to bite <npcname>'s %2$s, but they dodge!",
+  "no_dmg_msg_u": "The %1$s bites at your %2$s, but your armor endures!",
+  "no_dmg_msg_npc": "The %1$s chomps at <npcname>, but the armor holds!",
+  "dodgeable": true,
+  "blockable": true,
+  "//": "Bite for Inostrancevia. This actually should either cripple or kill, given the size of those things, but that's not kind so it just does slightly more damage than the dire wolf's bite"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "bite_6d3",
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "cooldown": 1,
+  "move_cost": 100,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 20,
+      "armor_penetration": 3
+    }
+  ],
+  "min_mul": 0.3,
+  "max_mul": 0.9,
+  "hitsize_min": 1,
+  "effects": [
+    {
+      "id": "bleed",
+      "duration": 2400,
+      "affect_hit_bp": true
+    }
+  ],
+  "hit_dmg_u": "The %1$s crunches your %2$s with its huge maw！",
+  "hit_dmg_npc": "The %1$s crunches <npcname>'s %2$s with its huge maw！",
+  "miss_msg_u": "The %s attempts to chomp your %2$s!  You dodge!",
+  "miss_msg_npc": "The %s tries to bite <npcname>'s %2$s, but they dodge!",
+  "no_dmg_msg_u": "The %1$s bites at your %2$s, but your armor endures!",
+  "no_dmg_msg_npc": "The %1$s chomps at <npcname>, but the armor holds!",
+  "dodgeable": true,
+  "blockable": true,
+  "//": "Bite for Inostrancevia. This actually should either cripple or kill, given the size of those things, but that's not kind so it just does slightly more damage than the dire wolf's bite"
+}
+```
+

@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_meiling_elbow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_meiling_elbow|http://cdda.aloxaf.cn/search?q=tec_meiling_elbow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_meiling_elbow",
+  "type": "technique",
+  "name": "Elbow strike",
+  "messages": [
+    "You hit %s with your qi-reinforced elbow!",
+    "<npcname> hits %s with their qi-reinforced elbow!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "attack_override": true,
+  "weighting": 1,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_meiling_elbow",
+  "type": "technique",
+  "name": "Elbow strike",
+  "messages": [
+    "You hit %s with your qi-reinforced elbow!",
+    "<npcname> hits %s with their qi-reinforced elbow!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 3
+    }
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "attack_override": true,
+  "weighting": 1,
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 1
+    }
+  ]
+}
+```
+

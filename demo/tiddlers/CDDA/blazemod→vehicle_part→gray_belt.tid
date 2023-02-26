@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→gray_belt
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gray_belt|http://cdda.aloxaf.cn/search?q=gray_belt]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blob_vehicleparts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gray_belt",
+  "type": "vehicle_part",
+  "name": {
+    "str": "gray harness"
+  },
+  "item": "gray",
+  "location": "on_seat",
+  "symbol": ",",
+  "broken_symbol": ",",
+  "color": "light_gray",
+  "broken_color": "light_gray",
+  "durability": 1000,
+  "bonus": 50,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "description": "A living blob, reformed as a belt and attached to a seat.",
+  "breaks_into": [
+    {
+      "item": "graygrow"
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "SEATBELT"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gray_belt",
+  "type": "vehicle_part",
+  "name": {
+    "str": "灰色安全带"
+  },
+  "item": "gray",
+  "location": "on_seat",
+  "symbol": ",",
+  "broken_symbol": ",",
+  "color": "light_gray",
+  "broken_color": "light_gray",
+  "durability": 1000,
+  "bonus": 50,
+  "damage_modifier": 10,
+  "folded_volume": "250 ml",
+  "description": "一只活的变形怪变成的安全带。",
+  "breaks_into": [
+    {
+      "item": "graygrow"
+    }
+  ],
+  "requirements": {
+    "repair": {
+      "time": "5 m",
+      "using": [
+        [
+          "blobrep",
+          1
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "SEATBELT"
+  ]
+}
+```
+

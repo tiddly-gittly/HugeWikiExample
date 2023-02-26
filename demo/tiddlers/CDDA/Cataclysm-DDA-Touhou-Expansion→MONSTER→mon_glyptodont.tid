@@ -1,0 +1,183 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_glyptodont
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_glyptodont|http://cdda.aloxaf.cn/search?q=mon_glyptodont]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_mammal.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_glyptodont",
+  "type": "MONSTER",
+  "name": {
+    "str": "glyptodont"
+  },
+  "description": "A giant armadillo, the size of a small car.  It moves around, looking for plants to eat.  The rounded shell would make an interesting shelter for sure.",
+  "volume": "1000 L",
+  "weight": "800 kg",
+  "default_faction": "herbivore",
+  "bodytype": "gator",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_osteoderm",
+  "hp": 250,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "g",
+  "looks_like": "mon_bear",
+  "color": "brown",
+  "aggression": -20,
+  "morale": 50,
+  "melee_skill": 2,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 8,
+  "armor_cut": 16,
+  "armor_stab": 4,
+  "armor_bullet": 4,
+  "vision_day": 25,
+  "vision_night": 10,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_NEAR_BABY"
+  ],
+  "reproduction": {
+    "baby_monster": "mon_glyptodont_baby",
+    "baby_count": 2,
+    "baby_timer": 180
+  },
+  "baby_flags": [
+    "SPRING"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      60
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "BASHES",
+    "KEENNOSE",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON",
+    "SEES",
+    "WARM"
+  ],
+  "//2": "Glyptodont sp. used as reference. No reproductive data",
+  "//3": "Would be cool for these to dig and live around mini-dungeon paleoburrows"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_glyptodont",
+  "type": "MONSTER",
+  "name": {
+    "str": "glyptodont"
+  },
+  "description": "A giant armadillo, the size of a small car.  It moves around, looking for plants to eat.  The rounded shell would make an interesting shelter for sure.",
+  "volume": "1000 L",
+  "weight": "800 kg",
+  "default_faction": "herbivore",
+  "bodytype": "gator",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_osteoderm",
+  "hp": 250,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "g",
+  "looks_like": "mon_bear",
+  "color": "brown",
+  "aggression": -20,
+  "morale": 50,
+  "melee_skill": 2,
+  "melee_dice": 3,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 8,
+  "armor_cut": 16,
+  "armor_stab": 4,
+  "armor_bullet": 4,
+  "vision_day": 25,
+  "vision_night": 10,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_NEAR_BABY"
+  ],
+  "reproduction": {
+    "baby_monster": "mon_glyptodont_baby",
+    "baby_count": 2,
+    "baby_timer": 180
+  },
+  "baby_flags": [
+    "SPRING"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      60
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "BASHES",
+    "KEENNOSE",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON",
+    "SEES",
+    "WARM"
+  ],
+  "//2": "Glyptodont sp. used as reference. No reproductive data",
+  "//3": "Would be cool for these to dig and live around mini-dungeon paleoburrows"
+}
+```
+

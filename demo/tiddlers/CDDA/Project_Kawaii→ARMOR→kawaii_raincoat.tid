@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Project_Kawaii
+title: Project_Kawaii→ARMOR→kawaii_raincoat
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kawaii_raincoat|http://cdda.aloxaf.cn/search?q=kawaii_raincoat]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Project_Kawaii/items.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kawaii_raincoat",
+  "type": "ARMOR",
+  "name": {
+    "str": "Cute Transparent Raincoat (hood on)"
+  },
+  "description": "A transparent raincoat made from very thin vinyl, very popular with maids who want to be fashionable in rainy weather. The material is thin enough that the entire coat can fold away into a pocket when not in use.",
+  "weight": "120 g",
+  "volume": "750 ml",
+  "price": 5000,
+  "price_postapoc": 50,
+  "material": [
+    "plastic",
+    "cotton"
+  ],
+  "material_thickness": 1,
+  "symbol": "[",
+  "color": "blue",
+  "flags": [
+    "VARSIZE",
+    "POCKETS",
+    "WATERPROOF",
+    "RAINPROOF",
+    "HOOD",
+    "OUTER",
+    "FANCY",
+    "SOFT"
+  ],
+  "use_action": {
+    "type": "transform",
+    "msg": "You take off the hood.",
+    "target": "kawaii_raincoat_off",
+    "menu_text": "Toggle hood"
+  },
+  "armor": [
+    {
+      "encumbrance": 10,
+      "coverage": 95,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "head"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kawaii_raincoat",
+  "type": "ARMOR",
+  "name": {
+    "str": "透明雨衣 （带风帽）"
+  },
+  "description": "一种透明的雨衣，由非常薄的乙烯基制成，非常受想要在雨天时髦的女仆们的欢迎。这种材料很薄，因此不用的时候整个雨衣可以折叠起来放进口袋里。",
+  "weight": "120 g",
+  "volume": "750 ml",
+  "price": 5000,
+  "price_postapoc": 50,
+  "material": [
+    "plastic",
+    "cotton"
+  ],
+  "material_thickness": 1,
+  "symbol": "[",
+  "color": "blue",
+  "flags": [
+    "VARSIZE",
+    "POCKETS",
+    "WATERPROOF",
+    "RAINPROOF",
+    "HOOD",
+    "OUTER",
+    "FANCY",
+    "SOFT"
+  ],
+  "use_action": {
+    "type": "transform",
+    "msg": "你摘下兜帽。",
+    "target": "kawaii_raincoat_off",
+    "menu_text": "拨动风帽"
+  },
+  "armor": [
+    {
+      "encumbrance": 10,
+      "coverage": 95,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "head"
+      ]
+    }
+  ]
+}
+```
+

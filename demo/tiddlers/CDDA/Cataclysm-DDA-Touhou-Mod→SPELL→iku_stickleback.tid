@@ -1,0 +1,113 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→iku_stickleback
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：iku_stickleback|http://cdda.aloxaf.cn/search?q=iku_stickleback]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_iku.json
+
+
+!! 原文
+
+```json
+{
+  "id": "iku_stickleback",
+  "type": "SPELL",
+  "name": "Thundercloud Stickleback",
+  "description": "Surround yourself with an electric field and release it in two pulses.  The first knocks nearby enemies back; the second acts as a reactive barrier that retaliates against incoming attacks.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ally",
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "iku_stickleback2"
+    },
+    {
+      "id": "iku_stickleback3"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "electric",
+  "min_damage": 22,
+  "max_damage": 33,
+  "damage_increment": 1.1,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "field_id": "fd_electricity",
+  "field_chance": 2,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 150,
+  "base_energy_cost": 133,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "//": "Dmg should be stickleback_shock x2"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "iku_stickleback",
+  "type": "SPELL",
+  "name": "Thundercloud Stickleback",
+  "description": "Surround yourself with an electric field and release it in two pulses.  The first knocks nearby enemies back; the second acts as a reactive barrier that retaliates against incoming attacks.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ally",
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "iku_stickleback2"
+    },
+    {
+      "id": "iku_stickleback3"
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "electric",
+  "min_damage": 22,
+  "max_damage": 33,
+  "damage_increment": 1.1,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "field_id": "fd_electricity",
+  "field_chance": 2,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 150,
+  "base_energy_cost": 133,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "//": "Dmg should be stickleback_shock x2"
+}
+```
+

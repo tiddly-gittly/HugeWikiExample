@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→t1_blood_transfusion_spell
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t1_blood_transfusion_spell|http://cdda.aloxaf.cn/search?q=t1_blood_transfusion_spell]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Spells/v_spell_combo.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Any spell that are casted indirectly are taken here.",
+  "id": "t1_blood_transfusion_spell",
+  "type": "SPELL",
+  "name": {
+    "str": "Tranfusion Spell"
+  },
+  "message": "You feel refreshed as you cast!",
+  "description": "It will cast Transfusion Damage and Transfusion Heal.",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "t1_blood_transfusion_spell_heal",
+      "hit_self": true
+    },
+    {
+      "id": "t1_blood_transfusion_spell_dmg"
+    }
+  ],
+  "min_range": 10,
+  "max_range": 10
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Any spell that are casted indirectly are taken here.",
+  "id": "t1_blood_transfusion_spell",
+  "type": "SPELL",
+  "name": {
+    "str": "转换咒语"
+  },
+  "message": "你在施展后感到神清气爽！",
+  "description": "它会造成输血损伤和输血愈合。",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "t1_blood_transfusion_spell_heal",
+      "hit_self": true
+    },
+    {
+      "id": "t1_blood_transfusion_spell_dmg"
+    }
+  ],
+  "min_range": 10,
+  "max_range": 10
+}
+```
+

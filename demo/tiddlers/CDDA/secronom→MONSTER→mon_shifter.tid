@@ -1,0 +1,245 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_shifter
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_shifter|http://cdda.aloxaf.cn/search?q=mon_shifter]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Abberations/Shapeshifter.json
+
+
+!! 原文
+
+```json
+{
+  "//": "A monster that appears as a humanoid creature (and is friendly to that specie... before dying). It has several disorienting abilities with a chance to immobilize nearby creatures, while draining the stamina of the target.",
+  "id": "mon_shifter",
+  "type": "MONSTER",
+  "name": {
+    "str": "shapeshifter"
+  },
+  "description": "An inhumane creature, shrouded in disorienting atmosphere. Its appearance is a complete mystery, neither its true nature.",
+  "default_faction": "shifter",
+  "species": [
+    "ABERRATION",
+    "SECROSPEC"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 360,
+  "speed": 85,
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "@",
+  "emit_fields": [
+    "emit_shifter_fog"
+  ],
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "attack_cost": 150,
+  "dodge": 2,
+  "harvest": "exempt",
+  "armor_bash": 10,
+  "armor_cut": 10,
+  "armor_stab": 10,
+  "armor_bullet": 10,
+  "armor_acid": 1,
+  "vision_night": 30,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_shifter_target"
+      },
+      "cooldown": 25,
+      "monster_message": "<color_red>The air surrounding %1$s intensifies!</color>"
+    },
+    {
+      "type": "gun",
+      "cooldown": 10,
+      "move_cost": 150,
+      "gun_type": "shifter_shadows",
+      "fake_skills": [
+        [
+          "gun",
+          5
+        ],
+        [
+          "rifle",
+          5
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "targeting_cost": 300,
+      "targeting_sound": "the eerie shadows building up.",
+      "description": "The shapeshifter sends out errant shadows!",
+      "ranges": [
+        [
+          2,
+          3,
+          "N"
+        ],
+        [
+          4,
+          7,
+          "M"
+        ],
+        [
+          7,
+          20,
+          "L"
+        ]
+      ]
+    }
+  ],
+  "death_function": {
+    "message": "The %s disappears.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "A monster that appears as a humanoid creature (and is friendly to that specie... before dying). It has several disorienting abilities with a chance to immobilize nearby creatures, while draining the stamina of the target.",
+  "id": "mon_shifter",
+  "type": "MONSTER",
+  "name": {
+    "str": "变形者"
+  },
+  "description": "一个残忍的生物，笼罩在迷惘的气息中。它的外观是一个完全的谜，而且这也不是它的真实本质。",
+  "default_faction": "shifter",
+  "species": [
+    "ABERRATION",
+    "SECROSPEC"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 360,
+  "speed": 85,
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "@",
+  "emit_fields": [
+    "emit_shifter_fog"
+  ],
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 4,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "attack_cost": 150,
+  "dodge": 2,
+  "harvest": "exempt",
+  "armor_bash": 10,
+  "armor_cut": 10,
+  "armor_stab": 10,
+  "armor_bullet": 10,
+  "armor_acid": 1,
+  "vision_night": 30,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_shifter_target"
+      },
+      "cooldown": 25,
+      "monster_message": "<color_red>%1$s周围的空气变得浓厚起来！</color>"
+    },
+    {
+      "type": "gun",
+      "cooldown": 10,
+      "move_cost": 150,
+      "gun_type": "shifter_shadows",
+      "fake_skills": [
+        [
+          "gun",
+          5
+        ],
+        [
+          "rifle",
+          5
+        ]
+      ],
+      "require_targeting_player": true,
+      "require_targeting_npc": true,
+      "require_targeting_monster": true,
+      "targeting_cost": 300,
+      "targeting_sound": "the eerie shadows building up.",
+      "description": "变形者发出错误的阴影！",
+      "ranges": [
+        [
+          2,
+          3,
+          "N"
+        ],
+        [
+          4,
+          7,
+          "M"
+        ],
+        [
+          7,
+          20,
+          "L"
+        ]
+      ]
+    }
+  ],
+  "death_function": {
+    "message": "The %s disappears.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "PUSH_MON"
+  ]
+}
+```
+

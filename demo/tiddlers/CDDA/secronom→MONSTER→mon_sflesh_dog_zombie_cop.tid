@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_dog_zombie_cop
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_dog_zombie_cop|http://cdda.aloxaf.cn/search?q=mon_sflesh_dog_zombie_cop]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_dog_zombie_cop",
+  "type": "MONSTER",
+  "name": {
+    "str": "Z-9"
+  },
+  "description": "A zombified version of one of the German shepherd dogs used in law enforcement.  Its deformed body is encased in a protective Kevlar harness.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "dog",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 53,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "d",
+  "color": "blue",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 2,
+  "melee_dice_sides": 5,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 3,
+      "damage_type": "cut"
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 9,
+  "armor_cut": 6,
+  "armor_bullet": 6,
+  "vision_day": 50,
+  "vision_night": 4,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "dog_cop",
+        40
+      ]
+    ]
+  },
+  "burn_into": "mon_dog_zombie_cop",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_dog_zombie_cop",
+  "type": "MONSTER",
+  "name": {
+    "str": "Z-9"
+  },
+  "description": "一只已经变成丧尸的德国牧羊警犬。它早已变形的身躯上仍然套着残存的凯夫拉犬具。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "dog",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE"
+  ],
+  "volume": "30000 ml",
+  "weight": "40750 g",
+  "hp": 53,
+  "speed": 105,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "d",
+  "color": "blue",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 2,
+  "melee_dice_sides": 5,
+  "melee_damage": [
+    {
+      "amount": 1,
+      "damage_type": "bash"
+    },
+    {
+      "amount": 3,
+      "damage_type": "cut"
+    }
+  ],
+  "dodge": 1,
+  "armor_bash": 9,
+  "armor_cut": 6,
+  "armor_bullet": 6,
+  "vision_day": 50,
+  "vision_night": 4,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    }
+  ],
+  "death_drops": {
+    "subtype": "collection",
+    "groups": [
+      [
+        "dog_cop",
+        40
+      ]
+    ]
+  },
+  "burn_into": "mon_dog_zombie_cop",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

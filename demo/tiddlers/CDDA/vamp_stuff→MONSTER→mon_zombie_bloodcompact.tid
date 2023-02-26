@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_zombie_bloodcompact
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_bloodcompact|http://cdda.aloxaf.cn/search?q=mon_zombie_bloodcompact]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Zombies/Graveyard.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_bloodcompact",
+  "type": "MONSTER",
+  "name": {
+    "str": "blood compact zombie"
+  },
+  "description": "From the old graveyard it arised. This zombie's age cause its blood to solidify into thick, rock-like armor, but somehow maintains natural speed. With odd-looking teeth lining and stony claws, its threat is impeccable.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "ELDERZED"
+  ],
+  "hp": 185,
+  "bodytype": "human",
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "B",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "armor_bash": 3,
+  "armor_cut": 9,
+  "armor_bullet": 6,
+  "vision_day": 30,
+  "vision_night": 4,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10
+    },
+    [
+      "GRAB",
+      6
+    ]
+  ],
+  "death_drops": "elderzombie",
+  "upgrades": {
+    "half_life": 6,
+    "into_group": "GROUP_CRYPTIES_UPGRADE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_bloodcompact",
+  "type": "MONSTER",
+  "name": {
+    "str": "血块丧尸"
+  },
+  "description": "它从古老的墓地中爬起。这个丧尸的年龄导致它的血液凝固成厚厚的，岩石般的盔甲。但不知何故能保持正常的速度。它有着奇怪的牙齿衬里和石爪，它的威胁度非常的高。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "ELDERZED"
+  ],
+  "hp": 185,
+  "bodytype": "human",
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "B",
+  "color": "red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "armor_bash": 3,
+  "armor_cut": 9,
+  "armor_bullet": 6,
+  "vision_day": 30,
+  "vision_night": 4,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10
+    },
+    [
+      "GRAB",
+      6
+    ]
+  ],
+  "death_drops": "elderzombie",
+  "upgrades": {
+    "half_life": 6,
+    "into_group": "GROUP_CRYPTIES_UPGRADE"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+

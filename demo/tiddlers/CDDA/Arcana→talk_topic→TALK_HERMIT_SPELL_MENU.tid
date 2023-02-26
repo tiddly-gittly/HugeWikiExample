@@ -1,0 +1,179 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_SPELL_MENU
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_SPELL_MENU|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_SPELL_MENU]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_SPELL_MENU",
+  "dynamic_line": "There are many secrets that He From Beyond The Veil will reward you with, if you make proper use of His relic.  I do know a few tricks from my youth that may compliment the tools He will give you, however.  I can pass onto you the Magic Signs of Free Action, Phase Shield, or Transcendent Aura.  I ask that you bring crystallized essence in exchange, as I can use it for these rituals and for other wards I maintain here.",
+  "responses": [
+    {
+      "text": "What can you tell me about Free Action?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_FREEACTION"
+        }
+      },
+      "topic": "TALK_HERMIT_SPELL_MENU_1"
+    },
+    {
+      "text": "What can you tell me about Phase Shield?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_PHASESHIELD"
+        }
+      },
+      "topic": "TALK_HERMIT_SPELL_MENU_2"
+    },
+    {
+      "text": "What can you tell me about Transcendent Aura?",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE2"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "SPELL_TRANSCENDENTAURA"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_HERMIT_SPELL_MENU_3"
+    },
+    {
+      "text": "I already know all of these.  Thanks anyway.",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "SPELL_FREEACTION"
+          },
+          {
+            "u_has_trait": "SPELL_PHASESHIELD"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CHALICE2",
+              "SPELL_TRANSCENDENTAURA"
+            ]
+          }
+        ]
+      },
+      "effect": {
+        "u_add_var": "hermit_all_spells_known",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "Maybe another time.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_SPELL_MENU",
+  "dynamic_line": "There are many secrets that He From Beyond The Veil will reward you with, if you make proper use of His relic.  I do know a few tricks from my youth that may compliment the tools He will give you, however.  I can pass onto you the Magic Signs of Free Action, Phase Shield, or Transcendent Aura.  I ask that you bring crystallized essence in exchange, as I can use it for these rituals and for other wards I maintain here.",
+  "responses": [
+    {
+      "text": "What can you tell me about Free Action?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_FREEACTION"
+        }
+      },
+      "topic": "TALK_HERMIT_SPELL_MENU_1"
+    },
+    {
+      "text": "What can you tell me about Phase Shield?",
+      "condition": {
+        "not": {
+          "u_has_trait": "SPELL_PHASESHIELD"
+        }
+      },
+      "topic": "TALK_HERMIT_SPELL_MENU_2"
+    },
+    {
+      "text": "What can you tell me about Transcendent Aura?",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_trait": "PROF_CHALICE2"
+            }
+          },
+          {
+            "not": {
+              "u_has_trait": "SPELL_TRANSCENDENTAURA"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_HERMIT_SPELL_MENU_3"
+    },
+    {
+      "text": "I already know all of these.  Thanks anyway.",
+      "switch": true,
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "SPELL_FREEACTION"
+          },
+          {
+            "u_has_trait": "SPELL_PHASESHIELD"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CHALICE2",
+              "SPELL_TRANSCENDENTAURA"
+            ]
+          }
+        ]
+      },
+      "effect": {
+        "u_add_var": "hermit_all_spells_known",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      },
+      "topic": "TALK_HERMIT"
+    },
+    {
+      "text": "也许下次吧。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→swarmerzed_bite_weak
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：swarmerzed_bite_weak|http://cdda.aloxaf.cn/search?q=swarmerzed_bite_weak]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "swarmerzed_bite_weak",
+  "accuracy": 2,
+  "move_cost": 200,
+  "blockable": true,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 5,
+      "armor_multiplier": 0.7
+    }
+  ],
+  "effects": [
+    {
+      "id": "grabbed",
+      "duration": 1000,
+      "bp": "torso"
+    }
+  ],
+  "hit_dmg_u": "%1$s bites as it grasps at you!",
+  "hit_dmg_npc": "%1$s bites <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to bite you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to bite <npcname>, but fails to penetrate their armor!",
+  "miss_msg_u": "The %s bites you, but you dodge!",
+  "miss_msg_npc": "The %s bites <npcname>, but they dodge!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "swarmerzed_bite_weak",
+  "accuracy": 2,
+  "move_cost": 200,
+  "blockable": true,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "stab",
+      "amount": 5,
+      "armor_multiplier": 0.7
+    }
+  ],
+  "effects": [
+    {
+      "id": "grabbed",
+      "duration": 1000,
+      "bp": "torso"
+    }
+  ],
+  "hit_dmg_u": "%1$s bites as it grasps at you！",
+  "hit_dmg_npc": "%1$s bites <npcname>！",
+  "no_dmg_msg_u": "%1$s tries to bite you，but fails to penetrate your armor！",
+  "no_dmg_msg_npc": "%1$s tries to bite <npcname>，but fails to penetrate their armor！",
+  "miss_msg_u": "%s咬向了你，不过你躲开了！",
+  "miss_msg_npc": "%s咬向<npcname>，却被躲开了！"
+}
+```
+

@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_seal_conjure_acid
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_seal_conjure_acid|http://cdda.aloxaf.cn/search?q=arcana_seal_conjure_acid]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_seals.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_seal_conjure_acid",
+  "type": "SPELL",
+  "name": {
+    "str": "Seal: Conjure Acid"
+  },
+  "description": "Magic Seal\nUsing this spell will conjure a splash of acid at the point targeted, and strike the very center for double damage.  Potentially dangerous to allies as well.",
+  "message": "\"Let it be as time itself, eroding all in its path…\"  You cast %s!",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_acid_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_conjure_acid_spike",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_conjure_acid_noise",
+      "hit_self": false,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "SILENT",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "effect_str": "corroding",
+  "min_damage": 60,
+  "max_damage": 80,
+  "min_range": 5,
+  "max_range": 15,
+  "range_increment": 1,
+  "min_aoe": 2,
+  "max_aoe": 6,
+  "aoe_increment": 0.4,
+  "max_level": 10,
+  "skill": "magic",
+  "base_casting_time": 100,
+  "final_casting_time": 100,
+  "min_duration": 4800,
+  "max_duration": 6400,
+  "damage_type": "acid",
+  "field_id": "fd_acid",
+  "field_chance": 6,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_seal_conjure_acid",
+  "type": "SPELL",
+  "name": {
+    "str": "魔印：召唤酸"
+  },
+  "description": "法术魔印\n使用该法术会在目标位置飞溅酸液，并对位置中心造成双倍伤害。对盟友也有潜在的危险。",
+  "message": "“让它像时间一样，在它的道路上侵蚀一切……”你施放了 %s！",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_brief_acid_ward",
+      "hit_self": true
+    },
+    {
+      "id": "arcana_aftermath_conjure_acid_spike",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_conjure_acid_noise",
+      "hit_self": false,
+      "max_level": 10
+    }
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "SILENT",
+    "RANDOM_DAMAGE",
+    "RANDOM_DURATION"
+  ],
+  "effect_str": "corroding",
+  "min_damage": 60,
+  "max_damage": 80,
+  "min_range": 5,
+  "max_range": 15,
+  "range_increment": 1,
+  "min_aoe": 2,
+  "max_aoe": 6,
+  "aoe_increment": 0.4,
+  "max_level": 10,
+  "skill": "magic",
+  "base_casting_time": 100,
+  "final_casting_time": 100,
+  "min_duration": 4800,
+  "max_duration": 6400,
+  "damage_type": "acid",
+  "field_id": "fd_acid",
+  "field_chance": 6,
+  "min_field_intensity": 1,
+  "max_field_intensity": 3,
+  "field_intensity_increment": 0.2,
+  "field_intensity_variance": 0.5
+}
+```
+

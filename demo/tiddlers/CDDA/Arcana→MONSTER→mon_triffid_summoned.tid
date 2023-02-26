@@ -1,0 +1,163 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_triffid_summoned
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_triffid_summoned|http://cdda.aloxaf.cn/search?q=mon_triffid_summoned]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_triffid_summoned",
+  "copy-from": "mon_triffid",
+  "type": "MONSTER",
+  "name": {
+    "str": "summoned triffid"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "speed": 125,
+  "vision_day": 20,
+  "vision_night": 10,
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_triffid_bound",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_dart_triffid"
+      },
+      "cooldown": 5,
+      "monster_message": "The summoned triffid fires a dart at %3$s!"
+    }
+  ],
+  "attack_effs": [
+    {
+      "id": "venom_dmg",
+      "duration": 500,
+      "affect_hit_bp": true
+    }
+  ],
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES",
+      "GROUP_BASH"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_triffid_summoned",
+  "copy-from": "mon_triffid",
+  "type": "MONSTER",
+  "name": {
+    "str": "召唤三尖树"
+  },
+  "categories": [
+    "CLASSIC"
+  ],
+  "mountable_weight_ratio": 0.9,
+  "speed": 125,
+  "vision_day": 20,
+  "vision_night": 10,
+  "species": [
+    "ARCANA_SUMMONED"
+  ],
+  "path_settings": {
+    "max_dist": 10
+  },
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "death_function": {
+    "message": "The %s's body melts away.",
+    "corpse_type": "NO_CORPSE"
+  },
+  "death_drops": "mon_bound_glyph_death_drops_universal",
+  "revert_to_itype": "summon_triffid_bound",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_dart_triffid"
+      },
+      "cooldown": 5,
+      "monster_message": "召唤出的三尖树朝着%3$s发射了一块土块！"
+    }
+  ],
+  "attack_effs": [
+    {
+      "id": "venom_dmg",
+      "duration": 500,
+      "affect_hit_bp": true
+    }
+  ],
+  "extend": {
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "PET_HARNESSABLE"
+    ]
+  },
+  "delete": {
+    "flags": [
+      "BASHES",
+      "GROUP_BASH"
+    ]
+  }
+}
+```
+

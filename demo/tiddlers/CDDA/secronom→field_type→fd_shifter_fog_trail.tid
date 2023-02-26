@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_shifter_fog_trail
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_shifter_fog_trail|http://cdda.aloxaf.cn/search?q=fd_shifter_fog_trail]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_shifter_fog_trail",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "errant shadows",
+      "sym": "8",
+      "color": "dark_gray",
+      "translucency": 1,
+      "light_override": 2,
+      "effects": [
+        {
+          "effect_id": "blind",
+          "body_part": "eyes",
+          "intensity": 1,
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true
+        }
+      ]
+    },
+    {}
+  ],
+  "immune_mtypes": [
+    "mon_shifter",
+    "mon_shifter_illu"
+  ],
+  "priority": 9,
+  "half_life": "5 seconds",
+  "wandering_field": "fd_shifter_fog",
+  "accelerated_decay": true,
+  "gas_absorption_factor": 15,
+  "dirty_transparency_cache": true,
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true,
+  "looks_like": "fd_fog"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_shifter_fog_trail",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "errant shadows",
+      "sym": "8",
+      "color": "dark_gray",
+      "translucency": 1,
+      "light_override": 2,
+      "effects": [
+        {
+          "effect_id": "blind",
+          "body_part": "eyes",
+          "intensity": 1,
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true
+        }
+      ]
+    },
+    {}
+  ],
+  "immune_mtypes": [
+    "mon_shifter",
+    "mon_shifter_illu"
+  ],
+  "priority": 9,
+  "half_life": "5 seconds",
+  "wandering_field": "fd_shifter_fog",
+  "accelerated_decay": true,
+  "gas_absorption_factor": 15,
+  "dirty_transparency_cache": true,
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true,
+  "looks_like": "fd_fog"
+}
+```
+

@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: ter_furn_transform secronom
+title: secronom→ter_furn_transform→sflesh_flesh_biohazard_dead
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sflesh_flesh_biohazard_dead|http://cdda.aloxaf.cn/search?q=sflesh_flesh_biohazard_dead]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/ter_furn_trans.json
+
+
+!! 原文
+
+```json
+{
+  "//": "The lair will become safe after the flesh's death.",
+  "type": "ter_furn_transform",
+  "id": "sflesh_flesh_biohazard_dead",
+  "terrain": [
+    {
+      "//": "The exit opens once you beat the flesh.",
+      "result": "t_secro_flesh_inside_up",
+      "valid_terrain": [
+        "t_secro_flesh_inside_up_close"
+      ]
+    },
+    {
+      "result": "t_secro_flesh_inside_down",
+      "valid_terrain": [
+        "t_secro_flesh_exit_closed"
+      ]
+    },
+    {
+      "result": "t_secro_flesh",
+      "valid_flags": [
+        "FF_BIOHAZARD"
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "result": "f_null",
+      "valid_flags": [
+        "FF_BIOHAZARD"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "The lair will become safe after the flesh's death.",
+  "type": "ter_furn_transform",
+  "id": "sflesh_flesh_biohazard_dead",
+  "terrain": [
+    {
+      "//": "The exit opens once you beat the flesh.",
+      "result": "t_secro_flesh_inside_up",
+      "valid_terrain": [
+        "t_secro_flesh_inside_up_close"
+      ]
+    },
+    {
+      "result": "t_secro_flesh_inside_down",
+      "valid_terrain": [
+        "t_secro_flesh_exit_closed"
+      ]
+    },
+    {
+      "result": "t_secro_flesh",
+      "valid_flags": [
+        "FF_BIOHAZARD"
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "result": "f_null",
+      "valid_flags": [
+        "FF_BIOHAZARD"
+      ]
+    }
+  ]
+}
+```
+

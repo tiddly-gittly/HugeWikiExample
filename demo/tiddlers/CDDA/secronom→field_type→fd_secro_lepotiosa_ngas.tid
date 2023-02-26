@@ -1,0 +1,211 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_secro_lepotiosa_ngas
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_secro_lepotiosa_ngas|http://cdda.aloxaf.cn/search?q=fd_secro_lepotiosa_ngas]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_secro_lepotiosa_ngas",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "acidic gas",
+      "sym": "8",
+      "color": "light_green",
+      "dangerous": true,
+      "translucency": 1,
+      "effects": [
+        {
+          "effect_id": "corroding",
+          "body_part": "head",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message": "Your skin burns from acid!",
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "corroding",
+          "body_part": "torso",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "corroding",
+          "body_part": "arm_l",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "corroding",
+          "body_part": "arm_r",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "corroding",
+          "body_part": "leg_l",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "corroding",
+          "body_part": "leg_r",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message_type": "bad"
+        }
+      ]
+    },
+    {
+      "name": "thick acidic gas",
+      "transparent": false,
+      "translucency": 10
+    },
+    {
+      "name": "noxious gas",
+      "color": "green",
+      "translucency": 0
+    }
+  ],
+  "description_affix": "covered_in",
+  "immunity_data": {
+    "flags": [
+      "ACID_IMMUNE"
+    ]
+  },
+  "decay_amount_factor": 5,
+  "gas_absorption_factor": 15,
+  "percent_spread": 20,
+  "outdoor_age_speedup": "5 seconds",
+  "dirty_transparency_cache": true,
+  "has_acid": true,
+  "priority": 3,
+  "half_life": "30 seconds",
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true,
+  "looks_like": "fd_toxic_gas"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_secro_lepotiosa_ngas",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "acidic gas",
+      "sym": "8",
+      "color": "light_green",
+      "dangerous": true,
+      "translucency": 1,
+      "effects": [
+        {
+          "effect_id": "corroding",
+          "body_part": "head",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message": "Your skin burns from acid!",
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "corroding",
+          "body_part": "torso",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "corroding",
+          "body_part": "arm_l",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "corroding",
+          "body_part": "arm_r",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "corroding",
+          "body_part": "leg_l",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message_type": "bad"
+        },
+        {
+          "effect_id": "corroding",
+          "body_part": "leg_r",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds",
+          "immune_inside_vehicle": true,
+          "message_type": "bad"
+        }
+      ]
+    },
+    {
+      "name": "thick acidic gas",
+      "transparent": false,
+      "translucency": 10
+    },
+    {
+      "name": "noxious gas",
+      "color": "green",
+      "translucency": 0
+    }
+  ],
+  "description_affix": "covered_in",
+  "immunity_data": {
+    "flags": [
+      "ACID_IMMUNE"
+    ]
+  },
+  "decay_amount_factor": 5,
+  "gas_absorption_factor": 15,
+  "percent_spread": 20,
+  "outdoor_age_speedup": "5 seconds",
+  "dirty_transparency_cache": true,
+  "has_acid": true,
+  "priority": 3,
+  "half_life": "30 seconds",
+  "phase": "gas",
+  "display_items": false,
+  "display_field": true,
+  "looks_like": "fd_toxic_gas"
+}
+```
+

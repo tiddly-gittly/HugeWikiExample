@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→lightning_storm
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lightning_storm|http://cdda.aloxaf.cn/search?q=lightning_storm]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/stormshaper.json
+
+
+!! 原文
+
+```json
+{
+  "id": "lightning_storm",
+  "type": "SPELL",
+  "name": {
+    "str": "Lightning Storm"
+  },
+  "description": "You call the power of the sky to strike the earth.  Several lightning blasts fire from your finger tips to strike the target.",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "LOUD",
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "min_aoe": 1,
+  "max_aoe": 3,
+  "aoe_increment": 0.05,
+  "max_level": 52,
+  "min_damage": 30,
+  "max_damage": 225,
+  "min_range": 6,
+  "max_range": 12,
+  "range_increment": 0.01,
+  "damage_increment": 4,
+  "difficulty": 20,
+  "spell_class": "STORMSHAPER",
+  "energy_source": "MANA",
+  "base_energy_cost": 500,
+  "base_casting_time": 300,
+  "damage_type": "electric",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "lightning_blast"
+    },
+    {
+      "id": "lightning_blast"
+    },
+    {
+      "id": "lightning_blast"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "lightning_storm",
+  "type": "SPELL",
+  "name": {
+    "str": "闪电雷暴"
+  },
+  "description": "你召唤天空的力量来打击大地。几道闪电从你的指尖射出，击中目标。",
+  "valid_targets": [
+    "hostile",
+    "ground",
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "CONCENTRATE",
+    "LOUD",
+    "VERBAL",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "min_aoe": 1,
+  "max_aoe": 3,
+  "aoe_increment": 0.05,
+  "max_level": 52,
+  "min_damage": 30,
+  "max_damage": 225,
+  "min_range": 6,
+  "max_range": 12,
+  "range_increment": 0.01,
+  "damage_increment": 4,
+  "difficulty": 20,
+  "spell_class": "STORMSHAPER",
+  "energy_source": "MANA",
+  "base_energy_cost": 500,
+  "base_casting_time": 300,
+  "damage_type": "electric",
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "lightning_blast"
+    },
+    {
+      "id": "lightning_blast"
+    },
+    {
+      "id": "lightning_blast"
+    }
+  ]
+}
+```
+

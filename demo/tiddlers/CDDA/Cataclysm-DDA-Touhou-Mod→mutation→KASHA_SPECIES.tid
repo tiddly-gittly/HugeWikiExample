@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→mutation→KASHA_SPECIES
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：KASHA_SPECIES|http://cdda.aloxaf.cn/search?q=KASHA_SPECIES]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "KASHA_SPECIES",
+  "type": "mutation",
+  "name": "Kasha",
+  "description": "You're a feline-looking youkai originating from (Former) Hell.  Currently, you're posing as a human.  Activate the mutation to switch to youkai form.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "active": true,
+  "armor": [
+    {
+      "parts": "ALL",
+      "heat": 6
+    }
+  ],
+  "ugliness": 3,
+  "visibility": 4,
+  "weakness_to_water": 1,
+  "transform": {
+    "target": "KASHA_SPECIES_active",
+    "active": false,
+    "moves": 100
+  },
+  "cancels": [
+    "FRESHWATEROSMOSIS",
+    "GILLS",
+    "MEMBRANE",
+    "SCALES",
+    "SLEEK_SCALES",
+    "SLIMY",
+    "WATERSLEEPER",
+    "WEBBED",
+    "WEBBED_FEET"
+  ],
+  "//": "If only there was a way to instead block all animalistic mutations instead..."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "KASHA_SPECIES",
+  "type": "mutation",
+  "name": "Kasha",
+  "description": "You're a feline-looking youkai originating from (Former) Hell.  Currently, you're posing as a human.  Activate the mutation to switch to youkai form.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "active": true,
+  "armor": [
+    {
+      "parts": "ALL",
+      "heat": 6
+    }
+  ],
+  "ugliness": 3,
+  "visibility": 4,
+  "weakness_to_water": 1,
+  "transform": {
+    "target": "KASHA_SPECIES_active",
+    "active": false,
+    "moves": 100
+  },
+  "cancels": [
+    "FRESHWATEROSMOSIS",
+    "GILLS",
+    "MEMBRANE",
+    "SCALES",
+    "SLEEK_SCALES",
+    "SLIMY",
+    "WATERSLEEPER",
+    "WEBBED",
+    "WEBBED_FEET"
+  ],
+  "//": "If only there was a way to instead block all animalistic mutations instead..."
+}
+```
+

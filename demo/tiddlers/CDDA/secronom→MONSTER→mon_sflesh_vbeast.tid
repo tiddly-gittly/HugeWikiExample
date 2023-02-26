@@ -1,0 +1,171 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_vbeast
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_vbeast|http://cdda.aloxaf.cn/search?q=mon_sflesh_vbeast]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/FleshVeins.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Vein that deals cutting damage.",
+  "id": "mon_sflesh_vbeast",
+  "type": "MONSTER",
+  "name": {
+    "str": "vein beast"
+  },
+  "description": "A cluster of veins formed into a horrendous creeping abomination. Thick strands of membranous vine-like tendrils reaches out of its beating core.",
+  "default_faction": "secro_flesh",
+  "bodytype": "migo",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 140,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨳",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 0,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 10,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "armor_stab": 8,
+  "vision_day": 10,
+  "vision_night": 10,
+  "weakpoints": [
+    {
+      "name": "its core",
+      "difficulty": {
+        "melee": 3
+      },
+      "coverage": 5,
+      "damage_mult": {
+        "all": 2
+      }
+    }
+  ],
+  "special_attacks": [
+    [
+      "sflesh_vbeast_wlace",
+      18
+    ]
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "CLIMBS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Vein that deals cutting damage.",
+  "id": "mon_sflesh_vbeast",
+  "type": "MONSTER",
+  "name": {
+    "str": "脉兽"
+  },
+  "description": "一大簇蠕动的脉管，看上去十分可怕，令人厌恶地爬行着。密集的网状触须从它跳动的核心漫延出来。",
+  "default_faction": "secro_flesh",
+  "bodytype": "migo",
+  "species": [
+    "SFLESH",
+    "ABERRATION"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "hp": 140,
+  "speed": 85,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "⨳",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 0,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 10,
+  "armor_cut": 3,
+  "armor_bullet": 3,
+  "armor_stab": 8,
+  "vision_day": 10,
+  "vision_night": 10,
+  "weakpoints": [
+    {
+      "name": "its core",
+      "difficulty": {
+        "melee": 3
+      },
+      "coverage": 5,
+      "damage_mult": {
+        "all": 2
+      }
+    }
+  ],
+  "special_attacks": [
+    [
+      "sflesh_vbeast_wlace",
+      18
+    ]
+  ],
+  "harvest": "exempt",
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s melts away."
+  },
+  "flags": [
+    "SEES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "STUN_IMMUNE",
+    "CLIMBS"
+  ]
+}
+```
+

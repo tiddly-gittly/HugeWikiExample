@@ -1,0 +1,217 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_TENDRIL
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_TENDRIL|http://cdda.aloxaf.cn/search?q=SECRO_TENDRIL]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_TENDRIL",
+  "name": {
+    "str": "Tendrils"
+  },
+  "points": -3,
+  "visibility": 6,
+  "ugliness": 6,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "Your arms were replaced by a pair of tough, skinny tendrils. Good for combat, but it's stiff and prevents you from wearing gloves.",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l",
+    "hand_r"
+  ],
+  "changes_to": [
+    "SECRO_TENDRIL_TENT",
+    "SECRO_TENDRIL_THICK"
+  ],
+  "cancels": [
+    "NAILS",
+    "CLAWS",
+    "TALONS",
+    "WEBBED",
+    "ARM_TENTACLES",
+    "SECRO_BLADE_L",
+    "SECRO_SPIDER",
+    "SECRO_TENDRIL_THICK_THRESHOLD",
+    "SECRO_TENDRIL_TENT_THRESHOLD",
+    "SECRO_BLADE_SHARP_THRESHOLD",
+    "SECRO_BLADE_SERRATED_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      20
+    ],
+    [
+      "hand_r",
+      20
+    ]
+  ],
+  "encumbrance_covered": [
+    [
+      "hand_l",
+      30
+    ],
+    [
+      "hand_r",
+      30
+    ]
+  ],
+  "rand_bash_bonus": {
+    "min": 1,
+    "max": 3
+  },
+  "attacks": [
+    {
+      "attack_text_u": "You slap %s with your tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their tendrils",
+      "body_part": "hand_l",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.5
+      }
+    },
+    {
+      "attack_text_u": "You slap %s with your tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their tendrils",
+      "body_part": "hand_r",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.5
+      }
+    }
+  ],
+  "armor": [
+    {
+      "parts": [
+        "arm_l",
+        "arm_r"
+      ],
+      "bash": 2
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_TENDRIL",
+  "name": {
+    "str": "卷须"
+  },
+  "points": -3,
+  "visibility": 6,
+  "ugliness": 6,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "你的手臂被一对又硬又细的卷须取代了。很好的战斗，但它的僵硬，防止你戴手套。",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l",
+    "hand_r"
+  ],
+  "changes_to": [
+    "SECRO_TENDRIL_TENT",
+    "SECRO_TENDRIL_THICK"
+  ],
+  "cancels": [
+    "NAILS",
+    "CLAWS",
+    "TALONS",
+    "WEBBED",
+    "ARM_TENTACLES",
+    "SECRO_BLADE_L",
+    "SECRO_SPIDER",
+    "SECRO_TENDRIL_THICK_THRESHOLD",
+    "SECRO_TENDRIL_TENT_THRESHOLD",
+    "SECRO_BLADE_SHARP_THRESHOLD",
+    "SECRO_BLADE_SERRATED_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      20
+    ],
+    [
+      "hand_r",
+      20
+    ]
+  ],
+  "encumbrance_covered": [
+    [
+      "hand_l",
+      30
+    ],
+    [
+      "hand_r",
+      30
+    ]
+  ],
+  "rand_bash_bonus": {
+    "min": 1,
+    "max": 3
+  },
+  "attacks": [
+    {
+      "attack_text_u": "You slap %s with your tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their tendrils",
+      "body_part": "hand_l",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.5
+      }
+    },
+    {
+      "attack_text_u": "You slap %s with your tendrils",
+      "attack_text_npc": "%1$s strikes %2$s with their tendrils",
+      "body_part": "hand_r",
+      "chance": 10,
+      "strength_damage": {
+        "damage_type": "bash",
+        "amount": 0.5
+      }
+    }
+  ],
+  "armor": [
+    {
+      "parts": [
+        "arm_l",
+        "arm_r"
+      ],
+      "bash": 2
+    }
+  ],
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

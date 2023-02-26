@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_HUMAN_VAΜPRISON_help
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HUMAN_VA%u039CPRISON_help|http://cdda.aloxaf.cn/search?q=TALK_HUMAN_VA%u039CPRISON_help]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Vampirus/h_prison_cell.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Prisoner, like that of mi-go's. Nothing special NPC.",
+  "type": "talk_topic",
+  "id": "TALK_HUMAN_VAΜPRISON_help",
+  "dynamic_line": {
+    "u_has_trait": "hvprisoncomesaveme",
+    "yes": "Are you done?",
+    "no": [
+      "Please help me... They... they're so... cruel...",
+      "Damn... those suckers... please I beg you to...\n*cough*",
+      "COME CLOSER OR I-I'LL... damn these <swear> suckers really took a piece out of my sanity.",
+      "TOUCH ME AND I'LL!... oh... you're not a monster..."
+    ]
+  },
+  "responses": [
+    {
+      "text": "Yes.",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_u_now",
+      "condition": {
+        "u_has_trait": "wsg2vampirusdone"
+      }
+    },
+    {
+      "text": "It's okay, I'm here to set you free.",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_yes",
+      "condition": {
+        "not": {
+          "u_has_trait": "hvprisoncomesaveme"
+        }
+      }
+    },
+    {
+      "text": "Sorry, I can't help you out. I have things to deal with.",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_u",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg2vampirushelp"
+          },
+          {
+            "not": {
+              "u_has_trait": "hvprisoncomesaveme"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "I don't take a weakling along with me. Now run.",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_weak",
+      "effect": "flee",
+      "condition": {
+        "not": {
+          "u_has_trait": "hvprisoncomesaveme"
+        }
+      }
+    },
+    {
+      "text": "Bye? I guess...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "not": {
+          "u_has_trait": "hvprisoncomesaveme"
+        }
+      }
+    },
+    {
+      "text": "Not yet...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_trait": "hvprisoncomesaveme"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Prisoner, like that of mi-go's. Nothing special NPC.",
+  "type": "talk_topic",
+  "id": "TALK_HUMAN_VAΜPRISON_help",
+  "dynamic_line": {
+    "u_has_trait": "hvprisoncomesaveme",
+    "yes": "你完成了吗？",
+    "no": [
+      "请帮帮我。。。他们。。。他们太。。。残忍。。。",
+      "妈的...那些笨蛋...我求你...\n *咳嗽*",
+      "靠近点，否则我会...该死的<swear>真的让我神智不清。",
+      "触摸我，我会...哦...你不是怪物..."
+    ]
+  },
+  "responses": [
+    {
+      "text": "是。",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_u_now",
+      "condition": {
+        "u_has_trait": "wsg2vampirusdone"
+      }
+    },
+    {
+      "text": "好，我来解放你了。",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_yes",
+      "condition": {
+        "not": {
+          "u_has_trait": "hvprisoncomesaveme"
+        }
+      }
+    },
+    {
+      "text": "抱歉，我还没办法帮你出去，我还有事得处理掉。",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_u",
+      "condition": {
+        "and": [
+          {
+            "u_has_trait": "wsg2vampirushelp"
+          },
+          {
+            "not": {
+              "u_has_trait": "hvprisoncomesaveme"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "我不带弱者一起去。现在快跑。",
+      "topic": "TALK_HUMAN_VAΜPRISON_help_weak",
+      "effect": "flee",
+      "condition": {
+        "not": {
+          "u_has_trait": "hvprisoncomesaveme"
+        }
+      }
+    },
+    {
+      "text": "再见？ 我猜...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "not": {
+          "u_has_trait": "hvprisoncomesaveme"
+        }
+      }
+    },
+    {
+      "text": "还没完...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "u_has_trait": "hvprisoncomesaveme"
+      }
+    }
+  ]
+}
+```
+

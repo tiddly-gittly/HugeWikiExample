@@ -1,0 +1,249 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_mech_arcana_boss
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_mech_arcana_boss|http://cdda.aloxaf.cn/search?q=mon_mech_arcana_boss]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_mech_arcana_boss",
+  "type": "MONSTER",
+  "name": {
+    "str": "Z-07: 'Strigoi' Autonomous Mech"
+  },
+  "description": "What appears to be a prototype model of Anomaly Recon Mech, moving with the same malevolent purpose as the many rogue machines left in the wake of the Cataclysm.  Autonomous and armed with an exotic laser weapon and other arcane tricks, this mechanical abomination has neither need nor want for a pilot.",
+  "default_faction": "defense_bot",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 50,
+  "volume": "500 L",
+  "//": "Intentionally abnormally lightweight while active, 1% of what its actual weight should be.",
+  "weight": "7500 g",
+  "hp": 1000,
+  "speed": 150,
+  "material": [
+    "steel",
+    "essencemat"
+  ],
+  "symbol": "M",
+  "color": "cyan",
+  "looks_like": "mon_mech_recon",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 7,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    },
+    {
+      "damage_type": "cold",
+      "amount": 5
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 25,
+  "armor_cut": 35,
+  "armor_stab": 30,
+  "armor_bullet": 40,
+  "armor_fire": 20,
+  "armor_acid": 20,
+  "luminance": 150,
+  "vision_day": 50,
+  "vision_night": 50,
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "path_settings": {
+    "max_dist": 10
+  },
+  "revert_to_itype": "broken_mech_arcana_boss",
+  "special_attacks": [
+    [
+      "STARE",
+      100
+    ],
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 75,
+      "gun_type": "monster_laser_fake",
+      "fake_str": 4,
+      "fake_dex": 4,
+      "fake_per": 4,
+      "ranges": [
+        [
+          2,
+          15,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": false,
+      "description": "The Autonomous Anomaly Recon Mech fires a radiant beam of otherworldly energy!",
+      "no_ammo_sound": "a low hum!"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_mech_flare"
+      },
+      "cooldown": 50,
+      "monster_message": "The Autonomous Anomaly Recon Mech launches a ghostly blue flare, illuminating %3$s with ethereal light!"
+    }
+  ],
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "death_drops": "mon_mech_arcana_boss_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "BASHES",
+    "PUSH_MON",
+    "COLDPROOF",
+    "FLIES",
+    "NOHEAD",
+    "NO_BREATHE",
+    "HARDTOSHOOT",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_mech_arcana_boss",
+  "type": "MONSTER",
+  "name": {
+    "str": "Z-07：“Strigoi”自动机械"
+  },
+  "description": "这似乎是一个异常侦察机械的原型，与大灾变后留下的许多失常的机器一样，怀着同样的恶意移动。这种机械怪物拥有自我意识，配备奇异的激光武器和其他基于奥术的部件，它应该既不需要也不想要驾驶员。",
+  "default_faction": "defense_bot",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 50,
+  "volume": "500 L",
+  "//": "Intentionally abnormally lightweight while active, 1% of what its actual weight should be.",
+  "weight": "7500 g",
+  "hp": 1000,
+  "speed": 150,
+  "material": [
+    "steel",
+    "essencemat"
+  ],
+  "symbol": "M",
+  "color": "cyan",
+  "looks_like": "mon_mech_recon",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 7,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    },
+    {
+      "damage_type": "cold",
+      "amount": 5
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 25,
+  "armor_cut": 35,
+  "armor_stab": 30,
+  "armor_bullet": 40,
+  "armor_fire": 20,
+  "armor_acid": 20,
+  "luminance": 150,
+  "vision_day": 50,
+  "vision_night": 50,
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "path_settings": {
+    "max_dist": 10
+  },
+  "revert_to_itype": "broken_mech_arcana_boss",
+  "special_attacks": [
+    [
+      "STARE",
+      100
+    ],
+    {
+      "type": "gun",
+      "cooldown": 5,
+      "move_cost": 75,
+      "gun_type": "monster_laser_fake",
+      "fake_str": 4,
+      "fake_dex": 4,
+      "fake_per": 4,
+      "ranges": [
+        [
+          2,
+          15,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": false,
+      "description": "自动异常侦察机发射了一束包含超自然能量的辐射光束！",
+      "no_ammo_sound": "低沉的嗡嗡声！"
+    },
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "arcana_monster_mech_flare"
+      },
+      "cooldown": 50,
+      "monster_message": "自动异常侦察机械发射一个幽灵般的蓝色照明弹，用虚无缥缈的光照亮%3$s！"
+    }
+  ],
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "death_drops": "mon_mech_arcana_boss_death_drops",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "BASHES",
+    "PUSH_MON",
+    "COLDPROOF",
+    "FLIES",
+    "NOHEAD",
+    "NO_BREATHE",
+    "HARDTOSHOOT",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+

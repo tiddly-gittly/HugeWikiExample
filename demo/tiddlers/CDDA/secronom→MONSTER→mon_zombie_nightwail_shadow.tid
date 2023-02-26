@@ -1,0 +1,155 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_nightwail_shadow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_nightwail_shadow|http://cdda.aloxaf.cn/search?q=mon_zombie_nightwail_shadow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Lying.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_nightwail_shadow",
+  "type": "MONSTER",
+  "name": {
+    "str": "shadow"
+  },
+  "description": "This is an animate shadow-looking thing. There's nothing to fear about its appearance, nothing at all.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "750 ml",
+  "weight": "1000 g",
+  "hp": 5,
+  "speed": 105,
+  "diff": 1,
+  "symbol": "⬮",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 1,
+  "vision_day": 15,
+  "vision_night": 45,
+  "harvest": "exempt",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_nightwail_shadow_enshroud_target"
+      },
+      "cooldown": 6,
+      "monster_message": "<color_magenta>%1$s explodes!</color>"
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": ""
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "NOHEAD",
+    "HARDTOSHOOT",
+    "WEBWALK",
+    "FLIES",
+    "PLASTIC",
+    "ELECTRIC",
+    "ACIDPROOF",
+    "NO_BREATHE",
+    "PACIFIST",
+    "NOGIB"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_nightwail_shadow",
+  "type": "MONSTER",
+  "name": {
+    "str": "幽灵"
+  },
+  "description": "这是一个具有动画效果的阴影。它的外表没有什么可怕的，一点也不可怕。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "750 ml",
+  "weight": "1000 g",
+  "hp": 5,
+  "speed": 105,
+  "diff": 1,
+  "symbol": "⬮",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 1,
+  "melee_dice": 1,
+  "melee_dice_sides": 1,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 1,
+  "vision_day": 15,
+  "vision_night": 45,
+  "harvest": "exempt",
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_nightwail_shadow_enshroud_target"
+      },
+      "cooldown": 6,
+      "monster_message": "<color_magenta>%1%s 爆炸了！</color>"
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": ""
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "GOODHEARING",
+    "SMELLS",
+    "NOHEAD",
+    "HARDTOSHOOT",
+    "WEBWALK",
+    "FLIES",
+    "PLASTIC",
+    "ELECTRIC",
+    "ACIDPROOF",
+    "NO_BREATHE",
+    "PACIFIST",
+    "NOGIB"
+  ]
+}
+```
+

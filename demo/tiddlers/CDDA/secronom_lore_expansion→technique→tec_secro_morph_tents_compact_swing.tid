@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: technique secronom_lore_expansion
+title: secronom_lore_expansion→technique→tec_secro_morph_tents_compact_swing
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_secro_morph_tents_compact_swing|http://cdda.aloxaf.cn/search?q=tec_secro_morph_tents_compact_swing]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_tents_compact_swing",
+  "name": "Compact Swing",
+  "messages": [
+    "Your tentacles form into a mass as it is swung into %s",
+    "<npcname> swings a compact tentacle at %s"
+  ],
+  "melee_allowed": true,
+  "weighting": -4,
+  "crit_tec": true,
+  "down_dur": 2,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 3
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.66
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 2
+    }
+  ],
+  "description": "+100% bash, +66% movecost, down 2 turns, crit only",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_tents_compact_swing",
+  "name": "紧凑摆动",
+  "messages": [
+    "当你的触手摆动到%s时，它就会形成一团",
+    "<npcname>在%s摆一个紧凑的触手"
+  ],
+  "melee_allowed": true,
+  "weighting": -4,
+  "crit_tec": true,
+  "down_dur": 2,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 3
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.66
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scale": 2
+    }
+  ],
+  "description": "+100%钝击，+66%移动消耗，击倒2回合，仅暴击",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+

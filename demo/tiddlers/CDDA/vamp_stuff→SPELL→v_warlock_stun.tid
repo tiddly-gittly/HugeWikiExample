@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: SPELL vamp_stuff
+title: vamp_stuff→SPELL→v_warlock_stun
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：v_warlock_stun|http://cdda.aloxaf.cn/search?q=v_warlock_stun]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/monster_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "v_warlock_stun",
+  "type": "SPELL",
+  "name": {
+    "str": "Stun"
+  },
+  "description": "Caster channels its mind to its target, eventually renders them unconscious for a few turns.",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "effect_str": "stunned",
+  "base_casting_time": 500,
+  "min_range": 15,
+  "max_range": 15,
+  "min_duration": 200,
+  "max_duration": 500
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "v_warlock_stun",
+  "type": "SPELL",
+  "name": {
+    "str": "心乱身术"
+  },
+  "description": "施法者将自己的思想引导到目标身上，使他们昏迷数轮。",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "effect_str": "stunned",
+  "base_casting_time": 500,
+  "min_range": 15,
+  "max_range": 15,
+  "min_duration": 200,
+  "max_duration": 500
+}
+```
+

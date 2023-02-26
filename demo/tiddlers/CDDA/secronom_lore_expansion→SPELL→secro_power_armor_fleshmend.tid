@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom_lore_expansion
+title: secronom_lore_expansion→SPELL→secro_power_armor_fleshmend
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_fleshmend|http://cdda.aloxaf.cn/search?q=secro_power_armor_fleshmend]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/-Essentials/secro_item_magic_bionics.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_fleshmend",
+  "type": "SPELL",
+  "name": {
+    "str": "Flesh Mending"
+  },
+  "description": "Flesh core's internal flesh weavers start to repair your body using vast amounts of bionic power and stored calories. Immediately stops/blocks further bleeding and heals 2 HP every 10 seconds, up to 12 HP for each activation.",
+  "message": "",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE",
+    "NO_FAIL"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "spell_class": "SECRO_BIONIC_FLESH_CORE",
+  "effect_str": "secro_power_armor_fleshmend_ing",
+  "affected_body_parts": [
+    "head",
+    "torso",
+    "arm_r",
+    "arm_l",
+    "leg_r",
+    "leg_l"
+  ],
+  "energy_source": "BIONIC",
+  "base_energy_cost": 300,
+  "min_duration": 6000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_fleshmend",
+  "type": "SPELL",
+  "name": {
+    "str": "血肉修补"
+  },
+  "description": "肉核内部的肉编织者开始使用大量的仿生能量和储存的卡路里来修复你的身体。立即停止/阻止进一步出血，每10秒治疗2点生命值，每次激活最多12点生命值。",
+  "message": "",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE",
+    "NO_FAIL"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "spell_class": "SECRO_BIONIC_FLESH_CORE",
+  "effect_str": "secro_power_armor_fleshmend_ing",
+  "affected_body_parts": [
+    "head",
+    "torso",
+    "arm_r",
+    "arm_l",
+    "leg_r",
+    "leg_l"
+  ],
+  "energy_source": "BIONIC",
+  "base_energy_cost": 300,
+  "min_duration": 6000
+}
+```
+

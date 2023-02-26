@@ -1,0 +1,151 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→gilded_aegis
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gilded_aegis|http://cdda.aloxaf.cn/search?q=gilded_aegis]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gilded_aegis",
+  "type": "TOOL_ARMOR",
+  "copy-from": "cloak_leather",
+  "category": "armor",
+  "name": {
+    "str": "gilded aegis",
+    "str_pl": "gilded aegises"
+  },
+  "description": "A simple leather cloak, richly decorated with scales of gilded iron.  It resembles the hide of a golden dragon or serpent.  Using it will heal minor injuries, in exchange for inflicting pain.",
+  "material": [
+    "leather",
+    "iron",
+    "gold"
+  ],
+  "//": "A reusable healing item that's also armored?  Yeah, that's staying valuable for a while.",
+  "price": "700 USD",
+  "price_postapoc": "80 USD",
+  "color": "yellow",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 60
+      }
+    }
+  ],
+  "charges_per_use": 60,
+  "ammo": "essence_dull_type",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_gilded_aegis_healing",
+    "no_fail": true,
+    "level": 0,
+    "need_worn": true
+  },
+  "relative": {
+    "weight": 3020
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE",
+      "FANCY",
+      "TRADER_KEEP_EQUIPPED"
+    ]
+  },
+  "material_thickness": 5,
+  "armor": [
+    {
+      "encumbrance": 12,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "leg_l",
+        "leg_r"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gilded_aegis",
+  "type": "TOOL_ARMOR",
+  "copy-from": "cloak_leather",
+  "category": "armor",
+  "name": {
+    "str": "镀金斗篷",
+    "str_pl": "镀金斗篷"
+  },
+  "description": "一种简单的皮斗篷，用华丽的镀金铁鳞装饰。外表类似金龙或是蛇皮。使用它以疼痛为代价治愈轻伤。",
+  "material": [
+    "leather",
+    "iron",
+    "gold"
+  ],
+  "//": "A reusable healing item that's also armored?  Yeah, that's staying valuable for a while.",
+  "price": "700 USD",
+  "price_postapoc": "80 USD",
+  "color": "yellow",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_dull_type": 60
+      }
+    }
+  ],
+  "charges_per_use": 60,
+  "ammo": "essence_dull_type",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_gilded_aegis_healing",
+    "no_fail": true,
+    "level": 0,
+    "need_worn": true
+  },
+  "relative": {
+    "weight": 3020
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE",
+      "FANCY",
+      "TRADER_KEEP_EQUIPPED"
+    ]
+  },
+  "material_thickness": 5,
+  "armor": [
+    {
+      "encumbrance": 12,
+      "coverage": 100,
+      "covers": [
+        "torso",
+        "arm_l",
+        "arm_r",
+        "leg_l",
+        "leg_r"
+      ]
+    }
+  ]
+}
+```
+

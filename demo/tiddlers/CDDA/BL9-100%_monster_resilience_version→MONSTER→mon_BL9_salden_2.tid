@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_salden_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_salden_2|http://cdda.aloxaf.cn/search?q=mon_BL9_salden_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/BL9_aliens_dominators.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_salden_2",
+  "looks_like": "mon_gas_zombie",
+  "type": "MONSTER",
+  "name": {
+    "str": "Saldenium Mutant"
+  },
+  "description": "A tall leathery-skinned feral-looking humanoid-alien emitting a bright solar-orange crystalline light, it's forehead is ridged, it's entire face is covered with multiple curved spikes and from it's neck's breathing tubes' remains protrude tentacles, it has a mad feral look on it's face",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 490,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 14,
+      "armor_penetration": 22
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 18,
+  "armor_cut": 18,
+  "armor_bullet": 18,
+  "death_drops": "BL9_Drops_Aliens_Dominators",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 22,
+          "armor_penetration": 22
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously swings it's tentacles at you!",
+      "hit_dmg_npc": "The %1$s ferociously swings it's tentacles at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to ferociously swing it's tentacles at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to ferociously swing it's tentacles at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s ferociously swings it's tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s ferociously swings it's tentacles at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_salden_2",
+  "looks_like": "mon_gas_zombie",
+  "type": "MONSTER",
+  "name": {
+    "str": "萨尔德尼姆变种人"
+  },
+  "description": "一个高大的皮革皮肤的野性外形的人形外星人发出明亮的太阳橙色水晶光，它的前额是隆起的，它的整个脸上覆盖着多个弯曲的尖刺，从它的脖子呼吸管的残余突出的触角，它的脸上有一个疯狂的野性看",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 490,
+  "speed": 70,
+  "material": [
+    "hflesh"
+  ],
+  "symbol": "@",
+  "color": "brown",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 5,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 2,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 14,
+      "armor_penetration": 22
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 18,
+  "armor_cut": 18,
+  "armor_bullet": 18,
+  "death_drops": "BL9_Drops_Aliens_Dominators",
+  "special_attacks": [
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 8,
+      "move_cost": 140,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 22,
+          "armor_penetration": 22
+        }
+      ],
+      "hit_dmg_u": "The %1$s ferociously swings it's tentacles at you!",
+      "hit_dmg_npc": "The %1$s ferociously swings it's tentacles at <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to ferociously swing it's tentacles at you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to ferociously swing it's tentacles at <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s ferociously swings it's tentacles at you, but you dodge!",
+      "miss_msg_npc": "The %s ferociously swings it's tentacles at <npcname>, but they dodge!"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "GRABS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON"
+  ]
+}
+```
+

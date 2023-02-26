@@ -1,0 +1,197 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_titan
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_titan|http://cdda.aloxaf.cn/search?q=mon_zombie_titan]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Titan.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_titan",
+  "type": "MONSTER",
+  "name": {
+    "str": "titan"
+  },
+  "description": "A swollen body covered in thick exoskeleton plates and protruding bones lay under its bulging muscles.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN"
+  ],
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "hp": 460,
+  "speed": 110,
+  "diff": 10,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⩠",
+  "color": "light_red_magenta",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "attack_cost": 200,
+  "bleed_rate": 25,
+  "dodge": 1,
+  "harvest": "zombie",
+  "vision_day": 25,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 9
+    }
+  ],
+  "armor_bash": 10,
+  "armor_cut": 16,
+  "armor_bullet": 10,
+  "armor_acid": 3,
+  "armor_fire": 5,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_titan_target"
+      },
+      "cooldown": 345,
+      "monster_message": "<color_yellow>%1$s blocks with both arms as it sprints toward %3$s!</color>"
+    },
+    [
+      "SMASH",
+      33
+    ]
+  ],
+  "death_drops": "mon_zombie_hulk_death_drops",
+  "upgrades": {
+    "half_life": 33,
+    "into": "mon_zombie_blacktitan"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "DESTROYS",
+    "POISON",
+    "ATTACKMON",
+    "FILTHY",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_VEH",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_titan",
+  "type": "MONSTER",
+  "name": {
+    "str": "泰坦丧尸"
+  },
+  "description": "一个肿胀的身体覆盖着厚厚的外骨骼板和突出的骨头，躺在它凸出的肌肉下。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "HUMAN"
+  ],
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "hp": 460,
+  "speed": 110,
+  "diff": 10,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⩠",
+  "color": "light_red_magenta",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "attack_cost": 200,
+  "bleed_rate": 25,
+  "dodge": 1,
+  "harvest": "zombie",
+  "vision_day": 25,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    },
+    {
+      "damage_type": "bash",
+      "amount": 9
+    }
+  ],
+  "armor_bash": 10,
+  "armor_cut": 16,
+  "armor_bullet": 10,
+  "armor_acid": 3,
+  "armor_fire": 5,
+  "special_attacks": [
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_titan_target"
+      },
+      "cooldown": 345,
+      "monster_message": "<color_yellow> %1$s双臂格挡并冲向%3$s！</color>"
+    },
+    [
+      "SMASH",
+      33
+    ]
+  ],
+  "death_drops": "mon_zombie_hulk_death_drops",
+  "upgrades": {
+    "half_life": 33,
+    "into": "mon_zombie_blacktitan"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "DESTROYS",
+    "POISON",
+    "ATTACKMON",
+    "FILTHY",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_VEH",
+    "PUSH_MON"
+  ]
+}
+```
+

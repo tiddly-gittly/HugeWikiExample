@@ -1,0 +1,269 @@
+creator: 林一二
+revision: 0
+tags: GUN Project_Kawaii
+title: Project_Kawaii→GUN→kawaii_shelia_on
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kawaii_shelia_on|http://cdda.aloxaf.cn/search?q=kawaii_shelia_on]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Project_Kawaii/weapon.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kawaii_shelia_on",
+  "type": "GUN",
+  "symbol": "(",
+  "color": "yellow",
+  "name": {
+    "str": "Cute Shelia (bow form)"
+  },
+  "description": "This device is a complex transforming weapon capable of becoming either a bladed melee weapon, or a powerful bow. This is the first release in the [Cute Combat] series of of stylish protective equipment by the world's leading maid fashion brand Alice & Maria. The weapon itself proved to be quite desirable, as it could transform for engaging foes at both long range and in close combat. However, it ended up earning the nickname 'Nighmarish Shelia' due to its overly complex design making it too expensive for the mass market, and bankrupting its designer.",
+  "price": "99 USD",
+  "material": [
+    "kawaii_amsteel"
+  ],
+  "flags": [
+    "FIRE_TWOHAND",
+    "STR_DRAW",
+    "RELOAD_AND_SHOOT",
+    "PRIMITIVE_RANGED_WEAPON",
+    "BELTED",
+    "SHEATH_BOW",
+    "WATER_FRIENDLY",
+    "WATERPROOF_GUN",
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES"
+  ],
+  "reload_noise_volume": 3,
+  "loudness": 8,
+  "skill": "archery",
+  "min_strength": 5,
+  "ammo": [
+    "arrow"
+  ],
+  "weight": "250 g",
+  "volume": "1750 ml",
+  "longest_side": "180 cm",
+  "bashing": 15,
+  "armor_data": {
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "kawaii_amsteel",
+            "covered_by_mat": 100,
+            "thickness": 1
+          }
+        ],
+        "encumbrance": 20,
+        "coverage": 5,
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_hanging_back"
+        ]
+      }
+    ]
+  },
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 8
+  },
+  "range": 18,
+  "dispersion": 650,
+  "durability": 10,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "arrow": 1
+      }
+    }
+  ],
+  "reload": 100,
+  "to_hit": 5,
+  "valid_mod_locations": [
+    [
+      "underbarrel",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "accessories",
+      2
+    ],
+    [
+      "limbs",
+      1
+    ],
+    [
+      "string",
+      1
+    ],
+    [
+      "riser",
+      1
+    ],
+    [
+      "stabilizer",
+      1
+    ],
+    [
+      "dampening",
+      1
+    ]
+  ],
+  "use_action": {
+    "ammo_scale": 0,
+    "type": "transform",
+    "msg": "The Shelia folds back into its blade form.",
+    "target": "kawaii_shelia_off",
+    "active": false,
+    "moves": 200,
+    "menu_text": "Transform weapon"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kawaii_shelia_on",
+  "type": "GUN",
+  "symbol": "(",
+  "color": "yellow",
+  "name": {
+    "str": "特制长弓-谢莉亚 （弓形态）"
+  },
+  "description": "这是一个复杂的变型武器，可以变型为一个刀刃型的近战武器，也可以变型为一把强大的弓。这是世界著名女仆时尚品牌Alice&Maria推出的[可爱·战斗]系列时尚防护装备的首次公开亮相。事实证明，这种武器非常理想，因为它可以在远距离和近距离战斗中按照需求切换成适合与敌人交战的武器。然而，由于其过于复杂的设计使得它的价格极为昂贵, 不适合大众市场，最终得到了一个“Nighmarish Shelia”的绰号，并使其设计师破产了。",
+  "price": "99 USD",
+  "material": [
+    "kawaii_amsteel"
+  ],
+  "flags": [
+    "FIRE_TWOHAND",
+    "STR_DRAW",
+    "RELOAD_AND_SHOOT",
+    "PRIMITIVE_RANGED_WEAPON",
+    "BELTED",
+    "SHEATH_BOW",
+    "WATER_FRIENDLY",
+    "WATERPROOF_GUN",
+    "NEVER_JAMS"
+  ],
+  "ammo_effects": [
+    "NEVER_MISFIRES"
+  ],
+  "reload_noise_volume": 3,
+  "loudness": 8,
+  "skill": "archery",
+  "min_strength": 5,
+  "ammo": [
+    "arrow"
+  ],
+  "weight": "250 g",
+  "volume": "1750 ml",
+  "longest_side": "180 cm",
+  "bashing": 15,
+  "armor_data": {
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "kawaii_amsteel",
+            "covered_by_mat": 100,
+            "thickness": 1
+          }
+        ],
+        "encumbrance": 20,
+        "coverage": 5,
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_hanging_back"
+        ]
+      }
+    ]
+  },
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 8
+  },
+  "range": 18,
+  "dispersion": 650,
+  "durability": 10,
+  "clip_size": 1,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "arrow": 1
+      }
+    }
+  ],
+  "reload": 100,
+  "to_hit": 5,
+  "valid_mod_locations": [
+    [
+      "underbarrel",
+      1
+    ],
+    [
+      "sights",
+      1
+    ],
+    [
+      "accessories",
+      2
+    ],
+    [
+      "limbs",
+      1
+    ],
+    [
+      "string",
+      1
+    ],
+    [
+      "riser",
+      1
+    ],
+    [
+      "stabilizer",
+      1
+    ],
+    [
+      "dampening",
+      1
+    ]
+  ],
+  "use_action": {
+    "ammo_scale": 0,
+    "type": "transform",
+    "msg": "谢莉亚折叠回刀形态。",
+    "target": "kawaii_shelia_off",
+    "active": false,
+    "moves": 200,
+    "menu_text": "变换武器"
+  }
+}
+```
+

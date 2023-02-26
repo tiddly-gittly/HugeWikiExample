@@ -1,0 +1,163 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_fake_ichorus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_fake_ichorus|http://cdda.aloxaf.cn/search?q=mon_zombie_fake_ichorus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Aggro-type zed that morphs into a lethal counterpart on-death.",
+  "id": "mon_zombie_fake_ichorus",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie"
+  },
+  "description": "A human body, swaying as it moves, an unstoppable rage visible in its oily red eyes.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 80,
+  "speed": 70,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "vision_day": 4,
+  "vision_night": 4,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "<color_light_red>%s mutates into an ichorus!</color>",
+    "effect": {
+      "id": "mon_zombie_fake_ichorus_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Aggro-type zed that morphs into a lethal counterpart on-death.",
+  "id": "mon_zombie_fake_ichorus",
+  "type": "MONSTER",
+  "name": {
+    "str": "丧尸"
+  },
+  "description": "一个人类的身体，随着它的移动而摇摆，从它油腻的红眼睛里可以看到一种无法抑制的愤怒..",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 80,
+  "speed": 70,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "vision_day": 4,
+  "vision_night": 4,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "<color_light_red>%s mutates into an ichorus!</color>",
+    "effect": {
+      "id": "mon_zombie_fake_ichorus_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

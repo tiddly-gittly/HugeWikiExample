@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: technique secronom_lore_expansion
+title: secronom_lore_expansion→technique→tec_secro_morph_blades_slash_precise
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_secro_morph_blades_slash_precise|http://cdda.aloxaf.cn/search?q=tec_secro_morph_blades_slash_precise]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_ma_tec.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_blades_slash_precise",
+  "name": "Precision Slash",
+  "messages": [
+    "You slashed %s with precise accuracy",
+    "<npcname> precisely slashes %s"
+  ],
+  "melee_allowed": true,
+  "weighting": -7,
+  "crit_tec": true,
+  "stun_dur": 2,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 4
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.5
+    }
+  ],
+  "flat_bonuses": [
+    {
+      "stat": "arpen",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 1
+    }
+  ],
+  "description": "+50% cut, +33% movecost, stun 2 turns, crit only",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "tec_secro_morph_blades_slash_precise",
+  "name": "精确斜杠",
+  "messages": [
+    "你精准的砍了%s",
+    "<npcname>精确地斩击%s"
+  ],
+  "melee_allowed": true,
+  "weighting": -7,
+  "crit_tec": true,
+  "stun_dur": 2,
+  "skill_requirements": [
+    {
+      "name": "secro_flesh_combat",
+      "level": 4
+    }
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 1.33
+    },
+    {
+      "stat": "damage",
+      "type": "cut",
+      "scale": 1.5
+    }
+  ],
+  "flat_bonuses": [
+    {
+      "stat": "arpen",
+      "type": "cut",
+      "scaling-stat": "str",
+      "scale": 1
+    }
+  ],
+  "description": "+50% 斩击，+33% 移动消耗，击晕 2 回合，仅暴击",
+  "attack_vectors": [
+    "HAND"
+  ]
+}
+```
+

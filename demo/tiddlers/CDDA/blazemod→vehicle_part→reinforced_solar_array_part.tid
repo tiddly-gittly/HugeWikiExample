@@ -1,0 +1,239 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part blazemod
+title: blazemod→vehicle_part→reinforced_solar_array_part
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：reinforced_solar_array_part|http://cdda.aloxaf.cn/search?q=reinforced_solar_array_part]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/vehicleparts/blaze_other_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "reinforced_solar_array_part",
+  "type": "vehicle_part",
+  "copy-from": "solar_array_part",
+  "name": {
+    "str": "reinforced solar array"
+  },
+  "item": "reinforced_solar_array",
+  "categories": [
+    "energy"
+  ],
+  "color": "light_blue",
+  "broken_color": "light_gray",
+  "durability": 300,
+  "proportional": {
+    "epower": 0.9
+  },
+  "folded_volume": "14 L",
+  "description": "A vertical array of three reinforced solar panels set on a chassis rising above one another on a metal pole with rudimentary tracking and motors.  Due to the flimsy nature of the hydraulics and high surface area profile to maximize sunlight, they can't really be installed onto an existing vehicle.  Requires a jumper cable or similar to pull power from.",
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        2,
+        21
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        2,
+        21
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        2,
+        21
+      ]
+    },
+    {
+      "item": "solar_cell",
+      "count": [
+        4,
+        12
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          8
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "10 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "electronics",
+          6
+        ]
+      ],
+      "time": "150 m",
+      "using": [
+        [
+          "vehicle_screw",
+          1
+        ],
+        [
+          "solar_panel",
+          3
+        ],
+        [
+          "soldering_standard",
+          8
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "SOLAR_PANEL",
+    "OBSTACLE",
+    "INITIAL_PART",
+    "PROTRUSION",
+    "EXTRA_DRAG"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "reinforced_solar_array_part",
+  "type": "vehicle_part",
+  "copy-from": "solar_array_part",
+  "name": {
+    "str": "太阳能板阵列（强化）"
+  },
+  "item": "reinforced_solar_array",
+  "categories": [
+    "energy"
+  ],
+  "color": "light_blue",
+  "broken_color": "light_gray",
+  "durability": 300,
+  "proportional": {
+    "epower": 0.9
+  },
+  "folded_volume": "14 L",
+  "description": "一个由三块强化太阳能板所组成的垂直阵列，安装在同一根金属底座上，在金属杆上依次排开，带有基础的跟踪装置和马达。由于液压系统的脆弱性和为了最大限度利用阳光所导致的高覆盖面积，它们真没法被安装在现有的载具上。需要一根跨接电缆或类似电缆才能从中导出电源。",
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        2,
+        21
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        2,
+        21
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        2,
+        21
+      ]
+    },
+    {
+      "item": "solar_cell",
+      "count": [
+        4,
+        12
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          8
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          1
+        ]
+      ],
+      "time": "10 m"
+    },
+    "repair": {
+      "skills": [
+        [
+          "electronics",
+          6
+        ]
+      ],
+      "time": "150 m",
+      "using": [
+        [
+          "vehicle_screw",
+          1
+        ],
+        [
+          "solar_panel",
+          3
+        ],
+        [
+          "soldering_standard",
+          8
+        ]
+      ]
+    }
+  },
+  "flags": [
+    "SOLAR_PANEL",
+    "OBSTACLE",
+    "INITIAL_PART",
+    "PROTRUSION",
+    "EXTRA_DRAG"
+  ]
+}
+```
+

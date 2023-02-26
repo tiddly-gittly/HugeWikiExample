@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→SPELL→c_biostim
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_biostim|http://cdda.aloxaf.cn/search?q=c_biostim]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Surv_help/c_spells.json
+
+
+!! 原文
+
+```json
+{
+  "id": "c_biostim",
+  "type": "SPELL",
+  "name": {
+    "str": "Biostim"
+  },
+  "description": "Surge of adrenaline with side effects.  The effects granted will give adequate information, so no cast message.",
+  "message": "",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "RANDOM_DURATION",
+    "SILENT"
+  ],
+  "min_duration": 90000,
+  "max_duration": 180000,
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "adrenaline",
+  "extra_effects": [
+    {
+      "id": "c_biostim_side_effects",
+      "hit_self": true
+    },
+    {
+      "id": "c_biostim_pain",
+      "hit_self": true
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "c_biostim",
+  "type": "SPELL",
+  "name": {
+    "str": "生化物质注射"
+  },
+  "description": "肾上腺素激增伴随副作用。将在效果上显示信息，因此没有施法信息。",
+  "message": "",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "RANDOM_DURATION",
+    "SILENT"
+  ],
+  "min_duration": 90000,
+  "max_duration": 180000,
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "adrenaline",
+  "extra_effects": [
+    {
+      "id": "c_biostim_side_effects",
+      "hit_self": true
+    },
+    {
+      "id": "c_biostim_pain",
+      "hit_self": true
+    }
+  ]
+}
+```
+

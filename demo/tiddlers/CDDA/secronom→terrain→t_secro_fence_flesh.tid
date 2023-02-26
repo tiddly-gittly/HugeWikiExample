@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_fence_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_fence_flesh|http://cdda.aloxaf.cn/search?q=t_secro_fence_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_fence_flesh",
+  "name": "fleshed picket fence",
+  "description": "A barrier made of wood, it's nothing complicated.  Mildly suggests where not to go.",
+  "symbol": "LINE_OXOX",
+  "color": "red",
+  "move_cost": 6,
+  "flags": [
+    "TRANSPARENT",
+    "DIGGABLE",
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "THIN_OBSTACLE",
+    "REDUCE_SCENT",
+    "MOUNTABLE",
+    "SHORT",
+    "AUTO_WALL_SYMBOL",
+    "BURROWABLE",
+    "S_FLESH"
+  ],
+  "connects_to": "WOODFENCE",
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash.",
+    "sound_fail": "splat.",
+    "ter_set": "t_fence"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_fence_flesh",
+  "name": "血肉尖桩围栏",
+  "description": "一扇木制的栅栏，并不复杂。和善地提醒你此路不通。",
+  "symbol": "LINE_OXOX",
+  "color": "red",
+  "move_cost": 6,
+  "flags": [
+    "TRANSPARENT",
+    "DIGGABLE",
+    "FLAMMABLE_ASH",
+    "NOITEM",
+    "THIN_OBSTACLE",
+    "REDUCE_SCENT",
+    "MOUNTABLE",
+    "SHORT",
+    "AUTO_WALL_SYMBOL",
+    "BURROWABLE",
+    "S_FLESH"
+  ],
+  "connects_to": "WOODFENCE",
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash.",
+    "sound_fail": "splat.",
+    "ter_set": "t_fence"
+  }
+}
+```
+

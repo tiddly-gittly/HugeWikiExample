@@ -1,0 +1,247 @@
+creator: 林一二
+revision: 0
+tags: COMESTIBLE secronom
+title: secronom→COMESTIBLE→sflesh_bio_cooked
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：sflesh_bio_cooked|http://cdda.aloxaf.cn/search?q=sflesh_bio_cooked]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_monitem.json
+
+
+!! 原文
+
+```json
+{
+  "id": "sflesh_bio_cooked",
+  "copy-from": "flesh",
+  "weight": "436 g",
+  "volume": "500 ml",
+  "spoils_in": "1 day",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "cooked flesh chunk"
+  },
+  "description": "This is a chunk of freshly cooked flesh, though it regenerative properties has dimished significant and tastes the same.",
+  "symbol": "%",
+  "color": "red",
+  "price": 750,
+  "parasites": 0,
+  "calories": 446,
+  "fun": -30,
+  "vitamins": [
+    [
+      "vitC",
+      16
+    ],
+    [
+      "calcium",
+      2
+    ],
+    [
+      "iron",
+      74
+    ],
+    [
+      "vitB",
+      1132
+    ]
+  ],
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "<color_light_green>As you chomp down the flesh, your body feels refreshed.</color>",
+    "effects": [
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "leg_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_r"
+      },
+      {
+        "id": "cureall",
+        "duration": 1
+      }
+    ]
+  },
+  "flags": [
+    "EATEN_HOT",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "sflesh_bio_cooked",
+  "copy-from": "flesh",
+  "weight": "436 g",
+  "volume": "500 ml",
+  "spoils_in": "1 day",
+  "type": "COMESTIBLE",
+  "name": {
+    "str": "熟的块状血肉"
+  },
+  "description": "这是一块刚煮过的肉，虽然它的再生特性已经显著减弱，而且味道也和没熟差不多。",
+  "symbol": "%",
+  "color": "red",
+  "price": 750,
+  "parasites": 0,
+  "calories": 446,
+  "fun": -30,
+  "vitamins": [
+    [
+      "vitC",
+      16
+    ],
+    [
+      "calcium",
+      2
+    ],
+    [
+      "iron",
+      74
+    ],
+    [
+      "vitB",
+      1132
+    ]
+  ],
+  "use_action": {
+    "type": "consume_drug",
+    "activation_message": "<color_light_green>当你咬下肉的时候，你的身体会感到精神振奋。</color>",
+    "effects": [
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_heal",
+        "duration": 45,
+        "bp": "leg_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "head"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "torso"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "arm_r"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_l"
+      },
+      {
+        "id": "secro_flesh_bio_limb",
+        "duration": 10,
+        "bp": "leg_r"
+      },
+      {
+        "id": "cureall",
+        "duration": 1
+      }
+    ]
+  },
+  "flags": [
+    "EATEN_HOT",
+    "NUTRIENT_OVERRIDE"
+  ]
+}
+```
+

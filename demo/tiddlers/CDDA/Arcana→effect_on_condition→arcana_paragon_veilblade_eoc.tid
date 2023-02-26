@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Arcana
+title: Arcana→effect_on_condition→arcana_paragon_veilblade_eoc
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_paragon_veilblade_eoc|http://cdda.aloxaf.cn/search?q=arcana_paragon_veilblade_eoc]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutation_effect_on_condition.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "arcana_paragon_veilblade_eoc",
+  "recurrence": [
+    "1 s",
+    "1 s"
+  ],
+  "condition": {
+    "u_has_effect": "arcana_paragon_veilblade_effect"
+  },
+  "effect": [
+    {
+      "u_message": "You feel an otherworldly presence reaching out to you.",
+      "type": "mixed"
+    },
+    {
+      "run_eocs": [
+        "arcana_paragon_veilblade_eoc_thresh_test"
+      ]
+    },
+    {
+      "u_mutate_category": "VEIL",
+      "use_vitamins": false
+    },
+    {
+      "run_eocs": [
+        "arcana_paragon_veilblade_eoc_trigger_bonus"
+      ]
+    },
+    {
+      "u_lose_effect": "arcana_paragon_veilblade_effect"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "arcana_paragon_veilblade_eoc",
+  "recurrence": [
+    "1 s",
+    "1 s"
+  ],
+  "condition": {
+    "u_has_effect": "arcana_paragon_veilblade_effect"
+  },
+  "effect": [
+    {
+      "u_message": "你感到那些超然的存在正在向你伸出援手。",
+      "type": "mixed"
+    },
+    {
+      "run_eocs": [
+        "arcana_paragon_veilblade_eoc_thresh_test"
+      ]
+    },
+    {
+      "u_mutate_category": "VEIL",
+      "use_vitamins": false
+    },
+    {
+      "run_eocs": [
+        "arcana_paragon_veilblade_eoc_trigger_bonus"
+      ]
+    },
+    {
+      "u_lose_effect": "arcana_paragon_veilblade_effect"
+    }
+  ]
+}
+```
+

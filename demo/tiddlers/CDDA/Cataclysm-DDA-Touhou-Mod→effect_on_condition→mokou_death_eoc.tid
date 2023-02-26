@@ -1,0 +1,223 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→effect_on_condition→mokou_death_eoc
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mokou_death_eoc|http://cdda.aloxaf.cn/search?q=mokou_death_eoc]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_eocs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mokou_death_eoc",
+  "type": "effect_on_condition",
+  "eoc_type": "PREVENT_DEATH",
+  "condition": {
+    "and": [
+      {
+        "u_has_trait": "PROF_MOKOU"
+      },
+      {
+        "compare_int": [
+          {
+            "u_val": "var",
+            "var_name": "var_mokoudeath"
+          },
+          "<",
+          {
+            "rand": 504
+          }
+        ]
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "Too bad you can't actually die for good.",
+      "popup": true
+    },
+    {
+      "u_lose_trait": "PORTAL_RESURRECTION"
+    },
+    {
+      "u_add_effect": "mokou_resurrectcleanse",
+      "duration": "6 s"
+    },
+    {
+      "u_add_effect": "mokou_resurrectpain",
+      "duration": "168 hours"
+    },
+    {
+      "u_set_hp": 100,
+      "only_increase": true
+    },
+    {
+      "u_cast_spell": {
+        "id": "mokou_resurrectionphoenix"
+      },
+      "targeted": false
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_mokoudeath"
+        },
+        "+=",
+        {
+          "const": 168
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "fatigue"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "mana"
+        },
+        "=",
+        {
+          "const": 800
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "pain"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    }
+  ],
+  "//": "ANY trait that revives the character should be lost every time Mokou dies. So far, it's just PORTAL_RESURRECTION ",
+  "//2": "Every time Mokou dies she gets var_mokoudeath, which lasts for 7 days and slowly decreases over time. Every time she revives, the value is checked, so the more she dies in a short time the harder it is for her to not give up for real"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mokou_death_eoc",
+  "type": "effect_on_condition",
+  "eoc_type": "PREVENT_DEATH",
+  "condition": {
+    "and": [
+      {
+        "u_has_trait": "PROF_MOKOU"
+      },
+      {
+        "compare_int": [
+          {
+            "u_val": "var",
+            "var_name": "var_mokoudeath"
+          },
+          "<",
+          {
+            "rand": 504
+          }
+        ]
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "Too bad you can't actually die for good.",
+      "popup": true
+    },
+    {
+      "u_lose_trait": "PORTAL_RESURRECTION"
+    },
+    {
+      "u_add_effect": "mokou_resurrectcleanse",
+      "duration": "6 s"
+    },
+    {
+      "u_add_effect": "mokou_resurrectpain",
+      "duration": "168 hours"
+    },
+    {
+      "u_set_hp": 100,
+      "only_increase": true
+    },
+    {
+      "u_cast_spell": {
+        "id": "mokou_resurrectionphoenix"
+      },
+      "targeted": false
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "var",
+          "var_name": "var_mokoudeath"
+        },
+        "+=",
+        {
+          "const": 168
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "fatigue"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "mana"
+        },
+        "=",
+        {
+          "const": 800
+        }
+      ]
+    },
+    {
+      "arithmetic": [
+        {
+          "u_val": "pain"
+        },
+        "=",
+        {
+          "const": 0
+        }
+      ]
+    }
+  ],
+  "//": "ANY trait that revives the character should be lost every time Mokou dies. So far, it's just PORTAL_RESURRECTION ",
+  "//2": "Every time Mokou dies she gets var_mokoudeath, which lasts for 7 days and slowly decreases over time. Every time she revives, the value is checked, so the more she dies in a short time the harder it is for her to not give up for real"
+}
+```
+

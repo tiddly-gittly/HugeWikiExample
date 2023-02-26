@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_cotylorhynchus
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_cotylorhynchus|http://cdda.aloxaf.cn/search?q=mon_cotylorhynchus]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_stem_mammal.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_cotylorhynchus",
+  "type": "MONSTER",
+  "name": {
+    "str": "cotylorhynchus",
+    "str_pl": "cotylorhynchus"
+  },
+  "description": "A very bizarre, very large looking animal.  The body looks like a barrel, powered by two pairs of strong limbs at each side, with a fat, leathery tail at the end.  Despite the imponent size, this is a fast and peaceful animal, judging by their feeding habits and indiference to the world around it.  By the way, the head is at least three sizes smaller than you expected it to be.",
+  "volume": "1800 L",
+  "weight": "1500 kg",
+  "default_faction": "touhou_herbivoreancient_large",
+  "bodytype": "pig",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_leather",
+  "hp": 600,
+  "speed": 120,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "0",
+  "color": "light_gray",
+  "aggression": -5,
+  "morale": 25,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 3,
+  "armor_cut": 2,
+  "armor_stab": 2,
+  "armor_bullet": 4,
+  "vision_day": 25,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 20
+  },
+  "special_attacks": [
+    [
+      "EAT_CROP",
+      100
+    ],
+    [
+      "slam",
+      8
+    ]
+  ],
+  "fear_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "STALK"
+  ],
+  "reproduction": {
+    "baby_egg": "egg_cotylorhynchus",
+    "baby_count": 8,
+    "baby_timer": 36
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "flags": [
+    "ANIMAL",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWARMS",
+    "WARM"
+  ],
+  "//": "Cotylorhynchus sp. taken as reference. No reproductive data, I'm assuming these laid eggs"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_cotylorhynchus",
+  "type": "MONSTER",
+  "name": {
+    "str": "杯鼻龙",
+    "str_pl": "杯鼻龙"
+  },
+  "description": "A very bizarre, very large looking animal.  The body looks like a barrel, powered by two pairs of strong limbs at each side, with a fat, leathery tail at the end.  Despite the imponent size, this is a fast and peaceful animal, judging by their feeding habits and indiference to the world around it.  By the way, the head is at least three sizes smaller than you expected it to be.",
+  "volume": "1800 L",
+  "weight": "1500 kg",
+  "default_faction": "touhou_herbivoreancient_large",
+  "bodytype": "pig",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_leather",
+  "hp": 600,
+  "speed": 120,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "0",
+  "color": "light_gray",
+  "aggression": -5,
+  "morale": 25,
+  "melee_skill": 2,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 3,
+  "armor_cut": 2,
+  "armor_stab": 2,
+  "armor_bullet": 4,
+  "vision_day": 25,
+  "vision_night": 20,
+  "path_settings": {
+    "max_dist": 20
+  },
+  "special_attacks": [
+    [
+      "EAT_CROP",
+      100
+    ],
+    [
+      "slam",
+      8
+    ]
+  ],
+  "fear_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "STALK"
+  ],
+  "reproduction": {
+    "baby_egg": "egg_cotylorhynchus",
+    "baby_count": 8,
+    "baby_timer": 36
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "flags": [
+    "ANIMAL",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS",
+    "SWARMS",
+    "WARM"
+  ],
+  "//": "Cotylorhynchus sp. taken as reference. No reproductive data, I'm assuming these laid eggs"
+}
+```
+

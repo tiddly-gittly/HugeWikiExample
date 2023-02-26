@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_secro_gravturret_energize
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_secro_gravturret_energize|http://cdda.aloxaf.cn/search?q=mon_secro_gravturret_energize]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_secro_gravturret_energize",
+  "type": "SPELL",
+  "name": {
+    "str": "Energize"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots the target with its fully-accumulated magnetic field, forming an energized area that magnetizes any creature, which completely immobilizes them in its aoe for 10 turns.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ally",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "field_id": "fd_gravtur_magnet",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "min_range": 15,
+  "max_range": 15
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_secro_gravturret_energize",
+  "type": "SPELL",
+  "name": {
+    "str": "激励"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者用其完全累积的磁场射击目标，形成一个能磁化任何生物的通电区域，使它们在其aoe中完全固定10圈。'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "hostile",
+    "ally",
+    "ground"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "field_id": "fd_gravtur_magnet",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "min_range": 15,
+  "max_range": 15
+}
+```
+

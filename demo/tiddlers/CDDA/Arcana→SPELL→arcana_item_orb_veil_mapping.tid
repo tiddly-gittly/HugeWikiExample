@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_orb_veil_mapping
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_orb_veil_mapping|http://cdda.aloxaf.cn/search?q=arcana_item_orb_veil_mapping]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_orb_veil_mapping",
+  "name": {
+    "str": "Gaze Into Greater Horizons"
+  },
+  "description": "Knowledge is power, but power comes at a price…",
+  "effect": "map",
+  "shape": "blast",
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_orb_veil_revelation",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_orb_veil_attention",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_artifice_pain",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_orb_veil_wonder",
+      "hit_self": false
+    }
+  ],
+  "message": "You look deep into the orb, and see a vision of the surrounding area hidden among headache-inducing geometries.",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_aoe": 30,
+  "max_aoe": 30,
+  "base_casting_time": 100
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_orb_veil_mapping",
+  "name": {
+    "str": "凝视更广阔的视野"
+  },
+  "description": "知识就是力量，但力量是有代价的…",
+  "effect": "map",
+  "shape": "blast",
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_orb_veil_revelation",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_orb_veil_attention",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_artifice_pain",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_orb_veil_wonder",
+      "hit_self": false
+    }
+  ],
+  "message": "你深入观察这个球体，看到一个隐藏在令人头痛的几何图形中的周围区域。",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "min_aoe": 30,
+  "max_aoe": 30,
+  "base_casting_time": 100
+}
+```
+

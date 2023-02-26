@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_chainfence_flesh
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_chainfence_flesh|http://cdda.aloxaf.cn/search?q=t_secro_chainfence_flesh]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/flesh_ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_chainfence_flesh",
+  "name": "fleshed chain link fence",
+  "description": "A chain link fence with its patterned holes blocked with thick flesh.",
+  "symbol": "LINE_OXOX",
+  "color": "light_red",
+  "move_cost": 0,
+  "flags": [
+    "TRANSPARENT",
+    "NOITEM",
+    "THIN_OBSTACLE",
+    "PERMEABLE",
+    "UNSTABLE",
+    "CLIMBABLE",
+    "AUTO_WALL_SYMBOL",
+    "BURROWABLE",
+    "S_FLESH"
+  ],
+  "connects_to": "CHAINFENCE",
+  "examine_action": "chainfence",
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_chainfence"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_chainfence_flesh",
+  "name": "血肉勾花围栏",
+  "description": "一种铁丝网围栏，其带有花纹的网孔已经被厚厚的血肉塞满了。",
+  "symbol": "LINE_OXOX",
+  "color": "light_red",
+  "move_cost": 0,
+  "flags": [
+    "TRANSPARENT",
+    "NOITEM",
+    "THIN_OBSTACLE",
+    "PERMEABLE",
+    "UNSTABLE",
+    "CLIMBABLE",
+    "AUTO_WALL_SYMBOL",
+    "BURROWABLE",
+    "S_FLESH"
+  ],
+  "connects_to": "CHAINFENCE",
+  "examine_action": "chainfence",
+  "bash": {
+    "str_min": 8,
+    "str_max": 16,
+    "sound": "splash!",
+    "sound_fail": "splat!",
+    "ter_set": "t_chainfence"
+  }
+}
+```
+

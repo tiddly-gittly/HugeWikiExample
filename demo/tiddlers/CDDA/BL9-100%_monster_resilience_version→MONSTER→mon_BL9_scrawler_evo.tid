@@ -1,0 +1,295 @@
+creator: 林一二
+revision: 0
+tags: MONSTER BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→MONSTER→mon_BL9_scrawler_evo
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_BL9_scrawler_evo|http://cdda.aloxaf.cn/search?q=mon_BL9_scrawler_evo]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/BL9monsters/wild_flora_fauna.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_BL9_scrawler_evo",
+  "looks_like": "mon_plague_vector",
+  "type": "MONSTER",
+  "name": {
+    "str": "Evolved Shadow Crawler"
+  },
+  "description": "A bug-like bipedal creature with a set of serrated chitin blades on it's forelimbs. It has thick formation of chitin shelling that protects it from harm.",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 195,
+  "diff": 1,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "%",
+  "color": "brown_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 3,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 9,
+      "armor_penetration": 11
+    }
+  ],
+  "vision_night": 5,
+  "armor_bash": 4,
+  "armor_cut": 6,
+  "armor_bullet": 6,
+  "armor_acid": 5,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 9,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "armor_penetration": 14
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 10,
+      "move_cost": 125,
+      "accuracy": 6,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 17,
+          "armor_penetration": 14
+        }
+      ],
+      "hit_dmg_u": "The %1$s scratches you!",
+      "hit_dmg_npc": "The %1$s scratches <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to scratch you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to scratch <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s scratches you, but you dodge!",
+      "miss_msg_npc": "The %s scratches <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 50,
+      "accuracy": 10,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 15,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s quickslashed you!",
+      "hit_dmg_npc": "The %1$s quickslashes <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slash you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slash <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s quickslashes you, but you dodge!",
+      "miss_msg_npc": "The %s quickslashes <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 225,
+      "min_mul": 0.5,
+      "accuracy": 4,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 19,
+          "armor_penetration": 16
+        }
+      ],
+      "hit_dmg_u": "The %1$s slashes you!",
+      "hit_dmg_npc": "The %1$s slashes <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to scratch you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to scratch <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s slashes you, but you dodge!",
+      "miss_msg_npc": "The %s slashes <npcname>, but they dodge!"
+    }
+  ],
+  "death_drops": "BL9_Drops_Scrawlerevo",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_BL9_scrawler_evo",
+  "looks_like": "mon_plague_vector",
+  "type": "MONSTER",
+  "name": {
+    "str": "进化的影子爬虫"
+  },
+  "description": "一种类似昆虫的两足动物，前肢上有一套锯齿状的甲壳质刀片。它有厚厚的甲壳素外壳，保护它免受伤害。",
+  "default_faction": "BL9_cultists",
+  "species": [
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 195,
+  "diff": 1,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "%",
+  "color": "brown_red",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "harvest": "zombie",
+  "melee_dice_sides": 1,
+  "dodge": 3,
+  "attack_effs": [
+    {
+      "id": "BL9_bleed_immun",
+      "duration": 15,
+      "bp": "torso"
+    }
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 9,
+      "armor_penetration": 11
+    }
+  ],
+  "vision_night": 5,
+  "armor_bash": 4,
+  "armor_cut": 6,
+  "armor_bullet": 6,
+  "armor_acid": 5,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 9,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "armor_penetration": 14
+        }
+      ]
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 10,
+      "move_cost": 125,
+      "accuracy": 6,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 17,
+          "armor_penetration": 14
+        }
+      ],
+      "hit_dmg_u": "The %1$s scratches you!",
+      "hit_dmg_npc": "The %1$s scratches <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to scratch you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to scratch <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s scratches you, but you dodge!",
+      "miss_msg_npc": "The %s scratches <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 9,
+      "move_cost": 50,
+      "accuracy": 10,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 15,
+          "armor_penetration": 12
+        }
+      ],
+      "hit_dmg_u": "The %1$s quickslashed you!",
+      "hit_dmg_npc": "The %1$s quickslashes <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to slash you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to slash <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s quickslashes you, but you dodge!",
+      "miss_msg_npc": "The %s quickslashes <npcname>, but they dodge!"
+    },
+    {
+      "type": "monster_attack",
+      "attack_type": "melee",
+      "cooldown": 12,
+      "move_cost": 225,
+      "min_mul": 0.5,
+      "accuracy": 4,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 19,
+          "armor_penetration": 16
+        }
+      ],
+      "hit_dmg_u": "The %1$s slashes you!",
+      "hit_dmg_npc": "The %1$s slashes <npcname>!",
+      "no_dmg_msg_u": "The %1$s tries to scratch you, but fails to penetrate your armor!",
+      "no_dmg_msg_npc": "The %1$s tries to scratch <npcname>, but fails to penetrate their armor!",
+      "miss_msg_u": "The %s slashes you, but you dodge!",
+      "miss_msg_npc": "The %s slashes <npcname>, but they dodge!"
+    }
+  ],
+  "death_drops": "BL9_Drops_Scrawlerevo",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "PUSH_MON"
+  ]
+}
+```
+

@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_divine_seal_consecrate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_divine_seal_consecrate|http://cdda.aloxaf.cn/search?q=arcana_item_divine_seal_consecrate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_divine_seal_consecrate",
+  "name": {
+    "str": "Divine Seal Consecration"
+  },
+  "description": "This adds the effects of Consecrate, minus damaging effects.",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "message": "",
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_consecrate",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT",
+    "IGNORE_WALLS"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_aoe": 32,
+  "max_aoe": 32
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_item_divine_seal_consecrate",
+  "name": {
+    "str": "神圣魔印祝福"
+  },
+  "description": "这会增加奉献的效果，减去破坏性效果。",
+  "valid_targets": [
+    "self",
+    "ally",
+    "hostile",
+    "ground"
+  ],
+  "message": "",
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_consecrate",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "SILENT",
+    "IGNORE_WALLS"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_aoe": 32,
+  "max_aoe": 32
+}
+```
+

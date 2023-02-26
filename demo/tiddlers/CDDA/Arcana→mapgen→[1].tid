@@ -1,0 +1,387 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[1]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "mansion_+4d"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "X....X.KKXP=YXD--------X",
+      "X....X..KX===X&2-D-----X",
+      "X....X...X===XD-2&D---DX",
+      "X..XXXX%XXX+XX&2-D&2-2&X",
+      "X............XD-2&D---DX",
+      "X............X---D&2-2&X",
+      "X..XX%XXXXX..+----D---DX",
+      "X..X......X..X---------X",
+      "X..Xrr.rrrX..XNFN)-----X",
+      "X..XXX%XXXX..XXXXXXXX++X",
+      "X..X##-###X..X######X..X",
+      "+..X#---##X..X######X..+",
+      "+..X#---##X..X######X..+",
+      "XXXX#---##X..X######XXXX",
+      "X####---##X..X#########X",
+      "X####---##X..X#########X",
+      "X###R---R#X..X#########X",
+      "X###R---R#X..X#########X",
+      "X###R---R#X..X#########X",
+      "X###--S--#X..X#########X",
+      "X###-----#X..X#########X",
+      "X###lllll#X..X#########X",
+      "X#########X..X#########X",
+      "XXXXXXXXXXX++XXXXXXXXXXX"
+    ],
+    "palettes": [
+      "mansion_palette_common",
+      "mansion_palette_basement"
+    ],
+    "terrain": {
+      "R": "t_carpet_red",
+      "N": "t_carpet_red",
+      "l": "t_carpet_red"
+    },
+    "furniture": {
+      "S": "f_slab"
+    },
+    "toilets": {
+      "P": {}
+    },
+    "items": {
+      ")": {
+        "item": "harddrugs",
+        "chance": 30
+      },
+      ".": {
+        "item": "clutter_basement"
+      },
+      "D": {
+        "item": "vending_food",
+        "chance": 25
+      },
+      "F": {
+        "item": "fridgesnacks",
+        "chance": 45
+      },
+      "K": {
+        "item": "crate_stack",
+        "chance": 100
+      },
+      "N": {
+        "item": "vending_food",
+        "chance": 40
+      },
+      "S": {
+        "item": "cult_sacrifice",
+        "chance": 100
+      },
+      "Y": {
+        "item": "softdrugs",
+        "chance": 20
+      },
+      "r": {
+        "item": "crate_stack",
+        "chance": 100
+      }
+    },
+    "place_loot": [
+      {
+        "group": "chalice_cult_books",
+        "x": [
+          4,
+          8
+        ],
+        "y": 21,
+        "chance": 50,
+        "repeat": 8
+      },
+      {
+        "item": "note_chalice_tenet",
+        "x": [
+          4,
+          8
+        ],
+        "y": 21
+      },
+      {
+        "group": "antique_rare",
+        "x": 4,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 50,
+        "repeat": 4
+      },
+      {
+        "group": "chalice_cult_consumables",
+        "x": 8,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 50,
+        "repeat": 4
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_MANSION",
+        "x": [
+          2,
+          21
+        ],
+        "y": [
+          2,
+          8
+        ],
+        "density": 0.1
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_vortex",
+        "x": [
+          5,
+          7
+        ],
+        "y": [
+          11,
+          18
+        ],
+        "repeat": [
+          2,
+          4
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "cf_church_upgrade_1_a",
+  "object": {
+    "mapgensize": [
+      20,
+      20
+    ],
+    "rows": [
+      "||||||||||||||||||||",
+      "|  |  |  |  |      |",
+      "|  |  |  |  |      |",
+      "||_||_||_||_|      |",
+      "|                  |",
+      "|                  |",
+      "||_||_||_||_|      |",
+      "|  |  |  |  |      |",
+      "|  |  |  |  |      |",
+      "|||||||||||||||__|||",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    "
+    ],
+    "terrain": {
+      "|": "t_wall_log",
+      "_": "t_door_frame"
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "mansion_+4d"
+  ],
+  "weight": 1000,
+  "object": {
+    "fill_ter": "t_rock_floor",
+    "rows": [
+      "X....X.KKXP=YXD--------X",
+      "X....X..KX===X&2-D-----X",
+      "X....X...X===XD-2&D---DX",
+      "X..XXXX%XXX+XX&2-D&2-2&X",
+      "X............XD-2&D---DX",
+      "X............X---D&2-2&X",
+      "X..XX%XXXXX..+----D---DX",
+      "X..X......X..X---------X",
+      "X..Xrr.rrrX..XNFN)-----X",
+      "X..XXX%XXXX..XXXXXXXX++X",
+      "X..X##-###X..X######X..X",
+      "+..X#---##X..X######X..+",
+      "+..X#---##X..X######X..+",
+      "XXXX#---##X..X######XXXX",
+      "X####---##X..X#########X",
+      "X####---##X..X#########X",
+      "X###R---R#X..X#########X",
+      "X###R---R#X..X#########X",
+      "X###R---R#X..X#########X",
+      "X###--S--#X..X#########X",
+      "X###-----#X..X#########X",
+      "X###lllll#X..X#########X",
+      "X#########X..X#########X",
+      "XXXXXXXXXXX++XXXXXXXXXXX"
+    ],
+    "palettes": [
+      "mansion_palette_common",
+      "mansion_palette_basement"
+    ],
+    "terrain": {
+      "R": "t_carpet_red",
+      "N": "t_carpet_red",
+      "l": "t_carpet_red"
+    },
+    "furniture": {
+      "S": "f_slab"
+    },
+    "toilets": {
+      "P": {}
+    },
+    "items": {
+      ")": {
+        "item": "harddrugs",
+        "chance": 30
+      },
+      ".": {
+        "item": "clutter_basement"
+      },
+      "D": {
+        "item": "vending_food",
+        "chance": 25
+      },
+      "F": {
+        "item": "fridgesnacks",
+        "chance": 45
+      },
+      "K": {
+        "item": "crate_stack",
+        "chance": 100
+      },
+      "N": {
+        "item": "vending_food",
+        "chance": 40
+      },
+      "S": {
+        "item": "cult_sacrifice",
+        "chance": 100
+      },
+      "Y": {
+        "item": "softdrugs",
+        "chance": 20
+      },
+      "r": {
+        "item": "crate_stack",
+        "chance": 100
+      }
+    },
+    "place_loot": [
+      {
+        "group": "chalice_cult_books",
+        "x": [
+          4,
+          8
+        ],
+        "y": 21,
+        "chance": 50,
+        "repeat": 8
+      },
+      {
+        "item": "note_chalice_tenet",
+        "x": [
+          4,
+          8
+        ],
+        "y": 21
+      },
+      {
+        "group": "antique_rare",
+        "x": 4,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 50,
+        "repeat": 4
+      },
+      {
+        "group": "chalice_cult_consumables",
+        "x": 8,
+        "y": [
+          16,
+          18
+        ],
+        "chance": 50,
+        "repeat": 4
+      }
+    ],
+    "place_monsters": [
+      {
+        "monster": "GROUP_MANSION",
+        "x": [
+          2,
+          21
+        ],
+        "y": [
+          2,
+          8
+        ],
+        "density": 0.1
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_vortex",
+        "x": [
+          5,
+          7
+        ],
+        "y": [
+          11,
+          18
+        ],
+        "repeat": [
+          2,
+          4
+        ]
+      }
+    ]
+  }
+}
+```
+

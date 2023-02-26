@@ -1,0 +1,165 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_bootsheath
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_bootsheath|http://cdda.aloxaf.cn/search?q=secro_flesh_bootsheath]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_sheath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_bootsheath",
+  "type": "ARMOR",
+  "name": {
+    "str": "ankle sheath"
+  },
+  "description": "A small concealed knife sheath worn on the ankle.  It is awkward to use without practice.  Activate to sheathe/draw a weapon.",
+  "weight": "200 g",
+  "volume": "500 ml",
+  "to_hit": -1,
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "sheath",
+  "color": "red",
+  "sided": true,
+  "pocket_data": [
+    {
+      "magazine_well": "200 ml",
+      "holster": true,
+      "flag_restriction": [
+        "SHEATH_KNIFE"
+      ],
+      "moves": 30,
+      "max_contains_volume": "500 ml",
+      "max_contains_weight": "1 kg",
+      "max_item_length": "30 cm"
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Sheath knife",
+    "holster_msg": "You sheath your %s"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "ALLOWS_NATURAL_ATTACKS",
+    "WATER_FRIENDLY"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        2,
+        3
+      ],
+      "coverage": 5,
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ],
+      "specifically_covers": [
+        "foot_ankle_l",
+        "foot_ankle_r"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1,
+      "layers": [
+        "BELTED"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_bootsheath",
+  "type": "ARMOR",
+  "name": {
+    "str": "小刀鞘（脚）"
+  },
+  "description": "一个穿在脚踝上的小型刀鞘。不经过练习用起来很笨拙。使用它来收拔武器。",
+  "weight": "200 g",
+  "volume": "500 ml",
+  "to_hit": -1,
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "sheath",
+  "color": "red",
+  "sided": true,
+  "pocket_data": [
+    {
+      "magazine_well": "200 ml",
+      "holster": true,
+      "flag_restriction": [
+        "SHEATH_KNIFE"
+      ],
+      "moves": 30,
+      "max_contains_volume": "500 ml",
+      "max_contains_weight": "1 kg",
+      "max_item_length": "30 cm"
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "插入刀鞘",
+    "holster_msg": "你将%s收鞘"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "ALLOWS_NATURAL_ATTACKS",
+    "WATER_FRIENDLY"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        2,
+        3
+      ],
+      "coverage": 5,
+      "covers": [
+        "foot_l",
+        "foot_r"
+      ],
+      "specifically_covers": [
+        "foot_ankle_l",
+        "foot_ankle_r"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1,
+      "layers": [
+        "BELTED"
+      ]
+    }
+  ]
+}
+```
+

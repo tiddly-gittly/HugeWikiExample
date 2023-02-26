@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_GM_PRELUDE_4_ATTACKS
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_GM_PRELUDE_4_ATTACKS|http://cdda.aloxaf.cn/search?q=TALK_CF_GM_PRELUDE_4_ATTACKS]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_GM.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS",
+  "type": "talk_topic",
+  "dynamic_line": "Anomalous monsters in small groups, sometimes lone attackers.  Most of the attacks were at night, and most of the victims attacked during the day got away unscathed.",
+  "responses": [
+    {
+      "text": "Anomalous, but more dangerous and active at night.  Any idea what that might be?",
+      "condition": {
+        "or": [
+          {
+            "u_has_intelligence": 9
+          },
+          {
+            "u_has_perception": 9
+          }
+        ]
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_1"
+    },
+    {
+      "text": "Any information on what sort of monsters attacked them?",
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2"
+    },
+    {
+      "text": "I have something else to ask about.",
+      "topic": "TALK_CF_GM_PRELUDE_4"
+    },
+    {
+      "text": "I'll go ask around…",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_GM_PRELUDE_4_ATTACKS",
+  "type": "talk_topic",
+  "dynamic_line": "成群的反常怪物，有时是孤独的袭击者。大多数袭击发生在夜间，白天袭击的受害者大多毫发无损。",
+  "responses": [
+    {
+      "text": "异常，但在晚上更危险和活跃。你知道那是什么吗？",
+      "condition": {
+        "or": [
+          {
+            "u_has_intelligence": 9
+          },
+          {
+            "u_has_perception": 9
+          }
+        ]
+      },
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_1"
+    },
+    {
+      "text": "有什么怪物袭击他们的信息吗？",
+      "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2"
+    },
+    {
+      "text": "我还有别的事要问。",
+      "topic": "TALK_CF_GM_PRELUDE_4"
+    },
+    {
+      "text": "我去问问…",
+      "topic": "TALK_CF_GM"
+    }
+  ]
+}
+```
+

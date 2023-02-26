@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9shrub_rose
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9shrub_rose|http://cdda.aloxaf.cn/search?q=f_BL9shrub_rose]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9shrub_rose",
+  "name": "rose bush",
+  "description": "A fat bush of beautiful red roses, if only you could get a date!  Watch out for its thorns!",
+  "symbol": "#",
+  "color": "light_red_green",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "coverage": 40,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT",
+    "SHARP"
+  ],
+  "examine_action": "harvest_furn_nectar",
+  "looks_like": "t_shrub_rose",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "autumn"
+      ],
+      "id": "shrub_rose_harv"
+    }
+  ],
+  "//": "Insert rose (flower) harvest in summer once flowers have a use (same for other generic flowers).",
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "items": [
+      {
+        "item": "withered",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9shrub_rose",
+  "name": "玫瑰丛",
+  "description": "一大丛长着美丽红玫瑰的灌木丛，要是有个约会就好了。当心上面的刺！",
+  "symbol": "#",
+  "color": "light_red_green",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "coverage": 40,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE_ASH",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SHORT",
+    "SHARP"
+  ],
+  "examine_action": "harvest_furn_nectar",
+  "looks_like": "t_shrub_rose",
+  "harvest_by_season": [
+    {
+      "seasons": [
+        "autumn"
+      ],
+      "id": "shrub_rose_harv"
+    }
+  ],
+  "//": "Insert rose (flower) harvest in summer once flowers have a use (same for other generic flowers).",
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "items": [
+      {
+        "item": "withered",
+        "prob": 50,
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

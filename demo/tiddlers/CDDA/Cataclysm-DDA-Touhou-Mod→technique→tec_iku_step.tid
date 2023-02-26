@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_iku_step
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_iku_step|http://cdda.aloxaf.cn/search?q=tec_iku_step]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_iku_step",
+  "type": "technique",
+  "name": "Shock step",
+  "messages": [
+    "One hand on your hip, finger pointing to the sky, a lightning strikes %s! Sick!",
+    "<npcname> does a sick dance move and lightning hits %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 2
+    }
+  ],
+  "required_buffs_all": [
+    "buff_celestial_brawling_iku_onpause"
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "crit_tec": true,
+  "stun_dur": 2,
+  "aoe": "spin",
+  "weighting": -2,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "dex",
+      "scale": 1.5
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "int",
+      "scale": 1.5
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_iku_step",
+  "type": "technique",
+  "name": "Shock step",
+  "messages": [
+    "One hand on your hip, finger pointing to the sky, a lightning strikes %s! Sick!",
+    "<npcname> does a sick dance move and lightning hits %s!"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 2
+    }
+  ],
+  "required_buffs_all": [
+    "buff_celestial_brawling_iku_onpause"
+  ],
+  "unarmed_allowed": true,
+  "unarmed_weapons_allowed": false,
+  "crit_tec": true,
+  "stun_dur": 2,
+  "aoe": "spin",
+  "weighting": -2,
+  "mult_bonuses": [
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "dex",
+      "scale": 1.5
+    },
+    {
+      "stat": "damage",
+      "type": "electric",
+      "scaling-stat": "int",
+      "scale": 1.5
+    }
+  ]
+}
+```
+

@@ -1,0 +1,147 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→TOOL_ARMOR→secro_power_armor_module_electric
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_power_armor_module_electric|http://cdda.aloxaf.cn/search?q=secro_power_armor_module_electric]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_power_armor_modules.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_power_armor_module_electric",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom module implant \"Shock\""
+  },
+  "description": "A set of power armor modules that installs a pair of augmented gloves. Module implant type \"Shock\" allows the power armor to send electric discharges whenever the user performs an attack. Uses a built-in UPS.",
+  "weight": "3005 g",
+  "volume": "2 L",
+  "price": "11000 USD",
+  "price_postapoc": "1100 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_frame",
+  "color": "cyan",
+  "power_armor": true,
+  "charges_per_use": 1,
+  "use_action": {
+    "target": "secro_power_armor_module_electric_act",
+    "msg": "\"Shock\" module - <color_light_green>online",
+    "type": "transform",
+    "active": true,
+    "menu_text": "Activate \"Shock\" module"
+  },
+  "ammo": "battery",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 500
+      }
+    }
+  ],
+  "flags": [
+    "WATERPROOF",
+    "OUTER",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 10,
+      "coverage": 10,
+      "material": [
+        "superalloy"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_power_armor_module_electric",
+  "type": "TOOL_ARMOR",
+  "category": "armor",
+  "name": {
+    "str": "Secronom模块植入“冲击”"
+  },
+  "description": "一套安装了一副增强手套的动力装甲模块。模块植入式“电击”允许动力装甲在用户发动攻击时发出放电。使用内置不间断电源。",
+  "weight": "3005 g",
+  "volume": "2 L",
+  "price": "11000 USD",
+  "price_postapoc": "1100 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "[",
+  "looks_like": "power_armor_frame",
+  "color": "cyan",
+  "power_armor": true,
+  "charges_per_use": 1,
+  "use_action": {
+    "target": "secro_power_armor_module_electric_act",
+    "msg": "“电击”模块 - <color_light_green>在线",
+    "type": "transform",
+    "active": true,
+    "menu_text": "启动“电击”模块"
+  },
+  "ammo": "battery",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "battery": 500
+      }
+    }
+  ],
+  "flags": [
+    "WATERPROOF",
+    "OUTER",
+    "STURDY",
+    "ELECTRIC_IMMUNE",
+    "POWERARMOR_COMPATIBLE"
+  ],
+  "armor": [
+    {
+      "covers": [
+        "torso"
+      ],
+      "encumbrance": 10,
+      "coverage": 10,
+      "material": [
+        "superalloy"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

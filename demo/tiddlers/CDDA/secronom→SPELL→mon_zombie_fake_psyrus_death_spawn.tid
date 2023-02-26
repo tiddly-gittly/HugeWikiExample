@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_fake_psyrus_death_spawn
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_fake_psyrus_death_spawn|http://cdda.aloxaf.cn/search?q=mon_zombie_fake_psyrus_death_spawn]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_ondeath.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_zombie_fake_psyrus_death_spawn",
+  "name": {
+    "str": "Mutate"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster mutates into its true self.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "HOSTILE_SUMMON",
+    "PERMANENT"
+  ],
+  "valid_targets": [
+    "self",
+    "ground"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_zombie_psyrus"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_zombie_fake_psyrus_death_spawn",
+  "name": {
+    "str": "产生变异"
+  },
+  "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者变异成真实的自我。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "HOSTILE_SUMMON",
+    "PERMANENT"
+  ],
+  "valid_targets": [
+    "self",
+    "ground"
+  ],
+  "min_damage": 1,
+  "max_damage": 1,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_zombie_psyrus"
+}
+```
+

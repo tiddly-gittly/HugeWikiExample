@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→manatouched_seeker_bolts
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：manatouched_seeker_bolts|http://cdda.aloxaf.cn/search?q=manatouched_seeker_bolts]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/manatouched.json
+
+
+!! 原文
+
+```json
+{
+  "id": "manatouched_seeker_bolts",
+  "type": "SPELL",
+  "name": {
+    "str": "Seeker Bolts"
+  },
+  "effect": "attack",
+  "shape": "blast",
+  "description": "Fires bolts of mana from your fingertips that home in on randomly selected targets in range.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "spell_class": "MANA_SEEKER_BOLTS",
+  "min_damage": 6,
+  "max_damage": 27,
+  "damage_increment": 1,
+  "max_level": 18,
+  "min_range": 6,
+  "max_range": 18,
+  "range_increment": 0.5,
+  "energy_source": "MANA",
+  "base_energy_cost": 250,
+  "base_casting_time": 85,
+  "final_casting_time": 85,
+  "sound_description": "a zing",
+  "flags": [
+    "RANDOM_TARGET",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "extra_effects": [
+    {
+      "id": "magic_missile"
+    },
+    {
+      "id": "magic_missile"
+    },
+    {
+      "id": "magic_missile"
+    },
+    {
+      "id": "magic_missile"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "manatouched_seeker_bolts",
+  "type": "SPELL",
+  "name": {
+    "str": "追踪箭"
+  },
+  "effect": "attack",
+  "shape": "blast",
+  "description": "从你的指尖发射多只魔法火焰箭，随机命中在射程中的目标。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "spell_class": "MANA_SEEKER_BOLTS",
+  "min_damage": 6,
+  "max_damage": 27,
+  "damage_increment": 1,
+  "max_level": 18,
+  "min_range": 6,
+  "max_range": 18,
+  "range_increment": 0.5,
+  "energy_source": "MANA",
+  "base_energy_cost": 250,
+  "base_casting_time": 85,
+  "final_casting_time": 85,
+  "sound_description": "a zing",
+  "flags": [
+    "RANDOM_TARGET",
+    "SOMATIC",
+    "NO_LEGS"
+  ],
+  "extra_effects": [
+    {
+      "id": "magic_missile"
+    },
+    {
+      "id": "magic_missile"
+    },
+    {
+      "id": "magic_missile"
+    },
+    {
+      "id": "magic_missile"
+    }
+  ]
+}
+```
+

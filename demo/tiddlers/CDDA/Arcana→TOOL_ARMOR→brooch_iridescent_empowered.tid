@@ -1,0 +1,111 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→brooch_iridescent_empowered
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：brooch_iridescent_empowered|http://cdda.aloxaf.cn/search?q=brooch_iridescent_empowered]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "brooch_iridescent_empowered",
+  "copy-from": "brooch_iridescent",
+  "sub": "brooch_iridescent",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "bolstered iridescent brooch"
+  },
+  "description": "A hand-crafted disc brooch made from a strange, unearthly material vaguely resembling mother-of-pearl  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will double any armor or damage resistance you have.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 36 hours to charge.",
+  "price_postapoc": "20 USD",
+  "charges_per_use": 36,
+  "ammo": "primitive_magic_item_ammo_type",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "primitive_magic_item_ammo_type": 216
+      }
+    }
+  ],
+  "flags": [
+    "FANCY",
+    "NO_RELOAD",
+    "NO_UNLOAD",
+    "TARDIS"
+  ],
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "1 h",
+      "regenerate_ammo": true
+    }
+  },
+  "//": "Earth talisman and air talisman.  Each use has power equivalent to 360 mana.",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_brooch_iridescent_empowered",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "brooch_iridescent_empowered",
+  "copy-from": "brooch_iridescent",
+  "sub": "brooch_iridescent",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "镶嵌彩虹色胸针"
+  },
+  "description": "A hand-crafted disc brooch made from a strange, unearthly material vaguely resembling mother-of-pearl  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will double any armor or damage resistance you have.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 36 hours to charge.",
+  "price_postapoc": "20 USD",
+  "charges_per_use": 36,
+  "ammo": "primitive_magic_item_ammo_type",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "primitive_magic_item_ammo_type": 216
+      }
+    }
+  ],
+  "flags": [
+    "FANCY",
+    "NO_RELOAD",
+    "NO_UNLOAD",
+    "TARDIS"
+  ],
+  "relic_data": {
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "1 h",
+      "regenerate_ammo": true
+    }
+  },
+  "//": "Earth talisman and air talisman.  Each use has power equivalent to 360 mana.",
+  "use_action": {
+    "type": "cast_spell",
+    "spell_id": "arcana_item_brooch_iridescent_empowered",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+

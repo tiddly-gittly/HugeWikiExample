@@ -1,0 +1,71 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_TRADE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_TRADE|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_TRADE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_TRADE",
+  "dynamic_line": "The entrance and kitchen have a handful of things you may use if you are in need.  Beyond that we don't have much to spare, but I will offer you what I can.  We've taken to using measured blanks of gold in lieu of currency, which we used to use for repairing some of our items.  The others can vouch for the purity and weight being standardized.",
+  "responses": [
+    {
+      "text": "Let's trade then.",
+      "effect": [
+        {
+          "u_add_effect": "cf_sofia_traded",
+          "duration": "PERMANENT"
+        },
+        "start_trade"
+      ],
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "It's fine, never mind.",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_TRADE",
+  "dynamic_line": "入口和厨房有一些你需要时可以使用的东西。除此之外，我们没有什么多余的，但我会尽我所能给你。我们已经习惯于用称量好的一大筐子黄金来代替货币，过去我们用它来修理我们的一些物品。其他的可以保证纯度和重量是标准化的。",
+  "responses": [
+    {
+      "text": "那么让我们交易吧。",
+      "effect": [
+        {
+          "u_add_effect": "cf_sofia_traded",
+          "duration": "PERMANENT"
+        },
+        "start_trade"
+      ],
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "没关系，没关系。",
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

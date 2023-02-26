@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: terrain Dorf_Life
+title: Dorf_Life→terrain→t_breach_stone_fake
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_breach_stone_fake|http://cdda.aloxaf.cn/search?q=t_breach_stone_fake]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/cave_terrain.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_breach_stone_fake",
+  "name": "smoothed rock?",
+  "description": "A block of stone that's been smoothed and shaped, commonly granite or marble.  Something seems suspicious here...",
+  "symbol": "LINE_OXOX",
+  "looks_like": "t_rock_smooth",
+  "color": "white",
+  "move_cost": 0,
+  "flags": [
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "WALL",
+    "AUTO_WALL_SYMBOL",
+    "CONNECT_TO_WALL",
+    "MINEABLE",
+    "BLOCK_WIND"
+  ],
+  "roof": "t_rock_floor_no_roof",
+  "connects_to": "WALL",
+  "bash": {
+    "str_min": 120,
+    "str_max": 400,
+    "sound": "crash!",
+    "sound_fail": "a hollow-sounding whump!",
+    "ter_set": "t_rock_floor",
+    "items": [
+      {
+        "item": "rock",
+        "count": [
+          6,
+          12
+        ]
+      },
+      {
+        "item": "material_rocksalt",
+        "count": [
+          0,
+          1
+        ],
+        "prob": 10
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_breach_stone_fake",
+  "name": "打磨过的石头？",
+  "description": "一块被打磨并塑型的石头，通常是花岗岩或大理石。这块看起来有些可疑…",
+  "symbol": "LINE_OXOX",
+  "looks_like": "t_rock_smooth",
+  "color": "white",
+  "move_cost": 0,
+  "flags": [
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "WALL",
+    "AUTO_WALL_SYMBOL",
+    "CONNECT_TO_WALL",
+    "MINEABLE",
+    "BLOCK_WIND"
+  ],
+  "roof": "t_rock_floor_no_roof",
+  "connects_to": "WALL",
+  "bash": {
+    "str_min": 120,
+    "str_max": 400,
+    "sound": "crash!",
+    "sound_fail": "a hollow-sounding whump!",
+    "ter_set": "t_rock_floor",
+    "items": [
+      {
+        "item": "rock",
+        "count": [
+          6,
+          12
+        ]
+      },
+      {
+        "item": "material_rocksalt",
+        "count": [
+          0,
+          1
+        ],
+        "prob": 10
+      }
+    ]
+  }
+}
+```
+

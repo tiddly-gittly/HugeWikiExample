@@ -1,0 +1,333 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_EVAC_MERCHANT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_EVAC_MERCHANT|http://cdda.aloxaf.cn/search?q=TALK_EVAC_MERCHANT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_EVAC_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_EVAC_MERCHANT",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
+      "topic": "TALK_EVAC_MERCHANT_NICHOLAS_1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "nicholas_mission_2_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_PURIFIER_1_2"
+          }
+        ]
+      }
+    },
+    {
+      "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_EVAC_MERCHANT_GM_PRELUDE"
+    },
+    {
+      "text": "Do you know of any other settlements in the region?",
+      "topic": "TALK_EVAC_MERCHANT_CF",
+      "effect": [
+        {
+          "npc_add_effect": "rural_church_aware",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "rural_church_aware",
+          "duration": "PERMANENT"
+        }
+      ],
+      "condition": {
+        "not": {
+          "npc_has_effect": "rural_church_aware"
+        }
+      }
+    },
+    {
+      "text": "Do you know of any other settlements in the region?",
+      "topic": "TALK_EVAC_MERCHANT_CF",
+      "effect": [
+        {
+          "u_add_effect": "rural_church_aware",
+          "duration": "PERMANENT"
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "rural_church_aware"
+            }
+          },
+          {
+            "npc_has_effect": "rural_church_aware"
+          }
+        ]
+      }
+    },
+    {
+      "text": "[MISSION] Sofia sent me with the latest inventory for trading.",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "cf_rep_trade_arrangement"
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_2"
+          },
+          {
+            "not": {
+              "npc_has_effect": "cf_mission_receipt"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "[MISSION] Can you print another copy of the receipt?",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_RECEIPT",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_item": "cf_rep_trade_receipt"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_2"
+          },
+          {
+            "npc_has_effect": "cf_mission_receipt"
+          }
+        ]
+      }
+    },
+    {
+      "text": "[MISSION] Sofia asked me to recruit traders or other assistance.  Do you know of anyone looking for work?",
+      "topic": "TALK_EVAC_MERCHANT_CF_REP_MISSION_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_EVAC_MERCHANT",
+  "type": "talk_topic",
+  "responses": [
+    {
+      "text": "[任务]我被要求寻找可能处理异常情况的实验室之间货物的信息。你能帮我吗？",
+      "topic": "TALK_EVAC_MERCHANT_NICHOLAS_1",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "nicholas_mission_2_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_PURIFIER_1_2"
+          }
+        ]
+      }
+    },
+    {
+      "text": "我被派去询问最近有什么异常生物袭击幸存者。知道吗？",
+      "condition": {
+        "and": [
+          {
+            "u_has_var": "johnathan_prelude_mid",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          },
+          {
+            "not": {
+              "npc_has_var": "johnathan_prelude_mid",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "u_has_var": "johnathan_prelude_data_5",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          }
+        ]
+      },
+      "topic": "TALK_EVAC_MERCHANT_GM_PRELUDE"
+    },
+    {
+      "text": "你知道这个地区还有其他定居点吗？",
+      "topic": "TALK_EVAC_MERCHANT_CF",
+      "effect": [
+        {
+          "npc_add_effect": "rural_church_aware",
+          "duration": "PERMANENT"
+        },
+        {
+          "u_add_effect": "rural_church_aware",
+          "duration": "PERMANENT"
+        }
+      ],
+      "condition": {
+        "not": {
+          "npc_has_effect": "rural_church_aware"
+        }
+      }
+    },
+    {
+      "text": "你知道这个地区还有其他定居点吗？",
+      "topic": "TALK_EVAC_MERCHANT_CF",
+      "effect": [
+        {
+          "u_add_effect": "rural_church_aware",
+          "duration": "PERMANENT"
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "rural_church_aware"
+            }
+          },
+          {
+            "npc_has_effect": "rural_church_aware"
+          }
+        ]
+      }
+    },
+    {
+      "text": "[任务]索菲亚给我送来了最新的存货清单。",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION",
+      "condition": {
+        "and": [
+          {
+            "u_has_item": "cf_rep_trade_arrangement"
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_2"
+          },
+          {
+            "not": {
+              "npc_has_effect": "cf_mission_receipt"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "[任务]你能再打印一份收据吗？",
+      "topic": "TALK_EVAC_MERCHANT_CF_MISSION_RECEIPT",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_item": "cf_rep_trade_receipt"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_2"
+          },
+          {
+            "npc_has_effect": "cf_mission_receipt"
+          }
+        ]
+      }
+    },
+    {
+      "text": "[任务]索菲亚让我招募商人或其他援助。你知道有人在找工作吗？",
+      "topic": "TALK_EVAC_MERCHANT_CF_REP_MISSION_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+

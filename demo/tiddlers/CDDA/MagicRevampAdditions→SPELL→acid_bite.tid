@@ -1,0 +1,109 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→acid_bite
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：acid_bite|http://cdda.aloxaf.cn/search?q=acid_bite]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/black_dragon.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "acid_bite",
+  "name": {
+    "str": "Acid Bite"
+  },
+  "description": "Your maw drips with acid as you make a bite attack.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "VERBAL",
+    "NO_HANDS",
+    "LOUD"
+  ],
+  "spell_class": "NONE",
+  "effect": "attack",
+  "effect_str": "dragon_acidburn",
+  "shape": "blast",
+  "affected_body_parts": [
+    "torso"
+  ],
+  "damage_type": "acid",
+  "max_level": 7,
+  "min_damage": 15,
+  "max_damage": 100,
+  "damage_increment": 15,
+  "min_range": 1,
+  "max_range": 1,
+  "difficulty": 0,
+  "base_casting_time": 100,
+  "final_casting_time": 46,
+  "casting_time_increment": -9,
+  "energy_source": "MANA",
+  "base_energy_cost": 350,
+  "extra_effects": [
+    {
+      "id": "dragon_bite"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "acid_bite",
+  "name": {
+    "str": "酸液噬咬"
+  },
+  "description": "当你咬人时，你的大嘴能够分泌出酸液。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "VERBAL",
+    "NO_HANDS",
+    "LOUD"
+  ],
+  "spell_class": "NONE",
+  "effect": "attack",
+  "effect_str": "dragon_acidburn",
+  "shape": "blast",
+  "affected_body_parts": [
+    "torso"
+  ],
+  "damage_type": "acid",
+  "max_level": 7,
+  "min_damage": 15,
+  "max_damage": 100,
+  "damage_increment": 15,
+  "min_range": 1,
+  "max_range": 1,
+  "difficulty": 0,
+  "base_casting_time": 100,
+  "final_casting_time": 46,
+  "casting_time_increment": -9,
+  "energy_source": "MANA",
+  "base_energy_cost": 350,
+  "extra_effects": [
+    {
+      "id": "dragon_bite"
+    }
+  ]
+}
+```
+

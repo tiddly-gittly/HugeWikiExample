@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_gorepit_spawnmore_check
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_gorepit_spawnmore_check|http://cdda.aloxaf.cn/search?q=mon_zombie_gorepit_spawnmore_check]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_large.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_gorepit_spawnmore_check",
+  "type": "SPELL",
+  "name": {
+    "str": "Gorepit - Spawnmoore"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster summons 2 giant tendrils on the target and 1 nearby for the caster.'",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT"
+  ],
+  "message": "",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_gorepit_spawnmorer_check"
+    },
+    {
+      "id": "mon_zombie_gorepit_tent_massive_check"
+    }
+  ],
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "min_range": 25,
+  "max_range": 25,
+  "shape": "line",
+  "effect": "effect_on_condition",
+  "effect_str": "eoc_secro_mon_zombie_gorepit_spawnmore_check"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_gorepit_spawnmore_check",
+  "type": "SPELL",
+  "name": {
+    "str": "戈雷皮-普恩摩尔"
+  },
+  "description": "怪物施法的咒语。如果你看到了这一点，那么改为阅读这一条：\n“施法者召唤2根巨大的卷须在目标上，1根在施法者附近。”",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT"
+  ],
+  "message": "",
+  "extra_effects": [
+    {
+      "id": "mon_zombie_gorepit_spawnmorer_check"
+    },
+    {
+      "id": "mon_zombie_gorepit_tent_massive_check"
+    }
+  ],
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "min_range": 25,
+  "max_range": 25,
+  "shape": "line",
+  "effect": "effect_on_condition",
+  "effect_str": "eoc_secro_mon_zombie_gorepit_spawnmore_check"
+}
+```
+

@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DISCUSS_2_PURPOSE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DISCUSS_2_PURPOSE|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DISCUSS_2_PURPOSE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_2_PURPOSE",
+  "dynamic_line": "To mend the wounds in The Veil.  Well, to treat them at least, and ideally prevent them.  After all, as it is said, it is our duty not to revert what has been done, but to ensure we will endure.",
+  "responses": [
+    {
+      "text": "We had hoped to mend the wounds in The Veil as well as prevent any further instability.  Despite our differences, we have a common goal.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_HERMIT_DISCUSS_2_FLAME"
+    },
+    {
+      "switch": true,
+      "text": "Very well.  That's enough questions for now.",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "Very well then.  Tell me what I am to do.",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DISCUSS_2_PURPOSE",
+  "dynamic_line": "修补帷幕上的伤口。好吧，至少要治疗，最好是预防。毕竟，正如人们所说的那样，我们的责任是不恢复已经做的事情，而是确保我们将坚持下去。",
+  "responses": [
+    {
+      "text": "我们曾希望修补帷幕上的伤口，并防止任何进一步的混乱。尽管我们有分歧，但我们有一个共同的目标。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_HERMIT_DISCUSS_2_FLAME"
+    },
+    {
+      "switch": true,
+      "text": "很好。现在问题已经够多了。",
+      "topic": "TALK_HERMIT",
+      "condition": "has_no_available_mission"
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "那好吧。告诉我该怎么做。",
+      "topic": "TALK_MISSION_LIST"
+    }
+  ]
+}
+```
+

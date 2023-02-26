@@ -1,0 +1,1389 @@
+creator: 林一二
+revision: 0
+tags: talk_topic BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→talk_topic→TALK_BL9_TRADER_BUY4
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BL9_TRADER_BUY4|http://cdda.aloxaf.cn/search?q=TALK_BL9_TRADER_BUY4]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/NPC/BL9_trader.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BL9_TRADER_BUY4",
+  "type": "talk_topic",
+  "dynamic_line": "Got a selection of GOOD things on sale, stranger...",
+  "responses": [
+    {
+      "text": "[160Pcomb] *BL9 Advanced Strengthening Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_str2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Endurance Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_endurance2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_str_endurance2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Tentacle Stab Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_tentacle_stab2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_str_tentacle_stab2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Tentacle Hit Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_tentacle_hit2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_str_tentacle_hit2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Armored Skin Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_armoredskin2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_str_armoredskin2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Dexterousness Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_dex2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Energeticness Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_energeticness2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_dex_energeticness2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Deftness Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_deftness2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_dex_deftness2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Agility Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_agility2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_dex_agility2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Healthiness Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_hp2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Regeneration Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_regen2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_hp_regen2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Wakeful Mind Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_wakeful_mind2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_hp_wakeful_mind2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Amplified Metabolism Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_amplified_metabolism2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_hp_amplified_metabolism2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Insightfulness Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_per2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Elevated Sense Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per_elevatedsense2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_per_elevatedsense2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Stealth Aura Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per_stealthaura2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_per_stealthaura2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Intelligence Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_int2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_int2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb] *BL9 Advanced Aptitude Modifier*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_int_aptitude2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_int_aptitude2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[BUY ARMOR]",
+      "topic": "TALK_BL9_TRADER_BUY2"
+    },
+    {
+      "text": "[GOODBYE]",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BL9_TRADER_BUY4",
+  "type": "talk_topic",
+  "dynamic_line": "有很多好东西在打折，陌生人…",
+  "responses": [
+    {
+      "text": "[160Pcomb]*BL9高级力量调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_str2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级耐力调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_endurance2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_str_endurance2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级触手刺击调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_tentacle_stab2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_str_tentacle_stab2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级触手打击调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_tentacle_hit2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_str_tentacle_hit2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级甲肤调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_str_armoredskin2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_str_armoredskin2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级敏捷调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_dex2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级能量调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_energeticness2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_dex_energeticness2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级柔韧调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_deftness2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_dex_deftness2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级迅捷调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_dex_agility2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_dex_agility2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级健康调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_hp2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级再生调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_regen2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_hp_regen2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级清醒心智调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_wakeful_mind2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_hp_wakeful_mind2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级代谢增强调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_hp_amplified_metabolism2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_hp_amplified_metabolism2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级洞察调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_per2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级感知提升调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per_elevatedsense2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_per_elevatedsense2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级隐形光环调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_per_stealthaura2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_per_stealthaura2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级智力调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_int2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_int2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[160Pcomb]*BL9高级天资调节剂*",
+      "condition": {
+        "not": {
+          "u_has_item": "BL9_int_aptitude2_modifier"
+        }
+      },
+      "trial": {
+        "type": "CONDITION",
+        "condition": {
+          "u_has_items": {
+            "item": "platcoincomb",
+            "count": 160
+          }
+        }
+      },
+      "success": {
+        "topic": "BL9_trader_ty",
+        "effect": [
+          {
+            "u_sell_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "npc_consume_item": "platcoincomb",
+            "count": 160
+          },
+          {
+            "u_spawn_item": "BL9_int_aptitude2_modifier",
+            "count": 1
+          }
+        ]
+      },
+      "failure": {
+        "topic": "BL9_trader_nocash"
+      }
+    },
+    {
+      "text": "[买盔甲]",
+      "topic": "TALK_BL9_TRADER_BUY2"
+    },
+    {
+      "text": "[再见]",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

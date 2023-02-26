@@ -1,0 +1,169 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_soldier_blackops_1
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_soldier_blackops_1|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_soldier_blackops_1]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_soldier_blackops_1",
+  "type": "MONSTER",
+  "name": {
+    "str": "black-ops zombie"
+  },
+  "description": "This soldier zombie's skin radiates a sort of shadowy smoke that obscures its outline, making its camouflage even harder to see against the background.  In the darkness it would be nigh invisible.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 15,
+  "armor_cut": 25,
+  "armor_bullet": 18,
+  "vision_day": 30,
+  "vision_night": 35,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 8,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "death_drops": "mon_zombie_soldier_death_drops",
+  "burn_into": "mon_zombie_soldier_blackops_1",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_soldier_blackops_1",
+  "type": "MONSTER",
+  "name": {
+    "str": "黑雾丧尸"
+  },
+  "description": "这只士兵丧尸的皮肤散发出一种模糊的烟雾，模糊了它的轮廓，使得它的伪装在背景下更难看到。在黑暗中它几乎看不见。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 150,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 15,
+  "armor_cut": 25,
+  "armor_bullet": 18,
+  "vision_day": 30,
+  "vision_night": 35,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 8,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.8
+        }
+      ]
+    }
+  ],
+  "death_drops": "mon_zombie_soldier_death_drops",
+  "burn_into": "mon_zombie_soldier_blackops_1",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

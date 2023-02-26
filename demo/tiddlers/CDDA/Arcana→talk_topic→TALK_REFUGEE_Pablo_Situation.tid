@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_REFUGEE_Pablo_Situation
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_REFUGEE_Pablo_Situation|http://cdda.aloxaf.cn/search?q=TALK_REFUGEE_Pablo_Situation]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_REFUGEE_Pablo_1.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_REFUGEE_Pablo_Situation",
+  "responses": [
+    {
+      "text": "There are other settlements out there, I was asked to help find people to work at and trade with one.",
+      "topic": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "npc_has_var": "sofia_refugee_convinced",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_REFUGEE_Pablo_Situation",
+  "responses": [
+    {
+      "text": "那里还有其他定居点，我被要求帮助找到在其中工作并与之交易的人。",
+      "topic": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "npc_has_var": "sofia_refugee_convinced",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+

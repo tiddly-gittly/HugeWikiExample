@@ -1,0 +1,157 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_sflesh_zombie_brainless
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_sflesh_zombie_brainless|http://cdda.aloxaf.cn/search?q=mon_sflesh_zombie_brainless]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Crimson Horrors/Flesh_undead.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_sflesh_zombie_brainless",
+  "type": "MONSTER",
+  "name": {
+    "str": "brainless zombie"
+  },
+  "description": "A zombie like any other, except that its features and skull have been devastated.  It's unclear what caused the damage, but between the scraps of flesh you can see that its face and brain are gone, though its ears are intact.\nMembranous veins cover most of its surface that pulsates in constant beats.",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "61875 ml",
+  "weight": "78200 g",
+  "hp": 75,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_day": 2,
+  "vision_night": 0,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_brainless",
+  "flags": [
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NOHEAD",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_sflesh_zombie_brainless",
+  "type": "MONSTER",
+  "name": {
+    "str": "无脑丧尸"
+  },
+  "description": "一只除了面部和头骨被完全毁坏之外，与其它丧尸差不多的丧尸。虽然原因不明，但在一团模糊的血肉中，你能看到它失去了脸和大脑，只有耳朵还算完整。\n膜状脉管覆盖了它绝大部分的表皮，还在不断脉动着。",
+  "default_faction": "secro_flesh",
+  "bodytype": "human",
+  "species": [
+    "SFLESH",
+    "ABERRATION",
+    "HUMAN",
+    "ZOMBIE"
+  ],
+  "volume": "61875 ml",
+  "weight": "78200 g",
+  "hp": 75,
+  "speed": 65,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 80,
+  "morale": 100,
+  "melee_skill": 3,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "amount": 2,
+      "damage_type": "bash"
+    }
+  ],
+  "armor_bash": 3,
+  "vision_day": 2,
+  "vision_night": 0,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ]
+  ],
+  "death_drops": "default_zombie_death_drops",
+  "burn_into": "mon_zombie_brainless",
+  "flags": [
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NOHEAD",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY"
+  ]
+}
+```
+

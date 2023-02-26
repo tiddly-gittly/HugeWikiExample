@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→aya_stormgust
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：aya_stormgust|http://cdda.aloxaf.cn/search?q=aya_stormgust]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_aya.json
+
+
+!! 原文
+
+```json
+{
+  "id": "aya_stormgust",
+  "type": "SPELL",
+  "name": "Rainstorm gust",
+  "description": "Invoke a wind gale that deals instant damage and pushes back those who're caught inside.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "aya_stormgust2"
+    }
+  ],
+  "shape": "line",
+  "damage_type": "bash",
+  "min_damage": 20,
+  "max_damage": 135,
+  "damage_increment": 11.5,
+  "min_range": 8,
+  "max_range": 20,
+  "range_increment": 1.2,
+  "min_aoe": 5,
+  "max_aoe": 5,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 80,
+  "base_energy_cost": 166,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "//2": "Add pushback field_effect lasting 4 seconds with the description 'caught inside for a short time.' The push should be perpendicular, not parallel, to the casting line"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "aya_stormgust",
+  "type": "SPELL",
+  "name": "Rainstorm gust",
+  "description": "Invoke a wind gale that deals instant damage and pushes back those who're caught inside.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "aya_stormgust2"
+    }
+  ],
+  "shape": "line",
+  "damage_type": "bash",
+  "min_damage": 20,
+  "max_damage": 135,
+  "damage_increment": 11.5,
+  "min_range": 8,
+  "max_range": 20,
+  "range_increment": 1.2,
+  "min_aoe": 5,
+  "max_aoe": 5,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 80,
+  "base_energy_cost": 166,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "//2": "Add pushback field_effect lasting 4 seconds with the description 'caught inside for a short time.' The push should be perpendicular, not parallel, to the casting line"
+}
+```
+

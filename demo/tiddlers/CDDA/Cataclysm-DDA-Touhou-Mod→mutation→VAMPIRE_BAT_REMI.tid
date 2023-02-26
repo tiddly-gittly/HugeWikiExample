@@ -1,0 +1,85 @@
+creator: 林一二
+revision: 0
+tags: mutation Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→mutation→VAMPIRE_BAT_REMI
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMPIRE_BAT_REMI|http://cdda.aloxaf.cn/search?q=VAMPIRE_BAT_REMI]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/mutations/touhou_mutations.json
+
+
+!! 原文
+
+```json
+{
+  "id": "VAMPIRE_BAT_REMI",
+  "type": "mutation",
+  "name": "Vampire shapeshifting (human)",
+  "description": "Your nature allows you to shapeshift, although almost completely as your bat wings are still visible.  Currently, you're posing as a human.  Activate the mutation to switch to youkai form.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "active": true,
+  "activated_eocs": [
+    "WINGS_BAT_REMI_activate"
+  ],
+  "ugliness": 1,
+  "visibility": 8,
+  "transform": {
+    "target": "VAMPIRE_BAT_REMI_active",
+    "active": false,
+    "moves": 100
+  },
+  "cancels": [
+    "WINGS_BAT",
+    "WINGS_BIRD",
+    "WINGS_BUTTERFLY",
+    "WINGS_INSECT",
+    "WINGS_STUB"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "VAMPIRE_BAT_REMI",
+  "type": "mutation",
+  "name": "吸血鬼变形（人类）",
+  "description": "Your nature allows you to shapeshift, although almost completely as your bat wings are still visible.  Currently, you're posing as a human.  Activate the mutation to switch to youkai form.",
+  "points": 0,
+  "profession": true,
+  "purifiable": false,
+  "starting_trait": false,
+  "valid": false,
+  "active": true,
+  "activated_eocs": [
+    "WINGS_BAT_REMI_activate"
+  ],
+  "ugliness": 1,
+  "visibility": 8,
+  "transform": {
+    "target": "VAMPIRE_BAT_REMI_active",
+    "active": false,
+    "moves": 100
+  },
+  "cancels": [
+    "WINGS_BAT",
+    "WINGS_BIRD",
+    "WINGS_BUTTERFLY",
+    "WINGS_INSECT",
+    "WINGS_STUB"
+  ]
+}
+```
+

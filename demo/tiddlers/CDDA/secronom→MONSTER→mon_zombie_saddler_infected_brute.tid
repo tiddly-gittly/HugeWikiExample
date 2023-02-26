@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_saddler_infected_brute
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_saddler_infected_brute|http://cdda.aloxaf.cn/search?q=mon_zombie_saddler_infected_brute]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Insects/Saddler.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_saddler_infected_brute",
+  "type": "MONSTER",
+  "name": {
+    "str": "zombie brute"
+  },
+  "description": "A rugged zombie with a large saddler head and hands turned into bony claws. Its body can take a number of blows, but the stiffness of its skin made its movements look like it was crippled.",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 170,
+  "harvest": "zombie",
+  "speed": 45,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 4,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      40
+    ],
+    [
+      "scratch",
+      32
+    ]
+  ],
+  "vision_day": 10,
+  "vision_night": 2,
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s dies!\n<color_light_red>The saddler brute pops off from its host!</color>",
+    "effect": {
+      "id": "mon_saddler_brute_infected_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "GRABS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_saddler_infected_brute",
+  "type": "MONSTER",
+  "name": {
+    "str": "狂暴丧尸兽"
+  },
+  "description": "一个粗犷的丧尸，头和手都是拱形的，变成了骨瘦如柴的爪子。它的身体可以承受多次打击，但皮肤的僵硬使它的动作看起来像是残废了。",
+  "default_faction": "saddler",
+  "species": [
+    "SSADDLER",
+    "ZOMBIE"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 170,
+  "harvest": "zombie",
+  "speed": 45,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "dark_gray",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "armor_bash": 8,
+  "armor_cut": 2,
+  "armor_bullet": 2,
+  "armor_stab": 4,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 25
+    },
+    [
+      "GRAB",
+      40
+    ],
+    [
+      "scratch",
+      32
+    ]
+  ],
+  "vision_day": 10,
+  "vision_night": 2,
+  "death_drops": "default_zombie_death_drops",
+  "death_function": {
+    "corpse_type": "NORMAL",
+    "message": "%s dies!\n<color_light_red>The saddler brute pops off from its host!</color>",
+    "effect": {
+      "id": "mon_saddler_brute_infected_death",
+      "hit_self": true
+    }
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY",
+    "GRABS"
+  ]
+}
+```
+

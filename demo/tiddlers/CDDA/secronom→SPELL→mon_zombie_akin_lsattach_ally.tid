@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_zombie_akin_lsattach_ally
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_akin_lsattach_ally|http://cdda.aloxaf.cn/search?q=mon_zombie_akin_lsattach_ally]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_akin_lsattach_ally",
+  "type": "SPELL",
+  "name": {
+    "str": "Empowering Attachtment"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's visceral tendril latches onto its surrounding allies, applying buffs that intensifies for as long as it is attached.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "valid_targets": [
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_akin_siphon_ally",
+  "min_aoe": 6,
+  "max_aoe": 6,
+  "min_duration": 3000,
+  "max_duration": 3000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_akin_lsattach_ally",
+  "type": "SPELL",
+  "name": {
+    "str": "授权附件"
+  },
+  "description": "怪物施法。如果你看到了这一点，请阅读这一条：\n“施法者的内脏卷须附着在周围的盟友身上，只要它附着在身上，就会使用强化效果。”",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "valid_targets": [
+    "ally"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_akin_siphon_ally",
+  "min_aoe": 6,
+  "max_aoe": 6,
+  "min_duration": 3000,
+  "max_duration": 3000
+}
+```
+

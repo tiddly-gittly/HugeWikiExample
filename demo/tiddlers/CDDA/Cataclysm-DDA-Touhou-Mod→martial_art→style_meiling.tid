@@ -1,0 +1,311 @@
+creator: 林一二
+revision: 0
+tags: martial_art Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→martial_art→style_meiling
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：style_meiling|http://cdda.aloxaf.cn/search?q=style_meiling]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_martialarts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "style_meiling",
+  "type": "martial_art",
+  "name": {
+    "str": "Tai Chi"
+  },
+  "description": "Though Tai Chi is often seen as a form of mental and physical exercise, it is a legitimate martial art, focused on self-defense.  By reading qi, you're able to parry more and better.  Parrying also greatly increases counter damage, while pausing for a second improves your response to physical damage and gives you insight on foe's weak points.",
+  "initiate": [
+    "You settle into a gentle stance and prepare to defend yourself.",
+    "%s settles into a gentle stance."
+  ],
+  "learn_difficulty": 1,
+  "arm_block": 3,
+  "nonstandard_block": 1,
+  "static_buffs": [
+    {
+      "id": "buff_meiling_static",
+      "name": "Tai Chi Stance (Youkai)",
+      "description": "You are focused on defending a position and predicting your opponents attacks.  This enables extra blocks, and these scale from your agility, intelligence and strength, at the cost of reducing your evasion.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": true,
+      "bonus_blocks": 2,
+      "flat_bonuses": [
+        {
+          "stat": "block",
+          "scaling-stat": "dex",
+          "scale": 0.5
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "int",
+          "scale": 0.5
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "str",
+          "scale": 0.75
+        },
+        {
+          "stat": "dodge",
+          "scale": -1.5
+        }
+      ]
+    }
+  ],
+  "onblock_buffs": [
+    {
+      "id": "buff_meiling_onblock",
+      "name": "Opening found",
+      "description": "Your no-nonsense positioning allows you to quickly deal double damage immediately after blocking attacks.  Also, you gain extra accuracy, virtue of recognizing and reacting to movement patterns.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": true,
+      "buff_duration": 1,
+      "max_stacks": 1,
+      "mult_bonuses": [
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scale": 2
+        },
+        {
+          "stat": "damage",
+          "type": "cut",
+          "scale": 2
+        },
+        {
+          "stat": "damage",
+          "type": "stab",
+          "scale": 2
+        },
+        {
+          "stat": "movecost",
+          "scale": 0.85
+        }
+      ],
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scaling-stat": "dex",
+          "scale": 0.2
+        },
+        {
+          "stat": "hit",
+          "scaling-stat": "int",
+          "scale": 0.2
+        }
+      ]
+    },
+    {
+      "id": "buff_meiling_onblock2",
+      "name": "Counter block",
+      "description": "Allows using Repulse the intruder and Stay out after blocking attacks.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": true,
+      "buff_duration": 2,
+      "max_stacks": 1
+    }
+  ],
+  "onpause_buffs": [
+    {
+      "id": "buff_meiling_onpause",
+      "name": "Great Wall",
+      "description": "By taking a second to enter a guarding stance, you prepare yourself to redirect the qi of the next enemy attack.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": true,
+      "buff_duration": 2,
+      "max_stacks": 1,
+      "bonus_blocks": 1,
+      "flat_bonuses": [
+        {
+          "stat": "block_effectiveness",
+          "scale": 1.5
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "dex",
+          "scale": 0.75
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "int",
+          "scale": 0.75
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "str",
+          "scale": 0.25
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_taichi_disarm",
+    "tec_meiling_down",
+    "tec_meiling_elbow",
+    "tec_meiling_kick",
+    "tec_meiling_palm",
+    "tec_meiling_pshoulder_strike",
+    "tec_meiling_qi_burst",
+    "tec_meiling_stomp"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "style_meiling",
+  "type": "martial_art",
+  "name": {
+    "str": "太极"
+  },
+  "description": "Though Tai Chi is often seen as a form of mental and physical exercise, it is a legitimate martial art, focused on self-defense.  By reading qi, you're able to parry more and better.  Parrying also greatly increases counter damage, while pausing for a second improves your response to physical damage and gives you insight on foe's weak points.",
+  "initiate": [
+    "你摆出了一个中正安舒的姿态，随时准备防御。",
+    "%s 摆出了一个中正安舒的姿态。"
+  ],
+  "learn_difficulty": 1,
+  "arm_block": 3,
+  "nonstandard_block": 1,
+  "static_buffs": [
+    {
+      "id": "buff_meiling_static",
+      "name": "Tai Chi Stance (Youkai)",
+      "description": "You are focused on defending a position and predicting your opponents attacks.  This enables extra blocks, and these scale from your agility, intelligence and strength, at the cost of reducing your evasion.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": true,
+      "bonus_blocks": 2,
+      "flat_bonuses": [
+        {
+          "stat": "block",
+          "scaling-stat": "dex",
+          "scale": 0.5
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "int",
+          "scale": 0.5
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "str",
+          "scale": 0.75
+        },
+        {
+          "stat": "dodge",
+          "scale": -1.5
+        }
+      ]
+    }
+  ],
+  "onblock_buffs": [
+    {
+      "id": "buff_meiling_onblock",
+      "name": "Opening found",
+      "description": "Your no-nonsense positioning allows you to quickly deal double damage immediately after blocking attacks.  Also, you gain extra accuracy, virtue of recognizing and reacting to movement patterns.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": true,
+      "buff_duration": 1,
+      "max_stacks": 1,
+      "mult_bonuses": [
+        {
+          "stat": "damage",
+          "type": "bash",
+          "scale": 2
+        },
+        {
+          "stat": "damage",
+          "type": "cut",
+          "scale": 2
+        },
+        {
+          "stat": "damage",
+          "type": "stab",
+          "scale": 2
+        },
+        {
+          "stat": "movecost",
+          "scale": 0.85
+        }
+      ],
+      "flat_bonuses": [
+        {
+          "stat": "hit",
+          "scaling-stat": "dex",
+          "scale": 0.2
+        },
+        {
+          "stat": "hit",
+          "scaling-stat": "int",
+          "scale": 0.2
+        }
+      ]
+    },
+    {
+      "id": "buff_meiling_onblock2",
+      "name": "Counter block",
+      "description": "Allows using Repulse the intruder and Stay out after blocking attacks.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": true,
+      "buff_duration": 2,
+      "max_stacks": 1
+    }
+  ],
+  "onpause_buffs": [
+    {
+      "id": "buff_meiling_onpause",
+      "name": "Great Wall",
+      "description": "By taking a second to enter a guarding stance, you prepare yourself to redirect the qi of the next enemy attack.",
+      "unarmed_allowed": true,
+      "unarmed_weapons_allowed": true,
+      "buff_duration": 2,
+      "max_stacks": 1,
+      "bonus_blocks": 1,
+      "flat_bonuses": [
+        {
+          "stat": "block_effectiveness",
+          "scale": 1.5
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "dex",
+          "scale": 0.75
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "int",
+          "scale": 0.75
+        },
+        {
+          "stat": "block",
+          "scaling-stat": "str",
+          "scale": 0.25
+        }
+      ]
+    }
+  ],
+  "techniques": [
+    "tec_taichi_disarm",
+    "tec_meiling_down",
+    "tec_meiling_elbow",
+    "tec_meiling_kick",
+    "tec_meiling_palm",
+    "tec_meiling_pshoulder_strike",
+    "tec_meiling_qi_burst",
+    "tec_meiling_stomp"
+  ]
+}
+```
+

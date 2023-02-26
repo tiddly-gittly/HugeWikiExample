@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: GUN secronom
+title: secronom→GUN→hecate
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：hecate|http://cdda.aloxaf.cn/search?q=hecate]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Items/secro_guns.json
+
+
+!! 原文
+
+```json
+{
+  "id": "hecate",
+  "copy-from": "rifle_base",
+  "type": "GUN",
+  "name": {
+    "str": "Hecate II",
+    "str_pl": "Hecate II"
+  },
+  "description": "A large and heavy anti-material sniper rifle. Its large size, recoil, and noise is offset by its damage and range.",
+  "weight": "13807 g",
+  "volume": "4 L",
+  "price": "7909 USD",
+  "//": "IDK how this gun became cheap on the market. Its effing powerful, so WTF PPL!",
+  "to_hit": -1,
+  "bashing": 12,
+  "material": [
+    "steel"
+  ],
+  "ammo": [
+    "50"
+  ],
+  "range": 50,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 0
+  },
+  "dispersion": 80,
+  "durability": 8,
+  "barrel_volume": "1500 ml",
+  "default_mods": [
+    "bipod",
+    "hecate_muzzle_brake",
+    "rifle_scope"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "magazine_well": "250 ml",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "hecatemag"
+      ]
+    }
+  ],
+  "flags": [
+    "NEVER_JAMS"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "hecate",
+  "copy-from": "rifle_base",
+  "type": "GUN",
+  "name": {
+    "str": "赫卡忒 II型 狙击步枪",
+    "str_pl": "赫卡忒 II型 狙击步枪"
+  },
+  "description": "一把又大又重的反器材狙击步枪。它那巨大的尺寸，后坐力，以及噪音等劣势，抵消了它高伤害，远距离的优势。",
+  "weight": "13807 g",
+  "volume": "4 L",
+  "price": "7909 USD",
+  "//": "IDK how this gun became cheap on the market. Its effing powerful, so WTF PPL!",
+  "to_hit": -1,
+  "bashing": 12,
+  "material": [
+    "steel"
+  ],
+  "ammo": [
+    "50"
+  ],
+  "range": 50,
+  "ranged_damage": {
+    "damage_type": "stab",
+    "amount": 0
+  },
+  "dispersion": 80,
+  "durability": 8,
+  "barrel_volume": "1500 ml",
+  "default_mods": [
+    "bipod",
+    "hecate_muzzle_brake",
+    "rifle_scope"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "holster": true,
+      "max_contains_volume": "20 L",
+      "magazine_well": "250 ml",
+      "max_contains_weight": "20 kg",
+      "item_restriction": [
+        "hecatemag"
+      ]
+    }
+  ],
+  "flags": [
+    "NEVER_JAMS"
+  ]
+}
+```
+

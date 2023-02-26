@@ -1,0 +1,637 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_flesh_infect_target
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_flesh_infect_target|http://cdda.aloxaf.cn/search?q=mon_flesh_infect_target]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_trans.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Spell combo imitating how a fungus infect others in-action, but slowly damages instead of an instant convertion. This process takes too much space to combine with secro_magic.json file.",
+  "type": "SPELL",
+  "id": "mon_flesh_infect_target",
+  "name": {
+    "str": "a spell"
+  },
+  "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+  "extra_effects": [
+    {
+      "id": "mon_flesh_infect_zombie"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_fat"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_tough"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_crawler"
+    },
+    {
+      "id": "mon_flesh_infect_skeleton"
+    },
+    {
+      "id": "mon_flesh_infect_skeleton_brute"
+    },
+    {
+      "id": "mon_flesh_infect_skeleton_hulk"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_survivor"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_biter"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_brainless"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_ears"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_skull"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_brute"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_brute_grappler"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_brute_ninja"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_grappler"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_hollow"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_hulk"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_hunter"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_mancroc"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_master"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_necro"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_predator"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_screecher"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_thorny"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_smoker_yes"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_anklebiter"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_child"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_creepy"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_shriekling"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_snotgobbler"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_sproglodyte"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_waif"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_brute_shocker"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_electric"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_nullfield"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_static"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_scientist"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_dog"
+    },
+    {
+      "id": "mon_flesh_infect_dog_skeleton"
+    },
+    {
+      "id": "mon_flesh_infect_dog_zombie_cop"
+    },
+    {
+      "id": "mon_flesh_infect_dog_zombie_rot"
+    },
+    {
+      "id": "mon_flesh_infect_zolf"
+    },
+    {
+      "id": "mon_flesh_infect_zombear"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_pig"
+    },
+    {
+      "id": "mon_flesh_infect_zombeaver"
+    },
+    {
+      "id": "mon_flesh_infect_zoose"
+    },
+    {
+      "id": "mon_flesh_infect_zougar"
+    },
+    {
+      "id": "mon_flesh_infect_bear_cub"
+    },
+    {
+      "id": "mon_flesh_infect_taken_bear"
+    },
+    {
+      "id": "mon_flesh_infect_beaver"
+    },
+    {
+      "id": "mon_flesh_infect_boar_wild_piglet"
+    },
+    {
+      "id": "mon_flesh_infect_boar_wild"
+    },
+    {
+      "id": "mon_flesh_infect_cat"
+    },
+    {
+      "id": "mon_flesh_infect_chipmunk"
+    },
+    {
+      "id": "mon_flesh_infect_cow_calf"
+    },
+    {
+      "id": "mon_flesh_infect_cow"
+    },
+    {
+      "id": "mon_flesh_infect_coyote"
+    },
+    {
+      "id": "mon_flesh_infect_deer_fawn"
+    },
+    {
+      "id": "mon_flesh_infect_deer"
+    },
+    {
+      "id": "mon_flesh_infect_dog"
+    },
+    {
+      "id": "mon_flesh_infect_dog_pup"
+    },
+    {
+      "id": "mon_flesh_infect_fox"
+    },
+    {
+      "id": "mon_flesh_infect_groundhog"
+    },
+    {
+      "id": "mon_flesh_infect_horse"
+    },
+    {
+      "id": "mon_flesh_infect_lemming"
+    },
+    {
+      "id": "mon_flesh_infect_mink"
+    },
+    {
+      "id": "mon_flesh_infect_muskrat"
+    },
+    {
+      "id": "mon_flesh_infect_nakedmolerat_giant"
+    },
+    {
+      "id": "mon_flesh_infect_opossum"
+    },
+    {
+      "id": "mon_flesh_infect_otter"
+    },
+    {
+      "id": "mon_flesh_infect_pig_piglet"
+    },
+    {
+      "id": "mon_flesh_infect_pig"
+    },
+    {
+      "id": "mon_flesh_infect_rabbit"
+    },
+    {
+      "id": "mon_flesh_infect_raccoon"
+    },
+    {
+      "id": "mon_flesh_infect_sheep_lamb"
+    },
+    {
+      "id": "mon_flesh_infect_sheep"
+    },
+    {
+      "id": "mon_flesh_infect_squirrel"
+    },
+    {
+      "id": "mon_flesh_infect_weasel"
+    },
+    {
+      "id": "mon_flesh_infect_wolf"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_soldier"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_soldier_blackops_1"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_soldier_blackops_2"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_soldier_acid_1"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_soldier_acid_2"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_kevlar_1"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_kevlar_2"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_military_pilot"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_bio_op"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_survivor_elite"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_acidic"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_corrosive"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_wretched"
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_magic_target",
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Spell combo imitating how a fungus infect others in-action, but slowly damages instead of an instant convertion. This process takes too much space to combine with secro_magic.json file.",
+  "type": "SPELL",
+  "id": "mon_flesh_infect_target",
+  "name": {
+    "str": "一个法术"
+  },
+  "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
+  "extra_effects": [
+    {
+      "id": "mon_flesh_infect_zombie"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_fat"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_tough"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_crawler"
+    },
+    {
+      "id": "mon_flesh_infect_skeleton"
+    },
+    {
+      "id": "mon_flesh_infect_skeleton_brute"
+    },
+    {
+      "id": "mon_flesh_infect_skeleton_hulk"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_survivor"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_biter"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_brainless"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_ears"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_skull"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_brute"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_brute_grappler"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_brute_ninja"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_grappler"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_hollow"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_hulk"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_hunter"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_mancroc"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_master"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_necro"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_predator"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_screecher"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_thorny"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_smoker_yes"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_anklebiter"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_child"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_creepy"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_shriekling"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_snotgobbler"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_sproglodyte"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_waif"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_brute_shocker"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_electric"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_nullfield"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_static"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_scientist"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_dog"
+    },
+    {
+      "id": "mon_flesh_infect_dog_skeleton"
+    },
+    {
+      "id": "mon_flesh_infect_dog_zombie_cop"
+    },
+    {
+      "id": "mon_flesh_infect_dog_zombie_rot"
+    },
+    {
+      "id": "mon_flesh_infect_zolf"
+    },
+    {
+      "id": "mon_flesh_infect_zombear"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_pig"
+    },
+    {
+      "id": "mon_flesh_infect_zombeaver"
+    },
+    {
+      "id": "mon_flesh_infect_zoose"
+    },
+    {
+      "id": "mon_flesh_infect_zougar"
+    },
+    {
+      "id": "mon_flesh_infect_bear_cub"
+    },
+    {
+      "id": "mon_flesh_infect_taken_bear"
+    },
+    {
+      "id": "mon_flesh_infect_beaver"
+    },
+    {
+      "id": "mon_flesh_infect_boar_wild_piglet"
+    },
+    {
+      "id": "mon_flesh_infect_boar_wild"
+    },
+    {
+      "id": "mon_flesh_infect_cat"
+    },
+    {
+      "id": "mon_flesh_infect_chipmunk"
+    },
+    {
+      "id": "mon_flesh_infect_cow_calf"
+    },
+    {
+      "id": "mon_flesh_infect_cow"
+    },
+    {
+      "id": "mon_flesh_infect_coyote"
+    },
+    {
+      "id": "mon_flesh_infect_deer_fawn"
+    },
+    {
+      "id": "mon_flesh_infect_deer"
+    },
+    {
+      "id": "mon_flesh_infect_dog"
+    },
+    {
+      "id": "mon_flesh_infect_dog_pup"
+    },
+    {
+      "id": "mon_flesh_infect_fox"
+    },
+    {
+      "id": "mon_flesh_infect_groundhog"
+    },
+    {
+      "id": "mon_flesh_infect_horse"
+    },
+    {
+      "id": "mon_flesh_infect_lemming"
+    },
+    {
+      "id": "mon_flesh_infect_mink"
+    },
+    {
+      "id": "mon_flesh_infect_muskrat"
+    },
+    {
+      "id": "mon_flesh_infect_nakedmolerat_giant"
+    },
+    {
+      "id": "mon_flesh_infect_opossum"
+    },
+    {
+      "id": "mon_flesh_infect_otter"
+    },
+    {
+      "id": "mon_flesh_infect_pig_piglet"
+    },
+    {
+      "id": "mon_flesh_infect_pig"
+    },
+    {
+      "id": "mon_flesh_infect_rabbit"
+    },
+    {
+      "id": "mon_flesh_infect_raccoon"
+    },
+    {
+      "id": "mon_flesh_infect_sheep_lamb"
+    },
+    {
+      "id": "mon_flesh_infect_sheep"
+    },
+    {
+      "id": "mon_flesh_infect_squirrel"
+    },
+    {
+      "id": "mon_flesh_infect_weasel"
+    },
+    {
+      "id": "mon_flesh_infect_wolf"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_soldier"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_soldier_blackops_1"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_soldier_blackops_2"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_soldier_acid_1"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_soldier_acid_2"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_kevlar_1"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_kevlar_2"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_military_pilot"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_bio_op"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_survivor_elite"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_acidic"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_corrosive"
+    },
+    {
+      "id": "mon_flesh_infect_zombie_wretched"
+    }
+  ],
+  "flags": [
+    "SILENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "secro_magic_target",
+  "min_range": 1,
+  "max_range": 1,
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+

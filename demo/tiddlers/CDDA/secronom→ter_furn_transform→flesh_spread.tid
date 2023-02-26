@@ -1,0 +1,1601 @@
+creator: 林一二
+revision: 0
+tags: ter_furn_transform secronom
+title: secronom→ter_furn_transform→flesh_spread
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：flesh_spread|http://cdda.aloxaf.cn/search?q=flesh_spread]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/ter_furn_trans.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Flesh spreading alternative for now.",
+  "type": "ter_furn_transform",
+  "id": "flesh_spread",
+  "terrain": [
+    {
+      "result": [
+        [
+          "t_secro_dirt_flesh",
+          5
+        ],
+        [
+          "t_secro_grass_flesh",
+          3
+        ],
+        "t_secro_grass_long_flesh",
+        [
+          "t_dirt",
+          10
+        ]
+      ],
+      "valid_flags": [
+        "DIGGABLE"
+      ]
+    },
+    {
+      "result": [
+        "t_secro_shrub_flesh",
+        [
+          "t_shrub",
+          2
+        ]
+      ],
+      "valid_flags": [
+        "SHRUB"
+      ]
+    },
+    {
+      "result": [
+        "t_secro_tree_young_flesh",
+        [
+          "t_tree_young",
+          2
+        ]
+      ],
+      "valid_flags": [
+        "YOUNG"
+      ]
+    },
+    {
+      "result": [
+        "t_secro_tree_flesh",
+        [
+          "t_tree_dead",
+          2
+        ]
+      ],
+      "//": "No grabbing trees!",
+      "valid_flags": [
+        "TREE"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_concrete",
+          5
+        ],
+        "t_secro_concrete_flesh"
+      ],
+      "//": "Spreading on non-organic (or any building) terrains are harder (which has a 1/5 flat chance).",
+      "valid_terrain": [
+        "t_concrete"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_pavement",
+          5
+        ],
+        "t_secro_pavement_flesh"
+      ],
+      "valid_terrain": [
+        "t_pavement"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_pavement_y",
+          5
+        ],
+        "t_secro_pavement_y_flesh"
+      ],
+      "valid_terrain": [
+        "t_pavement_y"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_sidewalk",
+          5
+        ],
+        "t_secro_sidewalk_flesh"
+      ],
+      "valid_terrain": [
+        "t_sidewalk"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_thconc_floor",
+          5
+        ],
+        "t_secro_thconc_floor_flesh"
+      ],
+      "valid_terrain": [
+        "t_thconc_floor"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_flat_roof",
+          5
+        ],
+        "t_secro_flat_roof_flesh"
+      ],
+      "valid_terrain": [
+        "t_flat_roof"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall",
+          5
+        ],
+        "t_secro_wall_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window",
+          5
+        ],
+        "t_secro_window_flesh"
+      ],
+      "valid_terrain": [
+        "t_window"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window_frame",
+          5
+        ],
+        "t_secro_window_frame_flesh"
+      ],
+      "valid_terrain": [
+        "t_window_frame"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_c",
+          5
+        ],
+        "t_secro_door_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_c"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_o",
+          5
+        ],
+        "t_secro_door_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_o"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_locked",
+          5
+        ],
+        "t_secro_door_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_locked"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_floor",
+          5
+        ],
+        "t_secro_floor_flesh"
+      ],
+      "valid_terrain": [
+        "t_floor"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_rock_floor",
+          5
+        ],
+        "t_secro_rock_floor_flesh"
+      ],
+      "valid_terrain": [
+        "t_rock_floor"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_stairs_down",
+          5
+        ],
+        "t_secro_stairs_down_flesh"
+      ],
+      "valid_terrain": [
+        "t_stairs_down"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_stairs_up",
+          5
+        ],
+        "t_secro_stairs_up_flesh"
+      ],
+      "valid_terrain": [
+        "t_stairs_up"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_w",
+          5
+        ],
+        "t_secro_wall_w_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_w"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_g",
+          5
+        ],
+        "t_secro_wall_g_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_g"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_r",
+          5
+        ],
+        "t_secro_wall_r_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_r"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_b",
+          5
+        ],
+        "t_secro_wall_b_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_b"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_rock_wall",
+          5
+        ],
+        "t_secro_rock_wall_flesh"
+      ],
+      "valid_terrain": [
+        "t_rock_wall"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_bars",
+          5
+        ],
+        "t_secro_bars_flesh"
+      ],
+      "valid_terrain": [
+        "t_bars"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_glass",
+          5
+        ],
+        "t_secro_wall_glass_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_glass"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_glass_c",
+          5
+        ],
+        "t_secro_door_glass_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_glass_c"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_glass_o",
+          5
+        ],
+        "t_secro_door_glass_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_glass_o"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_ladder_up",
+          5
+        ],
+        "t_secro_ladder_broken_flesh"
+      ],
+      "valid_terrain": [
+        "t_ladder_up"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_gutter_downspout",
+          5
+        ],
+        "t_secro_gutter_downspout_flesh"
+      ],
+      "valid_terrain": [
+        "t_gutter_downspout"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_railing",
+          5
+        ],
+        "t_secro_railing_flesh"
+      ],
+      "valid_terrain": [
+        "t_railing"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_metal_c",
+          5
+        ],
+        "t_secro_door_metal_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_metal_c"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_metal_o",
+          5
+        ],
+        "t_secro_door_metal_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_metal_o"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_metal_locked",
+          5
+        ],
+        "t_secro_door_metal_locked_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_metal_locked"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_carpet_red",
+          5
+        ],
+        "t_secro_carpet_red_flesh"
+      ],
+      "valid_terrain": [
+        "t_carpet_red"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_carpet_yellow",
+          5
+        ],
+        "t_secro_carpet_yellow_flesh"
+      ],
+      "valid_terrain": [
+        "t_carpet_yellow"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_carpet_green",
+          5
+        ],
+        "t_secro_carpet_green_flesh"
+      ],
+      "valid_terrain": [
+        "t_carpet_green"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_carpet_purple",
+          5
+        ],
+        "t_secro_carpet_purple_flesh"
+      ],
+      "valid_terrain": [
+        "t_carpet_purple"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_linoleum_white",
+          5
+        ],
+        "t_secro_linoleum_white_flesh"
+      ],
+      "valid_terrain": [
+        "t_linoleum_white"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_linoleum_gray",
+          5
+        ],
+        "t_secro_linoleum_gray_flesh"
+      ],
+      "valid_terrain": [
+        "t_linoleum_gray"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_fence",
+          5
+        ],
+        "t_secro_fence_flesh"
+      ],
+      "valid_terrain": [
+        "t_fence"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_column",
+          5
+        ],
+        "t_secro_column_flesh"
+      ],
+      "valid_terrain": [
+        "t_column"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_console_broken",
+          5
+        ],
+        "t_secro_console_broken_flesh"
+      ],
+      "valid_terrain": [
+        "t_console_broken"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_console",
+          5
+        ],
+        "t_secro_console_flesh"
+      ],
+      "valid_terrain": [
+        "t_console"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_gates_mech_control",
+          5
+        ],
+        "t_secro_gates_mech_control_flesh"
+      ],
+      "valid_terrain": [
+        "t_gates_mech_control"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_gates_control_concrete",
+          5
+        ],
+        "t_secro_gates_control_concrete_flesh"
+      ],
+      "valid_terrain": [
+        "t_gates_control_concrete"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_atm",
+          5
+        ],
+        "t_secro_atm_flesh"
+      ],
+      "valid_terrain": [
+        "t_atm"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window_stained_green",
+          5
+        ],
+        "t_secro_window_stained_green_flesh"
+      ],
+      "valid_terrain": [
+        "t_window_stained_green"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window_stained_red",
+          5
+        ],
+        "t_secro_window_stained_red_flesh"
+      ],
+      "valid_terrain": [
+        "t_window_stained_red"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window_stained_blue",
+          5
+        ],
+        "t_secro_window_stained_blue_flesh"
+      ],
+      "valid_terrain": [
+        "t_window_stained_blue"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window_bars",
+          5
+        ],
+        "t_secro_window_bars_flesh"
+      ],
+      "valid_terrain": [
+        "t_window_bars"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_chainfence",
+          5
+        ],
+        "t_secro_chainfence_flesh"
+      ],
+      "valid_terrain": [
+        "t_chainfence"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_chaingate_l",
+          5
+        ],
+        "t_secro_chaingate_l_flesh"
+      ],
+      "valid_terrain": [
+        "t_chaingate_l"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_chaingate_c",
+          5
+        ],
+        "t_secro_chaingate_c_flesh"
+      ],
+      "valid_terrain": [
+        "t_chaingate_c"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_chaingate_o",
+          5
+        ],
+        "t_secro_chaingate_c_flesh"
+      ],
+      "valid_terrain": [
+        "t_chaingate_o"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_p",
+          5
+        ],
+        "t_secro_wall_p_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_p"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_reinforced_door_glass_c",
+          5
+        ],
+        "t_secro_reinforced_door_glass_flesh"
+      ],
+      "valid_terrain": [
+        "t_reinforced_door_glass_c"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_reinforced_door_glass_o",
+          5
+        ],
+        "t_secro_reinforced_door_glass_flesh"
+      ],
+      "valid_terrain": [
+        "t_reinforced_door_glass_o"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_brick_wall",
+          5
+        ],
+        "t_secro_brick_wall_flesh"
+      ],
+      "valid_terrain": [
+        "t_brick_wall"
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "result": "f_secro_flower_flesh",
+      "valid_flags": [
+        "FLOWER"
+      ]
+    },
+    {
+      "result": "f_secro_boulder_small_flesh",
+      "valid_furniture": [
+        "f_boulder_small"
+      ]
+    },
+    {
+      "result": "f_secro_boulder_medium_flesh",
+      "valid_furniture": [
+        "f_boulder_medium"
+      ]
+    },
+    {
+      "result": "f_secro_boulder_large_flesh",
+      "valid_furniture": [
+        "f_boulder_large"
+      ]
+    },
+    {
+      "result": [
+        [
+          "f_secro_veinstalk",
+          20
+        ],
+        "f_null"
+      ],
+      "valid_furniture": [
+        "f_secro_veinstalk"
+      ]
+    },
+    {
+      "result": [
+        [
+          "f_null",
+          2000
+        ],
+        "f_secro_veinstalk"
+      ],
+      "valid_furniture": [
+        "f_null"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Flesh spreading alternative for now.",
+  "type": "ter_furn_transform",
+  "id": "flesh_spread",
+  "terrain": [
+    {
+      "result": [
+        [
+          "t_secro_dirt_flesh",
+          5
+        ],
+        [
+          "t_secro_grass_flesh",
+          3
+        ],
+        "t_secro_grass_long_flesh",
+        [
+          "t_dirt",
+          10
+        ]
+      ],
+      "valid_flags": [
+        "DIGGABLE"
+      ]
+    },
+    {
+      "result": [
+        "t_secro_shrub_flesh",
+        [
+          "t_shrub",
+          2
+        ]
+      ],
+      "valid_flags": [
+        "SHRUB"
+      ]
+    },
+    {
+      "result": [
+        "t_secro_tree_young_flesh",
+        [
+          "t_tree_young",
+          2
+        ]
+      ],
+      "valid_flags": [
+        "YOUNG"
+      ]
+    },
+    {
+      "result": [
+        "t_secro_tree_flesh",
+        [
+          "t_tree_dead",
+          2
+        ]
+      ],
+      "//": "No grabbing trees!",
+      "valid_flags": [
+        "TREE"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_concrete",
+          5
+        ],
+        "t_secro_concrete_flesh"
+      ],
+      "//": "Spreading on non-organic (or any building) terrains are harder (which has a 1/5 flat chance).",
+      "valid_terrain": [
+        "t_concrete"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_pavement",
+          5
+        ],
+        "t_secro_pavement_flesh"
+      ],
+      "valid_terrain": [
+        "t_pavement"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_pavement_y",
+          5
+        ],
+        "t_secro_pavement_y_flesh"
+      ],
+      "valid_terrain": [
+        "t_pavement_y"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_sidewalk",
+          5
+        ],
+        "t_secro_sidewalk_flesh"
+      ],
+      "valid_terrain": [
+        "t_sidewalk"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_thconc_floor",
+          5
+        ],
+        "t_secro_thconc_floor_flesh"
+      ],
+      "valid_terrain": [
+        "t_thconc_floor"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_flat_roof",
+          5
+        ],
+        "t_secro_flat_roof_flesh"
+      ],
+      "valid_terrain": [
+        "t_flat_roof"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall",
+          5
+        ],
+        "t_secro_wall_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window",
+          5
+        ],
+        "t_secro_window_flesh"
+      ],
+      "valid_terrain": [
+        "t_window"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window_frame",
+          5
+        ],
+        "t_secro_window_frame_flesh"
+      ],
+      "valid_terrain": [
+        "t_window_frame"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_c",
+          5
+        ],
+        "t_secro_door_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_c"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_o",
+          5
+        ],
+        "t_secro_door_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_o"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_locked",
+          5
+        ],
+        "t_secro_door_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_locked"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_floor",
+          5
+        ],
+        "t_secro_floor_flesh"
+      ],
+      "valid_terrain": [
+        "t_floor"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_rock_floor",
+          5
+        ],
+        "t_secro_rock_floor_flesh"
+      ],
+      "valid_terrain": [
+        "t_rock_floor"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_stairs_down",
+          5
+        ],
+        "t_secro_stairs_down_flesh"
+      ],
+      "valid_terrain": [
+        "t_stairs_down"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_stairs_up",
+          5
+        ],
+        "t_secro_stairs_up_flesh"
+      ],
+      "valid_terrain": [
+        "t_stairs_up"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_w",
+          5
+        ],
+        "t_secro_wall_w_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_w"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_g",
+          5
+        ],
+        "t_secro_wall_g_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_g"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_r",
+          5
+        ],
+        "t_secro_wall_r_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_r"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_b",
+          5
+        ],
+        "t_secro_wall_b_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_b"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_rock_wall",
+          5
+        ],
+        "t_secro_rock_wall_flesh"
+      ],
+      "valid_terrain": [
+        "t_rock_wall"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_bars",
+          5
+        ],
+        "t_secro_bars_flesh"
+      ],
+      "valid_terrain": [
+        "t_bars"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_glass",
+          5
+        ],
+        "t_secro_wall_glass_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_glass"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_glass_c",
+          5
+        ],
+        "t_secro_door_glass_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_glass_c"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_glass_o",
+          5
+        ],
+        "t_secro_door_glass_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_glass_o"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_ladder_up",
+          5
+        ],
+        "t_secro_ladder_broken_flesh"
+      ],
+      "valid_terrain": [
+        "t_ladder_up"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_gutter_downspout",
+          5
+        ],
+        "t_secro_gutter_downspout_flesh"
+      ],
+      "valid_terrain": [
+        "t_gutter_downspout"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_railing",
+          5
+        ],
+        "t_secro_railing_flesh"
+      ],
+      "valid_terrain": [
+        "t_railing"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_metal_c",
+          5
+        ],
+        "t_secro_door_metal_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_metal_c"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_metal_o",
+          5
+        ],
+        "t_secro_door_metal_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_metal_o"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_door_metal_locked",
+          5
+        ],
+        "t_secro_door_metal_locked_flesh"
+      ],
+      "valid_terrain": [
+        "t_door_metal_locked"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_carpet_red",
+          5
+        ],
+        "t_secro_carpet_red_flesh"
+      ],
+      "valid_terrain": [
+        "t_carpet_red"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_carpet_yellow",
+          5
+        ],
+        "t_secro_carpet_yellow_flesh"
+      ],
+      "valid_terrain": [
+        "t_carpet_yellow"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_carpet_green",
+          5
+        ],
+        "t_secro_carpet_green_flesh"
+      ],
+      "valid_terrain": [
+        "t_carpet_green"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_carpet_purple",
+          5
+        ],
+        "t_secro_carpet_purple_flesh"
+      ],
+      "valid_terrain": [
+        "t_carpet_purple"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_linoleum_white",
+          5
+        ],
+        "t_secro_linoleum_white_flesh"
+      ],
+      "valid_terrain": [
+        "t_linoleum_white"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_linoleum_gray",
+          5
+        ],
+        "t_secro_linoleum_gray_flesh"
+      ],
+      "valid_terrain": [
+        "t_linoleum_gray"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_fence",
+          5
+        ],
+        "t_secro_fence_flesh"
+      ],
+      "valid_terrain": [
+        "t_fence"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_column",
+          5
+        ],
+        "t_secro_column_flesh"
+      ],
+      "valid_terrain": [
+        "t_column"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_console_broken",
+          5
+        ],
+        "t_secro_console_broken_flesh"
+      ],
+      "valid_terrain": [
+        "t_console_broken"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_console",
+          5
+        ],
+        "t_secro_console_flesh"
+      ],
+      "valid_terrain": [
+        "t_console"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_gates_mech_control",
+          5
+        ],
+        "t_secro_gates_mech_control_flesh"
+      ],
+      "valid_terrain": [
+        "t_gates_mech_control"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_gates_control_concrete",
+          5
+        ],
+        "t_secro_gates_control_concrete_flesh"
+      ],
+      "valid_terrain": [
+        "t_gates_control_concrete"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_atm",
+          5
+        ],
+        "t_secro_atm_flesh"
+      ],
+      "valid_terrain": [
+        "t_atm"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window_stained_green",
+          5
+        ],
+        "t_secro_window_stained_green_flesh"
+      ],
+      "valid_terrain": [
+        "t_window_stained_green"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window_stained_red",
+          5
+        ],
+        "t_secro_window_stained_red_flesh"
+      ],
+      "valid_terrain": [
+        "t_window_stained_red"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window_stained_blue",
+          5
+        ],
+        "t_secro_window_stained_blue_flesh"
+      ],
+      "valid_terrain": [
+        "t_window_stained_blue"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_window_bars",
+          5
+        ],
+        "t_secro_window_bars_flesh"
+      ],
+      "valid_terrain": [
+        "t_window_bars"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_chainfence",
+          5
+        ],
+        "t_secro_chainfence_flesh"
+      ],
+      "valid_terrain": [
+        "t_chainfence"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_chaingate_l",
+          5
+        ],
+        "t_secro_chaingate_l_flesh"
+      ],
+      "valid_terrain": [
+        "t_chaingate_l"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_chaingate_c",
+          5
+        ],
+        "t_secro_chaingate_c_flesh"
+      ],
+      "valid_terrain": [
+        "t_chaingate_c"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_chaingate_o",
+          5
+        ],
+        "t_secro_chaingate_c_flesh"
+      ],
+      "valid_terrain": [
+        "t_chaingate_o"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_wall_p",
+          5
+        ],
+        "t_secro_wall_p_flesh"
+      ],
+      "valid_terrain": [
+        "t_wall_p"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_reinforced_door_glass_c",
+          5
+        ],
+        "t_secro_reinforced_door_glass_flesh"
+      ],
+      "valid_terrain": [
+        "t_reinforced_door_glass_c"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_reinforced_door_glass_o",
+          5
+        ],
+        "t_secro_reinforced_door_glass_flesh"
+      ],
+      "valid_terrain": [
+        "t_reinforced_door_glass_o"
+      ]
+    },
+    {
+      "result": [
+        [
+          "t_brick_wall",
+          5
+        ],
+        "t_secro_brick_wall_flesh"
+      ],
+      "valid_terrain": [
+        "t_brick_wall"
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "result": "f_secro_flower_flesh",
+      "valid_flags": [
+        "FLOWER"
+      ]
+    },
+    {
+      "result": "f_secro_boulder_small_flesh",
+      "valid_furniture": [
+        "f_boulder_small"
+      ]
+    },
+    {
+      "result": "f_secro_boulder_medium_flesh",
+      "valid_furniture": [
+        "f_boulder_medium"
+      ]
+    },
+    {
+      "result": "f_secro_boulder_large_flesh",
+      "valid_furniture": [
+        "f_boulder_large"
+      ]
+    },
+    {
+      "result": [
+        [
+          "f_secro_veinstalk",
+          20
+        ],
+        "f_null"
+      ],
+      "valid_furniture": [
+        "f_secro_veinstalk"
+      ]
+    },
+    {
+      "result": [
+        [
+          "f_null",
+          2000
+        ],
+        "f_secro_veinstalk"
+      ],
+      "valid_furniture": [
+        "f_null"
+      ]
+    }
+  ]
+}
+```
+

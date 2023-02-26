@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_APPRENTICE_PEACE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_APPRENTICE_PEACE|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_APPRENTICE_PEACE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_APPRENTICE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_PEACE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "I would rather we work together, use what you have learned for us to become stronger, together.  But my master will accept no rival in these trying times.  What am I to do?",
+    "no": "We shouldn't have to fight, ideally we would stand together in times like these.  Were we not destined to rule over the weak and undeserving?  But if my master will accept no rival, and better to stand with them than alone."
+  },
+  "responses": [
+    {
+      "text": "I have succeeded where others have failed, pursuing the same method that your master seeks.  Can you really trust your master?.",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_PROMISE",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true
+    },
+    {
+      "text": "Your master has erred in judgment.  They are not worthy of being followed.",
+      "switch": true,
+      "default": true,
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 50
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_CONVINCE"
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_NOPE"
+      }
+    },
+    {
+      "text": "[ATTACK] Then die, defending your misguided fool of a master.",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_APPRENTICE_PEACE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "我宁愿我们一起工作，用你学到的东西让我们变得更强大，一起。但我的主人不会接受任何对手在这艰难的时刻。我该怎么办？",
+    "no": "我们不应该吵架，理想情况下我们会在这样的时候站在一起。难道我们不是注定要统治弱者和不配吗？但如果我的主人不接受任何对手，与其独自一人，不如与他们站在一起。"
+  },
+  "responses": [
+    {
+      "text": "我在别人失败的地方取得了成功，追求着你主人所追求的同样的方法。你真的能相信你的主人吗？。",
+      "topic": "TALK_BLOOD_MAGE_APPRENTICE_PROMISE",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true
+    },
+    {
+      "text": "你的主人判断错了。他们不值得被追随。",
+      "switch": true,
+      "default": true,
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 50
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_CONVINCE"
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_APPRENTICE_NOPE"
+      }
+    },
+    {
+      "text": "[攻击] 那么去死吧，为你的主人的愚昧辩护。",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

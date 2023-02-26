@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→cold_heart_slow
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：cold_heart_slow|http://cdda.aloxaf.cn/search?q=cold_heart_slow]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/attunements/Ice_Elemental.json
+
+
+!! 原文
+
+```json
+{
+  "id": "cold_heart_slow",
+  "type": "SPELL",
+  "name": {
+    "str": "Cold Heart slowdown"
+  },
+  "description": "Causes slowdown from the Cold Heart spell.  Subspell; you aren't allowed to see it except in debug mode.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "cold_heart_effect",
+  "max_level": 43,
+  "flags": [
+    "SILENT"
+  ],
+  "min_duration": 6000,
+  "max_duration": 72000,
+  "duration_increment": 1550
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "cold_heart_slow",
+  "type": "SPELL",
+  "name": {
+    "str": "冰寒之心减速"
+  },
+  "description": "冰寒之心法术所造成的减速效果。子法术；除非在调试模式下，否则不应该看到它。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "cold_heart_effect",
+  "max_level": 43,
+  "flags": [
+    "SILENT"
+  ],
+  "min_duration": 6000,
+  "max_duration": 72000,
+  "duration_increment": 1550
+}
+```
+

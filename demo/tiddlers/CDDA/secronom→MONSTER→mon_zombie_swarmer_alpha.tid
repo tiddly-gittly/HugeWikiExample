@@ -1,0 +1,139 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_swarmer_alpha
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_swarmer_alpha|http://cdda.aloxaf.cn/search?q=mon_zombie_swarmer_alpha]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/Swarmer.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_swarmer_alpha",
+  "copy-from": "mon_zombie_swarmer",
+  "type": "MONSTER",
+  "name": "swarmer",
+  "description": "A stout humanoid body, almost in its decaying state. Unlike other swarmers, something's strange on its body that attracts its \"team\".",
+  "default_faction": "swarmer",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2",
+    "HUMAN"
+  ],
+  "hp": 130,
+  "speed": 70,
+  "symbol": "⩙",
+  "color": "light_green_magenta",
+  "melee_skill": 6,
+  "melee_dice": 6,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "armor_bash": 4,
+  "armor_cut": 3,
+  "armor_stab": 2,
+  "armor_bullet": 2,
+  "armor_acid": 1,
+  "dodge": 2,
+  "vision_night": 12,
+  "vision_day": 30,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10
+    },
+    [
+      "GRAB",
+      10
+    ],
+    [
+      "scratch",
+      10
+    ],
+    [
+      "GRAB_DRAG",
+      5
+    ],
+    [
+      "swarmerzed_bite_vstro",
+      15
+    ]
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_swarmer_alpha",
+  "copy-from": "mon_zombie_swarmer",
+  "type": "MONSTER",
+  "name": "集群丧尸",
+  "description": "一个结实的人形身体，几乎处于腐烂状态。与其他集群丧尸不同的是，它身上有奇怪的东西吸引着它的“团队”。",
+  "default_faction": "swarmer",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_2",
+    "HUMAN"
+  ],
+  "hp": 130,
+  "speed": 70,
+  "symbol": "⩙",
+  "color": "light_green_magenta",
+  "melee_skill": 6,
+  "melee_dice": 6,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "armor_bash": 4,
+  "armor_cut": 3,
+  "armor_stab": 2,
+  "armor_bullet": 2,
+  "armor_acid": 1,
+  "dodge": 2,
+  "vision_night": 12,
+  "vision_day": 30,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10
+    },
+    [
+      "GRAB",
+      10
+    ],
+    [
+      "scratch",
+      10
+    ],
+    [
+      "GRAB_DRAG",
+      5
+    ],
+    [
+      "swarmerzed_bite_vstro",
+      15
+    ]
+  ]
+}
+```
+

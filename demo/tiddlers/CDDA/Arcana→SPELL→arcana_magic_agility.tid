@@ -1,0 +1,119 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_agility
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_agility|http://cdda.aloxaf.cn/search?q=arcana_magic_agility]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_agility",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Agility"
+  },
+  "description": "Magic Sign\nUsing this spell will grant a temporary speed and agility-enhancing effect.  It can be used on yourself or an ally.",
+  "message": "\"Ethereal winds, guide my passage…\"  You cast %s!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_4",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "spell_agility",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "energy_source": "STAMINA",
+  "difficulty": 40,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 200,
+  "final_casting_time": 100,
+  "casting_time_increment": -10,
+  "base_energy_cost": 2500,
+  "final_energy_cost": 1250,
+  "energy_increment": -125,
+  "min_duration": 144000,
+  "max_duration": 288000,
+  "duration_increment": 14400,
+  "spell_class": "SPELL_AGILE"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_agility",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：敏捷"
+  },
+  "description": "魔法符号\n使用此咒语将赋予暂时的速度和敏捷性增强效果。它可以用于你自己或盟友。",
+  "message": "“飘渺的风，指引我的旅程……”你施放了 %s！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_4",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "spell_agility",
+  "min_range": 1,
+  "max_range": 10,
+  "range_increment": 0.9,
+  "energy_source": "STAMINA",
+  "difficulty": 40,
+  "skill": "magic",
+  "max_level": 10,
+  "base_casting_time": 200,
+  "final_casting_time": 100,
+  "casting_time_increment": -10,
+  "base_energy_cost": 2500,
+  "final_energy_cost": 1250,
+  "energy_increment": -125,
+  "min_duration": 144000,
+  "max_duration": 288000,
+  "duration_increment": 14400,
+  "spell_class": "SPELL_AGILE"
+}
+```
+

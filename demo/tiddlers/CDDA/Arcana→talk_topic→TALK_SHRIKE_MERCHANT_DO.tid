@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_SHRIKE_MERCHANT_DO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SHRIKE_MERCHANT_DO|http://cdda.aloxaf.cn/search?q=TALK_SHRIKE_MERCHANT_DO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_SHRIKE_MERCHANT.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_SHRIKE_MERCHANT_DO",
+  "type": "talk_topic",
+  "dynamic_line": "Hunting, mainly.  Monsters instead of people now, usually.  More productive these days.  I also have a few items I could trade around if you want.",
+  "speaker_effect": {
+    "condition": {
+      "not": {
+        "u_has_var": "cf_horace_traded",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      }
+    },
+    "effect": {
+      "u_add_var": "cf_horace_traded",
+      "type": "flag",
+      "context": "knowledge",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "Sure, let's see what you have.",
+      "effect": "start_trade",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    },
+    {
+      "text": "Maybe another time, thank you.",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_SHRIKE_MERCHANT_DO",
+  "type": "talk_topic",
+  "dynamic_line": "主要是打猎。现在通常是怪物而不是人。现在效率更高。如果你愿意的话，我还有一些可以交换的东西。",
+  "speaker_effect": {
+    "condition": {
+      "not": {
+        "u_has_var": "cf_horace_traded",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      }
+    },
+    "effect": {
+      "u_add_var": "cf_horace_traded",
+      "type": "flag",
+      "context": "knowledge",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "当然，让我们看看你有什么。",
+      "effect": "start_trade",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    },
+    {
+      "text": "也许下次吧，谢谢。",
+      "topic": "TALK_SHRIKE_MERCHANT"
+    }
+  ]
+}
+```
+

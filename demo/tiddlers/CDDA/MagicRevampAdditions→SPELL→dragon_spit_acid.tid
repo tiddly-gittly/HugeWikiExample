@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→dragon_spit_acid
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：dragon_spit_acid|http://cdda.aloxaf.cn/search?q=dragon_spit_acid]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/black_dragon.json
+
+
+!! 原文
+
+```json
+{
+  "id": "dragon_spit_acid",
+  "type": "SPELL",
+  "name": {
+    "str": "Dragon Acid Spit"
+  },
+  "description": "You conjur up acidic spittle that you can shoot long distances as you close on your terrified prey.",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "LOUD",
+    "VERBAL",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "acid",
+  "effect_str": "lesser_dragon_acidburn",
+  "affected_body_parts": [
+    "torso"
+  ],
+  "min_damage": 10,
+  "max_damage": 70,
+  "damage_increment": 10,
+  "min_range": 5,
+  "max_range": 15,
+  "range_increment": 2,
+  "max_level": 7,
+  "difficulty": 1,
+  "base_casting_time": 200,
+  "final_casting_time": 140,
+  "casting_time_increment": -10,
+  "energy_source": "MANA",
+  "base_energy_cost": 100
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "dragon_spit_acid",
+  "type": "SPELL",
+  "name": {
+    "str": "巨龙酸液喷射"
+  },
+  "description": "在你步步紧逼被你吓坏的猎物时，你能够喷射出一股远距离攻击的酸液。",
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "LOUD",
+    "VERBAL",
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "damage_type": "acid",
+  "effect_str": "lesser_dragon_acidburn",
+  "affected_body_parts": [
+    "torso"
+  ],
+  "min_damage": 10,
+  "max_damage": 70,
+  "damage_increment": 10,
+  "min_range": 5,
+  "max_range": 15,
+  "range_increment": 2,
+  "max_level": 7,
+  "difficulty": 1,
+  "base_casting_time": 200,
+  "final_casting_time": 140,
+  "casting_time_increment": -10,
+  "energy_source": "MANA",
+  "base_energy_cost": 100
+}
+```
+

@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zedbow_kaxix
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zedbow_kaxix|http://cdda.aloxaf.cn/search?q=mon_zedbow_kaxix]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+BOWs.json
+
+
+!! 原文
+
+```json
+{
+  "//": "BOWs are special zeds adapted to confront players who are ready for anything. Exclusive in secronom labs.",
+  "id": "mon_zedbow_kaxix",
+  "type": "MONSTER",
+  "name": {
+    "str": "kaxix"
+  },
+  "description": "A humanoid creature, with its hands ruptured into a scythe and a head similar to eels. It is wearing an experimental suit, denoting a state of progress.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 140,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 2,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "armor_fire": 2,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "LUNGE",
+      15
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 0.2,
+      "max_mul": 0.6,
+      "infection_chance": 1,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 4,
+          "armor_multiplier": 0.2
+        },
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.4
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "upgrades": {
+    "half_life": 10,
+    "into_group": "GROUP_BOW_KAXIX"
+  },
+  "flags": [
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "FILTHY",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "BOWs are special zeds adapted to confront players who are ready for anything. Exclusive in secronom labs.",
+  "id": "mon_zedbow_kaxix",
+  "type": "MONSTER",
+  "name": {
+    "str": "卡克西克斯"
+  },
+  "description": "一种人形生物，手断裂成镰状，头部类似鳗鱼。它穿着实验服，象征着一种进化的状态。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 140,
+  "speed": 90,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 2,
+  "armor_cut": 4,
+  "armor_bullet": 2,
+  "armor_fire": 2,
+  "harvest": "zombie",
+  "special_attacks": [
+    [
+      "LUNGE",
+      15
+    ],
+    {
+      "type": "bite",
+      "cooldown": 5,
+      "min_mul": 0.2,
+      "max_mul": 0.6,
+      "infection_chance": 1,
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 4,
+          "armor_multiplier": 0.2
+        },
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.4
+        }
+      ]
+    }
+  ],
+  "death_drops": "SSmutant_drop",
+  "upgrades": {
+    "half_life": 10,
+    "into_group": "GROUP_BOW_KAXIX"
+  },
+  "flags": [
+    "HEARS",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "FILTHY",
+    "BASHES",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES"
+  ]
+}
+```
+

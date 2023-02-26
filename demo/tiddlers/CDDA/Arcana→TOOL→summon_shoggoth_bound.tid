@@ -1,0 +1,61 @@
+creator: 林一二
+revision: 0
+tags: TOOL Arcana
+title: Arcana→TOOL→summon_shoggoth_bound
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_shoggoth_bound|http://cdda.aloxaf.cn/search?q=summon_shoggoth_bound]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_shoggoth_bound",
+  "type": "TOOL",
+  "copy-from": "summon_shoggoth",
+  "name": {
+    "str": "bound summoned shoggoth"
+  },
+  "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A shoggoth has been bound into this after a successful summon, activate to redeploy it.",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_shoggoth_summoned",
+    "friendly_msg": "You undo the energy binding the summoned shoggoth, causing it to reappear.",
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_shoggoth_bound",
+  "type": "TOOL",
+  "copy-from": "summon_shoggoth",
+  "name": {
+    "str": "召唤修格斯（已绑定）"
+  },
+  "description": "一个被幽灵般的银色符文包裹着的生命源质护符。一只修格斯与之绑定，激活它来召唤修格斯。",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_shoggoth_summoned",
+    "friendly_msg": "You undo the energy binding the summoned shoggoth, causing it to reappear.",
+    "moves": 60,
+    "place_randomly": true,
+    "is_pet": true
+  }
+}
+```
+

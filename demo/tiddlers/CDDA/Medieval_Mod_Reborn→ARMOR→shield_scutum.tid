@@ -1,0 +1,177 @@
+creator: 林一二
+revision: 0
+tags: ARMOR Medieval_Mod_Reborn
+title: Medieval_Mod_Reborn→ARMOR→shield_scutum
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：shield_scutum|http://cdda.aloxaf.cn/search?q=shield_scutum]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Medieval_Mod_Reborn/items/armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "shield_scutum",
+  "type": "ARMOR",
+  "name": {
+    "str": "scutum",
+    "str_pl": "scuta"
+  },
+  "category": "armor",
+  "description": "A rectangular shield from ancient Rome, made of wood and iron.  Perfect for fighting in formation, but not ideal for facing zombies alone.  The grip gives enough space to carry a javelin or two with it.",
+  "weight": "4535 g",
+  "volume": "5500 ml",
+  "price": 125000,
+  "to_hit": -1,
+  "bashing": 10,
+  "material": [
+    "wood",
+    "wood_breathable",
+    "iron",
+    "iron_breathable"
+  ],
+  "symbol": "[",
+  "color": "red",
+  "sided": true,
+  "material_thickness": 4,
+  "techniques": [
+    "WBLOCK_3"
+  ],
+  "flags": [
+    "OVERSIZE",
+    "BELTED",
+    "RESTRICT_HANDS",
+    "BLOCK_WHILE_WORN"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 50,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 50,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Stash javelins",
+    "holster_msg": "You stash your %s."
+  },
+  "armor": [
+    {
+      "encumbrance": 25,
+      "coverage": 100,
+      "covers": [
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r"
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "shield_scutum",
+  "type": "ARMOR",
+  "name": {
+    "str": "罗马方盾",
+    "str_pl": "罗马方盾"
+  },
+  "category": "armor",
+  "description": "A rectangular shield from ancient Rome, made of wood and iron.  Perfect for fighting in formation, but not ideal for facing zombies alone.  The grip gives enough space to carry a javelin or two with it.",
+  "weight": "4535 g",
+  "volume": "5500 ml",
+  "price": 125000,
+  "to_hit": -1,
+  "bashing": 10,
+  "material": [
+    "wood",
+    "wood_breathable",
+    "iron",
+    "iron_breathable"
+  ],
+  "symbol": "[",
+  "color": "red",
+  "sided": true,
+  "material_thickness": 4,
+  "techniques": [
+    "WBLOCK_3"
+  ],
+  "flags": [
+    "OVERSIZE",
+    "BELTED",
+    "RESTRICT_HANDS",
+    "BLOCK_WHILE_WORN"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 50,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    },
+    {
+      "pocket_type": "CONTAINER",
+      "min_item_volume": "250 ml",
+      "max_contains_volume": "1250 ml",
+      "max_contains_weight": "2 kg",
+      "moves": 50,
+      "flag_restriction": [
+        "JAVELIN"
+      ],
+      "max_item_length": "150 cm"
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "存储标枪",
+    "holster_msg": "你收好了%s。"
+  },
+  "armor": [
+    {
+      "encumbrance": 25,
+      "coverage": 100,
+      "covers": [
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r"
+      ]
+    }
+  ]
+}
+```
+

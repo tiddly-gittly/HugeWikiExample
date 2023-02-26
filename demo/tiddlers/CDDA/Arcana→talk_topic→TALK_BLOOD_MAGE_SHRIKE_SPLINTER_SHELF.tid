@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_SHELF
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_SHELF|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_SHELF]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_SHELF",
+  "type": "talk_topic",
+  "dynamic_line": "Some items that have been traded around among our old suppliers, and some surplus equipment.  I suppose I could do without it, it's not like we need most of it.  It's not going anywhere else, as it is.",
+  "responses": [
+    {
+      "text": "Perhaps we could trade, then?",
+      "effect": [
+        {
+          "u_add_var": "elena_trade",
+          "type": "flag",
+          "context": "shrike",
+          "value": "yes"
+        },
+        "start_trade"
+      ],
+      "condition": {
+        "not": {
+          "u_has_var": "elena_trade",
+          "type": "flag",
+          "context": "shrike",
+          "value": "yes"
+        }
+      },
+      "opinion": {
+        "value": 2,
+        "anger": -1,
+        "fear": -1
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "Okay then.",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_SHELF",
+  "type": "talk_topic",
+  "dynamic_line": "Some items that have been traded around among our old suppliers, and some surplus equipment.  I suppose I could do without it, it's not like we need most of it.  It's not going anywhere else, as it is.",
+  "responses": [
+    {
+      "text": "或许我们可以交易？",
+      "effect": [
+        {
+          "u_add_var": "elena_trade",
+          "type": "flag",
+          "context": "shrike",
+          "value": "yes"
+        },
+        "start_trade"
+      ],
+      "condition": {
+        "not": {
+          "u_has_var": "elena_trade",
+          "type": "flag",
+          "context": "shrike",
+          "value": "yes"
+        }
+      },
+      "opinion": {
+        "value": 2,
+        "anger": -1,
+        "fear": -1
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "好吧。",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+

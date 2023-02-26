@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_pattern_healing
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_pattern_healing|http://cdda.aloxaf.cn/search?q=arcana_pattern_healing]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_pattern_scrolls.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_healing",
+  "name": {
+    "str": "Pattern: Healing"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_HEAL",
+  "description": "This grants a specific spell mutation.",
+  "message": "You gaze deep into the strange patterns, complex anatomical imagery mingled with unearthly diagrams…",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "arcana_pattern_healing",
+  "name": {
+    "str": "图案：治愈"
+  },
+  "effect": "mutate",
+  "shape": "blast",
+  "effect_str": "SPELL_HEAL",
+  "description": "这赋予了特定的咒语突变。",
+  "message": "你凝视着奇怪的图案，复杂的解剖图像与神秘的图表交织在一起……",
+  "min_damage": 10000,
+  "max_damage": 10000,
+  "flags": [
+    "SILENT",
+    "MUTATE_TRAIT"
+  ],
+  "valid_targets": [
+    "self"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ]
+}
+```
+

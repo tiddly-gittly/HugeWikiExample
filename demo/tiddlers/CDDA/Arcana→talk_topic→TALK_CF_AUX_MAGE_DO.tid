@@ -1,0 +1,91 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_AUX_MAGE_DO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_AUX_MAGE_DO|http://cdda.aloxaf.cn/search?q=TALK_CF_AUX_MAGE_DO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_AUX_MAGE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_CF_AUX_MAGE_DO",
+  "type": "talk_topic",
+  "dynamic_line": "Aside from study and any other work I can get, I also have supplies I trade around, helps supplement my efforts to gather new materials and books to ready.  Anything you'd like?",
+  "speaker_effect": {
+    "condition": {
+      "not": {
+        "u_has_var": "cf_celine_traded",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      }
+    },
+    "effect": {
+      "u_add_var": "cf_celine_traded",
+      "type": "flag",
+      "context": "knowledge",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "Sure, let's see what you have.",
+      "effect": "start_trade",
+      "topic": "TALK_CF_AUX_MAGE"
+    },
+    {
+      "text": "Maybe another time, thank you.",
+      "topic": "TALK_CF_AUX_MAGE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_CF_AUX_MAGE_DO",
+  "type": "talk_topic",
+  "dynamic_line": "除了学习和其他我能得到的工作之外，我还可以交换一些生活用品，帮助我收集新的材料和书籍以备不时之需。你想要什么？",
+  "speaker_effect": {
+    "condition": {
+      "not": {
+        "u_has_var": "cf_celine_traded",
+        "type": "flag",
+        "context": "knowledge",
+        "value": "yes"
+      }
+    },
+    "effect": {
+      "u_add_var": "cf_celine_traded",
+      "type": "flag",
+      "context": "knowledge",
+      "value": "yes"
+    }
+  },
+  "responses": [
+    {
+      "text": "当然，让我们看看你有什么。",
+      "effect": "start_trade",
+      "topic": "TALK_CF_AUX_MAGE"
+    },
+    {
+      "text": "也许下次吧，谢谢。",
+      "topic": "TALK_CF_AUX_MAGE"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,103 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→seiga_chidrain
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：seiga_chidrain|http://cdda.aloxaf.cn/search?q=seiga_chidrain]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_seiga.json
+
+
+!! 原文
+
+```json
+{
+  "id": "seiga_chidrain",
+  "type": "SPELL",
+  "name": "Xie qi",
+  "description": "Focus on the qi of the target, applying a curse to drain it and transform into healing for yourself.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "seiga_chidrain2",
+      "hit_self": true
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "biological",
+  "min_dot": 2,
+  "max_dot": 8,
+  "dot_increment": 0.6,
+  "min_range": 6,
+  "max_range": 16,
+  "range_increment": 1,
+  "min_duration": 1500,
+  "max_duration": 1500,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 133,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "//": "Name is 'qi drain' in Chinese"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "seiga_chidrain",
+  "type": "SPELL",
+  "name": "Xie qi",
+  "description": "Focus on the qi of the target, applying a curse to drain it and transform into healing for yourself.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ally",
+    "hostile"
+  ],
+  "effect": "attack",
+  "extra_effects": [
+    {
+      "id": "seiga_chidrain2",
+      "hit_self": true
+    }
+  ],
+  "shape": "blast",
+  "damage_type": "biological",
+  "min_dot": 2,
+  "max_dot": 8,
+  "dot_increment": 0.6,
+  "min_range": 6,
+  "max_range": 16,
+  "range_increment": 1,
+  "min_duration": 1500,
+  "max_duration": 1500,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 133,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS"
+  ],
+  "//": "Name is 'qi drain' in Chinese"
+}
+```
+

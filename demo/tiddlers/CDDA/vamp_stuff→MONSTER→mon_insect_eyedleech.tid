@@ -1,0 +1,213 @@
+creator: 林一二
+revision: 0
+tags: MONSTER vamp_stuff
+title: vamp_stuff→MONSTER→mon_insect_eyedleech
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_eyedleech|http://cdda.aloxaf.cn/search?q=mon_insect_eyedleech]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Monsters/Insects/+Leech.json
+
+
+!! 原文
+
+```json
+{
+  "aggression": 25,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 3,
+  "armor_cut": 3,
+  "bodytype": "snake",
+  "color": "brown",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "A small leech with a distinctive large, monoeye above its mouth. Being compatible to precisely shoot its own teeth makes it deadly once ignored.",
+  "diff": 15,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SEES",
+    "PRIORITIZE_TARGETS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_2"
+  ],
+  "harvest": "meatslug",
+  "hp": 52,
+  "id": "mon_insect_eyedleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 2,
+  "melee_skill": 2,
+  "morale": 100,
+  "name": {
+    "str": "eyed leech"
+  },
+  "path_settings": {
+    "max_dist": 6
+  },
+  "special_attacks": [
+    {
+      "cooldown": 3,
+      "description": "The eyed leech spew its tooth!",
+      "fake_dex": 8,
+      "fake_per": 8,
+      "fake_skills": [
+        [
+          "gun",
+          1
+        ],
+        [
+          "pistol",
+          1
+        ]
+      ],
+      "gun_type": "eyedleechmouth",
+      "move_cost": 125,
+      "ranges": [
+        [
+          1,
+          10,
+          "DEFAULT"
+        ]
+      ],
+      "targeting_cost": 120,
+      "targeting_sound": "snapped tooth",
+      "targeting_volume": 25,
+      "type": "gun"
+    }
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 100,
+  "symbol": "~",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_LEECH_EYEDUPGRADE"
+  },
+  "vision_day": 25
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "aggression": 25,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "FRIEND_DIED",
+    "HURT"
+  ],
+  "armor_bash": 3,
+  "armor_cut": 3,
+  "bodytype": "snake",
+  "color": "brown",
+  "death_drops": "leech",
+  "default_faction": "leech",
+  "description": "一种有一个独特的大眼的小水蛭。因为能够精确地射出自己的牙齿，一旦没注意就会致命。",
+  "diff": 15,
+  "dodge": 1,
+  "fear_triggers": [
+    "FIRE"
+  ],
+  "flags": [
+    "SMELLS",
+    "HEARS",
+    "SEES",
+    "PRIORITIZE_TARGETS",
+    "SWIMS",
+    "PATH_AVOID_DANGER_2"
+  ],
+  "harvest": "meatslug",
+  "hp": 52,
+  "id": "mon_insect_eyedleech",
+  "material": [
+    "iflesh"
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }
+  ],
+  "melee_dice": 3,
+  "melee_dice_sides": 2,
+  "melee_skill": 2,
+  "morale": 100,
+  "name": {
+    "str": "有眼水蛭"
+  },
+  "path_settings": {
+    "max_dist": 6
+  },
+  "special_attacks": [
+    {
+      "cooldown": 3,
+      "description": "有眼水蛭吐出了它的牙齿！",
+      "fake_dex": 8,
+      "fake_per": 8,
+      "fake_skills": [
+        [
+          "gun",
+          1
+        ],
+        [
+          "pistol",
+          1
+        ]
+      ],
+      "gun_type": "eyedleechmouth",
+      "move_cost": 125,
+      "ranges": [
+        [
+          1,
+          10,
+          "DEFAULT"
+        ]
+      ],
+      "targeting_cost": 120,
+      "targeting_sound": "snapped tooth",
+      "targeting_volume": 25,
+      "type": "gun"
+    }
+  ],
+  "species": [
+    "INSECT",
+    "LEECH"
+  ],
+  "speed": 100,
+  "symbol": "~",
+  "type": "MONSTER",
+  "upgrades": {
+    "half_life": 12,
+    "into_group": "GROUP_LEECH_EYEDUPGRADE"
+  },
+  "vision_day": 25
+}
+```
+

@@ -1,0 +1,67 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_ROGUE.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "I have a better idea, troublemaker.  Your scaly hide might make a passable pair of boots.",
+    "no": {
+      "u_has_trait": "THRESH_VEIL",
+      "yes": "Really have lost sight of things, haven't you?  Let me see if I can get the point across for you.  Fuck you, and fuck your so-called god.  How's that?",
+      "no": "I'm plenty measured in my practice, and I think you'd look better with a bit of said backstabbing."
+    }
+  },
+  "responses": [
+    {
+      "text": "…",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_DRAGONBLOOD",
+    "yes": "我有个更好的主意，麻烦制造者。你那有鳞的皮也许能做一双普通的靴子。",
+    "no": {
+      "u_has_trait": "THRESH_VEIL",
+      "yes": "你真的看不见东西了，不是吗？让我看看能不能帮你把重点说清楚。去你妈的，去你所谓的上帝。怎么样？",
+      "no": "在我的练习中，我很有分寸，我想你再多说点背后的话会让你看起来更好。"
+    }
+  },
+  "responses": [
+    {
+      "text": "…",
+      "topic": "TALK_DONE",
+      "effect": "insult_combat"
+    }
+  ]
+}
+```
+

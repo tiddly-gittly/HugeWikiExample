@@ -1,0 +1,143 @@
+creator: 林一二
+revision: 0
+tags: field_type secronom
+title: secronom→field_type→fd_cordev_corrupt_acid
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：fd_cordev_corrupt_acid|http://cdda.aloxaf.cn/search?q=fd_cordev_corrupt_acid]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/fields.json
+
+
+!! 原文
+
+```json
+{
+  "id": "fd_cordev_corrupt_acid",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "corrupted acid splatter",
+      "sym": "5",
+      "color": "dark_gray",
+      "dangerous": true,
+      "effects": [
+        {
+          "effect_id": "secro_cordev_corrupt",
+          "body_part": "leg_r",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds"
+        },
+        {
+          "effect_id": "secro_cordev_corrupt",
+          "body_part": "leg_l",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds"
+        }
+      ]
+    },
+    {
+      "name": "corrupted acid streak"
+    },
+    {
+      "name": "pool of corrupted acid",
+      "color": "light_gray",
+      "effects": [
+        {
+          "effect_id": "secro_cordev_corrupt",
+          "body_part": "leg_r",
+          "min_duration": "1 seconds",
+          "max_duration": "2 seconds"
+        },
+        {
+          "effect_id": "secro_cordev_corrupt",
+          "body_part": "leg_l",
+          "min_duration": "1 seconds",
+          "max_duration": "2 seconds"
+        }
+      ]
+    }
+  ],
+  "immunity_data": {
+    "flags": [
+      "ACID_IMMUNE"
+    ]
+  },
+  "underwater_age_speedup": "2 minutes",
+  "has_acid": true,
+  "priority": 2,
+  "half_life": "2 minutes",
+  "phase": "liquid",
+  "display_field": true
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "fd_cordev_corrupt_acid",
+  "type": "field_type",
+  "intensity_levels": [
+    {
+      "name": "corrupted acid splatter",
+      "sym": "5",
+      "color": "dark_gray",
+      "dangerous": true,
+      "effects": [
+        {
+          "effect_id": "secro_cordev_corrupt",
+          "body_part": "leg_r",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds"
+        },
+        {
+          "effect_id": "secro_cordev_corrupt",
+          "body_part": "leg_l",
+          "min_duration": "1 seconds",
+          "max_duration": "1 seconds"
+        }
+      ]
+    },
+    {
+      "name": "corrupted acid streak"
+    },
+    {
+      "name": "pool of corrupted acid",
+      "color": "light_gray",
+      "effects": [
+        {
+          "effect_id": "secro_cordev_corrupt",
+          "body_part": "leg_r",
+          "min_duration": "1 seconds",
+          "max_duration": "2 seconds"
+        },
+        {
+          "effect_id": "secro_cordev_corrupt",
+          "body_part": "leg_l",
+          "min_duration": "1 seconds",
+          "max_duration": "2 seconds"
+        }
+      ]
+    }
+  ],
+  "immunity_data": {
+    "flags": [
+      "ACID_IMMUNE"
+    ]
+  },
+  "underwater_age_speedup": "2 minutes",
+  "has_acid": true,
+  "priority": 2,
+  "half_life": "2 minutes",
+  "phase": "liquid",
+  "display_field": true
+}
+```
+

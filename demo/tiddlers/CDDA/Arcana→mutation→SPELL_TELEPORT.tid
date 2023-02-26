@@ -1,0 +1,121 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→SPELL_TELEPORT
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SPELL_TELEPORT|http://cdda.aloxaf.cn/search?q=SPELL_TELEPORT]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_paragon.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "//": "ID retained, effect changed as teleport is of more limited use.",
+  "id": "SPELL_TELEPORT",
+  "name": {
+    "str": "Sign of Alteration IV"
+  },
+  "points": 4,
+  "description": "\"If your enemy seeks escape or refuge, you will learn to halt them.\"\nUnknowable forces have given you a fourth gift, that can allow you to conjure barriers of light.  (( Remember to bind the \"spellcasting\" key! ))",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_LOCKPICK2"
+  ],
+  "changes_to": [
+    "SPELL_PACIFY"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "threshreq": [
+    "THRESH_VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 400,
+  "spells_learned": [
+    [
+      "arcana_blessing_conjure_shadow_field",
+      1
+    ],
+    [
+      "arcana_blessing_conjure_lightburst",
+      1
+    ],
+    [
+      "arcana_blessing_open_lock",
+      1
+    ],
+    [
+      "arcana_blessing_wall_force",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "//": "ID retained, effect changed as teleport is of more limited use.",
+  "id": "SPELL_TELEPORT",
+  "name": {
+    "str": "改变标志IV"
+  },
+  "points": 4,
+  "description": "“如果你的敌人想要逃跑或避难，你将学会阻止他们。”\n不可知的力量给了你第四个礼物，它可以让你召唤光障。（记得绑定“施法”键！）",
+  "valid": false,
+  "purifiable": false,
+  "prereqs": [
+    "SPELL_LOCKPICK2"
+  ],
+  "changes_to": [
+    "SPELL_PACIFY"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "threshreq": [
+    "THRESH_VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 400,
+  "spells_learned": [
+    [
+      "arcana_blessing_conjure_shadow_field",
+      1
+    ],
+    [
+      "arcana_blessing_conjure_lightburst",
+      1
+    ],
+    [
+      "arcana_blessing_open_lock",
+      1
+    ],
+    [
+      "arcana_blessing_wall_force",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil"
+  ]
+}
+```
+

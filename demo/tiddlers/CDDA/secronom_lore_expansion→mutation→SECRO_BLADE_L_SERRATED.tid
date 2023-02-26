@@ -1,0 +1,129 @@
+creator: 林一二
+revision: 0
+tags: mutation secronom_lore_expansion
+title: secronom_lore_expansion→mutation→SECRO_BLADE_L_SERRATED
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SECRO_BLADE_L_SERRATED|http://cdda.aloxaf.cn/search?q=SECRO_BLADE_L_SERRATED]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Others/secro_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_BLADE_L_SERRATED",
+  "name": {
+    "str": "Serrated Bone Blade"
+  },
+  "points": -5,
+  "visibility": 8,
+  "ugliness": 8,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "Your bone blade has greatly altered, forming irregular bone outgrowths all around the surface. It is heavier and very unpleasant to the sight, but beneficial for both defense and offense.",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l"
+  ],
+  "prereqs": [
+    "SECRO_BLADE_L"
+  ],
+  "leads_to": [
+    "SECRO_BLADE_SERRATED_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      100
+    ]
+  ],
+  "rand_cut_bonus": {
+    "min": 3,
+    "max": 8
+  },
+  "rand_bash_bonus": {
+    "min": 3,
+    "max": 8
+  },
+  "armor": [
+    {
+      "parts": "arm_l",
+      "bash": 14,
+      "cut": 14,
+      "stab": 14
+    }
+  ],
+  "attackcost_modifier": 1.05,
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SECRO_BLADE_L_SERRATED",
+  "name": {
+    "str": "锯齿骨刀"
+  },
+  "points": -5,
+  "visibility": 8,
+  "ugliness": 8,
+  "mixed_effect": true,
+  "valid": false,
+  "description": "你的骨刃已经发生了很大的变化，在表面形成了不规则的骨突起。它很重，很不舒服的视线，但有益于双方的防御和进攻。",
+  "types": [
+    "HANDS"
+  ],
+  "restricts_gear": [
+    "hand_l"
+  ],
+  "prereqs": [
+    "SECRO_BLADE_L"
+  ],
+  "leads_to": [
+    "SECRO_BLADE_SERRATED_THRESHOLD"
+  ],
+  "encumbrance_always": [
+    [
+      "hand_l",
+      100
+    ]
+  ],
+  "rand_cut_bonus": {
+    "min": 3,
+    "max": 8
+  },
+  "rand_bash_bonus": {
+    "min": 3,
+    "max": 8
+  },
+  "armor": [
+    {
+      "parts": "arm_l",
+      "bash": 14,
+      "cut": 14,
+      "stab": 14
+    }
+  ],
+  "attackcost_modifier": 1.05,
+  "category": [
+    "SECRONOM_EX"
+  ]
+}
+```
+

@@ -1,0 +1,61 @@
+creator: 林一二
+revision: 0
+tags: talk_topic vamp_stuff
+title: vamp_stuff→talk_topic→TALK_VAMP_LONELY_testsdone
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_VAMP_LONELY_testsdone|http://cdda.aloxaf.cn/search?q=TALK_VAMP_LONELY_testsdone]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/NPC/v_npc_responds/Isolated/v_lo_responses.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_VAMP_LONELY_testsdone",
+  "type": "talk_topic",
+  "dynamic_line": "No, I have no more requests for you. You have helped me alot and proven me your worth. As a reward, I'll give you my mark of trust on you.",
+  "responses": [
+    {
+      "text": "Thank you for this mark... Let's go!",
+      "topic": "TALK_DONE",
+      "effect": [
+        "follow",
+        {
+          "u_add_trait": "isolatedvampmark"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_VAMP_LONELY_testsdone",
+  "type": "talk_topic",
+  "dynamic_line": "不，我没有更多的要求了。你帮了我很多，证明了你的价值。作为回报，我会给予你我的信任。",
+  "responses": [
+    {
+      "text": "谢谢你的标记，我们走吧！",
+      "topic": "TALK_DONE",
+      "effect": [
+        "follow",
+        {
+          "u_add_trait": "isolatedvampmark"
+        }
+      ]
+    }
+  ]
+}
+```
+

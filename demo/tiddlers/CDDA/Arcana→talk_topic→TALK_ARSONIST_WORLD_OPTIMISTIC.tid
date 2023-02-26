@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_ARSONIST_WORLD_OPTIMISTIC
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_ARSONIST_WORLD_OPTIMISTIC|http://cdda.aloxaf.cn/search?q=TALK_ARSONIST_WORLD_OPTIMISTIC]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_ARSONIST.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_ARSONIST_WORLD_OPTIMISTIC",
+  "responses": [
+    {
+      "text": "There are people surviving out there, at least.  Still work to be done.",
+      "topic": "TALK_ARSONIST_CF_REP_MISSION_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "npc_has_var": "sofia_refugee_convinced",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_ARSONIST_WORLD_OPTIMISTIC",
+  "responses": [
+    {
+      "text": "至少有人活下来了。还有工作要做。",
+      "topic": "TALK_ARSONIST_CF_REP_MISSION_4",
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_var": "sofia_allies_secured",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "not": {
+              "npc_has_var": "sofia_refugee_convinced",
+              "type": "mission",
+              "context": "rural_church",
+              "value": "yes"
+            }
+          },
+          {
+            "u_has_mission": "MISSION_CF_REP_4"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+

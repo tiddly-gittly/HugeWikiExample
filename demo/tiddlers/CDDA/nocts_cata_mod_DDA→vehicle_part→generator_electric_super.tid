@@ -1,0 +1,211 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→vehicle_part→generator_electric_super
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：generator_electric_super|http://cdda.aloxaf.cn/search?q=generator_electric_super]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Vehicles/c_vehicle_parts.json
+
+
+!! 原文
+
+```json
+{
+  "id": "generator_electric_super",
+  "copy-from": "vehicle_alternator",
+  "type": "vehicle_part",
+  "name": "super electric dynamo",
+  "description": "An electric motor improvised to serve as an electric generator, to be attached to an internal combustion engine.  Even being less effective like this, its power output is immense.  You would need one hell of an engine to use this as a generator!",
+  "item": "motor_super",
+  "durability": 400,
+  "power": -475000,
+  "epower": 225625,
+  "damage_modifier": 80,
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        6,
+        10
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        6,
+        10
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        6,
+        10
+      ]
+    },
+    {
+      "item": "cable",
+      "charges": [
+        20,
+        30
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 60
+  },
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "generator_electric_super",
+  "copy-from": "vehicle_alternator",
+  "type": "vehicle_part",
+  "name": "超级发电机",
+  "description": "由电动机临时改装的发电机，安装在引擎上。与正常的发电机相比，效率降低了。你需要一个超级强大的引擎才能正常发电！",
+  "item": "motor_super",
+  "durability": 400,
+  "power": -475000,
+  "epower": 225625,
+  "damage_modifier": 80,
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        6,
+        10
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        6,
+        10
+      ]
+    },
+    {
+      "item": "scrap",
+      "count": [
+        6,
+        10
+      ]
+    },
+    {
+      "item": "cable",
+      "charges": [
+        20,
+        30
+      ]
+    }
+  ],
+  "damage_reduction": {
+    "all": 60
+  },
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          5
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "removal": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ]
+      ],
+      "time": "30 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          6
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+

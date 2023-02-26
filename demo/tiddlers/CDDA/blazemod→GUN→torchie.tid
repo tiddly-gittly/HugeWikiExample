@@ -1,0 +1,153 @@
+creator: 林一二
+revision: 0
+tags: GUN blazemod
+title: blazemod→GUN→torchie
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：torchie|http://cdda.aloxaf.cn/search?q=torchie]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/guns/blob_turret.json
+
+
+!! 原文
+
+```json
+{
+  "id": "torchie",
+  "type": "GUN",
+  "name": {
+    "str": "fire puffer"
+  },
+  "//": "Need a light?",
+  "description": "A living blob turned into an autonomous weapon.  A rather picky eater, it feeds on chemicals found within gasoline.  The digested material is still highly flammable, and when launched, also activates an ignition gland located on the outer membrane.  The amorphous mass can be shaped and attached at your touch, but the weapon itself is inert without something to control it.",
+  "weight": "16331 g",
+  "volume": "4 L",
+  "to_hit": -5,
+  "bashing": 10,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "&",
+  "color": "light_red",
+  "ammo": [
+    "gasoline"
+  ],
+  "skill": "launcher",
+  "range": 12,
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 5
+  },
+  "dispersion": 450,
+  "sight_dispersion": 150,
+  "durability": 10,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "AUTO",
+      "auto",
+      3
+    ]
+  ],
+  "clip_size": 180,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "watertight": true,
+      "ammo_restriction": {
+        "gasoline": 180
+      }
+    }
+  ],
+  "ammo_effects": [
+    "INCENDIARY",
+    "FLARE",
+    "WIDE",
+    "STREAM"
+  ],
+  "flags": [
+    "NEVER_JAMS",
+    "MOUNTED_GUN"
+  ],
+  "ammo_to_fire": 20
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "torchie",
+  "type": "GUN",
+  "name": {
+    "str": "变形怪火焰炮"
+  },
+  "//": "Need a light?",
+  "description": "一只活的变形怪变成的自主武器。更加挑食的变形怪，它只会吃汽油内的化学成分。其消化产物仍然是高度易燃的，当被发射出去时，也会被位于外膜上的一个点火腺点燃。变形怪无定形的形体可以在你手中被重塑和连接，但武器本身由于没有控制而呈现惰性。",
+  "weight": "16331 g",
+  "volume": "4 L",
+  "to_hit": -5,
+  "bashing": 10,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "&",
+  "color": "light_red",
+  "ammo": [
+    "gasoline"
+  ],
+  "skill": "launcher",
+  "range": 12,
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 5
+  },
+  "dispersion": 450,
+  "sight_dispersion": 150,
+  "durability": 10,
+  "modes": [
+    [
+      "DEFAULT",
+      "semi-auto",
+      1
+    ],
+    [
+      "AUTO",
+      "auto",
+      3
+    ]
+  ],
+  "clip_size": 180,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "watertight": true,
+      "ammo_restriction": {
+        "gasoline": 180
+      }
+    }
+  ],
+  "ammo_effects": [
+    "INCENDIARY",
+    "FLARE",
+    "WIDE",
+    "STREAM"
+  ],
+  "flags": [
+    "NEVER_JAMS",
+    "MOUNTED_GUN"
+  ],
+  "ammo_to_fire": 20
+}
+```
+

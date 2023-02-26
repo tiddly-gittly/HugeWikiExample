@@ -1,0 +1,201 @@
+creator: 林一二
+revision: 0
+tags: mission_definition Arcana
+title: Arcana→mission_definition→MISSION_CF_REP_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_CF_REP_2|http://cdda.aloxaf.cn/search?q=MISSION_CF_REP_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/missiondef.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_CF_REP_2",
+  "type": "mission_definition",
+  "name": {
+    "str": "Deliver Trade Arrangements"
+  },
+  "description": "Deliver the trade arrangements to the merchant at the refugee center, along with the Golden Scales provided for the deal.  Return to Sofia with the receipt that will be provided.",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 1,
+  "value": 10000,
+  "has_generic_rewards": false,
+  "item": "cf_rep_trade_receipt",
+  "start": {
+    "effect": [
+      {
+        "u_spawn_item": "cf_rep_trade_arrangement"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 20
+      }
+    ],
+    "assign_mission_target": {
+      "om_terrain": "evac_center_18",
+      "om_special": "evac_center",
+      "must_see": true,
+      "reveal_radius": 1
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_REP_3",
+  "dialogue": {
+    "describe": "Odin, guide my hand…",
+    "offer": "This should be a simple matter, though I hope you'll find the journey tolerable.  I have occasionally visited the local refugee center to trade for essential tools and supplies, but I will be needed here for the time being, and the others have been busy gathering supplies and continuing construction.  We have arrangements made for delivery of supplies, but every so often we have to send inventory of what we need and what we have to offer.  Could you simply deliver this to their merchant, and return the receipt they usually write up?",
+    "accepted": "Thank you.  The merchant requires an advance payment, surplus scavenged supplies or precious metal.  This should be sufficient to complete the arrangement, we use these to set aside measured amounts of material for repairing our equipment.  With your help we'll be able to focus our efforts on making this place livable, and once the trade is settled that'll give us more breathing room.  Hopefully by the time supplies start running low again, we'll have a few more of us around to take care of ourselves.",
+    "rejected": "Please, whenever you're able to speak to me again, we can't rely exclusively on scavenging for very long, as few people we have to spare for the task.",
+    "advice": "If you can talk them into accepting a lower rate for the initial payment, you can keep what's left over.  Not many people see value in gold now, but it has some uses all the same.  The repair blanks we use are stamped with a known weight and purity, which is better than any random scrap.",
+    "inquire": "Has the center agreed to our offer?  They usually provide a receipt confirming the arrangements have been made.",
+    "success": "Thank you.  We're a bit closer to having the area built up into a usable sanctum.  I just hope that there are more of us out there, that heed our call.  I can spare a bit more for your trouble, as well.",
+    "success_lie": "What do you think you're trying to pull?",
+    "failure": "But how…"
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 4
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_2_a"
+            ],
+            "x": 3,
+            "y": 3
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_1_roof",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_2_b"
+            ],
+            "x": 3,
+            "y": 3
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_2_c"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_CF_REP_2",
+  "type": "mission_definition",
+  "name": {
+    "str": "提供贸易安排"
+  },
+  "description": "向难民中心的商人提供贸易安排表，以及交易所需的黄金鳞片。将提供的收据送还索非亚。",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 1,
+  "value": 10000,
+  "has_generic_rewards": false,
+  "item": "cf_rep_trade_receipt",
+  "start": {
+    "effect": [
+      {
+        "u_spawn_item": "cf_rep_trade_arrangement"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 20
+      }
+    ],
+    "assign_mission_target": {
+      "om_terrain": "evac_center_18",
+      "om_special": "evac_center",
+      "must_see": true,
+      "reveal_radius": 1
+    }
+  },
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "followup": "MISSION_CF_REP_3",
+  "dialogue": {
+    "describe": "奥丁，牵着我的手…",
+    "offer": "这应该是件简单的事，不过我希望你会觉得这次旅行可以忍受。我偶尔会到当地的难民中心去交换必要的工具和物资，但我暂时需要在这里，其他人则忙于收集物资和继续施工。我们已经安排好了供给品的运送，但有时我们必须把我们所需要的和我们必须提供的东西的清单寄去。你能把这个交给他们的商人，然后把他们通常写的收据还给他们吗？",
+    "accepted": "非常感谢。商人要求预付款，多余的清仓用品或贵重金属。这应该足以完成安排，我们用这些来留出一定数量的材料来修理我们的设备。有了你们的帮助，我们就能集中精力使这个地方适合居住，一旦交易达成，我们就有了更大的喘息空间。希望在物资再次短缺的时候，我们会有更多的人来照顾自己。",
+    "rejected": "拜托，只要你能再跟我说话，我们不能长期只依赖于拾荒，因为很少有人能抽出时间来完成这项任务。",
+    "advice": "如果你能说服他们接受较低的首期付款利率，你就可以保留剩下的部分。现在没有多少人看到黄金的价值，但它有一些相同的用途。我们使用的修复毛坯上印有已知的重量和纯度，这比任何随机废料都要好。",
+    "inquire": "中心同意我们的提议了吗？他们通常会提供一张收据，确认已经安排好了。",
+    "success": "非常感谢。我们离把这个地区建成一个可用的避难所有点近了。我只希望我们中有更多人听从我们的呼吁。我也可以为你的麻烦多留点钱。",
+    "success_lie": "你觉得你想拉什么？",
+    "failure": "但是如何…"
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_effect": "cf_mission_1",
+        "duration": "PERMANENT"
+      },
+      {
+        "u_spawn_item": "CF_golden_scale",
+        "count": 4
+      }
+    ],
+    "update_mapgen": [
+      {
+        "om_terrain": "cf_church_1",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_2_a"
+            ],
+            "x": 3,
+            "y": 3
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_1_roof",
+        "place_nested": [
+          {
+            "chunks": [
+              "cf_church_upgrade_2_b"
+            ],
+            "x": 3,
+            "y": 3
+          }
+        ]
+      },
+      {
+        "om_terrain": "cf_church_3",
+        "mapgen_update_id": "cf_church_upgrade_2_c"
+      }
+    ]
+  }
+}
+```
+

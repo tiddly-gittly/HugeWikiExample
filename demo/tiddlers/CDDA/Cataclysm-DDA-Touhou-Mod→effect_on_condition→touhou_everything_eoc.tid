@@ -1,0 +1,105 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→effect_on_condition→touhou_everything_eoc
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：touhou_everything_eoc|http://cdda.aloxaf.cn/search?q=touhou_everything_eoc]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_eocs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "touhou_everything_eoc",
+  "type": "effect_on_condition",
+  "eoc_type": "SCENARIO_SPECIFIC",
+  "effect": [
+    {
+      "run_eocs": [
+        {
+          "id": "vampire_bloodthirst_start",
+          "condition": {
+            "u_has_trait": "VAMPIRE_SPECIES"
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "vitamin",
+                  "name": "hblood_vitamin"
+                },
+                "=",
+                {
+                  "arithmetic": [
+                    {
+                      "const": 648
+                    },
+                    "+",
+                    {
+                      "rand": 144
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "touhou_everything_eoc",
+  "type": "effect_on_condition",
+  "eoc_type": "SCENARIO_SPECIFIC",
+  "effect": [
+    {
+      "run_eocs": [
+        {
+          "id": "vampire_bloodthirst_start",
+          "condition": {
+            "u_has_trait": "VAMPIRE_SPECIES"
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "vitamin",
+                  "name": "hblood_vitamin"
+                },
+                "=",
+                {
+                  "arithmetic": [
+                    {
+                      "const": 648
+                    },
+                    "+",
+                    {
+                      "rand": 144
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+

@@ -1,0 +1,77 @@
+creator: 林一二
+revision: 0
+tags: TOOL secronom
+title: secronom→TOOL→veinhole_gap_act
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：veinhole_gap_act|http://cdda.aloxaf.cn/search?q=veinhole_gap_act]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_ammo_zombie.json
+
+
+!! 原文
+
+```json
+{
+  "id": "veinhole_gap_act",
+  "type": "TOOL",
+  "name": {
+    "str": "writhing tendrils"
+  },
+  "description": "The veinhole's surrounding tentacles, now withdraws from excess damage.",
+  "volume": "200 L",
+  "weight": "200000 g",
+  "to_hit": -2,
+  "bashing": 1,
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "0",
+  "color": "red",
+  "countdown_interval": 1,
+  "countdown_destroy": true,
+  "countdown_action": {
+    "type": "cast_spell",
+    "spell_id": "mon_sflesh_entrance_open",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "veinhole_gap_act",
+  "type": "TOOL",
+  "name": {
+    "str": "扭动的触手"
+  },
+  "description": "脉孔附近的触手，现在由于受到过量的伤害而缩回。",
+  "volume": "200 L",
+  "weight": "200000 g",
+  "to_hit": -2,
+  "bashing": 1,
+  "material": [
+    "secro_null"
+  ],
+  "symbol": "0",
+  "color": "red",
+  "countdown_interval": 1,
+  "countdown_destroy": true,
+  "countdown_action": {
+    "type": "cast_spell",
+    "spell_id": "mon_sflesh_entrance_open",
+    "no_fail": true,
+    "level": 0
+  }
+}
+```
+

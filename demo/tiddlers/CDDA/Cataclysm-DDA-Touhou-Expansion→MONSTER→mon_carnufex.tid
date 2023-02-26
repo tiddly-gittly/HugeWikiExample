@@ -1,0 +1,189 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_carnufex
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_carnufex|http://cdda.aloxaf.cn/search?q=mon_carnufex]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_reptile.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_carnufex",
+  "type": "MONSTER",
+  "name": {
+    "str_sp": "carnufex"
+  },
+  "description": "This curious animal looks like a crocodile, but it's leaner, bipedal and it can run.  It also has two functional, if short, arms to hold prey while it takes chunks from it.",
+  "volume": "150 L",
+  "weight": "150 kg",
+  "default_faction": "touhou_crocodilelike_large",
+  "bodytype": "bear",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "REPTILE"
+  ],
+  "harvest": "reptile_terrestrial_large_leather",
+  "hp": 115,
+  "speed": 145,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ċ",
+  "looks_like": "mon_gator",
+  "color": "dark_gray_green",
+  "aggression": 25,
+  "morale": 50,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 3,
+  "armor_cut": 4,
+  "armor_stab": 2,
+  "armor_bullet": 4,
+  "vision_night": 5,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "reproduction": {
+    "baby_egg": "egg_carnufex",
+    "baby_count": 4,
+    "baby_timer": 30
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "HURT"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      80
+    ],
+    [
+      "GRAB",
+      20
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS"
+  ],
+  "//": "Based on Carnufex sp.. No reproductive data"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_carnufex",
+  "type": "MONSTER",
+  "name": {
+    "str_sp": "carnufex"
+  },
+  "description": "This curious animal looks like a crocodile, but it's leaner, bipedal and it can run.  It also has two functional, if short, arms to hold prey while it takes chunks from it.",
+  "volume": "150 L",
+  "weight": "150 kg",
+  "default_faction": "touhou_crocodilelike_large",
+  "bodytype": "bear",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "REPTILE"
+  ],
+  "harvest": "reptile_terrestrial_large_leather",
+  "hp": 115,
+  "speed": 145,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ċ",
+  "looks_like": "mon_gator",
+  "color": "dark_gray_green",
+  "aggression": 25,
+  "morale": 50,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 3,
+  "armor_cut": 4,
+  "armor_stab": 2,
+  "armor_bullet": 4,
+  "vision_night": 5,
+  "path_settings": {
+    "max_dist": 10
+  },
+  "reproduction": {
+    "baby_egg": "egg_carnufex",
+    "baby_count": 4,
+    "baby_timer": 30
+  },
+  "baby_flags": [
+    "SPRING",
+    "SUMMER",
+    "AUTUMN",
+    "WINTER"
+  ],
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "HURT"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      80
+    ],
+    [
+      "GRAB",
+      20
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "SEES",
+    "SMELLS"
+  ],
+  "//": "Based on Carnufex sp.. No reproductive data"
+}
+```
+

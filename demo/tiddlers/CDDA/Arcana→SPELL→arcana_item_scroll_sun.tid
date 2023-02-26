@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_item_scroll_sun
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_item_scroll_sun|http://cdda.aloxaf.cn/search?q=arcana_item_scroll_sun]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_item.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_item_scroll_sun",
+  "type": "SPELL",
+  "name": {
+    "str": "Solar Blessing"
+  },
+  "description": "Massive wave of light, sunlight event, adrenaline and morale.",
+  "message": "\"Let purity guide your hand and your heart.\"  A brilliant radiance envelops your surroundings, piercing the heavens as a surge of power flows through your body!",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_sun_event",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_sun_adrenaline",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_sun_timewarp",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_aoe": 24,
+  "max_aoe": 24,
+  "min_duration": 240000,
+  "max_duration": 480000,
+  "field_id": "fd_veil_light",
+  "field_chance": 1,
+  "min_field_intensity": 3,
+  "max_field_intensity": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_item_scroll_sun",
+  "type": "SPELL",
+  "name": {
+    "str": "日之祝福"
+  },
+  "description": "Massive wave of light, sunlight event, adrenaline and morale.",
+  "message": "“让圣灵指引你的手和你的心。”一道璀璨的光芒笼罩着你的周围，一股力量流过你的身体，而后直冲云霄！",
+  "flags": [
+    "SILENT",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE",
+    "NO_HANDS",
+    "NO_LEGS",
+    "RANDOM_DURATION"
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_item_scroll_sun_event",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_sun_adrenaline",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_sun_timewarp",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_item_scroll_leftover",
+      "hit_self": false
+    }
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "min_aoe": 24,
+  "max_aoe": 24,
+  "min_duration": 240000,
+  "max_duration": 480000,
+  "field_id": "fd_veil_light",
+  "field_chance": 1,
+  "min_field_intensity": 3,
+  "max_field_intensity": 1
+}
+```
+

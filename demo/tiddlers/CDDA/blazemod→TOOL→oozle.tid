@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: TOOL blazemod
+title: blazemod→TOOL→oozle
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：oozle|http://cdda.aloxaf.cn/search?q=oozle]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/tools/blob_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "oozle",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "oozing mass"
+  },
+  "description": "An amorphous mass that has undergone a significant growth.  In addition to the increased amount of goo and sinuous filaments, it seems to have started developing other internal structures.  Like its smaller counterpart, it can be shaped into various structures; albeit with significantly greater tensile strength due to the increased number of supporting filaments.  You believe you can split it apart with enough force.",
+  "weight": "16262 g",
+  "volume": "15 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "green",
+  "ammo": [
+    "bfeed"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "bfeed": 250
+      }
+    }
+  ],
+  "charges_per_use": 250,
+  "qualities": [
+    [
+      "JACK",
+      4
+    ]
+  ],
+  "use_action": {
+    "target": "oozle_act",
+    "msg": "You fumble as the blob starts to multiply rapidly!",
+    "target_charges": 5,
+    "active": true,
+    "moves": 250,
+    "type": "transform"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "oozle",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "软泥变形怪"
+  },
+  "description": "一团增长显著的无定形变形怪。除了粘液量及体内纤维的增加，它还似乎开始长出其他内部结构。尽管由于其体内增加的支持纤维有着显然更大的拉伸强度，但与它较小的同类一样，它依旧可以被你塑造成各种结构形状。你相信你可以用足够的力量把它分开。",
+  "weight": "16262 g",
+  "volume": "15 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "green",
+  "ammo": [
+    "bfeed"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "bfeed": 250
+      }
+    }
+  ],
+  "charges_per_use": 250,
+  "qualities": [
+    [
+      "JACK",
+      4
+    ]
+  ],
+  "use_action": {
+    "target": "oozle_act",
+    "msg": "变形怪抱住你的手，开始快速繁殖起来，让你变得笨手笨脚。",
+    "target_charges": 5,
+    "active": true,
+    "moves": 250,
+    "type": "transform"
+  }
+}
+```
+

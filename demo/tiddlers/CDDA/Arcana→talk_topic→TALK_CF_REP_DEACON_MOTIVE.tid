@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_CF_REP_DEACON_MOTIVE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_CF_REP_DEACON_MOTIVE|http://cdda.aloxaf.cn/search?q=TALK_CF_REP_DEACON_MOTIVE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_CF_REP.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_DEACON_MOTIVE",
+  "dynamic_line": {
+    "u_has_trait": "PROF_SANGUINE",
+    "yes": "That young man knows nothing of our history.  I fear he may be too trusting, to have asked for your assistance.  I will give you the benefit of the doubt for now, but if I find that you've harmed him, I will slay you myself.  Understood?",
+    "no": "The deacon of this church does not know of our nature, unlike the priest who would normally be attending this place.  If you get the opportunity to visit him again, I'm sure he'll be relieved to know that we're still holding on."
+  },
+  "responses": [
+    {
+      "text": "…",
+      "switch": true,
+      "effect": {
+        "u_add_effect": "sofia_motive_explained",
+        "duration": "PERMANENT"
+      },
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "I see.",
+      "switch": true,
+      "default": true,
+      "effect": {
+        "u_add_effect": "sofia_motive_explained",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_CF_REP_DEACON_MOTIVE",
+  "dynamic_line": {
+    "u_has_trait": "PROF_SANGUINE",
+    "yes": "那个年轻人对我们的历史一无所知。我怕他可能是太轻信你才请你帮忙的。现在我姑且相信你，但如果我发现你伤害了他，我会亲手杀了你。明白？",
+    "no": "这个教堂的执事不了解我们的本性，不像通常会来这里的牧师。如果你有机会再去看望他，我相信他知道我们还在坚持，他会松一口气的。"
+  },
+  "responses": [
+    {
+      "text": "…",
+      "switch": true,
+      "effect": {
+        "u_add_effect": "sofia_motive_explained",
+        "duration": "PERMANENT"
+      },
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "topic": "TALK_CF_REP"
+    },
+    {
+      "text": "我懂了。",
+      "switch": true,
+      "default": true,
+      "effect": {
+        "u_add_effect": "sofia_motive_explained",
+        "duration": "PERMANENT"
+      },
+      "topic": "TALK_CF_REP"
+    }
+  ]
+}
+```
+

@@ -1,0 +1,185 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Arcana
+title: Arcana→MONSTER→mon_mech_arcana
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_mech_arcana|http://cdda.aloxaf.cn/search?q=mon_mech_arcana]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monsters.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_mech_arcana",
+  "type": "MONSTER",
+  "name": {
+    "str": "rebuilt Anomaly Recon Mech"
+  },
+  "description": "A hulking mass of parts running off anomalous technology using the power of the Beyond, tamed and reborn to serve humanity once again.  Equipped with an exotic laser weapon and retaining some of the tricks its autonomous version possessed, it's ineffective against certain anomalous monsters and robots, but fast and deadly in the right hands.  A protective barrier also shields the pilot from exposure to fire, acid, or toxic gas.  Powered by a completely bespoke essence amplification cell, which can act like a UPS while installed in this mech.",
+  "default_faction": "mech_bot",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 10,
+  "volume": "500 L",
+  "//": "Intentionally abnormally lightweight while active, 1% of what its actual weight should be.",
+  "weight": "7500 g",
+  "hp": 1000,
+  "speed": 150,
+  "material": [
+    "steel",
+    "essencemat"
+  ],
+  "symbol": "M",
+  "color": "cyan",
+  "looks_like": "mon_mech_recon",
+  "aggression": -50,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 7,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    },
+    {
+      "damage_type": "cold",
+      "amount": 5
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 25,
+  "armor_cut": 35,
+  "armor_stab": 30,
+  "armor_bullet": 40,
+  "armor_fire": 20,
+  "armor_acid": 20,
+  "luminance": 150,
+  "vision_night": 50,
+  "mech_str_bonus": 15,
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "mech_battery": "arcana_mech_power_cell",
+  "mech_weapon": "arcana_mech_laser",
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "MECH_RECON_VISION",
+    "HEARS",
+    "MILITARY_MECH",
+    "BASHES",
+    "PUSH_MON",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "FLIES",
+    "NOHEAD",
+    "NO_BREATHE",
+    "RIDEABLE_MECH",
+    "HARDTOSHOOT",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_mech_arcana",
+  "type": "MONSTER",
+  "name": {
+    "str": "回收的异常侦察机甲"
+  },
+  "description": "一堆庞大的零件，用超自然的技术，驯服并重生，再次为人类服务。它装备了一种奇特的激光武器，保留了它的自主版本所拥有的一些功能，对某些异常的怪物和机器人无效，但在右手中速度快且致命。一个保护屏障也可以保护飞行员不暴露在火、酸或有毒气体中。由一个完全定制的本质放大细胞，它可以像一个不间断电源，而安装在这个机械。",
+  "default_faction": "mech_bot",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 10,
+  "volume": "500 L",
+  "//": "Intentionally abnormally lightweight while active, 1% of what its actual weight should be.",
+  "weight": "7500 g",
+  "hp": 1000,
+  "speed": 150,
+  "material": [
+    "steel",
+    "essencemat"
+  ],
+  "symbol": "M",
+  "color": "cyan",
+  "looks_like": "mon_mech_recon",
+  "aggression": -50,
+  "morale": 100,
+  "melee_skill": 8,
+  "melee_dice": 4,
+  "melee_dice_sides": 7,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 2
+    },
+    {
+      "damage_type": "cold",
+      "amount": 5
+    }
+  ],
+  "dodge": 4,
+  "armor_bash": 25,
+  "armor_cut": 35,
+  "armor_stab": 30,
+  "armor_bullet": 40,
+  "armor_fire": 20,
+  "armor_acid": 20,
+  "luminance": 150,
+  "vision_night": 50,
+  "mech_str_bonus": 15,
+  "regenerates": 1,
+  "regeneration_modifiers": [
+    [
+      "dazed",
+      -1
+    ]
+  ],
+  "mech_battery": "arcana_mech_power_cell",
+  "mech_weapon": "arcana_mech_laser",
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "flags": [
+    "SEES",
+    "MECH_RECON_VISION",
+    "HEARS",
+    "MILITARY_MECH",
+    "BASHES",
+    "PUSH_MON",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "FLIES",
+    "NOHEAD",
+    "NO_BREATHE",
+    "RIDEABLE_MECH",
+    "HARDTOSHOOT",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_2"
+  ]
+}
+```
+

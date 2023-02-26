@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: technique vamp_stuff
+title: vamp_stuff→technique→VAMP_TRICK
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：VAMP_TRICK|http://cdda.aloxaf.cn/search?q=VAMP_TRICK]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/vamp_stuff/Modification_Files/Others/v_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "type": "technique",
+  "id": "VAMP_TRICK",
+  "name": "Vampire's Trick",
+  "description": "Trips enemy, down 3.",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": false,
+  "weighting": 1,
+  "down_dur": 3,
+  "messages": [
+    "%s was tripped",
+    "<npcname> tripped %s"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "technique",
+  "id": "VAMP_TRICK",
+  "name": "吸血鬼的诡计",
+  "description": "绊倒敌人，持续3回合。",
+  "unarmed_allowed": false,
+  "melee_allowed": true,
+  "crit_tec": false,
+  "weighting": 1,
+  "down_dur": 3,
+  "messages": [
+    "%s被暗算了",
+    "<npcname>暗算了%s"
+  ],
+  "mult_bonuses": [
+    {
+      "stat": "movecost",
+      "scale": 0.75
+    },
+    {
+      "stat": "damage",
+      "type": "bash",
+      "scaling-stat": "str",
+      "scale": 1
+    }
+  ]
+}
+```
+

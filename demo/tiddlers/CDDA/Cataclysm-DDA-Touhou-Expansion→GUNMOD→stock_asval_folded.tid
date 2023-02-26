@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: GUNMOD Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→GUNMOD→stock_asval_folded
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：stock_asval_folded|http://cdda.aloxaf.cn/search?q=stock_asval_folded]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/items/gunmod/thex_stock.json
+
+
+!! 原文
+
+```json
+{
+  "id": "stock_asval_folded",
+  "type": "GUNMOD",
+  "name": {
+    "str": "AS Val stock (folded)",
+    "str_pl": "AS Val stocks (folded)"
+  },
+  "copy-from": "stock_asval_unfolded",
+  "description": "A folded AS Val stock.  Currently folded, reducing the size, at the cost of also reducing handling.",
+  "use_action": {
+    "target": "stock_asval_unfolded",
+    "type": "transform",
+    "msg": "You unfold the stock.",
+    "menu_text": "Unfold",
+    "moves": 200
+  },
+  "handling_modifier": -10,
+  "flags": [
+    "FOLDED_STOCK"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "stock_asval_folded",
+  "type": "GUNMOD",
+  "name": {
+    "str": "AS Val stock (folded)",
+    "str_pl": "AS Val stocks (folded)"
+  },
+  "copy-from": "stock_asval_unfolded",
+  "description": "A folded AS Val stock.  Currently folded, reducing the size, at the cost of also reducing handling.",
+  "use_action": {
+    "target": "stock_asval_unfolded",
+    "type": "transform",
+    "msg": "You unfold the stock.",
+    "menu_text": "摊开",
+    "moves": 200
+  },
+  "handling_modifier": -10,
+  "flags": [
+    "FOLDED_STOCK"
+  ]
+}
+```
+

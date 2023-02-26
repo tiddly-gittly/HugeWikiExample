@@ -1,0 +1,675 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[10]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/Flesh/flesh_island.json
+
+
+!! 原文
+
+```json
+{
+  "method": "json",
+  "object": {
+    "fill_ter": "t_dirt",
+    "rows": [
+      "~~~~~~~~____............",
+      "~~~~~~~~~____...........",
+      "~~~~~~~~~____...........",
+      "~~~~~~~~~~____..........",
+      "~~~~~~~~~~____..........",
+      "~~~~~~~~~~____..........",
+      "~~_~~~~~~~____..........",
+      "____~~~~~~~____.........",
+      "_____~~~~~~____.........",
+      "______~~~_____..........",
+      "__.._________...........",
+      "....._______............",
+      ".....______.............",
+      "......___...............",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "flesh_island_edge"
+    ]
+  },
+  "om_terrain": [
+    "flesh_island_vfaraway_curve"
+  ],
+  "type": "mapgen",
+  "weight": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Doctor's Office",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 200,
+  "object": {
+    "fill_ter": "t_secro_dirt_flesh",
+    "rows": [
+      "    ~~                  ",
+      "    ~~                  ",
+      " #0#::#0###########0### ",
+      " #y......YYYt#YYYoeccS# ",
+      " #ccccc.....Y#.......c0 ",
+      " #..Wrc...t.Y#......ht# ",
+      " 0..........Y#CtT...ht# ",
+      " ######..########!##### ",
+      " #&...+............+.I# ",
+      " #r..S#............#.I# ",
+      " #######!########!##### ",
+      " #S.ol#...#lo.S#.....f# ",
+      " #....!...!....#.hh..f# ",
+      " 0...t#...#t...#.ddd..0 ",
+      " #.W.B#...#B.W.#yrA..o# ",
+      " #######!############## ",
+      "  #u!...........X....H# ",
+      "  ####+###+####5#....H# ",
+      "    #c..#....c###OOO.H# ",
+      "    #S..'.?/..c######## ",
+      "    #S..#.....c#4       ",
+      "    ############        ",
+      "                        ",
+      "                        "
+    ],
+    "palettes": [
+      "secro_office_doctor_flesh"
+    ],
+    "terrain": {
+      "?": "t_secro_floor_flesh",
+      "/": "t_secro_floor_flesh",
+      "Y": "t_secro_floor_flesh",
+      "A": "t_secro_floor_flesh",
+      "R": "t_secro_floor_flesh",
+      "'": "t_door_glass_o"
+    },
+    "furniture": {
+      "?": "f_autodoc",
+      "/": "f_autodoc_couch",
+      "Y": "f_sofa",
+      "T": "f_table",
+      "A": "f_armchair",
+      "R": "f_trashcan"
+    },
+    "computers": {
+      "5": {
+        "name": "Medical Supply Access",
+        "security": 2,
+        "options": [
+          {
+            "name": "Unlock Door",
+            "action": "unlock"
+          }
+        ],
+        "failures": [
+          {
+            "action": "shutdown"
+          },
+          {
+            "action": "alarm"
+          }
+        ]
+      }
+    },
+    "items": {
+      "B": {
+        "item": "hospital_bed",
+        "chance": 60
+      },
+      "R": {
+        "item": "trash",
+        "chance": 50
+      },
+      "o": {
+        "item": "doctors_books",
+        "chance": 60
+      },
+      "e": {
+        "item": "fridge",
+        "chance": 80,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      "C": {
+        "item": "dresser",
+        "chance": 75
+      },
+      "O": {
+        "item": "bionics",
+        "chance": 40
+      },
+      "T": {
+        "item": "office_breakroom",
+        "chance": 80
+      },
+      "f": {
+        "item": "office_paper",
+        "chance": 90
+      },
+      "H": [
+        {
+          "item": "harddrugs",
+          "chance": 60
+        },
+        {
+          "item": "gear_medical",
+          "chance": 60,
+          "repeat": [
+            1,
+            3
+          ]
+        },
+        {
+          "item": "drugs_analgesic",
+          "chance": 60,
+          "repeat": [
+            1,
+            3
+          ]
+        },
+        {
+          "item": "drugs_rare",
+          "chance": 60
+        },
+        {
+          "item": "surgery",
+          "chance": 60
+        }
+      ]
+    },
+    "place_loot": [
+      {
+        "group": "waitingroom",
+        "x": 12,
+        "y": 3,
+        "chance": 70,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "waitingroom",
+        "x": 10,
+        "y": 5,
+        "chance": 70,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "dining",
+        "x": 21,
+        "y": [
+          5,
+          6
+        ],
+        "chance": 65,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "office",
+        "x": [
+          17,
+          19
+        ],
+        "y": 13,
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "cleaning",
+        "x": 21,
+        "y": [
+          8,
+          9
+        ],
+        "chance": 70,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "surgery",
+        "x": 14,
+        "y": [
+          19,
+          20
+        ],
+        "chance": 70,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "gear_medical",
+        "x": 14,
+        "y": [
+          19,
+          20
+        ],
+        "chance": 70,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "alcohol",
+        "x": 21,
+        "y": 11,
+        "chance": 70
+      },
+      {
+        "group": "magazines",
+        "x": 17,
+        "y": 3,
+        "chance": 90,
+        "repeat": [
+          2,
+          8
+        ]
+      },
+      {
+        "item": "microwave",
+        "x": 21,
+        "y": 4,
+        "chance": 85
+      },
+      {
+        "item": "laptop",
+        "x": 4,
+        "y": 4,
+        "chance": 85
+      },
+      {
+        "item": "television",
+        "x": 15,
+        "y": 6,
+        "chance": 95
+      },
+      {
+        "item": "soap",
+        "x": 5,
+        "y": 18,
+        "chance": 95
+      }
+    ],
+    "vehicles": {
+      "W": {
+        "vehicle": "swivel_chair",
+        "chance": 100,
+        "status": 1
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Doctor's Office",
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "s_shop_flesh"
+  ],
+  "weight": 200,
+  "object": {
+    "fill_ter": "t_secro_dirt_flesh",
+    "rows": [
+      "    ~~                  ",
+      "    ~~                  ",
+      " #0#::#0###########0### ",
+      " #y......YYYt#YYYoeccS# ",
+      " #ccccc.....Y#.......c0 ",
+      " #..Wrc...t.Y#......ht# ",
+      " 0..........Y#CtT...ht# ",
+      " ######..########!##### ",
+      " #&...+............+.I# ",
+      " #r..S#............#.I# ",
+      " #######!########!##### ",
+      " #S.ol#...#lo.S#.....f# ",
+      " #....!...!....#.hh..f# ",
+      " 0...t#...#t...#.ddd..0 ",
+      " #.W.B#...#B.W.#yrA..o# ",
+      " #######!############## ",
+      "  #u!...........X....H# ",
+      "  ####+###+####5#....H# ",
+      "    #c..#....c###OOO.H# ",
+      "    #S..'.?/..c######## ",
+      "    #S..#.....c#4       ",
+      "    ############        ",
+      "                        ",
+      "                        "
+    ],
+    "palettes": [
+      "secro_office_doctor_flesh"
+    ],
+    "terrain": {
+      "?": "t_secro_floor_flesh",
+      "/": "t_secro_floor_flesh",
+      "Y": "t_secro_floor_flesh",
+      "A": "t_secro_floor_flesh",
+      "R": "t_secro_floor_flesh",
+      "'": "t_door_glass_o"
+    },
+    "furniture": {
+      "?": "f_autodoc",
+      "/": "f_autodoc_couch",
+      "Y": "f_sofa",
+      "T": "f_table",
+      "A": "f_armchair",
+      "R": "f_trashcan"
+    },
+    "computers": {
+      "5": {
+        "name": "Medical Supply Access",
+        "security": 2,
+        "options": [
+          {
+            "name": "Unlock Door",
+            "action": "unlock"
+          }
+        ],
+        "failures": [
+          {
+            "action": "shutdown"
+          },
+          {
+            "action": "alarm"
+          }
+        ]
+      }
+    },
+    "items": {
+      "B": {
+        "item": "hospital_bed",
+        "chance": 60
+      },
+      "R": {
+        "item": "trash",
+        "chance": 50
+      },
+      "o": {
+        "item": "doctors_books",
+        "chance": 60
+      },
+      "e": {
+        "item": "fridge",
+        "chance": 80,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      "C": {
+        "item": "dresser",
+        "chance": 75
+      },
+      "O": {
+        "item": "bionics",
+        "chance": 40
+      },
+      "T": {
+        "item": "office_breakroom",
+        "chance": 80
+      },
+      "f": {
+        "item": "office_paper",
+        "chance": 90
+      },
+      "H": [
+        {
+          "item": "harddrugs",
+          "chance": 60
+        },
+        {
+          "item": "gear_medical",
+          "chance": 60,
+          "repeat": [
+            1,
+            3
+          ]
+        },
+        {
+          "item": "drugs_analgesic",
+          "chance": 60,
+          "repeat": [
+            1,
+            3
+          ]
+        },
+        {
+          "item": "drugs_rare",
+          "chance": 60
+        },
+        {
+          "item": "surgery",
+          "chance": 60
+        }
+      ]
+    },
+    "place_loot": [
+      {
+        "group": "waitingroom",
+        "x": 12,
+        "y": 3,
+        "chance": 70,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "waitingroom",
+        "x": 10,
+        "y": 5,
+        "chance": 70,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "dining",
+        "x": 21,
+        "y": [
+          5,
+          6
+        ],
+        "chance": 65,
+        "repeat": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "office",
+        "x": [
+          17,
+          19
+        ],
+        "y": 13,
+        "chance": 80,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "cleaning",
+        "x": 21,
+        "y": [
+          8,
+          9
+        ],
+        "chance": 70,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "surgery",
+        "x": 14,
+        "y": [
+          19,
+          20
+        ],
+        "chance": 70,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "gear_medical",
+        "x": 14,
+        "y": [
+          19,
+          20
+        ],
+        "chance": 70,
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "group": "alcohol",
+        "x": 21,
+        "y": 11,
+        "chance": 70
+      },
+      {
+        "group": "magazines",
+        "x": 17,
+        "y": 3,
+        "chance": 90,
+        "repeat": [
+          2,
+          8
+        ]
+      },
+      {
+        "item": "microwave",
+        "x": 21,
+        "y": 4,
+        "chance": 85
+      },
+      {
+        "item": "laptop",
+        "x": 4,
+        "y": 4,
+        "chance": 85
+      },
+      {
+        "item": "television",
+        "x": 15,
+        "y": 6,
+        "chance": 95
+      },
+      {
+        "item": "soap",
+        "x": 5,
+        "y": 18,
+        "chance": 95
+      }
+    ],
+    "vehicles": {
+      "W": {
+        "vehicle": "swivel_chair",
+        "chance": 100,
+        "status": 1
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "object": {
+    "fill_ter": "t_dirt",
+    "rows": [
+      "~~~~~~~~____............",
+      "~~~~~~~~~____...........",
+      "~~~~~~~~~____...........",
+      "~~~~~~~~~~____..........",
+      "~~~~~~~~~~____..........",
+      "~~~~~~~~~~____..........",
+      "~~_~~~~~~~____..........",
+      "____~~~~~~~____.........",
+      "_____~~~~~~____.........",
+      "______~~~_____..........",
+      "__.._________...........",
+      "....._______............",
+      ".....______.............",
+      "......___...............",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "palettes": [
+      "flesh_island_edge"
+    ]
+  },
+  "om_terrain": [
+    "flesh_island_vfaraway_curve"
+  ],
+  "type": "mapgen",
+  "weight": 1000
+}
+```
+

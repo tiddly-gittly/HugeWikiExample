@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: SPELL Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→SPELL→kaenbyou_vssummon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：kaenbyou_vssummon|http://cdda.aloxaf.cn/search?q=kaenbyou_vssummon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/spells/touhou_spells_kaenbyou.json
+
+
+!! 原文
+
+```json
+{
+  "id": "kaenbyou_vssummon",
+  "type": "SPELL",
+  "name": {
+    "str": "Summon: Vengeful spirit"
+  },
+  "description": "Summon Vengeful spirits that follow you around.  They will happily help you in battle, either passively by attacking nearby enemies or as resource for more spells.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "effect": "summon",
+  "effect_str": "mon_vengeful_spirit_kaenbyou",
+  "shape": "blast",
+  "min_damage": 3,
+  "max_damage": 12,
+  "damage_increment": 1,
+  "min_range": 4,
+  "max_range": 4,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "min_duration": 1000,
+  "max_duration": 3600,
+  "duration_increment": 266,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS"
+  ],
+  "//": "The final spell should cost a 'negative crystallized soul' item per cast (a sort of catalyst for summoning the onryou), spawning # of onryou per level, simultaneously and randomly placed around Kaenbyou. The spell should cost a very small amount of mana (basically just the trigger). The real cost of the spell is transforming the item from a yet unimplemented drop from humans (any kind)"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "kaenbyou_vssummon",
+  "type": "SPELL",
+  "name": {
+    "str": "Summon: Vengeful spirit"
+  },
+  "description": "Summon Vengeful spirits that follow you around.  They will happily help you in battle, either passively by attacking nearby enemies or as resource for more spells.",
+  "spell_class": "NONE",
+  "valid_targets": [
+    "ground",
+    "self"
+  ],
+  "effect": "summon",
+  "effect_str": "mon_vengeful_spirit_kaenbyou",
+  "shape": "blast",
+  "min_damage": 3,
+  "max_damage": 12,
+  "damage_increment": 1,
+  "min_range": 4,
+  "max_range": 4,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "min_duration": 1000,
+  "max_duration": 3600,
+  "duration_increment": 266,
+  "max_level": 10,
+  "difficulty": -10,
+  "base_casting_time": 100,
+  "base_energy_cost": 100,
+  "energy_source": "MANA",
+  "flags": [
+    "NO_LEGS"
+  ],
+  "//": "The final spell should cost a 'negative crystallized soul' item per cast (a sort of catalyst for summoning the onryou), spawning # of onryou per level, simultaneously and randomly placed around Kaenbyou. The spell should cost a very small amount of mana (basically just the trigger). The real cost of the spell is transforming the item from a yet unimplemented drop from humans (any kind)"
+}
+```
+

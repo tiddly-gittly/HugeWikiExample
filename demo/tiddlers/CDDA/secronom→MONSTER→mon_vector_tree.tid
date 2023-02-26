@@ -1,0 +1,193 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_vector_tree
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_vector_tree|http://cdda.aloxaf.cn/search?q=mon_vector_tree]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Unknown/Vector.json
+
+
+!! 原文
+
+```json
+{
+  "//": "A fungal tower, but moves. Only seen in vector portals.",
+  "id": "mon_vector_tree",
+  "type": "MONSTER",
+  "looks_like": "mon_fungaloid_seeder",
+  "name": {
+    "str": "vector tree"
+  },
+  "description": "An elderly vector, much higher and larger than a regular oak tree. Nearly immobile, strands of dense vines cover its thick bark.",
+  "default_faction": "vector",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "hp": 690,
+  "speed": 2,
+  "material": [
+    "veggy"
+  ],
+  "emit_fields": [
+    "secro_vector_tree_seeding",
+    "secro_vector_tree_spread"
+  ],
+  "symbol": "V",
+  "color": "cyan",
+  "attack_cost": 275,
+  "aggression": -100,
+  "morale": 20,
+  "melee_skill": 10,
+  "melee_dice": 10,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 1,
+  "attack_effs": [
+    {
+      "id": "vector_infect",
+      "duration": 120,
+      "chance": 35
+    }
+  ],
+  "armor_bash": 6,
+  "armor_cut": 17,
+  "armor_bullet": 17,
+  "armor_stab": 17,
+  "armor_acid": 5,
+  "vision_day": 30,
+  "vision_night": 12,
+  "harvest": "exempt",
+  "luminance": 10,
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "path_settings": {
+    "max_dist": 1
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "monster_message": "<color_yellow>%1$s blooms a vector haze!</color>",
+      "spell_data": {
+        "id": "mon_vector_rize_big_check"
+      },
+      "cooldown": 15
+    }
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "BASHES",
+    "GROUP_BASH",
+    "NOHEAD",
+    "NO_BREATHE",
+    "STUN_IMMUNE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "A fungal tower, but moves. Only seen in vector portals.",
+  "id": "mon_vector_tree",
+  "type": "MONSTER",
+  "looks_like": "mon_fungaloid_seeder",
+  "name": {
+    "str": "载体树"
+  },
+  "description": "一种年老的病媒，比普通的橡树高得多，大得多。厚厚的树皮上覆盖着几缕浓密的藤蔓，几乎一动不动。",
+  "default_faction": "vector",
+  "species": [
+    "UNKNOWN"
+  ],
+  "volume": "875000 ml",
+  "weight": "200000 g",
+  "hp": 690,
+  "speed": 2,
+  "material": [
+    "veggy"
+  ],
+  "emit_fields": [
+    "secro_vector_tree_seeding",
+    "secro_vector_tree_spread"
+  ],
+  "symbol": "V",
+  "color": "cyan",
+  "attack_cost": 275,
+  "aggression": -100,
+  "morale": 20,
+  "melee_skill": 10,
+  "melee_dice": 10,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 1,
+  "attack_effs": [
+    {
+      "id": "vector_infect",
+      "duration": 120,
+      "chance": 35
+    }
+  ],
+  "armor_bash": 6,
+  "armor_cut": 17,
+  "armor_bullet": 17,
+  "armor_stab": 17,
+  "armor_acid": 5,
+  "vision_day": 30,
+  "vision_night": 12,
+  "harvest": "exempt",
+  "luminance": 10,
+  "anger_triggers": [
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "path_settings": {
+    "max_dist": 1
+  },
+  "special_attacks": [
+    {
+      "type": "spell",
+      "monster_message": "<color_yellow>%1$s绽放出一股病毒迷雾！</color>",
+      "spell_data": {
+        "id": "mon_vector_rize_big_check"
+      },
+      "cooldown": 15
+    }
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "BASHES",
+    "GROUP_BASH",
+    "NOHEAD",
+    "NO_BREATHE",
+    "STUN_IMMUNE"
+  ]
+}
+```
+

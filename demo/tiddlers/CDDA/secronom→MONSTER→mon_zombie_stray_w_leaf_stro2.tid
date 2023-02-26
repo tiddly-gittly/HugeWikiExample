@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_stray_w_leaf_stro2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_stray_w_leaf_stro2|http://cdda.aloxaf.cn/search?q=mon_zombie_stray_w_leaf_stro2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_stro2",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "stray zombie"
+  },
+  "description": "In its age, leaves, vines, everything, has grown larger and tougher. A stray, ascendant of nature, has cultivated some beautiful, yet strange blooming flowers.",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN",
+    "PLANT"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "harvest": "zombie_thorny",
+  "hp": 315,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "armor_bash": 26,
+  "armor_cut": 18,
+  "armor_bullet": 12,
+  "armor_stab": 12,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_stray_w_leaf_stro2_wildo"
+      },
+      "cooldown": 44,
+      "monster_message": "%1$s strikes the ground, then a wild outgrowth of vines and branches erupts under %3$s!"
+    }
+  ],
+  "upgrades": {
+    "half_life": 14,
+    "into": "mon_zombie_stray_w_leaf_stro3"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY",
+    "SWIMS",
+    "PARALYZEVENOM"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_stray_w_leaf_stro2",
+  "type": "MONSTER",
+  "looks_like": "mon_zombie",
+  "name": {
+    "str": "酸液离群丧尸"
+  },
+  "description": "在它的时代，树叶，藤蔓，一切，都变得更大，更坚韧。一个流浪的，上升的自然，培育了一些美丽的，但奇怪的花朵盛开。",
+  "default_faction": "zombie",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_1",
+    "HUMAN",
+    "PLANT"
+  ],
+  "volume": "92500 ml",
+  "weight": "120000 g",
+  "harvest": "zombie_thorny",
+  "hp": 315,
+  "speed": 95,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 4,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "armor_bash": 26,
+  "armor_cut": 18,
+  "armor_bullet": 12,
+  "armor_stab": 12,
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 5
+    },
+    [
+      "GRAB",
+      7
+    ],
+    [
+      "scratch",
+      20
+    ],
+    {
+      "type": "spell",
+      "spell_data": {
+        "id": "mon_zombie_stray_w_leaf_stro2_wildo"
+      },
+      "cooldown": 44,
+      "monster_message": "%1$s猛击地面，然后一个快速生长的野生藤蔓树枝从%3$s脚下爆出！"
+    }
+  ],
+  "upgrades": {
+    "half_life": 14,
+    "into": "mon_zombie_stray_w_leaf_stro3"
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "REVIVES",
+    "PUSH_MON",
+    "FILTHY",
+    "SWIMS",
+    "PARALYZEVENOM"
+  ]
+}
+```
+

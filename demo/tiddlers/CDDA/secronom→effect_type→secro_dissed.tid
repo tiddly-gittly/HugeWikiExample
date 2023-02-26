@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: effect_type secronom
+title: secronom→effect_type→secro_dissed
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_dissed|http://cdda.aloxaf.cn/search?q=secro_dissed]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_effects.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Screamer uses invisible fields to apply this to players with no head protection. As it is a field, it can't go through closed windows and such.",
+  "type": "effect_type",
+  "id": "secro_dissed",
+  "name": [
+    "Dazzled"
+  ],
+  "apply_message": "The resonating voice dazes you!",
+  "desc": [
+    "You're anxious to your surroundings!"
+  ],
+  "miss_messages": [
+    [
+      "You can't focus on your actions!",
+      3
+    ]
+  ],
+  "remove_message": "You are no longer dazed.",
+  "int_add_val": 2,
+  "int_dur_factor": "3 seconds",
+  "max_intensity": 100,
+  "int_decay_step": -5,
+  "int_decay_tick": 10,
+  "max_duration": 300,
+  "rating": "bad",
+  "base_mods": {
+    "pain_min": [
+      1
+    ],
+    "pain_max": [
+      2
+    ],
+    "pain_chance": [
+      30
+    ]
+  },
+  "scaling_mods": {
+    "per_mod": [
+      -0.04
+    ],
+    "dex_mod": [
+      -0.08
+    ],
+    "speed_mod": [
+      -0.16
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Screamer uses invisible fields to apply this to players with no head protection. As it is a field, it can't go through closed windows and such.",
+  "type": "effect_type",
+  "id": "secro_dissed",
+  "name": [
+    "眼花缭乱"
+  ],
+  "apply_message": "共鸣的声音让你发呆！",
+  "desc": [
+    "你对周围的环境感到焦虑！"
+  ],
+  "miss_messages": [
+    [
+      "你无法专注于你的行动！",
+      3
+    ]
+  ],
+  "remove_message": "你不再迷茫了。",
+  "int_add_val": 2,
+  "int_dur_factor": "3 seconds",
+  "max_intensity": 100,
+  "int_decay_step": -5,
+  "int_decay_tick": 10,
+  "max_duration": 300,
+  "rating": "bad",
+  "base_mods": {
+    "pain_min": [
+      1
+    ],
+    "pain_max": [
+      2
+    ],
+    "pain_chance": [
+      30
+    ]
+  },
+  "scaling_mods": {
+    "per_mod": [
+      -0.04
+    ],
+    "dex_mod": [
+      -0.08
+    ],
+    "speed_mod": [
+      -0.16
+    ]
+  }
+}
+```
+

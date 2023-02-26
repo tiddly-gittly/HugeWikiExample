@@ -1,0 +1,163 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→effect_on_condition→thex_everything_eoc
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：thex_everything_eoc|http://cdda.aloxaf.cn/search?q=thex_everything_eoc]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/thex_eocs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "thex_everything_eoc",
+  "type": "effect_on_condition",
+  "eoc_type": "SCENARIO_SPECIFIC",
+  "effect": [
+    {
+      "u_add_var": "var_wind_blessing_dex",
+      "type": "number",
+      "context": "wind_priestess_charm",
+      "value": "0"
+    },
+    {
+      "u_add_var": "var_wind_blessing_int",
+      "type": "number",
+      "context": "wind_priestess_charm",
+      "value": "0"
+    },
+    {
+      "u_add_var": "var_wind_blessing_per",
+      "type": "number",
+      "context": "wind_priestess_charm",
+      "value": "0"
+    },
+    {
+      "u_add_var": "var_wind_blessing_str",
+      "type": "number",
+      "context": "wind_priestess_charm",
+      "value": "0"
+    },
+    {
+      "run_eocs": [
+        "daily_randomization_eoc"
+      ]
+    },
+    {
+      "run_eocs": [
+        {
+          "id": "vampire_bloodthirst_start_ex",
+          "condition": {
+            "u_has_trait": "VAMPIRE_SPECIES"
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "vitamin",
+                  "name": "hblood_vitamin"
+                },
+                "=",
+                {
+                  "arithmetic": [
+                    {
+                      "const": 648
+                    },
+                    "+",
+                    {
+                      "rand": 144
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "thex_everything_eoc",
+  "type": "effect_on_condition",
+  "eoc_type": "SCENARIO_SPECIFIC",
+  "effect": [
+    {
+      "u_add_var": "var_wind_blessing_dex",
+      "type": "number",
+      "context": "wind_priestess_charm",
+      "value": "0"
+    },
+    {
+      "u_add_var": "var_wind_blessing_int",
+      "type": "number",
+      "context": "wind_priestess_charm",
+      "value": "0"
+    },
+    {
+      "u_add_var": "var_wind_blessing_per",
+      "type": "number",
+      "context": "wind_priestess_charm",
+      "value": "0"
+    },
+    {
+      "u_add_var": "var_wind_blessing_str",
+      "type": "number",
+      "context": "wind_priestess_charm",
+      "value": "0"
+    },
+    {
+      "run_eocs": [
+        "daily_randomization_eoc"
+      ]
+    },
+    {
+      "run_eocs": [
+        {
+          "id": "vampire_bloodthirst_start_ex",
+          "condition": {
+            "u_has_trait": "VAMPIRE_SPECIES"
+          },
+          "effect": [
+            {
+              "arithmetic": [
+                {
+                  "u_val": "vitamin",
+                  "name": "hblood_vitamin"
+                },
+                "=",
+                {
+                  "arithmetic": [
+                    {
+                      "const": 648
+                    },
+                    "+",
+                    {
+                      "rand": 144
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+

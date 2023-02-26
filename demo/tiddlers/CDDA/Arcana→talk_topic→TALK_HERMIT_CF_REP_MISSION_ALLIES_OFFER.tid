@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_CF_REP_MISSION_ALLIES_OFFER
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_CF_REP_MISSION_ALLIES_OFFER|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_CF_REP_MISSION_ALLIES_OFFER]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_CF_REP_MISSION_ALLIES_OFFER",
+  "dynamic_line": "I can make an attempt at least.  On occasion I do hear from others who travel the area, some hints and fragments.  I doubt that, even if I were more open about what I seek, I would be able to reach out to any other members of our order.  I can try however, if you'd like.",
+  "responses": [
+    {
+      "text": "I would appreciate that.  Thank you.",
+      "effect": [
+        {
+          "mapgen_update": "arcana_hermit_spawn_npcs",
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        }
+      ],
+      "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES_DEAL"
+    },
+    {
+      "text": "That won't be needed for now, our main concern is the information.",
+      "effect": {
+        "u_add_var": "hermit_allies_deferred",
+        "type": "flag",
+        "context": "hermit",
+        "value": "yes"
+      },
+      "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES_DEFERRED"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_CF_REP_MISSION_ALLIES_OFFER",
+  "dynamic_line": "我至少可以尝试一下。有时，我确实听到了一些在这个地区旅行的人的一些暗示和片段。我怀疑，即使我对我所寻求的更加开放，我也无法接触到我们秩序中的任何其他成员。如果你愿意，我可以试试。",
+  "responses": [
+    {
+      "text": "我会很感激的。非常感谢。",
+      "effect": [
+        {
+          "mapgen_update": "arcana_hermit_spawn_npcs",
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "must_see": true,
+          "search_range": 256
+        }
+      ],
+      "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES_DEAL"
+    },
+    {
+      "text": "现在不需要，我们主要关心的是信息。",
+      "effect": {
+        "u_add_var": "hermit_allies_deferred",
+        "type": "flag",
+        "context": "hermit",
+        "value": "yes"
+      },
+      "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES_DEFERRED"
+    }
+  ]
+}
+```
+

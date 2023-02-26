@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_eclipse
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_eclipse|http://cdda.aloxaf.cn/search?q=arcana_magic_eclipse]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_eclipse",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Eclipse"
+  },
+  "description": "Magic Sign\nUsing this spell will inflict a shallow wound in The Veil, bringing forth monsters and darkness in exchange for a surge of unnatural adrenaline, life-drain, and night vision.",
+  "message": "\"I am that which stands defiant, the finite made infinite…\"  You cast %s!",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "spell_eclipse",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_eclipse_darkness",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_eclipse_halo",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_eclipse_wonder",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_aftermath_eclipse_fatigue",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_9",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "energy_source": "STAMINA",
+  "max_level": 10,
+  "difficulty": 90,
+  "skill": "magic",
+  "base_casting_time": 400,
+  "final_casting_time": 200,
+  "casting_time_increment": -10,
+  "base_energy_cost": 5000,
+  "final_energy_cost": 2500,
+  "energy_increment": -250,
+  "min_duration": 324000,
+  "max_duration": 648000,
+  "duration_increment": 32400
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_eclipse",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：月蚀"
+  },
+  "description": "魔法符号\n将在面纱上造成浅层伤害，带来怪物和黑暗，以换取非自然肾上腺素、生命消耗和夜视的激增。",
+  "message": "“我是那个站着反抗的人，有限使无限……”你施放了 %s！",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL"
+  ],
+  "effect": "attack",
+  "shape": "blast",
+  "effect_str": "spell_eclipse",
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_eclipse_darkness",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_eclipse_halo",
+      "hit_self": false,
+      "max_level": 10
+    },
+    {
+      "id": "arcana_aftermath_eclipse_wonder",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_aftermath_eclipse_fatigue",
+      "hit_self": false
+    },
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_9",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "energy_source": "STAMINA",
+  "max_level": 10,
+  "difficulty": 90,
+  "skill": "magic",
+  "base_casting_time": 400,
+  "final_casting_time": 200,
+  "casting_time_increment": -10,
+  "base_energy_cost": 5000,
+  "final_energy_cost": 2500,
+  "energy_increment": -250,
+  "min_duration": 324000,
+  "max_duration": 648000,
+  "duration_increment": 32400
+}
+```
+

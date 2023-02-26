@@ -1,0 +1,69 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_OLD_GUARD_NEC_CPT_NICHOLAS_2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_OLD_GUARD_NEC_CPT_NICHOLAS_2|http://cdda.aloxaf.cn/search?q=TALK_OLD_GUARD_NEC_CPT_NICHOLAS_2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_OLD_GUARD_NEC_CPT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_CPT_NICHOLAS_2",
+  "dynamic_line": "I don't know how this could improve things, but I'll see what I can do.  If you can get in touch with our comms team, speak with them and they might be able to find something.",
+  "speaker_effect": [
+    {
+      "effect": {
+        "u_add_var": "necro_comms_permission",
+        "type": "flag",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "text": "Alright, I'll see what I can do.",
+      "topic": "TALK_OLD_GUARD_NEC_CPT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_OLD_GUARD_NEC_CPT_NICHOLAS_2",
+  "dynamic_line": "我不知道这能如何改善事情，但我会看看我能做些什么。如果你能联系到我们的通讯团队，和他们谈谈，他们可能会找到一些东西。",
+  "speaker_effect": [
+    {
+      "effect": {
+        "u_add_var": "necro_comms_permission",
+        "type": "flag",
+        "context": "rural_church",
+        "value": "yes"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "text": "好吧，我看看我能做什么。",
+      "topic": "TALK_OLD_GUARD_NEC_CPT"
+    }
+  ]
+}
+```
+

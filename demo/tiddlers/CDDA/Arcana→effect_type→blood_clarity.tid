@@ -1,0 +1,173 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→blood_clarity
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：blood_clarity|http://cdda.aloxaf.cn/search?q=blood_clarity]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "blood_clarity",
+  "name": [
+    "Clarity of Blood"
+  ],
+  "desc": [
+    "Protection against parasitic and corruptive threats, such as the Mycus."
+  ],
+  "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
+  "resist_traits": [
+    "THRESH_MARLOSS",
+    "THRESH_MYCUS"
+  ],
+  "removes_effects": [
+    "spores",
+    "fungus",
+    "dermatik",
+    "formication",
+    "tapeworm",
+    "bloodworms",
+    "brainworms",
+    "paincysts"
+  ],
+  "decay_messages": [
+    [
+      "Your clarity of blood spell is waning.",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "hurt_min": [
+      0,
+      1
+    ],
+    "hurt_tick": [
+      0,
+      60
+    ],
+    "stamina_min": [
+      0,
+      -150
+    ],
+    "health_min": [
+      0,
+      -10
+    ],
+    "health_tick": [
+      0,
+      30
+    ],
+    "h_mod_min": [
+      0,
+      -10
+    ],
+    "h_mod_tick": [
+      0,
+      30
+    ],
+    "pain_min": [
+      0,
+      1
+    ],
+    "pain_tick": [
+      0,
+      5
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "blood_clarity",
+  "name": [
+    "净化血液"
+  ],
+  "desc": [
+    "防止寄生性和腐蚀性威胁，如Mycus。"
+  ],
+  "remove_message": "当保护性的魔力消失时，流经你血管的抚慰感就会消失。",
+  "resist_traits": [
+    "THRESH_MARLOSS",
+    "THRESH_MYCUS"
+  ],
+  "removes_effects": [
+    "spores",
+    "fungus",
+    "dermatik",
+    "formication",
+    "tapeworm",
+    "bloodworms",
+    "brainworms",
+    "paincysts"
+  ],
+  "decay_messages": [
+    [
+      "你施加的净化血液的效力正在减弱。",
+      "bad"
+    ]
+  ],
+  "rating": "good",
+  "max_duration": "120 m",
+  "max_intensity": 120,
+  "int_dur_factor": "1 m",
+  "base_mods": {
+    "hurt_min": [
+      0,
+      1
+    ],
+    "hurt_tick": [
+      0,
+      60
+    ],
+    "stamina_min": [
+      0,
+      -150
+    ],
+    "health_min": [
+      0,
+      -10
+    ],
+    "health_tick": [
+      0,
+      30
+    ],
+    "h_mod_min": [
+      0,
+      -10
+    ],
+    "h_mod_tick": [
+      0,
+      30
+    ],
+    "pain_min": [
+      0,
+      1
+    ],
+    "pain_tick": [
+      0,
+      5
+    ]
+  }
+}
+```
+

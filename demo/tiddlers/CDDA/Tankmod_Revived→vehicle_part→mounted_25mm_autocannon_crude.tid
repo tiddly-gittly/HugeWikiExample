@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: vehicle_part Tankmod_Revived
+title: Tankmod_Revived→vehicle_part→mounted_25mm_autocannon_crude
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mounted_25mm_autocannon_crude|http://cdda.aloxaf.cn/search?q=mounted_25mm_autocannon_crude]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Tankmod_Revived/parts.json
+
+
+!! 原文
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "mounted_25mm_autocannon_crude",
+  "looks_like": "mounted_25mm_autocannon_sawn",
+  "copy-from": "turret_tank",
+  "name": "makeshift25mm cannon",
+  "item": "howitzer_gun_crude",
+  "durability": 400,
+  "damage_modifier": 40,
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        7,
+        14
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        35,
+        70
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ],
+        [
+          "launcher",
+          2
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ],
+        [
+          "welding_standard",
+          10
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          8
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "vehicle_part",
+  "id": "mounted_25mm_autocannon_crude",
+  "looks_like": "mounted_25mm_autocannon_sawn",
+  "copy-from": "turret_tank",
+  "name": "155mm 自制机炮",
+  "item": "howitzer_gun_crude",
+  "durability": 400,
+  "damage_modifier": 40,
+  "breaks_into": [
+    {
+      "item": "steel_lump",
+      "count": [
+        7,
+        14
+      ]
+    },
+    {
+      "item": "steel_chunk",
+      "count": [
+        35,
+        70
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "mechanics",
+          3
+        ],
+        [
+          "launcher",
+          2
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "vehicle_wrench_2",
+          1
+        ],
+        [
+          "welding_standard",
+          10
+        ]
+      ]
+    },
+    "repair": {
+      "skills": [
+        [
+          "mechanics",
+          8
+        ]
+      ],
+      "time": "60 m",
+      "using": [
+        [
+          "welding_standard",
+          5
+        ]
+      ]
+    }
+  }
+}
+```
+

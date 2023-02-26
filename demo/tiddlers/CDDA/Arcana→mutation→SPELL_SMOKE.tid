@@ -1,0 +1,87 @@
+creator: 林一二
+revision: 0
+tags: mutation Arcana
+title: Arcana→mutation→SPELL_SMOKE
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：SPELL_SMOKE|http://cdda.aloxaf.cn/search?q=SPELL_SMOKE]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/mutations/mutations_paragon.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_SMOKE",
+  "//": "IDs for Arcane Blessings are reused to reduce the amount of obsolete JSON.",
+  "name": {
+    "str": "Sign of Alteration I"
+  },
+  "points": 1,
+  "description": "\"You must learn to shape your surroundings to serve your purpose.  In time, you will find your purpose as well.\"\nUnknowable forces have given you a gift, that can conjure a shroud of darkness to conceal you.  (( Remember to bind the \"spellcasting\" key! ))",
+  "valid": false,
+  "purifiable": false,
+  "changes_to": [
+    "SPELL_LIGHT2"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 100,
+  "spells_learned": [
+    [
+      "arcana_blessing_conjure_shadow_field",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil",
+    "ARCANA_VEIL_MARKER_ALTERATION"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "SPELL_SMOKE",
+  "//": "IDs for Arcane Blessings are reused to reduce the amount of obsolete JSON.",
+  "name": {
+    "str": "改变标志I"
+  },
+  "points": 1,
+  "description": "“予以形以应汝许。觅汝所望期或时。”\n不可知的力量赠予你一份礼物，它可以召唤一层黑暗的帷幕来遮掩你。（（记住绑定“施法”键！））",
+  "valid": false,
+  "purifiable": false,
+  "changes_to": [
+    "SPELL_LIGHT2"
+  ],
+  "category": [
+    "VEIL"
+  ],
+  "bionic_mana_penalty": 0,
+  "mana_modifier": 100,
+  "spells_learned": [
+    [
+      "arcana_blessing_conjure_shadow_field",
+      1
+    ]
+  ],
+  "flags": [
+    "explorer_of_the_veil",
+    "ARCANA_VEIL_MARKER_ALTERATION"
+  ]
+}
+```
+

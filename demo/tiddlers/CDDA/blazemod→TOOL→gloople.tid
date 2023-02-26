@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: TOOL blazemod
+title: blazemod→TOOL→gloople
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gloople|http://cdda.aloxaf.cn/search?q=gloople]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/blazemod/items/tools/blob_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gloople",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "gelatinous mass"
+  },
+  "description": "An experiment gone horribly right.  While the original intent was to combine the structure of a bone frame with the impact absorption of the blob; the blob seems to have completely consumed the bone.  Instead, what remains is an amorphous mass of goo with what seems to be numerous thin filaments floating within.  With a bit of effort, you can grasp the fibers and stretch the mass into a multitude of shapes.  The mass is able to retain the new shape even under force, though the mass yields at your touch.  With enough strength, you think you can pull it apart.",
+  "weight": "6662 g",
+  "volume": "5 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "light_green",
+  "ammo": [
+    "bfeed"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "bfeed": 250
+      }
+    }
+  ],
+  "charges_per_use": 250,
+  "qualities": [
+    [
+      "JACK",
+      2
+    ]
+  ],
+  "use_action": {
+    "target": "gloople_act",
+    "msg": "You fumble as the blob starts to multiply rapidly!",
+    "target_charges": 7,
+    "active": true,
+    "moves": 250,
+    "type": "transform"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gloople",
+  "type": "TOOL",
+  "category": "tools",
+  "name": {
+    "str_sp": "凝胶变形怪"
+  },
+  "description": "一次成功得令人难以置信的实验。虽然最初的意图是将变形怪冲击吸收能力与骨制车架结构相结合；但似乎变形怪已经吃光了骨头。相反，剩下的是一团无定形胶质粘液，有着无数细丝漂浮其中。稍稍用点力，你可以抓住纤维并将它拉伸成多种形状。即使受外力，变形怪仍然能够保持新的形状，然而它你的触摸下却轻松变形。有了足够的力量，你认为你可以把它直接撕开。",
+  "weight": "6662 g",
+  "volume": "5 L",
+  "price": "1 USD",
+  "to_hit": -2,
+  "material": [
+    "flesh"
+  ],
+  "symbol": ";",
+  "color": "light_green",
+  "ammo": [
+    "bfeed"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "bfeed": 250
+      }
+    }
+  ],
+  "charges_per_use": 250,
+  "qualities": [
+    [
+      "JACK",
+      2
+    ]
+  ],
+  "use_action": {
+    "target": "gloople_act",
+    "msg": "变形怪抱住你的手，开始快速繁殖起来，让你变得笨手笨脚。",
+    "target_charges": 7,
+    "active": true,
+    "moves": 250,
+    "type": "transform"
+  }
+}
+```
+

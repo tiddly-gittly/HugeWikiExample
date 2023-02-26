@@ -1,0 +1,309 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_QUERY
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_QUERY|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_QUERY]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_QUERY",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_VEIL",
+    "yes": "You serve more than these hunters, don't you?  Interesting.  Keeper or not, your alliance with them is a strange thing indeed.",
+    "no": {
+      "u_has_any_trait": [
+        "PROF_SANGUINE",
+        "THRESH_DRAGONBLOOD"
+      ],
+      "yes": "And you trust that they will not simply burn any information you bring back to them?",
+      "no": "That is why they've sent you?  Can you truly trust their intentions?"
+    }
+  },
+  "responses": [
+    {
+      "text": "Times are changing.  We have to work together, like it or not.  Are you willing to trust me on this?",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_FALLEN"
+    },
+    {
+      "text": "They're looking for information they can use to improve their chances of survival, same as both of us.",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_FALLEN"
+    },
+    {
+      "text": "We are not enemies.  We can work together, combine our knowledge to survive.",
+      "condition": {
+        "and": [
+          {
+            "u_has_any_trait": [
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL"
+            ]
+          },
+          {
+            "u_has_effect": "shrike_inquire_denied"
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
+      "opinion": {
+        "anger": 1
+      }
+    },
+    {
+      "text": "We are not enemies.  We can work together, combine our knowledge to survive.",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 60
+      },
+      "switch": true,
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CHOSEN",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_FAILURE",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        }
+      }
+    },
+    {
+      "text": "They have a thriving community, and are working to secure a future for anyone who will work with them.  We can work together.",
+      "condition": {
+        "u_has_effect": "shrike_inquire_denied"
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
+      "opinion": {
+        "anger": 2
+      }
+    },
+    {
+      "text": "They have a thriving community, and are working to secure a future for anyone who will work with them.  We can work together.",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 15
+      },
+      "switch": true,
+      "default": true,
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_ALLIANCE",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_FAILURE",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        }
+      }
+    },
+    {
+      "text": "Enough talk.  Just hand it over and there won't be any trouble.",
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 10
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_DEFIANT",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        }
+      }
+    },
+    {
+      "text": "Nevermind…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_QUERY",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_trait": "THRESH_VEIL",
+    "yes": "你比这些猎人服务的还多，不是吗？有趣。不管是不是守门员，你和他们结盟确实是件奇怪的事。",
+    "no": {
+      "u_has_any_trait": [
+        "PROF_SANGUINE",
+        "THRESH_DRAGONBLOOD"
+      ],
+      "yes": "你相信他们不会简单地烧掉你带给他们的任何信息？",
+      "no": "所以他们派你来？你能真正相信他们的意图吗？"
+    }
+  },
+  "responses": [
+    {
+      "text": "时代在变。不管你喜不喜欢，我们必须一起工作。你愿意相信我吗？",
+      "condition": {
+        "u_has_trait": "PROF_SANGUINE"
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_FALLEN"
+    },
+    {
+      "text": "他们在寻找可以用来提高生存机会的信息，就像我们一样。",
+      "condition": {
+        "u_has_trait": "THRESH_DRAGONBLOOD"
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_FALLEN"
+    },
+    {
+      "text": "我们不是敌人。我们可以一起工作，结合我们的知识来生存。",
+      "condition": {
+        "and": [
+          {
+            "u_has_any_trait": [
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL"
+            ]
+          },
+          {
+            "u_has_effect": "shrike_inquire_denied"
+          }
+        ]
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
+      "opinion": {
+        "anger": 1
+      }
+    },
+    {
+      "text": "我们不是敌人。我们可以一起工作，结合我们的知识来生存。",
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CHALICE",
+          "PROF_CHALICE2",
+          "THRESH_VEIL"
+        ]
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 60
+      },
+      "switch": true,
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CHOSEN",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_FAILURE",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        }
+      }
+    },
+    {
+      "text": "他们有一个繁荣的社区，并且正在努力为任何与他们一起工作的人争取一个未来。我们可以一起工作。",
+      "condition": {
+        "u_has_effect": "shrike_inquire_denied"
+      },
+      "switch": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
+      "opinion": {
+        "anger": 2
+      }
+    },
+    {
+      "text": "他们有一个繁荣的社区，并且正在努力为任何与他们一起工作的人争取一个未来。我们可以一起工作。",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 15
+      },
+      "switch": true,
+      "default": true,
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_ALLIANCE",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_FAILURE",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        }
+      }
+    },
+    {
+      "text": "说够了。把它交过来就不会有任何麻烦了。",
+      "trial": {
+        "type": "INTIMIDATE",
+        "difficulty": 10
+      },
+      "success": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_DEFIANT",
+        "opinion": {
+          "value": 1
+        }
+      },
+      "failure": {
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH",
+        "opinion": {
+          "value": -1,
+          "fear": -1
+        }
+      }
+    },
+    {
+      "text": "别担心…",
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    }
+  ]
+}
+```
+

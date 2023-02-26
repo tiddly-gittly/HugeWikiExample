@@ -1,0 +1,315 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_HERMIT_DOING
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_HERMIT_DOING|http://cdda.aloxaf.cn/search?q=TALK_HERMIT_DOING]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_HERMIT.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DOING",
+  "dynamic_line": {
+    "u_has_effect": "hermit_earned_trust_1",
+    "yes": {
+      "u_has_effect": "hermit_earned_trust_2",
+      "yes": "In truth, I am in self-imposed exile.  After so many of my fellows have been hunted down, or else slaughtered by various terrible things, I have nothing left to do with my life, nor the oath I have sworn.",
+      "no": "Meditation, keeping myself busy with what I've learned, that sort of thing.  Little of value in such trying times, unfortunately."
+    },
+    "no": "Living a quiet life, somewhere relatively peaceful.  It's all that an old man like me can do in such hectic times."
+  },
+  "responses": [
+    {
+      "text": "We will still prevail.  Do not lose hope just yet.",
+      "topic": "TALK_HERMIT_PREVAIL",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "hermit_earned_trust_2"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "Terrible things?",
+      "topic": "TALK_HERMIT_QUERY_THINGS",
+      "condition": {
+        "u_has_effect": "hermit_earned_trust_2"
+      }
+    },
+    {
+      "switch": true,
+      "text": "There is always value in such knowledge.  Surely there is something you can teach?",
+      "topic": "TALK_HERMIT_TEACH",
+      "condition": {
+        "u_has_effect": "hermit_earned_trust_1"
+      }
+    },
+    {
+      "switch": true,
+      "text": "You seem to be hiding something.  Or from someone.  It's okay, you can trust me.",
+      "topic": "TALK_HERMIT_DOING_ASKED",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              {
+                "u_has_intelligence": 10
+              },
+              {
+                "u_has_perception": 10
+              }
+            ]
+          },
+          {
+            "u_has_effect": "hermit_inquire_denied"
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "Is that all you do out here?",
+      "topic": "TALK_HERMIT_DOING_ASKED",
+      "condition": {
+        "u_has_effect": "hermit_inquire_denied"
+      }
+    },
+    {
+      "switch": true,
+      "text": "You seem to be hiding something.  Or from someone.  It's okay, you can trust me.",
+      "condition": {
+        "or": [
+          {
+            "u_has_intelligence": 10
+          },
+          {
+            "u_has_perception": 10
+          }
+        ]
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 30
+      },
+      "success": {
+        "topic": "TALK_HERMIT_DOING_ADMISSION",
+        "opinion": {
+          "trust": 1
+        },
+        "effect": {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_HERMIT_DOING_DENIAL",
+        "effect": {
+          "u_add_effect": "hermit_inquire_denied",
+          "duration": 10800
+        }
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "Is that all you do out here?",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 15
+      },
+      "success": {
+        "topic": "TALK_HERMIT_DOING_ADMISSION",
+        "opinion": {
+          "trust": 1
+        },
+        "effect": {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_HERMIT_DOING_DENIAL",
+        "effect": {
+          "u_add_effect": "hermit_inquire_denied",
+          "duration": 10800
+        }
+      }
+    },
+    {
+      "text": "I see.",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_HERMIT_DOING",
+  "dynamic_line": {
+    "u_has_effect": "hermit_earned_trust_1",
+    "yes": {
+      "u_has_effect": "hermit_earned_trust_2",
+      "yes": "事实上，我是在自我放逐。在我的许多同伴被猎杀，或者被各种可怕的事情屠杀之后，我与我的生命没有任何关系，我也不再发誓。",
+      "no": "冥想，让自己忙于我所学的东西，诸如此类的事情。不幸的是，在如此艰难的时期，价值微乎其微。"
+    },
+    "no": "过着平静的生活，相对平静的地方。这是像我这样的老人在这么繁忙的时候所能做的。"
+  },
+  "responses": [
+    {
+      "text": "我们仍将获胜。现在不要失去希望。",
+      "topic": "TALK_HERMIT_PREVAIL",
+      "condition": {
+        "and": [
+          {
+            "u_has_effect": "hermit_earned_trust_2"
+          },
+          {
+            "u_has_any_trait": [
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "可怕的事情？",
+      "topic": "TALK_HERMIT_QUERY_THINGS",
+      "condition": {
+        "u_has_effect": "hermit_earned_trust_2"
+      }
+    },
+    {
+      "switch": true,
+      "text": "这种知识总是有价值的。你肯定有什么可以教的吗？",
+      "topic": "TALK_HERMIT_TEACH",
+      "condition": {
+        "u_has_effect": "hermit_earned_trust_1"
+      }
+    },
+    {
+      "switch": true,
+      "text": "你好像在隐藏什么东西。或者是什么人。没关系，你可以相信我。",
+      "topic": "TALK_HERMIT_DOING_ASKED",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              {
+                "u_has_intelligence": 10
+              },
+              {
+                "u_has_perception": 10
+              }
+            ]
+          },
+          {
+            "u_has_effect": "hermit_inquire_denied"
+          }
+        ]
+      }
+    },
+    {
+      "switch": true,
+      "text": "你就在这里干这些吗？",
+      "topic": "TALK_HERMIT_DOING_ASKED",
+      "condition": {
+        "u_has_effect": "hermit_inquire_denied"
+      }
+    },
+    {
+      "switch": true,
+      "text": "你好像在隐藏什么东西。或者是什么人。没关系，你可以相信我。",
+      "condition": {
+        "or": [
+          {
+            "u_has_intelligence": 10
+          },
+          {
+            "u_has_perception": 10
+          }
+        ]
+      },
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 30
+      },
+      "success": {
+        "topic": "TALK_HERMIT_DOING_ADMISSION",
+        "opinion": {
+          "trust": 1
+        },
+        "effect": {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_HERMIT_DOING_DENIAL",
+        "effect": {
+          "u_add_effect": "hermit_inquire_denied",
+          "duration": 10800
+        }
+      }
+    },
+    {
+      "switch": true,
+      "default": true,
+      "text": "你就在这里干这些吗？",
+      "trial": {
+        "type": "PERSUADE",
+        "difficulty": 15
+      },
+      "success": {
+        "topic": "TALK_HERMIT_DOING_ADMISSION",
+        "opinion": {
+          "trust": 1
+        },
+        "effect": {
+          "u_add_effect": "hermit_earned_trust_1",
+          "duration": "PERMANENT"
+        }
+      },
+      "failure": {
+        "topic": "TALK_HERMIT_DOING_DENIAL",
+        "effect": {
+          "u_add_effect": "hermit_inquire_denied",
+          "duration": 10800
+        }
+      }
+    },
+    {
+      "text": "我懂了。",
+      "topic": "TALK_HERMIT"
+    }
+  ]
+}
+```
+

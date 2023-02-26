@@ -1,0 +1,93 @@
+creator: 林一二
+revision: 0
+tags: furniture BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→furniture→f_BL9_alien_anemone
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：f_BL9_alien_anemone|http://cdda.aloxaf.cn/search?q=f_BL9_alien_anemone]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Furniture-Terrain/furniture.json
+
+
+!! 原文
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9_alien_anemone",
+  "looks_like": "f_alien_anemone",
+  "name": "wafting anemone",
+  "description": "A fleshy white protuberance growing from the floor, with a cluster of tendrils pouring out of it.  It looks almost exactly like a sea anemone, even waving gently as though underwater.",
+  "symbol": "V",
+  "color": "white",
+  "move_cost_mod": 6,
+  "coverage": 30,
+  "required_str": -1,
+  "light_emitted": 3,
+  "flags": [
+    "TRANSPARENT"
+  ],
+  "bash": {
+    "str_min": 13,
+    "str_max": 26,
+    "sound": "splorch!",
+    "sound_fail": "whump!",
+    "furn_set": "f_alien_scar",
+    "items": [
+      {
+        "item": "fetid_goop",
+        "count": [
+          3,
+          7
+        ],
+        "prob": 100
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "furniture",
+  "id": "f_BL9_alien_anemone",
+  "looks_like": "f_alien_anemone",
+  "name": "飘动海葵",
+  "description": "一个肉质的白色生物从地面突起，一串卷须从肉质中伸出。它看起来几乎和海葵一模一样，甚至像在水里一样轻轻地摆动。",
+  "symbol": "V",
+  "color": "white",
+  "move_cost_mod": 6,
+  "coverage": 30,
+  "required_str": -1,
+  "light_emitted": 3,
+  "flags": [
+    "TRANSPARENT"
+  ],
+  "bash": {
+    "str_min": 13,
+    "str_max": 26,
+    "sound": "splorch!",
+    "sound_fail": "whump!",
+    "furn_set": "f_alien_scar",
+    "items": [
+      {
+        "item": "fetid_goop",
+        "count": [
+          3,
+          7
+        ],
+        "prob": 100
+      }
+    ]
+  }
+}
+```
+

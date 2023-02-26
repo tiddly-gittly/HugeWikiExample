@@ -1,0 +1,125 @@
+creator: 林一二
+revision: 0
+tags: SPELL Arcana
+title: Arcana→SPELL→arcana_magic_overgrowth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcana_magic_overgrowth|http://cdda.aloxaf.cn/search?q=arcana_magic_overgrowth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/spells/spells_magic_signs.json
+
+
+!! 原文
+
+```json
+{
+  "id": "arcana_magic_overgrowth",
+  "type": "SPELL",
+  "name": {
+    "str": "Sign: Overgrowth"
+  },
+  "description": "Magic Sign\nUsing this spell will conjure an eruption of the living forest, at the location you target.  It will destroy most furniture in the affected area and disrupt terrain.",
+  "message": "\"We shall prosper, no matter how barren the ground…\"  You cast %s!",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_3",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_plants",
+  "energy_source": "STAMINA",
+  "difficulty": 30,
+  "skill": "magic",
+  "max_level": 10,
+  "min_damage": 4,
+  "max_damage": 2,
+  "damage_increment": -0.2,
+  "min_aoe": 2,
+  "max_aoe": 10,
+  "aoe_increment": 0.8,
+  "min_range": 5,
+  "max_range": 10,
+  "range_increment": 0.5,
+  "base_casting_time": 160,
+  "final_casting_time": 80,
+  "casting_time_increment": -8,
+  "base_energy_cost": 2000,
+  "final_energy_cost": 1000,
+  "energy_increment": -100
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "arcana_magic_overgrowth",
+  "type": "SPELL",
+  "name": {
+    "str": "符号：过度生长"
+  },
+  "description": "魔法符号\n将在你的目标位置召唤出活森林喷发。它将摧毁受影响地区的大多数家具，并破坏地形。",
+  "message": "“无论土地多么贫瘠，我们都会繁荣昌盛……”你施放了 %s！",
+  "valid_targets": [
+    "ground"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "VERBAL",
+    "NO_FAIL",
+    "IGNORE_WALLS",
+    "NO_PROJECTILE"
+  ],
+  "extra_effects": [
+    {
+      "id": "arcana_aftermath_magic_sign_exertion_3",
+      "hit_self": true,
+      "max_level": 10
+    }
+  ],
+  "effect": "ter_transform",
+  "shape": "blast",
+  "effect_str": "arcana_plants",
+  "energy_source": "STAMINA",
+  "difficulty": 30,
+  "skill": "magic",
+  "max_level": 10,
+  "min_damage": 4,
+  "max_damage": 2,
+  "damage_increment": -0.2,
+  "min_aoe": 2,
+  "max_aoe": 10,
+  "aoe_increment": 0.8,
+  "min_range": 5,
+  "max_range": 10,
+  "range_increment": 0.5,
+  "base_casting_time": 160,
+  "final_casting_time": 80,
+  "casting_time_increment": -8,
+  "base_energy_cost": 2000,
+  "final_energy_cost": 1000,
+  "energy_increment": -100
+}
+```
+

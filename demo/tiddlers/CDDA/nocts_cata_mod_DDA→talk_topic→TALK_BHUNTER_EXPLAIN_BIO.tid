@@ -1,0 +1,65 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_BHUNTER_EXPLAIN_BIO
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BHUNTER_EXPLAIN_BIO|http://cdda.aloxaf.cn/search?q=TALK_BHUNTER_EXPLAIN_BIO]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_BHUNTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BHUNTER_EXPLAIN_BIO",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "I guess memory wipe makes sense.  Alright, I will explain.  Some time ago, the military launched a joint research project with an end goal of creating artificial combatants, made to perform various specific tasks - basically, living weapons.  They wanted them to be as low-maintenance as possible.  So to accomplish that, the research team used resources from already ongoing projects to first mutate and then cybernetically enhance humans, focusing on developing whatever qualities the military needed at the time.  You are one them, a Bio-Weapon they called it.  This is the lab where you were created.",
+    "no": "Let me give you the basics.  Some time ago, the military launched a joint research project with an end goal of creating artificial combatants, made to perform various specific tasks - basically, living weapons.  They wanted them to be as low-maintenance as possible.  So to accomplish that, the research team used resources from already ongoing projects to first mutate and then cybernetically enhance humans, focusing on developing whatever qualities the military needed at the time.  This lab is one of several places in which the actual modifications were performed."
+  },
+  "responses": [
+    {
+      "text": "I'll be damned…",
+      "topic": "TALK_BHUNTER"
+    },
+    {
+      "text": "How did you learn all this?",
+      "topic": "TALK_BHUNTER_ASK_LEARN"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BHUNTER_EXPLAIN_BIO",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_is_wearing": "badge_bio_weapon",
+    "yes": "我想抹去记忆是有道理的。不久前，军方启动了一项联合研究项目，最终目标是制造人造战士，用于执行各种具体任务——基本上是生物武器。他们希望尽可能地降低维护成本。因此，为了实现这一目标，研究团队利用现存项目中的资源，首先对人类进行变异，然后用生化插件进行改造，专注于培养军队所需的质量。你其中一员，他们称之为生物武器。这是你被创造出来的实验室。",
+    "no": "让我给你些基本知识。不久前，军方启动了一项联合研究项目，最终目标是制造人造战士，用于执行各种具体任务——基本上是生物武器。他们希望尽可能地降低维护成本。因此，为了实现这一目标，研究团队利用现存项目中的资源，首先对人类进行变异，然后用生化插件进行改造，专注于培养军队所需的质量。这个实验室是进行改造的几个地方之一。"
+  },
+  "responses": [
+    {
+      "text": "我会被诅咒的……",
+      "topic": "TALK_BHUNTER"
+    },
+    {
+      "text": "你是怎么知道这些的？",
+      "topic": "TALK_BHUNTER_ASK_LEARN"
+    }
+  ]
+}
+```
+

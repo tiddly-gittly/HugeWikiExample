@@ -1,0 +1,321 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_fleshknot_vstro
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_fleshknot_vstro|http://cdda.aloxaf.cn/search?q=mon_zombie_fleshknot_vstro]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_zombie_fleshknot_vstro",
+  "type": "MONSTER",
+  "name": {
+    "str": "goreknot"
+  },
+  "description": "A giant amalgamation of flesh is cemented firmly into the floor and ceiling, preceded by the horrid miasma of putrid stenches emanating from the growth. A somewhat humanoid figure is molded in the center of this abomination accompanied by large, membranous tentacles.",
+  "default_faction": "zombie",
+  "volume": "2000 L",
+  "weight": "498000 g",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_ULTIMATE",
+    "ABERRATION"
+  ],
+  "diff": 200,
+  "hp": 3355,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☣",
+  "color": "magenta_red",
+  "emit_fields": [
+    "emit_fleshknot_tents_vbig"
+  ],
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 10,
+  "melee_dice_sides": 10,
+  "vision_day": 30,
+  "vision_night": 30,
+  "harvest": "zombie",
+  "weakpoints": [
+    {
+      "name": "the core",
+      "armor_mult": {
+        "bash": 1.2,
+        "cut": 0.8,
+        "stab": 0.8
+      },
+      "coverage": 10,
+      "damage_mult": {
+        "all": 1.33
+      },
+      "crit_mult": {
+        "all": 1.22
+      },
+      "effects": [
+        {
+          "effect": "stunned",
+          "duration": [
+            1,
+            2
+          ],
+          "damage_required": [
+            0,
+            100
+          ],
+          "message": "The %s trembles."
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    [
+      "FLESH_TENDRIL",
+      1
+    ],
+    {
+      "type": "gun",
+      "cooldown": 19,
+      "move_cost": 500,
+      "gun_type": "fleshknot_tent_cluster",
+      "fake_skills": [
+        [
+          "gun",
+          8
+        ],
+        [
+          "rifle",
+          8
+        ]
+      ],
+      "description": "The fleshknot sends out a cluster of tendrils!",
+      "ranges": [
+        [
+          2,
+          6,
+          "N"
+        ],
+        [
+          7,
+          17,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false
+    },
+    {
+      "type": "gun",
+      "cooldown": 12,
+      "move_cost": 100,
+      "gun_type": "fleshknot_tent_striker",
+      "fake_skills": [
+        [
+          "gun",
+          8
+        ],
+        [
+          "rifle",
+          8
+        ]
+      ],
+      "description": "The fleshknot thrusts its tentacles!",
+      "ranges": [
+        [
+          1,
+          4,
+          "N"
+        ],
+        [
+          5,
+          13,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false
+    }
+  ],
+  "//": "The core is exposed, so critical hits are available.",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "IMMOBILE",
+    "WARM",
+    "POISON",
+    "IMMOBILE",
+    "NO_BREATHE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_zombie_fleshknot_vstro",
+  "type": "MONSTER",
+  "name": {
+    "str": "戈雷克诺"
+  },
+  "description": "一大堆肉被牢牢地粘在地板和天花板上，在此之前，生长过程中散发出可怕的恶臭。一个有点像人的形象被塑造在这个可憎的中心，伴随着巨大的膜状触须。",
+  "default_faction": "zombie",
+  "volume": "2000 L",
+  "weight": "498000 g",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_ULTIMATE",
+    "ABERRATION"
+  ],
+  "diff": 200,
+  "hp": 3355,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "☣",
+  "color": "magenta_red",
+  "emit_fields": [
+    "emit_fleshknot_tents_vbig"
+  ],
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 10,
+  "melee_dice": 10,
+  "melee_dice_sides": 10,
+  "vision_day": 30,
+  "vision_night": 30,
+  "harvest": "zombie",
+  "weakpoints": [
+    {
+      "name": "the core",
+      "armor_mult": {
+        "bash": 1.2,
+        "cut": 0.8,
+        "stab": 0.8
+      },
+      "coverage": 10,
+      "damage_mult": {
+        "all": 1.33
+      },
+      "crit_mult": {
+        "all": 1.22
+      },
+      "effects": [
+        {
+          "effect": "stunned",
+          "duration": [
+            1,
+            2
+          ],
+          "damage_required": [
+            0,
+            100
+          ],
+          "message": "The %s trembles."
+        }
+      ]
+    }
+  ],
+  "special_attacks": [
+    [
+      "FLESH_TENDRIL",
+      1
+    ],
+    {
+      "type": "gun",
+      "cooldown": 19,
+      "move_cost": 500,
+      "gun_type": "fleshknot_tent_cluster",
+      "fake_skills": [
+        [
+          "gun",
+          8
+        ],
+        [
+          "rifle",
+          8
+        ]
+      ],
+      "description": "血肉疣伸出了一团触手！",
+      "ranges": [
+        [
+          2,
+          6,
+          "N"
+        ],
+        [
+          7,
+          17,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false
+    },
+    {
+      "type": "gun",
+      "cooldown": 12,
+      "move_cost": 100,
+      "gun_type": "fleshknot_tent_striker",
+      "fake_skills": [
+        [
+          "gun",
+          8
+        ],
+        [
+          "rifle",
+          8
+        ]
+      ],
+      "description": "血肉疣刺出了它的触手！",
+      "ranges": [
+        [
+          1,
+          4,
+          "N"
+        ],
+        [
+          5,
+          13,
+          "M"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false
+    }
+  ],
+  "//": "The core is exposed, so critical hits are available.",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "IMMOBILE",
+    "WARM",
+    "POISON",
+    "IMMOBILE",
+    "NO_BREATHE"
+  ]
+}
+```
+

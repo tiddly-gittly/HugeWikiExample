@@ -1,0 +1,338 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[14]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "abstorefront_1"
+  ],
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "_______                 ",
+      "_______                 ",
+      "___~~~~O     |-xx--xx-| ",
+      "_______O    b|.BBBBBB.| ",
+      "_______O    b|........| ",
+      "_______O    b|B......B| ",
+      "___~~~~|--D--|B......B| ",
+      "_______|.............B| ",
+      "_______|.............B| ",
+      "_______|......|---+---| ",
+      "___~~~~|......+......l| ",
+      "_______|...ccc|...|b.l| ",
+      "_______|...c..+...|b.l| ",
+      "_______|...|BB|...|b.l| ",
+      "___~~~~|-------DD-----| ",
+      "          F<     RRRF4  ",
+      "          G      RRRF   ",
+      "O         FFFFFFFFFFF  O",
+      "OO                    OO",
+      "OOOOOOOOOOOOOOOOOOOOOOOO",
+      "OOOOOOOOOOOOOOOOOOOOOOOO",
+      "OOOOOOOOOOOOOOOOOOOOOOOO",
+      "OOOOOOOOOOOOOOOOOOOOOOOO",
+      "OOOOOOOOOOOOOOOOOOOOOOOO"
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      "O": [
+        "t_tree_pine",
+        "t_tree",
+        "t_shrub",
+        "t_shrub",
+        "t_tree_young",
+        "t_tree_young",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_dirt",
+        "t_grass",
+        "t_shrub",
+        "t_grass",
+        "t_dirt",
+        "t_tree_young",
+        "t_grass",
+        "t_grass",
+        "t_dirt"
+      ],
+      " ": "t_sidewalk",
+      "_": "t_pavement",
+      "~": "t_pavement_y",
+      "+": "t_door_c",
+      "-": "t_wall_w",
+      ".": "t_floor",
+      "D": "t_door_locked",
+      "x": "t_window_boarded",
+      "F": "t_chainfence",
+      "G": "t_chaingate_l",
+      "R": "t_sidewalk",
+      "<": "t_ladder_up",
+      "|": "t_wall_w"
+    },
+    "furniture": {
+      "B": "f_rack",
+      "R": "f_dumpster",
+      "l": "f_locker",
+      "b": "f_bench",
+      "c": "f_counter"
+    },
+    "place_nested": [
+      {
+        "chunks": [
+          [
+            "null",
+            50
+          ],
+          [
+            "abstorefront_1_spawns",
+            50
+          ]
+        ],
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "items": {
+      ".": {
+        "item": "trash",
+        "chance": 15
+      }
+    },
+    "vehicles": {
+      ".": {
+        "vehicle": "shopping_cart",
+        "chance": 1,
+        "status": 1
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_1",
+  "object": {
+    "set": [
+      {
+        "line": "furniture",
+        "id": "f_crate_o",
+        "x": 4,
+        "x2": 6,
+        "y": 17,
+        "y2": 17
+      },
+      {
+        "line": "furniture",
+        "id": "f_workbench",
+        "x": 4,
+        "x2": 4,
+        "y": 19,
+        "y2": 20
+      }
+    ],
+    "place_nested": [
+      {
+        "chunks": [
+          "cf_church_upgrade_4_d"
+        ],
+        "x": 4,
+        "y": 17
+      }
+    ],
+    "place_loot": [
+      {
+        "group": "wood_workshop",
+        "x": [
+          4,
+          6
+        ],
+        "y": 17,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "supplies_hardware",
+        "x": [
+          4,
+          6
+        ],
+        "y": 17,
+        "chance": 50,
+        "repeat": 10
+      },
+      {
+        "group": "tools_common",
+        "x": 4,
+        "y": [
+          19,
+          20
+        ],
+        "chance": 50,
+        "repeat": 5
+      },
+      {
+        "group": "rural_church_start_scales",
+        "x": 4,
+        "y": 20
+      }
+    ],
+    "faction_owner": [
+      {
+        "id": "cleansing_flame",
+        "x": [
+          4,
+          6
+        ],
+        "y": [
+          17,
+          20
+        ]
+      }
+    ],
+    "place_npcs": [
+      {
+        "class": "cf_auxillery_merchant_1",
+        "x": 5,
+        "y": 19,
+        "add_trait": "CF_AUX_MARKER_1"
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "om_terrain": [
+    "abstorefront_1"
+  ],
+  "object": {
+    "fill_ter": "t_floor",
+    "rows": [
+      "_______                 ",
+      "_______                 ",
+      "___~~~~O     |-xx--xx-| ",
+      "_______O    b|.BBBBBB.| ",
+      "_______O    b|........| ",
+      "_______O    b|B......B| ",
+      "___~~~~|--D--|B......B| ",
+      "_______|.............B| ",
+      "_______|.............B| ",
+      "_______|......|---+---| ",
+      "___~~~~|......+......l| ",
+      "_______|...ccc|...|b.l| ",
+      "_______|...c..+...|b.l| ",
+      "_______|...|BB|...|b.l| ",
+      "___~~~~|-------DD-----| ",
+      "          F<     RRRF4  ",
+      "          G      RRRF   ",
+      "O         FFFFFFFFFFF  O",
+      "OO                    OO",
+      "OOOOOOOOOOOOOOOOOOOOOOOO",
+      "OOOOOOOOOOOOOOOOOOOOOOOO",
+      "OOOOOOOOOOOOOOOOOOOOOOOO",
+      "OOOOOOOOOOOOOOOOOOOOOOOO",
+      "OOOOOOOOOOOOOOOOOOOOOOOO"
+    ],
+    "terrain": {
+      "4": "t_gutter_downspout",
+      "O": [
+        "t_tree_pine",
+        "t_tree",
+        "t_shrub",
+        "t_shrub",
+        "t_tree_young",
+        "t_tree_young",
+        "t_grass",
+        "t_grass",
+        "t_grass",
+        "t_dirt",
+        "t_grass",
+        "t_shrub",
+        "t_grass",
+        "t_dirt",
+        "t_tree_young",
+        "t_grass",
+        "t_grass",
+        "t_dirt"
+      ],
+      " ": "t_sidewalk",
+      "_": "t_pavement",
+      "~": "t_pavement_y",
+      "+": "t_door_c",
+      "-": "t_wall_w",
+      ".": "t_floor",
+      "D": "t_door_locked",
+      "x": "t_window_boarded",
+      "F": "t_chainfence",
+      "G": "t_chaingate_l",
+      "R": "t_sidewalk",
+      "<": "t_ladder_up",
+      "|": "t_wall_w"
+    },
+    "furniture": {
+      "B": "f_rack",
+      "R": "f_dumpster",
+      "l": "f_locker",
+      "b": "f_bench",
+      "c": "f_counter"
+    },
+    "place_nested": [
+      {
+        "chunks": [
+          [
+            "null",
+            50
+          ],
+          [
+            "abstorefront_1_spawns",
+            50
+          ]
+        ],
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "items": {
+      ".": {
+        "item": "trash",
+        "chance": 15
+      }
+    },
+    "vehicles": {
+      ".": {
+        "vehicle": "shopping_cart",
+        "chance": 1,
+        "status": 1
+      }
+    }
+  }
+}
+```
+

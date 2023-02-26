@@ -1,0 +1,97 @@
+creator: 林一二
+revision: 0
+tags: technique Cataclysm-DDA-Touhou-Mod
+title: Cataclysm-DDA-Touhou-Mod→technique→tec_youmu_stinger
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：tec_youmu_stinger|http://cdda.aloxaf.cn/search?q=tec_youmu_stinger]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Mod/touhou_techniques.json
+
+
+!! 原文
+
+```json
+{
+  "id": "tec_youmu_stinger",
+  "type": "technique",
+  "name": "Stinger",
+  "messages": [
+    "You powerfully stab %s",
+    "<npcname> stabs %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    }
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": false,
+  "attack_override": true,
+  "aoe": "impale",
+  "weighting": -2,
+  "flat_bonuses": [
+    {
+      "stat": "arpen",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 4
+    }
+  ],
+  "//": "Should transform weapon damage to stab, with 2 times str as arpen instead"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "tec_youmu_stinger",
+  "type": "technique",
+  "name": "Stinger",
+  "messages": [
+    "You powerfully stab %s",
+    "<npcname> 突刺 %s"
+  ],
+  "skill_requirements": [
+    {
+      "name": "melee",
+      "level": 5
+    }
+  ],
+  "melee_allowed": false,
+  "unarmed_allowed": false,
+  "attack_override": true,
+  "aoe": "impale",
+  "weighting": -2,
+  "flat_bonuses": [
+    {
+      "stat": "arpen",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 2
+    },
+    {
+      "stat": "damage",
+      "type": "stab",
+      "scaling-stat": "str",
+      "scale": 4
+    }
+  ],
+  "//": "Should transform weapon damage to stab, with 2 times str as arpen instead"
+}
+```
+

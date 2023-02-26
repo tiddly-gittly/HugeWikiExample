@@ -1,0 +1,83 @@
+creator: 林一二
+revision: 0
+tags: mutation nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mutation→WEAK_BIOWEAPON
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：WEAK_BIOWEAPON|http://cdda.aloxaf.cn/search?q=WEAK_BIOWEAPON]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_bio_mutation.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mutation",
+  "id": "WEAK_BIOWEAPON",
+  "name": {
+    "str": "Vulnerable"
+  },
+  "points": 0,
+  "description": "Your body is much less resilient overall. Your maximum HP is 50% lower than normal, and you suffer increased phyiscal damage.",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "cancels": [
+    "TOUGH",
+    "FLIMSY",
+    "FLIMSY2",
+    "FLIMSY3",
+    "GLASSJAW",
+    "THICKSKIN",
+    "THINSKIN"
+  ],
+  "hp_modifier": -0.5,
+  "armor": [
+    {
+      "parts": "ALL",
+      "physical": -5
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mutation",
+  "id": "WEAK_BIOWEAPON",
+  "name": {
+    "str": "脆弱"
+  },
+  "points": 0,
+  "description": "你的身体韧性要差得多。HP上限减少50%，而且身体更容易受伤。",
+  "valid": false,
+  "purifiable": false,
+  "profession": true,
+  "cancels": [
+    "TOUGH",
+    "FLIMSY",
+    "FLIMSY2",
+    "FLIMSY3",
+    "GLASSJAW",
+    "THICKSKIN",
+    "THINSKIN"
+  ],
+  "hp_modifier": -0.5,
+  "armor": [
+    {
+      "parts": "ALL",
+      "physical": -5
+    }
+  ]
+}
+```
+

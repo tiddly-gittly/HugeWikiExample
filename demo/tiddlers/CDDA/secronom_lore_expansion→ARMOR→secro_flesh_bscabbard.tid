@@ -1,0 +1,145 @@
+creator: 林一二
+revision: 0
+tags: ARMOR secronom_lore_expansion
+title: secronom_lore_expansion→ARMOR→secro_flesh_bscabbard
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：secro_flesh_bscabbard|http://cdda.aloxaf.cn/search?q=secro_flesh_bscabbard]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/Items/Armors/secro_sheath.json
+
+
+!! 原文
+
+```json
+{
+  "id": "secro_flesh_bscabbard",
+  "type": "ARMOR",
+  "name": {
+    "str": "back scabbard"
+  },
+  "description": "A fleshy scabbard, big enough for almost any sword.  Designed to be strapped to the back, it's very difficult to draw from without considerable practice.  Activate to sheath/draw a sword.",
+  "weight": "2363 g",
+  "volume": "2250 ml",
+  "bashing": 4,
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "baldric",
+  "color": "red",
+  "pocket_data": [
+    {
+      "magazine_well": "1750 ml",
+      "max_contains_volume": "3750 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "180 cm",
+      "holster": true,
+      "moves": 60,
+      "flag_restriction": [
+        "SHEATH_SWORD"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "Sheath sword",
+    "holster_msg": "You sheath your %s"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "WATER_FRIENDLY"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        6,
+        10
+      ],
+      "coverage": 10,
+      "covers": [
+        "torso"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "secro_flesh_bscabbard",
+  "type": "ARMOR",
+  "name": {
+    "str": "刀鞘（背）"
+  },
+  "description": "一个肉质刀鞘，足够容纳大部分刀剑类武器，刀鞘通过肩带系在后背，不经过一定练习很难将武器快速拔出。使用它来收拔武器。",
+  "weight": "2363 g",
+  "volume": "2250 ml",
+  "bashing": 4,
+  "material": [
+    "secro_flesh_artificial"
+  ],
+  "valid_mods": [
+    "secro_flesh_reinforced_coat"
+  ],
+  "symbol": "[",
+  "looks_like": "baldric",
+  "color": "red",
+  "pocket_data": [
+    {
+      "magazine_well": "1750 ml",
+      "max_contains_volume": "3750 ml",
+      "max_contains_weight": "5 kg",
+      "max_item_length": "180 cm",
+      "holster": true,
+      "moves": 60,
+      "flag_restriction": [
+        "SHEATH_SWORD"
+      ]
+    }
+  ],
+  "use_action": {
+    "type": "holster",
+    "holster_prompt": "收刀",
+    "holster_msg": "你将%s收鞘"
+  },
+  "flags": [
+    "BELTED",
+    "OVERSIZE",
+    "WATER_FRIENDLY"
+  ],
+  "armor": [
+    {
+      "encumbrance": [
+        6,
+        10
+      ],
+      "coverage": 10,
+      "covers": [
+        "torso"
+      ],
+      "material": [
+        "secro_flesh_artificial"
+      ],
+      "material_thickness": 1
+    }
+  ]
+}
+```
+

@@ -1,0 +1,183 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_amphicyon
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_amphicyon|http://cdda.aloxaf.cn/search?q=mon_amphicyon]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_mammal.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_amphicyon",
+  "type": "MONSTER",
+  "name": {
+    "str": "amphicyon"
+  },
+  "description": "A wolf-like bear, or maybe a bear-like wolf, this huge, long and low animal looks like both.  Some key differences with bears are that Amphicyons can't stand on hind legs, with slimmer snouts, and with long tails.  Some key differences with wolves are their evident bear size, omnivorous diet, solitary lifestyle and uncharacteristic indiference to (breathing) humans.",
+  "volume": "200 L",
+  "weight": "200 kg",
+  "default_faction": "bear",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_fur",
+  "hp": 160,
+  "speed": 125,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ä",
+  "looks_like": "mon_bear",
+  "color": "light_gray",
+  "aggression": -10,
+  "morale": 50,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 7,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "vision_day": 30,
+  "vision_night": 10,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_NEAR_BABY"
+  ],
+  "fear_triggers": [
+    "SOUND"
+  ],
+  "reproduction": {
+    "baby_monster": "mon_amphicyon_cub",
+    "baby_count": 3,
+    "baby_timer": 240
+  },
+  "baby_flags": [
+    "SPRING"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      40
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "BASHES",
+    "KEENNOSE",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON",
+    "SEES",
+    "WARM"
+  ],
+  "//": "Amphicyon ingens taken as reference when possible, because one exemplar had an estimated of 570 Kg which is a bit too much. No reproductive data. BTW these are oversized wolves, not bears with wolf characteristics"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_amphicyon",
+  "type": "MONSTER",
+  "name": {
+    "str": "amphicyon"
+  },
+  "description": "A wolf-like bear, or maybe a bear-like wolf, this huge, long and low animal looks like both.  Some key differences with bears are that Amphicyons can't stand on hind legs, with slimmer snouts, and with long tails.  Some key differences with wolves are their evident bear size, omnivorous diet, solitary lifestyle and uncharacteristic indiference to (breathing) humans.",
+  "volume": "200 L",
+  "weight": "200 kg",
+  "default_faction": "bear",
+  "bodytype": "dog",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "harvest": "mammal_large_fur",
+  "hp": 160,
+  "speed": 125,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "ä",
+  "looks_like": "mon_bear",
+  "color": "light_gray",
+  "aggression": -10,
+  "morale": 50,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 7,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "vision_day": 30,
+  "vision_night": 10,
+  "path_settings": {
+    "max_dist": 15
+  },
+  "anger_triggers": [
+    "HURT",
+    "PLAYER_NEAR_BABY"
+  ],
+  "fear_triggers": [
+    "SOUND"
+  ],
+  "reproduction": {
+    "baby_monster": "mon_amphicyon_cub",
+    "baby_count": 3,
+    "baby_timer": 240
+  },
+  "baby_flags": [
+    "SPRING"
+  ],
+  "special_attacks": [
+    [
+      "EAT_FOOD",
+      40
+    ]
+  ],
+  "flags": [
+    "ANIMAL",
+    "BASHES",
+    "KEENNOSE",
+    "HEARS",
+    "PATH_AVOID_DANGER_1",
+    "PUSH_MON",
+    "SEES",
+    "WARM"
+  ],
+  "//": "Amphicyon ingens taken as reference when possible, because one exemplar had an estimated of 570 Kg which is a bit too much. No reproductive data. BTW these are oversized wolves, not bears with wolf characteristics"
+}
+```
+

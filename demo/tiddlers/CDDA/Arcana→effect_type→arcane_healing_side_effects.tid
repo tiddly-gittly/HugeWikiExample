@@ -1,0 +1,159 @@
+creator: 林一二
+revision: 0
+tags: effect_type Arcana
+title: Arcana→effect_type→arcane_healing_side_effects
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：arcane_healing_side_effects|http://cdda.aloxaf.cn/search?q=arcane_healing_side_effects]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/effects.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_type",
+  "id": "arcane_healing_side_effects",
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "name": [
+    "Healing Fatigue",
+    "Healing Overexertion",
+    "Healing Overexertion",
+    "Healing Overexertion",
+    "Healing Overexertion",
+    "Healing Overexertion"
+  ],
+  "desc": [
+    "Drawing upon power from Beyond to heal the body can overtax body and mind.  The effects don't feel very severe now, but it might be best to recover unless it's an emergency.",
+    "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+    "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+    "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+    "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+    "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult."
+  ],
+  "max_intensity": 6,
+  "max_duration": "24 h",
+  "int_dur_factor": "2 h",
+  "base_mods": {
+    "health_min": [
+      -1
+    ],
+    "health_tick": [
+      1800,
+      2000
+    ],
+    "h_mod_min": [
+      -1
+    ],
+    "h_mod_tick": [
+      1800,
+      2000
+    ],
+    "stamina_min": [
+      -5
+    ],
+    "stamina_tick": [
+      10,
+      12
+    ]
+  },
+  "scaling_mods": {
+    "health_min": [
+      -1,
+      -0.8
+    ],
+    "h_mod_min": [
+      -1,
+      -0.8
+    ],
+    "stamina_min": [
+      -5
+    ],
+    "stamina_tick": [
+      -1,
+      -0.8
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_type",
+  "id": "arcane_healing_side_effects",
+  "resist_effects": [
+    "talisman_warding"
+  ],
+  "name": [
+    "愈合疲劳",
+    "治疗过度劳累",
+    "治疗过度劳累",
+    "治疗过度劳累",
+    "治疗过度劳累",
+    "治疗过度劳累"
+  ],
+  "desc": [
+    "利用来自外界的力量来治愈身体会使身心负担过重。现在感觉不太严重，但最好是恢复，除非是紧急情况。",
+    "从外而来的力量来治疗身体会减慢你的自然愈合，并使努力变得更加困难。",
+    "从外而来的力量来治疗身体会减慢你的自然愈合，并使努力变得更加困难。",
+    "从外而来的力量来治疗身体会减慢你的自然愈合，并使努力变得更加困难。",
+    "从外而来的力量来治疗身体会减慢你的自然愈合，并使努力变得更加困难。",
+    "从外而来的力量来治疗身体会减慢你的自然愈合，并使努力变得更加困难。"
+  ],
+  "max_intensity": 6,
+  "max_duration": "24 h",
+  "int_dur_factor": "2 h",
+  "base_mods": {
+    "health_min": [
+      -1
+    ],
+    "health_tick": [
+      1800,
+      2000
+    ],
+    "h_mod_min": [
+      -1
+    ],
+    "h_mod_tick": [
+      1800,
+      2000
+    ],
+    "stamina_min": [
+      -5
+    ],
+    "stamina_tick": [
+      10,
+      12
+    ]
+  },
+  "scaling_mods": {
+    "health_min": [
+      -1,
+      -0.8
+    ],
+    "h_mod_min": [
+      -1,
+      -0.8
+    ],
+    "stamina_min": [
+      -5
+    ],
+    "stamina_tick": [
+      -1,
+      -0.8
+    ]
+  }
+}
+```
+

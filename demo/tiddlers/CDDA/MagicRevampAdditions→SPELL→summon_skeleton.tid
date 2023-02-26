@@ -1,0 +1,101 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→summon_skeleton
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：summon_skeleton|http://cdda.aloxaf.cn/search?q=summon_skeleton]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/animist.json
+
+
+!! 原文
+
+```json
+{
+  "id": "summon_skeleton",
+  "type": "SPELL",
+  "name": {
+    "str": "Summon Skeleton"
+  },
+  "description": "A ghostly skeleton rises from the depths of the earth to fight for you.  You may be able to summon more with a higher level in this spell.",
+  "valid_targets": [
+    "ground"
+  ],
+  "min_damage": 1,
+  "max_damage": 5,
+  "//": "level 20 will max out your number of summons",
+  "damage_increment": 0.1,
+  "max_level": 45,
+  "difficulty": 5,
+  "spell_class": "ANIMIST",
+  "effect": "summon",
+  "effect_str": "mon_skeleton",
+  "shape": "blast",
+  "energy_source": "HP",
+  "base_energy_cost": 14,
+  "//2": "one minute",
+  "base_casting_time": 6000,
+  "min_range": 3,
+  "max_range": 3,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "CONCENTRATE"
+  ],
+  "min_duration": 30000,
+  "max_duration": 225000,
+  "duration_increment": 4000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "summon_skeleton",
+  "type": "SPELL",
+  "name": {
+    "str": "召唤骷髅"
+  },
+  "description": "一只幽灵似的骷髅，从大地深处被召唤出来为你战斗。如果你这个法术的等级够高的话，就能召唤出更多它的同类。",
+  "valid_targets": [
+    "ground"
+  ],
+  "min_damage": 1,
+  "max_damage": 5,
+  "//": "level 20 will max out your number of summons",
+  "damage_increment": 0.1,
+  "max_level": 45,
+  "difficulty": 5,
+  "spell_class": "ANIMIST",
+  "effect": "summon",
+  "effect_str": "mon_skeleton",
+  "shape": "blast",
+  "energy_source": "HP",
+  "base_energy_cost": 14,
+  "//2": "one minute",
+  "base_casting_time": 6000,
+  "min_range": 3,
+  "max_range": 3,
+  "min_aoe": 2,
+  "max_aoe": 2,
+  "flags": [
+    "SOMATIC",
+    "VERBAL",
+    "CONCENTRATE"
+  ],
+  "min_duration": 30000,
+  "max_duration": 225000,
+  "duration_increment": 4000
+}
+```
+

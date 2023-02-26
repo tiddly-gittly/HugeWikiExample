@@ -1,0 +1,117 @@
+creator: 林一二
+revision: 0
+tags: terrain secronom
+title: secronom→terrain→t_secro_metal_hatch_c
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：t_secro_metal_hatch_c|http://cdda.aloxaf.cn/search?q=t_secro_metal_hatch_c]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/-Essentials/ter_furn.json
+
+
+!! 原文
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_metal_hatch_c",
+  "name": "closed metal hatch",
+  "description": "A closed metal hatch connected to the structure below.",
+  "symbol": "+",
+  "color": "cyan",
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT"
+  ],
+  "open": "t_secro_metal_hatch_o",
+  "bash": {
+    "str_min": 30,
+    "str_max": 210,
+    "str_min_blocked": 40,
+    "str_max_blocked": 240,
+    "sound": "metal screeching!",
+    "sound_fail": "clang!",
+    "ter_set": "t_ladder_down",
+    "items": [
+      {
+        "item": "steel_chunk",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          3,
+          12
+        ]
+      },
+      {
+        "item": "hinge",
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "terrain",
+  "id": "t_secro_metal_hatch_c",
+  "name": "封闭的金属舱口盖",
+  "description": "与下面的结构相连的封闭金属舱口。",
+  "symbol": "+",
+  "color": "cyan",
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT"
+  ],
+  "open": "t_secro_metal_hatch_o",
+  "bash": {
+    "str_min": 30,
+    "str_max": 210,
+    "str_min_blocked": 40,
+    "str_max_blocked": 240,
+    "sound": "metal screeching!",
+    "sound_fail": "clang!",
+    "ter_set": "t_ladder_down",
+    "items": [
+      {
+        "item": "steel_chunk",
+        "count": [
+          1,
+          4
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          3,
+          12
+        ]
+      },
+      {
+        "item": "hinge",
+        "count": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

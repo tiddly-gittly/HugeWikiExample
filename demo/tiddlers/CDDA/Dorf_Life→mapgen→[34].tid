@@ -1,0 +1,543 @@
+creator: 林一二
+revision: 0
+tags: mapgen Dorf_Life
+title: Dorf_Life→mapgen→[34]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Dorf_Life/mapgen_overlays.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_ruins_strange",
+  "object": {
+    "mapgensize": [
+      20,
+      20
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "                    ",
+      "                    ",
+      "  |||||||++|||||||  ",
+      "  |C_BBB|__|_ccc_|  ",
+      "  |C____|__|_tttc|  ",
+      "  |C_@_r|__+_tttc|  ",
+      "  |C___r|__|_____|  ",
+      "  |____r|__|CCCos|  ",
+      "  |||+|||++|||+|||  ",
+      "  |@________cc__@|  ",
+      "  |_____________^|  ",
+      "  |_____________^|  ",
+      "  |@_____CC_cc__@|  ",
+      "  ||||XX||||||||||  ",
+      "  |_______@|s__TT|  ",
+      "  |bb_____@X_____|  ",
+      "  |bbdd___@|D___t|  ",
+      "  ||||||||||||||||  ",
+      "                    ",
+      "                    "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "|": "t_wall_wood",
+      "+": "t_door_c",
+      "X": "t_rdoor_c",
+      "b": "t_rock_floor",
+      "c": "t_rock_floor",
+      "d": "t_rock_floor",
+      "o": "t_rock_floor",
+      "r": "t_rock_floor",
+      "s": "t_rock_floor",
+      "t": "t_rock_floor",
+      "B": "t_rock_floor",
+      "C": "t_rock_floor",
+      "D": "t_rock_floor",
+      "T": "t_rock_floor",
+      "^": "t_rock_floor",
+      "@": "t_rock_floor"
+    },
+    "furniture": {
+      "b": "f_bed",
+      "c": "f_chair",
+      "d": "f_dresser",
+      "o": "f_oven",
+      "r": "f_rack",
+      "s": "f_sink",
+      "t": "f_table",
+      "B": "f_bookcase",
+      "C": "f_counter",
+      "D": "f_displaycase",
+      "T": "f_bathtub",
+      "^": "f_fireplace",
+      "@": [
+        "f_null",
+        "f_statue"
+      ]
+    },
+    "set": [
+      {
+        "point": "trap",
+        "id": "tr_caltrops",
+        "x": [
+          9,
+          10
+        ],
+        "y": [
+          3,
+          8
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "point": "trap",
+        "id": "tr_crossbow",
+        "x": [
+          9,
+          10
+        ],
+        "y": [
+          3,
+          8
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "point": "trap",
+        "id": "tr_caltrops",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          3,
+          7
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "point": "trap",
+        "id": "tr_crossbow",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          3,
+          7
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "point": "trap",
+        "id": "tr_glow",
+        "x": [
+          3,
+          7
+        ],
+        "y": [
+          3,
+          7
+        ],
+        "repeat": [
+          2,
+          5
+        ]
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_web",
+        "x": [
+          9,
+          10
+        ],
+        "y": [
+          3,
+          8
+        ],
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "field": "fd_web",
+        "x": [
+          3,
+          16
+        ],
+        "y": [
+          9,
+          12
+        ],
+        "repeat": [
+          10,
+          20
+        ]
+      },
+      {
+        "field": "fd_web",
+        "x": [
+          3,
+          7
+        ],
+        "y": [
+          3,
+          7
+        ],
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "field": "fd_web",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          3,
+          7
+        ],
+        "repeat": [
+          5,
+          10
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_spider_cellar_giant",
+        "x": [
+          3,
+          16
+        ],
+        "y": [
+          9,
+          12
+        ],
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "monster": "mon_skeleton",
+        "x": [
+          3,
+          16
+        ],
+        "y": [
+          14,
+          16
+        ],
+        "repeat": [
+          1,
+          4
+        ]
+      }
+    ],
+    "place_items": [
+      {
+        "item": "cavern_cabin",
+        "x": 12,
+        "y": 16,
+        "chance": 100
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "breach_chunk_ruins_strange",
+  "object": {
+    "mapgensize": [
+      20,
+      20
+    ],
+    "rotation": [
+      0,
+      3
+    ],
+    "rows": [
+      "                    ",
+      "                    ",
+      "  |||||||++|||||||  ",
+      "  |C_BBB|__|_ccc_|  ",
+      "  |C____|__|_tttc|  ",
+      "  |C_@_r|__+_tttc|  ",
+      "  |C___r|__|_____|  ",
+      "  |____r|__|CCCos|  ",
+      "  |||+|||++|||+|||  ",
+      "  |@________cc__@|  ",
+      "  |_____________^|  ",
+      "  |_____________^|  ",
+      "  |@_____CC_cc__@|  ",
+      "  ||||XX||||||||||  ",
+      "  |_______@|s__TT|  ",
+      "  |bb_____@X_____|  ",
+      "  |bbdd___@|D___t|  ",
+      "  ||||||||||||||||  ",
+      "                    ",
+      "                    "
+    ],
+    "palettes": [
+      "breach"
+    ],
+    "terrain": {
+      "|": "t_wall_wood",
+      "+": "t_door_c",
+      "X": "t_rdoor_c",
+      "b": "t_rock_floor",
+      "c": "t_rock_floor",
+      "d": "t_rock_floor",
+      "o": "t_rock_floor",
+      "r": "t_rock_floor",
+      "s": "t_rock_floor",
+      "t": "t_rock_floor",
+      "B": "t_rock_floor",
+      "C": "t_rock_floor",
+      "D": "t_rock_floor",
+      "T": "t_rock_floor",
+      "^": "t_rock_floor",
+      "@": "t_rock_floor"
+    },
+    "furniture": {
+      "b": "f_bed",
+      "c": "f_chair",
+      "d": "f_dresser",
+      "o": "f_oven",
+      "r": "f_rack",
+      "s": "f_sink",
+      "t": "f_table",
+      "B": "f_bookcase",
+      "C": "f_counter",
+      "D": "f_displaycase",
+      "T": "f_bathtub",
+      "^": "f_fireplace",
+      "@": [
+        "f_null",
+        "f_statue"
+      ]
+    },
+    "set": [
+      {
+        "point": "trap",
+        "id": "tr_caltrops",
+        "x": [
+          9,
+          10
+        ],
+        "y": [
+          3,
+          8
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "point": "trap",
+        "id": "tr_crossbow",
+        "x": [
+          9,
+          10
+        ],
+        "y": [
+          3,
+          8
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "point": "trap",
+        "id": "tr_caltrops",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          3,
+          7
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "point": "trap",
+        "id": "tr_crossbow",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          3,
+          7
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      },
+      {
+        "point": "trap",
+        "id": "tr_glow",
+        "x": [
+          3,
+          7
+        ],
+        "y": [
+          3,
+          7
+        ],
+        "repeat": [
+          2,
+          5
+        ]
+      }
+    ],
+    "place_fields": [
+      {
+        "field": "fd_web",
+        "x": [
+          9,
+          10
+        ],
+        "y": [
+          3,
+          8
+        ],
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "field": "fd_web",
+        "x": [
+          3,
+          16
+        ],
+        "y": [
+          9,
+          12
+        ],
+        "repeat": [
+          10,
+          20
+        ]
+      },
+      {
+        "field": "fd_web",
+        "x": [
+          3,
+          7
+        ],
+        "y": [
+          3,
+          7
+        ],
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "field": "fd_web",
+        "x": [
+          12,
+          16
+        ],
+        "y": [
+          3,
+          7
+        ],
+        "repeat": [
+          5,
+          10
+        ]
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": "mon_spider_cellar_giant",
+        "x": [
+          3,
+          16
+        ],
+        "y": [
+          9,
+          12
+        ],
+        "repeat": [
+          5,
+          10
+        ]
+      },
+      {
+        "monster": "mon_skeleton",
+        "x": [
+          3,
+          16
+        ],
+        "y": [
+          14,
+          16
+        ],
+        "repeat": [
+          1,
+          4
+        ]
+      }
+    ],
+    "place_items": [
+      {
+        "item": "cavern_cabin",
+        "x": 12,
+        "y": 16,
+        "chance": 100
+      }
+    ]
+  }
+}
+```
+

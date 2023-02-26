@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→TALK_GLADIATOR_SITUATION
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_GLADIATOR_SITUATION|http://cdda.aloxaf.cn/search?q=TALK_GLADIATOR_SITUATION]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/TALK_GLADIATOR.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_GLADIATOR_SITUATION",
+  "dynamic_line": {
+    "u_has_trait": "PROF_GLADIATOR",
+    "yes": [
+      "Guard set the cells to unlock themselves and left.  Something's going on, and we might be able to escape.",
+      "Fucking riot or something, bastards cut both cell blocks loose.  If we don't get eaten alive by the others we might be able to escape.",
+      "I'm not sure, but what matters is the fact they let the other animals out too."
+    ],
+    "no": [
+      "We've been stuck down here for months fighting for the amusement of a bunch of sick fucks.  Guard running the place remotely unlocked all of our cells and abandoned us.",
+      "I don't know.  We've been stuck down here for so long, but if we can get out …maybe you help us?",
+      "Are you with the police?  Please, they've had us trapped down here for their fucking pit fights."
+    ]
+  },
+  "responses": [
+    {
+      "text": "I see…",
+      "topic": "TALK_GLADIATOR"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_GLADIATOR_SITUATION",
+  "dynamic_line": {
+    "u_has_trait": "PROF_GLADIATOR",
+    "yes": [
+      "守卫解锁牢房并离开了。有什么事发生了，我们也许能逃脱。",
+      "他妈的暴动什么的，混蛋把两个牢房都打开了。如果我们没被其他人生吞活剥也许能逃脱。",
+      "我不确定，但重要的是他们把其他动物也放了出来。"
+    ],
+    "no": [
+      "我们被困在这里几个月了，一群恶心的混蛋看我们战斗来取乐。管理这个地方的守卫远程解锁了我们所有的牢房，并抛弃了我们。",
+      "我不知道。我们被困在这里太久了，如果我们能逃出去……也许你能帮助我们？",
+      "你和警察在一起吗？拜托，他们把我们困在这里让我们互相决斗。"
+    ]
+  },
+  "responses": [
+    {
+      "text": "我明白了……",
+      "topic": "TALK_GLADIATOR"
+    }
+  ]
+}
+```
+

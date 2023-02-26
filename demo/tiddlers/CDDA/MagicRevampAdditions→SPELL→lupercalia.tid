@@ -1,0 +1,89 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→lupercalia
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：lupercalia|http://cdda.aloxaf.cn/search?q=lupercalia]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/item_only.json
+
+
+!! 原文
+
+```json
+{
+  "id": "lupercalia",
+  "type": "SPELL",
+  "name": {
+    "str": "Lupercalian Release"
+  },
+  "//": "Used for wolfshead cufflinks not castable",
+  "description": "This spell transforms you into a werewolf.  There may be some cons to this.",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_LEGS",
+    "NO_HANDS"
+  ],
+  "effect": "spawn_item",
+  "effect_str": "aura_werewolf",
+  "shape": "blast",
+  "max_level": 1,
+  "min_damage": 1,
+  "max_damage": 1,
+  "damage_increment": 0,
+  "damage_type": "biological",
+  "difficulty": 0,
+  "spell_class": "NONE",
+  "base_casting_time": 300,
+  "base_energy_cost": 2,
+  "min_duration": 4320000,
+  "max_duration": 4320000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "lupercalia",
+  "type": "SPELL",
+  "name": {
+    "str": "狼人变身"
+  },
+  "//": "Used for wolfshead cufflinks not castable",
+  "description": "这个法术把你变成狼人。这可能造成一些不可预料的后果。",
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_LEGS",
+    "NO_HANDS"
+  ],
+  "effect": "spawn_item",
+  "effect_str": "aura_werewolf",
+  "shape": "blast",
+  "max_level": 1,
+  "min_damage": 1,
+  "max_damage": 1,
+  "damage_increment": 0,
+  "damage_type": "biological",
+  "difficulty": 0,
+  "spell_class": "NONE",
+  "base_casting_time": 300,
+  "base_energy_cost": 2,
+  "min_duration": 4320000,
+  "max_duration": 4320000
+}
+```
+

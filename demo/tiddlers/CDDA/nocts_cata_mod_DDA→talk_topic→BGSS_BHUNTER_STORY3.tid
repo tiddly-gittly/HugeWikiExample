@@ -1,0 +1,73 @@
+creator: 林一二
+revision: 0
+tags: talk_topic nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→talk_topic→BGSS_BHUNTER_STORY3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BGSS_BHUNTER_STORY3|http://cdda.aloxaf.cn/search?q=BGSS_BHUNTER_STORY3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/c_bgss.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BGSS_BHUNTER_STORY3",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_effect": "evy_ousted",
+    "yes": "I came here with one other person, just barely avoiding the crowds of undead in local hotspots.  Guy was from some unit assigned to this project as security, 9th something-or-other.  Lost contact with the rest of the military not long after we set out, so we decided to follow our lead and figure it out from there.",
+    "no": "I lived in a relatively small town, but it still wasn't long before things got hectic.  I decided to pack up what I could and follow what little evidence I had.  Picked up some gear along the way from a wreck, met up with a guy that went AWOL, eventually followed the trail of breadcrumbs.  And that's how I ended up at that lab..."
+  },
+  "responses": [
+    {
+      "text": "Was it that hectic to begin with?",
+      "topic": "BGSS_BHUNTER_STORY4"
+    },
+    {
+      "text": "<done_conversation_section>",
+      "topic": "TALK_FRIEND"
+    },
+    {
+      "text": "<end_talking>",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BGSS_BHUNTER_STORY3",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_effect": "evy_ousted",
+    "yes": "我和另外一个人来到这里，只是勉强避开当地热点地区的丧尸群。那家伙来自某个负责计划安保的部门，第九分局什么的。我们出发后不久就与其他军队失去了联系，所以我们决定跟着他们，去那里弄清楚。",
+    "no": "我住在一个相对较小的城镇，但没过多久情况就变得糟糕起来了。我决定尽我所能收拾行李，跟踪我掌握的证据。沿途从一艘沉船上捡到一些装备，与一个擅离职守的家伙会 会 面，追踪着细微的踪迹。最终来到了实验室……"
+  },
+  "responses": [
+    {
+      "text": "一开始就这样吗？",
+      "topic": "BGSS_BHUNTER_STORY4"
+    },
+    {
+      "text": "<done_conversation_section>",
+      "topic": "TALK_FRIEND"
+    },
+    {
+      "text": "<end_talking>",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

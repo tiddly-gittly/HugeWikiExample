@@ -1,0 +1,95 @@
+creator: 林一二
+revision: 0
+tags: effect_on_condition nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→effect_on_condition→c_nano_mutagen_thresh_test
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：c_nano_mutagen_thresh_test|http://cdda.aloxaf.cn/search?q=c_nano_mutagen_thresh_test]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Mutations/c_mutagen_effect_on_condition.json
+
+
+!! 原文
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "c_nano_mutagen_thresh_test",
+  "condition": {
+    "and": [
+      {
+        "u_has_flag": "C_SENTINEL_MARKER_1"
+      },
+      {
+        "u_has_flag": "C_SENTINEL_MARKER_2"
+      },
+      {
+        "u_has_flag": "C_SENTINEL_MARKER_3"
+      },
+      {
+        "u_has_flag": "C_SENTINEL_MARKER_4"
+      },
+      {
+        "not": {
+          "u_has_flag": "MUTATION_THRESHOLD"
+        }
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "Something strains mightily for a moment… and then… you're… FREE!",
+      "type": "good"
+    },
+    {
+      "u_add_trait": "THRESH_SUPER_SOLDIER"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "effect_on_condition",
+  "id": "c_nano_mutagen_thresh_test",
+  "condition": {
+    "and": [
+      {
+        "u_has_flag": "C_SENTINEL_MARKER_1"
+      },
+      {
+        "u_has_flag": "C_SENTINEL_MARKER_2"
+      },
+      {
+        "u_has_flag": "C_SENTINEL_MARKER_3"
+      },
+      {
+        "u_has_flag": "C_SENTINEL_MARKER_4"
+      },
+      {
+        "not": {
+          "u_has_flag": "MUTATION_THRESHOLD"
+        }
+      }
+    ]
+  },
+  "effect": [
+    {
+      "u_message": "有什么东西疯狂的拉扯了一会儿……然后……你……解脱了！",
+      "type": "good"
+    },
+    {
+      "u_add_trait": "THRESH_SUPER_SOLDIER"
+    }
+  ]
+}
+```
+

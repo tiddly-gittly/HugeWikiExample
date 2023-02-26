@@ -1,0 +1,57 @@
+creator: 林一二
+revision: 0
+tags: talk_topic secronom_lore_expansion
+title: secronom_lore_expansion→talk_topic→TALK_SECRO_GUARD_jobs
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_SECRO_GUARD_jobs|http://cdda.aloxaf.cn/search?q=TALK_SECRO_GUARD_jobs]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom_lore_expansion/Modification Files/NPCs/Dialogues/secro_guard.json
+
+
+!! 原文
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_GUARD_jobs",
+  "dynamic_line": "I do need your help about a thing, but you should talk to our researcher about this first.",
+  "responses": [
+    {
+      "text": "I will.",
+      "topic": "TALK_DONE",
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_guard_mission1_gonnastart"
+      }
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_GUARD_jobs",
+  "dynamic_line": "我确实需要你的帮助，但你应该先和我们的研究人员谈谈。",
+  "responses": [
+    {
+      "text": "我会的。",
+      "topic": "TALK_DONE",
+      "effect": {
+        "duration": "PERMANENT",
+        "u_add_effect": "secro_guard_mission1_gonnastart"
+      }
+    }
+  ]
+}
+```
+

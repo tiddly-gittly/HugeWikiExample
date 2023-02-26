@@ -1,0 +1,63 @@
+creator: 林一二
+revision: 0
+tags: SPELL MagicRevampAdditions
+title: MagicRevampAdditions→SPELL→mana_fatigue
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mana_fatigue|http://cdda.aloxaf.cn/search?q=mana_fatigue]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/MagicRevampAdditions/Spells_Override/classless.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mana_fatigue",
+  "type": "SPELL",
+  "name": {
+    "str": "Mana Fatigue"
+  },
+  "description": "Secondary effect of Crystallize Mana",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "effect_str": "mana_fatigue",
+  "shape": "blast",
+  "max_level": 1,
+  "min_duration": 6000,
+  "max_duration": 6000,
+  "//": "actual fatigue gained is 1/100th duration, at 6000 you get 60 fatigue."
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mana_fatigue",
+  "type": "SPELL",
+  "name": {
+    "str": "魔力疲乏"
+  },
+  "description": "魔力结晶法术的副作用。",
+  "valid_targets": [
+    "self"
+  ],
+  "effect": "attack",
+  "effect_str": "mana_fatigue",
+  "shape": "blast",
+  "max_level": 1,
+  "min_duration": 6000,
+  "max_duration": 6000,
+  "//": "actual fatigue gained is 1/100th duration, at 6000 you get 60 fatigue."
+}
+```
+

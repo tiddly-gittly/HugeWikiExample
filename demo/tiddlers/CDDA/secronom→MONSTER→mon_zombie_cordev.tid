@@ -1,0 +1,267 @@
+creator: 林一二
+revision: 0
+tags: MONSTER secronom
+title: secronom→MONSTER→mon_zombie_cordev
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_zombie_cordev|http://cdda.aloxaf.cn/search?q=mon_zombie_cordev]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/Zombies/+Misc.json
+
+
+!! 原文
+
+```json
+{
+  "//": "Aggro-type zed, both durable and lethal. Unlike other zed mutants, this one's very dependant on healing for itself whilst dealing damage, in addition to its unique debuff-inflicting acid.",
+  "id": "mon_zombie_cordev",
+  "type": "MONSTER",
+  "name": {
+    "str": "corrupted devourer"
+  },
+  "description": "A colossal, humanoid corpse, distinct to its seemingly volatile, torsal lump, a headless top and a set of arm biters with swollen eyes united into them.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "ABERRATION"
+  ],
+  "volume": "970 L",
+  "weight": "1125000 g",
+  "hp": 1325,
+  "speed": 65,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⨊",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 225,
+  "melee_skill": 10,
+  "melee_dice": 4,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 20,
+  "armor_cut": 13,
+  "armor_bullet": 10,
+  "armor_stab": 15,
+  "vision_day": 15,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 55,
+      "move_cost": 125,
+      "gun_type": "cordev_mouth",
+      "fake_skills": [
+        [
+          "gun",
+          2
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          9,
+          "N"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "The corrupted devourer spits a glob of acid!"
+    },
+    {
+      "cooldown": 15,
+      "damage_max_instance": [
+        {
+          "amount": 12,
+          "armor_multiplier": 0.3,
+          "armor_penetration": 10,
+          "damage_type": "bash"
+        },
+        {
+          "amount": 12,
+          "armor_multiplier": 0.6,
+          "armor_penetration": 20,
+          "damage_type": "stab"
+        }
+      ],
+      "effects": [
+        {
+          "bp": "arm_l",
+          "duration": 30,
+          "id": "grabbed"
+        },
+        {
+          "bp": "arm_r",
+          "duration": 30,
+          "id": "grabbed"
+        }
+      ],
+      "type": "bite"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "LOUDMOVES",
+    "ACIDPROOF",
+    "NOHEAD",
+    "DESTROYS",
+    "PUSH_MON",
+    "ATTACKMON",
+    "PUSH_VEH",
+    "REVIVES"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Aggro-type zed, both durable and lethal. Unlike other zed mutants, this one's very dependant on healing for itself whilst dealing damage, in addition to its unique debuff-inflicting acid.",
+  "id": "mon_zombie_cordev",
+  "type": "MONSTER",
+  "name": {
+    "str": "腐化吞噬者"
+  },
+  "description": "这是一具巨大的人形尸体，与它看似易变的环状肿块截然不同，一具无头上衣和一组眼睛肿胀的咬人手臂连在一起。",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "species": [
+    "ZOMBIE",
+    "SECROZED_3",
+    "ABERRATION"
+  ],
+  "volume": "970 L",
+  "weight": "1125000 g",
+  "hp": 1325,
+  "speed": 65,
+  "material": [
+    "flesh",
+    "bone"
+  ],
+  "symbol": "⨊",
+  "color": "light_red",
+  "aggression": 100,
+  "morale": 100,
+  "attack_cost": 225,
+  "melee_skill": 10,
+  "melee_dice": 4,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 6
+    }
+  ],
+  "armor_bash": 20,
+  "armor_cut": 13,
+  "armor_bullet": 10,
+  "armor_stab": 15,
+  "vision_day": 15,
+  "vision_night": 5,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 55,
+      "move_cost": 125,
+      "gun_type": "cordev_mouth",
+      "fake_skills": [
+        [
+          "gun",
+          2
+        ],
+        [
+          "rifle",
+          2
+        ]
+      ],
+      "ranges": [
+        [
+          1,
+          9,
+          "N"
+        ]
+      ],
+      "require_targeting_player": false,
+      "require_targeting_npc": false,
+      "require_targeting_monster": false,
+      "description": "腐败的吞食者吐出一团酸！"
+    },
+    {
+      "cooldown": 15,
+      "damage_max_instance": [
+        {
+          "amount": 12,
+          "armor_multiplier": 0.3,
+          "armor_penetration": 10,
+          "damage_type": "bash"
+        },
+        {
+          "amount": 12,
+          "armor_multiplier": 0.6,
+          "armor_penetration": 20,
+          "damage_type": "stab"
+        }
+      ],
+      "effects": [
+        {
+          "bp": "arm_l",
+          "duration": 30,
+          "id": "grabbed"
+        },
+        {
+          "bp": "arm_r",
+          "duration": 30,
+          "id": "grabbed"
+        }
+      ],
+      "type": "bite"
+    }
+  ],
+  "flags": [
+    "SEES",
+    "SMELLS",
+    "STUMBLES",
+    "WARM",
+    "POISON",
+    "NO_BREATHE",
+    "LOUDMOVES",
+    "ACIDPROOF",
+    "NOHEAD",
+    "DESTROYS",
+    "PUSH_MON",
+    "ATTACKMON",
+    "PUSH_VEH",
+    "REVIVES"
+  ]
+}
+```
+

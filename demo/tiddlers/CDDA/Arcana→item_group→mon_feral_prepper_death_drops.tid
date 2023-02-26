@@ -1,0 +1,131 @@
+creator: 林一二
+revision: 0
+tags: item_group Arcana
+title: Arcana→item_group→mon_feral_prepper_death_drops
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_feral_prepper_death_drops|http://cdda.aloxaf.cn/search?q=mon_feral_prepper_death_drops]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/monsters/monster_drops.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_feral_prepper_death_drops",
+  "copy-from": "mon_feral_prepper_death_drops",
+  "type": "item_group",
+  "//": "Only need to add items since we're referencing an existing itemgroup.",
+  "subtype": "collection",
+  "extend": {
+    "entries": [
+      {
+        "item": "essence_blood",
+        "prob": 50,
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "group": "arcana_hunt_random",
+        "prob": 10
+      },
+      {
+        "distribution": [
+          {
+            "group": "magic_tools",
+            "prob": 50,
+            "damage": [
+              1,
+              4
+            ]
+          },
+          {
+            "group": "magic_items",
+            "prob": 50,
+            "damage": [
+              1,
+              4
+            ]
+          }
+        ],
+        "prob": 3
+      },
+      {
+        "group": "magic_consumables",
+        "prob": 5
+      },
+      {
+        "group": "magic_books_postapoc",
+        "prob": 15
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_feral_prepper_death_drops",
+  "copy-from": "mon_feral_prepper_death_drops",
+  "type": "item_group",
+  "//": "Only need to add items since we're referencing an existing itemgroup.",
+  "subtype": "collection",
+  "extend": {
+    "entries": [
+      {
+        "item": "essence_blood",
+        "prob": 50,
+        "count": [
+          2,
+          4
+        ]
+      },
+      {
+        "group": "arcana_hunt_random",
+        "prob": 10
+      },
+      {
+        "distribution": [
+          {
+            "group": "magic_tools",
+            "prob": 50,
+            "damage": [
+              1,
+              4
+            ]
+          },
+          {
+            "group": "magic_items",
+            "prob": 50,
+            "damage": [
+              1,
+              4
+            ]
+          }
+        ],
+        "prob": 3
+      },
+      {
+        "group": "magic_consumables",
+        "prob": 5
+      },
+      {
+        "group": "magic_books_postapoc",
+        "prob": 15
+      }
+    ]
+  }
+}
+```
+

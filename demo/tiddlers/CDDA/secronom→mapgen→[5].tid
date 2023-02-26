@@ -1,0 +1,1117 @@
+creator: 林一二
+revision: 0
+tags: mapgen secronom
+title: secronom→mapgen→[5]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Maps/Misc.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "mx_secro_fleshbuilding",
+  "object": {
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "          ooo           ",
+      "          oao           ",
+      "          ooo           ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        "
+    ],
+    "terrain": {
+      "a": "t_secro_flesh"
+    },
+    "place_terrain": [
+      {
+        "ter": "t_secro_flesh",
+        "x": 11,
+        "y": 11
+      }
+    ],
+    "furniture": {},
+    "place_monster": [
+      {
+        "monster": "mon_zombie_fleshknot_weak",
+        "x": 11,
+        "y": 11
+      }
+    ],
+    "ter_furn_transforms": {
+      " ": {
+        "transform": "building_flesh_spread"
+      },
+      "o": {
+        "transform": "fleshknot_spread"
+      }
+    }
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Mil surplus",
+  "method": "json",
+  "om_terrain": "s_shop_flesh",
+  "type": "mapgen",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "___d___ud___________ss__",
+      "__||||||||||||------ssr_",
+      "_u|####.....Dsssssssssr_",
+      "_S|.........Dsssssssssr_",
+      "_u|.{{{.....|||||||||||_",
+      "d_|........^|....{{{{{|_",
+      "__|####.....+..c.....{|_",
+      "__|||||.....||######|||d",
+      "__|###................|_",
+      "__|{.....tt...........|_",
+      "_S|{.....tt...........|u",
+      "_u|###........{{.{{..{|u",
+      "_d|||||.......{{.{{..{|_",
+      "__|###...tt...{{.{{..{|_",
+      "__|#.....tt...{{.{{..{|_",
+      "__|#..........{{.{{..{|_",
+      "__|#..........{{.{{..{|d",
+      "_u|b...||||||.{{.{{..{|u",
+      "__|b...|llll|.{{.{{..{|_",
+      "__||||.|....|........{|_",
+      "__|&.+.+....|||||||||||4",
+      "d_|%.|y|tc..+ss____duS__",
+      "__|||||||||||ss_________",
+      "____u_u_______________d_"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_railing_flesh",
+      ".": "t_secro_floor_flesh",
+      "D": "t_secro_door_glass_flesh",
+      "S": "t_secro_shrub_flesh",
+      "_": "t_secro_grass_flesh",
+      "d": "t_secro_dirt_flesh",
+      "r": "t_secro_railing_flesh",
+      "s": "t_secro_sidewalk_flesh",
+      "u": "t_secro_shrub_flesh",
+      "|": "t_secro_wall_g_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "^": "f_indoor_plant",
+      "b": "f_bench",
+      "c": "f_chair",
+      "l": "f_locker",
+      "t": "f_table",
+      "{": "f_rack",
+      "%": "f_sink",
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "place_items": [
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          2
+        ],
+        "item": "mil_armor_pants",
+        "x": [
+          3,
+          5
+        ],
+        "y": 11
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          2
+        ],
+        "item": "mil_armor_pants",
+        "x": [
+          3,
+          5
+        ],
+        "y": 8
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "jackets",
+        "x": [
+          8,
+          9
+        ],
+        "y": 18
+      },
+      {
+        "chance": 85,
+        "repeat": [
+          1,
+          3
+        ],
+        "item": "winter",
+        "x": [
+          4,
+          5
+        ],
+        "y": 13
+      },
+      {
+        "chance": 85,
+        "repeat": [
+          1,
+          3
+        ],
+        "item": "winter",
+        "x": [
+          3,
+          6
+        ],
+        "y": 6
+      },
+      {
+        "chance": 85,
+        "repeat": [
+          1,
+          3
+        ],
+        "item": "winter",
+        "x": [
+          3,
+          6
+        ],
+        "y": 2
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_accessories",
+        "x": 3,
+        "y": [
+          13,
+          16
+        ]
+      },
+      {
+        "chance": 85,
+        "repeat": [
+          1,
+          3
+        ],
+        "item": "magazines",
+        "x": [
+          10,
+          11
+        ],
+        "y": 18
+      },
+      {
+        "chance": 95,
+        "repeat": [
+          1,
+          3
+        ],
+        "item": "knife_shop",
+        "x": [
+          4,
+          6
+        ],
+        "y": 4
+      },
+      {
+        "chance": 35,
+        "repeat": [
+          1,
+          2
+        ],
+        "item": "antique_guns",
+        "x": 20,
+        "y": 5
+      },
+      {
+        "chance": 35,
+        "repeat": [
+          1,
+          2
+        ],
+        "item": "antique_guns",
+        "x": 18,
+        "y": 5
+      },
+      {
+        "chance": 35,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_surplus",
+        "x": [
+          9,
+          10
+        ],
+        "y": [
+          13,
+          14
+        ]
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_surplus",
+        "x": 21,
+        "y": [
+          11,
+          19
+        ]
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_surplus",
+        "x": [
+          17,
+          18
+        ],
+        "y": [
+          11,
+          18
+        ]
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_surplus",
+        "x": [
+          14,
+          15
+        ],
+        "y": [
+          11,
+          18
+        ]
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_surplus",
+        "x": [
+          9,
+          10
+        ],
+        "y": [
+          9,
+          10
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "Mil surplus",
+  "method": "json",
+  "om_terrain": "s_shop_flesh",
+  "type": "mapgen",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_secro_floor_flesh",
+    "rows": [
+      "___d___ud___________ss__",
+      "__||||||||||||------ssr_",
+      "_u|####.....Dsssssssssr_",
+      "_S|.........Dsssssssssr_",
+      "_u|.{{{.....|||||||||||_",
+      "d_|........^|....{{{{{|_",
+      "__|####.....+..c.....{|_",
+      "__|||||.....||######|||d",
+      "__|###................|_",
+      "__|{.....tt...........|_",
+      "_S|{.....tt...........|u",
+      "_u|###........{{.{{..{|u",
+      "_d|||||.......{{.{{..{|_",
+      "__|###...tt...{{.{{..{|_",
+      "__|#.....tt...{{.{{..{|_",
+      "__|#..........{{.{{..{|_",
+      "__|#..........{{.{{..{|d",
+      "_u|b...||||||.{{.{{..{|u",
+      "__|b...|llll|.{{.{{..{|_",
+      "__||||.|....|........{|_",
+      "__|&.+.+....|||||||||||4",
+      "d_|%.|y|tc..+ss____duS__",
+      "__|||||||||||ss_________",
+      "____u_u_______________d_"
+    ],
+    "terrain": {
+      "4": "t_secro_gutter_downspout_flesh",
+      "+": "t_secro_door_flesh",
+      "-": "t_secro_railing_flesh",
+      ".": "t_secro_floor_flesh",
+      "D": "t_secro_door_glass_flesh",
+      "S": "t_secro_shrub_flesh",
+      "_": "t_secro_grass_flesh",
+      "d": "t_secro_dirt_flesh",
+      "r": "t_secro_railing_flesh",
+      "s": "t_secro_sidewalk_flesh",
+      "u": "t_secro_shrub_flesh",
+      "|": "t_secro_wall_g_flesh"
+    },
+    "furniture": {
+      "#": "f_counter",
+      "^": "f_indoor_plant",
+      "b": "f_bench",
+      "c": "f_chair",
+      "l": "f_locker",
+      "t": "f_table",
+      "{": "f_rack",
+      "%": "f_sink",
+      "y": [
+        "f_indoor_plant_y",
+        "f_indoor_plant"
+      ]
+    },
+    "toilets": {
+      "&": {}
+    },
+    "place_items": [
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          2
+        ],
+        "item": "mil_armor_pants",
+        "x": [
+          3,
+          5
+        ],
+        "y": 11
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          2
+        ],
+        "item": "mil_armor_pants",
+        "x": [
+          3,
+          5
+        ],
+        "y": 8
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "jackets",
+        "x": [
+          8,
+          9
+        ],
+        "y": 18
+      },
+      {
+        "chance": 85,
+        "repeat": [
+          1,
+          3
+        ],
+        "item": "winter",
+        "x": [
+          4,
+          5
+        ],
+        "y": 13
+      },
+      {
+        "chance": 85,
+        "repeat": [
+          1,
+          3
+        ],
+        "item": "winter",
+        "x": [
+          3,
+          6
+        ],
+        "y": 6
+      },
+      {
+        "chance": 85,
+        "repeat": [
+          1,
+          3
+        ],
+        "item": "winter",
+        "x": [
+          3,
+          6
+        ],
+        "y": 2
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_accessories",
+        "x": 3,
+        "y": [
+          13,
+          16
+        ]
+      },
+      {
+        "chance": 85,
+        "repeat": [
+          1,
+          3
+        ],
+        "item": "magazines",
+        "x": [
+          10,
+          11
+        ],
+        "y": 18
+      },
+      {
+        "chance": 95,
+        "repeat": [
+          1,
+          3
+        ],
+        "item": "knife_shop",
+        "x": [
+          4,
+          6
+        ],
+        "y": 4
+      },
+      {
+        "chance": 35,
+        "repeat": [
+          1,
+          2
+        ],
+        "item": "antique_guns",
+        "x": 20,
+        "y": 5
+      },
+      {
+        "chance": 35,
+        "repeat": [
+          1,
+          2
+        ],
+        "item": "antique_guns",
+        "x": 18,
+        "y": 5
+      },
+      {
+        "chance": 35,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_surplus",
+        "x": [
+          9,
+          10
+        ],
+        "y": [
+          13,
+          14
+        ]
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_surplus",
+        "x": 21,
+        "y": [
+          11,
+          19
+        ]
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_surplus",
+        "x": [
+          17,
+          18
+        ],
+        "y": [
+          11,
+          18
+        ]
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_surplus",
+        "x": [
+          14,
+          15
+        ],
+        "y": [
+          11,
+          18
+        ]
+      },
+      {
+        "chance": 75,
+        "repeat": [
+          1,
+          4
+        ],
+        "item": "mil_surplus",
+        "x": [
+          9,
+          10
+        ],
+        "y": [
+          9,
+          10
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "//": "This is the center part of the forest. All crimson horrors will appear MORE often at this area.",
+  "method": "json",
+  "object": {
+    "fill_ter": "t_secro_flesh",
+    "rows": [
+      ";;;;;;;;;;;;;;;;;;;;;;;;;....ppllp.............;;;;;;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;;;;;....pllpp............plp;;;;;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;;;;....plpp..............plp.;;;;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;;;....plp...............plp...;;;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;;.....plp..............plp.....;;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;......plp..............plp......;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;.......plp.............plp........;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;.........plpp..........plp.........p;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;...........pllp.......pplp.........plp;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;.............pplp..ppppllp..........plp.;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;................plppllllpp...........plp..;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;...............ppppllpppp............plp....;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;pp............ppllllpp............pppplp......;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;pllp..........pllpppp............ppllllp........;;;;;;;;;;;;",
+      ";;;;;;;;;;;..pplp........plpp..............ppllpppp..........;;;;;;;;;;;",
+      ";;;;;;;;;;.....plp......plp...............pllpp.............pl;;;;;;;;;;",
+      ";;;;;;;;;.......plpp...plp...............plpp..............plp.;;;;;;;;;",
+      ";;;;;;;;.........pllpppplp..............plp...............plp...;;;;;;;;",
+      ";;;;;;;...........ppllllpp.............plp...............plp.....;;;;;;;",
+      ";;;;;;p.............ppppllp............plp...............plp......;;;;;;",
+      ";;;;;plp................pplp......'''..plp..............plp........;;;;;",
+      ";;;;..plp.................plp....'''''.plp..............plp.........;;;;",
+      ";;;...plp.................plp...''''''plp.............pplp...........;;;",
+      ";;.....plp.................plp.''ppppplp.............pllplp...........;;",
+      ";......plp..................plppppppplppp..........pplppplpp...........;",
+      ".......plp..................plppp-----ppppp....ppppllp...pllp...........",
+      "........plp................pplp---------pppppppllllpp.....pplp..........",
+      ".........plpp.............pp---------------llllpppp.........plpp........",
+      "..........pllpp..........pp-----------------ppp..............pllpppp....",
+      "...........ppllppppp.....pp-----------------pp................ppllllp...",
+      ".............pplllllppp.'pp--------[--------pp'.................pppplpp.",
+      ".............plppppplllppp--------][[--------pp'....................pllp",
+      "...........pplp.....ppplpp-------[[[[[-------pp''....................ppl",
+      "......pppppllp.......''pl-------[[[=[[[-------ppp'.....................p",
+      "....pplllllpp.......'''pp------[[[===[[[------lllppp..................p.",
+      "..ppllppppp.........'''pp-----[[[==O==[[[-----ppplllpp...............plp",
+      ".pllpp..............'''pp------][[===[[[------pp'pppllp.............plp.",
+      "plpp.................''pp-------[[[=[[]-------pp''..pplp.........ppplp..",
+      ".p....................''pp-------[[[[[-------pp''.....plp......pplllp...",
+      ".......................'pp--------[[[--------pp'......plp...pppllppp....",
+      ".......ppppp............'pp--------[--------pp'........plppplllpp.......",
+      "..ppppplllllppp..........pp-----------------pp.........plpllppp.........",
+      ".plllllppppplllpp........pp-----------------pp..........plpp............",
+      "plppppp.....pppllp........pp---------------lp..........plp..............",
+      "lp.............pplp........pppp---------ppplp..........plp..............",
+      "p................plp.........'plp-----pppp.plp.........plp..............",
+      ".................plp.........plpppppppppp..plp..........plp.............",
+      ";.................plp.......plp''pppppp'...plp...........plppp.........;",
+      ";;................plp.......plp.'''''''....plp............plllpp......;;",
+      ";;;...............plp....ppplp...'''''....plp..............pppllpp...;;;",
+      ";;;;...............plpppplllp.....'''....plp..................ppllp.;;;;",
+      ";;;;;..........ppppppllllppp.............plp....................ppl;;;;;",
+      ";;;;;;.......ppllllllpppp................plp......................;;;;;;",
+      ";;;;;;;...pppllpppppp...................plp......................;;;;;;;",
+      ";;;;;;;;.plllpp..........................plp....................;;;;;;;;",
+      ";;;;;;;;;lppp...........................plplpp.................;;;;;;;;;",
+      ";;;;;;;;;;..............................plppllppp.............;;;;;;;;;;",
+      ";;;;;;;;;;;............................plp..pplllp...........;;;;;;;;;;;",
+      ";;;;;;;;;;;;..........................plp.....pppllp........;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;........................plp..........plp......;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;.......................plp...........plp....;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;.....................plp.............plp..;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;....................plp.............plp.;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;...................plp.............plp;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;.................plp...............p;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;................plp...............;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;..............plp...............;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;;..........ppplp...............;;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;;;....ppppplllp...............;;;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;;;;.pplllllppp...............;;;;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;;;;;llppppp.................;;;;;;;;;;;;;;;;;;;;;;;;",
+      ";;;;;;;;;;;;;;;;;;;;;;;;;p.....................;;;;;;;;;;;;;;;;;;;;;;;;;"
+    ],
+    "terrain": {
+      "O": "t_secro_flesh_entrance_close",
+      "l": "t_secro_flesh",
+      "p": [
+        [
+          "t_secro_dirt_flesh",
+          250
+        ],
+        [
+          "t_secro_grass_flesh",
+          150
+        ],
+        [
+          "t_secro_grass_long_flesh",
+          75
+        ],
+        [
+          "t_secro_grass_tall_flesh",
+          25
+        ],
+        [
+          "t_secro_shrub_flesh",
+          10
+        ],
+        [
+          "t_secro_tree_young_flesh",
+          5
+        ],
+        [
+          "t_secro_flesh",
+          250
+        ]
+      ],
+      "-": [
+        [
+          "t_secro_flesh_wall",
+          100
+        ],
+        [
+          "t_secro_flesh",
+          500
+        ]
+      ],
+      ".": [
+        [
+          "t_secro_dirt_flesh",
+          250
+        ],
+        [
+          "t_secro_grass_flesh",
+          150
+        ],
+        [
+          "t_secro_grass_long_flesh",
+          75
+        ],
+        [
+          "t_secro_grass_tall_flesh",
+          25
+        ],
+        [
+          "t_secro_shrub_flesh",
+          10
+        ],
+        [
+          "t_secro_tree_young_flesh",
+          5
+        ],
+        "t_secro_tree_flesh"
+      ],
+      "'": [
+        [
+          "t_secro_dirt_flesh",
+          250
+        ],
+        [
+          "t_secro_grass_flesh",
+          150
+        ],
+        [
+          "t_secro_grass_long_flesh",
+          75
+        ],
+        [
+          "t_secro_grass_tall_flesh",
+          25
+        ],
+        [
+          "t_secro_flesh",
+          25
+        ],
+        [
+          "t_secro_shrub_flesh",
+          10
+        ],
+        [
+          "t_secro_tree_young_flesh",
+          5
+        ],
+        [
+          "t_secro_tree_flesh",
+          2
+        ]
+      ],
+      ";": [
+        [
+          "t_secro_dirt_flesh",
+          250
+        ],
+        [
+          "t_dirt",
+          125
+        ],
+        [
+          "t_secro_grass_flesh",
+          150
+        ],
+        [
+          "t_grass",
+          75
+        ],
+        [
+          "t_secro_grass_long_flesh",
+          75
+        ],
+        [
+          "t_grass_long",
+          38
+        ],
+        [
+          "t_secro_grass_tall_flesh",
+          25
+        ],
+        [
+          "t_grass_tall",
+          13
+        ],
+        [
+          "t_secro_shrub_flesh",
+          10
+        ],
+        [
+          "t_shrub",
+          5
+        ],
+        [
+          "t_secro_tree_young_flesh",
+          5
+        ],
+        [
+          "t_tree_young",
+          3
+        ],
+        [
+          "t_secro_tree_flesh",
+          2
+        ],
+        "t_tree",
+        "t_tree_walnut",
+        "t_tree_blackjack",
+        "t_tree_chestnut",
+        "t_tree_beech",
+        "t_tree_hazelnut",
+        "t_tree_cottonwood",
+        "t_tree_elm",
+        "t_tree_apple",
+        "t_tree_pear",
+        "t_tree_coffee",
+        "t_tree_cherry",
+        "t_tree_juniper",
+        "t_tree_peach",
+        "t_tree_apricot",
+        "t_tree_plum",
+        "t_tree_mulberry",
+        "t_tree_elderberry",
+        "t_tree_pine",
+        "t_tree_birch",
+        "t_tree_willow",
+        "t_tree_maple",
+        "t_tree_hickory"
+      ]
+    },
+    "furniture": {
+      ".": [
+        [
+          "f_null",
+          2000
+        ],
+        [
+          "f_secro_flower_flesh",
+          50
+        ],
+        [
+          "f_secro_veinstalk",
+          25
+        ],
+        [
+          "f_secro_flesh_gas_emitter",
+          12
+        ],
+        [
+          "f_secro_boulder_small_flesh",
+          5
+        ],
+        [
+          "f_secro_boulder_medium_flesh",
+          2
+        ],
+        [
+          "f_secro_tree_flesh_atk",
+          25
+        ],
+        "f_secro_boulder_large_flesh"
+      ],
+      "-": [
+        [
+          "f_null",
+          1600
+        ],
+        "f_secro_tendril_cluster"
+      ],
+      "=": [
+        [
+          "f_null",
+          3200
+        ],
+        "f_secro_tendril_cluster"
+      ]
+    },
+    "monster": {
+      "O": {
+        "monster": "mon_sflesh_entrance"
+      },
+      "[": {
+        "monster": "mon_sflesh_surface_spawner",
+        "chance": 1
+      },
+      "]": {
+        "monster": "mon_sflesh_surface_spawner",
+        "chance": 60
+      }
+    }
+  },
+  "om_terrain": [
+    [
+      "flesh_forest_3",
+      "flesh_forest_2",
+      "flesh_forest_1"
+    ],
+    [
+      "flesh_forest_6",
+      "flesh_forest_5",
+      "flesh_forest_4"
+    ],
+    [
+      "flesh_forest_9",
+      "flesh_forest_8",
+      "flesh_forest_7"
+    ]
+  ],
+  "type": "mapgen",
+  "weight": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "method": "json",
+  "object": {
+    "fill_ter": "t_dirt",
+    "rows": [
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~~~~~~",
+      "~~~~~~~~~~~~~~~~~~~___~~",
+      "~~~~~~~~~~~~~~~~~_______",
+      "~~~~~~~~~~~~~~~_________",
+      "~~~~~~~~~~~~~~__________",
+      "~~~~~~~~~~~~~~_____...__",
+      "~~~~~~~~~~~~~____.......",
+      "~~~~~~~~~~~~____........",
+      "~~~~~~~~~~~~____........",
+      "~~~~~~~~~~~____.........",
+      "~~~~~~~~~~~____.........",
+      "~~~~~~~~~~____..........",
+      "~~~~~~~~~~____..........",
+      "~~~~~~~~~~____..........",
+      "~~~~~~~~~~____..........",
+      "~~~~~~~~~____...........",
+      "~~~~~~~~~____...........",
+      "~~~~~~~~____............"
+    ],
+    "palettes": [
+      "flesh_island_edge"
+    ]
+  },
+  "om_terrain": [
+    "flesh_island_vfaraway_vortex"
+  ],
+  "type": "mapgen",
+  "weight": 1000
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "mx_secro_fleshbuilding",
+  "object": {
+    "rows": [
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "          ooo           ",
+      "          oao           ",
+      "          ooo           ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        ",
+      "                        "
+    ],
+    "terrain": {
+      "a": "t_secro_flesh"
+    },
+    "place_terrain": [
+      {
+        "ter": "t_secro_flesh",
+        "x": 11,
+        "y": 11
+      }
+    ],
+    "furniture": {},
+    "place_monster": [
+      {
+        "monster": "mon_zombie_fleshknot_weak",
+        "x": 11,
+        "y": 11
+      }
+    ],
+    "ter_furn_transforms": {
+      " ": {
+        "transform": "building_flesh_spread"
+      },
+      "o": {
+        "transform": "fleshknot_spread"
+      }
+    }
+  }
+}
+```
+

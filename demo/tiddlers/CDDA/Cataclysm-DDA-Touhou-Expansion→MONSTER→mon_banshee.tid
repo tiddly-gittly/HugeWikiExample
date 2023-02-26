@@ -1,0 +1,187 @@
+creator: 林一二
+revision: 0
+tags: MONSTER Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→MONSTER→mon_banshee
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_banshee|http://cdda.aloxaf.cn/search?q=mon_banshee]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monsters/thex_ghost_female.json
+
+
+!! 原文
+
+```json
+{
+  "id": "mon_banshee",
+  "type": "MONSTER",
+  "name": {
+    "str": "banshee"
+  },
+  "description": "A woman, wearing an long, unkept dress, screaming and keening.  She looks deranged and sounds angry.",
+  "volume": "68750 ml",
+  "weight": "73350 g",
+  "default_faction": "touhou_youkai_female",
+  "bodytype": "human",
+  "species": [
+    "GHOST_TOUHOU",
+    "YOUKAI_FEMALE_TOUHOU"
+  ],
+  "harvest": "exempt",
+  "hp": 85,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "looks_like": "human",
+  "color": "black",
+  "aggression": 99,
+  "morale": 99,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 4,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "STALK"
+  ],
+  "luminance": 2,
+  "vision_day": 20,
+  "vision_night": 30,
+  "path_settings": {
+    "max_dist": 24
+  },
+  "special_attacks": [
+    [
+      "PARROT",
+      13
+    ],
+    {
+      "spell_data": {
+        "id": "shrieking_20d2"
+      },
+      "type": "spell",
+      "cooldown": 5
+    },
+    {
+      "spell_data": {
+        "id": "wailing_6d4"
+      },
+      "type": "spell",
+      "cooldown": 7
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s dissappears."
+  },
+  "flags": [
+    "BASHES",
+    "GRABS",
+    "HEARS",
+    "NO_BREATHE",
+    "SEES",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "mon_banshee",
+  "type": "MONSTER",
+  "name": {
+    "str": "banshee"
+  },
+  "description": "A woman, wearing an long, unkept dress, screaming and keening.  She looks deranged and sounds angry.",
+  "volume": "68750 ml",
+  "weight": "73350 g",
+  "default_faction": "touhou_youkai_female",
+  "bodytype": "human",
+  "species": [
+    "GHOST_TOUHOU",
+    "YOUKAI_FEMALE_TOUHOU"
+  ],
+  "harvest": "exempt",
+  "hp": 85,
+  "speed": 165,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "looks_like": "human",
+  "color": "black",
+  "aggression": 99,
+  "morale": 99,
+  "melee_skill": 4,
+  "melee_dice": 3,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }
+  ],
+  "dodge": 4,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "STALK"
+  ],
+  "luminance": 2,
+  "vision_day": 20,
+  "vision_night": 30,
+  "path_settings": {
+    "max_dist": 24
+  },
+  "special_attacks": [
+    [
+      "PARROT",
+      13
+    ],
+    {
+      "spell_data": {
+        "id": "shrieking_20d2"
+      },
+      "type": "spell",
+      "cooldown": 5
+    },
+    {
+      "spell_data": {
+        "id": "wailing_6d4"
+      },
+      "type": "spell",
+      "cooldown": 7
+    }
+  ],
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s dissappears."
+  },
+  "flags": [
+    "BASHES",
+    "GRABS",
+    "HEARS",
+    "NO_BREATHE",
+    "SEES",
+    "SWIMS",
+    "WATER_CAMOUFLAGE"
+  ]
+}
+```
+

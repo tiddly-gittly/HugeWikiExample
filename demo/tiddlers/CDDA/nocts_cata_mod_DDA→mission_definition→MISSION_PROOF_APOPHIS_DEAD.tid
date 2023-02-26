@@ -1,0 +1,133 @@
+creator: 林一二
+revision: 0
+tags: mission_definition nocts_cata_mod_DDA
+title: nocts_cata_mod_DDA→mission_definition→MISSION_PROOF_APOPHIS_DEAD
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：MISSION_PROOF_APOPHIS_DEAD|http://cdda.aloxaf.cn/search?q=MISSION_PROOF_APOPHIS_DEAD]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/nocts_cata_mod_DDA/Npc/c_mission_def.json
+
+
+!! 原文
+
+```json
+{
+  "id": "MISSION_PROOF_APOPHIS_DEAD",
+  "type": "mission_definition",
+  "name": "Kill Bio-Weapon Apophis",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 10,
+  "value": 100000,
+  "item": "badge_bio_weapon_apophis",
+  "start": {
+    "effect": {
+      "u_add_effect": "router_mission",
+      "duration": "PERMANENT"
+    },
+    "assign_mission_target": {
+      "om_terrain": "Unknown_Lab_4",
+      "om_special": "Unknown_Lab_s",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_var": "apophis_dead",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      },
+      {
+        "npc_add_var": "apophis_dead",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      }
+    ]
+  },
+  "count": 1,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "If you see this, it's a bug!",
+    "offer": "You seem like a capable person, so you might have a chance.  We have pieced together the coordinates to the laboratory Apophis uses as its base.  I want you to take it down, rid the world of Apophis!  That lab has a lot of valuable equipment left inside; if you manage to kill that thing, it's all yours.  I wish we could do it ourselves, but between the portal breakthroughs, the bombs and the undead, the chance has been lost.",
+    "accepted": "You're sure about this?  Thank you… that means a lot, you know.  Be sure to bring some proof, be creative.  I'll be waiting for your return.  I'd suggest talking to Sigma and Lambda too, before you leave.",
+    "rejected": "I understand.  It's practically a lost cause at this point.  I'll keep trying to figure something out to stop it.",
+    "advice": "Get some decent armor and weapons, this fight won't be easy.  Assemble a team to make it easier.  Ask Lambda and Sigma if they want to join you, if you want.  A single person can't take it on…",
+    "inquire": "Is… it dead?",
+    "success": "Is that…you did it!  You have no idea what you have done for us!  You are truly a legend among men in these dark times.  You are always welcomed here!",
+    "success_lie": "Oh, no proof huh?.  I hope you are being truthful…",
+    "failure": "At least you are alive.  I should have never told you to do something like that.  I am sorry…"
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "MISSION_PROOF_APOPHIS_DEAD",
+  "type": "mission_definition",
+  "name": "杀死生物武器-阿波菲斯",
+  "goal": "MGOAL_FIND_ITEM",
+  "difficulty": 10,
+  "value": 100000,
+  "item": "badge_bio_weapon_apophis",
+  "start": {
+    "effect": {
+      "u_add_effect": "router_mission",
+      "duration": "PERMANENT"
+    },
+    "assign_mission_target": {
+      "om_terrain": "Unknown_Lab_4",
+      "om_special": "Unknown_Lab_s",
+      "reveal_radius": 3,
+      "search_range": 180,
+      "z": 0
+    }
+  },
+  "end": {
+    "effect": [
+      {
+        "u_add_var": "apophis_dead",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      },
+      {
+        "npc_add_var": "apophis_dead",
+        "type": "dialogue",
+        "context": "router",
+        "value": "yes"
+      }
+    ]
+  },
+  "count": 1,
+  "origins": [
+    "ORIGIN_SECONDARY"
+  ],
+  "dialogue": {
+    "describe": "如果你看见这条文字，说明出BUG了！",
+    "offer": "你看起来是个能干的人，所以你可能有机会。我们拼凑出了阿波菲斯用作基地的实验室的坐标。我希望你把它干掉，让阿波菲斯彻底消失！那个实验室里有很多贵重的设备；如果你能杀死那东西，那就全是你的了。我也希望我们自己能做到，但机会因传送门突破，炸弹和丧尸失去了。",
+    "accepted": "你确定吗？谢谢你…这对我来说意义重大。一定要带些证据，要有创意。我会等你回来的。我建议你离开前与西格玛和兰姆达谈谈。",
+    "rejected": "我理解。在这一点上几乎是注定会失败的。我会继续想办法阻止它的。",
+    "advice": "找些像样的盔甲和武器，这场战斗可不容易。组建团队会容易些。如果你愿意的话可以去问兰姆达和西格玛是否愿意加入你。一个人可无法承受……",
+    "inquire": "它……死了吗？",
+    "success": "那是……你做到了！这对我们来说意义重大！在这个黑暗时代，你真是人间的传奇。这里永远欢迎你！",
+    "success_lie": "哦，没有证据？我希望你说的是实话……",
+    "failure": "至少你还活着。我不应该让你做那样的事。对不起……"
+  }
+}
+```
+

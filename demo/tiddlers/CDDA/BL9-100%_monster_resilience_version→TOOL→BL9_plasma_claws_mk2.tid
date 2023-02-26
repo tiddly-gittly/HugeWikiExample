@@ -1,0 +1,127 @@
+creator: 林一二
+revision: 0
+tags: TOOL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→TOOL→BL9_plasma_claws_mk2
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_plasma_claws_mk2|http://cdda.aloxaf.cn/search?q=BL9_plasma_claws_mk2]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Items/melee_tools.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_plasma_claws_mk2",
+  "looks_like": "bio_claws_weapon",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9 experimental plasma claws MK ii"
+  },
+  "description": "Refined and upgraded highly experimental futuristic claws with a unique design that use BL9 capable of changing it's physical and chemical structure to cause various offensive effects, in this case, extremely heated ionized gasified BL9",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "cutting": 35,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_plasma_melee_mk2_effect",
+            "message": "As you cut with the claws they emit extremely heated ionized gasified BL9 at %2$s wildly!",
+            "npc_message": "As %1$s cuts with the claws they emit extremely heated ionized gasified BL9 at %2$s wildly!"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "RAPID",
+    "tec_precise",
+    "tec_krav_maga_rapid",
+    "tec_krav_maga_crit",
+    "tec_krav_maga_disarm"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE"
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_plasma_claws_mk2",
+  "looks_like": "bio_claws_weapon",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str": "BL9实验等离子爪MK ii"
+  },
+  "description": "精致升级的高度实验性未来派爪子，独特的设计，使用BL9能够改变其物理和化学结构，造成各种攻击性效果，在这种情况下，极端加热电离气化BL9",
+  "weight": "1875 g",
+  "volume": "1485 ml",
+  "price": "400 USD",
+  "price_postapoc": "60 USD",
+  "to_hit": 1,
+  "bashing": 1,
+  "cutting": 35,
+  "relic_data": {
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "BL9_plasma_melee_mk2_effect",
+            "message": "当你用爪子切的时候，它们会在%2$s的温度下释放出极高的电离气化BL9！",
+            "npc_message": "当%1$s用爪子切割时，它们会在%2$s处释放出极度加热的电离气化BL9！"
+          }
+        ]
+      }
+    ]
+  },
+  "material": [
+    "BL9",
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_2",
+    "RAPID",
+    "tec_precise",
+    "tec_krav_maga_rapid",
+    "tec_krav_maga_crit",
+    "tec_krav_maga_disarm"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE"
+  ]
+}
+```
+

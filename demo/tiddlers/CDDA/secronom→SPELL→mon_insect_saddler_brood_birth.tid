@@ -1,0 +1,81 @@
+creator: 林一二
+revision: 0
+tags: SPELL secronom
+title: secronom→SPELL→mon_insect_saddler_brood_birth
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：mon_insect_saddler_brood_birth|http://cdda.aloxaf.cn/search?q=mon_insect_saddler_brood_birth]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_magic_smol.json
+
+
+!! 原文
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_insect_saddler_brood_birth",
+  "name": {
+    "str": "Birth"
+  },
+  "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gives a live birth to 2-5 baby saddlers. These saddlers are filled with hidden potentials, providing them the ability to grow so much faster into a full grown combat saddler once they sense danger around them.'",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "HOSTILE_SUMMON",
+    "RANDOM_DAMAGE",
+    "PERMANENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "min_damage": 2,
+  "max_damage": 5,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_insect_saddler_baby_potent"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "SPELL",
+  "id": "mon_insect_saddler_brood_birth",
+  "name": {
+    "str": "出生"
+  },
+  "description": "怪物施法的。如果你看到这个，那就读这篇：\n'卡斯特生下2-5个婴儿马鞍。这些马鞍充满了隐藏的潜能，一旦他们感觉到周围的危险，他们就有能力更快地成长为一个成熟的战斗马鞍",
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "HOSTILE_SUMMON",
+    "RANDOM_DAMAGE",
+    "PERMANENT",
+    "NO_PROJECTILE"
+  ],
+  "valid_targets": [
+    "ground"
+  ],
+  "min_damage": 2,
+  "max_damage": 5,
+  "min_aoe": 3,
+  "max_aoe": 3,
+  "effect": "summon",
+  "shape": "blast",
+  "effect_str": "mon_insect_saddler_baby_potent"
+}
+```
+

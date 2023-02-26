@@ -1,0 +1,99 @@
+creator: 林一二
+revision: 0
+tags: SPELL BL9-100%_monster_resilience_version
+title: BL9-100%_monster_resilience_version→SPELL→BL9_item_strong_curing_herb
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：BL9_item_strong_curing_herb|http://cdda.aloxaf.cn/search?q=BL9_item_strong_curing_herb]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/BL9-100%_monster_resilience_version/Monsters/mon_spell.json
+
+
+!! 原文
+
+```json
+{
+  "id": "BL9_item_strong_curing_herb",
+  "type": "SPELL",
+  "name": {
+    "str": "Strong Curing Herb healing"
+  },
+  "description": "Strong healing thanks to the Strong Curing Herb",
+  "message": "You consume the herb and you feel very well healed!",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "effect_str": "herb_cleanse",
+  "min_damage": -45,
+  "max_damage": -45,
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "BL9_item_herb_stun",
+      "hit_self": true
+    },
+    {
+      "id": "BL9_pain_relieve",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "BL9_item_strong_curing_herb",
+  "type": "SPELL",
+  "name": {
+    "str": "强疗草"
+  },
+  "description": "强大的治愈感谢强大的治愈药草",
+  "message": "你吃了这个药草，你感觉很好的治愈了！",
+  "valid_targets": [
+    "self",
+    "ally"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "NO_PROJECTILE"
+  ],
+  "effect_str": "herb_cleanse",
+  "min_damage": -45,
+  "max_damage": -45,
+  "effect": "attack",
+  "shape": "blast",
+  "extra_effects": [
+    {
+      "id": "BL9_item_herb_stun",
+      "hit_self": true
+    },
+    {
+      "id": "BL9_pain_relieve",
+      "hit_self": true
+    }
+  ],
+  "min_duration": 1,
+  "max_duration": 1
+}
+```
+

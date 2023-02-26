@@ -1,0 +1,191 @@
+creator: 林一二
+revision: 0
+tags: mapgen Arcana
+title: Arcana→mapgen→[53]
+type: text/vnd.tiddlywiki
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/overmap_and_mapgen/mapgen_variants.json
+
+
+!! 原文
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "arcana_cave_underground_3",
+  "object": {
+    "mapgensize": [
+      7,
+      7
+    ],
+    "rows": [
+      " ..... ",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      " ..... "
+    ],
+    "palettes": [
+      "arcana_palette"
+    ],
+    "items": {
+      ".": [
+        {
+          "item": "magic_crafting",
+          "chance": 25
+        }
+      ]
+    },
+    "place_fields": [
+      {
+        "x": 6,
+        "y": 3,
+        "field": "fd_gas_vent",
+        "intensity": 1
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_flaming_eye",
+          "mon_hunting_horror",
+          "mon_flying_polyp"
+        ],
+        "x": [
+          0,
+          6
+        ],
+        "y": [
+          1,
+          5
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "update_mapgen_id": "cf_church_upgrade_9_a",
+  "object": {
+    "set": [
+      {
+        "square": "terrain",
+        "id": "t_rock_floor_no_roof",
+        "x": 18,
+        "x2": 23,
+        "y": 16,
+        "y2": 21
+      },
+      {
+        "point": "terrain",
+        "id": "t_drystone_wall_half",
+        "x": 18,
+        "y": 16
+      },
+      {
+        "point": "terrain",
+        "id": "t_drystone_wall_half",
+        "x": 18,
+        "y": 21
+      },
+      {
+        "point": "furniture",
+        "id": "f_arcane_candlestick",
+        "x": 20,
+        "y": 17
+      },
+      {
+        "point": "furniture",
+        "id": "f_arcane_candlestick",
+        "x": 20,
+        "y": 20
+      }
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "mapgen",
+  "method": "json",
+  "nested_mapgen_id": "arcana_cave_underground_3",
+  "object": {
+    "mapgensize": [
+      7,
+      7
+    ],
+    "rows": [
+      " ..... ",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      " ..... "
+    ],
+    "palettes": [
+      "arcana_palette"
+    ],
+    "items": {
+      ".": [
+        {
+          "item": "magic_crafting",
+          "chance": 25
+        }
+      ]
+    },
+    "place_fields": [
+      {
+        "x": 6,
+        "y": 3,
+        "field": "fd_gas_vent",
+        "intensity": 1
+      }
+    ],
+    "place_monster": [
+      {
+        "monster": [
+          "mon_flaming_eye",
+          "mon_hunting_horror",
+          "mon_flying_polyp"
+        ],
+        "x": [
+          0,
+          6
+        ],
+        "y": [
+          1,
+          5
+        ],
+        "repeat": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}
+```
+

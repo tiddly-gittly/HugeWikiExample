@@ -1,0 +1,123 @@
+creator: 林一二
+revision: 0
+tags: talk_topic Arcana
+title: Arcana→talk_topic→TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX|http://cdda.aloxaf.cn/search?q=TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+
+
+!! 原文
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "So be it.  I will trust you with a copy, but consider it on loan.  That means, first and foremost, take good care of it.  Someday when humanity can look forward to a moment's peace and the hope of rebuilding on the ruins, I expect you to survive to see it through.  Then we'll see about returning that book.",
+    "no": "Very well then.  Here you go.  Take good care of it, and be careful in applying the lessons you will find within.  The Path To Power, as we called it back in the day, is not an easy one to walk."
+  },
+  "speaker_effect": {
+    "effect": [
+      {
+        "npc_add_var": "elena_blade_help",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes"
+      },
+      {
+        "u_spawn_item": "book_bloodmagic"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "We'll see how this goes, then.",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "Thank you.",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "Thank you.  Good bye for now.",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CODEX",
+  "type": "talk_topic",
+  "dynamic_line": {
+    "u_has_any_trait": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2"
+    ],
+    "yes": "就这样吧。我会给你一份复印件，但可以考虑借阅。这意味着，首先，要好好照顾它。总有一天，当人类可以期待片刻的和平和在废墟上重建的希望时，我希望你们能活到最后。然后我们再考虑归还那本书。",
+    "no": "那好吧。干得好。好好照顾它，并小心地应用你将在里面发现的教训。正如我们当年所说，通往权力的道路并不容易走。"
+  },
+  "speaker_effect": {
+    "effect": [
+      {
+        "npc_add_var": "elena_blade_help",
+        "type": "flag",
+        "context": "shrike",
+        "value": "yes"
+      },
+      {
+        "u_spawn_item": "book_bloodmagic"
+      }
+    ]
+  },
+  "responses": [
+    {
+      "text": "到时候我们再看看情况如何。",
+      "switch": true,
+      "condition": {
+        "u_has_any_trait": [
+          "PROF_CLEANSINGFLAME",
+          "PROF_CLEANSINGFLAME2"
+        ]
+      },
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "谢谢你。",
+      "switch": true,
+      "default": true,
+      "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
+    },
+    {
+      "text": "非常感谢。再见了。",
+      "topic": "TALK_DONE"
+    }
+  ]
+}
+```
+

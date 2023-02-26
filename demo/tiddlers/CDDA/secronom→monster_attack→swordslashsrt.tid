@@ -1,0 +1,75 @@
+creator: 林一二
+revision: 0
+tags: monster_attack secronom
+title: secronom→monster_attack→swordslashsrt
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：swordslashsrt|http://cdda.aloxaf.cn/search?q=swordslashsrt]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/secronom/Modification_Files/Monsters/-Essentials/secro_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "swordslashsrt",
+  "cooldown": 14,
+  "move_cost": 300,
+  "accuracy": 6,
+  "blockable": true,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 11
+    },
+    {
+      "damage_type": "stab",
+      "amount": 14
+    }
+  ],
+  "hit_dmg_u": "%1$s slashed you with its sword!",
+  "hit_dmg_npc": "%1$s swordslashed <npcname>!",
+  "no_dmg_msg_u": "%1$s tries to swordslash you, but fails to penetrate your armor!",
+  "no_dmg_msg_npc": "%1$s tries to swordslash <npcname>, but fails to penetrate their armor!"
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "swordslashsrt",
+  "cooldown": 14,
+  "move_cost": 300,
+  "accuracy": 6,
+  "blockable": true,
+  "dodgeable": true,
+  "damage_max_instance": [
+    {
+      "damage_type": "cut",
+      "amount": 11
+    },
+    {
+      "damage_type": "stab",
+      "amount": 14
+    }
+  ],
+  "hit_dmg_u": "%1$s slashed you with its sword！",
+  "hit_dmg_npc": "%1$s swordslashed <npcname>！",
+  "no_dmg_msg_u": "%1$s tries to swordslash you，but fails to penetrate your armor！",
+  "no_dmg_msg_npc": "%1$s tries to swordslash <npcname>，but fails to penetrate their armor！"
+}
+```
+

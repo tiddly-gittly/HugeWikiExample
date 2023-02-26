@@ -1,0 +1,79 @@
+creator: 林一二
+revision: 0
+tags: monster_attack Cataclysm-DDA-Touhou-Expansion
+title: Cataclysm-DDA-Touhou-Expansion→monster_attack→smash_10d3
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：smash_10d3|http://cdda.aloxaf.cn/search?q=smash_10d3]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Cataclysm-DDA-Touhou-Expansion/monster_special_attacks/thex_monster_attacks.json
+
+
+!! 原文
+
+```json
+{
+  "id": "smash_10d3",
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "accuracy": 5,
+  "cooldown": 1,
+  "move_cost": 200,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 30
+    }
+  ],
+  "min_mul": 0.66,
+  "max_mul": 1,
+  "hitsize_min": 4,
+  "throw_strength": 40,
+  "hit_dmg_u": "%1$s slams you in the %2$s, pushing you back!",
+  "hit_dmg_npc": "%1$s slams <npcname>, pushing them back!",
+  "no_dmg_msg_u": "%1$s slams your %2$s, but you hold!",
+  "no_dmg_msg_npc": "%1$s slams <npcname>, but they hold!",
+  "miss_msg_u": "%s attempts to slam you, but you dodge!",
+  "miss_msg_npc": "%s attempts to slam at <npcname>, but they dodge!",
+  "dodgeable": true,
+  "blockable": true
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "smash_10d3",
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "accuracy": 5,
+  "cooldown": 1,
+  "move_cost": 200,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 30
+    }
+  ],
+  "min_mul": 0.66,
+  "max_mul": 1,
+  "hitsize_min": 4,
+  "throw_strength": 40,
+  "hit_dmg_u": "%1$s 拍到了你的 %2$s, 击退了你!",
+  "hit_dmg_npc": "%1$s 拍击<npcname>, 造成了击退!",
+  "no_dmg_msg_u": "%1$s 拍击你的 %2$s, 但是你接住了!",
+  "no_dmg_msg_npc": "%1$s 拍击 <npcname>, 但是被接住了!",
+  "miss_msg_u": "%s 尝试拍击你,但是你躲开了!",
+  "miss_msg_npc": "%s 尝试拍击<npcname>, 但是被躲开了!",
+  "dodgeable": true,
+  "blockable": true
+}
+```
+

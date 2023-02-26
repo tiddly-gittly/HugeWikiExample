@@ -1,0 +1,199 @@
+creator: 林一二
+revision: 0
+tags: TOOL_ARMOR Arcana
+title: Arcana→TOOL_ARMOR→gauntlets_necro
+type: text/vnd.tiddlywiki
+
+[[物品浏览器：gauntlets_necro|http://cdda.aloxaf.cn/search?q=gauntlets_necro]]
+
+
+
+!! 所在文件
+
+/Kenan-Structured-Modpack/Arcana/items/tool_armor.json
+
+
+!! 原文
+
+```json
+{
+  "id": "gauntlets_necro",
+  "copy-from": "qt_mitten_gaunt",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "pair of thunder gauntlets",
+    "str_pl": "pairs of thunder gauntlets"
+  },
+  "description": "A heavy set of plate gauntlets, decorated with silver around the edges of each individual plate.  Touching the bare metal sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.  It can also be used to place a rune that will blast an area with lightning if something steps on it.",
+  "price": "600 USD",
+  "price_postapoc": "50 USD",
+  "material": [
+    "qt_steel",
+    "qt_steel_chain",
+    "silver"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 4
+      }
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "essence_type",
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_lightning",
+      "moves": 90,
+      "practice": 0,
+      "done_message": "You focus a fragment of the gauntlets' energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_thunder_gauntlets_taze",
+      "no_fail": true,
+      "level": 0,
+      "need_worn": true
+    }
+  ],
+  "armor": [
+    {
+      "material": [
+        {
+          "type": "qt_steel",
+          "covered_by_mat": 95,
+          "thickness": 1.25
+        },
+        {
+          "type": "qt_steel_chain",
+          "covered_by_mat": 100,
+          "thickness": 1.2
+        },
+        {
+          "type": "leather",
+          "covered_by_mat": 100,
+          "thickness": 0.05
+        },
+        {
+          "type": "silver",
+          "covered_by_mat": 20,
+          "thickness": 0.05
+        }
+      ],
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "coverage": 100,
+      "encumbrance": 20
+    }
+  ],
+  "relative": {
+    "weight": 210
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE",
+      "TRADER_KEEP_EQUIPPED"
+    ]
+  }
+}
+```
+
+
+
+!! 汉化
+
+```json
+{
+  "id": "gauntlets_necro",
+  "copy-from": "qt_mitten_gaunt",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "雷电护手",
+    "str_pl": "雷电护手"
+  },
+  "description": "一套沉重的板手套，在每个板的边缘用银装饰。触摸裸露的金属会给你带来微弱的刺痛感。使用它们给附近的敌人一个强大的眩晕震动，消耗目标的生命值。它也可以用来放置一个符文，如果有什么东西踩到它，它会用闪电炸开一个区域。",
+  "price": "600 USD",
+  "price_postapoc": "50 USD",
+  "material": [
+    "qt_steel",
+    "qt_steel_chain",
+    "silver"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "essence_type": 4
+      }
+    }
+  ],
+  "charges_per_use": 1,
+  "ammo": "essence_type",
+  "use_action": [
+    {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_arcana_item_lightning",
+      "moves": 90,
+      "practice": 0,
+      "done_message": "You focus a fragment of the gauntlets' energy into a spell trap, waiting to be unleashed."
+    },
+    {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_thunder_gauntlets_taze",
+      "no_fail": true,
+      "level": 0,
+      "need_worn": true
+    }
+  ],
+  "armor": [
+    {
+      "material": [
+        {
+          "type": "qt_steel",
+          "covered_by_mat": 95,
+          "thickness": 1.25
+        },
+        {
+          "type": "qt_steel_chain",
+          "covered_by_mat": 100,
+          "thickness": 1.2
+        },
+        {
+          "type": "leather",
+          "covered_by_mat": 100,
+          "thickness": 0.05
+        },
+        {
+          "type": "silver",
+          "covered_by_mat": 20,
+          "thickness": 0.05
+        }
+      ],
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "coverage": 100,
+      "encumbrance": 20
+    }
+  ],
+  "relative": {
+    "weight": 210
+  },
+  "extend": {
+    "flags": [
+      "NO_SALVAGE",
+      "TRADER_KEEP_EQUIPPED"
+    ]
+  }
+}
+```
+
