@@ -8,6 +8,8 @@
 
 Data is generated from a game mod [CDDA-Kenan-Modpack-Chinese](https://github.com/linonetwo/CDDA-Kenan-Modpack-Chinese), game developers are amazing!
 
+Also from [Hundred-days](https://github.com/Mostlai/Hundred-days)'s [wiki](https://mostlai.github.io/HD-WIKI/), with so many wiki links!
+
 ## Development
 
 There are some scripts you can run.
