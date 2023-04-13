@@ -1,0 +1,82 @@
+title: 低温蒸汽机
+tags: 模式 低温蒸汽 发电
+created: 14441111000000000
+creator: Pldada
+modified: 14441111000000000
+modifier: Pldada
+
+>消耗0.5低温蒸汽并生产2工业电力
+
+<fieldset  style='margin-bottom:5px'>
+
+解锁需求:
+
+[[煤炭]]  >=1
+
+```
+解锁需求(JSON):g.coal>=1
+
+为什么会有此条？因为可以通过此来手动查询未显示的条目
+```
+
+</fieldset>
+
+---
+
+此条目具有以下TAG(标签)  [[低温蒸汽]] [[发电]] 
+
+同样具有此TAG的条目:
+
+<$list filter="[tag[低温蒸汽]sort[title]]"/>
+
+<$list filter="[tag[发电]sort[title]]"/>
+
+
+
+该条目属于以下条目的前置解锁
+
+
+
+<fieldset style='margin-bottom:5px'>
+
+该条目具有以下花费
+
+[[低温蒸汽]]:50
+
+[[人力]]:200
+
+</fieldset>
+
+<fieldset style='margin-bottom:5px'>
+
+该条目具有以下修正
+
+[[蒸汽机]]:1
+
+[[低温蒸汽]].balance:-0.5
+
+[[工业电力]].max:2
+
+[[工业用地]]:0.4
+
+[[工业电力]]:0.1
+
+[[工业线程]]:0.2
+
+</fieldset>
+
+<fieldset style='margin-bottom:5px'>
+
+此条目的MAX（上限）在以下条目中被影响
+
+
+
+</fieldset>
+
+<fieldset style='margin-bottom:5px'>
+
+此条目的rate（速率）在以下条目中被影响
+
+
+
+</fieldset>

@@ -1,0 +1,84 @@
+title: 焦炭蒸馏
+tags: 模式 焦炭
+created: 14441111000000000
+creator: Pldada
+modified: 14441111000000000
+modifier: Pldada
+
+>消耗1黄温单元和1.5煤炭并生产1.6焦炭
+
+<fieldset  style='margin-bottom:5px'>
+
+解锁需求:
+
+[[焦炭工艺]]  >=10
+
+```
+解锁需求(JSON):g.ind_jiaotangy>=10
+
+为什么会有此条？因为可以通过此来手动查询未显示的条目
+```
+
+</fieldset>
+
+---
+
+此条目具有以下TAG(标签)  [[焦炭]] 
+
+同样具有此TAG的条目:
+
+<$list filter="[tag[焦炭]sort[title]]"/>
+
+该条目属于以下条目的前置解锁
+
+
+
+<fieldset style='margin-bottom:5px'>
+
+该条目具有以下花费
+
+[[黄温单元]]:50
+
+[[煤炭]]:50
+
+[[人力]]:200
+
+</fieldset>
+
+<fieldset style='margin-bottom:5px'>
+
+该条目具有以下修正
+
+[[蒸馏线程]]:1
+
+[[黄温单元]].balance:-1
+
+[[煤炭]].balance:-1.5
+
+[[焦炭]].balance:1.6
+
+[[人力]].max:-100
+
+[[工业用地]]:0.3
+
+[[工业电力]]:0.2
+
+[[工业线程]]:0.5
+
+</fieldset>
+
+<fieldset style='margin-bottom:5px'>
+
+此条目的MAX（上限）在以下条目中被影响
+
+
+
+</fieldset>
+
+<fieldset style='margin-bottom:5px'>
+
+此条目的rate（速率）在以下条目中被影响
+
+
+
+</fieldset>

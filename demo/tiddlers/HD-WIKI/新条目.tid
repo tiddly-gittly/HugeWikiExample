@@ -1,0 +1,24 @@
+title: 新条目
+created: 20210929133316054
+creator: oflg
+modified: 20211117022823021
+modifier: oflg
+tags: 
+type: text/vnd.tiddlywiki
+revision: 0
+bag: default
+
+<table>
+<tr>
+<th>条目</th>
+<th>指数</th>
+<th>到期</th>
+</tr>
+<$list filter="[subfilter{$:/temp/fishing!!fishingrod}subfilter{$:/temp/fishing!!fishingpond}]">
+<tr>
+<td><$link to=<<currentTiddler>>><<toc-caption>></$link></td>
+<td>{{{[<currentTiddler>reduce<priority>]}}}</td>
+<td>{{!!due}}</td>
+</tr>
+</$list>
+</table>

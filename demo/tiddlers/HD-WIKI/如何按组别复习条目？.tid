@@ -1,0 +1,27 @@
+title: 如何按组别复习条目？
+created: 20211111054311121
+modified: 20211122090117489
+tags: 高级技巧 ?
+type: text/vnd.tiddlywiki
+caption: {{||Excerpt}}
+due: 20211201081805347
+interval: 8.97
+revision: 0
+bag: default
+
+
+
+使用 {{$:/plugins/oflg/fishing/fishingfloat}} 中的输入框。其形象的说法是“钓竿”。
+
+* 在输入框里输入[[筛选器表达式|https://bramchen.github.io/tw5-docs/zh-Hans/#Filter%20Expression]]。例如：
+** `[tag[?]tag[高级技巧]]`：会从有`?`标签的条目里筛选出有`高级技巧`标签的条目来复习。
+
+** `[tag[高级技巧]]`：会从所有条目里筛选出来有`高级技巧`标签的条目来复习，并在复习后给它们添加`?`标签。
+
+** `[[新条目]]`，也写作`新条目`：将会复习`新条目`，并在复习后给它添加`?`标签。
+
+* 点击 <$button disabled="yes" class="tc-btn-invisible">{{$:/core/images/new-button}}</$button> 固定常用的表达式。
+
+* 点击 <$button disabled="yes" class="tc-btn-invisible">{{$:/core/images/close-button}}</$button> 解除常用的表达式。
+
+* 点击 <$button disabled="yes" class="tc-btn-invisible">{{$:/core/images/options-button}}</$button> 调整表达式筛选出的条目组的复习日程参数。在搞懂[[它们怎么起作用|https://docs.ankiweb.net/deck-options.html#advanced]]之前不用动它。

@@ -1,0 +1,82 @@
+title: 生产日用品
+tags: 模式 日用品
+created: 14441111000000000
+creator: Pldada
+modified: 14441111000000000
+modifier: Pldada
+
+>消耗1零部件和1工制钢并生产3日用品
+
+<fieldset  style='margin-bottom:5px'>
+
+解锁需求:
+
+[[组装机制]]  >=1
+
+```
+解锁需求(JSON):g.spart_zuzhuang>=1
+
+为什么会有此条？因为可以通过此来手动查询未显示的条目
+```
+
+</fieldset>
+
+---
+
+此条目具有以下TAG(标签)  [[日用品]] 
+
+同样具有此TAG的条目:
+
+<$list filter="[tag[日用品]sort[title]]"/>
+
+该条目属于以下条目的前置解锁
+
+
+
+<fieldset style='margin-bottom:5px'>
+
+该条目具有以下花费
+
+[[零部件]]:30
+
+[[工制钢]]:30
+
+</fieldset>
+
+<fieldset style='margin-bottom:5px'>
+
+该条目具有以下修正
+
+[[轧线线程]]:1
+
+[[零部件]].balance:-1
+
+[[工制钢]].balance:-1
+
+[[日用品]].balance:3
+
+[[人力]].max:-100
+
+[[工业用地]]:0.6
+
+[[工业电力]]:0.4
+
+[[工业线程]]:0.3
+
+</fieldset>
+
+<fieldset style='margin-bottom:5px'>
+
+此条目的MAX（上限）在以下条目中被影响
+
+
+
+</fieldset>
+
+<fieldset style='margin-bottom:5px'>
+
+此条目的rate（速率）在以下条目中被影响
+
+
+
+</fieldset>
