@@ -11,7 +11,12 @@ const pluginTitle = `${author}/${name}`;
 
 const repoDir = path.join(__dirname, '..');
 const distDir = path.join(__dirname, '..', 'dist');
-const nodejsPluginOutDir = path.join(distDir, `${pluginInfo["plugin-type"]}s`, author, name);
+const demoTiddlersDir = path.join(__dirname, '..', 'demo', 'tiddlers');
+const largeFileFolders = fs
+  .readdirSync(demoTiddlersDir, { withFileTypes: true })
+  .filter((dirent) => dirent.isDirectory())
+  .map((dirent) => dirent.name);
+const nodejsPluginOutDir = path.join(distDir, `${pluginInfo['plugin-type']}s`, author, name);
 // cross platform cp -r ${repoDir}/src/ ${nodejsPluginOutDir}/
 const copyOptions = {
   filter: (src, dest) => {
@@ -22,6 +27,12 @@ const copyOptions = {
   },
 };
 await fs.copy(path.join(repoDir, 'src'), nodejsPluginOutDir, copyOptions);
+// copy large files
+await Promise.all(
+  largeFileFolders.map(async (folder) => {
+    await fs.copy(path.join(demoTiddlersDir, folder), nodejsPluginOutDir, copyOptions);
+  }),
+);
 
 // zip folder for nodejs wiki
 /**
@@ -45,7 +56,7 @@ function zipDirectory(source, out) {
 }
 
 if (process.env.CI) {
-  const outPath = path.join(__dirname, '..', `${pluginInfo["plugin-type"]}s.zip`);
+  const outPath = path.join(__dirname, '..', `${pluginInfo['plugin-type']}s.zip`);
   await zipDirectory(path.join(__dirname, '..', 'dist'), outPath);
-  await fs.move(outPath, path.join(distDir, 'out', `${pluginInfo["plugin-type"]}s.zip`));
+  await fs.move(outPath, path.join(distDir, 'out', `${pluginInfo['plugin-type']}s.zip`));
 }
